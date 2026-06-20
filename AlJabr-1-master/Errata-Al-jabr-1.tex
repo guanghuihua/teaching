@@ -1,0 +1,173 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8
+
+% LaTeX source for the errata of the book ``代数学方法'' in Chinese
+% Copyright 2025  李文威 (Wen-Wei Li).
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the Creative Commons
+% Attribution 4.0 International (CC BY 4.0)
+% http://creativecommons.org/licenses/by/4.0/
+
+% 《代数学方法》卷一勘误表 / 李文威
+% 使用自定义的文档类 AJerrata.cls. 自动载入 xeCJK.
+
+\documentclass{AJerrata}
+
+\usepackage{unicode-math}
+
+\usepackage[unicode, colorlinks, psdextra, bookmarksnumbered,
+	pdfpagelabels=true,
+	pdfauthor={李文威 (Wen-Wei Li)},
+	pdftitle={代数学方法卷一勘误},
+	pdfkeywords={}
+]{hyperref}
+
+\setmainfont[
+	BoldFont={texgyretermes-bold.otf},
+	ItalicFont={texgyretermes-italic.otf},
+	BoldItalicFont={texgyretermes-bolditalic.otf},
+	PunctuationSpace=2
+]{texgyretermes-regular.otf}
+
+\setsansfont[
+	BoldFont=FiraSans-Bold.otf,
+	ItalicFont=FiraSans-Italic.otf
+]{FiraSans-Regular.otf}
+
+\setCJKmainfont[
+	BoldFont=Noto Serif CJK SC Bold
+]{Noto Serif CJK SC}
+
+\setCJKsansfont[
+	BoldFont=Noto Sans CJK SC Bold
+]{Noto Sans CJK SC}
+
+\setCJKfamilyfont{emfont}[
+	BoldFont=FandolHei-Regular.otf
+]{FandolHei-Regular.otf}	% 强调用的字体
+
+\renewcommand{\em}{\bfseries\CJKfamily{emfont}} % 强调
+
+\setmathfont[
+	Extension = .otf,
+	math-style= TeX,
+]{texgyretermes-math}
+
+\usepackage{mathrsfs}
+\usepackage{stmaryrd} \SetSymbolFont{stmry}{bold}{U}{stmry}{m}{n}	% 避免警告 (stmryd 不含粗体故)
+% \usepackage{array}
+% \usepackage{tikz-cd}  % 使用 TikZ 绘图
+\usetikzlibrary{positioning, patterns, calc, matrix, shapes.arrows, shapes.symbols}
+
+\usepackage{myarrows}				% 使用自定义的可伸缩箭头
+\usepackage{mycommand}				% 引入自定义的惯用的命令
+
+
+\title{\bfseries 代数学方法（第一卷）勘误表 \\ 跨度: 2025 迄今 }
+\author{李文威}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	以下页码等信息参照高等教育出版社 2025 年修订之《代数学方法》第一卷, ISBN: 978-7-04-050725-6. 这些错误将在下一批重印的版本改正.
+
+	\begin{Errata}
+		\item[定义 1.5.1 的性质 \bfseries{U}.5]
+		\Orig ..., 换言之: $\emptyset \in \mathcal{U}$ ...
+		\Corr ..., 因此: $\emptyset \in \mathcal{U}$ ...
+		\Thx{感谢王宇腾指正}
+				
+		\item[命题 2.6.9 的证明第二行]
+		\Orig $= \Hom_{\mathcal{C}_2}(\cdot, GY)$
+		\Corr $= \Hom_{\mathcal{C}_1}(\cdot, GY)$
+		\Thx{感谢王炜乔指正}
+		
+		\item[引理 4.4.12 证明的第一个行内公式]
+		\Orig $\cdots = \{g \in G: gx=y\}$
+		\Corr $\cdots = \{g \in G: gx=y\} \times \{x\}$
+		\Thx{感谢朱林指正}
+		
+		\item[第五章 (5.2) 之前]
+		\Orig $(-n)r = nr$
+		\Corr $(-n)r = -nr$
+		\Thx{感谢朱林指正}
+		
+		\item[第五章习题 11]
+		\Orig $Z(P,1) = \mu(\hat{0},\hat{1}) = \sum_i (-1)^i c_i$
+		\Corr $Z(P,1) = \mu(\hat{0},\hat{1}) + 1 = \sum_{i \geq 2} (-1)^i c_i$
+		
+		\item[命题 6.8.6 的证明第二行]
+		\Orig $x-x' \in \Ker$
+		\Corr $x - (x'\,\text{的像}) \in \Ker$
+		\Thx{感谢赵新雨指正}
+		
+		\item[命题 6.9.8 的陈述最后一句]
+		\Orig ... $P$ 的一族生成元.
+		\Corr ... $P$ 的任一族给定生成元.
+		
+		\item[第六章习题 5]
+		\Orig ...作为子理想插入...
+		\Corr ...作为``因子''插入...
+%		\Thx{}
+
+		\item[\S 7.4 倒数第二个图表]
+		将图表底部的水平箭头下方的 $c(A, B)$ 改为 $c_\epsilon(A, B)$, 然后将图表之下的``并在图中省去交换约束''改为``并在图中省去结合约束''.
+		
+		\item[第七章习题 6 第五行]
+		\Orig ..., 其中 $v$ 仅是符号, ...
+		\Corr ..., 其中 $v$ 仅是符号, $\lambda \in F^{\times}$, ...
+		
+		\item[第七章习题 12]
+		\Orig $w_i = \sum_{i=1}^m a_{ij} v_j$
+		\Corr $w_i = \sum_{j=1}^m a_{ij} v_j$
+		
+		\item[第八章习题 7]
+		\Orig $\Aut_F(F(X))$
+		\Corr $\Aut_F(F(X))^{\mathrm{op}}$
+		
+		\Orig $\bigl( \begin{smallmatrix} a & b \\ c & d \end{smallmatrix} \bigr) \cdot X$
+		\Corr $X \cdot \bigl( \begin{smallmatrix} a & b \\ c & d \end{smallmatrix} \bigr)$ ...
+		
+		\item[第九章习题 3 (i)]
+		\Orig $\left( 1 - f_i(x) \right)^{q-1}$
+		\Corr $\left( 1 - f_i(x)^{q-1} \right)$
+		
+		\item[第九章习题 8]
+		\Orig 设 $p$ 为素数
+		\Corr 设 $p$ 为奇素数
+		
+		\item[第九章习题 16 的陈述]
+		\Orig $-a_3 X^2$
+		\Corr $-a_3 X$
+		
+		\item[引理 10.3.3 的陈述]
+		\Orig 乘性子集 $\varpi^{\Z}$
+		\Corr 乘性子集 $\varpi^{\Z_{\geq 0}}$
+		\Thx{感谢李隆平指正}
+		
+		\item[命题 10.3.5 的陈述]
+		\Orig $v(\varpi)^k$
+		\Corr $kv(\varpi)$
+		\Thx{感谢李隆平指正}
+		
+		\item[定理 10.4.4 证明第二行]
+		\Orig $|x|+|y|$
+		\Corr $|x+y|$
+		
+		\item[\S 10.5 后半部的列表中的 ``V'' 项]
+		将该项下第一段 ``...和 $0 \leq r < 1$ 定义赋值...'' 中的条件改成 $0 < r \leq 1$.
+		
+		将该项下最后一句 ``同理, 对于 $0 < r \leq 1$ 的情形...'' 中的条件改为 $0 < r < 1$, 然后将 ``...只和 $B(x, r)$ 有关.'' 的句号改为逗号, 补上 ``并且在 $r \in |K|$ 时与前几种赋值不等价.''
+		
+		\item[引理 10.7.6 陈述第二行]
+		\Orig $P_m$
+		\Corr $P_n$
+		
+		\item[引理 10.9.8, ``上式变为...''之后的显示公式]
+		\Orig $\cdots = X_0 p^{n+1} + \cdots$
+		\Corr $\cdots = X_{n+1} p^{n+1} + \cdots$
+		
+		\item[(10.14) 之后的显示公式]
+		将最后出现的 $x_i^{p^{-n}}$ 改为 $y_i^{p^{-n}}$.
+	\end{Errata}
+\end{document}

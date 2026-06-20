@@ -1,0 +1,190 @@
+\documentclass[UTF8,10pt,aspectratio=169]{ctexbeamer}
+\usepackage{amsmath, amssymb}
+\usepackage{newtxtext, newtxmath} % 经典试卷西文与公式字体
+
+% 极简风格设置
+\usetheme{default}
+\usecolortheme{default}
+\usefonttheme{serif} % 强制使用衬线体（宋体/Times风格），这是产生“试卷感”的关键
+\setbeamertemplate{navigation symbols}{} % 去掉右下角导航图标
+\setbeamertemplate{footline}[frame number] % 仅保留页码
+
+\begin{document}
+	
+	% ==================== 题目1 ====================
+	\begin{frame}
+		1. 在 $\triangle ABC$ 中，角 $A, B, C$ 的对边分别是 $a, b, c$，若 $\sin(B+A) - \sin 2A = \sin(A-B)$，则 $\triangle ABC$ 的形状是 \underline{\hspace{2cm}}。
+		
+		\vspace{0.5cm}
+		\pause
+		\textbf{【答案】} 等腰三角形或直角三角形
+		
+		\vspace{0.2cm}
+		\textbf{【详解】} 由题意得 $\sin(B+A) + \sin(B-A) = 2\sin A\cos A$，\\
+		所以 $\sin B\cos A = \sin A\cos A$，即 $\cos A(\sin A - \sin B) = 0$。\\
+		所以 $\cos A = 0$ 或 $\sin A = \sin B$。\\
+		因为 $0 < A < \pi$，$0 < B < \pi$，所以 $A = \frac{\pi}{2}$ 或 $A = B$。\\
+		故 $\triangle ABC$ 的形状为等腰三角形或直角三角形。
+	\end{frame}
+	
+	% ==================== 题目2 ====================
+	\begin{frame}
+		2. 在 $\triangle ABC$ 中，内角 $A, B, C$ 满足 $2\sin B \cos C = \sin A$，则 $\triangle ABC$ 的形状是 \underline{\hspace{2cm}}。
+		
+		\vspace{0.5cm}
+		\pause
+		\textbf{【答案】} 等腰三角形
+		
+		\vspace{0.2cm}
+		\textbf{【详解】} $2\sin B\cos C = \sin A = \sin(B+C) = \sin B\cos C + \cos B\sin C$，\\
+		故 $\sin B\cos C - \cos B\sin C = 0$，即 $\sin(B-C) = 0$。\\
+		因为 $B, C \in (0, \pi)$，所以 $B = C$。\\
+		故 $\triangle ABC$ 为等腰三角形。
+	\end{frame}
+	
+	% ==================== 题目3 ====================
+	\begin{frame}
+		3.（2025·天津·高考）在 $\triangle ABC$ 中，角 $A, B, C$ 的对边分别为 $a, b, c$。已知 $a\sin B = \sqrt{3}\,b\cos A$，$c - 2b = 1$，$a = \sqrt{7}$。\\
+		（1）求 $A$ 的值；\quad （2）求 $c$ 的值；\quad （3）求 $\sin(A+2B)$ 的值。
+		
+		\vspace{0.3cm}
+		\pause
+		\textbf{【答案】} （1）$\frac{\pi}{3}$ \quad （2）$3$ \quad （3）$\frac{4\sqrt{3}}{7}$
+		
+		\vspace{0.2cm}
+		\textbf{【详解】} 
+		（1）由正弦定理得 $\sin A\sin B = \sqrt{3}\sin B\cos A$，由于 $\sin B \neq 0$，得 $\tan A = \sqrt{3}$，又 $A \in (0, \pi)$，故 $A = \frac{\pi}{3}$。
+		
+		（2）由余弦定理 $a^2 = b^2 + c^2 - 2bc\cos A$，得 $7 = b^2 + (2b+1)^2 - 2b(2b+1) \cdot \frac{1}{2}$，化简为 $3b^2 + 3b - 6 = 0$，解得 $b=1$（负值舍去），故 $c=3$。
+		
+		（3）由正弦定理 $\frac{a}{\sin A} = \frac{b}{\sin B}$ 得 $\sin B = \frac{\sqrt{21}}{14}$。因为 $a > b$，故 $B$ 为锐角，$\cos B = \frac{5\sqrt{7}}{14}$。从而 $\sin 2B = \frac{5\sqrt{3}}{14}$，$\cos 2B = \frac{11}{14}$。\\
+		则 $\sin(A+2B) = \sin A\cos 2B + \cos A\sin 2B = \frac{\sqrt{3}}{2} \times \frac{11}{14} + \frac{1}{2} \times \frac{5\sqrt{3}}{14} = \frac{4\sqrt{3}}{7}$。
+	\end{frame}
+	
+	% ==================== 题目4 ====================
+	\begin{frame}
+		4.（2024·天津·高考）在 $\triangle ABC$ 中，已知 $\cos B = \frac{9}{16}$，$b = 5$，$\frac{a}{c} = \frac{2}{3}$。\\
+		（1）求 $a$ 的值；\quad （2）求 $\sin A$ 的值；\quad （3）求 $\cos(B-2A)$ 的值。
+		
+		\vspace{0.3cm}
+		\pause
+		\textbf{【答案】} （1）$4$ \quad （2）$\frac{\sqrt{7}}{4}$ \quad （3）$\frac{57}{64}$
+		
+		\vspace{0.2cm}
+		\textbf{【详解】} 
+		（1）$c = \frac{3}{2}a$，由余弦定理 $b^2 = a^2 + c^2 - 2ac\cos B$ 得 $25 = a^2 + \frac{9}{4}a^2 - 2a(\frac{3}{2}a)(\frac{9}{16})$，解得 $a=4$。
+		
+		（2）$c=6$，$\sin B = \sqrt{1-\cos^2 B} = \frac{5\sqrt{7}}{16}$。由 $\frac{a}{\sin A} = \frac{b}{\sin B}$ 得 $\sin A = \frac{\sqrt{7}}{4}$。
+		
+		（3）因 $a < b$，故 $A$ 为锐角，$\cos A = \frac{3}{4}$。$\sin 2A = \frac{3\sqrt{7}}{8}$，$\cos 2A = \frac{1}{8}$。\\
+		$\cos(B-2A) = \cos B\cos 2A + \sin B\sin 2A = \frac{9}{16} \times \frac{1}{8} + \frac{5\sqrt{7}}{16} \times \frac{3\sqrt{7}}{8} = \frac{57}{64}$。
+	\end{frame}
+	
+	% ==================== 题目5 ====================
+	\begin{frame}
+		5.（2024·新课标 I 卷）记 $\triangle ABC$ 的对边分别为 $a, b, c$，已知 $\sin C = \sqrt{2}\cos B$，$a^2 + b^2 - c^2 = \sqrt{2}\,ab$。\\
+		（1）求 $B$；\quad （2）若 $\triangle ABC$ 的面积为 $3 + \sqrt{3}$，求 $c$。
+		
+		\vspace{0.3cm}
+		\pause
+		\textbf{【答案】} （1）$\frac{\pi}{3}$ \quad （2）$2\sqrt{2}$
+		
+		\vspace{0.2cm}
+		\textbf{【详解】} 
+		（1）由余弦定理 $\cos C = \frac{a^2+b^2-c^2}{2ab} = \frac{\sqrt{2}}{2}$。因为 $C \in (0, \pi)$，故 $\sin C = \frac{\sqrt{2}}{2}$。代入已知得 $\cos B = \frac{1}{2}$，从而 $B = \frac{\pi}{3}$。
+		
+		（2）$C = \frac{\pi}{4}$，$A = \pi - \frac{\pi}{3} - \frac{\pi}{4} = \frac{5\pi}{12}$，$\sin A = \frac{\sqrt{6}+\sqrt{2}}{4}$。\\
+		由正弦定理 $a = \frac{\sqrt{3}+1}{2}c$，$b = \frac{\sqrt{6}}{2}c$。\\
+		面积 $S = \frac{1}{2}ab\sin C = \frac{3+\sqrt{3}}{8}c^2 = 3+\sqrt{3}$，解得 $c = 2\sqrt{2}$。
+	\end{frame}
+	
+	% ==================== 题目6 ====================
+	\begin{frame}
+		6.（2023·上海·高考）在 $\triangle ABC$ 中，$b = 2$。\\
+		（1）若 $A + C = 60^\circ$ 且 $a = 2c$，求 $c$；\quad （2）若 $A - C = 30^\circ$，$a = \sqrt{2}\,c\sin A$，求 $S_{\triangle ABC}$。
+		
+		\vspace{0.3cm}
+		\pause
+		\textbf{【答案】} （1）$\frac{2\sqrt{7}}{7}$ \quad （2）$\frac{3+\sqrt{3}}{3}$
+		
+		\vspace{0.2cm}
+		\textbf{【详解】} 
+		（1）$B = 180^\circ - 60^\circ = 120^\circ$。由余弦定理 $b^2 = a^2 + c^2 - 2ac\cos B$，得 $4 = 4c^2 + c^2 - 2(2c)(c)(-\frac{1}{2}) = 7c^2$，解得 $c = \frac{2\sqrt{7}}{7}$。
+		
+		（2）由正弦定理 $\frac{a}{\sin A} = \frac{c}{\sin C}$ 及已知得 $\sin C = \frac{\sqrt{2}}{2}$，因 $A>C$，故 $C=45^\circ$。由 $A-C=30^\circ$ 得 $A=75^\circ$，$B=60^\circ$。\\
+		$c = \frac{b\sin C}{\sin B} = \frac{2\sqrt{6}}{3}$，$\sin 75^\circ = \frac{\sqrt{6}+\sqrt{2}}{4}$。\\
+		$S = \frac{1}{2}bc\sin A = \frac{1}{2} \times 2 \times \frac{2\sqrt{6}}{3} \times \frac{\sqrt{6}+\sqrt{2}}{4} = \frac{3+\sqrt{3}}{3}$。
+	\end{frame}
+	
+	% ==================== 题目7 ====================
+	\begin{frame}
+		7.（2023·全国甲卷）在 $\triangle ABC$ 中，已知 $\frac{b^2+c^2-a^2}{\cos A} = 2$。\\
+		（1）求 $bc$；\quad （2）若 $\frac{a\cos B - b\cos A}{a\cos B + b\cos A} - \frac{b}{c} = 1$，求 $\triangle ABC$ 面积。
+		
+		\vspace{0.3cm}
+		\pause
+		\textbf{【答案】} （1）$1$ \quad （2）$\frac{\sqrt{3}}{4}$
+		
+		\vspace{0.2cm}
+		\textbf{【详解】} 
+		（1）由余弦定理，$\frac{2bc\cos A}{\cos A} = 2$，即 $bc = 1$。
+		
+		（2）由射影定理（或正弦定理化简），分母 $a\cos B + b\cos A = c$。\\
+		代入原式得 $\frac{a\cos B - b\cos A}{c} - \frac{b}{c} = 1$，即 $a\cos B - b\cos A - b = c$。\\
+		再将 $c = a\cos B + b\cos A$ 代入得：\\
+		$a\cos B - b\cos A - b = a\cos B + b\cos A$，化简得 $-b = 2b\cos A$。\\
+		故 $\cos A = -\frac{1}{2}$，$A = \frac{2\pi}{3}$。\\
+		面积 $S = \frac{1}{2}bc\sin A = \frac{1}{2} \times 1 \times \frac{\sqrt{3}}{2} = \frac{\sqrt{3}}{4}$。
+	\end{frame}
+	
+	% ==================== 射影定理专题课件 ====================
+	\begin{frame}
+		\begin{center}
+			{\Large \textbf{归纳提升：解三角形中的“射影定理”}}
+		\end{center}
+		\vspace{0.4cm}
+		
+		\textbf{1. 基本形式} \\
+		在 $\triangle ABC$ 中，记角 $A, B, C$ 的对边分别为 $a, b, c$，则有：
+		\begin{itemize}
+			\item $a = b \cos C + c \cos B$
+			\item $b = a \cos C + c \cos A$
+			\item $c = a \cos B + b \cos A$
+		\end{itemize}
+		
+		\vspace{0.3cm}
+		\pause
+		\textbf{2. 几何意义} \\
+		
+		如图，从顶点 $C$ 向对边 $c$ 作高线 $CD$，则 $c$ 被分成的两条线段长度分别为 $b\cos A$ 和 $a\cos B$。\\
+		即：\textbf{三角形的一条边，等于另外两条边在该边上的正射影之和}。
+		
+		\vspace{0.3cm}
+		\pause
+		\textbf{3. 教学备考建议} \\
+		\begin{itemize}
+			\item \textbf{结构识别}：若式子中出现 $a\cos B \pm b\cos A$ 等组合，应优先联想射影定理。
+			\item \textbf{辅助功能}：射影定理常作为正、余弦定理的补充，在处理分式结构的边角变换时具有“秒杀”效果。
+		\end{itemize}
+	\end{frame}
+	
+	% ==================== 题目8 ====================
+	\begin{frame}
+		8.（2023·新课标 I 卷）在 $\triangle ABC$ 中，$A + B = 3C$，$2\sin(A-C) = \sin B$。\\
+		（1）求 $\sin A$；\quad （2）设 $AB = 5$，求 $AB$ 边上的高。
+		
+		\vspace{0.3cm}
+		\pause
+		\textbf{【答案】} （1）$\frac{3\sqrt{10}}{10}$ \quad （2）$6$
+		
+		\vspace{0.2cm}
+		\textbf{【详解】} 
+		（1）由 $A+B+C=\pi$ 及 $A+B=3C$ 得 $C=\frac{\pi}{4}$。\\
+		$2\sin(A-C) = \sin(A+C)$，展开得 $2\sin A\cos C - 2\cos A\sin C = \sin A\cos C + \cos A\sin C$。由于 $\cos C = \sin C = \frac{\sqrt{2}}{2}$，得 $\sin A = 3\cos A$，即 $\tan A = 3$。故 $\sin A = \frac{3\sqrt{10}}{10}$。
+		
+		（2）$\cos A = \frac{\sqrt{10}}{10}$，$\sin B = \sin(A+C) = \frac{2\sqrt{5}}{5}$。\\
+		由正弦定理 $b = \frac{c\sin B}{\sin C} = \frac{5 \times \frac{2\sqrt{5}}{5}}{\frac{\sqrt{2}}{2}} = 2\sqrt{10}$。\\
+		设高为 $h$，则 $\frac{1}{2}ch = \frac{1}{2}bc\sin A$，得 $h = b\sin A = 2\sqrt{10} \times \frac{3}{\sqrt{10}} = 6$。
+	\end{frame}
+	
+\end{document}

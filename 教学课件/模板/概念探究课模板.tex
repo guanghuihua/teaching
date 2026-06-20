@@ -1,0 +1,399 @@
+%====================================================================
+%  高中数学概念探究课模板
+%  来源风格：4.21 复数的几何表示
+%  适合：新授课、概念课、几何直观型课件、数形结合型课件
+%====================================================================
+\documentclass[aspectratio=169,UTF8,11pt]{ctexbeamer}
+
+%==================== 宏包 ====================
+\usepackage{amsmath,amssymb,bm}
+\usepackage{mathptmx}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{array,booktabs,multirow}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\usepackage{pifont}
+\usetikzlibrary{arrows.meta,calc,positioning,shapes.callouts,shapes.geometric,fit,backgrounds}
+
+%==================== 课程信息 ====================
+\newcommand{\courseSection}{\S 这里填写章节}
+\newcommand{\courseTitle}{这里填写课题}
+\newcommand{\courseSubtitle}{这里填写副标题或课型}
+\newcommand{\courseEndText}{谢\ 谢\ 聆\ 听}
+
+%==================== 颜色系统 ====================
+\definecolor{pptred}{RGB}{220,0,0}
+\definecolor{pptblue}{RGB}{0,0,220}
+\definecolor{pptline}{RGB}{0,155,235}
+\definecolor{pptpink}{RGB}{239,214,219}
+\definecolor{pptlightblue}{RGB}{233,245,255}
+\definecolor{pptgray}{RGB}{90,90,90}
+\definecolor{schoolgreen}{RGB}{10,166,72}
+\definecolor{schoolorange}{RGB}{236,140,32}
+\definecolor{titlegreen}{RGB}{0,102,102}
+\definecolor{textgray}{RGB}{70,70,70}
+
+%==================== Beamer 外观 ====================
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{itemize item}{\color{pptblue}$\blacktriangleright$}
+\setbeamertemplate{itemize subitem}{\color{pptblue}\textbullet}
+\setbeamersize{text margin left=0.55cm,text margin right=0.55cm}
+\setlength{\parskip}{0.25em}
+
+\setbeamercolor{normal text}{fg=black,bg=white}
+\setbeamerfont{normal text}{size=\fontsize{14}{18}}
+
+%==================== 标题与提示框 ====================
+\newcommand{\TopPageTitle}[1]{%
+  \begin{tikzpicture}
+    \fill[schoolgreen] (0,0) rectangle (0.4,0.4);
+    \fill[schoolgreen!60] (0.5,-0.12) rectangle (0.82,0.2);
+    \node[anchor=west,font=\bfseries\fontsize{19}{23}\selectfont,text=schoolgreen]
+      at (1.1,0.18) {#1};
+  \end{tikzpicture}\par\vspace{0.35cm}
+}
+
+\newcommand{\SectionTitle}[1]{%
+  \begin{tikzpicture}
+    \node[
+      anchor=west,
+      inner sep=4pt,
+      text width=\dimexpr\linewidth-16pt\relax,
+      fill=titlegreen!8,
+      font=\sffamily\bfseries\fontsize{17}{21}\selectfont
+    ]
+    (title) {\hspace{6pt}\color{titlegreen}#1};
+    \fill[titlegreen] (title.south west) rectangle ++(4pt,\dimexpr\ht\strutbox+\dp\strutbox+16pt\relax);
+  \end{tikzpicture}\par\vspace{0.1cm}
+}
+
+\newcommand{\BlueTitle}[1]{%
+  {\color{pptblue}\sffamily\bfseries\fontsize{18}{22}\selectfont
+   \raisebox{1pt}{\rule{3pt}{14pt}}\ #1\par}\vspace{0.1cm}
+}
+
+\newcommand{\ExampleTag}[1]{%
+  {\color{pptblue}\sffamily\bfseries\fontsize{17}{21}\selectfont 例#1}\quad
+}
+
+\newcommand{\QuestionMarkIcon}{%
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \fill[pptblue] (0,0) circle (0.28);
+    \node[white,font=\bfseries\fontsize{18}{18}\selectfont] at (0,0) {?};
+  \end{tikzpicture}}
+
+\newcommand{\ChecklistIcon}{%
+  \begin{tikzpicture}[x=1cm,y=1cm,line cap=round,line join=round]
+    \draw[schoolgreen,line width=1.1pt] (-0.28,0.04)--(-0.08,-0.18)--(0.28,0.25);
+    \draw[schoolgreen!70!black,line width=0.8pt] (-0.35,-0.35) rectangle (0.35,0.35);
+  \end{tikzpicture}}
+
+\newcommand{\QuestionTitleWithIcon}[1]{%
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[anchor=west] at (0,0) {\scalebox{1.22}{\QuestionMarkIcon}};
+    \node[anchor=west,font=\bfseries\fontsize{18}{23}\selectfont,align=left,text width=11.4cm] at (1.0,0) {#1};
+  \end{tikzpicture}\par\vspace{0.18cm}
+}
+
+\newcommand{\ChecklistTitleWithIcon}[1]{%
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[anchor=west] at (0,0) {\scalebox{1.18}{\ChecklistIcon}};
+    \node[anchor=west,font=\bfseries\fontsize{20}{25}\selectfont,text=schoolgreen!85!black] at (1.05,0) {#1};
+  \end{tikzpicture}\par\vspace{0.2cm}
+}
+
+\newtcolorbox{calloutbox}[1][]{
+  enhanced,colback=pptlightblue,colframe=pptblue,
+  boxrule=0.5pt,arc=2mm,
+  left=2mm,right=2mm,top=1mm,bottom=1mm,#1
+}
+
+\newtcolorbox{pinknote}[1][]{
+  enhanced,colback=pptpink,colframe=black!70,
+  boxrule=0.5pt,arc=3mm,
+  left=2mm,right=2mm,top=1mm,bottom=1mm,#1
+}
+
+\newtcolorbox{keybox}[1][]{
+  enhanced,colback=yellow!15,colframe=orange!70!black,
+  boxrule=0.6pt,arc=2mm,
+  left=2mm,right=2mm,top=1mm,bottom=1mm,#1
+}
+
+%==================== 通用图形组件 ====================
+\newcommand{\CorrespondenceFigure}[4]{%
+\begin{tikzpicture}[>=Stealth]
+  \draw[schoolgreen!60,rounded corners=10pt,line width=1.2pt,fill=schoolgreen!5]
+    (-6.3,-1.9) rectangle (6.3,1.5);
+  \node[font=\bfseries\fontsize{16}{20}\selectfont,text=pptred]
+    at (0,0.95) {#1};
+  \node[draw=pptblue,line width=1pt,rounded corners=4pt,
+        minimum width=2.8cm,minimum height=0.9cm,
+        font=\fontsize{15}{19}\selectfont] (L) at (-3,-0.35) {#2};
+  \node[draw=pptblue,line width=1pt,rounded corners=4pt,
+        minimum width=3.4cm,minimum height=0.9cm,
+        font=\fontsize{15}{19}\selectfont] (R) at (3,-0.35) {#3};
+  \draw[<->,pptblue,line width=1.2pt] (L.east) -- (R.west)
+    node[midway,above=3pt,inner sep=1pt,font=\small,text=pptblue]{一一对应};
+  \node[font=\bfseries,text=pptred] at (-3,-1.45) {#4};
+  \node[font=\bfseries,text=pptred] at (3,-1.45) {（形）};
+\end{tikzpicture}}
+
+\newcommand{\AxisFigure}{%
+\begin{tikzpicture}[x=0.85cm,y=0.85cm,>=Stealth]
+  \draw[->,line width=0.9pt] (-0.5,0)--(5.5,0) node[right]{$x$};
+  \foreach \x in {0,1,2,3,4}
+    \draw (\x,0.1)--(\x,-0.1) node[below]{\small $\x$};
+  \draw[pptline,line width=1.6pt,-{Stealth[length=3mm,width=2.2mm]}] (0,0)--(1,0);
+  \node[above] at (0.5,0) {\small 单位向量};
+  \draw[pptred,line width=1.6pt,-{Stealth[length=3mm,width=2.2mm]}] (0,-0.5)--(3,-0.5);
+  \node[below] at (1.5,-0.5) {\small 目标对象};
+\end{tikzpicture}}
+
+\newcommand{\CoordinatePlaneFigure}{%
+\begin{tikzpicture}[x=0.85cm,y=0.85cm,>=Stealth]
+  \draw[->,line width=0.9pt] (-0.3,0)--(4.6,0) node[below]{$x$};
+  \draw[->,line width=0.9pt] (0,-0.3)--(0,4.4) node[left]{$y$};
+  \coordinate (P) at (3.2,2.8);
+  \draw[densely dashed] (0,2.8)--(P)--(3.2,0);
+  \fill (P) circle (1.5pt) node[above right=-1pt]{$P(a,b)$};
+  \node[below left] at (0,0) {$O$};
+  \node[below] at (3.2,0) {$a$};
+  \node[left] at (0,2.8) {$b$};
+\end{tikzpicture}}
+
+%==================== 首页与结束页 ====================
+\newcommand{\makecover}{%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[white] (current page.south west) rectangle (current page.north east);
+      \fill[schoolgreen]
+        ([yshift=-2.25cm]current page.north west)
+        rectangle
+        ([yshift=1.45cm]current page.south east);
+      \IfFileExists{logo.png}{%
+        \node at ([yshift=-1.7cm]current page.north)
+          {\includegraphics[width=3.0cm]{logo.png}};
+      }{%
+        \node at ([yshift=-1.7cm]current page.north)
+          {\color{white}\sffamily\bfseries\fontsize{22}{26}\selectfont 高中数学};
+      }
+      \node[anchor=center] at ([yshift=-5.65cm]current page.north) {%
+        {\fontsize{34}{40}\selectfont\bfseries
+          \textcolor{schoolorange}{\courseSection}\hspace{0.35em}
+          \textcolor{white}{\courseTitle}}%
+      };
+      \draw[schoolorange,line width=0.9pt]
+        ([xshift=-2.65cm,yshift=-6.45cm]current page.north)
+        --
+        ([xshift= 2.85cm,yshift=-6.45cm]current page.north);
+      \node[white,font=\fontsize{14}{18}\selectfont] at ([yshift=-7.0cm]current page.north)
+        {\courseSubtitle};
+    \end{tikzpicture}
+  \end{frame}
+}
+
+\newcommand{\makeendpage}{%
+  \begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[schoolgreen] (current page.south west) rectangle (current page.north east);
+    \node[white,font=\fontsize{36}{42}\selectfont\bfseries] at (current page.center) {\courseEndText};
+    \node[schoolorange,font=\fontsize{18}{22}\selectfont\sffamily]
+      at ([yshift=-1.5cm]current page.center) {Thanks for your attention};
+  \end{tikzpicture}
+  \end{frame}
+}
+
+\title{\courseTitle}
+\subtitle{\courseSection}
+\author{}
+\institute{}
+\date{}
+
+\begin{document}
+
+\makecover
+
+%==================== 1. 类比引入 ====================
+\begin{frame}[t]
+\vspace{0.15cm}
+\TopPageTitle{类比联想\ \ 探究新知}
+
+{\color{pptblue}\bfseries\fontsize{17}{21}\selectfont 问题1\ \ 已有知识中，类似对象是怎样表示的？}
+
+\pause
+\vspace{0.4cm}
+\begin{center}
+\CorrespondenceFigure{这里填写核心类比句}{已有对象}{几何对象}{（数）}
+\end{center}
+\end{frame}
+
+%==================== 2. 过渡问题 ====================
+\begin{frame}[t]
+\vspace{0.15cm}
+\TopPageTitle{从旧知到新知}
+
+\begin{columns}[T,totalwidth=\textwidth]
+\column{0.50\textwidth}
+\vspace{0.2cm}
+这里填写旧知识的表达方式。例如：
+\[
+  \text{旧对象} \longleftrightarrow \text{已有几何表示}
+\]
+
+\pause
+\begin{calloutbox}
+\centering
+旧知识的核心经验\\[0.2em]
+$\longrightarrow$\\[0.2em]
+新知识的表示需求
+\end{calloutbox}
+
+\pause
+{\color{pptblue}\bfseries 过渡}：新对象能否也找到一个自然的几何表示？
+
+\column{0.45\textwidth}
+\vspace{0.3cm}
+\begin{center}
+{\color{pptred}\bfseries\small 旧知识图示}\\[0.3cm]
+\AxisFigure
+\end{center}
+\end{columns}
+\end{frame}
+
+%==================== 3. 概念建立 ====================
+\begin{frame}[t]
+\vspace{0.15cm}
+\TopPageTitle{建立概念\ \ 明确对应}
+
+\QuestionTitleWithIcon{确定一个新对象，需要哪些基本要素？}
+
+\pause
+\begin{columns}[T,totalwidth=\textwidth]
+\column{0.52\textwidth}
+\BlueTitle{代数信息}
+
+这里填写代数表达，例如：
+\[
+  \text{对象}=a+b\cdot \text{基本单位}.
+\]
+
+\pause
+\begin{keybox}
+\centering
+关键：把代数表达中的信息转化为几何位置或几何关系。
+\end{keybox}
+
+\column{0.43\textwidth}
+\begin{center}
+\CoordinatePlaneFigure
+\end{center}
+\end{columns}
+\end{frame}
+
+%==================== 4. 例题页 ====================
+\begin{frame}[t]
+\vspace{0.15cm}
+\TopPageTitle{例题训练\ \ 巩固表示}
+
+\ExampleTag{1}
+这里填写例题题目。
+
+\vspace{0.3cm}
+\begin{center}
+\CoordinatePlaneFigure
+\end{center}
+
+\pause
+\begin{calloutbox}
+\textbf{解题要点}：这里填写从概念到方法的关键一步。
+\end{calloutbox}
+\end{frame}
+
+%==================== 5. 变式与提升 ====================
+\begin{frame}[t]
+\vspace{0.15cm}
+\TopPageTitle{变式提升\ \ 形成方法}
+
+\ChecklistTitleWithIcon{本题背后的结构}
+
+\begin{enumerate}
+  \item \textbf{识别对象}：这里填写学生首先要看出的结构。
+  \pause
+  \item \textbf{选择工具}：这里填写使用的数学工具。
+  \pause
+  \item \textbf{注意边界}：这里填写容易误用或漏掉的条件。
+\end{enumerate}
+
+\pause
+\begin{pinknote}
+教学提醒：不要只告诉学生“这类题这样做”，要说明为什么这个工具适合这个结构。
+\end{pinknote}
+\end{frame}
+
+%==================== 6. 小结页 ====================
+\begin{frame}[t]
+\vspace{0.08cm}
+\TopPageTitle{小结提升\ \ 形成经验}
+
+\vspace{0.1cm}
+\begin{center}
+\resizebox{0.88\textwidth}{!}{%
+\begin{tikzpicture}[x=0.82cm,y=0.82cm,>=Stealth]
+  \draw[rounded corners=0.36cm,draw=schoolgreen!65!black,line width=1.1pt] (0,0) rectangle (13.0,5.8);
+
+  \node[draw=schoolgreen!30,fill=schoolgreen!10,rounded corners=0.18cm,
+        minimum width=4.55cm,minimum height=1.0cm,
+        font=\fontsize{18}{24}\selectfont] (topbox) at (3.2,4.55) {已有知识};
+  \node[draw=schoolgreen!30,fill=schoolgreen!10,rounded corners=0.18cm,
+        minimum width=4.55cm,minimum height=1.0cm,
+        font=\fontsize{18}{24}\selectfont] (botbox) at (3.2,1.25) {新知识};
+
+  \draw[schoolgreen!75,line width=0.18cm,-{Stealth[length=6mm,width=5mm]}] (3.2,3.95)--(3.2,1.95);
+  \node[text=schoolorange!85!black,font=\bfseries\fontsize{15}{20}\selectfont,anchor=east] at (2.4,2.95) {类比};
+  \node[text=schoolorange!85!black,font=\bfseries\fontsize{15}{20}\selectfont,anchor=west,align=left] at (4.0,2.95) {数形\\结合};
+
+  \node[draw=schoolorange!70!black,rounded corners=0.16cm,
+        minimum width=1.7cm,minimum height=1.0cm,
+        font=\bfseries\fontsize{18}{24}\selectfont,text=schoolorange!85!black]
+        (spec) at (8.4,4.6) {特殊};
+  \node[draw=schoolorange!70!black,rounded corners=0.16cm,
+        minimum width=1.7cm,minimum height=1.0cm,
+        font=\bfseries\fontsize{18}{24}\selectfont,text=schoolorange!85!black]
+        (gene) at (8.4,1.55) {一般};
+  \draw[schoolorange!80!black,line width=0.16cm,-{Stealth[length=5.5mm,width=4.5mm]}] (8.4,4.0)--(8.4,2.15);
+
+  \node[draw=schoolorange!70!black,rounded corners=0.16cm,
+        minimum width=1.75cm,minimum height=0.9cm,
+        font=\bfseries\fontsize{15}{19}\selectfont,text=schoolorange!85!black,align=center] at (11.0,4.6) {直观\\想象};
+  \node[draw=schoolorange!70!black,rounded corners=0.16cm,
+        minimum width=1.75cm,minimum height=0.9cm,
+        font=\bfseries\fontsize{15}{19}\selectfont,text=schoolorange!85!black,align=center] at (11.0,3.05) {逻辑\\推理};
+  \node[draw=schoolorange!70!black,rounded corners=0.16cm,
+        minimum width=1.75cm,minimum height=0.9cm,
+        font=\bfseries\fontsize{15}{19}\selectfont,text=schoolorange!85!black,align=center] at (11.0,1.5) {数学\\抽象};
+\end{tikzpicture}}
+\end{center}
+\end{frame}
+
+%==================== 7. 选做页 ====================
+\begin{frame}[plain]
+\begin{center}
+\begin{tikzpicture}[x=0.82cm,y=0.82cm]
+  \draw[rounded corners=0.42cm,draw=schoolgreen!50!black,line width=0.9pt,fill=schoolgreen!5] (0,0.35) rectangle (14.0,6.15);
+  \fill[schoolgreen!75] (4.5,5.95) rectangle (9.5,7.0);
+  \node[text=white,font=\bfseries\fontsize{22}{28}\selectfont] at (7.0,6.47) {选\ 做};
+  \node[align=center,text width=12.6cm,font=\fontsize{18}{24}\selectfont] at (7.0,3.7)
+  {这里填写适合课后探索或网络画板验证的开放任务。};
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\makeendpage
+
+\end{document}
+

@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "833027b0982a20f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d16402737b549a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20a461f899477393",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "自己学习和教学的思考/主动钻研与自研式学习.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "主动钻研与自研式学习"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "28c358c813a0fb91",
+    "type": "split",
+    "children": [
+      {
+        "id": "90ce64141a013989",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8012ae6ad03a27ab",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "612360a713bd4cb2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "b9ac3a97b4314fd6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fa1608a0d2b2a877",
+    "type": "split",
+    "children": [
+      {
+        "id": "8a59f015b86b6acf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "137a823ca09b5734",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "教学课件/4.24讲评试卷/平面向量的线性运算.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "平面向量的线性运算 的反向链接列表"
+            }
+          },
+          {
+            "id": "3110d6491b1c455d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "教学课件/4.24讲评试卷/平面向量的线性运算.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "平面向量的线性运算 的出链列表"
+            }
+          },
+          {
+            "id": "7df8df15b9873109",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "c799168588cd7a84",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "907e3181744401d2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "教学课件/4.24讲评试卷/平面向量的线性运算.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "平面向量的线性运算 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "20a461f899477393",
+  "lastOpenFiles": [
+    "自己学习和教学的思考/自学.jpg",
+    "自己学习和教学的思考/套路与工具的边界在哪里？.md",
+    "自己学习和教学的思考/陪练、反馈与创造状态.md",
+    "自己学习和教学的思考/教学思考索引.md",
+    "自己学习和教学的思考/本科数学与高中数学.jpg",
+    "自己学习和教学的思考/08_读证明时不知道怎么想到的.md",
+    "自己学习和教学的思考/07_中西数学史与文化焦虑.md",
+    "自己学习和教学的思考/06_费曼式理解：不能创造就没有真正理解.md",
+    "自己学习和教学的思考/05_入静、减少内耗与数学思考.md",
+    "自己学习和教学的思考/04_费力与痛苦：effort 和 suffering.md",
+    "自己学习和教学的思考/03_数学家的工作方式与持续专注.md",
+    "自己学习和教学的思考/02_休息与数学学习的能量管理.md",
+    "自己学习和教学的思考/01_学数学费力不是天赋不足.md",
+    "教学课件/模板/概念探究课模板说明.md",
+    "教学思考/休息、情绪与深度思考.md",
+    "自己学习和教学的思考/00_索引.md",
+    "自己学习和教学的思考/本科数学做题为什么不如高中：见识、洞察与训练边界.md",
+    "自己学习和教学的思考/休息、情绪与深度思考.md",
+    "自己学习和教学的思考/主动钻研与自研式学习.md",
+    "自己学习和教学的思考",
+    "教学课件/模板/极简试卷感讲评课模板说明.md",
+    "00_开始这里.md",
+    "教学思考/主动钻研与自研式学习.md",
+    "教学思考/套路与工具的边界在哪里？.md",
+    "教学思考/陪练、反馈与创造状态.md",
+    "教学思考/教学思考索引.md",
+    "教学思考/本科数学做题为什么不如高中：见识、洞察与训练边界.md",
+    "教学思考/自学.jpg",
+    "教学思考/本科数学与高中数学.jpg",
+    "教学课件/4.24讲评试卷/平面向量的线性运算.pdf",
+    "圆锥曲线结论/王老师.tex",
+    "教学课件/模板/概念探究课模板.tex",
+    "教学课件/4.21复数的几何表示/复数的几何表示.synctex(busy)",
+    "教学课件/4.21复数的几何表示/复数的几何表示.bbl",
+    "教学课件/4.21复数的几何表示/复数的几何表示.blg",
+    "教学课件/4.21复数的几何表示/复数的几何表示.synctex.gz",
+    "教学课件/4.21复数的几何表示/复数的几何表示.snm",
+    "教学课件/4.21复数的几何表示/复数的几何表示.toc",
+    "教学课件/4.24讲评试卷/微信图片_20260423202904_99_12.jpg",
+    "04_题库积累/好题索引.md",
+    "教学课件/4.24讲评试卷/微信图片_20260423211513_106_12.jpg",
+    "教学课件/4.24讲评试卷/微信图片_20260423211512_105_12.jpg",
+    "教学课件/4.24讲评试卷/微信图片_20260423211511_104_12.jpg",
+    "教学课件/4.24讲评试卷/微信图片_20260423211509_103_12.jpg",
+    "教学课件/4.24讲评试卷/微信图片_20260423211507_101_12.jpg"
+  ]
+}

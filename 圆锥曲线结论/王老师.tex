@@ -1,0 +1,774 @@
+\documentclass[UTF8]{ctexart}
+
+\usepackage{amsmath,amssymb}
+\usepackage[a4paper,margin=18mm]{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.4em}
+
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows,angles,quotes,intersections}
+
+\begin{document}
+	
+	
+	\section{圆锥曲线核心图形总结}
+	
+	\subsection{圆锥曲线的统一定义}
+	
+	圆锥曲线可以统一理解为：
+	平面内动点 $P$ 到定点 $F$ 的距离与到定直线 $l$ 的距离之比为常数 $e$，即
+	\[
+	\frac{PF}{d(P,l)}=e.
+	\]
+	其中 $e$ 称为离心率。
+	
+	\[
+	\begin{cases}
+		0<e<1, & \text{椭圆},\\
+		e=1, & \text{抛物线},\\
+		e>1, & \text{双曲线}.
+	\end{cases}
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.9,>=stealth]
+			\draw[->] (-0.8,0)--(4.4,0) node[right]{$x$};
+			\draw[->] (0,-0.8)--(0,3.0) node[above]{$y$};
+			
+			\coordinate (F) at (0.6,0.8);
+			\coordinate (P) at (2.1,2.1);
+			\coordinate (H) at (3.5,2.1);
+			
+			\draw[dashed,thick] (3.5,-0.5)--(3.5,2.8) node[above]{$l$};
+			\draw[thick] (F)--(P) node[midway,above left]{$PF$};
+			\draw[thick] (P)--(H) node[midway,above]{$d(P,l)$};
+			\draw[fill] (F) circle (1.5pt) node[below]{$F$};
+			\draw[fill] (P) circle (1.5pt) node[above]{$P$};
+			\draw[fill] (H) circle (1pt) node[right]{$H$};
+			
+			\draw ($(H)+(0,0.18)$)--($(H)+(-0.18,0.18)$)--($(H)+(-0.18,0)$);
+			
+			\node at (1.9,-0.55) {$\displaystyle \frac{PF}{d(P,l)}=e$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{圆锥截线与离心率}
+	
+	设圆锥母线与轴的夹角为 $\alpha$，截面与圆锥轴的夹角为 $\beta$，则有
+	\[
+	e=\frac{\cos\beta}{\cos\alpha}.
+	\]
+	
+	因此：
+	\[
+	\begin{cases}
+		\beta>\alpha, & e<1,\quad \text{椭圆},\\
+		\beta=\alpha, & e=1,\quad \text{抛物线},\\
+		\beta<\alpha, & e>1,\quad \text{双曲线}.
+	\end{cases}
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.75,>=stealth]
+			
+			% 椭圆截线
+			\begin{scope}[xshift=0cm]
+				\draw[thick] (0,2.2)--(-1.5,-1.2);
+				\draw[thick] (0,2.2)--(1.5,-1.2);
+				\draw[dashed] (0,2.2)--(0,-1.2);
+				\draw (0,-1.2) ellipse (1.5 and 0.28);
+				\draw[red,thick] (-1.0,0.25)--(1.05,0.65);
+				\node at (0,-1.85) {$\beta>\alpha$};
+				\node at (0,-2.35) {$e<1,\ \text{椭圆}$};
+			\end{scope}
+			
+			% 抛物线截线
+			\begin{scope}[xshift=4.6cm]
+				\draw[thick] (0,2.2)--(-1.5,-1.2);
+				\draw[thick] (0,2.2)--(1.5,-1.2);
+				\draw[dashed] (0,2.2)--(0,-1.2);
+				\draw (0,-1.2) ellipse (1.5 and 0.28);
+				\draw[red,thick] (-1.3,-0.7)--(0.25,2.0);
+				\node at (0,-1.85) {$\beta=\alpha$};
+				\node at (0,-2.35) {$e=1,\ \text{抛物线}$};
+			\end{scope}
+			
+			% 双曲线截线
+			\begin{scope}[xshift=9.2cm]
+				\draw[thick] (0,2.2)--(-1.5,-1.2);
+				\draw[thick] (0,2.2)--(1.5,-1.2);
+				\draw[dashed] (0,2.2)--(0,-1.2);
+				\draw (0,-1.2) ellipse (1.5 and 0.28);
+				\draw[red,thick] (-1.35,1.3)--(1.35,-0.3);
+				\node at (0,-1.85) {$\beta<\alpha$};
+				\node at (0,-2.35) {$e>1,\ \text{双曲线}$};
+			\end{scope}
+			
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{椭圆的第一定义}
+	
+	椭圆是平面内到两个定点 $F_1,F_2$ 的距离之和为常数 $2a$ 的点的轨迹：
+	\[
+	PF_1+PF_2=2a.
+	\]
+	其中
+	\[
+	F_1F_2=2c,\qquad c^2=a^2-b^2,\qquad e=\frac{c}{a}.
+	\]
+	
+	标准方程为
+	\[
+	\frac{x^2}{a^2}+\frac{y^2}{b^2}=1,\qquad a>b>0.
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.9,>=stealth]
+			\def\a{3}
+			\def\b{1.6}
+			\def\c{2.35}
+			\pgfmathsetmacro{\px}{1.15}
+			\pgfmathsetmacro{\py}{\b*sqrt(1-\px*\px/(\a*\a))}
+			\pgfmathsetmacro{\dir}{\a*\a/\c}
+			
+			\draw[->] (-3.8,0)--(4.2,0) node[right]{$x$};
+			\draw[->] (0,-2.1)--(0,2.2) node[above]{$y$};
+			
+			\draw[thick] (0,0) ellipse (\a cm and \b cm);
+			
+			\coordinate (F1) at (-\c,0);
+			\coordinate (F2) at (\c,0);
+			\coordinate (P) at (\px,\py);
+			
+			\draw[fill] (F1) circle (1.5pt) node[below]{$F_1$};
+			\draw[fill] (F2) circle (1.5pt) node[below]{$F_2$};
+			\draw[fill] (P) circle (1.5pt) node[above]{$P(x_0,y_0)$};
+			
+			\draw[thick,blue] (P)--(F1) node[midway,above left]{$PF_1$};
+			\draw[thick,blue] (P)--(F2) node[midway,above right]{$PF_2$};
+			
+			\draw[dashed,red] (\dir,-2.0)--(\dir,2.0) node[above]{$x=\frac{a^2}{c}$};
+			
+			\node at (0,-2.6) {$PF_1+PF_2=2a$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{椭圆的焦半径公式}
+	
+	若 $P(x_0,y_0)$ 在椭圆
+	\[
+	\frac{x^2}{a^2}+\frac{y^2}{b^2}=1
+	\]
+	上，则有
+	\[
+	PF_1=a+ex_0,\qquad PF_2=a-ex_0.
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.9,>=stealth]
+			\def\a{3}
+			\def\b{1.5}
+			\def\c{2.4}
+			\pgfmathsetmacro{\px}{1.5}
+			\pgfmathsetmacro{\py}{\b*sqrt(1-\px*\px/(\a*\a))}
+			
+			\draw[->] (-3.7,0)--(3.9,0) node[right]{$x$};
+			\draw[->] (0,-2.0)--(0,2.1) node[above]{$y$};
+			\draw[thick] (0,0) ellipse (\a cm and \b cm);
+			
+			\coordinate (F1) at (-\c,0);
+			\coordinate (F2) at (\c,0);
+			\coordinate (P) at (\px,\py);
+			
+			\draw[fill] (F1) circle (1.5pt) node[below]{$F_1(-c,0)$};
+			\draw[fill] (F2) circle (1.5pt) node[below]{$F_2(c,0)$};
+			\draw[fill] (P) circle (1.5pt) node[above]{$P(x_0,y_0)$};
+			
+			\draw[blue,thick] (F1)--(P) node[midway,above left]{$a+ex_0$};
+			\draw[blue,thick] (F2)--(P) node[midway,above right]{$a-ex_0$};
+			
+			\draw[dashed] (P)--(\px,0) node[below]{$x_0$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{椭圆的焦点三角形}
+	
+	设 $P$ 是椭圆上一点，连接 $PF_1,PF_2$ 得到焦点三角形
+	\[
+	\triangle PF_1F_2.
+	\]
+	若
+	\[
+	\angle F_1PF_2=\theta,
+	\]
+	则
+	\[
+	S_{\triangle PF_1F_2}=b^2\tan\frac{\theta}{2}.
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.95,>=stealth]
+			\def\a{3}
+			\def\b{1.6}
+			\def\c{2.35}
+			
+			\coordinate (F1) at (-\c,0);
+			\coordinate (F2) at (\c,0);
+			\coordinate (P) at (0.65,1.55);
+			
+			\draw[->] (-3.7,0)--(3.8,0) node[right]{$x$};
+			\draw[->] (0,-2.0)--(0,2.3) node[above]{$y$};
+			\draw[thick] (0,0) ellipse (\a cm and \b cm);
+			
+			\draw[fill] (F1) circle (1.5pt) node[below]{$F_1$};
+			\draw[fill] (F2) circle (1.5pt) node[below]{$F_2$};
+			\draw[fill] (P) circle (1.5pt) node[above]{$P$};
+			
+			\draw[blue,thick] (P)--(F1)--(F2)--cycle;
+			
+			\pic [draw, "$\theta$", angle radius=0.45cm, angle eccentricity=1.35]
+			{angle=F1--P--F2};
+			
+			\node at (0,-2.55) {$S_{\triangle PF_1F_2}=b^2\tan\dfrac{\theta}{2}$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{椭圆的焦点弦}
+	
+	过焦点的弦称为焦点弦。设焦点弦 $AB$ 过焦点 $F$，且与长轴夹角为 $\theta$。
+	令
+	\[
+	p=\frac{b^2}{a},
+	\]
+	则椭圆焦点弦长可以写成
+	\[
+	AB=\frac{2p}{1-e^2\cos^2\theta}.
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.95,>=stealth]
+			\def\a{3}
+			\def\b{1.55}
+			\def\c{2.35}
+			
+			\draw[->] (-3.7,0)--(3.8,0) node[right]{$x$};
+			\draw[->] (0,-2.0)--(0,2.1) node[above]{$y$};
+			\draw[thick] (0,0) ellipse (\a cm and \b cm);
+			
+			\coordinate (F) at (\c,0);
+			\coordinate (A) at (-0.55,1.55);
+			\coordinate (B) at (2.88,-0.32);
+			
+			\draw[fill] (F) circle (1.5pt) node[below]{$F$};
+			\draw[fill] (A) circle (1.5pt) node[above]{$A$};
+			\draw[fill] (B) circle (1.5pt) node[right]{$B$};
+			
+			\draw[red,thick] (A)--(B);
+			\draw[dashed] (F)--(3.35,0);
+			
+			\pic [draw, "$\theta$", angle radius=0.55cm, angle eccentricity=1.25]
+			{angle=B--F--(3.35,0)};
+			
+			\node at (0,-2.55) {$AB=\dfrac{2p}{1-e^2\cos^2\theta}$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{椭圆的切线与光学性质}
+	
+	椭圆
+	\[
+	\frac{x^2}{a^2}+\frac{y^2}{b^2}=1
+	\]
+	在点 $P(x_0,y_0)$ 处的切线方程为
+	\[
+	\frac{x_0x}{a^2}+\frac{y_0y}{b^2}=1.
+	\]
+	
+	椭圆的光学性质是：从一个焦点发出的光线经椭圆反射后，会经过另一个焦点。
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.95,>=stealth]
+			\def\a{3}
+			\def\b{1.5}
+			\def\c{2.35}
+			
+			\coordinate (F1) at (-\c,0);
+			\coordinate (F2) at (\c,0);
+			\coordinate (P) at (0.8,1.45);
+			
+			\draw[->] (-3.7,0)--(3.8,0) node[right]{$x$};
+			\draw[->] (0,-2.0)--(0,2.1) node[above]{$y$};
+			\draw[thick] (0,0) ellipse (\a cm and \b cm);
+			
+			\draw[fill] (F1) circle (1.5pt) node[below]{$F_1$};
+			\draw[fill] (F2) circle (1.5pt) node[below]{$F_2$};
+			\draw[fill] (P) circle (1.5pt) node[above]{$P$};
+			
+			\draw[blue,thick,->] (F1)--(P);
+			\draw[blue,thick,->] (P)--(F2);
+			
+			% 切线近似画法
+			\draw[red,thick] (-1.1,2.1)--(2.7,0.55) node[right]{切线};
+			
+			\node at (0,-2.55) {椭圆反射性质：$F_1\to P\to F_2$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{双曲线的第一定义}
+	
+	双曲线是平面内到两个定点 $F_1,F_2$ 的距离之差的绝对值为常数 $2a$ 的点的轨迹：
+	\[
+	|PF_1-PF_2|=2a.
+	\]
+	标准方程为
+	\[
+	\frac{x^2}{a^2}-\frac{y^2}{b^2}=1,
+	\]
+	其中
+	\[
+	c^2=a^2+b^2,\qquad e=\frac{c}{a}>1.
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.9,>=stealth]
+			\def\a{1.35}
+			\def\b{1.05}
+			\def\c{1.7}
+			
+			\draw[->] (-4,0)--(4,0) node[right]{$x$};
+			\draw[->] (0,-2.7)--(0,2.7) node[above]{$y$};
+			
+			\draw[dashed] (-3.4,{-\b/\a*3.4})--(3.4,{\b/\a*3.4});
+			\draw[dashed] (-3.4,{\b/\a*3.4})--(3.4,{-\b/\a*3.4});
+			
+			\draw[thick,domain=\a:3.6,samples=100,smooth]
+			plot (\x,{\b*sqrt(\x*\x/(\a*\a)-1)});
+			\draw[thick,domain=\a:3.6,samples=100,smooth]
+			plot (\x,{-\b*sqrt(\x*\x/(\a*\a)-1)});
+			\draw[thick,domain=-3.6:-\a,samples=100,smooth]
+			plot (\x,{\b*sqrt(\x*\x/(\a*\a)-1)});
+			\draw[thick,domain=-3.6:-\a,samples=100,smooth]
+			plot (\x,{-\b*sqrt(\x*\x/(\a*\a)-1)});
+			
+			\coordinate (F1) at (-\c,0);
+			\coordinate (F2) at (\c,0);
+			\coordinate (P) at (2.5,1.45);
+			
+			\draw[fill] (F1) circle (1.5pt) node[below]{$F_1$};
+			\draw[fill] (F2) circle (1.5pt) node[below]{$F_2$};
+			\draw[fill] (P) circle (1.5pt) node[above]{$P$};
+			
+			\draw[blue,thick] (P)--(F1) node[midway,above left]{$PF_1$};
+			\draw[blue,thick] (P)--(F2) node[midway,below right]{$PF_2$};
+			
+			\node at (0,-3.1) {$|PF_1-PF_2|=2a$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{双曲线的焦点三角形}
+	
+	设 $P$ 是双曲线上一点，且
+	\[
+	\angle F_1PF_2=\theta.
+	\]
+	则焦点三角形面积公式为
+	\[
+	S_{\triangle PF_1F_2}=b^2\cot\frac{\theta}{2}.
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.95,>=stealth]
+			\coordinate (F1) at (-2.2,0);
+			\coordinate (F2) at (2.2,0);
+			\coordinate (P) at (3.0,1.7);
+			
+			\draw[->] (-3.2,0)--(3.8,0) node[right]{$x$};
+			\draw[->] (0,-1.6)--(0,2.4) node[above]{$y$};
+			
+			\draw[thick,domain=1.2:3.4,samples=100,smooth]
+			plot (\x,{0.85*sqrt(\x*\x/1.44-1)});
+			\draw[thick,domain=1.2:3.4,samples=100,smooth]
+			plot (\x,{-0.85*sqrt(\x*\x/1.44-1)});
+			
+			\draw[fill] (F1) circle (1.5pt) node[below]{$F_1$};
+			\draw[fill] (F2) circle (1.5pt) node[below]{$F_2$};
+			\draw[fill] (P) circle (1.5pt) node[above]{$P$};
+			
+			\draw[blue,thick] (P)--(F1)--(F2)--cycle;
+			
+			\pic [draw, "$\theta$", angle radius=0.45cm, angle eccentricity=1.35]
+			{angle=F1--P--F2};
+			
+			\node at (0,-2.05) {$S_{\triangle PF_1F_2}=b^2\cot\dfrac{\theta}{2}$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{双曲线的焦点弦}
+	
+	双曲线焦点弦问题常与离心率、渐近线、焦半径结合考查。
+	
+	对于
+	\[
+	\frac{x^2}{a^2}-\frac{y^2}{b^2}=1,
+	\]
+	过焦点的直线与双曲线交于 $A,B$，可利用焦半径公式、余弦定理和面积公式处理。
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.9,>=stealth]
+			\def\a{1.3}
+			\def\b{1.0}
+			\def\c{1.65}
+			
+			\draw[->] (-4,0)--(4,0) node[right]{$x$};
+			\draw[->] (0,-2.5)--(0,2.5) node[above]{$y$};
+			
+			\draw[dashed] (-3.5,{-\b/\a*3.5})--(3.5,{\b/\a*3.5});
+			\draw[dashed] (-3.5,{\b/\a*3.5})--(3.5,{-\b/\a*3.5});
+			
+			\draw[thick,domain=1.3:3.5,samples=100,smooth]
+			plot (\x,{\b*sqrt(\x*\x/(\a*\a)-1)});
+			\draw[thick,domain=1.3:3.5,samples=100,smooth]
+			plot (\x,{-\b*sqrt(\x*\x/(\a*\a)-1)});
+			
+			\coordinate (F) at (\c,0);
+			\coordinate (A) at (2.2,1.15);
+			\coordinate (B) at (3.35,-2.05);
+			
+			\draw[fill] (F) circle (1.5pt) node[below]{$F$};
+			\draw[fill] (A) circle (1.5pt) node[above]{$A$};
+			\draw[fill] (B) circle (1.5pt) node[right]{$B$};
+			
+			\draw[red,thick] (A)--(B);
+			\draw[dashed] (F)--(3.3,0);
+			
+			\pic [draw, "$\theta$", angle radius=0.5cm, angle eccentricity=1.25]
+			{angle=(3.3,0)--F--A};
+			
+			\node at (0,-2.95) {过焦点弦：常结合 $e=\dfrac ca$ 与渐近线斜率 $\pm\dfrac ba$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{抛物线的定义}
+	
+	以
+	\[
+	y^2=2px\qquad (p>0)
+	\]
+	为例，其焦点为
+	\[
+	F\left(\frac p2,0\right),
+	\]
+	准线为
+	\[
+	x=-\frac p2.
+	\]
+	
+	抛物线上的点满足
+	\[
+	PF=d(P,l).
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.85,>=stealth]
+			\def\p{2}
+			\pgfmathsetmacro{\f}{\p/2}
+			\pgfmathsetmacro{\px}{0.72}
+			\pgfmathsetmacro{\py}{1.7}
+			
+			\draw[->] (-2,0)--(4.2,0) node[right]{$x$};
+			\draw[->] (0,-2.7)--(0,2.7) node[above]{$y$};
+			
+			\draw[thick,domain=-2.4:2.4,samples=100,smooth]
+			plot ({\x*\x/(2*\p)},\x);
+			
+			\draw[dashed,red] (-\f,-2.5)--(-\f,2.5) node[above]{$x=-\frac p2$};
+			
+			\coordinate (F) at (\f,0);
+			\coordinate (P) at (\px,\py);
+			\coordinate (H) at (-\f,\py);
+			
+			\draw[fill] (F) circle (1.5pt) node[below]{$F(\frac p2,0)$};
+			\draw[fill] (P) circle (1.5pt) node[above]{$P$};
+			\draw[fill] (H) circle (1pt) node[left]{$H$};
+			
+			\draw[blue,thick] (P)--(F) node[midway,below right]{$PF$};
+			\draw[blue,thick] (P)--(H) node[midway,above]{$PH$};
+			
+			\draw ($(H)+(0.15,0)$)--($(H)+(0.15,-0.15)$)--($(H)+(0,-0.15)$);
+			
+			\node at (1.1,-3.05) {$PF=PH$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{抛物线的焦点弦}
+	
+	对于抛物线
+	\[
+	y^2=2px,
+	\]
+	过焦点 $F$ 的弦 $AB$ 称为焦点弦。若焦点弦与 $x$ 轴夹角为 $\theta$，则
+	\[
+	AB=\frac{2p}{\sin^2\theta}.
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.85,>=stealth]
+			\def\p{2}
+			\pgfmathsetmacro{\f}{\p/2}
+			
+			\draw[->] (-2,0)--(4.5,0) node[right]{$x$};
+			\draw[->] (0,-3)--(0,3) node[above]{$y$};
+			
+			\draw[thick,domain=-2.6:2.6,samples=100,smooth]
+			plot ({\x*\x/(2*\p)},\x);
+			
+			\coordinate (F) at (\f,0);
+			\coordinate (A) at (0.45,1.35);
+			\coordinate (B) at (2.7,-3.0);
+			
+			\draw[fill] (F) circle (1.5pt) node[below]{$F$};
+			\draw[fill] (A) circle (1.5pt) node[above]{$A$};
+			\draw[fill] (B) circle (1.5pt) node[right]{$B$};
+			
+			\draw[red,thick] (A)--(B);
+			\draw[dashed] (F)--(3.2,0);
+			
+			\pic [draw, "$\theta$", angle radius=0.55cm, angle eccentricity=1.25]
+			{angle=(3.2,0)--F--A};
+			
+			\node at (1.3,-3.45) {$AB=\dfrac{2p}{\sin^2\theta}$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{抛物线的切线}
+	
+	对于
+	\[
+	y^2=2px,
+	\]
+	若切点为 $P(x_0,y_0)$，则切线方程为
+	\[
+	yy_0=p(x+x_0).
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.9,>=stealth]
+			\def\p{2}
+			\pgfmathsetmacro{\xzero}{0.8}
+			\pgfmathsetmacro{\yzero}{sqrt(2*\p*\xzero)}
+			
+			\draw[->] (-1.5,0)--(4.2,0) node[right]{$x$};
+			\draw[->] (0,-2.7)--(0,2.7) node[above]{$y$};
+			
+			\draw[thick,domain=-2.3:2.3,samples=100,smooth]
+			plot ({\x*\x/(2*\p)},\x);
+			
+			\coordinate (P) at (\xzero,\yzero);
+			\draw[fill] (P) circle (1.5pt) node[above]{$P(x_0,y_0)$};
+			
+			% 切线： y*y0 = p(x+x0)，即 y = p/y0 (x+x0)
+			\draw[red,thick,domain=-1.2:3.3]
+			plot (\x,{(\p/\yzero)*(\x+\xzero)}) node[right]{切线};
+			
+			\node at (1.1,-3.05) {$yy_0=p(x+x_0)$};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{点差法图形}
+	
+	点差法常用于处理中点弦问题。其基本结构是：设直线与圆锥曲线交于
+	\[
+	A(x_1,y_1),\qquad B(x_2,y_2),
+	\]
+	中点为
+	\[
+	M(x_0,y_0).
+	\]
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.9,>=stealth]
+			\def\a{3}
+			\def\b{1.5}
+			
+			\draw[->] (-3.7,0)--(3.8,0) node[right]{$x$};
+			\draw[->] (0,-2.0)--(0,2.1) node[above]{$y$};
+			\draw[thick] (0,0) ellipse (\a cm and \b cm);
+			
+			\coordinate (A) at (-1.8,-1.2);
+			\coordinate (B) at (2.0,1.15);
+			\coordinate (M) at ($(A)!0.5!(B)$);
+			
+			\draw[red,thick] (A)--(B);
+			\draw[blue,dashed] (0,0)--(M);
+			
+			\draw[fill] (A) circle (1.5pt) node[below left]{$A(x_1,y_1)$};
+			\draw[fill] (B) circle (1.5pt) node[above right]{$B(x_2,y_2)$};
+			\draw[fill] (M) circle (1.5pt) node[above left]{$M(x_0,y_0)$};
+			
+			\node at (0,-2.55) {点差法：由两点方程相减得到弦斜率};
+		\end{tikzpicture}
+	\end{center}
+	
+	对于椭圆
+	\[
+	\frac{x^2}{a^2}+\frac{y^2}{b^2}=1,
+	\]
+	若弦 $AB$ 的中点为 $M(x_0,y_0)$，则
+	\[
+	k_{AB}=-\frac{b^2x_0}{a^2y_0}.
+	\]
+	又因为
+	\[
+	k_{OM}=\frac{y_0}{x_0},
+	\]
+	所以
+	\[
+	k_{AB}k_{OM}=-\frac{b^2}{a^2}.
+	\]
+	
+	对于双曲线
+	\[
+	\frac{x^2}{a^2}-\frac{y^2}{b^2}=1,
+	\]
+	有
+	\[
+	k_{AB}=\frac{b^2x_0}{a^2y_0},
+	\]
+	因此
+	\[
+	k_{AB}k_{OM}=\frac{b^2}{a^2}.
+	\]
+	
+	对于抛物线
+	\[
+	y^2=2px,
+	\]
+	若弦 $AB$ 的中点为 $M(x_0,y_0)$，则
+	\[
+	k_{AB}=\frac{p}{y_0}.
+	\]
+	
+	
+	\subsection{三线模型}
+	
+	课件中多次出现的“三线模型”可以概括为：焦点、动点、切线或弦构成的角度关系。
+	这类问题常用余弦定理、正弦定理、面积公式和离心率公式处理。
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.95,>=stealth]
+			\coordinate (F1) at (-2.7,0);
+			\coordinate (F2) at (2.7,0);
+			\coordinate (P) at (0.8,1.8);
+			\coordinate (A) at (-0.8,-0.6);
+			\coordinate (B) at (2.4,0.9);
+			
+			\draw[->] (-3.4,0)--(3.6,0) node[right]{$x$};
+			\draw[->] (0,-1.2)--(0,2.5) node[above]{$y$};
+			
+			\draw[fill] (F1) circle (1.5pt) node[below]{$F_1$};
+			\draw[fill] (F2) circle (1.5pt) node[below]{$F_2$};
+			\draw[fill] (P) circle (1.5pt) node[above]{$P$};
+			
+			\draw[blue,thick] (F1)--(P)--(F2);
+			\draw[red,thick] (A)--(B) node[right]{$l$};
+			
+			\pic [draw, "$\alpha$", angle radius=0.45cm, angle eccentricity=1.3]
+			{angle=F1--P--B};
+			\pic [draw, "$\beta$", angle radius=0.65cm, angle eccentricity=1.3]
+			{angle=B--P--F2};
+			
+			\node at (0,-1.65) {三线模型：焦点线、动点线、切线或弦};
+		\end{tikzpicture}
+	\end{center}
+	
+	
+	\subsection{圆锥曲线光学性质总结图}
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.75,>=stealth]
+			
+			% 椭圆
+			\begin{scope}[xshift=0cm]
+				\draw[thick] (0,0) ellipse (2.3 and 1.2);
+				\coordinate (F1) at (-1.6,0);
+				\coordinate (F2) at (1.6,0);
+				\coordinate (P) at (0.4,1.15);
+				
+				\draw[fill] (F1) circle (1.3pt) node[below]{$F_1$};
+				\draw[fill] (F2) circle (1.3pt) node[below]{$F_2$};
+				\draw[fill] (P) circle (1.3pt) node[above]{$P$};
+				
+				\draw[blue,thick,->] (F1)--(P);
+				\draw[blue,thick,->] (P)--(F2);
+				\draw[red,thick] (-1.1,1.6)--(1.8,0.65);
+				
+				\node at (0,-1.65) {椭圆};
+				\node at (0,-2.1) {$F_1\to P\to F_2$};
+			\end{scope}
+			
+			% 双曲线
+			\begin{scope}[xshift=5.4cm]
+				\draw[thick,domain=1.0:2.8,samples=80,smooth]
+				plot (\x,{0.7*sqrt(\x*\x-1)});
+				\draw[thick,domain=1.0:2.8,samples=80,smooth]
+				plot (\x,{-0.7*sqrt(\x*\x-1)});
+				
+				\coordinate (F1) at (-1.6,0);
+				\coordinate (F2) at (1.6,0);
+				\coordinate (P) at (2.2,1.2);
+				
+				\draw[fill] (F1) circle (1.3pt) node[below]{$F_1$};
+				\draw[fill] (F2) circle (1.3pt) node[below]{$F_2$};
+				\draw[fill] (P) circle (1.3pt) node[above]{$P$};
+				
+				\draw[blue,thick] (P)--(F1);
+				\draw[blue,thick] (P)--(F2);
+				\draw[red,thick] (1.2,1.75)--(2.9,0.45);
+				
+				\node at (1.0,-1.65) {双曲线};
+				\node at (1.0,-2.1) {切线平分焦半径夹角};
+			\end{scope}
+			
+			% 抛物线
+			\begin{scope}[xshift=10.5cm]
+				\def\p{1.6}
+				\draw[thick,domain=-1.8:1.8,samples=80,smooth]
+				plot ({\x*\x/(2*\p)},\x);
+				
+				\coordinate (F) at (0.8,0);
+				\coordinate (P) at (0.7,1.5);
+				
+				\draw[fill] (F) circle (1.3pt) node[below]{$F$};
+				\draw[fill] (P) circle (1.3pt) node[above]{$P$};
+				
+				\draw[blue,thick,->] (F)--(P);
+				\draw[blue,thick,->] (P)--(2.7,1.5);
+				\draw[red,thick] (-0.3,1.95)--(1.8,0.75);
+				
+				\node at (1.0,-1.65) {抛物线};
+				\node at (1.0,-2.1) {反射后平行于轴};
+			\end{scope}
+			
+		\end{tikzpicture}
+	\end{center}
+	
+\end{document}
