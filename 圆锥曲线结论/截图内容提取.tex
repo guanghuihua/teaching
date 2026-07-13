@@ -1,0 +1,93 @@
+\documentclass[12pt]{ctexart}
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\setlist[enumerate]{label=(\arabic*),leftmargin=2em}
+
+\title{截图内容提取}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{圆锥曲线——点乘双根法}
+
+\subsection*{适用类型}
+
+类似
+\[
+x_1x_2,\qquad y_1y_2,\qquad (x_1+t)(x_2+t),\qquad (y_1+t)(y_2+t),
+\]
+或
+\[
+\overrightarrow{MA}\cdot\overrightarrow{MB},\qquad
+|\overrightarrow{MA}|\cdot|\overrightarrow{MB}|
+\]
+的结构。
+
+其中 $x_1,x_2,y_1,y_2$ 是直线与曲线的两个交点的横纵坐标，
+$A,B$ 是直线与曲线的两个交点。该方法也适用于可以转化为上述结构的问题。
+
+\subsection*{理论基础}
+
+二次函数的双根式。若一元二次方程
+\[
+ax^2+bx+c=0\qquad (a\ne 0)
+\]
+的两根为 $x_1,x_2$，则
+\[
+ax^2+bx+c=a(x-x_1)(x-x_2).
+\]
+
+\subsection*{具体步骤}
+
+\[
+\text{化双根式}\longrightarrow \text{赋值}\longrightarrow \text{变形代入}.
+\]
+
+\section*{例题 1}
+
+椭圆
+\[
+C:\frac{x^2}{4}+\frac{y^2}{3}=1
+\]
+左顶点为 $A$，过左焦点 $F$ 的直线交椭圆于 $P,Q$ 两点。
+
+求证：直线 $AP$ 和 $AQ$ 的斜率乘积是定值。
+
+\section*{例题 2}
+
+（2021 新高考一卷 21 题）
+
+在平面直角坐标系 $xOy$ 中，已知点
+\[
+F_1(-\sqrt{17},0),\qquad F_2(\sqrt{17},0),
+\]
+点 $M$ 满足
+\[
+|MF_1|-|MF_2|=2.
+\]
+记 $M$ 的轨迹为 $C$。
+
+\begin{enumerate}
+  \item 求 $C$ 的方程；
+  \[
+  x^2-\frac{y^2}{16}=1\qquad (x>0).
+  \]
+
+  \item 设点 $T$ 在直线
+  \[
+  x=\frac12
+  \]
+  上，过 $T$ 的两条直线分别交 $C$ 于 $A,B$ 两点和 $P,Q$ 两点，且
+  \[
+  |TA|\cdot|TB|=|TP|\cdot|TQ|.
+  \]
+  求直线 $AB$ 的斜率与直线 $PQ$ 的斜率之和。
+\end{enumerate}
+
+\end{document}
