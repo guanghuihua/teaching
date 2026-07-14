@@ -1,0 +1,393 @@
+﻿{
+    "title":  "2025 年高考数学 上海卷",
+    "year":  2025,
+    "paper":  "上海卷",
+    "sections":  [
+                     {
+                         "title":  "一、填空题",
+                         "instructions":  "本大题共 12 题，第 1~6 题每题 4 分，第 7~12 题每题 5 分，共 54 分.考生应在答题纸的相应位置直接填写结果",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "已知全集 $U = \\{x \\mid 2 \\leq x \\leq 5, x \\in \\mathbf{R}\\}$ ，集合 $A = \\{x \\mid 2 \\leq x \u003c 4, x \\in \\mathbf{R}\\}$ ，则 $\\overline{A} =$ _________．",
+                                               "choices":  null,
+                                               "answer_latex":  "$\\{x \\mid 4 \\leq x \\leq 5, x \\in \\mathbf{R}\\}$ ## $[4,5]$",
+                                               "analysis_latex":  "根据补集的含义即可得到答案.",
+                                               "solution_latex":  "根据补集的含义知 $\\overline{A} = \\{x \\mid 4 \\leq x \\leq 5, x \\in \\mathbf{R}\\}$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "不等式 $\\frac{x-1}{x-3} \u003c 0$ 的解集为_________．",
+                                               "choices":  null,
+                                               "answer_latex":  "$(1,3)$",
+                                               "analysis_latex":  "转化为一元二次不等式 $(x-1)(x-3) \u003c 0$ ，解出即可.",
+                                               "solution_latex":  "原不等式转化为 $(x-1)(x-3) \u003c 0$ ，解得 $1 \u003c x \u003c 3$ ，则其解集为 $(1,3)$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "己知等差数列 $\\{a_n\\}$ 的首项 $a_1 = -3$ ，公差 $d = 2$ ，则该数列的前 $6$ 项和为_________．",
+                                               "choices":  null,
+                                               "answer_latex":  "$12$",
+                                               "analysis_latex":  "直接根据等差数列求和公式求解.",
+                                               "solution_latex":  "根据等差数列的求和公式，$S_6 = 6a_1 + \\frac{6 \\times 5}{2} d = 12$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "在二项式 $(2x-1)^5$ 的展开式中，$x^3$ 的系数为_________．",
+                                               "choices":  null,
+                                               "answer_latex":  "$80$",
+                                               "analysis_latex":  "利用通项公式求解可得.",
+                                               "solution_latex":  "由通项公式 $T_{r+1} = \\mathrm{C}_5^r \\cdot 2^{5-r} \\cdot x^{5-r} \\cdot (-1)^r = \\mathrm{C}_5^r \\cdot (-1)^r \\cdot 2^{5-r} x^{5-r}$，令 $5-r=3$，得 $r=2$，可得 $x^3$ 项的系数为 $\\mathrm{C}_5^2 \\cdot (-1)^2 \\cdot 2^{5-2} = 80$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "函数 $y = \\cos x$ 在 $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{4}\\right]$ 上的值域为_________．",
+                                               "choices":  null,
+                                               "answer_latex":  "$[0,1]$",
+                                               "analysis_latex":  "利用余弦函数的单调性可得.",
+                                               "solution_latex":  "由函数 $y = \\cos x$ 在 $\\left[-\\frac{\\pi}{2}, 0\\right]$ 上单调递增，在 $\\left[0, \\frac{\\pi}{4}\\right]$ 单调递减，且 $f(-\\frac{\\pi}{2}) = 0, f(0) = 1, f(\\frac{\\pi}{4}) = \\frac{\\sqrt{2}}{2}$，故函数 $y = \\cos x$ 在 $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{4}\\right]$ 上的值域为 $[0,1]$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "已知随机变量 $X$ 的分布为 $\\begin{pmatrix} 5 \u0026 6 \u0026 7 \\\\ 0.2 \u0026 0.3 \u0026 0.5 \\end{pmatrix}$，则期望 $E[X] =$ _________．",
+                                               "choices":  null,
+                                               "answer_latex":  "$6.3$",
+                                               "analysis_latex":  "根据分布列结合期望公式可求期望.",
+                                               "solution_latex":  "由题设有 $E[X] = 5 \\times 0.2 + 6 \\times 0.3 + 7 \\times 0.5 = 1 + 1.8 + 3.5 = 6.3$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "如图，在正四棱柱 $ABCD-A_1B_1C_1D_1$ 中，$BD = 4\\sqrt{2}, DB_1 = 9$，则该正四棱柱的体积为_________．",
+                                               "choices":  null,
+                                               "answer_latex":  "$112$",
+                                               "analysis_latex":  "求出侧棱长和底面边长后可求体积.",
+                                               "solution_latex":  "因为 $BD = 4\\sqrt{2}$ 且四边形 $ABCD$ 为正方形，故 $BA = 4$，而 $DB_1 = 9$，故 $BB_1^2 + BD^2 = 81$，故 $BB_1 = 7$，故所求体积为 $7 \\times 16 = 112$ .",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  1,
+                                                                  "description":  "正四棱柱 $ABCD-A_1B_1C_1D_1$ 的示意图",
+                                                                  "file":  "question-7-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "设 $a, b \u003e 0, a + \\frac{1}{b} = 1$，则 $b + \\frac{1}{a}$ 的最小值为_________．",
+                                               "choices":  null,
+                                               "answer_latex":  "$4$",
+                                               "analysis_latex":  "灵活利用“1”将 $b + \\frac{1}{a} = \\left(b + \\frac{1}{a}\\right)\\left(a + \\frac{1}{b}\\right)$ 展开利用基本不等式计算即可.",
+                                               "solution_latex":  "易知 $b + \\frac{1}{a} = \\left(b + \\frac{1}{a}\\right)\\left(a + \\frac{1}{b}\\right) = ab + \\frac{1}{ab} + 2 \\geq 2\\sqrt{ab \\cdot \\frac{1}{ab}} + 2 = 4$，当且仅当 $ab = 1$，即 $a = \\frac{1}{2}, b = 2$ 时取得最小值.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "4 个家长和 2 个儿童去爬山，6 个人需要排成一条队列，要求队列的头和尾均是家长，则不同的排列个数有_________种．",
+                                               "choices":  null,
+                                               "answer_latex":  "$288$",
+                                               "analysis_latex":  "先选家长作队尾和队首，再排中间四人即可.",
+                                               "solution_latex":  "先选两位家长排在首尾有 $\\mathrm{P}_4^2 = 12$ 种排法；再排对中的四人有 $\\mathrm{P}_4^4 = 24$ 种排法，故有 $12 \\times 24 = 288$ 种排法.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知复数 $z$ 满足 $z^2 = (\\overline{z})^2, |z| \\leq 1$，则 $|z - 2 - 3i|$ 的最小值是_________．",
+                                               "choices":  null,
+                                               "answer_latex":  "$2\\sqrt{2}$",
+                                               "analysis_latex":  "先设 $z = a + bi$，利用复数的乘方运算及概念确定 $ab = 0$，再根据复数的几何意义数形结合计算即可.",
+                                               "solution_latex":  "设 $z = a + bi\\,(a,b \\in \\mathbf{R})$，则 $\\overline{z} = a - bi$，由题意可知 $z^2 = a^2 + 2abi - b^2 = \\overline{z}^2 = a^2 - 2abi - b^2$，则 $ab = 0$，又 $|z| = \\sqrt{a^2 + b^2} \\leq 1$，由复数的几何意义知 $z$ 在复平面内对应的点 $Z(a,b)$ 在单位圆内部（含边界）的坐标轴上运动，如图所示即线段 $AB, CD$ 上运动，设 $E(2,3)$，则 $|z-2-3i| = ZE$，由图象可知 $BE = \\sqrt{10} \u003e CE = 2\\sqrt{2}$，所以 $ZE_{\\min} = 2\\sqrt{2}$ .",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "单位圆内坐标轴上的线段 $AB$ 和 $CD$ 示意图"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "小申同学观察发现，生活中有些时候影子可以完全投射在斜面上．某斜面上有两根长为 1 米的垂直于水平面放置的杆子，与斜面的接触点分别为 A、B，它们在阳光的照射下呈现出影子，阳光可视为平行光：其中一根杆子的影子在水平面上，长度为 0.4 米；另一根杆子的影子完全在斜面上，长度为 0.45 米．则斜面的底角 $\\theta =$ _________．（结果用角度制表示，精确到 $0.01^\\circ$）",
+                                               "choices":  null,
+                                               "answer_latex":  "$12.58^\\circ$",
+                                               "analysis_latex":  "先根据在 A 处的旗杆算出阳光和水平面的夹角，然后结合 B 处的旗杆算出斜面角.",
+                                               "solution_latex":  "如图，在 A 处，$\\tan x = \\frac{1}{0.4} = 2.5$，在 B 处满足 $\\tan \\angle CED = 2.5$，（其中 $ED //$ 水平面，$CE$ 是射过 B 处杆子最高点的光线，光线交斜面于 $E$），故设 $BD = y$，则 $ED = \\frac{1+y}{2.5}$，由勾股定理，$y^2 + \\left(\\frac{1+y}{2.5}\\right)^2 = 0.45^2$，解得 $y \\approx 0.098$，于是 $\\theta = \\arcsin\\frac{0.098}{0.45} \\approx 12.58^\\circ$ .",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  5,
+                                                                  "description":  "影子与斜面几何关系示意图"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知 $f(x) = \\begin{cases} 1, \u0026 x \u003e 0 \\\\ 0, \u0026 x = 0 \\\\ -1, \u0026 x \u003c 0 \\end{cases}$，$\\vec{a}, \\vec{b}, \\vec{c}$ 是平面内三个不同的单位向量．若 $f(\\vec{a} \\cdot \\vec{b}) + f(\\vec{b} \\cdot \\vec{c}) + f(\\vec{c} \\cdot \\vec{a}) = 0$，则 $|\\vec{a} + \\vec{b} + \\vec{c}|$ 的取值范围是_______．",
+                                               "choices":  null,
+                                               "answer_latex":  "$(1, \\sqrt{5})$",
+                                               "analysis_latex":  "利用分段函数值分类讨论，可得 $\\{f(\\vec{a} \\cdot \\vec{b}), f(\\vec{b} \\cdot \\vec{c}), f(\\vec{c} \\cdot \\vec{a})\\} = \\{-1, 0, 1\\}$，再根据数量积关系设出 $\\vec{a}, \\vec{b}, \\vec{c}$ 坐标，利用坐标运算，结合三角恒等变换求解模的范围可得.",
+                                               "solution_latex":  "若 $f(\\vec{a} \\cdot \\vec{b}) = f(\\vec{b} \\cdot \\vec{c}) = f(\\vec{c} \\cdot \\vec{a}) = 0$，则 $\\vec{a} \\cdot \\vec{b} = \\vec{b} \\cdot \\vec{c} = \\vec{c} \\cdot \\vec{a} = 0$，又三个向量均为平面内的单位向量，故向量 $\\vec{a}, \\vec{b}, \\vec{c}$ 两两垂直，显然不成立；故 $\\{f(\\vec{a} \\cdot \\vec{b}), f(\\vec{b} \\cdot \\vec{c}), f(\\vec{c} \\cdot \\vec{a})\\} = \\{-1, 0, 1\\}$ . 不妨设 $\\begin{cases} f(\\vec{a} \\cdot \\vec{b}) = 1 \\\\ f(\\vec{b} \\cdot \\vec{c}) = 0 \\\\ f(\\vec{c} \\cdot \\vec{a}) = -1 \\end{cases}$，则 $\\vec{a} \\cdot \\vec{b} \u003e 0, \\vec{b} \\cdot \\vec{c} = 0, \\vec{c} \\cdot \\vec{a} \u003c 0$，不妨设 $\\vec{b} = (1,0), \\vec{c} = (0,1)$，$\\vec{a} = (\\cos \\theta, \\sin \\theta), \\theta \\in [0, 2\\pi)$，则 $\\begin{cases} \\vec{a} \\cdot \\vec{b} = \\cos \\theta \u003e 0 \\\\ \\vec{c} \\cdot \\vec{a} = \\sin \\theta \u003c 0 \\end{cases}$，则 $\\theta \\in \\left(\\frac{3\\pi}{2}, 2\\pi\\right)$，则 $|\\vec{a} + \\vec{b} + \\vec{c}| = \\sqrt{(1+\\cos \\theta)^2 + (1+\\sin \\theta)^2} = \\sqrt{3 + 2\\cos \\theta + 2\\sin \\theta} = \\sqrt{3 + 2\\sqrt{2}\\sin\\left(\\theta + \\frac{\\pi}{4}\\right)}$，由 $\\theta \\in \\left(\\frac{3\\pi}{2}, 2\\pi\\right)$，$\\theta + \\frac{\\pi}{4} \\in \\left(\\frac{7\\pi}{4}, \\frac{9\\pi}{4}\\right)$，则 $\\sin\\left(\\theta + \\frac{\\pi}{4}\\right) \\in \\left(-\\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{2}}{2}\\right)$，$2\\sqrt{2}\\sin\\left(\\theta + \\frac{\\pi}{4}\\right) \\in (-2, 2)$，故 $|\\vec{a} + \\vec{b} + \\vec{c}| \\in (1, \\sqrt{5})$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、选择题",
+                         "instructions":  "本大题共 4 题，第 13、14 题每题 4 分，第 15、16 题每题 5 分，共 18 分.每题有且仅有一个正确选项，考生应在答题纸的相应位置，将代表正确选项的小方格涂黑.",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "single_choice",
+                                               "points":  4,
+                                               "stem_latex":  "己知事件 $A$、$B$ 相互独立，事件 $A$ 发生的概率为 $P(A) = \\frac{1}{2}$，事件 $B$ 发生的概率为 $P(B) = \\frac{1}{2}$，则事件 $A \\cap B$ 发生的概率 $P(A \\cap B)$ 为（ ）",
+                                               "choices":  [
+                                                               "$\\frac{1}{8}$",
+                                                               "$\\frac{1}{4}$",
+                                                               "$\\frac{1}{2}$",
+                                                               "$0$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "根据独立事件的概率公式可求 $P(A \\cap B)$ .",
+                                               "solution_latex":  "因为 $A, B$ 相互独立，故 $P(A \\cap B) = P(A)P(B) = \\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4}$，故选：B.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "single_choice",
+                                               "points":  4,
+                                               "stem_latex":  "设 $a \u003e 0, s \\in \\mathbf{R}$．下列各项中，能推出 $a^s \u003e a$ 的一项是（ ）",
+                                               "choices":  [
+                                                               "$a \u003e 1$，且 $s \u003e 0$",
+                                                               "$a \u003e 1$，且 $s \u003c 0$",
+                                                               "$0 \u003c a \u003c 1$，且 $s \u003e 0$",
+                                                               "$0 \u003c a \u003c 1$，且 $s \u003c 0$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "利用指数函数的性质分类讨论 $a$ 与 $1$ 的关系即可判定选项.",
+                                               "solution_latex":  "$\\because a \u003e 0, a^s \u003e a$，$\\therefore a^{s-1} \u003e 1 = a^0$，当 $a \\in (0,1)$ 时，$y = a^x$ 定义域上严格单调递减，此时若 $s-1 \u003c 0$，则一定有 $a^{s-1} \u003e 1 = a^0$ 成立，故 D 正确，C 错误；当 $a \\in (1, +\\infty)$ 时，$y = a^x$ 定义域上严格单调递增，要满足 $a^{s-1} \u003e 1 = a^0$，需 $s \u003e 1$，即 A、B 错误. 故选：D.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知 $A(0,1), B(1,2)$，$C$ 在 $\\Gamma: x^2 - y^2 = 1 (x \\geq 1, y \\geq 0)$ 上，则 $\\triangle ABC$ 的面积（ ）",
+                                               "choices":  [
+                                                               "有最大值，但没有最小值",
+                                                               "没有最大值，但有最小值",
+                                                               "既有最大值，也有最小值",
+                                                               "既没有最大值，也没有最小值"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "设出曲线上一点为 $(a, b)$，得出 $a = \\sqrt{b^2 + 1}$，将三角形的高转化成关于 $b$ 的函数，分析其单调性，从而求解.",
+                                               "solution_latex":  "设曲线上一点为 $(a, b)$，则 $a^2 - b^2 = 1$，则 $a = \\sqrt{b^2 + 1}$，$k_{AB} = \\frac{2-1}{1-0} = 1$，$AB$ 方程为：$y-1 = x$，即 $x - y + 1 = 0$，根据点到直线的距离公式，$(a, b)$ 到 $AB$ 的距离为：$\\frac{|a - b + 1|}{\\sqrt{2}} = \\frac{\\sqrt{b^2 + 1} - b + 1}{\\sqrt{2}}$，设 $f(b) = \\sqrt{b^2 + 1} - b = \\frac{1}{\\sqrt{b^2 + 1} + b}$，由于 $b \\geq 0$，显然 $f(b)$ 关于 $b$ 单调递减，$f(b)_{\\max} = f(0)$，无最小值，即 $\\triangle ABC$ 中，$AB$ 边上的高有最大值，无最小值，又 $AB$ 一定，故面积有最大值，无最小值. 故选：A.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知数列 $\\{a_n\\}$、$\\{b_n\\}$、$\\{c_n\\}$ 的通项公式分别为 $a_n = 10n - 9$，$b_n = 2^n$，$c_n = \\lambda a_n + (1-\\lambda)b_n$．若对任意的 $\\lambda \\in [0,1]$，$a_n$、$b_n$、$c_n$ 的值均能构成三角形，则满足条件的正整数 $n$ 有（ ）",
+                                               "choices":  [
+                                                               "$4$ 个",
+                                                               "$3$ 个",
+                                                               "$1$ 个",
+                                                               "无数个"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "由 $c_n = \\lambda a_n + (1-\\lambda)b_n$ 可知 $c_n$ 范围，再由三角形三边关系可得 $a_n, b_n, c_n$ 的不等关系，结合函数零点解不等式可得.",
+                                               "solution_latex":  "由题意 $a_n, b_n, c_n \u003e 0$，不妨设 $A(n, a_n), B(n, b_n), C(n, c_n)$，三点均在第一象限内，由 $c_n = \\lambda a_n + (1-\\lambda)b_n$ 可知，$\\overrightarrow{BC} = \\lambda \\overrightarrow{BA}, \\lambda \\in [0,1]$，故点 $C$ 恒在线段 $AB$ 上，则有 $\\min\\{a_n, b_n\\} \\leq c_n \\leq \\max\\{a_n, b_n\\} \u003c a_n + b_n$．即对任意的 $\\lambda \\in [0,1]$，$c_n \u003c a_n + b_n$ 恒成立，令 $10x - 9 = 2^x$，构造函数 $f(x) = 2^x - 10x + 9, x \u003e 0$，则 $f\u0027(x) = 2^x \\ln 2 - 10$，由 $f\u0027(x)$ 单调递增，又 $f\u0027(3) \u003c 0, f\u0027(4) \u003e 0$，存在 $x_0 \\in (3,4)$，使 $f\u0027(x_0) = 0$，即当 $0 \u003c x \u003c x_0$ 时，$f\u0027(x) \u003c 0$，$f(x)$ 单调递减；当 $x \u003e x_0$ 时，$f\u0027(x) \u003e 0$，$f(x)$ 单调递增；故 $f(x)$ 至多 $2$ 个零点，又由 $f(1) \u003e 0, f(2) \u003c 0, f(5) \u003c 0, f(6) \u003e 0$，可知 $f(x)$ 存在 $2$ 个零点，不妨设 $x_1, x_2 (x_1 \u003c x_2)$，且 $x_1 \\in (1,2), x_2 \\in (5,6)$．①若 $a_n \\leq b_n$，即 $10n - 9 \\leq 2^n$ 时，此时 $n = 1$ 或 $n \\geq 6$．则 $a_n \\leq c_n \\leq b_n$，可知 $b_n + c_n \u003e a_n$ 成立，要使 $a_n$、$b_n$、$c_n$ 的值均能构成三角形，所以 $a_n + c_n \u003e b_n$ 恒成立，故 $b_n \u003c 2a_n$，所以有 $\\begin{cases} 10n - 9 \\leq 2^n \\\\ 2^n \u003c 2(10n - 9) \\end{cases}$，解得 $n = 6$；②若 $a_n \\geq b_n$，即 $10n - 9 \\geq 2^n$ 时，此时 $n = 2,3,4,5$．则 $a_n \\geq c_n \\geq b_n$，可知 $a_n + c_n \u003e b_n$ 成立，要使 $a_n$、$b_n$、$c_n$ 的值均能构成三角形，所以 $b_n + c_n \u003e a_n$ 恒成立，故 $a_n \u003c 2b_n$，所以有 $\\begin{cases} 10n - 9 \\geq 2^n \\\\ 10n - 9 \u003c 2^{n+1} \\end{cases}$，解得 $n = 4$ 或 $5$；综上可知，正整数 $n$ 的个数有 $3$ 个. 故选：B.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "本大题共 5 题，第 17-19 题每题 14 分，第 20-21 题每题 18 分，共 78 分.解答下列各题必须在答题纸的相应位置写出必要的步骤.",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  14,
+                                               "stem_latex":  "2024 年东京奥运会，中国获得了男子 $4 \\times 100$ 米混合泳接力金牌．以下是历届奥运会男子 $4 \\times 100$ 米混合泳接力项目冠军成绩记录（单位：秒），数据按照升序排列．\n\n206.78  207.46  207.95  209.34  209.35\n210.68  213.73  214.84  216.93  216.93\n\n(1) 求这组数据的极差与中位数；\n(2) 从这 10 个数据中任选 3 个，求恰有 2 个数据在 211 以上的概率；\n(3) 若比赛成绩 $y$ 关于年份 $x$ 的回归方程为 $\\hat{y} = -0.311x + \\hat{b}$，年份 $x$ 的平均数为 $2006$，预测 $2028$ 年冠军队的成绩（精确到 $0.01$ 秒）．",
+                                               "choices":  null,
+                                               "answer_latex":  "(1) 极差 $10.15$，中位数 $210.015$； (2) $\\frac{3}{10}$； (3) $204.56$ 秒",
+                                               "analysis_latex":  "(1) 由最长与最短用时可得极差，由中间两数平均数可得中位数； (2) 由古典概型概率公式可得； (3) 先求成绩平均数 $y$，再由 $(\\bar{x}, \\bar{y})$ 在回归直线上，代入方程可得 $\\hat{b}$，再代入年份预测可得.",
+                                               "solution_latex":  "(1) 由题意，数据的最大值为 $216.93$，最小值为 $206.78$，则极差为 $216.93 - 206.78 = 10.15$；数据中间两数为 $209.35$ 与 $210.68$，则中位数为 $\\frac{209.35 + 210.68}{2} = 210.015$．故极差为 $10.15$，中位数为 $210.015$．\n(2) 由题意，数据共 $10$ 个，$211$ 以上数据共有 $4$ 个，故设事件 $A = $“恰有 $2$ 个数据在 $211$ 以上”，则 $P(A) = \\frac{\\mathrm{C}_4^2 \\cdot \\mathrm{C}_6^1}{\\mathrm{C}_{10}^3} = \\frac{3}{10}$．故恰有 $2$ 个数据在 $211$ 以上的概率为 $\\frac{3}{10}$．\n(3) 由题意，成绩的平均数 $\\bar{y} = \\frac{206.78 + 207.46 + 207.95 + 209.34 + 209.35 + 210.68 + 213.73 + 214.84 + 216.93 + 216.93}{10} = 211.399$，由直线 $\\hat{y} = -0.311x + \\hat{b}$ 过 $(2006, 211.399)$，则 $\\hat{b} = 211.399 + 0.311 \\times 2006 = 835.265$，故回归直线方程为 $\\hat{y} = -0.311x + 835.265$．当 $x = 2028$ 时，$\\hat{y} = -0.311 \\times 2028 + 835.265 = 204.557 \\approx 204.56$．故预测 $2028$ 年冠军队的成绩为 $204.56$ 秒.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  14,
+                                               "stem_latex":  "如图，$P$ 是圆锥的顶点，$O$ 是底面圆心，$AB$ 是底面直径，且 $AB = 2$．\n\n(1) 若直线 $PA$ 与圆锥底面的所成角为 $\\frac{\\pi}{3}$，求圆锥的侧面积；\n(2) 已知 $Q$ 是母线 $PA$ 的中点，点 $C$、$D$ 在底面圆周上，且弧 $AC$ 的长为 $\\frac{\\pi}{3}$，$CD \\parallel AB$．设点 $M$ 在线段 $OC$ 上，证明：直线 $QM \\parallel$ 平面 $PBD$．",
+                                               "choices":  null,
+                                               "answer_latex":  "(1) $2\\pi$； (2) 证明见解析",
+                                               "analysis_latex":  "(1) 由线面角先算出母线长，然后根据侧面积公式求解； (2) 证明平面 $QOC \\parallel$ 平面 $PBD$，然后根据面面平行的性质可得.",
+                                               "solution_latex":  "(1) 由题知，$\\angle PAB = \\frac{\\pi}{3}$，即轴截面 $\\triangle ABP$ 是等边三角形，故 $PA = AB = 2$，底面周长为 $2\\pi \\times 1 = 2\\pi$，则侧面积为：$\\frac{1}{2} \\times 2 \\times 2\\pi = 2\\pi$．\n(2) 由题知 $AQ = QP, AO = OB$，则根据中位线性质，$QO \\parallel PB$，又 $QO \\not\\subset$ 平面 $PBD$，$PB \\subset$ 平面 $PBD$，则 $QO \\parallel$ 平面 $PBD$．由于 $\\widehat{AC} = \\frac{\\pi}{3}$，底面圆半径是 $1$，则 $\\angle AOC = \\frac{\\pi}{3}$，又 $CD \\parallel AB$，则 $\\angle OCD = \\frac{\\pi}{3}$，又 $OC = OD$，则 $\\triangle OCD$ 为等边三角形，则 $CD = 1$，于是 $CD \\parallel BO$ 且 $CD = OB$，则四边形 $OBDC$ 是平行四边形，故 $OC \\parallel BD$，又 $OC \\not\\subset$ 平面 $PBD$，$BD \\subset$ 平面 $PBD$，故 $OC \\parallel$ 平面 $PBD$．又 $OC \\cap OQ = O$，$OC, OQ \\subset$ 平面 $QOC$，根据面面平行的判定，于是平面 $QOC \\parallel$ 平面 $PBD$，又 $M \\in OC$，则 $QM \\subset$ 平面 $QOC$，则 $QM \\parallel$ 平面 $PBD$．",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  3,
+                                                                  "description":  "圆锥示意图，标注顶点 P、底面圆心 O、直径 AB、母线 PA、点 C、D 及点 M 在 OC 上",
+                                                                  "file":  "question-18-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  14,
+                                               "stem_latex":  "已知 $f(x) = x^2 - (m+2)x + m\\ln x, m \\in \\mathbf{R}$．\n(1) 若 $f(1) = 0$，求不等式 $f(x) \\leq x^2 - 1$ 的解集；\n(2) 若函数 $y = f(x)$ 满足在 $(0, +\\infty)$ 上存在极大值，求 $m$ 的取值范围；",
+                                               "choices":  null,
+                                               "answer_latex":  "(1) $[1, +\\infty)$； (2) $m \u003e 0$ 且 $m \\neq 2$",
+                                               "analysis_latex":  "(1) 先求出 $m$，从而原不等式即为 $x + \\ln x \\geq 1$，构建新函数 $s(x) = x + \\ln x, x \u003e 0$，由该函数为增函数可求不等式的解； (2) 求出函数的导数，就 $m \\leq 0, 0 \u003c m \u003c 2, m = 2, m \u003e 2$ 分类讨论后可得参数的取值范围.",
+                                               "solution_latex":  "(1) 因为 $f(1) = 0$，故 $1 - m - 2 + 0 = 0$，故 $m = -1$，故 $f(x) = x^2 - x - \\ln x$，故 $f(x) \\leq x^2 - 1$ 即为 $x + \\ln x \\geq 1$，设 $s(x) = x + \\ln x, x \u003e 0$，则 $s\u0027(x) = 1 + \\frac{1}{x} \u003e 0$，故 $s(x)$ 在 $(0, +\\infty)$ 上为增函数，而 $x + \\ln x \\geq 1$ 即为 $s(x) \\geq s(1)$，故 $x \\geq 1$，故原不等式的解为 $[1, +\\infty)$．\n(2) $f(x)$ 在 $(0, +\\infty)$ 有极大值即为有极大值点．$f\u0027(x) = 2x - (m+2) + \\frac{m}{x} = \\frac{2x^2 - (m+2)x + m}{x} = \\frac{(2x - m)(x - 1)}{x}$．若 $m \\leq 0$，则 $x \\in (0,1)$ 时，$f\u0027(x) \u003c 0$，$x \\in (1, +\\infty)$ 时，$f\u0027(x) \u003e 0$，故 $x = 1$ 为 $f(x)$ 的极小值点，无极大值点，故舍；若 $0 \u003c \\frac{m}{2} \u003c 1$ 即 $0 \u003c m \u003c 2$，则 $x \\in \\left(\\frac{m}{2}, 1\\right)$ 时，$f\u0027(x) \u003c 0$，$x \\in \\left(0, \\frac{m}{2}\\right) \\cup (1, +\\infty)$ 时，$f\u0027(x) \u003e 0$，故 $x = \\frac{m}{2}$ 为 $f(x)$ 的极大值点，符合题设要求；若 $m = 2$，则 $x \\in (0, +\\infty)$ 时，$f\u0027(x) \\geq 0$，$f(x)$ 无极值点，舍；若 $\\frac{m}{2} \u003e 1$ 即 $m \u003e 2$，则 $x \\in \\left(1, \\frac{m}{2}\\right)$ 时，$f\u0027(x) \u003c 0$，$x \\in (0,1) \\cup \\left(\\frac{m}{2}, +\\infty\\right)$ 时，$f\u0027(x) \u003e 0$，故 $x = 1$ 为 $f(x)$ 的极大值点，符合题设要求；综上，$m \u003e 0$ 且 $m \\neq 2$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  18,
+                                               "stem_latex":  "已知椭圆 $\\Gamma: \\frac{x^2}{a^2} + \\frac{y^2}{5} = 1 (a \u003e \\sqrt{5})$，$M(0, m) (m \u003e 0)$，$A$ 是 $\\Gamma$ 的右顶点．\n(1) 若 $\\Gamma$ 的焦点 $(2,0)$，求离心率 $e$；\n(2) 若 $a = 4$，且 $\\Gamma$ 上存在一点 $P$，满足 $\\overrightarrow{PA} = 2\\overrightarrow{MP}$，求 $m$；\n(3) 已知 $AM$ 的中垂线 $l$ 的斜率为 $2$，$l$ 与 $\\Gamma$ 交于 $C$、$D$ 两点，$\\angle CMD$ 为钝角，求 $a$ 的取值范围．",
+                                               "choices":  null,
+                                               "answer_latex":  "(1) $\\frac{2}{3}$； (2) $\\sqrt{10}$； (3) $(\\sqrt{5}, \\sqrt{11})$",
+                                               "analysis_latex":  "(1) 由方程可得 $b^2 = 5$，再由焦点坐标得 $c$，从而求出 $a$ 得离心率； (2) 设点 $P$ 坐标，由向量关系 $\\overrightarrow{PA} = 2\\overrightarrow{MP}$ 坐标化可解得 $P$ 坐标，代入椭圆方程可得 $m$； (3) 根据中垂线性质，由斜率与中点坐标得直线 $l$ 方程，联立直线与椭圆方程，将钝角条件转化为向量不等式 $\\overrightarrow{MC} \\cdot \\overrightarrow{MD} \u003c 0$，再坐标化利用韦达定理代入化简不等式求解可得 $a$ 范围.",
+                                               "solution_latex":  "(1) 由题意知，$\\Gamma: \\frac{x^2}{a^2} + \\frac{y^2}{5} = 1 (a \u003e \\sqrt{5})$，则 $b^2 = 5$，由右焦点 $(2,0)$，可知 $c = 2$，则 $a = \\sqrt{5 + c^2} = 3$，故离心率 $e = \\frac{c}{a} = \\frac{2}{3}$．\n(2) 由题意 $A(4,0), M(0, m) (m \u003e 0)$，$P(x_P, y_P)$，由 $\\overrightarrow{PA} = 2\\overrightarrow{MP}$ 得，$\\begin{cases} 4 - x_P = 2x_P \\\\ -y_P = 2y_P - 2m \\end{cases}$，解得 $P\\left(\\frac{4}{3}, \\frac{2m}{3}\\right)$，代入 $\\frac{x^2}{16} + \\frac{y^2}{5} = 1$，得 $\\frac{1}{9} + \\frac{4m^2}{45} = 1$，又 $m \u003e 0$，解得 $m = \\sqrt{10}$．\n(3) 由线段 $AM$ 的中垂线 $l$ 的斜率为 $2$，所以直线 $AM$ 的斜率为 $-\\frac{1}{2}$，则 $\\frac{m-0}{0-a} = -\\frac{1}{2}$，解得 $m = \\frac{a}{2}$，由 $A(a,0), M(0, \\frac{a}{2})$ 得 $AM$ 中点坐标为 $(\\frac{a}{2}, \\frac{a}{4})$，故直线 $l: y = 2x - \\frac{3}{4}a$，显然直线 $l$ 过椭圆内点 $(\\frac{3}{8}a, 0)$，故直线与椭圆恒有两不同交点，设 $C(x_1, y_1), D(x_2, y_2)$，由 $\\begin{cases} y = 2x - \\frac{3}{4}a \\\\ 5x^2 + a^2 y^2 = 5a^2 \\end{cases}$ 消 $y$ 得 $(4a^2 + 5)x^2 - 3a^3 x + \\frac{9}{16}a^4 - 5a^2 = 0$，由韦达定理得 $x_1 + x_2 = \\frac{3a^3}{4a^2 + 5}$，$x_1 x_2 = \\frac{\\frac{9}{16}a^4 - 5a^2}{4a^2 + 5}$．因为 $\\angle CMD$ 为钝角，则 $\\overrightarrow{MC} \\cdot \\overrightarrow{MD} \u003c 0$，且 $M(0, \\frac{a}{2})$，则有 $x_1 x_2 + (y_1 - \\frac{a}{2})(y_2 - \\frac{a}{2}) \u003c 0$，所以 $x_1 x_2 + \\left(2x_1 - \\frac{5a}{4}\\right)\\left(2x_2 - \\frac{5a}{4}\\right) = 5x_1 x_2 - \\frac{5a}{2}(x_1 + x_2) + \\frac{25}{16}a^2 \u003c 0$，即 $5\\left(\\frac{\\frac{9}{16}a^4 - 5a^2}{4a^2 + 5}\\right) - \\frac{5a}{2} \\cdot \\frac{3a^3}{4a^2 + 5} + \\frac{25}{16}a^2 \u003c 0$，解得 $a^2 \u003c 11$，又 $a \u003e \\sqrt{5}$，故 $\\sqrt{5} \u003c a \u003c \\sqrt{11}$，即 $a$ 的取值范围是 $(\\sqrt{5}, \\sqrt{11})$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  18,
+                                               "stem_latex":  "已知函数 $y = f(x)$ 的定义域为 $\\mathbf{R}$．对于正实数 $a$，定义集合 $M_a = \\{x \\mid f(x+a) = f(x)\\}$．\n(1) 若 $f(x) = \\sin x$，判断 $\\frac{\\pi}{3}$ 是否是 $M_\\pi$ 中的元素，请说明理由；\n(2) 若 $f(x) = \\begin{cases} x+2, \u0026 x \u003c 0 \\\\ x, \u0026 x \\geq 0 \\end{cases}$，$M_a \\neq \\varnothing$，求 $a$ 的取值范围；\n(3) 若 $y = f(x)$ 是偶函数，当 $x \\in (0,1]$ 时，$f(x) = 1 - x$，且对任意 $a \\in (0,2)$，均有 $M_a \\subseteq M_2$．写出 $y = f(x)$，$x \\in (1,2)$ 解析式，并证明：对任意实数 $c$，函数 $y = f(x) - c$ 在 $[-3,3]$ 上至多有 $9$ 个零点．",
+                                               "choices":  null,
+                                               "answer_latex":  "(1) 不是； (2) $\\left[\\frac{7}{4}, 4\\right)$； (3) 解析式 $f(x) = x - 1, x \\in (1,2)$；证明见解析",
+                                               "analysis_latex":  "(1) 直接代入计算 $f\\left(\\frac{\\pi}{3}\\right)$ 和 $f\\left(\\frac{\\pi}{3} + \\pi\\right)$ 即可； (2) 法一：转化为存在实数 $x_0$ 使得 $f(x_0 + a) = f(x_0)$，分析得 $x_0 + 2 = \\sqrt{x_0 + a}$，再计算得 $a = (x_0 + 2)^2 - x_0 = \\left(x_0 + \\frac{3}{2}\\right)^2 + \\frac{7}{4}$，最后根据 $x_0$ 的范围即可得到答案；法二：画出函数图象，转化为直线 $y = t$ 与该函数有两个交点，将 $a$ 用 $t$ 表示，最后利用二次函数性质即可得到答案； (3) 利用函数奇偶性和集合新定义即可求出 $x \\in (1,2)$ 时解析式，再分析出 $f(-3) \\notin (0,1)$，最后对 $c$ 的范围进行分类讨论即可.",
+                                               "solution_latex":  "(1) $f\\left(\\frac{\\pi}{3}\\right) = \\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}$，$f\\left(\\frac{\\pi}{3} + \\pi\\right) = -\\sin\\frac{\\pi}{3} = -\\frac{\\sqrt{3}}{2}$，两者不相等，故 $\\frac{\\pi}{3}$ 不是 $M_\\pi$ 中的元素．\n(2) 法一：因为 $M_a \\neq \\varnothing$，则存在实数 $x_0$ 使得 $f(x_0 + a) = f(x_0)$，且 $a \u003e 0$，当 $x \u003c 0$ 时，$f(x) = x+2$，其在 $(-\\infty, 0)$ 上严格单调递增，当 $x \\geq 0$ 时，$f(x) = \\sqrt{x}$，其在 $[0, +\\infty)$ 上也严格单调递增，则 $x_0 \u003c 0 \\leq x_0 + a$，则 $x_0 + 2 = \\sqrt{x_0 + a}$，令 $x+2 = 0$，解得 $x = -2$，则 $-2 \\leq x_0 \u003c 0$，则 $a = (x_0 + 2)^2 - x_0 = \\left(x_0 + \\frac{3}{2}\\right)^2 + \\frac{7}{4} \\in \\left[\\frac{7}{4}, 4\\right)$．法二：作出该函数图象，则由题意知直线 $y = t$ 与该函数有两个交点，由图知 $0 \\leq t \u003c 2$，假设交点分别为 $A(m, t)$，$B(n, t)$，联立方程组 $\\begin{cases} m = t^2 \\\\ n+2 = t \\end{cases}$ 得 $a = |AB| = m - n = t^2 - (t-2) = \\left(t - \\frac{1}{2}\\right)^2 + \\frac{7}{4} \\in \\left[\\frac{7}{4}, 4\\right)$．\n(3) 对任意 $x_0 \\in (1,2)$，$x_0 - 2 \\in (-1,0)$，因为其是偶函数，则 $f(x_0 - 2) = f(2 - x_0)$，而 $4 - 2x_0 \\in (0,2)$，所以 $x_0 - 2 \\in M_{4-2x_0} \\subseteq M_2$，所以 $f(x_0) = f(x_0 - 2) = f(2 - x_0)$，因为 $x_0 \\in (1,2)$，则 $2 - x_0 \\in (0,1)$，所以 $f(x_0) = f(2 - x_0) = 1 - (2 - x_0) = x_0 - 1$，所以 $f(x) = x - 1, x \\in (1,2)$．所以当 $s \\in (0,1)$ 时，$1-s \\in (0,1)$，$1+s \\in (1,2)$，则 $f(1-s) = 1 - (1-s) = s$，$f(1+s) = (1+s) - 1 = s$，则 $f(1-s) = f(1+s)$，而 $1+s - (1-s) = 2s$，$(3-s) - (1-s) = 2$，则 $1-s \\in M_{2s} \\subseteq M_2$，则 $f(1-s) = f(3-s)$，所以当 $x \\in (2,3)$ 时，$f(x) = f(x-2) = 1 - (x-2) = 3 - x$，而 $f(x)$ 为偶函数，画出函数图象如下：其中 $f(-3) = f(3)$，$f(-2) = f(2)$，$f(0)$，但其对应的 $y$ 值均未知．首先说明 $f(-3) = n \\notin (0,1)$，若 $f(-3) = n \\in (0,1)$，则 $-3+n \\in (-3,-2)$，易知此时 $f(x) = x+3, x \\in (-3,-2)$，则 $f(-3+n) = n$，所以 $f(-3) \\in M_n \\subseteq M_2$，而 $x \\in [-1,0)$ 时，$f(x) = x+1$，所以 $f(-3) = f(-1) = 0$，与 $f(-3) = n$ 矛盾，所以 $f(-3) \\notin (0,1)$，即 $f(-3) = f(3) \\notin (0,1)$．令 $y = f(x) - c = 0$，则 $y = f(x) = c$，当 $c = 0$ 时，即使让 $f(-3) = f(3) = f(-2) = f(2) = f(0) = 0$，此时最多 $7$ 个零点；当 $c \\geq 1$ 时，若 $f(-2) = f(2) = f(0) = f(-3) = f(3) = c$，此时有 $5$ 个零点，故此时最多 $5$ 个零点；当 $c \u003c 0$ 时，若 $f(-2) = f(2) = f(0) = f(-3) = f(3) = c$，此时有 $5$ 个零点，故此时最多 $5$ 个零点；当 $0 \u003c c \u003c 1$ 时，若 $f(-2) = f(2) = f(0) = c$，此时有 $3$ 个零点，若 $f(-3) = c \\in (0,1)$，则 $-3+c \\in (-3,-2)$，易知此时 $f(x) = x+3$，则 $f(-3+c) = c$，所以 $f(-3) \\in M_c \\subseteq M_2$，而 $x \\in [-1,0)$ 时，$f(x) = x+1$，所以 $f(-3) = f(-1) = 0$，与 $f(-3) = c$ 矛盾，所以 $f(-3) \\notin (0,1)$，则最多在 $(-3,-2), (-2,-1), (-1,0), (0,1), (1,2), (2,3)$ 之间取得 $6$ 个零点，以及在 $x = -2, 0, 2$ 处成为零点，故不超过 $9$ 个零点．综上，零点不超过 $9$ 个.",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  17,
+                                                                  "description":  "偶函数 $f(x)$ 在 $[-3,3]$ 上的图象，由分段线性函数构成"
+                                                              }
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  7,
+                             "issue":  "原卷中 $BD = 4\\sqrt{2}$ 显示为 $4\\sqrt{2}$，解析版中为 $4\\sqrt{2}$，已修正。"
+                         },
+                         {
+                             "question":  16,
+                             "issue":  "原卷中 $b_n = 2n$ 应为 $b_n = 2^n$，解析版明确为 $2^n$，已修正。"
+                         },
+                         {
+                             "question":  17,
+                             "issue":  "原卷第3页数据 $207.95$ 在解析版中写为 $207.95$，但原卷文本层有换行，已统一。"
+                         },
+                         {
+                             "question":  20,
+                             "issue":  "原卷中 $a\u003e5$ 应为 $a\u003e\\sqrt{5}$，解析版中明确 $a\u003e\\sqrt{5}$，已修正。"
+                         },
+                         {
+                             "question":  21,
+                             "issue":  "原卷中 $M_a$ 定义式 $f(x+a)=f(x)$ 解析版一致。"
+                         },
+                         {
+                             "question":  10,
+                             "issue":  "题图未能自动匹配：原卷第 4 页，单位圆内坐标轴上的线段 $AB$ 和 $CD$ 示意图"
+                         },
+                         {
+                             "question":  11,
+                             "issue":  "题图未能自动匹配：原卷第 5 页，影子与斜面几何关系示意图"
+                         },
+                         {
+                             "question":  21,
+                             "issue":  "题图未能自动匹配：原卷第 17 页，偶函数 $f(x)$ 在 $[-3,3]$ 上的图象，由分段线性函数构成"
+                         },
+                         {
+                             "question":  10,
+                             "issue":  "题图未能自动匹配：原卷第 4 页，单位圆内坐标轴上的线段 $AB$ 和 $CD$ 示意图"
+                         },
+                         {
+                             "question":  11,
+                             "issue":  "题图未能自动匹配：原卷第 5 页，影子与斜面几何关系示意图"
+                         },
+                         {
+                             "question":  21,
+                             "issue":  "题图未能自动匹配：原卷第 17 页，偶函数 $f(x)$ 在 $[-3,3]$ 上的图象，由分段线性函数构成"
+                         },
+                         {
+                             "question":  10,
+                             "issue":  "题图未能自动匹配：原卷第 4 页，单位圆内坐标轴上的线段 $AB$ 和 $CD$ 示意图"
+                         },
+                         {
+                             "question":  11,
+                             "issue":  "题图未能自动匹配：原卷第 5 页，影子与斜面几何关系示意图"
+                         },
+                         {
+                             "question":  21,
+                             "issue":  "题图未能自动匹配：原卷第 17 页，偶函数 $f(x)$ 在 $[-3,3]$ 上的图象，由分段线性函数构成"
+                         }
+                     ]
+}

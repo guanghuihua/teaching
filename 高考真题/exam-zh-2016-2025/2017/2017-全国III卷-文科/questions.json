@@ -1,0 +1,452 @@
+﻿{
+    "title":  "2017 年高考数学 全国III卷-文科",
+    "year":  2017,
+    "paper":  "新课标全国Ⅲ卷",
+    "sections":  [
+                     {
+                         "title":  "一、单项选择题",
+                         "instructions":  "本大题共12小题，每小题5分，共60分。在每小题给出的四个选项中，只有一项是符合题目要求的。",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知集合$A=\\{1,2,3,4\\}$，$B=\\{2,4,6,8\\}$，则$A\\cap B$中元素的个数为（    ）",
+                                               "choices":  [
+                                                               "A．$1$",
+                                                               "B．$2$",
+                                                               "C．$3$",
+                                                               "D．$4$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "利用交集定义先求出$A\\cap B$，由此能求出$A\\cap B$中元素的个数。",
+                                               "solution_latex":  "集合$A=\\{1,2,3,4\\}$，$B=\\{2,4,6,8\\}$，则$A\\cap B=\\{2,4\\}$，故个数为$2$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "复平面内表示复数$z=i(-2+i)$的点位于（            ）",
+                                               "choices":  [
+                                                               "A．第一象限",
+                                                               "B．第二象限",
+                                                               "C．第三象限",
+                                                               "D．第四象限"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "利用复数的运算法则、几何意义即可得出。",
+                                               "solution_latex":  "$z=i(-2+i)=-2i-1$对应的点$(-1,-2)$位于第三象限。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "某城市为了解游客人数的变化规律，提高旅游服务质量，收集并整理了2014年1月至2016年12月期间月接待游客量（单位：万人）的数据，绘制了下面的折线图。根据该折线图，下列结论错误的是（             ）",
+                                               "choices":  [
+                                                               "A．月接待游客量逐月增加",
+                                                               "B．年接待游客量逐年增加",
+                                                               "C．各年的月接待游客量高峰期大致在7，8月",
+                                                               "D．各年1月至6月的月接待游客量相对于7月至12月，波动性更小，变化比较平稳"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "根据已知中2014年1月至2016年12月期间月接待游客量（单位：万人）的数据，逐一分析给定四个结论的正误，可得答案。",
+                                               "solution_latex":  "月接待游客量逐月有增有减，故A错误。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  "PAGE 1",
+                                                                  "description":  "折线图展示2014年1月至2016年12月月接待游客量变化趋势",
+                                                                  "file":  "question-3-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知$\\sin\\alpha-\\cos\\alpha=\\frac{4}{3}$，则$\\sin2\\alpha=$（    ）",
+                                               "choices":  [
+                                                               "A．$-\\frac{7}{9}$",
+                                                               "B．$-\\frac{2}{9}$",
+                                                               "C．$\\frac{2}{9}$",
+                                                               "D．$\\frac{7}{9}$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "由条件，两边平方，根据二倍角公式和平方关系即可求出。",
+                                               "solution_latex":  "由$\\sin\\alpha-\\cos\\alpha=\\frac{4}{3}$，平方得$1-\\sin2\\alpha=\\frac{16}{9}$，所以$\\sin2\\alpha=-\\frac{7}{9}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设$x,y$满足约束条件$\\begin{cases} x+y-7\\le 0 \\\\ x-3y+1\\le 0 \\\\ 3x-y-5\\ge 0 \\end{cases}$，则$z=x-y$的取值范围是（      ）",
+                                               "choices":  [
+                                                               "A．$[-3,0]$",
+                                                               "B．$[-3,2]$",
+                                                               "C．$[0,2]$",
+                                                               "D．$[0,3]$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "画出约束条件的可行域，利用目标函数的最优解求解目标函数的范围即可。",
+                                               "solution_latex":  "可行域如图，由$\\begin{cases} x+y-7=0 \\\\ x-3y+1=0 \\end{cases}$得$A(0,3)$，由$\\begin{cases} 3x-y-5=0 \\\\ x-3y+1=0 \\end{cases}$得$B(2,0)$，目标函数$z=x-y$在$A$处取最小值$-3$，在$B$处取最大值$2$，故取值范围是$[-3,2]$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  "PAGE 10",
+                                                                  "description":  "线性规划可行域示意图",
+                                                                  "file":  "question-5-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "函数$f(x)=\\frac{1}{5}\\sin(x+\\frac{\\pi}{3})+\\cos(x-\\frac{\\pi}{6})$的最大值为（   ）",
+                                               "choices":  [
+                                                               "A．$\\frac{6}{5}$",
+                                                               "B．$1$",
+                                                               "C．$\\frac{3}{5}$",
+                                                               "D．$\\frac{1}{5}$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "利用诱导公式化简函数的解析式，通过正弦函数的最值求解即可。",
+                                               "solution_latex":  "$f(x)=\\frac{1}{5}\\sin(x+\\frac{\\pi}{3})+\\cos(x-\\frac{\\pi}{6})=\\frac{1}{5}\\sin(x+\\frac{\\pi}{3})+\\sin(x+\\frac{\\pi}{3})=\\frac{6}{5}\\sin(x+\\frac{\\pi}{3})$，最大值为$\\frac{6}{5}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "函数$y=1+x+\\frac{\\sin x}{x}$的部分图象大致为（       ）",
+                                               "choices":  [
+                                                               "A．",
+                                                               "B．",
+                                                               "C．",
+                                                               "D．"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "通过函数的解析式，利用函数的奇偶性的性质，函数的图象经过的特殊点判断函数的图象即可。",
+                                               "solution_latex":  "函数$y=1+x+\\frac{\\sin x}{x}$，$f(x)=x+\\frac{\\sin x}{x}$是奇函数，图象关于原点对称，则$y=1+x+\\frac{\\sin x}{x}$的图象关于$(0,1)$对称，当$x\\to 0^+$时$f(x)\u003e0$，排除A、C；当$x=\\pi$时$y=1+\\pi$，排除B。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  "PAGE 11",
+                                                                  "description":  "函数y=1+x+sinx/x的四个选项图象",
+                                                                  "file":  "question-7-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "执行如图的程序框图，为使输出$S$的值小于$91$，则输入的正整数$N$的最小值为（       ）",
+                                               "choices":  [
+                                                               "A．$5$",
+                                                               "B．$4$",
+                                                               "C．$3$",
+                                                               "D．$2$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "通过模拟程序，可得到$S$的取值情况，进而可得结论。",
+                                               "solution_latex":  "初始值$t=1,M=100,S=0$，进入循环：$S=100,M=-10,t=2$；再次进入：$S=90,M=1,t=3$；此时$N$最小为$2$时跳出循环。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  "PAGE 12",
+                                                                  "description":  "程序框图",
+                                                                  "file":  "question-8-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知圆柱的高为$1$，它的两个底面的圆周在直径为$2$的同一个球的球面上，则该圆柱的体积为（            ）",
+                                               "choices":  [
+                                                               "A．$\\pi$",
+                                                               "B．$\\frac{3\\pi}{4}$",
+                                                               "C．$\\frac{\\pi}{2}$",
+                                                               "D．$\\frac{\\pi}{4}$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "推导出该圆柱底面圆周半径$r$，由此能求出该圆柱的体积。",
+                                               "solution_latex":  "球半径$R=1$，圆柱高$h=1$，则底面圆半径$r=\\sqrt{1^2-(\\frac{1}{2})^2}=\\frac{\\sqrt{3}}{2}$，体积$V=\\pi r^2 h=\\pi\\times\\frac{3}{4}\\times1=\\frac{3\\pi}{4}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在正方体$ABCD-A_1B_1C_1D_1$中，$E$为棱$CD$的中点，则（      ）",
+                                               "choices":  [
+                                                               "A．$A_1E\\perp DC_1$",
+                                                               "B．$A_1E\\perp BD$",
+                                                               "C．$A_1E\\perp BC_1$",
+                                                               "D．$A_1E\\perp AC$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "法一：连$B_1C$，推导出$BC_1\\perp B_1C$，$A_1B_1\\perp BC_1$，从而$BC_1\\perp$平面$A_1ECB_1$，由此得到$A_1E\\perp BC_1$。法二：建立空间直角坐标系，利用向量法。",
+                                               "solution_latex":  "法一略；法二：以$D$为原点建立空间直角坐标系，设棱长为$2$，则$A_1(2,0,2),E(0,1,0),B(2,2,0),C_1(0,2,2)$，计算得$\\overrightarrow{A_1E}\\cdot\\overrightarrow{BC_1}=0$，故$A_1E\\perp BC_1$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知椭圆$C:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\ (a\u003eb\u003e0)$的左、右顶点分别为$A_1,A_2$，且以线段$A_1A_2$为直径的圆与直线$bx-ay+2ab=0$相切，则$C$的离心率为（              ）",
+                                               "choices":  [
+                                                               "A．$\\frac{\\sqrt{6}}{3}$",
+                                                               "B．$\\frac{\\sqrt{3}}{3}$",
+                                                               "C．$\\frac{\\sqrt{2}}{3}$",
+                                                               "D．$\\frac{1}{3}$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "以线段$A_1A_2$为直径的圆与直线$bx-ay+2ab=0$相切，可得原点到直线的距离等于$a$，化简即可得出。",
+                                               "solution_latex":  "圆的半径$r=a$，圆心$(0,0)$到直线$bx-ay+2ab=0$的距离$d=\\frac{|2ab|}{\\sqrt{a^2+b^2}}=a$，即$2b=\\sqrt{a^2+b^2}$，平方得$a^2=3b^2$，所以$c^2=a^2-b^2=2b^2$，$e=\\frac{c}{a}=\\frac{\\sqrt{2}b}{\\sqrt{3}b}=\\frac{\\sqrt{6}}{3}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知函数$f(x)=x^2-2x+a(e^{x-1}+e^{-x+1})$有唯一零点，则$a=$（          ）",
+                                               "choices":  [
+                                                               "A．$-\\frac{1}{2}$",
+                                                               "B．$\\frac{1}{3}$",
+                                                               "C．$\\frac{1}{2}$",
+                                                               "D．$1$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "通过转化可知问题等价于函数$y=1-(x-1)^2$的图象与$y=a(e^{x-1}+e^{-x+1})$的图象只有一个交点。分$a=0,a\u003c0,a\u003e0$三种情况讨论。",
+                                               "solution_latex":  "当$a\u003e0$时，$y=1-(x-1)^2$最高点$A(1,1)$，$y=a(e^{x-1}+e^{-x+1})$最低点$B(1,2a)$，要唯一零点需$A,B$重合，即$2a=1$，$a=\\frac{1}{2}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知向量$\\vec{a}=(-2,3)$，$\\vec{b}=(3,m)$，且$\\vec{a}\\perp\\vec{b}$，则$m=$        。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$2$",
+                                               "analysis_latex":  "利用平面向量数量积坐标运算法则和向量垂直的性质求解。",
+                                               "solution_latex":  "$\\vec{a}\\cdot\\vec{b}=(-2)\\times3+3m=0$，解得$m=2$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "双曲线$\\frac{x^2}{a^2}-\\frac{y^2}{9}=1$（$a\u003e0$）的一条渐近线方程为$y=\\frac{3}{5}x$，则$a=$              。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$5$",
+                                               "analysis_latex":  "利用双曲线方程，求出渐近线方程，求解$a$即可。",
+                                               "solution_latex":  "渐近线方程为$y=\\pm\\frac{3}{a}x$，由$\\frac{3}{a}=\\frac{3}{5}$得$a=5$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "$\\triangle ABC$的内角$A,B,C$的对边分别为$a,b,c$，已知$C=60^\\circ$，$b=\\sqrt{6}$，$c=3$，则$A=$        。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$75^\\circ$",
+                                               "analysis_latex":  "根据正弦定理和三角形的内角和计算即可。",
+                                               "solution_latex":  "由正弦定理$\\frac{b}{\\sin B}=\\frac{c}{\\sin C}$，得$\\sin B=\\frac{b\\sin C}{c}=\\frac{\\sqrt{6}\\times\\frac{\\sqrt{3}}{2}}{3}=\\frac{\\sqrt{2}}{2}$，因为$b\u003cc$，所以$B=45^\\circ$，$A=180^\\circ-60^\\circ-45^\\circ=75^\\circ$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "设函数$f(x)=\\begin{cases} x+1,\u0026x\\le 0 \\\\ 2^x,\u0026x\u003e0 \\end{cases}$，则满足$f(x)+f(x-\\frac{1}{2})\u003e1$的$x$的取值范围是           。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$(-\\frac{1}{4},+\\infty)$",
+                                               "analysis_latex":  "根据分段函数的表达式，分别讨论$x$的取值范围，进行求解即可。",
+                                               "solution_latex":  "当$x\\le 0$时，$f(x)+f(x-\\frac{1}{2})=x+1+x-\\frac{1}{2}+1=2x+\\frac{3}{2}\u003e1$，解得$x\u003e-\\frac{1}{4}$，此时$-\\frac{1}{4}\u003cx\\le 0$；当$x\u003e0$时，$f(x)=2^x\u003e1$，则$f(x)+f(x-\\frac{1}{2})\u003e1$恒成立。综上$x\u003e-\\frac{1}{4}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "设数列$\\{a_n\\}$满足$a_1+3a_2+\\cdots+(2n-1)a_n=2n$。\n（1）求$\\{a_n\\}$的通项公式；\n（2）求数列$\\{\\frac{a_n}{2n+1}\\}$的前$n$项和。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$a_n=\\frac{2}{2n-1}$；（2）$\\frac{2n}{2n+1}$",
+                                               "analysis_latex":  "（1）利用数列递推关系即可得出。（2）利用裂项求和方法即可得出。",
+                                               "solution_latex":  "（1）当$n\\ge 2$时，$a_1+3a_2+\\cdots+(2n-3)a_{n-1}=2(n-1)$，与原式相减得$(2n-1)a_n=2$，所以$a_n=\\frac{2}{2n-1}$，当$n=1$时$a_1=2$也满足。\n（2）$\\frac{a_n}{2n+1}=\\frac{2}{(2n-1)(2n+1)}=\\frac{1}{2n-1}-\\frac{1}{2n+1}$，所以前$n$项和为$1-\\frac{1}{2n+1}=\\frac{2n}{2n+1}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "某超市计划按月订购一种酸奶，每天进货量相同，进货成本每瓶4元，售价每瓶6元，未售出的酸奶降价处理，以每瓶2元的价格当天全部处理完。根据往年销售经验，每天需求量与当天最高气温（单位：℃）有关。如果最高气温不低于25，需求量为500瓶；如果最高气温位于区间[20,25)，需求量为300瓶；如果最高气温低于20，需求量为200瓶。为了确定六月份的订购计划，统计了前三年六月份各天的最高气温数据，得下面的频数分布表：\n\n最高气温  [10,15)  [15,20)  [20,25)  [25,30)  [30,35)  [35,40)\n天数       2        16       36       25       7        4\n\n以最高气温位于各区间的频率估计最高气温位于该区间的概率。\n（1）求六月份这种酸奶一天的需求量不超过300瓶的概率；\n（2）设六月份一天销售这种酸奶的利润为Y（单位：元），当六月份这种酸奶一天的进货量为450瓶时，写出Y的所有可能值，并估计Y大于零的概率。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$\\frac{3}{5}$；（2）Y的可能值为900,300,-100；$Y\u003e0$的概率为$\\frac{4}{5}$",
+                                               "analysis_latex":  "（1）由前三年六月份各天的最高气温数据，求出最高气温位于区间[20,25)和最高气温低于20的天数，由此能求出六月份这种酸奶一天的需求量不超过300瓶的概率。（2）当温度大于等于25°C时，需求量为500，求出Y=900元；当温度在[20,25)°C时，需求量为300，求出Y=300元；当温度低于20°C时，需求量为200，求出Y=-100元，从而当温度大于等于20时，Y\u003e0，由此能估计估计Y大于零的概率。",
+                                               "solution_latex":  "（1）需求量不超过300瓶即最高气温低于25，天数为2+16+36=54，总天数为90，概率$p=\\frac{54}{90}=\\frac{3}{5}$。\n（2）当最高气温≥25时，需求500，利润$Y=450\\times2=900$；当20≤气温\u003c25时，需求300，利润$Y=300\\times2-150\\times2=300$；当气温\u003c20时，需求200，利润$Y=200\\times6-450\\times4+(450-200)\\times2=-100$（按成本收入计算）。$Y\u003e0$对应最高气温≥20，天数为90-2-16=72，概率$P=\\frac{72}{90}=\\frac{4}{5}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图四面体ABCD中，△ABC是正三角形，AD=CD。\n（1）证明：AC⊥BD；\n（2）已知△ACD是直角三角形，AB=BD，若E为棱BD上与D不重合的点，且AE⊥EC，求四面体ABCE与四面体ACDE的体积比。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）证明略；（2）体积比为1",
+                                               "analysis_latex":  "（1）取AC中点O，连结DO、BO，推导出DO⊥AC，BO⊥AC，从而AC⊥平面BDO，由此能证明AC⊥BD。（2）法一：连结OE，设AD=CD=√2，则OC=OA=1，由余弦定理求出BE=1，由BE=ED，四面体ABCE与四面体ACDE的高都是点A到平面BCD的高h，S△DCE=S△BCE，由此能求出四面体ABCE与四面体ACDE的体积比。法二：建立空间直角坐标系。",
+                                               "solution_latex":  "（1）取AC中点O，连接DO,BO。因为AD=CD，所以DO⊥AC；因为△ABC为正三角形，所以BO⊥AC。又DO∩BO=O，所以AC⊥平面BDO，故AC⊥BD。\n（2）法一：由（1）知AC⊥平面OBD，进而推导出BE=ED，所以S△DCE=S△BCE，又两四面体同高，故体积比为1。法二（略）。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  "PAGE 5",
+                                                                  "description":  "四面体ABCD示意图",
+                                                                  "file":  "question-19-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "在直角坐标系xOy中，曲线$y=x^2+mx-2$与x轴交于A、B两点，点C的坐标为(0,1)，当m变化时，解答下列问题：\n（1）能否出现AC⊥BC的情况？说明理由；\n（2）证明过A、B、C三点的圆在y轴上截得的弦长为定值。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）不能出现，理由见解析；（2）弦长为定值3",
+                                               "analysis_latex":  "（1）设A(x1,0),B(x2,0)，由韦达定理得x1x2=-2，假设AC⊥BC，则斜率乘积为-1，推出x1x2=-1，矛盾。（2）设圆的一般方程，利用待定系数法可得圆的方程，令x=0求出y坐标，得到弦长。",
+                                               "solution_latex":  "（1）设A(x1,0),B(x2,0)，则x1,x2是方程$x^2+mx-2=0$的两根，故x1x2=-2。若AC⊥BC，则$k_{AC}\\cdot k_{BC}=\\frac{1}{x_1}\\cdot\\frac{1}{x_2}=-1$，即x1x2=-1，矛盾。故不能出现。\n（2）设过A,B,C三点的圆方程为$x^2+y^2+Dx+Ey+F=0$，令y=0得$x^2+Dx+F=0$与$x^2+mx-2=0$同解，故$D=m,F=-2$。又圆过C(0,1)，代入得$E=1$，所以圆方程为$x^2+y^2+mx+y-2=0$。令x=0得$y^2+y-2=0$，解得$y=1$或$y=-2$，所以圆在y轴上截得弦长为$|1-(-2)|=3$，为定值。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数$f(x)=\\ln x+ax^2+(2a+1)x$。\n（1）讨论$f(x)$的单调性；\n（2）当$a\u003c0$时，证明$f(x)\\le -\\frac{1}{4a}-2$。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）当$a\\ge 0$时，$f(x)$在$(0,+\\infty)$上单调递增；当$a\u003c0$时，$f(x)$在$(0,-\\frac{1}{2a})$上单调递增，在$(-\\frac{1}{2a},+\\infty)$上单调递减；（2）证明略",
+                                               "analysis_latex":  "（1）求导$f\u0027(x)=\\frac{2ax+1}{x}+2a+1=\\frac{(2ax+1)(x+1)}{x}$，分类讨论即可。（2）利用（1）中最大值，构造函数证明。",
+                                               "solution_latex":  "（1）$f\u0027(x)=\\frac{1}{x}+2ax+2a+1=\\frac{(2ax+1)(x+1)}{x}\\ (x\u003e0)$。当$a\\ge 0$时，$f\u0027(x)\u003e0$恒成立，$f(x)$在$(0,+\\infty)$递增；当$a\u003c0$时，令$f\u0027(x)=0$得$x=-\\frac{1}{2a}$，在$(0,-\\frac{1}{2a})$上$f\u0027(x)\u003e0$，在$(-\\frac{1}{2a},+\\infty)$上$f\u0027(x)\u003c0$。\n（2）由（1）知$f(x)_{\\max}=f(-\\frac{1}{2a})=\\ln(-\\frac{1}{2a})+\\frac{1}{4a}-1$。要证$f(x)\\le -\\frac{1}{4a}-2$，即证$\\ln(-\\frac{1}{2a})+\\frac{1}{2a}+1\\le 0$。令$t=-\\frac{1}{2a}\u003e0$，即证$\\ln t-t+1\\le 0$。设$g(t)=\\ln t-t+1$，$g\u0027(t)=\\frac{1}{t}-1$，$g(t)$在$(0,1)$递增，在$(1,+\\infty)$递减，$g(t)_{\\max}=g(1)=0$，故原不等式成立。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4-4：坐标系与参数方程]\n在直角坐标系$xOy$中，直线$l_1$的参数方程为$\\begin{cases} x=2+t\\\\ y=kt \\end{cases}$（$t$为参数），直线$l_2$的参数方程为$\\begin{cases} x=-2+m\\\\ y=\\frac{m}{k} \\end{cases}$（$m$为参数）。设$l_1$与$l_2$的交点为$P$，当$k$变化时，$P$的轨迹为曲线$C$。\n（1）写出$C$的普通方程；\n（2）以坐标原点为极点，$x$轴正半轴为极轴建立极坐标系，设$l_3:\\rho(\\cos\\theta+\\sin\\theta)-\\sqrt{2}=0$，$M$为$l_3$与$C$的交点，求$M$的极径。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$x^2-y^2=4\\ (x\\neq 2且y\\neq 0)$；（2）$\\sqrt{5}$",
+                                               "analysis_latex":  "（1）分别消掉参数$t$与$m$可得直线$l_1$与$l_2$的普通方程，联立消去$k$得$C$的普通方程。（2）将$l_3$的极坐标方程化为普通方程，联立曲线$C$的方程，求得交点坐标，进而求极径。",
+                                               "solution_latex":  "（1）$l_1$普通方程：$y=k(x-2)$，$l_2$普通方程：$x=-2+\\frac{1}{k}y$，联立消$k$得$x^2-y^2=4$，且$x\\neq 2,y\\neq 0$。\n（2）$l_3$普通方程：$x+y-\\sqrt{2}=0$，联立$\\begin{cases} x+y=\\sqrt{2}\\\\ x^2-y^2=4 \\end{cases}$，解得$\\begin{cases} x=\\frac{3\\sqrt{2}}{2}\\\\ y=-\\frac{\\sqrt{2}}{2} \\end{cases}$或$\\begin{cases} x=-\\frac{3\\sqrt{2}}{2}\\\\ y=\\frac{\\sqrt{2}}{2} \\end{cases}$，极径$\\rho=\\sqrt{x^2+y^2}=\\sqrt{5}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4-5：不等式选讲]\n已知函数$f(x)=|x+1|-|x-2|$。\n（1）求不等式$f(x)\\ge 1$的解集；\n（2）若不等式$f(x)\\ge x^2-x+m$的解集非空，求$m$的取值范围。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$\\{x|x\\ge 1\\}$；（2）$(-\\infty,\\frac{5}{4}]$",
+                                               "analysis_latex":  "（1）分段讨论去绝对值，解不等式。（2）转化为$m\\le [f(x)-x^2+x]_{\\max}$，求出最大值。",
+                                               "solution_latex":  "（1）$f(x)=\\begin{cases} -3,\u0026x\u003c-1\\\\ 2x-1,\u0026-1\\le x\\le 2\\\\ 3,\u0026x\u003e2 \\end{cases}$。$f(x)\\ge 1$：当$x\u003c-1$时无解；当$-1\\le x\\le 2$时，$2x-1\\ge 1$得$x\\ge 1$；当$x\u003e2$时恒成立。故解集为$\\{x|x\\ge 1\\}$。\n（2）设$g(x)=f(x)-x^2+x$，则$g(x)=\\begin{cases} -x^2+x-3,\u0026x\\le -1\\\\ -x^2+3x-1,\u0026-1\u003cx\u003c2\\\\ -x^2+x+3,\u0026x\\ge 2 \\end{cases}$。分别求得各段最大值：$x\\le -1$时最大$g(-1)=-5$；$-1\u003cx\u003c2$时$g(\\frac{3}{2})=\\frac{5}{4}$；$x\\ge 2$时$g(2)=1$。故$g(x)_{\\max}=\\frac{5}{4}$，所以$m\\le \\frac{5}{4}$，即$m\\in(-\\infty,\\frac{5}{4}]$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  4,
+                             "issue":  "原卷中sinα-cosα=后分数未显示，根据解析版确定为4/3。"
+                         },
+                         {
+                             "question":  6,
+                             "issue":  "原卷中f(x)系数1/5未显示，根据解析版确定。"
+                         },
+                         {
+                             "question":  9,
+                             "issue":  "原卷中圆柱体积选项未显示完整，根据解析版确定为3π/4。"
+                         },
+                         {
+                             "question":  11,
+                             "issue":  "原卷中椭圆方程和选项分数未显示，根据解析版确定。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "原卷中a选项未显示分数，根据解析版确定为1/2。"
+                         },
+                         {
+                             "question":  16,
+                             "issue":  "原卷中分段函数表达式和答案区间未完全显示，根据解析版确定。"
+                         }
+                     ]
+}

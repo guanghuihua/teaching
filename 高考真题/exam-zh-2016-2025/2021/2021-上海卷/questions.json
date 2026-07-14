@@ -1,0 +1,359 @@
+﻿{
+    "title":  "2021 年高考数学 上海卷",
+    "year":  2021,
+    "paper":  "上海卷",
+    "sections":  [
+                     {
+                         "title":  "一、填空题（本大题共12题，满分54分，第1～6题每题4分，第7～12题每题5分）",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "已知$z_1=1+i$, $z_2=2+3i$（其中$i$为虚数单位），则$z_1+z_2=$\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$3+4i$",
+                                               "analysis_latex":  "复数实部和虚部分别相加",
+                                               "solution_latex":  "$z_1+z_2=3+4i$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "已知$A=\\{x|2x\\le 1\\}$, $B=\\{-1,0,1\\}$, 则$A\\cap B=$\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\{-1,0\\}$",
+                                               "analysis_latex":  "求出集合$A$，再求出$A\\cap B$",
+                                               "solution_latex":  "$A=\\{x|2x\\le 1\\}=\\{x|x\\le \\frac{1}{2}\\}$，所以$A\\cap B=\\{-1,0\\}$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "若$x^2+y^2-2x-4y=0$,则圆心坐标为\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$(1,2)$",
+                                               "analysis_latex":  "将圆一般方程化为标准方程，直接读取圆心坐标",
+                                               "solution_latex":  "$x^2+y^2-2x-4y=0$可以化为$(x-1)^2+(y-2)^2=5$，所以圆心为$(1,2)$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "如图边长为3的正方形$ABCD$, 则$\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=$\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$9$",
+                                               "analysis_latex":  "利用向量投影转化到边上.",
+                                               "solution_latex":  "方法一：$\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=|\\overrightarrow{AB}|^2=9$；方法二：由已知$|\\overrightarrow{AB}|=3$，$|\\overrightarrow{AC}|=3\\sqrt{2}$，$\\langle\\overrightarrow{AC},\\overrightarrow{AB}\\rangle=\\frac{\\pi}{4}$，则$\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=3\\times3\\sqrt{2}\\times\\frac{\\sqrt{2}}{2}=9$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "已知$f(x)=\\frac{3}{x}+2$, 则$f^{-1}(1)=$\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$-3$",
+                                               "analysis_latex":  "利用反函数定义求解.",
+                                               "solution_latex":  "由题意，得原函数的定义域为：$(-\\infty,0)\\cup(0,+\\infty)$，结合反函数的定义，得$1=\\frac{3}{x}+2$，解得$x=-3$，所以$f^{-1}(1)=-3$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "fill_blank",
+                                               "points":  4,
+                                               "stem_latex":  "已知二项式$(x+a)^5$的展开式中，$x^2$的系数为80，则$a=$\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$2$",
+                                               "analysis_latex":  "利用二项式展开式通项公式求解.",
+                                               "solution_latex":  "$T_{r+1}=C_5^r a^r x^{5-r}\\Rightarrow r=3$, $C_5^3a^3=80$, $a=2$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知$\\begin{cases}x\\le 3\\\\2x-y-2\\ge 0\\\\3x+y-8\\ge 0\\end{cases}$,目标函数$z=x-y$，则$z$的最大值为\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$4$",
+                                               "analysis_latex":  "作出不等式表示的平面区域，根据$z$的几何意义求最值.",
+                                               "solution_latex":  "如图，可行域的三个顶点为：$(3,4)$、$(2,2)$，$(3,-1)$，结合直线方程与$z$的几何意义，得$x=3$，$y=-1$，则$z_{\\max}=4$；当$x=3$, $y=-1$, $z_{\\max}=4$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知无穷递缩等比数列$a_1=3$, $b_n=a_{2n}$, $\\{a_n\\}$的各项和为9, 则数列$\\{b_n\\}$的各项和为\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{18}{5}$",
+                                               "analysis_latex":  "利用无穷递缩等比数列求和公式建立方程求出公比，再得到$b_n$通项公式，根据特点求和.",
+                                               "solution_latex":  "$S=\\frac{a_1}{1-q}=\\frac{3}{1-q}=9\\Rightarrow q=\\frac{2}{3}$，$b_n=a_{2n}=a_1\\times q^{2n-1}=3\\times (\\frac{2}{3})^{2n-1}\\Rightarrow b_1=2$, $q_0=\\frac{4}{9}\\Rightarrow S_b=\\frac{b_1}{1-q_0}=\\frac{2}{1-\\frac{4}{9}}=\\frac{18}{5}$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "在圆柱底面半径为1,高为2, $AB$为上底底面的直径,点$C$是下底底面圆弧上的一个动点，点$C$绕着下底底面旋转一周，则$\\triangle ABC$面积的范围\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$[2,\\sqrt{5}]$",
+                                               "analysis_latex":  "注意几何题设与几何性质选择求$\\triangle ABC$面积的的方法；",
+                                               "solution_latex":  "由题意，当点$C$在下底底面圆弧上的运动时，$\\triangle ABC$的底边$AB=2$，所以，$\\triangle ABC$面积的取值与高$C_2O_1$相关；当$C_2O_1\\perp A_1C_1$时，$C_2O_1$最大为：$C_2O_1=\\sqrt{1^2+2^2}=\\sqrt{5}$，$\\triangle ABC$面积的最大值为：$\\frac{1}{2}\\times2\\times\\sqrt{5}=\\sqrt{5}$；当$AB\\perp BC_1$时，$C_2O_1$最小为：$BC_1=2$，$\\triangle ABC$面积的最小值为：$\\frac{1}{2}\\times2\\times2=2$；所以，$\\triangle ABC$面积的取值范围为：$[2,\\sqrt{5}]$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "甲、乙两人在花博会的$A$、$B$、$C$、$D$不同展馆中各选2个去参观，则两人选择中恰有一个馆相同的概率为\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{2}{3}$",
+                                               "analysis_latex":  "注意“阅读，理解”，等价为“两个”排列组合题；",
+                                               "solution_latex":  "由题意$A$、$B$、$C$、$D$四个不同的场馆，每人可选择的参观方法有：$C_4^2$种，则甲、乙两个人每人选2个场馆的参观方法有：$C_4^2\\cdot C_4^2$种；由此，甲、乙两人恰好参观同一个场馆的参观方法有：$C_4^1\\cdot C_3^1\\cdot C_2^1$种；所以，甲、乙两人恰好参观同一个场馆的概率为：$p=\\frac{C_4^1\\cdot C_3^1\\cdot C_2^1}{C_4^2\\cdot C_4^2}=\\frac{24}{36}=\\frac{2}{3}$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知抛物线$y^2=2px(p\u003e0)$,若第一象限的点$A$、$B$在抛物线上，抛物线焦点为$F$, $AF=2$, $BF=4$, $AB=3$, 则直线$AB$的斜率为\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{\\sqrt{5}}{2}$",
+                                               "analysis_latex":  "注意理解与应用抛物线的定义以及直线斜率公式的特征；",
+                                               "solution_latex":  "方法一：设$A(x_1,y_1)$，$B(x_2,y_2)$，由抛物线的定义得$|AF|=x_1+\\frac{p}{2}=2$，$|BF|=x_2+\\frac{p}{2}=4$，则$x_2-x_1=2$，又$|AB|=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}=3$，解得$y_2-y_1=\\sqrt{5}$，则直线$AB$的斜率为：$\\frac{y_2-y_1}{x_2-x_1}=\\frac{\\sqrt{5}}{2}$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知$a_i\\in\\mathbb{N}^* (i=1,2,\\cdots,9)$，且对任意$k\\in\\mathbb{N}^* (2\\le k\\le 8)$都有$a_k=a_{k-1}+1$或$a_k=a_{k+1}-1$中有且仅有一个成立，$a_1=6$，$a_9=9$，则$a_1+\\cdots+a_9$的最小值为\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$31$",
+                                               "analysis_latex":  "注意阅读与等价转化题设中的递推关系；",
+                                               "solution_latex":  "由题设，知：$a_i\\ge 1$；则①$a_2=a_1+1=7$，$a_3=a_4-1$，$a_5=a_6-1$，$a_7=a_8-1$，则$a_1+a_2+\\cdots+a_9=25+2(a_3+a_5+a_7)$，当$a_3=a_5=a_7=1$时，$a_1+a_2+\\cdots+a_9$的和最小值为31；②$a_2=a_3-1$，$a_4=a_5-1$，$a_6=a_7-1$，$a_8=a_9-1$，则$a_1+a_2+\\cdots+a_9=26+2(a_4+a_6+a_8)$，当$a_4=a_6=a_8=1$时，$a_1+a_2+\\cdots+a_9$的和最小值为32；因此，$a_1+a_2+\\cdots+a_9$的最小值为31",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、选择题（本大题共有4题，每题5分，满分20分）",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "以下哪个函数既是奇函数，又是减函数（\\_\\_\\_\\_\\_\\_）",
+                                               "choices":  [
+                                                               "$f(x)=-3x$",
+                                                               "$f(x)=x^3$",
+                                                               "$f(x)=\\log_3x$",
+                                                               "$f(x)=3^x$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "注意研究函数性质的方法；",
+                                               "solution_latex":  "排除法：B、C、D涉及函数都是增函数；故选A",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知参数方程$\\begin{cases}x=3t-4t^3\\\\y=2t\\sqrt{1-t^2}\\end{cases}(t\\in[-1,1])$,以下哪个图像是该方程的图像（\\_\\_\\_\\_\\_\\_）",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "注意利用集合观点，根据方程研究曲线的方法；",
+                                               "solution_latex":  "方法一（特值法）：令$y=2t\\sqrt{1-t^2}=0$，解得$t=-1,0,1$，代入参数方程，得$x=1,0,-1$，所以方程对应的曲线一定过$(-1,0)$、$(0,0)$、$(1,0)$，故选B",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知$f(x)=3\\sin x+2$，对于任意的$x_2\\in[0,\\frac{\\pi}{2}]$，都存在$x_1\\in[0,\\frac{\\pi}{2}]$，使得$f(x_1)+2f(x_2+\\theta)=3$成立，则下列选项中，$\\theta$可能的值是（\\_\\_\\_\\_\\_\\_）",
+                                               "choices":  [
+                                                               "$\\frac{3\\pi}{5}$",
+                                                               "$\\frac{4\\pi}{5}$",
+                                                               "$\\frac{6\\pi}{5}$",
+                                                               "$\\frac{7\\pi}{5}$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "注意仔细审题，关注关键词“任意的”、“都存在”；",
+                                               "solution_latex":  "由题设$f(x_1)+2f(x_2+\\theta)=3$，变形得$f(x_1)=3-2f(x_2+\\theta)$，又$f(x_1)\\in[2,5]$，$y=3-2f(x_2+\\theta)=-1-6\\sin(x_2+\\theta)$，当$\\theta=\\frac{7\\pi}{5}$时，$x_2+\\theta\\in[\\frac{7\\pi}{5},\\frac{19\\pi}{10}]$，$y\\in[1-6\\sin\\frac{19\\pi}{10},5]$，而$1-6\\sin\\frac{19\\pi}{10}\\approx0.85\u003c2$符合题意",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知两两不同的$x_1,y_1,x_2,y_2,x_3,y_3$满足$x_1+y_1=x_2+y_2=x_3+y_3$，且$x_1\u003cy_1$，$x_2\u003cy_2$，$x_3\u003cy_3$，$x_1y_1+x_3y_3=2x_2y_2\u003e0$，则下列选项中恒成立的是（\\_\\_\\_\\_\\_\\_）",
+                                               "choices":  [
+                                                               "$2x_2\u003cx_1+x_3$",
+                                                               "$2x_2\u003ex_1+x_3$",
+                                                               "$x_2^2\u003cx_1x_3$",
+                                                               "$x_2^2\u003ex_1x_3$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "注意通过审题与理解，进行合理的转化",
+                                               "solution_latex":  "方法一：设$x_1=s-a, y_1=s+a, a\u003e0$；$x_2=s-b, y_2=s+b, b\u003e0$；$x_3=s-c, y_3=s+c, c\u003e0\\Rightarrow a^2+c^2=2b^2, s^2-b^2\u003e0$，$(a+c)^2=2(a^2+c^2)-(a-c)^2=a^2+c^2+2ac\u003c2(a^2+c^2)=4b^2$，$a,b,c\u003e0\\Rightarrow a+c\u003c2b\\Leftrightarrow x_1+x_3\u003c2x_2$，故选B",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题（本大题共有5题，满分76分,解答下列各题必须写出必要的步骤）",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  14,
+                                               "stem_latex":  "如图，在长方体$ABCD-A_1B_1C_1D_1$中，$AB=BC=2, AA_1=3$（1）若$P$是边$A_1D_1$的动点，求三棱锥$P-ADC$的体积；（2）求$AB_1$与平面$ACC_1A_1$所成的角的大小.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1)$2$；(2)$\\arcsin\\frac{\\sqrt{26}}{13}$",
+                                               "analysis_latex":  "（1)利用体积计算公式计算；（2）证明$OB_1\\perp$平面$ACC_1A_1$，找到线面角度，再计算",
+                                               "solution_latex":  "（1)如图1，$V_{P-ADC}=\\frac{1}{3}S_{\\triangle ADC}\\times h=\\frac{1}{3}\\times\\frac{1}{2}\\times2\\times2\\times3=2$；（2）如图2，$\\because OB_1\\perp A_1C_1$, $OB_1\\perp OO_1\\Rightarrow OB_1\\perp$平面$ACC_1A_1\\Rightarrow \\theta=\\angle B_1AO_1$为$AB_1$与平面$ACC_1A_1$所成的角；在$Rt\\triangle B_1AO_1$中$B_1O_1=\\sqrt{2}$, $AB_1=\\sqrt{13}$, $\\sin\\theta=\\frac{B_1O_1}{AB_1}=\\frac{\\sqrt{2}}{\\sqrt{13}}=\\frac{\\sqrt{26}}{13}$, $\\theta=\\arcsin\\frac{\\sqrt{26}}{13}$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  14,
+                                               "stem_latex":  "在$\\triangle ABC$中，已知$a=3, b=2c$（1)若$\\angle A=\\frac{2\\pi}{3}$, 求$\\triangle ABC$的面积；（2)若$2\\sin B-\\sin C=1$,求$\\triangle ABC$的周长.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1)$\\frac{9\\sqrt{3}}{14}$；(2)$3+4\\sqrt{2}\\pm\\sqrt{5}$",
+                                               "analysis_latex":  "（1）由已知利用余弦定理即可求解$b$，$c$的值；再利用面积公式求$\\triangle ABC$的面积．（2）根据$b=2c$与$2\\sin B-\\sin C=1$建立关于角度的三角方程，求解$\\sin C$, $\\sin B$的值，再求$\\sin A$，则根据正弦定理以及$a=3$，则三边可求．",
+                                               "solution_latex":  "（1)$\\cos A=\\frac{b^2+c^2-a^2}{2bc}\\Rightarrow\\frac{(2c)^2+c^2-3^2}{2\\times(2c)c}=-\\frac{1}{2}\\Rightarrow c=\\frac{3\\sqrt{7}}{7}$, $b=\\frac{6\\sqrt{7}}{7}$；$S_{\\triangle ABC}=\\frac{1}{2}bc\\sin A=\\frac{1}{2}\\times2c^2\\times\\sin\\frac{2\\pi}{3}=\\frac{1}{2}\\times2\\times(\\frac{3\\sqrt{7}}{7})^2\\times\\frac{\\sqrt{3}}{2}=\\frac{9\\sqrt{3}}{14}$（2）$b=2c\\Rightarrow\\sin B=2\\sin C\\Rightarrow2\\times2\\sin C-\\sin C=1\\Rightarrow\\sin C=\\frac{1}{3}$, $\\sin B=\\frac{2}{3}$，$\\sin A=\\sin(B+C)=\\sin B\\cos C+\\cos B\\sin C=\\frac{4\\sqrt{2}\\pm5}{9}$，$c=\\frac{a\\sin C}{\\sin A}=\\frac{4\\sqrt{2}\\pm5}{3}$，三角形周长$l=a+b+c=a+3c=3+4\\sqrt{2}\\pm\\sqrt{5}$",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  14,
+                                               "stem_latex":  "已知某企业今年（2021年）第一季度的营业额为1.1亿元，以后每个季度（一年有四个季度）营业额都比前一季度多0.05亿元，该企业第一季度利润为0.16亿元，以后每一季度的利润都比前一季度增长4%.（1）求2021第一季度起20季度的营业额总和；（2）问哪一年哪个季度的利润首次超过该季度营业额的18%？",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1)31.5亿元；(2)2027年第二季度",
+                                               "analysis_latex":  "（1）根据每个季度比上个季度营业额增加0.05亿元可以知道数列为一个等差数列，求解20季度营业收入总额即为等差数列前20项的和；（2）通过数列通项公式建立数列不等式，利用计算器计算求解不等式即可。",
+                                               "solution_latex":  "（1）设$a_n$为第$n$季度的营业额，$b_n$为利润，由题意得，$a_n$的首项为1.1亿元，公差为0.05亿元，所以2021到2025年，20季度营业收入总额为：$S_{20}=20a_1+\\frac{20\\times19}{2}\\times d=31.5$（亿元）（2）由已知得，$a_n=a_1+(n-1)d=1.1+0.05(n-1)$；$b_n$的首项为0.16亿元，公比为1.04，即$b_n=b_1\\cdot q^{n-1}=0.16\\times1.04^{n-1}$；所以$a_n\\times18\\%\u003cb_n$，利用计算器可得，$n_{\\min}=26$，所以2027年第二季度该公司的利润首次超过该季度营业收入的18%",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  16,
+                                               "stem_latex":  "已知$\\Gamma:\\frac{x^2}{2}+y^2=1$, $F_1$、$F_2$是其左右焦点，$P(m,0)(m\u003c-\\sqrt{2})$,直线$l$过点$P$交$\\Gamma$于$A$、$B$两点，且$A$在线段$BP$上.（1）若$B$是上顶点，$\\overrightarrow{BF_1}=\\overrightarrow{PF_1}$, 求$m$的值；（2）若$\\overrightarrow{F_1A}\\cdot\\overrightarrow{F_2A}=\\frac{1}{3}$, 且原点$O$到直线$l$的距离为$\\frac{4\\sqrt{15}}{15}$，求直线$l$的方程；（3）证明：对于任意$m\u003c-\\sqrt{2}$, 总存在唯一一条直线使得$\\overrightarrow{F_1A}//\\overrightarrow{F_2B}$.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1)$-1-\\sqrt{2}$；(2)$3x-9y+4\\sqrt{6}=0$；(3)略",
+                                               "analysis_latex":  "（1）根据椭圆的定义以及$\\overrightarrow{BF_1}=\\overrightarrow{PF_1}$建立关于$m$的方程；（2）通过原点$O$到直线$l$的距离建立关于直线斜率的方程，求解斜率；（3）找到直线斜率与$m$的函数关系，结合函数关系式判断$m\u003c-\\sqrt{2}$是否是唯一解使得$\\overrightarrow{F_1A}//\\overrightarrow{F_2B}$；",
+                                               "solution_latex":  "（1)$\\Gamma:\\frac{x^2}{2}+y^2=1$, $F_1(-1,0)$, $F_2(1,0)$, $\\overrightarrow{BF_1}=\\sqrt{2}$, $\\overrightarrow{PF_1}=-1-m$；$\\overrightarrow{BF_1}=\\overrightarrow{PF_1}$, $-1-m=\\sqrt{2}$, $m=-1-\\sqrt{2}$（2）设$A(x_1,y_1)$, $\\overrightarrow{F_1A}=(x_1+1,y_1)$, $\\overrightarrow{F_2A}=(x_1-1,y_1)$；$\\overrightarrow{F_1A}\\cdot\\overrightarrow{F_2A}=x_1^2+y_1^2-1=\\frac{1}{3}\\Rightarrow x_1^2+y_1^2=\\frac{4}{3}$，联立$\\frac{x_1^2}{2}+y_1^2=1$得$A(-\\frac{\\sqrt{6}}{3},\\frac{\\sqrt{6}}{3})$，设$l:y=k(x+\\frac{\\sqrt{6}}{3})+\\frac{\\sqrt{6}}{3}=kx+\\frac{\\sqrt{6}}{3}(k+1)$，原点$O$到直线$l$的距离$d=\\frac{|\\frac{\\sqrt{6}}{3}k+\\frac{\\sqrt{6}}{3}|}{\\sqrt{1+k^2}}=\\frac{4\\sqrt{15}}{15}\\Rightarrow3k^2-10k+3=0\\Rightarrow k=3$或$k=\\frac{1}{3}$（$A$在线段$BP$上，$k=3$舍去），$l:3x-9y+4\\sqrt{6}=0$（3）设$A(x_1,y_1)$, $B(x_2,y_2)$，直线$l:x=hy+m$，$\\overrightarrow{F_1A}//\\overrightarrow{F_2B}$，则$\\frac{y_2}{y_1}=\\frac{1-m}{m+1}=\\frac{m-1}{m+1}$，$\\therefore y_2=\\frac{m-1}{m+1}y_1$；联立直线与椭圆得$\\begin{cases}x=hy+m\\\\\\frac{x^2}{2}+y^2=1\\end{cases}\\Rightarrow(h^2+2)y^2+2mhy+m^2-2=0$，即$y_1+y_2=-\\frac{2mh}{h^2+2}$, $y_1y_2=\\frac{m^2-2}{h^2+2}$；所以$(1+\\frac{m-1}{m+1})y_1=-\\frac{2mh}{h^2+2}$, $y_1^2\\frac{m-1}{m+1}=\\frac{m^2-2}{h^2+2}$；代入得$\\frac{-h(2m+1)}{h^2+2}\\frac{m-1}{m+1}\\frac{h^2(m+1)^2}{(h^2+2)^2}=\\frac{m^2-2}{h^2+2}$；所以$(m^2-1)h^2=(m^2-2)(h^2+2)$，$m^2h^2-h^2=m^2h^2-2h^2+2m^2-4$，$h^2=2m^2-4\\Rightarrow h=\\sqrt{2m^2-4}\\Rightarrow k=\\frac{1}{\\sqrt{2m^2-4}}$，即对于任意$m\u003c-\\sqrt{2}$，使得$\\overrightarrow{F_1A}//\\overrightarrow{F_2B}$的直线有且仅有一条；",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  18,
+                                               "stem_latex":  "如果对任意$x_1,x_2\\in\\mathbb{R}$使得$x_1-x_2\\in S$都有$f(x_1)-f(x_2)\\in S$,则称$f(x)$是$S$关联的.（1）判断并证明$f(x)=2x-1$是否是$[0,+\\infty)$关联？是否是$[0,1]$关联？（2）$f(x)$是$\\{3\\}$关联的，在$[0,3)$上有$f(x)=x^2-2x$,解不等式$2\\le f(x)\\le 3$；（3）“$f(x)$是$\\{3\\}$关联的，且是$[0,+\\infty)$关联”当且仅当“$f(x)$是$[1,2]$关联的”.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1)$f(x)=2x-1$是$[0,+\\infty)$关联，不是$[0,1]$关联；(2)$[1+\\sqrt{3},5]$；(3)证明略",
+                                               "analysis_latex":  "（1）根据“关联”定义进行判断；（2）根据“$f(x)$是$\\{3\\}$关联”有：$f(x+3)-f(x)=3$；以及函数解析式作出函数图像，利用图像解不等式；（3）分为充分性、必要性两个方面证明；",
+                                               "solution_latex":  "（1）$x_1-x_2\\in[0,+\\infty)$, $f(x_1)-f(x_2)=(2x_1-1)-(2x_2-1)=x_1-x_2\\in[0,+\\infty)$, $f(x)=2x-1$是$[0,+\\infty)$关联；$x_1-x_2\\in[0,1]$, $f(x_1)-f(x_2)=2(x_1-x_2)\\in[0,2]$, $f(x)=2x-1$不是$[0,1]$关联；（2）$f(x)$是$\\{3\\}$关联，$f(x+3)-f(x)=3$，又$x\\in[0,3)$时，$f(x)=x^2-2x$，函数图像略，$a=1+\\sqrt{3}$，原不等式的解为$[a,5]$即$[1+\\sqrt{3},5]$（3）略",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  6,
+                             "issue":  "原卷中二项式指数为5，但解析中写为r=3，需确认题目是否一致"
+                         },
+                         {
+                             "question":  15,
+                             "issue":  "选项中的分数可能有误，原卷与解析中选项符号不一致，已按原卷文本层整理"
+                         }
+                     ]
+}

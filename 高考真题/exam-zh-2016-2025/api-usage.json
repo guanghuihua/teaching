@@ -1,0 +1,12 @@
+﻿{
+    "papers":  71,
+    "questions":  1577,
+    "review_items":  446,
+    "prompt_tokens":  1945574,
+    "completion_tokens":  876870,
+    "cached_prompt_tokens":  77056,
+    "total_tokens":  2822444,
+    "estimated_cost_cny":  3.6993,
+    "estimate_basis":  "deepseek-v4-flash: input CNY 1/M tokens, output CNY 2/M tokens; excludes retries outside this output set",
+    "generated_at":  "2026-07-15T03:20:53"
+}

@@ -1,0 +1,472 @@
+﻿{
+    "title":  "2018 年高考数学 全国I卷-文科",
+    "year":  2018,
+    "paper":  "新课标全国Ⅰ卷文科",
+    "sections":  [
+                     {
+                         "title":  "一、选择题",
+                         "instructions":  "本题共 12 小题，每小题 5 分，共 60 分。在每小题给出的四个选项中，只有一项是符合题目要求的。",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知集合 $A=\\{0,2\\}$，$B=\\{-2,-1,0,1,2\\}$，则 $A\\cap B=$",
+                                               "choices":  [
+                                                               "$\\{0,2\\}$",
+                                                               "$\\{1,2\\}$",
+                                                               "$\\{0\\}$",
+                                                               "$\\{-2,-1,0,1,2\\}$"
+                                                           ],
+                                               "answer_latex":  "$\\{0,2\\}$",
+                                               "analysis_latex":  "直接利用集合的交集的运算法则求解即可。",
+                                               "solution_latex":  "集合 $A=\\{0,2\\}$，$B=\\{-2,-1,0,1,2\\}$，则 $A\\cap B=\\{0,2\\}$。故选：$A$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $z=\\frac{1-i}{1+i}+2i$，则 $|z|=$",
+                                               "choices":  [
+                                                               "$0$",
+                                                               "$\\frac{1}{2}$",
+                                                               "$1$",
+                                                               "$\\sqrt{2}$"
+                                                           ],
+                                               "answer_latex":  "$1$",
+                                               "analysis_latex":  "利用复数的代数形式的混合运算化简后，然后求解复数的模。",
+                                               "solution_latex":  "$z=\\frac{1-i}{1+i}+2i=\\frac{(1-i)^2}{(1+i)(1-i)}+2i=\\frac{-2i}{2}+2i=-i+2i=i$，则 $|z|=1$。故选：$C$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "某地区经过一年的新农村建设，农村的经济收入增加了一倍，实现翻番。为更好地了解该地区农村的经济收入变化情况，统计了该地区新农村建设前后农村的经济收入构成比例，得到如下饼图：\n\n（饼图描述：建设前种植收入60%，养殖收入30%，第三产业收入6%，其他收入4%；建设后种植收入37%，养殖收入30%，第三产业收入28%，其他收入5%）\n\n则下面结论中不正确的是",
+                                               "choices":  [
+                                                               "新农村建设后，种植收入减少",
+                                                               "新农村建设后，其他收入增加了一倍以上",
+                                                               "新农村建设后，养殖收入增加了一倍",
+                                                               "新农村建设后，养殖收入与第三产业收入的总和超过了经济收入的一半"
+                                                           ],
+                                               "answer_latex":  "新农村建设后，种植收入减少",
+                                               "analysis_latex":  "设建设前经济收入为 $a$，建设后经济收入为 $2a$。通过选项逐一分析新农村建设前后，经济收入情况，利用数据推出结果。",
+                                               "solution_latex":  "设建设前经济收入为 $a$，建设后经济收入为 $2a$。\n$A$ 项，种植收入 $37\\%\\times 2a-60\\%a=14\\%a\u003e0$，故建设后，种植收入增加，故 $A$ 项错误。\n$B$ 项，建设后，其他收入为 $5\\%\\times 2a=10\\%a$，建设前，其他收入为 $4\\%a$，故 $10\\%a\\div 4\\%a=2.5\u003e2$，故 $B$ 项正确。\n$C$ 项，建设后，养殖收入为 $30\\%\\times 2a=60\\%a$，建设前，养殖收入为 $30\\%a$，故 $60\\%a\\div 30\\%a=2$，故 $C$ 项正确。\n$D$ 项，建设后，养殖收入与第三产业收入总和为 $(30\\%+28\\%)\\times 2a=58\\%\\times 2a$，经济收入为 $2a$，故 $(58\\%\\times 2a)\\div 2a=58\\%\u003e50\\%$，故 $D$ 项正确。因为是选择不正确的一项，故选：$A$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  1,
+                                                                  "description":  "饼图：建设前种植60%，养殖30%，第三产业6%，其他4%；建设后种植37%，养殖30%，第三产业28%，其他5%",
+                                                                  "file":  "question-3-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知椭圆 $C$：$\\frac{x^2}{a^2}+\\frac{y^2}{4}=1$ 的一个焦点为 $(2,0)$，则 $C$ 的离心率为",
+                                               "choices":  [
+                                                               "$\\frac{1}{3}$",
+                                                               "$\\frac{1}{2}$",
+                                                               "$\\frac{\\sqrt{2}}{2}$",
+                                                               "$\\frac{2\\sqrt{2}}{3}$"
+                                                           ],
+                                               "answer_latex":  "$\\frac{\\sqrt{2}}{2}$",
+                                               "analysis_latex":  "利用椭圆的焦点坐标，求出 $a$，然后求解椭圆的离心率即可。",
+                                               "solution_latex":  "椭圆 $C$：$\\frac{x^2}{a^2}+\\frac{y^2}{4}=1$ 的一个焦点为 $(2,0)$，可得 $a^2-4=4$，解得 $a=2\\sqrt{2}$，$\\because c=2$，$\\therefore e=\\frac{c}{a}=\\frac{2}{2\\sqrt{2}}=\\frac{\\sqrt{2}}{2}$。故选：$C$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知圆柱的上、下底面的中心分别为 $O_1$，$O_2$，过直线 $O_1O_2$ 的平面截该圆柱所得的截面是面积为 $8$ 的正方形，则该圆柱的表面积为",
+                                               "choices":  [
+                                                               "$12\\sqrt{2}\\pi$",
+                                                               "$12\\pi$",
+                                                               "$8\\sqrt{2}\\pi$",
+                                                               "$10\\pi$"
+                                                           ],
+                                               "answer_latex":  "$12\\pi$",
+                                               "analysis_latex":  "利用圆柱的截面是面积为 $8$ 的正方形，求出圆柱的底面直径与高，然后求解圆柱的表面积。",
+                                               "solution_latex":  "设圆柱的底面直径为 $2R$，则高为 $2R$，圆柱的上、下底面的中心分别为 $O_1$，$O_2$，过直线 $O_1O_2$ 的平面截该圆柱所得的截面是面积为 $8$ 的正方形，可得 $4R^2=8$，解得 $R=\\sqrt{2}$，则该圆柱的表面积为 $2\\pi R\\cdot 2R+2\\pi R^2=4\\pi R^2+2\\pi R^2=6\\pi R^2=12\\pi$。故选：$B$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设函数 $f(x)=x^3+(a-1)x^2+ax$。若 $f(x)$ 为奇函数，则曲线 $y=f(x)$ 在点 $(0,0)$ 处的切线方程为",
+                                               "choices":  [
+                                                               "$y=-2x$",
+                                                               "$y=-x$",
+                                                               "$y=2x$",
+                                                               "$y=x$"
+                                                           ],
+                                               "answer_latex":  "$y=x$",
+                                               "analysis_latex":  "利用函数的奇偶性求出 $a$，求出函数的导数，求出切线的斜率然后求解切线方程。",
+                                               "solution_latex":  "函数 $f(x)=x^3+(a-1)x^2+ax$，若 $f(x)$ 为奇函数，可得 $a=1$，所以函数 $f(x)=x^3+x$，可得 $f\u0027(x)=3x^2+1$，曲线 $y=f(x)$ 在点 $(0,0)$ 处的切线的斜率为 $1$，则曲线 $y=f(x)$ 在点 $(0,0)$ 处的切线方程为 $y=x$。故选：$D$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在 $\\triangle ABC$ 中，$AD$ 为 $BC$ 边上的中线，$E$ 为 $AD$ 的中点，则 $\\overrightarrow{EB}=$",
+                                               "choices":  [
+                                                               "$\\frac{3}{4}\\overrightarrow{AB}-\\frac{1}{4}\\overrightarrow{AC}$",
+                                                               "$\\frac{1}{4}\\overrightarrow{AB}-\\frac{3}{4}\\overrightarrow{AC}$",
+                                                               "$\\frac{3}{4}\\overrightarrow{AB}+\\frac{1}{4}\\overrightarrow{AC}$",
+                                                               "$\\frac{1}{4}\\overrightarrow{AB}+\\frac{3}{4}\\overrightarrow{AC}$"
+                                                           ],
+                                               "answer_latex":  "$\\frac{3}{4}\\overrightarrow{AB}-\\frac{1}{4}\\overrightarrow{AC}$",
+                                               "analysis_latex":  "运用向量的加减运算和向量中点的表示，计算可得所求向量。",
+                                               "solution_latex":  "在 $\\triangle ABC$ 中，$AD$ 为 $BC$ 边上的中线，$E$ 为 $AD$ 的中点，$\\overrightarrow{EB}=\\overrightarrow{AB}-\\overrightarrow{AE}=\\overrightarrow{AB}-\\frac{1}{2}\\overrightarrow{AD}=\\overrightarrow{AB}-\\frac{1}{2}\\times\\frac{1}{2}(\\overrightarrow{AB}+\\overrightarrow{AC})=\\overrightarrow{AB}-\\frac{1}{4}(\\overrightarrow{AB}+\\overrightarrow{AC})=\\frac{3}{4}\\overrightarrow{AB}-\\frac{1}{4}\\overrightarrow{AC}$。故选：$A$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知函数 $f(x)=2\\cos^2x-\\sin^2x+2$，则",
+                                               "choices":  [
+                                                               "$f(x)$ 的最小正周期为 $\\pi$，最大值为 $3$",
+                                                               "$f(x)$ 的最小正周期为 $\\pi$，最大值为 $4$",
+                                                               "$f(x)$ 的最小正周期为 $2\\pi$，最大值为 $3$",
+                                                               "$f(x)$ 的最小正周期为 $2\\pi$，最大值为 $4$"
+                                                           ],
+                                               "answer_latex":  "$f(x)$ 的最小正周期为 $\\pi$，最大值为 $4$",
+                                               "analysis_latex":  "首先通过三角函数关系式的恒等变换，把函数的关系式变形成余弦型函数，进一步利用余弦函数的性质求出结果。",
+                                               "solution_latex":  "函数 $f(x)=2\\cos^2x-\\sin^2x+2=2\\cos^2x-\\sin^2x+2\\sin^2x+2\\cos^2x=4\\cos^2x+\\sin^2x=3\\cos^2x+1=\\frac{3}{2}\\cos2x+\\frac{5}{2}$，故函数的最小正周期为 $\\pi$，函数的最大值为 $4$。故选：$B$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "某圆柱的高为 $2$，底面周长为 $16$，其三视图如图。圆柱表面上的点 $M$ 在正视图上的对应点为 $A$，圆柱表面上的点 $N$ 在左视图上的对应点为 $B$，则在此圆柱侧面上，从 $M$ 到 $N$ 的路径中，最短路径的长度为",
+                                               "choices":  [
+                                                               "$2\\sqrt{17}$",
+                                                               "$2\\sqrt{5}$",
+                                                               "$3$",
+                                                               "$2$"
+                                                           ],
+                                               "answer_latex":  "$2\\sqrt{5}$",
+                                               "analysis_latex":  "判断三视图对应的几何体的形状，利用侧面展开图，转化求解即可。",
+                                               "solution_latex":  "由题意可知几何体是圆柱，底面周长 $16$，高为 $2$，直观图以及侧面展开图如图：圆柱表面上的点 $N$ 在左视图上的对应点为 $B$，则在此圆柱侧面上，从 $M$ 到 $N$ 的路径中，最短路径的长度为 $\\sqrt{2^2+4^2}=2\\sqrt{5}$。故选：$B$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  2,
+                                                                  "description":  "圆柱三视图：正视图矩形，左视图矩形，俯视图圆。点M在正视图左上角A，点N在左视图左上角B。",
+                                                                  "file":  "question-9-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在长方体 $ABCD-A_1B_1C_1D_1$ 中，$AB=BC=2$，$AC_1$ 与平面 $BB_1C_1C$ 所成的角为 $30^\\circ$，则该长方体的体积为",
+                                               "choices":  [
+                                                               "$8$",
+                                                               "$6\\sqrt{2}$",
+                                                               "$8\\sqrt{2}$",
+                                                               "$8\\sqrt{3}$"
+                                                           ],
+                                               "answer_latex":  "$8\\sqrt{2}$",
+                                               "analysis_latex":  "画出图形，利用已知条件求出长方体的高，然后求解长方体的体积即可。",
+                                               "solution_latex":  "长方体 $ABCD-A_1B_1C_1D_1$ 中，$AB=BC=2$，$AC_1$ 与平面 $BB_1C_1C$ 所成的角为 $30^\\circ$，即 $\\angle AC_1B=30^\\circ$，可得 $BC_1=\\frac{AB}{\\tan30^\\circ}=2\\sqrt{3}$，可得 $BB_1=\\sqrt{BC_1^2-BC^2}=2\\sqrt{2}$，所以该长方体的体积为 $2\\times2\\times2\\sqrt{2}=8\\sqrt{2}$。故选：$C$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知角 $\\alpha$ 的顶点为坐标原点，始边与 $x$ 轴的非负半轴重合，终边上有两点 $A(1,a)$，$B(2,b)$，且 $\\cos2\\alpha=\\frac{2}{3}$，则 $|a-b|=$",
+                                               "choices":  [
+                                                               "$\\frac{1}{5}$",
+                                                               "$\\frac{\\sqrt{5}}{5}$",
+                                                               "$\\frac{2\\sqrt{5}}{5}$",
+                                                               "$1$"
+                                                           ],
+                                               "answer_latex":  "$\\frac{\\sqrt{5}}{5}$",
+                                               "analysis_latex":  "推导出 $\\cos2\\alpha=2\\cos^2\\alpha-1=\\frac{2}{3}$，从而 $|\\cos\\alpha|=\\frac{\\sqrt{30}}{6}$，进而 $|\\tan\\alpha|=|\\frac{b-a}{2-1}|=|a-b|=\\frac{|\\sin\\alpha|}{|\\cos\\alpha|}=\\frac{\\sqrt{5}}{5}$。",
+                                               "solution_latex":  "$\\because \\cos2\\alpha=2\\cos^2\\alpha-1=\\frac{2}{3}$，$\\therefore \\cos^2\\alpha=\\frac{5}{6}$，$|\\cos\\alpha|=\\frac{\\sqrt{30}}{6}$，$|\\sin\\alpha|=\\sqrt{1-\\cos^2\\alpha}=\\frac{\\sqrt{6}}{6}$，$|\\tan\\alpha|=\\frac{|\\sin\\alpha|}{|\\cos\\alpha|}=\\frac{\\sqrt{5}}{5}$，又 $\\tan\\alpha=\\frac{b-a}{2-1}=b-a$，$\\therefore |a-b|=\\frac{\\sqrt{5}}{5}$。故选：$B$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设函数 $f(x)=\\begin{cases} 2^{-x}, \u0026 x\\le 0 \\\\ 1, \u0026 x\u003e0 \\end{cases}$，则满足 $f(x+1)\u003cf(2x)$ 的 $x$ 的取值范围是",
+                                               "choices":  [
+                                                               "$(-\\infty,-1]$",
+                                                               "$(0,+\\infty)$",
+                                                               "$(-1,0)$",
+                                                               "$(-\\infty,0)$"
+                                                           ],
+                                               "answer_latex":  "$(-\\infty,0)$",
+                                               "analysis_latex":  "画出函数的图象，利用函数的单调性列出不等式转化求解即可。",
+                                               "solution_latex":  "函数 $f(x)=\\begin{cases} 2^{-x}, \u0026 x\\le 0 \\\\ 1, \u0026 x\u003e0 \\end{cases}$ 的图象如图：满足 $f(x+1)\u003cf(2x)$，可得 $2x\u003c0\u003cx+1$ 或 $2x\u003cx+1\\le 0$，解得 $x\\in(-\\infty,0)$。故选：$D$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  2,
+                                                                  "description":  "分段函数图像：x\u003c=0时递减，x\u003e0时水平线y=1。"
+                                                              }
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "本题共 4 小题，每小题 5 分，共 20 分。",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知函数 $f(x)=\\log_2(x^2+a)$，若 $f(3)=1$，则 $a=$",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$-7$",
+                                               "analysis_latex":  "直接利用函数的解析式，求解函数值即可。",
+                                               "solution_latex":  "函数 $f(x)=\\log_2(x^2+a)$，若 $f(3)=1$，可得 $\\log_2(9+a)=1$，可得 $a=-7$。故答案为：$-7$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "若 $x,y$ 满足约束条件 $\\begin{cases} x-2y-2\\le 0 \\\\ x-y+1\\ge 0 \\\\ y\\le 0 \\end{cases}$，则 $z=3x+2y$ 的最大值为",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$6$",
+                                               "analysis_latex":  "作出不等式组对应的平面区域，利用目标函数的几何意义进行求解即可。",
+                                               "solution_latex":  "作出不等式组对应的平面区域如图：由 $z=3x+2y$ 得 $y=-\\frac{3}{2}x+\\frac{z}{2}$，平移直线 $y=-\\frac{3}{2}x+\\frac{z}{2}$，由图象知当直线经过点 $A(2,0)$ 时，直线的截距最大，此时 $z$ 最大，最大值为 $z=3\\times2=6$。故答案为：$6$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  3,
+                                                                  "description":  "线性规划可行域：三条直线围成的封闭三角形，顶点(2,0)处取得最大值。",
+                                                                  "file":  "question-14-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "直线 $y=x+1$ 与圆 $x^2+y^2+2y-3=0$ 交于 $A,B$ 两点，则 $|AB|=$",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$2\\sqrt{2}$",
+                                               "analysis_latex":  "求出圆的圆心与半径，通过点到直线的距离以及半径、半弦长的关系，求解即可。",
+                                               "solution_latex":  "圆 $x^2+y^2+2y-3=0$ 的圆心 $(0,-1)$，半径为 $2$，圆心到直线的距离为 $\\frac{|0+1+1|}{\\sqrt{2}}=\\sqrt{2}$，所以 $|AB|=2\\sqrt{2^2-(\\sqrt{2})^2}=2\\sqrt{2}$。故答案为：$2\\sqrt{2}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "$\\triangle ABC$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$。已知 $b\\sin C+c\\sin B=4a\\sin B\\sin C$，$b^2+c^2-a^2=8$，则 $\\triangle ABC$ 的面积为",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{2\\sqrt{3}}{3}$",
+                                               "analysis_latex":  "直接利用正弦定理求出 $A$ 的值，进一步利用余弦定理求出 $bc$ 的值，最后求出三角形的面积。",
+                                               "solution_latex":  "$\\because b\\sin C+c\\sin B=4a\\sin B\\sin C$，由正弦定理得 $\\sin B\\sin C+\\sin C\\sin B=4\\sin A\\sin B\\sin C$，$\\because \\sin B\\sin C\\neq0$，$\\therefore \\sin A=\\frac{1}{2}$，则 $A=\\frac{\\pi}{6}$ 或 $A=\\frac{5\\pi}{6}$。由 $b^2+c^2-a^2=8$，得 $\\cos A=\\frac{b^2+c^2-a^2}{2bc}=\\frac{8}{2bc}=\\frac{4}{bc}$。当 $A=\\frac{\\pi}{6}$ 时，$\\frac{\\sqrt{3}}{2}=\\frac{4}{bc}$，解得 $bc=\\frac{8\\sqrt{3}}{3}$，$S_{\\triangle ABC}=\\frac{1}{2}bc\\sin A=\\frac{1}{2}\\times\\frac{8\\sqrt{3}}{3}\\times\\frac{1}{2}=\\frac{2\\sqrt{3}}{3}$。当 $A=\\frac{5\\pi}{6}$ 时，$\\cos A=-\\frac{\\sqrt{3}}{2}=\\frac{4}{bc}$，解得 $bc=-\\frac{8\\sqrt{3}}{3}$（不合题意），舍去。故答案为：$\\frac{2\\sqrt{3}}{3}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "共 70 分。解答应写出文字说明、证明过程或演算步骤。第 17～21 题为必考题，每个试题考生都必须作答。第 22、23 题为选考题，考生根据要求作答。（一）必考题：共 60 分。",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知数列 $\\{a_n\\}$ 满足 $a_1=1$，$na_{n+1}=2(n+1)a_n$，设 $b_n=\\frac{a_n}{n}$。\n（1）求 $b_1,b_2,b_3$；\n（2）判断数列 $\\{b_n\\}$ 是否为等比数列，并说明理由；\n（3）求 $\\{a_n\\}$ 的通项公式。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）直接利用已知条件求出数列的各项。（2）利用定义说明数列为等比数列。（3）利用（1）（2）的结论，直接求出数列的通项公式。",
+                                               "solution_latex":  "（1）数列 $\\{a_n\\}$ 满足 $a_1=1$，$na_{n+1}=2(n+1)a_n$，则 $\\frac{a_{n+1}}{n+1}=2\\cdot\\frac{a_n}{n}$（常数），由于 $b_n=\\frac{a_n}{n}$，故 $\\frac{b_{n+1}}{b_n}=2$，数列 $\\{b_n\\}$ 是以 $b_1$ 为首项，$2$ 为公比的等比数列。整理得 $b_n=2^{n-1}$，所以 $b_1=1,b_2=2,b_3=4$。\n（2）数列 $\\{b_n\\}$ 是等比数列，理由：$\\frac{b_{n+1}}{b_n}=2$（常数）。\n（3）由（1）得 $b_n=2^{n-1}$，根据 $b_n=\\frac{a_n}{n}$，所以 $a_n=n\\cdot2^{n-1}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图，在平行四边形 $ABCM$ 中，$AB=AC=3$，$\\angle ACM=90^\\circ$，以 $AC$ 为折痕将 $\\triangle ACM$ 折起，使点 $M$ 到达点 $D$ 的位置，且 $AB\\perp DA$。\n（1）证明：平面 $ACD\\perp$ 平面 $ABC$；\n（2）$Q$ 为线段 $AD$ 上一点，$P$ 为线段 $BC$ 上一点，且 $BP=DQ=\\frac{2}{3}DA$，求三棱锥 $Q-ABP$ 的体积。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）可得 $AB\\perp AC$，$AB\\perp DA$，且 $AD\\cap AC=A$，即可得 $AB\\perp$ 面 $ADC$，平面 $ACD\\perp$ 平面 $ABC$。（2）首先证明 $DC\\perp$ 面 $ABC$，再根据 $BP=DQ=\\frac{2}{3}DA$，可得三棱锥 $Q-ABP$ 的高，求出三角形 $ABP$ 的面积即可求得三棱锥 $Q-ABP$ 的体积。",
+                                               "solution_latex":  "（1）证明：$\\because$ 在平行四边形 $ABCM$ 中，$\\angle ACM=90^\\circ$，$\\therefore AB\\perp AC$，又 $AB\\perp DA$，且 $AD\\cap AC=A$，$\\therefore AB\\perp$ 面 $ADC$，$\\because AB\\subset$ 面 $ABC$，$\\therefore$ 平面 $ACD\\perp$ 平面 $ABC$。\n（2）$\\because AB=AC=3$，$\\angle ACM=90^\\circ$，$\\therefore AD=AM=3\\sqrt{2}$，$\\therefore BP=DQ=\\frac{2}{3}DA=2\\sqrt{2}$。由（1）得 $DC\\perp AB$，又 $DC\\perp CA$，$\\therefore DC\\perp$ 面 $ABC$，$\\therefore$ 三棱锥 $Q-ABP$ 的体积 $V=\\frac{1}{3}S_{\\triangle ABP}\\cdot\\frac{1}{3}DC=\\frac{1}{3}\\times\\frac{1}{2}\\times AB\\times BP\\times\\sin\\angle ABP\\times\\frac{1}{3}\\times AC=\\frac{1}{3}\\times\\frac{1}{2}\\times3\\times2\\sqrt{2}\\times\\sin45^\\circ\\times\\frac{1}{3}\\times3=1$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "几何体示意图：平行四边形ABCM折起为四面体，AB⊥AC，AB⊥DA，AC⊥CM。",
+                                                                  "file":  "question-18-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "某家庭记录了未使用节水龙头 $50$ 天的日用水量数据（单位：$m^3$）和使用了节水龙头 $50$ 天的日用水量数据，得到频数分布表如下：\n未使用节水龙头 $50$ 天的日用水量频数分布表\n\n日用水量 \u0026 $[0,0.1)$ \u0026 $[0.1,0.2)$ \u0026 $[0.2,0.3)$ \u0026 $[0.3,0.4)$ \u0026 $[0.4,0.5)$ \u0026 $[0.5,0.6)$ \u0026 $[0.6,0.7)$ \\\\\n频数 \u0026 $1$ \u0026 $3$ \u0026 $2$ \u0026 $4$ \u0026 $9$ \u0026 $26$ \u0026 $5$\n\n使用了节水龙头 $50$ 天的日用水量频数分布表\n\n日用水量 \u0026 $[0,0.1)$ \u0026 $[0.1,0.2)$ \u0026 $[0.2,0.3)$ \u0026 $[0.3,0.4)$ \u0026 $[0.4,0.5)$ \u0026 $[0.5,0.6)$ \\\\\n频数 \u0026 $1$ \u0026 $5$ \u0026 $13$ \u0026 $10$ \u0026 $16$ \u0026 $5$\n\n（1）作出使用了节水龙头 $50$ 天的日用水量数据的频率分布直方图；\n（2）估计该家庭使用节水龙头后，日用水量小于 $0.35m^3$ 的概率；\n（3）估计该家庭使用节水龙头后，一年能节省多少水？（一年按 $365$ 天计算，同一组中的数据以这组数据所在区间中点的值作代表）",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）根据使用了节水龙头 $50$ 天的日用水量频数分布表能作出频率分布直方图。（2）根据频率分布直方图能求出概率。（3）由题意得未使用水龙头 $50$ 天的日均水量为 $0.48$，使用节水龙头 $50$ 天的日均用水量为 $0.35$，能估计一年能节省多少水。",
+                                               "solution_latex":  "（1）根据使用了节水龙头 $50$ 天的日用水量频数分布表，作出频率分布直方图如下：\n（频率/组距：$[0,0.1)$: $0.2$, $[0.1,0.2)$: $1.0$, $[0.2,0.3)$: $2.6$, $[0.3,0.4)$: $2.0$, $[0.4,0.5)$: $3.2$, $[0.5,0.6)$: $1.0$）\n（2）该家庭使用节水龙头后，日用水量小于 $0.35m^3$ 的概率为 $p=(0.2+1.0+2.6+1)\\times0.1=0.48$。\n（3）未使用水龙头 $50$ 天的日均水量为 $\\frac{1}{50}(1\\times0.05+3\\times0.15+2\\times0.25+4\\times0.35+9\\times0.45+26\\times0.55+5\\times0.65)=0.48$，使用节水龙头 $50$ 天的日均用水量为 $\\frac{1}{50}(1\\times0.05+5\\times0.15+13\\times0.25+10\\times0.35+16\\times0.45+5\\times0.55)=0.35$，估计一年能节省 $365\\times(0.48-0.35)=47.45m^3$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "频率分布直方图：横轴为日用水量区间，纵轴为频率/组距，各区间矩形高度分别为0.2,1.0,2.6,2.0,3.2,1.0。"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "设抛物线 $C:y^2=2x$，点 $A(2,0)$，$B(-2,0)$，过点 $A$ 的直线 $l$ 与 $C$ 交于 $M,N$ 两点。\n（1）当 $l$ 与 $x$ 轴垂直时，求直线 $BM$ 的方程；\n（2）证明：$\\angle ABM=\\angle ABN$。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）当 $x=2$ 时，代入求得 $M$ 点坐标，即可求得直线 $BM$ 的方程。（2）设直线 $l$ 的方程，联立，利用韦达定理及直线的斜率公式即可证明。",
+                                               "solution_latex":  "（1）当 $l$ 与 $x$ 轴垂直时，$x=2$，代入抛物线解得 $y=\\pm2$，所以 $M(2,2)$ 或 $M(2,-2)$，直线 $BM$ 的方程：$y=\\frac{1}{2}x+1$，或 $y=-\\frac{1}{2}x-1$。\n（2）设直线 $l$ 的方程为 $l:x=ty+2$，$M(x_1,y_1)$，$N(x_2,y_2)$，联立 $\\begin{cases} x=ty+2 \\\\ y^2=2x \\end{cases}$，消 $x$ 得 $y^2-2ty-4=0$，即 $y_1+y_2=2t$，$y_1y_2=-4$，则 $k_{BN}+k_{BM}=\\frac{y_2}{x_2+2}+\\frac{y_1}{x_1+2}=\\frac{y_2}{ty_2+4}+\\frac{y_1}{ty_1+4}=\\frac{2ty_1y_2+4(y_1+y_2)}{(ty_1+4)(ty_2+4)}=\\frac{2t\\times(-4)+4\\times2t}{(ty_1+4)(ty_2+4)}=0$，所以直线 $BN$ 与 $BM$ 的倾斜角互补，$\\therefore \\angle ABM=\\angle ABN$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数 $f(x)=ae^x-\\ln x-1$。\n（1）设 $x=2$ 是 $f(x)$ 的极值点，求 $a$，并求 $f(x)$ 的单调区间；\n（2）证明：当 $a\\ge\\frac{1}{e}$ 时，$f(x)\\ge0$。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）推导出 $x\u003e0$，$f\u0027(x)=ae^x-\\frac{1}{x}$，由 $x=2$ 是极值点，解得 $a=\\frac{1}{2e^2}$，从而 $f(x)=\\frac{1}{2e^2}e^x-\\ln x-1$，$f\u0027(x)=\\frac{1}{2}e^{x-2}-\\frac{1}{x}$，由此能求出单调区间。（2）当 $a\\ge\\frac{1}{e}$ 时，$f(x)\\ge\\frac{1}{e}e^x-\\ln x-1$，设 $g(x)=\\frac{1}{e}e^x-\\ln x-1$，则 $g\u0027(x)=\\frac{1}{e}e^x-\\frac{1}{x}$，利用导数性质能证明。",
+                                               "solution_latex":  "（1）$\\because f(x)=ae^x-\\ln x-1$，$x\u003e0$，$f\u0027(x)=ae^x-\\frac{1}{x}$，$\\because x=2$ 是 $f(x)$ 的极值点，$\\therefore f\u0027(2)=ae^2-\\frac{1}{2}=0$，解得 $a=\\frac{1}{2e^2}$，$\\therefore f(x)=\\frac{1}{2e^2}e^x-\\ln x-1=\\frac{1}{2}e^{x-2}-\\ln x-1$，$f\u0027(x)=\\frac{1}{2}e^{x-2}-\\frac{1}{x}$，当 $0\u003cx\u003c2$ 时，$f\u0027(x)\u003c0$，当 $x\u003e2$ 时，$f\u0027(x)\u003e0$，$\\therefore f(x)$ 在 $(0,2)$ 单调递减，在 $(2,+\\infty)$ 单调递增。\n（2）证明：当 $a\\ge\\frac{1}{e}$ 时，$f(x)\\ge\\frac{1}{e}e^x-\\ln x-1=e^{x-1}-\\ln x-1$，设 $g(x)=e^{x-1}-\\ln x-1$，则 $g\u0027(x)=e^{x-1}-\\frac{1}{x}$，当 $0\u003cx\u003c1$ 时，$g\u0027(x)\u003c0$，当 $x\u003e1$ 时，$g\u0027(x)\u003e0$，$\\therefore x=1$ 是 $g(x)$ 的最小值点，故当 $x\u003e0$ 时，$g(x)\\ge g(1)=0$，$\\therefore$ 当 $a\\ge\\frac{1}{e}$ 时，$f(x)\\ge0$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "（二）选考题",
+                         "instructions":  "共 10 分。请考生在第 22、23 题中任选一题作答。如果多做，则按所做的第一题计分。",
+                         "questions":  [
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修 4-4：坐标系与参数方程]（10 分）\n在直角坐标系 $xOy$ 中，曲线 $C_1$ 的方程为 $y=k|x|+2$。以坐标原点为极点，$x$ 轴正半轴为极轴建立极坐标系，曲线 $C_2$ 的极坐标方程为 $\\rho^2+2\\rho\\cos\\theta-3=0$。\n（1）求 $C_2$ 的直角坐标方程；\n（2）若 $C_1$ 与 $C_2$ 有且仅有三个公共点，求 $C_1$ 的方程。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）直接利用转换关系，把极坐标方程与直角坐标方程进行转化。（2）利用直线在坐标系中的位置，再利用点到直线的距离公式的应用求出结果。",
+                                               "solution_latex":  "（1）曲线 $C_2$ 的极坐标方程为 $\\rho^2+2\\rho\\cos\\theta-3=0$，转换为直角坐标方程为 $x^2+y^2+2x-3=0$，即 $(x+1)^2+y^2=4$。\n（2）由于曲线 $C_1$ 的方程为 $y=k|x|+2$，则：该射线关于 $y$ 轴对称，且恒过定点 $(0,2)$。由于该射线与曲线 $C_2$ 有且仅有三个公共点，所以：必有一直线相切，一直线相交。则：圆心到直线 $y=kx+2$ 的距离等于半径 $2$，故 $\\frac{|k\\cdot(-1)+0\\cdot?|}{\\sqrt{1+k^2}}=2$（直线 $y=kx+2$ 与圆相切时），解得 $k=\\frac{4}{3}$ 或 $0$（$0$ 舍去）或 $k=-\\frac{4}{3}$ 或 $0$。经检验，直线 $y=-\\frac{4}{3}|x|+2$ 与曲线 $C_2$ 没有公共点，故 $C_1$ 的方程为 $y=\\frac{4}{3}|x|+2$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修 4-5：不等式选讲]（10 分）\n已知 $f(x)=|x+1|-|ax-1|$。\n（1）当 $a=1$ 时，求不等式 $f(x)\u003e1$ 的解集；\n（2）若 $x\\in(0,1)$ 时不等式 $f(x)\u003ex$ 成立，求 $a$ 的取值范围。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）去绝对值，化为分段函数，即可求出不等式的解集。（2）当 $x\\in(0,1)$ 时不等式 $f(x)\u003ex$ 成立，转化为 $|ax-1|\u003c1$，即 $0\u003cax\u003c2$，进一步求解。",
+                                               "solution_latex":  "（1）当 $a=1$ 时，$f(x)=|x+1|-|x-1|=\\begin{cases} -2, \u0026 x\u003c-1 \\\\ 2x, \u0026 -1\\le x\\le 1 \\\\ 2, \u0026 x\u003e1 \\end{cases}$，由 $f(x)\u003e1$，得 $\\begin{cases} -1\\le x\\le 1 \\\\ 2x\u003e1 \\end{cases}$ 或 $\\begin{cases} x\u003e1 \\\\ 2\u003e1 \\end{cases}$，解得 $x\u003e\\frac{1}{2}$，故不等式 $f(x)\u003e1$ 的解集为 $(\\frac{1}{2},+\\infty)$。\n（2）当 $x\\in(0,1)$ 时，$f(x)\u003ex$ 即 $|x+1|-|ax-1|\u003ex$，由于 $x+1\u003e0$，则 $x+1-|ax-1|\u003ex$，即 $|ax-1|\u003c1$，$\\therefore -1\u003cax-1\u003c1$，$\\therefore 0\u003cax\u003c2$，$\\because x\\in(0,1)$，$\\therefore a\u003e0$，$\\therefore 0\u003cx\u003c\\frac{2}{a}$，$\\therefore \\frac{2}{a}\u003e1$，$\\therefore a\u003c2$，又 $a\u003e0$，故 $a$ 的取值范围为 $(0,2]$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  3,
+                             "issue":  "饼图内容文字描述，无图片；原卷第3题题干中饼图无法从文本层获取数据，已根据解析版补充比例。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "题图未能自动匹配：原卷第 2 页，分段函数图像：x\u003c=0时递减，x\u003e0时水平线y=1。"
+                         },
+                         {
+                             "question":  19,
+                             "issue":  "题图未能自动匹配：原卷第 4 页，频率分布直方图：横轴为日用水量区间，纵轴为频率/组距，各区间矩形高度分别为0.2,1.0,2.6,2.0,3.2,1.0。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "题图未能自动匹配：原卷第 2 页，分段函数图像：x\u003c=0时递减，x\u003e0时水平线y=1。"
+                         },
+                         {
+                             "question":  19,
+                             "issue":  "题图未能自动匹配：原卷第 4 页，频率分布直方图：横轴为日用水量区间，纵轴为频率/组距，各区间矩形高度分别为0.2,1.0,2.6,2.0,3.2,1.0。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "题图未能自动匹配：原卷第 2 页，分段函数图像：x\u003c=0时递减，x\u003e0时水平线y=1。"
+                         },
+                         {
+                             "question":  19,
+                             "issue":  "题图未能自动匹配：原卷第 4 页，频率分布直方图：横轴为日用水量区间，纵轴为频率/组距，各区间矩形高度分别为0.2,1.0,2.6,2.0,3.2,1.0。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "题图未能自动匹配：原卷第 2 页，分段函数图像：x\u003c=0时递减，x\u003e0时水平线y=1。"
+                         },
+                         {
+                             "question":  19,
+                             "issue":  "题图未能自动匹配：原卷第 4 页，频率分布直方图：横轴为日用水量区间，纵轴为频率/组距，各区间矩形高度分别为0.2,1.0,2.6,2.0,3.2,1.0。"
+                         }
+                     ]
+}

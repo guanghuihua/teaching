@@ -1,0 +1,438 @@
+﻿{
+    "title":  "2023 年高考数学 全国甲卷-理科",
+    "year":  2023,
+    "paper":  "全国甲卷",
+    "sections":  [
+                     {
+                         "title":  "一、选择题",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设全集 $U = Z$，集合 $M = \\{ x \\mid x = 3k + 1, k \\in Z \\}$, $N = \\{ x \\mid x = 3k + 2, k \\in Z \\}$，则 $\\complement_U (M \\cup N) = $ （   ）",
+                                               "choices":  [
+                                                               "$\\{ x \\mid x = 3k, k \\in Z \\}$",
+                                                               "$\\{ x \\mid x = 3k - 1, k \\in Z \\}$",
+                                                               "$\\{ x \\mid x = 3k - 2, k \\in Z \\}$",
+                                                               "$\\varnothing$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "根据整数集的分类，以及补集的运算即可解出．",
+                                               "solution_latex":  "因为整数集 $Z = \\{ x | x = 3k, k \\in Z \\} \\cup \\{ x | x = 3k + 1, k \\in Z \\} \\cup \\{ x | x = 3k + 2, k \\in Z \\}$，$U = Z$，所以 $\\complement_U (M \\cup N) = \\{ x | x = 3k, k \\in Z \\}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $a \\in R$，$(a + i)(1 - ai) = 2$，则 $a = $ （       ）",
+                                               "choices":  [
+                                                               "$-1$",
+                                                               "$0$",
+                                                               "$1$",
+                                                               "$2$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "根据复数的代数运算以及复数相等即可解出．",
+                                               "solution_latex":  "因为 $(a + i)(1 - ai) = a - a^2 i + i + a = 2a + (1 - a^2)i = 2$，所以 $\\begin{cases} 2a = 2 \\\\ 1 - a^2 = 0 \\end{cases}$，解得：$a = 1$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "执行下面的程序框图，输出的 $B = $ （                         ）",
+                                               "choices":  [
+                                                               "$21$",
+                                                               "$34$",
+                                                               "$55$",
+                                                               "$89$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "根据程序框图模拟运行，即可解出．",
+                                               "solution_latex":  "当 $k = 1$ 时，判断框条件满足，第一次执行循环体，$A = 1 + 2 = 3$，$B = 3 + 2 = 5$，$k = 1 + 1 = 2$；当 $k = 2$ 时，判断框条件满足，第二次执行循环体，$A = 3 + 5 = 8$，$B = 8 + 5 = 13$，$k = 2 + 1 = 3$；当 $k = 3$ 时，判断框条件满足，第三次执行循环体，$A = 8 + 13 = 21$，$B = 21 + 13 = 34$，$k = 3 + 1 = 4$；当 $k = 4$ 时，判断框条件不满足，跳出循环体，输出 $B = 34$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知向量 $\\vec{a}$，$\\vec{b}$，$\\vec{c}$ 满足 $|\\vec{a}| = |\\vec{b}| = 1$，$|\\vec{c}| = \\sqrt{2}$，且 $\\vec{a} + \\vec{b} + \\vec{c} = 0$，则 $\\cos\\langle \\vec{a} - \\vec{c}, \\vec{b} - \\vec{c} \\rangle = $ （               ）",
+                                               "choices":  [
+                                                               "$-\\frac{4}{5}$",
+                                                               "$-\\frac{2}{5}$",
+                                                               "$\\frac{2}{5}$",
+                                                               "$\\frac{4}{5}$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "作出图形，根据几何意义求解．",
+                                               "solution_latex":  "因为 $\\vec{a} + \\vec{b} + \\vec{c} = \\vec{0}$，所以 $\\vec{a} + \\vec{b} = -\\vec{c}$，即 $|\\vec{a}|^2 + |\\vec{b}|^2 + 2\\vec{a} \\cdot \\vec{b} = |\\vec{c}|^2$，即 $1 + 1 + 2\\vec{a} \\cdot \\vec{b} = 2$，所以 $\\vec{a} \\cdot \\vec{b} = 0$．如图，设 $\\overrightarrow{OA} = \\vec{a}$，$\\overrightarrow{OB} = \\vec{b}$，$\\overrightarrow{OC} = \\vec{c}$，由题知 $OA = OB = 1$，$OC = \\sqrt{2}$，$\\triangle OAB$ 是等腰直角三角形，$AB$ 边上的高 $OD = \\frac{\\sqrt{2}}{2}$，$AD = \\frac{\\sqrt{2}}{2}$，所以 $CD = CO + OD = \\sqrt{2} + \\frac{\\sqrt{2}}{2} = \\frac{3\\sqrt{2}}{2}$，$\\tan \\angle ACD = \\frac{AD}{CD} = \\frac{1}{3}$，$\\cos \\angle ACD = \\frac{3}{\\sqrt{10}}$，$\\cos\\langle \\vec{a} - \\vec{c}, \\vec{b} - \\vec{c} \\rangle = \\cos \\angle ACB = \\cos 2\\angle ACD = 2\\cos^2 \\angle ACD - 1 = 2 \\times \\frac{9}{10} - 1 = \\frac{4}{5}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设等比数列 $\\{a_n\\}$ 的各项均为正数，前 $n$ 项和为 $S_n$，若 $a_1 = 1$，$S_5 = 5S_3 - 4$，则 $S_4 = $ （                         ）",
+                                               "choices":  [
+                                                               "$\\frac{15}{8}$",
+                                                               "$\\frac{65}{8}$",
+                                                               "$15$",
+                                                               "$40$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "根据题意列出关于 $q$ 的方程，计算出 $q$，即可求出 $S_4$．",
+                                               "solution_latex":  "由题知 $1 + q + q^2 + q^3 + q^4 = 5(1 + q + q^2) - 4$，即 $q^3 + q^4 = 4q + 4q^2$，即 $q^3 + q^2 - 4q - 4 = 0$，即 $(q - 2)(q + 1)(q + 2) = 0$．由题知 $q \u003e 0$，所以 $q = 2$．所以 $S_4 = 1 + 2 + 4 + 8 = 15$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "某地的中学生中有 $60\\%$ 的同学爱好滑冰，$50\\%$ 的同学爱好滑雪，$70\\%$ 的同学爱好滑冰或爱好滑雪．在该地的中学生中随机调查一位同学，若该同学爱好滑雪，则该同学也爱好滑冰的概率为（                                                        ）",
+                                               "choices":  [
+                                                               "$0.8$",
+                                                               "$0.6$",
+                                                               "$0.5$",
+                                                               "$0.4$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "先算出同时爱好两项的概率，利用条件概率的知识求解．",
+                                               "solution_latex":  "同时爱好两项的概率为 $0.5 + 0.6 - 0.7 = 0.4$，记“该同学爱好滑雪”为事件 $A$，记“该同学爱好滑冰”为事件 $B$，则 $P(A)=0.5$，$P(AB)=0.4$，所以 $P(B|A) = \\frac{P(AB)}{P(A)} = \\frac{0.4}{0.5} = 0.8$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设甲：$\\sin^2 \\alpha + \\sin^2 \\beta = 1$，乙：$\\sin \\alpha + \\cos \\beta = 0$，则（           ）",
+                                               "choices":  [
+                                                               "甲是乙的充分条件但不是必要条件",
+                                                               "甲是乙的必要条件但不是充分条件",
+                                                               "甲是乙的充要条件",
+                                                               "甲既不是乙的充分条件也不是乙的必要条件"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "根据充分条件、必要条件的概念及同角三角函数的基本关系得解．",
+                                               "solution_latex":  "当 $\\sin^2 \\alpha + \\sin^2 \\beta = 1$ 时，例如 $\\alpha = \\frac{\\pi}{2}, \\beta = 0$，但 $\\sin \\alpha + \\cos \\beta \\neq 0$，即 $\\sin^2 \\alpha + \\sin^2 \\beta = 1$ 推不出 $\\sin \\alpha + \\cos \\beta = 0$；当 $\\sin \\alpha + \\cos \\beta = 0$ 时，$\\sin^2 \\alpha + \\sin^2 \\beta = (-\\cos \\beta)^2 + \\sin^2 \\beta = 1$，即 $\\sin \\alpha + \\cos \\beta = 0$ 能推出 $\\sin^2 \\alpha + \\sin^2 \\beta = 1$．综上可知，甲是乙的必要不充分条件．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知双曲线 $C: \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 (a \u003e 0, b \u003e 0)$ 的离心率为 $\\sqrt{5}$，$C$ 的一条渐近线与圆 $(x-2)^2 + (y-3)^2 = 1$ 交于 $A$，$B$ 两点，则 $|AB| = $ （                 ）",
+                                               "choices":  [
+                                                               "$\\frac{\\sqrt{5}}{5}$",
+                                                               "$\\frac{2\\sqrt{5}}{5}$",
+                                                               "$\\frac{3\\sqrt{5}}{5}$",
+                                                               "$\\frac{4\\sqrt{5}}{5}$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "根据离心率得出双曲线渐近线方程，再由圆心到直线的距离及圆半径可求弦长．",
+                                               "solution_latex":  "由 $e = \\sqrt{5}$，则 $\\frac{c^2}{a^2} = \\frac{a^2+b^2}{a^2} = 1 + \\frac{b^2}{a^2} = 5$，解得 $\\frac{b}{a} = 2$，所以双曲线的一条渐近线不妨取 $y = 2x$，则圆心 $(2,3)$ 到渐近线的距离 $d = \\frac{|2\\times 2 - 3|}{\\sqrt{2^2+1}} = \\frac{\\sqrt{5}}{5}$，所以弦长 $|AB| = 2\\sqrt{r^2 - d^2} = 2\\sqrt{1 - \\frac{1}{5}} = \\frac{4\\sqrt{5}}{5}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "现有 5 名志愿者报名参加公益活动，在某一星期的星期六、星期日两天，每天从这 5 人中安排 2 人参加公益活动，则恰有 1 人在这两天都参加的不同安排方式共有（                                    ）",
+                                               "choices":  [
+                                                               "$120$",
+                                                               "$60$",
+                                                               "$30$",
+                                                               "$20$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "利用分类加法原理，分类讨论五名志愿者连续参加两天公益活动的情况，即可得解．",
+                                               "solution_latex":  "不妨记五名志愿者为 $a,b,c,d,e$，假设 $a$ 连续参加了两天公益活动，再从剩余的 4 人抽取 2 人各参加星期六与星期天的公益活动，共有 $A_4^2 = 12$ 种方法，同理：$b,c,d,e$ 连续参加了两天公益活动，也各有 12 种方法，所以恰有 1 人连续参加了两天公益活动的选择种数有 $5\\times 12 = 60$ 种．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "函数 $y = f(x)$ 的图象由函数 $y = \\cos\\left(2x + \\frac{\\pi}{6}\\right)$ 的图象向左平移 $\\frac{\\pi}{6}$ 个单位长度得到，则 $y = f(x)$ 的图象与直线 $y = \\frac{1}{2}x - \\frac{1}{2}$ 的交点个数为（                  ）",
+                                               "choices":  [
+                                                               "$1$",
+                                                               "$2$",
+                                                               "$3$",
+                                                               "$4$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "先利用三角函数平移的性质求得 $f(x) = -\\sin 2x$，再作出 $f(x)$ 与 $y = \\frac{1}{2}x - \\frac{1}{2}$ 的部分大致图像，考虑特殊点处 $f(x)$ 与 $y = \\frac{1}{2}x - \\frac{1}{2}$ 的大小关系，从而精确图像，由此得解．",
+                                               "solution_latex":  "因为 $y = \\cos\\left(2x + \\frac{\\pi}{6}\\right)$ 向左平移 $\\frac{\\pi}{6}$ 个单位所得函数为 $y = \\cos\\left[2\\left(x + \\frac{\\pi}{6}\\right) + \\frac{\\pi}{6}\\right] = \\cos\\left(2x + \\frac{\\pi}{2}\\right) = -\\sin 2x$，所以 $f(x) = -\\sin 2x$，而 $y = \\frac{1}{2}x - \\frac{1}{2}$ 显然过 $(0, -\\frac{1}{2})$ 与 $(1,0)$ 两点，作出 $f(x)$ 与 $y = \\frac{1}{2}x - \\frac{1}{2}$ 的部分大致图像如下，考虑 $2x = -\\frac{3\\pi}{2}, 2x = \\frac{3\\pi}{2}, 2x = \\frac{7\\pi}{2}$，即 $x = -\\frac{3\\pi}{4}, x = \\frac{3\\pi}{4}, x = \\frac{7\\pi}{4}$ 处 $f(x)$ 与 $y = \\frac{1}{2}x - \\frac{1}{2}$ 的大小关系，当 $x = -\\frac{3\\pi}{4}$ 时，$f(-\\frac{3\\pi}{4}) = -\\sin\\left(-\\frac{3\\pi}{2}\\right) = -1$，$y = \\frac{1}{2}\\times\\left(-\\frac{3\\pi}{4}\\right) - \\frac{1}{2} = -\\frac{3\\pi+4}{8} \u003c -1$；当 $x = \\frac{3\\pi}{4}$ 时，$f(\\frac{3\\pi}{4}) = -\\sin\\frac{3\\pi}{2} = 1$，$y = \\frac{1}{2}\\times\\frac{3\\pi}{4} - \\frac{1}{2} = \\frac{3\\pi-4}{8} \u003c 1$；当 $x = \\frac{7\\pi}{4}$ 时，$f(\\frac{7\\pi}{4}) = -\\sin\\frac{7\\pi}{2} = 1$，$y = \\frac{1}{2}\\times\\frac{7\\pi}{4} - \\frac{1}{2} = \\frac{7\\pi-4}{8} \u003e 1$；所以由图可知，$f(x)$ 与 $y = \\frac{1}{2}x - \\frac{1}{2}$ 的交点个数为 3．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知四棱锥 $P-ABCD$ 的底面是边长为 4 的正方形，$PC = PD = 3$，$\\angle PCA = 45^\\circ$，则 $\\triangle PBC$ 的面积为（         ）",
+                                               "choices":  [
+                                                               "$2\\sqrt{2}$",
+                                                               "$3\\sqrt{2}$",
+                                                               "$4\\sqrt{2}$",
+                                                               "$6\\sqrt{2}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "法一：利用全等三角形的证明方法依次证得 $\\triangle PDO \\cong \\triangle PCO$，$\\triangle PDB \\cong \\triangle PCA$，从而得到 $PA = PB$，再在 $\\triangle PAC$ 中利用余弦定理求得 $PA = \\sqrt{17}$，从而求得 $PB = \\sqrt{17}$，由此在 $\\triangle PBC$ 中利用余弦定理与三角形面积公式即可得解；法二：先在 $\\triangle PAC$ 中利用余弦定理求得 $PA = \\sqrt{17}$，$\\cos \\angle PCB = \\frac{1}{3}$，从而求得 $\\overrightarrow{PA}\\cdot\\overrightarrow{PC} = -3$，再利用空间向量的数量积运算与余弦定理得到关于 $PB$，$\\angle BPD$ 的方程组，从而求得 $PB = \\sqrt{17}$，由此在 $\\triangle PBC$ 中利用余弦定理与三角形面积公式即可得解．",
+                                               "solution_latex":  "法一：连结 $AC$，$BD$ 交于 $O$，连结 $PO$，则 $O$ 为 $AC$，$BD$ 的中点，因为底面 $ABCD$ 为正方形，$AB=4$，所以 $AC=BD=4\\sqrt{2}$，则 $DO=CO=2\\sqrt{2}$，又 $PC=PD=3$，$PO=OP$，所以 $\\triangle PDO \\cong \\triangle PCO$，则 $\\angle PDO = \\angle PCO$，又 $PC=PD=3$，$AC=BD=4\\sqrt{2}$，所以 $\\triangle PDB \\cong \\triangle PCA$，则 $PA=PB$，在 $\\triangle PAC$ 中，$PC=3$，$AC=4\\sqrt{2}$，$\\angle PCA = 45^\\circ$，则由余弦定理可得 $PA^2 = AC^2 + PC^2 - 2AC\\cdot PC\\cos\\angle PCA = 32+9-2\\times4\\sqrt{2}\\times3\\times\\frac{\\sqrt{2}}{2}=17$，故 $PA=\\sqrt{17}$，则 $PB=\\sqrt{17}$，故在 $\\triangle PBC$ 中，$PC=3$，$PB=\\sqrt{17}$，$BC=4$，所以 $\\cos\\angle PCB = \\frac{PC^2+BC^2-PB^2}{2PC\\cdot BC} = \\frac{9+16-17}{2\\times3\\times4} = \\frac{1}{3}$，又 $0\u003c\\angle PCB\u003c\\pi$，所以 $\\sin\\angle PCB = \\sqrt{1-\\cos^2\\angle PCB} = \\frac{2\\sqrt{2}}{3}$，所以 $\\triangle PBC$ 的面积为 $S = \\frac{1}{2} PC\\cdot BC\\sin\\angle PCB = \\frac{1}{2}\\times3\\times4\\times\\frac{2\\sqrt{2}}{3} = 4\\sqrt{2}$．\n法二：连结 $AC$，$BD$ 交于 $O$，连结 $PO$，则 $O$ 为 $AC$，$BD$ 的中点，因为底面 $ABCD$ 为正方形，$AB=4$，所以 $AC=BD=4\\sqrt{2}$，在 $\\triangle PAC$ 中，$PC=3$，$\\angle PCA = 45^\\circ$，则由余弦定理可得 $PA^2 = AC^2+PC^2-2AC\\cdot PC\\cos\\angle PCA = 32+9-2\\times4\\sqrt{2}\\times3\\times\\frac{\\sqrt{2}}{2}=17$，故 $PA=\\sqrt{17}$，所以 $\\cos\\angle APC = \\frac{PA^2+PC^2-AC^2}{2PA\\cdot PC} = \\frac{17+9-32}{2\\times\\sqrt{17}\\times3} = -\\frac{\\sqrt{17}}{17}$，则 $\\overrightarrow{PA}\\cdot\\overrightarrow{PC} = |\\overrightarrow{PA}||\\overrightarrow{PC}|\\cos\\angle APC = \\sqrt{17}\\times3\\times\\left(-\\frac{\\sqrt{17}}{17}\\right) = -3$，不妨记 $PB=m$，$\\angle BPD = \\theta$，因为 $\\overrightarrow{PO} = \\frac{1}{2}(\\overrightarrow{PA}+\\overrightarrow{PC}) = \\frac{1}{2}(\\overrightarrow{PB}+\\overrightarrow{PD})$，所以 $(\\overrightarrow{PA}+\\overrightarrow{PC})^2 = (\\overrightarrow{PB}+\\overrightarrow{PD})^2$，即 $|\\overrightarrow{PA}|^2+|\\overrightarrow{PC}|^2+2\\overrightarrow{PA}\\cdot\\overrightarrow{PC} = |\\overrightarrow{PB}|^2+|\\overrightarrow{PD}|^2+2\\overrightarrow{PB}\\cdot\\overrightarrow{PD}$，则 $17+9+2\\times(-3) = m^2+9+2\\times3\\times m\\cos\\theta$，整理得 $m^2+6m\\cos\\theta-11=0$ ①，又在 $\\triangle PBD$ 中，$BD^2 = PB^2+PD^2-2PB\\cdot PD\\cos\\angle BPD$，即 $32 = m^2+9-6m\\cos\\theta$，则 $m^2-6m\\cos\\theta-23=0$ ②，两式相加得 $2m^2-34=0$，故 $PB=m=\\sqrt{17}$，故在 $\\triangle PBC$ 中，$PC=3$，$PB=\\sqrt{17}$，$BC=4$，所以 $\\cos\\angle PCB = \\frac{PC^2+BC^2-PB^2}{2PC\\cdot BC} = \\frac{9+16-17}{2\\times3\\times4} = \\frac{1}{3}$，又 $0\u003c\\angle PCB\u003c\\pi$，所以 $\\sin\\angle PCB = \\sqrt{1-\\cos^2\\angle PCB} = \\frac{2\\sqrt{2}}{3}$，所以 $\\triangle PBC$ 的面积为 $S = \\frac{1}{2} PC\\cdot BC\\sin\\angle PCB = \\frac{1}{2}\\times3\\times4\\times\\frac{2\\sqrt{2}}{3} = 4\\sqrt{2}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $O$ 为坐标原点，$F_1$，$F_2$ 为椭圆 $C: \\frac{x^2}{9} + \\frac{y^2}{6} = 1$ 的两个焦点，点 $P$ 在 $C$ 上，$\\cos\\angle F_1PF_2 = \\frac{3}{5}$，则 $|OP| = $（         ）",
+                                               "choices":  [
+                                                               "$\\frac{\\sqrt{13}}{5}$",
+                                                               "$\\frac{\\sqrt{30}}{2}$",
+                                                               "$\\frac{\\sqrt{14}}{5}$",
+                                                               "$\\frac{\\sqrt{35}}{2}$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "方法一：根据焦点三角形面积公式求出 $\\triangle PF_1F_2$ 的面积，即可得到点 $P$ 的坐标，从而得出 $OP$ 的值；方法二：利用椭圆的定义以及余弦定理求出 $|PF_1||PF_2|$，$|PF_1|^2+|PF_2|^2$，再结合中线的向量公式以及数量积即可求出；方法三：利用椭圆的定义以及余弦定理求出 $|PF_1|^2+|PF_2|^2$，即可根据中线定理求出．",
+                                               "solution_latex":  "方法一：设 $\\angle F_1PF_2 = 2\\theta$，$0\u003c\\theta\u003c\\frac{\\pi}{2}$，所以 $S_{\\triangle PF_1F_2} = b^2\\tan\\frac{\\angle F_1PF_2}{2} = b^2\\tan\\theta$，由 $\\cos\\angle F_1PF_2 = \\cos2\\theta = \\frac{\\cos^2\\theta-\\sin^2\\theta}{\\cos^2\\theta+\\sin^2\\theta} = \\frac{1-\\tan^2\\theta}{1+\\tan^2\\theta} = \\frac{3}{5}$，解得：$\\tan\\theta = \\frac{1}{2}$，由椭圆方程可知，$a^2=9$，$b^2=6$，$c^2=a^2-b^2=3$，所以 $S_{\\triangle PF_1F_2} = \\frac{1}{2}\\times F_1F_2\\times|y_p| = \\frac{1}{2}\\times2\\sqrt{3}\\times|y_p| = 6\\times\\frac{1}{2}$，解得：$y_p^2=3$，则 $x_p^2 = 9\\times\\left(1-\\frac{3}{6}\\right) = \\frac{9}{2}$，因此 $|OP| = \\sqrt{x_p^2+y_p^2} = \\sqrt{3+\\frac{9}{2}} = \\frac{\\sqrt{30}}{2}$．故选：B．\n方法二：因为 $|PF_1|+|PF_2|=2a=6$ ①，$|PF_1|^2+|PF_2|^2-2|PF_1||PF_2|\\cos\\angle F_1PF_2 = |F_1F_2|^2$，即 $|PF_1|^2+|PF_2|^2 - \\frac{6}{5}|PF_1||PF_2| = 12$ ②，联立①②，解得：$|PF_1||PF_2| = \\frac{15}{2}$，$|PF_1|^2+|PF_2|^2 = 21$，而 $\\overrightarrow{PO} = \\frac{1}{2}(\\overrightarrow{PF_1}+\\overrightarrow{PF_2})$，所以 $|\\overrightarrow{OP}| = |\\overrightarrow{PO}| = \\frac{1}{2}\\sqrt{|\\overrightarrow{PF_1}|^2+|\\overrightarrow{PF_2}|^2+2\\overrightarrow{PF_1}\\cdot\\overrightarrow{PF_2}} = \\frac{1}{2}\\sqrt{21+2\\times\\frac{3}{5}\\times\\frac{15}{2}} = \\frac{\\sqrt{30}}{2}$．故选：B．\n方法三：因为 $|PF_1|+|PF_2|=2a=6$ ①，$|PF_1|^2+|PF_2|^2-2|PF_1||PF_2|\\cos\\angle F_1PF_2 = |F_1F_2|^2$，即 $|PF_1|^2+|PF_2|^2 - \\frac{6}{5}|PF_1||PF_2| = 12$ ②，联立①②，解得：$|PF_1|^2+|PF_2|^2 = 21$，由中线定理可知，$2(|OP|^2+|OF_1|^2) = |PF_1|^2+|PF_2|^2 = 42$，易知 $|F_1F_2| = 2\\sqrt{3}$，解得：$|OP| = \\frac{\\sqrt{30}}{2}$．故选：B．",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "若 $f(x) = (x-1)^2 + ax + \\sin\\left(x + \\frac{\\pi}{2}\\right)$ 为偶函数，则 $a = \\_\\_\\_\\_\\_\\_\\_\\_$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$2$",
+                                               "analysis_latex":  "利用偶函数的性质得到 $f\\left(-\\frac{\\pi}{2}\\right) = f\\left(\\frac{\\pi}{2}\\right)$，从而求得 $a=2$，再检验即可得解．",
+                                               "solution_latex":  "因为 $y = f(x) = (x-1)^2 + ax + \\sin\\left(x+\\frac{\\pi}{2}\\right) = (x-1)^2 + ax + \\cos x$ 为偶函数，定义域为 $R$，所以 $f\\left(-\\frac{\\pi}{2}\\right) = f\\left(\\frac{\\pi}{2}\\right)$，即 $\\left(-\\frac{\\pi}{2}-1\\right)^2 - a\\frac{\\pi}{2} + \\cos\\left(-\\frac{\\pi}{2}\\right) = \\left(\\frac{\\pi}{2}-1\\right)^2 + a\\frac{\\pi}{2} + \\cos\\frac{\\pi}{2}$，则 $\\pi a = \\left(\\frac{\\pi}{2}+1\\right)^2 - \\left(\\frac{\\pi}{2}-1\\right)^2 = 2\\pi$，故 $a=2$，此时 $f(x) = (x-1)^2 + 2x + \\cos x = x^2 + 1 + \\cos x$，所以 $f(-x) = (-x)^2 + 1 + \\cos(-x) = x^2+1+\\cos x = f(x)$，又定义域为 $R$，故 $f(x)$ 为偶函数，所以 $a=2$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "若 $x$，$y$ 满足约束条件 $\\begin{cases} 3x - 2y \\le 3 \\\\ -2x + 3y \\le 3 \\\\ x + y \\ge 1 \\end{cases}$，设 $z = 3x + 2y$ 的最大值为 $\\_\\_\\_\\_\\_\\_\\_\\_$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$15$",
+                                               "analysis_latex":  "由约束条件作出可行域，根据线性规划求最值即可．",
+                                               "solution_latex":  "作出可行域，如图，由图可知，当目标函数 $y = -\\frac{3}{2}x + \\frac{z}{2}$ 过点 $A$ 时，$z$ 有最大值，由 $\\begin{cases} -2x+3y=3 \\\\ 3x-2y=3 \\end{cases}$ 可得 $\\begin{cases} x=3 \\\\ y=3 \\end{cases}$，即 $A(3,3)$，所以 $z_{\\max} = 3\\times3+2\\times3=15$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "在正方体 $ABCD-A_1B_1C_1D_1$ 中，$E$，$F$ 分别为 $AB$，$C_1D_1$ 的中点，以 $EF$ 为直径的球的球面与该正方体的棱共有 $\\_\\_\\_\\_\\_\\_\\_\\_$ 个公共点．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$12$",
+                                               "analysis_latex":  "根据正方体的对称性，可知球心到各棱距离相等，故可得解．",
+                                               "solution_latex":  "不妨设正方体棱长为 2，$EF$ 中点为 $O$，取 $CD$，$CC_1$ 中点 $G$，$M$，侧面 $BB_1C_1C$ 的中心为 $N$，连接 $FG$，$EG$，$OM$，$ON$，$MN$，如图，由题意可知，$O$ 为球心，在正方体中，$EF = \\sqrt{FG^2+EG^2} = \\sqrt{2^2+2^2} = 2\\sqrt{2}$，即 $R=\\sqrt{2}$，则球心 $O$ 到 $CC_1$ 的距离为 $OM = \\sqrt{ON^2+MN^2} = \\sqrt{1^2+1^2} = \\sqrt{2}$，所以球 $O$ 与棱 $CC_1$ 相切，球面与棱 $CC_1$ 只有 1 个交点，同理，根据正方体的对称性知，其余各棱和球面也只有 1 个交点，所以以 $EF$ 为直径的球面与正方体每条棱的交点总数为 12．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "在 $\\triangle ABC$ 中，$\\angle BAC = 60^\\circ$，$AB = 2$，$BC = \\sqrt{6}$，$\\angle BAC$ 的角平分线交 $BC$ 于 $D$，则 $AD = \\_\\_\\_\\_\\_\\_\\_\\_$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$2$",
+                                               "analysis_latex":  "方法一：利用余弦定理求出 $AC$，再根据等面积法求出 $AD$；方法二：利用余弦定理求出 $AC$，再根据正弦定理求出 $B$，$C$，即可根据三角形的特征求出．",
+                                               "solution_latex":  "方法一：记 $AB=c$，$AC=b$，$BC=a$，由余弦定理可得，$2^2+b^2-2\\times2\\times b\\times\\cos60^\\circ = 6$，因为 $b\u003e0$，解得：$b=1+\\sqrt{3}$，由 $S_{\\triangle ABC} = S_{\\triangle ABD} + S_{\\triangle ACD}$ 可得，$\\frac{1}{2}\\times2\\times b\\times\\sin60^\\circ = \\frac{1}{2}\\times2\\times AD\\times\\sin30^\\circ + \\frac{1}{2}\\times AD\\times b\\times\\sin30^\\circ$，解得：$AD = \\frac{\\sqrt{3}b}{1+\\frac{b}{2}} = \\frac{\\sqrt{3}(1+\\sqrt{3})}{\\frac{3+\\sqrt{3}}{2}} = 2$．故答案为：2．\n方法二：由余弦定理可得，$2^2+b^2-2\\times2\\times b\\times\\cos60^\\circ = 6$，因为 $b\u003e0$，解得：$b=1+\\sqrt{3}$，由正弦定理可得，$\\frac{\\sqrt{6}}{\\sin60^\\circ} = \\frac{b}{\\sin B} = \\frac{2}{\\sin C}$，解得：$\\sin B = \\frac{\\sqrt{6}+\\sqrt{2}}{4}$，$\\sin C = \\frac{\\sqrt{2}}{2}$，因为 $1+\\sqrt{3} \u003e \\sqrt{6} \u003e 2$，所以 $C=45^\\circ$，$B=180^\\circ-60^\\circ-45^\\circ=75^\\circ$，又 $\\angle BAD = 30^\\circ$，所以 $\\angle ADB = 75^\\circ$，即 $AD = AB = 2$．故答案为：2．",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "设 $S_n$ 为数列 $\\{a_n\\}$ 的前 $n$ 项和，已知 $a_2 = 1$，$2S_n = n a_n$．\n（1）求 $\\{a_n\\}$ 的通项公式；\n（2）求数列 $\\left\\{ \\frac{a_n+1}{2^n} \\right\\}$ 的前 $n$ 项和 $T_n$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$a_n = n-1$；（2）$T_n = 2 - (2+n)\\left(\\frac{1}{2}\\right)^n$",
+                                               "analysis_latex":  "（1）根据 $a_n = \\begin{cases} S_1, \u0026 n=1 \\\\ S_n-S_{n-1}, \u0026 n\\ge 2 \\end{cases}$ 即可求出；（2）根据错位相减法即可解出．",
+                                               "solution_latex":  "（1）因为 $2S_n = n a_n$，当 $n=1$ 时，$2a_1 = a_1$，即 $a_1=0$；当 $n=3$ 时，$2(1+a_3)=3a_3$，即 $a_3=2$；当 $n\\ge2$ 时，$2S_{n-1} = (n-1)a_{n-1}$，所以 $2(S_n-S_{n-1}) = n a_n - (n-1)a_{n-1} = 2a_n$，化简得：$(n-2)a_n = (n-1)a_{n-1}$，当 $n\\ge3$ 时，$\\frac{a_n}{n-1} = \\frac{a_{n-1}}{n-2} = \\cdots = \\frac{a_3}{2} = 1$，即 $a_n = n-1$，当 $n=1,2,3$ 时都满足上式，所以 $a_n = n-1 (n\\in N^*)$．\n（2）因为 $\\frac{a_n+1}{2^n} = \\frac{n}{2^n}$，所以 $T_n = 1\\times\\frac{1}{2} + 2\\times\\left(\\frac{1}{2}\\right)^2 + 3\\times\\left(\\frac{1}{2}\\right)^3 + \\cdots + n\\times\\left(\\frac{1}{2}\\right)^n$，$\\frac{1}{2}T_n = 1\\times\\left(\\frac{1}{2}\\right)^2 + 2\\times\\left(\\frac{1}{2}\\right)^3 + \\cdots + (n-1)\\times\\left(\\frac{1}{2}\\right)^n + n\\times\\left(\\frac{1}{2}\\right)^{n+1}$，两式相减得，$\\frac{1}{2}T_n = \\frac{1}{2} + \\left(\\frac{1}{2}\\right)^2 + \\left(\\frac{1}{2}\\right)^3 + \\cdots + \\left(\\frac{1}{2}\\right)^n - n\\times\\left(\\frac{1}{2}\\right)^{n+1} = \\frac{\\frac{1}{2}\\left[1-\\left(\\frac{1}{2}\\right)^n\\right]}{1-\\frac{1}{2}} - n\\times\\left(\\frac{1}{2}\\right)^{n+1} = 1 - \\left(1+\\frac{n}{2}\\right)\\left(\\frac{1}{2}\\right)^n$，即 $T_n = 2 - (2+n)\\left(\\frac{1}{2}\\right)^n$，$n\\in N^*$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图，在三棱柱 $ABC-A_1B_1C_1$ 中，$A_1C \\perp$ 底面 $ABC$，$\\angle ACB = 90^\\circ$，$AA_1 = 2$，$A_1$ 到平面 $BCC_1B_1$ 的距离为 1．\n（1）证明：$A_1C = AC$；\n（2）已知 $AA_1$ 与 $BB_1$ 的距离为 2，求 $AB_1$ 与平面 $BCC_1B_1$ 所成角的正弦值．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）证明见解析；（2）$\\frac{\\sqrt{13}}{13}$",
+                                               "analysis_latex":  "（1）根据线面垂直，面面垂直的判定与性质定理可得 $A_1O \\perp$ 平面 $BCC_1B_1$，再由勾股定理求出 $O$ 为中点，即可得证；（2）利用直角三角形求出 $AB_1$ 的长及点 $A$ 到面的距离，根据线面角定义直接可得正弦值．",
+                                               "solution_latex":  "（1）如图，$\\because A_1C \\perp$ 底面 $ABC$，$BC \\subset$ 面 $ABC$，$\\therefore A_1C \\perp BC$，又 $BC \\perp AC$，$A_1C, AC \\subset$ 平面 $ACC_1A_1$，$A_1C \\cap AC = C$，$\\therefore BC \\perp$ 平面 $ACC_1A_1$，又 $BC \\subset$ 平面 $BCC_1B_1$，$\\therefore$ 平面 $ACC_1A_1 \\perp$ 平面 $BCC_1B_1$，过 $A_1$ 作 $A_1O \\perp CC_1$ 交 $CC_1$ 于 $O$，又平面 $ACC_1A_1 \\cap$ 平面 $BCC_1B_1 = CC_1$，$A_1O \\subset$ 平面 $ACC_1A_1$，$\\therefore A_1O \\perp$ 平面 $BCC_1B_1$，$\\because A_1$ 到平面 $BCC_1B_1$ 的距离为 1，$\\therefore A_1O = 1$，在 $\\mathrm{Rt}\\triangle A_1CC_1$ 中，$A_1C \\perp A_1C_1$，$CC_1 = AA_1 = 2$，设 $CO = x$，则 $C_1O = 2-x$，$\\because \\triangle A_1OC$，$\\triangle A_1OC_1$，$\\triangle A_1CC_1$ 为直角三角形，且 $CC_1=2$，$CO^2+A_1O^2 = A_1C^2$，$A_1O^2+OC_1^2 = C_1A_1^2$，$A_1C^2+A_1C_1^2 = C_1C^2$，$\\therefore 1+x^2+1+(2-x)^2 = 4$，解得 $x=1$，$\\therefore AC = A_1C = A_1C_1 = \\sqrt{2}$，$\\therefore A_1C = AC$．\n（2）$\\because AC = A_1C_1$，$BC \\perp A_1C$，$BC \\perp AC$，$\\therefore \\mathrm{Rt}\\triangle ACB \\cong \\mathrm{Rt}\\triangle A_1CB$，$\\therefore BA = BA_1$，过 $B$ 作 $BD \\perp AA_1$，交 $AA_1$ 于 $D$，则 $D$ 为 $AA_1$ 中点，由直线 $AA_1$ 与 $BB_1$ 距离为 2，所以 $BD=2$，$\\because A_1D=1$，$BD=2$，$\\therefore A_1B = AB = \\sqrt{5}$，在 $\\mathrm{Rt}\\triangle ABC$，$\\therefore BC = \\sqrt{AB^2-AC^2} = \\sqrt{3}$，延长 $AC$，使 $AC=CM$，连接 $C_1M$，由 $CM \\parallel A_1C_1$，$CM = A_1C_1$ 知四边形 $A_1CMC_1$ 为平行四边形，$\\therefore C_1M \\parallel A_1C$，$\\therefore C_1M \\perp$ 平面 $ABC$，又 $AM \\subset$ 平面 $ABC$，$\\therefore C_1M \\perp AM$，则在 $\\mathrm{Rt}\\triangle AC_1M$ 中，$AM = 2AC$，$C_1M = A_1C$，$\\therefore AC_1 = \\sqrt{(2AC)^2+A_1C^2}$，在 $\\mathrm{Rt}\\triangle AB_1C_1$ 中，$AC_1 = \\sqrt{(2\\sqrt{2})^2+(\\sqrt{2})^2} = \\sqrt{10}$，$B_1C_1 = BC = \\sqrt{3}$，$\\therefore AB_1 = \\sqrt{10+3} = \\sqrt{13}$，又 $A$ 到平面 $BCC_1B_1$ 距离也为 1，所以 $AB_1$ 与平面 $BCC_1B_1$ 所成角的正弦值为 $\\frac{1}{\\sqrt{13}} = \\frac{\\sqrt{13}}{13}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "一项试验旨在研究臭氧效应．实验方案如下：选 40 只小白鼠，随机地将其中 20 只分配到实验组，另外 20 只分配到对照组，实验组的小白鼠饲养在高浓度臭氧环境，对照组的小白鼠饲养在正常环境，一段时间后统计每只小白鼠体重的增加量（单位：g）．\n（1）设 $X$ 表示指定的两只小白鼠中分配到对照组的只数，求 $X$ 的分布列和数学期望；\n（2）实验结果如下：\n对照组的小白鼠体重的增加量从小到大排序为：\n15.2 18.8 20.2 21.3 22.5 23.2 25.8 26.5 27.5 30.1\n32.6 34.3 34.8 35.6 35.6 35.8 36.2 37.3 40.5 43.2\n实验组的小白鼠体重的增加量从小到大排序为：\n7.8 9.2 11.4 12.4 13.2 15.5 16.5 18.0 18.8 19.2\n19.8 20.2 21.6 22.8 23.6 23.9 25.1 28.2 32.3 36.5\n（i）求 40 只小鼠体重的增加量的中位数 $m$，再分别统计两样本中小于 $m$ 与不小于 $m$ 的数据的个数，完成如下列联表：\n\\begin{array}{c|c|c} \n \u0026 \u003cm \u0026 \\ge m \\\\ \\hline\n\\text{对照组} \u0026 \u0026 \\\\ \\hline\n\\text{实验组} \u0026 \u0026 \\\\ \\hline\n\\end{array}\n（ii）根据（i）中的列联表，能否有 95\\% 的把握认为小白鼠在高浓度臭氧环境中与正常环境中体重的增加量有差异．\n附：$K^2 = \\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$，\n\\begin{array}{c|ccc} \nP(K^2\\ge k_0) \u0026 0.100 \u0026 0.050 \u0026 0.010 \\\\ \\hline\nk_0 \u0026 2.706 \u0026 3.841 \u0026 6.635 \\\\ \\hline\n\\end{array}",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）分布列见解析，$E(X)=1$；（2）（i）$m=23.4$，列联表见解析，（ii）能",
+                                               "analysis_latex":  "（1）利用超几何分布的知识即可求得分布列及数学期望；（2）（i）根据中位数的定义即可求得 $m=23.4$，从而求得列联表；（ii）利用独立性检验的卡方计算进行检验，即可得解．",
+                                               "solution_latex":  "（1）依题意，$X$ 的可能取值为 $0,1,2$，则 $P(X=0) = \\frac{C_{20}^0 C_{20}^2}{C_{40}^2} = \\frac{19}{78}$，$P(X=1) = \\frac{C_{20}^1 C_{20}^1}{C_{40}^2} = \\frac{20}{39}$，$P(X=2) = \\frac{C_{20}^2 C_{20}^0}{C_{40}^2} = \\frac{19}{78}$，所以 $X$ 的分布列为：\n\\begin{array}{c|ccc} \nX \u0026 0 \u0026 1 \u0026 2 \\\\ \\hline\nP \u0026 \\frac{19}{78} \u0026 \\frac{20}{39} \u0026 \\frac{19}{78} \\\\ \\hline\n\\end{array}\n故 $E(X) = 0\\times\\frac{19}{78} + 1\\times\\frac{20}{39} + 2\\times\\frac{19}{78} = 1$．\n（2）（i）依题意，可知这 40 只小白鼠体重增量的中位数是将两组数据合在一起，从小到大排后第 20 位与第 21 位数据的平均数，观察数据可得第 20 位为 23.2，第 21 位数据为 23.6，所以 $m = \\frac{23.2+23.6}{2} = 23.4$，故列联表为：\n\\begin{array}{c|c|c|c} \n \u0026 \u003cm \u0026 \\ge m \u0026 \\text{合计} \\\\ \\hline\n\\text{对照组} \u0026 6 \u0026 14 \u0026 20 \\\\ \\hline\n\\text{实验组} \u0026 14 \u0026 6 \u0026 20 \\\\ \\hline\n\\text{合计} \u0026 20 \u0026 20 \u0026 40 \\\\ \\hline\n\\end{array}\n（ii）由（i）可得，$K^2 = \\frac{40\\times(6\\times6-14\\times14)^2}{20\\times20\\times20\\times20} = 6.400 \u003e 3.841$，所以能有 95% 的把握认为小白鼠在高浓度臭氧环境中与正常环境中体重的增加量有差异．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知直线 $x-2y+1=0$ 与抛物线 $C: y^2 = 2px (p\u003e0)$ 交于 $A$，$B$ 两点，且 $|AB| = 4\\sqrt{15}$．\n（1）求 $p$；\n（2）设 $F$ 为 $C$ 的焦点，$M$，$N$ 为 $C$ 上两点，$\\overrightarrow{FM} \\cdot \\overrightarrow{FN} = 0$，求 $\\triangle MFN$ 面积的最小值．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$p=2$；（2）$12-8\\sqrt{2}$",
+                                               "analysis_latex":  "（1）利用直线与抛物线的位置关系，联立直线和抛物线方程求出弦长即可得出 $p$；（2）设直线 $MN: x = my + n$，$M(x_1,y_1)$，$N(x_2,y_2)$，利用 $\\overrightarrow{FM}\\cdot\\overrightarrow{FN}=0$，找到 $m,n$ 的关系，以及 $\\triangle MFN$ 的面积表达式，再结合函数的性质即可求出其最小值．",
+                                               "solution_latex":  "（1）设 $A(x_A,y_A)$，$B(x_B,y_B)$，由 $\\begin{cases} x-2y+1=0 \\\\ y^2=2px \\end{cases}$ 可得，$y^2-4py+2p=0$，所以 $y_A+y_B=4p$，$y_Ay_B=2p$，所以 $|AB| = \\sqrt{(x_A-x_B)^2+(y_A-y_B)^2} = \\sqrt{5}|y_A-y_B| = \\sqrt{5}\\times\\sqrt{(y_A+y_B)^2-4y_Ay_B} = 4\\sqrt{15}$，即 $2p^2-p-6=0$，因为 $p\u003e0$，解得：$p=2$．\n（2）因为 $F(1,0)$，显然直线 $MN$ 的斜率不可能为零，设直线 $MN: x = my + n$，$M(x_1,y_1)$，$N(x_2,y_2)$，由 $\\begin{cases} y^2=4x \\\\ x=my+n \\end{cases}$ 可得，$y^2-4my-4n=0$，所以 $y_1+y_2=4m$，$y_1y_2=-4n$，$\\Delta = 16m^2+16n\u003e0 \\Rightarrow m^2+n\u003e0$，因为 $\\overrightarrow{FM}\\cdot\\overrightarrow{FN}=0$，所以 $(x_1-1)(x_2-1)+y_1y_2=0$，即 $(my_1+n-1)(my_2+n-1)+y_1y_2=0$，亦即 $(m^2+1)y_1y_2 + m(n-1)(y_1+y_2) + (n-1)^2=0$，将 $y_1+y_2=4m$，$y_1y_2=-4n$ 代入得，$4m^2 = n^2-6n+1$，$4(m^2+n) = (n-1)^2\u003e0$，所以 $n\\neq1$，且 $n^2-6n+1\\ge0$，解得 $n\\ge 3+2\\sqrt{2}$ 或 $n\\le 3-2\\sqrt{2}$．设点 $F$ 到直线 $MN$ 的距离为 $d$，所以 $d = \\frac{|n-1|}{\\sqrt{1+m^2}}$，$|MN| = \\sqrt{(x_1-x_2)^2+(y_1-y_2)^2} = \\sqrt{1+m^2}|y_1-y_2| = \\sqrt{1+m^2}\\sqrt{16m^2+16n} = 2\\sqrt{1+m^2}\\sqrt{4(n^2-6n+1)+16n} = 2\\sqrt{1+m^2}|n-1|$，所以 $\\triangle MFN$ 的面积 $S = \\frac{1}{2}\\times|MN|\\times d = \\frac{1}{2}\\times\\frac{|n-1|}{\\sqrt{1+m^2}}\\times2\\sqrt{1+m^2}|n-1| = (n-1)^2$，而 $n\\ge 3+2\\sqrt{2}$ 或 $n\\le 3-2\\sqrt{2}$，所以，当 $n=3-2\\sqrt{2}$ 时，$\\triangle MFN$ 的面积 $S_{\\min} = (2-2\\sqrt{2})^2 = 12-8\\sqrt{2}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数 $f(x) = ax - \\frac{\\sin x}{\\cos^3 x}$，$x \\in \\left(0, \\frac{\\pi}{2}\\right)$．\n（1）当 $a=8$ 时，讨论 $f(x)$ 的单调性；\n（2）若 $f(x) \u003c \\sin 2x$ 恒成立，求 $a$ 的取值范围．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$f(x)$ 在 $(0,\\frac{\\pi}{4})$ 上单调递增，在 $(\\frac{\\pi}{4},\\frac{\\pi}{2})$ 上单调递减；（2）$(-\\infty,3]$",
+                                               "analysis_latex":  "（1）求导，然后令 $t=\\cos^2 x$，讨论导数的符号即可；（2）构造 $g(x)=f(x)-\\sin 2x$，计算 $g\u0027(x)$ 的最大值，然后与 0 比较大小，得出 $a$ 的分界点，再对 $a$ 讨论即可．",
+                                               "solution_latex":  "（1）$f\u0027(x) = a - \\frac{\\cos x \\cos^3 x + 3\\sin x \\cos^2 x \\sin x}{\\cos^6 x} = a - \\frac{\\cos^2 x + 3\\sin^2 x}{\\cos^4 x} = a - \\frac{3-2\\cos^2 x}{\\cos^4 x}$，令 $\\cos^2 x = t$，则 $t\\in(0,1)$，则 $f\u0027(x) = g(t) = a - \\frac{3-2t}{t^2} = \\frac{at^2+2t-3}{t^2}$，当 $a=8$ 时，$f\u0027(x) = g(t) = \\frac{8t^2+2t-3}{t^2} = \\frac{(2t-1)(4t+3)}{t^2}$，当 $t\\in(0,\\frac{1}{2})$ 时，$f\u0027(x)\u003c0$；当 $t\\in(\\frac{1}{2},1)$ 时，$f\u0027(x)\u003e0$．所以 $f(x)$ 在 $(0,\\frac{\\pi}{4})$ 上单调递增，在 $(\\frac{\\pi}{4},\\frac{\\pi}{2})$ 上单调递减．\n（2）设 $g(x)=f(x)-\\sin 2x$，$g\u0027(x)=f\u0027(x)-2\\cos 2x = g(t) - 2(2\\cos^2 x -1) = \\frac{at^2+2t-3}{t^2} - 2(2t-1) = a+2 - 4t + \\frac{2}{t} - \\frac{3}{t^2}$，设 $\\varphi(t)=a+2-4t+\\frac{2}{t}-\\frac{3}{t^2}$，$\\varphi\u0027(t)=-4-\\frac{2}{t^2}+\\frac{6}{t^3} = \\frac{-4t^3-2t+6}{t^3} = -\\frac{2(t-1)(2t^2+2t+3)}{t^3}\u003e0$，所以 $\\varphi(t)\u003c\\varphi(1)=a-3$．①若 $a\\in(-\\infty,3]$，$g\u0027(x)=\\varphi(t)\u003ca-3\\le0$，即 $g(x)$ 在 $(0,\\frac{\\pi}{2})$ 上单调递减，所以 $g(x)\u003cg(0)=0$，所以当 $a\\in(-\\infty,3]$ 时，$f(x)\u003c\\sin 2x$，符合题意．②若 $a\\in(3,+\\infty)$，当 $t\\to0$ 时，$\\frac{2}{t}-\\frac{3}{t^2} = -3\\left(\\frac{1}{t}-\\frac{1}{3}\\right)^2+\\frac{1}{3} \\to -\\infty$，所以 $\\varphi(t)\\to -\\infty$，$\\varphi(1)=a-3\u003e0$，所以 $\\exists t_0\\in(0,1)$，使得 $\\varphi(t_0)=0$，即 $\\exists x_0\\in(0,\\frac{\\pi}{2})$，使得 $g\u0027(x_0)=0$．当 $t\\in(t_0,1)$ 时，$\\varphi(t)\u003e0$，即当 $x\\in(0,x_0)$ 时，$g\u0027(x)\u003e0$，$g(x)$ 单调递增，所以当 $x\\in(0,x_0)$ 时，$g(x)\u003eg(0)=0$，不合题意．综上，$a$ 的取值范围为 $(-\\infty,3]$．",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "四、选做题",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "已知点 $P(2,1)$，直线 $l: \\begin{cases} x = 2 + t\\cos\\alpha \\\\ y = 1 + t\\sin\\alpha \\end{cases}$（$t$ 为参数），$\\alpha$ 为 $l$ 的倾斜角，$l$ 与 $x$ 轴正半轴，$y$ 轴正半轴分别交于 $A$，$B$ 两点，且 $|PA|\\cdot|PB|=4$．\n（1）求 $\\alpha$；\n（2）以坐标原点为极点，$x$ 轴正半轴为极轴建立极坐标系，求 $l$ 的极坐标方程．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$\\frac{3\\pi}{4}$；（2）$\\rho\\cos\\theta + \\rho\\sin\\theta - 3 = 0$",
+                                               "analysis_latex":  "（1）根据 $t$ 的几何意义即可解出；（2）求出直线 $l$ 的普通方程，再根据直角坐标和极坐标互化公式即可解出．",
+                                               "solution_latex":  "（1）因为 $l$ 与 $x$ 轴，$y$ 轴正半轴交于 $A$，$B$ 两点，所以 $\\frac{\\pi}{2}\u003c\\alpha\u003c\\pi$，令 $x=0$，$t_1=-\\frac{2}{\\cos\\alpha}$，令 $y=0$，$t_2=-\\frac{1}{\\sin\\alpha}$，所以 $|PA|\\cdot|PB| = |t_2 t_1| = \\left|\\frac{2}{\\sin\\alpha\\cos\\alpha}\\right| = \\frac{4}{|\\sin2\\alpha|} = 4$，所以 $\\sin2\\alpha = \\pm1$，即 $2\\alpha = \\frac{\\pi}{2}+k\\pi$，解得 $\\alpha = \\frac{\\pi}{4}+\\frac{k\\pi}{2}$，$k\\in Z$，因为 $\\frac{\\pi}{2}\u003c\\alpha\u003c\\pi$，所以 $\\alpha = \\frac{3\\pi}{4}$．\n（2）由（1）可知，直线 $l$ 的斜率为 $\\tan\\alpha = -1$，且过点 $(2,1)$，所以直线 $l$ 的普通方程为：$y-1 = -(x-2)$，即 $x+y-3=0$，由 $x=\\rho\\cos\\theta$，$y=\\rho\\sin\\theta$ 可得直线 $l$ 的极坐标方程为 $\\rho\\cos\\theta + \\rho\\sin\\theta - 3 = 0$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "设 $a\u003e0$，函数 $f(x) = |2x-a| - a$．\n（1）求不等式 $f(x) \u003c x$ 的解集；\n（2）若曲线 $y = f(x)$ 与 $x$ 轴所围成的图形的面积为 2，求 $a$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$(\\frac{a}{3}, 3a)$；（2）$a=2$",
+                                               "analysis_latex":  "（1）分 $x\\le a$ 和 $x\u003ea$ 讨论即可；（2）写出分段函数，画出草图，表达面积解方程即可．",
+                                               "solution_latex":  "（1）若 $x\\le a$，则 $f(x)=2a-2x-a = a-2x \u003c x$，即 $3x \u003e a$，解得 $x \u003e \\frac{a}{3}$，即 $\\frac{a}{3} \u003c x \\le a$；若 $x\u003ea$，则 $f(x)=2x-2a-a = 2x-3a \u003c x$，解得 $x \u003c 3a$，即 $a \u003c x \u003c 3a$；综上，不等式的解集为 $(\\frac{a}{3}, 3a)$．\n（2）$f(x) = \\begin{cases} -2x + a, \u0026 x\\le a \\\\ 2x - 3a, \u0026 x\u003ea \\end{cases}$，画出 $f(x)$ 的草图，则 $f(x)$ 与 $x$ 轴围成 $\\triangle ABC$，$\\triangle ABC$ 的高为 $a$，$A(\\frac{a}{2},0)$，$B(\\frac{3a}{2},0)$，所以 $|AB| = a$，所以 $S_{\\triangle ABC} = \\frac{1}{2}|AB|\\cdot a = \\frac{1}{2}a^2 = 2$，解得 $a=2$．",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  3,
+                             "issue":  "程序框图在原卷中缺失，解析版提供了模拟运行过程，答案基于解析版。"
+                         },
+                         {
+                             "question":  4,
+                             "issue":  "原卷中向量符号乱码，根据解析版修复。"
+                         },
+                         {
+                             "question":  10,
+                             "issue":  "解析版中使用了图像辅助，但最终通过代数比较得出交点个数为3。"
+                         },
+                         {
+                             "question":  11,
+                             "issue":  "解析版提供了两种方法，答案一致。"
+                         },
+                         {
+                             "question":  18,
+                             "issue":  "解析版中几何证明与计算步骤详细，原卷中图形缺失。"
+                         },
+                         {
+                             "question":  21,
+                             "issue":  "解析版中换元过程复杂，最终答案与推导一致。"
+                         }
+                     ]
+}

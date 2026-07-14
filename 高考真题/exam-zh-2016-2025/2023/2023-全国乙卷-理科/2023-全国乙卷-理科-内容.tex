@@ -1,0 +1,426 @@
+﻿\title{2023 年高考数学 全国乙卷-理科}
+\date{}
+\maketitle
+
+\section*{一、选择题}
+
+\begin{question}[points=5]
+设 $z=\frac{2+i}{1+i^{2}+i^{5}}$，则 $\overline{z}=$（ ）
+\begin{choices}
+  \item $1-2i$
+  \item $1+2i$
+  \item $2-i$
+  \item $2+i$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$1+2i$
+
+\textbf{分析：}由题意首先计算复数 $z$ 的值，然后利用共轭复数的定义确定其共轭复数即可.
+
+\textbf{详解：}由题意可得 $z=\frac{2+i}{1+i^{2}+i^{5}}=\frac{2+i}{1-1+i}=\frac{2+i}{i}=\frac{i(2+i)}{i^{2}}=\frac{2i-1}{-1}=1-2i$，则 $\overline{z}=1+2i$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+设集合 $U=\mathbb{R}$，集合 $M=\{x|x<1\}$，$N=\{x|-1<x<2\}$，则 $\{x|x\ge 2\}=$（ ）
+\begin{choices}
+  \item $\complement_U (M\cup N)$
+  \item $N\cup \complement_U M$
+  \item $\complement_U (M\cap N)$
+  \item $M\cup \complement_U N$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$\complement_U (M\cup N)$
+
+\textbf{分析：}由题意逐一考查所给的选项运算结果是否为 $\{x|x\ge 2\}$ 即可.
+
+\textbf{详解：}由题意可得 $M\cup N=\{x|x<2\}$，则 $\complement_U (M\cup N)=\{x|x\ge 2\}$，选项A正确；$\complement_U M=\{x|x\ge 1\}$，则 $N\cup \complement_U M=\{x|x>-1\}$，选项B错误；$M\cap N=\{x|-1<x<1\}$，则 $\complement_U (M\cap N)=\{x|x\le -1$或$x\ge 1\}$，选项C错误；$\complement_U N=\{x|x\le -1$或$x\ge 2\}$，则 $M\cup \complement_U N=\{x|x<1$或$x\ge 2\}$，选项D错误；故选A.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+如图，网格纸上绘制的一个零件的三视图，网格小正方形的边长为1，则该零件的表面积为（ ）
+
+\begin{center}
+  \includegraphics[width=.38\linewidth]{question-3-1.jpg}
+\end{center}
+\begin{choices}
+  \item $24$
+  \item $26$
+  \item $28$
+  \item $30$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$30$
+
+\textbf{分析：}由题意首先由三视图还原空间几何体，然后由所得的空间几何体的结构特征求解其表面积即可.
+
+\textbf{详解：}如图所示，在长方体 $ABCD-A_1B_1C_1D_1$中，$AB=BC=2$，$AA_1=3$，点 $H,I,J,K$ 为所在棱上靠近点 $B_1,C_1,D_1,A_1$ 的三等分点，$O,L,M,N$ 为所在棱的中点，则三视图所对应的几何体为长方体 $ABCD-A_1B_1C_1D_1$ 去掉长方体 $ONIC_1-LMHB_1$ 之后所得的几何体，该几何体的表面积和原来的长方体的表面积相比少2个边长为1的正方形，其表面积为：$2\times (2\times 2)+4\times (2\times 3)-2\times (1\times 1)=30$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知 $f(x)=\frac{xe^x}{e^{ax}-1}$ 是偶函数，则 $a=$（ ）
+\begin{choices}
+  \item $-2$
+  \item $-1$
+  \item $1$
+  \item $2$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$2$
+
+\textbf{分析：}根据偶函数的定义运算求解.
+
+\textbf{详解：}因为 $f(x)=\frac{xe^x}{e^{ax}-1}$ 为偶函数，则 $f(x)-f(-x)=\frac{xe^x}{e^{ax}-1}-\frac{(-x)e^{-x}}{e^{-ax}-1}=\frac{x[e^x-e^{(a-1)x}]}{e^{ax}-1}=0$，又因为 $x$ 不恒为0，可得 $e^x-e^{(a-1)x}=0$，即 $e^x=e^{(a-1)x}$，则 $x=(a-1)x$，即 $1=a-1$，解得 $a=2$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+设 $O$ 为平面坐标系的坐标原点，在区域 $\{(x,y)|1\le x^{2}+y^{2}\le 4\}$ 内随机取一点，记该点为 $A$，则直线 $OA$ 的倾斜角不大于 $\frac{\pi}{4}$ 的概率为（ ）
+\begin{choices}
+  \item $\frac{1}{8}$
+  \item $\frac{1}{6}$
+  \item $\frac{1}{4}$
+  \item $\frac{1}{2}$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$\frac{1}{4}$
+
+\textbf{分析：}根据题意分析区域的几何意义，结合几何概型运算求解.
+
+\textbf{详解：}因为区域 $\{(x,y)|1\le x^{2}+y^{2}\le 4\}$ 表示以 $O(0,0)$ 为圆心，外圆半径 $R=2$，内圆半径 $r=1$ 的圆环，则直线 $OA$ 的倾斜角不大于 $\frac{\pi}{4}$ 的部分如阴影所示，在第一象限部分对应的圆心角 $\angle MON=\frac{\pi}{4}$，结合对称性可得所求概率 $P=\frac{2\times \frac{\pi}{4}}{2\pi}=\frac{1}{4}$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知函数 $f(x)=\sin(\omega x+\varphi)$ 在区间 $(\frac{\pi}{6},\frac{2\pi}{3})$ 单调递增，直线 $x=\frac{\pi}{6}$ 和 $x=\frac{2\pi}{3}$ 为函数 $y=f(x)$ 的图像的两条对称轴，则 $f(-\frac{5\pi}{12})=$（ ）
+\begin{choices}
+  \item $-\frac{\sqrt{3}}{2}$
+  \item $-\frac{1}{2}$
+  \item $\frac{1}{2}$
+  \item $\frac{\sqrt{3}}{2}$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$\frac{\sqrt{3}}{2}$
+
+\textbf{分析：}根据题意分别求出其周期，再根据其最小值求出初相，代入 $x=-\frac{5\pi}{12}$ 即可得到答案.
+
+\textbf{详解：}因为 $f(x)=\sin(\omega x+\varphi)$ 在区间 $(\frac{\pi}{6},\frac{2\pi}{3})$ 单调递增，所以 $\frac{T}{2}=\frac{2\pi}{3}-\frac{\pi}{6}=\frac{\pi}{2}$，且 $\omega>0$，则 $T=\pi$，$\omega=\frac{2\pi}{T}=2$，当 $x=\frac{\pi}{6}$ 时，$f(x)$ 取得最小值，则 $2\cdot\frac{\pi}{6}+\varphi=2k\pi-\frac{\pi}{2}$，$k\in\mathbb{Z}$，则 $\varphi=2k\pi-\frac{5\pi}{6}$，$k\in\mathbb{Z}$，不妨取 $k=0$，则 $f(x)=\sin(2x-\frac{5\pi}{6})$，则 $f(-\frac{5\pi}{12})=\sin(-\frac{5\pi}{3})=\frac{\sqrt{3}}{2}$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+甲乙两位同学从6种课外读物中各自选读2种，则这两人选读的课外读物中恰有1种相同的选法共有（ ）
+\begin{choices}
+  \item 30种
+  \item 60种
+  \item 120种
+  \item 240种
+\end{choices}
+\begin{solution}
+\textbf{答案：}120种
+
+\textbf{分析：}相同读物有6种情况，剩余两种读物的选择再进行排列，最后根据分步乘法公式即可得到答案.
+
+\textbf{详解：}首先确定相同的读物，共有 $\mathrm{C}_6^1$ 种情况，然后两人各自的另外一种读物相当于在剩余的5种读物里，选出两种进行排列，共有 $\mathrm{A}_5^2$ 种，根据分步乘法公式则共有 $\mathrm{C}_6^1\cdot\mathrm{A}_5^2=120$ 种.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知圆锥 $PO$ 的底面半径为 $\sqrt{3}$，$O$ 为底面圆心，$PA$，$PB$ 为圆锥的母线，$\angle AOB=120^\circ$，若 $\triangle PAB$ 的面积等于 $\frac{9\sqrt{3}}{4}$，则该圆锥的体积为（ ）
+\begin{choices}
+  \item $\pi$
+  \item $\sqrt{6}\pi$
+  \item $3\pi$
+  \item $3\sqrt{6}\pi$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$\sqrt{6}\pi$
+
+\textbf{分析：}根据给定条件，利用三角形面积公式求出圆锥的母线长，进而求出圆锥的高，求出体积作答.
+
+\textbf{详解：}在 $\triangle AOB$ 中，$\angle AOB=120^\circ$，而 $OA=OB=\sqrt{3}$，取 $AC$ 中点 $C$，连接 $OC,PC$，有 $OC\perp AB,PC\perp AB$，$\angle ABO=30^\circ$，$OC=\frac{\sqrt{3}}{2}$，$AB=2BC=3$，由 $\triangle PAB$ 的面积为 $\frac{9\sqrt{3}}{4}$，得 $\frac{1}{2}\times 3\times PC=\frac{9\sqrt{3}}{4}$，解得 $PC=\frac{3\sqrt{3}}{2}$，于是 $PO=\sqrt{PC^2-OC^2}=\sqrt{(\frac{3\sqrt{3}}{2})^2-(\frac{\sqrt{3}}{2})^2}=\sqrt{6}$，所以圆锥的体积 $V=\frac{1}{3}\pi\times OA^2\times PO=\frac{1}{3}\pi\times (\sqrt{3})^2\times \sqrt{6}=\sqrt{6}\pi$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知 $\triangle ABC$ 为等腰直角三角形，$AB$ 为斜边，$\triangle ABD$ 为等边三角形，若二面角 $C-AB-D$ 为 $150^\circ$，则直线 $CD$ 与平面 $ABC$ 所成角的正切值为（ ）
+\begin{choices}
+  \item $\frac{1}{5}$
+  \item $\frac{2}{5}$
+  \item $\frac{\sqrt{3}}{5}$
+  \item $\frac{2}{5}$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$\frac{\sqrt{3}}{5}$
+
+\textbf{分析：}根据给定条件，推导确定线面角，再利用余弦定理、正弦定理求解作答.
+
+\textbf{详解：}取 $AB$ 的中点 $E$，连接 $CE,DE$，因为 $\triangle ABC$ 是等腰直角三角形，且 $AB$ 为斜边，则有 $CE\perp AB$，又 $\triangle ABD$ 是等边三角形，则 $DE\perp AB$，从而 $\angle CED$ 为二面角 $C-AB-D$ 的平面角，即 $\angle CED=150^\circ$，显然 $CE\cap DE=E$，$CE,DE\subset$ 平面 $CDE$，于是 $AB\perp$ 平面 $CDE$，又 $AB\subset$ 平面 $ABC$，因此平面 $CDE\perp$ 平面 $ABC$，显然平面 $CDE\cap$ 平面 $ABC=CE$，直线 $CD\subset$ 平面 $CDE$，则直线 $CD$ 在平面 $ABC$ 内的射影为直线 $CE$，从而 $\angle DCE$ 为直线 $CD$ 与平面 $ABC$ 所成的角，令 $AB=2$，则 $CE=1$，$DE=\sqrt{3}$，在 $\triangle CDE$ 中，由余弦定理得：$CD=\sqrt{CE^2+DE^2-2CE\cdot DE\cos\angle CED}=\sqrt{1+3-2\times1\times\sqrt{3}\times(-\frac{\sqrt{3}}{2})}=\sqrt{7}$，由正弦定理得 $\frac{DE}{\sin\angle DCE}=\frac{CD}{\sin\angle CED}$，即 $\sin\angle DCE=\frac{\sqrt{3}\sin150^\circ}{\sqrt{7}}=\frac{\sqrt{3}}{2\sqrt{7}}$，显然 $\angle DCE$ 是锐角，$\cos\angle DCE=\sqrt{1-\sin^2\angle DCE}=\sqrt{1-(\frac{\sqrt{3}}{2\sqrt{7}})^2}=\frac{5}{2\sqrt{7}}$，所以直线 $CD$ 与平面 $ABC$ 所成的角的正切为 $\frac{\sqrt{3}}{5}$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知等差数列 $\{a_n\}$ 的公差为 $\frac{2\pi}{3}$，集合 $S=\{\cos a_n|n\in\mathbb{N}^*\}$，若 $S=\{a,b\}$，则 $ab=$（ ）
+\begin{choices}
+  \item $-1$
+  \item $-\frac{1}{2}$
+  \item $0$
+  \item $\frac{1}{2}$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$-\frac{1}{2}$
+
+\textbf{分析：}根据给定的等差数列，写出通项公式，再结合余弦型函数的周期及集合只有两个元素分析、推理作答.
+
+\textbf{详解：}依题意，等差数列 $\{a_n\}$ 中，$a_n=a_1+(n-1)\cdot\frac{2\pi}{3}=\frac{2\pi}{3}n+(a_1-\frac{2\pi}{3})$，显然函数 $y=\cos[\frac{2\pi}{3}n+(a_1-\frac{2\pi}{3})]$ 的周期为3，而 $n\in\mathbb{N}^*$，即 $\cos a_n$ 最多3个不同取值，又 $\{\cos a_n|n\in\mathbb{N}^*\}=\{a,b\}$，则在 $\cos a_1,\cos a_2,\cos a_3$ 中，$\cos a_1=\cos a_2\neq\cos a_3$ 或 $\cos a_1\neq\cos a_2=\cos a_3$，于是有 $\cos\theta=\cos(\theta+\frac{2\pi}{3})$，即有 $\theta+(\theta+\frac{2\pi}{3})=2k\pi$，$k\in\mathbb{Z}$，解得 $\theta=k\pi-\frac{\pi}{3}$，$k\in\mathbb{Z}$，所以 $ab=\cos(k\pi-\frac{\pi}{3})\cos[(k\pi-\frac{\pi}{3})+\frac{4\pi}{3}]=-\cos(k\pi-\frac{\pi}{3})\cos k\pi=-\cos^2 k\pi\cos\frac{\pi}{3}=-\frac{1}{2}$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+设 $A$，$B$ 为双曲线 $x^2-\frac{y^2}{9}=1$ 上两点，下列四个点中，可为线段 $AB$ 中点的是（ ）
+\begin{choices}
+  \item $(1,1)$
+  \item $(-1,2)$
+  \item $(1,3)$
+  \item $(-1,-4)$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$(-1,-4)$
+
+\textbf{分析：}根据点差法分析可得 $k_{AB}\cdot k=9$，对于A、B、D：通过联立方程判断交点个数，逐项分析判断；对于C：结合双曲线的渐近线分析判断.
+
+\textbf{详解：}设 $A(x_1,y_1),B(x_2,y_2)$，则 $AB$ 的中点 $M(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2})$，可得 $k_{AB}=\frac{y_1-y_2}{x_1-x_2}$，$k=\frac{\frac{y_1+y_2}{2}}{\frac{x_1+x_2}{2}}=\frac{y_1+y_2}{x_1+x_2}$，因为 $A,B$ 在双曲线上，则 $\begin{cases} x_1^2-\frac{y_1^2}{9}=1 \\ x_2^2-\frac{y_2^2}{9}=1 \end{cases}$，两式相减得 $(x_1^2-x_2^2)-\frac{y_1^2-y_2^2}{9}=0$，所以 $k_{AB}\cdot k=\frac{y_1^2-y_2^2}{x_1^2-x_2^2}=9$. 对于选项A：可得 $k=1$，$k_{AB}=9$，则 $AB:y=9x-8$，联立方程 $\begin{cases} y=9x-8 \\ x^2-\frac{y^2}{9}=1 \end{cases}$，消去 $y$ 得 $72x^2-2\times72x+73=0$，此时 $\Delta=(-2\times72)^2-4\times72\times73=-288<0$，所以直线 $AB$ 与双曲线没有交点，故A错误；对于选项B：可得 $k=-2$，$k_{AB}=-\frac{9}{2}$，则 $AB:y=-\frac{9}{2}x-\frac{5}{2}$，联立方程 $\begin{cases} y=-\frac{9}{2}x-\frac{5}{2} \\ x^2-\frac{y^2}{9}=1 \end{cases}$，消去 $y$ 得 $45x^2+2\times45x+61=0$，此时 $\Delta=(2\times45)^2-4\times45\times61=-4\times45\times16<0$，所以直线 $AB$ 与双曲线没有交点，故B错误；对于选项C：可得 $k=3$，$k_{AB}=3$，则 $AB:y=3x$，由双曲线方程可得 $a=1,b=3$，则 $AB:y=3x$ 为双曲线的渐近线，所以直线 $AB$ 与双曲线没有交点，故C错误；对于选项D：$k=4$，$k_{AB}=\frac{9}{4}$，则 $AB:y=\frac{9}{4}x-\frac{7}{4}$，联立方程 $\begin{cases} y=\frac{9}{4}x-\frac{7}{4} \\ x^2-\frac{y^2}{9}=1 \end{cases}$，消去 $y$ 得 $63x^2+126x-193=0$，此时 $\Delta=126^2+4\times63\times193>0$，故直线 $AB$ 与双曲线有两个交点，故D正确.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知 $\odot O$ 的半径为1，直线 $PA$ 与 $\odot O$ 相切于点 $A$，直线 $PB$ 与 $\odot O$ 交于 $B$，$C$ 两点，$D$ 为 $BC$ 的中点，若 $PO=\sqrt{2}$，则 $\overrightarrow{PA}\cdot\overrightarrow{PD}$ 的最大值为（ ）
+\begin{choices}
+  \item $\frac{1+\sqrt{2}}{2}$
+  \item $\frac{1+2\sqrt{2}}{2}$
+  \item $1+\sqrt{2}$
+  \item $2+\sqrt{2}$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$\frac{1+\sqrt{2}}{2}$
+
+\textbf{分析：}由题意作出示意图，然后分类讨论，利用平面向量的数量积定义可得 $\overrightarrow{PA}\cdot\overrightarrow{PD}=\frac{1}{2}-\frac{\sqrt{2}}{2}\sin(2\alpha-\frac{\pi}{4})$，或 $\overrightarrow{PA}\cdot\overrightarrow{PD}=\frac{1}{2}+\frac{\sqrt{2}}{2}\sin(2\alpha+\frac{\pi}{4})$，然后结合三角函数的性质即可确定 $\overrightarrow{PA}\cdot\overrightarrow{PD}$ 的最大值.
+
+\textbf{详解：}如图所示，$OA=1,OP=\sqrt{2}$，则由题意可知 $\angle APO=45^\circ$，由勾股定理可得 $PA=\sqrt{OP^2-OA^2}=1$. 当点 $A,D$ 位于直线 $PO$ 异侧时，设 $\angle OPC=\alpha$，$0\le\alpha\le \frac{\pi}{4}$，则 $\overrightarrow{PA}\cdot\overrightarrow{PD}=|PA|\cdot|PD|\cos(\alpha+\frac{\pi}{4})=1\times\sqrt{2}\cos\alpha\cos(\alpha+\frac{\pi}{4})=\sqrt{2}\cos\alpha(\frac{\sqrt{2}}{2}\cos\alpha-\frac{\sqrt{2}}{2}\sin\alpha)=\cos^2\alpha-\sin\alpha\cos\alpha=\frac{1+\cos2\alpha}{2}-\frac{1}{2}\sin2\alpha=\frac{1}{2}-\frac{\sqrt{2}}{2}\sin(2\alpha-\frac{\pi}{4})$，当 $2\alpha-\frac{\pi}{4}=-\frac{\pi}{4}$ 时，$\overrightarrow{PA}\cdot\overrightarrow{PD}$ 有最大值1. 当点 $A,D$ 位于直线 $PO$ 同侧时，设 $\angle OPC=\alpha$，$0\le\alpha\le \frac{\pi}{4}$，则 $\overrightarrow{PA}\cdot\overrightarrow{PD}=|PA|\cdot|PD|\cos(\alpha-\frac{\pi}{4})=1\times\sqrt{2}\cos\alpha\cos(\alpha-\frac{\pi}{4})=\sqrt{2}\cos\alpha(\frac{\sqrt{2}}{2}\cos\alpha+\frac{\sqrt{2}}{2}\sin\alpha)=\cos^2\alpha+\sin\alpha\cos\alpha=\frac{1+\cos2\alpha}{2}+\frac{1}{2}\sin2\alpha=\frac{1}{2}+\frac{\sqrt{2}}{2}\sin(2\alpha+\frac{\pi}{4})$，当 $2\alpha+\frac{\pi}{4}=\frac{\pi}{2}$ 时，$\overrightarrow{PA}\cdot\overrightarrow{PD}$ 有最大值 $\frac{1+\sqrt{2}}{2}$. 综上可得，$\overrightarrow{PA}\cdot\overrightarrow{PD}$ 的最大值为 $\frac{1+\sqrt{2}}{2}$.
+\end{solution}
+\end{question}
+
+\section*{二、填空题}
+
+\begin{question}[points=5]
+已知点 $A(1,\sqrt{5})$ 在抛物线 $C:y^2=2px$ 上，则 $A$ 到 $C$ 的准线的距离为.
+\fillin[{$\frac{9}{4}$}]
+\begin{solution}
+\textbf{答案：}$\frac{9}{4}$
+
+\textbf{分析：}由题意首先求得抛物线的标准方程，然后由抛物线方程可得抛物线的准线方程为 $x=-\frac{5}{4}$，最后利用点的坐标和准线方程计算点 $A$ 到 $C$ 的准线的距离即可.
+
+\textbf{详解：}由题意可得：$(\sqrt{5})^2=2p\times1$，则 $2p=5$，抛物线的方程为 $y^2=5x$，准线方程为 $x=-\frac{5}{4}$，点 $A$ 到 $C$ 的准线的距离为 $1-(-\frac{5}{4})=\frac{9}{4}$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+若 $x$，$y$ 满足约束条件 $\begin{cases} x-3y\le -1 \\ x+2y\le 9 \\ 3x+y\ge 7 \end{cases}$，则 $z=2x-y$ 的最大值为.
+\fillin[{$8$}]
+\begin{solution}
+\textbf{答案：}$8$
+
+\textbf{分析：}作出可行域，转化为截距最值讨论即可.
+
+\textbf{详解：}作出可行域如图所示：$z=2x-y$，移项得 $y=2x-z$，联立 $\begin{cases} x-3y=-1 \\ x+2y=9 \end{cases}$，解得 $\begin{cases} x=5 \\ y=2 \end{cases}$，设 $A(5,2)$，显然平移直线 $y=2x$ 使其经过点 $A$，此时截距 $-z$ 最小，则 $z$ 最大，代入得 $z=8$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知 $\{a_n\}$ 为等比数列，$a_2a_4a_5=a_3a_6$，$a_9a_{10}=-8$，则 $a_7$=.
+\fillin[{$-2$}]
+\begin{solution}
+\textbf{答案：}$-2$
+
+\textbf{分析：}根据等比数列公式对 $a_2a_4a_5=a_3a_6$ 化简得 $a_1q=1$，联立 $a_9a_{10}=-8$ 求出 $q^3=-2$，最后得 $a_7=a_1q\cdot q^5=q^5=-2$.
+
+\textbf{详解：}设 $\{a_n\}$ 的公比为 $q(q\neq0)$，则 $a_2a_4a_5=a_3a_6=a_2q\cdot a_5q$，显然 $a_n\neq0$，则 $a_4=q$，即 $a_1q^3=q$，则 $a_1q=1$，因为 $a_9a_{10}=-8$，则 $a_1q^8\cdot a_1q^9=-8$，即 $(a_1q)^2 q^{15}=-8$，则 $q^{15}=-8=(-2)^3$，则 $q^5=-2$，则 $a_7=a_1q\cdot q^5=q^5=-2$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+设 $a\in(0,1)$，若函数 $f(x)=a^x+(1+a)^x$ 在 $(0,+\infty)$ 上单调递增，则 $a$ 的取值范围是.
+\fillin[{$[\frac{\sqrt{5}-1}{2},1)$}]
+\begin{solution}
+\textbf{答案：}$[\frac{\sqrt{5}-1}{2},1)$
+
+\textbf{分析：}原问题等价于 $f'(x)=a^x\ln a+(1+a)^x\ln(1+a)\ge 0$ 恒成立，据此将所得的不等式进行恒等变形，可得 $(\frac{1+a}{a})^x\ge -\frac{\ln a}{\ln(1+a)}$，由右侧函数的单调性可得实数 $a$ 的二次不等式，求解二次不等式后可确定实数 $a$ 的取值范围.
+
+\textbf{详解：}由函数的解析式可得 $f'(x)=a^x\ln a+(1+a)^x\ln(1+a)\ge 0$ 在区间 $(0,+\infty)$ 上恒成立，则 $(1+a)^x\ln(1+a)\ge -a^x\ln a$，即 $(\frac{1+a}{a})^x\ge -\frac{\ln a}{\ln(1+a)}$ 在区间 $(0,+\infty)$ 上恒成立，故 $(\frac{1+a}{a})^0=1\ge -\frac{\ln a}{\ln(1+a)}$，而 $a+1\in(1,2)$，故 $\ln(1+a)>0$，故 $\begin{cases} \ln(a+1)\ge -\ln a \\ 0<a<1 \end{cases}$ 即 $\begin{cases} a(a+1)\ge 1 \\ 0<a<1 \end{cases}$，故 $\frac{\sqrt{5}-1}{2}\le a<1$，结合题意可得实数 $a$ 的取值范围是 $[\frac{\sqrt{5}-1}{2},1)$.
+\end{solution}
+\end{question}
+
+\section*{三、解答题}
+
+\begin{question}[points=12]
+某厂为比较甲乙两种工艺对橡胶产品伸缩率的处理效应，进行10次配对试验，每次配对试验选用材质相同的两个橡胶产品，随机地选其中一个用甲工艺处理，另一个用乙工艺处理，测量处理后的橡胶产品的伸缩率，甲、乙两种工艺处理后的橡胶产品的伸缩率分别记为 $x_i$，$y_i$（$i=1,2,\cdots,10$），试验结果如下：
+
+
+
+\begin{tabular}{c|cccccccccc}
+
+试验序号 $i$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+
+伸缩率 $x_i$ & 545 & 533 & 551 & 522 & 575 & 544 & 541 & 568 & 596 & 548 \\
+
+伸缩率 $y_i$ & 536 & 527 & 543 & 530 & 560 & 533 & 522 & 550 & 576 & 536 \\
+
+\end{tabular}
+
+
+
+记 $z_i=x_i-y_i$（$i=1,2,\cdots,10$），记 $z_1$，$z_2$，$\ldots$，$z_{10}$ 的样本平均数为 $\overline{z}$，样本方差为 $s^2$，
+
+
+
+(1) 求 $\overline{z}$，$s^2$；
+
+
+
+(2) 判断甲工艺处理后的橡胶产品的伸缩率较乙工艺处理后的橡胶产品的伸缩率是否有显著提高（如果 $\overline{z}\ge 2\sqrt{\frac{s^2}{10}}$，则认为甲工艺处理后的橡胶产品的伸缩率较乙工艺处理后的橡胶产品的伸缩率有显著提高，否则不认为有显著提高）.
+\begin{solution}
+
+\textbf{详解：}(1) $\overline{x}=552.3$，$\overline{y}=541.3$，$\overline{z}=11$，$z_i$ 的值分别为: 9,6,8,-8,15,11,19,18,20,12，$s^2=\frac{(9-11)^2+(6-11)^2+(8-11)^2+(-8-11)^2+(15-11)^2+0+(19-11)^2+(18-11)^2+(20-11)^2+(12-11)^2}{10}=61$.
+
+(2) 由(1)知 $\overline{z}=11$，$2\sqrt{\frac{s^2}{10}}=2\sqrt{6.1}=\sqrt{24.4}$，故有 $\overline{z}\ge 2\sqrt{\frac{s^2}{10}}$，所以认为甲工艺处理后的橡胶产品的伸缩率较乙工艺处理后的橡胶产品的伸缩率有显著提高.
+\end{solution}
+\end{question}
+
+\begin{question}[points=12]
+在 $\triangle ABC$ 中，已知 $\angle BAC=120^\circ$，$AB=2$，$AC=1$.
+
+
+
+(1) 求 $\sin\angle ABC$；
+
+
+
+(2) 若 $D$ 为 $BC$ 上一点，且 $\angle BAD=90^\circ$，求 $\triangle ADC$ 的面积.
+\begin{solution}
+
+\textbf{详解：}(1) 由余弦定理可得：$BC^2=AB^2+AC^2-2AB\cdot AC\cos A=4+1-2\times2\times1\times\cos120^\circ=7$，则 $BC=\sqrt{7}$，$\cos B=\frac{BC^2+AB^2-AC^2}{2BC\cdot AB}=\frac{7+4-1}{2\times2\times\sqrt{7}}=\frac{5\sqrt{7}}{14}$，$\sin B=\sqrt{1-\cos^2B}=\sqrt{1-\frac{25}{28}}=\frac{\sqrt{21}}{14}$.
+
+(2) 由三角形面积公式可得 $\frac{S_{\triangle ABD}}{S_{\triangle ACD}}=\frac{\frac{1}{2}\times AB\times AD\times\sin90^\circ}{\frac{1}{2}\times AC\times AD\times\sin30^\circ}=4$，则 $S_{\triangle ACD}=\frac{1}{5}S_{\triangle ABC}=\frac{1}{5}\times\frac{1}{2}\times2\times1\times\sin120^\circ=\frac{3}{10}$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=12]
+如图，在三棱锥 $P-ABC$ 中，$AB\perp BC$，$AB=2$，$BC=2\sqrt{2}$，$PB=PC=\sqrt{6}$，$BP$，$AP$，$BC$ 的中点分别为 $D$，$E$，$O$，$AD=\sqrt{5}DO$，点 $F$ 在 $AC$ 上，$BF\perp AO$.
+
+
+
+(1) 证明：$EF\parallel$ 平面 $ADO$；
+
+
+
+(2) 证明：平面 $ADO\perp$ 平面 $BEF$；
+
+
+
+(3) 求二面角 $D-AO-C$ 的正弦值.
+
+\begin{center}
+  \includegraphics[width=.38\linewidth]{question-19-1.jpg}
+\end{center}
+\begin{solution}
+
+\textbf{详解：}(1) 连接 $DE,OF$，设 $\overrightarrow{AF}=t\overrightarrow{AC}$，则 $\overrightarrow{BF}=\overrightarrow{BA}+\overrightarrow{AF}=(1-t)\overrightarrow{BA}+t\overrightarrow{BC}$，$\overrightarrow{AO}=-\overrightarrow{BA}+\frac{1}{2}\overrightarrow{BC}$，$BF\perp AO$，则 $\overrightarrow{BF}\cdot\overrightarrow{AO}=[(1-t)\overrightarrow{BA}+t\overrightarrow{BC}]\cdot(-\overrightarrow{BA}+\frac{1}{2}\overrightarrow{BC})=(t-1)BA^2+\frac{1}{2}tBC^2=4(t-1)+4t=0$，解得 $t=\frac{1}{2}$，则 $F$ 为 $AC$ 的中点，由 $D,E,O,F$ 分别为 $PB,PA,BC,AC$ 的中点，于是 $DE\parallel AB$，$DE=\frac{1}{2}AB$，$OF\parallel AB$，$OF=\frac{1}{2}AB$，即 $DE\parallel OF$，$DE=OF$，则四边形 $ODEF$ 为平行四边形，$EF\parallel DO$，$EF=DO$，又 $EF\not\subset$ 平面 $ADO$，$DO\subset$ 平面 $ADO$，所以 $EF\parallel$ 平面 $ADO$.
+
+(2) 由(1)可知 $EF\parallel OD$，则 $AO=\sqrt{6}$，$DO=\frac{\sqrt{6}}{2}$，得 $AD=\sqrt{5}DO=\frac{\sqrt{30}}{2}$，因此 $OD^2+AO^2=AD^2=\frac{15}{2}$，则 $OD\perp AO$，有 $EF\perp AO$，又 $AO\perp BF$，$BF\cap EF=F$，$BF,EF\subset$ 平面 $BEF$，则有 $AO\perp$ 平面 $BEF$，又 $AO\subset$ 平面 $ADO$，所以平面 $ADO\perp$ 平面 $BEF$.
+
+(3) 过点 $O$ 作 $OH\parallel BF$ 交 $AC$ 于点 $H$，设 $AD\cap BE=G$，由 $AO\perp BF$，得 $HO\perp AO$，且 $FH=\frac{1}{3}AH$，又由(2)知，$OD\perp AO$，则 $\angle DOH$ 为二面角 $D-AO-C$ 的平面角，因为 $D,E$ 分别为 $PB,PA$ 的中点，因此 $G$ 为 $\triangle PAB$ 的重心，即有 $DG=\frac{1}{3}AD$，$GE=\frac{1}{3}BE$，又 $FH=\frac{1}{3}AH$，即有 $DH=GF$，$\cos\angle ABD=\frac{4+\frac{3}{2}-\frac{PA^2}{2}}{2\times2\times\frac{\sqrt{6}}{2}}=\frac{4+6-PA^2}{2\times2\times\sqrt{6}}$，解得 $PA=\sqrt{14}$，同理得 $BE=\frac{\sqrt{6}}{2}$，于是 $BE^2+EF^2=BF^2=3$，即有 $BE\perp EF$，则 $GF=\sqrt{(\frac{1}{3}\times\frac{\sqrt{6}}{2})^2+(\frac{\sqrt{6}}{2})^2}=\frac{\sqrt{15}}{3}$，从而 $GF=\frac{\sqrt{15}}{3}$，$DH=\frac{3}{2}\times\frac{\sqrt{15}}{3}=\frac{\sqrt{15}}{2}$，在 $\triangle DOH$ 中，$OH=\frac{1}{2}BF=\frac{\sqrt{3}}{2}$，$OD=\frac{\sqrt{6}}{2}$，$DH=\frac{\sqrt{15}}{2}$，于是 $\cos\angle DOH=\frac{\frac{6}{4}+\frac{3}{4}-\frac{15}{4}}{2\times\frac{\sqrt{6}}{2}\times\frac{\sqrt{3}}{2}}=-\frac{\sqrt{2}}{2}$，$\sin\angle DOH=\sqrt{1-(-\frac{\sqrt{2}}{2})^2}=\frac{\sqrt{2}}{2}$，所以二面角 $D-AO-C$ 的正弦值为 $\frac{\sqrt{2}}{2}$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=12]
+已知椭圆 $C:\frac{y^2}{a^2}+\frac{x^2}{b^2}=1(a>b>0)$ 的离心率为 $\frac{\sqrt{5}}{3}$，点 $A(-2,0)$ 在 $C$ 上.
+
+
+
+(1) 求 $C$ 的方程；
+
+
+
+(2) 过点 $(-2,3)$ 的直线交 $C$ 于点 $P$，$Q$ 两点，直线 $AP$，$AQ$ 与 $y$ 轴的交点分别为 $M$，$N$，证明：线段 $MN$ 的中点为定点.
+\begin{solution}
+
+\textbf{详解：}(1) 由题意可得 $\begin{cases} b=2 \\ a^2=b^2+c^2 \\ e=\frac{c}{a}=\frac{\sqrt{5}}{3} \end{cases}$，解得 $a=3$，$b=2$，$c=\sqrt{5}$，所以椭圆方程为 $\frac{y^2}{9}+\frac{x^2}{4}=1$.
+
+(2) 由题意可知：直线 $PQ$ 的斜率存在，设 $PQ:y=k(x+2)+3$，$P(x_1,y_1),Q(x_2,y_2)$，联立方程 $\begin{cases} y=k(x+2)+3 \\ \frac{y^2}{9}+\frac{x^2}{4}=1 \end{cases}$，消去 $y$ 得：$(4k^2+9)x^2+8k(2k+3)x+16(k^2+3k)=0$，则 $\Delta=64k^2(2k+3)^2-64(4k^2+9)(k^2+3k)=-1728k>0$，解得 $k<0$，可得 $x_1+x_2=-\frac{8k(2k+3)}{4k^2+9}$，$x_1x_2=\frac{16(k^2+3k)}{4k^2+9}$，因为 $A(-2,0)$，则直线 $AP:y=\frac{y_1}{x_1+2}(x+2)$，令 $x=0$，解得 $y=\frac{2y_1}{x_1+2}$，即 $M(0,\frac{2y_1}{x_1+2})$，同理可得 $N(0,\frac{2y_2}{x_2+2})$，则 $\frac{\frac{2y_1}{x_1+2}+\frac{2y_2}{x_2+2}}{2}=\frac{[kx_1+(2k+3)](x_2+2)+[kx_2+(2k+3)](x_1+2)}{(x_1+2)(x_2+2)}=\frac{2kx_1x_2+(4k+3)(x_1+x_2)+4(2k+3)}{x_1x_2+2(x_1+x_2)+4}=\frac{\frac{32k(k^2+3k)}{4k^2+9}-\frac{8k(4k+3)(2k+3)}{4k^2+9}+4(2k+3)}{\frac{16(k^2+3k)}{4k^2+9}-\frac{16k(2k+3)}{4k^2+9}+4}=3$，所以线段 $PQ$ 的中点是定点 $(0,3)$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=12]
+已知函数 $f(x)=(\frac{1}{x}+a)\ln(1+x)$.
+
+
+
+(1) 当 $a=-1$ 时，求曲线 $y=f(x)$ 在点 $(1,f(1))$ 处的切线方程；
+
+
+
+(2) 是否存在 $a$，$b$，使得曲线 $y=f(\frac{1}{x})$ 关于直线 $x=b$ 对称，若存在，求 $a$，$b$ 的值，若不存在，说明理由；
+
+
+
+(3) 若 $f(x)$ 在 $(0,+\infty)$ 存在极值，求 $a$ 的取值范围.
+\begin{solution}
+
+\textbf{详解：}(1) 当 $a=-1$ 时，$f(x)=(\frac{1}{x}-1)\ln(x+1)$，则 $f'(x)=-\frac{1}{x^2}\ln(x+1)+(\frac{1}{x}-1)\times\frac{1}{x+1}$，$f(1)=0$，$f'(1)=-\ln2$，函数在 $(1,f(1))$ 处的切线方程为 $y-0=-\ln2(x-1)$，即 $(\ln2)x+y-\ln2=0$.
+
+(2) 由函数的解析式可得 $f(\frac{1}{x})=(x+a)\ln(\frac{1}{x}+1)$，函数的定义域满足 $\frac{1}{x}+1=\frac{x+1}{x}>0$，即函数的定义域为 $(-\infty,-1)\cup(0,+\infty)$，定义域关于直线 $x=-\frac{1}{2}$ 对称，由题意可得 $b=-\frac{1}{2}$，由对称性可知 $f(-\frac{1}{2}+m)=f(-\frac{1}{2}-m)$（$m>\frac{1}{2}$），取 $m=\frac{3}{2}$ 可得 $f(1)=f(-2)$，即 $(a+1)\ln2=(a-2)\ln\frac{1}{2}$，则 $a+1=2-a$，解得 $a=\frac{1}{2}$，经检验 $a=\frac{1}{2},b=-\frac{1}{2}$ 满足题意，故存在 $a=\frac{1}{2},b=-\frac{1}{2}$.
+
+(3) 由函数的解析式可得 $f'(x)=(-\frac{1}{x^2})\ln(x+1)+(\frac{1}{x}+a)\cdot\frac{1}{x+1}$，由 $f(x)$ 在区间 $(0,+\infty)$ 存在极值点，则 $f'(x)$ 在区间 $(0,+\infty)$ 上存在变号零点；令 $(-\frac{1}{x^2})\ln(x+1)+(\frac{1}{x}+a)\cdot\frac{1}{x+1}=0$，则 $-(x+1)\ln(x+1)+x+ax^2=0$，令 $g(x)=ax^2+x-(x+1)\ln(x+1)$，$f(x)$ 在区间 $(0,+\infty)$ 存在极值点，等价于 $g(x)$ 在区间 $(0,+\infty)$ 上存在变号零点，$g'(x)=2ax-\ln(x+1)$，$g''(x)=2a-\frac{1}{x+1}$. 当 $a\le0$ 时，$g'(x)<0$，$g(x)$ 在区间 $(0,+\infty)$ 上单调递减，此时 $g(x)<g(0)=0$，$g(x)$ 在区间 $(0,+\infty)$ 上无零点，不合题意；当 $a\ge\frac{1}{2}$，$2a\ge1$ 时，由于 $\frac{1}{x+1}<1$，所以 $g''(x)>0$，$g'(x)$ 在区间 $(0,+\infty)$ 上单调递增，所以 $g'(x)>g'(0)=0$，$g(x)$ 在区间 $(0,+\infty)$ 上单调递增，$g(x)>g(0)=0$，所以 $g(x)$ 在区间 $(0,+\infty)$ 上无零点，不符合题意；当 $0<a<\frac{1}{2}$ 时，由 $g''(x)=2a-\frac{1}{x+1}=0$ 可得 $x=\frac{1}{2a}-1$，当 $x\in(0,\frac{1}{2a}-1)$ 时，$g''(x)<0$，$g'(x)$ 单调递减，当 $x\in(\frac{1}{2a}-1,+\infty)$ 时，$g''(x)>0$，$g'(x)$ 单调递增，故 $g'(x)$ 的最小值为 $g'(\frac{1}{2a}-1)=1-2a+\ln2a$，令 $m(x)=1-x+\ln x$（$0<x<1$），则 $m'(x)=\frac{-x+1}{x}>0$，函数 $m(x)$ 在定义域内单调递增，$m(x)<m(1)=0$，据此可得 $1-x+\ln x<0$ 恒成立，则 $g'(\frac{1}{2a}-1)=1-2a+\ln2a<0$，令 $h(x)=\ln x-x^2+x$（$x>0$），则 $h'(x)=\frac{-2x^2+x+1}{x}$，当 $x\in(0,1)$ 时，$h'(x)>0$，$h(x)$ 单调递增，当 $x\in(1,+\infty)$ 时，$h'(x)<0$，$h(x)$ 单调递减，故 $h(x)\le h(1)=0$，即 $\ln x\le x^2-x$（取等条件为 $x=1$），所以 $g'(x)=2ax-\ln(x+1)>2ax-[(x+1)^2-(x+1)]=2ax-x^2+x$，$g'(2a-1)>2a(2a-1)-[(2a-1)^2+(2a-1)]=0$，且注意到 $g'(0)=0$，根据零点存在性定理可知 $g'(x)$ 在区间 $(0,+\infty)$ 上存在唯一零点 $x_0$. 当 $x\in(0,x_0)$ 时，$g'(x)<0$，$g(x)$ 单调减，当 $x\in(x_0,+\infty)$ 时，$g'(x)>0$，$g(x)$ 单调递增，所以 $g(x_0)<g(0)=0$. 令 $n(x)=\ln x-\frac{1}{2}(x-\frac{1}{x})$，则 $n'(x)=\frac{1}{x}-\frac{1}{2}(1+\frac{1}{x^2})=\frac{-(x-1)^2}{2x^2}\le0$，则 $n(x)$ 单调递减，注意到 $n(1)=0$，故当 $x\in(1,+\infty)$ 时，$\ln x-\frac{1}{2}(x-\frac{1}{x})<0$，从而有 $\ln x<\frac{1}{2}(x-\frac{1}{x})$，所以 $g(x)=ax^2+x-(x+1)\ln(x+1)>ax^2+x-(x+1)\times\frac{1}{2}[(x+1)-\frac{1}{x+1}]=(a-\frac{1}{2})x^2+\frac{1}{2}$，令 $(a-\frac{1}{2})x^2+\frac{1}{2}=0$ 得 $x^2=\frac{1}{1-2a}$，所以 $g(\frac{1}{\sqrt{1-2a}})>0$，所以函数 $g(x)$ 在区间 $(0,+\infty)$ 上存在变号零点，符合题意. 综合上面可知实数 $a$ 的取值范围是 $(0,\frac{1}{2})$.
+\end{solution}
+\end{question}
+
+\section*{四、选做题}
+
+\begin{question}[points=10]
+【选修4-4】在直角坐标系 $xOy$ 中，以坐标原点 $O$ 为极点，$x$ 轴正半轴为极轴建立极坐标系，曲线 $C_1$ 的极坐标方程为 $\rho=2\sin\theta$（$\frac{\pi}{4}\le\theta\le\frac{\pi}{2}$），曲线 $C_2$：$\begin{cases} x=2\cos\alpha \\ y=2\sin\alpha \end{cases}$（$\alpha$ 为参数，$\frac{\pi}{2}<\alpha<\pi$）.
+
+
+
+(1) 写出 $C_1$ 的直角坐标方程；
+
+
+
+(2) 若直线 $y=x+m$ 既与 $C_1$ 没有公共点，也与 $C_2$ 没有公共点，求 $m$ 的取值范围.
+\begin{solution}
+
+\textbf{详解：}(1) 因为 $\rho=2\sin\theta$，即 $\rho^2=2\rho\sin\theta$，可得 $x^2+y^2=2y$，整理得 $x^2+(y-1)^2=1$，又因为 $x=\rho\cos\theta=2\sin\theta\cos\theta=\sin2\theta$，$y=\rho\sin\theta=2\sin^2\theta=1-\cos2\theta$，且 $\frac{\pi}{4}\le\theta\le\frac{\pi}{2}$，则 $\frac{\pi}{2}\le2\theta\le\pi$，则 $x=\sin2\theta\in[0,1]$，$y=1-\cos2\theta\in[1,2]$，故 $C_1: x^2+(y-1)^2=1$，$x\in[0,1]$，$y\in[1,2]$.
+
+(2) 因为 $C_2$：$\begin{cases} x=2\cos\alpha \\ y=2\sin\alpha \end{cases}$（$\alpha$ 为参数，$\frac{\pi}{2}<\alpha<\pi$），整理得 $x^2+y^2=4$，表示圆心为 $O(0,0)$，半径为2，且位于第二象限的圆弧，如图所示，若直线 $y=x+m$ 过 $(1,1)$，则 $1=1+m$，解得 $m=0$；若直线 $y=x+m$，即 $x-y+m=0$ 与 $C_2$ 相切，则 $\frac{|m|}{\sqrt{2}}=2$，解得 $m=2\sqrt{2}$（$m>0$），若直线 $y=x+m$ 与 $C_1,C_2$ 均没有公共点，则 $m>2\sqrt{2}$ 或 $m<0$，即实数 $m$ 的取值范围是 $(-\infty,0)\cup(2\sqrt{2},+\infty)$.
+\end{solution}
+\end{question}
+
+\begin{question}[points=10]
+【选修4-5】已知 $f(x)=2|x|+|x-2|$.
+
+
+
+(1) 求不等式 $f(x)\le 6-x$ 的解集；
+
+
+
+(2) 在直角坐标系 $xOy$ 中，求不等式组 $\begin{cases} f(x)\le y \\ x+y-6\le0 \end{cases}$ 所确定的平面区域的面积.
+\begin{solution}
+
+\textbf{详解：}(1) 依题意，$f(x)=\begin{cases} 3x-2, & x>2 \\ x+2, & 0\le x\le2 \\ -3x+2, & x<0 \end{cases}$，不等式 $f(x)\le6-x$ 化为：$\begin{cases} x>2 \\ 3x-2\le6-x \end{cases}$ 或 $\begin{cases} 0\le x\le2 \\ x+2\le6-x \end{cases}$ 或 $\begin{cases} x<0 \\ -3x+2\le6-x \end{cases}$，解得 $0\le x\le2$ 或 $-2\le x<0$，因此 $-2\le x\le2$，所以原不等式的解集为 $[-2,2]$.
+
+(2) 作出不等式组 $\begin{cases} f(x)\le y \\ x+y-6\le0 \end{cases}$ 表示的平面区域，如图中阴影 $\triangle ABC$，由 $\begin{cases} y=-3x+2 \\ x+y=6 \end{cases}$，解得 $A(-2,8)$，由 $\begin{cases} y=x+2 \\ x+y=6 \end{cases}$，解得 $C(2,4)$，又 $B(0,2)$，$D(0,6)$，所以 $\triangle ABC$ 的面积 $S_{\triangle ABC}=\frac{1}{2}|BD|\times|x_C-x_A|=\frac{1}{2}\times|6-2|\times|2-(-2)|=8$.
+\end{solution}
+\end{question}
+

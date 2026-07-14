@@ -1,0 +1,441 @@
+﻿{
+    "title":  "2023 年高考数学 新高考I卷",
+    "year":  2023,
+    "paper":  "新课标全国I卷",
+    "sections":  [
+                     {
+                         "title":  "一、单项选择题",
+                         "instructions":  "本题共 8 小题，每小题 5 分，共 40 分。在每小题给出的四个选项中，只有一项是符合题目要求的。",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知集合 $M=\\{-2,-1,0,1,2\\}$，$N=\\{x|x^2-x-6\\geq 0\\}$，则 $M\\cap N=$（ ）",
+                                               "choices":  [
+                                                               "$\\{-2,-1,0,1\\}$",
+                                                               "$\\{0,1,2\\}$",
+                                                               "$\\{-2\\}$",
+                                                               "$2$"
+                                                           ],
+                                               "answer_latex":  "$\\{-2\\}$",
+                                               "analysis_latex":  "方法一：由一元二次不等式的解法求出集合 $N$，即可根据交集的运算解出。方法二：将集合 $M$ 中的元素逐个代入不等式验证，即可解出。",
+                                               "solution_latex":  "方法一：因为 $N=\\{x|x^2-x-6\\geq 0\\}=(-\\infty,-2]\\cup[3,+\\infty)$，而 $M=\\{-2,-1,0,1,2\\}$，所以 $M\\cap N=\\{-2\\}$。方法二：因为 $M=\\{-2,-1,0,1,2\\}$，将 $-2,-1,0,1,2$ 代入不等式 $x^2-x-6\\geq 0$，只有 $-2$ 使不等式成立，所以 $M\\cap N=\\{-2\\}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知 $z=\\frac{1-i}{2+2i}$，则 $z-\\bar{z}=$（ ）",
+                                               "choices":  [
+                                                               "$-i$",
+                                                               "$i$",
+                                                               "$0$",
+                                                               "$1$"
+                                                           ],
+                                               "answer_latex":  "$-i$",
+                                               "analysis_latex":  "根据复数的除法运算求出 $z$，再由共轭复数的概念得到 $\\bar{z}$，从而解出。",
+                                               "solution_latex":  "因为 $z=\\frac{1-i}{2+2i}=\\frac{(1-i)(1-i)}{2(1+i)(1-i)}=\\frac{-2i}{4}=-\\frac{1}{2}i$，所以 $\\bar{z}=\\frac{1}{2}i$，即 $z-\\bar{z}=-i$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知向量 $\\vec{a}=(1,1),\\vec{b}=(1,-1)$，若 $(\\vec{a}+\\lambda\\vec{b})\\perp(\\vec{a}+\\mu\\vec{b})$，则（ ）",
+                                               "choices":  [
+                                                               "$\\lambda+\\mu=1$",
+                                                               "$\\lambda+\\mu=-1$",
+                                                               "$\\lambda\\mu=1$",
+                                                               "$\\lambda\\mu=-1$"
+                                                           ],
+                                               "answer_latex":  "$\\lambda\\mu=-1$",
+                                               "analysis_latex":  "根据向量的坐标运算求出 $\\vec{a}+\\lambda\\vec{b}$，$\\vec{a}+\\mu\\vec{b}$，再根据向量垂直的坐标表示即可求出。",
+                                               "solution_latex":  "因为 $\\vec{a}=(1,1),\\vec{b}=(1,-1)$，所以 $\\vec{a}+\\lambda\\vec{b}=(1+\\lambda,1-\\lambda)$，$\\vec{a}+\\mu\\vec{b}=(1+\\mu,1-\\mu)$，由 $(\\vec{a}+\\lambda\\vec{b})\\perp(\\vec{a}+\\mu\\vec{b})$ 可得 $(\\vec{a}+\\lambda\\vec{b})\\cdot(\\vec{a}+\\mu\\vec{b})=0$，即 $(1+\\lambda)(1+\\mu)+(1-\\lambda)(1-\\mu)=0$，整理得：$\\lambda\\mu=-1$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设函数 $f(x)=2^{x(x-a)}$ 在区间 $(0,1)$ 上单调递减，则 $a$ 的取值范围是（ ）",
+                                               "choices":  [
+                                                               "$(-\\infty,-2]$",
+                                                               "$[-2,0)$",
+                                                               "$(0,2]$",
+                                                               "$[2,+\\infty)$"
+                                                           ],
+                                               "answer_latex":  "$[2,+\\infty)$",
+                                               "analysis_latex":  "利用指数型复合函数单调性，判断列式计算作答。",
+                                               "solution_latex":  "函数 $y=2^x$ 在 $R$ 上单调递增，而函数 $f(x)=2^{x(x-a)}$ 在区间 $(0,1)$ 上单调递减，则有函数 $y=x(x-a)=(x-\\frac{a}{2})^2-\\frac{a^2}{4}$ 在区间 $(0,1)$ 上单调递减，因此 $\\frac{a}{2}\\geq 1$，解得 $a\\geq 2$，所以 $a$ 的取值范围是 $[2,+\\infty)$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设椭圆 $C_1:\\frac{x^2}{a^2}+y^2=1(a\u003e1), C_2:\\frac{x^2}{4}+y^2=1$ 的离心率分别为 $e_1, e_2$。若 $e_2=\\sqrt{3}e_1$，则 $a=$（ ）",
+                                               "choices":  [
+                                                               "$\\frac{2\\sqrt{3}}{3}$",
+                                                               "$\\sqrt{2}$",
+                                                               "$\\sqrt{3}$",
+                                                               "$\\sqrt{6}$"
+                                                           ],
+                                               "answer_latex":  "$\\frac{2\\sqrt{3}}{3}$",
+                                               "analysis_latex":  "根据给定的椭圆方程，结合离心率的意义列式计算作答。",
+                                               "solution_latex":  "由 $e_2=\\sqrt{3}e_1$，得 $e_2^2=3e_1^2$，因此 $\\frac{4-1}{4}=3\\times\\frac{a^2-1}{a^2}$，而 $a\u003e1$，所以 $a=\\frac{2\\sqrt{3}}{3}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "过点 $(0,-2)$ 与圆 $x^2+y^2-4x-1=0$ 相切的两条直线的夹角为 $\\alpha$，则 $\\sin\\alpha=$（ ）",
+                                               "choices":  [
+                                                               "$1$",
+                                                               "$\\frac{\\sqrt{15}}{4}$",
+                                                               "$\\frac{\\sqrt{10}}{4}$",
+                                                               "$\\frac{\\sqrt{6}}{4}$"
+                                                           ],
+                                               "answer_latex":  "$\\frac{\\sqrt{15}}{4}$",
+                                               "analysis_latex":  "方法一：根据切线的性质求切线长，结合倍角公式运算求解；方法二：根据切线的性质求切线长，结合余弦定理运算求解；方法三：根据切线结合点到直线的距离公式可得 $k^2+8k+1=0$，利用韦达定理结合夹角公式运算求解。",
+                                               "solution_latex":  "方法一：因为 $x^2+y^2-4x-1=0$，即 $(x-2)^2+y^2=5$，可得圆心 $C(2,0)$，半径 $r=\\sqrt{5}$，过点 $P(0,-2)$ 作圆 $C$ 的切线，切点为 $A,B$，因为 $PC=\\sqrt{2^2+(-2)^2}=2\\sqrt{2}$，则 $PA=\\sqrt{PC^2-r^2}=\\sqrt{3}$，可得 $\\sin\\angle APC=\\frac{\\sqrt{5}}{2\\sqrt{2}}=\\frac{\\sqrt{10}}{4}, \\cos\\angle APC=\\frac{\\sqrt{3}}{2\\sqrt{2}}=\\frac{\\sqrt{6}}{4}$，则 $\\sin\\angle APB=\\sin 2\\angle APC=2\\sin\\angle APC\\cos\\angle APC=2\\times\\frac{\\sqrt{10}}{4}\\times\\frac{\\sqrt{6}}{4}=\\frac{\\sqrt{15}}{4}$，$\\cos\\angle APB=\\cos 2\\angle APC=\\cos^2\\angle APC-\\sin^2\\angle APC=\\left(\\frac{\\sqrt{6}}{4}\\right)^2-\\left(\\frac{\\sqrt{10}}{4}\\right)^2=-\\frac{1}{4}\u003c0$，即 $\\angle APB$ 为钝角，所以 $\\sin\\alpha=\\sin(\\pi-\\angle APB)=\\sin\\angle APB=\\frac{\\sqrt{15}}{4}$；方法二：$PC=2\\sqrt{2}, PA=PB=\\sqrt{3}$，由 $PA^2+PB^2-2PA\\cdot PB\\cos\\angle APB=CA^2+CB^2-2CA\\cdot CB\\cos\\angle ACB$ 且 $\\angle ACB=\\pi-\\angle APB$，得 $3+3-6\\cos\\angle APB=5+5-10\\cos(\\pi-\\angle APB)$，即 $3-\\cos\\angle APB=5+5\\cos\\angle APB$，解得 $\\cos\\angle APB=-\\frac{1}{4}\u003c0$，则 $\\cos\\alpha=\\cos(\\pi-\\angle APB)=-\\cos\\angle APB=\\frac{1}{4}$，且 $\\alpha$ 为锐角，所以 $\\sin\\alpha=\\sqrt{1-\\cos^2\\alpha}=\\frac{\\sqrt{15}}{4}$；方法三：设切线方程为 $y=kx-2$，即 $kx-y-2=0$，则 $\\frac{|2k-2|}{\\sqrt{k^2+1}}=\\sqrt{5}$，整理得 $k^2+8k+1=0$，设两切线斜率分别为 $k_1,k_2$，则 $k_1+k_2=-8, k_1k_2=1$，可得 $|k_1-k_2|=\\sqrt{(k_1+k_2)^2-4k_1k_2}=2\\sqrt{15}$，所以 $\\tan\\alpha=\\left|\\frac{k_1-k_2}{1+k_1k_2}\\right|=\\sqrt{15}$，即 $\\frac{\\sin\\alpha}{\\cos\\alpha}=\\sqrt{15}$，可得 $\\cos\\alpha=\\frac{\\sin\\alpha}{\\sqrt{15}}$，则 $\\sin^2\\alpha+\\cos^2\\alpha=\\sin^2\\alpha+\\frac{\\sin^2\\alpha}{15}=1$，且 $\\alpha\\in(0,\\frac{\\pi}{2})$，则 $\\sin\\alpha\u003e0$，解得 $\\sin\\alpha=\\frac{\\sqrt{15}}{4}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "记 $S_n$ 为数列 $\\{a_n\\}$ 的前 $n$ 项和，设甲：$\\{a_n\\}$ 为等差数列；乙：$\\{\\frac{S_n}{n}\\}$ 为等差数列，则（ ）",
+                                               "choices":  [
+                                                               "甲是乙的充分条件但不是必要条件",
+                                                               "甲是乙的必要条件但不是充分条件",
+                                                               "甲是乙的充要条件",
+                                                               "甲既不是乙的充分条件也不是乙的必要条件"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "利用充分条件、必要条件的定义及等差数列的定义，再结合数列前 $n$ 项和与第 $n$ 项的关系推理判断作答。",
+                                               "solution_latex":  "方法1：甲：$\\{a_n\\}$ 为等差数列，设其首项为 $a_1$，公差为 $d$，则 $S_n=na_1+\\frac{n(n-1)}{2}d, \\frac{S_n}{n}=a_1+\\frac{n-1}{2}d=\\frac{d}{2}n+a_1-\\frac{d}{2}, \\frac{S_{n+1}}{n+1}-\\frac{S_n}{n}=\\frac{d}{2}$，因此 $\\{\\frac{S_n}{n}\\}$ 为等差数列，则甲是乙的充分条件；反之，乙：$\\{\\frac{S_n}{n}\\}$ 为等差数列，即 $\\frac{S_{n+1}}{n+1}-\\frac{S_n}{n}=\\frac{nS_{n+1}-(n+1)S_n}{n(n+1)}=\\frac{na_{n+1}-S_n}{n(n+1)}$ 为常数，设为 $t$，即 $\\frac{na_{n+1}-S_n}{n(n+1)}=t$，则 $S_n=na_{n+1}-t\\cdot n(n+1)$，有 $S_{n-1}=(n-1)a_n-t\\cdot n(n-1), n\\geq 2$，两式相减得：$a_n=na_{n+1}-(n-1)a_n-2tn$，即 $a_{n+1}-a_n=2t$，对 $n=1$ 也成立，因此 $\\{a_n\\}$ 为等差数列，则甲是乙的必要条件，所以甲是乙的充要条件。方法2：甲：$\\{a_n\\}$ 为等差数列，设首项 $a_1$，公差 $d$，即 $S_n=na_1+\\frac{n(n-1)}{2}d$，则 $\\frac{S_n}{n}=a_1+\\frac{n-1}{2}d=\\frac{d}{2}n+a_1-\\frac{d}{2}$，因此 $\\{\\frac{S_n}{n}\\}$ 为等差数列，即甲是乙的充分条件；反之，乙：$\\{\\frac{S_n}{n}\\}$ 为等差数列，设 $\\frac{S_{n+1}}{n+1}-\\frac{S_n}{n}=D, \\frac{S_n}{n}=S_1+(n-1)D$，即 $S_n=nS_1+n(n-1)D$，$S_{n-1}=(n-1)S_1+(n-1)(n-2)D$，当 $n\\geq 2$ 时，相减得：$S_n-S_{n-1}=S_1+2(n-1)D$，当 $n=1$ 时，上式成立，于是 $a_n=a_1+2(n-1)D$，又 $a_{n+1}-a_n=a_1+2nD-[a_1+2(n-1)D]=2D$ 为常数，因此 $\\{a_n\\}$ 为等差数列，则甲是乙的必要条件，所以甲是乙的充要条件。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知 $\\sin(\\alpha-\\beta)=\\frac{1}{3},\\cos\\alpha\\sin\\beta=\\frac{1}{6}$，则 $\\cos(2\\alpha+2\\beta)=$（ ）",
+                                               "choices":  [
+                                                               "$\\frac{7}{9}$",
+                                                               "$\\frac{1}{9}$",
+                                                               "$-\\frac{1}{9}$",
+                                                               "$-\\frac{7}{9}$"
+                                                           ],
+                                               "answer_latex":  "$\\frac{1}{9}$",
+                                               "analysis_latex":  "根据给定条件，利用和角、差角的正弦公式求出 $\\sin(\\alpha+\\beta)$，再利用二倍角的余弦公式计算作答。",
+                                               "solution_latex":  "因为 $\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta=\\frac{1}{3}$，而 $\\cos\\alpha\\sin\\beta=\\frac{1}{6}$，因此 $\\sin\\alpha\\cos\\beta=\\frac{1}{2}$，则 $\\sin(\\alpha+\\beta)=\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta=\\frac{2}{3}$，所以 $\\cos(2\\alpha+2\\beta)=\\cos2(\\alpha+\\beta)=1-2\\sin^2(\\alpha+\\beta)=1-2\\times(\\frac{2}{3})^2=\\frac{1}{9}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、多项选择题",
+                         "instructions":  "本题共 4 小题，每小题 5 分，共 20 分。在每小题给出的选项中，有多项符合题目要求。全部选对的得 5 分，部分选对的得 2 分，有选错的得 0 分。",
+                         "questions":  [
+                                           {
+                                               "number":  9,
+                                               "type":  "multiple_choice",
+                                               "points":  5,
+                                               "stem_latex":  "有一组样本数据 $x_1, x_2, \\cdots, x_6$，其中 $x_1$ 是最小值，$x_6$ 是最大值，则（ ）",
+                                               "choices":  [
+                                                               "$x_2, x_3, x_4, x_5$ 的平均数等于 $x_1, x_2, \\cdots, x_6$ 的平均数",
+                                                               "$x_2, x_3, x_4, x_5$ 的中位数等于 $x_1, x_2, \\cdots, x_6$ 的中位数",
+                                                               "$x_2, x_3, x_4, x_5$ 的标准差不小于 $x_1, x_2, \\cdots, x_6$ 的标准差",
+                                                               "$x_2, x_3, x_4, x_5$ 的极差不大于 $x_1, x_2, \\cdots, x_6$ 的极差"
+                                                           ],
+                                               "answer_latex":  "BD",
+                                               "analysis_latex":  "根据题意结合平均数、中位数、标准差以及极差的概念逐项分析判断。",
+                                               "solution_latex":  "对于选项 A：设 $x_2, x_3, x_4, x_5$ 的平均数为 $m$，$x_1, x_2, \\cdots, x_6$ 的平均数为 $n$，则 $n-m=\\frac{x_1+x_2+x_3+x_4+x_5+x_6}{6}-\\frac{x_2+x_3+x_4+x_5}{4}=\\frac{2(x_1+x_6)-(x_5+x_2+x_3+x_4)}{12}$，因为没有确定 $2(x_1+x_6), x_5+x_2+x_3+x_4$ 的大小关系，所以无法判断 $m,n$ 的大小，例如：$1,2,3,4,5,6$，可得 $m=n=3.5$；例如 $1,1,1,1,1,7$，可得 $m=1, n=2$；例如 $1,2,2,2,2,2$，可得 $m=2, n=\\frac{11}{6}$；故 A 错误。对于选项 B：不妨设 $x_1\\leq x_2\\leq x_3\\leq x_4\\leq x_5\\leq x_6$，可知 $x_2, x_3, x_4, x_5$ 的中位数等于 $x_1, x_2, \\cdots, x_6$ 的中位数均为 $\\frac{x_3+x_4}{2}$，故 B 正确。对于选项 C：因为 $x_1$ 是最小值，$x_6$ 是最大值，则 $x_2, x_3, x_4, x_5$ 的波动性不大于 $x_1, x_2, \\cdots, x_6$ 的波动性，即 $x_2, x_3, x_4, x_5$ 的标准差不大于 $x_1, x_2, \\cdots, x_6$ 的标准差，例如：$2,4,6,8,10,12$，则平均数 $n=7$，标准差 $s_1=\\sqrt{\\frac{1}{6}[(2-7)^2+(4-7)^2+(6-7)^2+(8-7)^2+(10-7)^2+(12-7)^2]}=\\sqrt{\\frac{105}{3}}$，$4,6,8,10$，则平均数 $m=7$，标准差 $s_2=\\sqrt{\\frac{1}{4}[(4-7)^2+(6-7)^2+(8-7)^2+(10-7)^2]}=\\sqrt{5}$，显然 $\\frac{105}{3}\u003e5$，即 $s_1\u003es_2$；故 C 错误。对于选项 D：不妨设 $x_1\\leq x_2\\leq x_3\\leq x_4\\leq x_5\\leq x_6$，则 $x_6-x_1\\geq x_5-x_2$，当且仅当 $x_1=x_2, x_5=x_6$ 时，等号成立，故 D 正确。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "multiple_choice",
+                                               "points":  5,
+                                               "stem_latex":  "噪声污染问题越来越受到重视．用声压级来度量声音的强弱，定义声压级 $L_p=20\\times\\lg\\frac{p}{p_0}$，其中常数 $p_0(p_0\u003e0)$ 是听觉下限阈值，$p$ 是实际声压．下表为不同声源的声压级：\n\n| 声源 | 与声源的距离 /m | 声压级 /dB |\n|------|----------------|------------|\n| 燃油汽车 | 10 | 60~90 |\n| 混合动力汽车 | 10 | 50~60 |\n| 电动汽车 | 10 | 40 |\n\n已知在距离燃油汽车、混合动力汽车、电动汽车 10m 处测得实际声压分别为 $p_1, p_2, p_3$，则（ ）．",
+                                               "choices":  [
+                                                               "$p_1\\geq p_2$",
+                                                               "$p_2\u003e10p_3$",
+                                                               "$p_3=100p_0$",
+                                                               "$p_1\\leq 100p_2$"
+                                                           ],
+                                               "answer_latex":  "ACD",
+                                               "analysis_latex":  "根据题意可知 $L_{p_1}\\in[60,90], L_{p_2}\\in[50,60], L_{p_3}=40$，结合对数运算逐项分析判断。",
+                                               "solution_latex":  "由题意可知：$L_{p_1}\\in[60,90], L_{p_2}\\in[50,60], L_{p_3}=40$。对于选项 A：$L_{p_1}-L_{p_2}=20\\lg\\frac{p_1}{p_0}-20\\lg\\frac{p_2}{p_0}=20\\lg\\frac{p_1}{p_2}$，因为 $L_{p_1}\\geq L_{p_2}$，则 $L_{p_1}-L_{p_2}=20\\lg\\frac{p_1}{p_2}\\geq 0$，即 $\\lg\\frac{p_1}{p_2}\\geq 0$，所以 $\\frac{p_1}{p_2}\\geq 1$ 且 $p_1,p_2\u003e0$，可得 $p_1\\geq p_2$，故 A 正确。对于选项 B：$L_{p_2}-L_{p_3}=20\\lg\\frac{p_2}{p_0}-20\\lg\\frac{p_3}{p_0}=20\\lg\\frac{p_2}{p_3}$，因为 $L_{p_2}-L_{p_3}=L_{p_2}-40\\geq 10$，则 $20\\lg\\frac{p_2}{p_3}\\geq 10$，即 $\\lg\\frac{p_2}{p_3}\\geq \\frac{1}{2}$，所以 $\\frac{p_2}{p_3}\\geq e$ 且 $p_2,p_3\u003e0$，可得 $p_2\\geq e p_3$，当且仅当 $L_{p_2}=50$ 时，等号成立，故 B 错误。对于选项 C：因为 $L_{p_3}=20\\lg\\frac{p_3}{p_0}=40$，即 $\\lg\\frac{p_3}{p_0}=2$，可得 $\\frac{p_3}{p_0}=100$，即 $p_3=100p_0$，故 C 正确。对于选项 D：由选项 A 可知：$L_{p_1}-L_{p_2}=20\\lg\\frac{p_1}{p_2}$，且 $L_{p_1}-L_{p_2}\\leq 90-50=40$，则 $20\\lg\\frac{p_1}{p_2}\\leq 40$，即 $\\lg\\frac{p_1}{p_2}\\leq 2$，可得 $\\frac{p_1}{p_2}\\leq 100$，且 $p_1,p_2\u003e0$，所以 $p_1\\leq 100p_2$，故 D 正确。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "multiple_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知函数 $f(x)$ 的定义域为 $\\mathbb{R}$，$f(xy)=y^2f(x)+x^2f(y)$，则（ ）．",
+                                               "choices":  [
+                                                               "$f(0)=0$",
+                                                               "$f(1)=0$",
+                                                               "$f(x)$ 是偶函数",
+                                                               "$x=0$ 为 $f(x)$ 的极小值点"
+                                                           ],
+                                               "answer_latex":  "ABC",
+                                               "analysis_latex":  "方法一：利用赋值法，结合函数奇偶性的判断方法可判断选项 ABC，举反例 $f(x)=0$ 即可排除选项 D。方法二：选项 ABC 的判断与方法一同，对于 D，可构造特殊函数 $f(x)=\\begin{cases} x^2\\ln|x|, \u0026 x\\neq 0 \\\\ 0, \u0026 x=0 \\end{cases}$ 进行判断即可。",
+                                               "solution_latex":  "方法一：因为 $f(xy)=y^2f(x)+x^2f(y)$。对于 A，令 $x=y=0$，$f(0)=0\\cdot f(0)+0\\cdot f(0)=0$，故 A 正确。对于 B，令 $x=y=1$，$f(1)=1\\cdot f(1)+1\\cdot f(1)$，则 $f(1)=0$，故 B 正确。对于 C，令 $x=y=-1$，$f(1)=f(-1)+f(-1)=2f(-1)$，则 $f(-1)=0$，令 $y=-1$，$f(-x)=f(x)+x^2f(-1)=f(x)$，又函数 $f(x)$ 的定义域为 $\\mathbb{R}$，所以 $f(x)$ 为偶函数，故 C 正确。对于 D，不妨令 $f(x)=0$，显然符合题设条件，此时 $f(x)$ 无极值，故 D 错误。方法二：对于 A、B、C 同方法一。对于 D，当 $x^2y^2\\neq 0$ 时，对 $f(xy)=y^2f(x)+x^2f(y)$ 两边同时除以 $x^2y^2$，得到 $\\frac{f(xy)}{x^2y^2}=\\frac{f(x)}{x^2}+\\frac{f(y)}{y^2}$，故可以设 $\\frac{f(x)}{x^2}=\\ln|x|(x\\neq 0)$，则 $f(x)=\\begin{cases} x^2\\ln|x|, \u0026 x\\neq 0 \\\\ 0, \u0026 x=0 \\end{cases}$，当 $x\u003e0$ 时，$f(x)=x^2\\ln x$，则 $f\u0027(x)=2x\\ln x+x\\cdot\\frac{1}{x}=x(2\\ln x+1)$，令 $f\u0027(x)\u003c0$，得 $0\u003cx\u003ce^{-\\frac{1}{2}}$；令 $f\u0027(x)\u003e0$，得 $x\u003ee^{-\\frac{1}{2}}$，故 $f(x)$ 在 $(0,e^{-\\frac{1}{2}})$ 上单调递减，在 $(e^{-\\frac{1}{2}},+\\infty)$ 上单调递增，因为 $f(x)$ 为偶函数，所以 $f(x)$ 在 $(-e^{-\\frac{1}{2}},0)$ 上单调递增，在 $(-\\infty,-e^{-\\frac{1}{2}})$ 上单调递减，显然，此时 $x=0$ 是 $f(x)$ 的极大值，故 D 错误。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "multiple_choice",
+                                               "points":  5,
+                                               "stem_latex":  "下列物体中，能够被整体放入棱长为 1（单位：m）的正方体容器（容器壁厚度忽略不计）内的有（ ）",
+                                               "choices":  [
+                                                               "直径为 0.99m 的球体",
+                                                               "所有棱长均为 1.4m 的四面体",
+                                                               "底面直径为 0.01m，高为 1.8m 的圆柱体",
+                                                               "底面直径为 1.2m，高为 0.01m 的圆柱体"
+                                                           ],
+                                               "answer_latex":  "ABD",
+                                               "analysis_latex":  "根据题意结合正方体的性质逐项分析判断。",
+                                               "solution_latex":  "对于选项 A：因为 $0.99\\text{m}\u003c1\\text{m}$，即球体的直径小于正方体的棱长，所以能够被整体放入正方体内，故 A 正确。对于选项 B：因为正方体的面对角线长为 $\\sqrt{2}\\text{m}$，且 $\\sqrt{2}\u003e1.4$，所以能够被整体放入正方体内，故 B 正确。对于选项 C：因为正方体的体对角线长为 $\\sqrt{3}\\text{m}$，且 $\\sqrt{3}\u003c1.8$，所以不能够被整体放入正方体内，故 C 错误。对于选项 D：因为正方体的体对角线长为 $\\sqrt{3}\\text{m}$，且 $\\sqrt{3}\u003e1.2$，设正方体 $ABCD-A_1B_1C_1D_1$ 的中心为 $O$，以 $AC_1$ 为轴对称放置圆柱，设圆柱的底面圆心 $O_1$ 到正方体的表面的最近的距离为 $h\\text{m}$，如图，结合对称性可知：$OC_1=\\frac{1}{2}C_1A=\\frac{\\sqrt{3}}{2}, C_1O_1=OC_1-OO_1=\\frac{\\sqrt{3}}{2}-0.6$，则 $\\frac{h}{AA_1}=\\frac{C_1O_1}{C_1A}$，即 $\\frac{h}{1}=\\frac{\\frac{\\sqrt{3}}{2}-0.6}{\\sqrt{3}}$，解得 $h=\\frac{1}{2}-\\frac{0.6}{\\sqrt{3}}\u003e0.34\u003e0.01$，所以能够被整体放入正方体内，故 D 正确。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  3,
+                                                                  "description":  "正方体 $ABCD-A_1B_1C_1D_1$ 中，以 $AC_1$ 为轴放置圆柱的示意图"
+                                                              }
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、填空题",
+                         "instructions":  "本题共 4 小题，每小题 5 分，共 20 分。",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "某学校开设了 4 门体育类选修课和 4 门艺术类选修课，学生需从这 8 门课中选修 2 门或 3 门课，并且每类选修课至少选修 1 门，则不同的选课方案共有________种（用数字作答）．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "64",
+                                               "analysis_latex":  "分类讨论选修 2 门或 3 门课，对选修 3 门，再讨论具体选修课的分配，结合组合数运算求解。",
+                                               "solution_latex":  "（1）当从 8 门课中选修 2 门，则不同的选课方案共有 $C_4^1C_4^1=16$ 种；（2）当从 8 门课中选修 3 门，①若体育类选修课 1 门，则不同的选课方案共有 $C_4^1C_4^2=24$ 种；②若体育类选修课 2 门，则不同的选课方案共有 $C_4^2C_4^1=24$ 种；综上所述：不同的选课方案共有 $16+24+24=64$ 种。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "在正四棱台 $ABCD-A_1B_1C_1D_1$ 中，$AB=2, A_1B_1=1, AA_1=\\sqrt{2}$，则该棱台的体积为________．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{7\\sqrt{6}}{6}$",
+                                               "analysis_latex":  "结合图像，依次求得 $A_1O_1, AO, A_1M$，从而利用棱台的体积公式即可得解。",
+                                               "solution_latex":  "如图，过 $A_1$ 作 $A_1M\\perp AC$，垂足为 $M$，易知 $A_1M$ 为四棱台 $ABCD-A_1B_1C_1D_1$ 的高，因为 $AB=2, A_1B_1=1, AA_1=\\sqrt{2}$，则 $A_1O_1=\\frac{1}{2}A_1C_1=\\frac{1}{2}\\times\\sqrt{2}A_1B_1=\\frac{\\sqrt{2}}{2}, AO=\\frac{1}{2}AC=\\frac{1}{2}\\times\\sqrt{2}AB=\\sqrt{2}$，故 $AM=\\frac{1}{2}(AC-A_1C_1)=\\frac{\\sqrt{2}}{2}$，则 $A_1M=\\sqrt{A_1A^2-AM^2}=\\sqrt{2-\\frac{1}{2}}=\\frac{\\sqrt{6}}{2}$，所以所求体积为 $V=\\frac{1}{3}\\times(4+1+\\sqrt{4\\times1})\\times\\frac{\\sqrt{6}}{2}=\\frac{7\\sqrt{6}}{6}$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "正四棱台 $ABCD-A_1B_1C_1D_1$ 及其高 $A_1M$ 的示意图",
+                                                                  "file":  "question-14-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知函数 $f(x)=\\cos\\omega x-1(\\omega\u003e0)$ 在区间 $[0,2\\pi]$ 有且仅有 3 个零点，则 $\\omega$ 的取值范围是________．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$[2,3)$",
+                                               "analysis_latex":  "令 $f(x)=0$，得 $\\cos\\omega x=1$ 有 3 个根，从而结合余弦函数的图像性质即可得解。",
+                                               "solution_latex":  "因为 $0\\leq x\\leq 2\\pi$，所以 $0\\leq \\omega x\\leq 2\\omega\\pi$，令 $f(x)=\\cos\\omega x-1=0$，则 $\\cos\\omega x=1$ 有 3 个根，令 $t=\\omega x$，则 $\\cos t=1$ 有 3 个根，其中 $t\\in[0,2\\omega\\pi]$，结合余弦函数 $y=\\cos t$ 的图像性质可得 $4\\pi\\leq 2\\omega\\pi \u003c 6\\pi$，故 $2\\leq \\omega \u003c 3$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知双曲线 $C:\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1(a\u003e0,b\u003e0)$ 的左、右焦点分别为 $F_1, F_2$．点 $A$ 在 $C$ 上，点 $B$ 在 $y$ 轴上，$\\overrightarrow{F_1A}\\perp\\overrightarrow{F_1B}, \\overrightarrow{F_2A}=-\\frac{2}{3}\\overrightarrow{F_2B}$，则 $C$ 的离心率为________．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{3\\sqrt{5}}{5}$",
+                                               "analysis_latex":  "方法一：利用双曲线的定义与向量数积的几何意义得到 $AF_2, BF_2, BF_1, AF_1$ 关于 $a, m$ 的表达式，从而利用勾股定理求得 $a=m$，进而利用余弦定理得到 $a,c$ 的齐次方程，从而得解。方法二：依题意设出各点坐标，从而由向量坐标运算求得 $x_0=\\frac{5}{3}c, y_0=-\\frac{2}{3}t, t^2=4c^2$，将点 $A$ 代入双曲线 $C$ 得到关于 $a,b,c$ 的齐次方程，从而得解。",
+                                               "solution_latex":  "方法一：依题意，设 $AF_2=2m$，则 $BF_2=3m=BF_1, AF_1=2a+2m$，在 $\\triangle ABF_1$ 中，$9m^2+(2a+2m)^2=25m^2$，则 $(a+3m)(a-m)=0$，故 $a=m$ 或 $a=-3m$（舍去），所以 $AF_1=4a, AF_2=2a, BF_2=BF_1=3a$，则 $AB=5a$，故 $\\cos\\angle F_1AF_2=\\frac{AF_1}{AB}=\\frac{4a}{5a}=\\frac{4}{5}$，所以在 $\\triangle AF_1F_2$ 中，$\\cos\\angle F_1AF_2=\\frac{16a^2+4a^2-4c^2}{2\\times4a\\times2a}=\\frac{4}{5}$，整理得 $5c^2=9a^2$，故 $e=\\frac{c}{a}=\\frac{3\\sqrt{5}}{5}$。方法二：依题意，得 $F_1(-c,0), F_2(c,0)$，令 $A(x_0,y_0), B(0,t)$，因为 $\\overrightarrow{F_2A}=-\\frac{2}{3}\\overrightarrow{F_2B}$，所以 $(x_0-c, y_0)=-\\frac{2}{3}(-c,t)$，则 $x_0=\\frac{5}{3}c, y_0=-\\frac{2}{3}t$，又 $\\overrightarrow{F_1A}\\perp\\overrightarrow{F_1B}$，所以 $\\overrightarrow{F_1A}\\cdot\\overrightarrow{F_1B}=(\\frac{8}{3}c, -\\frac{2}{3}t)\\cdot(c,t)=\\frac{8}{3}c^2-\\frac{2}{3}t^2=0$，则 $t^2=4c^2$，又点 $A$ 在 $C$ 上，则 $\\frac{(\\frac{5}{3}c)^2}{a^2}-\\frac{(-\\frac{2}{3}t)^2}{b^2}=1$，整理得 $\\frac{25c^2}{9a^2}-\\frac{4t^2}{9b^2}=1$，则 $\\frac{25c^2}{9a^2}-\\frac{16c^2}{9b^2}=1$，所以 $25c^2b^2-16c^2a^2=9a^2b^2$，即 $25c^2(c^2-a^2)-16a^2c^2=9a^2(c^2-a^2)$，整理得 $25c^4-50c^2a^2+9a^4=0$，则 $(5c^2-9a^2)(5c^2-a^2)=0$，解得 $5c^2=9a^2$ 或 $5c^2=a^2$，又 $e\u003e1$，所以 $e=\\frac{3\\sqrt{5}}{5}$ 或 $e=\\frac{\\sqrt{5}}{5}$（舍去），故 $e=\\frac{3\\sqrt{5}}{5}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "四、解答题",
+                         "instructions":  "本题共 6 小题，共 70 分．解答应写出文字说明、证明过程或演算步骤．",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "已知在 $\\triangle ABC$ 中，$A+B=3C, 2\\sin(A-C)=\\sin B$．\n（1）求 $\\sin A$；\n（2）设 $AB=5$，求 $AB$ 边上的高．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$\\frac{3\\sqrt{10}}{10}$；（2）6",
+                                               "analysis_latex":  "（1）根据角的关系及两角和差正弦公式，化简即可得解；（2）利用同角之间的三角函数基本关系及两角和的正弦公式求 $\\sin B$，再由正弦定理求出 $b$，根据等面积法求解即可。",
+                                               "solution_latex":  "（1）∵ $A+B=3C$，∴ $\\pi-C=3C$，即 $C=\\frac{\\pi}{4}$，又 $2\\sin(A-C)=\\sin B=\\sin(A+C)$，∴ $2\\sin A\\cos C-2\\cos A\\sin C=\\sin A\\cos C+\\cos A\\sin C$，∴ $\\sin A\\cos C=3\\cos A\\sin C$，∴ $\\sin A=3\\cos A$，即 $\\tan A=3$，所以 $0\u003cA\u003c\\frac{\\pi}{2}$，∴ $\\sin A=\\frac{3}{\\sqrt{10}}=\\frac{3\\sqrt{10}}{10}$。（2）由（1）知，$\\cos A=\\frac{1}{\\sqrt{10}}=\\frac{\\sqrt{10}}{10}$，由 $\\sin B=\\sin(A+C)=\\sin A\\cos C+\\cos A\\sin C=\\frac{\\sqrt{2}}{2}(\\frac{3\\sqrt{10}}{10}+\\frac{\\sqrt{10}}{10})=\\frac{2\\sqrt{5}}{5}$，由正弦定理 $\\frac{c}{\\sin C}=\\frac{b}{\\sin B}$，可得 $b=\\frac{5\\times\\frac{2\\sqrt{5}}{5}}{\\frac{\\sqrt{2}}{2}}=2\\sqrt{10}$，∵ $\\frac{1}{2}AB\\cdot h=\\frac{1}{2}AB\\cdot AC\\cdot\\sin A$，∴ $h=b\\cdot\\sin A=2\\sqrt{10}\\times\\frac{3\\sqrt{10}}{10}=6$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图，在正四棱柱 $ABCD-A_1B_1C_1D_1$ 中，$AB=2, AA_1=4$．点 $A_2, B_2, C_2, D_2$ 分别在棱 $AA_1, BB_1, CC_1, DD_1$ 上，$AA_2=1, BB_2=DD_2=2, CC_2=3$．\n\n（1）证明：$B_2C_2\\parallel A_2D_2$；\n（2）点 $P$ 在棱 $BB_1$ 上，当二面角 $P-A_2C_2-D_2$ 为 $150^\\circ$ 时，求 $B_2P$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）证明见解析；（2）1",
+                                               "analysis_latex":  "（1）建立空间直角坐标系，利用向量坐标相等证明；（2）设 $P(0,2,\\lambda)(0\\leq\\lambda\\leq4)$，利用向量法求二面角，建立方程求出 $\\lambda$ 即可得解。",
+                                               "solution_latex":  "（1）以 $C$ 为坐标原点，$CD, CB, CC_1$ 所在直线为 $x, y, z$ 轴建立空间直角坐标系，如图，则 $C(0,0,0), C_2(0,0,3), B_2(0,2,2), D_2(2,0,2), A_2(2,2,1)$，∴ $\\overrightarrow{B_2C_2}=(0,-2,1), \\overrightarrow{A_2D_2}=(0,-2,1)$，∴ $\\overrightarrow{B_2C_2}\\parallel\\overrightarrow{A_2D_2}$，又 $B_2C_2, A_2D_2$ 不在同一条直线上，∴ $B_2C_2\\parallel A_2D_2$。（2）设 $P(0,2,\\lambda)(0\\leq\\lambda\\leq4)$，则 $\\overrightarrow{A_2C_2}=(-2,-2,2), \\overrightarrow{PC_2}=(0,-2,3-\\lambda), \\overrightarrow{D_2C_2}=(-2,0,1)$，设平面 $PA_2C_2$ 的法向量 $\\vec{n}=(x,y,z)$，则 $\\begin{cases} \\vec{n}\\cdot\\overrightarrow{A_2C_2}=-2x-2y+2z=0 \\\\ \\vec{n}\\cdot\\overrightarrow{PC_2}=-2y+(3-\\lambda)z=0 \\end{cases}$，令 $z=2$，得 $y=3-\\lambda, x=\\lambda-1$，∴ $\\vec{n}=(\\lambda-1,3-\\lambda,2)$，设平面 $A_2C_2D_2$ 的法向量 $\\vec{m}=(a,b,c)$，则 $\\begin{cases} \\vec{m}\\cdot\\overrightarrow{A_2C_2}=-2a-2b+2c=0 \\\\ \\vec{m}\\cdot\\overrightarrow{D_2C_2}=-2a+c=0 \\end{cases}$，令 $a=1$，得 $b=1, c=2$，∴ $\\vec{m}=(1,1,2)$，∴ $\\cos\\langle\\vec{n},\\vec{m}\\rangle=\\frac{\\vec{n}\\cdot\\vec{m}}{|\\vec{n}||\\vec{m}|}=\\frac{6}{\\sqrt{6}\\sqrt{4+(\\lambda-1)^2+(3-\\lambda)^2}}=\\cos150^\\circ=-\\frac{\\sqrt{3}}{2}$，化简可得 $\\lambda^2-4\\lambda+3=0$，解得 $\\lambda=1$ 或 $\\lambda=3$，∴ $P(0,2,1)$ 或 $P(0,2,3)$，∴ $B_2P=1$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "正四棱柱 $ABCD-A_1B_1C_1D_1$ 及点 $A_2,B_2,C_2,D_2$ 的位置示意图"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数 $f(x)=a(e^x+a)-x$．\n（1）讨论 $f(x)$ 的单调性；\n（2）证明：当 $a\u003e0$ 时，$f(x)\u003e2\\ln a+\\frac{3}{2}$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）答案见解析；（2）证明见解析",
+                                               "analysis_latex":  "（1）先求导，再分类讨论 $a\\leq 0$ 与 $a\u003e0$ 两种情况，结合导数与函数单调性的关系即可得解；（2）方法一：结合（1）中结论，将问题转化为 $a^2-\\frac{1}{2}-\\ln a\u003e0$ 的恒成立问题，构造函数 $g(a)=a^2-\\frac{1}{2}-\\ln a(a\u003e0)$，利用导数证得 $g(a)\u003e0$ 即可。方法二：构造函数 $h(x)=e^x-x-1$，证得 $e^x\\geq x+1$，从而得到 $f(x)\\geq x+\\ln a+1+a^2-x$，进而将问题转化为 $a^2-\\frac{1}{2}-\\ln a\u003e0$ 的恒成立问题，由此得证。",
+                                               "solution_latex":  "（1）因为 $f(x)=a(e^x+a)-x$，定义域为 $\\mathbb{R}$，所以 $f\u0027(x)=ae^x-1$。当 $a\\leq 0$ 时，由于 $e^x\u003e0$，则 $ae^x\\leq 0$，故 $f\u0027(x)=ae^x-1\u003c0$ 恒成立，所以 $f(x)$ 在 $\\mathbb{R}$ 上单调递减；当 $a\u003e0$ 时，令 $f\u0027(x)=ae^x-1=0$，解得 $x=-\\ln a$，当 $x\u003c-\\ln a$ 时，$f\u0027(x)\u003c0$，则 $f(x)$ 在 $(-\\infty,-\\ln a)$ 上单调递减；当 $x\u003e-\\ln a$ 时，$f\u0027(x)\u003e0$，则 $f(x)$ 在 $(-\\ln a,+\\infty)$ 上单调递增。综上：当 $a\\leq 0$ 时，$f(x)$ 在 $\\mathbb{R}$ 上单调递减；当 $a\u003e0$ 时，$f(x)$ 在 $(-\\infty,-\\ln a)$ 上单调递减，$f(x)$ 在 $(-\\ln a,+\\infty)$ 上单调递增。（2）方法一：由（1）得，$f(x)_{\\min}=f(-\\ln a)=a(e^{-\\ln a}+a)+\\ln a=1+a^2+\\ln a$，要证 $f(x)\u003e2\\ln a+\\frac{3}{2}$，即证 $1+a^2+\\ln a\u003e2\\ln a+\\frac{3}{2}$，即证 $a^2-\\frac{1}{2}-\\ln a\u003e0$ 恒成立，令 $g(a)=a^2-\\frac{1}{2}-\\ln a(a\u003e0)$，则 $g\u0027(a)=2a-\\frac{1}{a}=\\frac{2a^2-1}{a}$，令 $g\u0027(a)\u003c0$，则 $0\u003ca\u003c\\frac{\\sqrt{2}}{2}$；令 $g\u0027(a)\u003e0$，则 $a\u003e\\frac{\\sqrt{2}}{2}$；所以 $g(a)$ 在 $(0,\\frac{\\sqrt{2}}{2})$ 上单调递减，在 $(\\frac{\\sqrt{2}}{2},+\\infty)$ 上单调递增，所以 $g(a)_{\\min}=g(\\frac{\\sqrt{2}}{2})=(\\frac{\\sqrt{2}}{2})^2-\\frac{1}{2}-\\ln\\frac{\\sqrt{2}}{2}=\\ln2\u003e0$，则 $g(a)\u003e0$ 恒成立，所以当 $a\u003e0$ 时，$f(x)\u003e2\\ln a+\\frac{3}{2}$ 恒成立。方法二：令 $h(x)=e^x-x-1$，则 $h\u0027(x)=e^x-1$，由于 $y=e^x$ 在 $\\mathbb{R}$ 上单调递增，所以 $h\u0027(x)=e^x-1$ 在 $\\mathbb{R}$ 上单调递增，又 $h\u0027(0)=e^0-1=0$，所以当 $x\u003c0$ 时，$h\u0027(x)\u003c0$；当 $x\u003e0$ 时，$h\u0027(x)\u003e0$；所以 $h(x)$ 在 $(-\\infty,0)$ 上单调递减，在 $(0,+\\infty)$ 上单调递增，故 $h(x)\\geq h(0)=0$，则 $e^x\\geq x+1$，当且仅当 $x=0$ 时，等号成立，因为 $f(x)=a(e^x+a)-x=ae^x+a^2-x=e^{x+\\ln a}+a^2-x\\geq x+\\ln a+1+a^2-x$，当且仅当 $x+\\ln a=0$，即 $x=-\\ln a$ 时，等号成立，所以要证 $f(x)\u003e2\\ln a+\\frac{3}{2}$，即证 $x+\\ln a+1+a^2-x\u003e2\\ln a+\\frac{3}{2}$，即证 $a^2-\\frac{1}{2}-\\ln a\u003e0$，令 $g(a)=a^2-\\frac{1}{2}-\\ln a(a\u003e0)$，则 $g\u0027(a)=2a-\\frac{1}{a}=\\frac{2a^2-1}{a}$，令 $g\u0027(a)\u003c0$，则 $0\u003ca\u003c\\frac{\\sqrt{2}}{2}$；令 $g\u0027(a)\u003e0$，则 $a\u003e\\frac{\\sqrt{2}}{2}$；所以 $g(a)$ 在 $(0,\\frac{\\sqrt{2}}{2})$ 上单调递减，在 $(\\frac{\\sqrt{2}}{2},+\\infty)$ 上单调递增，所以 $g(a)_{\\min}=g(\\frac{\\sqrt{2}}{2})=(\\frac{\\sqrt{2}}{2})^2-\\frac{1}{2}-\\ln\\frac{\\sqrt{2}}{2}=\\ln2\u003e0$，则 $g(a)\u003e0$ 恒成立，所以当 $a\u003e0$ 时，$f(x)\u003e2\\ln a+\\frac{3}{2}$ 恒成立。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "设等差数列 $\\{a_n\\}$ 的公差为 $d$，且 $d\u003e1$．令 $b_n=\\frac{n^2+n}{a_n}$，记 $S_n, T_n$ 分别为数列 $\\{a_n\\}, \\{b_n\\}$ 的前 $n$ 项和．\n（1）若 $3a_2=3a_1+a_3, S_3+T_3=21$，求 $\\{a_n\\}$ 的通项公式；\n（2）若 $\\{b_n\\}$ 为等差数列，且 $S_{99}-T_{99}=99$，求 $d$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$a_n=3n$；（2）$d=\\frac{51}{50}$",
+                                               "analysis_latex":  "（1）根据等差数列的通项公式建立方程求解即可；（2）由 $\\{b_n\\}$ 为等差数列得出 $a_1=d$ 或 $a_1=2d$，再由等差数列的性质可得 $a_{50}-b_{50}=1$，分类讨论即可得解。",
+                                               "solution_latex":  "（1）∵ $3a_2=3a_1+a_3$，∴ $3d=a_1+2d$，解得 $a_1=d$，∴ $S_3=3a_2=3(a_1+d)=6d$，又 $T_3=b_1+b_2+b_3=\\frac{2}{d}+\\frac{6}{2d}+\\frac{12}{3d}=\\frac{9}{d}$，∴ $S_3+T_3=6d+\\frac{9}{d}=21$，即 $2d^2-7d+3=0$，解得 $d=3$ 或 $d=\\frac{1}{2}$（舍去），∴ $a_n=a_1+(n-1)\\cdot d=3n$。（2）∵ $\\{b_n\\}$ 为等差数列，∴ $2b_2=b_1+b_3$，即 $\\frac{12}{a_2}=\\frac{2}{a_1}+\\frac{12}{a_3}$，∴ $6(\\frac{1}{a_2}-\\frac{1}{a_3})=\\frac{6d}{a_2a_3}=\\frac{1}{a_1}$，即 $a_1^2-3a_1d+2d^2=0$，解得 $a_1=d$ 或 $a_1=2d$，∵ $d\u003e1$，∴ $a_n\u003e0$，又 $S_{99}-T_{99}=99$，由等差数列性质知，$99a_{50}-99b_{50}=99$，即 $a_{50}-b_{50}=1$，∴ $a_{50}-\\frac{2550}{a_{50}}=1$，即 $a_{50}^2-a_{50}-2550=0$，解得 $a_{50}=51$ 或 $a_{50}=-50$（舍去）。当 $a_1=2d$ 时，$a_{50}=a_1+49d=51d=51$，解得 $d=1$，与 $d\u003e1$ 矛盾，无解；当 $a_1=d$ 时，$a_{50}=a_1+49d=50d=51$，解得 $d=\\frac{51}{50}$。综上，$d=\\frac{51}{50}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "甲、乙两人投篮，每次由其中一人投篮，规则如下：若命中则此人继续投篮，若未命中则换为对方投篮。无论之前投篮情况如何，甲每次投篮的命中率均为 0.6，乙每次投篮的命中率均为 0.8。由抽签确定第 1 次投篮的人选，第 1 次投篮的人是甲、乙的概率各为 0.5。\n（1）求第 2 次投篮的人是乙的概率；\n（2）求第 $i$ 次投篮的人是甲的概率；\n（3）已知：若随机变量 $X_i$ 服从两点分布，且 $P(X_i=1)=1-P(X_i=0)=q_i, i=1,2,\\cdots,n$，则 $E(\\sum_{i=1}^n X_i)=\\sum_{i=1}^n q_i$．记前 $n$ 次（即从第 1 次到第 $n$ 次投篮）中甲投篮的次数为 $Y$，求 $E(Y)$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）0.6；（2）$\\frac{1}{6}\\times(\\frac{2}{5})^{i-1}+\\frac{1}{3}$；（3）$E(Y)=\\frac{5}{18}[1-(\\frac{2}{5})^n]+\\frac{n}{3}$",
+                                               "analysis_latex":  "（1）根据全概率公式即可求出；（2）设 $P(A_i)=p_i$，由题意可得 $p_{i+1}=0.4p_i+0.2$，根据数列知识，构造等比数列即可解出；（3）先求出两点分布的期望，再根据题中的结论以及等比数列的求和公式即可求出。",
+                                               "solution_latex":  "（1）记“第 $i$ 次投篮的人是甲”为事件 $A_i$，“第 $i$ 次投篮的人是乙”为事件 $B_i$，所以，$P(B_2)=P(A_1B_2)+P(B_1B_2)=P(A_1)P(B_2|A_1)+P(B_1)P(B_2|B_1)=0.5\\times(1-0.6)+0.5\\times0.8=0.6$。（2）设 $P(A_i)=p_i$，依题可知，$P(B_i)=1-p_i$，则 $P(A_{i+1})=P(A_iA_{i+1})+P(B_iA_{i+1})=P(A_i)P(A_{i+1}|A_i)+P(B_i)P(A_{i+1}|B_i)$，即 $p_{i+1}=0.6p_i+(1-0.8)\\times(1-p_i)=0.4p_i+0.2$，构造等比数列 $\\{p_i+\\lambda\\}$，设 $p_{i+1}+\\lambda=\\frac{2}{5}(p_i+\\lambda)$，解得 $\\lambda=-\\frac{1}{3}$，则 $p_{i+1}-\\frac{1}{3}=\\frac{2}{5}(p_i-\\frac{1}{3})$，又 $p_1=\\frac{1}{2}, p_1-\\frac{1}{3}=\\frac{1}{6}$，所以 $\\{p_i-\\frac{1}{3}\\}$ 是首项为 $\\frac{1}{6}$，公比为 $\\frac{2}{5}$ 的等比数列，即 $p_i-\\frac{1}{3}=\\frac{1}{6}\\times(\\frac{2}{5})^{i-1}, p_i=\\frac{1}{6}\\times(\\frac{2}{5})^{i-1}+\\frac{1}{3}$。（3）因为 $p_i=\\frac{1}{6}\\times(\\frac{2}{5})^{i-1}+\\frac{1}{3}, i=1,2,\\cdots,n$，所以当 $n\\in\\mathbb{N}^*$ 时，$E(Y)=p_1+p_2+\\cdots+p_n=\\frac{1}{6}\\times\\frac{1-(\\frac{2}{5})^n}{1-\\frac{2}{5}}+\\frac{n}{3}=\\frac{5}{18}[1-(\\frac{2}{5})^n]+\\frac{n}{3}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "在直角坐标系 $xOy$ 中，点 $P$ 到 $x$ 轴的距离等于点 $P$ 到点 $(0,\\frac{1}{2})$ 的距离，记动点 $P$ 的轨迹为 $W$．\n（1）求 $W$ 的方程；\n（2）已知矩形 $ABCD$ 有三个顶点在 $W$ 上，证明：矩形 $ABCD$ 的周长大于 $3\\sqrt{3}$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$y=x^2+\\frac{1}{4}$；（2）证明见解析",
+                                               "analysis_latex":  "（1）设 $P(x,y)$，根据题意列出方程 $\\sqrt{x^2+(y-\\frac{1}{2})^2}=|y|$，化简即可；（2）法一：设矩形的三个顶点 $A(a,a^2+\\frac{1}{4}), B(b,b^2+\\frac{1}{4}), C(c,c^2+\\frac{1}{4})$，且 $a\u003cb\u003cc$，分别令 $k_{AB}=a+b=m\u003c0, k_{BC}=b+c=n\u003e0$，且 $mn=-1$，利用放缩法得 $C\\geq \\frac{1}{2}(n+\\frac{1}{n})\\sqrt{1+n^2}$，设函数 $f(x)=(x+\\frac{1}{x})^2(1+x^2)$，利用导数求出其最小值，则得 $C$ 的最小值，再排除边界值即可。法二：设直线 $AB$ 的方程为 $y=k(x-a)+a^2+\\frac{1}{4}$，将其与抛物线方程联立，再利用弦长公式和放缩法得 $AB+AD\\geq \\frac{(1+k^2)^{\\frac{3}{2}}}{k^2}$，利用换元法和求导即可求出周长最值，再排除边界值即可。法三：利用平移坐标系法，再设点，利用三角换元再对角度分类讨论，结合基本不等式即可证明。",
+                                               "solution_latex":  "（1）设 $P(x,y)$，则 $|y|=\\sqrt{x^2+(y-\\frac{1}{2})^2}$，两边同平方化简得 $y=x^2+\\frac{1}{4}$，故 $W: y=x^2+\\frac{1}{4}$。（2）法一：设矩形的三个顶点 $A(a,a^2+\\frac{1}{4}), B(b,b^2+\\frac{1}{4}), C(c,c^2+\\frac{1}{4})$ 在 $W$ 上，且 $a\u003cb\u003cc$，易知矩形四条边所在直线的斜率均存在，且不为 0，则 $k_{AB}\\cdot k_{BC}=-1, a+b\u003cb+c$，令 $k_{AB}=\\frac{b^2+\\frac{1}{4}-(a^2+\\frac{1}{4})}{b-a}=a+b=m\u003c0$，同理令 $k_{BC}=b+c=n\u003e0$，且 $mn=-1$，则 $m=-\\frac{1}{n}$，设矩形周长为 $C$，由对称性不妨设 $|m|\\geq|n|$，$k_{BC}-k_{AB}=c-a=n-m=n+\\frac{1}{n}$，则 $\\frac{1}{2}C=|AB|+|BC|=(b-a)\\sqrt{1+m^2}+(c-b)\\sqrt{1+n^2}\\geq (c-a)\\sqrt{1+n^2}=(n+\\frac{1}{n})\\sqrt{1+n^2}, n\u003e0$，易知 $(n+\\frac{1}{n})\\sqrt{1+n^2}\u003e0$，则令 $f(x)=(x+\\frac{1}{x})^2(1+x^2), x\u003e0$，$f\u0027(x)=2(x+\\frac{1}{x})(2x-\\frac{1}{x})$，令 $f\u0027(x)=0$，解得 $x=\\frac{\\sqrt{2}}{2}$，当 $x\\in(0,\\frac{\\sqrt{2}}{2})$ 时，$f\u0027(x)\u003c0$，此时 $f(x)$ 单调递减，当 $x\\in(\\frac{\\sqrt{2}}{2},+\\infty)$ 时，$f\u0027(x)\u003e0$，此时 $f(x)$ 单调递增，则 $f(x)_{\\min}=f(\\frac{\\sqrt{2}}{2})=\\frac{27}{4}$，故 $\\frac{1}{2}C\\geq \\sqrt{\\frac{27}{4}}=\\frac{3\\sqrt{3}}{2}$，即 $C\\geq 3\\sqrt{3}$。当 $C=3\\sqrt{3}$ 时，$n=\\frac{\\sqrt{2}}{2}, m=-\\sqrt{2}$，且 $(b-a)\\sqrt{1+m^2}=(b-a)\\sqrt{1+n^2}$，即 $|m|=|n|$ 时等号成立，矛盾，故 $C\u003e3\\sqrt{3}$，得证。法二：不妨设 $A,B,D$ 在 $W$ 上，且 $BA\\perp DA$，依题意可设 $A(a,a^2+\\frac{1}{4})$，易知直线 $BA, DA$ 的斜率均存在且不为 0，则设 $BA, DA$ 的斜率分别为 $k$ 和 $-\\frac{1}{k}$，由对称性，不妨设 $k\\leq 1$，直线 $AB$ 的方程为 $y=k(x-a)+a^2+\\frac{1}{4}$，则联立 $\\begin{cases} y=x^2+\\frac{1}{4} \\\\ y=k(x-a)+a^2+\\frac{1}{4} \\end{cases}$ 得 $x^2-kx+ka-a^2=0$，$\\Delta=k^2-4(ka-a^2)=(k-2a)^2\u003e0$，则 $k\\neq 2a$，则 $|AB|=\\sqrt{1+k^2}|k-2a|$，同理 $|AD|=\\sqrt{1+\\frac{1}{k^2}}|\\frac{1}{k}+2a|$，∴ $|AB|+|AD|=\\sqrt{1+k^2}|k-2a|+\\sqrt{1+\\frac{1}{k^2}}|\\frac{1}{k}+2a|\\geq \\sqrt{1+k^2}|k+\\frac{1}{k}|=\\frac{(1+k^2)^{\\frac{3}{2}}}{k^2}$，令 $k^2=m$，则 $m\\in(0,1]$，设 $f(m)=\\frac{(m+1)^3}{m}=m^2+3m+\\frac{1}{m}+3$，则 $f\u0027(m)=2m+3-\\frac{1}{m^2}=\\frac{(2m-1)(m+1)^2}{m^2}$，令 $f\u0027(m)=0$，解得 $m=\\frac{1}{2}$，当 $m\\in(0,\\frac{1}{2})$ 时，$f\u0027(m)\u003c0$，此时 $f(m)$ 单调递减，当 $m\\in(\\frac{1}{2},+\\infty)$ 时，$f\u0027(m)\u003e0$，此时 $f(m)$ 单调递增，则 $f(m)_{\\min}=f(\\frac{1}{2})=\\frac{27}{4}$，∴ $|AB|+|AD|\\geq \\frac{3\\sqrt{3}}{2}$，但 $\\sqrt{1+k^2}|k-2a|+\\sqrt{1+\\frac{1}{k^2}}|\\frac{1}{k}+2a|\\geq \\sqrt{1+k^2}(|k-2a|+|\\frac{1}{k}+2a|)$，此处取等条件为 $k=1$，与最终取等时 $k=\\frac{\\sqrt{2}}{2}$ 不一致，故 $AB+AD\u003e\\frac{3\\sqrt{3}}{2}$，所以周长大于 $3\\sqrt{3}$。法三：为了计算方便，将抛物线向下移动 $\\frac{1}{4}$ 个单位得抛物线 $W\u0027: y=x^2$，矩形 $ABCD$ 变换为矩形 $A\u0027B\u0027C\u0027D\u0027$，则问题等价于矩形 $A\u0027B\u0027C\u0027D\u0027$ 的周长大于 $3\\sqrt{3}$。设 $B\u0027(t_0,t_0^2), A\u0027(t_1,t_1^2), C\u0027(t_2,t_2^2)$，根据对称性不妨设 $t_0\\geq 0$。则 $k_{A\u0027B\u0027}=t_1+t_0, k_{B\u0027C\u0027}=t_2+t_0$，由于 $A\u0027B\u0027\\perp B\u0027C\u0027$，则 $(t_1+t_0)(t_2+t_0)=-1$。由于 $A\u0027B\u0027=\\sqrt{1+(t_1+t_0)^2}|t_1-t_0|, B\u0027C\u0027=\\sqrt{1+(t_2+t_0)^2}|t_2-t_0|$，且 $t_0$ 介于 $t_1,t_2$ 之间，则 $A\u0027B\u0027+B\u0027C\u0027=\\sqrt{1+(t_1+t_0)^2}|t_1-t_0|+\\sqrt{1+(t_2+t_0)^2}|t_2-t_0|$。令 $t_2+t_0=\\tan\\theta, t_1+t_0=-\\cot\\theta, \\theta\\in(0,\\frac{\\pi}{2})$，则 $t_2=\\tan\\theta-t_0, t_1=-\\cot\\theta-t_0$，从而 $A\u0027B\u0027+B\u0027C\u0027=\\sqrt{1+\\cot^2\\theta}(2t_0+\\cot\\theta)+\\sqrt{1+\\tan^2\\theta}(\\tan\\theta-2t_0)=2t_0(\\frac{1}{\\sin\\theta}-\\frac{1}{\\cos\\theta})+\\frac{\\sin\\theta}{\\cos^2\\theta}+\\frac{\\cos\\theta}{\\sin^2\\theta}=\\frac{2t_0(\\cos\\theta-\\sin\\theta)}{\\sin\\theta\\cos\\theta}+\\frac{\\sin^3\\theta+\\cos^3\\theta}{\\sin^2\\theta\\cos^2\\theta}$。①当 $\\theta\\in(0,\\frac{\\pi}{4}]$ 时，$A\u0027B\u0027+B\u0027C\u0027\\geq \\frac{\\sin^3\\theta+\\cos^3\\theta}{\\sin^2\\theta\\cos^2\\theta}=\\frac{\\sin\\theta}{\\cos^2\\theta}+\\frac{\\cos\\theta}{\\sin^2\\theta}\\geq 2\\sqrt{\\frac{1}{\\sin\\theta\\cos\\theta}}=2\\sqrt{\\frac{2}{\\sin2\\theta}}\\geq 2\\sqrt{2}\u003e\\frac{3\\sqrt{3}}{2}$；②当 $\\theta\\in(\\frac{\\pi}{4},\\frac{\\pi}{2})$ 时，由于 $t_1\u003ct_0\u003ct_2$，从而 $-\\cot\\theta-t_0\u003ct_0\u003c\\tan\\theta-t_0$，从而 $-\\frac{\\cot\\theta}{2}\u003ct_0\u003c\\frac{\\tan\\theta}{2}$，又 $t_0\\geq 0$，故 $0\\leq t_0\u003c\\frac{\\tan\\theta}{2}$，由此 $A\u0027B\u0027+B\u0027C\u0027\u003e \\frac{\\sin\\theta(\\cos\\theta-\\sin\\theta)\\sin\\theta\\cos\\theta}{\\sin^2\\theta\\cos\\theta}+\\frac{\\sin^3\\theta+\\cos^3\\theta}{\\sin^2\\theta\\cos^2\\theta}=\\frac{1}{\\cos\\theta\\sin^2\\theta}+\\frac{\\cos\\theta}{\\sin^2\\theta}=\\frac{2}{\\sin^2\\theta\\cdot2\\cos\\theta}\\geq \\frac{2}{\\left(\\frac{(1-\\cos^2\\theta)+(1-\\cos^2\\theta)+2\\cos^2\\theta}{3}\\right)^\\frac{3}{2}}=\\frac{2}{(\\frac{2}{3})^\\frac{3}{2}}=\\frac{3\\sqrt{3}}{2}$，当且仅当 $\\cos\\theta=\\frac{\\sqrt{3}}{3}$ 时等号成立，故 $A\u0027B\u0027+B\u0027C\u0027\u003e\\frac{3\\sqrt{3}}{2}$，所以矩形周长大于 $3\\sqrt{3}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  16,
+                             "issue":  "原卷第16题答案格式为 $\\frac{3\\sqrt{5}}{5}$ 或 $\\frac{3}{5}\\sqrt{5}$，已统一为 $\\frac{3\\sqrt{5}}{5}$。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "解析版中选项C的解析误写为“故 C 正确”，实为错误，已根据原卷和正确选项修正为“故 C 错误”。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "题图未能自动匹配：原卷第 3 页，正方体 $ABCD-A_1B_1C_1D_1$ 中，以 $AC_1$ 为轴放置圆柱的示意图"
+                         },
+                         {
+                             "question":  18,
+                             "issue":  "题图未能自动匹配：原卷第 4 页，正四棱柱 $ABCD-A_1B_1C_1D_1$ 及点 $A_2,B_2,C_2,D_2$ 的位置示意图"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "题图未能自动匹配：原卷第 3 页，正方体 $ABCD-A_1B_1C_1D_1$ 中，以 $AC_1$ 为轴放置圆柱的示意图"
+                         },
+                         {
+                             "question":  18,
+                             "issue":  "题图未能自动匹配：原卷第 4 页，正四棱柱 $ABCD-A_1B_1C_1D_1$ 及点 $A_2,B_2,C_2,D_2$ 的位置示意图"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "题图未能自动匹配：原卷第 3 页，正方体 $ABCD-A_1B_1C_1D_1$ 中，以 $AC_1$ 为轴放置圆柱的示意图"
+                         },
+                         {
+                             "question":  18,
+                             "issue":  "题图未能自动匹配：原卷第 4 页，正四棱柱 $ABCD-A_1B_1C_1D_1$ 及点 $A_2,B_2,C_2,D_2$ 的位置示意图"
+                         }
+                     ]
+}

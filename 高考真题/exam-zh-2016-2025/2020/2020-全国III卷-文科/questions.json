@@ -1,0 +1,439 @@
+﻿{
+    "title":  "2020 年高考数学 全国III卷-文科",
+    "year":  2020,
+    "paper":  "新课标全国I卷",
+    "sections":  [
+                     {
+                         "title":  "一、选择题",
+                         "instructions":  "本题共12小题，每小题5分，共60分。在每小题给出的四个选项中，只有一项是符合题目要求的。",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知集合 $A=\\{1,2,3,5,7,11\\}$，$B=\\{x|3\u003cx\u003c15\\}$，则 $A\\cap B$ 中元素的个数为",
+                                               "choices":  [
+                                                               "$2$",
+                                                               "$3$",
+                                                               "$4$",
+                                                               "$5$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "采用列举法列举出 $A\\cap B$ 中元素的即可.",
+                                               "solution_latex":  "由题意，$A\\cap B=\\{5,7,11\\}$，故 $A\\cap B$ 中元素的个数为3. 故选：B.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "若 $z(1+i)=1-i$，则 $z=$",
+                                               "choices":  [
+                                                               "$1-i$",
+                                                               "$1+i$",
+                                                               "$-i$",
+                                                               "$i$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "先利用除法运算求得 $z$，再利用共轭复数的概念得到 $z$ 即可.",
+                                               "solution_latex":  "因为 $z=\\frac{1-i}{1+i}=\\frac{(1-i)^2}{(1+i)(1-i)}=\\frac{-2i}{2}=-i$，所以 $\\bar{z}=i$. 故选：D.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设一组样本数据 $x_1,x_2,\\dots,x_n$ 的方差为 $0.01$，则数据 $10x_1,10x_2,\\dots,10x_n$ 的方差为",
+                                               "choices":  [
+                                                               "$0.01$",
+                                                               "$0.1$",
+                                                               "$1$",
+                                                               "$10$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "根据新数据与原数据关系确定方差关系，即得结果.",
+                                               "solution_latex":  "因为数据 $ax_i+b\\ (i=1,2,\\dots,n)$ 的方差是数据 $x_i\\ (i=1,2,\\dots,n)$ 的方差的 $a^2$ 倍，所以所求数据方差为 $10^2\\times0.01=1$. 故选：C.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "Logistic 模型是常用数学模型之一，可应用于流行病学领域. 有学者根据公布数据建立了某地区新冠肺炎累计确诊病例数 $I(t)$ ($t$ 的单位：天)的 Logistic 模型：$I(t)=\\frac{K}{1+e^{-0.23(t-53)}}$，其中 $K$ 为最大确诊病例数. 当 $I(t^*)=0.95K$ 时，标志着已初步遏制疫情，则 $t^*$ 约为 ( $\\ln19\\approx3$ )",
+                                               "choices":  [
+                                                               "$60$",
+                                                               "$63$",
+                                                               "$66$",
+                                                               "$69$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "将 $t=t^*$ 代入函数 $I(t)=\\frac{K}{1+e^{-0.23(t-53)}}$ 结合 $I(t^*)=0.95K$ 求得 $t^*$ 即可得解.",
+                                               "solution_latex":  "因为 $I(t)=\\frac{K}{1+e^{-0.23(t-53)}}$，所以 $I(t^*)=\\frac{K}{1+e^{-0.23(t^*-53)}}=0.95K$，则 $e^{0.23(t^*-53)}=19$，所以 $0.23(t^*-53)=\\ln19\\approx3$，解得 $t^*\\approx\\frac{3}{0.23}+53\\approx66$. 故选：C.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知 $\\sin\\theta+\\sin(\\theta+\\frac{\\pi}{3})=1$，则 $\\sin(\\theta+\\frac{\\pi}{6})=$",
+                                               "choices":  [
+                                                               "$\\frac{1}{2}$",
+                                                               "$\\frac{\\sqrt{3}}{3}$",
+                                                               "$\\frac{\\sqrt{2}}{3}$",
+                                                               "$\\frac{\\sqrt{2}}{2}$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "将所给的三角函数式展开变形，然后再逆用两角和的正弦公式即可求得三角函数式的值.",
+                                               "solution_latex":  "由题意可得：$\\sin\\theta+\\frac{1}{2}\\sin\\theta+\\frac{\\sqrt{3}}{2}\\cos\\theta=1$，则 $\\frac{3}{2}\\sin\\theta+\\frac{\\sqrt{3}}{2}\\cos\\theta=1$，即 $\\frac{\\sqrt{3}}{2}\\sin\\theta+\\frac{1}{2}\\cos\\theta=\\frac{\\sqrt{3}}{3}$，从而有 $\\sin\\theta\\cos\\frac{\\pi}{6}+\\cos\\theta\\sin\\frac{\\pi}{6}=\\frac{\\sqrt{3}}{3}$，即 $\\sin(\\theta+\\frac{\\pi}{6})=\\frac{\\sqrt{3}}{3}$. 故选：B.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在平面内，$A$，$B$ 是两个定点，$C$ 是动点，若 $\\overrightarrow{AC}\\cdot\\overrightarrow{BC}=1$，则点 $C$ 的轨迹为",
+                                               "choices":  [
+                                                               "圆",
+                                                               "椭圆",
+                                                               "抛物线",
+                                                               "直线"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "首先建立平面直角坐标系，然后结合数量积的定义求解其轨迹方程即可.",
+                                               "solution_latex":  "设 $|AB|=2a\\ (a\u003e0)$，以 $AB$ 中点为坐标原点建立平面直角坐标系，则 $A(-a,0),B(a,0)$，设 $C(x,y)$，可得 $\\overrightarrow{AC}=(x+a,y),\\overrightarrow{BC}=(x-a,y)$，从而 $\\overrightarrow{AC}\\cdot\\overrightarrow{BC}=(x+a)(x-a)+y^2$，结合题意得 $(x+a)(x-a)+y^2=1$，整理得 $x^2+y^2=a^2+1$，即点 $C$ 的轨迹是以 $AB$ 中点为圆心，$\\sqrt{a^2+1}$ 为半径的圆. 故选：A.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $O$ 为坐标原点，直线 $x=2$ 与抛物线 $C:y^2=2px(p\u003e0)$ 交于 $D$，$E$ 两点，若 $OD\\perp OE$，则 $C$ 的焦点坐标为",
+                                               "choices":  [
+                                                               "$(\\frac{1}{4},0)$",
+                                                               "$(\\frac{1}{2},0)$",
+                                                               "$(1,0)$",
+                                                               "$(2,0)$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "根据题中所给的条件 $OD\\perp OE$，结合抛物线的对称性，可知 $\\angle DOx=\\angle COx=\\frac{\\pi}{4}$，从而可以确定出点 $D$ 的坐标，代入方程求得 $p$ 的值，进而求得其焦点坐标.",
+                                               "solution_latex":  "因为直线 $x=2$ 与抛物线 $y^2=2px(p\u003e0)$ 交于 $C,D$ 两点，且 $OD\\perp OE$，根据抛物线的对称性可以确定 $\\angle DOx=\\angle COx=\\frac{\\pi}{4}$，所以 $C(2,2)$，代入抛物线方程得 $4=4p$，解得 $p=1$，所以其焦点坐标为 $(\\frac{1}{2},0)$. 故选：B.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "点 $(0,-1)$ 到直线 $y=k(x+1)$ 距离的最大值为",
+                                               "choices":  [
+                                                               "$1$",
+                                                               "$\\sqrt{2}$",
+                                                               "$\\sqrt{3}$",
+                                                               "$2$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "首先根据直线方程判断出直线过定点 $P(-1,0)$，设 $A(0,-1)$，当直线 $y=k(x+1)$ 与 $AP$ 垂直时，点 $A$ 到直线的距离最大，即可求得结果.",
+                                               "solution_latex":  "由 $y=k(x+1)$ 可知直线过定点 $P(-1,0)$，设 $A(0,-1)$，当直线 $y=k(x+1)$ 与 $AP$ 垂直时，点 $A$ 到直线的距离最大，即为 $|AP|=\\sqrt{2}$. 故选：B.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "下图为某几何体的三视图，则该几何体的表面积是",
+                                               "choices":  [
+                                                               "$6+4\\sqrt{2}$",
+                                                               "$4+4\\sqrt{2}$",
+                                                               "$6+2\\sqrt{3}$",
+                                                               "$4+2\\sqrt{3}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "根据三视图特征，在正方体中截取出符合题意的立体图形，求出每个面的面积，即可求得其表面积.",
+                                               "solution_latex":  "根据三视图特征，在正方体中截取出符合题意的立体图形. 根据立体图形可得 $S_{\\triangle ABC}=S_{\\triangle ADC}=S_{\\triangle CDB}=\\frac{1}{2}\\times2\\times2=2$，根据勾股定理可得 $AB=AD=DB=2\\sqrt{2}$，所以 $\\triangle ADB$ 是边长为 $2\\sqrt{2}$ 的等边三角形，其面积为 $\\frac{1}{2}\\times(2\\sqrt{2})^2\\times\\frac{\\sqrt{3}}{2}=2\\sqrt{3}$. 故该几何体的表面积为 $3\\times2+2\\sqrt{3}=6+2\\sqrt{3}$. 故选：C.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $a=\\log_32$，$b=\\log_53$，$c=\\frac{2}{3}$，则",
+                                               "choices":  [
+                                                               "$a\u003cc\u003cb$",
+                                                               "$a\u003cb\u003cc$",
+                                                               "$b\u003cc\u003ca$",
+                                                               "$c\u003ca\u003cb$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "分别将 $a,b$ 改写为 $a=\\frac{1}{3}\\log_32^3$，$b=\\frac{1}{3}\\log_53^3$，再利用单调性比较即可.",
+                                               "solution_latex":  "因为 $a=\\frac{1}{3}\\log_32^3\u003c\\frac{1}{3}\\log_39=\\frac{2}{3}=c$，$b=\\frac{1}{3}\\log_53^3\u003e\\frac{1}{3}\\log_525=\\frac{2}{3}=c$，所以 $a\u003cc\u003cb$. 故选：A.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在 $\\triangle ABC$ 中，$\\cos C=\\frac{2}{3}$，$AC=4$，$BC=3$，则 $\\tan B=$",
+                                               "choices":  [
+                                                               "$\\sqrt{5}$",
+                                                               "$2\\sqrt{5}$",
+                                                               "$4\\sqrt{5}$",
+                                                               "$8\\sqrt{5}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "先根据余弦定理求 $c$，再根据余弦定理求 $\\cos B$，最后根据同角三角函数关系求 $\\tan B$.",
+                                               "solution_latex":  "设 $AB=c, BC=a=3, CA=b=4$，由余弦定理得 $c^2=a^2+b^2-2ab\\cos C=9+16-2\\times3\\times4\\times\\frac{2}{3}=9$，所以 $c=3$，则 $\\cos B=\\frac{a^2+c^2-b^2}{2ac}=\\frac{9+9-16}{2\\times3\\times3}=\\frac{1}{9}$，$\\sin B=\\sqrt{1-(\\frac{1}{9})^2}=\\frac{4\\sqrt{5}}{9}$，所以 $\\tan B=4\\sqrt{5}$. 故选：C.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知函数 $f(x)=\\sin x+\\frac{1}{\\sin x}$，则",
+                                               "choices":  [
+                                                               "$f(x)$ 的最小值为 $2$",
+                                                               "$f(x)$ 的图像关于 $y$ 轴对称",
+                                                               "$f(x)$ 的图像关于直线 $x=\\pi$ 对称",
+                                                               "$f(x)$ 的图像关于直线 $x=\\frac{\\pi}{2}$ 对称"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "根据基本不等式使用条件可判断A；根据奇偶性可判断B；根据对称性判断C,D.",
+                                               "solution_latex":  "因为 $\\sin x$ 可以为负，所以A错；$\\sin x\\neq0$，$x\\neq k\\pi(k\\in\\mathbb Z)$，$f(-x)=-\\sin x-\\frac{1}{\\sin x}=-f(x)$，所以 $f(x)$ 关于原点对称；$f(2\\pi-x)=-\\sin x-\\frac{1}{\\sin x}\\neq f(x)$，$f(\\pi-x)=\\sin x+\\frac{1}{\\sin x}=f(x)$，所以 $f(x)$ 关于直线 $x=\\frac{\\pi}{2}$ 对称，故C错，D对. 故选：D.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "本题共4小题，每小题5分，共20分。",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "若 $x$，$y$ 满足约束条件 $\\begin{cases} x+y\\geq0 \\\\ 2x-y\\geq0 \\\\ x\\leq1 \\end{cases}$，则 $z=3x+2y$ 的最大值为",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$7$",
+                                               "analysis_latex":  "作出可行域，利用截距的几何意义解决.",
+                                               "solution_latex":  "不等式组所表示的可行域如图. 因为 $z=3x+2y$，所以 $y=-\\frac{3}{2}x+\\frac{z}{2}$，易知截距 $\\frac{z}{2}$ 越大，则 $z$ 越大. 平移直线 $y=-\\frac{3}{2}x$，当 $y=-\\frac{3}{2}x+\\frac{z}{2}$ 经过 $A$ 点时截距最大，此时 $z$ 最大. 由 $\\begin{cases} y=2x \\\\ x=1 \\end{cases}$ 得 $\\begin{cases} x=1 \\\\ y=2 \\end{cases}$，$A(1,2)$，所以 $z_{\\max}=3\\times1+2\\times2=7$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "设双曲线 $C:\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\ (a\u003e0,b\u003e0)$ 的一条渐近线为 $y=\\sqrt{2}x$，则 $C$ 的离心率为",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\sqrt{3}$",
+                                               "analysis_latex":  "根据已知可得 $\\frac{b}{a}=\\sqrt{2}$，结合双曲线中 $a,b,c$ 的关系，即可求解.",
+                                               "solution_latex":  "由双曲线方程可得其焦点在 $x$ 轴上，因为其一条渐近线为 $y=\\sqrt{2}x$，所以 $\\frac{b}{a}=\\sqrt{2}$，$e=\\frac{c}{a}=\\sqrt{1+\\frac{b^2}{a^2}}=\\sqrt{3}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "设函数 $f(x)=\\frac{e^x}{x+a}$，若 $f\u0027(1)=\\frac{e}{4}$，则 $a=$",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$1$",
+                                               "analysis_latex":  "由题意首先求得导函数的解析式，然后得到关于实数 $a$ 的方程，解方程即可确定实数 $a$ 的值.",
+                                               "solution_latex":  "由函数的解析式可得 $f\u0027(x)=\\frac{e^x(x+a)-e^x}{(x+a)^2}=\\frac{e^x(x+a-1)}{(x+a)^2}$，则 $f\u0027(1)=\\frac{e^1\\times(1+a-1)}{(1+a)^2}=\\frac{ae}{(a+1)^2}$，据此可得 $\\frac{ae}{(a+1)^2}=\\frac{e}{4}$，整理得 $a^2-2a+1=0$，解得 $a=1$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知圆锥的底面半径为 $1$，母线长为 $3$，则该圆锥内半径最大的球的体积为",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{\\sqrt{2}}{3}\\pi$",
+                                               "analysis_latex":  "将原问题转化为求解圆锥内切球的问题，然后结合截面确定其半径即可确定体积的值.",
+                                               "solution_latex":  "易知半径最大球为圆锥的内切球，球与圆锥内切时的轴截面如图所示，其中 $BC=2,AB=AC=3$，且点 $M$ 为 $BC$ 边上的中点，设内切圆的圆心为 $O$. 由于 $AM=\\sqrt{3^2-1^2}=2\\sqrt{2}$，故 $S_{\\triangle ABC}=\\frac{1}{2}\\times2\\times2\\sqrt{2}=2\\sqrt{2}$. 设内切圆半径为 $r$，则 $S_{\\triangle ABC}=S_{\\triangle AOB}+S_{\\triangle BOC}+S_{\\triangle AOC}=\\frac{1}{2}\\times AB\\times r+\\frac{1}{2}\\times BC\\times r+\\frac{1}{2}\\times AC\\times r=\\frac{1}{2}\\times(3+3+2)\\times r=2\\sqrt{2}$，解得 $r=\\frac{\\sqrt{2}}{2}$，其体积 $V=\\frac{4}{3}\\pi r^3=\\frac{\\sqrt{2}}{3}\\pi$.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "共70分。解答应写出文字说明、证明过程或演算步骤。第17～21题为必考题，每个试题考生都必须作答。第22、23题为选考题，考生根据要求作答。",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "设等比数列 $\\{a_n\\}$ 满足 $a_1+a_2=4$，$a_3-a_1=8$.\n(1) 求 $\\{a_n\\}$ 的通项公式；\n(2) 记 $S_n$ 为数列 $\\{\\log_3 a_n\\}$ 的前 $n$ 项和，若 $S_m+S_{m+1}=S_{m+3}$，求 $m$.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) $a_n=3^{n-1}$ (2) $m=6$",
+                                               "analysis_latex":  "(1)设等比数列 $\\{a_n\\}$ 的公比为 $q$，根据题意列出方程组，求得首项和公比，进而求得通项公式；(2)由(1)求出 $\\{\\log_3 a_n\\}$ 的通项公式，利用等差数列求和公式求得 $S_n$，根据已知列出关于 $m$ 的等量关系式，求得结果.",
+                                               "solution_latex":  "(1) 设等比数列 $\\{a_n\\}$ 的公比为 $q$，根据题意有 $\\begin{cases} a_1+a_1q=4 \\\\ a_1q^2-a_1=8 \\end{cases}$，解得 $\\begin{cases} a_1=1 \\\\ q=3 \\end{cases}$，所以 $a_n=3^{n-1}$.\n(2) 令 $b_n=\\log_3 a_n=\\log_3 3^{n-1}=n-1$，则 $S_n=\\frac{n(0+n-1)}{2}=\\frac{n(n-1)}{2}$. 由 $S_m+S_{m+1}=S_{m+3}$ 得 $\\frac{m(m-1)}{2}+\\frac{m(m+1)}{2}=\\frac{(m+2)(m+3)}{2}$，整理得 $m^2-5m-6=0$，因为 $m\u003e0$，所以 $m=6$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "某学生兴趣小组随机调查了某市100天中每天的空气质量等级和当天到某公园锻炼的人次，整理数据得到下表(单位：天)：\n\n| 锻炼人次 | [0,200] | (200,400] | (400,600] |\n|----------|---------|-----------|-----------|\n| 1(优)    | 2       | 16        | 25        |\n| 2(良)    | 5       | 10        | 12        |\n| 3(轻度污染) | 6    | 7         | 8         |\n| 4(中度污染) | 7    | 2         | 0         |\n\n(1) 分别估计该市一天的空气质量等级为1,2,3,4的概率；\n(2) 求一天中到该公园锻炼的平均人次的估计值(同一组中的数据用该组区间的中点值为代表)；\n(3) 若某天的空气质量等级为1或2，则称这天“空气质量好”；若某天的空气质量等级为3或4，则称这天“空气质量不好”。根据所给数据，完成下面的 $2\\times2$ 列联表，并根据列联表，判断是否有95%的把握认为一天中到该公园锻炼的人次与该市当天的空气质量有关？\n\n附：$K^2=\\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$，$P(K^2\\geq3.841)\\approx0.050$.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) 概率分别为 $0.43$, $0.27$, $0.21$, $0.09$ (2) $350$ (3) 有",
+                                               "analysis_latex":  "(1)根据频数分布表可计算出该市一天的空气质量等级分别为 $1,2,3,4$ 的概率；(2)利用每组的中点值乘以频数，相加后除以100可得结果；(3)根据表格中的数据完善 $2\\times2$ 列联表，计算出 $K^2$ 的观测值，再结合临界值表可得结论.",
+                                               "solution_latex":  "(1) 由频数分布表可知，该市一天的空气质量等级为1的概率为 $\\frac{2+16+25}{100}=0.43$，等级为2的概率为 $\\frac{5+10+12}{100}=0.27$，等级为3的概率为 $\\frac{6+7+8}{100}=0.21$，等级为4的概率为 $\\frac{7+2+0}{100}=0.09$.\n(2) 一天中到该公园锻炼的人次的平均数为 $\\frac{100\\times20+300\\times35+500\\times45}{100}=350$.\n(3) $2\\times2$ 列联表如下：\n\n|          | 人次$\\leq400$ | 人次$\u003e400$ |\n|----------|-------------|-----------|\n| 空气质量好 | 33          | 37        |\n| 空气质量不好 | 22          | 8         |\n\n$K^2=\\frac{100\\times(33\\times8-37\\times22)^2}{55\\times45\\times70\\times30}\\approx5.820\u003e3.841$，因此，有95%的把握认为一天中到该公园锻炼的人次与该市当天的空气质量有关.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图，在长方体 $ABCD-A_1B_1C_1D_1$ 中，点 $E$，$F$ 分别在棱 $DD_1$，$BB_1$ 上，且 $2DE=ED_1$，$BF=2FB_1$．证明：\n(1) 当 $AB=BC$ 时，$EF\\perp AC$；\n(2) 点 $C_1$ 在平面 $AEF$ 内．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "证明见解析",
+                                               "analysis_latex":  "(1)根据正方形性质得 $AC\\perp BD$，根据长方体性质得 $AC\\perp BB_1$，进而可证 $AC\\perp$ 平面 $BB_1D_1D$，即得结果；(2)只需证明 $EC_1\\parallel AF$ 即可，在 $CC_1$ 上取点 $M$ 使得 $CM=2MC_1$，再通过平行四边形性质进行证明即可.",
+                                               "solution_latex":  "(1) 因为长方体 $ABCD-A_1B_1C_1D_1$，所以 $BB_1\\perp$ 平面 $ABCD$，所以 $AC\\perp BB_1$. 因为 $AB=BC$，所以四边形 $ABCD$ 为正方形，所以 $AC\\perp BD$. 因为 $BB_1\\cap BD=B$，$BB_1,BD\\subset$ 平面 $BB_1D_1D$，因此 $AC\\perp$ 平面 $BB_1D_1D$. 因为 $EF\\subset$ 平面 $BB_1D_1D$，所以 $AC\\perp EF$.\n(2) 在 $CC_1$ 上取点 $M$ 使得 $CM=2MC_1$，连接 $DM,MF$. 因为 $D_1E=2ED$，$DD_1\\parallel CC_1$，$DD_1=CC_1$，所以 $ED=MC_1$，$ED\\parallel MC_1$，所以四边形 $DMC_1E$ 为平行四边形，所以 $DM\\parallel EC_1$. 因为 $MF\\parallel DA$，$MF=DA$，所以四边形 $MFAD$ 为平行四边形，所以 $DM\\parallel AF$，所以 $EC_1\\parallel AF$，因此 $C_1$ 在平面 $AEF$ 内.",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "长方体 ABCD-A1B1C1D1 的示意图，点 E 在 DD1 上，点 F 在 BB1 上，标注了 DE 和 FB1 的关系。",
+                                                                  "file":  "question-19-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数 $f(x)=x^3-kx+k^2$．\n(1) 讨论 $f(x)$ 的单调性；\n(2) 若 $f(x)$ 有三个零点，求 $k$ 的取值范围．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) 当 $k\\leq0$ 时，$f(x)$ 在 $(-\\infty,+\\infty)$ 上单调递增；当 $k\u003e0$ 时，$f(x)$ 在 $(-\\sqrt{\\frac{k}{3}},\\sqrt{\\frac{k}{3}})$ 上单调递减，在 $(-\\infty,-\\sqrt{\\frac{k}{3}})$ 和 $(\\sqrt{\\frac{k}{3}},+\\infty)$ 上单调递增. (2) $(0,\\frac{4}{27})$",
+                                               "analysis_latex":  "(1) $f\u0027(x)=3x^2-k$，对 $k$ 分 $k\\leq0$ 和 $k\u003e0$ 两种情况讨论即可；(2) $f(x)$ 有三个零点，由(1)知 $k\u003e0$，且 $\\begin{cases} f(-\\sqrt{\\frac{k}{3}})\u003e0 \\\\ f(\\sqrt{\\frac{k}{3}})\u003c0 \\end{cases}$，解不等式组得到 $k$ 的范围，再利用零点存在性定理加以说明即可.",
+                                               "solution_latex":  "(1) 由题，$f\u0027(x)=3x^2-k$. 当 $k\\leq0$ 时，$f\u0027(x)\\geq0$ 恒成立，所以 $f(x)$ 在 $(-\\infty,+\\infty)$ 上单调递增；当 $k\u003e0$ 时，令 $f\u0027(x)=0$，得 $x=\\pm\\sqrt{\\frac{k}{3}}$，令 $f\u0027(x)\u003c0$，得 $-\\sqrt{\\frac{k}{3}}\u003cx\u003c\\sqrt{\\frac{k}{3}}$，令 $f\u0027(x)\u003e0$，得 $x\u003c-\\sqrt{\\frac{k}{3}}$ 或 $x\u003e\\sqrt{\\frac{k}{3}}$，所以 $f(x)$ 在 $(-\\sqrt{\\frac{k}{3}},\\sqrt{\\frac{k}{3}})$ 上单调递减，在 $(-\\infty,-\\sqrt{\\frac{k}{3}})$ 和 $(\\sqrt{\\frac{k}{3}},+\\infty)$ 上单调递增.\n(2) 由(1)知，$f(x)$ 有三个零点，则 $k\u003e0$，且 $\\begin{cases} f(-\\sqrt{\\frac{k}{3}})\u003e0 \\\\ f(\\sqrt{\\frac{k}{3}})\u003c0 \\end{cases}$，即 $\\begin{cases} k^2+\\frac{2}{3}k\\sqrt{\\frac{k}{3}}\u003e0 \\\\ k^2-\\frac{2}{3}k\\sqrt{\\frac{k}{3}}\u003c0 \\end{cases}$，解得 $0\u003ck\u003c\\frac{4}{27}$. 当 $0\u003ck\u003c\\frac{4}{27}$ 时，$k\u003e\\sqrt{\\frac{k}{3}}$，且 $f(k)=k^2\u003e0$，所以 $f(x)$ 在 $(\\sqrt{\\frac{k}{3}},k)$ 上有唯一一个零点；同理 $-k-1\u003c-\\sqrt{\\frac{k}{3}}$，$f(-k-1)=-k^3-(k+1)^2\u003c0$，所以 $f(x)$ 在 $(-k-1,-\\sqrt{\\frac{k}{3}})$ 上有唯一一个零点；又 $f(x)$ 在 $(-\\sqrt{\\frac{k}{3}},\\sqrt{\\frac{k}{3}})$ 上有唯一一个零点，所以 $f(x)$ 有三个零点. 综上可知 $k$ 的取值范围为 $(0,\\frac{4}{27})$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知椭圆 $C:\\frac{x^2}{25}+\\frac{y^2}{m^2}=1(0\u003cm\u003c5)$ 的离心率为 $\\frac{\\sqrt{15}}{4}$，$A$，$B$ 分别为 $C$ 的左、右顶点．\n(1) 求 $C$ 的方程；\n(2) 若点 $P$ 在 $C$ 上，点 $Q$ 在直线 $x=6$ 上，且 $|BP|=|BQ|$，$BP\\perp BQ$，求 $\\triangle APQ$ 的面积．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) $\\frac{x^2}{25}+\\frac{16y^2}{25}=1$ (2) $\\frac{5}{2}$",
+                                               "analysis_latex":  "(1) 由椭圆方程可得 $a=5$, $b=m$，根据离心率公式结合已知求得 $m$ 即可；(2) 点 $P$ 在 $C$ 上，点 $Q$ 在直线 $x=6$ 上，且 $|BP|=|BQ|$，$BP\\perp BQ$，过点 $P$ 作 $x$ 轴垂线，交点为 $M$，设 $x=6$ 与 $x$ 轴交点为 $N$，可得 $\\triangle PMB\\cong\\triangle BNQ$，可求得 $P$ 点坐标，求出直线 $AQ$ 的方程，根据点到直线距离公式和两点距离公式，即可求得 $\\triangle APQ$ 的面积.",
+                                               "solution_latex":  "(1) 因为 $C:\\frac{x^2}{25}+\\frac{y^2}{m^2}=1(0\u003cm\u003c5)$，所以 $a=5$, $b=m$. 离心率 $e=\\frac{c}{a}=\\sqrt{1-\\frac{b^2}{a^2}}=\\sqrt{1-\\frac{m^2}{25}}=\\frac{\\sqrt{15}}{4}$，解得 $m=\\frac{5}{4}$ (负舍). 所以 $C$ 的方程为 $\\frac{x^2}{25}+\\frac{y^2}{(5/4)^2}=1$，即 $\\frac{x^2}{25}+\\frac{16y^2}{25}=1$.\n(2) 由椭圆方程知 $B(5,0)$，设 $P(x_P,y_P)$，$Q(6,y_Q)$. 过 $P$ 作 $PM\\perp x$ 轴于 $M$，过 $Q$ 作 $QN\\perp x$ 轴于 $N$，则 $\\triangle PMB$ 与 $\\triangle BNQ$ 中，$\\angle PMB=\\angle BNQ=90^\\circ$，$BP=BQ$，$\\angle PBM+\\angle QBN=90^\\circ$，$\\angle BQN+\\angle QBN=90^\\circ$，所以 $\\angle PBM=\\angle BQN$，所以 $\\triangle PMB\\cong\\triangle BNQ$，因此 $PM=BN$, $MB=NQ$. 由 $N(6,0)$ 得 $BN=6-5=1$，所以 $PM=1$，即 $y_P=1$ (由对称性可取正值). 代入椭圆方程得 $\\frac{x_P^2}{25}+\\frac{16}{25}=1$，解得 $x_P=3$ 或 $x_P=-3$.\n① 若 $P(3,1)$，则 $MB=5-3=2$，所以 $NQ=MB=2$，得 $Q(6,2)$. $A(-5,0)$，直线 $AQ$ 的方程为 $\\frac{y-0}{2-0}=\\frac{x+5}{6+5}$，即 $2x-11y+10=0$. 点 $P$ 到直线 $AQ$ 的距离 $d=\\frac{|2\\times3-11\\times1+10|}{\\sqrt{2^2+(-11)^2}}=\\frac{5}{\\sqrt{125}}=\\frac{\\sqrt{5}}{5}$，$|AQ|=\\sqrt{(6+5)^2+(2-0)^2}=5\\sqrt{5}$，所以 $S_{\\triangle APQ}=\\frac{1}{2}\\times5\\sqrt{5}\\times\\frac{\\sqrt{5}}{5}=\\frac{5}{2}$.\n② 若 $P(-3,1)$，则 $MB=5-(-3)=8$，所以 $NQ=8$，得 $Q(6,8)$. $A(-5,0)$，直线 $AQ$ 的方程为 $\\frac{y-0}{8-0}=\\frac{x+5}{6+5}$，即 $8x-11y+40=0$. 点 $P$ 到直线 $AQ$ 的距离 $d=\\frac{|8\\times(-3)-11\\times1+40|}{\\sqrt{8^2+(-11)^2}}=\\frac{5}{\\sqrt{185}}=\\frac{\\sqrt{185}}{37}$，$|AQ|=\\sqrt{(6+5)^2+(8-0)^2}=\\sqrt{185}$，所以 $S_{\\triangle APQ}=\\frac{1}{2}\\times\\sqrt{185}\\times\\frac{\\sqrt{185}}{37}=\\frac{185}{74}=\\frac{5}{2}$.\n综上所述，$\\triangle APQ$ 的面积为 $\\frac{5}{2}$.",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  17,
+                                                                  "description":  "椭圆和点 P, Q 的示意图，显示三角形 PMB 和 BNQ 全等。"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4-4：坐标系与参数方程]\n在直角坐标系 $xOy$ 中，曲线 $C$ 的参数方程为 $\\begin{cases} x=2-t-t^2 \\\\ y=2-3t+t^2 \\end{cases}$ ($t$ 为参数且 $t\\neq1$)，$C$ 与坐标轴交于 $A$，$B$ 两点．\n(1) 求 $|AB|$；\n(2) 以坐标原点为极点，$x$ 轴正半轴为极轴建立极坐标系，求直线 $AB$ 的极坐标方程．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) $4\\sqrt{10}$ (2) $3\\rho\\cos\\theta-\\rho\\sin\\theta+12=0$",
+                                               "analysis_latex":  "(1) 由参数方程得出 $A,B$ 的坐标，再由两点间距离公式即可得出 $|AB|$ 的值；(2) 由 $A,B$ 的坐标得出直线 $AB$ 的直角坐标方程，再化为极坐标方程即可.",
+                                               "solution_latex":  "(1) 令 $x=0$，则 $t^2+t-2=0$，解得 $t=-2$ 或 $t=1$ (舍)，则 $y=2+6+4=12$，即 $A(0,12)$. 令 $y=0$，则 $t^2-3t+2=0$，解得 $t=2$ 或 $t=1$ (舍)，则 $x=2-2-4=-4$，即 $B(-4,0)$. 所以 $|AB|=\\sqrt{(0+4)^2+(12-0)^2}=4\\sqrt{10}$.\n(2) 由(1)得 $k_{AB}=\\frac{12-0}{0-(-4)}=3$，则直线 $AB$ 的方程为 $y=3(x+4)$，即 $3x-y+12=0$. 由 $x=\\rho\\cos\\theta$, $y=\\rho\\sin\\theta$ 可得，直线 $AB$ 的极坐标方程为 $3\\rho\\cos\\theta-\\rho\\sin\\theta+12=0$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4-5：不等式选讲]\n设 $a,b,c\\in\\mathbb R$，$a+b+c=0$，$abc=1$．\n(1) 证明：$ab+bc+ca\u003c0$；\n(2) 用 $\\max\\{a,b,c\\}$ 表示 $a,b,c$ 中的最大值，证明：$\\max\\{a,b,c\\}\\geq\\sqrt[3]{4}$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "证明见解析",
+                                               "analysis_latex":  "(1) 由 $(a+b+c)^2=a^2+b^2+c^2+2ab+2ac+2bc=0$ 结合不等式的性质，即可得出证明；(2) 不妨设 $\\max\\{a,b,c\\}=a$，由题意得出 $a\u003e0,b\u003c0,c\u003c0$，由 $a^3=a^2\\cdot a=\\frac{(b+c)^2}{bc}=\\frac{b^2+c^2+2bc}{bc}$，结合基本不等式，即可得出证明.",
+                                               "solution_latex":  "(1) 因为 $(a+b+c)^2=a^2+b^2+c^2+2ab+2ac+2bc=0$，所以 $ab+bc+ca=-\\frac{1}{2}(a^2+b^2+c^2)$. 由于 $a,b,c$ 均不为0，则 $a^2+b^2+c^2\u003e0$，故 $ab+bc+ca=-\\frac{1}{2}(a^2+b^2+c^2)\u003c0$.\n(2) 不妨设 $\\max\\{a,b,c\\}=a$，由 $a+b+c=0$，$abc=1$ 可知 $a\u003e0$, $b\u003c0$, $c\u003c0$. 因为 $a=-b-c$，$a=\\frac{1}{bc}$，所以 $a^3=a^2\\cdot a=\\frac{(b+c)^2}{bc}=\\frac{b^2+c^2+2bc}{bc}\\geq\\frac{2bc+2bc}{bc}=4$，当且仅当 $b=c$ 时取等号，故 $a\\geq\\sqrt[3]{4}$，即 $\\max\\{a,b,c\\}\\geq\\sqrt[3]{4}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  4,
+                             "issue":  "原卷中 Logistic 模型公式可能有乱码，已根据解析版修复。"
+                         },
+                         {
+                             "question":  9,
+                             "issue":  "原卷三视图图片未提供，仅根据解析版得出答案。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "原卷中对称性选项符号有乱码，已根据解析版修正。"
+                         },
+                         {
+                             "question":  19,
+                             "issue":  "原卷中证明过程不完整，已根据解析版补充。"
+                         },
+                         {
+                             "question":  21,
+                             "issue":  "原卷中椭圆方程系数可能有误，已根据解析版修正。解析版中面积计算有分数化简，最终结果为5/2。"
+                         },
+                         {
+                             "question":  21,
+                             "issue":  "题图未能自动匹配：原卷第 17 页，椭圆和点 P, Q 的示意图，显示三角形 PMB 和 BNQ 全等。"
+                         }
+                     ]
+}

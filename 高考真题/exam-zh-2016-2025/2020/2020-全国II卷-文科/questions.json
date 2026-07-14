@@ -1,0 +1,439 @@
+﻿{
+    "title":  "2020 年高考数学 全国II卷-文科",
+    "year":  2020,
+    "paper":  "新课标全国I卷",
+    "sections":  [
+                     {
+                         "title":  "一、选择题",
+                         "instructions":  "本题共12小题，每小题5分，共60分．在每小题给出的四个选项中，只有一项是符合题目要求的．",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知集合 $A=\\{x||x|\u003c3, x \\in Z\\}$，$B=\\{x||x|\u003e1, x \\in Z\\}$，则 $A \\cap B=$（ ）",
+                                               "choices":  [
+                                                               "$\\varnothing$",
+                                                               "$\\{-3, -2, 2, 3\\}$",
+                                                               "$\\{-2, 0, 2\\}$",
+                                                               "$\\{-2, 2\\}$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "解绝对值不等式化简集合 $A, B$ 的表示，再根据集合交集的定义进行求解即可。",
+                                               "solution_latex":  "因为 $A=\\{x||x|\u003c3, x \\in Z\\}=\\{-2, -1, 0, 1, 2\\}$，$B=\\{x||x|\u003e1, x \\in Z\\}=\\{x|x\u003e1 \\text{ 或 } x\u003c-1, x \\in Z\\}$，所以 $A \\cap B=\\{2, -2\\}$。\n故选：D。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "$(1-i)^4 =$（ ）",
+                                               "choices":  [
+                                                               "$-4$",
+                                                               "$4$",
+                                                               "$-4i$",
+                                                               "$4i$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "根据指数幂的运算性质，结合复数的乘方运算性质进行求解。",
+                                               "solution_latex":  "$(1-i)^4 = [(1-i)^2]^2 = (1-2i+i^2)^2 = (-2i)^2 = -4$。\n故选：A。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "如图，将钢琴上的12个键依次记为 $a_1, a_2, \\ldots, a_{12}$。设 $1\\le i\u003cj\u003ck\\le 12$。若 $k-j=3$ 且 $j-i=4$，则称 $a_i, a_j, a_k$ 为原位大三和弦；若 $k-j=4$ 且 $j-i=3$，则称 $a_i, a_j, a_k$ 为原位小三和弦。用这12个键可以构成的原位大三和弦与原位小三和弦的个数之和为（ ）",
+                                               "choices":  [
+                                                               "$5$",
+                                                               "$8$",
+                                                               "$10$",
+                                                               "$15$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "根据原位大三和弦满足 $k-j=3, j-i=4$，原位小三和弦满足 $k-j=4, j-i=3$，从 $i=1$ 开始，利用列举法即可解出。",
+                                               "solution_latex":  "原位大三和弦满足：$k-j=3, j-i=4$。\n$i=1, j=5, k=8$；$i=2, j=6, k=9$；$i=3, j=7, k=10$；$i=4, j=8, k=11$；$i=5, j=9, k=12$。\n原位小三和弦满足：$k-j=4, j-i=3$。\n$i=1, j=4, k=8$；$i=2, j=5, k=9$；$i=3, j=6, k=10$；$i=4, j=7, k=11$；$i=5, j=8, k=12$。\n故个数之和为10。\n故选：C。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  1,
+                                                                  "description":  "钢琴键盘图",
+                                                                  "file":  "question-3-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在新冠肺炎疫情防控期间，某超市开通网上销售业务，每天能完成1200份订单的配货，由于订单量大幅增加，导致订单积压。为解决困难，许多志愿者踊跃报名参加配货工作。已知该超市某日积压500份订单未配货，预计第二天的新订单超过1600份的概率为0.05，志愿者每人每天能完成50份订单的配货，为使第二天完成积压订单及当日订单的配货的概率不小于0.95，则至少需要志愿者（ ）",
+                                               "choices":  [
+                                                               "$10$名",
+                                                               "$18$名",
+                                                               "$24$名",
+                                                               "$32$名"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "算出第二天订单数，除以志愿者每天能完成的订单配货数即可。",
+                                               "solution_latex":  "由题意，第二天新增订单数为 $500+1600-1200=900$，故需要志愿者 $\\frac{900}{50}=18$ 名。\n故选：B。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知单位向量 $\\vec{a}$，$\\vec{b}$ 的夹角为 $60^\\circ$，则在下列向量中，与 $\\vec{b}$ 垂直的是（ ）",
+                                               "choices":  [
+                                                               "$\\vec{a}+2\\vec{b}$",
+                                                               "$2\\vec{a}+\\vec{b}$",
+                                                               "$\\vec{a}-2\\vec{b}$",
+                                                               "$2\\vec{a}-\\vec{b}$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "根据平面向量数量积的定义、运算性质，结合两平面向量垂直数量积为零这一性质逐一判断即可。",
+                                               "solution_latex":  "由已知可得：$\\vec{a}\\cdot\\vec{b}=|\\vec{a}||\\vec{b}|\\cos60^\\circ=1\\times1\\times\\frac{1}{2}=\\frac{1}{2}$。\nA：$(\\vec{a}+2\\vec{b})\\cdot\\vec{b}=\\vec{a}\\cdot\\vec{b}+2|\\vec{b}|^2=\\frac{1}{2}+2=\\frac{5}{2}\\neq0$；\nB：$(2\\vec{a}+\\vec{b})\\cdot\\vec{b}=2\\vec{a}\\cdot\\vec{b}+|\\vec{b}|^2=1+1=2\\neq0$；\nC：$(\\vec{a}-2\\vec{b})\\cdot\\vec{b}=\\vec{a}\\cdot\\vec{b}-2|\\vec{b}|^2=\\frac{1}{2}-2=-\\frac{3}{2}\\neq0$；\nD：$(2\\vec{a}-\\vec{b})\\cdot\\vec{b}=2\\vec{a}\\cdot\\vec{b}-|\\vec{b}|^2=1-1=0$。\n故选：D。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "记 $S_n$ 为等比数列 $\\{a_n\\}$ 的前 $n$ 项和。若 $a_5-a_3=12$，$a_6-a_4=24$，则 $\\frac{S_n}{a_n}=$（ ）",
+                                               "choices":  [
+                                                               "$2^{n-1}$",
+                                                               "$2-2^{1-n}$",
+                                                               "$2-2^{n-1}$",
+                                                               "$2^{1-n}-1$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "根据等比数列的通项公式，可以得到方程组，解方程组求出首项和公比，最后利用等比数列的通项公式和前 $n$ 项和公式进行求解。",
+                                               "solution_latex":  "设等比数列的公比为 $q$，\n由 $a_5-a_3=12$，$a_6-a_4=24$ 可得：\n$\\begin{cases} a_1 q^4 - a_1 q^2 =12 \\\\ a_1 q^5 - a_1 q^3 =24 \\end{cases}$，解得 $q=2$，$a_1=1$。\n所以 $a_n = a_1 q^{n-1}=2^{n-1}$，$S_n = \\frac{a_1(1-q^n)}{1-q} = \\frac{1-2^n}{1-2}=2^n-1$，\n因此 $\\frac{S_n}{a_n} = \\frac{2^n-1}{2^{n-1}} = 2 - 2^{1-n}$。\n故选：B。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "执行右面的程序框图，若输入的 $k=0$，$a=0$，则输出的 $k$ 为（ ）",
+                                               "choices":  [
+                                                               "$2$",
+                                                               "$3$",
+                                                               "$4$",
+                                                               "$5$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "由已知中的程序框图可知：该程序的功能是利用循环结构计算并输出 $k$ 的值，模拟程序的运行过程，分析循环中各变量值的变化情况，即可求得答案。",
+                                               "solution_latex":  "模拟程序的运行过程：\n$k=0, a=0$\n第1次循环，$a=2\\times0+1=1$，$k=0+1=1$，$1\u003e10$ 为否；\n第2次循环，$a=2\\times1+1=3$，$k=1+1=2$，$3\u003e10$ 为否；\n第3次循环，$a=2\\times3+1=7$，$k=2+1=3$，$7\u003e10$ 为否；\n第4次循环，$a=2\\times7+1=15$，$k=3+1=4$，$15\u003e10$ 为是；\n退出循环，输出 $k=4$。\n故选：C。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  2,
+                                                                  "description":  "程序框图",
+                                                                  "file":  "question-7-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "若过点 $(2,1)$ 的圆与两坐标轴都相切，则圆心到直线 $2x-y-3=0$ 的距离为（ ）",
+                                               "choices":  [
+                                                               "$\\frac{\\sqrt{5}}{5}$",
+                                                               "$\\frac{2\\sqrt{5}}{5}$",
+                                                               "$\\frac{3\\sqrt{5}}{5}$",
+                                                               "$\\frac{4\\sqrt{5}}{5}$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "由题意可知圆心在第一象限，设圆心的坐标为 $(a,a), a\u003e0$，可得圆的半径为 $a$，写出圆的标准方程，利用点 $(2,1)$ 在圆上，求得实数 $a$ 的值，利用点到直线的距离公式可求出圆心到直线 $2x-y-3=0$ 的距离。",
+                                               "solution_latex":  "由于圆上的点 $(2,1)$ 在第一象限，若圆心不在第一象限，则圆至少与一条坐标轴相交，不合乎题意，所以圆心必在第一象限。\n设圆心的坐标为 $(a,a)$，则圆的半径为 $a$，圆的标准方程为 $(x-a)^2+(y-a)^2=a^2$。\n由题意可得 $(2-a)^2+(1-a)^2=a^2$，即 $a^2-6a+5=0$，解得 $a=1$ 或 $a=5$。\n所以圆心的坐标为 $(1,1)$ 或 $(5,5)$。\n圆心到直线 $2x-y-3=0$ 的距离均为 $d = \\frac{|2\\cdot1-1-3|}{\\sqrt{2^2+(-1)^2}} = \\frac{2}{\\sqrt{5}} = \\frac{2\\sqrt{5}}{5}$。\n故选：B。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $O$ 为坐标原点，直线 $x=a$ 与双曲线 $C:\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1(a\u003e0,b\u003e0)$ 的两条渐近线分别交于 $D, E$ 两点，若 $\\triangle ODE$ 的面积为 $8$，则 $C$ 的焦距的最小值为（ ）",
+                                               "choices":  [
+                                                               "$4$",
+                                                               "$8$",
+                                                               "$16$",
+                                                               "$32$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "因为 $C:\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1(a\u003e0,b\u003e0)$，可得双曲线的渐近线方程是 $y=\\pm\\frac{b}{a}x$，与直线 $x=a$ 联立求得 $D, E$ 两点坐标，即可求得 $|ED|$，根据 $\\triangle ODE$ 的面积为 $8$，可得 $ab$ 值，根据 $2c=2\\sqrt{a^2+b^2}$，结合均值不等式，即可求得答案。",
+                                               "solution_latex":  "$\\because C: \\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1(a\u003e0,b\u003e0)$，\n$\\therefore$ 双曲线的渐近线方程是 $y=\\pm\\frac{b}{a}x$。\n直线 $x=a$ 与渐近线交于 $D, E$ 两点，不妨设 $D$ 在第一象限，$E$ 在第四象限。\n联立 $\\begin{cases} x=a \\\\ y=\\frac{b}{a}x \\end{cases}$，解得 $D(a,b)$；联立 $\\begin{cases} x=a \\\\ y=-\\frac{b}{a}x \\end{cases}$，解得 $E(a,-b)$。\n$\\therefore |ED|=2b$。\n$\\triangle ODE$ 面积为 $S_{\\triangle ODE} = \\frac{1}{2} a \\times 2b = ab = 8$。\n$\\because$ 双曲线焦距为 $2c = 2\\sqrt{a^2+b^2} \\ge 2\\sqrt{2ab} = 2\\sqrt{16} = 8$，\n当且仅当 $a=b=2\\sqrt{2}$ 时取等号。\n$\\therefore C$ 的焦距的最小值为 $8$。\n故选：B。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设函数 $f(x)=x^3-\\frac{1}{x^3}$，则 $f(x)$（ ）",
+                                               "choices":  [
+                                                               "是奇函数，且在 $(0,+\\infty)$ 单调递增",
+                                                               "是奇函数，且在 $(0,+\\infty)$ 单调递减",
+                                                               "是偶函数，且在 $(0,+\\infty)$ 单调递增",
+                                                               "是偶函数，且在 $(0,+\\infty)$ 单调递减"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "根据函数的解析式可知函数的定义域为 $\\{x|x\\neq0\\}$，利用定义可得出函数 $f(x)$ 为奇函数，再根据函数的单调性法则，即可解出。",
+                                               "solution_latex":  "因为函数 $f(x)=x^3-\\frac{1}{x^3}$ 定义域为 $\\{x|x\\neq0\\}$，关于原点对称，且 $f(-x) = -f(x)$，所以函数 $f(x)$ 为奇函数。\n又因为 $y=x^3$ 在 $(0,+\\infty)$ 上单调递增，$y=\\frac{1}{x^3}=x^{-3}$ 在 $(0,+\\infty)$ 上单调递减，所以 $f(x)=x^3-\\frac{1}{x^3}$ 在 $(0,+\\infty)$ 上单调递增。\n故选：A。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知 $\\triangle ABC$ 是面积为 $\\frac{9\\sqrt{3}}{4}$ 的等边三角形，且其顶点都在球 $O$ 的球面上。若球 $O$ 的表面积为 $16\\pi$，则 $O$ 到平面 $ABC$ 的距离为（ ）",
+                                               "choices":  [
+                                                               "$\\sqrt{3}$",
+                                                               "$\\frac{3}{2}$",
+                                                               "$1$",
+                                                               "$\\frac{\\sqrt{3}}{2}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "根据球 $O$ 的表面积和 $\\triangle ABC$ 的面积可求得球 $O$ 的半径 $R$ 和 $\\triangle ABC$ 外接圆半径 $r$，由球的性质可知所求距离 $d=\\sqrt{R^2-r^2}$。",
+                                               "solution_latex":  "设球 $O$ 的半径为 $R$，则 $4\\pi R^2=16\\pi$，解得 $R=2$。\n设 $\\triangle ABC$ 外接圆半径为 $r$，边长为 $a$。\n$\\because \\triangle ABC$ 是面积为 $\\frac{9\\sqrt{3}}{4}$ 的等边三角形，\n$\\therefore \\frac{1}{2}a^2\\times\\frac{\\sqrt{3}}{2} = \\frac{9\\sqrt{3}}{4}$，解得 $a=3$。\n$r = \\frac{2}{3}\\times\\sqrt{a^2-\\frac{a^2}{4}} = \\frac{2}{3}\\times\\sqrt{9-\\frac{9}{4}} = \\frac{2}{3}\\times\\frac{3\\sqrt{3}}{2} = \\sqrt{3}$。\n$\\therefore$ 球心 $O$ 到平面 $ABC$ 的距离 $d = \\sqrt{R^2-r^2} = \\sqrt{4-3} = 1$。\n故选：C。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "若 $2^x-2^y \u003c 3^{-x}-3^{-y}$，则（ ）",
+                                               "choices":  [
+                                                               "$\\ln(y-x+1)\u003e0$",
+                                                               "$\\ln(y-x+1)\u003c0$",
+                                                               "$\\ln|x-y|\u003e0$",
+                                                               "$\\ln|x-y|\u003c0$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "将不等式变为 $2^x-3^{-x}\u003c2^y-3^{-y}$，根据 $f(t)=2^t-3^{-t}$ 的单调性知 $x\u003cy$，以此去判断各个选项中真数与1的大小关系，进而得到结果。",
+                                               "solution_latex":  "由 $2^x-2^y \u003c 3^{-x}-3^{-y}$ 得：$2^x-3^{-x} \u003c 2^y-3^{-y}$。\n令 $f(t)=2^t-3^{-t}$，$\\because y=2^x$ 为 $\\mathbb{R}$ 上的增函数，$y=3^{-x}$ 为 $\\mathbb{R}$ 上的减函数，$\\therefore f(t)$ 为 $\\mathbb{R}$ 上的增函数。\n$\\therefore x\u003cy$。\n$\\because y-x\u003e0$，$\\therefore y-x+1\u003e1$，$\\therefore \\ln(y-x+1)\u003e0$，则A正确，B错误。\n$\\because |x-y|$ 与1的大小不确定，故CD无法确定。\n故选：A。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "本题共4小题，每小题5分，共20分。",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "若 $\\sin x = -\\frac{2}{3}$，则 $\\cos 2x = $ __________．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{1}{9}$",
+                                               "analysis_latex":  "直接利用余弦的二倍角公式进行运算求解。",
+                                               "solution_latex":  "$\\cos 2x = 1-2\\sin^2 x = 1-2\\times\\left(-\\frac{2}{3}\\right)^2 = 1-\\frac{8}{9} = \\frac{1}{9}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "记 $S_n$ 为等差数列 $\\{a_n\\}$ 的前 $n$ 项和．若 $a_1=-2$，$a_2+a_6=2$，则 $S_{10}=$ __________．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$25$",
+                                               "analysis_latex":  "因为 $\\{a_n\\}$ 是等差数列，根据已知条件 $a_2+a_6=2$，求出公差，根据等差数列前 $n$ 项和，即可求得答案。",
+                                               "solution_latex":  "$\\because \\{a_n\\}$ 是等差数列，且 $a_1=-2$，$a_2+a_6=2$。\n设等差数列的公差为 $d$，则 $a_1+d+a_1+5d=2$，即 $-2+d-2+5d=2$，解得 $d=1$。\n$\\therefore S_{10} = 10a_1 + \\frac{10\\times9}{2}d = 10\\times(-2) + 45\\times1 = -20+45=25$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "若 $x,y$ 满足约束条件 $\\begin{cases} x+y\\ge -1 \\\\ x-y\\ge -1 \\\\ 2x-y\\le 1 \\end{cases}$，则 $z=x+2y$ 的最大值是__________．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$8$",
+                                               "analysis_latex":  "在平面直角坐标系内画出不等式组表示的平面区域，然后平移直线 $y=-\\frac{1}{2}x$，在平面区域内找到一点使得直线 $y=-\\frac{1}{2}x+\\frac{1}{2}z$ 在纵轴上的截距最大，求出点的坐标代入目标函数中即可。",
+                                               "solution_latex":  "不等式组表示的平面区域如图所示：\n平移直线 $y=-\\frac{1}{2}x$，当直线经过点 $A$ 时，直线 $y=-\\frac{1}{2}x+\\frac{1}{2}z$ 在纵轴上的截距最大。\n点 $A$ 是方程组 $\\begin{cases} x-y=-1 \\\\ 2x-y=1 \\end{cases}$ 的解，解得 $\\begin{cases} x=2 \\\\ y=3 \\end{cases}$。\n因此 $z=x+2y$ 的最大值为 $2+2\\times3=8$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  11,
+                                                                  "description":  "线性规划可行域图"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "设有下列四个命题：\n$p_1$：两两相交且不过同一点的三条直线必在同一平面内。\n$p_2$：过空间中任意三点有且仅有一个平面。\n$p_3$：若空间两条直线不相交，则这两条直线平行。\n$p_4$：若直线 $l \\subset$ 平面 $\\alpha$，直线 $m\\perp$ 平面 $\\alpha$，则 $m\\perp l$。\n则下述命题中所有真命题的序号是__________。\n① $p_1 \\land p_4$ ② $p_1 \\land p_2$ ③ $\\lnot p_2 \\lor p_3$ ④ $\\lnot p_3 \\lor \\lnot p_4$",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "①③④",
+                                               "analysis_latex":  "利用两相交直线确定一个平面可判断命题 $p_1$ 的真假；利用三点共线可判断命题 $p_2$ 的真假；利用异面直线可判断命题 $p_3$ 的真假；利用线面垂直的定义可判断命题 $p_4$ 的真假。再利用复合命题的真假可得出结论。",
+                                               "solution_latex":  "对于命题 $p_1$，可设 $l_1$ 与 $l_2$ 相交，这两条直线确定的平面为 $\\alpha$；若 $l_3$ 与 $l_1$ 相交，则交点 $A$ 在平面 $\\alpha$ 内，同理，$l_3$ 与 $l_2$ 的交点 $B$ 也在平面 $\\alpha$ 内，所以 $AB\\subset \\alpha$，即 $l_3\\subset \\alpha$，命题 $p_1$ 为真命题。\n对于命题 $p_2$，若三点共线，则过这三个点的平面有无数个，命题 $p_2$ 为假命题。\n对于命题 $p_3$，空间中两条直线相交、平行或异面，命题 $p_3$ 为假命题。\n对于命题 $p_4$，若直线 $m\\perp$ 平面 $\\alpha$，则 $m$ 垂直于平面 $\\alpha$ 内所有直线，$\\because$ 直线 $l\\subset$ 平面 $\\alpha$，$\\therefore$ 直线 $m\\perp$ 直线 $l$，命题 $p_4$ 为真命题。\n综上可知，$p_1\\land p_4$ 为真命题，$p_1\\land p_2$ 为假命题，$\\lnot p_2\\lor p_3$ 为真命题，$\\lnot p_3\\lor \\lnot p_4$ 为真命题。\n故答案为：①③④。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "共70分。解答应写出文字说明、证明过程或演算步骤。第17～21题为必考题，每个试题考生都必须作答。第22、23题为选考题，考生根据要求作答。",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "$\\triangle ABC$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$，已知 $\\cos^2\\left(\\frac{\\pi}{2}+A\\right)+\\cos A=\\frac{5}{4}$。\n（1）求 $A$；\n（2）若 $b-c=\\frac{\\sqrt{3}}{3}a$，证明：$\\triangle ABC$ 是直角三角形。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$A=\\frac{\\pi}{3}$；（2）证明见解析。",
+                                               "analysis_latex":  "（1）根据诱导公式和同角三角函数平方关系，$\\cos^2\\left(\\frac{\\pi}{2}+A\\right)+\\cos A=\\frac{5}{4}$ 可化为 $1-\\cos^2 A+\\cos A=\\frac{5}{4}$，即可解出；\n（2）根据余弦定理可得 $b^2+c^2-a^2=bc$，将 $b-c=\\frac{\\sqrt{3}}{3}a$ 代入可找到 $a,b,c$ 关系，再根据勾股定理或正弦定理即可证出。",
+                                               "solution_latex":  "（1）因为 $\\cos^2\\left(\\frac{\\pi}{2}+A\\right)+\\cos A=\\frac{5}{4}$，所以 $\\sin^2 A+\\cos A=\\frac{5}{4}$，\n即 $1-\\cos^2 A+\\cos A=\\frac{5}{4}$，解得 $\\cos A=\\frac{1}{2}$，又 $0\u003cA\u003c\\pi$，所以 $A=\\frac{\\pi}{3}$。\n（2）因为 $A=\\frac{\\pi}{3}$，所以 $\\cos A=\\frac{b^2+c^2-a^2}{2bc}=\\frac{1}{2}$，即 $b^2+c^2-a^2=bc$①。\n又 $b-c=\\frac{\\sqrt{3}}{3}a$②，将②代入①得，$b^2+c^2-3(b-c)^2=bc$，\n即 $2b^2+2c^2-5bc=0$，而 $b\u003ec$，解得 $b=2c$，\n所以 $a=\\sqrt{3}c$，\n故 $b^2=a^2+c^2$，即 $\\triangle ABC$ 是直角三角形。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "某沙漠地区经过治理，生态系统得到很大改善，野生动物数量有所增加。为调查该地区某种野生动物的数量，将其分成面积相近的200个地块，从这些地块中用简单随机抽样的方法抽取20个作为样区，调查得到样本数据 $(x_i,y_i)(i=1,2,\\ldots,20)$，其中 $x_i$ 和 $y_i$ 分别表示第 $i$ 个样区的植物覆盖面积（单位：公顷）和这种野生动物的数量，并计算得\n$\\sum_{i=1}^{20}x_i=60$，$\\sum_{i=1}^{20}y_i=1200$，\n$\\sum_{i=1}^{20}(x_i-\\bar{x})^2=80$，$\\sum_{i=1}^{20}(y_i-\\bar{y})^2=9000$，$\\sum_{i=1}^{20}(x_i-\\bar{x})(y_i-\\bar{y})=800$。\n（1）求该地区这种野生动物数量的估计值（这种野生动物数量的估计值等于样区这种野生动物数量的平均数乘以地块数）；\n（2）求样本 $(x_i,y_i)(i=1,2,\\ldots,20)$ 的相关系数（精确到0.01）；\n（3）根据现有统计资料，各地块间植物覆盖面积差异很大。为提高样本的代表性以获得该地区这种野生动物数量更准确的估计，请给出一种你认为更合理的抽样方法，并说明理由。\n附：相关系数 $r=\\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})(y_i-\\bar{y})}{\\sqrt{\\sum_{i=1}^{n}(x_i-\\bar{x})^2\\sum_{i=1}^{n}(y_i-\\bar{y})^2}}$，$\\sqrt{2}=1.414$。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）12000；（2）0.94；（3）详见解析。",
+                                               "analysis_latex":  "（1）利用野生动物数量的估计值等于样区野生动物平均数乘以地块数，代入数据即可；\n（2）利用公式 $r=\\frac{\\sum_{i=1}^{20}(x_i-\\bar{x})(y_i-\\bar{y})}{\\sqrt{\\sum_{i=1}^{20}(x_i-\\bar{x})^2\\sum_{i=1}^{20}(y_i-\\bar{y})^2}}$ 计算即可；\n（3）各地块间植物覆盖面积差异较大，为提高样本数据的代表性，应采用分层抽样。",
+                                               "solution_latex":  "（1）样区野生动物平均数为 $\\frac{1}{20}\\sum_{i=1}^{20}y_i = \\frac{1}{20}\\times1200=60$，\n地块数为200，该地区这种野生动物的估计值为 $200\\times60=12000$。\n（2）样本 $(x_i,y_i)$ 的相关系数为\n$r = \\frac{\\sum_{i=1}^{20}(x_i-\\bar{x})(y_i-\\bar{y})}{\\sqrt{\\sum_{i=1}^{20}(x_i-\\bar{x})^2\\sum_{i=1}^{20}(y_i-\\bar{y})^2}} = \\frac{800}{\\sqrt{80\\times9000}} = \\frac{800}{\\sqrt{720000}} = \\frac{800}{600\\sqrt{2}} = \\frac{4}{3\\sqrt{2}} = \\frac{2\\sqrt{2}}{3} \\approx 0.94$。\n（3）由于各地块间植物覆盖面积差异较大，为提高样本数据的代表性，应采用分层抽样。先将植物覆盖面积按优、中、差分成三层，在各层内按比例抽取样本，在每层内用简单随机抽样法抽取样本即可。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知椭圆 $C_1:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a\u003eb\u003e0)$ 的右焦点 $F$ 与抛物线 $C_2$ 的焦点重合，$C_1$ 的中心与 $C_2$ 的顶点重合。过 $F$ 且与 $x$ 轴重直的直线交 $C_1$ 于 $A,B$ 两点，交 $C_2$ 于 $C,D$ 两点，且 $|CD|=\\frac{4}{3}|AB|$。\n（1）求 $C_1$ 的离心率；\n（2）若 $C_1$ 的四个顶点到 $C_2$ 的准线距离之和为12，求 $C_1$ 与 $C_2$ 的标准方程。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$\\frac{1}{2}$；（2）$C_1:\\frac{x^2}{16}+\\frac{y^2}{12}=1$，$C_2:y^2=8x$。",
+                                               "analysis_latex":  "（1）根据题意求出 $C_2$ 的方程，结合椭圆和抛物线的对称性不妨设 $A,C$ 在第一象限，运用代入法求出 $A,B,C,D$ 点的纵坐标，根据 $|CD|=\\frac{4}{3}|AB|$，结合椭圆离心率的公式进行求解即可；\n（2）由（1）可以得到椭圆的标准方程，确定椭圆的四个顶点坐标，再确定抛物线的准线方程，最后结合已知进行求解。",
+                                               "solution_latex":  "（1）因为椭圆 $C_1$ 的右焦点坐标为 $F(c,0)$，所以抛物线 $C_2$ 的方程为 $y^2=4cx$，其中 $c=\\sqrt{a^2-b^2}$。\n不妨设 $A,C$ 在第一象限。\n对于椭圆，当 $x=c$ 时，$\\frac{c^2}{a^2}+\\frac{y^2}{b^2}=1$，解得 $y=\\pm\\frac{b^2}{a}$，所以 $A,B$ 的纵坐标分别为 $\\frac{b^2}{a}$，$-\\frac{b^2}{a}$，故 $|AB|=\\frac{2b^2}{a}$。\n对于抛物线，当 $x=c$ 时，$y^2=4c$，解得 $y=\\pm2c$，所以 $C,D$ 的纵坐标分别为 $2c$，$-2c$，故 $|CD|=4c$。\n由 $|CD|=\\frac{4}{3}|AB|$ 得 $4c=\\frac{4}{3}\\cdot\\frac{2b^2}{a}$，即 $3c=\\frac{2b^2}{a}$。\n又 $b^2=a^2-c^2$，所以 $3c=\\frac{2(a^2-c^2)}{a}$，即 $2a^2-2c^2=3ac$，$2\\left(\\frac{c}{a}\\right)^2+3\\left(\\frac{c}{a}\\right)-2=0$，解得 $\\frac{c}{a}=\\frac{1}{2}$（负值舍去）。\n所以 $C_1$ 的离心率为 $\\frac{1}{2}$。\n（2）由（1）知 $a=2c$，$b=\\sqrt{a^2-c^2}=\\sqrt{3}c$，故 $C_1:\\frac{x^2}{4c^2}+\\frac{y^2}{3c^2}=1$，$C_2$ 的准线为 $x=-c$。\n$C_1$ 的四个顶点坐标分别为 $(2c,0)$，$(-2c,0)$，$(0,\\sqrt{3}c)$，$(0,-\\sqrt{3}c)$。\n它们到准线的距离之和为 $(2c+c)+(2c+c)+(\\sqrt{3}c+c)+(\\sqrt{3}c+c)=12$，即 $4c+2\\sqrt{3}c+2c=12$，解得 $c=2$。\n所以 $C_1$ 的标准方程为 $\\frac{x^2}{16}+\\frac{y^2}{12}=1$，$C_2$ 的标准方程为 $y^2=8x$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图，已知三棱柱 $ABC-A_1B_1C_1$ 的底面是正三角形，侧面 $BB_1C_1C$ 是矩形，$M,N$ 分别为 $BC, B_1C_1$ 的中点，$P$ 为 $AM$ 上一点。过 $B_1C_1$ 和 $P$ 的平面交 $AB$ 于 $E$，交 $AC$ 于 $F$。\n（1）证明：$AA_1\\parallel MN$，且平面 $A_1AMN\\perp$ 平面 $EB_1C_1F$；\n（2）设 $O$ 为 $\\triangle A_1B_1C_1$ 的中心，若 $AO=AB=6$，$AO\\parallel$ 平面 $EB_1C_1F$，且 $\\angle MPN=\\frac{\\pi}{3}$，求四棱锥 $B-EB_1C_1F$ 的体积。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）证明见解析；（2）24。",
+                                               "analysis_latex":  "（1）由 $M,N$ 分别为 $BC, B_1C_1$ 的中点，$MN\\parallel CC_1$，根据条件可得 $AA_1\\parallel BB_1$，可证 $MN\\parallel AA_1$，要证平面 $EB_1C_1F\\perp$ 平面 $A_1AMN$，只需证明 $EF\\perp$ 平面 $A_1AMN$ 即可；\n（2）根据已知条件求得 $S_{\\text{四边形}EB_1C_1F}$ 和 $M$ 到 $PN$ 的距离，根据椎体体积公式，即可求得 $V_{B-EB_1C_1F}$。",
+                                               "solution_latex":  "（1）$\\because M,N$ 分别为 $BC, B_1C_1$ 的中点，$\\therefore MN\\parallel BB_1$。\n又 $AA_1\\parallel BB_1$，$\\therefore MN\\parallel AA_1$。\n在等边 $\\triangle ABC$ 中，$M$ 为 $BC$ 中点，则 $BC\\perp AM$。\n$\\because$ 侧面 $BB_1C_1C$ 为矩形，$\\therefore BC\\perp BB_1$。\n又 $MN\\parallel BB_1$，$\\therefore MN\\perp BC$。\n由 $MN\\cap AM=M$，$MN, AM\\subset$ 平面 $A_1AMN$，$\\therefore BC\\perp$ 平面 $A_1AMN$。\n又 $B_1C_1\\parallel BC$，且 $B_1C_1\\not\\subset$ 平面 $ABC$，$BC\\subset$ 平面 $ABC$，$\\therefore B_1C_1\\parallel$ 平面 $ABC$。\n又 $B_1C_1\\subset$ 平面 $EB_1C_1F$，且平面 $EB_1C_1F\\cap$ 平面 $ABC=EF$，$\\therefore B_1C_1\\parallel EF$，$\\therefore EF\\parallel BC$。\n又 $BC\\perp$ 平面 $A_1AMN$，$\\therefore EF\\perp$ 平面 $A_1AMN$。\n$\\because EF\\subset$ 平面 $EB_1C_1F$，$\\therefore$ 平面 $EB_1C_1F\\perp$ 平面 $A_1AMN$。\n（2）过 $M$ 作 $PN$ 的垂线，交点为 $H$。\n$\\because AO\\parallel$ 平面 $EB_1C_1F$，$AO\\subset$ 平面 $A_1AMN$，平面 $A_1AMN\\cap$ 平面 $EB_1C_1F=NP$，$\\therefore AO\\parallel NP$。\n又 $NO\\parallel AP$，$\\therefore AO=NP=6$。\n$\\because O$ 为 $\\triangle A_1B_1C_1$ 的中心，$\\therefore ON=\\frac{1}{3}A_1C_1\\sin60^\\circ = \\frac{1}{3}\\times6\\times\\frac{\\sqrt{3}}{2}=\\sqrt{3}$。\n故 $ON=AP=\\sqrt{3}$，则 $AM=3AP=3\\sqrt{3}$。\n$\\because$ 平面 $EB_1C_1F\\perp$ 平面 $A_1AMN$，平面 $EB_1C_1F\\cap$ 平面 $A_1AMN=NP$，$MH\\subset$ 平面 $A_1AMN$，$\\therefore MH\\perp$ 平面 $EB_1C_1F$。\n又 $\\because$ 在等边 $\\triangle ABC$ 中，$\\frac{EF}{BC}=\\frac{AP}{AM}$，即 $EF=\\frac{AP\\cdot BC}{AM}=\\frac{\\sqrt{3}\\times6}{3\\sqrt{3}}=2$。\n由（1）知，四边形 $EB_1C_1F$ 为梯形，其面积为 $S_{\\text{四边形}EB_1C_1F} = \\frac{EF+B_1C_1}{2}\\cdot NP = \\frac{2+6}{2}\\times6=24$。\n$\\because MH = 2\\sqrt{3}\\cdot\\sin60^\\circ = 3$，\n$\\therefore V_{B-EB_1C_1F} = \\frac{1}{3}S_{\\text{四边形}EB_1C_1F}\\cdot MH = \\frac{1}{3}\\times24\\times3=24$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "三棱柱几何示意图",
+                                                                  "file":  "question-20-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数 $f(x)=2\\ln x+1$。\n（1）若 $f(x)\\le 2x+c$，求 $c$ 的取值范围；\n（2）设 $a\u003e0$ 时，讨论函数 $g(x)=\\frac{f(x)-f(a)}{x-a}$ 的单调性。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$c\\ge -1$；（2）$g(x)$ 在区间 $(0,a)$ 和 $(a,+\\infty)$ 上单调递减，没有递增区间。",
+                                               "analysis_latex":  "（1）不等式 $f(x)\\le 2x+c$ 转化为 $f(x)-2x-c\\le 0$，构造新函数，利用导数求出新函数的最大值，进而进行求解；\n（2）对函数 $g(x)$ 求导，把导函数 $g\u0027(x)$ 的分子构成一个新函数 $m(x)$，再求导得到 $m\u0027(x)$，根据 $m\u0027(x)$ 的正负，判断 $m(x)$ 的单调性，进而确定 $g\u0027(x)$ 的正负性，最后求出函数 $g(x)$ 的单调性。",
+                                               "solution_latex":  "（1）$f(x)\\le 2x+c \\Leftrightarrow f(x)-2x-c\\le 0 \\Leftrightarrow 2\\ln x+1-2x-c\\le 0$。\n设 $h(x)=2\\ln x+1-2x-c(x\u003e0)$，则 $h\u0027(x)=\\frac{2}{x}-2=\\frac{2(1-x)}{x}$。\n当 $x\u003e1$ 时，$h\u0027(x)\u003c0$，$h(x)$ 单调递减；当 $0\u003cx\u003c1$ 时，$h\u0027(x)\u003e0$，$h(x)$ 单调递增。\n所以当 $x=1$ 时，$h(x)$ 有最大值 $h(1)=2\\ln1+1-2\\times1-c=-1-c$。\n要想不等式恒成立，只需 $h(1)\\le 0$，即 $-1-c\\le 0$，解得 $c\\ge -1$。\n（2）$g(x)=\\frac{2\\ln x+1-(2\\ln a+1)}{x-a}=\\frac{2(\\ln x-\\ln a)}{x-a} \\quad (x\u003e0$ 且 $x\\neq a)$。\n$g\u0027(x)=2\\cdot\\frac{\\frac{1}{x}(x-a)-(\\ln x-\\ln a)}{(x-a)^2}=2\\cdot\\frac{(x-a)-x(\\ln x-\\ln a)}{x(x-a)^2}$。\n设 $m(x)= (x-a)-x(\\ln x-\\ln a)$，则 $m\u0027(x)=1-(\\ln x-\\ln a)-1 = \\ln a - \\ln x$。\n当 $x\u003ea$ 时，$\\ln x\u003e\\ln a$，$m\u0027(x)\u003c0$，$m(x)$ 单调递减，所以 $m(x)\u003cm(a)=0$，从而 $g\u0027(x)\u003c0$，$g(x)$ 单调递减；\n当 $0\u003cx\u003ca$ 时，$\\ln x\u003c\\ln a$，$m\u0027(x)\u003e0$，$m(x)$ 单调递增，所以 $m(x)\u003cm(a)=0$，从而 $g\u0027(x)\u003c0$，$g(x)$ 单调递减。\n所以函数 $g(x)$ 在区间 $(0,a)$ 和 $(a,+\\infty)$ 上单调递减，没有递增区间。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4—4：坐标系与参数方程]\n已知曲线 $C_1, C_2$ 的参数方程分别为 $C_1:\\begin{cases} x=4\\cos^2\\theta \\\\ y=4\\sin^2\\theta \\end{cases}$（$\\theta$ 为参数），$C_2:\\begin{cases} x=t+\\frac{1}{t} \\\\ y=t-\\frac{1}{t} \\end{cases}$（$t$ 为参数）。\n（1）将 $C_1, C_2$ 的参数方程化为普通方程；\n（2）以坐标原点为极点，$x$ 轴正半轴为极轴建立极坐标系。设 $C_1, C_2$ 的交点为 $P$，求圆心在极轴上，且经过极点和 $P$ 的圆的极坐标方程。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$C_1: x+y=4$，$C_2: x^2-y^2=4$；（2）$\\rho=\\frac{17}{5}\\cos\\theta$。",
+                                               "analysis_latex":  "（1）分别消去参数 $\\theta$ 和 $t$ 即可得到所求普通方程；\n（2）两方程联立求得点 $P$，求得所求圆的直角坐标方程后，根据直角坐标与极坐标的互化即可得到所求极坐标方程。",
+                                               "solution_latex":  "（1）由 $\\cos^2\\theta+\\sin^2\\theta=1$ 得 $C_1$ 的普通方程为 $x+y=4$。\n由 $C_2$ 的参数方程 $\\begin{cases} x=t+\\frac{1}{t} \\\\ y=t-\\frac{1}{t} \\end{cases}$ 得 $x^2=t^2+\\frac{1}{t^2}+2$，$y^2=t^2+\\frac{1}{t^2}-2$，两式相减得 $x^2-y^2=4$，即 $C_2$ 的普通方程为 $x^2-y^2=4$。\n（2）联立 $\\begin{cases} x+y=4 \\\\ x^2-y^2=4 \\end{cases}$，解得 $\\begin{cases} x=\\frac{5}{2} \\\\ y=\\frac{3}{2} \\end{cases}$，即 $P\\left(\\frac{5}{2},\\frac{3}{2}\\right)$。\n设所求圆圆心的直角坐标为 $(a,0)$，其中 $a\u003e0$，则半径 $r=a$。\n由 $\\sqrt{\\left(a-\\frac{5}{2}\\right)^2+\\left(0-\\frac{3}{2}\\right)^2}=a$，解得 $a=\\frac{17}{10}$，所以 $r=\\frac{17}{10}$。\n所求圆的直角坐标方程为 $\\left(x-\\frac{17}{10}\\right)^2+y^2=\\left(\\frac{17}{10}\\right)^2$，即 $x^2+y^2=\\frac{17}{5}x$。\n化为极坐标方程为 $\\rho^2=\\frac{17}{5}\\rho\\cos\\theta$，即 $\\rho=\\frac{17}{5}\\cos\\theta$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4—5：不等式选讲]\n已知函数 $f(x)=|x-a^2|+|x-2a+1|$。\n（1）当 $a=2$ 时，求不等式 $f(x)\\ge4$ 的解集；\n（2）若 $f(x)\\ge4$，求 $a$ 的取值范围。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$\\{x|x\\le\\frac{3}{2}\\text{ 或 }x\\ge\\frac{11}{2}\\}$；（2）$(-\\infty,-1]\\cup[3,+\\infty)$。",
+                                               "analysis_latex":  "（1）分别在 $x\\le3$、$3\u003cx\u003c4$ 和 $x\\ge4$ 三种情况下解不等式求得结果；\n（2）利用绝对值三角不等式可得到 $f(x)\\ge(a-1)^2$，由此构造不等式求得结果。",
+                                               "solution_latex":  "（1）当 $a=2$ 时，$f(x)=|x-4|+|x-3|$。\n当 $x\\le3$ 时，$f(x)=4-x+3-x=7-2x\\ge4$，解得 $x\\le\\frac{3}{2}$；\n当 $3\u003cx\u003c4$ 时，$f(x)=4-x+x-3=1\\ge4$，无解；\n当 $x\\ge4$ 时，$f(x)=x-4+x-3=2x-7\\ge4$，解得 $x\\ge\\frac{11}{2}$。\n综上所述，不等式 $f(x)\\ge4$ 的解集为 $\\{x|x\\le\\frac{3}{2}\\text{ 或 }x\\ge\\frac{11}{2}\\}$。\n（2）$f(x)=|x-a^2|+|x-2a+1|\\ge|(x-a^2)-(x-2a+1)|=|a^2-2a+1|=(a-1)^2$（当且仅当 $2a-1\\le x\\le a^2$ 时取等号）。\n所以 $(a-1)^2\\ge4$，解得 $a\\le-1$ 或 $a\\ge3$。\n故 $a$ 的取值范围为 $(-\\infty,-1]\\cup[3,+\\infty)$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  3,
+                             "issue":  "原卷PAGE 1中选择题第3题题干中“a1，a2，…，a12”下标格式未统一，解析版已修复。"
+                         },
+                         {
+                             "question":  19,
+                             "issue":  "原卷PAGE 4中“重直”疑为“垂直”，解析版已修正。"
+                         },
+                         {
+                             "question":  22,
+                             "issue":  "原卷PAGE 5中参数方程部分符号显示异常，解析版已修复。"
+                         },
+                         {
+                             "question":  15,
+                             "issue":  "题图未能自动匹配：原卷第 11 页，线性规划可行域图"
+                         }
+                     ]
+}

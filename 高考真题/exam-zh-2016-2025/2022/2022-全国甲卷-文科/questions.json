@@ -1,0 +1,475 @@
+﻿{
+    "title":  "2022 年高考数学 全国甲卷-文科",
+    "year":  2022,
+    "paper":  "全国甲卷",
+    "sections":  [
+                     {
+                         "title":  "一、选择题",
+                         "instructions":  "本题共12小题，每小题5分，共60分。在每小题给出的四个选项中，只有一项是符合题目要求的。",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设集合 $A=\\{-2,-1,0,1,2\\}, B=\\{x \\mid 0 \\leq x \u003c \\frac{5}{2}\\}$，则 $A \\cap B=$",
+                                               "choices":  [
+                                                               "$\\{0,1,2\\}$",
+                                                               "$\\{-2,-1,0\\}$",
+                                                               "$\\{0,1\\}$",
+                                                               "$\\{1,2\\}$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "某社区通过公益讲座以普及社区居民的垃圾分类知识．为了解讲座效果，随机抽取10位社区居民，让他们在讲座前和讲座后各回答一份垃圾分类知识问卷，这10位社区居民在讲座前和讲座后问卷答题的正确率如下图：\n\n则",
+                                               "choices":  [
+                                                               "A．讲座前问卷答题的正确率的中位数小于70%",
+                                                               "B．讲座后问卷答题的正确率的平均数大于85%",
+                                                               "C．讲座前问卷答题的正确率的标准差小于讲座后正确率的标准差",
+                                                               "D．讲座后问卷答题的正确率的极差大于讲座前正确率的极差"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  1,
+                                                                  "description":  "讲座前后正确率折线图",
+                                                                  "file":  "question-2-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "若 $z=1+\\mathrm{i}$，则 $|\\mathrm{i}z+3\\overline{z}|=$",
+                                               "choices":  [
+                                                               "$4\\sqrt{5}$",
+                                                               "$4\\sqrt{2}$",
+                                                               "$2\\sqrt{5}$",
+                                                               "$2\\sqrt{2}$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "如图，网格纸上绘制的是一个多面体的三视图，网格小正方形的边长为1，则该多面体的体积为",
+                                               "choices":  [
+                                                               "A．8",
+                                                               "B．12",
+                                                               "C．16",
+                                                               "D．20"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  1,
+                                                                  "description":  "多面体三视图"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "将函数 $f(x)=\\sin\\left(\\omega x+\\frac{\\pi}{3}\\right) (\\omega\u003e0)$ 的图像向左平移 $\\frac{\\pi}{2}$ 个单位长度后得到曲线 $C$，若 $C$ 关于 $y$ 轴对称，则 $\\omega$ 的最小值是",
+                                               "choices":  [
+                                                               "$\\frac{1}{6}$",
+                                                               "$\\frac{1}{4}$",
+                                                               "$\\frac{1}{3}$",
+                                                               "$\\frac{1}{2}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "从分别写有1，2，3，4，5，6的6张卡片中无放回随机抽取2张，则抽到的2张卡片上的数字之积是4的倍数的概率为",
+                                               "choices":  [
+                                                               "$\\frac{1}{5}$",
+                                                               "$\\frac{1}{3}$",
+                                                               "$\\frac{2}{5}$",
+                                                               "$\\frac{2}{3}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "函数 $f(x)=\\left(3^x-3^{-x}\\right)\\cos x$ 在区间 $\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]$ 的图像大致为",
+                                               "choices":  [
+                                                               "A．",
+                                                               "B．",
+                                                               "C．",
+                                                               "D．"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  2,
+                                                                  "description":  "四个函数图像选项",
+                                                                  "file":  "question-7-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "当 $x=1$ 时，函数 $f(x)=a\\ln x+\\frac{b}{x}$ 取得最大值 $-2$，则 $f\u0027(2)=$",
+                                               "choices":  [
+                                                               "$-1$",
+                                                               "$-\\frac{1}{2}$",
+                                                               "$\\frac{1}{2}$",
+                                                               "$1$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在长方体 $ABCD-A_1B_1C_1D_1$ 中，已知 $B_1D$ 与平面 $ABCD$ 和平面 $AA_1B_1B$ 所成的角均为 $30^\\circ$，则",
+                                               "choices":  [
+                                                               "A．$AB=2AD$",
+                                                               "B．$AB$ 与平面 $AB_1C_1D$ 所成的角为 $30^\\circ$",
+                                                               "C．$AC=CB_1$",
+                                                               "D．$B_1D$ 与平面 $BB_1C_1C$ 所成的角为 $45^\\circ$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "甲、乙两个圆锥的母线长相等，侧面展开图的圆心角之和为 $2\\pi$，侧面积分别为 $S_{\\text{甲}}$ 和 $S_{\\text{乙}}$，体积分别为 $V_{\\text{甲}}$ 和 $V_{\\text{乙}}$．若 $\\frac{S_{\\text{甲}}}{S_{\\text{乙}}}=2$，则 $\\frac{V_{\\text{甲}}}{V_{\\text{乙}}}=$",
+                                               "choices":  [
+                                                               "$\\sqrt{5}$",
+                                                               "$2\\sqrt{2}$",
+                                                               "$\\sqrt{10}$",
+                                                               "$\\frac{5\\sqrt{10}}{4}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知椭圆 $C:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a\u003eb\u003e0)$ 的离心率为 $\\frac{1}{3}$，$A_1,A_2$ 分别为 $C$ 的左、右顶点，$B$ 为 $C$ 的上顶点．若 $\\overrightarrow{BA_1}\\cdot\\overrightarrow{BA_2}=-1$，则 $C$ 的方程为",
+                                               "choices":  [
+                                                               "$\\frac{x^2}{18}+\\frac{y^2}{16}=1$",
+                                                               "$\\frac{x^2}{9}+\\frac{y^2}{8}=1$",
+                                                               "$\\frac{x^2}{3}+\\frac{y^2}{2}=1$",
+                                                               "$\\frac{x^2}{2}+y^2=1$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知 $9^m=10, a=10^m-11, b=8^m-9$，则",
+                                               "choices":  [
+                                                               "$a\u003e0\u003eb$",
+                                                               "$a\u003eb\u003e0$",
+                                                               "$b\u003ea\u003e0$",
+                                                               "$b\u003e0\u003ea$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "本题共4小题，每小题5分，共20分。",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知向量 $\\vec{a}=(m,3),\\vec{b}=(1,m+1)$．若 $\\vec{a}\\perp\\vec{b}$，则 $m=$",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$-\\frac{3}{4}$",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "设点 $M$ 在直线 $2x+y-1=0$ 上，点 $(3,0)$ 和 $(0,1)$ 均在 $\\odot M$ 上，则 $\\odot M$ 的方程为",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$(x-1)^2+(y+1)^2=5$",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "记双曲线 $C:\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1(a\u003e0,b\u003e0)$ 的离心率为 $e$，写出满足条件“直线 $y=2x$ 与 $C$ 无公共点”的 $e$ 的一个值",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$2$（满足 $1\u003ce\\leq\\sqrt{5}$ 皆可）",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知 $\\triangle ABC$ 中，点 $D$ 在边 $BC$ 上，$\\angle ADB=120^\\circ, AD=2, CD=2BD$．当 $\\frac{AC}{AB}$ 取得最小值时，$BD=$",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\sqrt{3}-1$",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "共70分。解答应写出文字说明、证明过程或演算步骤。第17~21题为必考题，每个试题考生都必须作答。第22、23题为选考题，考生根据要求作答。",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "甲、乙两城之间的长途客车均由 A 和 B 两家公司运营，为了解这两家公司长途客车的运行情况，随机调查了甲、乙两城之间的500个班次，得到下面列联表：\n\n| | 准点班次数 | 未准点班次数 |\n| A | 240 | 20 |\n| B | 210 | 30 |\n\n（1）根据上表，分别估计这两家公司甲、乙两城之间的长途客车准点的概率；\n（2）能否有90%的把握认为甲、乙两城之间的长途客车是否准点与客车所属公司有关？\n\n附：$K^2=\\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$，\n\n$P(K^2\\ge k)$ | 0.100 | 0.050 | 0.010\n--- | --- | --- | ---\n$k$ | 2.706 | 3.841 | 6.635",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）A 公司准点概率 $\\frac{12}{13}$，B 公司准点概率 $\\frac{7}{8}$；（2）有90%的把握",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "记 $S_n$ 为数列 $\\{a_n\\}$ 的前 $n$ 项和．已知 $\\frac{2S_n}{n}+n=2a_n+1$．\n（1）证明：$\\{a_n\\}$ 是等差数列；\n（2）若 $a_4, a_7, a_9$ 成等比数列，求 $S_n$ 的最小值．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）证明见解析；（2）$-78$",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "小明同学参加综合实践活动，设计了一个封闭的包装盒，包装盒如图所示：底面 $ABCD$ 是边长为8（单位：cm）的正方形，$\\triangle EAB, \\triangle FBC, \\triangle GCD, \\triangle HDA$ 均为正三角形，且它们所在的平面都与平面 $ABCD$ 垂直．\n（1）证明：$EF\\parallel$ 平面 $ABCD$；\n（2）求该包装盒的容积（不计包装盒材料的厚度）．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）证明见解析；（2）$\\frac{640}{3}\\sqrt{3}$",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "包装盒立体图",
+                                                                  "file":  "question-19-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数 $f(x)=x^3-x, g(x)=x^2+a$，曲线 $y=f(x)$ 在点 $(x_1, f(x_1))$ 处的切线也是曲线 $y=g(x)$ 的切线．\n（1）若 $x_1=-1$，求 $a$；\n（2）求 $a$ 的取值范围．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$a=3$；（2）$[-1,+\\infty)$",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "设抛物线 $C:y^2=2px(p\u003e0)$ 的焦点为 $F$，点 $D(p,0)$，过 $F$ 的直线交 $C$ 于 $M,N$ 两点．当直线 $MD$ 垂直于 $x$ 轴时，$|MF|=3$．\n（1）求 $C$ 的方程；\n（2）设直线 $MD, ND$ 与 $C$ 的另一个交点分别为 $A,B$，记直线 $MN, AB$ 的倾斜角分别为 $\\alpha, \\beta$．当 $\\alpha-\\beta$ 取得最大值时，求直线 $AB$ 的方程．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$y^2=4x$；（2）$x=2y+4$",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4-4：坐标系与参数方程]\n在直角坐标系 $xOy$ 中，曲线 $C_1$ 的参数方程为 $\\begin{cases} x=\\frac{2+t}{6} \\\\ y=\\sqrt{t} \\end{cases}$（$t$ 为参数），曲线 $C_2$ 的参数方程为 $\\begin{cases} x=-\\frac{2+s}{6} \\\\ y=-\\sqrt{s} \\end{cases}$（$s$ 为参数）．\n（1）写出 $C_1$ 的普通方程；\n（2）以坐标原点为极点，$x$ 轴正半轴为极轴建立极坐标系，曲线 $C_3$ 的极坐标方程为 $2\\cos\\theta-\\sin\\theta=0$，求 $C_3$ 与 $C_1$ 交点的直角坐标，及 $C_3$ 与 $C_2$ 交点的直角坐标．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$y^2=6x-2\\ (y\\ge0)$；\n（2）$C_3$ 与 $C_1$ 的交点坐标为 $(\\frac{1}{2},1),(1,2)$；$C_3$ 与 $C_2$ 的交点坐标为 $(-\\frac{1}{2},-1),(-1,-2)$",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4-5：不等式选讲]\n已知 $a,b,c$ 均为正数，且 $a^2+b^2+4c^2=3$，证明：\n（1）$a+b+2c\\le3$；\n（2）若 $b=2c$，则 $\\frac{1}{a}+\\frac{1}{c}\\ge3$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）证明见解析；（2）证明见解析",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  2,
+                             "issue":  "原卷折线图未提取文本，解析版未提供详细分析，答案取自解析版答案列表"
+                         },
+                         {
+                             "question":  4,
+                             "issue":  "原卷三视图图片未提取文本，解析版未提供详细分析，答案取自解析版答案列表"
+                         },
+                         {
+                             "question":  7,
+                             "issue":  "原卷函数图像选项未提取具体表达式，答案取自解析版答案列表"
+                         },
+                         {
+                             "question":  14,
+                             "issue":  "原卷中圆方程符号不清晰，根据解析版答案修正"
+                         },
+                         {
+                             "question":  15,
+                             "issue":  "原卷中条件写为\"直线y=2x与C无公共点\"，解析版答案给出一个值2，并注明范围"
+                         },
+                         {
+                             "question":  16,
+                             "issue":  "原卷中\"AC/AB\"解析版答案给出\"√3-1\""
+                         },
+                         {
+                             "question":  17,
+                             "issue":  "原卷列联表数字清晰，解析版答案给出概率分数"
+                         },
+                         {
+                             "question":  19,
+                             "issue":  "原卷立体图未提取文本，解析版给出了详细证明步骤的核心部分"
+                         },
+                         {
+                             "question":  21,
+                             "issue":  "原卷方程最后写为\"C的方程：\"，解析版答案给出y^2=4x；第二问倾斜角条件清晰"
+                         },
+                         {
+                             "question":  22,
+                             "issue":  "原卷参数方程格式有误（分数形式），根据解析版修复为正确形式"
+                         },
+                         {
+                             "question":  4,
+                             "issue":  "题图未能自动匹配：原卷第 1 页，多面体三视图"
+                         },
+                         {
+                             "question":  4,
+                             "issue":  "题图未能自动匹配：原卷第 1 页，多面体三视图"
+                         },
+                         {
+                             "question":  4,
+                             "issue":  "题图未能自动匹配：原卷第 1 页，多面体三视图"
+                         }
+                     ]
+}

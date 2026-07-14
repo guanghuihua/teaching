@@ -1,0 +1,463 @@
+﻿{
+    "title":  "2018 年高考数学 全国I卷-理科",
+    "year":  2018,
+    "paper":  "新课标全国I卷",
+    "sections":  [
+                     {
+                         "title":  "一、选择题",
+                         "instructions":  "本题共12小题，每小题5分，共60分。在每小题给出的四个选项中，只有一项是符合题目要求的。",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设$z=\\frac{1-i}{1+i}+2i$，则$|z|=$（    ）",
+                                               "choices":  [
+                                                               "$0$",
+                                                               "$\\frac{1}{2}$",
+                                                               "$1$",
+                                                               "$\\sqrt{2}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "利用复数的代数形式的混合运算化简后，然后求解复数的模。",
+                                               "solution_latex":  "$z=\\frac{1-i}{1+i}+2i=\\frac{(1-i)^2}{(1+i)(1-i)}+2i=\\frac{-2i}{2}+2i=-i+2i=i$，则$|z|=1$。故选C。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知集合$A=\\{x|x^2-x-2\u003e0\\}$，则$\\complement_RA=$（    ）",
+                                               "choices":  [
+                                                               "$\\{x|-1\u003cx\u003c2\\}$",
+                                                               "$\\{x|-1\\leq x\\leq2\\}$",
+                                                               "$\\{x|x\u003c-1\\}\\cup\\{x|x\u003e2\\}$",
+                                                               "$\\{x|x\\leq-1\\}\\cup\\{x|x\\geq2\\}$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "通过求解不等式，得到集合$A$，然后求解补集即可。",
+                                               "solution_latex":  "集合$A=\\{x|x^2-x-2\u003e0\\}$，可得$A=\\{x|x\u003c-1\\text{或}x\u003e2\\}$，则$\\complement_RA=\\{x|-1\\leq x\\leq2\\}$。故选B。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "某地区经过一年的新农村建设，农村的经济收入增加了一倍，实现翻番。为更好地了解该地区农村的经济收入变化情况，统计了该地区新农村建设前后农村的经济收入构成比例，得到如下饼图：\n\n则下面结论中不正确的是（    ）",
+                                               "choices":  [
+                                                               "新农村建设后，种植收入减少",
+                                                               "新农村建设后，其他收入增加了一倍以上",
+                                                               "新农村建设后，养殖收入增加了一倍",
+                                                               "新农村建设后，养殖收入与第三产业收入的总和超过了经济收入的一半"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "设建设前经济收入为$a$，建设后经济收入为$2a$。通过选项逐一分析新农村建设前后，经济收入情况，利用数据推出结果。",
+                                               "solution_latex":  "设建设前经济收入为$a$，建设后经济收入为$2a$。\nA项：种植收入$37\\%\\times2a-60\\%a=14\\%a\u003e0$，故建设后，种植收入增加，故A项错误。\nB项：建设后，其他收入为$5\\%\\times2a=10\\%a$，建设前为$4\\%a$，$10\\%a\\div4\\%a=2.5\u003e2$，故B项正确。\nC项：建设后，养殖收入为$30\\%\\times2a=60\\%a$，建设前为$30\\%a$，$60\\%a\\div30\\%a=2$，故C项正确。\nD项：建设后，养殖收入与第三产业收入总和为$(30\\%+28\\%)\\times2a=58\\%\\times2a$，经济收入为$2a$，$(58\\%\\times2a)\\div2a=58\\%\u003e50\\%$，故D项正确。\n故选A。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  1,
+                                                                  "description":  "饼图展示建设前后经济收入构成比例",
+                                                                  "file":  "question-3-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "记$S_n$为等差数列$\\{a_n\\}$的前$n$项和。若$3S_3=S_2+S_4$，$a_1=2$，则$a_5=$（    ）",
+                                               "choices":  [
+                                                               "$-12$",
+                                                               "$-10$",
+                                                               "$10$",
+                                                               "$12$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "利用等差数列的通项公式和前$n$项和公式列出方程，能求出$a_5$的值。",
+                                               "solution_latex":  "$\\because 3S_3=S_2+S_4$，$a_1=2$，代入得$3\\times(3\\times2+3d)=2+(2+d)+(4\\times2+6d)$，解得$d=-3$，$\\therefore a_5=2+4\\times(-3)=-10$。故选B。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设函数$f(x)=x^3+(a-1)x^2+ax$。若$f(x)$为奇函数，则曲线$y=f(x)$在点$(0,0)$处的切线方程为（    ）",
+                                               "choices":  [
+                                                               "$y=-2x$",
+                                                               "$y=-x$",
+                                                               "$y=2x$",
+                                                               "$y=x$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "利用函数的奇偶性求出$a$，求出函数的导数，然后求解切线方程。",
+                                               "solution_latex":  "由$f(x)$为奇函数，得$a=1$，$f(x)=x^3+x$，$f\u0027(x)=3x^2+1$，$f\u0027(0)=1$，切线方程为$y=x$。故选D。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在$\\triangle ABC$中，$AD$为$BC$边上的中线，$E$为$AD$的中点，则$\\overrightarrow{EB}=$（    ）",
+                                               "choices":  [
+                                                               "$\\frac{3}{4}\\overrightarrow{AB}-\\frac{1}{4}\\overrightarrow{AC}$",
+                                                               "$\\frac{1}{4}\\overrightarrow{AB}-\\frac{3}{4}\\overrightarrow{AC}$",
+                                                               "$\\frac{3}{4}\\overrightarrow{AB}+\\frac{1}{4}\\overrightarrow{AC}$",
+                                                               "$\\frac{1}{4}\\overrightarrow{AB}+\\frac{3}{4}\\overrightarrow{AC}$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "运用向量的加减运算和向量中点的表示，计算可得所求向量。",
+                                               "solution_latex":  "$\\overrightarrow{EB}=\\overrightarrow{AB}-\\overrightarrow{AE}=\\overrightarrow{AB}-\\frac{1}{2}\\overrightarrow{AD}=\\overrightarrow{AB}-\\frac{1}{2}\\times\\frac{1}{2}(\\overrightarrow{AB}+\\overrightarrow{AC})=\\frac{3}{4}\\overrightarrow{AB}-\\frac{1}{4}\\overrightarrow{AC}$。故选A。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "某圆柱的高为2，底面周长为16，其三视图如图。圆柱表面上的点M在正视图上的对应点为A，圆柱表面上的点N在左视图上的对应点为B，则在此圆柱侧面上，从M到N的路径中，最短路径的长度为（    ）",
+                                               "choices":  [
+                                                               "$2\\sqrt{17}$",
+                                                               "$2\\sqrt{5}$",
+                                                               "$3$",
+                                                               "$2$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "判断三视图对应的几何体的形状，利用侧面展开图，转化求解即可。",
+                                               "solution_latex":  "由题意可知几何体是圆柱，底面周长16，高为2。将圆柱侧面展开，则最短路径的长度为$\\sqrt{2^2+4^2}=2\\sqrt{5}$。故选B。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  2,
+                                                                  "description":  "圆柱的三视图",
+                                                                  "file":  "question-7-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设抛物线$C:y^2=4x$的焦点为$F$，过点$(-2,0)$且斜率为$\\frac{2}{3}$的直线与$C$交于$M$，$N$两点，则$\\overrightarrow{FM}\\cdot\\overrightarrow{FN}=$（    ）",
+                                               "choices":  [
+                                                               "$5$",
+                                                               "$6$",
+                                                               "$7$",
+                                                               "$8$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "求出抛物线的焦点坐标，直线方程，求出$M$、$N$的坐标，然后求解向量的数量积即可。",
+                                               "solution_latex":  "抛物线$C:y^2=4x$的焦点为$F(1,0)$，过点$(-2,0)$且斜率为$\\frac{2}{3}$的直线为$y=\\frac{2}{3}(x+2)$，即$3y=2x+4$。联立直线与抛物线得$y^2-6y+8=0$，解得$y_1=2$，$y_2=4$。不妨设$M(1,2)$，$N(4,4)$，则$\\overrightarrow{FM}=(0,2)$，$\\overrightarrow{FN}=(3,4)$，$\\overrightarrow{FM}\\cdot\\overrightarrow{FN}=0\\times3+2\\times4=8$。故选D。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知函数$f(x)=\\begin{cases} e^x, \u0026 x\\leq0 \\\\ \\ln x, \u0026 x\u003e0 \\end{cases}$，$g(x)=f(x)+x+a$。若$g(x)$存在2个零点，则$a$的取值范围是（    ）",
+                                               "choices":  [
+                                                               "$[-1,0)$",
+                                                               "$[0,+\\infty)$",
+                                                               "$[-1,+\\infty)$",
+                                                               "$[1,+\\infty)$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "由$g(x)=0$得$f(x)=-x-a$，分别作出两个函数的图象，根据图象交点个数与函数零点之间的关系进行转化求解即可。",
+                                               "solution_latex":  "由$g(x)=0$得$f(x)=-x-a$，作出函数$f(x)$和$y=-x-a$的图象。当直线$y=-x-a$的截距$-a\\leq1$，即$a\\geq-1$时，两个函数的图象都有2个交点，即函数$g(x)$存在2个零点。故实数$a$的取值范围是$[-1,+\\infty)$。故选C。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  2,
+                                                                  "description":  "函数f(x)与直线y=-x-a的图象",
+                                                                  "file":  "question-9-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "如图来自古希腊数学家希波克拉底所研究的几何图形。此图由三个半圆构成，三个半圆的直径分别为直角三角形$ABC$的斜边$BC$，直角边$AB$，$AC$。$\\triangle ABC$的三边所围成的区域记为I，黑色部分记为II，其余部分记为III。在整个图形中随机取一点，此点取自I，II，III的概率分别记为$p_1$，$p_2$，$p_3$，则（    ）",
+                                               "choices":  [
+                                                               "$p_1=p_2$",
+                                                               "$p_1=p_3$",
+                                                               "$p_2=p_3$",
+                                                               "$p_1=p_2+p_3$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "设$BC=2r_1$，$AB=2r_2$，$AC=2r_3$，分别求出I，II，III所对应的面积，即可得到答案。",
+                                               "solution_latex":  "设$BC=2r_1$，$AB=2r_2$，$AC=2r_3$，则$r_1^2=r_2^2+r_3^2$。$S_I=\\frac{1}{2}\\times4r_2r_3=2r_2r_3$，$S_{III}=\\frac{1}{2}\\pi r_1^2-2r_2r_3$，$S_{II}=\\frac{1}{2}\\pi r_3^2+\\frac{1}{2}\\pi r_2^2-S_{III}=2r_2r_3$。所以$S_I=S_{II}$，$\\therefore p_1=p_2$。故选A。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  2,
+                                                                  "description":  "希波克拉底几何图形"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知双曲线$C:\\frac{x^2}{3}-y^2=1$，$O$为坐标原点，$F$为$C$的右焦点，过$F$的直线与$C$的两条渐近线的交点分别为$M$，$N$。若$\\triangle OMN$为直角三角形，则$|MN|=$（    ）",
+                                               "choices":  [
+                                                               "$\\frac{3}{2}$",
+                                                               "$3$",
+                                                               "$2\\sqrt{3}$",
+                                                               "$4$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "求出双曲线的渐近线方程，求出直线方程，求出$M$、$N$的坐标，然后求解$|MN|$。",
+                                               "solution_latex":  "双曲线$C:\\frac{x^2}{3}-y^2=1$的渐近线方程为$y=\\pm\\frac{\\sqrt{3}}{3}x$，其夹角为$60^{\\circ}$。$F(2,0)$，不妨取直线$MN$的方程为$y=-\\frac{\\sqrt{3}}{3}(x-2)$。分别联立渐近线方程解得$M(\\frac{3}{2},\\frac{\\sqrt{3}}{2})$，$N(3,-\\sqrt{3})$，则$|MN|=\\sqrt{(3-\\frac{3}{2})^2+(-\\sqrt{3}-\\frac{\\sqrt{3}}{2})^2}=3$。故选B。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知正方体的棱长为1，每条棱所在直线与平面$\\alpha$所成的角都相等，则$\\alpha$截此正方体所得截面面积的最大值为（    ）",
+                                               "choices":  [
+                                                               "$\\frac{3\\sqrt{3}}{4}$",
+                                                               "$\\frac{2\\sqrt{3}}{3}$",
+                                                               "$\\frac{3\\sqrt{2}}{4}$",
+                                                               "$\\frac{\\sqrt{3}}{2}$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "利用正方体棱的关系，判断平面$\\alpha$所成的角都相等的位置，然后求解$\\alpha$截此正方体所得截面面积的最大值。",
+                                               "solution_latex":  "正方体的所有棱中，实际上是3组平行的棱，每条棱所在直线与平面$\\alpha$所成的角都相等，如图：所示的正六边形平行的平面，并且正六边形时，$\\alpha$截此正方体所得截面面积的最大。此时正六边形的边长为$\\frac{\\sqrt{2}}{2}$，$\\alpha$截此正方体所得截面最大值为$6\\times\\frac{\\sqrt{3}}{4}\\times(\\frac{\\sqrt{2}}{2})^2=\\frac{3\\sqrt{3}}{4}$。故选A。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "本题共4小题，每小题5分，共20分。",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "若$x$，$y$满足约束条件$\\begin{cases} x-2y-2\\leq0 \\\\ x-y+1\\geq0 \\\\ y\\leq0 \\end{cases}$，则$z=3x+2y$的最大值为______。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$6$",
+                                               "analysis_latex":  "作出不等式组对应的平面区域，利用目标函数的几何意义进行求解即可。",
+                                               "solution_latex":  "作出不等式组对应的平面区域（图略），由$z=3x+2y$得$y=-\\frac{3}{2}x+\\frac{z}{2}$，平移直线，当经过点$A(2,0)$时，直线的截距最大，此时$z$最大，最大值为$z=3\\times2=6$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "记$S_n$为数列$\\{a_n\\}$的前$n$项和。若$S_n=2a_n+1$，则$S_6=$______。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$-63$",
+                                               "analysis_latex":  "先根据数列的递推公式可得$\\{a_n\\}$是以$-1$为首项，以$2$为公比的等比数列，再根据求和公式计算即可。",
+                                               "solution_latex":  "$S_n=2a_n+1$，当$n=1$时，$a_1=2a_1+1$，解得$a_1=-1$；当$n\\geq2$时，由$S_n=2a_n+1$，$S_{n-1}=2a_{n-1}+1$，相减得$a_n=2a_n-2a_{n-1}$，$\\therefore a_n=2a_{n-1}$，$\\therefore \\{a_n\\}$是以$-1$为首项，$2$为公比的等比数列，$\\therefore S_6=\\frac{-1\\times(1-2^6)}{1-2}=-63$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "从2位女生，4位男生中选3人参加科技比赛，且至少有1位女生入选，则不同的选法共有______种。（用数字填写答案）",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$16$",
+                                               "analysis_latex":  "方法一：直接法，分类即可求出；方法二：间接法，先求出没有限制的种数，再排除全是男生的种数。",
+                                               "solution_latex":  "方法一（直接法）：1女2男，有$C_2^1C_4^2=12$种；2女1男，有$C_2^2C_4^1=4$种，所以共有$12+4=16$种。\n方法二（间接法）：$C_6^3-C_4^3=20-4=16$种。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知函数$f(x)=2\\sin x+\\sin 2x$，则$f(x)$的最小值是______。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$-\\frac{3\\sqrt{3}}{2}$",
+                                               "analysis_latex":  "由题意可得$T=2\\pi$是$f(x)$的一个周期，问题转化为$f(x)$在$[0,2\\pi)$上的最小值，求导数计算极值和端点值，比较可得。",
+                                               "solution_latex":  "$T=2\\pi$是$f(x)=2\\sin x+\\sin2x$的一个周期，考虑在$[0,2\\pi)$上的最小值。$f\u0027(x)=2\\cos x+2\\cos2x=2(2\\cos x-1)(\\cos x+1)$，令$f\u0027(x)=0$得$\\cos x=\\frac{1}{2}$或$\\cos x=-1$，$\\therefore x=\\frac{\\pi}{3}$，$\\pi$，$\\frac{5\\pi}{3}$。计算$f(\\frac{\\pi}{3})=\\frac{3\\sqrt{3}}{2}$，$f(\\pi)=0$，$f(\\frac{5\\pi}{3})=-\\frac{3\\sqrt{3}}{2}$，$f(0)=0$，$\\therefore$最小值为$-\\frac{3\\sqrt{3}}{2}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "共70分。解答应写出文字说明、证明过程或演算步骤。第17～21题为必考题，每个试题考生都必须作答。第22、23题为选考题，考生根据要求作答。（一）必考题：共60分。",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "在平面四边形$ABCD$中，$\\angle ADC=90^\\circ$，$\\angle A=45^\\circ$，$AB=2$，$BD=5$。\n（1）求$\\cos\\angle ADB$；\n（2）若$DC=2\\sqrt{2}$，求$BC$。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）由正弦定理得$\\frac{AB}{\\sin\\angle ADB}=\\frac{BD}{\\sin\\angle A}$，求出$\\sin\\angle ADB$，由此能求出$\\cos\\angle ADB$；（2）由$\\angle ADC=90^\\circ$，得$\\cos\\angle BDC=\\sin\\angle ADB$，再由余弦定理能求出$BC$。",
+                                               "solution_latex":  "（1）在$\\triangle ABD$中，由正弦定理：$\\frac{AB}{\\sin\\angle ADB}=\\frac{BD}{\\sin\\angle A}$，即$\\frac{2}{\\sin\\angle ADB}=\\frac{5}{\\frac{\\sqrt{2}}{2}}$，解得$\\sin\\angle ADB=\\frac{\\sqrt{2}}{5}$。因为$AB\u003cBD$，所以$\\angle ADB\u003c\\angle A=45^\\circ$，所以$\\cos\\angle ADB=\\sqrt{1-(\\frac{\\sqrt{2}}{5})^2}=\\frac{\\sqrt{23}}{5}$。\n（2）由$\\angle ADC=90^\\circ$，得$\\angle BDC=90^\\circ-\\angle ADB$，所以$\\cos\\angle BDC=\\sin\\angle ADB=\\frac{\\sqrt{2}}{5}$。在$\\triangle BDC$中，由余弦定理：$BC^2=BD^2+DC^2-2\\cdot BD\\cdot DC\\cdot\\cos\\angle BDC=25+8-2\\times5\\times2\\sqrt{2}\\times\\frac{\\sqrt{2}}{5}=25$，所以$BC=5$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图，四边形$ABCD$为正方形，$E$，$F$分别为$AD$，$BC$的中点，以$DF$为折痕把$\\triangle DFC$折起，使点$C$到达点$P$的位置，且$PF\\perp BF$。\n（1）证明：平面$PEF\\perp$平面$ABFD$；\n（2）求$DP$与平面$ABFD$所成角的正弦值。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）利用正方形的性质可得$BF$垂直于面$PEF$，然后利用平面与平面垂直的判断定理证明即可。（2）利用等体积法可求出点$P$到面$ABCD$的距离，进而求出线面角。",
+                                               "solution_latex":  "（1）证明：由题意，$E$、$F$分别是$AD$、$BC$的中点，则$DE=AE$，$BF=CF$。四边形$ABCD$为正方形，$\\therefore EF\\perp BC$。因为$PF\\perp BF$，$EF\\cap PF=F$，所以$BF\\perp$平面$PEF$。又$BF\\subset$平面$ABFD$，所以平面$PEF\\perp$平面$ABFD$。\n（2）设正方形边长为2$m$，则$PD=2m$，$DE=m$。在$\\triangle PDE$中，$PE=\\sqrt{PD^2-DE^2}=\\sqrt{4m^2-m^2}=\\sqrt{3}m$。$S_{\\triangle PDE}=\\frac{1}{2}\\times DE\\times PE=\\frac{1}{2}\\times m\\times\\sqrt{3}m=\\frac{\\sqrt{3}}{2}m^2$。$V_{F-PDE}=\\frac{1}{3}\\times S_{\\triangle PDE}\\times PF$。由等体积法，$V_{F-PDE}=V_{P-DEF}=\\frac{1}{3}\\times S_{\\triangle DEF}\\times h$，其中$h$为点$P$到平面$DEF$的距离，即$P$到平面$ABFD$的距离。$S_{\\triangle DEF}=S_{\\text{正方形ABCD}}-S_{\\triangle AEF}-S_{\\triangle CDF}-S_{\\triangle BCF}=4m^2-\\frac{1}{2}m\\times2m-\\frac{1}{2}\\times2m\\times m-\\frac{1}{2}m\\times2m=4m^2-m^2-m^2-m^2=m^2$。因为$PF\\perp BF$，$BF\\parallel DE$，所以$PF\\perp DE$。又$PF\\perp PD$（由$\\triangle PDF\\cong\\triangle CDF$得$\\angle FPD=\\angle FCD=90^\\circ$），$DE\\cap PD=D$，所以$PF\\perp$平面$PDE$，$\\therefore PF$就是$F$到平面$PDE$的距离，$PF=m$。$V_{F-PDE}=\\frac{1}{3}\\times\\frac{\\sqrt{3}}{2}m^2\\times m=\\frac{\\sqrt{3}}{6}m^3$。由$V_{P-DEF}=\\frac{1}{3}\\times m^2\\times h=\\frac{\\sqrt{3}}{6}m^3$，解得$h=\\frac{\\sqrt{3}}{2}m$。$DP$与平面$ABFD$所成角的正弦值为$\\frac{h}{DP}=\\frac{\\frac{\\sqrt{3}}{2}m}{2m}=\\frac{\\sqrt{3}}{4}$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "正方形ABCD，E、F分别为中点，折起后图形",
+                                                                  "file":  "question-18-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "设椭圆$C:\\frac{x^2}{2}+y^2=1$的右焦点为$F$，过$F$的直线$l$与$C$交于$A$，$B$两点，点$M$的坐标为$(2,0)$。\n（1）当$l$与$x$轴垂直时，求直线$AM$的方程；\n（2）设$O$为坐标原点，证明：$\\angle OMA=\\angle OMB$。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）先得到$F$的坐标，再求出点$A$的坐标，根据两点式可得直线方程；（2）分三种情况讨论，根据直线斜率的问题，以及韦达定理，即可证明。",
+                                               "solution_latex":  "（1）$c=\\sqrt{2-1}=1$，$\\therefore F(1,0)$。当$l$与$x$轴垂直时，$x=1$，代入椭圆得$y=\\pm\\frac{\\sqrt{2}}{2}$，$\\therefore A(1,\\frac{\\sqrt{2}}{2})$或$(1,-\\frac{\\sqrt{2}}{2})$，直线$AM$的方程为$y=-\\frac{\\sqrt{2}}{2}(x-2)$或$y=\\frac{\\sqrt{2}}{2}(x-2)$，即$y=-\\frac{\\sqrt{2}}{2}x+\\sqrt{2}$或$y=\\frac{\\sqrt{2}}{2}x-\\sqrt{2}$。\n（2）证明：①当$l$与$x$轴重合时，$\\angle OMA=\\angle OMB=0^\\circ$；②当$l$与$x$轴垂直时，$OM$为$AB$的垂直平分线，$\\therefore \\angle OMA=\\angle OMB$；③当$l$与$x$轴不重合也不垂直时，设$l:y=k(x-1)$，$k\\neq0$，$A(x_1,y_1)$，$B(x_2,y_2)$。直线$MA$、$MB$的斜率之和$k_{MA}+k_{MB}=\\frac{y_1}{x_1-2}+\\frac{y_2}{x_2-2}=\\frac{k(x_1-1)(x_2-2)+k(x_2-1)(x_1-2)}{(x_1-2)(x_2-2)}=\\frac{2kx_1x_2-3k(x_1+x_2)+4k}{(x_1-2)(x_2-2)}$。联立$\\begin{cases} y=k(x-1) \\\\ \\frac{x^2}{2}+y^2=1 \\end{cases}$得$(2k^2+1)x^2-4k^2x+2k^2-2=0$，$x_1+x_2=\\frac{4k^2}{2k^2+1}$，$x_1x_2=\\frac{2k^2-2}{2k^2+1}$，代入分子得$2k\\cdot\\frac{2k^2-2}{2k^2+1}-3k\\cdot\\frac{4k^2}{2k^2+1}+4k=\\frac{4k^3-4k-12k^3+8k^3+4k}{2k^2+1}=0$，$\\therefore k_{MA}+k_{MB}=0$，故$MA$、$MB$的倾斜角互补，$\\therefore \\angle OMA=\\angle OMB$。综上，$\\angle OMA=\\angle OMB$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "某工厂的某种产品成箱包装，每箱200件，每一箱产品在交付用户之前要对产品作检验，如检验出不合格品，则更换为合格品。检验时，先从这箱产品中任取20件作检验，再根据检验结果决定是否对余下的所有产品作检验。设每件产品为不合格品的概率都为$p(0\u003cp\u003c1)$，且各件产品是否为不合格品相互独立。\n（1）记20件产品中恰有2件不合格品的概率为$f(p)$，求$f(p)$的最大值点$p_0$。\n（2）现对一箱产品检验了20件，结果恰有2件不合格品，以（1）中确定的$p_0$作为$p$的值。已知每件产品的检验费用为2元，若有不合格品进入用户手中，则工厂要对每件不合格品支付25元的赔偿费用。\n（i）若不对该箱余下的产品作检验，这一箱产品的检验费用与赔偿费用的和记为$X$，求$EX$；\n（ii）以检验费用与赔偿费用和的期望值为决策依据，是否该对这箱余下的所有产品作检验？",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）求出$f(p)=C_{20}^2p^2(1-p)^{18}$，利用导数性质能求出$f(p)$的最大值点$p_0=0.1$。（2）（i）由$p=0.1$，令$Y$表示余下的180件产品中不合格品数，$Y\\sim B(180,0.1)$，$X=40+25Y$，能求出$E(X)=490$。（ii）如果对余下产品作检验，检验费为400元，由于$490\u003e400$，所以应该对余下的产品进行检验。",
+                                               "solution_latex":  "（1）$f(p)=C_{20}^2p^2(1-p)^{18}$，$f\u0027(p)=C_{20}^2[2p(1-p)^{18}-18p^2(1-p)^{17}]=C_{20}^2p(1-p)^{17}(2-20p)$。令$f\u0027(p)=0$，得$p=0.1$。当$p\\in(0,0.1)$时，$f\u0027(p)\u003e0$；当$p\\in(0.1,1)$时，$f\u0027(p)\u003c0$，所以$f(p)$的最大值点$p_0=0.1$。\n（2）（i）由（1）知$p=0.1$，令$Y$表示余下的180件产品中不合格品数，则$Y\\sim B(180,0.1)$，$X=20\\times2+25Y=40+25Y$，$E(X)=40+25E(Y)=40+25\\times180\\times0.1=490$（元）。\n（ii）如果对余下的产品作检验，检验费用为$200\\times2=400$元。因为$490\u003e400$，所以应该对余下的产品进行检验。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数$f(x)=\\frac{1}{x}-x+a\\ln x$。\n（1）讨论$f(x)$的单调性；\n（2）若$f(x)$存在两个极值点$x_1$，$x_2$，证明：$\\frac{f(x_1)-f(x_2)}{x_1-x_2}\u003ca-2$。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）求出函数的定义域和导数，利用函数单调性和导数之间的关系进行求解即可。（2）将不等式进行等价转化，构造新函数，研究函数的单调性和最值即可得到结论。",
+                                               "solution_latex":  "（1）定义域为$(0,+\\infty)$，$f\u0027(x)=-\\frac{1}{x^2}-1+\\frac{a}{x}=-\\frac{x^2-ax+1}{x^2}$。设$g(x)=x^2-ax+1$。当$a\\leq0$时，$g(x)\u003e0$恒成立，$f\u0027(x)\u003c0$，$f(x)$在$(0,+\\infty)$上单调递减。当$a\u003e0$时，$\\Delta=a^2-4$。若$0\u003ca\\leq2$，则$\\Delta\\leq0$，$g(x)\\geq0$，$f\u0027(x)\\leq0$，$f(x)$在$(0,+\\infty)$上单调递减。若$a\u003e2$，则$g(x)=0$有两正根$x_1=\\frac{a-\\sqrt{a^2-4}}{2}$，$x_2=\\frac{a+\\sqrt{a^2-4}}{2}$，且$0\u003cx_1\u003cx_2$。当$x\\in(0,x_1)\\cup(x_2,+\\infty)$时，$f\u0027(x)\u003c0$；当$x\\in(x_1,x_2)$时，$f\u0027(x)\u003e0$。所以$f(x)$在$(0,x_1)$和$(x_2,+\\infty)$上单调递减，在$(x_1,x_2)$上单调递增。\n（2）由（1）知$a\u003e2$，且$x_1x_2=1$，$x_1+x_2=a$。$\\frac{f(x_1)-f(x_2)}{x_1-x_2}=-\\frac{1}{x_1x_2}-1+a\\frac{\\ln x_1-\\ln x_2}{x_1-x_2}=-2+a\\frac{\\ln x_1-\\ln x_2}{x_1-x_2}$。要证$\\frac{f(x_1)-f(x_2)}{x_1-x_2}\u003ca-2$，即证$a\\frac{\\ln x_1-\\ln x_2}{x_1-x_2}\u003ca$，即$\\frac{\\ln x_1-\\ln x_2}{x_1-x_2}\u003c1$。不妨设$x_1\u003cx_2$，则$x_1\u003c1\u003cx_2$，只需证$\\ln x_1-\\ln x_2\u003ex_1-x_2$，即$\\ln\\frac{x_1}{x_2}\u003ex_1-x_2$。令$t=\\frac{x_1}{x_2}\\in(0,1)$，则$x_1=tx_2$，由$x_1x_2=1$得$x_2=\\frac{1}{\\sqrt{t}}$，$x_1=\\sqrt{t}$，则不等式化为$\\ln t^2\u003e\\sqrt{t}-\\frac{1}{\\sqrt{t}}$，即$2\\ln t\u003e\\sqrt{t}-\\frac{1}{\\sqrt{t}}$。构造函数$h(t)=2\\ln t-\\sqrt{t}+\\frac{1}{\\sqrt{t}}$，$t\\in(0,1)$，$h\u0027(t)=\\frac{2}{t}-\\frac{1}{2\\sqrt{t}}-\\frac{1}{2t\\sqrt{t}}=\\frac{4\\sqrt{t}-t-1}{2t\\sqrt{t}}=\\frac{-(\\sqrt{t}-1)^2}{2t\\sqrt{t}}\u003c0$，所以$h(t)$在$(0,1)$上单调递减，$h(t)\u003eh(1)=0$，即$2\\ln t-\\sqrt{t}+\\frac{1}{\\sqrt{t}}\u003e0$，故$2\\ln t\u003e\\sqrt{t}-\\frac{1}{\\sqrt{t}}$成立，原不等式得证。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "（二）选考题：共10分。请考生在第22、23题中任选一题作答。如果多做，则按所做的第一题计分。[选修4-4：坐标系与参数方程]",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "在直角坐标系$xOy$中，曲线$C_1$的方程为$y=k|x|+2$。以坐标原点为极点，$x$轴正半轴为极轴建立极坐标系，曲线$C_2$的极坐标方程为$\\rho^2+2\\rho\\cos\\theta-3=0$。\n（1）求$C_2$的直角坐标方程；\n（2）若$C_1$与$C_2$有且仅有三个公共点，求$C_1$的方程。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）直接利用转换关系，把极坐标方程与直角坐标方程进行转化。（2）利用直线在坐标系中的位置，再利用点到直线的距离公式的应用求出结果。",
+                                               "solution_latex":  "（1）由$\\rho^2=x^2+y^2$，$\\rho\\cos\\theta=x$，得$x^2+y^2+2x-3=0$，即$(x+1)^2+y^2=4$。\n（2）曲线$C_1:y=k|x|+2$关于$y$轴对称，恒过定点$(0,2)$。曲线$C_2$是圆心为$(-1,0)$，半径为2的圆。由题意，$C_1$与$C_2$有且仅有三个公共点，则$C_1$的一条射线与圆相切，另一条射线与圆相交。当$x\\geq0$时，$C_1:y=kx+2$，圆心到直线的距离$d=\\frac{|-k+2|}{\\sqrt{k^2+1}}=2$，解得$k=0$或$k=-\\frac{4}{3}$，但$k=0$时与圆只有一个交点（实际$y=2$与圆相交于两点，但$C_1$整体有两条射线，需考虑$x\u003c0$部分），$k=-\\frac{4}{3}$时，直线$y=-\\frac{4}{3}x+2$与圆相切。经检验，$k=0$时，$C_1:y=2$，与圆有2个公共点（$x=0$处也算一个，但实际只有两个交点），不符合条件；$k=-\\frac{4}{3}$时，$x\u003c0$部分为$y=\\frac{4}{3}x+2$，与圆相交，共有三个公共点。所以$C_1$的方程为$y=-\\frac{4}{3}|x|+2$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "[选修4-5：不等式选讲]",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "已知$f(x)=|x+1|-|ax-1|$。\n（1）当$a=1$时，求不等式$f(x)\u003e1$的解集；\n（2）若$x\\in(0,1)$时不等式$f(x)\u003ex$成立，求$a$的取值范围。",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）去绝对值，化为分段函数，即可求出不等式的解集。（2）当$x\\in(0,1)$时不等式$f(x)\u003ex$成立，转化为$|ax-1|\u003c1$，即$0\u003cax\u003c2$，转化为$a\u003c\\frac{2}{x}$，即可求出$a$的范围。",
+                                               "solution_latex":  "（1）当$a=1$时，$f(x)=|x+1|-|x-1|=\\begin{cases} -2, \u0026 x\\leq-1 \\\\ 2x, \u0026 -1\u003cx\u003c1 \\\\ 2, \u0026 x\\geq1 \\end{cases}$。由$f(x)\u003e1$得，当$x\\leq-1$时，$-2\u003e1$不成立；当$-1\u003cx\u003c1$时，$2x\u003e1$，解得$x\u003e\\frac{1}{2}$；当$x\\geq1$时，$2\u003e1$恒成立。综上，解集为$(\\frac{1}{2},+\\infty)$。\n（2）当$x\\in(0,1)$时，$x+1\u003e0$，$ax-1$符号不定。$f(x)\u003ex$即$|x+1|-|ax-1|\u003ex$，$\\because x+1\u003ex$，$\\therefore |ax-1|\u003c1$，即$-1\u003cax-1\u003c1$，$0\u003cax\u003c2$。$\\because x\\in(0,1)$，$\\therefore a\u003e0$，且$a\u003c\\frac{2}{x}$对$x\\in(0,1)$恒成立，$\\because \\frac{2}{x}\u003e2$，$\\therefore a\\leq2$。综上，$a$的取值范围为$(0,2]$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  1,
+                             "issue":  "原卷中z的表达式为\u0027z=   +2i\u0027，根据解析版补充为\u0027z=\\frac{1-i}{1+i}+2i\u0027。"
+                         },
+                         {
+                             "question":  8,
+                             "issue":  "原卷中直线斜率为\u0027斜率为 的直线\u0027，根据解析版补充为\u0027斜率为\\frac{2}{3}\u0027。"
+                         },
+                         {
+                             "question":  9,
+                             "issue":  "原卷中f(x)的表达式不完整，根据解析版补充为分段函数。"
+                         },
+                         {
+                             "question":  11,
+                             "issue":  "原卷中双曲线方程\u0027﹣y2=1\u0027缺失分母，根据解析版补充为\u0027\\frac{x^2}{3}-y^2=1\u0027。"
+                         },
+                         {
+                             "question":  6,
+                             "issue":  "原卷中向量表达式缺失，根据解析版补充为\u0027\\overrightarrow{EB}\u0027。"
+                         },
+                         {
+                             "question":  10,
+                             "issue":  "题图未能自动匹配：原卷第 2 页，希波克拉底几何图形"
+                         }
+                     ]
+}

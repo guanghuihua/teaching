@@ -1,0 +1,458 @@
+﻿{
+    "title":  "2017 年高考数学 全国II卷-理科",
+    "year":  2017,
+    "paper":  "新课标全国II卷",
+    "sections":  [
+                     {
+                         "title":  "一、选择题",
+                         "instructions":  "本题共 12 小题，每小题 5 分，共 60 分。在每小题给出的四个选项中，只有一项是符合题目要求的。",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "$\\frac{3+i}{1+i}=$（   ）",
+                                               "choices":  [
+                                                               "$1+2i$",
+                                                               "$1-2i$",
+                                                               "$2+i$",
+                                                               "$2-i$"
+                                                           ],
+                                               "answer_latex":  "$D$",
+                                               "analysis_latex":  "分子和分母同时乘以分母的共轭复数，再利用虚数单位 $i$ 的幂运算性质，求出结果。",
+                                               "solution_latex":  "$\\frac{3+i}{1+i}=\\frac{(3+i)(1-i)}{(1+i)(1-i)}=\\frac{4-2i}{2}=2-i$，故选：$D$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设集合 $A=\\{1,2,4\\}$，$B=\\{x|x^2-4x+m=0\\}$．若 $A\\cap B=\\{1\\}$，则 $B=$（   ）",
+                                               "choices":  [
+                                                               "$\\{1,-3\\}$",
+                                                               "$\\{1,0\\}$",
+                                                               "$\\{1,3\\}$",
+                                                               "$\\{1,5\\}$"
+                                                           ],
+                                               "answer_latex":  "$C$",
+                                               "analysis_latex":  "由交集的定义可得 $1\\in A$ 且 $1\\in B$，代入二次方程，求得 $m$，再解二次方程可得集合 $B$。",
+                                               "solution_latex":  "集合 $A=\\{1,2,4\\}$，$B=\\{x|x^2-4x+m=0\\}$．若 $A\\cap B=\\{1\\}$，则 $1\\in A$ 且 $1\\in B$，可得 $1-4+m=0$，解得 $m=3$，即有 $B=\\{x|x^2-4x+3=0\\}=\\{1,3\\}$．故选：$C$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "我国古代数学名著《算法统宗》中有如下问题：“远看巍巍塔七层，红光点点倍加增，共灯三百八十一，请问尖头几盏灯？”意思是：一座 $7$ 层塔共挂了 $381$ 盏灯，且相邻两层中的下一层灯数是上一层灯数的 $2$ 倍，则塔的顶层共有灯（   ）",
+                                               "choices":  [
+                                                               "$1$ 盏",
+                                                               "$3$ 盏",
+                                                               "$5$ 盏",
+                                                               "$9$ 盏"
+                                                           ],
+                                               "answer_latex":  "$B$",
+                                               "analysis_latex":  "设塔顶的 $a_1$ 盏灯，由题意 $\\{a_n\\}$ 是公比为 $2$ 的等比数列，利用等比数列前 $n$ 项和公式列出方程，能求出结果。",
+                                               "solution_latex":  "设塔顶的 $a_1$ 盏灯，由题意 $\\{a_n\\}$ 是公比为 $2$ 的等比数列，$\\therefore S_7=\\frac{a_1(1-2^7)}{1-2}=381$，解得 $a_1=3$．故选：$B$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "如图，网格纸上小正方形的边长为 $1$，粗实线画出的是某几何体的三视图，该几何体由一平面将一圆柱截去一部分后所得，则该几何体的体积为（   ）",
+                                               "choices":  [
+                                                               "$90\\pi$",
+                                                               "$63\\pi$",
+                                                               "$42\\pi$",
+                                                               "$36\\pi$"
+                                                           ],
+                                               "answer_latex":  "$B$",
+                                               "analysis_latex":  "由三视图可得，直观图为一个完整的圆柱减去一个高为 $6$ 的圆柱的一半，即可求出几何体的体积。",
+                                               "solution_latex":  "由三视图可得，直观图为一个完整的圆柱减去一个高为 $6$ 的圆柱的一半，$V=\\pi\\cdot3^2\\times10-\\frac{1}{2}\\pi\\cdot3^2\\times6=63\\pi$，故选：$B$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  1,
+                                                                  "description":  "网格纸上的三视图，小正方形边长为1，粗实线画出几何体三视图。",
+                                                                  "file":  "question-4-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $x$，$y$ 满足约束条件 $\\begin{cases}2x+3y-3\\le 0\\\\2x-3y+3\\ge 0\\\\y+3\\ge 0\\end{cases}$，则 $z=2x+y$ 的最小值是（   ）",
+                                               "choices":  [
+                                                               "$-15$",
+                                                               "$-9$",
+                                                               "$1$",
+                                                               "$9$"
+                                                           ],
+                                               "answer_latex":  "$A$",
+                                               "analysis_latex":  "画出约束条件的可行域，利用目标函数的最优解求解目标函数的最小值即可。",
+                                               "solution_latex":  "$x$、$y$ 满足约束条件的可行域如图：$z=2x+y$ 经过可行域的 $A$ 时，目标函数取得最小值，由 $\\begin{cases}2x-3y+3=0\\\\y+3=0\\end{cases}$ 解得 $A(-6,-3)$，则 $z=2x+y$ 的最小值是：$-15$．故选：$A$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  1,
+                                                                  "description":  "线性规划可行域图。",
+                                                                  "file":  "question-5-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "安排 $3$ 名志愿者完成 $4$ 项工作，每人至少完成 $1$ 项，每项工作由 $1$ 人完成，则不同的安排方式共有（   ）",
+                                               "choices":  [
+                                                               "$12$ 种",
+                                                               "$18$ 种",
+                                                               "$24$ 种",
+                                                               "$36$ 种"
+                                                           ],
+                                               "answer_latex":  "$D$",
+                                               "analysis_latex":  "把工作分成 $3$ 组，然后安排工作方式即可。",
+                                               "solution_latex":  "$4$ 项工作分成 $3$ 组，可得：$C_4^2=6$，安排 $3$ 名志愿者完成 $4$ 项工作，每人至少完成 $1$ 项，每项工作由 $1$ 人完成，可得：$6\\times A_3^3=36$ 种．故选：$D$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "甲、乙、丙、丁四位同学一起去问老师询问成语竞赛的成绩．老师说：你们四人中有 $2$ 位优秀，$2$ 位良好，我现在给甲看乙、丙的成绩，给乙看丙的成绩，给丁看甲的成绩．看后甲对大家说：我还是不知道我的成绩．根据以上信息，则（   ）",
+                                               "choices":  [
+                                                               "乙可以知道四人的成绩",
+                                                               "丁可以知道四人的成绩",
+                                                               "乙、丁可以知道对方的成绩",
+                                                               "乙、丁可以知道自己的成绩"
+                                                           ],
+                                               "answer_latex":  "$D$",
+                                               "analysis_latex":  "根据四人所知只有自己看到，老师所说及最后甲说话，继而可以推出正确答案。",
+                                               "solution_latex":  "四人所知只有自己看到，老师所说及最后甲说话，甲不知自己的成绩$\\rightarrow$乙丙必有一优一良，（若为两优，甲会知道自己的成绩；若是两良，甲也会知道自己的成绩）$\\rightarrow$乙看到了丙的成绩，知自己的成绩$\\rightarrow$丁看到甲、丁也为一优一良，丁知自己的成绩，给甲看乙丙成绩，甲不知道自已的成绩，说明乙丙一优一良，假定乙丙都是优，则甲是良，假定乙丙都是良，则甲是优，那么甲就知道自已的成绩了．给乙看丙成绩，乙没有说不知道自已的成绩，假定丙是优，则乙是良，乙就知道自己成绩．给丁看甲成绩，因为甲不知道自己成绩，乙丙是一优一良，则甲丁也是一优一良，丁看到甲成绩，假定甲是优，则丁是良，丁肯定知道自已的成绩了．故选：$D$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "执行如图的程序框图，如果输入的 $a=-1$，则输出的 $S=$（   ）",
+                                               "choices":  [
+                                                               "$2$",
+                                                               "$3$",
+                                                               "$4$",
+                                                               "$5$"
+                                                           ],
+                                               "answer_latex":  "$B$",
+                                               "analysis_latex":  "执行程序框图，依次写出每次循环得到的 $S$，$K$ 值，当 $K=7$ 时，程序终止即可得到结论。",
+                                               "solution_latex":  "执行程序框图，有 $S=0$，$K=1$，$a=-1$，代入循环，第一次满足循环，$S=-1$，$a=1$，$K=2$；满足条件，第二次满足循环，$S=1$，$a=-1$，$K=3$；满足条件，第三次满足循环，$S=-2$，$a=1$，$K=4$；满足条件，第四次满足循环，$S=2$，$a=-1$，$K=5$；满足条件，第五次满足循环，$S=-3$，$a=1$，$K=6$；满足条件，第六次满足循环，$S=3$，$a=-1$，$K=7$；$K\\le 6$ 不成立，退出循环输出 $S$ 的值为 $3$．故选：$B$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  2,
+                                                                  "description":  "程序框图。",
+                                                                  "file":  "question-8-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "若双曲线 $C:\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$（$a\u003e0$，$b\u003e0$）的一条渐近线被圆 $(x-2)^2+y^2=4$ 所截得的弦长为 $2$，则 $C$ 的离心率为（   ）",
+                                               "choices":  [
+                                                               "$2$",
+                                                               "$\\sqrt{3}$",
+                                                               "$\\sqrt{2}$",
+                                                               "$\\frac{2\\sqrt{3}}{3}$"
+                                                           ],
+                                               "answer_latex":  "$A$",
+                                               "analysis_latex":  "通过圆的圆心与双曲线的渐近线的距离，列出关系式，然后求解双曲线的离心率即可。",
+                                               "solution_latex":  "双曲线 $C:\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$（$a\u003e0$，$b\u003e0$）的一条渐近线不妨为：$bx+ay=0$，圆 $(x-2)^2+y^2=4$ 的圆心 $(2,0)$，半径为：$2$，双曲线的一条渐近线被圆所截得的弦长为 $2$，可得圆心到直线的距离为：$d=\\frac{|2b|}{\\sqrt{a^2+b^2}}=\\sqrt{2^2-1^2}=\\sqrt{3}$，解得：$\\frac{4b^2}{a^2+b^2}=3$，可得 $e^2=4$，即 $e=2$．故选：$A$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知直三棱柱 $ABC-A_1B_1C_1$ 中，$\\angle ABC=120^\\circ$，$AB=2$，$BC=CC_1=1$，则异面直线 $AB_1$ 与 $BC_1$ 所成角的余弦值为（   ）",
+                                               "choices":  [
+                                                               "$\\frac{\\sqrt{15}}{5}$",
+                                                               "$\\frac{\\sqrt{10}}{5}$",
+                                                               "$\\frac{\\sqrt{10}}{5}$",
+                                                               "$\\frac{\\sqrt{5}}{5}$"
+                                                           ],
+                                               "answer_latex":  "$C$",
+                                               "analysis_latex":  "【解法一】设 $M$、$N$、$P$ 分别为 $AB$，$BB_1$ 和 $B_1C_1$ 的中点，得出 $AB_1$、$BC_1$ 夹角为 $MN$ 和 $NP$ 夹角或其补角；根据中位线定理，结合余弦定理求出 $AC$、$MQ$，$MP$ 和 $\\angle MNP$ 的余弦值即可．【解法二】通过补形的办法，把原来的直三棱柱变成直四棱柱，解法更简洁。",
+                                               "solution_latex":  "【解法一】如图所示，设 $M$、$N$、$P$ 分别为 $AB$，$BB_1$ 和 $B_1C_1$ 的中点，则 $AB_1$、$BC_1$ 夹角为 $MN$ 和 $NP$ 夹角或其补角（因异面直线所成角为 $(0,\\frac{\\pi}{2}]$），可知 $MN=\\frac{1}{2}AB_1=\\frac{\\sqrt{5}}{2}$，$NP=\\frac{1}{2}BC_1=\\frac{\\sqrt{2}}{2}$；作 $BC$ 中点 $Q$，则 $\\triangle PQM$ 为直角三角形；$\\because PQ=1$，$MQ=\\frac{1}{2}AC$，$\\triangle ABC$ 中，由余弦定理得 $AC^2=AB^2+BC^2-2AB\\cdot BC\\cdot\\cos\\angle ABC=4+1-2\\times2\\times1\\times(-\\frac{1}{2})=7$，$\\therefore AC=\\sqrt{7}$，$\\therefore MQ=\\frac{\\sqrt{7}}{2}$；在 $\\triangle MQP$ 中，$MP=\\sqrt{PQ^2+MQ^2}=\\frac{\\sqrt{11}}{2}$；在 $\\triangle PMN$ 中，由余弦定理得 $\\cos\\angle MNP=\\frac{MN^2+NP^2-PM^2}{2\\cdot MN\\cdot NP}=\\frac{\\frac{5}{4}+\\frac{1}{2}-\\frac{11}{4}}{2\\times\\frac{\\sqrt{5}}{2}\\times\\frac{\\sqrt{2}}{2}}=\\frac{-\\frac{1}{2}}{\\sqrt{10}}=-\\frac{\\sqrt{10}}{10}$；又异面直线所成角的范围是 $(0,\\frac{\\pi}{2}]$，$\\therefore AB_1$ 与 $BC_1$ 所成角的余弦值为 $\\frac{\\sqrt{10}}{5}$．【解法二】如图所示，补成四棱柱 $ABCD-A_1B_1C_1D_1$，求 $\\angle BC_1D$ 即可；$BC_1=\\sqrt{2}$，$BD=\\sqrt{1^2+1^2-2\\times1\\times1\\times\\cos60^\\circ}=1$，$C_1D=\\sqrt{5}$，$\\because BC_1^2+BD^2=C_1D^2$，$\\therefore\\angle DBC_1=90^\\circ$，$\\therefore\\cos\\angle BC_1D=\\frac{BC_1}{C_1D}=\\frac{\\sqrt{2}}{\\sqrt{5}}=\\frac{\\sqrt{10}}{5}$．故选：$C$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  2,
+                                                                  "description":  "直三棱柱及辅助线图。"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "若 $x=-2$ 是函数 $f(x)=(x^2+ax-1)e^{x-1}$ 的极值点，则 $f(x)$ 的极小值为（   ）",
+                                               "choices":  [
+                                                               "$-1$",
+                                                               "$-2e^{-3}$",
+                                                               "$5e^{-3}$",
+                                                               "$1$"
+                                                           ],
+                                               "answer_latex":  "$A$",
+                                               "analysis_latex":  "求出函数的导数，利用极值点，求出 $a$，然后判断函数的单调性，求解函数的极小值即可。",
+                                               "solution_latex":  "函数 $f(x)=(x^2+ax-1)e^{x-1}$，可得 $f\u0027(x)=(2x+a)e^{x-1}+(x^2+ax-1)e^{x-1}$，$x=-2$ 是函数 $f(x)=(x^2+ax-1)e^{x-1}$ 的极值点，可得：$f\u0027(-2)=(-4+a)e^{-3}+(4-2a-1)e^{-3}=0$，即 $-4+a+(3-2a)=0$．解得 $a=-1$．可得 $f\u0027(x)=(2x-1)e^{x-1}+(x^2-x-1)e^{x-1}=(x^2+x-2)e^{x-1}$，函数的极值点为：$x=-2$，$x=1$，当 $x\u003c-2$ 或 $x\u003e1$ 时，$f\u0027(x)\u003e0$ 函数是增函数，$x\\in(-2,1)$ 时，函数是减函数，$x=1$ 时，函数取得极小值：$f(1)=(1^2-1-1)e^{1-1}=-1$．故选：$A$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知 $\\triangle ABC$ 是边长为 $2$ 的等边三角形，$P$ 为平面 $ABC$ 内一点，则 $\\overrightarrow{PA}\\cdot(\\overrightarrow{PB}+\\overrightarrow{PC})$ 的最小值是（   ）",
+                                               "choices":  [
+                                                               "$-2$",
+                                                               "$-\\frac{3}{2}$",
+                                                               "$-\\frac{4}{3}$",
+                                                               "$-1$"
+                                                           ],
+                                               "answer_latex":  "$B$",
+                                               "analysis_latex":  "根据条件建立坐标系，求出点的坐标，利用坐标法结合向量数量积的公式进行计算即可。",
+                                               "solution_latex":  "建立如图所示的坐标系，以 $BC$ 中点为坐标原点，则 $A(0,\\sqrt{3})$，$B(-1,0)$，$C(1,0)$，设 $P(x,y)$，则 $\\overrightarrow{PA}=(-x,\\sqrt{3}-y)$，$\\overrightarrow{PB}=(-1-x,-y)$，$\\overrightarrow{PC}=(1-x,-y)$，则 $\\overrightarrow{PA}\\cdot(\\overrightarrow{PB}+\\overrightarrow{PC})=2x^2-2\\sqrt{3}y+2y^2=2[x^2+(y-\\frac{\\sqrt{3}}{2})^2-\\frac{3}{4}]$，$\\therefore$ 当 $x=0$，$y=\\frac{\\sqrt{3}}{2}$ 时，取得最小值 $2\\times(-\\frac{3}{4})=-\\frac{3}{2}$，故选：$B$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  3,
+                                                                  "description":  "等边三角形ABC及坐标系。"
+                                                              }
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "本题共 4 小题，每小题 5 分，共 20 分。",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "一批产品的二等品率为 $0.02$，从这批产品中每次随机取一件，有放回地抽取 $100$ 次．$X$ 表示抽到的二等品件数，则 $DX=$ \\_\\_\\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$1.96$",
+                                               "analysis_latex":  "判断概率满足的类型，然后求解方差即可。",
+                                               "solution_latex":  "由题意可知，该事件满足独立重复试验，是一个二项分布模型，其中，$p=0.02$，$n=100$，则 $DX=npq=np(1-p)=100\\times0.02\\times0.98=1.96$．故答案为：$1.96$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "函数 $f(x)=\\sin^2x+\\sqrt{3}\\cos x-\\frac{3}{4}$（$x\\in[0,\\frac{\\pi}{2}]$）的最大值是 \\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$1$",
+                                               "analysis_latex":  "同角的三角函数的关系以及二次函数的性质即可求出。",
+                                               "solution_latex":  "$f(x)=\\sin^2x+\\sqrt{3}\\cos x-\\frac{3}{4}=1-\\cos^2x+\\sqrt{3}\\cos x-\\frac{3}{4}$，令 $\\cos x=t$ 且 $t\\in[0,1]$，则 $y=-t^2+\\sqrt{3}t+\\frac{1}{4}=-(t-\\frac{\\sqrt{3}}{2})^2+1$，当 $t=\\frac{\\sqrt{3}}{2}$ 时，$f(t)_{\\max}=1$，即 $f(x)$ 的最大值为 $1$，故答案为：$1$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "等差数列 $\\{a_n\\}$ 的前 $n$ 项和为 $S_n$，$a_3=3$，$S_4=10$，则 $\\sum_{k=1}^{n}\\frac{1}{S_k}=$ \\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{2n}{n+1}$",
+                                               "analysis_latex":  "利用已知条件求出等差数列的前 $n$ 项和，然后化简所求的表达式，求解即可。",
+                                               "solution_latex":  "等差数列 $\\{a_n\\}$ 的前 $n$ 项和为 $S_n$，$a_3=3$，$S_4=10$，$S_4=2(a_2+a_3)=10$，可得 $a_2=2$，数列的首项为 $1$，公差为 $1$，$S_n=\\frac{n(n+1)}{2}$，$\\frac{1}{S_k}=\\frac{2}{k(k+1)}=2(\\frac{1}{k}-\\frac{1}{k+1})$，则 $\\sum_{k=1}^{n}\\frac{1}{S_k}=2[1-\\frac{1}{2}+\\frac{1}{2}-\\frac{1}{3}+\\cdots+\\frac{1}{n}-\\frac{1}{n+1}]=2(1-\\frac{1}{n+1})=\\frac{2n}{n+1}$．故答案为：$\\frac{2n}{n+1}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知 $F$ 是抛物线 $C:y^2=8x$ 的焦点，$M$ 是 $C$ 上一点，$FM$ 的延长线交 $y$ 轴于点 $N$．若 $M$ 为 $FN$ 的中点，则 $|FN|=$ \\_\\_\\_\\_\\_\\_．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$6$",
+                                               "analysis_latex":  "求出抛物线的焦点坐标，推出 $M$ 坐标，然后求解即可。",
+                                               "solution_latex":  "抛物线 $C:y^2=8x$ 的焦点 $F(2,0)$，$M$ 是 $C$ 上一点，$FM$ 的延长线交 $y$ 轴于点 $N$．若 $M$ 为 $FN$ 的中点，可知 $M$ 的横坐标为：$1$，则 $M$ 的纵坐标为：$\\pm2\\sqrt{2}$，$|FN|=2|FM|=2\\sqrt{(1-2)^2+(\\pm2\\sqrt{2})^2}=6$．故答案为：$6$。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "解答应写出文字说明、证明过程或演算步骤。第17～21题为必考题，每个试题考生都必须作答。第22、23题为选考题，考生根据要求作答。",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "$\\triangle ABC$ 的内角 $A$，$B$，$C$ 的对边分别为 $a$，$b$，$c$，已知 $\\sin(A+C)=8\\sin^2\\frac{B}{2}$．\n（1）求 $\\cos B$；\n（2）若 $a+c=6$，$\\triangle ABC$ 的面积为 $2$，求 $b$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$\\cos B=\\frac{15}{17}$；（2）$b=2$",
+                                               "analysis_latex":  "（1）利用三角形的内角和定理可知 $A+C=\\pi-B$，再利用诱导公式化简 $\\sin(A+C)$，利用降幂公式化简 $8\\sin^2\\frac{B}{2}$，结合 $\\sin^2B+\\cos^2B=1$，求出 $\\cos B$，（2）由（1）可知 $\\sin B=\\frac{8}{17}$，利用勾面积公式求出 $ac$，再利用余弦定理即可求出 $b$。",
+                                               "solution_latex":  "（1）$\\sin(A+C)=8\\sin^2\\frac{B}{2}$，$\\therefore\\sin B=4(1-\\cos B)$，$\\because\\sin^2B+\\cos^2B=1$，$\\therefore16(1-\\cos B)^2+\\cos^2B=1$，$\\therefore16(1-\\cos B)^2+\\cos^2B-1=0$，$\\therefore16(\\cos B-1)^2+(\\cos B-1)(\\cos B+1)=0$，$\\therefore(17\\cos B-15)(\\cos B-1)=0$，$\\therefore\\cos B=\\frac{15}{17}$；\n（2）由（1）可知 $\\sin B=\\frac{8}{17}$，$\\because S_{\\triangle ABC}=\\frac{1}{2}ac\\cdot\\sin B=2$，$\\therefore ac=\\frac{17}{2}$，$\\therefore b^2=a^2+c^2-2ac\\cos B=a^2+c^2-2\\times\\frac{17}{2}\\times\\frac{15}{17}=a^2+c^2-15=(a+c)^2-2ac-15=36-17-15=4$，$\\therefore b=2$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "海水养殖场进行某水产品的新、旧网箱养殖方法的产量对比，收获时各随机抽取了 $100$ 个网箱，测量各箱水产品的产量（单位：kg），其频率分布直方图如图：\n（1）设两种养殖方法的箱产量相互独立，记 $A$ 表示事件“旧养殖法的箱产量低于 $50$kg，新养殖法的箱产量不低于 $50$kg”，估计 $A$ 的概率；\n（2）填写下面列联表，并根据列联表判断是否有 $99\\%$ 的把握认为箱产量与养殖方法有关：\n\\begin{array}{c|cc} \u0026 \\text{箱产量}\u003c50\\text{kg} \u0026 \\text{箱产量}\\ge50\\text{kg} \\\\ \\hline \\text{旧养殖法} \u0026 \u0026 \\\\ \\text{新养殖法} \u0026 \u0026 \\end{array}\n（3）根据箱产量的频率分布直方图，求新养殖法箱产量的中位数的估计值（精确到 $0.01$）．\n附：$P(K^2\\ge k)$ 的临界值表：$k_{0.050}=3.841$，$k_{0.010}=6.635$，$k_{0.001}=10.828$，$K^2=\\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$0.4092$；（2）有 $99\\%$ 的把握认为箱产量与养殖方法有关；（3）$52.35$kg",
+                                               "analysis_latex":  "（1）由题意可知：$P(A)=P(BC)=P(B)P(C)$，分布求得发生的频率，即可求得其概率；（2）完成 $2\\times2$ 列联表：求得观测值，与参考值比较，即可求得有 $99\\%$ 的把握认为箱产量与养殖方法有关：（3）根据频率分布直方图即可求得其中位数。",
+                                               "solution_latex":  "（1）记 $B$ 表示事件“旧养殖法的箱产量低于 $50$kg”，$C$ 表示事件“新养殖法的箱产量不低于 $50$kg”，由 $P(A)=P(BC)=P(B)P(C)$，则旧养殖法的箱产量低于 $50$kg：$(0.012+0.014+0.024+0.034+0.040)\\times5=0.62$，故 $P(B)$ 的估计值 $0.62$，新养殖法的箱产量不低于 $50$kg：$(0.068+0.046+0.010+0.008)\\times5=0.66$，故 $P(C)$ 的估计值为 $0.66$，则事件 $A$ 的概率估计值为 $P(A)=P(B)P(C)=0.62\\times0.66=0.4092$；\n（2）$2\\times2$ 列联表：\n\\begin{array}{c|cc|c} \u0026 \\text{箱产量}\u003c50\\text{kg} \u0026 \\text{箱产量}\\ge50\\text{kg} \u0026 \\text{总计} \\\\ \\hline \\text{旧养殖法} \u0026 62 \u0026 38 \u0026 100 \\\\ \\text{新养殖法} \u0026 34 \u0026 66 \u0026 100 \\\\ \\hline \\text{总计} \u0026 96 \u0026 104 \u0026 200 \\end{array}\n则 $K^2=\\frac{200\\times(62\\times66-38\\times34)^2}{100\\times100\\times96\\times104}\\approx15.705$，由 $15.705\u003e6.635$，$\\therefore$ 有 $99\\%$ 的把握认为箱产量与养殖方法有关；\n（3）由新养殖法的箱产量频率分布直方图中，箱产量低于 $50$kg 的直方图的面积：$(0.004+0.020+0.044)\\times5=0.34$，箱产量低于 $55$kg 的直方图面积为：$(0.004+0.020+0.044+0.068)\\times5=0.68\u003e0.5$，故新养殖法产量的中位数的估计值为：$50+\\frac{0.5-0.34}{0.068}\\approx52.35$（kg），新养殖法箱产量的中位数的估计值 $52.35$（kg）。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "旧养殖法和新养殖法的频率分布直方图。",
+                                                                  "file":  "question-18-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图，四棱锥 $P-ABCD$ 中，侧面 $PAD$ 为等边三角形且垂直于底面 $ABCD$，$AB=BC=\\frac{1}{2}AD$，$\\angle BAD=\\angle ABC=90^\\circ$，$E$ 是 $PD$ 的中点．\n（1）证明：直线 $CE\\parallel$ 平面 $PAB$；\n（2）点 $M$ 在棱 $PC$ 上，且直线 $BM$ 与底面 $ABCD$ 所成角为 $45^\\circ$，求二面角 $M-AB-D$ 的余弦值．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）略；（2）$\\frac{\\sqrt{10}}{5}$",
+                                               "analysis_latex":  "（1）取 $PA$ 的中点 $F$，连接 $EF$，$BF$，通过证明 $CE\\parallel BF$，利用直线与平面平行的判定定理证明即可．（2）利用已知条件转化求解 $M$ 到底面的距离，作出二面角的平面角，然后求解二面角 $M-AB-D$ 的余弦值即可。",
+                                               "solution_latex":  "（1）证明：取 $PA$ 的中点 $F$，连接 $EF$，$BF$，因为 $E$ 是 $PD$ 的中点，所以 $EF\\parallel\\frac{1}{2}AD$，$AB=BC=\\frac{1}{2}AD$，$\\angle BAD=\\angle ABC=90^\\circ$，$\\therefore BC\\parallel\\frac{1}{2}AD$，$\\therefore BCEF$ 是平行四边形，可得 $CE\\parallel BF$，$BF\\subset$ 平面 $PAB$，$CE\\not\\subset$ 平面 $PAB$，$\\therefore$ 直线 $CE\\parallel$ 平面 $PAB$；\n（2）解：四棱锥 $P-ABCD$ 中，侧面 $PAD$ 为等边三角形且垂直于底面 $ABCD$，$AB=BC=\\frac{1}{2}AD$，$\\angle BAD=\\angle ABC=90^\\circ$，$E$ 是 $PD$ 的中点．取 $AD$ 的中点 $O$，$M$ 在底面 $ABCD$ 上的射影 $N$ 在 $OC$ 上，设 $AD=2$，则 $AB=BC=1$，$OP=\\sqrt{3}$，$\\therefore\\angle PCO=60^\\circ$，直线 $BM$ 与底面 $ABCD$ 所成角为 $45^\\circ$，可得：$BN=MN$，$CN=\\frac{\\sqrt{3}}{3}MN$，$BC=1$，可得：$1+\\frac{1}{3}BN^2=BN^2$，$BN=\\frac{\\sqrt{6}}{2}$，$MN=\\frac{\\sqrt{6}}{2}$，作 $NQ\\perp AB$ 于 $Q$，连接 $MQ$，$AB\\perp MN$，所以 $\\angle MQN$ 就是二面角 $M-AB-D$ 的平面角，$MQ=\\sqrt{MN^2+NQ^2}=\\sqrt{(\\frac{\\sqrt{6}}{2})^2+(\\frac{1}{2})^2}=\\frac{\\sqrt{7}}{2}$，二面角 $M-AB-D$ 的余弦值为：$\\frac{NQ}{MQ}=\\frac{\\frac{1}{2}}{\\frac{\\sqrt{7}}{2}}=\\frac{\\sqrt{7}}{7}$。",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  5,
+                                                                  "description":  "四棱锥P-ABCD的立体图。",
+                                                                  "file":  "question-19-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "设 $O$ 为坐标原点，动点 $M$ 在椭圆 $C:\\frac{x^2}{2}+y^2=1$ 上，过 $M$ 作 $x$ 轴的垂线，垂足为 $N$，点 $P$ 满足 $\\overrightarrow{NP}=\\sqrt{2}\\overrightarrow{NM}$．\n（1）求点 $P$ 的轨迹方程；\n（2）设点 $Q$ 在直线 $x=-3$ 上，且 $\\overrightarrow{OP}\\cdot\\overrightarrow{PQ}=1$．证明：过点 $P$ 且垂直于 $OQ$ 的直线 $l$ 过 $C$ 的左焦点 $F$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$x^2+y^2=2$；（2）略",
+                                               "analysis_latex":  "（1）设 $M(x_0,y_0)$，由题意可得 $N(x_0,0)$，设 $P(x,y)$，运用向量的坐标运算，结合 $M$ 满足椭圆方程，化简整理可得 $P$ 的轨迹方程；（2）设 $Q(-3,m)$，$P(\\sqrt{2}\\cos\\alpha,\\sin\\alpha)$，$0\\le\\alpha\u003c2\\pi$，运用向量的数量积的坐标表示，可得 $m$，即有 $Q$ 的坐标，求得椭圆的左焦点坐标，求得 $OQ$，$PF$ 的斜率，由两直线垂直的条件：向量数量积为 $0$，即可得证。",
+                                               "solution_latex":  "（1）设 $M(x_0,y_0)$，由题意可得 $N(x_0,0)$，设 $P(x,y)$，由点 $P$ 满足 $\\overrightarrow{NP}=\\sqrt{2}\\overrightarrow{NM}$．可得 $(x-x_0,y)=\\sqrt{2}(0,y_0)$，可得 $x-x_0=0$，$y=\\sqrt{2}y_0$，即有 $x_0=x$，$y_0=\\frac{y}{\\sqrt{2}}$，代入椭圆方程 $\\frac{x^2}{2}+y^2=1$，可得 $\\frac{x^2}{2}+\\frac{y^2}{2}=1$，即有点 $P$ 的轨迹方程为圆 $x^2+y^2=2$；\n（2）证明：设 $Q(-3,m)$，$P(\\sqrt{2}\\cos\\alpha,\\sin\\alpha)$（$0\\le\\alpha\u003c2\\pi$），$\\overrightarrow{OP}\\cdot\\overrightarrow{PQ}=1$，可得 $(\\sqrt{2}\\cos\\alpha,\\sin\\alpha)\\cdot(-3-\\sqrt{2}\\cos\\alpha,m-\\sin\\alpha)=1$，即为 $-3\\sqrt{2}\\cos\\alpha-2\\cos^2\\alpha+\\sqrt{2}m\\sin\\alpha-2\\sin^2\\alpha=1$，当 $\\alpha=0$ 时，上式不成立，则 $0\u003c\\alpha\u003c2\\pi$，解得 $m=\\frac{3(1+\\sqrt{2}\\cos\\alpha)}{\\sqrt{2}\\sin\\alpha}$，即有 $Q(-3,\\frac{3(1+\\sqrt{2}\\cos\\alpha)}{\\sqrt{2}\\sin\\alpha})$，椭圆 $\\frac{x^2}{2}+y^2=1$ 的左焦点 $F(-1,0)$，由 $\\overrightarrow{PF}\\cdot\\overrightarrow{OQ}=(-1-\\sqrt{2}\\cos\\alpha,-\\sin\\alpha)\\cdot(-3,\\frac{3(1+\\sqrt{2}\\cos\\alpha)}{\\sqrt{2}\\sin\\alpha})=3+3\\sqrt{2}\\cos\\alpha-3(1+\\sqrt{2}\\cos\\alpha)=0$．可得过点 $P$ 且垂直于 $OQ$ 的直线 $l$ 过 $C$ 的左焦点 $F$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数 $f(x)=ax^2-ax-x\\ln x$，且 $f(x)\\ge0$．\n（1）求 $a$；\n（2）证明：$f(x)$ 存在唯一的极大值点 $x_0$，且 $e^{-2}\u003cf(x_0)\u003c2^{-2}$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$a=1$；（2）略",
+                                               "analysis_latex":  "（1）通过分析可知 $f(x)\\ge0$ 等价于 $h(x)=ax-a-\\ln x\\ge0$，进而利用 $h\u0027(x)=a-\\frac{1}{x}$ 可得 $h(x)_{\\min}=h(\\frac{1}{a})$，从而可得结论；（2）通过（1）可知 $f(x)=x^2-x-x\\ln x$，记 $t(x)=f\u0027(x)=2x-2-\\ln x$，解不等式可知 $t(x)_{\\min}=t(\\frac{1}{2})=\\ln2-1\u003c0$，从而可知 $f\u0027(x)=0$ 存在两根 $x_0$，$x_2$，利用 $f(x)$ 必存在唯一极大值点 $x_0$ 及 $x_0\u003c\\frac{1}{2}$ 可知 $f(x_0)\u003c\\frac{1}{4}$，另一方面可知 $f(x_0)\u003ef(\\frac{1}{e})=\\frac{1}{e^2}$。",
+                                               "solution_latex":  "（1）解：因为 $f(x)=ax^2-ax-x\\ln x=x(ax-a-\\ln x)$（$x\u003e0$），则 $f(x)\\ge0$ 等价于 $h(x)=ax-a-\\ln x\\ge0$，求导可知 $h\u0027(x)=a-\\frac{1}{x}$．则当 $a\\le0$ 时 $h\u0027(x)\u003c0$，即 $y=h(x)$ 在 $(0,+\\infty)$ 上单调递减，所以当 $x_0\u003e1$ 时，$h(x_0)\u003ch(1)=0$，矛盾，故 $a\u003e0$．因为当 $0\u003cx\u003c\\frac{1}{a}$ 时 $h\u0027(x)\u003c0$、当 $x\u003e\\frac{1}{a}$ 时 $h\u0027(x)\u003e0$，所以 $h(x)_{\\min}=h(\\frac{1}{a})$，又因为 $h(1)=a-a-\\ln1=0$，所以 $\\frac{1}{a}=1$，解得 $a=1$；\n（2）证明：由（1）可知 $f(x)=x^2-x-x\\ln x$，$f\u0027(x)=2x-2-\\ln x$，令 $f\u0027(x)=0$，可得 $2x-2-\\ln x=0$，记 $t(x)=2x-2-\\ln x$，则 $t\u0027(x)=2-\\frac{1}{x}$，令 $t\u0027(x)=0$，解得：$x=\\frac{1}{2}$，所以 $t(x)$ 在区间 $(0,\\frac{1}{2})$ 上单调递减，在 $(\\frac{1}{2},+\\infty)$ 上单调递增，所以 $t(x)_{\\min}=t(\\frac{1}{2})=\\ln2-1\u003c0$，从而 $t(x)=0$ 有解，即 $f\u0027(x)=0$ 存在两根 $x_0$，$x_2$，且不妨设 $f\u0027(x)$ 在 $(0,x_0)$ 上为正、在 $(x_0,x_2)$ 上为负、在 $(x_2,+\\infty)$ 上为正，所以 $f(x)$ 必存在唯一极大值点 $x_0$，且 $2x_0-2-\\ln x_0=0$，所以 $f(x_0)=x_0^2-x_0-x_0\\ln x_0=x_0^2-x_0+2x_0-2x_0^2=x_0-x_0^2$，由 $x_0\u003c\\frac{1}{2}$ 可知 $f(x_0)\u003c(x_0-x_0^2)_{\\max}=-\\frac{1}{4}+\\frac{1}{2}=\\frac{1}{4}$；由 $f\u0027(\\frac{1}{e})\u003c0$ 可知 $x_0\u003c\\frac{1}{e}\u003c\\frac{1}{2}$，所以 $f(x)$ 在 $(0,x_0)$ 上单调递增，在 $(x_0,\\frac{1}{e})$ 上单调递减，所以 $f(x_0)\u003ef(\\frac{1}{e})=\\frac{1}{e^2}$；综上所述，$f(x)$ 存在唯一的极大值点 $x_0$，且 $e^{-2}\u003cf(x_0)\u003c2^{-2}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4-4：坐标系与参数方程]\n在直角坐标系 $xOy$ 中，以坐标原点为极点，$x$ 轴的正半轴为极轴建立极坐标系，曲线 $C_1$ 的极坐标方程为 $\\rho\\cos\\theta=4$．\n（1）$M$ 为曲线 $C_1$ 上的动点，点 $P$ 在线段 $OM$ 上，且满足 $|OM|\\cdot|OP|=16$，求点 $P$ 的轨迹 $C_2$ 的直角坐标方程；\n（2）设点 $A$ 的极坐标为 $(2,\\frac{\\pi}{3})$，点 $B$ 在曲线 $C_2$ 上，求 $\\triangle OAB$ 面积的最大值．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "（1）$(x-2)^2+y^2=4$（$x\\neq0$）；（2）$2+\\sqrt{3}$",
+                                               "analysis_latex":  "（1）设 $P(x,y)$，利用相似得出 $M$ 点坐标，根据 $|OM|\\cdot|OP|=16$ 列方程化简即可；（2）求出曲线 $C_2$ 的圆心和半径，得出 $B$ 到 $OA$ 的最大距离，即可得出最大面积。",
+                                               "solution_latex":  "（1）曲线 $C_1$ 的直角坐标方程为：$x=4$，设 $P(x,y)$，$M(4,y_0)$，则 $\\frac{y}{y_0}=\\frac{x}{4}$，$\\therefore y_0=\\frac{4y}{x}$，$\\because|OM||OP|=16$，$\\therefore\\sqrt{16+y_0^2}\\cdot\\sqrt{x^2+y^2}=16$，即 $(x^2+y^2)(1+\\frac{16y^2}{x^2})=16$，$\\therefore x^4+2x^2y^2+y^4=16x^2$，即 $(x^2+y^2)^2=16x^2$，两边开方得：$x^2+y^2=4x$，整理得：$(x-2)^2+y^2=4$（$x\\neq0$），$\\therefore$ 点 $P$ 的轨迹 $C_2$ 的直角坐标方程：$(x-2)^2+y^2=4$（$x\\neq0$）；\n（2）点 $A$ 的直角坐标为 $A(1,\\sqrt{3})$，显然点 $A$ 在曲线 $C_2$ 上，$|OA|=2$，$\\therefore$ 曲线 $C_2$ 的圆心 $(2,0)$ 到弦 $OA$ 的距离 $d=\\sqrt{2^2-(\\frac{2}{2})^2}=\\sqrt{3}$，$\\therefore\\triangle AOB$ 的最大面积 $S=\\frac{1}{2}|OA|\\cdot(2+\\sqrt{3})=2+\\sqrt{3}$。",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4-5：不等式选讲]\n已知 $a\u003e0$，$b\u003e0$，$a^3+b^3=2$．证明：\n（1）$(a+b)(a^5+b^5)\\ge4$；\n（2）$a+b\\le2$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "略",
+                                               "analysis_latex":  "（1）由柯西不等式即可证明，（2）由 $a^3+b^3=2$ 转化为 $\\frac{(a+b)^3-2}{3(a+b)}=ab$，再由均值不等式可得：$\\frac{(a+b)^3-2}{3(a+b)}=ab\\le(\\frac{a+b}{2})^2$，即可得到 $\\frac{1}{4}(a+b)^3\\le2$，问题得以证明。",
+                                               "solution_latex":  "（1）由柯西不等式得：$(a+b)(a^5+b^5)\\ge(\\sqrt{a\\cdot a^5}+\\sqrt{b\\cdot b^5})^2=(a^3+b^3)^2\\ge4$，当且仅当 $\\frac{a}{a^5}=\\frac{b}{b^5}$，即 $a=b=1$ 时取等号；\n（2）$\\because a^3+b^3=2$，$\\therefore(a+b)(a^2-ab+b^2)=2$，$\\therefore(a+b)[(a+b)^2-3ab]=2$，$\\therefore(a+b)^3-3ab(a+b)=2$，$\\therefore\\frac{(a+b)^3-2}{3(a+b)}=ab$，由均值不等式可得：$\\frac{(a+b)^3-2}{3(a+b)}=ab\\le(\\frac{a+b}{2})^2$，$\\therefore(a+b)^3-2\\le\\frac{3}{4}(a+b)^3$，$\\therefore\\frac{1}{4}(a+b)^3\\le2$，$\\therefore a+b\\le2$，当且仅当 $a=b=1$ 时等号成立。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  10,
+                             "issue":  "题图未能自动匹配：原卷第 2 页，直三棱柱及辅助线图。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "题图未能自动匹配：原卷第 3 页，等边三角形ABC及坐标系。"
+                         },
+                         {
+                             "question":  10,
+                             "issue":  "题图未能自动匹配：原卷第 2 页，直三棱柱及辅助线图。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "题图未能自动匹配：原卷第 3 页，等边三角形ABC及坐标系。"
+                         },
+                         {
+                             "question":  10,
+                             "issue":  "题图未能自动匹配：原卷第 2 页，直三棱柱及辅助线图。"
+                         },
+                         {
+                             "question":  12,
+                             "issue":  "题图未能自动匹配：原卷第 3 页，等边三角形ABC及坐标系。"
+                         }
+                     ]
+}

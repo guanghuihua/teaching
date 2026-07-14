@@ -1,0 +1,418 @@
+﻿{
+    "title":  "2022 年高考数学 全国乙卷-文科",
+    "year":  2022,
+    "paper":  "新课标全国I卷",
+    "sections":  [
+                     {
+                         "title":  "一、选择题",
+                         "instructions":  "本题共12小题，每小题5分，共60分.在每小题给出的四个选项中，只有一项是符合题目要求的.",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "集合 $M = \\{2, 4, 6, 8, 10\\}$, $N = \\{ x \\mid -1 \u003c x \u003c 6 \\}$, 则 $M \\cap N =$",
+                                               "choices":  [
+                                                               "$\\{2, 4\\}$",
+                                                               "$\\{2, 4, 6\\}$",
+                                                               "$\\{2, 4, 6, 8\\}$",
+                                                               "$\\{2, 4, 6, 8, 10\\}$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "根据集合的交集运算即可解出.",
+                                               "solution_latex":  "因为 $M = \\{2, 4, 6, 8, 10\\}$, $N = \\{ x \\mid -1 \u003c x \u003c 6 \\}$, 所以 $M \\cap N = \\{2, 4\\}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $(1+2i)a + b = 2i$, 其中 $a, b$ 为实数，则",
+                                               "choices":  [
+                                                               "$a=1, b=-1$",
+                                                               "$a=1, b=1$",
+                                                               "$a=-1, b=1$",
+                                                               "$a=-1, b=-1$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "根据复数代数形式的运算法则以及复数相等的概念即可解出.",
+                                               "solution_latex":  "因为 $a,b\\in\\mathbb{R}$, $(a+b)+2ai = 2i$, 所以 $a+b=0, 2a=2$, 解得 $a=1, b=-1$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知向量 $\\vec{a}=(2,1)$, $\\vec{b}=(-2,4)$, 则 $|\\vec{a} - \\vec{b}| =$",
+                                               "choices":  [
+                                                               "2",
+                                                               "3",
+                                                               "4",
+                                                               "5"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "先求得 $\\vec{a} - \\vec{b}$, 然后求得 $|\\vec{a} - \\vec{b}|$.",
+                                               "solution_latex":  "因为 $\\vec{a} - \\vec{b} = (2,1) - (-2,4) = (4,-3)$, 所以 $|\\vec{a} - \\vec{b}| = \\sqrt{4^2 + (-3)^2} = 5$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "分别统计了甲、乙两位同学16周的各周课外体育运动时长（单位：h），得如下茎叶图：\n\n则下列结论中错误的是",
+                                               "choices":  [
+                                                               "甲同学周课外体育运动时长的样本中位数为7.4",
+                                                               "乙同学周课外体育运动时长的样本平均数大于8",
+                                                               "甲同学周课外体育运动时长大于8的概率的估计值大于0.4",
+                                                               "乙同学周课外体育运动时长大于8的概率的估计值大于0.6"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "结合茎叶图、中位数、平均数、古典概型等知识确定正确答案.",
+                                               "solution_latex":  "对于A，甲同学样本中位数为 $\\frac{7.3+7.5}{2}=7.4$, 正确. 对于B，乙同学平均数为 $8.50625\u003e8$, 正确. 对于C，甲同学时长大于8的概率估计值为 $\\frac{6}{16}=0.375\u003c0.4$, 错误. 对于D，乙同学时长大于8的概率估计值为 $\\frac{13}{16}=0.8125\u003e0.6$, 正确.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "若 $x, y$ 满足约束条件 $\\begin{cases} x+y \\ge 2 \\\\ x+2y \\le 4 \\\\ y \\ge 0 \\end{cases}$, 则 $z = 2x - y$ 的最大值是",
+                                               "choices":  [
+                                                               "$-2$",
+                                                               "4",
+                                                               "8",
+                                                               "12"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "作出可行域，数形结合即可得解.",
+                                               "solution_latex":  "由题意作出可行域，如图阴影部分所示. 转化目标函数 $z=2x-y$ 为 $y=2x-z$, 上下平移直线，当直线过点 $(4,0)$ 时，截距最小，$z$ 最大，所以 $z_{\\max}=2\\times4-0=8$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $F$ 为抛物线 $C: y^2=4x$ 的焦点，点 $A$ 在 $C$ 上，点 $B(3,0)$, 若 $|AF| = |BF|$, 则 $|AB| =$",
+                                               "choices":  [
+                                                               "2",
+                                                               "$2\\sqrt{2}$",
+                                                               "3",
+                                                               "$3\\sqrt{2}$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "根据抛物线上的点到焦点和准线的距离相等，从而求得点 $A$ 的横坐标，进而求得点 $A$ 坐标，即可得到答案.",
+                                               "solution_latex":  "由题意得 $F(1,0)$, 则 $|AF|=|BF|=2$, 即点 $A$ 到准线 $x=-1$ 的距离为2，所以点 $A$ 的横坐标为 $-1+2=1$, 不妨设 $A$ 在 $x$ 轴上方，代入得 $A(1,2)$, 所以 $|AB|=\\sqrt{(3-1)^2+(0-2)^2}=2\\sqrt{2}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "执行下边的程序框图，输出的 $n =$",
+                                               "choices":  [
+                                                               "3",
+                                                               "4",
+                                                               "5",
+                                                               "6"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "根据框图循环计算即可.",
+                                               "solution_latex":  "执行第一次循环：$b=1+2=3$, $a=3-1=2$, $n=2$, $\\left|\\frac{b^2}{a^2}-2\\right|=\\left|\\frac{9}{4}-2\\right|=\\frac{1}{4}\u003e0.01$; 第二次：$b=3+4=7$, $a=7-2=5$, $n=3$, $\\left|\\frac{49}{25}-2\\right|=\\frac{1}{25}\u003e0.01$; 第三次：$b=7+10=17$, $a=17-5=12$, $n=4$, $\\left|\\frac{289}{144}-2\\right|=\\frac{1}{144}\u003c0.01$, 输出 $n=4$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "如图是下列四个函数中的某个函数在区间 $[-3,3]$ 的大致图像，则该函数是",
+                                               "choices":  [
+                                                               "$y=\\frac{-x^3+3x}{x^2+1}$",
+                                                               "$y=\\frac{x^3-x}{x^2+1}$",
+                                                               "$y=\\frac{2x\\cos x}{x^2+1}$",
+                                                               "$y=\\frac{2\\sin x}{x^2+1}$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "由函数图像的特征结合函数的性质逐项排除即可得解.",
+                                               "solution_latex":  "设 $f(x)=\\frac{x^3-x}{x^2+1}$, 则 $f(1)=0$, 排除B. 设 $h(x)=\\frac{2x\\cos x}{x^2+1}$, 当 $x\\in(0,\\frac{\\pi}{2})$ 时 $0\u003c\\cos x\u003c1$, 则 $h(x)\u003c\\frac{2x}{x^2+1}\\le 1$, 排除C. 设 $g(x)=\\frac{2\\sin x}{x^2+1}$, 则 $g(3)=\\frac{2\\sin3}{10}\u003e0$, 排除D. 故选A.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在正方体 $ABCD-A_1B_1C_1D_1$ 中，$E,F$ 分别为 $AB, BC$ 的中点，则",
+                                               "choices":  [
+                                                               "平面 $B_1EF \\perp$ 平面 $BDD_1$",
+                                                               "平面 $B_1EF \\perp$ 平面 $A_1BD$",
+                                                               "平面 $B_1EF \\parallel$ 平面 $A_1AC$",
+                                                               "平面 $B_1EF \\parallel$ 平面 $A_1C_1D$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "证明 $EF \\perp$ 平面 $BDD_1$, 即可判断A；如图建系，分别求出法向量判断BCD.",
+                                               "solution_latex":  "在正方体中，$EF \\parallel AC$, $AC \\perp BD$, 且 $DD_1 \\perp$ 底面 $ABCD$, 所以 $EF \\perp BD$, $EF \\perp DD_1$, 故 $EF \\perp$ 平面 $BDD_1$, 又 $EF \\subset$ 平面 $B_1EF$, 所以平面 $B_1EF \\perp$ 平面 $BDD_1$, A正确. 建系可验证其余错误.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知等比数列 $\\{a_n\\}$ 的前3项和为168，$a_2 - a_5 = 42$, 则 $a_6 =$",
+                                               "choices":  [
+                                                               "14",
+                                                               "12",
+                                                               "6",
+                                                               "3"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "设等比数列的公比为 $q$, 由题意求出首项与公比，再根据通项公式即可得解.",
+                                               "solution_latex":  "设公比为 $q$, 由 $a_2-a_5=42$ 得 $q\\neq1$. 则 $\\begin{cases} \\frac{a_1(1-q^3)}{1-q}=168 \\\\ a_1q - a_1q^4 = 42 \\end{cases}$, 解得 $a_1=96, q=\\frac12$, 所以 $a_6 = a_1q^5 = 3$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "函数 $f(x) = \\cos x + (x+1)\\sin x + 1$ 在区间 $[0, 2\\pi]$ 的最小值、最大值分别为",
+                                               "choices":  [
+                                                               "$-\\frac{\\pi}{2}, \\frac{\\pi}{2}$",
+                                                               "$-\\frac{3\\pi}{2}, \\frac{\\pi}{2}$",
+                                                               "$-\\frac{\\pi}{2}, \\frac{\\pi}{2}+2$",
+                                                               "$-\\frac{3\\pi}{2}, \\frac{\\pi}{2}+2$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "利用导数求得单调区间，从而判断最值.",
+                                               "solution_latex":  "$f\u0027(x) = -\\sin x + \\sin x + (x+1)\\cos x = (x+1)\\cos x$, 在 $(0,\\frac{\\pi}{2})$ 和 $(\\frac{3\\pi}{2},2\\pi)$ 上 $f\u0027(x)\u003e0$, $f(x)$ 单增；在 $(\\frac{\\pi}{2},\\frac{3\\pi}{2})$ 上 $f\u0027(x)\u003c0$, $f(x)$ 单减. 又 $f(0)=f(2\\pi)=2$, $f(\\frac{\\pi}{2})=\\frac{\\pi}{2}+2$, $f(\\frac{3\\pi}{2}) = -\\frac{3\\pi}{2}$, 所以最小值为 $-\\frac{3\\pi}{2}$, 最大值为 $\\frac{\\pi}{2}+2$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知球 $O$ 的半径为1，四棱锥的顶点为 $O$, 底面的四个顶点均在球 $O$ 的球面上，则当该四棱锥的体积最大时，其高为",
+                                               "choices":  [
+                                                               "$\\frac{1}{3}$",
+                                                               "$\\frac{1}{2}$",
+                                                               "$\\frac{\\sqrt{3}}{3}$",
+                                                               "$\\frac{\\sqrt{2}}{2}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "证明当四棱锥为正四棱锥时体积最大，利用基本不等式或导数求最值.",
+                                               "solution_latex":  "设底面所在小圆半径为 $r$, 高为 $h$, 则 $r^2+h^2=1$. 底面为正方形时面积最大 $S=2r^2$, 体积 $V=\\frac13\\cdot2r^2\\cdot h = \\frac23 r^2 h \\le \\frac23 \\sqrt{\\frac{r^4+r^4+2h^2}{3}} = \\frac{4\\sqrt{3}}{27}$, 当且仅当 $r^2=2h^2$ 即 $h=\\frac{\\sqrt{3}}{3}$ 时取等.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "本题共4小题，每小题5分，共20分.",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "记 $S_n$ 为等差数列 $\\{a_n\\}$ 的前 $n$ 项和. 若 $2S_3 = 3S_2 + 6$, 则公差 $d =$ _______.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "2",
+                                               "analysis_latex":  "转化条件为 $2(a_1+2d)=2a_1+d+6$, 即可得解.",
+                                               "solution_latex":  "由 $2S_3=3S_2+6$ 得 $2(a_1+a_2+a_3)=3(a_1+a_2)+6$, 化简得 $2a_3=a_1+a_2+6$, 即 $2(a_1+2d)=2a_1+d+6$, 解得 $d=2$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "从甲、乙等5名同学中随机选3名参加社区服务工作，则甲、乙都入选的概率为____________.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{3}{10}$",
+                                               "analysis_latex":  "根据古典概型计算即可.",
+                                               "solution_latex":  "从5名同学中选3名，共有 $C_5^3=10$ 种选法，甲、乙都入选的选法有 $C_3^1=3$ 种，所以概率为 $\\frac{3}{10}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "过四点 $(0,0), (4,0), (-1,1), (4,2)$ 中的三点的一个圆的方程为____________.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$(x-2)^2+(y-3)^2=13$ 或 $(x-2)^2+(y-1)^2=5$ 或 $(x-\\frac{4}{3})^2+(y-\\frac{7}{3})^2=\\frac{65}{9}$ 或 $(x-\\frac{8}{5})^2+(y-1)^2=\\frac{169}{25}$",
+                                               "analysis_latex":  "法一：设圆的一般方程，根据所选点的坐标解方程组；法二：利用圆的几何性质求圆心和半径.",
+                                               "solution_latex":  "答案不唯一，以上四个方程任写一个即可.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "若 $f(x) = \\ln\\left| a + \\frac{1}{1-x} \\right| + b$ 是奇函数，则 $a=$ _____, $b=$ ______.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$a=-\\frac12$, $b=\\ln2$",
+                                               "analysis_latex":  "根据奇函数的定义即可求出.",
+                                               "solution_latex":  "由奇函数定义域关于原点对称，得 $a=-\\frac12$, 再由 $f(0)=0$ 得 $b=\\ln2$. 经检验，$f(x)=\\ln\\left|\\frac{1+x}{1-x}\\right|$ 满足奇函数.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "共70分.解答应写出文字说明、证明过程或演算步骤.第17~21题为必考题，每个试题考生都必须作答.第22、23题为选考题，考生根据要求作答.",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "记 $\\triangle ABC$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$, 已知 $\\sin C \\sin(A-B) = \\sin B \\sin(C-A)$.\n(1) 若 $A=2B$, 求 $C$;\n(2) 证明：$2a^2 = b^2 + c^2$.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) $C = \\frac{5\\pi}{8}$; (2) 证明见解析.",
+                                               "analysis_latex":  "(1) 由已知和 $A=2B$ 得 $\\sin C = \\sin(C-A)$, 结合三角形内角和求 $C$.\n(2) 展开两角差正弦，利用正弦定理和余弦定理化简.",
+                                               "solution_latex":  "(1) 由 $A=2B$ 代入得 $\\sin C\\sin B = \\sin B\\sin(C-A)$, 因为 $\\sin B\\neq0$, 所以 $\\sin C = \\sin(C-A)$. 因为 $0\u003cC\u003c\\pi$, $0\u003cC-A\u003c\\pi$, 且 $C\\neq C-A$, 所以 $C+(C-A)=\\pi$, 又 $A=2B$, $A+B+C=\\pi$, 解得 $C=\\frac{5\\pi}{8}$.\n(2) 展开得 $\\sin C(\\sin A\\cos B-\\cos A\\sin B) = \\sin B(\\sin C\\cos A-\\cos C\\sin A)$, 由正弦定理得 $ac\\cos B - bc\\cos A = bc\\cos A - ab\\cos C$. 由余弦定理，$\\frac12(a^2+c^2-b^2)-\\frac12(b^2+c^2-a^2) = \\frac12(b^2+c^2-a^2)-\\frac12(a^2+b^2-c^2)$, 化简得 $2a^2=b^2+c^2$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图，四面体 $ABCD$ 中，$AD\\perp CD$, $AD=CD$, $\\angle ADB = \\angle BDC$, $E$ 为 $AC$ 的中点.\n(1) 证明：平面 $BED \\perp$ 平面 $ACD$;\n(2) 设 $AB=BD=2$, $\\angle ACB=60^\\circ$, 点 $F$ 在 $BD$ 上，当 $\\triangle AFC$ 的面积最小时，求三棱锥 $F-ABC$ 的体积.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) 证明见解析; (2) $\\frac{3}{4}$.",
+                                               "analysis_latex":  "(1) 通过证明 $AC\\perp$ 平面 $BED$ 来证得面面垂直.\n(2) 判断三角形 $AFC$ 面积最小时 $F$ 的位置，然后求体积.",
+                                               "solution_latex":  "(1) 因为 $AD=CD$, $E$ 为 $AC$ 中点，所以 $AC\\perp DE$. 由 $\\triangle ADB \\cong \\triangle CDB$ 得 $AB=CB$, 所以 $AC\\perp BD$. 又 $DE\\cap BD=D$, 故 $AC\\perp$ 平面 $BED$, 而 $AC\\subset$ 平面 $ACD$, 所以平面 $BED \\perp$ 平面 $ACD$.\n(2) 由 (1) 及已知得 $\\triangle ABC$ 是边长为2的等边三角形，$BE=\\sqrt{3}$, $DE=1$, $DE\\perp BE$. 由 $\\triangle ADB\\cong\\triangle CDB$ 知 $AF=CF$, 所以 $EF\\perp AC$. 当 $EF\\perp BD$ 时 $\\triangle AFC$ 面积最小，在 $\\triangle BED$ 中，$EF=\\frac{BE\\cdot DE}{BD}=\\frac{\\sqrt{3}}{2}$, $BF=\\frac{3}{2}$, 过 $F$ 作 $FH\\perp BE$ 于 $H$, 则 $FH\\parallel DE$, $FH=\\frac{3}{4}$, 且 $FH\\perp$ 平面 $ABC$, 所以 $V_{F-ABC}=\\frac13\\cdot S_{\\triangle ABC}\\cdot FH = \\frac13\\cdot\\frac{\\sqrt{3}}{4}\\cdot4\\cdot\\frac34 = \\frac{\\sqrt{3}}{4}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "某地经过多年的环境治理，已将荒山改造成了绿水青山．为估计一林区某种树木的总材积量，随机选取了10棵这种树木，测量每棵树的根部横截面积（单位：$m^2$）和材积量（单位：$m^3$），得到如下数据：\n\\begin{tabular}{c|cccccccccc|c}\n样本号 $i$ \u0026 1 \u0026 2 \u0026 3 \u0026 4 \u0026 5 \u0026 6 \u0026 7 \u0026 8 \u0026 9 \u0026 10 \u0026 总和 \\\\ \\hline\n根部横截面积 $x_i$ \u0026 0.04 \u0026 0.06 \u0026 0.04 \u0026 0.08 \u0026 0.08 \u0026 0.05 \u0026 0.05 \u0026 0.07 \u0026 0.07 \u0026 0.06 \u0026 0.6 \\\\\n材积量 $y_i$ \u0026 0.25 \u0026 0.40 \u0026 0.22 \u0026 0.54 \u0026 0.51 \u0026 0.34 \u0026 0.36 \u0026 0.46 \u0026 0.42 \u0026 0.40 \u0026 3.9 \\\\\n\\end{tabular}\n并计算得 $\\sum_{i=1}^{10} x_i^2 = 0.038$, $\\sum_{i=1}^{10} y_i^2 = 1.6158$, $\\sum_{i=1}^{10} x_i y_i = 0.2474$.\n(1) 估计该林区这种树木平均一棵的根部横截面积与平均一棵的材积量；\n(2) 求该林区这种树木的根部横截面积与材积量的样本相关系数（精确到0.01）；\n(3) 现测量了该林区所有这种树木的根部横截面积，并得到所有这种树木的根部横截面积总和为 $186 m^2$．已知树木的材积量与其根部横截面积近似成正比．利用以上数据给出该林区这种树木的总材积量的估计值．\n附：相关系数 $r = \\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})(y_i-\\bar{y})}{\\sqrt{\\sum_{i=1}^{n}(x_i-\\bar{x})^2 \\sum_{i=1}^{n}(y_i-\\bar{y})^2}}$, $\\sqrt{1.896}\\approx1.377$.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) $0.06m^2$, $0.39m^3$; (2) $0.97$; (3) $1209m^3$.",
+                                               "analysis_latex":  "计算样本平均值得估计值；代入相关系数公式计算；利用正比例关系求总材积量.",
+                                               "solution_latex":  "(1) $\\bar{x}=0.06$, $\\bar{y}=0.39$.\n(2) $r = \\frac{0.2474-10\\times0.06\\times0.39}{\\sqrt{(0.038-10\\times0.06^2)(1.6158-10\\times0.39^2)}} = \\frac{0.0134}{\\sqrt{0.0001896}} \\approx \\frac{0.0134}{0.01377} \\approx 0.97$.\n(3) 设总材积量为 $Y$, 由 $\\frac{0.06}{0.39}=\\frac{186}{Y}$ 得 $Y=1209m^3$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数 $f(x) = ax - \\frac{1}{x} - (a+1)\\ln x$.\n(1) 当 $a=0$ 时，求 $f(x)$ 的最大值；\n(2) 若 $f(x)$ 恰有一个零点，求 $a$ 的取值范围.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) $-1$; (2) $(0, +\\infty)$.",
+                                               "analysis_latex":  "(1) 求导得单调性，即可得最大值.\n(2) 求导分类讨论 $a\\le0$, $0\u003ca\u003c1$, $a=1$, $a\u003e1$ 时函数的单调性和零点情况.",
+                                               "solution_latex":  "(1) $a=0$ 时 $f(x)=-\\frac1x-\\ln x$, $f\u0027(x)=\\frac{1-x}{x^2}$, 当 $x\\in(0,1)$ 时 $f\u0027(x)\u003e0$, $f(x)$ 单增；当 $x\\in(1,+\\infty)$ 时 $f\u0027(x)\u003c0$, $f(x)$ 单减，所以 $f(x)_{\\max}=f(1)=-1$.\n(2) $f\u0027(x)=\\frac{(ax-1)(x-1)}{x^2}$. 当 $a\\le0$ 时，$ax-1\u003c0$, $f(x)$ 在 $(0,1)$ 单增，在 $(1,+\\infty)$ 单减，$f(1)=a-1\u003c0$, 无零点. 当 $0\u003ca\u003c1$ 时，$f(x)$ 在 $(0,1), (\\frac1a,+\\infty)$ 单增，在 $(1,\\frac1a)$ 单减，$f(1)=a-1\u003c0$, 取 $m=(\\frac3a+2)^2$, 则 $f(m)\u003e0$, 所以仅有一个零点. 当 $a=1$ 时，$f\u0027(x)\\ge0$, $f(x)$ 单增，$f(1)=0$, 唯一零点. 当 $a\u003e1$ 时，$f(x)$ 在 $(0,\\frac1a), (1,+\\infty)$ 单增，在 $(\\frac1a,1)$ 单减，$f(1)=a-1\u003e0$, 取 $n=\\frac1{4(a+1)}$, 则 $f(n)\u003c0$, 所以有一个零点. 综上 $a\u003e0$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知椭圆 $E$ 的中心为坐标原点，对称轴为 $x$ 轴、$y$ 轴，且过 $A(0,-2)$, $B(\\frac32,-1)$ 两点.\n(1) 求 $E$ 的方程；\n(2) 设过点 $P(1,-2)$ 的直线交 $E$ 于 $M,N$ 两点，过 $M$ 且平行于 $x$ 轴的直线与线段 $AB$ 交于点 $T$, 点 $H$ 满足 $\\overrightarrow{MT} = \\overrightarrow{TH}$. 证明：直线 $HN$ 过定点.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) $\\frac{y^2}{4}+\\frac{x^2}{3}=1$; (2) $(0,-2)$.",
+                                               "analysis_latex":  "(1) 设椭圆方程 $mx^2+ny^2=1$ 代入坐标求解.\n(2) 设直线方程联立，表示出 $H$ 点坐标，证明 $HN$ 过定点.",
+                                               "solution_latex":  "(1) 设 $mx^2+ny^2=1$, 代入得 $\\begin{cases} 4n=1 \\\\ \\frac94 m + n = 1 \\end{cases}$, 解得 $m=\\frac13$, $n=\\frac14$, 所以 $\\frac{y^2}{4}+\\frac{x^2}{3}=1$.\n(2) 直线 $AB: y=\\frac23 x -2$. ①斜率不存在：$x=1$, 得 $M(1,-\\frac{2\\sqrt6}{3})$, $N(1,\\frac{2\\sqrt6}{3})$, $T(-\\sqrt6+3,-\\frac{2\\sqrt6}{3})$, $H(-2\\sqrt6+5,-\\frac{2\\sqrt6}{3})$, 直线 $HN: y=(2+\\frac{2\\sqrt6}{3})x-2$, 过 $(0,-2)$. ②斜率存在：设 $kx-y-(k+2)=0$, 联立得 $(3k^2+4)x^2-6k(2+k)x+3k(k+4)=0$. 由 $y=y_1$ 与 $AB$ 联立得 $T(\\frac{3y_1}{2}+3, y_1)$, 由 $\\overrightarrow{MT}=\\overrightarrow{TH}$ 得 $H(3y_1+6-x_1, y_1)$. 写出 $HN$ 方程，代入 $(0,-2)$ 整理得恒等式，故过定点 $(0,-2)$.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "（二）选考题",
+                         "instructions":  "共10分.请考生在第22、23题中选定一题作答.多答按所答第一题评分.",
+                         "questions":  [
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4-4：坐标系与参数方程]\n在直角坐标系 $xOy$ 中，曲线 $C$ 的参数方程为 $\\begin{cases} x = \\sqrt{3}\\cos 2t \\\\ y = 2\\sin t \\end{cases}$（$t$ 为参数），以坐标原点为极点，$x$ 轴正半轴为极轴建立极坐标系，已知直线 $l$ 的极坐标方程为 $\\rho\\sin(\\theta+\\frac{\\pi}{3})+m=0$.\n(1) 写出 $l$ 的直角坐标方程；\n(2) 若 $l$ 与 $C$ 有公共点，求 $m$ 的取值范围.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1) $\\sqrt{3}x+y+2m=0$; (2) $[-\\frac{19}{12}, \\frac{5}{2}]$.",
+                                               "analysis_latex":  "(1) 利用极坐标与直角坐标互化.\n(2) 联立 $l$ 与 $C$ 的方程，利用参数方程转化为三角函数有解.",
+                                               "solution_latex":  "(1) 由 $\\rho\\sin(\\theta+\\frac{\\pi}{3})+m=0$ 得 $\\frac12\\rho\\sin\\theta+\\frac{\\sqrt3}{2}\\rho\\cos\\theta+m=0$, 即 $\\frac12 y+\\frac{\\sqrt3}{2}x+m=0$, 所以 $\\sqrt3 x+y+2m=0$.\n(2) 将 $x=\\sqrt3\\cos2t$, $y=2\\sin t$ 代入得 $\\sqrt3\\cdot\\sqrt3\\cos2t + 2\\sin t + 2m=0$, 即 $3(1-2\\sin^2t)+2\\sin t+2m=0$, 整理得 $2m=6\\sin^2t -2\\sin t -3$. 令 $u=\\sin t\\in[-1,1]$, 则 $2m=6u^2-2u-3$, $u\\in[-1,1]$. 该二次函数在 $u=\\frac16$ 取最小值 $-\\frac{19}{6}$, 在 $u=-1$ 取最大值5, 所以 $2m\\in[-\\frac{19}{6},5]$, 即 $m\\in[-\\frac{19}{12},\\frac52]$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "[选修4-5：不等式选讲]\n已知 $a,b,c$ 都是正数，且 $a^{\\frac32}+b^{\\frac32}+c^{\\frac32}=1$, 证明：\n(1) $abc \\le \\frac19$;\n(2) $\\frac{a}{b+c}+\\frac{b}{a+c}+\\frac{c}{a+b} \\le \\frac{1}{2\\sqrt{abc}}$.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "证明见解析.",
+                                               "analysis_latex":  "(1) 利用三元均值不等式.\n(2) 利用基本不等式放缩.",
+                                               "solution_latex":  "(1) 由 $a^{\\frac32}+b^{\\frac32}+c^{\\frac32} \\ge 3\\sqrt[3]{a^{\\frac32}b^{\\frac32}c^{\\frac32}} = 3(abc)^{\\frac12}$ 得 $1 \\ge 3(abc)^{\\frac12}$, 所以 $abc \\le \\frac19$.\n(2) 由 $b+c\\ge2\\sqrt{bc}$ 得 $\\frac{a}{b+c} \\le \\frac{a}{2\\sqrt{bc}} = \\frac{a^{\\frac32}}{2\\sqrt{abc}}$, 同理 $\\frac{b}{a+c} \\le \\frac{b^{\\frac32}}{2\\sqrt{abc}}$, $\\frac{c}{a+b} \\le \\frac{c^{\\frac32}}{2\\sqrt{abc}}$, 相加得 $\\frac{a}{b+c}+\\frac{b}{a+c}+\\frac{c}{a+b} \\le \\frac{a^{\\frac32}+b^{\\frac32}+c^{\\frac32}}{2\\sqrt{abc}} = \\frac{1}{2\\sqrt{abc}}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  16,
+                             "issue":  "原卷中函数表达式为 $f(x)=\\ln a+\\frac{1}{1-x}+b$, 但根据解析，绝对值符号可能是遗漏，但按照原卷文本未加绝对值。"
+                         }
+                     ]
+}

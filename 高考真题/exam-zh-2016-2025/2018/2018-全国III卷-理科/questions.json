@@ -1,0 +1,455 @@
+﻿{
+    "title":  "2018 年高考数学 全国III卷-理科",
+    "year":  2018,
+    "paper":  "新课标全国III卷",
+    "sections":  [
+                     {
+                         "title":  "一、单项选择题",
+                         "instructions":  "本题共12小题，每小题5分，共60分。在每小题给出的四个选项中，只有一项是符合题目要求的。",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知集合$A=\\{x|x-1\\geq 0\\}$，$B=\\{0,1,2\\}$，则$A\\cap B=$（ ）",
+                                               "choices":  [
+                                                               "$\\{0\\}$",
+                                                               "$\\{1\\}$",
+                                                               "$\\{1,2\\}$",
+                                                               "$\\{0,1,2\\}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "求解不等式化简集合$A$，再由交集的运算性质得答案．",
+                                               "solution_latex":  "$\\because A=\\{x|x-1\\geq 0\\}=\\{x|x\\geq 1\\}$，$B=\\{0,1,2\\}$，$\\therefore A\\cap B=\\{x|x\\geq 1\\}\\cap\\{0,1,2\\}=\\{1,2\\}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "$(1+i)(2-i)=$（ ）",
+                                               "choices":  [
+                                                               "$-3-i$",
+                                                               "$-3+i$",
+                                                               "$3-i$",
+                                                               "$3+i$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "直接利用复数代数形式的乘除运算化简得答案．",
+                                               "solution_latex":  "$(1+i)(2-i)=3+i$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "中国古建筑借助榫卯将木构件连接起来．构件的凸出部分叫榫头，凹进部分叫卯眼，图中木构件右边的小长方体是榫头．若如图摆放的木构件与某一带卯眼的木构件咬合成长方体，则咬合时带卯眼的木构件的俯视图可以是（ ）",
+                                               "choices":  [
+                                                               "A",
+                                                               "B",
+                                                               "C",
+                                                               "D"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "直接利用空间几何体的三视图的画法，判断选项的正误即可．",
+                                               "solution_latex":  "由题意可知，如图摆放的木构件与某一带卯眼的木构件咬合成长方体，小的长方体，是榫头，从图形看出，轮廓是长方形，内含一个长方形，并且一条边重合，另外3边是虚线，所以木构件的俯视图是A．",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  7,
+                                                                  "description":  "带卯眼的木构件俯视图的四个选项，A为内含虚线的长方形"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "若$\\sin\\alpha=\\frac{1}{3}$，则$\\cos2\\alpha=$（ ）",
+                                               "choices":  [
+                                                               "$\\frac{8}{9}$",
+                                                               "$\\frac{7}{9}$",
+                                                               "$-\\frac{7}{9}$",
+                                                               "$-\\frac{8}{9}$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "$\\cos2\\alpha=1-2\\sin^2\\alpha$，由此能求出结果．",
+                                               "solution_latex":  "$\\because \\sin\\alpha=\\frac{1}{3}$，$\\therefore \\cos2\\alpha=1-2\\sin^2\\alpha=1-2\\times\\frac{1}{9}=\\frac{7}{9}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "$(x^2+\\frac{2}{x})^5$的展开式中$x^4$的系数为（ ）",
+                                               "choices":  [
+                                                               "$10$",
+                                                               "$20$",
+                                                               "$40$",
+                                                               "$80$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "由二项式定理得展开式的通项，令指数为4求得$r$，再求系数．",
+                                               "solution_latex":  "由二项式定理得$(x^2+\\frac{2}{x})^5$的展开式的通项为：$T_{r+1}=C_5^r (x^2)^{5-r}(\\frac{2}{x})^r=2^r C_5^r x^{10-3r}$，由$10-3r=4$，解得$r=2$，$\\therefore$系数为$2^2 C_5^2=4\\times10=40$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "直线$x+y+2=0$分别与$x$轴，$y$轴交于$A$，$B$两点，点$P$在圆$(x-2)^2+y^2=2$上，则$\\triangle ABP$面积的取值范围是（ ）",
+                                               "choices":  [
+                                                               "$[2,6]$",
+                                                               "$[4,8]$",
+                                                               "$[\\sqrt{2},3\\sqrt{2}]$",
+                                                               "$[2\\sqrt{2},3\\sqrt{2}]$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "求出$A$、$B$两点坐标及$|AB|$，设$P$点坐标，利用点到直线距离公式求得距离范围，从而确定面积范围．",
+                                               "solution_latex":  "由已知$A(-2,0)$，$B(0,-2)$，$|AB|=2\\sqrt{2}$．设$P(2+\\sqrt{2}\\cos\\theta,\\sqrt{2}\\sin\\theta)$，则点$P$到直线$x+y+2=0$的距离$d=\\frac{|2+\\sqrt{2}\\cos\\theta+\\sqrt{2}\\sin\\theta+2|}{\\sqrt{2}}=\\frac{|4+2\\sin(\\theta+\\frac{\\pi}{4})|}{\\sqrt{2}}$，$\\because \\sin(\\theta+\\frac{\\pi}{4})\\in[-1,1]$，$\\therefore d\\in[\\sqrt{2},3\\sqrt{2}]$，$\\therefore \\triangle ABP$面积$\\frac{1}{2}\\times2\\sqrt{2}\\times d\\in[2,6]$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "函数$y=-x^4+x^2+2$的图象大致为（ ）",
+                                               "choices":  [
+                                                               "A",
+                                                               "B",
+                                                               "C",
+                                                               "D"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "根据函数图象的特点，求函数的导数利用函数的单调性进行判断．",
+                                               "solution_latex":  "函数过定点$(0,2)$，排除$A$、$B$．$f\u0027(x)=-4x^3+2x=-2x(2x^2-1)$，令$f\u0027(x)\u003e0$得$x\u003c-\\frac{\\sqrt{2}}{2}$或$0\u003cx\u003c\\frac{\\sqrt{2}}{2}$，此时函数递增；令$f\u0027(x)\u003c0$得$x\u003e\\frac{\\sqrt{2}}{2}$或$-\\frac{\\sqrt{2}}{2}\u003cx\u003c0$，此时函数递减，排除$C$，故选$D$．",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  11,
+                                                                  "description":  "四个函数图象选项",
+                                                                  "file":  "question-7-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "某群体中的每位成员使用移动支付的概率都为$p$，各成员的支付方式相互独立．设$X$为该群体的10位成员中使用移动支付的人数，$DX=2.4$，$P(X=4)\u003cP(X=6)$，则$p=$（ ）",
+                                               "choices":  [
+                                                               "$0.7$",
+                                                               "$0.6$",
+                                                               "$0.4$",
+                                                               "$0.3$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "利用已知条件，转化为二项分布，利用方差和概率大小关系求解．",
+                                               "solution_latex":  "由题意$X\\sim B(10,p)$，$DX=10p(1-p)=2.4$，解得$p=0.6$或$p=0.4$．由$P(X=4)\u003cP(X=6)$，即$C_{10}^4 p^4(1-p)^6 \u003c C_{10}^6 p^6(1-p)^4$，化简得$(1-p)^2 \u003c p^2$，即$1-p \u003c p$，故$p\u003e0.5$，所以$p=0.6$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "$\\triangle ABC$的内角$A$，$B$，$C$的对边分别为$a$，$b$，$c$．若$\\triangle ABC$的面积为$\\frac{a^2+b^2-c^2}{4}$，则$C=$（ ）",
+                                               "choices":  [
+                                                               "$\\frac{\\pi}{2}$",
+                                                               "$\\frac{\\pi}{3}$",
+                                                               "$\\frac{\\pi}{4}$",
+                                                               "$\\frac{\\pi}{6}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "利用三角形面积公式和余弦定理求解．",
+                                               "solution_latex":  "$S_{\\triangle ABC}=\\frac{1}{2}ab\\sin C = \\frac{a^2+b^2-c^2}{4} = \\frac{2ab\\cos C}{4} = \\frac{ab\\cos C}{2}$，所以$\\sin C = \\cos C$，又$0\u003cC\u003c\\pi$，故$C=\\frac{\\pi}{4}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设$A$，$B$，$C$，$D$是同一个半径为4的球的球面上四点，$\\triangle ABC$为等边三角形且面积为$9\\sqrt{3}$，则三棱锥$D-ABC$体积的最大值为（ ）",
+                                               "choices":  [
+                                                               "$12\\sqrt{3}$",
+                                                               "$18\\sqrt{3}$",
+                                                               "$24\\sqrt{3}$",
+                                                               "$54\\sqrt{3}$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "求出等边三角形边长，确定球心到三角形外心的距离，当$D$在球心与三角形外心连线的延长线上时体积最大．",
+                                               "solution_latex":  "设等边三角形$ABC$的边长为$a$，则$\\frac{\\sqrt{3}}{4}a^2=9\\sqrt{3}$，解得$a=6$．$\\triangle ABC$的外接圆半径$r=\\frac{a}{\\sqrt{3}}=2\\sqrt{3}$，球心$O$到$\\triangle ABC$外心$O\u0027$的距离$OO\u0027=\\sqrt{R^2-r^2}=\\sqrt{16-12}=2$，则$D$到平面$ABC$的最大距离$h=R+OO\u0027=6$，故体积最大值为$\\frac{1}{3}\\times9\\sqrt{3}\\times6=18\\sqrt{3}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设$F_1$，$F_2$是双曲线$C:\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$（$a\u003e0$，$b\u003e0$）的左、右焦点，$O$是坐标原点．过$F_2$作$C$的一条渐近线的垂线，垂足为$P$，若$|PF_1|=\\sqrt{6}|OP|$，则$C$的离心率为（ ）",
+                                               "choices":  [
+                                                               "$\\sqrt{5}$",
+                                                               "$2$",
+                                                               "$\\sqrt{3}$",
+                                                               "$\\sqrt{2}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "利用点到渐近线的距离求出$|PF_2|$，再求出$|OP|$，在三角形$F_1PF_2$中利用余弦定理建立关系．",
+                                               "solution_latex":  "双曲线一条渐近线方程为$y=\\frac{b}{a}x$，则$F_2(c,0)$到渐近线的距离$d=\\frac{bc}{\\sqrt{a^2+b^2}}=b$，即$|PF_2|=b$，$|OP|=\\sqrt{c^2-b^2}=a$，$\\cos\\angle PF_2O=\\frac{a}{c}$．由$|PF_1|=\\sqrt{6}a$，在$\\triangle F_1PF_2$中由余弦定理：$|PF_1|^2=|PF_2|^2+|F_1F_2|^2-2|PF_2|\\cdot|F_1F_2|\\cos\\angle PF_2O$，即$6a^2=b^2+4c^2-2b\\cdot2c\\cdot\\frac{a}{c}=b^2+4c^2-4ab$，又$b^2=c^2-a^2$，代入得$6a^2=c^2-a^2+4c^2-4a\\sqrt{c^2-a^2}$，化简得$3a^2=c^2$，故$e=\\frac{c}{a}=\\sqrt{3}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设$a=\\log_{0.2}0.3$，$b=\\log_2 0.3$，则（ ）",
+                                               "choices":  [
+                                                               "$a+b\u003cab\u003c0$",
+                                                               "$ab\u003ca+b\u003c0$",
+                                                               "$a+b\u003c0\u003cab$",
+                                                               "$ab\u003c0\u003ca+b$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "直接利用对数的运算性质化简即可得答案．",
+                                               "solution_latex":  "$a=\\log_{0.2}0.3=\\frac{\\lg0.3}{\\lg0.2}$，$b=\\log_2 0.3=\\frac{\\lg0.3}{\\lg2}$，$\\because \\lg0.3\u003c0$，$\\lg0.2\u003c0$，$\\lg2\u003e0$，$\\therefore a\u003e0$，$b\u003c0$，$ab\u003c0$．又$\\frac{1}{a}+\\frac{1}{b}=\\frac{\\lg0.2}{\\lg0.3}+\\frac{\\lg2}{\\lg0.3}=\\frac{\\lg(0.2\\times2)}{\\lg0.3}=\\frac{\\lg0.4}{\\lg0.3}$，$\\because \\lg0.4\u003e\\lg0.3$，$\\therefore \\frac{\\lg0.4}{\\lg0.3}\u003c1$，$\\frac{1}{a}+\\frac{1}{b}\u003c1$，即$\\frac{a+b}{ab}\u003c1$，$\\because ab\u003c0$，$\\therefore a+b\u003eab$，故$ab\u003ca+b\u003c0$．",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "本题共4小题，每小题5分，共20分。",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知向量$\\vec{a}=(1,2)$，$\\vec{b}=(2,-2)$，$\\vec{c}=(1,\\lambda)$．若$\\vec{c}\\parallel(2\\vec{a}+\\vec{b})$，则$\\lambda=$______．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{1}{2}$",
+                                               "analysis_latex":  "利用向量坐标运算法则求出$2\\vec{a}+\\vec{b}$，再由向量平行的性质能求出$\\lambda$．",
+                                               "solution_latex":  "$2\\vec{a}+\\vec{b}=2(1,2)+(2,-2)=(4,2)$，$\\because \\vec{c}\\parallel(2\\vec{a}+\\vec{b})$，$\\therefore$设$\\vec{c}=k(4,2)$，即$(1,\\lambda)=k(4,2)$，解得$k=\\frac{1}{4}$，$\\lambda=2k=\\frac{1}{2}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "曲线$y=(ax+1)e^x$在点$(0,1)$处的切线的斜率为$-2$，则$a=$______．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$-3$",
+                                               "analysis_latex":  "求导，利用导数的几何意义列方程求解．",
+                                               "solution_latex":  "$y\u0027=ae^x+(ax+1)e^x=(ax+a+1)e^x$，则$y\u0027|_{x=0}=a+1=-2$，解得$a=-3$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "函数$f(x)=\\cos(3x+\\frac{\\pi}{6})$在$[0,\\pi]$的零点个数为______．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$3$",
+                                               "analysis_latex":  "解方程$\\cos(3x+\\frac{\\pi}{6})=0$，求得$x$在$[0,\\pi]$内的个数．",
+                                               "solution_latex":  "由$f(x)=0$得$3x+\\frac{\\pi}{6}=\\frac{\\pi}{2}+k\\pi$，$k\\in\\mathbb{Z}$，即$x=\\frac{\\pi}{9}+\\frac{k\\pi}{3}$．当$k=0$，$x=\\frac{\\pi}{9}\\in[0,\\pi]$；$k=1$，$x=\\frac{4\\pi}{9}\\in[0,\\pi]$；$k=2$，$x=\\frac{7\\pi}{9}\\in[0,\\pi]$；$k=3$，$x=\\frac{10\\pi}{9}\\notin[0,\\pi]$，故零点个数为3．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知点$M(-1,1)$和抛物线$C:y^2=4x$，过$C$的焦点且斜率为$k$的直线与$C$交于$A$，$B$两点．若$\\angle AMB=90^\\circ$，则$k=$______．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$2$",
+                                               "analysis_latex":  "设直线方程与抛物线联立，利用韦达定理及$\\overrightarrow{MA}\\cdot\\overrightarrow{MB}=0$求解．",
+                                               "solution_latex":  "焦点$F(1,0)$，设直线$AB:y=k(x-1)$，联立$\\begin{cases}y=k(x-1)\\\\y^2=4x\\end{cases}$得$k^2x^2-2(2+k^2)x+k^2=0$，设$A(x_1,y_1)$，$B(x_2,y_2)$，则$x_1+x_2=\\frac{2(2+k^2)}{k^2}$，$x_1x_2=1$，$y_1+y_2=k(x_1+x_2-2)=\\frac{4}{k}$，$y_1y_2=k^2(x_1-1)(x_2-1)=k^2[x_1x_2-(x_1+x_2)+1]=-4$，$\\because \\angle AMB=90^\\circ$，$\\overrightarrow{MA}\\cdot\\overrightarrow{MB}=0$，即$(x_1+1)(x_2+1)+(y_1-1)(y_2-1)=0$，整理得$x_1x_2+(x_1+x_2)+y_1y_2-(y_1+y_2)+2=0$，代入得$1+\\frac{2(2+k^2)}{k^2}-4-\\frac{4}{k}+2=0$，解得$k=2$．",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "共70分。解答应写出文字说明、证明过程或演算步骤。第17~21题为必考题，第22、23题为选考题。",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "等比数列$\\{a_n\\}$中，$a_1=1$，$a_5=4a_3$．\n（1）求$\\{a_n\\}$的通项公式；\n（2）记$S_n$为$\\{a_n\\}$的前$n$项和．若$S_m=63$，求$m$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）利用等比数列通项公式列出方程，求出公比$q=\\pm2$，由此能求出$\\{a_n\\}$的通项公式．（2）分$q=-2$和$q=2$两种情况，利用等比数列前$n$项和公式求解．",
+                                               "solution_latex":  "（1）$\\because a_1=1$，$a_5=4a_3$，$\\therefore 1\\cdot q^4=4\\times(1\\cdot q^2)$，解得$q=\\pm2$．当$q=2$时，$a_n=2^{n-1}$；当$q=-2$时，$a_n=(-2)^{n-1}$．（2）当$q=-2$时，$S_n=\\frac{1-(-2)^n}{1-(-2)}=\\frac{1-(-2)^n}{3}$，令$S_m=63$得$\\frac{1-(-2)^m}{3}=63$，即$(-2)^m=-188$，无正整数解；当$q=2$时，$S_n=2^n-1$，令$S_m=2^m-1=63$，解得$m=6$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "某工厂为提高生产效率，开展技术创新活动，提出了完成某项生产任务的两种新的生产方式．为比较两种生产方式的效率，选取40名工人，将他们随机分成两组，每组20人．第一组工人用第一种生产方式，第二组工人用第二种生产方式．根据工人完成生产任务的工作时间（单位：min）绘制了如下茎叶图：\n\n（1）根据茎叶图判断哪种生产方式的效率更高？并说明理由；\n（2）求40名工人完成生产任务所需时间的中位数$m$，并将完成生产任务所需时间超过$m$和不超过$m$的工人数填入下面的列联表：\n\n| | 超过$m$ | 不超过$m$ |\n| --- | --- | --- |\n| 第一种生产方式 | | |\n| 第二种生产方式 | | |\n\n（3）根据（2）中的列联表，能否有99%的把握认为两种生产方式的效率有差异？\n\n附：$K^2=\\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$，\n\n$P(K^2\\geq k)$ | 0.050 | 0.010 | 0.001\n--- | --- | --- | ---\n$k$ | 3.841 | 6.635 | 10.828",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）根据茎叶图中的数据判断第二种生产方式的工作时间较少些，效率更高；（2）根据茎叶图中的数据计算它们的中位数，再填写列联表；（3）列联表中的数据计算观测值，对照临界值得出结论．",
+                                               "solution_latex":  "（1）第二种生产方式效率更高，因为第二种生产方式的工作时间主要集中在65~85之间，而第一种集中在72~92之间，第二种整体工作时间更短．\n（2）中位数$m=\\frac{79+81}{2}=80$，列联表如下：\n\n| | 超过$m$ | 不超过$m$ | 总计 |\n| --- | --- | --- | --- |\n| 第一种生产方式 | 15 | 5 | 20 |\n| 第二种生产方式 | 5 | 15 | 20 |\n| 总计 | 20 | 20 | 40 |\n\n（3）$K^2=\\frac{40\\times(15\\times15-5\\times5)^2}{20\\times20\\times20\\times20}=10\u003e6.635$，所以有99%的把握认为两种生产方式的效率有差异．",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "茎叶图",
+                                                                  "file":  "question-18-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图，边长为2的正方形$ABCD$所在的平面与半圆弧$\\overgroup{CD}$所在平面垂直，$M$是$\\overgroup{CD}$上异于$C$，$D$的点．\n（1）证明：平面$AMD\\perp$平面$BMC$；\n（2）当三棱锥$M-ABC$体积最大时，求面$MAB$与面$MCD$所成二面角的正弦值．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）根据面面垂直的判定定理证明$MC\\perp$平面$ADM$即可．（2）根据三棱锥的体积最大，确定$M$的位置，建立空间直角坐标系，求出点的坐标，利用向量法进行求解．",
+                                               "solution_latex":  "（1）证明：在半圆中，$DM\\perp MC$，$\\because$正方形$ABCD$所在的平面与半圆弧$\\overgroup{CD}$所在平面垂直，$\\therefore AD\\perp$平面$DCM$，则$AD\\perp MC$，$\\because AD\\cap DM=D$，$\\therefore MC\\perp$平面$ADM$，又$MC\\subset$平面$MBC$，$\\therefore$平面$AMD\\perp$平面$BMC$．\n（2）$\\because \\triangle ABC$的面积为定值，要使三棱锥$M-ABC$体积最大，则三棱锥的高最大，此时$M$为圆弧$\\overgroup{CD}$的中点．以$CD$中点$O$为原点，$OC$方向为$x$轴，$OD$方向为$y$轴，过$O$垂直平面$ABCD$向上为$z$轴建立空间直角坐标系，则$A(2,-1,0)$，$B(2,1,0)$，$M(0,0,1)$，平面$MCD$的法向量$\\vec{n}_1=(1,0,0)$，$\\overrightarrow{AB}=(0,2,0)$，$\\overrightarrow{AM}=(-2,1,1)$，设平面$MAB$的法向量$\\vec{n}_2=(x,y,z)$，由$\\vec{n}_2\\cdot\\overrightarrow{AB}=2y=0$，$\\vec{n}_2\\cdot\\overrightarrow{AM}=-2x+y+z=0$，令$x=1$，得$y=0$，$z=2$，即$\\vec{n}_2=(1,0,2)$，$\\cos\\langle\\vec{n}_1,\\vec{n}_2\\rangle=\\frac{1}{\\sqrt{1}\\times\\sqrt{5}}=\\frac{\\sqrt{5}}{5}$，故二面角的正弦值为$\\sqrt{1-(\\frac{\\sqrt{5}}{5})^2}=\\frac{2\\sqrt{5}}{5}$．",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  5,
+                                                                  "description":  "几何示意图",
+                                                                  "file":  "question-19-1.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知斜率为$k$的直线$l$与椭圆$C:\\frac{x^2}{4}+\\frac{y^2}{3}=1$交于$A$，$B$两点，线段$AB$的中点为$M(1,m)$（$m\u003e0$）．\n（1）证明：$k\u003c-\\frac{1}{2}$；\n（2）设$F$为$C$的右焦点，$P$为$C$上一点，且$\\overrightarrow{FP}+\\overrightarrow{FA}+\\overrightarrow{FB}=0$．证明：$|\\overrightarrow{FA}|$，$|\\overrightarrow{FP}|$，$|\\overrightarrow{FB}|$成等差数列，并求该数列的公差．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）设$A(x_1,y_1)$，$B(x_2,y_2)$，利用点差法得到$k$与$m$的关系，再由$M$在椭圆内得$m$的范围，从而证明$k\u003c-\\frac{1}{2}$．（2）利用向量关系求出$P$点坐标，结合椭圆焦半径公式证明等差数列，并求公差．",
+                                               "solution_latex":  "（1）设$A(x_1,y_1)$，$B(x_2,y_2)$，则$x_1+x_2=2$，$y_1+y_2=2m$，代入椭圆方程相减得$\\frac{x_1^2-x_2^2}{4}+\\frac{y_1^2-y_2^2}{3}=0$，即$\\frac{(x_1+x_2)(x_1-x_2)}{4}+\\frac{(y_1+y_2)(y_1-y_2)}{3}=0$，所以$\\frac{2(x_1-x_2)}{4}+\\frac{2m(y_1-y_2)}{3}=0$，解得$k=\\frac{y_1-y_2}{x_1-x_2}=-\\frac{3}{4m}$．由$M(1,m)$在椭圆内得$\\frac{1}{4}+\\frac{m^2}{3}\u003c1$，解得$0\u003cm\u003c\\frac{3}{2}$，故$k=-\\frac{3}{4m}\u003c-\\frac{1}{2}$．\n（2）设$P(x_3,y_3)$，由$\\overrightarrow{FP}+\\overrightarrow{FA}+\\overrightarrow{FB}=0$得$(x_3-1,y_3)+(x_1-1,y_1)+(x_2-1,y_2)=(0,0)$，所以$x_3=1$，$y_3=-(y_1+y_2)=-2m$，代入椭圆得$\\frac{1}{4}+\\frac{4m^2}{3}=1$，解得$m=\\frac{3}{4}$（负舍），故$k=-1$．椭圆右焦点$F(1,0)$，离心率$e=\\frac{1}{2}$，焦半径$|FA|=a-ex_1=2-\\frac{1}{2}x_1$，$|FB|=2-\\frac{1}{2}x_2$，$|FP|=2-\\frac{1}{2}x_3=2-\\frac{1}{2}=\\frac{3}{2}$，$|FA|+|FB|=4-\\frac{1}{2}(x_1+x_2)=4-1=3=2\\times\\frac{3}{2}=2|FP|$，所以$|FA|$，$|FP|$，$|FB|$成等差数列．设直线$AB$方程为$y=-(x-1)$，联立椭圆得$7x^2-8x-8=0$，则$x_1+x_2=\\frac{8}{7}$，$x_1x_2=-\\frac{8}{7}$，$|x_1-x_2|=\\sqrt{(x_1+x_2)^2-4x_1x_2}=\\sqrt{\\frac{64}{49}+\\frac{32}{7}}=\\frac{12\\sqrt{2}}{7}$，公差$d=\\frac{1}{2}|(|FA|-|FB|)|=\\frac{1}{2}|(2-\\frac{1}{2}x_1)-(2-\\frac{1}{2}x_2)|=\\frac{1}{4}|x_1-x_2|=\\frac{3\\sqrt{2}}{7}$，所以公差为$\\pm\\frac{3\\sqrt{2}}{7}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数$f(x)=(2+x+ax^2)\\ln(1+x)-2x$．\n（1）若$a=0$，证明：当$-1\u003cx\u003c0$时，$f(x)\u003c0$；当$x\u003e0$时，$f(x)\u003e0$；\n（2）若$x=0$是$f(x)$的极大值点，求$a$．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）对函数$f(x)$两次求导数，分别判断$f\u0027(x)$和$f(x)$的单调性，结合$f(0)=0$即可得出结论；（2）令$h(x)$为$f\u0027(x)$的分子，令$h\u0027\u0027(0)$计算$a$，讨论$a$的范围，得出$f(x)$的单调性，从而得出$a$的值．",
+                                               "solution_latex":  "（1）当$a=0$时，$f(x)=(2+x)\\ln(1+x)-2x$，$f\u0027(x)=\\ln(1+x)+\\frac{2+x}{1+x}-2=\\ln(1+x)-\\frac{x}{1+x}$，$f\u0027\u0027(x)=\\frac{1}{1+x}-\\frac{1}{(1+x)^2}=\\frac{x}{(1+x)^2}$，当$-1\u003cx\u003c0$时，$f\u0027\u0027(x)\u003c0$，$f\u0027(x)$递减；当$x\u003e0$时，$f\u0027\u0027(x)\u003e0$，$f\u0027(x)$递增，所以$f\u0027(x)\\geq f\u0027(0)=0$，故$f(x)$在$(-1,+\\infty)$上单调递增，又$f(0)=0$，所以当$-1\u003cx\u003c0$时$f(x)\u003c0$，当$x\u003e0$时$f(x)\u003e0$．\n（2）$f\u0027(x)=(1+2ax)\\ln(1+x)+\\frac{2+x+ax^2}{1+x}-2=\\frac{(1+2ax)(1+x)\\ln(1+x)+ax^2-x}{1+x}$，令$h(x)=(1+2ax)(1+x)\\ln(1+x)+ax^2-x$，则$h\u0027(x)=4ax+(4ax+2a+1)\\ln(1+x)$，$h\u0027\u0027(x)=8a+4a\\ln(1+x)+\\frac{4ax+2a+1}{1+x}$．由题意$x=0$是极大值点，则$h\u0027(0)=0$，$h\u0027\u0027(0)\\leq0$，$h\u0027\u0027(0)=8a+2a+1=10a+1$，令$10a+1=0$得$a=-\\frac{1}{10}$，下面验证：当$a=-\\frac{1}{10}$时，$h\u0027\u0027(x)=-\\frac{4}{5}-\\frac{2}{5}\\ln(1+x)+\\frac{-\\frac{2}{5}x-\\frac{1}{5}}{1+x}$，$h\u0027\u0027(0)=0$，$h\u0027\u0027\u0027(x)=-\\frac{2}{5(1+x)}+\\frac{2}{5(1+x)^2}\u003c0$，故$h\u0027\u0027(x)$递减，当$x\u003c0$时$h\u0027\u0027(x)\u003e0$，$h\u0027(x)$递增，$h\u0027(x)\u003ch\u0027(0)=0$，$h(x)$递减，$h(x)\u003eh(0)=0$，$f\u0027(x)\u003e0$；当$x\u003e0$时$h\u0027\u0027(x)\u003c0$，$h\u0027(x)$递减，$h\u0027(x)\u003ch\u0027(0)=0$，$h(x)$递减，$h(x)\u003ch(0)=0$，$f\u0027(x)\u003c0$，所以$x=0$是极大值点，符合．若$a\u003e-\\frac{1}{10}$时，$h\u0027\u0027(0)\u003e0$，存在$x\u003e0$使$h\u0027(x)\u003e0$，与极大值矛盾；若$a\u003c-\\frac{1}{10}$时，$h\u0027\u0027(0)\u003c0$，存在$x\u003c0$使$h\u0027(x)\u003e0$，也与极大值矛盾．综上$a=-\\frac{1}{10}$．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "在平面直角坐标系$xOy$中，$\\odot O$的参数方程为$\\begin{cases}x=\\cos\\theta\\\\ y=\\sin\\theta\\end{cases}$（$\\theta$为参数），过点$(0,-\\sqrt{2})$且倾斜角为$\\alpha$的直线$l$与$\\odot O$交于$A$，$B$两点．\n（1）求$\\alpha$的取值范围；\n（2）求$AB$中点$P$的轨迹的参数方程．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）将圆的参数方程化为普通方程，结合直线与圆相交的条件，利用圆心到直线的距离小于半径求解．（2）设直线的参数方程，与圆联立，利用韦达定理和中点坐标公式得到参数方程．",
+                                               "solution_latex":  "（1）$\\odot O$的普通方程为$x^2+y^2=1$，直线$l$的方程为$y=\\tan\\alpha\\cdot x-\\sqrt{2}$，圆心$(0,0)$到直线距离$d=\\frac{|\\sqrt{2}|}{\\sqrt{1+\\tan^2\\alpha}}=\\sqrt{2}\\cos\\alpha\u003c1$，即$\\cos\\alpha\u003c\\frac{\\sqrt{2}}{2}$，由于$\\alpha\\in[0,\\pi)$，故$\\alpha\\in(\\frac{\\pi}{4},\\frac{3\\pi}{4})$．\n（2）设直线$l$的参数方程为$\\begin{cases}x=t\\cos\\alpha\\\\ y=-\\sqrt{2}+t\\sin\\alpha\\end{cases}$（$t$为参数），代入圆方程得$t^2-2\\sqrt{2}t\\sin\\alpha+1=0$，设$A$、$B$对应参数$t_1$、$t_2$，则$t_1+t_2=2\\sqrt{2}\\sin\\alpha$，所以$P$对应参数$t_P=\\frac{t_1+t_2}{2}=\\sqrt{2}\\sin\\alpha$，于是$P$的轨迹参数方程为$\\begin{cases}x=\\sqrt{2}\\sin\\alpha\\cos\\alpha\\\\ y=-\\sqrt{2}+\\sqrt{2}\\sin^2\\alpha\\end{cases}$，即$\\begin{cases}x=\\frac{\\sqrt{2}}{2}\\sin2\\alpha\\\\ y=-\\frac{\\sqrt{2}}{2}\\cos2\\alpha-\\frac{\\sqrt{2}}{2}\\end{cases}$（$\\alpha$为参数，$\\alpha\\in(\\frac{\\pi}{4},\\frac{3\\pi}{4})$）．",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "设函数$f(x)=|2x+1|+|x-1|$．\n（1）画出$y=f(x)$的图象；\n（2）当$x\\in[0,+\\infty)$时，$f(x)\\leq ax+b$，求$a+b$的最小值．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "（1）利用分段函数的性质将函数表示为分段函数形式进行作图．（2）将不等式恒成立转化为图象关系进行求解．",
+                                               "solution_latex":  "（1）$f(x)=\\begin{cases} -3x, \u0026 x\\leq -\\frac{1}{2} \\\\ x+2, \u0026 -\\frac{1}{2}\u003cx\u003c1 \\\\ 3x, \u0026 x\\geq 1 \\end{cases}$，图象略．\n（2）当$x\\in[0,+\\infty)$时，$f(x)\\leq ax+b$恒成立，即$f(x)$的图象在直线$y=ax+b$下方，$x=0$时$f(0)=2\\leq b$，$x\u003e0$时，由图象知$a$至少等于$f(x)$在$[0,+\\infty)$上各段斜率的最大值3，故$a\\geq3$，$b\\geq2$，所以$a+b\\geq5$，当$a=3$，$b=2$时取等，故$a+b$的最小值为5．",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  29,
+                                                                  "description":  "函数$f(x)$的分段函数图象",
+                                                                  "file":  "question-23-1.jpg"
+                                                              }
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  3,
+                             "issue":  "原卷第7页选项为A. B. C. D.图，无具体文字，从解析版确认选项A正确"
+                         },
+                         {
+                             "question":  7,
+                             "issue":  "原卷第11页选项为A. B. C. D.图，无具体文字，从解析版确认选项D正确"
+                         },
+                         {
+                             "question":  15,
+                             "issue":  "原卷第17页解析中f(x)=cos(3x+  )，根据上下文推断为cos(3x+π/6)"
+                         },
+                         {
+                             "question":  19,
+                             "issue":  "原卷第5页半圆弧符号显示为\\overgroup{CD}，解析版同样，保留"
+                         },
+                         {
+                             "question":  3,
+                             "issue":  "题图未能自动匹配：原卷第 7 页，带卯眼的木构件俯视图的四个选项，A为内含虚线的长方形"
+                         },
+                         {
+                             "question":  3,
+                             "issue":  "题图未能自动匹配：原卷第 7 页，带卯眼的木构件俯视图的四个选项，A为内含虚线的长方形"
+                         },
+                         {
+                             "question":  3,
+                             "issue":  "题图未能自动匹配：原卷第 7 页，带卯眼的木构件俯视图的四个选项，A为内含虚线的长方形"
+                         }
+                     ]
+}

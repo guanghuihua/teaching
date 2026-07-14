@@ -1,0 +1,11 @@
+﻿{
+    "model":  "deepseek-v4-flash",
+    "initial_selected":  218,
+    "audit_candidates":  219,
+    "audit_added":  50,
+    "selected_questions":  268,
+    "prompt_tokens":  266674,
+    "completion_tokens":  12060,
+    "cached_tokens":  0,
+    "estimated_cost_cny":  0.2908
+}

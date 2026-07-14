@@ -1,0 +1,375 @@
+﻿{
+    "title":  "2024 年高考数学 新高考II卷",
+    "year":  2024,
+    "paper":  "新课标全国II卷",
+    "sections":  [
+                     {
+                         "title":  "一、单项选择题",
+                         "instructions":  "本大题共8小题，每小题5分，共40分. 在每小题给出的四个选项中，只有一个选项是正确的．请把正确的选项填涂在答题卡相应的位置上.",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知$z = -1 - i$，则$|z| =$（ ）",
+                                               "choices":  [
+                                                               "$0$",
+                                                               "$1$",
+                                                               "$\\sqrt{2}$",
+                                                               "$2$"
+                                                           ],
+                                               "answer_latex":  "$C$",
+                                               "analysis_latex":  "由复数模的计算公式直接计算即可.",
+                                               "solution_latex":  "若$z = -1 - i$，则$|z| = \\sqrt{(-1)^2 + (-1)^2} = \\sqrt{2}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知命题$p$：$\\forall x \\in \\mathbb{R}$，$|x+1| \u003e 1$；命题$q$：$\\exists x \u003e 0$，$x^3 = x$，则（ ）",
+                                               "choices":  [
+                                                               "$p$和$q$都是真命题",
+                                                               "$\\neg p$和$q$都是真命题",
+                                                               "$p$和$\\neg q$都是真命题",
+                                                               "$\\neg p$和$\\neg q$都是真命题"
+                                                           ],
+                                               "answer_latex":  "$B$",
+                                               "analysis_latex":  "对于两个命题而言，可分别取$x=-1$、$x=1$，再结合命题及其否定的真假性相反即可得解.",
+                                               "solution_latex":  "对于$p$而言，取$x=-1$，则有$|x+1|=0 \u003c 1$，故$p$是假命题，$\\neg p$是真命题。对于$q$而言，取$x=1$，则有$x^3=1^3=1=x$，故$q$是真命题，$\\neg q$是假命题。综上，$\\neg p$和$q$都是真命题.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知向量$\\vec{a}, \\vec{b}$满足$|\\vec{a}|=1$，$|\\vec{a}+2\\vec{b}|=2$，且$(\\vec{b}-2\\vec{a}) \\perp \\vec{b}$，则$|\\vec{b}|=$（ ）",
+                                               "choices":  [
+                                                               "$\\dfrac{1}{2}$",
+                                                               "$\\dfrac{\\sqrt{2}}{2}$",
+                                                               "$\\dfrac{\\sqrt{3}}{2}$",
+                                                               "$1$"
+                                                           ],
+                                               "answer_latex":  "$B$",
+                                               "analysis_latex":  "由$(\\vec{b}-2\\vec{a})\\perp\\vec{b}$得$|\\vec{b}|^2=2\\vec{a}\\cdot\\vec{b}$，结合$|\\vec{a}|=1$，$|\\vec{a}+2\\vec{b}|=2$，得$1+4\\vec{a}\\cdot\\vec{b}+4|\\vec{b}|^2=1+6|\\vec{b}|^2=4$，由此即可得解.",
+                                               "solution_latex":  "因为$(\\vec{b}-2\\vec{a})\\perp\\vec{b}$，所以$(\\vec{b}-2\\vec{a})\\cdot\\vec{b}=0$，即$|\\vec{b}|^2=2\\vec{a}\\cdot\\vec{b}$。又因为$|\\vec{a}|=1$，$|\\vec{a}+2\\vec{b}|=2$，所以$1+4\\vec{a}\\cdot\\vec{b}+4|\\vec{b}|^2=1+6|\\vec{b}|^2=4$，从而$|\\vec{b}|=\\dfrac{\\sqrt{2}}{2}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "某农业研究部门在面积相等的100块稻田上种植一种新型水稻，得到各块稻田的亩产量（单位：kg）并部分整理下表：\n\n| 亩产量 | [900,950) | [950,1000) | [1000,1050) | [1100,1150) | [1150,1200) |\n|--------|-----------|------------|-------------|-------------|-------------|\n| 频数   | 6         | 12         | 18          | 24          | 10          |\n\n据表中数据，结论中正确的是（ ）",
+                                               "choices":  [
+                                                               "100块稻田亩产量的中位数小于1050kg",
+                                                               "100块稻田中亩产量低于1100kg的稻田所占比例超过80%",
+                                                               "100块稻田亩产量的极差介于200kg至300kg之间",
+                                                               "100块稻田亩产量的平均值介于900kg至1000kg之间"
+                                                           ],
+                                               "answer_latex":  "$C$",
+                                               "analysis_latex":  "计算出前三段频数即可判断A；计算出低于1100kg的频数，再计算比例即可判断B；根据极差计算方法即可判断C；根据平均值计算公式即可判断D.",
+                                               "solution_latex":  "对于A，根据频数分布表可知，$6+12+18=36\u003c50$，所以亩产量的中位数不小于1050kg，故A错误。对于B，亩产量不低于1100kg的频数为$24+10=34$，所以低于1100kg的稻田占比为$\\dfrac{100-34}{100}=66\\%$，故B错误。对于C，稻田亩产量的极差最大为$1200-900=300$，最小为$1150-950=200$，故C正确。对于D，由频数分布表可得，亩产量在[1050,1100)的频数为$100-(6+12+18+24+10)=30$，所以平均值为$\\dfrac{1}{100}\\times(6\\times925+12\\times975+18\\times1025+30\\times1075+24\\times1125+10\\times1175)=1067$，故D错误.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知曲线$C：x^2+y^2=16$（$y\u003e0$），从$C$上任意一点$P$向$x$轴作垂线段$PP\u0027$，$P\u0027$为垂足，则线段$PP\u0027$的中点$M$的轨迹方程为（ ）",
+                                               "choices":  [
+                                                               "$\\dfrac{x^2}{16}+\\dfrac{y^2}{4}=1$（$y\u003e0$）",
+                                                               "$\\dfrac{x^2}{16}+\\dfrac{y^2}{8}=1$（$y\u003e0$）",
+                                                               "$\\dfrac{y^2}{16}+\\dfrac{x^2}{4}=1$（$y\u003e0$）",
+                                                               "$\\dfrac{y^2}{16}+\\dfrac{x^2}{8}=1$（$y\u003e0$）"
+                                                           ],
+                                               "answer_latex":  "$A$",
+                                               "analysis_latex":  "设点$M(x,y)$，由题意，根据中点的坐标表示可得$P(x,2y)$，代入圆的方程即可求解.",
+                                               "solution_latex":  "设点$M(x,y)$，则$P(x,y_0)$，$P\u0027(x,0)$，因为$M$为$PP\u0027$的中点，所以$y_0=2y$，即$P(x,2y)$。又$P$在圆$x^2+y^2=16(y\u003e0)$上，所以$x^2+4y^2=16(y\u003e0)$，即$\\dfrac{x^2}{16}+\\dfrac{y^2}{4}=1(y\u003e0)$，即点$M$的轨迹方程为$\\dfrac{x^2}{16}+\\dfrac{y^2}{4}=1(y\u003e0)$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设函数$f(x)=a(x+1)^2-1$，$g(x)=\\cos x+2ax$，当$x\\in(-1,1)$时，曲线$y=f(x)$与$y=g(x)$恰有一个交点，则$a=$（ ）",
+                                               "choices":  [
+                                                               "$-1$",
+                                                               "$\\dfrac{1}{2}$",
+                                                               "$1$",
+                                                               "$2$"
+                                                           ],
+                                               "answer_latex":  "$D$",
+                                               "analysis_latex":  "解法一：令$F(x)=ax^2+a-1$，$G(x)=\\cos x$，分析可知曲线$y=F(x)$与$y=G(x)$恰有一个交点，结合偶函数的对称性可知该交点只能在$y$轴上，即可得$a=2$，并代入检验即可；解法二：令$h(x)=f(x)-g(x),x\\in(-1,1)$，可知$h(x)$为偶函数，根据偶函数的对称性可知$h(x)$的零点只能为0，即可得$a=2$，并代入检验即可.",
+                                               "solution_latex":  "解法一：令$f(x)=g(x)$，即$a(x+1)^2-1=\\cos x+2ax$，可得$ax^2+a-1=\\cos x$。令$F(x)=ax^2+a-1$，$G(x)=\\cos x$。原题意等价于当$x\\in(-1,1)$时，曲线$y=F(x)$与$y=G(x)$恰有一个交点。注意到$F(x),G(x)$均为偶函数，可知该交点只能在$y$轴上，可得$F(0)=G(0)$，即$a-1=1$，解得$a=2$。若$a=2$，令$F(x)=G(x)$，可得$2x^2+1-\\cos x=0$。因为$x\\in(-1,1)$，则$2x^2\\ge0$，$1-\\cos x\\ge0$，当且仅当$x=0$时等号成立，可得$2x^2+1-\\cos x\\ge0$，当且仅当$x=0$时等号成立，则方程$2x^2+1-\\cos x=0$有且仅有一个实根0，即曲线$y=F(x)$与$y=G(x)$恰有一个交点，所以$a=2$符合题意。综上所述：$a=2$。解法二：令$h(x)=f(x)-g(x)=ax^2+a-1-\\cos x,x\\in(-1,1)$，原题意等价于$h(x)$有且仅有一个零点。因为$h(-x)=a(-x)^2+a-1-\\cos(-x)=ax^2+a-1-\\cos x=h(x)$，则$h(x)$为偶函数，根据偶函数的对称性可知$h(x)$的零点只能为0，即$h(0)=a-2=0$，解得$a=2$。若$a=2$，则$h(x)=2x^2+1-\\cos x,x\\in(-1,1)$，又因为$2x^2\\ge0$，$1-\\cos x\\ge0$当且仅当$x=0$时等号成立，可得$h(x)\\ge0$，当且仅当$x=0$时等号成立，即$h(x)$有且仅有一个零点0，所以$a=2$符合题意.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知正三棱台$ABC-A_1B_1C_1$的体积为$\\dfrac{52}{3}$，$AB=6$，$A_1B_1=2$，则$A_1A$与平面$ABC$所成角的正切值为（ ）",
+                                               "choices":  [
+                                                               "$\\dfrac{1}{2}$",
+                                                               "$1$",
+                                                               "$2$",
+                                                               "$3$"
+                                                           ],
+                                               "answer_latex":  "$B$",
+                                               "analysis_latex":  "解法一：根据台体的体积公式可得三棱台的高$h=\\dfrac{4\\sqrt{3}}{3}$，做辅助线，结合正三棱台的结构特征求得$AM=\\dfrac{4\\sqrt{3}}{3}$，进而根据线面夹角的定义分析求解；解法二：将正三棱台$ABC-A_1B_1C_1$补成正三棱锥$P-ABC$，$A_1A$与平面$ABC$所成角即为$PA$与平面$ABC$所成角，根据比例关系可得$V_{P-ABC}=18$，进而可求正三棱锥$P-ABC$的高，即可得结果.",
+                                               "solution_latex":  "解法一：分别取$BC,B_1C_1$的中点$D,D_1$，则$AD=3\\sqrt{3}$，$A_1D_1=\\sqrt{3}$。可知$S_{\\triangle ABC}=\\dfrac{1}{2}\\times6\\times6\\times\\dfrac{\\sqrt{3}}{2}=9\\sqrt{3}$，$S_{\\triangle A_1B_1C_1}=\\dfrac{1}{2}\\times2\\times\\sqrt{3}=\\sqrt{3}$。设正三棱台$ABC-A_1B_1C_1$的高为$h$，则$V_{ABC-A_1B_1C_1}=\\dfrac{1}{3}(9\\sqrt{3}+\\sqrt{3}+\\sqrt{9\\sqrt{3}\\times\\sqrt{3}})h=\\dfrac{52}{3}$，解得$h=\\dfrac{4\\sqrt{3}}{3}$。如图，分别过$A_1,D_1$作底面垂线，垂足为$M,N$，设$AM=x$，则$AA_1=\\sqrt{AM^2+A_1M^2}=\\sqrt{x^2+\\dfrac{16}{3}}$，$DN=AD-AM-MN=2\\sqrt{3}-x$，可得$DD_1=\\sqrt{DN^2+D_1N^2}=\\sqrt{(2\\sqrt{3}-x)^2+\\dfrac{16}{3}}$。结合等腰梯形$BCC_1B_1$可得$BB_1^2=\\left(\\dfrac{6-2}{2}\\right)^2+DD_1^2$，即$x^2+\\dfrac{16}{3}=(2\\sqrt{3}-x)^2+\\dfrac{16}{3}+4$，解得$x=\\dfrac{4\\sqrt{3}}{3}$。所以$A_1A$与平面$ABC$所成角的正切值为$\\tan\\angle A_1AD=\\dfrac{A_1M}{AM}=1$。解法二：将正三棱台$ABC-A_1B_1C_1$补成正三棱锥$P-ABC$，则$A_1A$与平面$ABC$所成角即为$PA$与平面$ABC$所成角。因为$\\dfrac{PA_1}{PA}=\\dfrac{A_1B_1}{AB}=\\dfrac{1}{3}$，则$\\dfrac{V_{P-A_1B_1C_1}}{V_{P-ABC}}=\\dfrac{1}{27}$，可知$V_{ABC-A_1B_1C_1}=\\dfrac{26}{27}V_{P-ABC}=\\dfrac{52}{3}$，则$V_{P-ABC}=18$。设正三棱锥$P-ABC$的高为$d$，则$V_{P-ABC}=\\dfrac{1}{3}\\times\\dfrac{1}{2}\\times6\\times6\\times\\dfrac{\\sqrt{3}}{2}\\times d=18$，解得$d=2\\sqrt{3}$。取底面$ABC$的中心为$O$，则$PO\\perp$底面$ABC$，且$AO=2\\sqrt{3}$，所以$PA$与平面$ABC$所成角的正切值$\\tan\\angle PAO=\\dfrac{PO}{AO}=1$.",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  5,
+                                                                  "description":  "正三棱台及辅助线示意图"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设函数$f(x)=(x+a)\\ln(x+b)$，若$f(x)\\ge 0$，则$a^2+b^2$的最小值为（ ）",
+                                               "choices":  [
+                                                               "$\\dfrac{1}{8}$",
+                                                               "$\\dfrac{1}{4}$",
+                                                               "$\\dfrac{1}{2}$",
+                                                               "$1$"
+                                                           ],
+                                               "answer_latex":  "$C$",
+                                               "analysis_latex":  "解法一：由题意可知$f(x)$的定义域为$(-b,+\\infty)$，分类讨论$-a$与$-b,1-b$的大小关系，结合符号分析判断，即可得$b=a+1$，代入可得最值；解法二：根据对数函数的性质分析$\\ln(x+b)$的符号，进而可得$x+a$的符号，即可得$b=a+1$，代入可得最值.",
+                                               "solution_latex":  "解法一：由题意可知$f(x)$的定义域为$(-b,+\\infty)$。令$x+a=0$解得$x=-a$；令$\\ln(x+b)=0$解得$x=1-b$。若$-a\\le -b$，当$x\\in(-b,1-b)$时，可知$x+a\u003e0,\\ln(x+b)\u003c0$，此时$f(x)\u003c0$，不合题意；若$-b\u003c-a\u003c1-b$，当$x\\in(-a,1-b)$时，可知$x+a\u003e0,\\ln(x+b)\u003c0$，此时$f(x)\u003c0$，不合题意；若$-a=1-b$，当$x\\in(-b,1-b)$时，可知$x+a\u003c0,\\ln(x+b)\u003c0$，此时$f(x)\u003e0$；当$x\\in[1-b,+\\infty)$时，可知$x+a\\ge0,\\ln(x+b)\\ge0$，此时$f(x)\\ge0$；可知若$-a=1-b$，符合题意；若$-a\u003e1-b$，当$x\\in(1-b,-a)$时，可知$x+a\u003c0,\\ln(x+b)\u003e0$，此时$f(x)\u003c0$，不合题意；综上所述：$-a=1-b$，即$b=a+1$，则$a^2+b^2=a^2+(a+1)^2=2\\left(a+\\dfrac{1}{2}\\right)^2+\\dfrac{1}{2}\\ge\\dfrac{1}{2}$，当且仅当$a=-\\dfrac{1}{2},b=\\dfrac{1}{2}$时等号成立，所以$a^2+b^2$的最小值为$\\dfrac{1}{2}$。解法二：由题意可知$f(x)$的定义域为$(-b,+\\infty)$。令$x+a=0$解得$x=-a$；令$\\ln(x+b)=0$解得$x=1-b$。则当$x\\in(-b,1-b)$时，$\\ln(x+b)\u003c0$，故$x+a\\le0$，所以$1-b+a\\le0$；$x\\in(1-b,+\\infty)$时，$\\ln(x+b)\u003e0$，故$x+a\\ge0$，所以$1-b+a\\ge0$；故$1-b+a=0$，则$a^2+b^2=a^2+(a+1)^2=2\\left(a+\\dfrac{1}{2}\\right)^2+\\dfrac{1}{2}\\ge\\dfrac{1}{2}$，当且仅当$a=-\\dfrac{1}{2},b=\\dfrac{1}{2}$时等号成立，所以$a^2+b^2$的最小值为$\\dfrac{1}{2}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、多项选择题",
+                         "instructions":  "本大题共3小题，每小题6分，共18分. 在每小题给出的四个选项中，有多项符合题目要求. 全部选对得6分，选对但不全的得部分分，有选错的得0分.",
+                         "questions":  [
+                                           {
+                                               "number":  9,
+                                               "type":  "multiple_choice",
+                                               "points":  6,
+                                               "stem_latex":  "对于函数$f(x)=\\sin 2x$和$g(x)=\\sin(2x-\\dfrac{\\pi}{4})$，下列正确的有（ ）",
+                                               "choices":  [
+                                                               "$f(x)$与$g(x)$有相同零点",
+                                                               "$f(x)$与$g(x)$有相同最大值",
+                                                               "$f(x)$与$g(x)$有相同的最小正周期",
+                                                               "$f(x)$与$g(x)$的图像有相同的对称轴"
+                                                           ],
+                                               "answer_latex":  "$BC$",
+                                               "analysis_latex":  "根据正弦函数的零点、最值、周期公式、对称轴方程逐一分析每个选项即可.",
+                                               "solution_latex":  "A选项，令$f(x)=\\sin 2x=0$，解得$x=\\dfrac{k\\pi}{2},k\\in\\mathbb{Z}$，即为$f(x)$零点；令$g(x)=\\sin(2x-\\dfrac{\\pi}{4})=0$，解得$x=\\dfrac{k\\pi}{2}+\\dfrac{\\pi}{8},k\\in\\mathbb{Z}$，即为$g(x)$零点，显然$f(x),g(x)$零点不同，A选项错误。B选项，显然$f(x)_{\\max}=g(x)_{\\max}=1$，B选项正确。C选项，根据周期公式，$f(x),g(x)$的周期均为$\\dfrac{2\\pi}{2}=\\pi$，C选项正确。D选项，根据正弦函数的性质$f(x)$的对称轴满足$2x=k\\pi+\\dfrac{\\pi}{2}\\Leftrightarrow x=\\dfrac{k\\pi}{2}+\\dfrac{\\pi}{4},k\\in\\mathbb{Z}$，$g(x)$的对称轴满足$2x-\\dfrac{\\pi}{4}=k\\pi+\\dfrac{\\pi}{2}\\Leftrightarrow x=\\dfrac{k\\pi}{2}+\\dfrac{3\\pi}{8},k\\in\\mathbb{Z}$，显然$f(x),g(x)$图像的对称轴不同，D选项错误.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "multiple_choice",
+                                               "points":  6,
+                                               "stem_latex":  "抛物线$C：y^2=4x$的准线为$l$，$P$为$C$上的动点，过$P$作$\\odot A: x^2+(y-4)^2=1$的一条切线，$Q$为切点，过$P$作$l$的垂线，垂足为$B$，则（ ）",
+                                               "choices":  [
+                                                               "$l$与$\\odot A$相切",
+                                                               "当$P,A,B$三点共线时，$|PQ|=\\sqrt{15}$",
+                                                               "当$|PB|=2$时，$PA\\perp AB$",
+                                                               "满足$|PA|=|PB|$的点$P$有且仅有2个"
+                                                           ],
+                                               "answer_latex":  "$ABD$",
+                                               "analysis_latex":  "A选项，抛物线准线为$x=-1$，根据圆心到准线的距离来判断；B选项，$P,A,B$三点共线时，先求出$P$的坐标，进而得出切线长；C选项，根据$PB=2$先算出$P$的坐标，然后验证$k_{PA}k_{AB}=-1$是否成立；D选项，根据抛物线的定义，$PB=PF$，于是问题转化成$PA=PF$的$P$点的存在性问题，此时考察$AF$的中垂线和抛物线的交点个数即可，亦可直接设$P$点坐标进行求解.",
+                                               "solution_latex":  "A选项，抛物线$y^2=4x$的准线为$x=-1$，$\\odot A$的圆心$(0,4)$到直线$x=-1$的距离显然是1，等于圆的半径，故准线$l$和$\\odot A$相切，A选项正确。B选项，$P,A,B$三点共线时，即$PA\\perp l$，则$P$的纵坐标$y_P=4$，由$y_P^2=4x_P$，得到$x_P=4$，故$P(4,4)$，此时切线长$|PQ|=\\sqrt{|PA|^2-r^2}=\\sqrt{4^2-1^2}=\\sqrt{15}$，B选项正确。C选项，当$|PB|=2$时，$x_P=1$，此时$y_P^2=4x_P=4$，故$P(1,2)$或$P(1,-2)$。当$P(1,2)$时，$A(0,4),B(-1,2)$，$k_{PA}=\\dfrac{4-2}{0-1}=-2$，$k_{AB}=\\dfrac{4-2}{0-(-1)}=2$，不满足$k_{PA}k_{AB}=-1$；当$P(1,-2)$时，$A(0,4),B(-1,2)$，$k_{PA}=\\dfrac{4-(-2)}{0-1}=-6$，$k_{AB}=\\dfrac{4-(-2)}{0-(-1)}=6$，不满足$k_{PA}k_{AB}=-1$；于是$PA\\perp AB$不成立，C选项错误。D选项，方法一：利用抛物线定义转化。根据抛物线的定义，$PB=PF$，这里$F(1,0)$，于是$|PA|=|PB|$时$P$点的存在性问题转化成$|PA|=|PF|$时$P$点的存在性问题。$A(0,4),F(1,0)$，$AF$中点$(\\dfrac{1}{2},2)$，$AF$中垂线的斜率为$-\\dfrac{1}{k_{AF}}=\\dfrac{1}{4}$，于是$AF$的中垂线方程为：$y=\\dfrac{x}{4}+\\dfrac{15}{8}$，与抛物线$y^2=4x$联立可得$y^2-16y+30=0$，$\\Delta=16^2-4\\times30=136\u003e0$，即$AF$的中垂线和抛物线有两个交点，即存在两个$P$点，使得$|PA|=|PF|$，D选项正确。方法二：设$P\\left(\\dfrac{t^2}{4},t\\right)$，由$PB\\perp l$可得$B(-1,t)$，又$A(0,4)$，由$|PA|=|PB|$得$\\sqrt{\\dfrac{t^4}{16}+(t-4)^2}=\\sqrt{\\dfrac{t^2}{4}+1}$，整理得$t^2-16t+30=0$，$\\Delta=16^2-4\\times30=136\u003e0$，则关于$t$的方程有两个解，即存在两个这样的$P$点，D选项正确.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "multiple_choice",
+                                               "points":  6,
+                                               "stem_latex":  "设函数$f(x)=2x^3-3ax^2+1$，则（ ）",
+                                               "choices":  [
+                                                               "当$a\u003e1$时，$f(x)$有三个零点",
+                                                               "当$a\u003c0$时，$x=0$是$f(x)$的极大值点",
+                                                               "存在$a,b$，使得$x=b$为曲线$y=f(x)$的对称轴",
+                                                               "存在$a$，使得点$(1,f(1))$为曲线$y=f(x)$的对称中心"
+                                                           ],
+                                               "answer_latex":  "$AD$",
+                                               "analysis_latex":  "A选项，先分析出函数的极值点为$x=0,x=a$，根据零点存在定理和极值的符号判断出$f(x)$在$(-1,0),(0,a),(a,2a)$上各有一个零点；B选项，根据极值和导函数符号的关系进行分析；C选项，假设存在这样的$a,b$，使得$x=b$为$f(x)$的对称轴，则$f(x)=f(2b-x)$为恒等式，据此计算判断；D选项，若存在这样的$a$，使得$(1,3-3a)$为$f(x)$的对称中心，则$f(x)+f(2-x)=6-6a$，据此进行计算判断，亦可利用拐点结论直接求解.",
+                                               "solution_latex":  "A选项，$f\u0027(x)=6x^2-6ax=6x(x-a)$，由于$a\u003e1$，故$x\\in(-\\infty,0)\\cup(a,+\\infty)$时$f\u0027(x)\u003e0$，故$f(x)$在$(-\\infty,0),(a,+\\infty)$上单调递增，$x\\in(0,a)$时$f\u0027(x)\u003c0$，$f(x)$单调递减，则$f(x)$在$x=0$处取到极大值，在$x=a$处取到极小值。由$f(0)=1\u003e0$，$f(a)=1-a^3\u003c0$，则$f(0)f(a)\u003c0$，根据零点存在定理$f(x)$在$(0,a)$上有一个零点；又$f(-1)=-1-3a\u003c0$，$f(2a)=4a^3+1\u003e0$，则$f(-1)f(0)\u003c0$，$f(a)f(2a)\u003c0$，则$f(x)$在$(-1,0),(a,2a)$上各有一个零点，于是$a\u003e1$时，$f(x)$有三个零点，A选项正确。B选项，$f\u0027(x)=6x(x-a)$，$a\u003c0$时，$x\\in(a,0)$时$f\u0027(x)\u003c0$，$f(x)$单调递减，$x\\in(0,+\\infty)$时$f\u0027(x)\u003e0$，$f(x)$单调递增，此时$f(x)$在$x=0$处取到极小值，B选项错误。C选项，假设存在这样的$a,b$，使得$x=b$为$f(x)$的对称轴，即存在这样的$a,b$使得$f(x)=f(2b-x)$，即$2x^3-3ax^2+1=2(2b-x)^3-3a(2b-x)^2+1$，根据二项式定理，等式右边$(2b-x)^3$展开式含有$x^3$的项为$2C_3^0(2b)^3(-x)^3=-2x^3$，于是等式左右两边$x^3$的系数不相等，原等式不可能恒成立，于是不存在这样的$a,b$，使得$x=b$为$f(x)$的对称轴，C选项错误。D选项，方法一：利用对称中心的表达式化简。$f(1)=3-3a$，若存在这样的$a$，使得$(1,3-3a)$为$f(x)$的对称中心，则$f(x)+f(2-x)=6-6a$。事实上，$f(x)+f(2-x)=2x^3-3ax^2+1+2(2-x)^3-3a(2-x)^2+1=(12-6a)x^2+(12a-24)x+18-12a$，于是$6-6a=(12-6a)x^2+(12a-24)x+18-12a$，即$\\begin{cases}12-6a=0\\\\12a-24=0\\\\18-12a=6-6a\\end{cases}$，解得$a=2$，即存在$a=2$使得$(1,f(1))$是$f(x)$的对称中心，D选项正确。方法二：直接利用拐点结论。任何三次函数都有对称中心，对称中心的横坐标是二阶导数的零点。$f(x)=2x^3-3ax^2+1$，$f\u0027(x)=6x^2-6ax$，$f\u0027\u0027(x)=12x-6a$，由$f\u0027\u0027(x)=0\\Leftrightarrow x=\\dfrac{a}{2}$，于是该三次函数的对称中心为$\\left(\\dfrac{a}{2},f\\left(\\dfrac{a}{2}\\right)\\right)$。由题意$(1,f(1))$也是对称中心，故$\\dfrac{a}{2}=1\\Leftrightarrow a=2$，即存在$a=2$使得$(1,f(1))$是$f(x)$的对称中心，D选项正确。",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、填空题",
+                         "instructions":  "本大题共3小题，每小题5分，共15分.",
+                         "questions":  [
+                                           {
+                                               "number":  12,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "记$S_n$为等差数列$\\{a_n\\}$的前$n$项和，若$a_3+a_4=7$，$3a_2+a_5=5$，则$S_{10}=$________.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$95$",
+                                               "analysis_latex":  "利用等差数列通项公式得到方程组，解出$a_1,d$，再利用等差数列的求和公式即可得到答案.",
+                                               "solution_latex":  "因为数列$a_n$为等差数列，则由题意得$\\begin{cases}a_1+2d+a_1+3d=7\\\\3(a_1+d)+a_1+4d=5\\end{cases}$，解得$\\begin{cases}a_1=-4\\\\d=3\\end{cases}$，则$S_{10}=10a_1+\\dfrac{10\\times9}{2}d=10\\times(-4)+45\\times3=95$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知$\\alpha$为第一象限角，$\\beta$为第三象限角，$\\tan\\alpha+\\tan\\beta=4$，$\\tan\\alpha\\tan\\beta=\\sqrt{2}+1$，则$\\sin(\\alpha+\\beta)=$_______.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$-\\dfrac{2\\sqrt{2}}{3}$",
+                                               "analysis_latex":  "法一：根据两角和与差的正切公式得$\\tan(\\alpha+\\beta)=-2\\sqrt{2}$，再缩小$\\alpha+\\beta$的范围，最后结合同角的平方和关系即可得到答案；法二：利用弦化切的方法即可得到答案.",
+                                               "solution_latex":  "法一：由题意得$\\tan(\\alpha+\\beta)=\\dfrac{\\tan\\alpha+\\tan\\beta}{1-\\tan\\alpha\\tan\\beta}=\\dfrac{4}{1-(\\sqrt{2}+1)}=-2\\sqrt{2}$。因为$\\alpha\\in\\left(2k\\pi,2k\\pi+\\dfrac{\\pi}{2}\\right)$，$\\beta\\in\\left(2m\\pi+\\pi,2m\\pi+\\dfrac{3\\pi}{2}\\right)$，$k,m\\in\\mathbb{Z}$，则$\\alpha+\\beta\\in( (2m+2k)\\pi+\\pi, (2m+2k)\\pi+2\\pi )$，$k,m\\in\\mathbb{Z}$。又因为$\\tan(\\alpha+\\beta)=-2\\sqrt{2}\u003c0$，则$\\alpha+\\beta\\in\\left( (2m+2k)\\pi+\\dfrac{3\\pi}{2}, (2m+2k)\\pi+2\\pi\\right)$，$k,m\\in\\mathbb{Z}$，则$\\sin(\\alpha+\\beta)\u003c0$。由$\\dfrac{\\sin(\\alpha+\\beta)}{\\cos(\\alpha+\\beta)}=-2\\sqrt{2}$，联立$\\sin^2(\\alpha+\\beta)+\\cos^2(\\alpha+\\beta)=1$，解得$\\sin(\\alpha+\\beta)=-\\dfrac{2\\sqrt{2}}{3}$。法二：因为$\\alpha$为第一象限角，$\\beta$为第三象限角，则$\\cos\\alpha\u003e0$，$\\cos\\beta\u003c0$。$\\cos\\alpha=\\dfrac{\\cos\\alpha}{\\sin^2\\alpha+\\cos^2\\alpha}=\\dfrac{1}{\\sqrt{1+\\tan^2\\alpha}}$，$\\cos\\beta=\\dfrac{\\cos\\beta}{\\sin^2\\beta+\\cos^2\\beta}=\\dfrac{-1}{\\sqrt{1+\\tan^2\\beta}}$，则$\\sin(\\alpha+\\beta)=\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta=\\cos\\alpha\\cos\\beta(\\tan\\alpha+\\tan\\beta)=4\\cos\\alpha\\cos\\beta=\\dfrac{-4}{\\sqrt{1+\\tan^2\\alpha}\\sqrt{1+\\tan^2\\beta}}=\\dfrac{-4}{\\sqrt{(\\tan\\alpha+\\tan\\beta)^2+(\\tan\\alpha\\tan\\beta-1)^2}}=\\dfrac{-4}{\\sqrt{4^2+(\\sqrt{2})^2}}=-\\dfrac{2\\sqrt{2}}{3}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "在如图的4×4方格表中选4个方格，要求每行和每列均恰有一个方格被选中，则共有________种选法，在所有符合上述要求的选法中，选中方格中的4个数之和的最大值是________．",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$24$，$112$",
+                                               "analysis_latex":  "由题意可知第一、二、三、四列分别有4、3、2、1个方格可选；利用列举法写出所有的可能结果，即可求解.",
+                                               "solution_latex":  "由题意知，选4个方格，每行和每列均恰有一个方格被选中，则第一列有4个方格可选，第二列有3个方格可选，第三列有2个方格可选，第四列有1个方格可选，所以共有$4\\times3\\times2\\times1=24$种选法。每种选法可标记为$(a,b,c,d)$，$a,b,c,d$分别表示第一、二、三、四列的数字，则所有的可能结果为：$(11,22,33,44)$，$(11,22,34,43)$，$(11,22,33,44)$，$(11,22,34,42)$，$(11,24,33,43)$，$(11,24,33,42)$，$(12,21,33,44)$，$(12,21,34,43)$，$(12,22,31,44)$，$(12,22,34,40)$，$(12,24,31,43)$，$(12,24,33,40)$，$(13,21,33,44)$，$(13,21,34,42)$，$(13,22,31,44)$，$(13,22,34,40)$，$(13,24,31,42)$，$(13,24,33,40)$，$(15,21,33,43)$，$(15,21,33,42)$，$(15,22,31,43)$，$(15,22,33,40)$，$(15,22,31,42)$，$(15,22,33,40)$。所以选中的方格中，$(15,21,33,43)$的4个数之和最大，为$15+21+33+43=112$.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "四、解答题",
+                         "instructions":  "本题共5小题，共77分. 解答应写出文字说明、证明过程或演算步骤.",
+                         "questions":  [
+                                           {
+                                               "number":  15,
+                                               "type":  "solution",
+                                               "points":  15,
+                                               "stem_latex":  "记$\\triangle ABC$的内角$A,B,C$的对边分别为$a,b,c$，已知$\\sin A+\\sqrt{3}\\cos A=2$.\n(1)求$A$.\n(2)若$a=2$，$2b\\sin C=c\\sin 2B$，求$\\triangle ABC$的周长.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1)$A=\\dfrac{\\pi}{6}$\n(2)$2+\\sqrt{6}+3\\sqrt{2}$",
+                                               "analysis_latex":  "(1)根据辅助角公式对条件$\\sin A+\\sqrt{3}\\cos A=2$进行化简处理即可求解，常规方法还可利用同角三角函数的关系解方程组，亦可利用导数、向量数量积公式、万能公式解决；(2)先根据正弦定理边角互化算出$B$，然后根据正弦定理算出$b,c$即可得出周长.",
+                                               "solution_latex":  "（1）方法一（辅助角公式）：由$\\sin A+\\sqrt{3}\\cos A=2$可得$\\dfrac{1}{2}\\sin A+\\dfrac{\\sqrt{3}}{2}\\cos A=1$，即$\\sin\\left(A+\\dfrac{\\pi}{3}\\right)=1$。由于$A\\in(0,\\pi)\\Rightarrow A+\\dfrac{\\pi}{3}\\in\\left(\\dfrac{\\pi}{3},\\dfrac{4\\pi}{3}\\right)$，故$A+\\dfrac{\\pi}{3}=\\dfrac{\\pi}{2}$，解得$A=\\dfrac{\\pi}{6}$。\n方法二（同角三角函数的基本关系）：由$\\sin A+\\sqrt{3}\\cos A=2$，又$\\sin^2 A+\\cos^2 A=1$，消去$\\sin A$得到：$4\\cos^2 A-4\\sqrt{3}\\cos A+3=0\\Leftrightarrow(2\\cos A-\\sqrt{3})^2=0$，解得$\\cos A=\\dfrac{\\sqrt{3}}{2}$，又$A\\in(0,\\pi)$，故$A=\\dfrac{\\pi}{6}$。\n方法三（利用极值点求解）：设$f(x)=\\sin x+\\sqrt{3}\\cos x(0\u003cx\u003c\\pi)$，则$f(x)=2\\sin\\left(x+\\dfrac{\\pi}{3}\\right)(0\u003cx\u003c\\pi)$。显然$x=\\dfrac{\\pi}{6}$时，$f(x)_{\\max}=2$。注意到$f(A)=\\sin A+\\sqrt{3}\\cos A=2=2\\sin\\left(A+\\dfrac{\\pi}{3}\\right)$，$f(x)_{\\max}=f(A)$，在开区间$(0,\\pi)$上取到最大值，于是$x=A$必定是极值点，即$f\u0027(A)=0=\\cos A-\\sqrt{3}\\sin A$，即$\\tan A=\\dfrac{\\sqrt{3}}{3}$，又$A\\in(0,\\pi)$，故$A=\\dfrac{\\pi}{6}$。\n方法四（利用向量数量积公式）：设$\\vec{a}=(1,\\sqrt{3})$，$\\vec{b}=(\\sin A,\\cos A)$，由题意，$\\vec{a}\\cdot\\vec{b}=\\sin A+\\sqrt{3}\\cos A=2$，根据向量的数量积公式，$\\vec{a}\\cdot\\vec{b}=|\\vec{a}||\\vec{b}|\\cos\\langle\\vec{a},\\vec{b}\\rangle=2\\cos\\langle\\vec{a},\\vec{b}\\rangle$，则$2\\cos\\langle\\vec{a},\\vec{b}\\rangle=2\\Leftrightarrow\\cos\\langle\\vec{a},\\vec{b}\\rangle=1$，此时$\\langle\\vec{a},\\vec{b}\\rangle=0$，即$\\vec{a},\\vec{b}$同向共线。根据向量共线条件，$1\\cdot\\cos A=\\sqrt{3}\\cdot\\sin A\\Leftrightarrow\\tan A=\\dfrac{\\sqrt{3}}{3}$，又$A\\in(0,\\pi)$，故$A=\\dfrac{\\pi}{6}$。\n方法五（利用万能公式求解）：设$t=\\tan\\dfrac{A}{2}$，根据万能公式，$\\sin A+\\sqrt{3}\\cos A=2=\\dfrac{2t}{1+t^2}+\\dfrac{\\sqrt{3}(1-t^2)}{1+t^2}$，整理可得$t^2-2(2-\\sqrt{3})t+(2-\\sqrt{3})^2=0=(t-(2-\\sqrt{3}))^2$，解得$\\tan\\dfrac{A}{2}=t=2-\\sqrt{3}$，根据二倍角公式，$\\tan A=\\dfrac{2t}{1-t^2}=\\dfrac{\\sqrt{3}}{3}$，又$A\\in(0,\\pi)$，故$A=\\dfrac{\\pi}{6}$。\n（2）由题设条件和正弦定理$2b\\sin C=c\\sin2B\\Leftrightarrow2\\sin B\\sin C=2\\sin C\\sin B\\cos B$，又$B,C\\in(0,\\pi)$，则$\\sin B\\sin C\\neq0$，进而$\\cos B=\\dfrac{\\sqrt{2}}{2}$，得到$B=\\dfrac{\\pi}{4}$，于是$C=\\pi-A-B=\\dfrac{7\\pi}{12}$，$\\sin C=\\sin(\\pi-A-B)=\\sin(A+B)=\\sin A\\cos B+\\sin B\\cos A=\\dfrac{\\sqrt{2}+\\sqrt{6}}{4}$。由正弦定理可得$\\dfrac{a}{\\sin A}=\\dfrac{b}{\\sin B}=\\dfrac{c}{\\sin C}$，即$\\dfrac{2}{\\sin\\dfrac{\\pi}{6}}=\\dfrac{b}{\\sin\\dfrac{\\pi}{4}}=\\dfrac{c}{\\sin\\dfrac{7\\pi}{12}}$，解得$b=2\\sqrt{2}$，$c=\\sqrt{6}+\\sqrt{2}$，故$\\triangle ABC$的周长为$2+\\sqrt{6}+3\\sqrt{2}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "solution",
+                                               "points":  15,
+                                               "stem_latex":  "已知函数$f(x)=e^x-ax-a^3$.\n(1)当$a=1$时，求曲线$y=f(x)$在点$(1,f(1))$处的切线方程；\n(2)若$f(x)$有极小值，且极小值小于0，求$a$的取值范围.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1)$(e-1)x-y-1=0$\n(2)$(1,+\\infty)$",
+                                               "analysis_latex":  "(1)求导，结合导数的几何意义求切线方程；(2)解法一：求导，分析$a\\le0$和$a\u003e0$两种情况，利用导数判断单调性和极值，分析可得$a^2+\\ln a-1\u003e0$，构建函数解不等式即可；解法二：求导，可知$f\u0027(x)=e^x-a$有零点，可得$a\u003e0$，进而利用导数求$f(x)$的单调性和极值，分析可得$a^2+\\ln a-1\u003e0$，构建函数解不等式即可.",
+                                               "solution_latex":  "（1）当$a=1$时，则$f(x)=e^x-x-1$，$f\u0027(x)=e^x-1$，可得$f(1)=e-2$，$f\u0027(1)=e-1$，即切点坐标为$(1,e-2)$，切线斜率$k=e-1$，所以切线方程为$y-(e-2)=(e-1)(x-1)$，即$(e-1)x-y-1=0$。\n（2）解法一：因为$f(x)$的定义域为$\\mathbb{R}$，且$f\u0027(x)=e^x-a$。若$a\\le0$，则$f\u0027(x)\\ge0$对任意$x\\in\\mathbb{R}$恒成立，可知$f(x)$在$\\mathbb{R}$上单调递增，无极值，不合题意；若$a\u003e0$，令$f\u0027(x)\u003e0$，解得$x\u003e\\ln a$；令$f\u0027(x)\u003c0$，解得$x\u003c\\ln a$；可知$f(x)$在$(-\\infty,\\ln a)$内单调递减，在$(\\ln a,+\\infty)$内单调递增，则$f(x)$有极小值$f(\\ln a)=a-a\\ln a-a^3$，无极大值。由题意可得：$f(\\ln a)=a-a\\ln a-a^3\u003c0$，即$a^2+\\ln a-1\u003e0$。构建$g(a)=a^2+\\ln a-1,a\u003e0$，则$g\u0027(a)=2a+\\dfrac{1}{a}\u003e0$，可知$g(a)$在$(0,+\\infty)$内单调递增，且$g(1)=0$，不等式$a^2+\\ln a-1\u003e0$等价于$g(a)\u003eg(1)$，解得$a\u003e1$，所以$a$的取值范围为$(1,+\\infty)$。\n解法二：因为$f(x)$的定义域为$\\mathbb{R}$，且$f\u0027(x)=e^x-a$。若$f(x)$有极小值，则$f\u0027(x)=e^x-a$有零点，令$f\u0027(x)=e^x-a=0$，可得$e^x=a$，可知$y=e^x$与$y=a$有交点，则$a\u003e0$。若$a\u003e0$，令$f\u0027(x)\u003e0$，解得$x\u003e\\ln a$；令$f\u0027(x)\u003c0$，解得$x\u003c\\ln a$；可知$f(x)$在$(-\\infty,\\ln a)$内单调递减，在$(\\ln a,+\\infty)$内单调递增，则$f(x)$有极小值$f(\\ln a)=a-a\\ln a-a^3$，无极大值，符合题意。由题意可得：$f(\\ln a)=a-a\\ln a-a^3\u003c0$，即$a^2+\\ln a-1\u003e0$。构建$g(a)=a^2+\\ln a-1,a\u003e0$，因为$y=a^2$和$y=\\ln a-1$在$(0,+\\infty)$内单调递增，可知$g(a)$在$(0,+\\infty)$内单调递增，且$g(1)=0$，不等式$a^2+\\ln a-1\u003e0$等价于$g(a)\u003eg(1)$，解得$a\u003e1$，所以$a$的取值范围为$(1,+\\infty)$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  15,
+                                               "stem_latex":  "如图，平面四边形$ABCD$中，$AB=8$，$CD=3$，$AD=5\\sqrt{3}$，$\\angle ADC=90^\\circ$，$\\angle BAD=30^\\circ$，点$E,F$满足$\\overrightarrow{AE}=\\dfrac{2}{5}\\overrightarrow{AD}$，$\\overrightarrow{AF}=\\dfrac{1}{2}\\overrightarrow{AB}$，将$\\triangle AEF$沿$EF$对折至$\\triangle PEF$，使得$PC=4\\sqrt{3}$.\n(1)证明：$EF\\perp PD$；\n(2)求面$PCD$与面$PBF$所成的二面角的正弦值.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1)证明见解析\n(2)$\\dfrac{8\\sqrt{65}}{65}$",
+                                               "analysis_latex":  "(1)由题意，根据余弦定理求得$EF=2$，利用勾股定理的逆定理可证得$EF\\perp AD$，则$EF\\perp PE$，$EF\\perp DE$，结合线面垂直的判定定理与性质即可证明；(2)由(1)，根据线面垂直的判定定理与性质可证明$PE\\perp ED$，建立如图空间直角坐标系$E-xyz$，利用空间向量法求解面面角即可.",
+                                               "solution_latex":  "（1）由$AB=8,AD=5\\sqrt{3},\\overrightarrow{AE}=\\dfrac{2}{5}\\overrightarrow{AD},\\overrightarrow{AF}=\\dfrac{1}{2}\\overrightarrow{AB}$，得$AE=2\\sqrt{3},AF=4$。又$\\angle BAD=30^\\circ$，在$\\triangle AEF$中，由余弦定理得$EF=\\sqrt{AE^2+AF^2-2AE\\cdot AF\\cos\\angle BAD}=\\sqrt{16+12-2\\cdot4\\cdot2\\sqrt{3}\\cdot\\dfrac{\\sqrt{3}}{2}}=2$，所以$AE^2+EF^2=AF^2$，则$AE\\perp EF$，即$EF\\perp AD$，所以$EF\\perp PE$，$EF\\perp DE$，又$PE\\cap DE=E$，$PE,DE\\subset$平面$PDE$，所以$EF\\perp$平面$PDE$，又$PD\\subset$平面$PDE$，故$EF\\perp PD$。\n（2）连接$CE$，由$\\angle ADC=90^\\circ,ED=3\\sqrt{3},CD=3$，则$CE^2=ED^2+CD^2=36$。在$\\triangle PEC$中，$PC=4\\sqrt{3},PE=2\\sqrt{3},EC=6$，得$EC^2+PE^2=PC^2$，所以$PE\\perp EC$，由(1)知$PE\\perp EF$，又$EC\\cap EF=E$，$EC,EF\\subset$平面$ABCD$，所以$PE\\perp$平面$ABCD$，又$ED\\subset$平面$ABCD$，所以$PE\\perp ED$，则$PE,EF,ED$两两垂直，建立如图空间直角坐标系$E-xyz$，则$E(0,0,0)$，$P(0,0,2\\sqrt{3})$，$D(0,3\\sqrt{3},0)$，$C(3,3\\sqrt{3},0)$，$F(2,0,0)$，$A(0,-2\\sqrt{3},0)$，由$F$是$AB$的中点，得$B(4,2\\sqrt{3},0)$。所以$\\overrightarrow{PC}=(3,3\\sqrt{3},-2\\sqrt{3})$，$\\overrightarrow{PD}=(0,3\\sqrt{3},-2\\sqrt{3})$，$\\overrightarrow{PB}=(4,2\\sqrt{3},-2\\sqrt{3})$，$\\overrightarrow{PF}=(2,0,-2\\sqrt{3})$。设平面$PCD$和平面$PBF$的一个法向量分别为$\\vec{n}=(x_1,y_1,z_1)$，$\\vec{m}=(x_2,y_2,z_2)$，则$\\begin{cases}\\vec{n}\\cdot\\overrightarrow{PC}=3x_1+3\\sqrt{3}y_1-2\\sqrt{3}z_1=0\\\\\\vec{n}\\cdot\\overrightarrow{PD}=3\\sqrt{3}y_1-2\\sqrt{3}z_1=0\\end{cases}$，$\\begin{cases}\\vec{m}\\cdot\\overrightarrow{PB}=4x_2+2\\sqrt{3}y_2-2\\sqrt{3}z_2=0\\\\\\vec{m}\\cdot\\overrightarrow{PF}=2x_2-2\\sqrt{3}z_2=0\\end{cases}$，令$y_1=2$，$x_2=\\sqrt{3}$，得$x_1=0,z_1=3,y_2=-1,z_2=1$，所以$\\vec{n}=(0,2,3)$，$\\vec{m}=(\\sqrt{3},-1,1)$，所以$\\cos\\langle\\vec{m},\\vec{n}\\rangle=\\dfrac{\\vec{m}\\cdot\\vec{n}}{|\\vec{m}||\\vec{n}|}=\\dfrac{1}{5\\cdot\\sqrt{13}}=\\dfrac{\\sqrt{65}}{65}$。设平面$PCD$和平面$PBF$所成角为$\\theta$，则$\\sin\\theta=\\sqrt{1-\\cos^2\\theta}=\\dfrac{8\\sqrt{65}}{65}$，即平面$PCD$和平面$PBF$所成角的正弦值为$\\dfrac{8\\sqrt{65}}{65}$.",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  3,
+                                                                  "description":  "几何体示意图",
+                                                                  "file":  "question-17-1.jpg"
+                                                              },
+                                                              {
+                                                                  "source_page":  4,
+                                                                  "description":  "折叠后的几何体示意图及坐标系",
+                                                                  "file":  "question-17-2.jpg"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  17,
+                                               "stem_latex":  "某投篮比赛分为两个阶段，每个参赛队由两名队员组成，比赛具体规则如下：第一阶段由参赛队中一名队员投篮3次，若3次都未投中，则该队被淘汰，比赛成绩为0分；若至少投中一次，则该队进入第二阶段，由该队的另一名队员投篮3次，每次投中得5分，未投中得0分。该队的比赛成绩为第二阶段的得分总和。某参赛队由甲、乙两名队员组成，设甲每次投中的概率为$p$，乙每次投中的概率为$q$，各次投中与否相互独立。\n(1)若$p=0.4$，$q=0.5$，甲参加第一阶段比赛，求甲、乙所在队的比赛成绩不少于5分的概率。\n(2)假设$0\u003cp\u003cq$，\n(i)为使得甲、乙所在队的比赛成绩为15分的概率最大，应该由谁参加第一阶段比赛？\n(ii)为使得甲、乙所在队的比赛成绩的数学期望最大，应该由谁参加第一阶段比赛？",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1)$0.686$\n(2)(i)由甲参加第一阶段比赛；(ii)由甲参加第一阶段比赛",
+                                               "analysis_latex":  "(1)根据对立事件的求法和独立事件的乘法公式即可得到答案；(2)(i)首先各自计算出$P_{\\text{甲}}=[1-(1-p)^3]q^3$，$P_{\\text{乙}}=[1-(1-q)^3]p^3$，再作差因式分解即可判断；(ii)首先得到$X$和$Y$的所有可能取值，再按步骤列出分布列，计算出各自期望，再次作差比较大小即可.",
+                                               "solution_latex":  "（1）甲、乙所在队的比赛成绩不少于5分，则甲第一阶段至少投中1次，乙第二阶段也至少投中1次。比赛成绩不少于5分的概率$P=(1-0.6^3)(1-0.5^3)=0.686$。\n（2）(i)若甲先参加第一阶段比赛，则甲、乙所在队的比赛成绩为15分的概率为$P_{\\text{甲}}=[1-(1-p)^3]q^3$；若乙先参加第一阶段比赛，则甲、乙所在队的比赛成绩为15分的概率为$P_{\\text{乙}}=[1-(1-q)^3]p^3$。因为$0\u003cp\u003cq$，所以$P_{\\text{甲}}-P_{\\text{乙}}=q^3-(q-pq)^3-p^3+(p-pq)^3=(q-p)(q^2+pq+p^2)+(p-q)[(p-pq)^2+(q-pq)^2+(p-pq)(q-pq)]=(p-q)(3p^2q^2-3p^2q-3pq^2)=3pq(p-q)(pq-p-q)=3pq(p-q)[(1-p)(1-q)-1]\u003e0$，所以$P_{\\text{甲}}\u003eP_{\\text{乙}}$，应该由甲参加第一阶段比赛。\n(ii)若甲先参加第一阶段比赛，数学成绩$X$的所有可能取值为$0,5,10,15$，$P(X=0)=(1-p)^3+[1-(1-p)^3](1-q)^3$，$P(X=5)=[1-(1-p)^3]C_3^1q(1-q)^2$，$P(X=10)=[1-(1-p)^3]C_3^2q^2(1-q)$，$P(X=15)=[1-(1-p)^3]q^3$，所以$E(X)=15[1-(1-p)^3]q=15(p^3-3p^2+3p)q$。记乙先参加第一阶段比赛，数学成绩$Y$的所有可能取值为$0,5,10,15$，同理$E(Y)=15(q^3-3q^2+3q)p$。则$E(X)-E(Y)=15[pq(p+q)(p-q)-3pq(p-q)]=15(p-q)pq(p+q-3)$。因为$0\u003cp\u003cq$，则$p-q\u003c0$，$p+q-3\u003c1+1-3\u003c0$，则$(p-q)pq(p+q-3)\u003e0$，所以$E(X)\u003eE(Y)$，应该由甲参加第一阶段比赛.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  17,
+                                               "stem_latex":  "已知双曲线$C:x^2-y^2=m(m\u003e0)$，点$P_1(5,4)$在$C$上，$k$为常数，$0\u003ck\u003c1$。按照如下方式依次构造点$P_n(n=2,3,\\ldots)$，过$P_{n-1}$作斜率为$k$的直线与$C$的左支交于点$Q_{n-1}$，令$P_n$为$Q_{n-1}$关于$y$轴的对称点，记$P_n$的坐标为$(x_n,y_n)$。\n(1)若$k=\\dfrac{1}{2}$，求$x_2,y_2$；\n(2)证明：数列$\\{x_n-y_n\\}$是公比为$\\dfrac{1+k}{1-k}$的等比数列；\n(3)设$S_n$为$\\triangle P_nP_{n+1}P_{n+2}$的面积，证明：对任意的正整数$n$，$S_n=S_{n+1}$.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "(1)$x_2=3$，$y_2=0$\n(2)证明见解析\n(3)证明见解析",
+                                               "analysis_latex":  "(1)直接根据题目中的构造方式计算出$P_2$的坐标即可；(2)根据等比数列的定义即可验证结论；(3)思路一：使用平面向量数量积和等比数列工具，证明$S_n$的取值为与$n$无关的定值即可。思路二：使用等差数列工具，证明$S_n$的取值为与$n$无关的定值即可.",
+                                               "solution_latex":  "（1）由已知有$m=5^2-4^2=9$，故$C$的方程为$x^2-y^2=9$。当$k=\\dfrac{1}{2}$时，过$P_1(5,4)$且斜率为$\\dfrac{1}{2}$的直线为$y=\\dfrac{x+3}{2}$，与$x^2-y^2=9$联立得到$x^2-\\left(\\dfrac{x+3}{2}\\right)^2=9$，解得$x=-3$或$x=5$，所以该直线与$C$的不同于$P_1$的交点为$Q_1(-3,0)$（在左支上），故$P_2(3,0)$，从而$x_2=3,y_2=0$。\n（2）过$P_n(x_n,y_n)$且斜率为$k$的直线为$y=k(x-x_n)+y_n$，与$x^2-y^2=9$联立得$x^2-[k(x-x_n)+y_n]^2=9$，展开得$(1-k^2)x^2-2k(y_n-kx_n)x-[(y_n-kx_n)^2+9]=0$。由于$P_n$是公共点，故方程有一根$x=x_n$。设另一根为$x\u0027$，由韦达定理$x_n+x\u0027=\\dfrac{2k(y_n-kx_n)}{1-k^2}$，则$x\u0027=\\dfrac{2k(y_n-kx_n)}{1-k^2}-x_n=\\dfrac{2ky_n-x_n-k^2x_n}{1-k^2}$，相应的$y\u0027=k(x\u0027-x_n)+y_n=\\dfrac{y_n+k^2y_n-2kx_n}{1-k^2}$。所以该直线与$C$的不同于$P_n$的交点为$Q_n\\left(\\dfrac{2ky_n-x_n-k^2x_n}{1-k^2},\\dfrac{y_n+k^2y_n-2kx_n}{1-k^2}\\right)$，该点在左支上。$P_{n+1}$为$Q_n$关于$y$轴的对称点，故$x_{n+1}=\\dfrac{x_n+k^2x_n-2ky_n}{1-k^2}$，$y_{n+1}=\\dfrac{y_n+k^2y_n-2kx_n}{1-k^2}$。所以$x_{n+1}-y_{n+1}=\\dfrac{x_n+k^2x_n-2ky_n}{1-k^2}-\\dfrac{y_n+k^2y_n-2kx_n}{1-k^2}=\\dfrac{1+k^2+2k}{1-k^2}(x_n-y_n)=\\dfrac{1+k}{1-k}(x_n-y_n)$。又$x_1-y_1=1\\neq0$，所以数列$\\{x_n-y_n\\}$是公比为$\\dfrac{1+k}{1-k}$的等比数列。\n（3）由(2)可得$x_{n+1}+y_{n+1}=\\dfrac{x_n+k^2x_n-2ky_n}{1-k^2}+\\dfrac{y_n+k^2y_n-2kx_n}{1-k^2}=\\dfrac{1+k^2-2k}{1-k^2}(x_n+y_n)=\\dfrac{1-k}{1+k}(x_n+y_n)$，所以数列$\\{x_n+y_n\\}$是公比为$\\dfrac{1-k}{1+k}$的等比数列。因此，对任意正整数$n$，有$x_ny_{n+m}-y_nx_{n+m}=\\dfrac{9}{2}\\left[\\left(\\dfrac{1-k}{1+k}\\right)^m-\\left(\\dfrac{1+k}{1-k}\\right)^m\\right]$（其中利用$x_n^2-y_n^2=9$）。特别地，$x_{n+1}y_{n+2}-y_{n+1}x_{n+2}=\\dfrac{9}{2}\\left(\\dfrac{1-k}{1+k}-\\dfrac{1+k}{1-k}\\right)$，$x_ny_{n+1}-y_nx_{n+1}=\\dfrac{9}{2}\\left(\\dfrac{1-k}{1+k}-\\dfrac{1+k}{1-k}\\right)$，$x_ny_{n+2}-y_nx_{n+2}=\\dfrac{9}{2}\\left[\\left(\\dfrac{1-k}{1+k}\\right)^2-\\left(\\dfrac{1+k}{1-k}\\right)^2\\right]$。所以$S_{\\triangle P_nP_{n+1}P_{n+2}}=\\dfrac{1}{2}|(x_{n+1}-x_n)(y_{n+2}-y_{n+1})-(y_{n+1}-y_n)(x_{n+2}-x_{n+1})|=\\dfrac{1}{2}|(x_{n+1}y_{n+2}-y_{n+1}x_{n+2})+(x_ny_{n+1}-y_nx_{n+1})-(x_ny_{n+2}-y_nx_{n+2})|$，代入上述表达式，可得$S_n=\\dfrac{1}{2}\\left|\\dfrac{9}{2}\\left(\\dfrac{1-k}{1+k}-\\dfrac{1+k}{1-k}\\right)+\\dfrac{9}{2}\\left(\\dfrac{1-k}{1+k}-\\dfrac{1+k}{1-k}\\right)-\\dfrac{9}{2}\\left[\\left(\\dfrac{1-k}{1+k}\\right)^2-\\left(\\dfrac{1+k}{1-k}\\right)^2\\right]\\right|$，化简得$S_n$为与$n$无关的常数，所以$S_n=S_{n+1}$。\n（另证：利用向量平行）由上述可得$x_{n+2}y_{n+3}-y_{n+2}x_{n+3}=x_ny_{n+1}-y_nx_{n+1}$，$x_{n+1}y_{n+3}-y_{n+1}x_{n+3}=x_ny_{n+2}-y_nx_{n+2}$，两式相减得$(x_{n+2}-x_{n+1})(y_{n+3}-y_n)-(y_{n+2}-y_{n+1})(x_{n+3}-x_n)=0$，即$\\overrightarrow{P_{n+1}P_{n+2}}$与$\\overrightarrow{P_nP_{n+3}}$平行，所以$\\triangle P_nP_{n+1}P_{n+2}$与$\\triangle P_{n+1}P_{n+2}P_{n+3}$同底等高，面积相等，即$S_n=S_{n+1}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  8,
+                             "issue":  "原卷第8题题干中“设函数 f ( x )  ( x  a ) ln( x  b) ，若 f ( x)  0 ，则 a 2  b 2 的最小值为”，解析版中条件一致，无歧义。"
+                         },
+                         {
+                             "question":  14,
+                             "issue":  "原卷第14题中描述了“在如图的4×4方格表中”，但图片未提供具体数字，解析版中列举了可能的数字组合（如11,22,33,44等），但原卷图片数字未知，此处采用解析版中的数字，确认为原卷图片内容。"
+                         },
+                         {
+                             "question":  7,
+                             "issue":  "题图未能自动匹配：原卷第 5 页，正三棱台及辅助线示意图"
+                         }
+                     ]
+}

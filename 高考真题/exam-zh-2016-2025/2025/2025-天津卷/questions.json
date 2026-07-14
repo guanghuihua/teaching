@@ -1,0 +1,377 @@
+﻿{
+    "title":  "2025 年高考数学 天津卷",
+    "year":  2025,
+    "paper":  "天津卷",
+    "sections":  [
+                     {
+                         "title":  "一、单项选择题",
+                         "instructions":  "在每小题给出的四个选项中，只有一项是符合题目要求的",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知集合$U = \\{1,2,3,4,5\\}$, $A = \\{1,3\\}$, $B = \\{2,3,5\\}$, 则$\\complement_U (A \\cup B) = $（   ）",
+                                               "choices":  [
+                                                               "$\\{1,2,3,4\\}$",
+                                                               "$\\{2,3,4\\}$",
+                                                               "$\\{2,4\\}$",
+                                                               "$\\{4\\}$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "由集合的并集、补集的运算即可求解.",
+                                               "solution_latex":  "由$A = \\{1,3\\}$, $B = \\{2,3,5\\}$, 则$A \\cup B = \\{1,2,3,5\\}$, 集合$U = \\{1,2,3,4,5\\}$, 故$\\complement_U (A \\cup B) = \\{4\\}$. 故选D.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设$x \\in \\mathbb{R}$, 则“$x = 0$”是“$\\sin 2x = 0$”的（   ）",
+                                               "choices":  [
+                                                               "充分不必要条件",
+                                                               "必要不充分条件",
+                                                               "充要条件",
+                                                               "既不充分也不必要条件"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "通过判断是否能相互推出，由充分条件与必要条件的定义可得.",
+                                               "solution_latex":  "由$x = 0 \\Rightarrow \\sin 2x = \\sin 0 = 0$, 则“$x = 0$”是“$\\sin 2x = 0$”的充分条件；又当$x = \\pi$时, $\\sin 2x = \\sin 2\\pi = 0$, 可知$\\sin 2x = 0 \\not\\Rightarrow x = 0$, 故“$x = 0$”不是“$\\sin 2x = 0$”的必要条件. 综上可知, “$x = 0$”是“$\\sin 2x = 0$”的充分不必要条件. 故选A.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知函数$y = f(x)$的图象如下, 则$f(x)$的解析式可能为（   ）",
+                                               "choices":  [
+                                                               "$f(x) = \\dfrac{x}{1 - |x|}$",
+                                                               "$f(x) = \\dfrac{x}{|x| - 1}$",
+                                                               "$f(x) = \\dfrac{|x|}{1 - x^2}$",
+                                                               "$f(x) = \\dfrac{|x|}{x^2 - 1}$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "先由函数奇偶性排除AB，再由$x \\in (0,1)$时函数值正负情况可得解.",
+                                               "solution_latex":  "由图可知函数为偶函数，而函数$f(x) = \\dfrac{x}{1-x}$和函数$f(x) = \\dfrac{x}{x-1}$为奇函数，故排除选项AB；又当$x \\in (0,1)$时$1 - x^2 \u003e 0$, $x^2 - 1 \u003c 0$, 此时$f(x) = \\dfrac{x}{1-x^2} \u003e 0$, $f(x) = \\dfrac{x}{x^2-1} \u003c 0$, 由图可知当$x \\in (0,1)$时, $f(x) \u003c 0$, 故C不符合，D符合. 故选D.",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  "原卷 PAGE 1",
+                                                                  "description":  "函数图象"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "若$m$为直线，$\\alpha, \\beta$为两个平面，则下列结论中正确的是（   ）",
+                                               "choices":  [
+                                                               "若$m // \\alpha$, $n \\subset \\alpha$, 则$m // n$",
+                                                               "若$m \\perp \\alpha$, $m \\perp \\beta$, 则$\\alpha \\perp \\beta$",
+                                                               "若$m // \\alpha$, $m \\perp \\beta$, 则$\\alpha \\perp \\beta$",
+                                                               "若$m \\subset \\alpha$, $\\alpha \\perp \\beta$, 则$m \\perp \\beta$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "根据线面平行的定义可判断A的正误，根据空间中垂直关系的转化可判断BCD的正误.",
+                                               "solution_latex":  "对于A，若$m // \\alpha$, $n \\subset \\alpha$, 则$m, n$可平行或异面，故A错误；对于B，若$m \\perp \\alpha$, $m \\perp \\beta$, 则$\\alpha // \\beta$, 故B错误；对于C，两条平行线有一条垂直于一个平面，则另一个必定垂直这个平面，现$m // a$, $m \\perp \\beta$, 故$a \\perp \\beta$, 故C正确；对于D，$m \\subset \\alpha$, $\\alpha \\perp \\beta$, 则$m$与$\\beta$可平行或相交或$m \\subset \\beta$, 故D错误. 故选C.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "下列说法中错误的是（   ）",
+                                               "choices":  [
+                                                               "若$X \\sim N(\\mu, \\sigma^2)$, 则$P(X \\le \\mu - \\sigma) = P(X \\ge \\mu + \\sigma)$",
+                                                               "若$X \\sim N(1, 2^2)$, $Y \\sim N(2, 2^2)$, 则$P(X \u003c 1) \u003c P(Y \u003c 2)$",
+                                                               "$r$越接近1，相关性越强",
+                                                               "$r$越接近0，相关性越弱"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "根据正态分布以及相关系数的概念直接判断即可.",
+                                               "solution_latex":  "对于A，根据正态分布对称性可知，$P(X \\le \\mu - \\sigma) = P(X \\ge \\mu + \\sigma)$, A说法正确；对于B，根据正态分布对称性可知，$P(X \u003c 1) = P(Y \u003c 2) = 0.5$, B说法错误；对于C和D，相关系数$r$越接近0，相关性越弱，越接近1，相关性越强，故C和D说法正确. 故选B.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "$S_n = -n^2 + 8n$, 则数列$\\{a_n\\}$的前12项和为（   ）",
+                                               "choices":  [
+                                                               "112",
+                                                               "48",
+                                                               "80",
+                                                               "64"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "先由题设结合$a_n = S_n - S_{n-1}$求出数列$\\{a_n\\}$的通项公式，再结合数列$\\{a_n\\}$各项正负情况即可求解.",
+                                               "solution_latex":  "因为$S_n = -n^2 + 8n$, 所以当$n=1$时, $a_1 = S_1 = -1 + 8 \\times 1 = 7$; 当$n \\ge 2$时, $a_n = S_n - S_{n-1} = (-n^2 + 8n) - [-(n-1)^2 + 8(n-1)] = -2n + 9$. 经检验$a_1 = 7$满足上式, 所以$a_n = -2n + 9$ ($n \\in \\mathbb{N}^*$). 令$a_n = -2n + 9 \\ge 0 \\Rightarrow n \\le 4$, $a_n = -2n + 9 \\le 0 \\Rightarrow n \\ge 5$. 设数列$\\{|a_n|\\}$的前$n$项和为$T_n$, 则数列$\\{|a_n|\\}$的前4项和为$T_4 = S_4 = -4^2 + 8 \\times 4 = 16$. 数列$\\{|a_n|\\}$的前12项和为$T_{12} = a_1 + a_2 + \\cdots + a_{12} = a_1 + a_2 + a_3 + a_4 - a_5 - a_6 - \\cdots - a_{12} = 2S_4 - S_{12} = 2 \\times 16 - (-12^2 + 8 \\times 12) = 80$. 故选C.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "函数$f(x) = 0.3^x - \\sqrt{x}$的零点所在区间是（   ）",
+                                               "choices":  [
+                                                               "$(0, 0.3)$",
+                                                               "$(0.3, 0.5)$",
+                                                               "$(0.5, 1)$",
+                                                               "$(1, 2)$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "利用指数函数与幂函数的单调性结合零点存在性定理计算即可.",
+                                               "solution_latex":  "由指数函数、幂函数的单调性可知：$y = 0.3^x$在$\\mathbb{R}$上单调递减, $y = \\sqrt{x}$在$[0, +\\infty)$单调递增, 所以$f(x) = 0.3^x - \\sqrt{x}$在定义域上单调递减. 显然$f(0) = 1 \u003e 0$, $f(0.3) = 0.3^{0.3} - \\sqrt{0.3} \u003e 0$, $f(0.5) = 0.3^{0.5} - \\sqrt{0.5} \u003c 0$, 所以根据零点存在性定理可知$f(x)$的零点位于$(0.3, 0.5)$. 故选B.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "$f(x) = \\sin(\\omega x + \\varphi)$ ($\\omega \u003e 0$, $-\\pi \u003c \\varphi \u003c \\pi$), 在$\\left[-\\dfrac{5\\pi}{12}, \\dfrac{\\pi}{12}\\right]$上单调递增, 且$x = \\dfrac{\\pi}{12}$为它的一条对称轴, $\\left(\\dfrac{\\pi}{3}, 0\\right)$是它的一个对称中心, 当$x \\in \\left[0, \\dfrac{\\pi}{2}\\right]$时, $f(x)$的最小值为（   ）",
+                                               "choices":  [
+                                                               "$-\\dfrac{\\sqrt{3}}{2}$",
+                                                               "$-\\dfrac{1}{2}$",
+                                                               "1",
+                                                               "0"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "利用正弦函数的对称性得出$\\omega = 4n + 2$, 根据单调性得出$0 \u003c \\omega \\le 2$, 从而确定$\\omega$, 结合对称轴与对称中心再求出$\\varphi$, 得出函数解析式, 利用整体思想及正弦函数的性质即可得解.",
+                                               "solution_latex":  "设$f(x)$的最小正周期为$T$, 根据题意有$\\begin{cases} \\dfrac{\\pi}{12}\\omega + \\varphi = \\dfrac{\\pi}{2} + 2k\\pi \\\\ \\dfrac{\\pi}{3}\\omega + \\varphi = m\\pi \\end{cases}$, $(m, k \\in \\mathbb{Z})$. 由正弦函数的对称性可知$\\dfrac{\\pi}{3} - \\dfrac{\\pi}{12} = \\dfrac{(2n+1)T}{4}$ ($n \\in \\mathbb{Z}$), 即$\\dfrac{\\pi}{4} = \\dfrac{2n\\pi + \\pi}{2\\omega}$, $\\therefore \\omega = 4n + 2$. 又$f(x)$在$\\left[-\\dfrac{5\\pi}{12}, \\dfrac{\\pi}{12}\\right]$上单调递增, 则$\\dfrac{T}{2} \\ge \\dfrac{\\pi}{12} - \\left(-\\dfrac{5\\pi}{12}\\right)$, $\\therefore \\dfrac{\\pi}{\\omega} \\ge \\dfrac{\\pi}{2} \\Rightarrow 0 \u003c \\omega \\le 2$. $\\therefore \\omega = 2$, 则$\\begin{cases} \\varphi = \\dfrac{\\pi}{3} + 2k\\pi \\\\ \\varphi = m\\pi - \\dfrac{2\\pi}{3} \\end{cases}$. $\\because \\varphi \\in (-\\pi, \\pi)$, $\\therefore k=0$, $m=1$时, $\\varphi = \\dfrac{\\pi}{3}$, $\\therefore f(x) = \\sin\\left(2x + \\dfrac{\\pi}{3}\\right)$. 当$x \\in \\left[0, \\dfrac{\\pi}{2}\\right]$时, $2x + \\dfrac{\\pi}{3} \\in \\left[\\dfrac{\\pi}{3}, \\dfrac{4\\pi}{3}\\right]$, 由正弦函数的单调性可知$f(x)_{\\min} = \\sin\\dfrac{4\\pi}{3} = -\\dfrac{\\sqrt{3}}{2}$. 故选A.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "双曲线$\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} = 1$ ($a \u003e 0$, $b \u003e 0$)的左、右焦点分别为$F_1$, $F_2$, 以右焦点$F_2$为焦点的抛物线$y^2 = 2px$ ($p \u003e 0$)与双曲线交于另一象限点为$P$, 若$|PF_1| + |PF_2| = 3|F_1F_2|$, 则双曲线的离心率$e = $（   ）",
+                                               "choices":  [
+                                                               "2",
+                                                               "$\\sqrt{5}$",
+                                                               "$\\dfrac{\\sqrt{2}+1}{2}$",
+                                                               "$\\dfrac{\\sqrt{5}+1}{2}$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "利用抛物线与双曲线的定义与性质得出$\\begin{cases} |PF_1| = 3c + a \\\\ |PF_2| = 3c - a = PA \\end{cases}$, 根据勾股定理从而确定P的坐标, 利用点在双曲线上构造齐次方程计算即可.",
+                                               "solution_latex":  "根据题意可设$F_2\\left( \\dfrac{p}{2}, 0 \\right)$, 双曲线的半焦距为$c$, $P(x_0, y_0)$, 则$p = 2c$. 过$F_1$作$x$轴的垂线$l$, 过$P$作$l$的垂线, 垂足为$A$, 显然直线$AF_1$为抛物线的准线, 则$PA = PF_2$. 由双曲线的定义及已知条件可知$\\begin{cases} |PF_1| - |PF_2| = 2a \\\\ |PF_1| + |PF_2| = 6c \\end{cases}$, 则$\\begin{cases} |PF_1| = 3c + a \\\\ |PF_2| = 3c - a = PA \\end{cases}$. 由勾股定理可知$|AF_1|^2 = y_0^2 = |PF_1|^2 - |PA|^2 = 12ac$. 易知$y_0^2 = 4cx_0$, $\\therefore x_0 = 3a$, 即$\\dfrac{x_0^2}{a^2} - \\dfrac{y_0^2}{b^2} = \\dfrac{9a^2}{a^2} - \\dfrac{12ac}{c^2 - a^2} = 1$, 整理得$2c^2 - 3ac - 2a^2 = 0 = (2c + a)(c - 2a)$, $\\therefore c = 2a$, 即离心率为2. 故选A.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "本大题共6个小题，每小题5分，共30分.",
+                         "questions":  [
+                                           {
+                                               "number":  10,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知$i$是虚数单位，则$\\left| \\dfrac{3+i}{i} \\right| = $________.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\sqrt{10}$",
+                                               "analysis_latex":  "先由复数除法运算化简$\\dfrac{3+i}{i}$, 再由复数模长公式即可计算求解.",
+                                               "solution_latex":  "先由题得$\\dfrac{3+i}{i} = -i(3+i) = 1 - 3i$, 所以$\\left| \\dfrac{3+i}{i} \\right| = \\sqrt{1^2 + (-3)^2} = \\sqrt{10}$. 故答案为$\\sqrt{10}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "在$(x-1)^6$的展开式中, $x^3$项的系数为________.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$-20$",
+                                               "analysis_latex":  "根据二项式定理相关知识直接计算即可.",
+                                               "solution_latex":  "$(x-1)^6$展开式的通项公式为$T_{r+1} = \\mathrm{C}_6^r x^{6-r} \\cdot (-1)^r$. 当$r=3$时, $T_4 = \\mathrm{C}_6^3 x^3 \\cdot (-1)^3 = -20x^3$, 即$(x-1)^6$展开式中$x^3$的系数为$-20$. 故答案为$-20$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "$l_1: x - y + 6 = 0$, 与$x$轴交于点$A$, 与$y$轴交于点$B$, 与$(x+1)^2 + (y-3)^2 = r^2$交于$C$、$D$两点, $|AB| = 3|CD|$, 则$r = $_________.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "2",
+                                               "analysis_latex":  "先根据两点间距离公式得出$|AB| = 6\\sqrt{2}$, 再计算出圆心到直线的距离$d$, 根据弦长公式$|CD| = 2\\sqrt{r^2 - d^2}$列等式求解即可.",
+                                               "solution_latex":  "因为直线$l_1: x - y + 6 = 0$与$x$轴交于$A(-6,0)$, 与$y$轴交于$B(0,6)$, 所以$|AB| = \\sqrt{6^2 + 6^2} = 6\\sqrt{2}$, 所以$|CD| = 2\\sqrt{2}$. 圆$(x+1)^2 + (y-3)^2 = r^2$的半径为$r$, 圆心$(-1,3)$到直线$l_1: x - y + 6 = 0$的距离为$d = \\dfrac{|-1 - 3 + 6|}{\\sqrt{2}} = \\sqrt{2}$, 故$|CD| = 2\\sqrt{r^2 - d^2} = 2\\sqrt{r^2 - (\\sqrt{2})^2} = 2\\sqrt{2}$, 解得$r=2$. 故答案为2.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "小桐操场跑圈，一周2次，一次5圈或6圈. 第一次跑5圈或6圈的概率均为0.5，若第一次跑5圈，则第二次跑5圈的概率为0.4，6圈的概率为0.6；若第一次跑6圈，则第二次跑5圈的概率为0.6，4圈的概率为0.4. 小桐一周跑11圈的概率为________；若一周至少跑11圈为动量达标，则连续跑4周，记合格周数为$X$, 则期望$E(X) = $_______.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "0.6；3.2",
+                                               "analysis_latex":  "先根据全概率公式计算求解空一，再求出概率根据二项分布数学期望公式计算求解.",
+                                               "solution_latex":  "设小桐一周跑11圈为事件$A$, 设第一次跑5圈为事件$B$, 设第二次跑5圈为事件$C$, 则$P(A) = P(B)P(C|B) + P(\\overline{B})P(\\overline{C}|\\overline{B}) = 0.5 \\times 0.6 + 0.5 \\times 0.6 = 0.6$；若至少跑11圈为运动量达标为事件$D$, $P(D) = P(A) + P(B)P(\\overline{C}|B) = 0.6 + 0.5 \\times 0.4 = 0.8$, 所以$X \\sim B(4, 0.8)$, $E(X) = 4 \\times 0.8 = 3.2$. 故答案为0.6；3.2.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "$\\triangle ABC$中, $D$为$AB$边中点, $\\overrightarrow{CE} = \\dfrac{1}{3}\\overrightarrow{CD}$, $\\overrightarrow{AB} = \\vec{a}$, $\\overrightarrow{AC} = \\vec{b}$, 则$\\overrightarrow{AE} = $______（用$\\vec{a}$, $\\vec{b}$表示）, 若$|\\overrightarrow{AE}| = 5$, $\\overrightarrow{AE} \\perp \\overrightarrow{CB}$, 则$\\overrightarrow{AE} \\cdot \\overrightarrow{CD} = $_______.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\dfrac{1}{6}\\vec{a} + \\dfrac{2}{3}\\vec{b}$；$-15$",
+                                               "analysis_latex":  "根据向量的线性运算求解即可空一，应用数量积运算律计算求解空二.",
+                                               "solution_latex":  "如图，因为$\\overrightarrow{CE} = \\dfrac{1}{3}\\overrightarrow{CD}$, 所以$\\overrightarrow{AE} - \\overrightarrow{AC} = \\dfrac{1}{3}(\\overrightarrow{AD} - \\overrightarrow{AC})$, 所以$\\overrightarrow{AE} = \\dfrac{1}{3}\\overrightarrow{AD} + \\dfrac{2}{3}\\overrightarrow{AC}$. 因为$D$为线段$AB$的中点, 所以$\\overrightarrow{AE} = \\dfrac{1}{6}\\overrightarrow{AB} + \\dfrac{2}{3}\\overrightarrow{AC} = \\dfrac{1}{6}\\vec{a} + \\dfrac{2}{3}\\vec{b}$. 又因为$|\\overrightarrow{AE}| = 5$, $\\overrightarrow{AE} \\perp \\overrightarrow{CB}$, 所以$|\\overrightarrow{AE}|^2 = \\left(\\dfrac{1}{6}\\vec{a} + \\dfrac{2}{3}\\vec{b}\\right)^2 = \\dfrac{1}{36}|\\vec{a}|^2 + \\dfrac{2}{9}\\vec{a}\\cdot\\vec{b} + \\dfrac{4}{9}|\\vec{b}|^2 = 25$, $\\overrightarrow{AE} \\cdot \\overrightarrow{CB} = \\left(\\dfrac{1}{6}\\vec{a} + \\dfrac{2}{3}\\vec{b}\\right)\\cdot(\\vec{a} - \\vec{b}) = \\dfrac{1}{6}|\\vec{a}|^2 + \\dfrac{1}{2}\\vec{a}\\cdot\\vec{b} - \\dfrac{2}{3}|\\vec{b}|^2 = 0$, 所以$|\\vec{a}|^2 + 3\\vec{a}\\cdot\\vec{b} = 4|\\vec{b}|^2$. 所以$|\\vec{a}|^2 + 4\\vec{a}\\cdot\\vec{b} = 180$, 所以$\\overrightarrow{AE} \\cdot \\overrightarrow{CD} = \\left(\\dfrac{1}{6}\\vec{a} + \\dfrac{2}{3}\\vec{b}\\right)\\cdot\\left(-\\vec{b} + \\dfrac{1}{2}\\vec{a}\\right) = \\dfrac{1}{12}|\\vec{a}|^2 + \\dfrac{1}{6}\\vec{a}\\cdot\\vec{b} - \\dfrac{2}{3}|\\vec{b}|^2 = \\dfrac{1}{12}(|\\vec{a}|^2 + 2\\vec{a}\\cdot\\vec{b} - 8|\\vec{b}|^2) = \\dfrac{1}{12}(|\\vec{a}|^2 + 2\\vec{a}\\cdot\\vec{b} - 2(|\\vec{a}|^2 + 3\\vec{a}\\cdot\\vec{b})) = \\dfrac{1}{12}(-|\\vec{a}|^2 - 4\\vec{a}\\cdot\\vec{b}) = -\\dfrac{1}{12}(|\\vec{a}|^2 + 4\\vec{a}\\cdot\\vec{b}) = -\\dfrac{180}{12} = -15$. 故答案为$\\dfrac{1}{6}\\vec{a} + \\dfrac{2}{3}\\vec{b}$；$-15$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "若$a, b \\in \\mathbb{R}$, 对$\\forall x \\in [-2, 2]$, 均有$(2a+b)x^2 + bx - a - 1 \\le 0$恒成立, 则$2a+b$的最小值为_______.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$-4$",
+                                               "analysis_latex":  "先设$t = 2a + b$, 根据不等式的形式, 为了消$a$可以取$x = -\\dfrac{1}{2}$, 得到$t \\ge -4$, 验证$t = -4$时, $a, b$是否可以取到, 进而判断该最小值是否可取即可得到答案.",
+                                               "solution_latex":  "设$t = 2a + b$, 原题转化为求$t$的最小值. 原不等式可化为对任意的$-2 \\le x \\le 2$, $tx^2 + (t - 2a)x - a - 1 \\le 0$. 不妨代入$x = -\\dfrac{1}{2}$, 得$\\dfrac{1}{4}t - \\dfrac{1}{2}(t - 2a) - a - 1 \\le 0$, 得$t \\ge -4$. 当$t = -4$时, 原不等式可化为$-4x^2 + (-4 - 2a)x - a - 1 \\le 0$, 即$-\\left[2x + \\left(\\dfrac{1}{2}a + 1\\right)\\right]^2 + \\dfrac{1}{4}a^2 \\le 0$. 观察可知, 当$a = 0$时, $-(2x+1)^2 \\le 0$对$-2 \\le x \\le 2$一定成立, 当且仅当$x = -\\dfrac{1}{2}$取等号. 此时, $a=0$, $b=-4$, 说明$t=-4$时, $a,b$均可取到, 满足题意. 故$t = 2a + b$的最小值为$-4$. 故答案为$-4$.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "本大题共5小题，共75分，解答应写出文字说明，证明过程或演算步骤.",
+                         "questions":  [
+                                           {
+                                               "number":  16,
+                                               "type":  "solution",
+                                               "points":  15,
+                                               "stem_latex":  "在$\\triangle ABC$中, 角$A, B, C$的对边分别为$a, b, c$. 已知$a\\sin B = \\sqrt{3}b\\cos A$, $c - 2b = 1$, $a = \\sqrt{7}$.\n(1) 求$A$的值;\n(2) 求$c$的值;\n(3) 求$\\sin(A + 2B)$的值.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "(1)由正弦定理化边为角再化简可求；(2)由余弦定理，结合(1)结论与已知代入可得关于$b$的方程，求解可得$b$，进而求得$c$；(3)利用正弦定理先求$B$，再由二倍角公式分别求$\\sin 2B$, $\\cos 2B$，由两角和的正弦可得.",
+                                               "solution_latex":  "（1）已知$a\\sin B = \\sqrt{3}b\\cos A$, 由正弦定理$\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B}$, 得$a\\sin B = b\\sin A = \\sqrt{3}b\\cos A$, 显然$\\cos A \\neq 0$, 得$\\tan A = \\sqrt{3}$, 由$0 \u003c A \u003c \\pi$, 故$A = \\dfrac{\\pi}{3}$.\n（2）由（1）知$\\cos A = \\dfrac{1}{2}$, 且$c = 2b + 1$, $a = \\sqrt{7}$, 由余弦定理$a^2 = b^2 + c^2 - 2bc\\cos A$, 则$7 = b^2 + (2b+1)^2 - 2 \\times \\dfrac{1}{2} b(2b+1) = 3b^2 + 3b + 1$, 解得$b = 1$（$b = -2$舍去）, 故$c = 3$.\n（3）由正弦定理$\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B}$, 且$b = 1$, $a = \\sqrt{7}$, $\\sin A = \\dfrac{\\sqrt{3}}{2}$, 得$\\sin B = \\dfrac{b\\sin A}{a} = \\dfrac{\\sqrt{21}}{14}$, 且$a \u003e b$, 则$B$为锐角, 故$\\cos B = \\dfrac{5\\sqrt{7}}{14}$, 故$\\sin 2B = 2\\sin B\\cos B = \\dfrac{5\\sqrt{3}}{14}$, 且$\\cos 2B = 1 - 2\\sin^2 B = 1 - 2 \\times \\left(\\dfrac{\\sqrt{21}}{14}\\right)^2 = \\dfrac{11}{14}$; 故$\\sin(A + 2B) = \\sin A \\cos 2B + \\cos A \\sin 2B = \\dfrac{\\sqrt{3}}{2} \\times \\dfrac{11}{14} + \\dfrac{1}{2} \\times \\dfrac{5\\sqrt{3}}{14} = \\dfrac{4\\sqrt{3}}{7}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  15,
+                                               "stem_latex":  "正方体$ABCD - A_1B_1C_1D_1$的棱长为4, $E$、$F$分别为$A_1D_1$, $C_1B_1$中点, $CG = 3GC_1$.\n(1) 求证: $GF \\perp$平面$FBE$;\n(2) 求平面$FBE$与平面$EBG$夹角的余弦值;\n(3) 求三棱锥$D - FBE$的体积.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "(1)法一、利用正方形的性质先证明$FG \\perp BF$, 再结合正方体的性质得出$EF \\perp$平面$BCC_1B_1$, 利用线面垂直的性质与判定定理证明即可；法二、建立空间直角坐标系, 利用空间向量证明线面垂直即可；(2)利用空间向量计算面面夹角即可；(3)利用空间向量计算点面距离，再利用锥体的体积公式计算即可.",
+                                               "solution_latex":  "（1）法一、在正方形$BCC_1B_1$中，由条件易知$\\tan\\angle C_1FG = \\dfrac{C_1G}{C_1F} = \\dfrac{1}{2} = \\dfrac{FB_1}{BB_1} = \\tan\\angle B_1BF$，所以$\\angle C_1FG = \\angle B_1BF$，则$\\angle B_1FB + \\angle B_1BF = \\dfrac{\\pi}{2} = \\angle C_1FG + \\angle B_1FB$，故$\\angle BFG = \\pi - (\\angle C_1FG + \\angle B_1FB) = \\dfrac{\\pi}{2}$，即$FG \\perp BF$. 在正方体中，易知$D_1C_1 \\perp$平面$BCC_1B_1$，且$EF // D_1C_1$，所以$EF \\perp$平面$BCC_1B_1$，又$FG \\subset$平面$BCC_1B_1$，∴$EF \\perp FG$. ∵$EF \\cap BF = F$, $EF, BF \\subset$平面$BEF$，∴$GF \\perp$平面$BEF$.\n法二、如图以$D$为中心建立空间直角坐标系，则$B(4,4,0)$, $E(2,0,4)$, $F(2,4,4)$, $G(0,4,3)$, 所以$\\overrightarrow{EF} = (0,4,0)$, $\\overrightarrow{EB} = (2,4,-4)$, $\\overrightarrow{FG} = (-2,0,-1)$. 设$\\vec{m} = (a,b,c)$是平面$BEF$的一个法向量，则$\\begin{cases} \\vec{m} \\cdot \\overrightarrow{EF} = 4b = 0 \\\\ \\vec{m} \\cdot \\overrightarrow{EB} = 2a + 4b - 4c = 0 \\end{cases}$, 令$a=2$, 则$b=0$, $c=1$, 所以$\\vec{m} = (2,0,1)$. 易知$\\overrightarrow{FG} = -\\vec{m}$, 则$\\overrightarrow{FG}$也是平面$BEF$的一个法向量，∴$GF \\perp$平面$BEF$.\n（2）同上法二建立的空间直角坐标系，所以$\\overrightarrow{EG} = (-2,4,-1)$, $\\overrightarrow{BG} = (-4,0,3)$. 由(1)知$\\overrightarrow{FG}$是平面$BEF$的一个法向量. 设平面$BEG$的一个法向量为$\\vec{n} = (x,y,z)$, 所以$\\begin{cases} \\vec{n} \\cdot \\overrightarrow{EG} = -2x + 4y - z = 0 \\\\ \\vec{n} \\cdot \\overrightarrow{BG} = -4x + 3z = 0 \\end{cases}$, 令$x=6$, 则$z=8$, $y=5$, 即$\\vec{n} = (6,5,8)$. 设平面$BEF$与平面$BEG$的夹角为$\\alpha$, 则$\\cos\\alpha = |\\cos\\langle\\overrightarrow{FG},\\vec{n}\\rangle| = \\dfrac{|\\overrightarrow{FG}\\cdot\\vec{n}|}{|\\overrightarrow{FG}||\\vec{n}|} = \\dfrac{20}{\\sqrt{5} \\times 5\\sqrt{5}} = \\dfrac{4}{5}$.\n（3）由(1)知$EF \\perp$平面$BCC_1B_1$, $FB \\subset$平面$BCC_1B_1$, ∴$EF \\perp FB$. 易知$S_{\\triangle BEF} = \\dfrac{1}{2} EF \\cdot BF = \\dfrac{1}{2} \\times 4 \\times \\sqrt{4^2 + 2^2} = 4\\sqrt{5}$. 又$\\overrightarrow{DE} = (2,0,4)$, 则$D$到平面$BEF$的距离为$d = \\dfrac{|\\overrightarrow{DE} \\cdot \\overrightarrow{FG}|}{|\\overrightarrow{FG}|} = \\dfrac{8}{\\sqrt{5}}$. 由棱锥的体积公式知：$V_{D-BEF} = \\dfrac{1}{3} d \\times S_{\\triangle BEF} = \\dfrac{1}{3} \\times \\dfrac{8}{\\sqrt{5}} \\times 4\\sqrt{5} = \\dfrac{32}{3}$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  15,
+                                               "stem_latex":  "已知椭圆$\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1$ ($a \u003e b \u003e 0$)的左焦点为$F$, 右顶点为$A$, $P$为$x = a$上一点, 且直线$PF$的斜率为$\\dfrac{1}{3}$, $\\triangle PFA$的面积为$\\dfrac{3}{2}$, 离心率为$\\dfrac{1}{2}$.\n(1) 求椭圆的方程;\n(2) 过点$P$的直线与椭圆有唯一交点$B$（异于点$A$）, 求证: $PF$平分$\\angle AFB$.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "(1)根据题意，利用椭圆的离心率得到$a=2c$，再由直线$PF$的斜率得到$m=c$，从而利用三角形的面积公式得到关于$c$的方程，解之即可得解；(2)联立直线与椭圆方程，利用其位置关系求得$k$，进而得到直线$PB$的方程与点$B$的坐标，法一：利用向量的夹角公式即可得证；法二：利用两直线的夹角公式即可得证；法三利用正切的倍角公式即可得证；法四：利用角平分线的性质与点线距离公式即可得证.",
+                                               "solution_latex":  "（1）依题意，设椭圆$\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1$ ($a \u003e b \u003e 0$)的半焦距为$c$, 则左焦点$F(-c,0)$, 右顶点$A(a,0)$, 离心率$e = \\dfrac{c}{a} = \\dfrac{1}{2}$, 即$a = 2c$. 因为$P$为$x = a$上一点, 设$P(a,m)$, 又直线$PF$的斜率为$\\dfrac{1}{3}$, 则$\\dfrac{m - 0}{a - (-c)} = \\dfrac{1}{3}$, 即$\\dfrac{m}{2c + c} = \\dfrac{1}{3}$, 解得$m = c$, 则$P(a,c)$, 即$P(2c,c)$. 因为$\\triangle PFA$的面积为$\\dfrac{3}{2}$, $|AF| = a - (-c) = a + c = 3c$, 高为$|m| = c$, 所以$S_{\\triangle PFA} = \\dfrac{1}{2} |AF| |m| = \\dfrac{1}{2} \\times 3c \\times c = \\dfrac{3}{2}$, 解得$c = 1$, 则$a = 2c = 2$, $b^2 = a^2 - c^2 = 3$, 所以椭圆的方程为$\\dfrac{x^2}{4} + \\dfrac{y^2}{3} = 1$.\n（2）由(1)可知$P(2,1)$, $F(-1,0)$, $A(2,0)$. 易知直线$PB$的斜率存在, 设其方程为$y = kx + m$, 则$1 = 2k + m$, 即$m = 1 - 2k$. 联立$\\begin{cases} y = kx + m \\\\ \\dfrac{x^2}{4} + \\dfrac{y^2}{3} = 1 \\end{cases}$, 消去$y$得, $(3 + 4k^2)x^2 + 8kmx + 4m^2 - 12 = 0$. 因为直线与椭圆有唯一交点, 所以$\\Delta = (8km)^2 - 4(3+4k^2)(4m^2 - 12) = 0$, 即$4k^2 - m^2 + 3 = 0$, 则$4k^2 - (1 - 2k)^2 + 3 = 0$, 解得$k = -\\dfrac{1}{2}$, 则$m = 2$, 所以直线$PB$的方程为$y = -\\dfrac{1}{2}x + 2$. 联立$\\begin{cases} y = -\\dfrac{1}{2}x + 2 \\\\ \\dfrac{x^2}{4} + \\dfrac{y^2}{3} = 1 \\end{cases}$, 解得$\\begin{cases} x = 1 \\\\ y = \\dfrac{3}{2} \\end{cases}$, 则$B(1, \\dfrac{3}{2})$. 以下分别用四种方法证明结论：\n法一：则$\\overrightarrow{FB} = \\left(2, \\dfrac{3}{2}\\right)$, $\\overrightarrow{FP} = (3,1)$, $\\overrightarrow{FA} = (3,0)$. 所以$\\cos\\angle BFP = \\dfrac{\\overrightarrow{FB} \\cdot \\overrightarrow{FP}}{|\\overrightarrow{FB}||\\overrightarrow{FP}|} = \\dfrac{2 \\times 3 + \\dfrac{3}{2} \\times 1}{\\sqrt{2^2 + \\left(\\dfrac{3}{2}\\right)^2} \\times \\sqrt{3^2 + 1^2}} = \\dfrac{3\\sqrt{10}}{10}$, $\\cos\\angle PFA = \\dfrac{\\overrightarrow{FA} \\cdot \\overrightarrow{FP}}{|\\overrightarrow{FA}||\\overrightarrow{FP}|} = \\dfrac{3 \\times 3 + 1 \\times 0}{3 \\times \\sqrt{3^2 + 1^2}} = \\dfrac{3\\sqrt{10}}{10}$, 则$\\cos\\angle BFP = \\cos\\angle PFA$, 又$\\angle BFP, \\angle PFA \\in (0, \\dfrac{\\pi}{2})$, 所以$\\angle BFP = \\angle PFA$, 即$PF$平分$\\angle AFB$.\n法二：所以$k_{FB} = \\dfrac{\\dfrac{3}{2} - 0}{1 - (-1)} = \\dfrac{3}{4}$, $k_{PF} = \\dfrac{1 - 0}{2 - (-1)} = \\dfrac{1}{3}$, $k_{AF} = 0$. 由两直线夹角公式，得$\\tan\\angle BFP = \\left|\\dfrac{\\dfrac{3}{4} - \\dfrac{1}{3}}{1 + \\dfrac{1}{3} \\times \\dfrac{3}{4}}\\right| = \\dfrac{1}{3}$, $\\tan\\angle PFA = \\left|\\dfrac{\\dfrac{1}{3} - 0}{1 + 0}\\right| = \\dfrac{1}{3}$, 则$\\tan\\angle BFP = \\tan\\angle PFA$, 又$\\angle BFP, \\angle PFA \\in (0, \\dfrac{\\pi}{2})$, 所以$\\angle BFP = \\angle PFA$, 即$PF$平分$\\angle AFB$.\n法三：则$\\tan\\angle PFA = k_{PF} = \\dfrac{1}{3}$, $\\tan\\angle BFP = k_{FB} = \\dfrac{3}{4}$, 故$\\tan 2\\angle PFA = \\dfrac{2\\tan\\angle PFA}{1 - \\tan^2\\angle PFA} = \\dfrac{2 \\times \\dfrac{1}{3}}{1 - \\left(\\dfrac{1}{3}\\right)^2} = \\dfrac{3}{4} = \\tan\\angle BFP$, 又$\\angle BFP, \\angle PFA \\in (0, \\dfrac{\\pi}{2})$, 所以$\\angle BFP = \\angle PFA$, 即$PF$平分$\\angle AFB$.\n法四：则$k_{FB} = \\dfrac{\\dfrac{3}{2} - 0}{1 - (-1)} = \\dfrac{3}{4}$, 所以直线$FB$的方程为$y = \\dfrac{3}{4}(x+1)$, 即$3x - 4y + 3 = 0$. 则点$P$到直线$FB$的距离为$d = \\dfrac{|3 \\times 2 - 4 \\times 1 + 3|}{\\sqrt{3^2 + (-4)^2}} = 1$, 又点$P$到直线$FA$的距离也为1, 所以$PF$平分$\\angle AFB$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  15,
+                                               "stem_latex":  "已知数列$\\{a_n\\}$是等差数列, $\\{b_n\\}$是等比数列, $a_1 = b_1 = 2$, $a_2 = b_2 + 1$, $a_3 = b_3$.\n(1) 求$\\{a_n\\}$, $\\{b_n\\}$的通项公式;\n(2) $\\forall n \\in \\mathbb{N}^*$, $I \\in \\{0,1\\}$, 有$T_n = \\{p_1 a_1 b_1 + p_2 a_2 b_2 + \\cdots + p_{n-1} a_{n-1} b_{n-1} + p_n a_n b_n \\mid p_1, p_2, \\ldots, p_{n-1}, p_n \\in I\\}$.\n(i) 求证: 对任意实数$t \\in T_n$, 均有$t \u003c a_{n+1} b_{n+1}$;\n(ii) 求$T_n$所有元素之和.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "(1)设数列$\\{a_n\\}$的公差为$d$, 数列$\\{b_n\\}$公比为$q$ ($q \\neq 0$), 由题设列出关于$d$和$q$的方程求解, 再结合等差和等比数列通项公式即可得解；(2)(i)由题意结合(1)求出$a_{n+1}b_{n+1}$和$p_1 a_1 b_1 + p_2 a_2 b_2 + \\cdots + p_{n-1} a_{n-1} b_{n-1} + p_n a_n b_n$的最大值, 再作差比较两者大小即可证明；(ii)法一：根据$p_1, p_2, \\ldots, p_{n-1}, p_n$中全为1、一个为0其余为1、2个为0其余为1、…、全为0几个情况将$T_n$中的所有元素分系列, 并求出各系列中元素的和, 最后将所有系列所得的和加起来即可得解；法二：根据$T_n$元素的特征得到$T_n$中的所有元素的和中各项$a_i b_i$ ($i \\in \\{1,2,\\ldots,n\\}$)出现的次数均为$2^{n-1}$次即可求解.",
+                                               "solution_latex":  "（1）设数列$\\{a_n\\}$的公差为$d$, 数列$\\{b_n\\}$公比为$q$ ($q \\neq 0$), 则由题得$\\begin{cases} 2 + d = 2q + 1 \\\\ 2 + 2d = 2q^2 \\end{cases}$, 解得$\\begin{cases} d = 3 \\\\ q = 2 \\end{cases}$, 所以$a_n = 2 + 3(n-1) = 3n - 1$, $b_n = 2 \\times 2^{n-1} = 2^n$.\n（2）(i)证明：由(1) $p_n a_n b_n = (3n-1)2^n p_n = 0$或$p_n a_n b_n = (3n-1)2^n \u003e 0$, $a_{n+1}b_{n+1} = (3n+2)2^{n+1}$. 当$p_n a_n b_n = (3n-1)2^n \u003e 0$时, 设$S_n = p_1 a_1 b_1 + p_2 a_2 b_2 + \\cdots + p_{n-1} a_{n-1} b_{n-1} + p_n a_n b_n = 2 \\times 2 + 5 \\times 2^2 + \\cdots + (3n-4)2^{n-1} + (3n-1)2^n$, 所以$2S_n = 2 \\times 2^2 + 5 \\times 2^3 + \\cdots + (3n-4)2^n + (3n-1)2^{n+1}$, 所以$-S_n = 4 + 3 \\times (2^2 + 2^3 + \\cdots + 2^n) - (3n-1)2^{n+1} = 4 + 3 \\times \\dfrac{2^2(1-2^{n-1})}{1-2} - (3n-1)2^{n+1} = -8 + (4-3n)2^{n+1}$, 所以$S_n = 8 + (3n-4)2^{n+1}$, 为$T_n$中的最大元素, 此时$a_{n+1}b_{n+1} - S_n = (3n+2)2^{n+1} - [8 + (3n-4)2^{n+1}] = 6 \\cdot 2^{n+1} - 8 \u003e 0$恒成立, 所以对$\\forall t \\in T_n$, 均有$t \u003c a_{n+1}b_{n+1}$.\n(ii)法一：由(i)得$S_n = 8 + (3n-4)2^{n+1}$, 为$T_n$中的最大元素. 由题意可得$T_n$中的所有元素由以下系列中所有元素组成：当$p_1, p_2, \\ldots, p_n$均为1时：此时该系列元素只有$S_n$, 即$\\mathrm{C}_n^0$个；当$p_1, p_2, \\ldots, p_n$中只有一个为0, 其余均为1时：此时该系列的元素有$S_n - a_1 b_1, S_n - a_2 b_2, \\ldots, S_n - a_n b_n$, 共有$\\mathrm{C}_n^1$个, 则这$n$个元素的和为$\\mathrm{C}_n^1 S_n - (a_1 b_1 + a_2 b_2 + \\cdots + a_n b_n) = (\\mathrm{C}_n^1 - \\mathrm{C}_n^0) S_n$；当$p_1, p_2, \\ldots, p_n$中只有2个为0, 其余均为1时：此时该系列的元素为$S_n - a_i b_i - a_j b_j$ ($i,j \\in \\{1,2,\\ldots,n\\}$, $i \\neq j$), 共有$\\mathrm{C}_n^2$个, 则这$n$个元素的和为$\\mathrm{C}_n^2 S_n - \\mathrm{C}_{n-1}^1 (a_1 b_1 + \\cdots + a_n b_n) = (\\mathrm{C}_n^2 - \\mathrm{C}_{n-1}^1) S_n$；当$p_1, p_2, \\ldots, p_n$中有3个为0, 其余均为1时：此时该系列的元素为$S_n - a_i b_i - a_j b_j - a_k b_k$ ($i,j,k \\in \\{1,2,\\ldots,n\\}$, $i \\neq j \\neq k$), 共有$\\mathrm{C}_n^3$个, 则这$n$个元素的和为$\\mathrm{C}_n^3 S_n - \\mathrm{C}_{n-1}^2 (a_1 b_1 + \\cdots + a_n b_n) = (\\mathrm{C}_n^3 - \\mathrm{C}_{n-1}^2) S_n$；依此类推, 当$p_1, p_2, \\ldots, p_n$中有$n-1$个为0, 1个为1时：此时该系列的元素为$a_1 b_1, a_2 b_2, \\ldots, a_n b_n$, 共有$\\mathrm{C}_n^{n-1}$个, 则这$n$个元素的和为$\\mathrm{C}_n^{n-1} S_n - \\mathrm{C}_{n-1}^{n-2} (a_1 b_1 + \\cdots + a_n b_n) = (\\mathrm{C}_n^{n-1} - \\mathrm{C}_{n-1}^{n-2}) S_n$；当$p_1, p_2, \\ldots, p_n$均为0时：此时该系列的元素为0, 即$(\\mathrm{C}_n^n - \\mathrm{C}_{n-1}^{n-1}) S_n = 0$, 共1个. 综上所述, $T_n$中的所有元素之和为$S_n + (\\mathrm{C}_n^1 - 1) S_n + (\\mathrm{C}_n^2 - \\mathrm{C}_{n-1}^1) S_n + \\cdots + (\\mathrm{C}_n^{n-1} - \\mathrm{C}_{n-1}^{n-2}) S_n + 0 = [(\\mathrm{C}_n^0 + \\mathrm{C}_n^1 + \\cdots + \\mathrm{C}_n^n) - (\\mathrm{C}_{n-1}^0 + \\mathrm{C}_{n-1}^1 + \\cdots + \\mathrm{C}_{n-1}^{n-1})] S_n = (2^n - 2^{n-1}) S_n = 2^{n-1} S_n = 2^{n-1} \\cdot [8 + (3n-4)2^{n+1}]$.\n法二：由(i)得$S_n = 8 + (3n-4)2^{n+1}$, 为$T_n$中的最大元素. 由题意可得$T_n = \\{S_n, S_n - a_i b_i, S_n - a_i b_i - a_j b_j, \\ldots, a_i b_i + a_j b_j, a_i b_i, 0\\}$, 所以$T_n$的所有的元素的和中各项$a_i b_i$ ($i \\in \\{1,2,\\ldots,n\\}$)出现的次数均为$\\mathrm{C}_{n-1}^0 + \\mathrm{C}_{n-1}^1 + \\cdots + \\mathrm{C}_{n-1}^{n-2} + \\mathrm{C}_{n-1}^{n-1} = 2^{n-1}$次, 所以$T_n$中的所有元素之和为$2^{n-1} (a_1 b_1 + a_2 b_2 + \\cdots + a_n b_n) = 2^{n-1} S_n = 2^{n-1} \\cdot [8 + (3n-4)2^{n+1}]$.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  15,
+                                               "stem_latex":  "已知函数$f(x) = ax - (\\ln x)^2$.\n(1) $a = 1$时, 求$f(x)$在点$(1, f(1))$处的切线方程;\n(2) $f(x)$有3个零点$x_1, x_2, x_3$且$x_1 \u003c x_2 \u003c x_3$.\n(i) 求$a$的取值范围;\n(ii) 证明: $(\\ln x_2 - \\ln x_1) \\cdot \\ln x_3 \u003c \\dfrac{4e}{e-1}$.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "",
+                                               "analysis_latex":  "(1)利用导数的几何意义，求导数值得斜率，由点斜式方程可得；(2)(i)令$f(x)=0$, 分离参数得$a = \\dfrac{(\\ln x)^2}{x}$, 作出函数$g(x) = \\dfrac{(\\ln x)^2}{x}$的图象，数形结合可得$a$范围；(ii)由(2)结合图象，可得$x_1, x_2, x_3$范围，整体换元$\\ln x_1 = t_1$, $\\ln x_2 = t_2$, $\\ln x_3 = t_3$, 转化为$\\begin{cases} ae^{t_1} = t_1^2 \\\\ ae^{t_2} = t_2^2 \\\\ ae^{t_3} = t_3^2 \\end{cases}$, 结合②③可得$\\begin{cases} \\ln a + t_2 = 2\\ln t_2 \\\\ \\ln a + t_3 = 2\\ln t_3 \\end{cases}$, 两式作差, 利用对数平均不等式可得$t_2 t_3 \u003c 4$, 再由$t_1 = ae^{t_1} \u003c a$得$-t_1 \u003c a$, 结合$a = \\dfrac{t_3^2}{e^{t_3}}$减元处理, 再构造函数求最值, 放缩法可证明不等式.",
+                                               "solution_latex":  "（1）当$a=1$时, $f(x) = x - (\\ln x)^2$, $x \u003e 0$, 则$f\u0027(x) = 1 - \\dfrac{2\\ln x}{x}$, 则$f\u0027(1) = 1$, 且$f(1) = 1$, 则切点$(1,1)$, 且切线的斜率为1, 故函数$f(x)$在点$(1, f(1))$处的切线方程为$y = x$.\n（2）(i)令$f(x) = ax - (\\ln x)^2 = 0$, $x \u003e 0$, 得$a = \\dfrac{(\\ln x)^2}{x}$. 设$g(x) = \\dfrac{(\\ln x)^2}{x}$, $x \u003e 0$, 则$g\u0027(x) = \\dfrac{2\\ln x \\cdot x - (\\ln x)^2}{x^2} = \\dfrac{\\ln x (2 - \\ln x)}{x^2}$. 由$g\u0027(x) = 0$解得$x=1$或$e^2$, 其中$g(1)=0$, $g(e^2) = \\dfrac{4}{e^2}$. 当$0 \u003c x \u003c 1$时, $g\u0027(x) \u003c 0$, $g(x)$在$(0,1)$上单调递减；当$1 \u003c x \u003c e^2$时, $g\u0027(x) \u003e 0$, $g(x)$在$(1, e^2)$上单调递增；当$x \u003e e^2$时, $g\u0027(x) \u003c 0$, $g(x)$在$(e^2, +\\infty)$上单调递减；且当$x \\to 0$时, $g(x) \\to +\\infty$；当$x \\to +\\infty$时, $g(x) \\to 0$. 要使函数$f(x)$有3个零点, 则方程$a = g(x)$在$(0, +\\infty)$内有3个根, 即直线$y = a$与函数$g(x)$的图象有3个交点. 结合图象可知, $0 \u003c a \u003c \\dfrac{4}{e^2}$. 故$a$的取值范围为$(0, \\dfrac{4}{e^2})$.\n(ii)由图象可知, $0 \u003c x_1 \u003c 1 \u003c x_2 \u003c e^2 \u003c x_3$, 设$\\ln x_1 = t_1$, $\\ln x_2 = t_2$, $\\ln x_3 = t_3$, 则$t_1 \u003c 0 \u003c t_2 \u003c 2 \u003c t_3$, 满足$\\begin{cases} ae^{t_1} = t_1^2 \u0026 \\text{①} \\\\ ae^{t_2} = t_2^2 \u0026 \\text{②} \\\\ ae^{t_3} = t_3^2 \u0026 \\text{③} \\end{cases}$, 由②③可得$\\begin{cases} \\ln a + t_2 = 2\\ln t_2 \\\\ \\ln a + t_3 = 2\\ln t_3 \\end{cases}$, 两式作差可得$t_3 - t_2 = 2(\\ln t_3 - \\ln t_2)$, 则由对数均值不等式可得$2 = \\dfrac{t_3 - t_2}{\\ln t_3 - \\ln t_2} \u003e \\sqrt{t_2 t_3}$, 则$t_2 t_3 \u003c 4$. 故要证$(\\ln x_2 - \\ln x_1) \\cdot \\ln x_3 \u003c \\dfrac{4e}{e-1}$, 即证$t_2 t_3 - t_1 t_3 \u003c \\dfrac{4e}{e-1}$, 只需证$4 - t_1 t_3 \\le \\dfrac{4e}{e-1}$, 即证$-t_1 t_3 \\le \\dfrac{4}{e-1}$. 又因为$t_1 \u003c 0$, $t_1 = ae^{t_1} \u003c a$, 则$-t_1 = |t_1| \u003c a$, 所以$-t_1 t_3 \u003c a t_3 = \\dfrac{t_3^2}{e^{t_3}} \\cdot t_3 = \\dfrac{t_3^2}{e^{t_3}}$, 故只需证$\\dfrac{t^2}{e^{t/2}} \\le \\dfrac{4}{e-1}$ (其中$t = t_3 \u003e 2$). 设函数$\\varphi(t) = \\dfrac{t^2}{e^{t/2}}$, $t \u003e 2$, 则$\\varphi\u0027(t) = \\dfrac{2t e^{t/2} - t^2 \\cdot \\frac{1}{2} e^{t/2}}{e^t} = \\dfrac{t(4 - t)}{2e^{t/2}}$. 当$2 \u003c t \u003c 4$时, $\\varphi\u0027(t) \u003e 0$, 则$\\varphi(t)$在$(2,4)$上单调递增；当$t \u003e 4$时, $\\varphi\u0027(t) \u003c 0$, 则$\\varphi(t)$在$(4, +\\infty)$上单调递减. 故$\\varphi(t)_{\\max} = \\varphi(4) = \\dfrac{16}{e^2}$, 即$\\varphi(t) \\le \\dfrac{16}{e^2}$. 而由$4e^2 - 16e + 16 = 4(e-2)^2 \u003e 0$, 可知$\\dfrac{16}{e^2} \u003c \\dfrac{4}{e-1}$成立, 故命题得证.",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  3,
+                             "issue":  "原卷PAGE 1提到图象，但文本层无图象描述，解析版也未提供图象，只凭选项判断。"
+                         },
+                         {
+                             "question":  14,
+                             "issue":  "解析版中向量表示有误，如$\\overrightarrow{AE} = \\dfrac{1}{6}\\overrightarrow{AB} + \\dfrac{2}{3}\\overrightarrow{AC}$，根据向量线性运算应为$\\overrightarrow{AE} = \\dfrac{1}{3}\\overrightarrow{AD} + \\dfrac{2}{3}\\overrightarrow{AC}$，而$\\overrightarrow{AD} = \\dfrac{1}{2}\\overrightarrow{AB}$，所以$\\overrightarrow{AE} = \\dfrac{1}{6}\\overrightarrow{AB} + \\dfrac{2}{3}\\overrightarrow{AC}$，结果正确。"
+                         },
+                         {
+                             "question":  20,
+                             "issue":  "解析版第(ii)问最后一步放缩$\\dfrac{t^2}{e^{t/2}} \\le \\dfrac{4}{e-1}$的证明中，用了$\\dfrac{16}{e^2} \u003c \\dfrac{4}{e-1}$，需注意$e$的值。"
+                         },
+                         {
+                             "question":  3,
+                             "issue":  "题图未能自动匹配：原卷第 1 页，函数图象"
+                         },
+                         {
+                             "question":  3,
+                             "issue":  "题图未能自动匹配：原卷第 1 页，函数图象"
+                         }
+                     ]
+}

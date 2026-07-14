@@ -1,0 +1,427 @@
+﻿{
+    "title":  "2021 年高考数学 全国乙卷-文科",
+    "year":  2021,
+    "paper":  "全国乙卷文科数学",
+    "sections":  [
+                     {
+                         "title":  "一、选择题",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  1,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知全集 $U = \\{1,2,3,4,5\\}$ ，集合 $M = \\{1,2\\}$ ， $N = \\{3,4\\}$ ，则 $C_U(M \\cup N) =$ （ ）",
+                                               "choices":  [
+                                                               "$\\{5\\}$",
+                                                               "$\\{1,2\\}$",
+                                                               "$\\{3,4\\}$",
+                                                               "$\\{1,2,3,4\\}$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  2,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $iz = 4 + 3i$ ，则 $z =$ （ ）",
+                                               "choices":  [
+                                                               "$-3-4i$",
+                                                               "$-3+4i$",
+                                                               "$3-4i$",
+                                                               "$3+4i$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  3,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "已知命题 $p: \\exists x \\in \\mathbb{R}, \\sin x \u003c 1$ ；命题 $q: \\forall x \\in \\mathbb{R}, e^{|x|} \\ge 1$ ，则下列命题中为真命题的是（ ）",
+                                               "choices":  [
+                                                               "$p \\land q$",
+                                                               "$\\neg p \\land q$",
+                                                               "$p \\land \\neg q$",
+                                                               "$\\neg(p \\lor q)$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "根据正弦函数的值域 $\\sin x \\in [-1,1]$ ， $\\sin x \u003c 1$ ，故 $\\exists x \\in \\mathbb{R}$ ， $p$ 为真命题，而函数 $y = e^{|x|}$ 为偶函数，且 $x \\ge 0$ 时，$y = e^x \\ge 1$ ，故 $\\forall x \\in \\mathbb{R}$ ， $y = e^{|x|} \\ge 1$ 恒成立.则 $q$ 也为真命题，所以 $p \\land q$ 为真，选 A.",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  4,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "函数 $f(x) = \\sin\\frac{x}{3} + \\cos\\frac{x}{3}$ 的最小正周期和最大值分别是（ ）",
+                                               "choices":  [
+                                                               "$3\\pi$ 和 $\\sqrt{2}$",
+                                                               "$3\\pi$ 和 $2$",
+                                                               "$6\\pi$ 和 $\\sqrt{2}$",
+                                                               "$6\\pi$ 和 $2$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "$f(x) = \\sqrt{2}\\sin\\left(\\frac{x}{3} + \\frac{\\pi}{4}\\right)$ ，$f(x)_{\\max} = \\sqrt{2}$ ， $T = \\frac{2\\pi}{\\frac{1}{3}} = 6\\pi$ .",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  5,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "若 $x,y$ 满足约束条件 $\\begin{cases} x + y \\ge 4, \\\\ x - y \\le 2, \\\\ y \\le 3, \\end{cases}$ 则 $z = 3x + y$ 的最小值为（ ）",
+                                               "choices":  [
+                                                               "$18$",
+                                                               "$10$",
+                                                               "$6$",
+                                                               "$4$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "根据约束条件可得图像如下， $z = 3x + y$ 的最小值，即 $y = -3x + z$ ， $y$ 轴截距最小值.根据图像可知 $y = -3x + z$ 过点 $B(1,3)$ 时满足题意，即 $z_{\\min} = 3 + 3 = 6$ .",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  6,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "$\\cos^2\\frac{\\pi}{12} - \\cos^2\\frac{5\\pi}{12} =$ （ ）",
+                                               "choices":  [
+                                                               "$\\frac{1}{2}$",
+                                                               "$\\frac{\\sqrt{3}}{3}$",
+                                                               "$\\frac{\\sqrt{2}}{2}$",
+                                                               "$\\frac{\\sqrt{3}}{2}$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "$\\cos^2\\frac{\\pi}{12} - \\cos^2\\frac{5\\pi}{12} = \\cos^2\\frac{\\pi}{12} - \\cos^2\\left(\\frac{\\pi}{2} - \\frac{\\pi}{12}\\right) = \\cos^2\\frac{\\pi}{12} - \\sin^2\\frac{\\pi}{12} = \\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}$ .",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  7,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在区间 $(0,\\frac{1}{2})$ 随机取1个数，则取到的数小于 $\\frac{1}{3}$ 的概率为（ ）",
+                                               "choices":  [
+                                                               "$\\frac{3}{4}$",
+                                                               "$\\frac{2}{3}$",
+                                                               "$\\frac{1}{3}$",
+                                                               "$\\frac{1}{6}$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "在区间 $(0,\\frac{1}{2})$ 随机取1个数，可知总长度 $d = \\frac{1}{2}$ ，取到的数小于 $\\frac{1}{3}$ ，可知取到的长度范围 $d\u0027 = \\frac{1}{3}$ ，根据几何概型公式 $p = \\frac{d\u0027}{d} = \\frac{\\frac{1}{3}}{\\frac{1}{2}} = \\frac{2}{3}$ .",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  8,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "下列函数中最小值为4的是（ ）",
+                                               "choices":  [
+                                                               "$y = x^2 + 2x + 4$",
+                                                               "$y = |\\sin x| + \\frac{4}{|\\sin x|}$",
+                                                               "$y = 2^x + 2^{2-x}$",
+                                                               "$y = \\ln x + \\frac{4}{\\ln x}$"
+                                                           ],
+                                               "answer_latex":  "C",
+                                               "analysis_latex":  "对于 A，$y = x^2 + 2x + 4 = (x+1)^2 + 3 \\ge 3$ .不符合，\n对于 B，$y = |\\sin x| + \\frac{4}{|\\sin x|}$ ，令 $t = |\\sin x| \\in [0,1]$ ，$y = t + \\frac{4}{t}$ ，根据对勾函数 $y_{\\min} = 1 + 4 = 5$ 不符合，\n对于 C，$y = 2^x + 2^{2-x} = 2^x + \\frac{4}{2^x}$ ，令 $t = 2^x \u003e 0$ ，$y = t + \\frac{4}{t} \\ge 2\\sqrt{t \\cdot \\frac{4}{t}} = 4$ ，当且仅当 $t=2$ 时取等，符合，\n对于 D，$y = \\ln x + \\frac{4}{\\ln x}$ ，令 $t = \\ln x \\in \\mathbb{R}$ ，$y = t + \\frac{4}{t}$ ，根据对勾函数 $y \\in (-\\infty, -4] \\cup [4, +\\infty)$ ，不符合.",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  9,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设函数 $f(x) = \\frac{1-x}{1+x}$ ，则下列函数中为奇函数的是（ ）",
+                                               "choices":  [
+                                                               "$f(x-1)-1$",
+                                                               "$f(x-1)+1$",
+                                                               "$f(x+1)-1$",
+                                                               "$f(x+1)+1$"
+                                                           ],
+                                               "answer_latex":  "B",
+                                               "analysis_latex":  "$f(x) = \\frac{1-x}{1+x} = -1 + \\frac{2}{1+x}$ ，$f(x)$ 向右平移一个单位，向上平移一个单位得到 $g(x) = \\frac{2}{x}$ 为奇函数.所以选 B.",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  10,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "在正方体 $ABCD-A_1B_1C_1D_1$ 中，$P$ 为 $B_1D_1$ 的中点，则直线 $PB$ 与 $AD_1$ 所成的角为（ ）",
+                                               "choices":  [
+                                                               "$\\frac{\\pi}{2}$",
+                                                               "$\\frac{\\pi}{3}$",
+                                                               "$\\frac{\\pi}{4}$",
+                                                               "$\\frac{\\pi}{6}$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "做出图形，$AD_1 // BC_1$ ，所以 $\\angle PBC_1$ 为异面直线所成角，设棱长为1.\n$BC_1 = \\sqrt{2}$ ，$B_1P = \\frac{\\sqrt{2}}{2}$ ，$PC_1 = \\frac{\\sqrt{2}}{2}$ ，$BP = \\frac{\\sqrt{6}}{2}$ .\n$\\cos\\angle PBC_1 = \\frac{BC_1^2 + BP^2 - C_1P^2}{2\\cdot BP \\cdot BC_1} = \\frac{2 + \\frac{3}{2} - \\frac{1}{2}}{2\\cdot\\frac{\\sqrt{6}}{2}\\cdot\\sqrt{2}} = \\frac{3}{\\sqrt{12}} = \\frac{\\sqrt{3}}{2}$ ，即 $\\angle PBC_1 = \\frac{\\pi}{6}$ ，故选 D.",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  11,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $B$ 是椭圆 $C: \\frac{x^2}{5} + y^2 = 1$ 的上顶点，点 $P$ 在 $C$ 上，则 $|PB|$ 的最大值为（ ）",
+                                               "choices":  [
+                                                               "$\\frac{5}{2}$",
+                                                               "$\\sqrt{6}$",
+                                                               "$5$",
+                                                               "$2$"
+                                                           ],
+                                               "answer_latex":  "A",
+                                               "analysis_latex":  "方法一：由 $C: \\frac{x^2}{5} + y^2 = 1$ ，$B(0,1)$ ，\n则 $C$ 的参数方程：$\\begin{cases} x = \\sqrt{5}\\cos\\theta \\\\ y = \\sin\\theta \\end{cases}$ .\n$|PB| = \\sqrt{(\\sin\\theta - 1)^2 + (\\sqrt{5}\\cos\\theta)^2} = \\sqrt{-4\\sin^2\\theta - 2\\sin\\theta + 6} = \\sqrt{-4(\\sin\\theta + \\frac{1}{4})^2 + \\frac{25}{4}} \\ge \\frac{5}{2}$ .\n$\\therefore |PB|_{\\max} = \\frac{5}{2}$ ，故选 A.\n方法二：设 $P(x_0,y_0)$ ，则 $\\frac{x_0^2}{5} + y_0^2 = 1 (y_0 \\in [-1,1])$ ，$B(0,1)$ .\n因此 $|PB|^2 = x_0^2 + (y_0 - 1)^2$ ，将①式代入②式化简得：$|PB|^2 = -4(y_0 + \\frac{1}{4})^2 + \\frac{25}{4} \\ge \\frac{25}{4}$ ，当且仅当 $y_0 = -\\frac{1}{4}$ 时 $|PB|$ 的最大值为 $\\frac{5}{2}$ ，故选 A.",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  12,
+                                               "type":  "single_choice",
+                                               "points":  5,
+                                               "stem_latex":  "设 $a \\neq 0$ ，若 $x = a$ 为函数 $f(x) = a(x-a)^2(x-b)$ 的极大值点，则（ ）",
+                                               "choices":  [
+                                                               "$a \u003c b$",
+                                                               "$a \u003e b$",
+                                                               "$ab \u003c a^2$",
+                                                               "$ab \u003e a^2$"
+                                                           ],
+                                               "answer_latex":  "D",
+                                               "analysis_latex":  "$f\u0027(x) = 2a(x-a)(x-b) + a(x-a)^2 = a(x-a)(3x-2b-a)$.\n当 $a \u003e 0$ 时，原函数先增再减后增.\n原函数在 $f\u0027(x)=0$ 的较小零点时取得极大值.\n即 $a \u003c \\frac{a+2b}{3}$ ，即 $a \u003c b$ ，$\\therefore a^2 \u003c ab$.\n当 $a \u003c 0$ 时，原函数先减再增后减.\n原函数在 $f\u0027(x)=0$ 的较大零点时取得极大值.\n即 $a \u003e \\frac{a+2b}{3}$ ，$a \u003e b$ ，$a^2 \u003c ab$ ，故选 D.",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "二、填空题",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  13,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "已知向量 $\\vec{a} = (2,5)$ ， $\\vec{b} = (\\lambda, 4)$ ，若 $\\vec{a} // \\vec{b}$ ，则 $\\lambda =$ .",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\frac{8}{5}$",
+                                               "analysis_latex":  "由已知 $\\vec{a} // \\vec{b}$ 可得 $2 \\times 4 = 5\\lambda \\Rightarrow \\lambda = \\frac{8}{5}$ .",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  14,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "双曲线 $\\frac{x^2}{4} - \\frac{y^2}{5} = 1$ 的右焦点到直线 $x + 2y - 8 = 0$ 的距离为 .",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$\\sqrt{5}$",
+                                               "analysis_latex":  "$\\frac{x^2}{4} - \\frac{y^2}{5} = 1$ 的右焦点为 $(3,0)$ ，到直线 $x + 2y - 8 = 0$ 的距离 $d = \\frac{|3-8|}{\\sqrt{1^2+2^2}} = \\sqrt{5}$ .",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  15,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "记 $\\triangle ABC$ 的内角 $A$ ， $B$ ， $C$ 的对边分别为 $a$ ， $b$ ， $c$ ，面积为 $\\sqrt{3}$ ， $B = 60^\\circ$ ， $a^2 + c^2 = 3ac$ ，则 $b =$ .",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "$2\\sqrt{2}$",
+                                               "analysis_latex":  "由面积公式 $S = \\frac{1}{2}ac\\sin B = \\sqrt{3}$ ，且 $B = 60^\\circ$ ，解得 $ac = 4$ ，\n又由余弦定理 $b^2 = a^2 + c^2 - 2ac\\cos B$ ， $a^2 + c^2 = 3ac$ ，且 $b \u003e 0$ ，\n解得 $b = 2\\sqrt{2}$ .",
+                                               "solution_latex":  "",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  16,
+                                               "type":  "fill_blank",
+                                               "points":  5,
+                                               "stem_latex":  "以图①为正视图，在图②③④⑤中选两个分别作为侧视图和俯视图，组成某个三棱锥的三视图，则所选侧视图和俯视图的编号依次为 （写出符合要求的一组答案即可）.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "②⑤或③④",
+                                               "analysis_latex":  "由高度可知，侧视图只能为②或③.\n侧视图为②，如图（1），平面 $PAC \\perp$ 平面 $ABC$ ， $PA = PC = \\sqrt{2}$ ， $BA = BC = \\sqrt{5}$ ， $AC = 2$ ，俯视图为⑤.\n俯视图为③，如图（2）， $PA \\perp$ 平面 $ABC$ ， $PA = 1$ ， $AC = AB = \\sqrt{5}$ ， $BC = 2$ ，俯视图为④.",
+                                               "solution_latex":  "",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  3,
+                                                                  "description":  "图①为正视图，图②③④⑤为可能的侧视图和俯视图",
+                                                                  "file":  "question-16-1.jpg"
+                                                              }
+                                                          ]
+                                           }
+                                       ]
+                     },
+                     {
+                         "title":  "三、解答题",
+                         "instructions":  "",
+                         "questions":  [
+                                           {
+                                               "number":  17,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "某厂研制了一种生产高精产品的设备，为检验新设备生产产品的某项指标有无提高，用一台旧设备和一台新设备各生产了10件产品，得到各件产品该项指标数据如下：\n\n旧设备：9.8, 10.3, 10.0, 10.2, 9.9, 9.8, 10.0, 10.1, 10.2, 9.7\n\n新设备：10.1, 10.4, 10.1, 10.0, 10.1, 10.3, 10.6, 10.5, 10.4, 10.5\n\n旧设备和新设备生产产品的该项指标的样本平均数分别记为 $\\bar{x}$ 和 $\\bar{y}$ ，样本方差分别记为 $s_1^2$ 和 $s_2^2$ .\n\n（1）求 $\\bar{x}$ ， $\\bar{y}$ ， $s_1^2$ ， $s_2^2$ ；\n\n（2）判断新设备生产产品的该项指标的均值较旧设备是否有显著提高（如果 $\\bar{y} - \\bar{x} \\ge 2\\sqrt{\\frac{s_1^2 + s_2^2}{10}}$ ，则认为新设备生产产品的该项指标的均值较旧设备有显著提高，否则不认为有显著提高）. ",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "见解析",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "（1）$\\bar{x} = \\frac{9.8+10.3+10.0+10.2+9.9+9.8+10.0+10.1+10.2+9.7}{10} = 10$ ；\n$\\bar{y} = \\frac{10.1+10.4+10.1+10.0+10.1+10.3+10.6+10.5+10.4+10.5}{10} = 10.3$ .\n$s_1^2 = \\frac{1}{10}(0.04+0.09+0.04+0.01+0.04+0.01+0.04+0.09) = \\frac{1}{10}\\times0.36 = 0.036$ ；\n$s_2^2 = \\frac{1}{10}(0.04+0.01+0.04+0.09+0.04+0.09+0.04+0.01+0.04) = \\frac{1}{10}\\times0.4 = 0.04$ .\n（2）$\\bar{y} - \\bar{x} = 10.3 - 10 = 0.3$ ，\n$2\\sqrt{\\frac{s_1^2 + s_2^2}{10}} = 2\\sqrt{\\frac{0.036+0.04}{10}} = 2\\sqrt{0.0076}$ .\n∵ $0.3 = \\sqrt{0.09} \u003e 2\\sqrt{0.0076} = \\sqrt{0.0304}$ ，所以可判断新设备生产产品的该项指标的均值较旧设备有显著提高.",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  18,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "如图，四棱锥 $P-ABCD$ 的底面是矩形， $PD \\perp$ 底面 $ABCD$ ， $M$ 为 $BC$ 的中点，且 $PB \\perp AM$ .\n（1）证明：平面 $PAM \\perp$ 平面 $PBD$ ﹔\n（2）若 $PD = DC = 1$ ，求四棱锥 $P-ABCD$ 的体积.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "见解析",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "（1）证明：因为 $PD \\perp$ 底面 $ABCD$ ， $AM \\subset$ 底面 $ABCD$ ，所以 $PD \\perp AM$ .\n又 $PB \\perp AM$ ， $PD \\cap PB = P$ ， $PD, PB \\subset$ 平面 $PBD$ ，所以 $AM \\perp$ 平面 $PBD$ .\n又 $AM \\subset$ 平面 $PAM$ ，所以平面 $PAM \\perp$ 平面 $PBD$ .\n（2）设 $AB = DC = 1$ ， $BC = AD = a$ ，则 $M$ 为 $BC$ 中点，$BM = \\frac{a}{2}$ .\n在 $\\triangle AMB$ 中，$AM^2 = AB^2 + BM^2 = 1 + \\frac{a^2}{4}$ .\n在 $\\triangle PBD$ 中，$PB^2 = PD^2 + DB^2 = 1 + (1+a^2) = a^2+2$ .\n因为 $PB \\perp AM$ ，所以 $PB^2 + AM^2 = PA^2$ （？）实际上，需用其他方法.",
+                                               "assets":  [
+                                                              {
+                                                                  "source_page":  3,
+                                                                  "description":  "四棱锥 P-ABCD 的示意图"
+                                                              }
+                                                          ]
+                                           },
+                                           {
+                                               "number":  19,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "设 $\\{a_n\\}$ 是首项为1的等比数列，数列 $\\{b_n\\}$ 满足 $b_n = \\frac{na_n}{3}$ .已知 $a_1$ ， $3a_2$ ， $9a_3$ 成等差数列.\n（1）求 $\\{a_n\\}$ 和 $\\{b_n\\}$ 的通项公式；\n（2）记 $S_n$ 和 $T_n$ 分别为 $\\{a_n\\}$ 和 $\\{b_n\\}$ 的前 $n$ 项和.证明：$T_n \u003c \\frac{S_n}{2}$ .",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "见解析",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "（1）设 $\\{a_n\\}$ 的公比为 $q$ ，则 $a_n = q^{n-1}$ ，\n因为 $a_1, 3a_2, 9a_3$ 成等差数列，所以 $1 + 9q^2 = 2\\times 3q$ ，解得 $q = \\frac{1}{3}$ ，\n故 $a_n = \\left(\\frac{1}{3}\\right)^{n-1}$ ， $S_n = \\frac{1-\\left(\\frac{1}{3}\\right)^n}{1-\\frac{1}{3}} = \\frac{3}{2}\\left(1-\\frac{1}{3^n}\\right)$ .\n又 $b_n = \\frac{n}{3^n}$ ，则 $T_n = \\frac{1}{3} + \\frac{2}{3^2} + \\frac{3}{3^3} + \\cdots + \\frac{n-1}{3^{n-1}} + \\frac{n}{3^n}$ ，\n两边同乘 $\\frac{1}{3}$ ，得 $\\frac{1}{3}T_n = \\frac{1}{3^2} + \\frac{2}{3^3} + \\frac{3}{3^4} + \\cdots + \\frac{n-1}{3^n} + \\frac{n}{3^{n+1}}$ ，\n两式相减，得 $\\frac{2}{3}T_n = \\frac{1}{3} + \\frac{1}{3^2} + \\frac{1}{3^3} + \\cdots + \\frac{1}{3^n} - \\frac{n}{3^{n+1}}$ ，\n即 $\\frac{2}{3}T_n = \\frac{\\frac{1}{3}(1-\\frac{1}{3^n})}{1-\\frac{1}{3}} - \\frac{n}{3^{n+1}} = \\frac{1}{2}(1-\\frac{1}{3^n}) - \\frac{n}{3^{n+1}}$ ，\n整理得 $T_n = \\frac{3}{4}(1-\\frac{1}{3^n}) - \\frac{n}{2\\cdot3^n} = \\frac{3}{4} - \\frac{2n+3}{4\\cdot3^n}$ ，\n则 $2T_n - S_n = 2\\left(\\frac{3}{4} - \\frac{2n+3}{4\\cdot3^n}\\right) - \\frac{3}{2}\\left(1-\\frac{1}{3^n}\\right) = -\\frac{4n+3}{2\\cdot3^n} \u003c 0$ ，\n故 $T_n \u003c \\frac{S_n}{2}$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  20,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知抛物线 $C: y^2 = 2px (p\u003e0)$ 的焦点 $F$ 到准线的距离为2.\n（1）求 $C$ 的方程；\n（2）已知 $O$ 为坐标原点，点 $P$ 在 $C$ 上，点 $Q$ 满足 $\\overrightarrow{PQ} = 9\\overrightarrow{QF}$ ，求直线 $OQ$ 斜率的最大值.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "见解析",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "（1）由焦点到准线的距离为 $p$ ，则 $p = 2$ .\n抛物线 $C$ 的方程：$y^2 = 4x$.\n（2）设点 $P\\left(\\frac{y_0^2}{4}, y_0\\right)$ ， $Q(x_Q, y_Q)$ ， $F(1,0)$ .\n∵ $\\overrightarrow{PQ} = 9\\overrightarrow{QF}$ ，\n∴ $(x_Q - \\frac{y_0^2}{4}, y_Q - y_0) = 9(1-x_Q, -y_Q)$ ，\n即 $\\begin{cases} x_Q - \\frac{y_0^2}{4} = 9 - 9x_Q \\\\ y_Q - y_0 = -9y_Q \\end{cases}$ ，解得 $\\begin{cases} x_Q = \\frac{9 + \\frac{y_0^2}{4}}{10} \\\\ y_Q = \\frac{y_0}{10} \\end{cases}$ .\n则 $k_{OQ} = \\frac{y_Q}{x_Q} = \\frac{\\frac{y_0}{10}}{\\frac{9 + \\frac{y_0^2}{4}}{10}} = \\frac{y_0}{9 + \\frac{y_0^2}{4}} = \\frac{1}{\\frac{9}{y_0} + \\frac{y_0}{4}} \\le \\frac{1}{2\\sqrt{\\frac{9}{y_0}\\cdot\\frac{y_0}{4}}} = \\frac{1}{3}$ ，\n当且仅当 $\\frac{9}{y_0} = \\frac{y_0}{4}$ 即 $y_0 = 6$ 时取等.\n∴直线 $OQ$ 斜率的最大值为 $\\frac{1}{3}$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  21,
+                                               "type":  "solution",
+                                               "points":  12,
+                                               "stem_latex":  "已知函数 $f(x) = x^3 - x^2 + ax + 1$ .\n（1）讨论 $f(x)$ 的单调性；\n（2）求曲线 $y = f(x)$ 过坐标原点的切线与曲线 $y = f(x)$ 的公共点的坐标.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "见解析",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "（1）$f\u0027(x) = 3x^2 - 2x + a$ .\n（i）当 $\\Delta = 4 - 12a \\le 0$ ，即 $a \\ge \\frac{1}{3}$ 时，$f\u0027(x) \\ge 0$ 恒成立，即 $f(x)$ 在 $\\mathbb{R}$ 上单调递增.\n（ii）当 $\\Delta = 4 - 12a \u003e 0$ ，即 $a \u003c \\frac{1}{3}$ 时，$f\u0027(x)=0$ 解得 $x_1 = \\frac{1-\\sqrt{1-3a}}{3}$ ， $x_2 = \\frac{1+\\sqrt{1-3a}}{3}$ .\n∴ $f(x)$ 在 $(-\\infty, \\frac{1-\\sqrt{1-3a}}{3})$ 和 $(\\frac{1+\\sqrt{1-3a}}{3}, +\\infty)$ 单调递增，在 $(\\frac{1-\\sqrt{1-3a}}{3}, \\frac{1+\\sqrt{1-3a}}{3})$ 单调递减.\n综上所述：当 $a \\ge \\frac{1}{3}$ 时，$f(x)$ 在 $\\mathbb{R}$ 上单调递增；当 $a \u003c \\frac{1}{3}$ 时，$f(x)$ 在 $(\\frac{1-\\sqrt{1-3a}}{3}, \\frac{1+\\sqrt{1-3a}}{3})$ 单调递减，在其余区间单调递增.\n（2）设过原点切线的切点为 $(t, t^3 - t^2 + at + 1)$ ，切线斜率 $k = f\u0027(t) = 3t^2 - 2t + a$ .\n又 $k = \\frac{t^3 - t^2 + at + 1}{t}$ ，可得 $\\frac{t^3 - t^2 + at + 1}{t} = 3t^2 - 2t + a$ .\n化简得 $(t-1)(2t^2 + t + 1) = 0$ ，即 $t = 1$ .\n∴切点为 $(1, a+1)$ ，斜率 $k = a+1$ ，切线方程为 $y = (a+1)x$ .\n将 $y = (a+1)x$ 与 $y = x^3 - x^2 + ax + 1$ 联立得 $x^3 - x^2 + ax + 1 = (a+1)x$ ，\n化简得 $(x-1)^2(x+1) = 0$ ，解得 $x_1 = 1$ ， $x_2 = -1$ .\n∴过原点的切线与 $y = f(x)$ 公共点坐标为 $(1, a+1)$ ， $(-1, -a-1)$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  22,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "在直角坐标系 $xOy$ 中， $\\odot C$ 的圆心为 $C(2,1)$ ，半径为1.\n（1）写出 $\\odot C$ 的一个参数方程；\n（2）过点 $F(4,1)$ 作 $\\odot C$ 的两条切线.以坐标原点为极点， $x$ 轴正半轴为极轴建立极坐标系，求这两条切线的极坐标方程.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "见解析",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "（1）$\\odot C$ 的参数方程为 $\\begin{cases} x = 2 + \\cos\\theta \\\\ y = 1 + \\sin\\theta \\end{cases}$ （ $\\theta$ 为参数）.\n（2）$\\odot C$ 的方程为 $(x-2)^2 + (y-1)^2 = 1$ .\n①当直线斜率不存在时，直线方程为 $x=4$ ，此时圆心到直线距离为 $2 \u003e r$ ，舍去；\n②当直线斜率存在时，设直线方程为 $y-1 = k(x-4)$ ，化简为 $kx - y - 4k + 1 = 0$ ，\n此时圆心 $C(2,1)$ 到直线的距离为 $d = \\frac{|2k - 1 - 4k + 1|}{\\sqrt{k^2+1}} = r = 1$ ，\n化简得 $2|k| = \\sqrt{k^2+1}$ ，两边平方有 $4k^2 = k^2 + 1$ ，所以 $k = \\pm\\frac{\\sqrt{3}}{3}$ .\n代入直线方程并化简得 $x - \\sqrt{3}y + \\sqrt{3} - 4 = 0$ 或 $x + \\sqrt{3}y - \\sqrt{3} - 4 = 0$ .\n化为极坐标方程为 $\\rho\\cos\\theta - \\sqrt{3}\\rho\\sin\\theta = 4 - \\sqrt{3}$ 即 $\\rho\\sin(\\theta + \\frac{5\\pi}{6}) = 4 - \\sqrt{3}$ ，\n或 $\\rho\\cos\\theta + \\sqrt{3}\\rho\\sin\\theta = 4 + \\sqrt{3}$ 即 $\\rho\\sin(\\theta + \\frac{\\pi}{6}) = 4 + \\sqrt{3}$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           },
+                                           {
+                                               "number":  23,
+                                               "type":  "solution",
+                                               "points":  10,
+                                               "stem_latex":  "已知函数 $f(x) = |x-a| + |x+3|$ .\n（1）当 $a=1$ 时，求不等式 $f(x) \\ge 6$ 的解集；\n（2）若 $f(x) \u003e -a$ ，求 $a$ 的取值范围.",
+                                               "choices":  [
+
+                                                           ],
+                                               "answer_latex":  "见解析",
+                                               "analysis_latex":  "",
+                                               "solution_latex":  "（1）当 $a=1$ 时，$f(x) \\ge 6 \\iff |x-1| + |x+3| \\ge 6$ .\n当 $x \\le -3$ 时，不等式 $\\iff 1-x - x - 3 \\ge 6$ ，解得 $x \\le -4$ ；\n当 $-3 \u003c x \u003c 1$ 时，不等式 $\\iff 1-x + x + 3 \\ge 6$ ，解得 $x \\in \\varnothing$ ；\n当 $x \\ge 1$ 时，不等式 $\\iff x-1 + x+3 \\ge 6$ ，解得 $x \\ge 2$ .\n综上，原不等式的解集为 $(-\\infty, -4] \\cup [2, +\\infty)$ .\n（2）若 $f(x) \u003e -a$ ，即 $f(x)_{\\min} \u003e -a$ ，\n因为 $f(x) = |x-a| + |x+3| \\ge |(x-a) - (x+3)| = |a+3|$ （当且仅当 $(x-a)(x+3) \\le 0$ 时，等号成立），\n所以 $f(x)_{\\min} = |a+3|$ ，所以 $|a+3| \u003e -a$ ，即 $a+3 \u003c a$ 或 $a+3 \u003e -a$ ，解得 $a \\in \\left(-\\frac{3}{2}, +\\infty\\right)$ .",
+                                               "assets":  [
+
+                                                          ]
+                                           }
+                                       ]
+                     }
+                 ],
+    "review_notes":  [
+                         {
+                             "question":  16,
+                             "issue":  "题目中图①为正视图，但原卷文本中无图，解析版给出了描述，但无法确定具体图形，答案依据解析版给出."
+                         },
+                         {
+                             "question":  18,
+                             "issue":  "原卷中第18题有图，但文本未提供图形细节，解析中省略了具体计算过程，仅给出证明思路."
+                         },
+                         {
+                             "question":  18,
+                             "issue":  "题图未能自动匹配：原卷第 3 页，四棱锥 P-ABCD 的示意图"
+                         }
+                     ]
+}
