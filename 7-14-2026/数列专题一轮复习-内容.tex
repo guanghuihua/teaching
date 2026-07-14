@@ -1,0 +1,385 @@
+\begin{document}
+
+\begin{center}
+  {\zihao{3}\bfseries 高中数学一轮复习专题检测}\\[4pt]
+  {\zihao{4}\bfseries 数列的通项与求和}
+\end{center}
+
+\noindent\textbf{说明：}本试卷满分 100 分，建议用时 90 分钟。所有题目均由文件夹内照片中的完整题面整理、校订或等价改编。
+
+\section{单项选择题：本题共 5 小题，每小题 5 分，共 25 分。每小题只有一项符合题目要求。}
+
+\begin{question}[points=5]
+一个数列的前几项为 $1,3,6,10,15,21,28,36,\ldots$，从第二项起，每一项与前一项的差依次构成等差数列，则该数列的第 $50$ 项为 \paren[A]
+\begin{choices}
+  \item $1275$
+  \item $1596$
+  \item $1597$
+  \item $1598$
+\end{choices}
+\begin{solution}
+相邻两项之差依次为 $2,3,4,\ldots$，故
+\[
+  a_n=1+(2+3+\cdots+n)=1+\frac{(n-1)(n+2)}2=\frac{n(n+1)}2.
+\]
+所以 $a_{50}=\dfrac{50\times51}{2}=1275$，故选 A。
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知数列 $\{a_n\}$ 满足
+\[
+  (n-1)a_n=(n+1)a_{n-1}\quad(n\ge 2),\qquad a_1=2,
+\]
+则满足 $a_n<930$ 的最大正整数 $n$ 为 \paren[B]
+\begin{choices}
+  \item $28$
+  \item $29$
+  \item $30$
+  \item $31$
+\end{choices}
+\begin{solution}
+由递推式得
+\[
+ \frac{a_n}{a_{n-1}}=\frac{n+1}{n-1},
+\]
+于是
+\[
+ a_n=2\cdot\frac31\cdot\frac42\cdots\frac{n+1}{n-1}=n(n+1).
+\]
+因为 $29\times30=870<930$，而 $30\times31=930$，所以最大正整数为 $29$，故选 B。
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知数列 $\{a_n\}$ 满足 $a_1=4$，
+\[
+ a_{n+1}=4a_n-12n+4,
+\]
+则 $a_n=$ \paren[D]
+\begin{choices}
+  \item $n$
+  \item $2n$
+  \item $3n$
+  \item $4n$
+\end{choices}
+\begin{solution}
+设 $b_n=a_n-4n$，则
+\[
+ b_{n+1}=a_{n+1}-4(n+1)=4a_n-16n=4b_n.
+\]
+又 $b_1=a_1-4=0$，所以 $b_n=0$，即 $a_n=4n$，故选 D。
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+在数列 $\{a_n\}$ 中，$a_1=1$，且 $a_n+a_{n+1}=2n$，则 $\{a_n\}$ 的通项公式为 \paren[B]
+\begin{choices}
+  \item $a_n=n$
+  \item $a_n=\begin{cases}n,&n\text{ 为奇数},\\n-1,&n\text{ 为偶数}
+  \end{cases}$
+  \item $a_n=\begin{cases}n,&n\text{ 为奇数},\\n+1,&n\text{ 为偶数}
+  \end{cases}$
+  \item $a_n=\begin{cases}n-1,&n\text{ 为奇数},\\n+1,&n\text{ 为偶数}
+  \end{cases}$
+\end{choices}
+\begin{solution}
+由
+\[
+ a_n+a_{n+1}=2n,\qquad a_{n+1}+a_{n+2}=2n+2
+\]
+相减得 $a_{n+2}-a_n=2$。奇数项与偶数项分别成等差数列。又 $a_1=1$，$a_2=1$，故
+\[
+ a_{2k-1}=2k-1,\qquad a_{2k}=2k-1.
+\]
+故选 B。
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知数列 $\{a_n\}$ 的前 $n$ 项和为
+\[
+ S_n=\frac32n^2-\frac12n,
+\]
+令 $b_n=\dfrac1{a_na_{n+1}}$，$T_n$ 为数列 $\{b_n\}$ 的前 $n$ 项和，则 $T_n=$ \paren[B]
+\begin{choices}
+  \item $\dfrac13-\dfrac1{3n+1}$
+  \item $\dfrac13-\dfrac1{3(3n+1)}$
+  \item $\dfrac13-\dfrac1{3(3n-1)}$
+  \item $\dfrac13+\dfrac1{3(3n+1)}$
+\end{choices}
+\begin{solution}
+由 $a_n=S_n-S_{n-1}$（$n=1$ 时也成立），得 $a_n=3n-2$。因此
+\[
+ b_n=\frac1{(3n-2)(3n+1)}
+ =\frac13\left(\frac1{3n-2}-\frac1{3n+1}\right).
+\]
+裂项相消得
+\[
+ T_n=\frac13\left(1-\frac1{3n+1}\right)
+ =\frac13-\frac1{3(3n+1)}.
+\]
+故选 B。
+\end{solution}
+\end{question}
+
+\section{多项选择题：本题共 2 小题，每小题 6 分，共 12 分。全部选对得 6 分，部分选对得部分分，有选错得 0 分。}
+
+\begin{question}[points=6]
+已知数列 $\{a_n\}$ 满足 $a_1=-2$，
+\[
+ \frac{a_n}{a_{n-1}}=\frac{2n}{n-1}\quad(n\ge2),
+\]
+其前 $n$ 项和为 $S_n$，则下列结论正确的是 \paren[ABD]
+\begin{choices}
+  \item $a_2=-8$
+  \item $a_n=-n\cdot2^n$
+  \item $S_3=-30$
+  \item $S_n=(1-n)2^{n+1}-2$
+\end{choices}
+\begin{solution}
+累乘得
+\[
+ a_n=-2\prod_{k=2}^{n}\frac{2k}{k-1}=-n2^n,
+\]
+故 A、B 正确，且 $S_3=-2-8-24=-34$，C 错误。由错位相减公式
+\[
+ \sum_{k=1}^{n}k2^k=(n-1)2^{n+1}+2,
+\]
+所以 $S_n=(1-n)2^{n+1}-2$，D 正确。
+\end{solution}
+\end{question}
+
+\begin{question}[points=6]
+数列 $\{a_n\}$ 的前 $n$ 项和为 $S_n$，且 $a_1=1$，
+\[
+ a_{n+1}=\begin{cases}
+ a_n-2^n,&n\text{ 为奇数},\\
+ a_n+2^{n+1},&n\text{ 为偶数}.
+ \end{cases}
+\]
+则下列结论正确的是 \paren[ABD]
+\begin{choices}
+  \item $a_4=-1$
+  \item $a_n=\begin{cases}2^n-1,&n\text{ 为奇数},\\-1,&n\text{ 为偶数}
+  \end{cases}$
+  \item $3S_{2n+1}=2^{2n+1}-6n-2$
+  \item 数列 $\{(-1)^na_n\}$ 的前 $2n$ 项和为 $-\dfrac{2(4^n-1)}3$
+\end{choices}
+\begin{solution}
+直接计算得 $a_2=-1$，$a_3=7$，$a_4=-1$。并且
+\[
+ a_{2k}=-1,\qquad a_{2k+1}=2^{2k+1}-1,
+\]
+故 A、B 正确。进一步，
+\[
+ S_{2n+1}=\frac{2^{2n+3}-6n-5}{3},
+\]
+故 C 错误；而
+\[
+ \sum_{k=1}^{2n}(-1)^ka_k
+ =\sum_{k=1}^{n}\bigl(-a_{2k-1}+a_{2k}\bigr)
+ =-2\sum_{k=1}^{n}4^{k-1}
+ =-\frac{2(4^n-1)}3,
+\]
+故 D 正确。
+\end{solution}
+\end{question}
+
+\section{填空题：本题共 3 小题，每小题 5 分，共 15 分。}
+
+\begin{question}[points=5]
+已知数列 $\{a_n\}$ 满足 $a_1=2$，且
+\[
+ a_{n+1}=a_n^2+4a_n+2,
+\]
+则 $a_3=$ \fillin[254]。
+\begin{solution}
+由 $a_{n+1}+2=(a_n+2)^2$，令 $b_n=\log_2(a_n+2)$，则 $b_{n+1}=2b_n$，且 $b_1=2$。因此 $b_n=2^n$，
+\[
+ a_n=2^{2^n}-2,
+\]
+所以 $a_3=2^8-2=254$。
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知正项数列 $\{a_n\}$ 满足 $a_1=1$，$a_na_{n+1}=4^n$，则
+\[
+ a_n=\fillin[{$\begin{cases}2^{n-1},&n\text{ 为奇数},\\2^n,&n\text{ 为偶数}.
+\end{cases}$}]
+\]
+\begin{solution}
+令 $x_n=\log_2a_n$，则 $x_1=0$，且 $x_n+x_{n+1}=2n$。由相邻两式相减得 $x_{n+2}-x_n=2$。奇、偶项分别递推，得到
+\[
+ x_n=\begin{cases}n-1,&n\text{ 为奇数},\\n,&n\text{ 为偶数}.
+ \end{cases}
+\]
+从而得到所填通项。
+\end{solution}
+\end{question}
+
+\begin{question}[points=5]
+已知正项数列 $\{a_n\}$ 满足 $a_1=3$，$a_na_{n+1}=9\cdot2^{2n-1}$，则 $a_n=$ \fillin[{$3\cdot2^{n-1}$}]。
+\begin{solution}
+由 $a_na_{n+1}=9\cdot2^{2n-1}$ 与 $a_{n+1}a_{n+2}=9\cdot2^{2n+1}$ 相除，得 $a_{n+2}=4a_n$。又 $a_1=3$，$a_2=6$，故奇、偶子数列均为公比 $4$ 的等比数列，统一写为 $a_n=3\cdot2^{n-1}$。
+\end{solution}
+\end{question}
+
+\section{解答题：本题共 4 小题，每小题 12 分，共 48 分。解答应写出必要的文字说明、证明过程或演算步骤。}
+
+\begin{question}[points=12]
+设数列 $\{a_n\}$ 满足
+\[
+ a_1=2,\qquad a_{n+1}=a_n+4\cdot3^{2n-1}.
+\]
+\begin{enumerate}
+  \item 求数列 $\{a_n\}$ 的通项公式；
+  \item 令 $b_n=na_n$，求数列 $\{b_n\}$ 的前 $n$ 项和 $S_n$。
+\end{enumerate}
+\begin{solution}
+(1) 当 $n\ge2$ 时，
+\[
+ a_n=2+\sum_{k=1}^{n-1}4\cdot3^{2k-1}
+ =2+12\sum_{k=1}^{n-1}9^{k-1}
+ =\frac{3^{2n-1}+1}{2}.
+\]
+该式对 $n=1$ 也成立。
+
+(2) 由 $b_k=\dfrac{k}{2}+\dfrac{k3^{2k-1}}2$，得
+\[
+ S_n=\frac12\sum_{k=1}^{n}k+\frac12\sum_{k=1}^{n}k3^{2k-1}.
+\]
+利用
+\[
+ \sum_{k=1}^{n}k9^k=\frac{9-(n+1)9^{n+1}+n9^{n+2}}{64},
+\]
+可得
+\[
+ \boxed{S_n=\frac{n(n+1)}4+\frac{3+(8n-1)3^{2n+1}}{128}}.
+\]
+\end{solution}
+\end{question}
+
+\begin{question}[points=12]
+设 $S_n$ 为数列 $\{a_n\}$ 的前 $n$ 项和，已知 $a_2=1$，且
+\[
+ 2S_n=na_n.
+\]
+\begin{enumerate}
+  \item 求 $\{a_n\}$ 的通项公式；
+  \item 求数列 $\left\{\dfrac{a_{n+1}}{2^n}\right\}$ 的前 $n$ 项和 $T_n$。
+\end{enumerate}
+\begin{solution}
+(1) 令 $n=1$，得 $a_1=0$。当 $n\ge3$ 时，
+\[
+ 2S_n=na_n,\qquad 2S_{n-1}=(n-1)a_{n-1}.
+\]
+两式相减得
+\[
+ (n-2)a_n=(n-1)a_{n-1}.
+\]
+结合 $a_2=1$，累乘得 $a_n=n-1$（$n\ge2$）。因此
+\[
+ \boxed{a_n=\begin{cases}0,&n=1,\\n-1,&n\ge2.
+ \end{cases}}
+\]
+
+(2) $a_{k+1}=k$，所以
+\[
+ T_n=\sum_{k=1}^{n}\frac{k}{2^k}.
+\]
+由错位相减可得
+\[
+ \boxed{T_n=2-\frac{n+2}{2^n}}.
+\]
+\end{solution}
+\end{question}
+
+\begin{question}[points=12]
+已知数列 $\{a_n\}$ 满足 $a_1=1$，且
+\[
+ \frac{a_n}{a_{n+1}}=1+2a_n.
+\]
+\begin{enumerate}
+  \item 求 $\{a_n\}$ 的通项公式；
+  \item 设 $c_n=4n^2a_na_{n+1}$，求数列 $\{c_n\}$ 的前 $n$ 项和 $T_n$。
+\end{enumerate}
+\begin{solution}
+(1) 原式可化为
+\[
+ \frac1{a_{n+1}}=\frac1{a_n}+2.
+\]
+故 $\left\{\dfrac1{a_n}\right\}$ 是首项为 $1$、公差为 $2$ 的等差数列，于是
+\[
+ \boxed{a_n=\frac1{2n-1}}.
+\]
+
+(2)
+\[
+ c_n=\frac{4n^2}{(2n-1)(2n+1)}
+ =1+\frac1{(2n-1)(2n+1)}
+ =1+\frac12\left(\frac1{2n-1}-\frac1{2n+1}\right).
+\]
+因此
+\[
+ T_n=n+\frac12\left(1-\frac1{2n+1}\right)
+ =\boxed{\frac{2n(n+1)}{2n+1}}.
+\]
+\end{solution}
+\end{question}
+
+\begin{question}[points=12]
+已知数列 $\{a_n\}$ 满足
+\[
+ a_0=\frac12,\qquad a_n=a_{n-1}+\frac1{n^2}a_{n-1}^2\quad(n\in\mathbb N^*).
+\]
+证明：
+\[
+ \frac{n+1}{n+2}<a_n<n.
+\]
+\begin{solution}
+当 $n=1$ 时，$a_1=\dfrac34$，显然有 $\dfrac23<a_1<1$。以下设 $n\ge2$。
+
+由递推式知 $a_n>a_{n-1}>0$，且
+\[
+ \frac1{a_{n-1}}-\frac1{a_n}
+ =\frac{a_{n-1}}{n^2a_n}<\frac1{n^2}.
+\]
+于是
+\[
+ 2-\frac1{a_n}
+ <\sum_{k=1}^{n}\frac1{k^2}
+ <1+\sum_{k=2}^{n}\frac1{k(k-1)}
+ =2-\frac1n,
+\]
+从而 $a_n<n$。
+
+下面证明左侧不等式。由已经证明的 $a_{n-1}<n-1$，有
+\[
+ a_n=a_{n-1}\left(1+\frac{a_{n-1}}{n^2}\right)
+ <a_{n-1}\frac{n^2+n-1}{n^2}.
+\]
+故
+\[
+ \frac1{a_{n-1}}-\frac1{a_n}
+ =\frac{a_{n-1}}{n^2a_n}
+ >\frac1{n^2+n-1}
+ >\frac1n-\frac1{n+1}.
+\]
+从 $2$ 到 $n$ 求和，得
+\[
+ \frac1{a_1}-\frac1{a_n}>\frac12-\frac1{n+1}.
+\]
+由于 $a_1=\dfrac34$，所以
+\[
+ \frac1{a_n}<\frac56+\frac1{n+1}<1+\frac1{n+1}=\frac{n+2}{n+1}.
+\]
+因此 $a_n>\dfrac{n+1}{n+2}$。综上，
+\[
+ \boxed{\dfrac{n+1}{n+2}<a_n<n}.
+\]
+\end{solution}
+\end{question}
+
+\end{document}
