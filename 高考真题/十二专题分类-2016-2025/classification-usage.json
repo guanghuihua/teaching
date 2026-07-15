@@ -1,0 +1,10 @@
+﻿{
+    "model":  "deepseek-v4-flash",
+    "questions":  1577,
+    "requests":  20,
+    "prompt_tokens":  251837,
+    "completion_tokens":  92178,
+    "cached_tokens":  10240,
+    "generated_at":  "2026-07-15T08:28:45",
+    "estimated_cost_cny":  0.4362
+}
