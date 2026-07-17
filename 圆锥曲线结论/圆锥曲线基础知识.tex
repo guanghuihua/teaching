@@ -111,7 +111,7 @@ M =
 
 \subsection{特征值与曲线形状的对应关系}
 
-\begin{table}[h]
+\begin{table}[ht]
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -134,7 +134,7 @@ M =
 \end{itemize}
 
 
-\subsection{通过旋转消去交叉项 \(Bxy\)}
+\subsection{通过旋转消去交叉项 \texorpdfstring{\(Bxy\)}{Bxy}}
 
 由于 \(M\) 为实对称矩阵，可被正交矩阵 \(P\) 对角化：
 \[
@@ -165,7 +165,7 @@ Q(x, y) = \lambda_1 x'^2 + \lambda_2 y'^2.
 \]
 
 
-\subsection{平移消去一次项 \(Dx + Ey\)}
+\subsection{平移消去一次项 \texorpdfstring{\(Dx + Ey\)}{Dx + Ey}}
 
 旋转之后，方程形如：
 \[
@@ -219,7 +219,7 @@ Q(x, y) = \lambda_1 x'^2 + \lambda_2 y'^2.
 \]
 将其看作一个“高度函数”，不同符号组合对应不同几何曲面：
 
-\begin{table}[h]
+\begin{table}[ht]
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
@@ -372,38 +372,38 @@ Q(x, y) = \lambda_1 x'^2 + \lambda_2 y'^2.
 	
 	所有高考圆锥曲线大题，无论是椭圆、双曲线、抛物线，背后都考这三类能力：
 	
-	\begin{enumerate}[label=\arabic*.]
-		\item \textbf{几何建模能力}
-		\newline—— 把文字条件转化为点、线、动点轨迹的代数约束。
-		\newline比如：``点 P 在椭圆上且满足 $PF_1 = 2PF_2$''，立刻写出椭圆方程 + 距离公式建立方程组。
-		
-		\item \textbf{代数结构控制能力}
-		\newline—— 用参数法、消元、判别式、取最值等手段``降维''。
-		\newline如：设动点坐标 $(x, y)$，转化成一个单变量函数，最后借助判别式或一元二次方程解的存在性解决问题。
-		
-		\item \textbf{数形结合与极值意识}
-		\newline—— 关键突破口几乎都来自``图像关系''或``几何意义''。
-		\newline比如：``点到定直线距离最小''，你若代入距离公式死算，极容易错；换成几何对称反射思想，立刻变简单。
-	\end{enumerate}
+		\begin{enumerate}[label=\arabic*.]
+			\item \textbf{几何建模能力}
+			\par —— 把文字条件转化为点、线、动点轨迹的代数约束。
+			\par 比如：``点 P 在椭圆上且满足 $PF_1 = 2PF_2$''，立刻写出椭圆方程 + 距离公式建立方程组。
+			
+			\item \textbf{代数结构控制能力}
+			\par —— 用参数法、消元、判别式、取最值等手段``降维''。
+			\par 如：设动点坐标 $(x, y)$，转化成一个单变量函数，最后借助判别式或一元二次方程解的存在性解决问题。
+			
+			\item \textbf{数形结合与极值意识}
+			\par —— 关键突破口几乎都来自``图像关系''或``几何意义''。
+			\par 比如：``点到定直线距离最小''，你若代入距离公式死算，极容易错；换成几何对称反射思想，立刻变简单。
+		\end{enumerate}
 
 	
 	\section{答题流程模板：几乎所有圆锥曲线压轴题都能套进这 5 步}
 	
-	\begin{table}[h]
+		\begin{table}[ht]
 		\centering
 		\begin{tabular}{|p{2.5cm}|p{4cm}|p{5.5cm}|}
 			\hline
 			\textbf{步骤} & \textbf{核心任务} & \textbf{常见技巧} \\
 			\hline
-			\textbf{建系定参} & 先定坐标系，确定参数 $a$、$b$、$e$。 & 若题中提及``焦点''、``准线''、``离心率''等，\textbf{优先选标准方程}。否则，可用一般式 $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$。 \\
+			\textbf{1. 建系定参} & 先定坐标系，确定参数 $a$、$b$、$e$。 & 若题中提及``焦点''、``准线''、``离心率''等，\textbf{优先选标准方程}。否则，可用一般式 $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$。 \\
 			\hline
-			\textbf{② 写出条件方程} & 将动点或线段的几何条件翻译成代数式。 & 常用套路：点在线上 $\rightarrow$ 代入直线方程；到焦点距离关系 $\rightarrow$ 根号公式；共圆/共线 $\rightarrow$ 行列式 = 0。 \\
+			\textbf{2. 写出条件方程} & 将动点或线段的几何条件翻译成代数式。 & 常用套路：点在线上 $\rightarrow$ 代入直线方程；到焦点距离关系 $\rightarrow$ 根号公式；共圆/共线 $\rightarrow$ 行列式 = 0。 \\
 			\hline
-			\textbf{化简/参数化} & 引入参数使问题降维。 & 典型例子：椭圆 $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ 可设 $x = a\cos\theta$, $y = b\sin\theta$；双曲线设 $x = a\sec\theta$, $y = b\tan\theta$。 \\
+			\textbf{3. 化简/参数化} & 引入参数使问题降维。 & 典型例子：椭圆 $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ 可设 $x = a\cos\theta$, $y = b\sin\theta$；双曲线设 $x = a\sec\theta$, $y = b\tan\theta$。 \\
 			\hline
-			\textbf{判定与优化} & 研究方程有解条件、最值、范围。 & 主要武器：判别式、均值不等式、导数或几何极值。 \\
+			\textbf{4. 判定与优化} & 研究方程有解条件、最值、范围。 & 主要武器：判别式、均值不等式、导数或几何极值。 \\
 			\hline
-			\textbf{⑤回代与解释} & 代回原式并说明几何意义。 & 常出错点：没有说明``取等时的几何条件''，导致逻辑不完整。 \\
+			\textbf{5. 回代与解释} & 代回原式并说明几何意义。 & 常出错点：没有说明``取等时的几何条件''，导致逻辑不完整。 \\
 			\hline
 		\end{tabular}
 	\end{table}
@@ -468,7 +468,7 @@ Q(x, y) = \lambda_1 x'^2 + \lambda_2 y'^2.
 	
 	\subsection*{(4) 常用结论速记（建议熟背）}
 	
-	\begin{table}[h]
+		\begin{table}[ht]
 		\centering
 		\begin{tabular}{|p{3cm}|p{8cm}|}
 			\hline
@@ -512,7 +512,7 @@ Q(x, y) = \lambda_1 x'^2 + \lambda_2 y'^2.
 	如果你能把所有题都拆解为``一个几何约束 + 一个代数条件''，那么圆锥曲线大题就再也不是黑箱。
 	
 	
-	\begin{table}[h]
+	\begin{table}[ht]
 		\centering
 		\begin{tabular}{|c|c|c|c|}
 			\hline
@@ -527,7 +527,7 @@ Q(x, y) = \lambda_1 x'^2 + \lambda_2 y'^2.
 		\end{tabular}
 	\end{table}
 	
-	\begin{table}[h]
+	\begin{table}[ht]
 		\centering
 		\begin{tabular}{|c|c|c|c|}
 			\hline
@@ -542,30 +542,30 @@ Q(x, y) = \lambda_1 x'^2 + \lambda_2 y'^2.
 		\end{tabular}
 	\end{table}
 	
-	\begin{table}[h]
-		\centering
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-			\textbf{抛物线} & 焦点弦长 & $\|AB\| = \frac{2p}{\sin^2 \theta}$ ($\theta$为倾斜角) & \\
-			\hline
-			& 焦半径倒数和 & $\frac{1}{\|AF\|} + \frac{1}{\|BF\|} = \frac{2}{p}$ & \\
-			\hline
-			& 焦点弦性质 & 以AB为直径的圆与准线相切；A, O, D三点共线（D为准线与轴交点） & \\
-			\hline
-		\end{tabular}
-	\end{table}
-	
-	\begin{table}[h]
-		\centering
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-			\textbf{综合性} & 切点弦方程 & 曲线外一点P$(x_0,y_0)$引两条切线，切点弦AB所在直线方程（椭圆为例）：$\frac{x_0 x}{a^2} + \frac{y_0 y}{b^2} = 1$ & \\
-			\hline
-			& 定点定直线 & 圆锥曲线内接直角三角形的直角顶点与圆锥曲线的顶点重合，则斜边所在直线过定点 & \\
-			\hline
-			& 斜率积定值 & 过定点作两直线与曲线交于两点，若两直线斜率之积为定值，则两交点连线恒过定点 & \\
-			\hline
-		\end{tabular}
+		\begin{table}[ht]
+			\centering
+			\begin{tabular}{|p{1.5cm}|p{2.4cm}|p{8.8cm}|}
+				\hline
+				\textbf{抛物线} & 焦点弦长 & $\|AB\| = \frac{2p}{\sin^2 \theta}$ ($\theta$为倾斜角) \\
+				\hline
+				& 焦半径倒数和 & $\frac{1}{\|AF\|} + \frac{1}{\|BF\|} = \frac{2}{p}$ \\
+				\hline
+				& 焦点弦性质 & 以AB为直径的圆与准线相切；A, O, D三点共线（D为准线与轴交点） \\
+				\hline
+			\end{tabular}
+		\end{table}
+		
+		\begin{table}[ht]
+			\centering
+			\begin{tabular}{|p{1.5cm}|p{2.4cm}|p{8.8cm}|}
+				\hline
+				\textbf{综合性} & 切点弦方程 & 曲线外一点P$(x_0,y_0)$引两条切线，切点弦AB所在直线方程（椭圆为例）：$\frac{x_0 x}{a^2} + \frac{y_0 y}{b^2} = 1$ \\
+				\hline
+				& 定点定直线 & 圆锥曲线内接直角三角形的直角顶点与圆锥曲线的顶点重合，则斜边所在直线过定点 \\
+				\hline
+				& 斜率积定值 & 过定点作两直线与曲线交于两点，若两直线斜率之积为定值，则两交点连线恒过定点 \\
+				\hline
+			\end{tabular}
 	\end{table}
 	
 	\section*{结论详解与运用提示}
@@ -910,11 +910,222 @@ Q(x, y) = \lambda_1 x'^2 + \lambda_2 y'^2.
 	\end{proof}
 	
 	
-	\section{排列组合与拉丁方}
+	\section{射影几何与极点极线理论}
+
+\section{圆锥曲线六大定义}
+
+\subsection{}
+
+\section{焦半径公式与焦点弦定理}
+
+\section{椭圆双曲线焦点三角形命题点}
+
+\section{三一线模型}
+
+\section{抛物线25条结论推导}
+
+\section{圆锥曲线光学性质与工程技术应用}
+
+\section{点乘双根}
+
+\textbf{适用类型：} 类似 \( x_1, x_2, y_1, y_2 \)，\( (x_1 + t)(x_2 + t) \)，\( (y_1 + t)(y_2 + t) \) 或 \( MA \cdot MB \)，\( |MA| \cdot |MB| \)（其中 \( x_1, x_2, y_1, y_2 \) 是直线与曲线的两个交点的横纵坐标，\( A, B \) 直线与曲线的两个交点）以及可转化为上述结构的问题。
+
+\textbf{理论基础：} 二次函数的双根式，若一元二次方程 \( ax^2 + bx + c = 0 \) (\( a \neq 0 \)) 的两根为 \( x_1, x_2 \)，则
+\[
+ax^2 + bx + c = a(x - x_1)(x - x_2)
+\]
+
+\textbf{具体步骤：} 化双根式 $\rightarrow$ 赋值 $\rightarrow$ 变形代入
+
+\noindent 1. 椭圆 \( C: \frac{x^2}{4} + \frac{y^2}{3} = 1 \)，左顶点为 \( A \)，过左焦点 \( P \) 的直线交椭圆于 \( P, Q \) 两点，求证：直线 \( AP \) 和 \( AQ \) 的斜率乘积是定值。
 	
-	甲，乙、丙三人未来3 周均要去 A、B、C 三个地方调研，每人每个地方调研时长	为1周，如每个人随机安排顺序，则每周三个人去的地方都不同的概率为 \textbf{$\frac{1}{18}$}
+
+\textbf{题目：}椭圆
+\[
+C:\ \frac{x^{2}}{4}+\frac{y^{2}}{3}=1,
+\]
+左顶点为 $A$，过左焦点 $F$ 的直线交椭圆于 $P,Q$ 两点，求证：直线 $AP, AQ$ 的斜率乘积为定值。
+
+\textbf{解：}由椭圆方程可得
+\[
+a=2,\quad b=\sqrt3,\quad c=\sqrt{a^{2}-b^{2}}=1,
+\]
+故左顶点 $A(-2,0)$，左焦点 $F(-1,0)$。
+
+设过焦点 $F$ 的一条动直线斜率为 $t\ (\neq0)$，则其方程为
+\[
+y=t(x+1). \tag{1}
+\]
+该直线与椭圆相交于 $P(x_1,y_1),Q(x_2,y_2)$ 两点，将 (1) 代入椭圆方程
+\[
+\frac{x^{2}}{4}+\frac{t^{2}(x+1)^{2}}{3}=1
+\]
+化简得
+\[
+\frac{1}{12}\Big[(4t^{2}+3)x^{2}+8t^{2}x+(4t^{2}-12)\Big]=0,
+\]
+根不受常数因子影响，于是 $x_1,x_2$ 为二次方程
+\[
+(4t^{2}+3)x^{2}+8t^{2}x+(4t^{2}-12)=0 \tag{2}
+\]
+的两根。
+
+对任一点 $M(x,y)$（为 $P$ 或 $Q$），由 (1) 得 $y=t(x+1)$，直线 $AM$ 的斜率为
+\[
+k=\frac{y-0}{x-(-2)}=\frac{t(x+1)}{x+2}.
+\]
+因此
+\[
+k_{AP}=\frac{t(x_1+1)}{x_1+2},\qquad
+k_{AQ}=\frac{t(x_2+1)}{x_2+2},
+\]
+从而
+\[
+k_{AP}\cdot k_{AQ}
+=t^{2}\frac{(x_1+1)(x_2+1)}{(x_1+2)(x_2+2)}. \tag{3}
+\]
+
+下面用“点乘双根法”计算分子、分母。
+
+由 (2) 可写成
+\[
+f(x)=(4t^{2}+3)x^{2}+8t^{2}x+(4t^{2}-12)
+=(4t^{2}+3)(x-x_1)(x-x_2).
+\]
+令 $x=-1$，得到
+\[
+f(-1)=(4t^{2}+3)(-1-x_1)(-1-x_2)=(4t^{2}+3)(x_1+1)(x_2+1),
+\]
+即
+\[
+(x_1+1)(x_2+1)=\frac{f(-1)}{4t^{2}+3}.
+\]
+同理令 $x=-2$，
+\[
+f(-2)=(4t^{2}+3)(-2-x_1)(-2-x_2)=(4t^{2}+3)(x_1+2)(x_2+2),
+\]
+故
+\[
+(x_1+2)(x_2+2)=\frac{f(-2)}{4t^{2}+3}.
+\]
+这正是“点乘双根法”的应用：通过在二次式两端代入同一点，得到关于两根的乘积型表达式。
+
+直接计算：
+\[
+\begin{aligned}
+	f(-1)
+	&=(4t^{2}+3)\cdot1+8t^{2}\cdot(-1)+(4t^{2}-12)  \\
+	&=4t^{2}+3-8t^{2}+4t^{2}-12
+	=-9, \\[4pt]
+	f(-2)
+	&=(4t^{2}+3)\cdot4+8t^{2}\cdot(-2)+(4t^{2}-12) \\
+	&=16t^{2}+12-16t^{2}+4t^{2}-12
+	=4t^{2}.
+\end{aligned}
+\]
+于是
+\[
+(x_1+1)(x_2+1)=\frac{-9}{4t^{2}+3},\qquad
+(x_1+2)(x_2+2)=\frac{4t^{2}}{4t^{2}+3}.
+\]
+
+代回 (3) 得
+\[
+k_{AP}\cdot k_{AQ}
+=t^{2}\frac{\dfrac{-9}{4t^{2}+3}}{\dfrac{4t^{2}}{4t^{2}+3}}
+=t^{2}\cdot\frac{-9}{4t^{2}}
+=-\frac{9}{4}.
+\]
+
+可见直线 $AP$ 与 $AQ$ 的斜率乘积为
+\[
+k_{AP}\cdot k_{AQ}=-\frac{9}{4},
+\]
+与动直线的斜率 $t$ 无关，为一常数。证明完毕。
+
+	\subsection{平移齐次化法}
 	
-	\href{https://en.wikipedia.org/wiki/Latin_square}{拉丁方 Latin Square}
+	
+		\section{非对称韦达定理}
+	
+
+	\section*{圆锥曲线——点乘双根法}
+
+\subsection*{适用类型}
+
+类似
+\[
+x_1x_2,\qquad y_1y_2,\qquad (x_1+t)(x_2+t),\qquad (y_1+t)(y_2+t),
+\]
+或
+\[
+\overrightarrow{MA}\cdot\overrightarrow{MB},\qquad
+|\overrightarrow{MA}|\cdot|\overrightarrow{MB}|
+\]
+的结构。
+
+其中 $x_1,x_2,y_1,y_2$ 是直线与曲线的两个交点的横纵坐标，
+$A,B$ 是直线与曲线的两个交点。该方法也适用于可以转化为上述结构的问题。
+
+\subsection*{理论基础}
+
+二次函数的双根式。若一元二次方程
+\[
+ax^2+bx+c=0\qquad (a\ne 0)
+\]
+的两根为 $x_1,x_2$，则
+\[
+ax^2+bx+c=a(x-x_1)(x-x_2).
+\]
+
+\subsection*{具体步骤}
+
+\[
+\text{化双根式}\longrightarrow \text{赋值}\longrightarrow \text{变形代入}.
+\]
+
+\section*{例题 1}
+
+椭圆
+\[
+C:\frac{x^2}{4}+\frac{y^2}{3}=1
+\]
+左顶点为 $A$，过左焦点 $F$ 的直线交椭圆于 $P,Q$ 两点。
+
+求证：直线 $AP$ 和 $AQ$ 的斜率乘积是定值。
+
+\section*{例题 2}
+
+（2021 新高考一卷 21 题）
+
+在平面直角坐标系 $xOy$ 中，已知点
+\[
+F_1(-\sqrt{17},0),\qquad F_2(\sqrt{17},0),
+\]
+点 $M$ 满足
+\[
+|MF_1|-|MF_2|=2.
+\]
+记 $M$ 的轨迹为 $C$。
+
+\begin{enumerate}
+  \item 求 $C$ 的方程；
+  \[
+  x^2-\frac{y^2}{16}=1\qquad (x>0).
+  \]
+
+  \item 设点 $T$ 在直线
+  \[
+  x=\frac12
+  \]
+  上，过 $T$ 的两条直线分别交 $C$ 于 $A,B$ 两点和 $P,Q$ 两点，且
+  \[
+  |TA|\cdot|TB|=|TP|\cdot|TQ|.
+  \]
+  求直线 $AB$ 的斜率与直线 $PQ$ 的斜率之和。
+\end{enumerate}
+
+	
 	\section{阿基米德三角形}
 	\href{https://en.wikipedia.org/wiki/Quadrature_of_the_Parabola}{抛物线的正交性}
 \end{document}
