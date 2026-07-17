@@ -294,27 +294,6 @@ Q(x, y) = \lambda_1 x'^2 + \lambda_2 y'^2.
 	\end{cases}
 	\]
 	
-	\begin{center}
-		\begin{tikzpicture}[scale=0.8]
-			% 坐标轴
-			\draw[->] (-1,0) -- (5,0) node[right] {$x$};
-			\draw[->] (0,-3) -- (0,3) node[above] {$y$};
-			
-			% 椭圆 e=0.6
-			\draw[blue, thick] (1,0) ellipse (1.5 and 1.2);
-			\node[blue] at (1, -2) {椭圆 ($e=0.6$)};
-			
-			% 抛物线 e=1
-			\draw[red, thick, domain=-0.5:2.5] plot (\x, {1.5*\x*\x - 1.5});
-			\node[red] at (4, 2) {抛物线 ($e=1$)};
-			
-			% 双曲线 e=1.5
-			\draw[green!70!black, thick, domain=-1:1] plot ({2.5+1.5*cosh(\x)}, {1.5*sinh(\x)});
-			\draw[green!70!black, thick, domain=-1:1] plot ({2.5-1.5*cosh(\x)}, {1.5*sinh(\x)});
-			\node[green!70!black] at (4, -2) {双曲线 ($e=1.5$)};
-		\end{tikzpicture}
-	\end{center}
-	
 	\subsection*{三、标准方程推导（以焦点在$x$轴为例）}
 	
 	建立直角坐标系：
@@ -889,32 +868,7 @@ Q(x, y) = \lambda_1 x'^2 + \lambda_2 y'^2.
    
    \section{记录}
    
-   \subsection{Holder不等式}
    
-   \subsection{Carlson不等式}
-   
- 
-   Cauchy不等式
-   \[
-   (a_1 + b_1)(a_2 + b_2) \geq  ( \sqrt{a_1 a_2} + \sqrt{b_1 b_2})^2 
-   \]
-
-	Karlson不等式
-	
-	\[
-	(a_1 + b_1)(a_2 + b_2)(a_3 + b_3) \geq  ( \sqrt[3]{a_1 a_2 a_3} + \sqrt[3]{b_1 b_2 b_3})^3
-	\]
-	
-	\begin{example}
-		  如果\( \theta \in (0, \frac{\pi}{2} ), \) 则\( \frac{8}{\sin \theta} + \frac{1}{cos \theta} \) 的最小值为 \( 5 \sqrt{5} \)
-		
-	\end{example}
-	
-	\begin{proof}
-		\begin{equation*}
-			(\frac{8}{\sin \theta} + \frac{1}{cos \theta})( \frac{8}{\sin \theta} + \frac{1}{cos \theta}) (\sin^2 \theta + \cos^2 \theta) \geq ()^3
-		\end{equation*}
-	\end{proof}
 	
 	
 	\section{射影几何与极点极线理论}
@@ -2221,5 +2175,5 @@ F_1(-\sqrt{17},0),\qquad F_2(\sqrt{17},0),
 		%		\bibitem{weixin-user} （用户指定）\url{https://mp.weixin.qq.com/s/55Gwh23a5vOKqdstkkL7ag}.
 	\end{thebibliography}
 
-	
+
 \end{document}
