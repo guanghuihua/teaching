@@ -1,0 +1,1395 @@
+% 本文件由“专题四解三角形专题.docx”转换生成。
+% MathType 公式直接提取，其余公式经本地 pix2tex 识别；来源编号保存在 \FormulaOCR 的第一参数中。
+
+\section{核心公式与方法梳理}
+
+\subsection{基本定理}
+在 $\triangle ABC$ 中，内角和与半角关系为
+\[
+  A+B+C=\pi,\qquad
+  \frac A2+\frac B2=\frac\pi2-\frac C2.
+\]
+余弦定理及其变形为
+\begin{align*}
+  a^2&=b^2+c^2-2bc\cos A,& \cos A&=\frac{b^2+c^2-a^2}{2bc},\\
+  b^2&=a^2+c^2-2ac\cos B,& \cos B&=\frac{a^2+c^2-b^2}{2ac},\\
+  c^2&=a^2+b^2-2ab\cos C,& \cos C&=\frac{a^2+b^2-c^2}{2ab}.
+\end{align*}
+正弦定理为
+\[
+  \frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}=2R,
+\]
+其中 $R$ 为外接圆半径。因此
+\[
+  a=2R\sin A,\quad b=2R\sin B,\quad c=2R\sin C.
+\]
+射影定理可写为
+\[
+  a\cos B+b\cos A=c,\quad
+  a\cos C+c\cos A=b,\quad
+  b\cos C+c\cos B=a.
+\]
+
+\subsection{面积公式}
+记三角形面积为 $S$、内切圆半径为 $r$、半周长为
+$s=\frac12(a+b+c)$，则
+\begin{align*}
+  S&=\frac12ah_a=\frac12bh_b=\frac12ch_c,\\
+  S&=\frac12ab\sin C=\frac12ac\sin B=\frac12bc\sin A,\\
+  S&=\frac{abc}{4R}=\sqrt{s(s-a)(s-b)(s-c)}=sr.
+\end{align*}
+从面积公式还可得到
+\[
+  \sin A=\frac{2S}{bc},\qquad
+  \sin B=\frac{2S}{ac},\qquad
+  \sin C=\frac{2S}{ab}.
+\]
+
+\subsection{三角恒等变换}
+基本关系为 $\sin^2\alpha+\cos^2\alpha=1$、
+$\tan\alpha=\frac{\sin\alpha}{\cos\alpha}$。和差角公式为
+\begin{align*}
+ \cos(\alpha\pm\beta)&=\cos\alpha\cos\beta\mp\sin\alpha\sin\beta,\\
+ \sin(\alpha\pm\beta)&=\sin\alpha\cos\beta\pm\cos\alpha\sin\beta,\\
+ \tan(\alpha\pm\beta)&=\frac{\tan\alpha\pm\tan\beta}
+ {1\mp\tan\alpha\tan\beta}.
+\end{align*}
+二倍角及降幂公式为
+\begin{align*}
+ \sin2\alpha&=2\sin\alpha\cos\alpha,\\
+ \cos2\alpha&=\cos^2\alpha-\sin^2\alpha
+ =2\cos^2\alpha-1=1-2\sin^2\alpha,\\
+ \tan2\alpha&=\frac{2\tan\alpha}{1-\tan^2\alpha},\\
+ \cos^2\alpha&=\frac{1+\cos2\alpha}{2},\qquad
+ \sin^2\alpha=\frac{1-\cos2\alpha}{2}.
+\end{align*}
+
+\subsection{解题提醒}
+先画图并标出已知量，再判断应补充哪一个边或角；含边与角的等式通常优先用正弦定理或余弦定理进行边角互化。三角函数最值问题可转化为
+$y=M\sin(\omega x+\varphi)+N$ 的形式。角平分线问题可结合角平分线定理及同高三角形的面积比；中线问题可使用
+\[
+  m_a=\frac12\sqrt{2b^2+2c^2-a^2}.
+\]
+SSA 情形中，由 $\sin B=\frac{b\sin A}{a}$ 先判断解的存在性，再结合角的范围确定是一解还是两解。判断三角形形状时，应把恒等式转化为角关系或边关系。例如
+$a^2\tan B=b^2\tan A$ 可推出 $A=B$ 或 $C=\frac\pi2$，故三角形为等腰三角形或直角三角形。
+\subsection{题型一：边角互化与余弦定理}
+
+\begin{question}
+（2012•新课标）已知a，b，c分别为$\triangle$ABC三个内角A，B，C的对边，acosC+\FormulaOCR{image41.png}{\sqrt{3}}\allowbreak{}asinC-b-c=0\par
+（1）求A；\par
+（2）若a=2，$\triangle$ABC的面积为\FormulaOCR{image41.png}{\sqrt{3}}\allowbreak{}；求b，c．\par
+\begin{solution}
+【解答】解：（1）由正弦定理得：acosC+\FormulaOCR{image41.png}{\sqrt{3}}\allowbreak{}asinC-b-c=0，\par
+即sinAcosC+\FormulaOCR{image41.png}{\sqrt{3}}\allowbreak{}sinAsinC=sinB+sinC\par
+$\therefore$sinAcosC+\FormulaOCR{image41.png}{\sqrt{3}}\allowbreak{}sinAsinC=sin（A+C）+sinC，\par
+即\FormulaOCR{image42.png}{\sqrt{3}}\allowbreak{}sinA-cosA=1\par
+$\therefore$sin（A-30°）=\FormulaOCR{image43.png}{\frac{1}{2}}\allowbreak{}．\par
+$\therefore$A-30°=30°\par
+$\therefore$A=60°；\par
+（2）若a=2，$\triangle$ABC的面积=\FormulaOCR{image44.png}{\frac{1}{2}bc\sin A=\frac{\sqrt{3}}{4}bc=\sqrt{3}}\allowbreak{}，\par
+$\therefore$bc=4．①\par
+再利用余弦定理可得：a$^{2}$=b$^{2}$+c$^{2}$-2bc•cosA\par
+=（b+c）$^{2}$-2bc-bc=（b+c）$^{2}$-3×4=4，\par
+$\therefore$b+c=4．②\par
+结合①②求得b=c=2．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2016•新课标Ⅰ）$\triangle$ABC的内角A，B，C的对边分别为a，b，c，已知2cosC（acosB+bcosA）=c．\par
+（Ⅰ）求C；\par
+（Ⅱ）若c=\FormulaOCR{image45.png}{\sqrt{7}}\allowbreak{}，$\triangle$ABC的面积为\FormulaOCR{image46.png}{\frac{3{\sqrt{3}}}{2}}\allowbreak{}，求$\triangle$ABC的周长．\par
+\begin{solution}
+【解答】（Ⅰ）解法一（正弦定理）：$\because$在$\triangle$ABC中，0＜C＜π，$\therefore$sinC$\neq$0\par
+已知等式利用正弦定理化简得：2cosC（sinAcosB+sinBcosA）=sinC，\par
+整理得：2cosCsin（A+B）=sinC，\par
+即 $2\cos C\sin\bigl(\pi-(A+B)\bigr)=\sin C$，\par
+2cosCsinC=sinC\par
+$\therefore$cosC=\FormulaOCR{image47.png}{\frac{1}{2}}\allowbreak{}，\par
+$\therefore$C=\FormulaOCR{image48.png}{\frac{\pi}{3}}\allowbreak{}．\par
+解法二（射影定理）：由 $a\cos B+b\cos A=c$，原条件可化为
+\[
+2c\cos C=c.
+\]
+因为 $c>0$，所以 $\cos C=\frac12$，故 $C=\frac\pi3$．\par
+（Ⅱ）由余弦定理得7=a$^{2}$+b$^{2}$-2ab•\FormulaOCR{image47.png}{\frac{1}{2}}\allowbreak{}，\par
+$\therefore$（a+b）$^{2}$-3ab=7，\par
+$\because$S=\FormulaOCR{image47.png}{\frac{1}{2}}\allowbreak{}absinC=\FormulaOCR{image49.png}{\frac{\sqrt{3}}{4}}\allowbreak{}ab=\FormulaOCR{image50.png}{\frac{3{\sqrt{3}}}{2}}\allowbreak{}，\par
+$\therefore$ab=6，\par
+$\therefore$（a+b）$^{2}$-18=7，\par
+$\therefore$a+b=5，\par
+$\therefore$$\triangle$ABC的周长为5+\FormulaOCR{image51.png}{\sqrt{7}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2017•新课标Ⅰ）$\triangle$ABC的内角A，B，C的对边分别为a，b，c，已知$\triangle$ABC的面积为\FormulaOCR{image52.png}{\frac{a^2}{3\sin A}}\allowbreak{}．\par
+（1）求sinBsinC；\par
+（2）若6cosBcosC=1，a=3，求$\triangle$ABC的周长．\par
+\begin{solution}
+【解答】解：（1）由三角形的面积公式可得$S_{\triangle ABC}$=\FormulaOCR{image47.png}{\frac{1}{2}}\allowbreak{}acsinB=\FormulaOCR{image53.png}{\frac{a^2}{3\sin A}}\allowbreak{}，\par
+$\therefore$3csinBsinA=2a，\par
+由正弦定理可得3sinCsinBsinA=2sinA，\par
+$\because$sinA$\neq$0，\par
+$\therefore$sinBsinC=\FormulaOCR{image54.png}{\frac{2}{3}}\allowbreak{}；\par
+（2）$\because$6cosBcosC=1，\par
+$\therefore$cosBcosC=\FormulaOCR{image55.png}{\frac{1}{6}}\allowbreak{}，\par
+$\therefore$cosBcosC-sinBsinC=\FormulaOCR{image55.png}{\frac{1}{6}}\allowbreak{}-\FormulaOCR{image54.png}{\frac{2}{3}}\allowbreak{}=-\FormulaOCR{image56.png}{\frac{1}{2}}\allowbreak{}，\par
+$\therefore$cos（B+C）=-\FormulaOCR{image56.png}{\frac{1}{2}}\allowbreak{}，\par
+$\therefore$cosA=\FormulaOCR{image56.png}{\frac{1}{2}}\allowbreak{}，\par
+$\because$0＜A＜π，\par
+$\therefore$A=\FormulaOCR{image57.png}{\frac{\pi}{3}}\allowbreak{}，\par
+$\because$\FormulaOCR{image58.png}{\frac{a}{\sin A}}\allowbreak{}=\FormulaOCR{image59.png}{\frac{b}{\sin B}}\allowbreak{}=\FormulaOCR{image60.png}{\frac{c}{\sin C}}\allowbreak{}=2R=\FormulaOCR{image61.png}{\frac{3}{\frac{\sqrt{3}}{2}}}\allowbreak{}=2\FormulaOCR{image62.png}{\sqrt{3}}\allowbreak{}，\par
+$\therefore$sinBsinC=\FormulaOCR{image63.png}{\frac{8}{2R}}\allowbreak{}•\FormulaOCR{image64.png}{\frac{c}{2R}}\allowbreak{}=\FormulaOCR{image65.png}{\frac{bc}{\left(2{\sqrt{3}}\right)^{2}}}\allowbreak{}=\FormulaOCR{image66.png}{\frac{bc}{12}}\allowbreak{}=\FormulaOCR{image67.png}{\frac{2}{3}}\allowbreak{}，\par
+$\therefore$bc=8，\par
+$\because$a$^{2}$=b$^{2}$+c$^{2}$-2bccosA，\par
+$\therefore$b$^{2}$+c$^{2}$-bc=9，\par
+$\therefore$（b+c）$^{2}$=9+3cb=9+24=33，\par
+$\therefore$b+c=\FormulaOCR{image68.png}{\sqrt{33}}\allowbreak{}\par
+$\therefore$周长a+b+c=3+\FormulaOCR{image68.png}{\sqrt{33}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\subsection{题型二：三角形面积}
+
+\begin{question}
+（2015•新课标Ⅰ）已知a，b，c分别是$\triangle$ABC内角A，B，C的对边，sin$^{2}$B=2sinAsinC．\par
+（Ⅰ）若a=b，求cosB；\par
+（Ⅱ）设B=90°，且a=\FormulaOCR{image69.png}{{\sqrt{2}}}\allowbreak{}，求$\triangle$ABC的面积．\par
+\begin{solution}
+【解答】解：（I）$\because$sin$^{2}$B=2sinAsinC，\par
+由正弦定理可得：\FormulaOCR{image70.png}{\frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}=\frac1k}\allowbreak{}＞0，\par
+代入可得（bk）$^{2}$=2ak•ck，\par
+$\therefore$b$^{2}$=2ac，\par
+$\because$a=b，$\therefore$a=2c，\par
+由余弦定理可得：cosB=\FormulaOCR{image71.png}{\frac{a^{2}+c^{2}-b^{2}}{2ac}}\allowbreak{}=\FormulaOCR{image72.png}{\frac{a^{2}+{\frac{1}{4}}a^{2}-a^{2}}{2a\times{\frac{1}{2}}a}}\allowbreak{}=\FormulaOCR{image73.png}{\frac{1}{4}}\allowbreak{}．\par
+（II）由（I）可得：b$^{2}$=2ac，\par
+$\because$B=90°，且a=\FormulaOCR{image74.png}{{\sqrt{2}}}\allowbreak{}，\par
+$\therefore$a$^{2}$+c$^{2}$=b$^{2}$=2ac，解得a=c=\FormulaOCR{image74.png}{{\sqrt{2}}}\allowbreak{}．\par
+$\therefore$$S_{\triangle ABC}$=\FormulaOCR{image75.png}{{\frac{1}{2}}ac}\allowbreak{}=1．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2017•新课标Ⅱ）$\triangle$ABC的内角A，B，C的对边分别为a，b，c，\par
+已知sin（A+C）=8sin$^{2}$\FormulaOCR{image76.png}{\frac{E}{z}}\allowbreak{}．\par
+（1）求cosB；\par
+（2）若a+c=6，$\triangle$ABC的面积为2，求b．\par
+\begin{solution}
+【解答】解：（1）sin（A+C）=8sin$^{2}$\FormulaOCR{image77.png}{\frac{E}{z}}\allowbreak{}，\par
+$\therefore$sinB=4（1-cosB），\par
+$\because$sin$^{2}$B+cos$^{2}$B=1，\par
+$\therefore$16（1-cosB）$^{2}$+cos$^{2}$B=1，\par
+$\therefore$16（1-cosB）$^{2}$+cos$^{2}$B-1=0，\par
+$\therefore$16（cosB-1）$^{2}$+（cosB-1）（cosB+1）=0，\par
+$\therefore$（17cosB-15）（cosB-1）=0，\par
+$\therefore$cosB=\FormulaOCR{image78.png}{\frac{15}{17}}\allowbreak{}；\par
+（2）由（1）可知sinB=\FormulaOCR{image79.png}{\frac{8}{17}}\allowbreak{}，\par
+$\because$$S_{\triangle ABC}$=\FormulaOCR{image80.png}{\frac{1}{2}}\allowbreak{}ac•sinB=2，\par
+$\therefore$ac=\FormulaOCR{image81.png}{\frac{17}{2}}\allowbreak{}，\par
+$\therefore$b$^{2}$=a$^{2}$+c$^{2}$-2accosB=a$^{2}$+c$^{2}$-2×\FormulaOCR{image82.png}{\frac{17}{2}}\allowbreak{}×\FormulaOCR{image83.png}{\frac{15}{17}}\allowbreak{}\par
+=a$^{2}$+c$^{2}$-15=（a+c）$^{2}$-2ac-15=36-17-15=4，\par
+$\therefore$b=2．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2017•新课标Ⅲ）$\triangle$ABC的内角A，B，C的对边分别为a，b，c，已知\par
+sinA+\FormulaOCR{image84.png}{\sqrt{3}}\allowbreak{}cosA=0，a=2\FormulaOCR{image85.png}{\sqrt{7}}\allowbreak{}，b=2．\par
+（1）求c；\par
+（2）设D为BC边上一点，且AD$\perp$AC，求$\triangle$ABD的面积．\par
+\begin{solution}
+【解答】解：（1）$\because$sinA+\FormulaOCR{image86.png}{\sqrt{3}}\allowbreak{}cosA=0，\par
+$\therefore$tanA=\FormulaOCR{image87.png}{-{\sqrt{3}}}\allowbreak{}，\par
+$\because$0＜A＜π，\par
+$\therefore$A=\FormulaOCR{image88.png}{\frac{2\pi}{3}}\allowbreak{}，\par
+由余弦定理可得a$^{2}$=b$^{2}$+c$^{2}$-2bccosA，\par
+即28=4+c$^{2}$-2×2c×（-\FormulaOCR{image89.png}{\frac{1}{2}}\allowbreak{}），\par
+即c$^{2}$+2c-24=0，\par
+解得c=-6（舍去）或c=4，\par
+故c=4．\par
+（2）$\because$c$^{2}$=b$^{2}$+a$^{2}$-2abcosC，\par
+$\therefore$16=28+4-2×2\FormulaOCR{image90.png}{\sqrt{7}}\allowbreak{}×2×cosC，\par
+$\therefore$cosC=\FormulaOCR{image91.png}{\frac{2}{\sqrt{7}}}\allowbreak{}，\par
+$\therefore$CD=\FormulaOCR{image92.png}{\frac{AC}{\cos C}}\allowbreak{}=\FormulaOCR{image93.png}{\frac{2}{\frac{2}{\sqrt{7}}}}\allowbreak{}=\FormulaOCR{image94.png}{\sqrt{7}}\allowbreak{}\par
+$\therefore$CD=\FormulaOCR{image95.png}{\frac{1}{2}}\allowbreak{}BC\par
+$\because$$S_{\triangle ABC}$=\FormulaOCR{image95.png}{\frac{1}{2}}\allowbreak{}AB•AC•sin$\angle$BAC=\FormulaOCR{image95.png}{\frac{1}{2}}\allowbreak{}×4×2×\FormulaOCR{image96.png}{\frac{\sqrt{3}}{2}}\allowbreak{}=2\FormulaOCR{image97.png}{\sqrt{3}}\allowbreak{}，\par
+$\therefore$S$\triangle$ABD=\FormulaOCR{image95.png}{\frac{1}{2}}\allowbreak{}$S_{\triangle ABC}$=\FormulaOCR{image97.png}{\sqrt{3}}\allowbreak{}\par
+\begin{center}
+\DocImage{image98.png}{228.00}{66.75}\allowbreak{}
+\end{center}
+\end{solution}
+\end{question}
+
+\subsection{题型三：利用基本不等式求最值}
+
+\begin{question}
+（2013•新课标Ⅱ）$\triangle$ABC在内角A、B、C的对边分别为a，b，c，已知a=bcosC+csinB．\par
+（Ⅰ）求B；\par
+（Ⅱ）若b=2，求$\triangle$ABC面积的最大值．\par
+\begin{solution}
+【解答】解：（Ⅰ）由已知及正弦定理得：sinA=sinBcosC+sinBsinC①，\par
+$\because$sinA=sin（B+C）=sinBcosC+cosBsinC②，\par
+$\therefore$sinB=cosB，即tanB=1，\par
+$\because$B为三角形的内角，\par
+$\therefore$B=\FormulaOCR{image99.png}{\frac{\pi}{4}}\allowbreak{}；\par
+（Ⅱ）$S_{\triangle ABC}$=\FormulaOCR{image100.png}{\frac{1}{2}}\allowbreak{}acsinB=\FormulaOCR{image101.png}{\frac{\sqrt{2}}{4}}\allowbreak{}ac，\par
+由已知及余弦定理得：4=a$^{2}$+c$^{2}$-2accos\FormulaOCR{image102.png}{\frac{\pi}{4}}\allowbreak{}$\geq$2ac-2ac×\FormulaOCR{image103.png}{\frac{\sqrt{2}}{2}}\allowbreak{}，\par
+整理得：ac$\leq$\FormulaOCR{image104.png}{\frac4{2-\sqrt2}}\allowbreak{}，当且仅当a=c时，等号成立，\par
+则$\triangle$ABC面积的最大值为\FormulaOCR{image105.png}{\frac{1}{2}}\allowbreak{}×\FormulaOCR{image103.png}{\frac{\sqrt{2}}{2}}\allowbreak{}×\FormulaOCR{image106.png}{\frac4{2-\sqrt2}}\allowbreak{}=\FormulaOCR{image107.png}{\frac{1}{2}}\allowbreak{}×\FormulaOCR{image108.png}{{\sqrt{2}}}\allowbreak{}×（2+\FormulaOCR{image108.png}{{\sqrt{2}}}\allowbreak{}）=\FormulaOCR{image108.png}{{\sqrt{2}}}\allowbreak{}+1．\par
+\end{solution}
+\end{question}
+
+\subsection{题型四：图形分析与未知量表示}
+
+\begin{question}
+（2013•新课标Ⅰ）如图，在$\triangle$ABC中，$\angle$ABC=90°，AB=\FormulaOCR{image109.png}{\sqrt{3}}\allowbreak{}，BC=1，P为$\triangle$ABC内一点，$\angle$BPC=90°．\par
+（1）若PB=\FormulaOCR{image110.png}{\frac{1}{2}}\allowbreak{}，求PA；\par
+（2）若$\angle$APB=150°，求tan$\angle$PBA．\par
+\begin{center}
+\DocImage{image111.png}{162.75}{93.75}\allowbreak{}
+\end{center}
+\begin{solution}
+【解答】解：（I）在Rt$\triangle$PBC中，\FormulaOCR{image112.png}{\cos\angle PBC=\frac{PB}{BC}}\allowbreak{}=\FormulaOCR{image110.png}{\frac{1}{2}}\allowbreak{}，$\therefore$$\angle$PBC=60°，$\therefore$$\angle$PBA=30°．\par
+在$\triangle$PBA中，由余弦定理得\par
+A$^{2}$=PB$^{2}$+AB$^{2}$-2PB•ABcos30°=\FormulaOCR{image113.png}{\left(\frac12\right)^2+(\sqrt3)^2-2\cdot\frac12\cdot\sqrt3\cdot\frac{\sqrt3}{2}}\allowbreak{}=\FormulaOCR{image114.png}{\frac{7}{4}}\allowbreak{}．\par
+$\therefore$PA=\FormulaOCR{image115.png}{\frac{\sqrt{7}}{2}}\allowbreak{}．\par
+（II）设$\angle$PBA=α，在Rt$\triangle$PBC中，PB=BCcos（90°-α）=sinα．\par
+在$\triangle$PBA中，由正弦定理得\FormulaOCR{image116.png}{\frac{AB}{\sin\angle APB}=\frac{PB}{\sin\angle PAB}}\allowbreak{}，即\FormulaOCR{image117.png}{\frac{\sqrt3}{\sin150^\circ}=\frac{\sin\alpha}{\sin(30^\circ-\alpha)}}\allowbreak{}，\par
+化为\FormulaOCR{image118.png}{\sqrt3\cos\alpha=4\sin\alpha}\allowbreak{}．$\therefore$\FormulaOCR{image119.png}{\tan\alpha=\frac{\sqrt3}{4}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2014•新课标Ⅱ）四边形ABCD的内角A与C互补，AB=1，BC=3，CD=DA=2．\par
+（1）求C和BD；\par
+（2）求四边形ABCD的面积．\par
+\begin{solution}
+【解答】解：（1）在$\triangle$BCD中，BC=3，CD=2，\par
+由余弦定理得：BD$^{2}$=BC$^{2}$+CD$^{2}$-2BC•CDcosC=13-12cosC①，\par
+在$\triangle$ABD中，AB=1，DA=2，A+C=π，\par
+由余弦定理得：BD$^{2}$=AB$^{2}$+AD$^{2}$-2AB•ADcosA=5-4cosA=5+4cosC②，\par
+由①②得：cosC=\FormulaOCR{image120.png}{\frac{1}{2}}\allowbreak{}，\par
+则C=60°，BD=\FormulaOCR{image121.png}{\sqrt{7}}\allowbreak{}；\par
+（2）$\because$cosC=\FormulaOCR{image120.png}{\frac{1}{2}}\allowbreak{}，cosA=-\FormulaOCR{image120.png}{\frac{1}{2}}\allowbreak{}，\par
+$\therefore$sinC=sinA=\FormulaOCR{image122.png}{\frac{\sqrt{3}}{2}}\allowbreak{}，\par
+则S=\FormulaOCR{image120.png}{\frac{1}{2}}\allowbreak{}AB•DAsinA+\FormulaOCR{image120.png}{\frac{1}{2}}\allowbreak{}BC•CDsinC=\FormulaOCR{image120.png}{\frac{1}{2}}\allowbreak{}×1×2×\FormulaOCR{image122.png}{\frac{\sqrt{3}}{2}}\allowbreak{}+\FormulaOCR{image120.png}{\frac{1}{2}}\allowbreak{}×3×2×\FormulaOCR{image122.png}{\frac{\sqrt{3}}{2}}\allowbreak{}=2\FormulaOCR{image123.png}{\sqrt{3}}\allowbreak{}．\par
+\begin{center}
+\DocImage{image124.png}{108.75}{78.00}\allowbreak{}
+\end{center}
+\end{solution}
+\end{question}
+
+\begin{question}
+（2015•新课标Ⅱ）$\triangle$ABC中，D是BC上的点，AD平分$\angle$BAC，$\triangle$ABD面积是$\triangle$ADC面积的2倍．\par
+（1）求\FormulaOCR{image125.png}{\frac{\sin B}{\sin C}}\allowbreak{}；\par
+（2）若AD=1，DC=\FormulaOCR{image126.png}{\frac{\sqrt{2}}{2}}\allowbreak{}，求BD和AC的长．\par
+\begin{solution}
+【解答】解：（1）如图，过A作AE$\perp$BC于E，\par
+$\because$\FormulaOCR{image127.png}{\frac{S_{\triangle ABD}}{S_{\triangle ADC}}}\allowbreak{}=\FormulaOCR{image128.png}{\frac{\frac12 BD\cdot AE}{\frac12 DC\cdot AE}}\allowbreak{}=2\par
+$\therefore$BD=2DC，\par
+$\because$AD平分$\angle$BAC\par
+$\therefore$$\angle$BAD=$\angle$DAC\par
+在$\triangle$ABD中，\FormulaOCR{image129.png}{\frac{BD}{\sin\angle BAD}}\allowbreak{}=\FormulaOCR{image130.png}{\frac{AD}{\sin B}}\allowbreak{}，$\therefore$sin$\angle$B=\FormulaOCR{image131.png}{\frac{AD\sin\angle BAD}{BD}}\allowbreak{}\par
+在$\triangle$ADC中，\FormulaOCR{image132.png}{\frac{DC}{\sin\angle DAC}}\allowbreak{}=\FormulaOCR{image133.png}{\frac{AD}{\sin C}}\allowbreak{}，$\therefore$sin$\angle$C=\FormulaOCR{image134.png}{\frac{AD\sin\angle DAC}{DC}}\allowbreak{}；\par
+$\therefore$\FormulaOCR{image135.png}{\frac{\sin B}{\sin C}}\allowbreak{}=\FormulaOCR{image136.png}{\frac{DC}{BD}}\allowbreak{}=\FormulaOCR{image137.png}{\frac{1}{2}}\allowbreak{}．…6分\par
+（2）由（1）知，BD=2DC=2×\FormulaOCR{image138.png}{\frac{\sqrt{2}}{2}}\allowbreak{}=\FormulaOCR{image139.png}{{\sqrt{2}}}\allowbreak{}．\par
+过D作DM$\perp$AB于M，作DN$\perp$AC于N，\par
+$\because$AD平分$\angle$BAC，\par
+$\therefore$DM=DN，\par
+$\therefore$\FormulaOCR{image140.png}{\frac{S_{\triangle ABD}}{S_{\triangle ADC}}}\allowbreak{}=\FormulaOCR{image141.png}{\frac{\frac12 AB\cdot DM}{\frac12 AC\cdot DN}}\allowbreak{}=2，\par
+$\therefore$AB=2AC，\par
+令AC=x，则AB=2x，\par
+$\because$$\angle$BAD=$\angle$DAC，\par
+$\therefore$cos$\angle$BAD=cos$\angle$DAC，\par
+$\therefore$由余弦定理可得：\FormulaOCR{image142.png}{\frac{(2x)^{2}+1^{2}-({\sqrt{2}})^{2}}{2\times2\times1}}\allowbreak{}=\FormulaOCR{image143.png}{\frac{x^{2}+1^{2}-(\frac{\sqrt{2}}{2})^{2}}{2\times x\times1}}\allowbreak{}，\par
+$\therefore$x=1，\par
+$\therefore$AC=1，\par
+$\therefore$BD的长为\FormulaOCR{image69.png}{{\sqrt{2}}}\allowbreak{}，AC的长为1．\par
+\begin{center}
+\DocImage{image144.png}{146.25}{82.50}\allowbreak{}
+\end{center}
+\end{solution}
+\end{question}
+
+\begin{question}
+（2018•新课标Ⅰ）在平面四边形ABCD中，$\angle$ADC=90°，$\angle$A=45°，AB=2，BD=5．\par
+（1）求cos$\angle$ADB；\par
+（2）若DC=2\FormulaOCR{image145.png}{{\sqrt{2}}}\allowbreak{}，求BC．\par
+\begin{solution}
+【解答】解：（1）$\because$$\angle$ADC=90°，$\angle$A=45°，AB=2，BD=5．\par
+$\therefore$由正弦定理得：\FormulaOCR{image146.png}{\frac{AB}{\sin\angle ADB}}\allowbreak{}=\FormulaOCR{image147.png}{\frac{BD}{\sin A}}\allowbreak{}，即\FormulaOCR{image148.png}{\frac{2}{\sin\angle ADB}}\allowbreak{}=\FormulaOCR{image149.png}{\frac{5}{\sin45^\circ}}\allowbreak{}，\par
+$\therefore$sin$\angle$ADB=\FormulaOCR{image150.png}{\frac{2\sin45^\circ}{5}}\allowbreak{}=\FormulaOCR{image151.png}{\frac{\sqrt{2}}{5}}\allowbreak{}，\par
+$\because$AB＜BD，$\therefore$$\angle$ADB＜$\angle$A，\par
+$\therefore$cos$\angle$ADB=\FormulaOCR{image152.png}{\sqrt{1-({\frac{\sqrt{2}}{5}})^{2}}}\allowbreak{}=\FormulaOCR{image153.png}{\frac{\sqrt{23}}{5}}\allowbreak{}．\par
+（2）$\because$$\angle$ADC=90°，$\therefore$cos$\angle$BDC=sin$\angle$ADB=\FormulaOCR{image151.png}{\frac{\sqrt{2}}{5}}\allowbreak{}，\par
+$\because$DC=2\FormulaOCR{image154.png}{{\sqrt{2}}}\allowbreak{}，\par
+$\therefore$BC=\FormulaOCR{image155.png}{\sqrt{BD^2+DC^2-2BD\cdot DC\cos\angle BDC}}\allowbreak{}\par
+=\FormulaOCR{image156.png}{\sqrt{25+8-2\times5\times2\sqrt{2}\times\frac{\sqrt{2}}{5}}}\allowbreak{}=5．\par
+\begin{center}
+\DocImage{image157.png}{135.75}{135.00}\allowbreak{}
+\end{center}
+\end{solution}
+\end{question}
+
+\subsection{题型五：解三角形的实际应用}
+
+\begin{question}
+（2007年海南省高考数学试卷（理））如图，测量河对岸的塔高AB时，可以选与塔底B在同一水平面内的两个测点C与D．现测得$\angle$BCD=α，$\angle$BDC=β，CD=s，并在点C测得塔顶A的仰角为θ，求塔高AB．\par
+\begin{center}
+\DocImage{image158.png}{111.00}{135.00}\allowbreak{}
+\end{center}
+\begin{solution}
+【解答】解：在$\triangle$BCD中，$\angle$CBD=π-α-β．\par
+由正弦定理得\FormulaOCR{image159.png}{\frac{BC}{\sin\angle BDC}=\frac{CD}{\sin\angle CBD}}\allowbreak{}．\par
+所以\FormulaOCR{image160.png}{BC=\frac{CD\sin\angle BDC}{\sin\angle CBD}=\frac{s\sin\beta}{\sin(\alpha+\beta)}}\allowbreak{}．\par
+在Rt$\triangle$ABC中，\FormulaOCR{image161.png}{AB=BC\tan\angle ACB=\frac{s\tan\theta\sin\beta}{\sin(\alpha+\beta)}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（12分）（2009•宁夏）为了测量两山顶M，N间的距离，飞机沿水平方向在A，B两点进行测量，A，B，M，N在同一个铅垂平面内（如示意图），飞机能够测量的数据有俯角和A，B间的距离，请设计一个方案，包括：①指出需要测量的数据（用字母表示，并在图中标出）；②用文字和公式写出计算M，N间的距离的步骤．\par
+\begin{center}
+\DocImage{image162.png}{233.25}{109.50}\allowbreak{}
+\end{center}
+\begin{solution}
+【解答】方案一：①需要测量的数据有：A点到M、N点的俯角α1、β1；B点到M、N点的俯角α2、β2；A、B的距离d，如图所示：\DocImage{image163.png}{237.75}{149.25}\allowbreak{}\par
+②第一步：计算AM．由正弦定理AM=\FormulaOCR{image164.png}{\frac{d\sin\alpha_2}{\sin(\alpha_1+\alpha_2)}}\allowbreak{}\par
+第二步：计算AN．由正弦定理AN=\FormulaOCR{image165.png}{\frac{d\sin\beta_2}{\sin(\beta_2-\beta_1)}}\allowbreak{}\par
+第三步：计算MN．由余弦定理MN=\FormulaOCR{image166.png}{\sqrt{AM^2+AN^2-2AM\cdot AN\cos(\alpha_1-\beta_1)}}\allowbreak{}\par
+方案二：①需要测量的数据有：A点到M、N点的俯角 α1、β1；B点到M、N点的俯角 α2、β2；A、B的距离d（如图所示）．\par
+②第一步：计算BM．由正弦定理BM=\FormulaOCR{image167.png}{\frac{d\sin\alpha_1}{\sin(\alpha_1+\alpha_2)}}\allowbreak{}\par
+第二步：计算BN．由正弦定理BN=\FormulaOCR{image168.png}{\frac{d\sin\beta_1}{\sin(\beta_2-\beta_1)}}\allowbreak{}\par
+第三步：计算MN．由余弦定理MN=\FormulaOCR{image169.png}{\sqrt{BM^2+BN^2+2BM\cdot BN\cos(\alpha_2+\beta_2)}}\allowbreak{}\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2009•宁夏）如图，为了解某海域海底构造，在海平面内一条直线上的A、B、C三点进行测量．已知AB=50 m，BC=120 m，于A处测得水深AD=80 m，于B处测得水深BE=200 m，于C处测得水深CF=110 m，求$\angle$DEF的余弦值．\par
+\DocImage{image170.png}{139.50}{134.25}\allowbreak{}．\par
+\begin{solution}
+【解答】解：如图作DM$\parallel$AC交BE于N，交CF于M．\par
+DF=\FormulaOCR{image171.png}{\sqrt{MF^2+DM^2}}\allowbreak{}=\FormulaOCR{image172.png}{\sqrt{30^2+170^2}}\allowbreak{}=10\FormulaOCR{image173.png}{{\sqrt{298}}}\allowbreak{}（m），\par
+DE=\FormulaOCR{image174.png}{\sqrt{DN^2+EN^2}}\allowbreak{}=\FormulaOCR{image175.png}{\sqrt{50^{2}+120^{2}}}\allowbreak{}=130（m），\par
+EF=\FormulaOCR{image176.png}{\sqrt{(BE-FC)^2+BC^2}}\allowbreak{}=\FormulaOCR{image177.png}{\sqrt{90^{2}{+}120^{2}}}\allowbreak{}=150（m）．\par
+在$\triangle$DEF中，由余弦定理的变形公式，得\par
+cos$\angle$DEF=\FormulaOCR{image178.png}{\frac{DE^2+EF^2-DF^2}{2DE\cdot EF}}\allowbreak{}=\FormulaOCR{image179.png}{\frac{130^2+150^2-10^2\cdot298}{2\cdot130\cdot150}}\allowbreak{}=\FormulaOCR{image180.png}{\frac{16}{65}}\allowbreak{}．\par
+\begin{center}
+\DocImage{image181.png}{193.50}{186.00}\allowbreak{}
+\end{center}
+\end{solution}
+\end{question}
+
+\subsection{题型六：常用公式综合}
+
+\begin{question}
+（2017•天津）在$\triangle$ABC中，内角A，B，C所对的边分别为a，b，c．已知asinA=4bsinB，ac=\FormulaOCR{image182.png}{\sqrt{5}}\allowbreak{}（a$^{2}$-b$^{2}$-c$^{2}$）．\par
+（Ⅰ）求cosA的值；\par
+（Ⅱ）求sin（2B-A）的值．\par
+\begin{solution}
+【解答】（Ⅰ）解：由\FormulaOCR{image183.png}{\frac a{\sin A}=\frac b{\sin B}}\allowbreak{}，得asinB=bsinA，\par
+又asinA=4bsinB，得4bsinB=asinA，\par
+两式作比得：\FormulaOCR{image184.png}{\frac{a}{4a},-{\frac{b}{a}}}\allowbreak{}，$\therefore$a=2b．\par
+由\FormulaOCR{image185.png}{ac=\sqrt5\,(a^2-b^2-c^2)}\allowbreak{}，得\FormulaOCR{image186.png}{b^{2}+c^{2}-a^{2}={\frac{\sqrt{5}}{5}}ac}\allowbreak{}，\par
+由余弦定理，得\FormulaOCR{image187.png}{\cos A=\frac{b^2+c^2-a^2}{2bc}=\frac{-\frac{\sqrt5}{5}ac}{ac}=-\frac{\sqrt5}{5}}\allowbreak{}；\par
+（Ⅱ）解：由（Ⅰ），可得\FormulaOCR{image188.png}{\sin A=\frac{2\sqrt5}{5}}\allowbreak{}，代入asinA=4bsinB，得\FormulaOCR{image189.png}{\sin B=\frac{a\sin A}{4b}=\frac{\sqrt5}{5}}\allowbreak{}．\par
+由（Ⅰ）知，A为钝角，则B为锐角，\par
+$\therefore$\FormulaOCR{image190.png}{\cos B=\sqrt{1-\sin^2B}=\frac{2\sqrt5}{5}}\allowbreak{}．\par
+于是\FormulaOCR{image191.png}{\sin2B=2\sin B\cos B=\frac45}\allowbreak{}，\FormulaOCR{image192.png}{\cos2B=1-2\sin^2B=\frac35}\allowbreak{}，\par
+故\FormulaOCR{image193.png}{\sin(2B-A)=\sin2B\cos A-\cos2B\sin A=-\frac{2\sqrt5}{5}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\subsection{题型七：三角形内角和}
+
+\begin{question}
+（2016•浙江）在$\triangle$ABC中，内角A，B，C所对的边分别为a，b，c，已知b+c=2acosB．\par
+（Ⅰ）证明：A=2B；\par
+（Ⅱ）若$\triangle$ABC的面积S=\FormulaOCR{image194.png}{\frac{a^2}{4}}\allowbreak{}，求角A的大小．\par
+\begin{solution}
+【解答】（Ⅰ）证明：$\because$b+c=2acosB，\par
+$\therefore$sinB+sinC=2sinAcosB，\par
+$\therefore$sinB+sin（A+B）=2sinAcosB\par
+$\therefore$sinB+sinAcosB+cosAsinB=2sinAcosB\par
+$\therefore$sinB=sinAcosB-cosAsinB=sin（A-B）\par
+$\because$A，B是三角形中的角，\par
+$\therefore$B=A-B，\par
+$\therefore$A=2B；\par
+（Ⅱ）解：$\because$$\triangle$ABC的面积S=\FormulaOCR{image195.png}{\frac{a^2}{4}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image196.png}{\frac{1}{2}}\allowbreak{}bcsinA=\FormulaOCR{image195.png}{\frac{a^2}{4}}\allowbreak{}，\par
+$\therefore$2bcsinA=a$^{2}$，\par
+$\therefore$2sinBsinC=sinA=sin2B，\par
+$\therefore$sinC=cosB，\par
+$\therefore$B+C=90°，或C=B+90°，\par
+$\therefore$A=90°或A=45°．\par
+\end{solution}
+\end{question}
+
+\subsection{题型八：三角函数化简与最值}
+
+\begin{question}
+（2016•北京）在$\triangle$ABC中，a$^{2}$+c$^{2}$=b$^{2}$+\FormulaOCR{image197.png}{{\sqrt{2}}}\allowbreak{}ac．\par
+（Ⅰ）求$\angle$B的大小；\par
+（Ⅱ）求\FormulaOCR{image197.png}{{\sqrt{2}}}\allowbreak{}cosA+cosC的最大值．\par
+\begin{solution}
+【解答】解：（Ⅰ）$\because$在$\triangle$ABC中，a$^{2}$+c$^{2}$=b$^{2}$+\FormulaOCR{image198.png}{{\sqrt{2}}}\allowbreak{}ac．\par
+$\therefore$a$^{2}$+c$^{2}$-b$^{2}$=\FormulaOCR{image198.png}{{\sqrt{2}}}\allowbreak{}ac．\par
+$\therefore$cosB=\FormulaOCR{image199.png}{\frac{a^2+c^2-b^2}{2ac}}\allowbreak{}=\FormulaOCR{image200.png}{\frac{\sqrt2ac}{2ac}}\allowbreak{}=\FormulaOCR{image201.png}{\frac{\sqrt{2}}{2}}\allowbreak{}，\par
+$\therefore$B=\FormulaOCR{image202.png}{\frac{\pi}{4}}\allowbreak{}\par
+（Ⅱ）由（I）得：C=\FormulaOCR{image203.png}{\frac{3\pi}{4}}\allowbreak{}-A，\par
+$\therefore$\FormulaOCR{image204.png}{{\sqrt{2}}}\allowbreak{}cosA+cosC=\FormulaOCR{image204.png}{{\sqrt{2}}}\allowbreak{}cosA+cos（\FormulaOCR{image203.png}{\frac{3\pi}{4}}\allowbreak{}-A）\par
+=\FormulaOCR{image205.png}{{\sqrt{2}}}\allowbreak{}cosA-\FormulaOCR{image206.png}{\frac{\sqrt{2}}{2}}\allowbreak{}cosA+\FormulaOCR{image206.png}{\frac{\sqrt{2}}{2}}\allowbreak{}sinA\par
+=\FormulaOCR{image206.png}{\frac{\sqrt{2}}{2}}\allowbreak{}cosA+\FormulaOCR{image206.png}{\frac{\sqrt{2}}{2}}\allowbreak{}sinA\par
+=sin（A+\FormulaOCR{image207.png}{\frac{\pi}{4}}\allowbreak{}）．\par
+$\because$A$\in$（0，\FormulaOCR{image208.png}{\frac{3\pi}{4}}\allowbreak{}），\par
+$\therefore$A+\FormulaOCR{image209.png}{\frac{\pi}{4}}\allowbreak{}$\in$（\FormulaOCR{image209.png}{\frac{\pi}{4}}\allowbreak{}，π），\par
+故当A+\FormulaOCR{image209.png}{\frac{\pi}{4}}\allowbreak{}=\FormulaOCR{image210.png}{\frac{\pi}{2}}\allowbreak{}时，sin（A+\FormulaOCR{image209.png}{\frac{\pi}{4}}\allowbreak{}）取最大值1，\par
+即\FormulaOCR{image211.png}{{\sqrt{2}}}\allowbreak{}cosA+cosC的最大值为1．\par
+\end{solution}
+\end{question}
+
+\subsection{题型九：解三角形与数列综合}
+
+\begin{question}
+（2014•陕西）$\triangle$ABC的内角A，B，C所对应的边分别为a，b，c．\par
+（Ⅰ）若a，b，c成等差数列，证明：sinA+sinC=2sin（A+C）；\par
+（Ⅱ）若a，b，c成等比数列，求cosB的最小值．\par
+\begin{solution}
+【解答】解：（Ⅰ）$\because$a，b，c成等差数列，\par
+$\therefore$2b=a+c，\par
+利用正弦定理化简得：2sinB=sinA+sinC，\par
+$\because$sinB=sin[π-（A+C）]=sin（A+C），\par
+$\therefore$sinA+sinC=2sinB=2sin（A+C）；\par
+（Ⅱ）$\because$a，b，c成等比数列，\par
+$\therefore$b$^{2}$=ac，\par
+$\therefore$cosB=\FormulaOCR{image212.png}{\frac{a^2+c^2-b^2}{2ac}}\allowbreak{}=\FormulaOCR{image213.png}{\frac{a^2+c^2-ac}{2ac}}\allowbreak{}$\geq$\FormulaOCR{image214.png}{\frac{2ac-ac}{2ac}}\allowbreak{}=\FormulaOCR{image215.png}{\frac{1}{2}}\allowbreak{}，\par
+当且仅当a=c时等号成立，\par
+$\therefore$cosB的最小值为\FormulaOCR{image215.png}{\frac{1}{2}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\section{历年高考解三角形大题}
+
+\begin{question}
+（2018•北京）在$\triangle$ABC中，a＝7，b＝8，cosB＝-\FormulaOCR{image216.png}{\frac17}\allowbreak{}．\par
+（Ⅰ）求$\angle$A；\par
+（Ⅱ）求AC边上的高．\par
+\begin{solution}
+【解答】解：（Ⅰ）$\because$a＜b，$\therefore$A＜B，即A是锐角，\par
+$\because$cosB＝-\FormulaOCR{image216.png}{\frac17}\allowbreak{}，$\therefore$sinB＝\FormulaOCR{image217.png}{\sqrt{1-\cos^2B}}\allowbreak{}＝\FormulaOCR{image218.png}{\sqrt{1-(-{\frac{1}{7}})^{2}}}\allowbreak{}＝\FormulaOCR{image219.png}{\frac{4{\sqrt{3}}}{7}}\allowbreak{}，\par
+由正弦定理得\FormulaOCR{image220.png}{\frac a{\sin A}}\allowbreak{}＝\FormulaOCR{image221.png}{\frac b{\sin B}}\allowbreak{}得sinA＝\FormulaOCR{image222.png}{\frac{a\sin B}{b}}\allowbreak{}＝\FormulaOCR{image223.png}{\frac{7\times\frac{4{\sqrt{3}}}{7}}{8}}\allowbreak{}＝\FormulaOCR{image224.png}{\frac{\sqrt{3}}{2}}\allowbreak{}，\par
+则A＝\FormulaOCR{image225.png}{\frac{\pi}{3}}\allowbreak{}．\par
+（Ⅱ）由余弦定理得b$^{2}$＝a$^{2}$+c$^{2}$-2accosB，\par
+即64＝49+c$^{2}$+2×7×c×\FormulaOCR{image226.png}{\frac17}\allowbreak{}，\par
+即c$^{2}$+2c-15＝0，\par
+得（c-3）（c+5）＝0，\par
+得c＝3或c＝-5（舍），\par
+则AC边上的高h＝csinA＝3×\FormulaOCR{image224.png}{\frac{\sqrt{3}}{2}}\allowbreak{}＝\FormulaOCR{image227.png}{\frac{3{\sqrt{3}}}{2}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2018•天津）在$\triangle$ABC中，内角A，B，C所对的边分别为a，b，c．已知bsinA＝acos（B-\FormulaOCR{image228.png}{\frac{\pi}{6}}\allowbreak{}）．\par
+（Ⅰ）求角B的大小；\par
+（Ⅱ）设a＝2，c＝3，求b和sin（2A-B）的值．\par
+\begin{solution}
+【解答】解：（Ⅰ）在$\triangle$ABC中，由正弦定理得\FormulaOCR{image229.png}{\frac{a}{\sin A}=\frac{b}{\sin B}}\allowbreak{}，得bsinA＝asinB，\par
+又bsinA＝acos（B-\FormulaOCR{image230.png}{\frac{\pi}{6}}\allowbreak{}）．\par
+$\therefore$asinB＝acos（B-\FormulaOCR{image230.png}{\frac{\pi}{6}}\allowbreak{}），即sinB＝cos（B-\FormulaOCR{image230.png}{\frac{\pi}{6}}\allowbreak{}）＝cosBcos\FormulaOCR{image230.png}{\frac{\pi}{6}}\allowbreak{}+sinBsin\FormulaOCR{image230.png}{\frac{\pi}{6}}\allowbreak{}＝\FormulaOCR{image231.png}{\frac{\sqrt{3}}{2}}\allowbreak{}cosB+\FormulaOCR{image232.png}{\frac12\sin B}\allowbreak{}，\par
+$\therefore$tanB＝\FormulaOCR{image233.png}{\sqrt{3}}\allowbreak{}，\par
+又B$\in$（0，π），$\therefore$B＝\FormulaOCR{image234.png}{\frac{\pi}{3}}\allowbreak{}．\par
+（Ⅱ）在$\triangle$ABC中，a＝2，c＝3，B＝\FormulaOCR{image234.png}{\frac{\pi}{3}}\allowbreak{}，\par
+由余弦定理得b＝\FormulaOCR{image235.png}{\sqrt{a^2+c^2-2ac\cos B}}\allowbreak{}＝\FormulaOCR{image236.png}{\sqrt{7}}\allowbreak{}，由bsinA＝acos（B-\FormulaOCR{image237.png}{\frac{\pi}{6}}\allowbreak{}），得sinA＝\FormulaOCR{image238.png}{\frac{\sqrt{3}}{\sqrt{7}}}\allowbreak{}，\par
+$\because$a＜c，$\therefore$cosA＝\FormulaOCR{image239.png}{\frac{2}{\sqrt{7}}}\allowbreak{}，\par
+$\therefore$sin2A＝2sinAcosA＝\FormulaOCR{image240.png}{\frac{4{\sqrt{3}}}{7}}\allowbreak{}，\par
+cos2A＝2cos$^{2}$A-1＝\FormulaOCR{image241.png}{\frac{1}{7}}\allowbreak{}，\par
+$\therefore$sin（2A-B）＝sin2AcosB-cos2AsinB＝\FormulaOCR{image242.png}{\frac{4\sqrt3}{7}\cdot\frac12-\frac17\cdot\frac{\sqrt3}{2}}\allowbreak{}＝\FormulaOCR{image243.png}{\frac{3{\sqrt{3}}}{14}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2018•全国）在$\triangle$ABC中，角A、B、C对应边a、b、c，外接圆半径为1，已知2（sin$^{2}$A-sin$^{2}$C）＝（a-b）sinB．\par
+（1）证明a$^{2}$+b$^{2}$-c$^{2}$＝ab；\par
+（2）求角C和边c．\par
+\begin{solution}
+【解答】证明：（1）$\because$在$\triangle$ABC中，角A、B、C对应边a、b、c，外接圆半径为1，\par
+$\therefore$由正弦定理得：\FormulaOCR{image244.png}{\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}}\allowbreak{}＝2R＝2，\par
+$\therefore$sinA＝\FormulaOCR{image245.png}{\frac a2}\allowbreak{}，sinB＝\FormulaOCR{image246.png}{\frac b2}\allowbreak{}，sinC＝\FormulaOCR{image247.png}{\frac c2}\allowbreak{}，\par
+$\because$2（sin$^{2}$A-sin$^{2}$C）＝（a-b）sinB，\par
+$\therefore$2（\FormulaOCR{image248.png}{\frac{a^2}{4}-\frac{c^2}{4}}\allowbreak{}）＝（a-b）•\FormulaOCR{image246.png}{\frac b2}\allowbreak{}，\par
+化简，得：a$^{2}$+b$^{2}$-c$^{2}$＝ab，\par
+故a$^{2}$+b$^{2}$-c$^{2}$＝ab．\par
+解：（2）$\because$a$^{2}$+b$^{2}$-c$^{2}$＝ab，\par
+$\therefore$cosC＝\FormulaOCR{image249.png}{\frac{a^2+b^2-c^2}{2ab}}\allowbreak{}＝\FormulaOCR{image250.png}{\frac{ab}{2ab}}\allowbreak{}＝\FormulaOCR{image251.png}{\frac{1}{2}}\allowbreak{}，\par
+解得C＝\FormulaOCR{image252.png}{\frac{\pi}{3}}\allowbreak{}，\par
+$\therefore$c＝2sinC＝2•\FormulaOCR{image253.png}{\frac{\sqrt{3}}{2}}\allowbreak{}＝\FormulaOCR{image254.png}{\sqrt{3}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2019•新课标Ⅰ）$\triangle$ABC的内角A，B，C的对边分别为a，b，c．设（sinB-sinC）$^{2}$＝sin$^{2}$A-sinBsinC．\par
+（1）求A；\par
+（2）若\FormulaOCR{image264.png}{{\sqrt{2}}}\allowbreak{}a+b＝2c，求sinC．\par
+\begin{solution}
+【解答】解：（1）$\triangle$ABC的内角A，B，C的对边分别为a，b，c．\par
+$\because$（sinB-sinC）$^{2}$＝sin$^{2}$A-sinBsin C．\par
+$\therefore$sin$^{2}$B+sin$^{2}$C-2sinBsinC＝sin$^{2}$A-sinBsinC，\par
+$\therefore$由正弦定理得：b$^{2}$+c$^{2}$-a$^{2}$＝bc，\par
+$\therefore$cosA＝\FormulaOCR{image268.png}{\frac{b^{2}+c^{2}-a^{2}}{2bc}}\allowbreak{}＝\FormulaOCR{image269.png}{\frac{bc}{2bc}}\allowbreak{}＝\FormulaOCR{image270.png}{\frac{1}{2}}\allowbreak{}，\par
+$\because$0＜A＜π，$\therefore$A＝\FormulaOCR{image271.png}{\frac{\pi}{3}}\allowbreak{}．\par
+（2）$\because$\FormulaOCR{image272.png}{{\sqrt{2}}}\allowbreak{}a+b＝2c，A＝\FormulaOCR{image271.png}{\frac{\pi}{3}}\allowbreak{}，\par
+$\therefore$由正弦定理得\FormulaOCR{image273.png}{\sqrt2\sin A+\sin B=2\sin C}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image274.png}{\frac{\sqrt6}{2}+\sin\left(\frac{2\pi}{3}-C\right)=2\sin C}\allowbreak{}\par
+解得sin（C-\FormulaOCR{image275.png}{\frac{\pi}{6}}\allowbreak{}）＝\FormulaOCR{image276.png}{\frac{\sqrt{2}}{2}}\allowbreak{}，\par
+$\therefore$C-\FormulaOCR{image277.png}{\frac{\pi}{6}}\allowbreak{}＝\FormulaOCR{image278.png}{\frac{\pi}{4}}\allowbreak{}或C-\FormulaOCR{image277.png}{\frac{\pi}{6}}\allowbreak{}＝\FormulaOCR{image279.png}{\frac{3\pi}{4}}\allowbreak{}，\par
+$\because$0＜C＜\FormulaOCR{image280.png}{\frac{2\pi}{3}}\allowbreak{}，$\therefore$C＝\FormulaOCR{image281.png}{{\frac{\pi}{4}}+{\frac{\pi}{6}}}\allowbreak{}，\par
+$\therefore$sinC＝sin（\FormulaOCR{image281.png}{{\frac{\pi}{4}}+{\frac{\pi}{6}}}\allowbreak{}）＝sin\FormulaOCR{image278.png}{\frac{\pi}{4}}\allowbreak{}cos\FormulaOCR{image277.png}{\frac{\pi}{6}}\allowbreak{}+cos\FormulaOCR{image278.png}{\frac{\pi}{4}}\allowbreak{}sin\FormulaOCR{image277.png}{\frac{\pi}{6}}\allowbreak{}＝\FormulaOCR{image282.png}{{\frac{\sqrt{2}}{2}}\times{\frac{\sqrt{3}}{2}}}\allowbreak{}+\FormulaOCR{image283.png}{{\frac{\sqrt{2}}{2}}\times{\frac{1}{2}}}\allowbreak{}＝\FormulaOCR{image284.png}{\frac{{\sqrt{6}}+{\sqrt{2}}}{4}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2019•北京）在$\triangle$ABC中，a＝3，b-c＝2，cosB＝-\FormulaOCR{image285.png}{\frac{1}{2}}\allowbreak{}．\par
+（Ⅰ）求b，c的值；\par
+（Ⅱ）求sin（B+C）的值．\par
+（Ⅲ）求sin（B-C）的值．\par
+\begin{solution}
+【解答】解：（1）$\because$a＝3，b-c＝2，cosB＝-\FormulaOCR{image285.png}{\frac{1}{2}}\allowbreak{}．\par
+$\therefore$由余弦定理，得b$^{2}$＝a$^{2}$+c$^{2}$-2accosB\par
+＝\FormulaOCR{image286.png}{9+(b\!-\!2)^{2}\!-\!2\times3\times(b\!-\!2)\times(-\frac{1}{2})}\allowbreak{}，\par
+$\therefore$b＝7，$\therefore$c＝b-2＝5；\par
+（2）在$\triangle$ABC中，$\because$cosB＝-\FormulaOCR{image285.png}{\frac{1}{2}}\allowbreak{}，$\therefore$sinB＝\FormulaOCR{image287.png}{\frac{\sqrt{3}}{2}}\allowbreak{}，\par
+由正弦定理有：\FormulaOCR{image288.png}{\frac a{\sin A}=\frac b{\sin B}}\allowbreak{}，\par
+$\therefore$sinA＝\FormulaOCR{image289.png}{\frac{a\sin B}{b}=\frac{3\cdot\frac{\sqrt3}{2}}7}\allowbreak{}＝\FormulaOCR{image290.png}{\frac{3{\sqrt{3}}}{14}}\allowbreak{}，\par
+$\therefore$sin（B+C）＝sin（π-A）＝sinA＝\FormulaOCR{image290.png}{\frac{3{\sqrt{3}}}{14}}\allowbreak{}．\par
+（Ⅲ）由正弦定理，
+\[
+\sin C=\frac{c\sin B}{b}=\frac{5\sqrt3}{14}.
+\]
+因为 $b>c$，所以 $B>C$，从而 $C$ 为锐角，
+\[
+\cos C=\sqrt{1-\sin^2C}=\frac{11}{14}.
+\]
+因此
+\[
+\sin(B-C)=\sin B\cos C-\cos B\sin C
+=\frac{4\sqrt3}{7}.
+\]
+\end{solution}
+\end{question}
+
+\begin{question}
+（2019•江苏）在$\triangle$ABC中，角A，B，C的对边分别为a，b，c．\par
+（1）若a＝3c，b＝\FormulaOCR{image291.png}{{\sqrt{2}}}\allowbreak{}，cosB＝\FormulaOCR{image292.png}{\frac{2}{3}}\allowbreak{}，求c的值；\par
+（2）若\FormulaOCR{image293.png}{\frac{\sin A}{a}}\allowbreak{}＝\FormulaOCR{image294.png}{\frac{\cos B}{2b}}\allowbreak{}，求sin（B+\FormulaOCR{image295.png}{\frac{\pi}{2}}\allowbreak{}）的值．\par
+\begin{solution}
+【解答】解：（1）$\because$在$\triangle$ABC中，角A，B，C的对边分别为a，b，c．\par
+a＝3c，b＝\FormulaOCR{image291.png}{{\sqrt{2}}}\allowbreak{}，cosB＝\FormulaOCR{image292.png}{\frac{2}{3}}\allowbreak{}，\par
+$\therefore$由余弦定理得：\par
+cosB＝\FormulaOCR{image296.png}{\frac{a^{2}+c^{2}-b^{2}}{2ac}}\allowbreak{}＝\FormulaOCR{image297.png}{\frac{10\,c^{2}-2}{6\,c^{2}}}\allowbreak{}＝\FormulaOCR{image292.png}{\frac{2}{3}}\allowbreak{}，\par
+解得c＝\FormulaOCR{image298.png}{\frac{\sqrt{3}}{3}}\allowbreak{}．\par
+（2）$\because$\FormulaOCR{image299.png}{\frac{\sin A}{a}}\allowbreak{}＝\FormulaOCR{image300.png}{\frac{\cos B}{2b}}\allowbreak{}，\par
+$\therefore$由正弦定理得：\FormulaOCR{image301.png}{\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\cos B}{2b}}\allowbreak{}，\par
+$\therefore$2sinB＝cosB，\par
+$\because$sin$^{2}$B+cos$^{2}$B＝1，\par
+$\therefore$sinB＝\FormulaOCR{image302.png}{\frac{\sqrt{5}}{5}}\allowbreak{}，cosB＝\FormulaOCR{image303.png}{\frac{2{\sqrt{5}}}{5}}\allowbreak{}，\par
+$\therefore$sin（B+\FormulaOCR{image304.png}{\frac{\pi}{2}}\allowbreak{}）＝cosB＝\FormulaOCR{image303.png}{\frac{2{\sqrt{5}}}{5}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2019•天津）在$\triangle$ABC中，内角A，B，C所对的边分别为a，b，c．已知b+c＝2a，3csinB＝4asinC．\par
+（Ⅰ）求cosB的值；\par
+（Ⅱ）求sin（2B+\FormulaOCR{image314.png}{\frac{\pi}{6}}\allowbreak{}）的值．\par
+\begin{solution}
+【解答】解（Ⅰ）在三角形ABC中，由正弦定理\FormulaOCR{image315.png}{\frac b{\sin B}}\allowbreak{}＝\FormulaOCR{image316.png}{\frac c{\sin C}}\allowbreak{}，得bsinC＝csinB，又由3csinB＝4asinC，\par
+得3bsinC＝4asinC，即3b＝4a．又因为b+c＝2a，得b＝\FormulaOCR{image317.png}{\frac{4a}{3}}\allowbreak{}，c＝\FormulaOCR{image318.png}{\frac{2a}{3}}\allowbreak{}，由余弦定理可得cosB＝\FormulaOCR{image319.png}{\frac{a^2+c^2-b^2}{2ac}}\allowbreak{}＝\FormulaOCR{image320.png}{\frac{a^2+\frac49a^2-\frac{16}{9}a^2}{2a\cdot\frac23a}}\allowbreak{}＝-\FormulaOCR{image321.png}{\frac14}\allowbreak{}．\par
+（Ⅱ）由（Ⅰ）得sinB＝\FormulaOCR{image322.png}{\sqrt{1-\cos^2B}}\allowbreak{}＝\FormulaOCR{image323.png}{\frac{\sqrt{15}}{4}}\allowbreak{}，从而sin2B＝2sinBcosB＝-\FormulaOCR{image324.png}{\frac{\sqrt{15}}{8}}\allowbreak{}，\par
+cos2B＝cos$^{2}$B-sin$^{2}$B＝-\FormulaOCR{image325.png}{\frac78}\allowbreak{}，\par
+故sin（2B+\FormulaOCR{image326.png}{\frac{\pi}{6}}\allowbreak{}）＝sin2Bcos\FormulaOCR{image326.png}{\frac{\pi}{6}}\allowbreak{}+cos2Bsin\FormulaOCR{image326.png}{\frac{\pi}{6}}\allowbreak{}＝-\FormulaOCR{image324.png}{\frac{\sqrt{15}}{8}}\allowbreak{}×\FormulaOCR{image327.png}{\frac{\sqrt{3}}{2}}\allowbreak{}-\FormulaOCR{image325.png}{\frac78}\allowbreak{}×\FormulaOCR{image328.png}{\frac{1}{2}}\allowbreak{}＝-\FormulaOCR{image329.png}{\frac{3\sqrt5+7}{16}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2019•新课标Ⅲ）$\triangle$ABC的内角A、B、C的对边分别为a，b，c．已知asin\FormulaOCR{image330.png}{\frac\pi2-C}\allowbreak{}＝bsinA．\par
+（1）求B；\par
+（2）若$\triangle$ABC为锐角三角形，且c＝1，求$\triangle$ABC面积的取值范围．\par
+\begin{solution}
+【解答】解：（1）asin\FormulaOCR{image330.png}{\frac\pi2-C}\allowbreak{}＝bsinA，即为asin\FormulaOCR{image331.png}{\frac{7-5}{2}}\allowbreak{}＝acos\FormulaOCR{image332.png}{\frac{E}{2}}\allowbreak{}＝bsinA，\par
+可得sinAcos\FormulaOCR{image332.png}{\frac{E}{2}}\allowbreak{}＝sinBsinA＝2sin\FormulaOCR{image332.png}{\frac{E}{2}}\allowbreak{}cos\FormulaOCR{image332.png}{\frac{E}{2}}\allowbreak{}sinA，\par
+$\because$sinA＞0，\par
+$\therefore$cos\FormulaOCR{image332.png}{\frac{E}{2}}\allowbreak{}＝2sin\FormulaOCR{image333.png}{\frac{E}{2}}\allowbreak{}cos\FormulaOCR{image333.png}{\frac{E}{2}}\allowbreak{}，\par
+若cos\FormulaOCR{image333.png}{\frac{E}{2}}\allowbreak{}＝0，可得B＝（2k+1）π，k$\in$Z不成立，\par
+$\therefore$sin\FormulaOCR{image333.png}{\frac{E}{2}}\allowbreak{}＝\FormulaOCR{image334.png}{\frac{1}{2}}\allowbreak{}，\par
+由0＜B＜π，可得B＝\FormulaOCR{image335.png}{\frac{\pi}{3}}\allowbreak{}；\par
+（2）若$\triangle$ABC为锐角三角形，且c＝1，\par
+由余弦定理可得b＝\FormulaOCR{image336.png}{\sqrt{a^2+1-2a\cos\frac\pi3}}\allowbreak{}＝\FormulaOCR{image337.png}{\sqrt{a^2-a+1}}\allowbreak{}，\par
+由三角形ABC为锐角三角形，可得a$^{2}$+a$^{2}$-a+1＞1且1+a$^{2}$-a+1＞a$^{2}$，且1+a$^{2}$＞a$^{2}$-a+1，\par
+解得\FormulaOCR{image334.png}{\frac{1}{2}}\allowbreak{}＜a＜2，\par
+可得$\triangle$ABC面积S＝\FormulaOCR{image334.png}{\frac{1}{2}}\allowbreak{}a•sin\FormulaOCR{image335.png}{\frac{\pi}{3}}\allowbreak{}＝\FormulaOCR{image338.png}{\frac{\sqrt{3}}{4}}\allowbreak{}a$\in$（\FormulaOCR{image339.png}{\frac{\sqrt{3}}{8}}\allowbreak{}，\FormulaOCR{image340.png}{\frac{\sqrt{3}}{2}}\allowbreak{}）．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2020•新课标Ⅱ）$\triangle$ABC中，sin$^{2}$A-sin$^{2}$B-sin$^{2}$C＝sinBsinC．\par
+（1）求A；\par
+（2）若BC＝3，求$\triangle$ABC周长的最大值．\par
+\begin{solution}
+【解答】解：（1）设$\triangle$ABC的内角A，B，C所对的边分别为a，b，c，\par
+因为sin$^{2}$A-sin$^{2}$B-sin$^{2}$C＝sinBsinC，\par
+由正弦定理可得a$^{2}$-b$^{2}$-c$^{2}$＝bc，\par
+即为b$^{2}$+c$^{2}$-a$^{2}$＝-bc，\par
+由余弦定理可得cosA＝\FormulaOCR{image341.png}{\frac{b^{2}+c^{2}-a^{2}}{2bc}}\allowbreak{}＝-\FormulaOCR{image342.png}{\frac{bc}{2bc}}\allowbreak{}＝-\FormulaOCR{image343.png}{\frac{1}{2}}\allowbreak{}，\par
+由0＜A＜π，可得A＝\FormulaOCR{image344.png}{\frac{2\pi}{3}}\allowbreak{}；\par
+（2）由题意可得a＝3，\par
+又B+C＝\FormulaOCR{image345.png}{\frac{\pi}{3}}\allowbreak{}，可设B＝\FormulaOCR{image346.png}{\frac{\pi}{6}}\allowbreak{}-d，C＝\FormulaOCR{image346.png}{\frac{\pi}{6}}\allowbreak{}+d，-\FormulaOCR{image346.png}{\frac{\pi}{6}}\allowbreak{}＜d＜\FormulaOCR{image346.png}{\frac{\pi}{6}}\allowbreak{}，\par
+由正弦定理可得\FormulaOCR{image347.png}{\frac3{\sin\frac{2\pi}{3}}}\allowbreak{}＝\FormulaOCR{image348.png}{\frac b{\sin B}}\allowbreak{}＝\FormulaOCR{image349.png}{\frac c{\sin C}}\allowbreak{}＝2\FormulaOCR{image350.png}{\sqrt{3}}\allowbreak{}，\par
+可得b＝2\FormulaOCR{image350.png}{\sqrt{3}}\allowbreak{}sin（\FormulaOCR{image346.png}{\frac{\pi}{6}}\allowbreak{}-d），c＝2\FormulaOCR{image351.png}{\sqrt{3}}\allowbreak{}sin（\FormulaOCR{image352.png}{\frac{\pi}{6}}\allowbreak{}+d），\par
+则$\triangle$ABC周长为a+b+c＝3+2\FormulaOCR{image351.png}{\sqrt{3}}\allowbreak{}[sin（\FormulaOCR{image352.png}{\frac{\pi}{6}}\allowbreak{}-d）+sin（\FormulaOCR{image352.png}{\frac{\pi}{6}}\allowbreak{}+d）]＝3+2\FormulaOCR{image351.png}{\sqrt{3}}\allowbreak{}（\FormulaOCR{image353.png}{\frac{1}{2}}\allowbreak{}cosd-\FormulaOCR{image354.png}{\frac{\sqrt{3}}{2}}\allowbreak{}sind+\FormulaOCR{image353.png}{\frac{1}{2}}\allowbreak{}cosd+\FormulaOCR{image354.png}{\frac{\sqrt{3}}{2}}\allowbreak{}sind），\par
+＝3+2\FormulaOCR{image351.png}{\sqrt{3}}\allowbreak{}cosd，\par
+当d＝0，即B＝C＝\FormulaOCR{image352.png}{\frac{\pi}{6}}\allowbreak{}时，$\triangle$ABC的周长取得最大值3+2\FormulaOCR{image351.png}{\sqrt{3}}\allowbreak{}．\par
+另解：a＝3，A＝\FormulaOCR{image355.png}{\frac{2\pi}{3}}\allowbreak{}，又a$^{2}$＝b$^{2}$+c$^{2}$-2bccosA，\par
+$\therefore$9＝b$^{2}$+c$^{2}$+bc＝（b+c）$^{2}$-bc$\geq$（b+c）$^{2}$-\FormulaOCR{image356.png}{\frac14}\allowbreak{}（b+c）$^{2}$，\par
+由b+c＞3，则b+c$\leq$2\FormulaOCR{image357.png}{\sqrt{3}}\allowbreak{}（当且仅当b＝c时，“＝”成立），\par
+则$\triangle$ABC周长的最大值为3+2\FormulaOCR{image357.png}{\sqrt{3}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2020•浙江）在锐角$\triangle$ABC中，角A，B，C所对的边分别为a，b，c．已知2bsinA-\FormulaOCR{image357.png}{\sqrt{3}}\allowbreak{}a＝0．\par
+（Ⅰ）求角B的大小；\par
+（Ⅱ）求cosA+cosB+cosC的取值范围．\par
+\begin{solution}
+【解答】解：（Ⅰ）$\because$2bsinA＝\FormulaOCR{image358.png}{\sqrt{3}}\allowbreak{}a，\par
+$\therefore$2sinBsinA＝\FormulaOCR{image358.png}{\sqrt{3}}\allowbreak{}sinA，\par
+$\because$sinA$\neq$0，\par
+$\therefore$sinB＝\FormulaOCR{image359.png}{\frac{\sqrt{3}}{2}}\allowbreak{}，\par
+$\because$$\triangle$ABC为锐角三角形，\par
+$\therefore$B＝\FormulaOCR{image360.png}{\frac{\pi}{3}}\allowbreak{}，\par
+（Ⅱ）$\because$$\triangle$ABC为锐角三角形，B＝\FormulaOCR{image360.png}{\frac{\pi}{3}}\allowbreak{}，\par
+$\therefore$C＝\FormulaOCR{image361.png}{\frac{2\pi}{3}}\allowbreak{}-A，\par
+$\therefore$cosA+cosB+cosC＝cosA+cos（\FormulaOCR{image361.png}{\frac{2\pi}{3}}\allowbreak{}-A）+cos\FormulaOCR{image360.png}{\frac{\pi}{3}}\allowbreak{}＝cosA-\FormulaOCR{image362.png}{\frac{1}{2}}\allowbreak{}cosA+\FormulaOCR{image359.png}{\frac{\sqrt{3}}{2}}\allowbreak{}sinA+\FormulaOCR{image362.png}{\frac{1}{2}}\allowbreak{}＝\FormulaOCR{image363.png}{\frac{1}{2}}\allowbreak{}cosA+\FormulaOCR{image364.png}{\frac{\sqrt{3}}{2}}\allowbreak{}sinA+\FormulaOCR{image363.png}{\frac{1}{2}}\allowbreak{}＝sin（A+\FormulaOCR{image365.png}{\frac{\pi}{6}}\allowbreak{}）+\FormulaOCR{image363.png}{\frac{1}{2}}\allowbreak{}，\par
+$\triangle$ABC为锐角三角形，0＜A＜\FormulaOCR{image366.png}{\frac{\pi}{2}}\allowbreak{}，0＜C＜\FormulaOCR{image366.png}{\frac{\pi}{2}}\allowbreak{}，\par
+解得\FormulaOCR{image365.png}{\frac{\pi}{6}}\allowbreak{}＜A＜\FormulaOCR{image366.png}{\frac{\pi}{2}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image367.png}{\frac{\pi}{3}}\allowbreak{}＜A+\FormulaOCR{image365.png}{\frac{\pi}{6}}\allowbreak{}＜\FormulaOCR{image368.png}{\frac{2\pi}{3}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image369.png}{\frac{\sqrt{3}}{2}}\allowbreak{}＜sin（A+\FormulaOCR{image370.png}{\frac{\pi}{6}}\allowbreak{}）$\leq$1，\par
+$\therefore$\FormulaOCR{image369.png}{\frac{\sqrt{3}}{2}}\allowbreak{}+\FormulaOCR{image371.png}{\frac{1}{2}}\allowbreak{}＜sin（A+\FormulaOCR{image370.png}{\frac{\pi}{6}}\allowbreak{}）+\FormulaOCR{image371.png}{\frac{1}{2}}\allowbreak{}$\leq$\FormulaOCR{image372.png}{\frac{3}{2}}\allowbreak{}，\par
+$\therefore$cosA+cosB+cosC的取值范围为（\FormulaOCR{image373.png}{\frac{\sqrt{3}+1}{2}}\allowbreak{}，\FormulaOCR{image372.png}{\frac{3}{2}}\allowbreak{}]．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2020•新课标Ⅱ）$\triangle$ABC的内角A，B，C的对边分别为a，b，c，已知cos$^{2}$（\FormulaOCR{image374.png}{\frac{\pi}{2}}\allowbreak{}+A）+cosA＝\FormulaOCR{image375.png}{\frac{5}{4}}\allowbreak{}．\par
+（1）求A；\par
+（2）若b-c＝\FormulaOCR{image376.png}{\frac{\sqrt{3}}{3}}\allowbreak{}a，证明：$\triangle$ABC是直角三角形．\par
+\begin{solution}
+【解答】解：（1）$\because$cos$^{2}$（\FormulaOCR{image377.png}{\frac{\pi}{2}}\allowbreak{}+A）+cosA＝sin$^{2}$A+cosA＝1-cos$^{2}$A+cosA＝\FormulaOCR{image378.png}{\frac{5}{4}}\allowbreak{}，\par
+$\therefore$cos$^{2}$A-cosA+\FormulaOCR{image379.png}{\frac14}\allowbreak{}＝0，解得cosA＝\FormulaOCR{image380.png}{\frac{1}{2}}\allowbreak{}，\par
+$\because$A$\in$（0，π），\par
+$\therefore$A＝\FormulaOCR{image381.png}{\frac{\pi}{3}}\allowbreak{}；\par
+（2）证明：$\because$b-c＝\FormulaOCR{image382.png}{\frac{\sqrt{3}}{3}}\allowbreak{}a，A＝\FormulaOCR{image381.png}{\frac{\pi}{3}}\allowbreak{}，\par
+$\therefore$由正弦定理可得sinB-sinC＝\FormulaOCR{image382.png}{\frac{\sqrt{3}}{3}}\allowbreak{}sinA＝\FormulaOCR{image383.png}{\frac{1}{2}}\allowbreak{}，\par
+$\therefore$sinB-sin（\FormulaOCR{image384.png}{\frac{2\pi}{3}}\allowbreak{}-B）＝sinB-\FormulaOCR{image385.png}{\frac{\sqrt{3}}{2}}\allowbreak{}cosB-\FormulaOCR{image383.png}{\frac{1}{2}}\allowbreak{}sinB＝\FormulaOCR{image383.png}{\frac{1}{2}}\allowbreak{}sinB-\FormulaOCR{image385.png}{\frac{\sqrt{3}}{2}}\allowbreak{}cosB＝sin（B-\FormulaOCR{image381.png}{\frac{\pi}{3}}\allowbreak{}）＝\FormulaOCR{image386.png}{\frac{1}{2}}\allowbreak{}，\par
+$\because$B\FormulaOCR{image387.png}{\in(0,\ \frac{2\pi}{3})}\allowbreak{}，B-\FormulaOCR{image388.png}{\frac{\pi}{3}}\allowbreak{}$\in$（-\FormulaOCR{image388.png}{\frac{\pi}{3}}\allowbreak{}，\FormulaOCR{image388.png}{\frac{\pi}{3}}\allowbreak{}），\par
+$\therefore$B-\FormulaOCR{image388.png}{\frac{\pi}{3}}\allowbreak{}＝\FormulaOCR{image389.png}{\frac{\pi}{6}}\allowbreak{}，可得B＝\FormulaOCR{image390.png}{\frac{\pi}{2}}\allowbreak{}，可得$\triangle$ABC是直角三角形，得证．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2020•江苏）在$\triangle$ABC中，角A、B、C的对边分别为a、b、c．已知a＝3，c＝\FormulaOCR{image391.png}{{\sqrt{2}}}\allowbreak{}，B＝45°．\par
+（1）求sinC的值；\par
+（2）在边BC上取一点D，使得cos$\angle$ADC＝-\FormulaOCR{image392.png}{\frac{4}{5}}\allowbreak{}，求tan$\angle$DAC的值．\par
+\begin{center}
+\DocImage{image393.png}{167.30}{76.55}\allowbreak{}
+\end{center}
+\begin{solution}
+【解答】解：（1）因为a＝3，c＝\FormulaOCR{image391.png}{{\sqrt{2}}}\allowbreak{}，B＝45°，由余弦定理可得：b＝\FormulaOCR{image394.png}{\sqrt{a^2+c^2-2ac\cos B}}\allowbreak{}＝\FormulaOCR{image395.png}{\sqrt{9+2-2\cdot3\sqrt2\cdot\frac{\sqrt2}{2}}}\allowbreak{}＝\FormulaOCR{image396.png}{\sqrt{5}}\allowbreak{}，\par
+由正弦定理可得\FormulaOCR{image397.png}{\frac{c}{\sin C}}\allowbreak{}＝\FormulaOCR{image398.png}{\frac{b}{\sin B}}\allowbreak{}，所以sinC＝\FormulaOCR{image399.png}{\frac cb}\allowbreak{}•sin45°＝\FormulaOCR{image400.png}{\frac{\sqrt{2}}{\sqrt{5}}}\allowbreak{}\FormulaOCR{image401.png}{\frac{\sqrt{2}}{2}}\allowbreak{}＝\FormulaOCR{image402.png}{\frac{\sqrt{5}}{5}}\allowbreak{}，\par
+所以sinC＝\FormulaOCR{image402.png}{\frac{\sqrt{5}}{5}}\allowbreak{}；\par
+（2）因为cos$\angle$ADC＝-\FormulaOCR{image403.png}{\frac{4}{5}}\allowbreak{}，所以sin$\angle$ADC＝\FormulaOCR{image404.png}{\sqrt{1-\cos^2\angle ADC}}\allowbreak{}＝\FormulaOCR{image405.png}{\frac{3}{5}}\allowbreak{}，\par
+在三角形ADC 中，易知C为锐角，由（1）可得cosC＝\FormulaOCR{image406.png}{\sqrt{1-\sin^{2}C}}\allowbreak{}＝\FormulaOCR{image407.png}{\frac{2{\sqrt{5}}}{5}}\allowbreak{}，\par
+所以在三角形 $ADC$ 中，
+\[
+\begin{aligned}
+\sin\angle DAC
+&=\sin(\angle ADC+C)\\
+&=\sin\angle ADC\cos C+\cos\angle ADC\sin C
+=\frac{2\sqrt5}{25}.
+\end{aligned}
+\]
+因为$\angle$DAC\FormulaOCR{image409.png}{\in(0,\ {\frac{\pi}{2}})}\allowbreak{}，所以cos$\angle$DAC＝\FormulaOCR{image410.png}{\sqrt{1-\sin^2\angle DAC}}\allowbreak{}＝\FormulaOCR{image411.png}{\frac{11{\sqrt{5}}}{25}}\allowbreak{}，\par
+所以tan$\angle$DAC＝\FormulaOCR{image412.png}{\frac{\sin\angle DAC}{\cos\angle DAC}}\allowbreak{}＝\FormulaOCR{image413.png}{\frac{2}{11}}\allowbreak{}．\par
+\begin{center}
+\DocImage{image414.png}{167.30}{76.55}\allowbreak{}
+\end{center}
+\end{solution}
+\end{question}
+
+\begin{question}
+（2020•山东）在①ac＝\FormulaOCR{image415.png}{\sqrt{3}}\allowbreak{}，②csinA＝3，③c＝\FormulaOCR{image415.png}{\sqrt{3}}\allowbreak{}b这三个条件中任选一个，补充在下面问题中，若问题中的三角形存在，求c的值；若问题中的三角形不存在，说明理由．\par
+问题：是否存在$\triangle$ABC，它的内角A，B，C的对边分别为a，b，c，且sinA＝\FormulaOCR{image415.png}{\sqrt{3}}\allowbreak{}sinB，C＝\FormulaOCR{image416.png}{\frac{\pi}{6}}\allowbreak{}，\_\_\_\_\_\_\_？\par
+注：如果选择多个条件分别解答，按第一个解答计分．\par
+\begin{solution}
+【解答】解：①ac＝\FormulaOCR{image417.png}{\sqrt{3}}\allowbreak{}．\par
+$\triangle$ABC中，sinA＝\FormulaOCR{image417.png}{\sqrt{3}}\allowbreak{}sinB，即b＝\FormulaOCR{image418.png}{{\frac{\sqrt{3}}{3}}a}\allowbreak{}，\par
+ac＝\FormulaOCR{image417.png}{\sqrt{3}}\allowbreak{}，$\therefore$\FormulaOCR{image419.png}{c{\frac{\sqrt{3}}{4}}}\allowbreak{}，\par
+cosC＝\FormulaOCR{image420.png}{\frac{a^2+b^2-c^2}{2ab}}\allowbreak{}＝\FormulaOCR{image421.png}{\frac{a^{2}+\frac{a^{2}}{3}-\frac{3}{a^{2}}}{A^{2}}}\allowbreak{}＝\FormulaOCR{image422.png}{\frac{\sqrt{3}}{2}}\allowbreak{}，\par
+$\therefore$a＝\FormulaOCR{image423.png}{\sqrt{3}}\allowbreak{}，b＝1，c＝1．\par
+②csinA＝3．\par
+$\triangle$ABC中，csinA＝asinC＝asin\FormulaOCR{image424.png}{\frac{\pi}{6}}\allowbreak{}＝3，$\therefore$a＝6．\par
+$\because$sinA＝\FormulaOCR{image423.png}{\sqrt{3}}\allowbreak{}sinB，即a＝\FormulaOCR{image425.png}{\sqrt3b}\allowbreak{}，$\therefore$\FormulaOCR{image426.png}{b=2\sqrt3}\allowbreak{}．\par
+cosC＝\FormulaOCR{image427.png}{\frac{a^2+b^2-c^2}{2ab}}\allowbreak{}＝\FormulaOCR{image428.png}{\frac{36+12-c^{2}}{2\times6\times2{\sqrt{3}}}}\allowbreak{}＝\FormulaOCR{image429.png}{\frac{\sqrt{3}}{2}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image430.png}{c=2{\sqrt{3}}}\allowbreak{}．\par
+③c＝\FormulaOCR{image431.png}{\sqrt{3}}\allowbreak{}b．\par
+$\because$sinA＝\FormulaOCR{image431.png}{\sqrt{3}}\allowbreak{}sinB，即a＝\FormulaOCR{image432.png}{\sqrt3b}\allowbreak{}，\par
+又$\because$c＝\FormulaOCR{image431.png}{\sqrt{3}}\allowbreak{}b，\par
+cosC＝\FormulaOCR{image427.png}{\frac{a^2+b^2-c^2}{2ab}}\allowbreak{}＝\FormulaOCR{image433.png}{\frac{\sqrt{3}}{6}}\allowbreak{}\FormulaOCR{image434.png}{\neq\cos\frac\pi6}\allowbreak{}，\par
+与已知条件C＝\FormulaOCR{image435.png}{\frac{\pi}{6}}\allowbreak{}相矛盾，所以问题中的三角形不存在．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2020•新课标Ⅰ）$\triangle$ABC的内角A，B，C的对边分别为a，b，c．已知B＝150°．\par
+（1）若a＝\FormulaOCR{image436.png}{\sqrt{3}}\allowbreak{}c，b＝2\FormulaOCR{image437.png}{\sqrt{7}}\allowbreak{}，求$\triangle$ABC的面积；\par
+（2）若sinA+\FormulaOCR{image436.png}{\sqrt{3}}\allowbreak{}sinC＝\FormulaOCR{image438.png}{\frac{\sqrt{2}}{2}}\allowbreak{}，求C．\par
+\begin{solution}
+【解答】解：（1）$\triangle$ABC中，B＝150°，a＝\FormulaOCR{image439.png}{\sqrt{3}}\allowbreak{}c，b＝2\FormulaOCR{image440.png}{\sqrt{7}}\allowbreak{}，\par
+cosB＝\FormulaOCR{image441.png}{\frac{a^{2}+c^{2}-b^{2}}{2ac}}\allowbreak{}＝\FormulaOCR{image442.png}{\frac{3\,c^{2}+c^{2}-28}{2\sqrt{3\,c^{2}}}}\allowbreak{}＝\FormulaOCR{image443.png}{-\frac{\sqrt3}{2}}\allowbreak{}，\par
+$\therefore$c＝2（负值舍去），a＝2\FormulaOCR{image439.png}{\sqrt{3}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image444.png}{S_{\triangle ABC}=\frac12ac\sin B=\frac12\cdot2\sqrt3\cdot2\cdot\frac12}\allowbreak{}＝\FormulaOCR{image350.png}{\sqrt{3}}\allowbreak{}．\par
+（2）sinA+\FormulaOCR{image350.png}{\sqrt{3}}\allowbreak{}sinC＝\FormulaOCR{image445.png}{\frac{\sqrt{2}}{2}}\allowbreak{}，\par
+即sin（180°-150°-C）+\FormulaOCR{image446.png}{\sqrt3\sin C}\allowbreak{}＝\FormulaOCR{image445.png}{\frac{\sqrt{2}}{2}}\allowbreak{}，\par
+化简得\FormulaOCR{image447.png}{\frac12\cos C+\frac{\sqrt3}{2}\sin C}\allowbreak{}＝\FormulaOCR{image445.png}{\frac{\sqrt{2}}{2}}\allowbreak{}，\par
+sin（C+30°）＝\FormulaOCR{image445.png}{\frac{\sqrt{2}}{2}}\allowbreak{}，\par
+$\because$0°＜C＜30°，\par
+$\therefore$30°＜C+30°＜60°，\par
+$\therefore$C+30°＝45°，\par
+$\therefore$C＝15°．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2020•北京）在$\triangle$ABC中，a+b＝11，再从条件①、条件②这两个条件中选择一个作为已知，求：\par
+（Ⅰ）a的值；\par
+（Ⅱ）sinC和$\triangle$ABC的面积．\par
+条件①：c＝7，cosA＝-\FormulaOCR{image448.png}{\frac{1}{7}}\allowbreak{}；\par
+条件②：cosA＝\FormulaOCR{image449.png}{\frac18}\allowbreak{}，cosB＝\FormulaOCR{image450.png}{\frac{9}{16}}\allowbreak{}．\par
+注：如果选择条件①和条件②分别解答，按第一个解答计分．\par
+\begin{solution}
+【解答】解：选择条件①（Ⅰ）由余弦定理得a$^{2}$＝b$^{2}$+c$^{2}$-2bccosA，即a$^{2}$-b$^{2}$＝49-14b×（-\FormulaOCR{image451.png}{\frac17}\allowbreak{}）＝49+2b，\par
+$\therefore$（a+b）（a-b）＝49+2b，\par
+$\because$a+b＝11，\par
+$\therefore$11a-11b＝49+2b，\par
+即11a-13b＝49，\par
+联立\FormulaOCR{image452.png}{\begin{cases}a+b=11,\\11a-13b=49,\end{cases}}\allowbreak{}，解得a＝8，b＝3，\par
+故a＝8．\par
+（Ⅱ）在$\triangle$ABC中，sinA＞0，\par
+$\therefore$sinA＝\FormulaOCR{image453.png}{\sqrt{1-\cos^2A}}\allowbreak{}＝\FormulaOCR{image454.png}{\frac{4{\sqrt{3}}}{7}}\allowbreak{}，\par
+由正弦定理可得\FormulaOCR{image455.png}{\frac a{\sin A}}\allowbreak{}＝\FormulaOCR{image456.png}{\frac c{\sin C}}\allowbreak{}，\par
+$\therefore$sinC＝\FormulaOCR{image457.png}{\frac{c\sin A}{a}}\allowbreak{}＝\FormulaOCR{image458.png}{\frac{7\times\frac{4{\sqrt{3}}}{7}}{8}}\allowbreak{}＝\FormulaOCR{image459.png}{\frac{\sqrt{3}}{2}}\allowbreak{}，\par
+$\therefore$$S_{\triangle ABC}$＝\FormulaOCR{image460.png}{\frac{1}{2}}\allowbreak{}absinC＝\FormulaOCR{image460.png}{\frac{1}{2}}\allowbreak{}×8×3×\FormulaOCR{image459.png}{\frac{\sqrt{3}}{2}}\allowbreak{}＝6\FormulaOCR{image461.png}{\sqrt{3}}\allowbreak{}．\par
+选择条件②（Ⅰ）在$\triangle$ABC中，sinA＞0，sinB＞0，C＝π-（A+B），\par
+$\because$cosA＝\FormulaOCR{image462.png}{\frac18}\allowbreak{}，cosB＝\FormulaOCR{image463.png}{\frac{9}{16}}\allowbreak{}，\par
+$\therefore$sinA＝\FormulaOCR{image464.png}{\sqrt{1-\cos^2A}}\allowbreak{}＝\FormulaOCR{image465.png}{\frac{3{\sqrt{7}}}{8}}\allowbreak{}，sinB＝\FormulaOCR{image466.png}{\sqrt{1-\cos^2B}}\allowbreak{}＝\FormulaOCR{image467.png}{\frac{5{\sqrt{7}}}{16}}\allowbreak{}，\par
+由正弦定理可得\FormulaOCR{image468.png}{\frac a{\sin A}}\allowbreak{}＝\FormulaOCR{image469.png}{\frac b{\sin B}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image470.png}{\frac ab}\allowbreak{}＝\FormulaOCR{image471.png}{\frac{\sin A}{\sin B}}\allowbreak{}＝\FormulaOCR{image472.png}{\frac{6}{5}}\allowbreak{}，\par
+$\because$a+b＝11，\par
+$\therefore$a＝6，b＝5，\par
+故a＝6；\par
+（Ⅱ）在$\triangle$ABC中，C＝π-（A+B），\par
+$\therefore$sinC＝sin（A+B）＝sinAcosB+cosAsinB＝\FormulaOCR{image473.png}{\frac{3{\sqrt{7}}}{8}}\allowbreak{}×\FormulaOCR{image474.png}{\frac{9}{16}}\allowbreak{}+\FormulaOCR{image475.png}{\frac{5{\sqrt{7}}}{16}}\allowbreak{}×\FormulaOCR{image476.png}{\frac18}\allowbreak{}＝\FormulaOCR{image477.png}{\frac{\sqrt{7}}{4}}\allowbreak{}，\par
+$\therefore$$S_{\triangle ABC}$＝\FormulaOCR{image478.png}{\frac{1}{2}}\allowbreak{}absinC＝\FormulaOCR{image479.png}{\frac{1}{2}}\allowbreak{}×6×5×\FormulaOCR{image480.png}{\frac{\sqrt{7}}{4}}\allowbreak{}＝\FormulaOCR{image481.png}{\frac{15{\sqrt{7}}}{4}}\allowbreak{}\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2020•天津）在$\triangle$ABC中，角A，B，C所对的边分别为a，b，c．已知a＝2\FormulaOCR{image482.png}{{\sqrt{2}}}\allowbreak{}，b＝5，c＝\FormulaOCR{image483.png}{\sqrt{13}}\allowbreak{}．\par
+（Ⅰ）求角C的大小；\par
+（Ⅱ）求sinA的值；\par
+（Ⅲ）求sin（2A+\FormulaOCR{image484.png}{\frac{\pi}{4}}\allowbreak{}）的值．\par
+\begin{solution}
+【解答】解：（Ⅰ）由余弦定理以及a＝2\FormulaOCR{image485.png}{{\sqrt{2}}}\allowbreak{}，b＝5，c＝\FormulaOCR{image486.png}{\sqrt{13}}\allowbreak{}，\par
+则cosC＝\FormulaOCR{image487.png}{\frac{a^2+b^2-c^2}{2ab}}\allowbreak{}＝\FormulaOCR{image488.png}{\frac{8+25-13}{2\times2{\sqrt{2}}\times5}}\allowbreak{}＝\FormulaOCR{image489.png}{\frac{\sqrt{2}}{2}}\allowbreak{}，\par
+$\because$C$\in$（0，π），\par
+$\therefore$C＝\FormulaOCR{image490.png}{\frac{\pi}{4}}\allowbreak{}；\par
+（Ⅱ）由正弦定理，以及C＝\FormulaOCR{image490.png}{\frac{\pi}{4}}\allowbreak{}，a＝2\FormulaOCR{image485.png}{{\sqrt{2}}}\allowbreak{}，c＝\FormulaOCR{image486.png}{\sqrt{13}}\allowbreak{}，可得sinA＝\FormulaOCR{image491.png}{\frac{a\sin C}{c}}\allowbreak{}＝\FormulaOCR{image492.png}{\frac{2{\sqrt{2}}\times{\sqrt{2}}}{\sqrt{13}}}\allowbreak{}＝\FormulaOCR{image493.png}{\frac{2{\sqrt{13}}}{13}}\allowbreak{}；\par
+（Ⅲ） 由a＜c，及sinA＝\FormulaOCR{image493.png}{\frac{2{\sqrt{13}}}{13}}\allowbreak{}，可得cosA＝\FormulaOCR{image494.png}{\sqrt{1-\sin^2A}}\allowbreak{}＝\FormulaOCR{image495.png}{\frac{3{\sqrt{13}}}{13}}\allowbreak{}，\par
+则sin2A＝2sinAcosA＝2×\FormulaOCR{image493.png}{\frac{2{\sqrt{13}}}{13}}\allowbreak{}×\FormulaOCR{image495.png}{\frac{3{\sqrt{13}}}{13}}\allowbreak{}＝\FormulaOCR{image496.png}{\frac{12}{13}}\allowbreak{}，\par
+$\therefore$cos2A＝2cos$^{2}$A-1＝\FormulaOCR{image497.png}{\frac{5}{13}}\allowbreak{}，\par
+$\therefore$sin（2A+\FormulaOCR{image498.png}{\frac{\pi}{4}}\allowbreak{}）＝\FormulaOCR{image499.png}{\frac{\sqrt{2}}{2}}\allowbreak{}（sin2A+cos2A）＝\FormulaOCR{image500.png}{\frac{\sqrt{2}}{2}}\allowbreak{}（\FormulaOCR{image501.png}{\frac{12}{13}}\allowbreak{}+\FormulaOCR{image502.png}{\frac{5}{13}}\allowbreak{}）＝\FormulaOCR{image503.png}{\frac{17{\sqrt{2}}}{26}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2020•全国）设$\triangle$ABC的面积为10\FormulaOCR{image504.png}{\sqrt{3}}\allowbreak{}，内角A，B，C的对边分别为a，b，c，且a＝7，sin$^{2}$A＝sin$^{2}$B+sin$^{2}$C-sinBsinC．求A，b和c．\par
+\begin{solution}
+【解答】解：因为sin$^{2}$B+sin$^{2}$C-sin$^{2}$A＝sinBsinC，\par
+所以b$^{2}$+c$^{2}$-a$^{2}$＝bc，\par
+则cosA＝\FormulaOCR{image505.png}{\frac{b^{2}+c^{2}-a^{2}}{2bc}}\allowbreak{}＝\FormulaOCR{image506.png}{\frac{bc}{2bc}}\allowbreak{}＝\FormulaOCR{image507.png}{\frac{1}{2}}\allowbreak{}，\par
+因为0＜A＜π，\par
+所以A＝\FormulaOCR{image508.png}{\frac{\pi}{3}}\allowbreak{}．\par
+因为$\triangle$ABC的面积为10\FormulaOCR{image509.png}{\sqrt{3}}\allowbreak{}，\par
+所以\FormulaOCR{image507.png}{\frac{1}{2}}\allowbreak{}bcsinA＝\FormulaOCR{image510.png}{\frac{\sqrt{3}}{4}}\allowbreak{}bc＝10\FormulaOCR{image509.png}{\sqrt{3}}\allowbreak{}，即bc＝40，①\par
+又因为由余弦定理可得：b$^{2}$+c$^{2}$-a$^{2}$＝bc，a＝7，\par
+所以b$^{2}$+c$^{2}$＝89，②\par
+所以由①②联立解得b＝5，c＝8或b＝8，c＝5．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•上海）已知A、B、C为$\triangle$ABC的三个内角，a、b、c是其三条边，a＝2，cosC＝-\FormulaOCR{image511.png}{\frac14}\allowbreak{}．\par
+（1）若sinA＝2sinB，求b、c；\par
+（2）若cos（A\FormulaOCR{image512.png}{-\frac\pi4}\allowbreak{}）＝\FormulaOCR{image513.png}{\frac{4}{5}}\allowbreak{}，求c．\par
+\begin{solution}
+【解答】解：（1）因为sinA＝2sinB，可得a＝2b，\par
+又a＝2，可得b＝1，\par
+由于cosC＝\FormulaOCR{image514.png}{\frac{a^2+b^2-c^2}{2ab}}\allowbreak{}＝\FormulaOCR{image515.png}{\frac{2^{2}+1^{2}-c^{2}}{2\times2\times1}}\allowbreak{}＝-\FormulaOCR{image516.png}{\frac14}\allowbreak{}，可得c＝\FormulaOCR{image517.png}{\sqrt{6}}\allowbreak{}．\par
+（2）因为cos（A\FormulaOCR{image512.png}{-\frac\pi4}\allowbreak{}）＝\FormulaOCR{image518.png}{\frac{\sqrt{2}}{2}}\allowbreak{}（cosA+sinA）＝\FormulaOCR{image519.png}{\frac{4}{5}}\allowbreak{}，\par
+可得cosA+sinA＝\FormulaOCR{image520.png}{\frac{4{\sqrt{2}}}{5}}\allowbreak{}，\par
+又cos$^{2}$A+sin$^{2}$A＝1，\par
+可解得cosA＝\FormulaOCR{image521.png}{\frac{7{\sqrt{2}}}{10}}\allowbreak{}，sinA＝\FormulaOCR{image522.png}{\frac{\sqrt{2}}{10}}\allowbreak{}，或sinA＝\FormulaOCR{image521.png}{\frac{7{\sqrt{2}}}{10}}\allowbreak{}，cosA＝\FormulaOCR{image522.png}{\frac{\sqrt{2}}{10}}\allowbreak{}，\par
+因为cosC＝-\FormulaOCR{image523.png}{\frac14}\allowbreak{}，可得sinC＝\FormulaOCR{image524.png}{\frac{\sqrt{15}}{4}}\allowbreak{}，tanC＝-\FormulaOCR{image525.png}{\sqrt{15}}\allowbreak{}，可得C为钝角，\par
+若sinA＝\FormulaOCR{image526.png}{\frac{7{\sqrt{2}}}{10}}\allowbreak{}，cosA＝\FormulaOCR{image527.png}{\frac{\sqrt{2}}{10}}\allowbreak{}，可得tanA＝7，可得tanB＝-tan（A+C）＝\FormulaOCR{image528.png}{\frac{\tan A+\tan C}{\tan A\tan C-1}}\allowbreak{}＝\FormulaOCR{image529.png}{\frac{7-{\sqrt{15}}}{7\times(-{\sqrt{15}}\;)-1}}\allowbreak{}＜0，\par
+可得B为钝角，这与C为钝角矛盾，舍去，\par
+所以sinA＝\FormulaOCR{image527.png}{\frac{\sqrt{2}}{10}}\allowbreak{}，由正弦定理\FormulaOCR{image530.png}{\frac2{\sin A}=\frac c{\sin C}}\allowbreak{}，可得c＝\FormulaOCR{image531.png}{\frac{5{\sqrt{30}}}{2}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•新高考Ⅰ）记$\triangle$ABC的内角A，B，C的对边分别为a，b，c．已知b$^{2}$＝ac，点D在边AC上，BDsin$\angle$ABC＝asinC．\par
+（1）证明：BD＝b；\par
+（2）若AD＝2DC，求cos$\angle$ABC．\par
+\begin{solution}
+【解答】解：（1）证明：由正弦定理知，\FormulaOCR{image532.png}{\frac b{\sin\angle ABC}=\frac c{\sin\angle ACB}=2R}\allowbreak{}，\par
+$\therefore$b＝2Rsin$\angle$ABC，c＝2Rsin$\angle$ACB，\par
+$\because$b$^{2}$＝ac，$\therefore$b•2Rsin$\angle$ABC＝a•2Rsin$\angle$ACB，\par
+即bsin$\angle$ABC＝asinC，\par
+$\because$BDsin$\angle$ABC＝asinC，\par
+$\therefore$BD＝b；\par
+（2）法一：由（1）知BD＝b，\par
+$\because$AD＝2DC，$\therefore$AD＝\FormulaOCR{image533.png}{{\frac{2}{3}}b}\allowbreak{}，DC＝\FormulaOCR{image534.png}{{\frac{1}{3}}b}\allowbreak{}，\par
+在$\triangle$ABD中，由余弦定理知，cos$\angle$BDA＝\FormulaOCR{image535.png}{\frac{BD^2+AD^2-AB^2}{2BD\cdot AD}}\allowbreak{}＝\FormulaOCR{image536.png}{\frac{b^2+(\frac23b)^2-c^2}{2b\cdot\frac23b}}\allowbreak{}＝\FormulaOCR{image537.png}{\frac{13b^2-9c^2}{12b^2}}\allowbreak{}，\par
+在$\triangle$CBD中，由余弦定理知，cos$\angle$BDC＝\FormulaOCR{image538.png}{\frac{BD^2+CD^2-BC^2}{2BD\cdot CD}}\allowbreak{}＝\FormulaOCR{image539.png}{\frac{b^2+(\frac13b)^2-a^2}{2b\cdot\frac13b}}\allowbreak{}＝\FormulaOCR{image540.png}{\frac{10b^2-9a^2}{6b^2}}\allowbreak{}，\par
+$\because$$\angle$BDA+$\angle$BDC＝π，\par
+$\therefore$cos$\angle$BDA+cos$\angle$BDC＝0，\par
+即\FormulaOCR{image541.png}{\frac{13b^2-9c^2}{12b^2}+\frac{10b^2-9a^2}{6b^2}}\allowbreak{}＝0，\par
+得11b$^{2}$＝3c$^{2}$+6a$^{2}$，\par
+$\because$b$^{2}$＝ac，\par
+$\therefore$3c$^{2}$-11ac+6a$^{2}$＝0，\par
+$\therefore$c＝3a或c＝\FormulaOCR{image542.png}{\frac23a}\allowbreak{}，\par
+在$\triangle$ABC中，由余弦定理知，cos$\angle$ABC＝\FormulaOCR{image543.png}{\frac{a^{2}+c^{2}-b^{2}}{2ac}}\allowbreak{}＝\FormulaOCR{image544.png}{\frac{a^2+c^2-ac}{2ac}}\allowbreak{}，\par
+当c＝3a时，cos$\angle$ABC＝\FormulaOCR{image545.png}{\frac{7}{6}}\allowbreak{}＞1（舍）；\par
+当c＝\FormulaOCR{image542.png}{\frac23a}\allowbreak{}时，cos$\angle$ABC＝\FormulaOCR{image546.png}{\frac7{12}}\allowbreak{}；\par
+综上所述，cos$\angle$ABC＝\FormulaOCR{image546.png}{\frac7{12}}\allowbreak{}．\par
+法二：$\because$点D在边AC上且AD＝2DC，\par
+$\therefore$\FormulaOCR{image547.png}{\vec{BD}=\frac13\vec{BA}+\frac23\vec{BC}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image548.png}{\vec{BD}^{,2}=\frac13\vec{BA}\cdot\vec{BD}+\frac23\vec{BC}\cdot\vec{BD}}\allowbreak{}，\par
+而由（1）知BD＝b，\par
+$\therefore$\FormulaOCR{image549.png}{b^2=\frac13bc\cos\angle ABD+\frac23ab\cos\angle CBD}\allowbreak{}，\par
+即3b＝c•cos$\angle$ABD+2a•cos$\angle$CBD，\par
+由余弦定理知：\FormulaOCR{image550.png}{3b=c\cdot\frac{b^2+c^2-\frac49b^2}{2bc}+2a\cdot\frac{a^2+b^2-\frac19b^2}{2ab}}\allowbreak{}，\par
+$\therefore$11b$^{2}$＝3c$^{2}$+6a$^{2}$，\par
+$\because$b$^{2}$＝ac，\par
+$\therefore$3c$^{2}$-11ac+6a$^{2}$＝0，\par
+$\therefore$c＝3a或c＝\FormulaOCR{image551.png}{\frac23a}\allowbreak{}，\par
+在$\triangle$ABC中，由余弦定理知，cos$\angle$ABC＝\FormulaOCR{image552.png}{\frac{a^{2}+c^{2}-b^{2}}{2ac}}\allowbreak{}＝\FormulaOCR{image553.png}{\frac{a^2+c^2-ac}{2ac}}\allowbreak{}，\par
+当c＝3a时，cos$\angle$ABC＝\FormulaOCR{image554.png}{\frac{7}{6}}\allowbreak{}＞1（舍）；\par
+当c＝\FormulaOCR{image551.png}{\frac23a}\allowbreak{}时，cos$\angle$ABC＝\FormulaOCR{image555.png}{\frac7{12}}\allowbreak{}；\par
+综上所述，cos$\angle$ABC＝\FormulaOCR{image556.png}{\frac7{12}}\allowbreak{}．\par
+法三：在$\triangle$BCD中，由正弦定理可知asinC＝BDsin$\angle$BDC＝bsin$\angle$BDC，\par
+而由题意可知ac＝b²$\Rightarrow$asinC＝bsin$\angle$ABC，\par
+于是sin$\angle$BDC＝sin$\angle$ABC，从而$\angle$BDC＝$\angle$ABC或$\angle$BDC+$\angle$ABC＝π．\par
+若$\angle$BDC＝$\angle$ABC，则$\triangle$CBD$\sim$$\triangle$CAB，于是CB²＝CD•CA$\Rightarrow$a²＝\FormulaOCR{image557.png}{\frac{b^{2}}{3}}\allowbreak{}$\Rightarrow$a：b：c＝1：\FormulaOCR{image558.png}{\sqrt{3}}\allowbreak{}：3，\par
+无法构成三角形，不合题意．\par
+若$\angle$BDC+$\angle$ABC＝π，则$\angle$ADB＝$\angle$ABC$\Rightarrow$$\triangle$ABD$\sim$$\triangle$ACB，\par
+于是AB²＝AD•AC$\Rightarrow$c²＝\FormulaOCR{image559.png}{\frac{2{b}^{2}}{3}}\allowbreak{}$\Rightarrow$a：b：c＝3：\FormulaOCR{image560.png}{\sqrt{6}}\allowbreak{}：2，满足题意，\par
+因此由余弦定理可得cos$\angle$ABC＝\FormulaOCR{image561.png}{\frac{a^2+c^2-b^2}{2ac}}\allowbreak{}＝\FormulaOCR{image556.png}{\frac7{12}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•上海）在$\triangle$ABC中，已知a＝3，b＝2c．\par
+（1）若A＝\FormulaOCR{image562.png}{\frac{2\pi}{3}}\allowbreak{}，求 $S_{\triangle ABC}$．\par
+（2）若2sinB-sinC＝1，求 $\triangle ABC$ 的周长．\par
+\begin{solution}
+【解答】解：（1）由余弦定理得cosA＝-\FormulaOCR{image563.png}{\frac12}\allowbreak{}＝\FormulaOCR{image564.png}{\frac{b^{2}+c^{2}-a^{2}}{2bc}}\allowbreak{}＝\FormulaOCR{image565.png}{\frac{5c^2-9}{4c^2}}\allowbreak{}，\par
+解得c$^{2}$＝\FormulaOCR{image566.png}{\frac97}\allowbreak{}，\par
+$\therefore S_{\triangle ABC}$＝\FormulaOCR{image567.png}{\frac12bc\sin A}\allowbreak{}＝\FormulaOCR{image568.png}{\frac{\sqrt3}{4}\cdot2c^2}\allowbreak{}＝\FormulaOCR{image569.png}{\frac{9{\sqrt{3}}}{14}}\allowbreak{}；\par
+（2）$\because$b＝2c，$\therefore$由正弦定理得sinB＝2sinC，又$\because$2sinB-sinC＝1，\par
+$\therefore$sinC＝\FormulaOCR{image570.png}{\frac13}\allowbreak{}，sinB＝\FormulaOCR{image571.png}{\frac{2}{3}}\allowbreak{}，$\therefore$sinC＜sinB，$\therefore$C＜B，$\therefore$C为锐角，\par
+$\therefore$cosC＝\FormulaOCR{image572.png}{\sqrt{1-({\frac{1}{3}})^{2}}}\allowbreak{}＝\FormulaOCR{image573.png}{\frac{2{\sqrt{2}}}{3}}\allowbreak{}．\par
+由余弦定理得：c$^{2}$＝a$^{2}$+b$^{2}$-2abcosC，又$\because$a＝3，b＝2c，\par
+$\therefore$c$^{2}$＝9+4c$^{2}$-8\FormulaOCR{image574.png}{{\sqrt{2}}}\allowbreak{}c，得：3c$^{2}$-8\FormulaOCR{image574.png}{{\sqrt{2}}}\allowbreak{}c+9＝0，解得：c＝\FormulaOCR{image575.png}{\frac{4{\sqrt{2}}\pm{\sqrt{5}}}{3}}\allowbreak{}．\par
+当c＝\FormulaOCR{image576.png}{\frac{4{\sqrt{2}}+{\sqrt{5}}}{3}}\allowbreak{}时，b＝\FormulaOCR{image577.png}{\frac{8\sqrt2+2\sqrt5}{3}}\allowbreak{}，此时 $\triangle ABC$ 的周长为 $3+4\sqrt2+\sqrt5$；\par
+当c＝\FormulaOCR{image580.png}{\frac{4{\sqrt{2}}-{\sqrt{5}}}{3}}\allowbreak{}时，b＝\FormulaOCR{image581.png}{\frac{8\sqrt2-2\sqrt5}{3}}\allowbreak{}，此时 $\triangle ABC$ 的周长为 $3+4\sqrt2-\sqrt5$．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•天津）在$\triangle$ABC中，内角A，B，C的对边分别为a，b，c，且sinA：sinB：sinC＝2：1：\FormulaOCR{image582.png}{{\sqrt{2}}}\allowbreak{}，b＝\FormulaOCR{image582.png}{{\sqrt{2}}}\allowbreak{}．\par
+（1）求a的值；\par
+（2）求cosC的值；\par
+（3）求sin（2C-\FormulaOCR{image583.png}{\frac{\pi}{6}}\allowbreak{}）的值．\par
+\begin{solution}
+【解答】解：（1）$\because$$\triangle$ABC中，sinA：sinB：sinC＝2：1：\FormulaOCR{image582.png}{{\sqrt{2}}}\allowbreak{}，$\therefore$a：b：c＝2：1：\FormulaOCR{image582.png}{{\sqrt{2}}}\allowbreak{}，\par
+$\because$b＝\FormulaOCR{image582.png}{{\sqrt{2}}}\allowbreak{}，$\therefore$a＝2b＝2\FormulaOCR{image582.png}{{\sqrt{2}}}\allowbreak{}，c＝\FormulaOCR{image584.png}{{\sqrt{2}}}\allowbreak{}b＝2．\par
+（2）$\triangle$ABC中，由余弦定理可得cosC＝\FormulaOCR{image585.png}{\frac{a^2+b^2-c^2}{2ab}}\allowbreak{}＝\FormulaOCR{image586.png}{\frac{8+2-4}{2\cdot2\sqrt2\cdot\sqrt2}}\allowbreak{}＝\FormulaOCR{image587.png}{\frac{3}{4}}\allowbreak{}．\par
+（3）由（2）可得sinC＝\FormulaOCR{image588.png}{\sqrt{1-\cos^2C}}\allowbreak{}＝\FormulaOCR{image589.png}{\frac{\sqrt{7}}{4}}\allowbreak{}，\par
+$\therefore$sin2C＝2sinCcosC＝\FormulaOCR{image590.png}{\frac{3{\sqrt{7}}}{8}}\allowbreak{}，cos2C＝2cos$^{2}$C-1＝\FormulaOCR{image591.png}{\frac18}\allowbreak{}，\par
+sin（2C-\FormulaOCR{image592.png}{\frac{\pi}{6}}\allowbreak{}）＝sin2Ccos\FormulaOCR{image593.png}{\frac{\pi}{6}}\allowbreak{}-cos2Csin\FormulaOCR{image593.png}{\frac{\pi}{6}}\allowbreak{}＝\FormulaOCR{image594.png}{\frac{3{\sqrt{21}}-1}{16}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•北京）在$\triangle$ABC中，c＝2bcosB，$\angle$C＝\FormulaOCR{image595.png}{\frac{2\pi}{3}}\allowbreak{}．\par
+（Ⅰ）求$\angle$B；\par
+（Ⅱ）再在条件①、条件②、条件③这三个条件中选择一个作为已知，使$\triangle$ABC存在且唯一确定，并求BC边上的中线的长．\par
+条件①c＝\FormulaOCR{image596.png}{{\sqrt{2}}}\allowbreak{}b；\par
+条件②$\triangle$ABC的周长为4+2\FormulaOCR{image597.png}{\sqrt{3}}\allowbreak{}；\par
+条件③$\triangle$ABC的面积为\FormulaOCR{image598.png}{\frac{3{\sqrt{3}}}{4}}\allowbreak{}．\par
+注：如果选择的条件不符合要求，第（Ⅱ）问得0分；如果选择多个符合要求的条件分别解答，按第一个解答计分．\par
+\begin{solution}
+【解答】解：（Ⅰ）$\because$c＝2bcosB，\par
+由正弦定理可得sinC＝2sinBcosB，即sinC＝sin2B，\par
+$\because$C＝\FormulaOCR{image599.png}{\frac{2\pi}{3}}\allowbreak{}，\par
+$\therefore$当C＝2B 时，B＝\FormulaOCR{image600.png}{\frac{\pi}{3}}\allowbreak{}，即C+B＝π，不符合题意，舍去，\par
+$\therefore$C+2B＝π，\par
+$\therefore$2B＝\FormulaOCR{image600.png}{\frac{\pi}{3}}\allowbreak{}，\par
+即B＝\FormulaOCR{image601.png}{\frac{\pi}{6}}\allowbreak{}．\par
+（Ⅱ）选①c＝\FormulaOCR{image602.png}{{\sqrt{2}}}\allowbreak{}b，\par
+由正弦定理可得\par
+\FormulaOCR{image603.png}{\frac cb=\frac{\sin C}{\sin B}=\frac{\frac{\sqrt3}{2}}{\frac12}=\sqrt3}\allowbreak{}，与已知条件c＝\FormulaOCR{image604.png}{{\sqrt{2}}}\allowbreak{}b矛盾，故$\triangle$ABC不存在，\par
+选②周长为4+2\FormulaOCR{image509.png}{\sqrt{3}}\allowbreak{}，\par
+$\because$C＝\FormulaOCR{image605.png}{\frac{2\pi}{3}}\allowbreak{}，B＝\FormulaOCR{image606.png}{\frac{\pi}{6}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image607.png}{A=\frac\pi6}\allowbreak{}，\par
+由正弦定理可得\FormulaOCR{image608.png}{\frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}=2R}\allowbreak{}，即\FormulaOCR{image609.png}{\frac a{\frac12}=\frac b{\frac12}=\frac c{\frac{\sqrt3}{2}}=2R}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image610.png}{a=R,\quad b=R,\quad c=\sqrt3R}\allowbreak{}，\par
+$\therefore$a+b+c＝（2+\FormulaOCR{image611.png}{\sqrt{3}}\allowbreak{}）R＝4+2\FormulaOCR{image611.png}{\sqrt{3}}\allowbreak{}，\par
+$\therefore$R＝2，即a＝2，b＝2，c＝2\FormulaOCR{image611.png}{\sqrt{3}}\allowbreak{}，\par
+$\therefore$$\triangle$ABC存在且唯一确定，\par
+设BC的中点为D，\par
+$\therefore$CD＝1，\par
+在$\triangle$ACD中，运用余弦定理，AD$^{2}$＝AC$^{2}$+CD$^{2}$-2AC•CD•cos$\angle$C，\par
+即\FormulaOCR{image612.png}{AD^2=4+1-2\cdot2\cdot1\left(-\frac12\right)=7}\allowbreak{}，AD＝\FormulaOCR{image613.png}{\sqrt{7}}\allowbreak{}，\par
+$\therefore$BC边上的中线的长度\FormulaOCR{image613.png}{\sqrt{7}}\allowbreak{}．\par
+选③面积为$S_{\triangle ABC}$＝\FormulaOCR{image614.png}{\frac{3{\sqrt{3}}}{4}}\allowbreak{}，\par
+$\because$\FormulaOCR{image615.png}{A=B=\frac\pi6}\allowbreak{}，\par
+$\therefore$a＝b，\par
+$\therefore$\FormulaOCR{image616.png}{S_{\triangle ABC}=\frac12ab\sin C=\frac12a^2\cdot\frac{\sqrt3}{2}=\frac{3\sqrt3}{4}}\allowbreak{}，解得a＝\FormulaOCR{image617.png}{\sqrt{3}}\allowbreak{}，\par
+余弦定理可得\par
+AD$^{2}$＝AC$^{2}$+CD$^{2}$-2×AC×CD×\FormulaOCR{image618.png}{\cos\frac{2\pi}{3}}\allowbreak{}＝\FormulaOCR{image619.png}{3+\frac34+\sqrt3\cdot\frac{\sqrt3}{2}=\frac{21}{4}}\allowbreak{}，\par
+\FormulaOCR{image620.png}{AD=\frac{\sqrt{21}}2}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•全国）记$\triangle$ABC的内角A，B，C的对边分别为a，b，c．已知a＝2\FormulaOCR{image621.png}{\sqrt{6}}\allowbreak{}，b＝3，sin$^{2}$（B+C）+\FormulaOCR{image622.png}{{\sqrt{2}}}\allowbreak{}sin2A＝0，求c及cosB．\par
+\begin{solution}
+【解答】解：$\because$A+B+C＝π，sin$^{2}$（B+C）+\FormulaOCR{image622.png}{{\sqrt{2}}}\allowbreak{}sin2A＝0，\par
+$\therefore$\FormulaOCR{image623.png}{\sin^2A+2\sqrt2\sin A\cos A=0}\allowbreak{}，\par
+$\because$sinA$\neq$0，\par
+$\therefore$\FormulaOCR{image624.png}{\sin A=-2\sqrt2\cos A}\allowbreak{}，\par
+$\therefore$cosA＜0，A为钝角，\par
+又$\because$sin$^{2}$A+cos$^{2}$A＝1，\par
+$\therefore$cosA＝\FormulaOCR{image625.png}{\frac{1}{3}}\allowbreak{}，sinA＝\FormulaOCR{image626.png}{\frac{2{\sqrt{2}}}{3}}\allowbreak{}，\par
+由正弦定理可得，\FormulaOCR{image627.png}{\frac a{\sin A}=\frac b{\sin B}}\allowbreak{}，即\FormulaOCR{image628.png}{\frac{2\sqrt6}{\frac{2\sqrt2}{3}}=\frac3{\sin B}}\allowbreak{}，解得sinB＝\FormulaOCR{image629.png}{\frac{\sqrt{3}}{3}}\allowbreak{}，\par
+又$\because$sin$^{2}$B+cos$^{2}$B＝1，B为锐角，\par
+$\therefore$cosB＝\FormulaOCR{image630.png}{\frac{\sqrt{6}}{3}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image631.png}{\cos B=\frac{a^2+c^2-b^2}{2ac}}\allowbreak{}，即\FormulaOCR{image632.png}{\frac{24+c^2-9}{4\sqrt6\,c}=\frac{\sqrt6}{3}}\allowbreak{}，化简整理可得，c$^{2}$-8c+15＝0，解得c＝3或c＝5，\par
+$\because$$\angle$A＞$\angle$C，\par
+$\therefore$a＞c，\par
+$\because$\FormulaOCR{image633.png}{5>2{\sqrt{6}}}\allowbreak{}，\par
+$\therefore$c＝3，\par
+故c＝3，cosB＝\FormulaOCR{image630.png}{\frac{\sqrt{6}}{3}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•乙卷）记$\triangle$ABC的内角A，B，C的对边分别为a，b，c，已知sinCsin（A-B）＝sinBsin（C-A）．\par
+（1）证明：2a$^{2}$＝b$^{2}$+c$^{2}$；\par
+（2）若A＝2B，求C；\par
+（3）若a＝5，cosA＝\FormulaOCR{image634.png}{\frac{25}{31}}\allowbreak{}，求$\triangle$ABC的周长．\par
+\begin{solution}
+【解答】（1）解法一（恒等变换与正弦定理）：展开原式并移项，得
+\[
+\sin A(\sin B\cos C+\cos B\sin C)
+=2\cos A\sin B\sin C.
+\]
+由 $\sin(B+C)=\sin A$，可得
+\[
+\sin^2A=2\cos A\sin B\sin C.
+\]
+由正弦定理，$a^2=2bc\cos A$；再结合余弦定理
+$a^2=b^2+c^2-2bc\cos A$，得到
+\[
+2a^2=b^2+c^2.
+\]
+解法二（边角互化与余弦定理）：展开原式后利用正弦定理将正弦值换成边，得
+\[
+ac\cos B-bc\cos A=bc\cos A-ab\cos C,
+\]
+即 $ac\cos B=2bc\cos A-ab\cos C$．分别利用余弦定理表示三个余弦值，化简同样得到
+\[
+2a^2=b^2+c^2.
+\]
+（2）由 $A=2B$，原条件化为
+\[
+\sin C\sin B=\sin B\sin(C-A).
+\]
+因为 $\sin B\ne0$，所以 $\sin C=\sin(C-A)$．结合三角形内角范围，得
+$2C-A=\pi$．再由 $A=2B$ 和 $A+B+C=\pi$，解得
+\[
+C=\frac{5\pi}{8}.
+\]
+（3）由（1）知 $b^2+c^2=2a^2=50$，且
+\[
+2bc=\frac{a^2}{\cos A}=31.
+\]
+所以 $(b+c)^2=b^2+c^2+2bc=81$，从而 $b+c=9$．故$\triangle ABC$的周长为
+\[
+a+b+c=14.
+\]
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•新高考Ⅱ）记$\triangle$ABC的内角A，B，C的对边分别为a，b，c，分别以a，b，c为边长的三个正三角形的面积依次为S1，S2，S3．已知S1-S2+S3＝\FormulaOCR{image637.png}{\frac{\sqrt{3}}{2}}\allowbreak{}，sinB＝\FormulaOCR{image638.png}{\frac13}\allowbreak{}．\par
+（1）求$\triangle$ABC的面积；\par
+（2）若sinAsinC＝\FormulaOCR{image639.png}{\frac{\sqrt{2}}{3}}\allowbreak{}，求b．\par
+\begin{solution}
+【解答】解：（1）S1＝\FormulaOCR{image640.png}{\frac{1}{2}}\allowbreak{}a$^{2}$sin60°＝\FormulaOCR{image641.png}{\frac{\sqrt{3}}{4}}\allowbreak{}a$^{2}$，\par
+S2＝\FormulaOCR{image640.png}{\frac{1}{2}}\allowbreak{}b$^{2}$sin60°＝\FormulaOCR{image641.png}{\frac{\sqrt{3}}{4}}\allowbreak{}b$^{2}$，\par
+S3＝\FormulaOCR{image640.png}{\frac{1}{2}}\allowbreak{}c$^{2}$sin60°＝\FormulaOCR{image641.png}{\frac{\sqrt{3}}{4}}\allowbreak{}c$^{2}$，\par
+$\because$S1-S2+S3＝\FormulaOCR{image641.png}{\frac{\sqrt{3}}{4}}\allowbreak{}a$^{2}$-\FormulaOCR{image642.png}{\frac{\sqrt{3}}{4}}\allowbreak{}b$^{2}$+\FormulaOCR{image642.png}{\frac{\sqrt{3}}{4}}\allowbreak{}c$^{2}$＝\FormulaOCR{image643.png}{\frac{\sqrt{3}}{2}}\allowbreak{}，\par
+解得：a$^{2}$-b$^{2}$+c$^{2}$＝2，\par
+$\because$sinB＝\FormulaOCR{image644.png}{\frac{1}{3}}\allowbreak{}，a$^{2}$-b$^{2}$+c$^{2}$＝2＞0，即cosB＞0，\par
+$\therefore$cosB＝\FormulaOCR{image645.png}{\frac{2{\sqrt{2}}}{3}}\allowbreak{}，\par
+$\therefore$cosB＝\FormulaOCR{image646.png}{\frac{a^{2}+c^{2}-b^{2}}{2ac}}\allowbreak{}＝\FormulaOCR{image645.png}{\frac{2{\sqrt{2}}}{3}}\allowbreak{}，\par
+解得：ac＝\FormulaOCR{image647.png}{\frac{3{\sqrt{2}}}{4}}\allowbreak{}，\par
+$S_{\triangle ABC}$＝\FormulaOCR{image648.png}{\frac{1}{2}}\allowbreak{}acsinB＝\FormulaOCR{image649.png}{\frac{\sqrt{2}}{8}}\allowbreak{}．\par
+$\therefore$$\triangle$ABC的面积为\FormulaOCR{image649.png}{\frac{\sqrt{2}}{8}}\allowbreak{}．\par
+（2）由正弦定理得：\FormulaOCR{image650.png}{\frac b{\sin B}}\allowbreak{}＝\FormulaOCR{image651.png}{\frac a{\sin A}}\allowbreak{}＝\FormulaOCR{image652.png}{\frac c{\sin C}}\allowbreak{}，\par
+$\therefore$a＝\FormulaOCR{image653.png}{\frac{b\sin A}{\sin B}}\allowbreak{}，c＝\FormulaOCR{image654.png}{\frac{b\sin C}{\sin B}}\allowbreak{}，\par
+由（1）得ac＝\FormulaOCR{image655.png}{\frac{3{\sqrt{2}}}{4}}\allowbreak{}，\par
+$\therefore$ac＝\FormulaOCR{image656.png}{\frac{b\sin A}{\sin B}}\allowbreak{}•\FormulaOCR{image657.png}{\frac{b\sin C}{\sin B}}\allowbreak{}＝\FormulaOCR{image658.png}{\frac{3{\sqrt{2}}}{4}}\allowbreak{}\par
+已知，sinB＝\FormulaOCR{image659.png}{\frac13}\allowbreak{}，sinAsinC＝\FormulaOCR{image660.png}{\frac{\sqrt{2}}{3}}\allowbreak{}，\par
+解得：b＝\FormulaOCR{image661.png}{\frac{1}{2}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•新高考Ⅰ）记$\triangle$ABC的内角A，B，C的对边分别为a，b，c，已知\FormulaOCR{image662.png}{\frac{\cos A}{1+\sin A}}\allowbreak{}＝\FormulaOCR{image663.png}{\frac{\sin2B}{1+\cos2B}}\allowbreak{}．\par
+（1）若C＝\FormulaOCR{image664.png}{\frac{2\pi}{3}}\allowbreak{}，求B；\par
+（2）求\FormulaOCR{image665.png}{\frac{a^2+b^2}{c^2}}\allowbreak{}的最小值．\par
+\begin{solution}
+【解答】解：（1）$\because$\FormulaOCR{image666.png}{\frac{\cos A}{1+\sin A}}\allowbreak{}＝\FormulaOCR{image663.png}{\frac{\sin2B}{1+\cos2B}}\allowbreak{}，1+cos2B＝2cos$^{2}$B$\neq$0，cosB$\neq$0．\par
+$\therefore$\FormulaOCR{image667.png}{\frac{\cos A}{1+\sin A}}\allowbreak{}＝\FormulaOCR{image668.png}{\frac{2\sin B\cos B}{2\cos^2B}}\allowbreak{}＝\FormulaOCR{image669.png}{\frac{\sin B}{\cos B}}\allowbreak{}，\par
+化为：cosAcosB＝sinAsinB+sinB，\par
+$\therefore$cos（B+A）＝sinB，\par
+$\therefore$-cosC＝sinB，C＝\FormulaOCR{image670.png}{\frac{2\pi}{3}}\allowbreak{}，\par
+$\therefore$sinB＝\FormulaOCR{image671.png}{\frac{1}{2}}\allowbreak{}，\par
+$\because$0＜B＜\FormulaOCR{image672.png}{\frac{\pi}{3}}\allowbreak{}，$\therefore$B＝\FormulaOCR{image673.png}{\frac{\pi}{6}}\allowbreak{}．\par
+（2）由（1）可得：-cosC＝sinB＞0，$\therefore$cosC＜0，C$\in$（\FormulaOCR{image674.png}{\frac{\pi}{2}}\allowbreak{}，π），\par
+$\therefore$C为钝角，B，A都为锐角，B＝C-\FormulaOCR{image675.png}{\frac{\pi}{2}}\allowbreak{}．\par
+sinA＝sin（B+C）＝sin（2C-\FormulaOCR{image675.png}{\frac{\pi}{2}}\allowbreak{}）＝-cos2C，\par
+\FormulaOCR{image676.png}{\frac{a^2+b^2}{c^2}}\allowbreak{}＝\FormulaOCR{image677.png}{\frac{\sin^2A+\sin^2B}{\sin^2C}}\allowbreak{}＝\FormulaOCR{image678.png}{\frac{\cos^22C+\cos^2C}{\sin^2C}}\allowbreak{}＝\FormulaOCR{image679.png}{\frac{(1-2\sin^2C)^2+(1-\sin^2C)}{\sin^2C}}\allowbreak{}＝\FormulaOCR{image680.png}{\frac{2+4\sin^4C-5\sin^2C}{\sin^2C}}\allowbreak{}＝\FormulaOCR{image681.png}{\frac{2}{\sin^{2}C}}\allowbreak{}+4sin$^{2}$C-5$\geq$2\FormulaOCR{image682.png}{\sqrt{2\times4}}\allowbreak{}-5＝4\FormulaOCR{image683.png}{{\sqrt{2}}}\allowbreak{}-5，当且仅当sinC＝\FormulaOCR{image684.png}{\frac1{\sqrt[4]{2}}}\allowbreak{}时取等号．\par
+$\therefore$\FormulaOCR{image685.png}{\frac{a^2+b^2}{c^2}}\allowbreak{}的最小值为4\FormulaOCR{image683.png}{{\sqrt{2}}}\allowbreak{}-5．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•北京）在$\triangle$ABC中，sin2C＝\FormulaOCR{image689.png}{\sqrt{3}}\allowbreak{}sinC．\par
+（Ⅰ）求$\angle$C；\par
+（Ⅱ）若b＝6，且$\triangle$ABC的面积为6\FormulaOCR{image689.png}{\sqrt{3}}\allowbreak{}，求$\triangle$ABC的周长．\par
+\begin{solution}
+【解答】解：（Ⅰ）$\because$sin2C＝\FormulaOCR{image690.png}{\sqrt{3}}\allowbreak{}sinC，\par
+$\therefore$2sinCcosC＝\FormulaOCR{image690.png}{\sqrt{3}}\allowbreak{}sinC，\par
+又sinC$\neq$0，$\therefore$2cosC＝\FormulaOCR{image690.png}{\sqrt{3}}\allowbreak{}，\par
+$\therefore$cosC＝\FormulaOCR{image691.png}{\frac{\sqrt{3}}{2}}\allowbreak{}，$\because$0＜C＜π，\par
+$\therefore$C＝\FormulaOCR{image692.png}{\frac{\pi}{6}}\allowbreak{}；\par
+（Ⅱ）$\because$$\triangle$ABC的面积为6\FormulaOCR{image690.png}{\sqrt{3}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image693.png}{\frac{1}{2}}\allowbreak{}absinC＝6\FormulaOCR{image694.png}{\sqrt{3}}\allowbreak{}，\par
+又b＝6，C＝\FormulaOCR{image695.png}{\frac{\pi}{6}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image693.png}{\frac{1}{2}}\allowbreak{}×a×6×\FormulaOCR{image693.png}{\frac{1}{2}}\allowbreak{}＝6\FormulaOCR{image694.png}{\sqrt{3}}\allowbreak{}，\par
+$\therefore$a＝4\FormulaOCR{image694.png}{\sqrt{3}}\allowbreak{}，\par
+又cosC＝\FormulaOCR{image696.png}{\frac{a^2+b^2-c^2}{2ab}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image697.png}{\frac{\sqrt{3}}{2}}\allowbreak{}＝\FormulaOCR{image698.png}{\frac{(4\sqrt{3}\ )^{2}+6^{2}-c^{2}}{2\times4\sqrt{3}\times6}}\allowbreak{}，\par
+$\therefore$c＝2\FormulaOCR{image699.png}{\sqrt{3}}\allowbreak{}，\par
+$\therefore$a+b+c＝6+6\FormulaOCR{image699.png}{\sqrt{3}}\allowbreak{}，\par
+$\therefore$$\triangle$ABC的周长为6+6\FormulaOCR{image699.png}{\sqrt{3}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•浙江）在$\triangle$ABC中，角A，B，C所对的边分别为a，b，c．已知4a＝\FormulaOCR{image700.png}{\sqrt{5}}\allowbreak{}c，cosC＝\FormulaOCR{image701.png}{\frac{3}{5}}\allowbreak{}．\par
+（Ⅰ）求sinA的值；\par
+（Ⅱ）若b＝11，求$\triangle$ABC的面积．\par
+\begin{solution}
+【解答】解：（Ⅰ）因为cosC＝\FormulaOCR{image702.png}{\frac{3}{5}}\allowbreak{}＞0，所以C$\in$（0，\FormulaOCR{image703.png}{\frac{\pi}{2}}\allowbreak{}），且sinC＝\FormulaOCR{image704.png}{\sqrt{1-\cos^2C}}\allowbreak{}＝\FormulaOCR{image705.png}{\frac{4}{5}}\allowbreak{}，\par
+由正弦定理可得：\FormulaOCR{image706.png}{\frac a{\sin A}}\allowbreak{}＝\FormulaOCR{image707.png}{\frac c{\sin C}}\allowbreak{}，\par
+即有sinA＝\FormulaOCR{image708.png}{\frac{a\sin C}{c}}\allowbreak{}＝\FormulaOCR{image709.png}{\frac ac}\allowbreak{}sinC＝\FormulaOCR{image710.png}{\frac{\sqrt{5}}{4}}\allowbreak{}×\FormulaOCR{image711.png}{\frac{4}{5}}\allowbreak{}＝\FormulaOCR{image712.png}{\frac{\sqrt{5}}{5}}\allowbreak{}；\par
+（Ⅱ）因为4a＝\FormulaOCR{image713.png}{\sqrt{5}}\allowbreak{}c$\Rightarrow$a＝\FormulaOCR{image710.png}{\frac{\sqrt{5}}{4}}\allowbreak{}c＜c，\par
+所以A＜C，故A$\in$（0，\FormulaOCR{image714.png}{\frac{\pi}{2}}\allowbreak{}），\par
+又因为sinA＝\FormulaOCR{image715.png}{\frac{\sqrt{5}}{5}}\allowbreak{}，所以cosA＝\FormulaOCR{image716.png}{\frac{2{\sqrt{5}}}{5}}\allowbreak{}，\par
+所以sinB＝sin[π-（A+C）]＝sin（A+C）＝sinAcosC+cosAsinC＝\FormulaOCR{image717.png}{\frac{11{\sqrt{5}}}{25}}\allowbreak{}；\par
+由正弦定理可得：\FormulaOCR{image718.png}{\frac a{\sin A}}\allowbreak{}＝\FormulaOCR{image719.png}{\frac c{\sin C}}\allowbreak{}＝\FormulaOCR{image720.png}{\frac b{\sin B}}\allowbreak{}＝5\FormulaOCR{image721.png}{\sqrt{5}}\allowbreak{}，\par
+所以a＝5\FormulaOCR{image721.png}{\sqrt{5}}\allowbreak{}sinA＝5，\par
+所以$S_{\triangle ABC}$＝\FormulaOCR{image722.png}{\frac{1}{2}}\allowbreak{}absinC＝\FormulaOCR{image722.png}{\frac{1}{2}}\allowbreak{}×5×11×\FormulaOCR{image723.png}{\frac{4}{5}}\allowbreak{}＝22．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•天津）在$\triangle$ABC中，角A，B，C所对的边分别为a，b，c．已知a＝\FormulaOCR{image724.png}{\sqrt{6}}\allowbreak{}，b＝2c，cosA＝-\FormulaOCR{image725.png}{\frac14}\allowbreak{}．\par
+（1）求c的值；\par
+（2）求sin B的值；\par
+（3）求sin（2A-B）的值．\par
+\begin{solution}
+【解答】解（1）因为a＝\FormulaOCR{image726.png}{\sqrt{6}}\allowbreak{}，b＝2c，cosA＝-\FormulaOCR{image727.png}{\frac14}\allowbreak{}，\par
+由余弦定理可得cosA＝\FormulaOCR{image728.png}{\frac{b^{2}+c^{2}-a^{2}}{2bc}}\allowbreak{}＝\FormulaOCR{image729.png}{\frac{4\,c^{2}+c^{2}-6}{4\,c^{2}}}\allowbreak{}＝-\FormulaOCR{image727.png}{\frac14}\allowbreak{}，\par
+解得：c＝1；\par
+（2）cosA＝-\FormulaOCR{image727.png}{\frac14}\allowbreak{}，A$\in$（0，π），所以sinA＝\FormulaOCR{image730.png}{\sqrt{1-\cos^2A}}\allowbreak{}＝\FormulaOCR{image731.png}{\frac{\sqrt{15}}{4}}\allowbreak{}，\par
+由b＝2c，可得sinB＝2sinC，\par
+由正弦定理可得\FormulaOCR{image732.png}{\frac a{\sin A}}\allowbreak{}＝\FormulaOCR{image733.png}{\frac c{\sin C}}\allowbreak{}，即\FormulaOCR{image734.png}{\frac{\sqrt6}{\frac{\sqrt{15}}4}}\allowbreak{}＝\FormulaOCR{image735.png}{\frac1{\sin C}}\allowbreak{}，\par
+可得sinC＝\FormulaOCR{image736.png}{\frac{\sqrt{10}}{8}}\allowbreak{}，\par
+所以sinB＝2sinC＝2×\FormulaOCR{image736.png}{\frac{\sqrt{10}}{8}}\allowbreak{}＝\FormulaOCR{image737.png}{\frac{\sqrt{10}}{4}}\allowbreak{}；\par
+（3）因为cosA＝-\FormulaOCR{image738.png}{\frac14}\allowbreak{}，sinA＝\FormulaOCR{image739.png}{\frac{\sqrt{15}}{4}}\allowbreak{}，\par
+所以sin2A＝2sinAcosA＝2×（-\FormulaOCR{image738.png}{\frac14}\allowbreak{}）×\FormulaOCR{image739.png}{\frac{\sqrt{15}}{4}}\allowbreak{}＝-\FormulaOCR{image740.png}{\frac{\sqrt{15}}{8}}\allowbreak{}，cos2A＝2cos$^{2}$A-1＝2×\FormulaOCR{image741.png}{\frac{1}{16}}\allowbreak{}-1＝-\FormulaOCR{image742.png}{\frac78}\allowbreak{}，\par
+sinB＝\FormulaOCR{image743.png}{\frac{\sqrt{10}}{4}}\allowbreak{}，可得cosB＝\FormulaOCR{image744.png}{\frac{\sqrt{6}}{4}}\allowbreak{}，\par
+所以sin（2A-B）＝sin2AcosB-cos2AsinB＝-\FormulaOCR{image745.png}{\frac{\sqrt{15}}{8}}\allowbreak{}×\FormulaOCR{image744.png}{\frac{\sqrt{6}}{4}}\allowbreak{}-（-\FormulaOCR{image746.png}{\frac78}\allowbreak{}）×\FormulaOCR{image747.png}{\frac{\sqrt{10}}{4}}\allowbreak{}＝\FormulaOCR{image748.png}{\frac{\sqrt{10}}{8}}\allowbreak{}，\par
+所以sin（2A-B）的值为\FormulaOCR{image748.png}{\frac{\sqrt{10}}{8}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•全国）记$\triangle$ABC的内角A，B，C的对边分别为a，b，c，已知sinA＝3sinB，C＝\FormulaOCR{image749.png}{\frac{\pi}{3}}\allowbreak{}，c＝\FormulaOCR{image750.png}{\sqrt{7}}\allowbreak{}．\par
+（1）求a；\par
+（2）求sinA．\par
+\begin{solution}
+【解答】解：（1）$\because$sinA＝3sinB，\par
+$\therefore$由正弦定理可得，a＝3b，\par
+$\therefore$由余弦定理可得，c$^{2}$＝a$^{2}$+b$^{2}$-2abcosC，即7＝9b$^{2}$+b$^{2}$-3b$^{2}$，解得b＝1，\par
+$\therefore$a＝3．\par
+（2）$\because$a＝3，C＝\FormulaOCR{image749.png}{\frac{\pi}{3}}\allowbreak{}，c＝\FormulaOCR{image750.png}{\sqrt{7}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image751.png}{\sin A=\frac{a\sin C}{c}}\allowbreak{}＝\FormulaOCR{image752.png}{\frac{3\cdot\frac{\sqrt3}{2}}{\sqrt7}=\frac{3\sqrt{21}}{14}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（10分）（2023•新高考Ⅰ）已知在$\triangle$ABC中，A+B＝3C，2sin（A-C）＝sinB．\par
+（1）求sinA；\par
+（2）设AB＝5，求AB边上的高．\par
+\begin{solution}
+【解答】解：（1）$\because$A+B＝3C，A+B+C＝π，\par
+$\therefore$4C＝π，\par
+$\therefore$C＝\FormulaOCR{image753.png}{\frac{\pi}{4}}\allowbreak{}，\par
+$\because$2sin（A-C）＝sinB，\par
+$\therefore$2sin（A-C）＝sin[π-（A+C）]＝sin（A+C），\par
+$\therefore$2sinAcosC-2cosAsinC＝sinAcosC+cosAsinC，\par
+$\therefore$sinAcosC＝3cosAsinC，\par
+$\therefore$\FormulaOCR{image754.png}{\frac{\sqrt2}{2}\sin A=3\cdot\frac{\sqrt2}{2}\cos A}\allowbreak{}，\par
+$\therefore$sinA＝3cosA，即cosA＝\FormulaOCR{image755.png}{\frac13}\allowbreak{}sinA，\par
+又$\because$sin$^{2}$A+cos$^{2}$A＝1，$\therefore$\FormulaOCR{image756.png}{\sin^2A+\frac19\sin^2A=1}\allowbreak{}，\par
+解得sin$^{2}$A＝\FormulaOCR{image757.png}{\frac{9}{10}}\allowbreak{}，\par
+又$\because$A$\in$（0，π），$\therefore$sinA＞0，\par
+$\therefore$sinA＝\FormulaOCR{image758.png}{\frac{3{\sqrt{10}}}{10}}\allowbreak{}；\par
+（2）由（1）可知sinA＝\FormulaOCR{image758.png}{\frac{3{\sqrt{10}}}{10}}\allowbreak{}，cosA＝\FormulaOCR{image755.png}{\frac13}\allowbreak{}sinA＝\FormulaOCR{image759.png}{\frac{\sqrt{10}}{10}}\allowbreak{}，\par
+$\therefore$sinB＝sin（A+C）＝sinAcosC+cosAsinC＝\FormulaOCR{image758.png}{\frac{3{\sqrt{10}}}{10}}\allowbreak{}×\FormulaOCR{image760.png}{\frac{\sqrt{2}}{2}}\allowbreak{}\FormulaOCR{image761.png}{+\frac{\sqrt{10}}{10}\cdot\frac{\sqrt2}{2}}\allowbreak{}＝\FormulaOCR{image762.png}{\frac{2{\sqrt{5}}}{5}}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image763.png}{\frac{AB}{\sin C}=\frac{AC}{\sin B}=\frac{BC}{\sin A}}\allowbreak{}＝\FormulaOCR{image764.png}{\frac5{\sin\frac\pi4}}\allowbreak{}＝5\FormulaOCR{image765.png}{{\sqrt{2}}}\allowbreak{}，\par
+$\therefore$AC＝5\FormulaOCR{image765.png}{{\sqrt{2}}}\allowbreak{}sinB＝5\FormulaOCR{image766.png}{{\sqrt{2}}\times{\frac{2{\sqrt{5}}}{5}}}\allowbreak{}＝2\FormulaOCR{image767.png}{\sqrt{10}}\allowbreak{}，BC＝5\FormulaOCR{image768.png}{\sqrt2\sin A}\allowbreak{}＝5\FormulaOCR{image769.png}{{\sqrt{2}}\times{\frac{3{\sqrt{10}}}{10}}}\allowbreak{}＝3\FormulaOCR{image770.png}{\sqrt{5}}\allowbreak{}，\par
+设AB边上的高为h，\par
+则\FormulaOCR{image771.png}{\frac12AB\cdot h}\allowbreak{}＝\FormulaOCR{image772.png}{\frac12AC\cdot BC\sin C}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image773.png}{\frac52h}\allowbreak{}＝\FormulaOCR{image774.png}{\frac{1}{2}\times2\sqrt{10}\times3\sqrt{5}\times\frac{\sqrt{2}}{2}}\allowbreak{}，\par
+解得h＝6，\par
+即AB边上的高为6．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（12分）（2023•甲卷）记$\triangle$ABC的内角A，B，C的对边分别为a，b，c，已知\FormulaOCR{image775.png}{\frac{b^2+c^2-a^2}{\cos A}}\allowbreak{}＝2．\par
+（1）求bc；\par
+（2）若\FormulaOCR{image776.png}{\frac{a\cos B-b\cos A}{a\cos B+b\cos A}}\allowbreak{}-\FormulaOCR{image777.png}{\frac{b}{c}}\allowbreak{}＝1，求$\triangle$ABC面积．\par
+\begin{solution}
+【解答】解：（1）因为\FormulaOCR{image775.png}{\frac{b^2+c^2-a^2}{\cos A}}\allowbreak{}＝\FormulaOCR{image778.png}{\frac{2bc\cos A}{\cos A}}\allowbreak{}＝2bc＝2，\par
+所以bc＝1；\par
+（2）\FormulaOCR{image776.png}{\frac{a\cos B-b\cos A}{a\cos B+b\cos A}}\allowbreak{}-\FormulaOCR{image777.png}{\frac{b}{c}}\allowbreak{}＝\FormulaOCR{image779.png}{\frac{\sin A\cos B-\sin B\cos A}{\sin A\cos B+\sin B\cos A}}\allowbreak{}-\FormulaOCR{image780.png}{\frac{\sin B}{\sin C}}\allowbreak{}＝1，\par
+所以\FormulaOCR{image781.png}{\frac{\sin(A-B)}{\sin(A+B)}}\allowbreak{}-\FormulaOCR{image782.png}{\frac{\sin B}{\sin C}}\allowbreak{}＝\FormulaOCR{image783.png}{\frac{\sin(A-B)-\sin B}{\sin C}}\allowbreak{}＝1，\par
+所以sin（A-B）-sinB＝sinC＝sin（A+B），\par
+所以sinAcosB-sinBcosA-sinB＝sinAcosB+sinBcosA，\par
+即cosA＝-\FormulaOCR{image784.png}{\frac{1}{2}}\allowbreak{}，\par
+由A为三角形内角得A＝\FormulaOCR{image785.png}{\frac{2\pi}{3}}\allowbreak{}，\par
+$\triangle$ABC面积S＝\FormulaOCR{image784.png}{\frac{1}{2}}\allowbreak{}bcsinA＝\FormulaOCR{image786.png}{\frac12\cdot1\cdot\frac{\sqrt3}{2}}\allowbreak{}＝\FormulaOCR{image787.png}{\frac{\sqrt{3}}{4}}\allowbreak{}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（10分）（2023•新高考Ⅱ）记$\triangle$ABC的内角A，B，C的对边分别为a，b，c，已知$\triangle$ABC面积为\FormulaOCR{image788.png}{\sqrt{3}}\allowbreak{}，D为BC的中点，且AD＝1．\par
+（1）若$\angle$ADC＝\FormulaOCR{image789.png}{\frac{\pi}{3}}\allowbreak{}，求tanB；\par
+（2）若b$^{2}$+c$^{2}$＝8，求b，c．\par
+\begin{solution}
+【解答】解：（1）D为BC中点，\FormulaOCR{image790.png}{S_{\triangle ABC}=\sqrt3}\allowbreak{}，\par
+则\FormulaOCR{image791.png}{S_{\triangle ACD}=\frac{\sqrt3}{2}}\allowbreak{}，\par
+过A作AE$\perp$BC，垂足为E，如图所示：\par
+\begin{center}
+\DocImage{image792.png}{162.55}{51.70}\allowbreak{}
+\end{center}
+$\triangle$ADE中，\FormulaOCR{image793.png}{DE=\frac12}\allowbreak{}，\FormulaOCR{image794.png}{AE=\frac{\sqrt3}{2}}\allowbreak{}，\FormulaOCR{image795.png}{S_{\triangle ACD}=\frac12\cdot\frac{\sqrt3}{2}\,CD=\frac{\sqrt3}{2}}\allowbreak{}，解得CD＝2，\par
+$\therefore$BD＝2，\FormulaOCR{image796.png}{BE=\frac52}\allowbreak{}，\par
+故\FormulaOCR{image797.png}{\tan B=\frac{AE}{BE}}\allowbreak{}＝\FormulaOCR{image798.png}{\frac{\frac{\sqrt3}{2}}{\frac52}}\allowbreak{}＝\FormulaOCR{image799.png}{\frac{\sqrt{3}}{5}}\allowbreak{}；\par
+（2）\FormulaOCR{image800.png}{\vec{AD}=\frac12(\vec{AB}+\vec{AC})}\allowbreak{}，\par
+\FormulaOCR{image801.png}{AD^2=\frac14(c^2+b^2+2bc\cos A)}\allowbreak{}，\par
+AD＝1，b$^{2}$+c$^{2}$＝8，\par
+则\FormulaOCR{image802.png}{1=\frac14(8+2bc\cos A)}\allowbreak{}，\par
+$\therefore$bccosA＝-2①，\par
+\FormulaOCR{image803.png}{S_{\triangle ABC}=\frac12bc\sin A=\sqrt3}\allowbreak{}，即\FormulaOCR{image804.png}{bc\sin A=2\sqrt3}\allowbreak{}②，\par
+由①②解得 \FormulaOCR{image805.png}{\tan A=-\sqrt3}\allowbreak{}，\par
+$\therefore$\FormulaOCR{image806.png}{A=\frac{2\pi}{3}}\allowbreak{}，\par
+$\therefore$bc＝4，又b$^{2}$+c$^{2}$＝8，\par
+$\therefore$b＝c＝2．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024全国1）记\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}的内角A、B、C的对边分别为a，b，c，已知\FormulaOCR{image808.png}{\sin C={\sqrt{2}}\cos B}\allowbreak{}，\FormulaOCR{image809.png}{a^2+b^2-c^2=\sqrt2ab}\allowbreak{}\par
+（1）求B；\par
+（2）若\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}的面积为\FormulaOCR{image810.png}{3+\sqrt{3}}\allowbreak{}，求c．\par
+\begin{solution}
+【答案】（1）\FormulaOCR{image811.png}{B=\frac\pi3}\allowbreak{}\par
+（2）\FormulaOCR{image812.png}{2{\sqrt{2}}}\allowbreak{}\par
+【解析】\par
+【分析】（1）由余弦定理、平方关系依次求出\FormulaOCR{image813.png}{\cos C,\sin C}\allowbreak{}，最后结合已知\FormulaOCR{image814.png}{\sin C=\sqrt{2} \cos B}\allowbreak{}得\FormulaOCR{image815.png}{\cos B}\allowbreak{}的值即可；\par
+（2）首先求出\FormulaOCR{image816.png}{A,B,C}\allowbreak{}，然后由正弦定理可将\FormulaOCR{image817.png}{a,b}\allowbreak{}均用含有\FormulaOCR{image818.png}{c}\allowbreak{}的式子表示，结合三角形面积公式即可列方程求解.\par
+【小问1详解】\par
+由余弦定理有\FormulaOCR{image819.png}{a^{2}+b^{2}-c^{2}=2a b\cos C}\allowbreak{}，对比已知\FormulaOCR{image809.png}{a^2+b^2-c^2=\sqrt2ab}\allowbreak{}，\par
+可得\FormulaOCR{image820.png}{\cos C=\frac{a^2+b^2-c^2}{2ab}=\frac{\sqrt2ab}{2ab}=\frac{\sqrt2}{2}}\allowbreak{}，\par
+因为\FormulaOCR{image821.png}{C\in(0,\pi)}\allowbreak{}，所以\FormulaOCR{image822.png}{\sin C>0}\allowbreak{}，\par
+从而\FormulaOCR{image823.png}{\sin C=\sqrt{1-\cos ^{2} C} =\sqrt{1-\left( \frac{\sqrt{2} }{2} \right) ^{2} } =\frac{\sqrt{2} }{2}}\allowbreak{}，\par
+又因为\FormulaOCR{image814.png}{\sin C=\sqrt{2} \cos B}\allowbreak{}，即\FormulaOCR{image824.png}{\cos B=\frac{1}{2}}\allowbreak{}，\par
+注意到\FormulaOCR{image825.png}{B\in(0,\pi)}\allowbreak{}，\par
+所以\FormulaOCR{image811.png}{B=\frac\pi3}\allowbreak{}.\par
+【小问2详解】\par
+由（1）可得\FormulaOCR{image811.png}{B=\frac\pi3}\allowbreak{}，\FormulaOCR{image826.png}{\cos C=\frac{\sqrt{2} }{2}}\allowbreak{}，\FormulaOCR{image821.png}{C\in(0,\pi)}\allowbreak{}，从而\FormulaOCR{image827.png}{C=\frac\pi4}\allowbreak{}，\FormulaOCR{image828.png}{A=\pi-{\frac{\pi}{3}}-{\frac{\pi}{4}}={\frac{5\pi}{12}}}\allowbreak{}，\par
+而\FormulaOCR{image829.png}{\sin A=\sin\frac{5\pi}{12}=\sin\left(\frac\pi4+\frac\pi6\right)=\frac{\sqrt6+\sqrt2}{4}}\allowbreak{}，\par
+由正弦定理有\FormulaOCR{image830.png}{\frac{a}{\sin\frac{5\pi}{12}}=\frac{b}{\sin\frac\pi3}=\frac{c}{\sin\frac\pi4}}\allowbreak{}，\par
+从而\FormulaOCR{image831.png}{a=\frac{\sqrt{6} +\sqrt{2} }{4} \cdot \sqrt{2} c=\frac{\sqrt{3} +1}{2} c,b=\frac{\sqrt{3} }{2} \cdot \sqrt{2} c=\frac{\sqrt{6} }{2} c}\allowbreak{}，\par
+由三角形面积公式可知，\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}的面积可表示为\par
+\FormulaOCR{image832.png}{S_{\triangle ABC}=\frac12ab\sin C=\frac{3+\sqrt3}{8}c^2}\allowbreak{}，\par
+由已知\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}的面积为\FormulaOCR{image810.png}{3+\sqrt{3}}\allowbreak{}，可得\FormulaOCR{image833.png}{\frac{3+\sqrt{3} }{8} c^{2} =3+\sqrt{3}}\allowbreak{}，\par
+所以\FormulaOCR{image834.png}{c=2{\sqrt{2}}}\allowbreak{}.\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024全国2）记\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}的内角A，B，C的对边分别为a，b，c，已知\FormulaOCR{image835.png}{\sin A+\sqrt{3} \cos A=2}\allowbreak{}．\par
+（1）求A．\par
+（2）若\FormulaOCR{image836.png}{a=2}\allowbreak{}，\FormulaOCR{image837.png}{\sqrt{2} b\sin C=c\sin 2B}\allowbreak{}，求\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}的周长．\par
+\begin{solution}
+【答案】（1）\FormulaOCR{image838.png}{A=\frac\pi6}\allowbreak{}\par
+（2）\FormulaOCR{image839.png}{2+\sqrt{6} +3\sqrt{2}}\allowbreak{}\par
+【解析】\par
+【分析】（1）根据辅助角公式对条件\FormulaOCR{image835.png}{\sin A+\sqrt{3} \cos A=2}\allowbreak{}进行化简处理即可求解，常规方法还可利用同角三角函数的关系解方程组，亦可利用导数，向量数量积公式，万能公式解决；\par
+（2）先根据正弦定理边角互化算出\FormulaOCR{image840.png}{B}\allowbreak{}，然后根据正弦定理算出\FormulaOCR{image841.png}{b,c}\allowbreak{}即可得出周长.\par
+【小问1详解】\par
+方法一：常规方法（辅助角公式）\par
+由\FormulaOCR{image835.png}{\sin A+\sqrt{3} \cos A=2}\allowbreak{}可得\FormulaOCR{image842.png}{\frac{1}{2} \sin A+\frac{\sqrt{3} }{2} \cos A=1}\allowbreak{}，即\FormulaOCR{image843.png}{\sin\left(A+\frac\pi3\right)=1}\allowbreak{}，\par
+由于\FormulaOCR{image844.png}{A\in(0,\pi)\Rightarrow A+\frac\pi3\in\left(\frac\pi3,\frac{4\pi}{3}\right)}\allowbreak{}，故\FormulaOCR{image845.png}{A+\frac\pi3=\frac\pi2}\allowbreak{}，解得\FormulaOCR{image838.png}{A=\frac\pi6}\allowbreak{}\par
+方法二：常规方法（同角三角函数的基本关系）\par
+由\FormulaOCR{image835.png}{\sin A+\sqrt{3} \cos A=2}\allowbreak{}，又\FormulaOCR{image846.png}{\sin^{2}A+\cos^{2}A=1}\allowbreak{}，消去\FormulaOCR{image847.png}{\sin A\,}\allowbreak{}得到：\par
+\FormulaOCR{image848.png}{4\cos ^{2} A-4\sqrt{3} \cos A+3=0\Leftrightarrow (2\cos A-\sqrt{3} )^{2} =0}\allowbreak{}，解得\FormulaOCR{image849.png}{\cos A={\frac{\sqrt{3}}{2}}}\allowbreak{}，\par
+又\FormulaOCR{image850.png}{A\in(0,\pi)}\allowbreak{}，故\FormulaOCR{image838.png}{A=\frac\pi6}\allowbreak{}\par
+方法三：利用极值点求解\par
+设\FormulaOCR{image851.png}{f(x)=\sin x+\sqrt3\cos x\quad(0<x<\pi)}\allowbreak{}，则\FormulaOCR{image852.png}{f(x)=2\sin\left(x+\frac\pi3\right)\quad(0<x<\pi)}\allowbreak{}，\par
+显然\FormulaOCR{image853.png}{x=\frac\pi6}\allowbreak{}时，\FormulaOCR{image854.png}{f(x)_{\max}=2}\allowbreak{}，注意到\FormulaOCR{image855.png}{f(A)=2\sin\left(A+\frac\pi3\right)=2}\allowbreak{}，\par
+\FormulaOCR{image856.png}{f(x)_{\max } =f(A)}\allowbreak{}，在开区间\FormulaOCR{image857.png}{(0,\pi)}\allowbreak{}上取到最大值，于是\FormulaOCR{image858.png}{x=A}\allowbreak{}必定是极值点，\par
+即\FormulaOCR{image859.png}{f' (A)=0=\cos A-\sqrt{3} \sin A}\allowbreak{}，即\FormulaOCR{image860.png}{\tan A={\frac{\sqrt{3}}{3}}}\allowbreak{}，\par
+又\FormulaOCR{image850.png}{A\in(0,\pi)}\allowbreak{}，故\FormulaOCR{image838.png}{A=\frac\pi6}\allowbreak{}\par
+方法四：利用向量数量积公式（柯西不等式）\par
+设\FormulaOCR{image861.png}{a=(1,\sqrt{3} ),b=(\sin A,\cos A)}\allowbreak{}，由题意，\FormulaOCR{image862.png}{a\cdot b=\sin A+\sqrt{3} \cos A=2}\allowbreak{}，\par
+根据向量的数量积公式，\FormulaOCR{image863.png}{\vec a\cdot\vec b=\lvert\vec a\rvert\lvert\vec b\rvert\cos\langle\vec a,\vec b\rangle=2\cos\langle\vec a,\vec b\rangle}\allowbreak{}，\par
+则\FormulaOCR{image864.png}{2\cos\langle\vec a,\vec b\rangle=2\Longleftrightarrow\cos\langle\vec a,\vec b\rangle=1}\allowbreak{}，此时\FormulaOCR{image865.png}{\langle\vec a,\vec b\rangle=0}\allowbreak{}，即\FormulaOCR{image866.png}{\vec a,\vec b}\allowbreak{}同向共线，\par
+根据向量共线条件，\FormulaOCR{image867.png}{1\cdot \cos A=\sqrt{3} \cdot \sin A\Leftrightarrow \tan A=\frac{\sqrt{3} }{3}}\allowbreak{}，\par
+又\FormulaOCR{image850.png}{A\in(0,\pi)}\allowbreak{}，故\FormulaOCR{image838.png}{A=\frac\pi6}\allowbreak{}\par
+方法五：利用万能公式求解\par
+设\FormulaOCR{image868.png}{t=\tan\frac A2}\allowbreak{}，根据万能公式，\FormulaOCR{image869.png}{\sin A+\sqrt{3} \cos A=2=\frac{2t}{1+t^{2} } +\frac{\sqrt{3} (1-t^{2} )}{1+t^{2} }}\allowbreak{}，\par
+整理可得，\FormulaOCR{image870.png}{t^{2} -2(2-\sqrt{3} )t+(2-\sqrt{3} )^{2} =0=(t-(2-\sqrt{3} ))^{2}}\allowbreak{}，\par
+解得\FormulaOCR{image871.png}{\tan \frac{A}{2} =t=2-\sqrt{3}}\allowbreak{}，根据二倍角公式，\FormulaOCR{image872.png}{\tan A=\frac{2t}{1-t^{2} } =\frac{\sqrt{3} }{3}}\allowbreak{}，\par
+又\FormulaOCR{image850.png}{A\in(0,\pi)}\allowbreak{}，故\FormulaOCR{image838.png}{A=\frac\pi6}\allowbreak{}\par
+【小问2详解】\par
+由题设条件和正弦定理\par
+\FormulaOCR{image873.png}{\sqrt{2} b\sin C=c\sin 2B\Leftrightarrow \sqrt{2} \sin B\sin C=2\sin C\sin B\cos B}\allowbreak{}，\par
+又\FormulaOCR{image874.png}{B,C\in(0,\pi)}\allowbreak{}，则\FormulaOCR{image875.png}{\sin B\sin C\neq 0}\allowbreak{}，进而\FormulaOCR{image876.png}{\cos B={\frac{\sqrt{2}}{2}}}\allowbreak{}，得到\FormulaOCR{image877.png}{B=\frac\pi4}\allowbreak{}，\par
+于是\FormulaOCR{image878.png}{C=\pi-A-B=\frac{7\pi}{12}}\allowbreak{}，\par
+\FormulaOCR{image879.png}{\sin C=\sin(\pi-A-B)=\sin(A+B)=\frac{\sqrt2+\sqrt6}{4}}\allowbreak{}，\par
+由正弦定理可得，\FormulaOCR{image880.png}{\frac{a}{\sin A} =\frac{b}{\sin B} =\frac{c}{\sin C}}\allowbreak{}，即\FormulaOCR{image881.png}{\frac{2}{\sin\frac\pi6}=\frac{b}{\sin\frac\pi4}=\frac{c}{\sin\frac{7\pi}{12}}}\allowbreak{}，\par
+解得\FormulaOCR{image882.png}{b=2\sqrt{2} ,c=\sqrt{6} +\sqrt{2}}\allowbreak{}，\par
+故\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}的周长为\FormulaOCR{image839.png}{2+\sqrt{6} +3\sqrt{2}}\allowbreak{}\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024天津卷） 在\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}中，角\FormulaOCR{image883.png}{A,B,C}\allowbreak{}所对的边分别为\FormulaOCR{image885.png}{a,b,c}\allowbreak{}，已知\FormulaOCR{image886.png}{\cos B=\frac9{16},\quad b=5,\quad\frac ac=\frac23}\allowbreak{}．\par
+（1）求\FormulaOCR{image887.png}{a}\allowbreak{}；\par
+（2）求\FormulaOCR{image888.png}{\sin A}\allowbreak{}；\par
+（3）求\FormulaOCR{image889.png}{\cos(B-2A)}\allowbreak{}的值．\par
+\begin{solution}
+【答案】（1）\FormulaOCR{image890.png}{4}\allowbreak{}\par
+（2）\FormulaOCR{image891.png}{\frac{\sqrt{7} }{4}}\allowbreak{}\par
+（3）\FormulaOCR{image892.png}{\frac{57}{64}}\allowbreak{}\par
+【解析】\par
+【分析】（1）\FormulaOCR{image893.png}{a=2t,\quad c=3t}\allowbreak{}，利用余弦定理即可得到方程，解出即可；\par
+（2）法一：求出\FormulaOCR{image894.png}{\sin B}\allowbreak{}，再利用正弦定理即可；法二：利用余弦定理求出\FormulaOCR{image895.png}{\cos A}\allowbreak{}，则得到\FormulaOCR{image847.png}{\sin A\,}\allowbreak{}；\par
+（3）法一：根据大边对大角确定\FormulaOCR{image896.png}{A}\allowbreak{}为锐角，则得到\FormulaOCR{image895.png}{\cos A}\allowbreak{}，再利用二倍角公式和两角差的余弦公式即可；法二：直接利用二倍角公式和两角差的余弦公式即可.\par
+【小问1详解】\par
+设\FormulaOCR{image893.png}{a=2t,\quad c=3t}\allowbreak{}，\FormulaOCR{image897.png}{t>0}\allowbreak{}，则根据余弦定理得\FormulaOCR{image898.png}{b^2=a^2+c^2-2ac\cos B}\allowbreak{}，\par
+即\FormulaOCR{image899.png}{25=4t^{2} +9t^{2} -2\times 2t\times 3t\times \frac{9}{16}}\allowbreak{}，解得\FormulaOCR{image900.png}{t=2}\allowbreak{}（负舍）；\par
+则\FormulaOCR{image901.png}{a=4,c=6}\allowbreak{}.\par
+【小问2详解】\par
+法一：因为\FormulaOCR{image840.png}{B}\allowbreak{}为三角形内角，所以\FormulaOCR{image902.png}{\sin B=\sqrt{1-\cos^2B}=\sqrt{1-\left(\frac9{16}\right)^2}=\frac{5\sqrt7}{16}}\allowbreak{}，\par
+再根据正弦定理得\FormulaOCR{image903.png}{\frac{a}{\sin A}=\frac{b}{\sin B}}\allowbreak{}，即\FormulaOCR{image904.png}{\frac{4}{\sin A} =\frac{5}{\frac{5\sqrt{7} }{16} }}\allowbreak{}，解得\FormulaOCR{image905.png}{\sin A=\frac{\sqrt{7} }{4}}\allowbreak{}，\par
+法二：由余弦定理得\FormulaOCR{image906.png}{\cos A=\frac{b^2+c^2-a^2}{2bc}=\frac{5^2+6^2-4^2}{2\cdot5\cdot6}=\frac34}\allowbreak{}，\par
+因为\FormulaOCR{image907.png}{A\in(0,\pi)}\allowbreak{}，则\FormulaOCR{image908.png}{\sin A=\sqrt{1-\left(\frac34\right)^2}=\frac{\sqrt7}{4}}\allowbreak{}\par
+【小问3详解】\par
+法一：因为\FormulaOCR{image909.png}{\cos B=\frac9{16}>0}\allowbreak{}，且\FormulaOCR{image910.png}{B\in(0,\pi)}\allowbreak{}，所以\FormulaOCR{image911.png}{B\in\left(0,\frac\pi2\right)}\allowbreak{}，\par
+由（2）法一知\FormulaOCR{image912.png}{\sin B=\frac{5\sqrt7}{16}}\allowbreak{}，\par
+因为\FormulaOCR{image913.png}{a<b}\allowbreak{}，则\FormulaOCR{image914.png}{A<B}\allowbreak{}，所以\FormulaOCR{image915.png}{\cos A=\sqrt{1-\left(\frac{\sqrt7}{4}\right)^2}=\frac34}\allowbreak{}，\par
+则\FormulaOCR{image916.png}{\sin 2A=2\sin A\cos A=2\times \frac{\sqrt{7} }{4} \times \frac{3}{4} =\frac{3\sqrt{7} }{8}}\allowbreak{}，\FormulaOCR{image917.png}{\cos2A=2\cos^2A-1=2\left(\frac34\right)^2-1=\frac18}\allowbreak{}\par
+\FormulaOCR{image918.png}{\cos(B-2A)=\cos B\cos2A+\sin B\sin2A=\frac{57}{64}}\allowbreak{}.\par
+法二：\FormulaOCR{image916.png}{\sin 2A=2\sin A\cos A=2\times \frac{\sqrt{7} }{4} \times \frac{3}{4} =\frac{3\sqrt{7} }{8}}\allowbreak{}，\par
+则\FormulaOCR{image917.png}{\cos2A=2\cos^2A-1=2\left(\frac34\right)^2-1=\frac18}\allowbreak{}，\par
+因为\FormulaOCR{image840.png}{B}\allowbreak{}为三角形内角，所以\FormulaOCR{image902.png}{\sin B=\sqrt{1-\cos^2B}=\sqrt{1-\left(\frac9{16}\right)^2}=\frac{5\sqrt7}{16}}\allowbreak{}，\par
+所以\FormulaOCR{image918.png}{\cos(B-2A)=\cos B\cos2A+\sin B\sin2A=\frac{57}{64}}\allowbreak{}\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024北京卷）在\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}中，内角\FormulaOCR{image816.png}{A,B,C}\allowbreak{}的对边分别为\FormulaOCR{image919.png}{a,b,c}\allowbreak{}，\FormulaOCR{image920.png}{\angle A}\allowbreak{}为钝角，\FormulaOCR{image921.png}{a=7}\allowbreak{}，\FormulaOCR{image922.png}{\sin 2B=\frac{\sqrt{3} }{7} b\cos B}\allowbreak{}．\par
+（1）求\FormulaOCR{image920.png}{\angle A}\allowbreak{}；\par
+（2）从条件①、条件②、条件③这三个条件中选择一个作为已知，使得\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}存在，求\FormulaOCR{image807.png}{\triangle ABC}\allowbreak{}的面积．\par
+条件①：\FormulaOCR{image923.png}{b=7}\allowbreak{}；条件②：\FormulaOCR{image924.png}{\cos B=\frac{13}{14}}\allowbreak{}；条件③：\FormulaOCR{image925.png}{c\sin A=\frac{5}{2} \sqrt{3}}\allowbreak{}．\par
+注：如果选择的条件不符合要求，第（2）问得0分；如果选择多个符合要求的条件分别解答，按第一个解答计分．\par
+\begin{solution}
+【答案】（1）\FormulaOCR{image926.png}{A=\frac{2\pi}{3}}\allowbreak{}；\par
+（2）选择①无解；选择②和③$\triangle$ABC面积均为\FormulaOCR{image927.png}{\frac{15{\sqrt{3}}}{4}}\allowbreak{}.\par
+【解析】\par
+【分析】（1）利用正弦定理即可求出答案；\par
+（2）选择①，利用正弦定理得\FormulaOCR{image928.png}{B={\frac{\pi}{3}}}\allowbreak{}，结合（1）问答案即可排除；选择②，首先求出\FormulaOCR{image929.png}{\sin B=\frac{3\sqrt{3} }{14}}\allowbreak{}，再代入式子得\FormulaOCR{image930.png}{b=3}\allowbreak{}，再利用两角和的正弦公式即可求出\FormulaOCR{image931.png}{\sin C}\allowbreak{}，最后利用三角形面积公式即可；选择③，首先得到\FormulaOCR{image932.png}{c=5}\allowbreak{}，再利用正弦定理得到\FormulaOCR{image933.png}{\sin C=\frac{5\sqrt{3} }{14}}\allowbreak{}，再利用两角和的正弦公式即可求出\FormulaOCR{image894.png}{\sin B}\allowbreak{}，最后利用三角形面积公式即可；\par
+【小问1详解】\par
+由题意得\FormulaOCR{image934.png}{2\sin B\cos B=\frac{\sqrt3}{7}b\cos B}\allowbreak{}，因为\FormulaOCR{image896.png}{A}\allowbreak{}为钝角，\par
+则\FormulaOCR{image935.png}{\cos B\neq 0}\allowbreak{}，则\FormulaOCR{image936.png}{2\sin B=\frac{\sqrt3}{7}b}\allowbreak{}，则\FormulaOCR{image937.png}{\frac{b}{\sin B}=\frac{2}{\frac{\sqrt3}{7}}=\frac{a}{\sin A}=\frac7{\sin A}}\allowbreak{}，解得\FormulaOCR{image938.png}{\sin A={\frac{\sqrt{3}}{2}}}\allowbreak{}，\par
+因为\FormulaOCR{image896.png}{A}\allowbreak{}为钝角，则\FormulaOCR{image926.png}{A=\frac{2\pi}{3}}\allowbreak{}.\par
+【小问2详解】\par
+选择①\FormulaOCR{image939.png}{b=7}\allowbreak{}，则\FormulaOCR{image940.png}{\sin B=\frac{\sqrt3}{14}b=\frac{\sqrt3}{14}\cdot7=\frac{\sqrt3}{2}}\allowbreak{}，因为\FormulaOCR{image926.png}{A=\frac{2\pi}{3}}\allowbreak{}，则\FormulaOCR{image840.png}{B}\allowbreak{}为锐角，则\FormulaOCR{image928.png}{B={\frac{\pi}{3}}}\allowbreak{}，\par
+此时\FormulaOCR{image941.png}{A+B=\pi}\allowbreak{}，不合题意，舍弃；\par
+选择②\FormulaOCR{image924.png}{\cos B=\frac{13}{14}}\allowbreak{}，因为\FormulaOCR{image840.png}{B}\allowbreak{}为三角形内角，则\FormulaOCR{image942.png}{\sin B=\sqrt{1-\left(\frac{13}{14}\right)^2}=\frac{3\sqrt3}{14}}\allowbreak{}，\par
+则代入\FormulaOCR{image936.png}{2\sin B=\frac{\sqrt3}{7}b}\allowbreak{}得\FormulaOCR{image943.png}{2\times{\frac{3{\sqrt{3}}}{14}}={\frac{\sqrt{3}}{7}}\,b}\allowbreak{}，解得\FormulaOCR{image930.png}{b=3}\allowbreak{}，\par
+\begin{center}
+\FormulaOCR{image944.png}{\sin C=\sin(A+B)=\sin\left(\frac{2\pi}{3}+B\right)=\sin\frac{2\pi}{3}\cos B+\cos\frac{2\pi}{3}\sin B}\allowbreak{}
+\end{center}
+\FormulaOCR{image945.png}{=\frac{\sqrt{3} }{2} \times \frac{13}{14} +\left( -\frac{1}{2} \right) \times \frac{3\sqrt{3} }{14} =\frac{5\sqrt{3} }{14}}\allowbreak{},\par
+则\FormulaOCR{image946.png}{S_{\triangle ABC}=\frac12ab\sin C=\frac12\cdot7\cdot3\cdot\frac{5\sqrt3}{14}=\frac{15\sqrt3}{4}}\allowbreak{}.\par
+选择③\FormulaOCR{image925.png}{c\sin A=\frac{5}{2} \sqrt{3}}\allowbreak{}，则有\FormulaOCR{image947.png}{c\times{\frac{\sqrt{3}}{2}}={\frac{5}{2}}{\sqrt{3}}}\allowbreak{}，解得\FormulaOCR{image932.png}{c=5}\allowbreak{}，\par
+则由正弦定理得\FormulaOCR{image948.png}{\frac{a}{\sin A}=\frac{c}{\sin C}}\allowbreak{}，即\FormulaOCR{image949.png}{\frac7{\frac{\sqrt3}{2}}=\frac5{\sin C}}\allowbreak{}，解得\FormulaOCR{image933.png}{\sin C=\frac{5\sqrt{3} }{14}}\allowbreak{}，\par
+因为\FormulaOCR{image950.png}{C}\allowbreak{}为三角形内角，则\FormulaOCR{image951.png}{\cos C=\sqrt{1-\left( \frac{5\sqrt{3} }{14} \right) ^{2} } =\frac{11}{14}}\allowbreak{}，\par
+则\FormulaOCR{image952.png}{\sin B=\sin(A+C)=\sin\left(\frac{2\pi}{3}+C\right)=\sin\frac{2\pi}{3}\cos C+\cos\frac{2\pi}{3}\sin C}\allowbreak{}\par
+\FormulaOCR{image953.png}{=\frac{\sqrt{3} }{2} \times \frac{11}{14} +\left( -\frac{1}{2} \right) \times \frac{5\sqrt{3} }{14} =\frac{3\sqrt{3} }{14}}\allowbreak{}，\par
+则\FormulaOCR{image954.png}{S_{\triangle ABC}=\frac12ac\sin B=\frac12\cdot7\cdot5\cdot\frac{3\sqrt3}{14}=\frac{15\sqrt3}{4}}\allowbreak{}\par
+\end{solution}
+\end{question}
