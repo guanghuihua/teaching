@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1784275995.81765 "圆锥曲线基础知识.xdv" "圆锥曲线基础知识.pdf" "圆锥曲线基础知识" 1784275996.74192 0
-  "圆锥曲线基础知识.xdv" 1784275995 423724 d3560ab79ca6413a19d5a2997ac61c5e "xelatex"
+["xdvipdfmx"] 1784277170.91553 "圆锥曲线基础知识.xdv" "圆锥曲线基础知识.pdf" "圆锥曲线基础知识" 1784277171.8421 0
+  "圆锥曲线基础知识.xdv" 1784277170 412992 c0aab20d3bc704c5318d2572508ee80a "xelatex"
   (generated)
   "圆锥曲线基础知识.pdf"
   (rewritten before read)
-["xelatex"] 1784275992.29848 "圆锥曲线基础知识.tex" "圆锥曲线基础知识.xdv" "圆锥曲线基础知识" 1784275996.73572 0
+["xelatex"] 1784277167.46768 "圆锥曲线基础知识.tex" "圆锥曲线基础知识.xdv" "圆锥曲线基础知识" 1784277171.83569 0
   "c:/Windows/Fonts/msyh.ttc" 1767004076 19704352 1e10e74402e59d54499af795caf0b135 ""
   "d:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1769999289 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1770005733 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -219,9 +219,9 @@
   "d:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1769959146 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "d:/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1770006240 5948082 d1152ef05071fdbcf6bc1e8b25b69540 ""
   "d:/texlive/2025/texmf.cnf" 1770005815 713 e69b156964470283e0530f5060668171 ""
-  "圆锥曲线基础知识.aux" 1784275995 7643 4aa604d1c988828ad5d5fed6aea70130 "xelatex"
-  "圆锥曲线基础知识.out" 1784275995 4610 c49a8a448ffa3f9c04f44911a10eb28a "xelatex"
-  "圆锥曲线基础知识.tex" 1784275983 74868 31c5ae894b38f99204f8f108c4f2f557 ""
+  "圆锥曲线基础知识.aux" 1784277170 7392 ed0ea3c33aaf13c3e01060292bc0f230 "xelatex"
+  "圆锥曲线基础知识.out" 1784277170 4377 e480ed6f16cf272358dc2ecc18ad414d "xelatex"
+  "圆锥曲线基础知识.tex" 1784276603 73438 dbdf402983b301ee8f25b7ca882ea398 ""
   (generated)
   "圆锥曲线基础知识.aux"
   "圆锥曲线基础知识.log"

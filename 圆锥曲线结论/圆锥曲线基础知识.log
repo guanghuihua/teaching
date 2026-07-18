@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.2)  17 JUL 2026 16:13
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.2)  17 JUL 2026 16:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1307,26 +1307,25 @@ able
  [1
 
 ] [2] [3] [4]
-[5]
-Underfull \hbox (badness 1097) in paragraph at lines 411--411
+Underfull \hbox (badness 1097) in paragraph at lines 390--390
 []\TU/SimSun(0)/m/n/10.53937 研 究 方 程 有 解 条 件、|  最
  []
 
-[6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16]
-Overfull \hbox (14.84668pt too wide) in paragraph at lines 1196--1197
- [][] 
- []
-
-[17]
-Overfull \hbox (14.84668pt too wide) in paragraph at lines 1322--1323
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+Overfull \hbox (14.84668pt too wide) in paragraph at lines 1150--1151
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[16] [17]
+Overfull \hbox (14.84668pt too wide) in paragraph at lines 1276--1277
+ [][] 
+ []
 
-Overfull \hbox (63.67213pt too wide) in paragraph at lines 1326--1329
+
+Overfull \hbox (63.67213pt too wide) in paragraph at lines 1280--1283
 [][]\TU/SimSun(0)/b/n/10.53937 证 明：| [] \TU/SimSun(0)/m/n/10.53937 如 下 图，|  过 点
  $\OML/cmm/m/it/10.53937 A; B$ \TU/SimSun(0)/m/n/10.53937 分 别 作 抛 物 线 准 线 的 垂 线
  $\OML/cmm/m/it/10.53937 AA[]; BB[]$\TU/SimSun(0)/m/n/10.53937 ，|  垂 足 为 $\OML/
@@ -1334,22 +1333,21 @@ cmm/m/it/10.53937 A[]; B[]$\TU/SimSun(0)/m/n/10.53937 ，|  连 接 $\OML/cmm/m/
 .53937 A[]M; B[]M; MF; AF; BF; A[]F; B[]F$\TU/SimSun(0)/m/n/10.53937 ，|
  []
 
-[18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30]
-(./圆锥曲线基础知识.aux)
+[18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] (./圆锥曲线基础知识.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `圆锥曲线基础知识.out' has not changed.
-(rerunfilecheck)             Checksum: C49A8A448FFA3F9C04F44911A10EB28A;4610.
+(rerunfilecheck)             Checksum: E480ED6F16CF272358DC2ECC18AD414D;4377.
  ) 
 Here is how much of TeX's memory you used:
- 40071 strings out of 468174
- 1013945 string characters out of 5436828
- 1552516 words of memory out of 5000000
- 68186 multiletter control sequences out of 15000+600000
+ 39966 strings out of 468174
+ 1011338 string characters out of 5436828
+ 1548242 words of memory out of 5000000
+ 68081 multiletter control sequences out of 15000+600000
  640673 words of font info for 132 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  102i,22n,111p,729b,2049s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 圆锥曲线基础知识.xdv (30 pages, 423724 bytes).
+Output written on 圆锥曲线基础知识.xdv (28 pages, 412992 bytes).
