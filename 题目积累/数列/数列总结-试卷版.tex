@@ -1,0 +1,30 @@
+% !TeX program = xelatex
+\documentclass[zihao=-4]{exam-zh}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{needspace}
+\geometry{a4paper,margin=1.8cm}
+\emergencystretch=3em
+\setcounter{secnumdepth}{0}
+\graphicspath{{数列总结-assets/}}
+\definecolor{solutioncolor}{RGB}{32,82,112}
+\newif\ifshowanswers
+\showanswersfalse
+\newlength{\docimagewidth}
+\newcommand{\DocImage}[3]{%
+  \setlength{\docimagewidth}{#2pt}%
+  \ifdim\docimagewidth>.92\linewidth\setlength{\docimagewidth}{.92\linewidth}\fi
+  \includegraphics[width=\docimagewidth,keepaspectratio]{#1}%
+}
+\newcommand{\FormulaOCR}[2]{\ensuremath{#2}}
+\newcommand{\AnswerBlank}[1]{\underline{\hspace{3em}}}
+\newcommand{\QuestionSpace}[1]{\par\vspace{#1}}
+\begin{document}
+\begin{center}
+  {\zihao{2}\bfseries 数列总结}\\[4pt]
+  {\zihao{4} 试卷版}
+\end{center}
+\input{数列总结-内容.tex}
+\end{document}

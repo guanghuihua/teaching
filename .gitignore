@@ -28,3 +28,15 @@
 /题目积累/专题四解三角形专题-试卷版.out
 /题目积累/专题四解三角形专题-试卷版.pdf
 /题目积累/专题四解三角形专题-试卷版.xdv
+
+# Reproducible LaTeX, Python, and Word temporary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+__pycache__/
+*.py[cod]
+~$*

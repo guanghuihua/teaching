@@ -1,0 +1,25 @@
+% !TeX program = xelatex
+\documentclass[zihao=-4]{exam-zh}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\geometry{a4paper,margin=1.8cm}
+\emergencystretch=3em
+\setcounter{secnumdepth}{0}
+\examsetup{question/show-answer=false,solution/show-solution=hide}
+\graphicspath{{专题八三角函数-assets/}}
+\newlength{\docimagewidth}
+\newcommand{\DocImage}[3]{%
+  \setlength{\docimagewidth}{#2pt}%
+  \ifdim\docimagewidth>.92\linewidth\setlength{\docimagewidth}{.92\linewidth}\fi
+  \includegraphics[width=\docimagewidth,keepaspectratio]{#1}%
+}
+\newcommand{\FormulaOCR}[2]{\ensuremath{#2}}
+\newcommand{\AnswerBlank}[1]{\underline{\hspace{3em}}}
+\begin{document}
+\begin{center}
+  {\zihao{2}\bfseries 专题八：三角函数}\\[4pt]
+  {\zihao{4} 试卷版}
+\end{center}
+\input{专题八三角函数-内容.tex}
+\end{document}

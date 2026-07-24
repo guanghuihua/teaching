@@ -1,0 +1,1334 @@
+% 由“8.专题八三角函数.doc”整理生成。
+% 公式经本地 pix2tex 初识别，并保留原图编号以便复核。
+
+\section{核心知识与方法梳理}
+
+\subsection{函数模型与周期}
+对 $y=A\sin(\omega x+\varphi)+b$ 与 $y=A\cos(\omega x+\varphi)+b$，振幅为
+$|A|$，最小正周期为 $T=\frac{2\pi}{|\omega|}$；对
+$y=A\tan(\omega x+\varphi)$，最小正周期为 $T=\frac{\pi}{|\omega|}$。
+求周期时先化为同名、同角的一个三角函数，并特别注意绝对值可能使周期减半。
+
+\subsection{图象与变换}
+由 $y=f(x)$ 得到 $y=f(\omega x+\varphi)$ 时，横向变换应在自变量整体上进行：
+先把横坐标缩短为原来的 $\frac1{|\omega|}$，再按相位确定平移量；也可以先平移，
+但两种顺序对应的平移长度不同。由图象求解析式时，依次确定 $A$、$b$、$T$、
+$\omega$，最后利用一个关键点确定 $\varphi$。
+
+\subsection{单调性、对称性与零点}
+把 $\omega x+\varphi$ 看成整体，代入基本函数的单调区间、对称轴、对称中心或零点通式，
+再解关于 $x$ 的不等式或方程。处理给定区间内的零点、极值点个数时，五点作图法往往比
+直接罗列通式更直观；涉及参数范围时，应同时检查端点是否取到。
+
+\subsection{恒等变换与值域}
+常用目标是把式子化为 $A\sin(\omega x+\varphi)+b$，或令
+$t=\sin x$、$t=\cos x$ 转化为带有限制区间的二次函数。齐次分式可同除以
+$\cos^2\alpha$ 或 $\sin^2\alpha$，转化为关于 $\tan\alpha$ 的有理式；
+已知角的象限时，开方后必须结合符号取舍。
+
+\subsection{题型一：周期与参数}
+
+\begin{question}
+（2017•新课标Ⅱ）函数f（x）=sin（2x+\FormulaOCR{image1.png}{\frac{\pi}{3}}）的最小正周期为（　　）\par
+A．4\ensuremath{\pi}\qquad{}B．2\ensuremath{\pi}\qquad{}C．\ensuremath{\pi}\qquad{}D．\FormulaOCR{image2.png}{\frac{\pi}{2}}\par
+\begin{solution}
+解：函数f（x）=sin（2x+\FormulaOCR{image1.png}{\frac{\pi}{3}}）的最小正周期为：\FormulaOCR{image3.png}{\frac{2\pi}{2}}=\ensuremath{\pi}．\par
+故选：C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2018•新课标Ⅰ）已知函数 $f(x)=2\cos^2x-\sin^2x+2$，则（　　）\par
+A．$f(x)$ 的最小正周期为 $\pi$，最大值为 $3$\par
+B．$f(x)$ 的最小正周期为 $\pi$，最大值为 $4$\par
+C．$f(x)$ 的最小正周期为 $2\pi$，最大值为 $3$\par
+D．$f(x)$ 的最小正周期为 $2\pi$，最大值为 $4$\par
+\begin{solution}
+解：$f(x)=2\cos^2x-\sin^2x+2(\sin^2x+\cos^2x)=3\cos^2x+1$，\par
+即 $f(x)=\frac32\cos2x+\frac52$，故最小正周期为 $\pi$，最大值为 $4$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2017•山东）函数y=\FormulaOCR{image7.png}{{\sqrt{3}}}sin2x+cos2x的最小正周期为（　　）\par
+A．\FormulaOCR{image8.png}{\frac{\pi}{2}}\qquad{}B．\FormulaOCR{image9.png}{\frac{2\pi}{3}}\qquad{}C．\ensuremath{\pi}\qquad{}D．2\ensuremath{\pi}\par
+\begin{solution}
+解：\ensuremath{\because}函数y=\FormulaOCR{image7.png}{{\sqrt{3}}}sin2x+cos2x=2sin（2x+\FormulaOCR{image10.png}{\frac{\pi}{6}}），\ensuremath{\because}\ensuremath{\omega}=2，\ensuremath{\therefore}T=\ensuremath{\pi}，故选：C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2014•新课标Ⅰ）在函数①y=cos|2x|，②y=|cosx|，③y=cos（2x+\FormulaOCR{image11.png}{\frac{\pi}{6}}），④y=tan（2x-\FormulaOCR{image12.png}{\frac{\pi}{4}}）中，最小正周期为\ensuremath{\pi}的所有函数为（　　）\par
+A．①②③\qquad{}B．①③④\qquad{}C．②④\qquad{}D．①③\par
+\begin{solution}
+解：\ensuremath{\because}函数①y=cos丨2x丨=cos2x，它的最小正周期为 \FormulaOCR{image13.png}{\frac{2\pi}{2}}=\ensuremath{\pi}，\par
+②y=丨cosx丨的最小正周期为\FormulaOCR{image14.png}{\frac{1}{2}\cdot\frac{2\pi}{1}}=\ensuremath{\pi}，\par
+③y=cos（2x+\FormulaOCR{image11.png}{\frac{\pi}{6}}）的最小正周期为 \FormulaOCR{image13.png}{\frac{2\pi}{2}}=\ensuremath{\pi}，\par
+④y=tan（2x-\FormulaOCR{image12.png}{\frac{\pi}{4}}）的最小正周期为 \FormulaOCR{image15.png}{\frac{\pi}{2}}，\par
+故选：A．\par
+\DocImage{image16.png}{149.70}{104.75}\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2018•新课标Ⅲ）函数f（x）=\FormulaOCR{image17.png}{\frac{\tan x}{1+\tan^2 x}}的最小正周期为（　　）\par
+A．\FormulaOCR{image18.png}{\frac{\pi}{4}}\qquad{}B．\FormulaOCR{image19.png}{\frac{\pi}{2}}\qquad{}C．\ensuremath{\pi}\qquad{}D．2\ensuremath{\pi}\par
+\begin{solution}
+解：函数f（x）=\FormulaOCR{image20.png}{\frac{\tan x}{1+\tan^2 x}}=\FormulaOCR{image21.png}{\frac{\sin x\cos x}{\cos^2 x+\sin^2 x}}=\FormulaOCR{image22.png}{\frac{1}{2}}sin2x的最小正周期为\FormulaOCR{image23.png}{\frac{2\pi}{2}}=\ensuremath{\pi}，\par
+故选：C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2009•江西）函数\FormulaOCR{image24.png}{f(x)=(1+\sqrt{3}\tan x)\cos x}的最小正周期为（　　）\par
+A．2\ensuremath{\pi}\qquad{}B．\FormulaOCR{image25.png}{\frac{3\pi}{2}}\qquad{}C．\ensuremath{\pi}\qquad{}D．\FormulaOCR{image26.png}{\frac{\pi}{2}}\par
+\begin{solution}
+解：由\FormulaOCR{image27.png}{\mathbf{f}(x)=(1+{\sqrt{3}}\tan x)\cos x=\cos x+{\sqrt{3}}\sin x=2\sin\left(x+{\frac{\pi}{6}}\right)}\par
+可得最小正周期为T=\FormulaOCR{image28.png}{\frac{2\pi}{1}}=2\ensuremath{\pi}，\par
+故选：A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2017•天津）设函数 $f(x)=2\sin(\omega x+\varphi)$，其中 $\omega>0$，$|\varphi|<\pi$．若 $f(\frac{5\pi}{8})=2$，$f(\frac{11\pi}{8})=0$，且 $f(x)$ 的最小正周期大于 $2\pi$，则（　　）\par
+A．$\omega=\frac23$，$\varphi=\frac{\pi}{12}$\qquad B．$\omega=\frac23$，$\varphi=-\frac{11\pi}{12}$\par
+C．$\omega=\frac13$，$\varphi=-\frac{11\pi}{24}$\qquad D．$\omega=\frac13$，$\varphi=\frac{7\pi}{24}$\par
+\begin{solution}
+解：由两个已知函数值及 $T>2\pi$，可知从最大值点到右侧相邻零点的距离为 $\frac T4=\frac{11\pi}{8}-\frac{5\pi}{8}=\frac{3\pi}{4}$，故 $T=3\pi$，$\omega=\frac23$．再由 $\sin(\frac{5\pi}{12}+\varphi)=1$ 及 $|\varphi|<\pi$，得 $\varphi=\frac{\pi}{12}$．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2016•浙江）设函数 $f(x)=\sin^2x+b\sin x+c$，则 $f(x)$ 的最小正周期（　　）\par
+A．与b有关，且与c有关\qquad{}B．与b有关，但与c无关\par
+C．与b无关，且与c无关\qquad{}D．与b无关，但与c有关\par
+\begin{solution}
+解：常数 $c$ 只使图象上下平移，故周期与 $c$ 无关．\par
+当 $b=0$ 时，$f(x)=\frac12-\frac12\cos2x+c$，最小正周期为 $\pi$；\par
+当 $b\ne0$ 时，$f(x)=\frac12-\frac12\cos2x+b\sin x+c$，最小正周期为 $2\pi$．因此周期与 $b$ 有关、与 $c$ 无关．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2014•天津）已知函数f（x）=\FormulaOCR{image56.png}{{\sqrt{3}}}sin\ensuremath{\omega}x+cos\ensuremath{\omega}x（\ensuremath{\omega}＞0），x\ensuremath{\in}R，在曲线y=f（x）与直线y=1的交点中，若相邻交点距离的最小值为\FormulaOCR{image57.png}{\frac{\pi}{3}}，则f（x）的最小正周期为（　　）\par
+A．\FormulaOCR{image58.png}{\frac{\pi}{2}}\qquad{}B．\FormulaOCR{image59.png}{\frac{2\pi}{3}}\qquad{}C．\ensuremath{\pi}\qquad{}D．2\ensuremath{\pi}\par
+\begin{solution}
+解：\ensuremath{\because}已知函数f（x）=\FormulaOCR{image60.png}{{\sqrt{3}}}sin\ensuremath{\omega}x+cos\ensuremath{\omega}x=2sin（\ensuremath{\omega}x+\FormulaOCR{image61.png}{\frac{\pi}{6}}）（\ensuremath{\omega}＞0），x\ensuremath{\in}R，\par
+交点对应 $\sin(\omega x+\frac{\pi}{6})=\frac12$．相邻交点的最小距离为 $\frac T3$，故 $\frac T3=\frac{\pi}{3}$，得 $T=\pi$．故选 C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2008•江西）函数\FormulaOCR{image65.png}{f(x)=\frac{\sin x}{\sin x+2\sin\frac{x}{2}}}是（　　）\par
+A．以4\ensuremath{\pi}为周期的偶函数\qquad{}B．以2\ensuremath{\pi}为周期的奇函数\par
+C．以2\ensuremath{\pi}为周期的偶函数\qquad{}D．以4\ensuremath{\pi}为周期的奇函数\par
+\begin{solution}
+解：$f(-x)=\frac{-\sin x}{-\sin x-2\sin\frac{x}{2}}=f(x)$，所以 $f(x)$ 是偶函数；又 $f(x+4\pi)=f(x)$，而 $2\pi$ 不是它的周期，故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2007•广东）已知简谐运动 $f(x)=2\sin(\frac{\pi}{3}x+\varphi)$（$|\varphi|<\frac{\pi}{2}$）的图象经过点 $(0,1)$，则其最小正周期 $T$ 和初相 $\varphi$ 分别为（　　）\par
+A．$T=6$，$\varphi=\frac{\pi}{6}$\qquad B．$T=6$，$\varphi=\frac{\pi}{3}$\qquad C．$T=6\pi$，$\varphi=\frac{\pi}{6}$\qquad D．$T=6\pi$，$\varphi=\frac{\pi}{3}$\par
+\begin{solution}
+解：由 $f(0)=1$ 得 $2\sin\varphi=1$．结合 $|\varphi|<\frac{\pi}{2}$，得 $\varphi=\frac{\pi}{6}$；又 $T=\frac{2\pi}{\pi/3}=6$．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2014•北京）设函数 $f(x)=A\sin(\omega x+\varphi)$（$A>0$，$\omega>0$）．若 $f(x)$ 在 $[\frac{\pi}{6},\frac{\pi}{2}]$ 上具有单调性，且 $f(\frac{\pi}{2})=f(\frac{2\pi}{3})=-f(\frac{\pi}{6})$，则 $f(x)$ 的最小正周期为\AnswerBlank{\ensuremath{\pi}}．\par
+\begin{solution}
+解：由f（\FormulaOCR{image74.png}{\frac{\pi}{2}}）=f（\FormulaOCR{image75.png}{\frac{2\pi}{3}}），可知函数f（x）的一条对称轴为x=\FormulaOCR{image77.png}{\frac{\frac{\pi}{2}+\frac{2\pi}{3}}{2}=\frac{7\pi}{12}}，\par
+则x=\FormulaOCR{image74.png}{\frac{\pi}{2}}离最近对称轴距离为\FormulaOCR{image78.png}{\frac{7\pi}{12}-\frac{\pi}{2}=\frac{\pi}{12}}．\par
+又f（\FormulaOCR{image79.png}{\frac{\pi}{2}}）=-f（\FormulaOCR{image80.png}{\frac{\pi}{6}}），则f（x）有对称中心（\FormulaOCR{image81.png}{\frac{\pi}{3}}，0），\par
+由于f（x）在区间[\FormulaOCR{image80.png}{\frac{\pi}{6}}，\FormulaOCR{image79.png}{\frac{\pi}{2}}]上具有单调性，\par
+则\FormulaOCR{image82.png}{\frac{\pi}{2}-\frac{\pi}{6}=\frac{\pi}{3}}\ensuremath{\le}\FormulaOCR{image83.png}{\frac{1}{2}}T\ensuremath{\Longrightarrow}T\ensuremath{\ge}\FormulaOCR{image84.png}{\frac{2\pi}{3}}，从而\FormulaOCR{image85.png}{\frac{7\pi}{12}-\frac{\pi}{3}}=\FormulaOCR{image86.png}{\frac{T}{4}}\ensuremath{\Longrightarrow}T=\ensuremath{\pi}．\par
+故答案为：\ensuremath{\pi}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2025•北京）设函数\FormulaOCR{image87.wmf}{f(x)=\sin(\omega x)+\cos(\omega x)(\omega >0)}．若\FormulaOCR{image88.wmf}{f(x+\pi )=f(x)}恒成立，且\FormulaOCR{image89.wmf}{f(x)}在\FormulaOCR{image90.wmf}{[0}，\FormulaOCR{image91.wmf}{\frac { \pi  } { 4 }]}上存在零点，则\FormulaOCR{image92.wmf}{\omega }的最小值为（　　）\par
+\qquad{}\qquad{}\qquad{}A．8\qquad{}B．6\qquad{}C．4\qquad{}D．3\par
+\begin{solution}
+解：由已知得\FormulaOCR{image93.wmf}{f(x)=\sqrt { 2 }\sin(\omega x+\frac { \pi  } { 4 })}，又\FormulaOCR{image94.wmf}{f(x+\pi )=f(x)}恒成立，所以\FormulaOCR{image95.wmf}{kT=\pi }，\par
+所以\FormulaOCR{image96.wmf}{k\cdot \frac { 2\pi  } { \omega  }=\pi }，即\FormulaOCR{image97.wmf}{\omega =2k}，\FormulaOCR{image98.wmf}{k\in N ^ { * }}，\FormulaOCR{image99.wmf}{k=1}时，\FormulaOCR{image100.wmf}{\omega =2}，\FormulaOCR{image101.wmf}{f(x)=\sqrt { 2 }\sin(2x+\frac { \pi  } { 4 })}，\par
+因为\FormulaOCR{image102.wmf}{[0}，\FormulaOCR{image103.wmf}{\frac { \pi  } { 4 }]}，所以\FormulaOCR{image104.wmf}{2x+\frac { \pi  } { 4 }\in [\frac { \pi  } { 4 }}，\FormulaOCR{image105.wmf}{\frac { 3\pi  } { 4 }]}，\FormulaOCR{image106.wmf}{f(x)>0}，故\FormulaOCR{image107.wmf}{k=1}不符题意；\par
+\FormulaOCR{image108.wmf}{k=2}时，\FormulaOCR{image109.wmf}{\omega =4}，\FormulaOCR{image110.wmf}{f(x)=\sqrt { 2 }\sin(4x+\frac { \pi  } { 4 })}，此时\FormulaOCR{image111.wmf}{f(0)=\sqrt { 2 }\sin\frac { \pi  } { 4 }=1>0}，\FormulaOCR{image112.wmf}{f(\frac { \pi  } { 4 })=\sqrt { 2 }\sin\frac { 5\pi  } { 4 }=-1 < 0}，\par
+\FormulaOCR{image113.wmf}{f(0)f(\frac { \pi  } { 4 }) < 0}，即\FormulaOCR{image114.wmf}{f(x)}在\FormulaOCR{image115.wmf}{[0}，\FormulaOCR{image116.wmf}{\frac { \pi  } { 4 }]}上存在零点，故\FormulaOCR{image117.wmf}{\omega =4}即为所求．故选：\FormulaOCR{image118.wmf}{C}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•上海）下列函数\FormulaOCR{image119.wmf}{f(x)}的最小正周期是\FormulaOCR{image120.wmf}{2\pi }的是（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image121.wmf}{\sin x+\cos x}\qquad{}B．\FormulaOCR{image122.wmf}{\sin x\cos x}\qquad{}C．\FormulaOCR{image123.wmf}{\sin ^ { 2 } x+\cos ^ { 2 } x}\qquad{}D．\FormulaOCR{image124.wmf}{\sin ^ { 2 } x-\cos ^ { 2 } x}\par
+\begin{solution}
+解：对于\FormulaOCR{image125.wmf}{A}，\FormulaOCR{image126.wmf}{\sin x+\cos x=\sqrt { 2 }\sin(x+\frac { \pi  } { 4 })}，则\FormulaOCR{image127.wmf}{T=2\pi }，满足条件，所以\FormulaOCR{image128.wmf}{A}正确．\par
+对于\FormulaOCR{image129.wmf}{B}，\FormulaOCR{image130.wmf}{\sin x\cos x=\frac { 1 } { 2 }\sin2x}，则\FormulaOCR{image131.wmf}{T=\pi }，不满足条件，所以\FormulaOCR{image132.wmf}{B}不正确．\par
+对于\FormulaOCR{image133.wmf}{C}，\FormulaOCR{image134.wmf}{\sin ^ { 2 } x+\cos ^ { 2 } x=1}，函数是常函数，不存在最小正周期，不满足条件，所以\FormulaOCR{image135.wmf}{C}不正确．\par
+对于\FormulaOCR{image136.wmf}{D}，\FormulaOCR{image137.wmf}{\sin ^ { 2 } x-\cos ^ { 2 } x=-\cos2x}，则\FormulaOCR{image138.wmf}{T=\pi }，不满足条件，所以\FormulaOCR{image139.wmf}{D}不正确．\par
+故选：\FormulaOCR{image140.wmf}{A}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•乙卷）记函数\FormulaOCR{image141.wmf}{f(x)=\cos(\omega x+\varphi )(\omega >0}，\FormulaOCR{image142.wmf}{0 < \varphi  < \pi )}的最小正周期为\FormulaOCR{image143.wmf}{T}．若\FormulaOCR{image144.wmf}{f(T)=\frac { \sqrt { 3 } } { 2 }}，\FormulaOCR{image145.wmf}{x=\frac { \pi  } { 9 }}为\FormulaOCR{image146.wmf}{f(x)}的零点，则\FormulaOCR{image147.wmf}{\omega }的最小值为 \AnswerBlank{3} ．\par
+\begin{solution}
+解：函数\FormulaOCR{image148.wmf}{f(x)=\cos(\omega x+\varphi )(\omega >0}，\FormulaOCR{image149.wmf}{0 < \varphi  < \pi )}的最小正周期为\FormulaOCR{image150.wmf}{T=\frac { 2\pi  } { \omega  }}，若\FormulaOCR{image151.wmf}{f(T)=\cos(\omega \times \frac { 2\pi  } { \omega  }+\varphi )=\cos\varphi =\frac { \sqrt { 3 } } { 2 }}，\FormulaOCR{image152.wmf}{0 < \varphi  < \pi }，则\FormulaOCR{image153.wmf}{\varphi =\frac { \pi  } { 6 }}，所以\FormulaOCR{image154.wmf}{f(x)=\cos(\omega x+\frac { \pi  } { 6 })}．因为\FormulaOCR{image155.wmf}{x=\frac { \pi  } { 9 }}为\FormulaOCR{image156.wmf}{f(x)}的零点，所以\FormulaOCR{image157.wmf}{\cos(\frac { \omega \pi  } { 9 }+\frac { \pi  } { 6 })=0}，故\FormulaOCR{image158.wmf}{\frac { \omega \pi  } { 9 }+\frac { \pi  } { 6 }=k\pi +\frac { \pi  } { 2 }}，\FormulaOCR{image159.wmf}{k\in Z}，所以\FormulaOCR{image160.wmf}{\omega =9k+3}，\FormulaOCR{image161.wmf}{k\in Z}，因为\FormulaOCR{image162.wmf}{\omega >0}，则\FormulaOCR{image163.wmf}{\omega }的最小值为3．故答案为：3．\par
+\end{solution}
+\end{question}
+
+\subsection{题型二：由图象确定解析式}
+
+\begin{question}
+（2016•新课标Ⅱ）函数 $y=A\sin(\omega x+\varphi)$ 的部分图象如图所示，则（　　）\par
+\DocImage{image169.png}{88.55}{105.30}\par
+A．$y=2\sin(2x-\frac{\pi}{6})$\qquad B．$y=2\sin(2x-\frac{\pi}{3})$\qquad C．$y=2\sin(x+\frac{\pi}{6})$\qquad D．$y=2\sin(x+\frac{\pi}{3})$\par
+\begin{solution}
+解：由图得振幅 $A=2$，且 $\frac T2=\frac{\pi}{3}+\frac{\pi}{6}=\frac{\pi}{2}$，故 $T=\pi$，$\omega=2$．\par
+将图上的最大值点 $(\frac{\pi}{3},2)$ 代入 $y=2\sin(2x+\varphi)$，得 $\frac{2\pi}{3}+\varphi=\frac{\pi}{2}+2k\pi$．取符合图象的相位，得 $\varphi=-\frac{\pi}{6}$．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2015•陕西）如图，某港口一天6时到18时的水深变化曲线近似满足函数y=3sin（\FormulaOCR{image175.png}{\frac{\pi}{6}}x+\ensuremath{\varphi}）+k．据此函数可知，这段时间水深（单位：m）的最大值为（　　）\par
+\DocImage{image176.png}{153.00}{103.50}\par
+A．5\qquad{}B．6\qquad{}C．8\qquad{}D．10\par
+\begin{solution}
+解：由图可知最小水深为 $2$ m，故 $-3+k=2$，得 $k=5$．因此最大水深为 $3+k=8$ m．故选 C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2015•新课标Ⅰ）函数 $f(x)=\cos(\omega x+\varphi)$ 的部分图象如图所示，则 $f(x)$ 的单调递减区间为（　　）\par
+A．$(k\pi-\frac14,\,k\pi+\frac34)$\quad B．$(2k\pi-\frac14,\,2k\pi+\frac34)$\quad($k\in\mathbb Z$)\par
+C．$(k-\frac14,\,k+\frac34)$\quad D．$(2k-\frac14,\,2k+\frac34)$\quad($k\in\mathbb Z$)\par
+\begin{solution}
+解：由图得 $T=2$，故 $\omega=\pi$．又图象经过关键点 $(\frac14,0)$，可得 $\varphi=\frac{\pi}{4}$，即 $f(x)=\cos(\pi x+\frac{\pi}{4})$．\par
+令 $2k\pi\leq\pi x+\frac{\pi}{4}\leq2k\pi+\pi$，得 $2k-\frac14\leq x\leq2k+\frac34$．故选 D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2013•四川）函数 $f(x)=2\sin(\omega x+\varphi)$（$\omega>0$，$-\frac{\pi}{2}<\varphi<\frac{\pi}{2}$）的部分图象如图所示，则 $\omega,\varphi$ 的值分别是（　　）\par
+\DocImage{image191.png}{93.00}{101.25}\par
+A．$2,-\frac{\pi}{3}$\qquad B．$2,-\frac{\pi}{6}$\qquad C．$4,\frac{\pi}{6}$\qquad D．$4,\frac{\pi}{3}$\par
+\begin{solution}
+解：图中 $x=\frac{5\pi}{12}$ 为最大值点，$x=\frac{11\pi}{12}$ 为最小值点，故 $\frac T2=\frac{\pi}{2}$，从而 $T=\pi$，$\omega=2$．再由 $\frac{5\pi}{6}+\varphi=\frac{\pi}{2}+2k\pi$ 及相位范围，得 $\varphi=-\frac{\pi}{3}$．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2013•大纲版）若函数y=sin（\ensuremath{\omega}x+\ensuremath{\varphi}）（\ensuremath{\omega}＞0）的部分图象如图，则\ensuremath{\omega}=（　　）\par
+\DocImage{image206.png}{108.35}{81.00}\par
+A．5\qquad{}B．4\qquad{}C．3\qquad{}D．2\par
+\begin{solution}
+解：由图可见，横坐标相差 $\frac{\pi}{4}$ 的对应点函数值互为相反数，故 $\frac T2=\frac{\pi}{4}$，从而 $T=\frac{\pi}{2}$．\par
+由 $\frac{2\pi}{\omega}=\frac{\pi}{2}$，得 $\omega=4$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2011•辽宁）已知函数 $f(x)=A\tan(\omega x+\varphi)$（$\omega>0$，$|\varphi|<\frac{\pi}{2}$）的部分图象如图，则 $f(\frac{\pi}{24})=$（　　）\par
+\DocImage{image214.png}{98.50}{79.25}\par
+A．$2+\sqrt3$\qquad B．$\sqrt3$\qquad C．$\frac{\sqrt3}{8}$\qquad D．$2-\sqrt3$\par
+\begin{solution}
+解：由图得 $T=2(\frac{3\pi}{8}-\frac{\pi}{8})=\frac{\pi}{2}$，故 $\omega=\frac{\pi}{T}=2$．图象过 $(\frac{3\pi}{8},0)$ 且 $|\varphi|<\frac{\pi}{2}$，得 $\varphi=\frac{\pi}{4}$；又图象过 $(0,1)$，得 $A=1$．因此 $f(x)=\tan(2x+\frac{\pi}{4})$，$f(\frac{\pi}{24})=\tan\frac{\pi}{3}=\sqrt3$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2010•天津）如图是函数y=Asin（\ensuremath{\omega}x+\ensuremath{\varphi}）（A＞0，\ensuremath{\omega}＞0，|\ensuremath{\varphi}|\ensuremath{\le}\FormulaOCR{image229.png}{\frac{\pi}{2}}）图象的一部分．为了得到这个函数的图象，只要将y=sinx（x\ensuremath{\in}R）的图象上所有的点（　　）\par
+\DocImage{image230.png}{136.50}{101.25}\par
+A．向左平移\FormulaOCR{image231.png}{\frac{\pi}{3}}个单位长度，再把所得各点的横坐标缩短到原来的\FormulaOCR{image232.png}{\frac{1}{2}}倍，纵坐标不变\par
+B．向左平移\FormulaOCR{image231.png}{\frac{\pi}{3}}个单位长度，再把所得各点的横坐标伸长到原来的2倍，纵坐标不变\par
+C．向左平移\FormulaOCR{image233.png}{\frac{\pi}{6}}个单位长度，再把所得各点的横坐标缩短到原来的\FormulaOCR{image232.png}{\frac{1}{2}}倍，纵坐标不变\par
+D．向左平移\FormulaOCR{image233.png}{\frac{\pi}{6}}个单位长度，再把所得各点的横坐标伸长到原来的2倍，纵坐标不变\par
+\begin{solution}
+解：由图可知振幅为 $1$、周期为 $\pi$，并可取解析式 $y=\sin(2x+\frac{\pi}{3})=\sin2(x+\frac{\pi}{6})$．\par
+先将 $y=\sin x$ 的图象向左平移 $\frac{\pi}{3}$ 个单位，得到 $y=\sin(x+\frac{\pi}{3})$；再把横坐标缩短为原来的一半，得到 $y=\sin(2x+\frac{\pi}{3})$．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2009•辽宁）已知函数 $f(x)=A\cos(\omega x+\varphi)$ 的图象如图所示，$f(\frac{\pi}{2})=-\frac23$，则 $f(0)=$（　　）\par
+\DocImage{image238.png}{122.75}{67.50}\par
+A．$-\frac23$\qquad B．$-\frac12$\qquad C．$\frac23$\qquad D．$\frac12$\par
+\begin{solution}
+解：由图得 $T=2(\frac{11\pi}{12}-\frac{7\pi}{12})=\frac{2\pi}{3}$，故 $\omega=3$．由 $f(\frac{\pi}{2})=A\sin\varphi=-\frac23$；又由图中零点 $x=-\frac{\pi}{12}$，得 $A\cos(\varphi-\frac{\pi}{4})=\frac{\sqrt2}{2}(A\cos\varphi+A\sin\varphi)=0$．故 $f(0)=A\cos\varphi=\frac23$，选 C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2006•安徽）将函数y=sin\ensuremath{\omega}x（\ensuremath{\omega}＞0）的图象按向量\FormulaOCR{image251.png}{\vec a=\left(-\frac{\pi}{6},0\right)}平移，平移后的图象如图所示，则平移后的图象所对应函数的解析式是（　　）\par
+\DocImage{image252.png}{78.90}{60.50}\par
+A．\FormulaOCR{image253.png}{y=\sin\left(x+\frac{\pi}{6}\right)}\qquad{}B．\FormulaOCR{image254.png}{y=\sin\left(x-\frac{\pi}{6}\right)}\qquad{}C．\FormulaOCR{image255.png}{y=\sin\left(2x+\frac{\pi}{3}\right)}\qquad{}D．\FormulaOCR{image256.png}{y=\sin\left(2x-\frac{\pi}{3}\right)}\par
+\begin{solution}
+解：平移后函数为 $y=\sin\omega(x+\frac{\pi}{6})$．由图中关键点得 $\omega(\frac{7\pi}{12}+\frac{\pi}{6})=\frac{3\pi}{2}$，解得 $\omega=2$．\par
+故解析式为 $y=\sin2(x+\frac{\pi}{6})=\sin(2x+\frac{\pi}{3})$．故选 C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2006•四川）下列函数中，图象的一部分如图所示的是（　　）\par
+\DocImage{image262.png}{177.75}{125.25}\par
+A．\FormulaOCR{image263.png}{y=\sin\left(x+\frac{\pi}{6}\right)}\qquad{}B．\FormulaOCR{image264.png}{y=\sin\left(2x-\frac{\pi}{6}\right)}\qquad{}C．\FormulaOCR{image265.png}{y=\cos\left(4x-\frac{\pi}{3}\right)}\qquad{}D．\FormulaOCR{image266.png}{y=\cos\left(2x-\frac{\pi}{6}\right)}\par
+\begin{solution}
+解：从图象看出，\FormulaOCR{image267.png}{\frac{1}{4}}T=\FormulaOCR{image268.png}{\frac{\pi}{12}+\frac{\pi}{6}=\frac{\pi}{4}}，\par
+所以函数的最小正周期为\ensuremath{\pi}，函数应为y=sin2x向左平移了\FormulaOCR{image269.png}{\frac{\pi}{6}}个单位，\par
+即\FormulaOCR{image270.png}{y=\sin2\left(x+\frac{\pi}{6}\right)}=\FormulaOCR{image271.png}{\sin\left(2x+\frac{\pi}{3}\right)=\cos\left(-\frac{\pi}{2}+2x+\frac{\pi}{3}\right)=\cos\left(2x-\frac{\pi}{6}\right)}，\par
+故选：D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（1991•湖南、云南、海南）如图是周期为2\ensuremath{\pi}的三角函数y=f（x）的图象，那么f（x）可以写成（　　）\par
+\DocImage{image272.png}{141.00}{91.50}\par
+A．sin（1+x）\qquad{}B．sin（-1-x）\qquad{}C．sin（x-1）\qquad{}D．sin（1-x）\par
+\begin{solution}
+解：依题意，f（x）=sin（x+\ensuremath{\varphi}），\ensuremath{\because}函数y=f（x）经过（1，0），\ensuremath{\therefore}1+\ensuremath{\varphi}=\ensuremath{\pi}+2k\ensuremath{\pi}，k\ensuremath{\in}Z，\ensuremath{\therefore}\ensuremath{\varphi}=\ensuremath{\pi}+2k\ensuremath{\pi}-1，k\ensuremath{\in}Z，\ensuremath{\therefore}f（x）=sin（x+\ensuremath{\pi}+2k\ensuremath{\pi}-1）=sin（\ensuremath{\pi}+x-1）\par
+=-sin（x-1）=sin（1-x），故选：D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2026•天津）函数\FormulaOCR{image164.wmf}{f(x)}的部分图象如图所示，则\FormulaOCR{image273.wmf}{f(x)}的解析式可能为（　　）\par
+\DocImage{image274.png}{135.00}{96.00}\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image275.wmf}{x+\sin\pi x}\qquad{}B．\FormulaOCR{image276.wmf}{x-\sin\pi x}\qquad{}C．\FormulaOCR{image277.wmf}{-x+\sin\pi x}\qquad{}D．\FormulaOCR{image278.wmf}{x\cdot \sin\pi x}\par
+\begin{solution}
+解：对于\FormulaOCR{image279.wmf}{A}，\FormulaOCR{image280.wmf}{f(x)=x-\sin\pi x}是定义域\FormulaOCR{image281.wmf}{R}上的奇函数，\FormulaOCR{image282.wmf}{f′(x)=1-\pi \cos\pi x}，令\FormulaOCR{image283.wmf}{f′(x)=0}，得\FormulaOCR{image284.wmf}{\cos\pi x=\frac { 1 } { \pi  }}，不妨设解为\FormulaOCR{image285.wmf}{x_{ 0 }}，且\FormulaOCR{image286.wmf}{x_{ 0 }  \in (0,1)}，\par
+则\FormulaOCR{image287.wmf}{x\in (0,x_{ 0 }  )}时，\FormulaOCR{image288.wmf}{f′(x) < 0}，\FormulaOCR{image289.wmf}{f(x)}单调递减，不符合题意，选项\FormulaOCR{image290.wmf}{A}错误；\par
+对于\FormulaOCR{image291.wmf}{B}，\FormulaOCR{image292.wmf}{f(x)=x+\sin\pi x}是定义域\FormulaOCR{image293.wmf}{R}上的奇函数，但\FormulaOCR{image294.wmf}{f}（1）\FormulaOCR{image295.wmf}{=1+\sin\pi =1}，与图中\FormulaOCR{image296.wmf}{f}（1）\FormulaOCR{image297.wmf}{< 0}矛盾，不符合题意，选项\FormulaOCR{image298.wmf}{B}错误；\par
+对于\FormulaOCR{image299.wmf}{C}，\FormulaOCR{image300.wmf}{f(x)=\sin\pi x-x}是定义域\FormulaOCR{image301.wmf}{R}上的奇函数，\FormulaOCR{image302.wmf}{f′(x)=\pi \cos\pi x-1}，令\FormulaOCR{image303.wmf}{f′(x)=0}，得\FormulaOCR{image304.wmf}{\cos\pi x=\frac { 1 } { \pi  }}，不妨设解为\FormulaOCR{image305.wmf}{x_{ 0 }}，且\FormulaOCR{image306.wmf}{x_{ 0 }  \in (0,1)}，\par
+则\FormulaOCR{image307.wmf}{x\in (0,x_{ 0 }  )}时，\FormulaOCR{image308.wmf}{f′(x)>0}，\FormulaOCR{image309.wmf}{f(x)}单调递增，\FormulaOCR{image310.wmf}{x\in (x_{ 0 }}，\FormulaOCR{image311.wmf}{1)}时，\FormulaOCR{image312.wmf}{f′(x) < 0}，\FormulaOCR{image313.wmf}{f(x)}单调递减，满足题意，选项\FormulaOCR{image314.wmf}{C}正确；\par
+对于\FormulaOCR{image315.wmf}{D}，\FormulaOCR{image316.wmf}{f(x)=x\cdot \sin\pi x}，是定义域\FormulaOCR{image317.wmf}{R}上的偶函数，不符合题意，选项\FormulaOCR{image318.wmf}{D}错误．\par
+故选：\FormulaOCR{image319.wmf}{C}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•甲卷）已知函数\FormulaOCR{image320.wmf}{f(x)=2\cos(\omega x+\varphi )}的部分图像如图所示，则满足条件\FormulaOCR{image321.wmf}{(f(x)-f(-\frac { 7\pi  } { 4 }))(f(x)-f(\frac { 4\pi  } { 3 }))>0}的最小正整数\FormulaOCR{image322.wmf}{x}为 \AnswerBlank{2} ．\par
+\DocImage{image323.png}{153.00}{79.50}\par
+\begin{solution}
+解：由图像可得\FormulaOCR{image324.wmf}{\frac { 3 } { 4 }T=\frac { 13 } { 12 }\pi -\frac { \pi  } { 3 }}，即周期为\FormulaOCR{image325.wmf}{\pi }，\par
+\FormulaOCR{image326.wmf}{\because}\FormulaOCR{image327.wmf}{(f(x)-f(-\frac { 7\pi  } { 4 }))((f(x)-f(\frac { 4\pi  } { 3 }))>0}，\FormulaOCR{image328.wmf}{T=\pi }，\par
+\FormulaOCR{image329.wmf}{\therefore }\FormulaOCR{image330.wmf}{(f(x)-f(\frac { \pi  } { 4 }))(f(x)-f(\frac { \pi  } { 3 }))>0}，\par
+观察图像可知当\FormulaOCR{image331.wmf}{x>\frac { \pi  } { 3 }}，\par
+\FormulaOCR{image332.wmf}{f(x) < f(\frac { \pi  } { 4 })}，\FormulaOCR{image333.wmf}{f(x) < f(\frac { \pi  } { 3 })}，\par
+\FormulaOCR{image334.wmf}{\because 2\in (\frac { \pi  } { 3 },\frac { 5\pi  } { 6 })}，且\FormulaOCR{image335.wmf}{f(\frac { 5\pi  } { 6 })=0}，\par
+\FormulaOCR{image336.wmf}{\therefore x=2}时最小，且满足题意，\par
+故答案为：2．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2023•新高考Ⅱ）已知函数\FormulaOCR{image337.wmf}{f(x)=\sin(\omega x+\varphi )}，如图，\FormulaOCR{image338.wmf}{A}，\FormulaOCR{image339.wmf}{B}是直线\FormulaOCR{image340.wmf}{y=\frac { 1 } { 2 }}与曲线\FormulaOCR{image341.wmf}{y=f(x)}的两个交点，若\FormulaOCR{image342.wmf}{\|AB\|=\frac { \pi  } { 6 }}，则\FormulaOCR{image343.wmf}{f(\pi )=}　\AnswerBlank{\FormulaOCR{image344.wmf}{-\frac { \sqrt { 3 } } { 2 }}}　 ．\par
+\DocImage{image345.png}{147.75}{78.00}\par
+\begin{solution}
+解：由题意：设\FormulaOCR{image346.wmf}{A(x_{ 1 }}，\FormulaOCR{image347.wmf}{\frac { 1 } { 2 })}，\FormulaOCR{image348.wmf}{B(x_{ 1 }  +\frac { \pi  } { 6 }}，\FormulaOCR{image349.wmf}{\frac { 1 } { 2 })}，\par
+由\FormulaOCR{image350.wmf}{y=\sin(\omega x+\varphi )}的图象可知：\par
+\FormulaOCR{image351.wmf}{f(x_{ 1 }  )=\sin(\omega x_{ 1 }  +\varphi )=\frac { 1 } { 2 }}，故\FormulaOCR{image352.wmf}{\omega x_{ 1 }  +\varphi =\frac { \pi  } { 6 }+2k_{ 1 }  \pi ,k_{ 1 }  \in Z}，\par
+\FormulaOCR{image353.wmf}{f(x_{ 2 }  )=\sin[\omega (x_{ 1 }  +\frac { \pi  } { 6 })+\varphi ]=\frac { 1 } { 2 }}，则\FormulaOCR{image354.wmf}{\omega (x_{ 1 }  +\frac { \pi  } { 6 })+\varphi =\frac { 5\pi  } { 6 }+2k_{ 2 }  \pi ,k_{ 2 }  \in Z}，\par
+两式相减得：\FormulaOCR{image355.wmf}{\frac { \pi  } { 6 }\omega =\frac { 2\pi  } { 3 }+2(k_{ 2 }  -k_{ 1 }  )\pi ,k_{ 2 }  -k_{ 1 }  \in Z}，\par
+由图可知：\FormulaOCR{image356.wmf}{T < \frac { 2\pi  } { 3 }-0 < 2T}，即\FormulaOCR{image357.wmf}{\frac { 2\pi  } { \omega  } < \frac { 2\pi  } { 3 } < \frac { 4\pi  } { \omega  }}，解得\FormulaOCR{image358.wmf}{\omega \in (3,6)}，\par
+\FormulaOCR{image359.wmf}{\because \omega =4+12(k_{ 2 }  -k_{ 1 }  )}，\FormulaOCR{image360.wmf}{k_{ 2 }  -k_{ 1 }  \in Z}\par
+\FormulaOCR{image361.wmf}{\therefore \omega =4}，\FormulaOCR{image362.wmf}{\therefore f(x)=\sin(4x+\varphi )}，\par
+又\FormulaOCR{image363.wmf}{f(\frac { 2\pi  } { 3 })=\sin(\frac { 8\pi  } { 3 }+\varphi )=0}，\FormulaOCR{image364.wmf}{\therefore }\FormulaOCR{image365.wmf}{\frac { 8\pi  } { 3 }+\varphi =k\pi }，\FormulaOCR{image366.wmf}{k\in Z}，\par
+即\FormulaOCR{image367.wmf}{\varphi =-\frac { 8\pi  } { 3 }+k\pi }，\FormulaOCR{image368.wmf}{k\in Z}，\FormulaOCR{image369.wmf}{\because f(0)=\sin\varphi  < 0}，\par
+\FormulaOCR{image370.wmf}{\therefore }当\FormulaOCR{image371.wmf}{k=2}时，\FormulaOCR{image372.wmf}{\varphi =-\frac { 2\pi  } { 3 }}满足条件，\par
+\FormulaOCR{image373.wmf}{\therefore }\FormulaOCR{image374.wmf}{f(x)=\sin(4x-\frac { 2\pi  } { 3 })}\par
+\FormulaOCR{image375.wmf}{\therefore f(\pi )=\sin(4\pi -\frac { 2\pi  } { 3 })=-\frac { \sqrt { 3 } } { 2 }}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2015•新课标Ⅱ）如图，长方形ABCD的边AB=2，BC=1，O是AB的中点，点P沿着边BC，CD与DA运动，记\ensuremath{\angle}BOP=x．将动点P到A，B两点距离之和表示为x的函数f（x），则y=f（x）的图象大致为（　　）\par
+\DocImage{image377.png}{74.55}{50.30}\par
+A．\DocImage{image378.png}{69.75}{73.50}\qquad{}B．\DocImage{image379.png}{70.00}{75.75}\qquad{}C．\DocImage{image380.png}{69.00}{74.25}\qquad{}D．\DocImage{image381.png}{70.00}{75.00}\par
+\begin{solution}
+解：建立以 $O$ 为原点、$OB$ 为 $x$ 轴正方向的坐标系．当 $P$ 在 $BC$ 上时，$0\leq x\leq\frac{\pi}{4}$，$BP=\tan x$，\par
+$PA+PB=\sqrt{4+\tan^2x}+\tan x$，随 $x$ 单调递增．\par
+当 $P$ 在 $CD$ 上时，$\frac{\pi}{4}\leq x\leq\frac{3\pi}{4}$．设 $P=(u,1)$，则 $u=\cot x$，\par
+$PA+PB=\sqrt{(u+1)^2+1}+\sqrt{(u-1)^2+1}$，其图象关于 $x=\frac{\pi}{2}$ 对称，并在 $x=\frac{\pi}{2}$ 处取得最小值 $2\sqrt2$．\par
+当 $P$ 在 $AD$ 上时，$\frac{3\pi}{4}\leq x\leq\pi$，$PA+PB=\sqrt{4+\tan^2x}-\tan x$．\par
+结合端点值、对称性及各段变化趋势，符合的图象为 B．\par
+\DocImage{image398.png}{92.00}{63.35}\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2012•浙江）把函数y=cos2x+1的图象上所有点的横坐标伸长到原来的2倍（纵坐标不变），然后向左平移1个单位长度，再向下平移1个单位长度，得到的图象是（　　）\par
+A．\DocImage{image399.png}{70.00}{74.25}\qquad{}B．\DocImage{image400.png}{70.00}{74.25}\qquad{}C．\DocImage{image401.png}{70.00}{72.75}\qquad{}D．\DocImage{image402.png}{70.00}{73.50}\par
+\begin{solution}
+解：将函数y=cos2x+1的图象上所有点的横坐标伸长到原来的2倍（纵坐标不变），得到的图象对应的解析式为：y=cosx+1，\par
+再将y=cosx+1图象向左平移1个单位长度，再向下平移 1个单位长度，\par
+得到的图象对应的解析式为：y=cos（x+1），\par
+\ensuremath{\because}曲线y=cos（x+1）由余弦曲线y=cosx左移一个单位而得，\par
+\ensuremath{\therefore}曲线y=cos（x+1）经过点（\FormulaOCR{image403.png}{\frac{\pi}{2}-1}，0）和（\FormulaOCR{image404.png}{{\frac{3\pi}{2}}-1}，0），且在区间（，）上函数值小于0由此可得，A选项符合题意．故选：A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2012•山东）函数y=\FormulaOCR{image405.png}{\frac{\cos6x}{2^x-2^{-x}}}的图象大致为（　　）\par
+A．\DocImage{image406.png}{70.00}{54.85}\qquad{}B．\DocImage{image407.png}{57.10}{42.10}\qquad{}C．\DocImage{image408.png}{67.95}{50.55}\qquad{}D．\DocImage{image409.png}{70.00}{65.25}\par
+\begin{solution}
+解：令y=f（x）=\FormulaOCR{image410.png}{\frac{\cos6x}{2^x-2^{-x}}}，\par
+\ensuremath{\because}f（-x）=\FormulaOCR{image411.png}{\frac{\cos(-6x)}{2^{-x}-2^x}}=-\FormulaOCR{image410.png}{\frac{\cos6x}{2^x-2^{-x}}}=-f（x），\par
+\ensuremath{\therefore}函数y=\FormulaOCR{image410.png}{\frac{\cos6x}{2^x-2^{-x}}}为奇函数，\ensuremath{\therefore}其图象关于原点对称，可排除A；\par
+又当 $x\to0^+$ 时，$y\to+\infty$，可排除 B；当 $x\to+\infty$ 时，$y\to0$，可排除 C．\par
+而D均满足以上分析．故选：D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2010•江西）如图，四位同学在同一个坐标系中分别选定了一个适当的区间，各自作出三个函数y=sin2x，\FormulaOCR{image412.png}{y=\sin\left(x+\frac{\pi}{6}\right)}，\FormulaOCR{image413.png}{y=\sin\left(x-\frac{\pi}{3}\right)}的图象如下．结果发现其中有一位同学作出的图象有错误，那么有错误的图象是（　　）\par
+A．\DocImage{image414.png}{70.00}{49.70}\qquad{}B．\DocImage{image415.png}{70.00}{47.40}\qquad{}C．\DocImage{image416.png}{70.00}{48.50}\qquad{}D．\DocImage{image417.png}{70.00}{45.40}\par
+\begin{solution}
+解：y=sin2x的图象取最高点时，x=k\ensuremath{\pi}+\FormulaOCR{image418.png}{\frac{\pi}{4}}，k\ensuremath{\in}Z\par
+此时，x+\FormulaOCR{image419.png}{\frac{\pi}{6}}=k\ensuremath{\pi}+\FormulaOCR{image420.png}{\frac{5\pi}{12}}，x-\FormulaOCR{image421.png}{\frac{\pi}{3}}=k\ensuremath{\pi}-\FormulaOCR{image422.png}{\frac{\pi}{12}}\ensuremath{\therefore}\FormulaOCR{image423.png}{y=\sin\left(x+\frac{\pi}{6}\right)}，\FormulaOCR{image424.png}{y=\sin\left(x-\frac{\pi}{3}\right)}的函数值一定不是1或0，即y=sin2x的图象取最高点时，其他两函数对应的点一定不是最值点或零点，而C不适合，故选：C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2009•浙江）已知a是实数，则函数f（x）=1+asinax的图象不可能是（　　）\par
+A．\DocImage{image425.png}{70.00}{47.50}\qquad{}B．\DocImage{image426.png}{69.00}{49.30}\qquad{}C．\DocImage{image427.png}{70.00}{51.30}\qquad{}D．\DocImage{image428.png}{70.00}{54.65}\par
+\begin{solution}
+解：对于振幅大于1时，\par
+三角函数的周期为：\FormulaOCR{image429.png}{T=\frac{2\pi}{|a|}}，\ensuremath{\because}|a|＞1，\ensuremath{\therefore}T＜2\ensuremath{\pi}，\par
+而D不符合要求，它的振幅大于1，但周期小于2\ensuremath{\pi}．\par
+对于选项A，a＜1，T＞2\ensuremath{\pi}，满足函数与图象的对应关系，故选：D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2008•江西）函数y=tanx+sinx-|tanx-sinx|在区间\FormulaOCR{image430.png}{({\frac{\pi}{2}},\;{\frac{3\pi}{2}})}内的图象是（　　）\par
+A．\DocImage{image431.png}{70.00}{92.25}\qquad{}B．\DocImage{image432.png}{70.00}{90.75}\qquad{}C．\DocImage{image433.png}{70.00}{87.00}\qquad{}D．\DocImage{image434.png}{70.00}{87.00}\par
+\begin{solution}
+解：函数\FormulaOCR{image435.png}{\begin{aligned}y&=\tan x+\sin x-|\tan x-\sin x|\\&=\begin{cases}2\tan x,&\tan x<\sin x,\ x\in(\frac{\pi}{2},\pi),\\2\sin x,&\tan x\ge\sin x,\ x\in[\pi,\frac{3\pi}{2})\end{cases}\end{aligned}}，\par
+分段画出函数图象如D图示，\par
+故选：D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2007•海南）函数y=sin（2x-\FormulaOCR{image436.png}{\frac{\pi}{3}}）在区间[-\FormulaOCR{image437.png}{\frac{\pi}{2}}，\ensuremath{\pi}]的简图是（　　）\par
+A．\DocImage{image438.png}{70.00}{97.50}\qquad{}B．\DocImage{image439.png}{70.00}{97.50}\qquad{}C．\DocImage{image440.png}{70.00}{96.75}\qquad{}D．\DocImage{image441.png}{70.00}{97.50}\par
+\begin{solution}
+解：当x=-\FormulaOCR{image442.png}{\frac{\pi}{2}}时，y=sin[（2\ensuremath{\times}\FormulaOCR{image443.png}{({\frac{\pi}{2}})}-\FormulaOCR{image444.png}{\frac{\pi}{3}}]=-sin（\FormulaOCR{image445.png}{\pi_{+}{\frac{\pi}{3}}}）=sin=\FormulaOCR{image446.png}{\frac{\sqrt{3}}{2}}＞0，故排除A，D；\par
+当x=\FormulaOCR{image447.png}{\frac{\pi}{6}}时，y=sin（2\ensuremath{\times}-\FormulaOCR{image448.png}{\frac{\pi}{3}}）=sin0=0，故排除C；\par
+故选：B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（1997•全国）函数y=tan（\FormulaOCR{image449.png}{{\frac{1}{2}}x{\frac{1}{3}}\pi}）在一个周期内的图象是（　　）\par
+A．\DocImage{image450.png}{70.00}{76.20}\qquad{}B．\DocImage{image451.png}{70.00}{73.40}\qquad{}C．\DocImage{image452.png}{70.00}{85.80}\qquad{}D．\DocImage{image453.png}{70.00}{74.10}\par
+\begin{solution}
+解：令tan（\FormulaOCR{image454.png}{{\frac{1}{2}}x{\frac{1}{3}}\pi}）=0，解得x=k\ensuremath{\pi}+\FormulaOCR{image455.png}{\frac{2\pi}{3}}，可知函数y=tan（\FormulaOCR{image456.png}{{\frac{1}{2}}x{\frac{1}{3}}\pi}）与x轴的一个交点不是\FormulaOCR{image457.png}{\frac{\pi}{3}}，排除C，D\ensuremath{\because}y=tan（）的周期T=\FormulaOCR{image458.png}{\frac{\pi}{2}}=2\ensuremath{\pi}，故排除B故选：A．\par
+\end{solution}
+\end{question}
+
+\subsection{题型四：图象变换}
+
+\begin{question}
+（2018•天津）将函数y=sin（2x+\FormulaOCR{image460.png}{\frac{\pi}{5}}）的图象向右平移\FormulaOCR{image461.png}{\frac{\pi}{10}}个单位长度，所得图象对应的函数（　　）\par
+A．在区间[\FormulaOCR{image462.png}{-\frac{\pi}{4},\ \frac{\pi}{4}}]上单调递增\qquad{}B．在区间[-\FormulaOCR{image463.png}{\frac{\pi}{4}}，0]上单调递减\par
+C．在区间[\FormulaOCR{image464.png}{{\frac{\pi}{4}},\;{\frac{\pi}{2}}}]上单调递增\qquad{}D．在区间[\FormulaOCR{image465.png}{\frac{\pi}{2}}，\ensuremath{\pi}]上单调递减\par
+\begin{solution}
+解：将函数y=sin（2x+\FormulaOCR{image460.png}{\frac{\pi}{5}}）的图象向右平移\FormulaOCR{image461.png}{\frac{\pi}{10}}个单位长度，\par
+所得图象对应的函数解析式为y=sin[2（x-\FormulaOCR{image461.png}{\frac{\pi}{10}}）+\FormulaOCR{image460.png}{\frac{\pi}{5}}]=sin2x．\par
+当x\ensuremath{\in}[\FormulaOCR{image462.png}{-\frac{\pi}{4},\ \frac{\pi}{4}}]时，2x\ensuremath{\in}[\FormulaOCR{image466.png}{\frac{\pi}{2}}，\FormulaOCR{image467.png}{\frac{\pi}{2}}]，函数单调递增；\par
+当x\ensuremath{\in}[\FormulaOCR{image468.png}{\frac{\pi}{4}}，\FormulaOCR{image467.png}{\frac{\pi}{2}}]时，2x\ensuremath{\in}[，\ensuremath{\pi}]，函数单调递减；\par
+当x\ensuremath{\in}[-\FormulaOCR{image468.png}{\frac{\pi}{4}}，0]时，2x\ensuremath{\in}[-\FormulaOCR{image467.png}{\frac{\pi}{2}}，0]，函数单调递增；\par
+当x\ensuremath{\in}[\FormulaOCR{image467.png}{\frac{\pi}{2}}，\ensuremath{\pi}]时，2x\ensuremath{\in}[\ensuremath{\pi}，2\ensuremath{\pi}]，函数先减后增．\par
+故选：A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2017•新课标Ⅰ）已知曲线C\_{1}：y=cosx，C\_{2}：y=sin（2x+\FormulaOCR{image469.png}{\frac{2\pi}{3}}），则下面结论正确的是（　　）\par
+A．把C\_{1}上各点的横坐标伸长到原来的2倍，纵坐标不变，再把得到的曲线向右平移\FormulaOCR{image470.png}{\frac{\pi}{6}}个单位长度，得到曲线C\_{2}\par
+B．把C\_{1}上各点的横坐标伸长到原来的2倍，纵坐标不变，再把得到的曲线向左平移\FormulaOCR{image471.png}{\frac{\pi}{12}}个单位长度，得到曲线C\_{2}\par
+C．把C\_{1}上各点的横坐标缩短到原来的\FormulaOCR{image472.png}{\frac{1}{2}}倍，纵坐标不变，再把得到的曲线向右平移\FormulaOCR{image473.png}{\frac{\pi}{6}}个单位长度，得到曲线C\_{2}\par
+D．把C\_{1}上各点的横坐标缩短到原来的\FormulaOCR{image474.png}{\frac{1}{2}}倍，纵坐标不变，再把得到的曲线向左平移\FormulaOCR{image475.png}{\frac{\pi}{12}}个单位长度，得到曲线C\_{2}\par
+\begin{solution}
+解：把C\_{1}上各点的横坐标缩短到原来的\FormulaOCR{image474.png}{\frac{1}{2}}倍，纵坐标不变，得到函数y=cos2x图象，再把得到的曲线向左平移\FormulaOCR{image475.png}{\frac{\pi}{12}}个单位长度，得到函数y=cos2（x+）=cos（2x+\FormulaOCR{image473.png}{\frac{\pi}{6}}）=sin（2x+\FormulaOCR{image476.png}{\frac{2\pi}{3}}）的图象，即曲线C\_{2}，\par
+故选：D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2016•北京）将函数 $y=\sin(2x-\frac{\pi}{3})$ 图象上的点 $P(\frac{\pi}{4},t)$ 向左平移 $s$（$s>0$）个单位得到点 $P'$．若 $P'$ 位于 $y=\sin2x$ 的图象上，则（　　）\par
+A．$t=\frac12$，$s$ 的最小值为 $\frac{\pi}{6}$\qquad B．$t=\frac{\sqrt3}{2}$，$s$ 的最小值为 $\frac{\pi}{6}$\par
+C．$t=\frac12$，$s$ 的最小值为 $\frac{\pi}{3}$\qquad D．$t=\frac{\sqrt3}{2}$，$s$ 的最小值为 $\frac{\pi}{3}$\par
+\begin{solution}
+解：$t=\sin(2\cdot\frac{\pi}{4}-\frac{\pi}{3})=\sin\frac{\pi}{6}=\frac12$．平移后 $P'=(\frac{\pi}{4}-s,\frac12)$，故 $\sin(\frac{\pi}{2}-2s)=\frac12$，即 $\cos2s=\frac12$．由 $s>0$ 得最小值为 $\frac{\pi}{6}$．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2016•新课标Ⅰ）将函数y=2sin（2x+\FormulaOCR{image489.png}{\frac{\pi}{6}}）的图象向右平移\FormulaOCR{image490.png}{\frac{1}{4}}个周期后，所得图象对应的函数为（　　）\par
+A．$y=2\sin(2x+\frac{\pi}{4})$\qquad B．$y=2\sin(2x+\frac{\pi}{3})$\qquad C．$y=2\sin(2x-\frac{\pi}{4})$\qquad D．$y=2\sin(2x-\frac{\pi}{3})$\par
+\begin{solution}
+解：函数y=2sin（2x+\FormulaOCR{image489.png}{\frac{\pi}{6}}）的周期为T=\FormulaOCR{image493.png}{\frac{2\pi}{2}}=\ensuremath{\pi}，\par
+解：函数 $y=2\sin(2x+\frac{\pi}{6})$ 的周期为 $T=\pi$，向右平移四分之一个周期，得 $y=2\sin[2(x-\frac{\pi}{4})+\frac{\pi}{6}]=2\sin(2x-\frac{\pi}{3})$．故选 D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2016•四川）为了得到函数y=sin（x+\FormulaOCR{image496.png}{\frac{\pi}{3}}）的图象，只需把函数y=sinx的图象上所有的点（　　）\par
+A．向左平移 $\frac{\pi}{3}$ 个单位长度\qquad B．向右平移 $\frac{\pi}{3}$ 个单位长度\par
+C．向上平移 $\frac{\pi}{3}$ 个单位长度\qquad D．向下平移 $\frac{\pi}{3}$ 个单位长度\par
+\begin{solution}
+解：$y=\sin(x+\frac{\pi}{3})$ 由 $y=\sin x$ 的图象向左平移 $\frac{\pi}{3}$ 个单位长度得到．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2016•四川）为了得到函数y=sin（2x-\FormulaOCR{image497.png}{\frac{\pi}{3}}）的图象，只需把函数y=sin2x的图象上所有的点（　　）\par
+A．向左平移 $\frac{\pi}{3}$ 个单位长度\qquad B．向右平移 $\frac{\pi}{3}$ 个单位长度\par
+C．向左平移 $\frac{\pi}{6}$ 个单位长度\qquad D．向右平移 $\frac{\pi}{6}$ 个单位长度\par
+\begin{solution}
+解：把 $y=\sin 2x$ 的图象向右平移 $\frac{\pi}{6}$ 个单位长度，得 $y=\sin[2(x-\frac{\pi}{6})]=\sin(2x-\frac{\pi}{3})$．故选 D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2016•新课标Ⅱ）若将函数 $y=2\sin 2x$ 的图象向左平移 $\frac{\pi}{12}$ 个单位长度，则平移后图象的对称轴为（　　）\par A．$x=\frac{k\pi}{2}-\frac{\pi}{6}$\quad B．$x=\frac{k\pi}{2}+\frac{\pi}{6}$\quad C．$x=\frac{k\pi}{2}-\frac{\pi}{12}$\quad D．$x=\frac{k\pi}{2}+\frac{\pi}{12}$\quad($k\in\mathbb Z$)\par
+\begin{solution}
+解：平移后的函数为 $y=2\sin(2x+\frac{\pi}{6})$．令 $2x+\frac{\pi}{6}=k\pi+\frac{\pi}{2}$，得 $x=\frac{k\pi}{2}+\frac{\pi}{6}$，$k\in\mathbb Z$．\par
+因此对称轴为 $x=\frac{k\pi}{2}+\frac{\pi}{6}$，$k\in\mathbb Z$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•浙江）为了得到函数\FormulaOCR{image509.wmf}{y=2\sin3x}的图象，只要把函数\FormulaOCR{image510.wmf}{y=2\sin(3x+\frac { \pi  } { 5 })}图象上所有的点（　　）\par
+\qquad{}A．向左平移\FormulaOCR{image511.wmf}{\frac { \pi  } { 5 }}个单位长度\qquad{}B．向右平移\FormulaOCR{image512.wmf}{\frac { \pi  } { 5 }}个单位长度\qquad{}\par
+\qquad{}C．向左平移\FormulaOCR{image513.wmf}{\frac { \pi  } { 15 }}个单位长度\qquad{}D．向右平移\FormulaOCR{image514.wmf}{\frac { \pi  } { 15 }}个单位长度\par
+\begin{solution}
+解：把\FormulaOCR{image515.wmf}{y=2\sin(3x+\frac { \pi  } { 5 })}图象上所有的点向右平移\FormulaOCR{image516.wmf}{\frac { \pi  } { 15 }}个单位可得\FormulaOCR{image517.wmf}{y=2\sin[3(x-\frac { \pi  } { 15 })+\frac { \pi  } { 5 }]=2\sin3x}的图象．\par
+故选：\FormulaOCR{image518.wmf}{D}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2015•湖南）将 $f(x)=\sin2x$ 的图象向右平移 $\varphi$（$0<\varphi<\frac{\pi}{2}$）个单位后得到 $g(x)$．若对满足 $|f(x_1)-g(x_2)|=2$ 的 $x_1,x_2$，有 $|x_1-x_2|_{\min}=\frac{\pi}{3}$，则 $\varphi=$（　　）\par A．$\frac{5\pi}{12}$\qquad B．$\frac{\pi}{3}$\qquad C．$\frac{\pi}{4}$\qquad D．$\frac{\pi}{6}$\par
+\begin{solution}
+解：$g(x)=\sin(2x-2\varphi)$．等式 $|f(x_1)-g(x_2)|=2$ 要求一个函数取 $1$、另一个取 $-1$．\par
+比较两组极值点可得，在 $0<\varphi<\frac{\pi}{2}$ 内，满足条件的横坐标最小距离为 $\frac{\pi}{2}-\varphi$．\par
+由 $\frac{\pi}{2}-\varphi=\frac{\pi}{3}$，得 $\varphi=\frac{\pi}{6}$．故选 D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2014•四川）为了得到函数y=sin（2x+1）的图象，只需把y=sin2x的图象上所有的点（　　）\par
+A．向左平行移动\FormulaOCR{image536.png}{\frac{1}{2}}个单位长度\qquad{}B．向右平行移动个单位长度\par
+C．向左平行移动1个单位长度\qquad{}D．向右平行移动1个单位长度\par
+\begin{solution}
+解：\ensuremath{\because}y=sin（2x+1）=sin2（x+\FormulaOCR{image537.png}{\frac{1}{2}}），\ensuremath{\therefore}把y=sin2x的图象上所有的点向左平行移动个单位长度，即可得到函数y=sin（2x+1）的图象，故选：A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2014•浙江）为了得到函数y=sin3x+cos3x的图象，可以将函数y=\FormulaOCR{image538.png}{{\sqrt{2}}}cos3x的图象（　　）\par
+A．向右平移 $\frac{\pi}{4}$ 个单位\qquad B．向左平移 $\frac{\pi}{4}$ 个单位\par
+C．向右平移 $\frac{\pi}{12}$ 个单位\qquad D．向左平移 $\frac{\pi}{12}$ 个单位\par
+\begin{solution}
+解：$\sin 3x+\cos 3x=\sqrt2\cos(3x-\frac{\pi}{4})=\sqrt2\cos[3(x-\frac{\pi}{12})]$，故将 $y=\sqrt2\cos 3x$ 的图象向右平移 $\frac{\pi}{12}$ 个单位即可．故选 C．\par
+故选：C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2014•安徽）若将函数f（x）=sin2x+cos2x的图象向右平移\ensuremath{\varphi}个单位，所得图象关于y轴对称，则\ensuremath{\varphi}的最小正值是（　　）\par
+A．\FormulaOCR{image545.png}{\frac{\pi}{8}}\qquad{}B．\FormulaOCR{image546.png}{\frac{\pi}{4}}\qquad{}C．\FormulaOCR{image547.png}{\frac{3\pi}{8}}\qquad{}D．\FormulaOCR{image548.png}{\frac{3\pi}{4}}\par
+\begin{solution}
+解：函数f（x）=sin2x+cos2x=\FormulaOCR{image549.png}{{\sqrt{2}}}sin（2x+\FormulaOCR{image550.png}{\frac{\pi}{4}}）的图象向右平移\ensuremath{\varphi}的单位，\par
+所得图象是函数y=\FormulaOCR{image549.png}{{\sqrt{2}}}sin（2x+\FormulaOCR{image550.png}{\frac{\pi}{4}}-2\ensuremath{\varphi}），图象关于y轴对称，可得-2\ensuremath{\varphi}=k\ensuremath{\pi}+\FormulaOCR{image551.png}{\frac{\pi}{2}}，即\ensuremath{\varphi}=-\FormulaOCR{image552.png}{\frac{k\pi}{2}-\frac{\pi}{8}}，当k=-1时，\ensuremath{\varphi}的最小正值是\FormulaOCR{image553.png}{\frac{3\pi}{8}}．故选：C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2013•山东）函数 $y=\sin(2x+\varphi)$ 的图象沿 $x$ 轴向左平移 $\frac{\pi}{8}$ 个单位后，得到一个偶函数的图象，则 $\varphi$ 的一个可能值为（　　）\par
+A．$\frac{3\pi}{4}$\qquad B．$\frac{\pi}{4}$\qquad C．$0$\qquad D．$-\frac{\pi}{4}$\par
+\begin{solution}
+解：平移后的函数为 $\sin[2(x+\frac{\pi}{8})+\varphi]=\sin(2x+\frac{\pi}{4}+\varphi)$．其为偶函数，故 $\frac{\pi}{4}+\varphi=k\pi+\frac{\pi}{2}$，即 $\varphi=k\pi+\frac{\pi}{4}$．\par
+取 $k=0$，得 $\varphi=\frac{\pi}{4}$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2012•天津）将函数 $y=\sin\omega x$（$\omega>0$）的图象向右平移 $\frac{\pi}{4}$ 个单位，所得图象经过点 $(\frac{3\pi}{4},0)$，则 $\omega$ 的最小值是（　　）\par
+A．$\frac13$\qquad B．$1$\qquad C．$\frac32$\qquad D．$2$\par
+\begin{solution}
+解：平移后函数为 $y=\sin[\omega(x-\frac{\pi}{4})]$．代入 $(\frac{3\pi}{4},0)$，得 $\sin\frac{\omega\pi}{2}=0$，即 $\frac{\omega\pi}{2}=k\pi$．故最小正值为 $\omega=2$，选 D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2011•大纲版）设 $f(x)=\cos\omega x$（$\omega>0$）．将其图象向右平移 $\frac{\pi}{3}$ 个单位后与原图象重合，则 $\omega$ 的最小值为（　　）\par
+A．\FormulaOCR{image570.png}{\frac{1}{3}}\qquad{}B．3\qquad{}C．6\qquad{}D．9\par
+\begin{solution}
+解：$\frac{\pi}{3}$ 必须是函数周期的正整数倍，即 $\frac{\pi}{3}=k\frac{2\pi}{\omega}$，$k\in\mathbb N^*$．故 $\omega=6k$，最小值为 $6$．故选 C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2010•辽宁）设 $\omega>0$，函数 $y=\sin(\omega x+\frac{\pi}{3})+2$ 的图象向右平移 $\frac{4\pi}{3}$ 个单位后与原图象重合，则 $\omega$ 的最小值是（　　）\par
+A．\FormulaOCR{image576.png}{\frac{2}{3}}\qquad{}B．\FormulaOCR{image577.png}{\frac{4}{3}}\qquad{}C．\FormulaOCR{image578.png}{\frac{3}{2}}\qquad{}D．3\par
+\begin{solution}
+解：平移后的函数为 $y=\sin[\omega(x-\frac{4\pi}{3})+\frac{\pi}{3}]+2$．要与原图象重合，需 $\frac{4\omega\pi}{3}=2k\pi$，\par
+即 $\omega=\frac{3k}{2}$，$k\in\mathbb N^*$．故最小值为 $\frac32$，选 C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2009•湖北）函数 $y=\cos(2x+\frac{\pi}{6})-2$ 的图象 $F$ 按向量 $\vec a$ 平移到 $F'$，$F'$ 的函数解析式为 $y=f(x)$．当 $f(x)$ 为奇函数时，向量 $\vec a$ 可以等于（　　）\par
+A．$(\frac{\pi}{6},-2)$\qquad B．$(-\frac{\pi}{6},2)$\qquad C．$(-\frac{\pi}{6},-2)$\qquad D．$(\frac{\pi}{6},2)$\par
+\begin{solution}
+解：将 $y=\cos(2x+\frac{\pi}{6})-2$ 的图象向左平移 $\frac{\pi}{6}$ 个单位，再向上平移 $2$ 个单位，得 $y=\cos(2x+\frac{\pi}{2})=-\sin 2x$．\par
+因此 $\vec a=(-\frac{\pi}{6},2)$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2014•重庆）将函数 $f(x)=\sin(\omega x+\varphi)$（$\omega>0$，$-\frac{\pi}{2}\leq\varphi<\frac{\pi}{2}$）图象上每一点的横坐标缩短为原来的一半，纵坐标不变，再向右平移 $\frac{\pi}{6}$ 个单位长度得到 $y=\sin x$ 的图象，则 $f(\frac{\pi}{6})=$\AnswerBlank{\ensuremath{\frac{\sqrt2}{2}}}．\par
+\begin{solution}
+解：横坐标缩短为原来的一半后，函数变为 $y=\sin(2\omega x+\varphi)$；再向右平移 $\frac{\pi}{6}$，得到\par
+$y=\sin[2\omega(x-\frac{\pi}{6})+\varphi]=\sin(2\omega x+\varphi-\frac{\omega\pi}{3})$．\par
+该函数与 $y=\sin x$ 相同，故 $2\omega=1$ 且 $\varphi-\frac{\omega\pi}{3}=2k\pi$．由相位范围得 $\omega=\frac12$，$\varphi=\frac{\pi}{6}$．\par
+因此 $f(\frac{\pi}{6})=\sin(\frac{\pi}{12}+\frac{\pi}{6})=\sin\frac{\pi}{4}=\frac{\sqrt2}{2}$．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2026•北京）已知函数\FormulaOCR{image606.wmf}{f(x)=\sin(x+\varphi )(0 < \varphi  < 2\pi )}，将\FormulaOCR{image607.wmf}{f(x)}向\FormulaOCR{image608.wmf}{x}轴正方向平移\FormulaOCR{image609.wmf}{3\varphi }个单位，得到的函数图象与\FormulaOCR{image610.wmf}{f(x)}图象关于\FormulaOCR{image611.wmf}{x}轴对称，则\FormulaOCR{image612.wmf}{\varphi }的取值个数为（　　）\par
+\qquad{}\qquad{}\qquad{}A．1\qquad{}B．2\qquad{}C．3\qquad{}D．4\par
+\begin{solution}
+解：已知函数\FormulaOCR{image613.wmf}{f(x)=\sin(x+\varphi )(0 < \varphi  < 2\pi )}，将\FormulaOCR{image614.wmf}{f(x)}向\FormulaOCR{image615.wmf}{x}轴正方向平移\FormulaOCR{image616.wmf}{3\varphi }个单位，\par
+得\FormulaOCR{image617.wmf}{y=\sin(x-3\varphi +\varphi )=\sin(x-2\varphi )}，\par
+又得到的函数图象与\FormulaOCR{image618.wmf}{f(x)}图象关于\FormulaOCR{image619.wmf}{x}轴对称，则\FormulaOCR{image620.wmf}{\sin(x-2\varphi )=-\sin(x+\varphi )}，\par
+则\FormulaOCR{image621.wmf}{\sin(x-2\varphi )+\sin(x+\varphi )=0}，由和差化积公式可得：\FormulaOCR{image622.wmf}{2\sin(x-\frac { \varphi  } { 2 })\cos(\frac { 3\varphi  } { 2 })=0}，\par
+该等式恒成立，则\FormulaOCR{image623.wmf}{\cos(\frac { 3\varphi  } { 2 })=0}，则\FormulaOCR{image624.wmf}{\frac { 3\varphi  } { 2 }=\frac { \pi  } { 2 }+k\pi }，\FormulaOCR{image625.wmf}{k\in Z}，\par
+则\FormulaOCR{image626.wmf}{\varphi =\frac { \pi  } { 3 }+\frac { 2k\pi  } { 3 }}，\FormulaOCR{image627.wmf}{k\in Z}，又\FormulaOCR{image628.wmf}{0 < \varphi  < 2\pi }，则\FormulaOCR{image629.wmf}{\varphi =\frac { \pi  } { 3 }}或\FormulaOCR{image630.wmf}{\varphi =\frac { 5\pi  } { 3 }}或\FormulaOCR{image631.wmf}{\varphi =\pi }，\par
+则符合条件的\FormulaOCR{image632.wmf}{\varphi }有3个．故选：\FormulaOCR{image633.wmf}{C}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•乙卷）把函数\FormulaOCR{image634.wmf}{y=f(x)}图像上所有点的横坐标缩短到原来的\FormulaOCR{image635.wmf}{\frac { 1 } { 2 }}倍，纵坐标不变，再把所得曲线向右平移\FormulaOCR{image636.wmf}{\frac { \pi  } { 3 }}个单位长度，得到函数\FormulaOCR{image637.wmf}{y=\sin(x-\frac { \pi  } { 4 })}的图像，则\FormulaOCR{image638.wmf}{f(x)=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image639.wmf}{\sin(\frac { x } { 2 }-\frac { 7\pi  } { 12 })}\qquad{}B．\FormulaOCR{image640.wmf}{\sin(\frac { x } { 2 }+\frac { \pi  } { 12 })}\qquad{}C．\FormulaOCR{image641.wmf}{\sin(2x-\frac { 7\pi  } { 12 })}\qquad{}D．\FormulaOCR{image642.wmf}{\sin(2x+\frac { \pi  } { 12 })}\par
+\begin{solution}
+解：\FormulaOCR{image643.wmf}{\because}把函数\FormulaOCR{image644.wmf}{y=f(x)}图像上所有点的横坐标缩短到原来的\FormulaOCR{image645.wmf}{\frac { 1 } { 2 }}倍，纵坐标不变，\par
+再把所得曲线向右平移\FormulaOCR{image646.wmf}{\frac { \pi  } { 3 }}个单位长度，得到函数\FormulaOCR{image647.wmf}{y=\sin(x-\frac { \pi  } { 4 })}的图像，\par
+\FormulaOCR{image648.wmf}{\therefore }把函数\FormulaOCR{image649.wmf}{y=\sin(x-\frac { \pi  } { 4 })}的图像，向左平移\FormulaOCR{image650.wmf}{\frac { \pi  } { 3 }}个单位长度，\par
+得到\FormulaOCR{image651.wmf}{y=\sin(x+\frac { \pi  } { 3 }-\frac { \pi  } { 4 })=\sin(x+\frac { \pi  } { 12 })}的图像；\par
+再把图像上所有点的横坐标变为原来的2倍，纵坐标不变，\par
+可得\FormulaOCR{image652.wmf}{f(x)=\sin(\frac { 1 } { 2 }x+\frac { \pi  } { 12 })}的图像．\par
+故选：\FormulaOCR{image653.wmf}{B}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2013•天津）函数 $f(x)=\sin(2x-\frac{\pi}{4})$ 在区间 $[0,\frac{\pi}{2}]$ 上的最小值是（　　）\par
+A．$-1$\qquad B．$-\frac{\sqrt2}{2}$\qquad C．$\frac{\sqrt2}{2}$\qquad D．$0$\par
+\begin{solution}
+解：当 $x\in[0,\frac{\pi}{2}]$ 时，$2x-\frac{\pi}{4}\in[-\frac{\pi}{4},\frac{3\pi}{4}]$，故 $f(x)\in[-\frac{\sqrt2}{2},1]$，最小值为 $-\frac{\sqrt2}{2}$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2018•德阳模拟）函数 $f(x)=\sin(2x+\varphi)$（$|\varphi|<\frac{\pi}{2}$）的图象向左平移 $\frac{\pi}{6}$ 个单位后关于原点对称，则 $f(x)$ 在 $[0,\frac{\pi}{2}]$ 上的最小值为（　　）\par
+A．$-\frac{\sqrt3}{2}$\qquad B．$-\frac12$\qquad C．$\frac{\sqrt3}{2}$\qquad D．$\frac12$\par
+\begin{solution}
+解：平移后的函数为 $y=\sin(2x+\frac{\pi}{3}+\varphi)$．其图象关于原点对称，故 $\frac{\pi}{3}+\varphi=k\pi$．由 $|\varphi|<\frac{\pi}{2}$ 得 $\varphi=-\frac{\pi}{3}$．\par
+于是 $f(x)=\sin(2x-\frac{\pi}{3})$．当 $x\in[0,\frac{\pi}{2}]$ 时，$2x-\frac{\pi}{3}\in[-\frac{\pi}{3},\frac{2\pi}{3}]$，\par
+故 $f(x)$ 的最小值为 $-\frac{\sqrt3}{2}$．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2018•乌鲁木齐一模）已知 $\frac{\pi}{3}$ 为函数 $f(x)=\sin(2x+\varphi)$（$0<\varphi<\frac{\pi}{2}$）的零点，则 $f(x)$ 的单调递增区间是（　　）\par
+A．$[2k\pi-\frac{5\pi}{12},\,2k\pi+\frac{\pi}{12}]$\quad B．$[2k\pi+\frac{\pi}{12},\,2k\pi+\frac{7\pi}{12}]$\quad($k\in\mathbb Z$)\par
+C．$[k\pi-\frac{5\pi}{12},\,k\pi+\frac{\pi}{12}]$\quad D．$[k\pi+\frac{\pi}{12},\,k\pi+\frac{7\pi}{12}]$\quad($k\in\mathbb Z$)\par
+\begin{solution}
+解：由 $f(\frac{\pi}{3})=0$，得 $\sin(\frac{2\pi}{3}+\varphi)=0$．结合 $0<\varphi<\frac{\pi}{2}$，得 $\varphi=\frac{\pi}{3}$，故 $f(x)=\sin(2x+\frac{\pi}{3})$．\par
+令 $-\frac{\pi}{2}+2k\pi\leq 2x+\frac{\pi}{3}\leq\frac{\pi}{2}+2k\pi$，解得 $k\pi-\frac{5\pi}{12}\leq x\leq k\pi+\frac{\pi}{12}$．故选 C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2018•河北区二模）若函数 $f(x)=\cos\omega x-\sin\omega x$（$\omega>0$）在 $(-\frac{\pi}{2},\frac{\pi}{2})$ 上单调递减，则 $\omega$ 的取值不可能为（　　）\par
+A．$\frac15$\qquad B．$\frac14$\qquad C．$\frac12$\qquad D．$\frac34$\par
+\begin{solution}
+解：$f(x)=\sqrt2\cos(\omega x+\frac{\pi}{4})$．要使它在 $(-\frac{\pi}{2},\frac{\pi}{2})$ 上单调递减，该相位区间必须包含在余弦函数的一个递减区间内．\par
+取递减区间 $(0,\pi)$，由 $-\frac{\omega\pi}{2}+\frac{\pi}{4}\geq0$ 且 $\frac{\omega\pi}{2}+\frac{\pi}{4}\leq\pi$，得 $0<\omega\leq\frac12$．\par
+因此 $\frac34$ 不可能．故选 D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2016•新课标Ⅰ）已知函数 $f(x)=\sin(\omega x+\varphi)$（$\omega>0$，$|\varphi|\leq\frac{\pi}{2}$），$x=-\frac{\pi}{4}$ 是 $f(x)$ 的零点，$x=\frac{\pi}{4}$ 是 $y=f(x)$ 图象的对称轴，且 $f(x)$ 在 $(\frac{\pi}{18},\frac{5\pi}{36})$ 上单调，则 $\omega$ 的最大值为（　　）\par A．$11$\qquad B．$9$\qquad C．$7$\qquad D．$5$\par
+\begin{solution}
+解：零点与对称轴之间的距离为最小正周期的奇数个四分之一，故 $\omega$ 为正奇数．又给定单调区间的长度为 $\frac{\pi}{12}$，不超过 $\frac{T}{2}=\frac{\pi}{\omega}$，所以 $\omega\leq12$．\par
+当 $\omega=11$ 时，由 $f(-\frac{\pi}{4})=0$ 及 $|\varphi|\leq\frac{\pi}{2}$ 得 $\varphi=-\frac{\pi}{4}$，函数在给定区间内跨过极大值点，故不单调；\par
+当 $\omega=9$ 时，得 $\varphi=\frac{\pi}{4}$，相位区间为 $(\frac{3\pi}{4},\frac{3\pi}{2})$，函数单调递减．因此 $\omega$ 的最大值为 $9$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2012•新课标）已知 $\omega>0$，函数 $f(x)=\sin(\omega x+\frac{\pi}{4})$ 在区间 $[\frac{\pi}{2},\pi]$ 上单调递减，则 $\omega$ 的取值范围是（　　）\par
+A．$[\frac12,\frac54]$\qquad B．$[\frac12,\frac34]$\qquad C．$(0,\frac12)$\qquad D．$(0,2]$\par
+\begin{solution}
+解：相位 $\omega x+\frac{\pi}{4}$ 在该区间内应落在同一个正弦函数递减区间中．由\par
+$\frac{\omega\pi}{2}+\frac{\pi}{4}\geq\frac{\pi}{2}$，$\omega\pi+\frac{\pi}{4}\leq\frac{3\pi}{2}$，\par
+解得 $\frac12\leq\omega\leq\frac54$．端点均可取，故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2011•山东）若函数 $f(x)=\sin\omega x$（$\omega>0$）在 $[0,\frac{\pi}{3}]$ 上单调递增，在 $[\frac{\pi}{3},\frac{\pi}{2}]$ 上单调递减，则 $\omega=$（　　）\par
+A．$\frac23$\qquad B．$\frac32$\qquad C．$2$\qquad D．$3$\par
+\begin{solution}
+解：由题意，$x=\frac{\pi}{3}$ 是函数的极大值点，故 $\frac{\omega\pi}{3}=2k\pi+\frac{\pi}{2}$．结合选项与两个区间上的单调性，得 $k=0$，$\omega=\frac32$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2011•天津）已知函数 $f(x)=2\sin(\omega x+\varphi)$，其中 $\omega>0$，$-\pi<\varphi\leq\pi$．若 $f(x)$ 的最小正周期为 $6\pi$，且当 $x=\frac{\pi}{2}$ 时取得最大值，则（　　）\par
+A．$f(x)$ 在 $[-2\pi,0]$ 上是增函数\qquad B．$f(x)$ 在 $[-3\pi,-\pi]$ 上是增函数\par
+C．$f(x)$ 在 $[3\pi,5\pi]$ 上是减函数\qquad D．$f(x)$ 在 $[4\pi,6\pi]$ 上是减函数\par
+\begin{solution}
+解：由 $T=6\pi$ 得 $\omega=\frac13$．再由 $x=\frac{\pi}{2}$ 时取得最大值，得 $\frac{\pi}{6}+\varphi=\frac{\pi}{2}+2k\pi$；结合 $-\pi<\varphi\leq\pi$，得 $\varphi=\frac{\pi}{3}$．\par
+故 $f(x)=2\sin(\frac{x}{3}+\frac{\pi}{3})$，其单调递增区间为 $[6k\pi-\frac{5\pi}{2},\,6k\pi+\frac{\pi}{2}]$，单调递减区间为 $[6k\pi+\frac{\pi}{2},\,6k\pi+\frac{7\pi}{2}]$．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2011•安徽）已知函数 $f(x)=\sin(2x+\varphi)$．若 $f(x)\leq|f(\frac{\pi}{6})|$ 对 $x\in\mathbb R$ 恒成立，且 $f(\frac{\pi}{2})>f(\pi)$，则 $f(x)$ 的单调递增区间是（　　）\par
+A．$[k\pi-\frac{\pi}{3},\,k\pi+\frac{\pi}{6}]$\quad B．$[k\pi,\,k\pi+\frac{\pi}{2}]$\quad($k\in\mathbb Z$)\par
+C．$[k\pi+\frac{\pi}{6},\,k\pi+\frac{2\pi}{3}]$\quad D．$[k\pi-\frac{\pi}{2},\,k\pi]$\quad($k\in\mathbb Z$)\par
+\begin{solution}
+解：恒等式要求 $|f(\frac{\pi}{6})|=1$，故 $\sin(\frac{\pi}{3}+\varphi)=\pm1$，即 $\varphi=\frac{\pi}{6}+k\pi$．\par
+又 $f(\frac{\pi}{2})=-\sin\varphi>f(\pi)=\sin\varphi$，故 $\sin\varphi<0$，可取 $\varphi=-\frac{5\pi}{6}$．令 $-\frac{\pi}{2}+2k\pi\leq2x-\frac{5\pi}{6}\leq\frac{\pi}{2}+2k\pi$，\par
+解得 $x\in[k\pi+\frac{\pi}{6},\,k\pi+\frac{2\pi}{3}]$，$k\in\mathbb Z$．故选 C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2011•新课标）设函数 $f(x)=\sin(\omega x+\varphi)+\cos(\omega x+\varphi)$（$\omega>0$，$|\varphi|<\frac{\pi}{2}$）的最小正周期为 $\pi$，且 $f(-x)=f(x)$，则（　　）\par
+A．$f(x)$ 在 $(0,\frac{\pi}{2})$ 上单调递减\qquad B．$f(x)$ 在 $(\frac{\pi}{4},\frac{3\pi}{4})$ 上单调递减\par
+C．$f(x)$ 在 $(0,\frac{\pi}{2})$ 上单调递增\qquad D．$f(x)$ 在 $(\frac{\pi}{4},\frac{3\pi}{4})$ 上单调递增\par
+\begin{solution}
+解：$f(x)=\sqrt2\sin(\omega x+\varphi+\frac{\pi}{4})$．由最小正周期为 $\pi$，得 $\omega=2$．\par
+又 $f(x)$ 为偶函数，故 $\varphi+\frac{\pi}{4}=\frac{\pi}{2}+k\pi$．由 $|\varphi|<\frac{\pi}{2}$ 得 $\varphi=\frac{\pi}{4}$，于是 $f(x)=\sqrt2\cos2x$．\par
+当 $x\in(0,\frac{\pi}{2})$ 时，$2x\in(0,\pi)$，故 $f(x)$ 单调递减．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2005•黑龙江）已知函数 $y=\tan\omega x$ 在 $(-\frac{\pi}{2},\frac{\pi}{2})$ 上是减函数，则（　　）\par
+A．0＜\ensuremath{\omega}\ensuremath{\le}1\qquad{}B．-1\ensuremath{\le}\ensuremath{\omega}＜0\qquad{}C．\ensuremath{\omega}\ensuremath{\ge}1\qquad{}D．\ensuremath{\omega}\ensuremath{\le}-1\par
+\begin{solution}
+解：函数单调递减要求 $\omega<0$；给定区间内不能出现正切函数的间断点，故 $\frac{\pi}{|\omega|}\geq\pi$，即 $|\omega|\leq1$．因此 $-1\leq\omega<0$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2014•大纲版）若函数 $f(x)=\cos2x+a\sin x$ 在 $(\frac{\pi}{6},\frac{\pi}{2})$ 上是减函数，则 $a$ 的取值范围是\AnswerBlank{\ensuremath{(-\infty,2]}}．\par
+\begin{solution}
+解：令 $t=\sin x$，则 $t\in(\frac12,1)$，且 $f(x)=-2t^2+at+1$．\par
+由于 $t$ 随 $x$ 递增，原函数递减等价于二次函数在 $(\frac12,1)$ 上递减．其对称轴为 $t=\frac a4$，故 $\frac a4\leq\frac12$，即 $a\leq2$．\par
+所以 $a$ 的取值范围是 $(-\infty,2]$．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2010•福建）已知函数 $f(x)=3\sin(\omega x-\frac{\pi}{6})$（$\omega>0$）和 $g(x)=2\cos(2x+\varphi)+1$ 的图象的对称轴完全相同．若 $x\in[0,\frac{\pi}{2}]$，则 $f(x)$ 的取值范围是\AnswerBlank{\ensuremath{[-\frac32,3]}}．\par
+\begin{solution}
+解：两函数图象的对称轴完全相同，故 $\omega=2$．于是 $f(x)=3\sin(2x-\frac{\pi}{6})$．\par
+当 $x\in[0,\frac{\pi}{2}]$ 时，$2x-\frac{\pi}{6}\in[-\frac{\pi}{6},\frac{5\pi}{6}]$，故 $f(x)\in[-\frac32,3]$．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•天津）已知函数\FormulaOCR{image811.wmf}{f(x)=3\sin(\omega x+\frac { \pi  } { 3 })(\omega >0)}的最小正周期为\FormulaOCR{image812.wmf}{\pi }．则\FormulaOCR{image813.wmf}{f(x)}在区间\FormulaOCR{image814.wmf}{[-\frac { \pi  } { 12 },\frac { \pi  } { 6 }]}上的最小值为（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image815.wmf}{-\frac { 3\sqrt { 3 } } { 2 }}\qquad{}B．\FormulaOCR{image816.wmf}{-\frac { 3 } { 2 }}\qquad{}C．0\qquad{}D．\FormulaOCR{image817.wmf}{\frac { 3 } { 2 }}\par
+\begin{solution}
+解：\FormulaOCR{image818.wmf}{\because}函数\FormulaOCR{image819.wmf}{f(x)=3\sin(\omega x+\frac { \pi  } { 3 })}，\FormulaOCR{image820.wmf}{(\omega >0)}\par
+\FormulaOCR{image821.wmf}{T=\frac { 2\pi  } { \omega  }=\pi }，\FormulaOCR{image822.wmf}{\omega =2}，可得\FormulaOCR{image823.wmf}{f(x)=3\sin(2x+\frac { \pi  } { 3 })}，\FormulaOCR{image824.wmf}{x\in [-\frac { \pi  } { 12 },\frac { \pi  } { 6 }]}，\FormulaOCR{image825.wmf}{2x+\frac { \pi  } { 3 }\in [\frac { \pi  } { 6 }}，\FormulaOCR{image826.wmf}{\frac { 2\pi  } { 3 }]}，\par
+所以\FormulaOCR{image827.wmf}{\sin(2x+\frac { \pi  } { 3 })\in [\frac { 1 } { 2 }}，\FormulaOCR{image828.wmf}{1]}，所以\FormulaOCR{image829.wmf}{f(x)\in [\frac { 3 } { 2 }}，\FormulaOCR{image830.wmf}{3]}，故函数取最小值是\FormulaOCR{image831.wmf}{\frac { 3 } { 2 }}．\par
+故选：\FormulaOCR{image832.wmf}{D}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•新高考Ⅰ）下列区间中，函数\FormulaOCR{image833.wmf}{f(x)=7\sin(x-\frac { \pi  } { 6 })}单调递增的区间是（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image834.wmf}{(0,\frac { \pi  } { 2 })}\qquad{}B．\FormulaOCR{image835.wmf}{(\frac { \pi  } { 2 }}，\FormulaOCR{image836.wmf}{\pi )}\qquad{}C．\FormulaOCR{image837.wmf}{(\pi ,\frac { 3\pi  } { 2 })}\qquad{}D．\FormulaOCR{image838.wmf}{(\frac { 3\pi  } { 2 }}，\FormulaOCR{image839.wmf}{2\pi )}\par
+\begin{solution}
+解：令\FormulaOCR{image840.wmf}{-\frac { \pi  } { 2 }+2k\pi \leq x-\frac { \pi  } { 6 }\leq \frac { \pi  } { 2 }+2k\pi }，\FormulaOCR{image841.wmf}{k\in Z}．则\FormulaOCR{image842.wmf}{-\frac { \pi  } { 3 }+2k\pi \leq x\leq \frac { 2\pi  } { 3 }+2k\pi }，\FormulaOCR{image843.wmf}{k\in Z}．当\FormulaOCR{image844.wmf}{k=0}时，\FormulaOCR{image845.wmf}{x\in [-\frac { \pi  } { 3 }}，\FormulaOCR{image846.wmf}{\frac { 2\pi  } { 3 }]}，\FormulaOCR{image847.wmf}{(0,\frac { \pi  } { 2 })\subseteq [-\frac { \pi  } { 3 }}，\FormulaOCR{image848.wmf}{\frac { 2\pi  } { 3 }]}，故选：\FormulaOCR{image849.wmf}{A}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2026•山东）已知\FormulaOCR{image850.wmf}{f(x)=2\sin(ax+\theta )(a\in Z}，\FormulaOCR{image851.wmf}{0\leq \theta  < 2\pi )}是偶函数，\FormulaOCR{image852.wmf}{f(x)}在区间\FormulaOCR{image853.wmf}{(0,\frac { \pi  } { 2 })}单调递增，则\FormulaOCR{image854.wmf}{\theta =}　　 ，\FormulaOCR{image855.wmf}{f(\frac { 2\pi  } { 3 })=}　　 ．\par
+\begin{solution}
+解：因为\FormulaOCR{image856.wmf}{f(x)=2\sin(ax+\theta )(a\in Z}，\FormulaOCR{image857.wmf}{0\leq \theta  < 2\pi )}是偶函数，所以\FormulaOCR{image858.wmf}{\theta =\frac { \pi  } { 2 }}或\FormulaOCR{image859.wmf}{\theta =\frac { 3\pi  } { 2 }}，\par
+当\FormulaOCR{image860.wmf}{\theta =\frac { \pi  } { 2 }}时，\FormulaOCR{image861.wmf}{f(0)=2\sin(0+\frac { \pi  } { 2 })=2}，是最大值，函数\FormulaOCR{image862.wmf}{f(x)}在\FormulaOCR{image863.wmf}{(0,\frac { \pi  } { 2 })}上不是单调递增，不合题意；当\FormulaOCR{image864.wmf}{\theta =\frac { 3\pi  } { 2 }}时，\FormulaOCR{image865.wmf}{f(0)=2\sin(0+\frac { 3\pi  } { 2 })=-2}，是最小值，由\FormulaOCR{image866.wmf}{f(x)=2\sin(ax+\frac { 3\pi  } { 2 })=-2\cos ax}在\FormulaOCR{image867.wmf}{(0,\frac { \pi  } { 2 })}单调递增，所以周期需满足\FormulaOCR{image868.wmf}{\|a\|\cdot \frac { \pi  } { 2 }\leq \pi }，即\FormulaOCR{image869.wmf}{\|a\|\leq 2}，因为\FormulaOCR{image870.wmf}{a\in Z}，且\FormulaOCR{image871.wmf}{f(x)}为偶函数，不妨取\FormulaOCR{image872.wmf}{a=2}或\FormulaOCR{image873.wmf}{a=1}，\FormulaOCR{image874.wmf}{a=0}；\par
+当\FormulaOCR{image875.wmf}{a=2}时，\FormulaOCR{image876.wmf}{f(\frac { 2\pi  } { 3 })=-2\cos(2\times \frac { 2\pi  } { 3 })=-2\cos\frac { 4\pi  } { 3 }=-2\times (-\frac { 1 } { 2 })=1}，当\FormulaOCR{image877.wmf}{a=1}时，\FormulaOCR{image878.wmf}{f(\frac { 2\pi  } { 3 })=-2\cos\frac { 2\pi  } { 3 }=-2\times (-\frac { 1 } { 2 })=1}；当\FormulaOCR{image879.wmf}{a=0}时，\FormulaOCR{image880.wmf}{f(x)=-2}是常函数，不合题意；\par
+综上，\FormulaOCR{image881.wmf}{\theta =\frac { 3\pi  } { 2 }}，\FormulaOCR{image882.wmf}{f(\frac { 2\pi  } { 3 })=1}．故答案为：\FormulaOCR{image883.wmf}{\frac { 3\pi  } { 2 }}；1．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+函数 $f(x)=\frac15\sin(x+\frac{\pi}{3})+\cos(x-\frac{\pi}{6})$ 的最大值为（　　）\par
+A．$\frac65$\qquad B．$1$\qquad C．$\frac35$\qquad D．$\frac15$\par
+\begin{solution}
+解：由 $\cos(x-\frac{\pi}{6})=\sin(x+\frac{\pi}{3})$，得\par
+$f(x)=\frac65\sin(x+\frac{\pi}{3})\leq\frac65$，且等号可以取得．故选 A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+若函数 $f(x)=(1+\sqrt3\tan x)\cos x$，$0\leq x<\frac{\pi}{2}$，则 $f(x)$ 的最大值是（　　）\par
+A．1\qquad{}B．2\qquad{}C．\FormulaOCR{image902.png}{{\sqrt{3}}+1}\qquad{}D．\FormulaOCR{image903.png}{{\sqrt{3}}+2}\par
+\begin{solution}
+解：$f(x)=\cos x+\sqrt3\sin x=2\sin(x+\frac{\pi}{6})$．\par
+当 $0\leq x<\frac{\pi}{2}$ 时，$\frac{\pi}{6}\leq x+\frac{\pi}{6}<\frac{2\pi}{3}$，故最大值为 $2$．故选 B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+函数 $y=2\sin(\frac{\pi}{3}-x)-\cos(\frac{\pi}{6}+x)$（$x\in\mathbb R$）的最小值等于（　　）\par
+A．-3\qquad{}B．-2\qquad{}C．\FormulaOCR{image910.png}{\scriptstyle{\sqrt{5}}}\qquad{}D．-1\par
+\begin{solution}
+解：因为 $\frac{\pi}{3}-x=\frac{\pi}{2}-(\frac{\pi}{6}+x)$，所以\par
+$y=2\cos(\frac{\pi}{6}+x)-\cos(\frac{\pi}{6}+x)=\cos(\frac{\pi}{6}+x)$，最小值为 $-1$．故选 D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•甲卷）函数\FormulaOCR{image913.wmf}{f(x)=\sin x-\sqrt { 3 }\cos x}在\FormulaOCR{image914.wmf}{[0}，\FormulaOCR{image915.wmf}{\pi ]}上的最大值是 \AnswerBlank{2} ．\par
+\begin{solution}
+解：\FormulaOCR{image916.wmf}{f(x)=\sin x-\sqrt { 3 }\cos x=2\sin(x-\frac { \pi  } { 3 })}，\par
+\FormulaOCR{image917.wmf}{x\in [0}，\FormulaOCR{image918.wmf}{\pi ]}，\FormulaOCR{image919.wmf}{x-\frac { \pi  } { 3 }\in [-\frac { \pi  } { 3 }}，\FormulaOCR{image920.wmf}{\frac { 2\pi  } { 3 }]}，\par
+所以当\FormulaOCR{image921.wmf}{x-\frac { \pi  } { 3 }=\frac { \pi  } { 2 }}，\FormulaOCR{image922.wmf}{x=\frac { 5\pi  } { 6 }}时，\FormulaOCR{image923.wmf}{f(x)}取得最大值，\par
+\FormulaOCR{image924.wmf}{f(x)_{ \max }  =f(\frac { 5\pi  } { 6 })=2}．\par
+故答案为：2．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2008•四川）已知\FormulaOCR{image925.png}{\tan\alpha=\frac{1}{2}}，则\FormulaOCR{image926.png}{\frac{(\sin\alpha+\cos\alpha)^2}{\cos 2\alpha}}=（　　）\par
+A．2\qquad{}B．-2\qquad{}C．3\qquad{}D．-3\par
+\begin{solution}
+解：\FormulaOCR{image927.png}{\frac{(\sin\alpha+\cos\alpha)^2}{\cos 2\alpha}=\frac{(\sin\alpha+\cos\alpha)^2}{(\sin\alpha+\cos\alpha)(\cos\alpha-\sin\alpha)}=\frac{\sin\alpha+\cos\alpha}{\cos\alpha-\sin\alpha}=\frac{1+\tan\alpha}{1-\tan\alpha}}，=\FormulaOCR{image928.png}{\frac{1+\frac{1}{2}}{1-\frac{1}{2}}=3}．故选：C．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2009•陕西）若tan\ensuremath{\alpha}=2，则\FormulaOCR{image929.png}{\frac{2\sin\alpha-\cos\alpha}{\sin\alpha+2\cos\alpha}}的值为（　　）\par
+A．0\qquad{}B．\FormulaOCR{image930.png}{\frac{3}{4}}\qquad{}C．1\qquad{}D．\FormulaOCR{image931.png}{\frac{15}{4}}\par
+\begin{solution}
+解：利用齐次分式的意义将分子分母同时除以cos\ensuremath{\alpha}（cos\ensuremath{\alpha}\ensuremath{\ne}0）得，\par
+\FormulaOCR{image932.png}{\frac{2\sin\alpha-\cos\alpha}{\sin\alpha+2\cos\alpha}=\frac{2\tan\alpha-1}{\tan\alpha+2}=\frac{3}{4}}\par
+故选：B．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2009•辽宁）已知 $\tan\theta=2$，则 $\sin^2\theta+\sin\theta\cos\theta-2\cos^2\theta=$（　　）\par
+A．$-\frac45$\qquad B．$\frac45$\qquad C．$-\frac34$\qquad D．$\frac34$\par
+\begin{solution}
+解：将原式同除以 $\cos^2\theta$，得 $\frac{\tan^2\theta+\tan\theta-2}{\tan^2\theta+1}=\frac{4+2-2}{4+1}=\frac45$．故选 D．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2012•辽宁）已知sin\ensuremath{\alpha}-cos\ensuremath{\alpha}=\FormulaOCR{image941.png}{{\sqrt{2}}}，\ensuremath{\alpha}\ensuremath{\in}（0，\ensuremath{\pi}），则tan\ensuremath{\alpha}的值是（　　）\par
+A．-1\qquad{}B．\FormulaOCR{image942.png}{\frac{\sqrt{2}}{2}}\qquad{}C．\FormulaOCR{image943.png}{\frac{\sqrt{2}}{2}}\qquad{}D．1\par
+\begin{solution}
+解：\ensuremath{\because}已知\FormulaOCR{image944.png}{\sin\alpha-\cos\alpha=\sqrt2,\quad\alpha\in(0,\pi)}，\ensuremath{\therefore}1-2sin\ensuremath{\alpha}cos\ensuremath{\alpha}=2，即sin2\ensuremath{\alpha}=-1，\par
+故2\ensuremath{\alpha}=\FormulaOCR{image945.png}{\frac{3\pi}{2}}，\ensuremath{\therefore}\ensuremath{\alpha}=\FormulaOCR{image946.png}{\frac{3\pi}{4}}，tan\ensuremath{\alpha}=-1．故选：A．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2026•重庆）已知\FormulaOCR{image947.wmf}{\alpha }为第二象限角，且\FormulaOCR{image948.wmf}{3\sin2\alpha \cos\alpha =8\sin\alpha \cos2\alpha }，则\FormulaOCR{image949.wmf}{\frac { 1+\sin\alpha  } { 2-\cos\alpha  }=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image950.wmf}{\frac { 3 } { 4 }}\qquad{}B．\FormulaOCR{image951.wmf}{\frac { 3 } { 2 }}\qquad{}C．\FormulaOCR{image952.wmf}{\frac { 1 } { 2 }}\qquad{}D．\FormulaOCR{image953.wmf}{\frac { 5 } { 8 }}\par
+\begin{solution}
+解：因为\FormulaOCR{image954.wmf}{\alpha }为第二象限角，且\FormulaOCR{image955.wmf}{3\sin2\alpha \cos\alpha =8\sin\alpha \cos2\alpha }，\par
+所以\FormulaOCR{image956.wmf}{6\sin\alpha \cos ^ { 2 } \alpha =8\sin\alpha (2\cos ^ { 2 } \alpha -1)}，因为\FormulaOCR{image957.wmf}{\sin\alpha \ne 0}，所以\FormulaOCR{image958.wmf}{3\cos ^ { 2 } \alpha =4(2\cos ^ { 2 } \alpha -1)}，\par
+则\FormulaOCR{image959.wmf}{\cos ^ { 2 } \alpha =\frac { 4 } { 5 }}，所以\FormulaOCR{image960.wmf}{\cos\alpha =-\frac { 2\sqrt { 5 } } { 5 }}，\FormulaOCR{image961.wmf}{\sin\alpha =\frac { \sqrt { 5 } } { 5 }}，则\FormulaOCR{image962.wmf}{\frac { 1+\sin\alpha  } { 2-\cos\alpha  }=\frac { 1+\frac { \sqrt { 5 } } { 5 } } { 2+\frac { 2\sqrt { 5 } } { 5 } }=\frac { 1 } { 2 }}．故选：\FormulaOCR{image963.wmf}{C}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2026•）已知向量\FormulaOCR{image964.wmf}{m=(\cos\theta -\sqrt { 2 }}，\FormulaOCR{image965.wmf}{\sin\theta +\sqrt { 2 })}，则\FormulaOCR{image966.wmf}{\|m\|}的最大值是（　　）\par
+\qquad{}\qquad{}\qquad{}A．9\qquad{}B．3\qquad{}C．\FormulaOCR{image967.wmf}{\sqrt { 2 }}\qquad{}D．1\par
+\begin{solution}
+解：因为向量\FormulaOCR{image968.wmf}{m=(\cos\theta -\sqrt { 2 }}，\FormulaOCR{image969.wmf}{\sin\theta +\sqrt { 2 })}，\par
+所以\FormulaOCR{image970.wmf}{\|m\|=\sqrt { (\cos\theta -\sqrt { 2 }) ^ { 2 } +(\sin\theta +\sqrt { 2 }) ^ { 2 }  }=\sqrt { 5+4\sin(\theta -\frac { \pi  } { 4 }) }}，\par
+所以\FormulaOCR{image971.wmf}{\sin\left(\theta-\frac{\pi}{4}\right)=1}时，\FormulaOCR{image972.wmf}{\|m\|}的最大值是3．\par
+故选：\FormulaOCR{image973.wmf}{B}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2025•重庆）已知\FormulaOCR{image974.wmf}{0 < \alpha  < \pi }，\FormulaOCR{image975.wmf}{\cos\frac { \alpha  } { 2 }=\frac { \sqrt { 5 } } { 5 }}，则\FormulaOCR{image976.wmf}{\sin(\alpha -\frac { \pi  } { 4 })=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image977.wmf}{\frac { \sqrt { 2 } } { 10 }}\qquad{}B．\FormulaOCR{image978.wmf}{\frac { \sqrt { 2 } } { 5 }}\qquad{}C．\FormulaOCR{image979.wmf}{\frac { 3\sqrt { 2 } } { 10 }}\qquad{}D．\FormulaOCR{image980.wmf}{\frac { 7\sqrt { 2 } } { 10 }}\par
+\begin{solution}
+解：因为\FormulaOCR{image981.wmf}{0 < \alpha  < \pi }，\FormulaOCR{image982.wmf}{\cos\frac { \alpha  } { 2 }=\frac { \sqrt { 5 } } { 5 }}，所以\FormulaOCR{image983.wmf}{0 < \frac { \alpha  } { 2 } < \frac { \pi  } { 2 }}，所以\FormulaOCR{image984.wmf}{\sin\frac { \alpha  } { 2 }=\sqrt { 1-\cos ^ { 2 } (\frac { \alpha  } { 2 }) }=\frac { 2 } { \sqrt { 5 } }>\frac { \sqrt { 2 } } { 2 }=\sin\frac { \pi  } { 4 }}，\par
+所以\FormulaOCR{image985.wmf}{\frac { \alpha  } { 2 }>\frac { \pi  } { 4 }}，即\FormulaOCR{image986.wmf}{\frac { \pi  } { 2 } < \alpha  < \pi }，所以\FormulaOCR{image987.wmf}{\sin\alpha =2\sin\frac { \alpha  } { 2 }\cos\frac { \alpha  } { 2 }=\frac { 4 } { 5 }}，\FormulaOCR{image988.wmf}{\cos\alpha =-\sqrt { 1-\sin ^ { 2 } \alpha  }=-\frac { 3 } { 5 }}，则\FormulaOCR{image989.wmf}{\sin(\alpha -\frac { \pi  } { 4 })=\sin\alpha \cos\frac { \pi  } { 4 }-\cos\alpha \sin\frac { \pi  } { 4 }=\frac { 7\sqrt { 2 } } { 10 }}．故选：\FormulaOCR{image990.wmf}{D}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•新高考Ⅰ）已知\FormulaOCR{image991.wmf}{\cos(\alpha +\beta )=m}，\FormulaOCR{image992.wmf}{\tan\alpha \tan\beta =2}，则\FormulaOCR{image993.wmf}{\cos(\alpha -\beta )=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image994.wmf}{-3m}\qquad{}B．\FormulaOCR{image995.wmf}{-\frac { m } { 3 }}\qquad{}C．\FormulaOCR{image996.wmf}{\frac { m } { 3 }}\qquad{}D．\FormulaOCR{image997.wmf}{3m}\par
+\begin{solution}
+解：因为\FormulaOCR{image998.wmf}{\cos(\alpha +\beta )=\cos\alpha \cos\beta -\sin\alpha \sin\beta =m}，\par
+由\FormulaOCR{image999.wmf}{\tan\alpha \tan\beta =\frac { \sin\alpha \sin\beta  } { \cos\alpha \cos\beta  }=2}，可得\FormulaOCR{image1000.wmf}{\sin\alpha \sin\beta =2\cos\alpha \cos\beta }，所以\FormulaOCR{image1001.wmf}{\cos\alpha \cos\beta =-m}，\FormulaOCR{image1002.wmf}{\sin\alpha \sin\beta =-2m}，则\FormulaOCR{image1003.wmf}{\cos(\alpha -\beta )=\cos\alpha \cos\beta +\sin\alpha \sin\beta =-3m}．故选：\FormulaOCR{image1004.wmf}{A}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•甲卷）若\FormulaOCR{image1005.wmf}{\alpha \in (0,\frac { \pi  } { 2 })}，\FormulaOCR{image1006.wmf}{\tan2\alpha =\frac { \cos\alpha  } { 2-\sin\alpha  }}，则\FormulaOCR{image1007.wmf}{\tan\alpha =}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1008.wmf}{\frac { \sqrt { 15 } } { 15 }}\qquad{}B．\FormulaOCR{image1009.wmf}{\frac { \sqrt { 5 } } { 5 }}\qquad{}C．\FormulaOCR{image1010.wmf}{\frac { \sqrt { 5 } } { 3 }}\qquad{}D．\FormulaOCR{image1011.wmf}{\frac { \sqrt { 15 } } { 3 }}\par
+\begin{solution}
+解：由\FormulaOCR{image1012.wmf}{\tan2\alpha =\frac { \cos\alpha  } { 2-\sin\alpha  }}，得\FormulaOCR{image1013.wmf}{\frac { \sin2\alpha  } { \cos2\alpha  }=\frac { \cos\alpha  } { 2-\sin\alpha  }}，即\FormulaOCR{image1014.wmf}{\frac { 2\sin\alpha \cos\alpha  } { 1-2\sin ^ { 2 } \alpha  }=\frac { \cos\alpha  } { 2-\sin\alpha  }}，\par
+\FormulaOCR{image1015.wmf}{\because \alpha \in (0,\frac { \pi  } { 2 })}，\FormulaOCR{image1016.wmf}{\therefore \cos\alpha \ne 0}，则\FormulaOCR{image1017.wmf}{2\sin\alpha (2-\sin\alpha )=1-2\sin ^ { 2 } \alpha }，解得\FormulaOCR{image1018.wmf}{\sin\alpha =\frac { 1 } { 4 }}，\par
+则\FormulaOCR{image1019.wmf}{\cos\alpha =\sqrt { 1-\sin ^ { 2 } \alpha  }=\frac { \sqrt { 15 } } { 4 }}，\FormulaOCR{image1020.wmf}{\therefore \tan\alpha =\frac { \sin\alpha  } { \cos\alpha  }=\frac { \frac { 1 } { 4 } } { \frac { \sqrt { 15 } } { 4 } }=\frac { \sqrt { 15 } } { 15 }}．故选：\FormulaOCR{image1021.wmf}{A}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2020•新课标Ⅲ）已知\FormulaOCR{image1022.wmf}{\sin\theta +\sin(\theta +\frac { \pi  } { 3 })=1}，则\FormulaOCR{image1023.wmf}{\sin(\theta +\frac { \pi  } { 6 })=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1024.wmf}{\frac { 1 } { 2 }}\qquad{}B．\FormulaOCR{image1025.wmf}{\frac { \sqrt { 3 } } { 3 }}\qquad{}C．\FormulaOCR{image1026.wmf}{\frac { 2 } { 3 }}\qquad{}D．\FormulaOCR{image1027.wmf}{\frac { \sqrt { 2 } } { 2 }}\par
+\begin{solution}
+解：\FormulaOCR{image1028.wmf}{\because \sin\theta +\sin(\theta +\frac { \pi  } { 3 })=1}，\FormulaOCR{image1029.wmf}{\therefore \sin\theta +\frac { 1 } { 2 }\sin\theta +\frac { \sqrt { 3 } } { 2 }\cos\theta =1}，\par
+即\FormulaOCR{image1030.wmf}{\frac { 3 } { 2 }\sin\theta +\frac { \sqrt { 3 } } { 2 }\cos\theta =1}，得\FormulaOCR{image1031.wmf}{\sqrt { 3 }(\frac { 1 } { 2 }\cos\theta +\frac { \sqrt { 3 } } { 2 }\sin\theta )=1}，\par
+即\FormulaOCR{image1032.wmf}{\sqrt { 3 }\sin(\theta +\frac { \pi  } { 6 })=1}，得\FormulaOCR{image1033.wmf}{\sin(\theta +\frac { \pi  } { 6 })=\frac { \sqrt { 3 } } { 3 }}故选：\FormulaOCR{image1034.wmf}{B}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•甲卷）已知\FormulaOCR{image1035.wmf}{\frac { \cos\alpha  } { \cos\alpha -\sin\alpha  }=\sqrt { 3 }}，则\FormulaOCR{image1036.wmf}{\tan(\alpha +\frac { \pi  } { 4 })=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1037.wmf}{2\sqrt { 3 }+1}\qquad{}B．\FormulaOCR{image1038.wmf}{2\sqrt { 3 }-1}\qquad{}C．\FormulaOCR{image1039.wmf}{\frac { \sqrt { 3 } } { 2 }}\qquad{}D．\FormulaOCR{image1040.wmf}{1-\sqrt { 3 }}\par
+\begin{solution}
+解：\FormulaOCR{image1041.wmf}{\frac { \cos\alpha  } { \cos\alpha -\sin\alpha  }=\sqrt { 3 }}，则\FormulaOCR{image1042.wmf}{\frac { 1 } { 1-\tan\alpha  }=\sqrt { 3 }}，所以\FormulaOCR{image1043.wmf}{\tan\alpha =1-\frac { \sqrt { 3 } } { 3 }}，\par
+故\FormulaOCR{image1044.wmf}{\tan(\alpha +\frac { \pi  } { 4 })=\frac { \tan\alpha +1 } { 1-\tan\alpha  }=2\sqrt { 3 }-1}．故选：\FormulaOCR{image1045.wmf}{B}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2023•新高考Ⅰ）已知\FormulaOCR{image1057.wmf}{\sin(\alpha -\beta )=\frac { 1 } { 3 }}，\FormulaOCR{image1058.wmf}{\cos\alpha \sin\beta =\frac { 1 } { 6 }}，则\FormulaOCR{image1059.wmf}{\cos(2\alpha +2\beta )=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1060.wmf}{\frac { 7 } { 9 }}\qquad{}B．\FormulaOCR{image1061.wmf}{\frac { 1 } { 9 }}\qquad{}C．\FormulaOCR{image1062.wmf}{-\frac { 1 } { 9 }}\qquad{}D．\FormulaOCR{image1063.wmf}{-\frac { 7 } { 9 }}\par
+\begin{solution}
+解：因为\FormulaOCR{image1064.wmf}{\sin(\alpha -\beta )=\sin\alpha \cos\beta -\sin\beta \cos\alpha =\frac { 1 } { 3 }}，\FormulaOCR{image1065.wmf}{\cos\alpha \sin\beta =\frac { 1 } { 6 }}，\par
+所以\FormulaOCR{image1066.wmf}{\sin\alpha \cos\beta =\frac { 1 } { 2 }}，所以\FormulaOCR{image1067.wmf}{\sin(\alpha +\beta )=\sin\alpha \cos\beta +\sin\beta \cos\alpha =\frac { 1 } { 2 }+\frac { 1 } { 6 }=\frac { 2 } { 3 }}，\par
+则\FormulaOCR{image1068.wmf}{\cos(2\alpha +2\beta )=1-2\sin ^ { 2 } (\alpha +\beta )=1-2\times \frac { 4 } { 9 }=\frac { 1 } { 9 }}．故选：\FormulaOCR{image1069.wmf}{B}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2023•新高考Ⅱ）已知\FormulaOCR{image1070.wmf}{\alpha }为锐角，\FormulaOCR{image1071.wmf}{\cos\alpha =\frac { 1+\sqrt { 5 } } { 4 }}，则\FormulaOCR{image1072.wmf}{\sin\frac { \alpha  } { 2 }=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1073.wmf}{\frac { 3-\sqrt { 5 } } { 8 }}\qquad{}B．\FormulaOCR{image1074.wmf}{\frac { -1+\sqrt { 5 } } { 8 }}\qquad{}C．\FormulaOCR{image1075.wmf}{\frac { 3-\sqrt { 5 } } { 4 }}\qquad{}D．\FormulaOCR{image1076.wmf}{\frac { -1+\sqrt { 5 } } { 4 }}\par
+\begin{solution}
+解：\FormulaOCR{image1077.wmf}{\cos\alpha =\frac { 1+\sqrt { 5 } } { 4 }}，则\FormulaOCR{image1078.wmf}{\cos\alpha =1-2\sin ^ { 2 } \frac { \alpha  } { 2 }}，\par
+故\FormulaOCR{image1079.wmf}{2\sin ^ { 2 } \frac { \alpha  } { 2 }=1-\cos\alpha =\frac { 3-\sqrt { 5 } } { 4 }}，即\FormulaOCR{image1080.wmf}{\sin ^ { 2 } \frac { \alpha  } { 2 }=\frac { 3-\sqrt { 5 } } { 8 }=\frac { (\sqrt { 5 }) ^ { 2 } +1 ^ { 2 } -2\sqrt { 5 } } { 16 }=\frac { (\sqrt { 5 }-1) ^ { 2 }  } { 16 }}，\par
+\FormulaOCR{image1081.wmf}{\because \alpha }为锐角，\FormulaOCR{image1082.wmf}{\therefore }\FormulaOCR{image1083.wmf}{\sin\frac { \alpha  } { 2 }>0}，\FormulaOCR{image1084.wmf}{\therefore \sin\frac { \alpha  } { 2 }=\frac { -1+\sqrt { 5 } } { 4 }}．故选：\FormulaOCR{image1085.wmf}{D}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•新高考Ⅱ）若\FormulaOCR{image1086.wmf}{\sin(\alpha +\beta )+\cos(\alpha +\beta )=2\sqrt { 2 }\cos(\alpha +\frac { \pi  } { 4 })\sin\beta }，则（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1087.wmf}{\tan(\alpha -\beta )=1}\qquad{}B．\FormulaOCR{image1088.wmf}{\tan(\alpha +\beta )=1}\qquad{}C．\FormulaOCR{image1089.wmf}{\tan(\alpha -\beta )=-1}\qquad{}D．\FormulaOCR{image1090.wmf}{\tan(\alpha +\beta )=-1}\par
+\begin{solution}
+解：解法一：因为\FormulaOCR{image1091.wmf}{\sin(\alpha +\beta )+\cos(\alpha +\beta )=2\sqrt { 2 }\cos(\alpha +\frac { \pi  } { 4 })\sin\beta }，\par
+所以\FormulaOCR{image1092.wmf}{\sqrt { 2 }\sin(\alpha +\beta +\frac { \pi  } { 4 })=2\sqrt { 2 }\cos(\alpha +\frac { \pi  } { 4 })\sin\beta }，即\FormulaOCR{image1093.wmf}{\sin(\alpha +\beta +\frac { \pi  } { 4 })=2\cos(\alpha +\frac { \pi  } { 4 })\sin\beta }，\par
+所以\FormulaOCR{image1094.wmf}{\sin(\alpha +\frac { \pi  } { 4 })\cos\beta +\sin\beta \cos(\alpha +\frac { \pi  } { 4 })=2\cos(\alpha +\frac { \pi  } { 4 })\sin\beta }，\par
+所以\FormulaOCR{image1095.wmf}{\sin(\alpha +\frac { \pi  } { 4 })\cos\beta -\sin\beta \cos(\alpha +\frac { \pi  } { 4 })=0}，所以\FormulaOCR{image1096.wmf}{\sin(\alpha +\frac { \pi  } { 4 }-\beta )=0}，\par
+所以\FormulaOCR{image1097.wmf}{\alpha +\frac { \pi  } { 4 }-\beta =k\pi }，\FormulaOCR{image1098.wmf}{k\in Z}，所以\FormulaOCR{image1099.wmf}{\alpha -\beta =k\pi -\frac { \pi  } { 4 }}，所以\FormulaOCR{image1100.wmf}{\tan(\alpha -\beta )=-1}．\par
+解法二：由题意可得，\FormulaOCR{image1101.wmf}{\sin\alpha \cos\beta +\cos\alpha \sin\beta +\cos\alpha \cos\beta -\sin\alpha \sin\beta =2(\cos\alpha -\sin\alpha )\sin\beta }，\par
+即\FormulaOCR{image1102.wmf}{\sin\alpha \cos\beta -\cos\alpha \sin\beta +\cos\alpha \cos\beta +\sin\alpha \sin\beta =0}，\par
+所以\FormulaOCR{image1103.wmf}{\sin(\alpha -\beta )+\cos(\alpha -\beta )=0}，故\FormulaOCR{image1104.wmf}{\tan(\alpha -\beta )=-1}．故选：\FormulaOCR{image1105.wmf}{C}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2021•新高考Ⅰ）若\FormulaOCR{image1106.wmf}{\tan\theta =-2}，则\FormulaOCR{image1107.wmf}{\frac { \sin\theta (1+\sin2\theta ) } { \sin\theta +\cos\theta  }=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1108.wmf}{-\frac { 6 } { 5 }}\qquad{}B．\FormulaOCR{image1109.wmf}{-\frac { 2 } { 5 }}\qquad{}C．\FormulaOCR{image1110.wmf}{\frac { 2 } { 5 }}\qquad{}D．\FormulaOCR{image1111.wmf}{\frac { 6 } { 5 }}\par
+\begin{solution}
+解：由题意可得：\FormulaOCR{image1112.wmf}{\frac { \sin\theta (1+\sin2\theta ) } { \sin\theta +\cos\theta  }=\frac { \sin\theta (\sin ^ { 2 } \theta +\cos ^ { 2 } \theta +2\sin\theta \cos\theta ) } { \sin\theta +\cos\theta  }}\par
+\FormulaOCR{image1113.wmf}{=\frac { \sin\theta  } { \sin\theta +\cos\theta  }\cdot \frac { \sin ^ { 2 } \theta +\cos ^ { 2 } \theta +2\sin\theta \cdot \cos\theta  } { \sin ^ { 2 } \theta +\cos ^ { 2 } \theta  }}\FormulaOCR{image1114.wmf}{=\frac { \tan\theta  } { \tan\theta +1 }\cdot \frac { \tan\theta  ^ { 2 } +2\tan\theta +1 } { \tan ^ { 2 } \theta +1 }}\FormulaOCR{image1115.wmf}{=\frac { 2 } { 5 }}．故选：\FormulaOCR{image1116.wmf}{C}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2025•北京）已知\FormulaOCR{image1117.wmf}{\alpha }，\FormulaOCR{image1118.wmf}{\beta \in [0}，\FormulaOCR{image1119.wmf}{2\pi ]}，且\FormulaOCR{image1120.wmf}{\sin(\alpha +\beta )=\sin(\alpha -\beta )}，\FormulaOCR{image1121.wmf}{\cos(\alpha +\beta )\ne \cos(\alpha -\beta )}，写出满足条件的一组\FormulaOCR{image1122.wmf}{\alpha =}\FormulaOCR{image1123.wmf}{\frac { \pi  } { 2 }}（答案不唯一）　 ，\FormulaOCR{image1124.wmf}{\beta =}　　 ．\par
+\begin{solution}
+解：因为\FormulaOCR{image1125.wmf}{\sin(\alpha +\beta )=\sin(\alpha -\beta )}，\par
+所以\FormulaOCR{image1126.wmf}{\sin\alpha \cos\beta +\cos\alpha \sin\beta =\sin\alpha \cos\beta -\cos\alpha \sin\beta }，\par
+所以\FormulaOCR{image1127.wmf}{\cos\alpha \sin\beta =0}①，又\FormulaOCR{image1128.wmf}{\cos(\alpha +\beta )\ne \cos(\alpha -\beta )}，\par
+即\FormulaOCR{image1129.wmf}{\cos\alpha \cos\beta -\sin\alpha \sin\beta \ne \cos\alpha \cos\beta +\sin\alpha \sin\beta }，即\FormulaOCR{image1130.wmf}{\sin\alpha \sin\beta \ne 0}②，\par
+结合①②得：\FormulaOCR{image1131.wmf}{\cos\alpha =0}，且\FormulaOCR{image1132.wmf}{\sin\alpha \ne 0}，\FormulaOCR{image1133.wmf}{\sin\beta \ne 0}，故可取：\FormulaOCR{image1134.wmf}{\alpha =\beta =\frac { \pi  } { 2 }}．\par
+故答案为：\FormulaOCR{image1135.wmf}{\frac { \pi  } { 2 },\frac { \pi  } { 2 }}．（答案不唯一）\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•新高考Ⅱ）已知\FormulaOCR{image1136.wmf}{\alpha }为第一象限角，\FormulaOCR{image1137.wmf}{\beta }为第三象限角，\FormulaOCR{image1138.wmf}{\tan\alpha +\tan\beta =4}，\FormulaOCR{image1139.wmf}{\tan\alpha \tan\beta =\sqrt { 2 }+1}，则\FormulaOCR{image1140.wmf}{\sin(\alpha +\beta )=} 　　 ．\par
+\begin{solution}
+解：因为\FormulaOCR{image1141.wmf}{\alpha }为第一象限角，\FormulaOCR{image1142.wmf}{\beta }为第三象限角，\par
+所以\FormulaOCR{image1143.wmf}{\pi +2k\pi  < \alpha +\beta  < 2\pi +2k\pi }，\FormulaOCR{image1144.wmf}{k\in Z}，因为\FormulaOCR{image1145.wmf}{\tan\alpha +\tan\beta =4}，\FormulaOCR{image1146.wmf}{\tan\alpha \tan\beta =\sqrt { 2 }+1}，\par
+所以\FormulaOCR{image1147.wmf}{\tan(\alpha +\beta )=\frac { \tan\alpha +\tan\beta  } { 1-\tan\alpha \tan\beta  }=\frac { 4 } { 1-1-\sqrt { 2 } }=-2\sqrt { 2 } < 0}，\par
+所以\FormulaOCR{image1148.wmf}{\frac { 3 } { 2 }\pi +2k\pi  < \alpha +\beta  < 2\pi +2k\pi }，\FormulaOCR{image1149.wmf}{k\in Z}，所以\FormulaOCR{image1150.wmf}{\cos(\alpha +\beta )=\sqrt { \frac { 1 } { 1+\tan ^ { 2 } (\alpha +\beta ) } }=\frac { 1 } { 3 }}则\FormulaOCR{image1151.wmf}{\sin(\alpha +\beta )=-\sqrt { 1-\cos ^ { 2 } (\alpha +\beta ) }=-\frac { 2\sqrt { 2 } } { 3 }}．故答案为：\FormulaOCR{image1152.wmf}{-\frac { 2\sqrt { 2 } } { 3 }}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2023•全国）已知\FormulaOCR{image1153.wmf}{\sin2\theta =-\frac { 1 } { 3 }}，若\FormulaOCR{image1154.wmf}{\frac { \pi  } { 4 } < \theta  < \frac { 3\pi  } { 4 }}，则\FormulaOCR{image1155.wmf}{\tan\theta =}　\AnswerBlank{\FormulaOCR{image1156.wmf}{-3-2\sqrt { 2 }}}　．\par
+\begin{solution}
+解：\FormulaOCR{image1157.wmf}{\because}\FormulaOCR{image1158.wmf}{\frac { \pi  } { 4 } < \theta  < \frac { 3\pi  } { 4 }}，且\FormulaOCR{image1159.wmf}{\sin2\theta =2\sin\theta \cos\theta =-\frac { 1 } { 3 } < 0}，\FormulaOCR{image1160.wmf}{\therefore \sin\theta >0}，\FormulaOCR{image1161.wmf}{\cos\theta  < 0}，\par
+\FormulaOCR{image1162.wmf}{\therefore }\FormulaOCR{image1163.wmf}{\frac { \pi  } { 2 } < \theta  < \frac { 3\pi  } { 4 }}，\FormulaOCR{image1164.wmf}{\tan\theta  < -1}，\par
+\FormulaOCR{image1165.wmf}{\because}\FormulaOCR{image1166.wmf}{\sin2\theta =2\sin\theta \cos\theta =-\frac { 1 } { 3 }}，\par
+\FormulaOCR{image1167.wmf}{\therefore }\FormulaOCR{image1168.wmf}{\frac { 2\sin\theta \cos\theta  } { \sin ^ { 2 } \theta +\cos ^ { 2 } \theta  }=\frac { 2\tan\theta  } { \tan ^ { 2 } \theta +1 }=-\frac { 1 } { 3 }}，\par
+解得\FormulaOCR{image1169.wmf}{\tan\theta =-3-2\sqrt { 2 }}或\FormulaOCR{image1170.wmf}{-3+2\sqrt { 2 }}（舍\FormulaOCR{image1171.wmf}{)}．\par
+故答案为：\FormulaOCR{image1172.wmf}{-3-2\sqrt { 2 }}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2025•天津）\FormulaOCR{image1173.wmf}{f(x)=\sin(\omega x+\varphi )(\omega >0}，\FormulaOCR{image1174.wmf}{-\pi  < \varphi  < \pi )}，在\FormulaOCR{image1175.wmf}{[-\frac { 5\pi  } { 12 }}，\FormulaOCR{image1176.wmf}{\frac { \pi  } { 12 }]}上单调递增，且\FormulaOCR{image1177.wmf}{x=\frac { \pi  } { 12 }}为它的一条对称轴，\FormulaOCR{image1178.wmf}{(\frac { \pi  } { 3 }}，\FormulaOCR{image1179.wmf}{0)}是它的一个对称中心，当\FormulaOCR{image1180.wmf}{x\in [0}，\FormulaOCR{image1181.wmf}{\frac { \pi  } { 2 }]}时，\FormulaOCR{image1182.wmf}{f(x)}的最小值为（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1183.wmf}{-\frac { \sqrt { 3 } } { 2 }}\qquad{}B．\FormulaOCR{image1184.wmf}{-\frac { 1 } { 2 }}\qquad{}C．1\qquad{}D．0\par
+\begin{solution}
+解：因为\FormulaOCR{image1185.wmf}{f(x)}在\FormulaOCR{image1186.wmf}{[-\frac { 5\pi  } { 12 }}，\FormulaOCR{image1187.wmf}{\frac { \pi  } { 12 }]}上单调递增，且\FormulaOCR{image1188.wmf}{x=\frac { \pi  } { 12 }}为它的一条对称轴，\par
+可得\FormulaOCR{image1189.wmf}{f(\frac { \pi  } { 12 })=1}，即\FormulaOCR{image1190.wmf}{\frac { \pi  } { 12 }\omega +\varphi =2k\pi +\frac { \pi  } { 2 }}，\FormulaOCR{image1191.wmf}{k\in Z}，①因为\FormulaOCR{image1192.wmf}{f(x)}的图象关于\FormulaOCR{image1193.wmf}{(\frac { \pi  } { 3 }}，\FormulaOCR{image1194.wmf}{0)}对称，\par
+所以\FormulaOCR{image1195.wmf}{\frac { \pi  } { 3 }\omega +\varphi =m\pi }，\FormulaOCR{image1196.wmf}{m\in Z}，②且\FormulaOCR{image1197.wmf}{\frac { \pi  } { 3 }-\frac { \pi  } { 12 }=\frac { 2n+1 } { 4 }T=\frac { 2n+1 } { 4 }\times \frac { 2\pi  } { \omega  }}，\FormulaOCR{image1198.wmf}{n\in Z}，\par
+解得\FormulaOCR{image1199.wmf}{\omega =4n+2}，\FormulaOCR{image1200.wmf}{n\in Z}，因为在\FormulaOCR{image1201.wmf}{[-\frac { 5\pi  } { 12 }}，\FormulaOCR{image1202.wmf}{\frac { \pi  } { 12 }]}上单调递增，所以\FormulaOCR{image1203.wmf}{\frac { \pi  } { 12 }-(-\frac { 5\pi  } { 12 })\leq \frac { T } { 2 }}，\par
+解得\FormulaOCR{image1204.wmf}{0 < \omega \leq 2}，所以\FormulaOCR{image1205.wmf}{\omega =2}，根据①②，可得\FormulaOCR{image1206.wmf}{\begin{cases}\varphi=2k\pi+\frac{\pi}{3},\\\varphi=m\pi-\frac{2\pi}{3}\end{cases}}，\par
+因为\FormulaOCR{image1207.wmf}{-\pi  < \varphi  < \pi }，所以\FormulaOCR{image1208.wmf}{\varphi =\frac { \pi  } { 3 }}，故\FormulaOCR{image1209.wmf}{f(x)=\sin(2x+\frac { \pi  } { 3 })}，当\FormulaOCR{image1210.wmf}{x\in [0}，\FormulaOCR{image1211.wmf}{\frac { \pi  } { 2 }]}时，\FormulaOCR{image1212.wmf}{2x+\frac { \pi  } { 3 }\in [\frac { \pi  } { 3 }}，\FormulaOCR{image1213.wmf}{\frac { 4\pi  } { 3 }]}，可得\FormulaOCR{image1214.wmf}{f(x)}的最小值为\FormulaOCR{image1215.wmf}{f(\frac { \pi  } { 2 })=\sin\frac { 4\pi  } { 3 }=-\frac { \sqrt { 3 } } { 2 }}．故选：\FormulaOCR{image1216.wmf}{A}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•全国）已知\FormulaOCR{image1217.wmf}{x=\frac { \pi  } { 4 }}和\FormulaOCR{image1218.wmf}{x=\frac { \pi  } { 2 }}都是函数\FormulaOCR{image1219.wmf}{f(x)=\sin(\omega x+\varphi )(\omega >0)}的极值点，则\FormulaOCR{image1220.wmf}{\omega }的最小值是（　　）\par
+\qquad{}\qquad{}\qquad{}A．4\qquad{}B．2\qquad{}C．1\qquad{}D．\FormulaOCR{image1221.wmf}{\frac { 1 } { 2 }}\par
+\begin{solution}
+解：因为\FormulaOCR{image1222.wmf}{x=\frac { \pi  } { 4 }}和\FormulaOCR{image1223.wmf}{x=\frac { \pi  } { 2 }}都是函数\FormulaOCR{image1224.wmf}{f(x)=\sin(\omega x+\varphi )(\omega >0)}的极值点，\par
+所以周期为\FormulaOCR{image1225.wmf}{T\leq 2\times (\frac { \pi  } { 2 }-\frac { \pi  } { 4 })=\frac { \pi  } { 2 }}，所以\FormulaOCR{image1226.wmf}{\frac { 2\pi  } { \omega  }\leq \frac { \pi  } { 2 }}，所以\FormulaOCR{image1227.wmf}{\omega \geq 4}，\par
+即\FormulaOCR{image1228.wmf}{\omega }的最小值是4．故选：\FormulaOCR{image1229.wmf}{A}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•北京）设函数\FormulaOCR{image1230.wmf}{f(x)=\sin\omega x(\omega >0)}．已知\FormulaOCR{image1231.wmf}{f(x_{ 1 }  )=-1}，\FormulaOCR{image1232.wmf}{f(x_{ 2 }  )=1}，且\FormulaOCR{image1233.wmf}{\|x_{ 1 }  -x_{ 2 }  \|}的最小值为\FormulaOCR{image1234.wmf}{\frac { \pi  } { 2 }}，则\FormulaOCR{image1235.wmf}{\omega =}（　　）\par
+\qquad{}\qquad{}\qquad{}A．1\qquad{}B．2\qquad{}C．3\qquad{}D．4\par
+\begin{solution}
+解：因为\FormulaOCR{image1236.wmf}{f(x)=\sin\omega x}，\par
+则\FormulaOCR{image1237.wmf}{f(x_{ 1 }  )=-1}为函数的最小值，\FormulaOCR{image1238.wmf}{f(x_{ 2 }  )=1}为函数的最大值，又\FormulaOCR{image1239.wmf}{\|x_{ 1 }  -x_{ 2 }  \|_{ \min }  =\frac { \pi  } { 2 }=\frac { T } { 2 }}，\par
+所以\FormulaOCR{image1240.wmf}{T=\pi }，\FormulaOCR{image1241.wmf}{\omega =2}．故选：\FormulaOCR{image1242.wmf}{B}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2023•乙卷）已知函数\FormulaOCR{image1243.wmf}{f(x)=\sin(\omega x+\varphi )}在区间\FormulaOCR{image1244.wmf}{(\frac { \pi  } { 6 }}，\FormulaOCR{image1245.wmf}{\frac { 2\pi  } { 3 })}单调递增，直线\FormulaOCR{image1246.wmf}{x=\frac { \pi  } { 6 }}和\FormulaOCR{image1247.wmf}{x=\frac { 2\pi  } { 3 }}为函数\FormulaOCR{image1248.wmf}{y=f(x)}的图像的两条对称轴，则\FormulaOCR{image1249.wmf}{f(-\frac { 5\pi  } { 12 })=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1250.wmf}{-\frac { \sqrt { 3 } } { 2 }}\qquad{}B．\FormulaOCR{image1251.wmf}{-\frac { 1 } { 2 }}\qquad{}C．\FormulaOCR{image1252.wmf}{\frac { 1 } { 2 }}\qquad{}D．\FormulaOCR{image1253.wmf}{\frac { \sqrt { 3 } } { 2 }}\par
+\begin{solution}
+解：根据题意可知\FormulaOCR{image1254.wmf}{\frac { T } { 2 }=\frac { 2\pi  } { 3 }-\frac { \pi  } { 6 }=\frac { \pi  } { 2 }}，\FormulaOCR{image1255.wmf}{\therefore T=\pi }，取\FormulaOCR{image1256.wmf}{\omega >0}，\FormulaOCR{image1257.wmf}{\therefore \omega =\frac { 2\pi  } { T }=2}，\par
+又根据“五点法”可得\FormulaOCR{image1258.wmf}{2\times \frac { \pi  } { 6 }+\varphi =-\frac { \pi  } { 2 }+2k\pi }，\FormulaOCR{image1259.wmf}{k\in Z}，\FormulaOCR{image1260.wmf}{\therefore \varphi =-\frac { 5\pi  } { 6 }+2k\pi }，\FormulaOCR{image1261.wmf}{k\in Z}，\par
+\FormulaOCR{image1262.wmf}{\therefore f(x)=\sin(2x-\frac { 5\pi  } { 6 }+2k\pi )=\sin(2x-\frac { 5\pi  } { 6 })}\FormulaOCR{image1263.wmf}{\therefore f(-\frac { 5\pi  } { 12 })=\sin(-\frac { 5\pi  } { 6 }-\frac { 5\pi  } { 6 })=\sin(-\frac { 5\pi  } { 3 })=\sin\frac { \pi  } { 3 }=\frac { \sqrt { 3 } } { 2 }}．故选：\FormulaOCR{image1264.wmf}{D}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2023•天津）函数\FormulaOCR{image1265.wmf}{y=f(x)}的图象关于直线\FormulaOCR{image1266.wmf}{x=2}对称，且\FormulaOCR{image1267.wmf}{f(x)}的一个周期为4，则\FormulaOCR{image1268.wmf}{f(x)}的解析式可以是（　　）\par
+\qquad{}A．\FormulaOCR{image1269.wmf}{f(x)=\sin(\frac { \pi  } { 2 }x)}\qquad{}B．\FormulaOCR{image1270.wmf}{f(x)=\cos(\frac { \pi  } { 2 }x)}\qquad{}\par
+\qquad{}C．\FormulaOCR{image1271.wmf}{f(x)=\sin(\frac { \pi  } { 4 }x)}\qquad{}D．\FormulaOCR{image1272.wmf}{f(x)=\cos(\frac { \pi  } { 4 }x)}\par
+\begin{solution}
+解：\FormulaOCR{image1273.wmf}{A}：若\FormulaOCR{image1274.wmf}{f(x)=\sin(\frac { \pi  } { 2 }x)}，则\FormulaOCR{image1275.wmf}{T=\frac { 2\pi  } { \frac { \pi  } { 2 } }=4}，令\FormulaOCR{image1276.wmf}{\frac { \pi  } { 2 }x=\frac { \pi  } { 2 }+k\pi }，\FormulaOCR{image1277.wmf}{k\in Z}，则\FormulaOCR{image1278.wmf}{x=1+2k}，\FormulaOCR{image1279.wmf}{k\in Z}，显然\FormulaOCR{image1280.wmf}{x=2}不是对称轴，不符合题意；\FormulaOCR{image1281.wmf}{B}：若\FormulaOCR{image1282.wmf}{f(x)=\cos(\frac { \pi  } { 2 }x)}，则\FormulaOCR{image1283.wmf}{T=\frac { 2\pi  } { \frac { \pi  } { 2 } }=4}，\par
+令\FormulaOCR{image1284.wmf}{\frac { \pi  } { 2 }x=k\pi }，\FormulaOCR{image1285.wmf}{k\in Z}，则\FormulaOCR{image1286.wmf}{x=2k}，\FormulaOCR{image1287.wmf}{k\in Z}，\FormulaOCR{image1288.wmf}{C:f(x)=\sin(\frac { \pi  } { 4 }x)}，则\FormulaOCR{image1289.wmf}{T=\frac { 2\pi  } { \frac { \pi  } { 4 } }=8}，不符合题意；\par
+\FormulaOCR{image1290.wmf}{D:f(x)=\cos(\frac { \pi  } { 4 }x)}，则\FormulaOCR{image1291.wmf}{T=\frac { 2\pi  } { \frac { \pi  } { 4 } }=8}，不符合题意．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•新高考Ⅰ）记函数\FormulaOCR{image1292.wmf}{f(x)=\sin(\omega x+\frac { \pi  } { 4 })+b(\omega >0)}的最小正周期为\FormulaOCR{image1293.wmf}{T}．若\FormulaOCR{image1294.wmf}{\frac { 2\pi  } { 3 } < T < \pi }，且\FormulaOCR{image1295.wmf}{y=f(x)}的图像关于点\FormulaOCR{image1296.wmf}{(\frac { 3\pi  } { 2 }}，\FormulaOCR{image1297.wmf}{2)}中心对称，则\FormulaOCR{image1298.wmf}{f(\frac { \pi  } { 2 })=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．1\qquad{}B．\FormulaOCR{image1299.wmf}{\frac { 3 } { 2 }}\qquad{}C．\FormulaOCR{image1300.wmf}{\frac { 5 } { 2 }}\qquad{}D．3\par
+\begin{solution}
+解：函数\FormulaOCR{image1301.wmf}{f(x)=\sin(\omega x+\frac { \pi  } { 4 })+b(\omega >0)}的最小正周期为\FormulaOCR{image1302.wmf}{T}，则\FormulaOCR{image1303.wmf}{T=\frac { 2\pi  } { \omega  }}，由\FormulaOCR{image1304.wmf}{\frac { 2\pi  } { 3 } < T < \pi }，得\FormulaOCR{image1305.wmf}{\frac { 2\pi  } { 3 } < \frac { 2\pi  } { \omega  } < \pi }，\FormulaOCR{image1306.wmf}{\therefore 2 < \omega  < 3}，\FormulaOCR{image1307.wmf}{\because y=f(x)}的图像关于点\FormulaOCR{image1308.wmf}{(\frac { 3\pi  } { 2 }}，\FormulaOCR{image1309.wmf}{2)}中心对称，\FormulaOCR{image1310.wmf}{\therefore b=2}，且\FormulaOCR{image1311.wmf}{\sin(\frac { 3\pi  } { 2 }\omega +\frac { \pi  } { 4 })=0}，则\FormulaOCR{image1312.wmf}{\frac { 3\pi  } { 2 }\omega +\frac { \pi  } { 4 }=k\pi }，\FormulaOCR{image1313.wmf}{k\in Z}．\FormulaOCR{image1314.wmf}{\therefore }\FormulaOCR{image1315.wmf}{\omega =\frac { 2 } { 3 }(k-\frac { 1 } { 4 })}，\FormulaOCR{image1316.wmf}{k\in Z}，取\FormulaOCR{image1317.wmf}{k=4}，可得\FormulaOCR{image1318.wmf}{\omega =\frac { 5 } { 2 }}．\FormulaOCR{image1319.wmf}{\therefore f(x)=\sin(\frac { 5 } { 2 }x+\frac { \pi  } { 4 })+2}，则\FormulaOCR{image1320.wmf}{f(\frac { \pi  } { 2 })=\sin(\frac { 5 } { 2 }\times \frac { \pi  } { 2 }+\frac { \pi  } { 4 })+2=-1+2=1}．故选：\FormulaOCR{image1321.wmf}{A}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•甲卷）将函数\FormulaOCR{image1322.wmf}{f(x)=\sin(\omega x+\frac { \pi  } { 3 })(\omega >0)}的图像向左平移\FormulaOCR{image1323.wmf}{\frac { \pi  } { 2 }}个单位长度后得到曲线\FormulaOCR{image1324.wmf}{C}，若\FormulaOCR{image1325.wmf}{C}关于\FormulaOCR{image1326.wmf}{y}轴对称，则\FormulaOCR{image1327.wmf}{\omega }的最小值是（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1328.wmf}{\frac { 1 } { 6 }}\qquad{}B．\FormulaOCR{image1329.wmf}{\frac { 1 } { 4 }}\qquad{}C．\FormulaOCR{image1330.wmf}{\frac { 1 } { 3 }}\qquad{}D．\FormulaOCR{image1331.wmf}{\frac { 1 } { 2 }}\par
+\begin{solution}
+解：将函数\FormulaOCR{image1332.wmf}{f(x)=\sin(\omega x+\frac { \pi  } { 3 })(\omega >0)}的图像向左平移\FormulaOCR{image1333.wmf}{\frac { \pi  } { 2 }}个单位长度后得到曲线\FormulaOCR{image1334.wmf}{C}，\par
+则\FormulaOCR{image1335.wmf}{C}对应函数为\FormulaOCR{image1336.wmf}{y=\sin(\omega x+\frac { \omega \pi  } { 2 }+\frac { \pi  } { 3 })}，\par
+\FormulaOCR{image1337.wmf}{\because C}的图象关于\FormulaOCR{image1338.wmf}{y}轴对称，\FormulaOCR{image1339.wmf}{\therefore }\FormulaOCR{image1340.wmf}{\frac { \omega \pi  } { 2 }+\frac { \pi  } { 3 }=k\pi +\frac { \pi  } { 2 }}，\FormulaOCR{image1341.wmf}{k\in Z}，即\FormulaOCR{image1342.wmf}{\omega =2k+\frac { 1 } { 3 }}，\FormulaOCR{image1343.wmf}{k\in Z}，\par
+则令\FormulaOCR{image1344.wmf}{k=0}，可得\FormulaOCR{image1345.wmf}{\omega }的最小值是\FormulaOCR{image1346.wmf}{\frac { 1 } { 3 }}，故选：\FormulaOCR{image1347.wmf}{C}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•全国）已知函数\FormulaOCR{image1348.wmf}{f(x)=\sin(2x+\varphi )}．若\FormulaOCR{image1349.wmf}{f(\frac { \pi  } { 3 })=f(-\frac { \pi  } { 3 })=\frac { 1 } { 2 }}，则\FormulaOCR{image1350.wmf}{\varphi =}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1351.wmf}{2k\pi +\frac { \pi  } { 2 }(k\in Z)}\qquad{}B．\FormulaOCR{image1352.wmf}{2k\pi +\frac { \pi  } { 3 }(k\in Z)}\qquad{}C．\FormulaOCR{image1353.wmf}{2k\pi -\frac { \pi  } { 3 }(k\in Z)}\qquad{}D．\FormulaOCR{image1354.wmf}{2k\pi -\frac { \pi  } { 2 }(k\in Z)}\par
+\begin{solution}
+解：\FormulaOCR{image1355.wmf}{\because}函数\FormulaOCR{image1356.wmf}{f(x)=\sin(2x+\varphi )}，\FormulaOCR{image1357.wmf}{f(\frac { \pi  } { 3 })=f(-\frac { \pi  } { 3 })=\frac { 1 } { 2 }}，\par
+\FormulaOCR{image1358.wmf}{\therefore }函数\FormulaOCR{image1359.wmf}{f(x)}的一条对称轴为\FormulaOCR{image1360.wmf}{x=0}，即\FormulaOCR{image1361.wmf}{\sin\varphi =1}或\FormulaOCR{image1362.wmf}{\sin\varphi =-1}，故\FormulaOCR{image1363.wmf}{\varphi =2k\pi +\frac { \pi  } { 2 }(k\in Z)}．或\FormulaOCR{image1364.wmf}{\varphi =2k\pi -\frac { \pi  } { 2 }(k\in Z)}．\FormulaOCR{image1365.wmf}{\therefore \sin(\frac { 2\pi  } { 3 }+\varphi )=\sin(-\frac { 2\pi  } { 3 }+\varphi )=\frac { 1 } { 2 }} ①．不妨\FormulaOCR{image1366.wmf}{k=0}时，\par
+\FormulaOCR{image1367.wmf}{\varphi =\frac { \pi  } { 2 }}时，①不成立；当\FormulaOCR{image1368.wmf}{\varphi =-\frac { \pi  } { 2 }}时，①成立，故\FormulaOCR{image1369.wmf}{\varphi =2k\pi -\frac { \pi  } { 2 }(k\in Z)}，故选：\FormulaOCR{image1370.wmf}{D}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•新高考Ⅱ）对于函数\FormulaOCR{image1371.wmf}{f(x)=\sin2x}和\FormulaOCR{image1372.wmf}{g(x)=\sin(2x-\frac { \pi  } { 4 })}，下列正确的有（　　）\par
+A．\FormulaOCR{image1373.wmf}{f(x)}与\FormulaOCR{image1374.wmf}{g(x)}有相同零点\qquad{}\par
+B．\FormulaOCR{image1375.wmf}{f(x)}与\FormulaOCR{image1376.wmf}{g(x)}有相同最大值\qquad{}\par
+C．\FormulaOCR{image1377.wmf}{f(x)}与\FormulaOCR{image1378.wmf}{g(x)}有相同的最小正周期\qquad{}\par
+D．\FormulaOCR{image1379.wmf}{f(x)}与\FormulaOCR{image1380.wmf}{g(x)}的图像有相同的对称轴\par
+\begin{solution}
+解：对于\FormulaOCR{image1381.wmf}{A}，令\FormulaOCR{image1382.wmf}{f(x)=\sin2x=0}，解得\FormulaOCR{image1383.wmf}{x=\frac { k\pi  } { 2 }}，\FormulaOCR{image1384.wmf}{k\in Z}，即为\FormulaOCR{image1385.wmf}{f(x)}零点，\par
+令\FormulaOCR{image1386.wmf}{g(x)=\sin(2x-\frac { \pi  } { 4 })=0}，解得\FormulaOCR{image1387.wmf}{x=\frac { k\pi  } { 2 }+\frac { \pi  } { 8 }}，\FormulaOCR{image1388.wmf}{k\in Z}，即为\FormulaOCR{image1389.wmf}{g(x)}零点，\par
+故\FormulaOCR{image1390.wmf}{f(x)}，\FormulaOCR{image1391.wmf}{g(x)}零点不同，\par
+\FormulaOCR{image1392.wmf}{f(0)=0}，\FormulaOCR{image1393.wmf}{g(0)=-\frac { \sqrt { 2 } } { 2 }}，故\FormulaOCR{image1394.wmf}{A}错误；\par
+对于\FormulaOCR{image1395.wmf}{B}，\FormulaOCR{image1396.wmf}{f(x)\in [-1}，\FormulaOCR{image1397.wmf}{1]}，\FormulaOCR{image1398.wmf}{g(x)\in [-1}，\FormulaOCR{image1399.wmf}{1]}，两函数值域相同，故\FormulaOCR{image1400.wmf}{B}正确；\par
+对于\FormulaOCR{image1401.wmf}{C}，显然两函数最小正周期都为\FormulaOCR{image1402.wmf}{\pi }，故\FormulaOCR{image1403.wmf}{C}正确；\par
+对于\FormulaOCR{image1404.wmf}{D}，由\FormulaOCR{image1405.wmf}{2x=k\pi +\frac { \pi  } { 2 }}，\FormulaOCR{image1406.wmf}{k\in Z}得，函数\FormulaOCR{image1407.wmf}{f(x)}的对称轴是\FormulaOCR{image1408.wmf}{x=\frac { k\pi  } { 2 }+\frac { \pi  } { 4 }}，\FormulaOCR{image1409.wmf}{k\in Z}，\par
+由\FormulaOCR{image1410.wmf}{2x-\frac { \pi  } { 4 }=k\pi +\frac { \pi  } { 2 }}，\FormulaOCR{image1411.wmf}{k\in Z}得，函数\FormulaOCR{image1412.wmf}{g(x)}的对称轴是\FormulaOCR{image1413.wmf}{x=\frac { 3\pi  } { 8 }+\frac { k\pi  } { 2 }}，\FormulaOCR{image1414.wmf}{k\in Z}，故\FormulaOCR{image1415.wmf}{D}错误．\par
+故选：\FormulaOCR{image1416.wmf}{BC}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•新高考Ⅰ）当\FormulaOCR{image1417.wmf}{x\in [0}，\FormulaOCR{image1418.wmf}{2\pi ]}时，曲线\FormulaOCR{image1419.wmf}{y=\sin x}与\FormulaOCR{image1420.wmf}{y=2\sin(3x-\frac { \pi  } { 6 })}的交点个数为（　　）\par
+\qquad{}\qquad{}\qquad{}A．3\qquad{}B．4\qquad{}C．6\qquad{}D．8\par
+\begin{solution}
+解：在同一坐标系中，作出函数\FormulaOCR{image1421.wmf}{y=\sin x}与\FormulaOCR{image1422.wmf}{y=2\sin(3x-\frac { \pi  } { 6 })}在\FormulaOCR{image1423.wmf}{[0}，\FormulaOCR{image1424.wmf}{2\pi ]}上的图象如下，\par
+\DocImage{image1425.png}{169.55}{112.15}\par
+由图象可知，当\FormulaOCR{image1426.wmf}{x\in [0}，\FormulaOCR{image1427.wmf}{2\pi ]}时，曲线\FormulaOCR{image1428.wmf}{y=\sin x}与\FormulaOCR{image1429.wmf}{y=2\sin(3x-\frac { \pi  } { 6 })}的交点个数为6个．\par
+故选：\FormulaOCR{image1430.wmf}{C}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（5分）（2011•新课标）函数y=\FormulaOCR{image1431.png}{\frac{1}{1-x}}的图象与函数y=2sin\ensuremath{\pi}x（-2\ensuremath{\le}x\ensuremath{\le}4）的图象所有交点的横坐标之和等于（　　）\par
+A．2\qquad{}B．4\qquad{}C．6\qquad{}D．8\par
+\begin{solution}
+解：函数\FormulaOCR{image1432.png}{y_1=\frac1{1-x}}，y\_{2}=2sin\ensuremath{\pi}x的图象有公共的对称中心（1，0），作出两个函数的图象如图当1＜x\ensuremath{\le}4时，y\_{1}＜0\par
+而函数y\_{2}在（1，4）上出现1.5个周期的图象，\par
+在\FormulaOCR{image1433.png}{(1,\ {\frac{3}{2}})}和\FormulaOCR{image1434.png}{({\frac{5}{2}},\ {\frac{7}{2}})}上是减函数；\par
+在\FormulaOCR{image1435.png}{({\frac{3}{2}},\ {\frac{5}{2}})}和\FormulaOCR{image1436.png}{\left(\frac72,4\right)}上是增函数．\par
+\ensuremath{\therefore}函数y\_{1}在（1，4）上函数值为负数，且与y\_{2}的图象有四个交点E、F、G、H\par
+相应地，y\_{1}在（-2，1）上函数值为正数，且与y\_{2}的图象有四个交点A、B、C、D\par
+且：x\_{A}+x\_{H}=x\_{B}+x\_{G}=x\_{C}+x\_{F}=x\_{D}+x\_{E}=2，故所求的横坐标之和为8\par
+故选D\par
+\DocImage{image1437.png}{98.00}{71.75}\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2023•甲卷）已知\FormulaOCR{image1438.wmf}{f(x)}为函数\FormulaOCR{image1439.wmf}{y=\cos(2x+\frac { \pi  } { 6 })}向左平移\FormulaOCR{image1440.wmf}{\frac { \pi  } { 6 }}个单位所得函数，则\FormulaOCR{image1441.wmf}{y=f(x)}与\FormulaOCR{image1442.wmf}{y=\frac { 1 } { 2 }x-\frac { 1 } { 2 }}的交点个数为（　　）\par
+\qquad{}\qquad{}\qquad{}A．1\qquad{}B．2\qquad{}C．3\qquad{}D．4\par
+\begin{solution}
+解：把函数\FormulaOCR{image1443.wmf}{y=\cos(2x+\frac { \pi  } { 6 })}向左平移\FormulaOCR{image1444.wmf}{\frac { \pi  } { 6 }}个单位可得\par
+函数\FormulaOCR{image1445.wmf}{f(x)=\cos(2x+\frac { \pi  } { 2 })=-\sin2x}的图象，而直线\FormulaOCR{image1446.wmf}{y=\frac { 1 } { 2 }x-\frac { 1 } { 2 }=\frac { 1 } { 2 }(x-1)}经过点\FormulaOCR{image1447.wmf}{(1,0)}，且斜率为\FormulaOCR{image1448.wmf}{\frac { 1 } { 2 }}，且直线还经过点\FormulaOCR{image1449.wmf}{(\frac { 3\pi  } { 4 }}，\FormulaOCR{image1450.wmf}{\frac { 3\pi -4 } { 8 })}、\FormulaOCR{image1451.wmf}{(-\frac { \pi  } { 4 }}，\FormulaOCR{image1452.wmf}{-\frac { \pi +4 } { 8 })}，\FormulaOCR{image1453.wmf}{0 < \frac { 3\pi -4 } { 8 } < 1}，\FormulaOCR{image1454.wmf}{-1 < -\frac { \pi +4 } { 8 } < 0}，如图，故\FormulaOCR{image1455.wmf}{y=f(x)}与\FormulaOCR{image1456.wmf}{y=\frac { 1 } { 2 }x-\frac { 1 } { 2 }}的交点个数为3．\par
+故选：\FormulaOCR{image1457.wmf}{C}．\par
+\DocImage{image1458.png}{142.40}{107.80}\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•甲卷）设函数\FormulaOCR{image1459.wmf}{f(x)=\sin(\omega x+\frac { \pi  } { 3 })}在区间\FormulaOCR{image1460.wmf}{(0,\pi )}恰有三个极值点、两个零点，则\FormulaOCR{image1461.wmf}{\omega }的取值范围是（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1462.wmf}{[\frac { 5 } { 3 }}，\FormulaOCR{image1463.wmf}{\frac { 13 } { 6 })}\qquad{}B．\FormulaOCR{image1464.wmf}{[\frac { 5 } { 3 }}，\FormulaOCR{image1465.wmf}{\frac { 19 } { 6 })}\qquad{}C．\FormulaOCR{image1466.wmf}{(\frac { 13 } { 6 }}，\FormulaOCR{image1467.wmf}{\frac { 8 } { 3 }]}\qquad{}D．\FormulaOCR{image1468.wmf}{(\frac { 13 } { 6 }}，\FormulaOCR{image1469.wmf}{\frac { 19 } { 6 }]}\par
+\begin{solution}
+解：当\FormulaOCR{image1470.wmf}{\omega  < 0}时，不能满足在区间\FormulaOCR{image1471.wmf}{(0,\pi )}极值点比零点多，所以\FormulaOCR{image1472.wmf}{\omega >0}；\par
+函数\FormulaOCR{image1473.wmf}{f(x)=\sin(\omega x+\frac { \pi  } { 3 })}在区间\FormulaOCR{image1474.wmf}{(0,\pi )}恰有三个极值点、两个零点，\FormulaOCR{image1475.wmf}{\omega x+\frac { \pi  } { 3 }\in (\frac { \pi  } { 3 }}，\FormulaOCR{image1476.wmf}{\omega \pi +\frac { \pi  } { 3 })}，\par
+\FormulaOCR{image1477.wmf}{\therefore }\FormulaOCR{image1478.wmf}{\frac { 5\pi  } { 2 } < \omega \pi +\frac { \pi  } { 3 }\leq 3\pi }，求得\FormulaOCR{image1479.wmf}{\frac { 13 } { 6 } < \omega \leq \frac { 8 } { 3 }}，故选：\FormulaOCR{image1480.wmf}{C}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•北京）已知函数\FormulaOCR{image1481.wmf}{f(x)=\cos ^ { 2 } x-\sin ^ { 2 } x}，则（　　）\par
+A．\FormulaOCR{image1482.wmf}{f(x)}在\FormulaOCR{image1483.wmf}{(-\frac { \pi  } { 2 }}，\FormulaOCR{image1484.wmf}{-\frac { \pi  } { 6 })}上单调递减\qquad{}B．\FormulaOCR{image1485.wmf}{f(x)}在\FormulaOCR{image1486.wmf}{(-\frac { \pi  } { 4 }}，\FormulaOCR{image1487.wmf}{\frac { \pi  } { 12 })}上单调递增\qquad{}\par
+C．\FormulaOCR{image1488.wmf}{f(x)}在\FormulaOCR{image1489.wmf}{(0,\frac { \pi  } { 3 })}上单调递减\qquad{}D．\FormulaOCR{image1490.wmf}{f(x)}在\FormulaOCR{image1491.wmf}{(\frac { \pi  } { 4 }}，\FormulaOCR{image1492.wmf}{\frac { 7\pi  } { 12 })}上单调递增\par
+\begin{solution}
+解：\FormulaOCR{image1493.wmf}{f(x)=\cos ^ { 2 } x-\sin ^ { 2 } x=\cos2x}，周期\FormulaOCR{image1494.wmf}{T=\pi }，\par
+\FormulaOCR{image1495.wmf}{\therefore f(x)}的单调递减区间为\FormulaOCR{image1496.wmf}{[k\pi }，\FormulaOCR{image1497.wmf}{\frac { \pi  } { 2 }+k\pi ](k\in Z)}，单调递增区间为\FormulaOCR{image1498.wmf}{[\frac { \pi  } { 2 }+k\pi }，\FormulaOCR{image1499.wmf}{\pi +k\pi ](k\in Z)}，\par
+对于\FormulaOCR{image1500.wmf}{A}，\FormulaOCR{image1501.wmf}{f(x)}在\FormulaOCR{image1502.wmf}{(-\frac { \pi  } { 2 }}，\FormulaOCR{image1503.wmf}{-\frac { \pi  } { 6 })}上单调递增，故\FormulaOCR{image1504.wmf}{A}错误，\par
+对于\FormulaOCR{image1505.wmf}{B}，\FormulaOCR{image1506.wmf}{f(x)}在\FormulaOCR{image1507.wmf}{(-\frac { \pi  } { 4 }}，\FormulaOCR{image1508.wmf}{0)}上单调递增，在\FormulaOCR{image1509.wmf}{(0,\frac { \pi  } { 12 })}上单调递减，故\FormulaOCR{image1510.wmf}{B}错误，\par
+对于\FormulaOCR{image1511.wmf}{C}，\FormulaOCR{image1512.wmf}{f(x)}在\FormulaOCR{image1513.wmf}{(0,\frac { \pi  } { 3 })}上单调递减，故\FormulaOCR{image1514.wmf}{C}正确，\par
+对于\FormulaOCR{image1515.wmf}{D}，\FormulaOCR{image1516.wmf}{f(x)}在\FormulaOCR{image1517.wmf}{(\frac { \pi  } { 4 }}，\FormulaOCR{image1518.wmf}{\frac { \pi  } { 2 })}上单调递减，在\FormulaOCR{image1519.wmf}{(\frac { \pi  } { 2 }}，\FormulaOCR{image1520.wmf}{\frac { 7\pi  } { 12 })}上单调递增，故\FormulaOCR{image1521.wmf}{D}错误，\par
+故选：\FormulaOCR{image1522.wmf}{C}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•北京）在平面直角坐标系\FormulaOCR{image1523.wmf}{xOy}中，角\FormulaOCR{image1524.wmf}{\alpha }与角\FormulaOCR{image1525.wmf}{\beta }均以\FormulaOCR{image1526.wmf}{Ox}为始边，它们的终边关于原点对称．若\FormulaOCR{image1527.wmf}{\alpha \in [\frac { \pi  } { 6 },\frac { \pi  } { 3 }]}，则\FormulaOCR{image1528.wmf}{\cos\beta }的最大值为 　　．\par
+\begin{solution}
+解：\FormulaOCR{image1529.wmf}{\alpha }与\FormulaOCR{image1530.wmf}{\beta }的终边关于原点对称可得，\FormulaOCR{image1531.wmf}{\alpha +\pi +2k\pi =\beta }，\FormulaOCR{image1532.wmf}{k\in Z}，\FormulaOCR{image1533.wmf}{\cos\beta =\cos(\alpha +\pi +2k\pi )=-\cos\alpha }，\FormulaOCR{image1534.wmf}{\alpha \in [\frac { \pi  } { 6 },\frac { \pi  } { 3 }]}，\FormulaOCR{image1535.wmf}{\cos\alpha \in [\frac { 1 } { 2 }}，\FormulaOCR{image1536.wmf}{\frac { \sqrt { 3 } } { 2 }]}，所以\FormulaOCR{image1537.wmf}{\cos\beta \in [-\frac { \sqrt { 3 } } { 2 }}，\FormulaOCR{image1538.wmf}{-\frac { 1 } { 2 }]}，\par
+故当\FormulaOCR{image1539.wmf}{\alpha =\frac { \pi  } { 3 }}，\FormulaOCR{image1540.wmf}{\beta =2k\pi +\frac { 4\pi  } { 3 }}，\FormulaOCR{image1541.wmf}{k\in Z}时，\FormulaOCR{image1542.wmf}{\cos\beta }的最大值为\FormulaOCR{image1543.wmf}{-\frac { 1 } { 2 }}．故答案为：\FormulaOCR{image1544.wmf}{-\frac { 1 } { 2 }}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2023•新高考Ⅰ）已知函数\FormulaOCR{image1545.wmf}{f(x)=\cos\omega x-1(\omega >0)}在区间\FormulaOCR{image1546.wmf}{[0}，\FormulaOCR{image1547.wmf}{2\pi ]}有且仅有3个零点，则\FormulaOCR{image1548.wmf}{\omega }的取值范围是 　　 ．\par
+\begin{solution}
+解：\FormulaOCR{image1549.wmf}{x\in [0}，\FormulaOCR{image1550.wmf}{2\pi ]}，函数的周期为\FormulaOCR{image1551.wmf}{\frac { 2\pi  } { \omega  }(\omega >0)}，\FormulaOCR{image1552.wmf}{\cos\omega x-1=0}，可得\FormulaOCR{image1553.wmf}{\cos\omega x=1}，\par
+函数\FormulaOCR{image1554.wmf}{f(x)=\cos\omega x-1(\omega >0)}在区间\FormulaOCR{image1555.wmf}{[0}，\FormulaOCR{image1556.wmf}{2\pi ]}有且仅有3个零点，\par
+可得\FormulaOCR{image1557.wmf}{2\cdot \frac { 2\pi  } { \omega  }\leq 2\pi  < 3\cdot \frac { 2\pi  } { \omega  }}，所以\FormulaOCR{image1558.wmf}{2\leq \omega  < 3}．故答案为：\FormulaOCR{image1559.wmf}{[2}，\FormulaOCR{image1560.wmf}{3)}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2026•上海）已知速度\FormulaOCR{image1561.wmf}{v}与时间\FormulaOCR{image1562.wmf}{t}满足\FormulaOCR{image1563.wmf}{v(t)=A\sin(\omega t+\varphi )+B(A>0}，\FormulaOCR{image1564.wmf}{B\in R}，\FormulaOCR{image1565.wmf}{\omega >0}，\FormulaOCR{image1566.wmf}{0\leq \varphi  < 2\pi )}，若初始速度为0，\FormulaOCR{image1567.wmf}{v(t)=0}及\FormulaOCR{image1568.wmf}{v(t)=4}时导数皆为0，且速度第一次达到4时，用时为0.1秒，则\FormulaOCR{image1569.wmf}{v(t)=}\FormulaOCR{image1570.wmf}{-2\cos(10\pi t)+2} ．\par
+\begin{solution}
+解：由题意，\FormulaOCR{image1571.wmf}{v(t)}最小值为0，最大值为4，\par
+故\FormulaOCR{image1572.wmf}{A=B=2}，\par
+由速度第一次达到4时用时为0.1秒得\FormulaOCR{image1573.wmf}{t=0}时只能是最小值，\FormulaOCR{image1574.wmf}{t=0.1}时取最大值，\par
+故\FormulaOCR{image1575.wmf}{\frac { T } { 2 }=0.1\Longrightarrow T=\frac { 2\pi  } { \omega  }=0.2}，\par
+则\FormulaOCR{image1576.wmf}{\omega =10\pi }，\par
+所以\FormulaOCR{image1577.wmf}{v(t)=2\sin(10\pi t+\varphi )+2}，由\FormulaOCR{image1578.wmf}{v(0)=2\sin\varphi +2=0}可得\FormulaOCR{image1579.wmf}{\sin\varphi =-1}，\par
+即\FormulaOCR{image1580.wmf}{\varphi =\frac { 3 } { 2 }\pi }，\par
+故\FormulaOCR{image1581.wmf}{v(t)=2\sin(10\pi t+\frac { 3\pi  } { 2 })+2=-2\cos(10\pi t)+2}．\par
+故答案为：\FormulaOCR{image1582.wmf}{-2\cos(10\pi t)+2}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2023•乙卷）已知等差数列\FormulaOCR{image1583.wmf}{\{a_{ n }  \}}的公差为\FormulaOCR{image1584.wmf}{\frac { 2\pi  } { 3 }}，集合\FormulaOCR{image1585.wmf}{S=\{\cos a_{ n }  \|n\in N ^ { * } \}}，若\FormulaOCR{image1586.wmf}{S=\{a\}}，\FormulaOCR{image1587.wmf}{b\}}，则\FormulaOCR{image1588.wmf}{ab=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1589.wmf}{-1}\qquad{}B．\FormulaOCR{image1590.wmf}{-\frac { 1 } { 2 }}\qquad{}C．0\qquad{}D．\FormulaOCR{image1591.wmf}{\frac { 1 } { 2 }}\par
+\begin{solution}
+解：设等差数列\FormulaOCR{image1592.wmf}{\{a_{ n }  \}}的首项为\FormulaOCR{image1593.wmf}{a_{ 1 }}，又公差为\FormulaOCR{image1594.wmf}{\frac { 2\pi  } { 3 }}，\par
+\FormulaOCR{image1595.wmf}{\therefore }\FormulaOCR{image1596.wmf}{a_{ n }  =a_{ 1 }  +\frac { 2\pi  } { 3 }(n-1)}，\FormulaOCR{image1597.wmf}{\therefore }\FormulaOCR{image1598.wmf}{\cos a_{ n }  =\cos(\frac { 2n\pi  } { 3 }+a_{ 1 }  -\frac { 2\pi  } { 3 })}，其周期为\FormulaOCR{image1599.wmf}{\frac { 2\pi  } { \frac { 2\pi  } { 3 } }=3}，\par
+又根据题意可知\FormulaOCR{image1600.wmf}{S}集合中仅有两个元素，\FormulaOCR{image1601.wmf}{\therefore }可利用对称性，对\FormulaOCR{image1602.wmf}{a_{ n }}取特值，\par
+如\FormulaOCR{image1603.wmf}{a_{ 1 }  =0}，\FormulaOCR{image1604.wmf}{a_{ 2 }  =\frac { 2\pi  } { 3 }}，\FormulaOCR{image1605.wmf}{a_{ 3 }  =\frac { 4\pi  } { 3 }}，\FormulaOCR{image1606.wmf}{…}，或\FormulaOCR{image1607.wmf}{a_{ 1 }  =-\frac { \pi  } { 3 }}，\FormulaOCR{image1608.wmf}{a_{ 2 }  =\frac { \pi  } { 3 }}，\FormulaOCR{image1609.wmf}{a_{ 3 }  =\pi }，\FormulaOCR{image1610.wmf}{…}，\par
+代入集合\FormulaOCR{image1611.wmf}{S}中计算易得：\FormulaOCR{image1612.wmf}{ab=-\frac { 1 } { 2 }}．故选：\FormulaOCR{image1613.wmf}{B}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2022•新高考Ⅱ）已知函数\FormulaOCR{image1614.wmf}{f(x)=\sin(2x+\varphi )(0 < \varphi  < \pi )}的图像关于点\FormulaOCR{image1615.wmf}{(\frac { 2\pi  } { 3 },0)}中心对称，则（　　）\par
+A．\FormulaOCR{image1616.wmf}{f(x)}在区间\FormulaOCR{image1617.wmf}{(0,\frac { 5\pi  } { 12 })}单调递减\qquad{}\par
+B．\FormulaOCR{image1618.wmf}{f(x)}在区间\FormulaOCR{image1619.wmf}{(-\frac { \pi  } { 12 }}，\FormulaOCR{image1620.wmf}{\frac { 11\pi  } { 12 })}有两个极值点\qquad{}\par
+C．直线\FormulaOCR{image1621.wmf}{x=\frac { 7\pi  } { 6 }}是曲线\FormulaOCR{image1622.wmf}{y=f(x)}的对称轴\qquad{}\par
+D．直线\FormulaOCR{image1623.wmf}{y=\frac { \sqrt { 3 } } { 2 }-x}是曲线\FormulaOCR{image1624.wmf}{y=f(x)}的切线\par
+\begin{solution}
+解：因为\FormulaOCR{image1625.wmf}{f(x)=\sin(2x+\varphi )(0 < \varphi  < \pi )}的图象关于点\FormulaOCR{image1626.wmf}{(\frac { 2\pi  } { 3 },0)}对称，\par
+所以\FormulaOCR{image1627.wmf}{2\times \frac { 2\pi  } { 3 }+\varphi =k\pi }，\FormulaOCR{image1628.wmf}{k\in Z}，所以\FormulaOCR{image1629.wmf}{\varphi =k\pi -\frac { 4\pi  } { 3 }}，因为\FormulaOCR{image1630.wmf}{0 < \varphi  < \pi }，所以\FormulaOCR{image1631.wmf}{\varphi =\frac { 2\pi  } { 3 }}，\par
+故\FormulaOCR{image1632.wmf}{f(x)=\sin(2x+\frac { 2\pi  } { 3 })}，令\FormulaOCR{image1633.wmf}{\frac { \pi  } { 2 } < 2x+\frac { 2\pi  } { 3 } < \frac { 3\pi  } { 2 }}，解得\FormulaOCR{image1634.wmf}{-\frac { \pi  } { 12 } < x < \frac { 5\pi  } { 12 }}，\par
+故\FormulaOCR{image1635.wmf}{f(x)}在\FormulaOCR{image1636.wmf}{(0,\frac { 5\pi  } { 12 })}单调递减，\FormulaOCR{image1637.wmf}{A}正确；\FormulaOCR{image1638.wmf}{x\in (-\frac { \pi  } { 12 },\frac { 11\pi  } { 12 })}，\FormulaOCR{image1639.wmf}{2x+\frac { 2\pi  } { 3 }\in (\frac { \pi  } { 2 },\frac { 5\pi  } { 2 })}，\par
+根据函数的单调性，故函数\FormulaOCR{image1640.wmf}{f(x)}在区间\FormulaOCR{image1641.wmf}{(-\frac { \pi  } { 12 },\frac { 11\pi  } { 12 })}只有一个极值点，故\FormulaOCR{image1642.wmf}{B}错误；\par
+令\FormulaOCR{image1643.wmf}{2x+\frac { 2\pi  } { 3 }=k\pi +\frac { \pi  } { 2 }}，\FormulaOCR{image1644.wmf}{k\in Z}，得\FormulaOCR{image1645.wmf}{x=\frac { k\pi  } { 2 }-\frac { \pi  } { 12 }}，\FormulaOCR{image1646.wmf}{k\in Z}，\FormulaOCR{image1647.wmf}{C}显然错误；\par
+\FormulaOCR{image1648.wmf}{f(x)=\sin(2x+\frac { 2\pi  } { 3 })}，求导可得，\FormulaOCR{image1649.wmf}{f'(x)=2\cos(2x+\frac { 2\pi  } { 3 })}，\par
+令\FormulaOCR{image1650.wmf}{f'(x)=-1}，即\FormulaOCR{image1651.wmf}{\cos(2x+\frac { 2\pi  } { 3 })=-\frac { 1 } { 2 }}，解得\FormulaOCR{image1652.wmf}{x=k\pi }或\FormulaOCR{image1653.wmf}{x=\frac { \pi  } { 3 }+k\pi (k\in Z)}，\par
+故函数\FormulaOCR{image1654.wmf}{y=f(x)}在点\FormulaOCR{image1655.wmf}{(0,\frac { \sqrt { 3 } } { 2 })}处的切线斜率为\FormulaOCR{image1656.wmf}{k=y'\|_{ x=0 }  =2\cos\frac { 2\pi  } { 3 }=-1}，\par
+故切线方程为\FormulaOCR{image1657.wmf}{y-\frac { \sqrt { 3 } } { 2 }=-(x-0)}，即\FormulaOCR{image1658.wmf}{y=-x+\frac { \sqrt { 3 } } { 2 }}，故\FormulaOCR{image1659.wmf}{D}正确．故选：\FormulaOCR{image1660.wmf}{AD}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2026•北京）已知函数\FormulaOCR{image1661.wmf}{f(x)=2\sin\omega x\cos\varphi +2\cos\omega x\sin\varphi }，\FormulaOCR{image1662.wmf}{\omega >0}，\FormulaOCR{image1663.wmf}{\|\varphi \| < \frac { \pi  } { 2 }}．\FormulaOCR{image1664.wmf}{f(x)}的最小正周期为\FormulaOCR{image1665.wmf}{\pi }，且\FormulaOCR{image1666.wmf}{f(0)>0}，\FormulaOCR{image1667.wmf}{f(\frac { \pi  } { 4 })=1}．\par
+（Ⅰ）求\FormulaOCR{image1668.wmf}{\omega }、\FormulaOCR{image1669.wmf}{\varphi }的值；\par
+（Ⅱ）求\FormulaOCR{image1670.wmf}{f(x)}的单调递减区间．\par
+\begin{solution}
+解：（Ⅰ）\FormulaOCR{image1671.wmf}{f(x)=2\sin\omega x\cos\varphi +2\cos\omega x\sin\varphi }\par
+\FormulaOCR{image1672.wmf}{=2(\sin\omega x\cos\varphi +\cos\omega x\sin\varphi )}\par
+\FormulaOCR{image1673.wmf}{=2\sin(\omega x+\varphi )}，\par
+因为\FormulaOCR{image1674.wmf}{f(x)}的最小正周期为\FormulaOCR{image1675.wmf}{\pi }，且\FormulaOCR{image1676.wmf}{\omega >0}，\par
+所以\FormulaOCR{image1677.wmf}{\frac { 2\pi  } { \omega  }=\pi \Longrightarrow \omega =2}，\par
+代入\FormulaOCR{image1678.wmf}{x=0}，得\FormulaOCR{image1679.wmf}{f(0)=2\sin\varphi >0}，即\FormulaOCR{image1680.wmf}{\sin\varphi >0}，\par
+再代入\FormulaOCR{image1681.wmf}{x=\frac { \pi  } { 4 }}，得\FormulaOCR{image1682.wmf}{f(\frac { \pi  } { 4 })=2\sin(2\cdot \frac { \pi  } { 4 }+\varphi )=1}，可得\FormulaOCR{image1683.wmf}{2\sin(\frac { \pi  } { 2 }+\varphi )=1}，可得\FormulaOCR{image1684.wmf}{2\cos\varphi =1\Longrightarrow \cos\varphi =\frac { 1 } { 2 }}，\par
+结合条件\FormulaOCR{image1685.wmf}{|\varphi|<\frac{\pi}{2},\quad\sin\varphi>0}，\par
+可得\FormulaOCR{image1686.wmf}{\varphi =\frac { \pi  } { 3 }}；\par
+（Ⅱ）由（Ⅰ）得\FormulaOCR{image1687.wmf}{f(x)=2\sin(2x+\frac { \pi  } { 3 })}，\par
+令\FormulaOCR{image1688.wmf}{\frac { \pi  } { 2 }+2k\pi \leq 2x+\frac { \pi  } { 3 }\leq \frac { 3\pi  } { 2 }+2k\pi }，\FormulaOCR{image1689.wmf}{k\in Z}，\par
+解得\FormulaOCR{image1690.wmf}{\frac { \pi  } { 12 }+k\pi \leq x\leq \frac { 7\pi  } { 12 }+k\pi }，\FormulaOCR{image1691.wmf}{k\in Z}，\par
+可得\FormulaOCR{image1692.wmf}{f(x)}的单调递减区间为\FormulaOCR{image1693.wmf}{[\frac { \pi  } { 12 }+k\pi ,\frac { 7\pi  } { 12 }+k\pi ]}，\FormulaOCR{image1694.wmf}{k\in Z}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2026•天津）已知函数\FormulaOCR{image1695.wmf}{f(x)=\sin(2x+\frac { \pi  } { 6 })}．\par
+（1）求\FormulaOCR{image1696.wmf}{f(x)}的最小正周期；\par
+（2）若\FormulaOCR{image1697.wmf}{x\in [-\frac { \pi  } { 6 }}，\FormulaOCR{image1698.wmf}{\frac { \pi  } { 12 }]}，求\FormulaOCR{image1699.wmf}{f(x)}的最大值和最小值；\par
+（3）若\FormulaOCR{image1700.wmf}{\alpha \in (0,\frac { \pi  } { 2 })}，\FormulaOCR{image1701.wmf}{\sin\alpha =\frac { \sqrt { 3 } } { 3 }}，求\FormulaOCR{image1702.wmf}{f(\alpha )}．\par
+\begin{solution}
+解：（1）由\FormulaOCR{image1703.wmf}{f(x)=\sin(2x+\frac { \pi  } { 6 })}，正弦型函数的周期为\FormulaOCR{image1704.wmf}{T=\frac { 2\pi  } { \|\omega \| }}，\par
+其中\FormulaOCR{image1705.wmf}{\omega =2}，故\FormulaOCR{image1706.wmf}{T=\pi }，即最小正周期为\FormulaOCR{image1707.wmf}{\pi }．\par
+（2）当\FormulaOCR{image1708.wmf}{x\in [-\frac { \pi  } { 6 }}，\FormulaOCR{image1709.wmf}{\frac { \pi  } { 12 }]}时，\FormulaOCR{image1710.wmf}{2x+\frac { \pi  } { 6 }\in [-\frac { \pi  } { 6 }}，\FormulaOCR{image1711.wmf}{\frac { \pi  } { 3 }]}．\FormulaOCR{image1712.wmf}{y=\sin t}在\FormulaOCR{image1713.wmf}{[-\frac { \pi  } { 6 }}，\FormulaOCR{image1714.wmf}{\frac { \pi  } { 3 }]}上单调递增，\par
+因此当\FormulaOCR{image1715.wmf}{x=-\frac { \pi  } { 6 }}时，\FormulaOCR{image1716.wmf}{f(x)_{ \min }  =\sin(-\frac { \pi  } { 6 })=-\frac { 1 } { 2 }}；当\FormulaOCR{image1717.wmf}{x=\frac { \pi  } { 12 }}时，\FormulaOCR{image1718.wmf}{f(x)_{ \max }  =\sin(\frac { \pi  } { 3 })=\frac { \sqrt { 3 } } { 2 }}．\par
+（3）由\FormulaOCR{image1719.wmf}{\alpha \in (0,\frac { \pi  } { 2 })}，\FormulaOCR{image1720.wmf}{\sin\alpha =\frac { \sqrt { 3 } } { 3 }}，得\FormulaOCR{image1721.wmf}{\cos\alpha =\sqrt { 1-(\frac { \sqrt { 3 } } { 3 }) ^ { 2 }  }=\frac { \sqrt { 6 } } { 3 }}．\par
+$\sin2\alpha=2\cdot\frac{\sqrt3}{3}\cdot\frac{\sqrt6}{3}=\frac{2\sqrt2}{3}$，$\cos2\alpha=1-2(\frac{\sqrt3}{3})^2=\frac13$．\par
+因此\FormulaOCR{image1725.wmf}{f(\alpha )=\sin(2\alpha +\frac { \pi  } { 6 })=\sin2\alpha \cos\frac { \pi  } { 6 }+\cos2\alpha \sin\frac { \pi  } { 6 }=\frac { 2\sqrt { 2 } } { 3 }\times \frac { \sqrt { 3 } } { 2 }+\frac { 1 } { 3 }\times \frac { 1 } { 2 }=\frac { 2\sqrt { 6 }+1 } { 6 }}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2025•重庆）已知\FormulaOCR{image1726.wmf}{f(x)=\cos(2x+\varphi )(0\leq \varphi  < \pi )}，且\FormulaOCR{image1727.wmf}{f(0)=\frac { 1 } { 2 }}．\par
+（1）求\FormulaOCR{image1728.wmf}{\varphi }的值；\par
+（2）设\FormulaOCR{image1729.wmf}{g(x)=f(x)+f(x-\frac { \pi  } { 6 })}，求\FormulaOCR{image1730.wmf}{g(x)}的值域和单调区间．\par
+\begin{solution}
+解：\FormulaOCR{image1731.wmf}{f(x)=\cos(2x+\varphi )(0\leq \varphi  < \pi )}，且\FormulaOCR{image1732.wmf}{f(0)=\frac { 1 } { 2 }}，\par
+（1）由已知得\FormulaOCR{image1733.wmf}{f(0)=\cos\varphi =\frac { 1 } { 2 }}，结合\FormulaOCR{image1734.wmf}{0\leq \varphi  < \pi }，\par
+所以\FormulaOCR{image1735.wmf}{\varphi =\frac { \pi  } { 3 }}；\par
+（2）由（1）知：\FormulaOCR{image1736.wmf}{f(x)=\cos(2x+\frac { \pi  } { 3 })}，所以\FormulaOCR{image1737.wmf}{f(x-\frac { \pi  } { 6 })=\cos2x}，\par
+所以\FormulaOCR{image1738.wmf}{g(x)=f(x)+f(x-\frac { \pi  } { 6 })=\cos2x\cos\frac { \pi  } { 3 }-\sin2x\sin\frac { \pi  } { 3 }+\cos2x}\par
+\FormulaOCR{image1739.wmf}{=\frac { 3 } { 2 }\cos2x-\frac { \sqrt { 3 } } { 2 }\sin2x=\sqrt { 3 }[\cos2x\cos\frac { \pi  } { 6 }-\sin2x\sin\frac { \pi  } { 6 }]}\par
+\FormulaOCR{image1740.wmf}{=\sqrt { 3 }\cos(2x+\frac { \pi  } { 6 })}，\par
+显然\FormulaOCR{image1741.wmf}{g(x)}的值域为\FormulaOCR{image1742.wmf}{[-\sqrt { 3 }}，\FormulaOCR{image1743.wmf}{\sqrt { 3 }]}，因为\FormulaOCR{image1744.wmf}{y=\cos x}在\FormulaOCR{image1745.wmf}{[-\pi +2k\pi }，\FormulaOCR{image1746.wmf}{2k\pi ]}上递增，在\FormulaOCR{image1747.wmf}{[2k\pi }，\FormulaOCR{image1748.wmf}{2k\pi +\pi ]}上递减，\FormulaOCR{image1749.wmf}{k\in Z}，\par
+所以令\FormulaOCR{image1750.wmf}{-\pi +2k\pi \leq 2x+\frac { \pi  } { 6 } < 2k\pi }，解得\FormulaOCR{image1751.wmf}{g(x)}的递增区间为\FormulaOCR{image1752.wmf}{[-\frac { 7\pi  } { 12 }+k\pi }，\FormulaOCR{image1753.wmf}{-\frac { \pi  } { 12 }+k\pi )}，\FormulaOCR{image1754.wmf}{k\in Z}，\par
+再令\FormulaOCR{image1755.wmf}{2k\pi \leq 2x+\frac { \pi  } { 6 }\leq 2k\pi +\pi }，解得\FormulaOCR{image1756.wmf}{g(x)}的递减区间为\FormulaOCR{image1757.wmf}{[-\frac { \pi  } { 12 }+k\pi }，\FormulaOCR{image1758.wmf}{\frac { 5\pi  } { 12 }+k\pi )}，\FormulaOCR{image1759.wmf}{k\in Z}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2024•上海）已知\FormulaOCR{image1760.wmf}{f(x)=\sin(\omega x+\frac { \pi  } { 3 })}，\FormulaOCR{image1761.wmf}{\omega >0}．\par
+（1）设\FormulaOCR{image1762.wmf}{\omega =1}，求解：\FormulaOCR{image1763.wmf}{y=f(x)}，\FormulaOCR{image1764.wmf}{x\in [0}，\FormulaOCR{image1765.wmf}{\pi ]}的值域；\par
+（2）\FormulaOCR{image1766.wmf}{a>\pi (a\in R)}，\FormulaOCR{image1767.wmf}{f(x)}的最小正周期为\FormulaOCR{image1768.wmf}{\pi }，若在\FormulaOCR{image1769.wmf}{x\in [\pi }，\FormulaOCR{image1770.wmf}{a]}上恰有3个零点，求\FormulaOCR{image1771.wmf}{a}的取值范围．\par
+\begin{solution}
+解：（1）当\FormulaOCR{image1772.wmf}{\omega =1}时，\FormulaOCR{image1773.wmf}{f(x)=\sin(\omega x+\frac { \pi  } { 3 })=\sin(x+\frac { \pi  } { 3 })}．\par
+因为\FormulaOCR{image1774.wmf}{x\in [0}，\FormulaOCR{image1775.wmf}{\pi ]}，所以令\FormulaOCR{image1776.wmf}{t=x+\frac { \pi  } { 3 },t\in [\frac { \pi  } { 3 },\frac { 4\pi  } { 3 }]}，\par
+根据\FormulaOCR{image1777.wmf}{y=f(t)=\sin t}在\FormulaOCR{image1778.wmf}{[\frac { \pi  } { 3 },\frac { \pi  } { 2 }]}上单调递增，在\FormulaOCR{image1779.wmf}{[\frac { \pi  } { 2 },\frac { 4\pi  } { 3 }]}上单调递减，\par
+所以函数的最大值为\FormulaOCR{image1780.wmf}{\sin\frac { \pi  } { 2 }=1}，最小值为\FormulaOCR{image1781.wmf}{\sin\frac { 4\pi  } { 3 }=-\sin\frac { \pi  } { 3 }=-\frac { \sqrt { 3 } } { 2 }}．\par
+因此函数的值域为\FormulaOCR{image1782.wmf}{[-\frac { \sqrt { 3 } } { 2 }}，\FormulaOCR{image1783.wmf}{1]}．\par
+（2）由题知\FormulaOCR{image1784.wmf}{T=\frac { 2\pi  } { \omega  }=\pi }，所以\FormulaOCR{image1785.wmf}{\omega =2}，\FormulaOCR{image1786.wmf}{f(x)=\sin(2x+\frac { \pi  } { 3 })}．\par
+当\FormulaOCR{image1787.wmf}{f(x)=0}时，\FormulaOCR{image1788.wmf}{2x+\frac { \pi  } { 3 }=k\pi ,k\in Z}，即\FormulaOCR{image1789.wmf}{x=-\frac { \pi  } { 6 }+\frac { k\pi  } { 2 },k\in Z}．\par
+当\FormulaOCR{image1790.wmf}{k=3}时，\FormulaOCR{image1791.wmf}{x=\frac { 4\pi  } { 3 }>\pi }，所以\FormulaOCR{image1792.wmf}{\frac { 4\pi  } { 3 }+T\leq a < \frac { 4\pi  } { 3 }+\frac { 3 } { 2 }T}，即\FormulaOCR{image1793.wmf}{\frac { 7\pi  } { 3 }\leq a < \frac { 17\pi  } { 6 }}．\par
+因此，\FormulaOCR{image1794.wmf}{a}的取值范围为\FormulaOCR{image1795.wmf}{[\frac { 7\pi  } { 3 }}，\FormulaOCR{image1796.wmf}{\frac { 17\pi  } { 6 })}．\par
+\end{solution}
+\end{question}
+
+\begin{question}
+（2023•北京）已知函数\FormulaOCR{image1797.wmf}{f(x)=\sin\omega x\cos\varphi +\cos\omega x\sin\varphi }，\FormulaOCR{image1798.wmf}{\omega >0}，\FormulaOCR{image1799.wmf}{\|\varphi \| < \frac { \pi  } { 2 }}．\par
+（Ⅰ）若\FormulaOCR{image1800.wmf}{f(0)=-\frac { \sqrt { 3 } } { 2 }}，求\FormulaOCR{image1801.wmf}{\varphi }的值；\par
+（Ⅱ）若\FormulaOCR{image1802.wmf}{f(x)}在\FormulaOCR{image1803.wmf}{[-\frac { \pi  } { 3 }}，\FormulaOCR{image1804.wmf}{\frac { 2\pi  } { 3 }]}上单调递增，且\FormulaOCR{image1805.wmf}{f(\frac { 2\pi  } { 3 })=1}，再从条件①、条件②、条件③这三个条件中选择一个作为已知，求\FormulaOCR{image1806.wmf}{\omega }、\FormulaOCR{image1807.wmf}{\varphi }的值．\par
+条件①：\FormulaOCR{image1808.wmf}{f(\frac { \pi  } { 3 })=1}；\par
+条件②：\FormulaOCR{image1809.wmf}{f(-\frac { \pi  } { 3 })=-1}；\par
+条件③：\FormulaOCR{image1810.wmf}{f(x)}在\FormulaOCR{image1811.wmf}{[-\frac { 4\pi  } { 3 }}，\FormulaOCR{image1812.wmf}{-\frac { \pi  } { 3 }]}上单调递减．\par
+注：如果选择多个条件分别解答，按第一个解答计分．\par
+\begin{solution}
+解：（Ⅰ）因为函数\FormulaOCR{image1813.wmf}{f(x)=\sin\omega x\cos\varphi +\cos\omega x\sin\varphi =\sin(\omega x+\varphi )}，\par
+所以\FormulaOCR{image1814.wmf}{f(0)=\sin\varphi =-\frac { \sqrt { 3 } } { 2 }}，\par
+又因为\FormulaOCR{image1815.wmf}{\|\varphi \| < \frac { \pi  } { 2 }}，所以\FormulaOCR{image1816.wmf}{\varphi =-\frac { \pi  } { 3 }}．\par
+（Ⅱ）若选①：\FormulaOCR{image1817.wmf}{f(\frac { \pi  } { 3 })=1}；\par
+因为\FormulaOCR{image1818.wmf}{f(\frac { 2\pi  } { 3 })=1}，\par
+所以\FormulaOCR{image1819.wmf}{f(x)}在\FormulaOCR{image1820.wmf}{x=\frac { \pi  } { 3 }}和\FormulaOCR{image1821.wmf}{x=\frac { 2\pi  } { 3 }}时取得最大值1，这与\FormulaOCR{image1822.wmf}{f(x)}在\FormulaOCR{image1823.wmf}{[-\frac { \pi  } { 3 }}，\FormulaOCR{image1824.wmf}{\frac { 2\pi  } { 3 }]}上单调递增矛盾，所以\FormulaOCR{image1825.wmf}{\omega }、\FormulaOCR{image1826.wmf}{\varphi }的值不存在．\par
+若选②：\FormulaOCR{image1827.wmf}{f(-\frac { \pi  } { 3 })=-1}；\par
+因为\FormulaOCR{image1828.wmf}{f(x)}在\FormulaOCR{image1829.wmf}{[-\frac { \pi  } { 3 }}，\FormulaOCR{image1830.wmf}{\frac { 2\pi  } { 3 }]}上单调递增，且\FormulaOCR{image1831.wmf}{f(\frac { 2\pi  } { 3 })=1}，\par
+所以\FormulaOCR{image1832.wmf}{f(x)}在\FormulaOCR{image1833.wmf}{x=-\frac { \pi  } { 3 }}时取得最小值\FormulaOCR{image1834.wmf}{-1}，\FormulaOCR{image1835.wmf}{x=\frac { 2\pi  } { 3 }}时取得最大值1，\par
+所以\FormulaOCR{image1836.wmf}{f(x)}的最小正周期为\FormulaOCR{image1837.wmf}{T=2\times (\frac { 2\pi  } { 3 }+\frac { \pi  } { 3 })=2\pi }，计算\FormulaOCR{image1838.wmf}{\omega =\frac { 2\pi  } { T }=1}，\par
+又因为\FormulaOCR{image1839.wmf}{f(\frac { 2\pi  } { 3 })=\sin(\frac { 2\pi  } { 3 }+\varphi )=1}，所以\FormulaOCR{image1840.wmf}{\frac { 2\pi  } { 3 }+\varphi =2k\pi +\frac { \pi  } { 2 }}，\FormulaOCR{image1841.wmf}{k\in Z}，\par
+解得\FormulaOCR{image1842.wmf}{\varphi =2k\pi -\frac { \pi  } { 6 }}，\FormulaOCR{image1843.wmf}{k\in Z}；\par
+又因为\FormulaOCR{image1844.wmf}{\|\varphi \| < \frac { \pi  } { 2 }}，所以\FormulaOCR{image1845.wmf}{\varphi =-\frac { \pi  } { 6 }}；\par
+若选③：\FormulaOCR{image1846.wmf}{f(x)}在\FormulaOCR{image1847.wmf}{[-\frac { 4\pi  } { 3 }}，\FormulaOCR{image1848.wmf}{-\frac { \pi  } { 3 }]}上单调递减，因为\FormulaOCR{image1849.wmf}{f(x)}在\FormulaOCR{image1850.wmf}{[-\frac { \pi  } { 3 }}，\FormulaOCR{image1851.wmf}{\frac { 2\pi  } { 3 }]}上单调递增，且\FormulaOCR{image1852.wmf}{f(\frac { 2\pi  } { 3 })=1}，\par
+所以\FormulaOCR{image1853.wmf}{f(x)}在\FormulaOCR{image1854.wmf}{x=-\frac { \pi  } { 3 }}时取得最小值\FormulaOCR{image1855.wmf}{-1}，\FormulaOCR{image1856.wmf}{x=\frac { 2\pi  } { 3 }}时取得最大值1，\par
+所以\FormulaOCR{image1857.wmf}{f(x)}的最小正周期为\FormulaOCR{image1858.wmf}{T=2\times (\frac { 2\pi  } { 3 }+\frac { \pi  } { 3 })=2\pi }，所以\FormulaOCR{image1859.wmf}{\omega =\frac { 2\pi  } { T }=1}，\par
+又因为\FormulaOCR{image1860.wmf}{f(\frac { 2\pi  } { 3 })=\sin(\frac { 2\pi  } { 3 }+\varphi )=1}，所以\FormulaOCR{image1861.wmf}{\frac { 2\pi  } { 3 }+\varphi =2k\pi +\frac { \pi  } { 2 }}，\FormulaOCR{image1862.wmf}{k\in Z}，\par
+解得\FormulaOCR{image1863.wmf}{\varphi =2k\pi -\frac { \pi  } { 6 }}，\FormulaOCR{image1864.wmf}{k\in Z}；\par
+又因为\FormulaOCR{image1865.wmf}{\|\varphi \| < \frac { \pi  } { 2 }}，所以\FormulaOCR{image1866.wmf}{\varphi =-\frac { \pi  } { 6 }}．\par
+\qquad{}\par
+\qquad{}\par
+\end{solution}
+\end{question}

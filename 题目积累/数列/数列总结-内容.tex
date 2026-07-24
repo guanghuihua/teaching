@@ -1,0 +1,2250 @@
+% 由“数列总结.doc”和“数列总结答案.doc”对齐整理生成。
+% 题目与答案共用本文件；答案段由 \ifshowanswers 控制。
+
+数列通项公式的求法\par
+大纲：1．数列的概念和简单表示法\par
+（1）了解数列的概念和几种简单的表示方法（列表、图像、通项公式）.\par
+（2）了解数列是自变量为正整数的一类特殊函数.\par
+\par\bigskip\noindent{\zihao{3}\bfseries 观察法 即归纳推理，一般用于解决选择、填空题。过程：观察→概括、推广→猜出一般性结论。}\par
+方法总结：1）分式中分子、分母的特征；\par
+2）相邻项的变化特征；\par
+3）拆项后的特征；\par
+4）各项符号特征，并对此进行归纳、联想。\par
+\Needspace{6\baselineskip}
+例1  （1）.数列\FormulaOCR{image1.wmf}{\{a_{ n }  \}}的前四项为：11、102、1003、10004、\ldots{}\ldots{}，则\FormulaOCR{image2.wmf}{a_{ n }  =}\_\_\_\_\_。\par
+（2）7，77，777，7777，\ldots{}\par
+（3）\FormulaOCR{image3.wmf}{\frac12,-\frac23,\frac34,-\frac45,\ldots}（4）\FormulaOCR{image4.wmf}{1,\quad \frac { 2 } { 3 },\quad \frac { 1 } { 2 },\quad \frac { 2 } { 5 }}；\qquad{}（5）\FormulaOCR{image5.wmf}{-\frac { 2 } { 3 },\quad \frac { 3 } { 8 },\quad -\frac { 4 } { 15 },\quad \frac { 5 } { 24 }}．\par
+（6）\FormulaOCR{image6.wmf}{2\frac { 1 } { 2 },3\frac { 2 } { 3 },4\frac { 3 } { 4 },5\frac { 4 } { 5 }}（7）\FormulaOCR{image7.wmf}{\frac { 2 } { 3 },\frac { 4 } { 15 },\frac { 6 } { 35 },\frac { 8 } { 63 },\frac { 10 } { 99 }}（8）2,0,2,0（9）\FormulaOCR{image8.wmf}{\frac { 3 } { 5 },\frac { 1 } { 2 },\frac { 5 } { 11 },\frac { 3 } { 7 },\frac { 7 } { 17 }}\par
+（10）三角形数\FormulaOCR{image9.wmf}{a_{ n }  =\frac { n(n+1) } { 2 }}\par
+（11）正方形数\FormulaOCR{image10.wmf}{a_{ n }  =n ^ { 2 }}\par
+（12）谢宾斯基三角形\par
+\DocImage{image11.png}{396.95}{111.00} \FormulaOCR{image12.wmf}{a_{ n }  =3 ^ { n-1 }}\par
+（13）课本作业33页第5题和B组的第1题\par
+14.根据下面的图形及相应的点数，在空格及括号中分别填上适当的图形和数，\par
+写出点数的通项公式.\par
+\DocImage{image13.png}{377.20}{94.50}\par
+\QuestionSpace{6.0cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解分析：（1）   \FormulaOCR{image14.wmf}{11=10+1,102=10 ^ { 2 } +2,1003=10 ^ { 3 } +3,10004=10 ^ { 4 } +4}即\FormulaOCR{image15.wmf}{a_{ n }  =10 ^ { n } +n}\par
+（2）变形为  \FormulaOCR{image16.wmf}{\frac { 7 } { 10 }\left ( { 10 ^ { 1 } -1 } \right )}，\FormulaOCR{image17.wmf}{\frac { 7 } { 10 }\left ( { 10 ^ { 2 } -1 } \right )}，\FormulaOCR{image18.wmf}{\frac { 7 } { 10 }\left ( { 10 ^ { 3 } -1 } \right )}，\FormulaOCR{image19.wmf}{\frac { 7 } { 10 }\left ( { 10 ^ { 4 } -1 } \right )}，\ldots{}\ldots{}\par
+\ensuremath{\therefore}通项公式为  \FormulaOCR{image20.wmf}{a_n=\frac{7}{10}\left(10^n-1\right)}.\par
+（3）\FormulaOCR{image21.wmf}{a_{n}=(-1)^{n+1}\cdot{\frac{n}{n+1}}}.（4）\FormulaOCR{image22.wmf}{a_{ n }  =\frac { 2 } { n+1 }}；\qquad{}（5）\FormulaOCR{image23.wmf}{a_{ n }  =(-1) ^ { n } \frac { n+1 } { (n+1) ^ { 2 } -1 }}\par
+（6）\FormulaOCR{image24.wmf}{a_{ n }  =(n+1)+\frac { n } { n+1 }}（7）\FormulaOCR{image25.wmf}{a_{ n }  =\frac { 2n } { 2 ^ { n } -1 }}（8）\FormulaOCR{image26.wmf}{a_n=(-1)^{n+1}+1}或\FormulaOCR{image27.wmf}{a_n=1-\cos n\pi}\par
+（9）\FormulaOCR{image28.wmf}{a_{ n }  =\frac { n+2 } { 3n+2 }}\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例2．(文)(2011·绍兴月考)古希腊人常用小石头在沙滩上摆成各种形状来研究数．比如：\par
+\DocImage{image29.png}{266.05}{88.20}\par
+\DocImage{image30.png}{274.85}{93.05}\par
+他们研究过图1中的1,3,6,10，\ldots{}，由于这些数能够表示成三角形，将其称为三角形数；类似的，称图2中的1,4,9,16，\ldots{}这样的数为正方形数．下列数中既是三角形数又是正方形数的是(  )\par
+A．289         B．1024      C．1225        D．1378\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+[答案] C\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+\qquad{}\qquad{}\qquad{}\qquad{}例3．（2013年高考陕西卷（文））观察下列等式:\par
+\qquad{}\qquad{}\qquad{}\qquad{}\FormulaOCR{image31.wmf}{\begin{aligned}(1+1)&=2\times1,\\(2+1)(2+2)&=2^2\times1\times3,\\(3+1)(3+2)(3+3)&=2^3\times1\times3\times5.\end{aligned}}\par
+照此规律, 第n个等式可为\_\_\_\_\_\_\_\_.\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+【答案】\FormulaOCR{image32.wmf}{(n+1)(n+2)\cdots(n+n)=2^n\cdot1\cdot3\cdot5\cdots(2n-1)}\par
+\par\endgroup\fi
+
+\par\bigskip\noindent{\zihao{3}\bfseries 公式法（利用 $S_n$ 与 $a_n$ 的关系求通项）}\par
+（1）\qquad{}\FormulaOCR{image34.wmf}{a_n=\begin{cases}S_1,&n=1,\\S_n-S_{n-1},&n\geq2.\end{cases}}，即已知数列前n项和，求通项。\par
+做题步骤：当n=1时\FormulaOCR{image35.wmf}{\Longrightarrow}\FormulaOCR{image36.wmf}{{ \rm{ a } }_{ 1 }  { \rm{ = } }{ \rm{ S } }_{ 1 }}\par
+当n\FormulaOCR{image37.wmf}{\geq }2\FormulaOCR{image38.wmf}{\quad\text{时，}\quad a_n=S_n-S_{n-1}}\par
+\qquad{}(1)利用\FormulaOCR{image39.wmf}{S_{ n }}与\FormulaOCR{image40.wmf}{a_n}的关系.\par
+\qquad{}①利用\ensuremath{a_{n}}＝\ensuremath{S_{n}}-\ensuremath{S_{n-1}}(n\ensuremath{\ge}2)转化为只含\ensuremath{S_{n}}，\ensuremath{S_{n-1}}的关系式，再求解．\par
+\qquad{}②利用\ensuremath{S_{n}}-\ensuremath{S_{n-1}}＝\ensuremath{a_{n}}(n\ensuremath{\ge}2)转化为只含\ensuremath{a_{n}}，\ensuremath{a_{n-1}}的关系式，再求解．\par
+变式1．（2015•湖南）设数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，已知\ensuremath{a_{1}}=1，\ensuremath{a_{2}}=2，\ensuremath{a_{n+2}}=3\ensuremath{S_{n}}-\ensuremath{S_{n+1}}+3，n\ensuremath{\in}\ensuremath{N^{*}}，\par
+（Ⅰ）证明\ensuremath{a_{n+2}}=3\ensuremath{a_{n}}；\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+（Ⅰ）证明：当n\ensuremath{\ge}2时，由\ensuremath{a_{n+2}}=3\ensuremath{S_{n}}-\ensuremath{S_{n+1}}+3，\par
+可得\ensuremath{a_{n+1}}=3\ensuremath{S_{n-1}}-\ensuremath{S_{n}}+3，\par
+两式相减，得\ensuremath{a_{n+2}}-\ensuremath{a_{n+1}}=3\ensuremath{a_{n}}-\ensuremath{a_{n+1}}，\par
+\ensuremath{\therefore}\ensuremath{a_{n+2}}=3\ensuremath{a_{n}}，\par
+当n=1时，有\ensuremath{a_{3}}=3\ensuremath{S_{1}}-\ensuremath{S_{2}}+3=3\ensuremath{\times}1-（1+2）+3=3，\par
+\ensuremath{\therefore}\ensuremath{a_{3}}=3\ensuremath{a_{1}}，命题也成立，\par
+综上所述：\ensuremath{a_{n+2}}=3\ensuremath{a_{n}}；\par
+\par\endgroup\fi
+
+变式2．（2023•天津）已知数列\FormulaOCR{image42.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image43.wmf}{n}项和为\FormulaOCR{image44.wmf}{S_{ n }  .}若\FormulaOCR{image45.wmf}{a_{ 1 }  =2}，\FormulaOCR{image46.wmf}{a_{ n+1 }  =2S_{ n }  +2}，则\FormulaOCR{image47.wmf}{a_{ 4 }  =}（　　）\par
+\qquad{}\qquad{}\qquad{}A．16\qquad{}B．32\qquad{}C．54\qquad{}D．162\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：当\FormulaOCR{image48.wmf}{n\geq 2(n\in N*)}时，由\FormulaOCR{image49.wmf}{a_{ n+1 }  =2S_{ n }  +2}可得\FormulaOCR{image50.wmf}{a_{ n }  =2S_{ n-1 }  +2}，\par
+两式相减，可得\FormulaOCR{image51.wmf}{a_{ n+1 }  -a_{ n }  =2a_{ n }}，\par
+及\FormulaOCR{image52.wmf}{a_{ n+1 }  =3a_{ n }}，\par
+当\FormulaOCR{image53.wmf}{n=1}时，由已知，得\FormulaOCR{image54.wmf}{a_{ 2 }  =6}，符合\FormulaOCR{image55.wmf}{a_{ n+1 }  =3a_{ n }}，\par
+所以数列\FormulaOCR{image56.wmf}{\{a_{ n }  \}}是首项为2，公比为3的等比数列，\par
+则\FormulaOCR{image57.wmf}{a_{ 4 }  =a_{ 1 }  \cdot q ^ { 3 } =2\times 3 ^ { 3 } =54}．\par
+故选：\FormulaOCR{image58.wmf}{C}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+2．（2016•新课标Ⅲ）已知数列{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}=1+\ensuremath{\lambda}\ensuremath{a_{n}}，其中\ensuremath{\lambda}\ensuremath{\ne}0．\par
+（1）证明{\ensuremath{a_{n}}}是等比数列，并求其通项公式；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）\ensuremath{\because}\ensuremath{S_{n}}=1+\ensuremath{\lambda}\ensuremath{a_{n}}，\ensuremath{\lambda}\ensuremath{\ne}0．\par
+\ensuremath{\therefore}\ensuremath{a_{n}}\ensuremath{\ne}0．\par
+当n\ensuremath{\ge}2时，\ensuremath{a_{n}}=\ensuremath{S_{n}}-\ensuremath{S_{n-1}}=1+\ensuremath{\lambda}\ensuremath{a_{n}}-1-\ensuremath{\lambda}\ensuremath{a_{n-1}}=\ensuremath{\lambda}\ensuremath{a_{n}}-\ensuremath{\lambda}\ensuremath{a_{n-1}}，\par
+即（\ensuremath{\lambda}-1）\ensuremath{a_{n}}=\ensuremath{\lambda}\ensuremath{a_{n-1}}，\par
+\ensuremath{\because}\ensuremath{\lambda}\ensuremath{\ne}0，\ensuremath{a_{n}}\ensuremath{\ne}0．\ensuremath{\therefore}\ensuremath{\lambda}-1\ensuremath{\ne}0．即\ensuremath{\lambda}\ensuremath{\ne}1，\par
+即\FormulaOCR{image59.png}{\frac{a_n}{a_{n-1}}}=\FormulaOCR{image60.png}{\frac{\lambda}{\lambda-1}}，（n\ensuremath{\ge}2），\par
+\ensuremath{\therefore}{\ensuremath{a_{n}}}是等比数列，公比q=\FormulaOCR{image60.png}{\frac{\lambda}{\lambda-1}}，\par
+当n=1时，\ensuremath{S_{1}}=1+\ensuremath{\lambda}\ensuremath{a_{1}}=\ensuremath{a_{1}}，\par
+即\ensuremath{a_{1}}=\FormulaOCR{image61.png}{\frac1{1-\lambda}}，\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=\FormulaOCR{image61.png}{\frac1{1-\lambda}}•（\FormulaOCR{image60.png}{\frac{\lambda}{\lambda-1}}）\ensuremath{{}^{n-1}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+3．（2014•新课标Ⅰ）已知数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，\ensuremath{a_{1}}=1，\ensuremath{a_{n}}\ensuremath{\ne}0，\ensuremath{a_{n}}\ensuremath{a_{n+1}}=\ensuremath{\lambda}\ensuremath{S_{n}}-1，其中\ensuremath{\lambda}为常数．\par
+（Ⅰ）证明：\ensuremath{a_{n+2}}-\ensuremath{a_{n}}=\ensuremath{\lambda}\par
+（Ⅱ）是否存在\ensuremath{\lambda}，使得{\ensuremath{a_{n}}}为等差数列？并说明理由．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+（Ⅰ）证明：\ensuremath{\because}\ensuremath{a_{n}}\ensuremath{a_{n+1}}=\ensuremath{\lambda}\ensuremath{S_{n}}-1，\ensuremath{a_{n+1}}\ensuremath{a_{n+2}}=\ensuremath{\lambda}\ensuremath{S_{n+1}}-1，\par
+\ensuremath{\therefore}\ensuremath{a_{n+1}}（\ensuremath{a_{n+2}}-\ensuremath{a_{n}}）=\ensuremath{\lambda}\ensuremath{a_{n+1}}\par
+\ensuremath{\because}\ensuremath{a_{n+1}}\ensuremath{\ne}0，\par
+\ensuremath{\therefore}\ensuremath{a_{n+2}}-\ensuremath{a_{n}}=\ensuremath{\lambda}．\par
+（Ⅱ）解：假设存在\ensuremath{\lambda}，使得{\ensuremath{a_{n}}}为等差数列，设公差为d．\par
+则\ensuremath{\lambda}=\ensuremath{a_{n+2}}-\ensuremath{a_{n}}=（\ensuremath{a_{n+2}}-\ensuremath{a_{n+1}}）+（\ensuremath{a_{n+1}}-\ensuremath{a_{n}}）=2d，\par
+\ensuremath{\therefore}\FormulaOCR{image62.png}{*{\ a{\frac{\lambda}{2}}}}．\par
+\ensuremath{\therefore}\FormulaOCR{image63.png}{a_n=1+\frac{\lambda(n-1)}2}，\FormulaOCR{image64.png}{\mathbf{a}_{n+1}=1+{\frac{\lambda\ \mathbf{n}}{2}}}，\par
+\ensuremath{\therefore}\ensuremath{\lambda}\ensuremath{S_{n}}=1+\FormulaOCR{image65.png}{\left[1+\frac{\lambda(n-1)}2\right]\left(1+\frac{\lambda n}2\right)}=\FormulaOCR{image66.png}{\frac{\lambda^2}{4}n^2+\left(\lambda-\frac{\lambda^2}{4}\right)n+2-\frac{\lambda}{2}}，\par
+根据{\ensuremath{a_{n}}}为等差数列的充要条件是\FormulaOCR{image67.png}{\begin{cases}\lambda\ne0,\\2-\dfrac{\lambda}{2}=0,\end{cases}}，解得\ensuremath{\lambda}=4．\par
+此时可得\FormulaOCR{image68.png}{S_n=n^2}，\ensuremath{a_{n}}=2n-1．\par
+\par\endgroup\fi
+
+因此存在\ensuremath{\lambda}=4，使得{\ensuremath{a_{n}}}为等差数列．\par
+\qquad{}②利用\ensuremath{S_{n}}-\ensuremath{S_{n-1}}＝\ensuremath{a_{n}}(n\ensuremath{\ge}2)转化为只含\ensuremath{a_{n}}，\ensuremath{a_{n-1}}的关系式，再求解．\par
+4．16．（5分）（2015•新课标Ⅱ）设数列\FormulaOCR{image69.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image70.wmf}{n}项和为\FormulaOCR{image71.wmf}{S_{ n }}，且\FormulaOCR{image72.wmf}{a_{ 1 }  =-1}，\FormulaOCR{image73.wmf}{a_{ n+1 }  =S_{ n+1 }  S_{ n }}，则\FormulaOCR{image74.wmf}{S_{ n }  =}　\FormulaOCR{image75.wmf}{-\frac { 1 } { n }}　．\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\FormulaOCR{image76.wmf}{\because a_{ n+1 }  =S_{ n+1 }  S_{ n }}，\FormulaOCR{image77.wmf}{\therefore S_{ n+1 }  -S_{ n }  =S_{ n+1 }  S_{ n }}，\FormulaOCR{image78.wmf}{\therefore}\FormulaOCR{image79.wmf}{\frac { 1 } { S_{ n }   }-\frac { 1 } { S_{ n+1 }   }=1}，\par
+又\FormulaOCR{image80.wmf}{\because a_{ 1 }  =-1}，即\FormulaOCR{image81.wmf}{\frac { 1 } { S_{ 1 }   }=-1}，\FormulaOCR{image82.wmf}{\therefore}数列\FormulaOCR{image83.wmf}{\{\frac { 1 } { S_{ n }   }\}}是以首项是\FormulaOCR{image84.wmf}{-1}、公差为\FormulaOCR{image85.wmf}{-1}的等差数列，\par
+\FormulaOCR{image86.wmf}{\therefore}\FormulaOCR{image87.wmf}{\frac { 1 } { S_{ n }   }=-n}，\FormulaOCR{image88.wmf}{\therefore S_{ n }  =-\frac { 1 } { n }}，故答案为：\FormulaOCR{image89.wmf}{-\frac { 1 } { n }}．\par
+\qquad{}\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+5．（2016•全国）已知数列{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}=\ensuremath{n^{2}}．\par
+（Ⅰ）求{\ensuremath{a_{n}}}的通项公式；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）数列{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}=\ensuremath{n^{2}}，\par
+可得\ensuremath{a_{1}}=\ensuremath{S_{1}}=1；\par
+n\ensuremath{\ge}2时，\ensuremath{a_{n}}=\ensuremath{S_{n}}-\ensuremath{S_{n-1}}=\ensuremath{n^{2}}-\ensuremath{(n-1)^{2}}=2n-1，\par
+上式对n=1也成立，\par
+则\ensuremath{a_{n}}=2n-1，n\ensuremath{\in}\ensuremath{N^*}；\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+6．（2015•山东）设数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，已知2\ensuremath{S_{n}}=\ensuremath{3^{n}}+3．\par
+（Ⅰ）求{\ensuremath{a_{n}}}的通项公式；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）因为2\ensuremath{S_{n}}=\ensuremath{3^{n}}+3，所以2\ensuremath{a_{1}}=\ensuremath{3^{1}}+3=6，故\ensuremath{a_{1}}=3，\par
+当n>1时，2\ensuremath{S_{n-1}}=\ensuremath{3^{n-1}}+3，\par
+此时，2\ensuremath{a_{n}}=2\ensuremath{S_{n}}-2\ensuremath{S_{n-1}}=\ensuremath{3^{n}}-\ensuremath{3^{n-1}}=2\ensuremath{\times}\ensuremath{3^{n-1}}，即\ensuremath{a_{n}}=\ensuremath{3^{n-1}}，\par
+所以\ensuremath{a_{n}}=\FormulaOCR{image90.png}{a_n=\begin{cases}3,&n=1,\\3^{n-1},&n>1.\end{cases}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+7．（2026•天津）已知数列\FormulaOCR{image98.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image99.wmf}{n}项和为\FormulaOCR{image100.wmf}{S_{ n }}，\FormulaOCR{image101.wmf}{S_{ 2n }  -S_{ n }  =n}，\FormulaOCR{image102.wmf}{a_{ 3 }  =6}，则\FormulaOCR{image103.wmf}{a_{ 7 }  +a_{ 8 }  =}（　　）\par
+\qquad{}\qquad{}\qquad{}A．68\qquad{}B．56\qquad{}C．\FormulaOCR{image104.wmf}{-3}\qquad{}D．\FormulaOCR{image105.wmf}{-4}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\FormulaOCR{image106.wmf}{\because S_{ 2n }  -S_{ n }  =n}，\par
+令\FormulaOCR{image107.wmf}{n=1}，则\FormulaOCR{image108.wmf}{S_{ 2 }  -S_{ 1 }  =a_{ 2 }  =1}，\par
+令\FormulaOCR{image109.wmf}{n=n+1}，则\FormulaOCR{image110.wmf}{S_{ 2n+2 }  -S_{ n+1 }  =n+1}，\FormulaOCR{image111.wmf}{\therefore S_{ 2n+2 }  -S_{ n+1 }  -(S_{ 2n }  -S_{ n }  )=1}，\FormulaOCR{image112.wmf}{\therefore (S_{ 2n+2 }  -S_{ 2n }  )-(S_{ n+1 }  -S_{ n }  )=1}，\par
+\FormulaOCR{image113.wmf}{\therefore a_{ 2n+2 }  +a_{ 2n+1 }  -a_{ n+1 }  =1}，令\FormulaOCR{image114.wmf}{n=3}，则\FormulaOCR{image115.wmf}{a_{ 8 }  +a_{ 7 }  -a_{ 4 }  =1}，\FormulaOCR{image116.wmf}{\therefore a_{ 7 }  +a_{ 8 }  =a_{ 4 }  +1}，\par
+令\FormulaOCR{image117.wmf}{n=1}，则\FormulaOCR{image118.wmf}{a_{ 4 }  +a_{ 3 }  -a_{ 2 }  =1}，\FormulaOCR{image119.wmf}{\therefore a_{ 4 }  =1+a_{ 2 }  -a_{ 3 }  =1+1-6=-4}，\par
+\FormulaOCR{image120.wmf}{\therefore a_{ 7 }  +a_{ 8 }  =a_{ 4 }  +1=-3}．故选：\FormulaOCR{image121.wmf}{C}．\par
+\par\endgroup\fi
+
+（2）利用\FormulaOCR{image122.wmf}{\begin{aligned}a_n&=a_1+(n-1)d,\\a_n&=a_1q^{n-1}\end{aligned}}变成关于\FormulaOCR{image123.wmf}{a_1}和d的方程组或者关于和q的方程组\par
+\Needspace{6\baselineskip}
+1．（2017•新课标Ⅱ）已知等差数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，等比数列{\ensuremath{b_{n}}}的前n项和为\ensuremath{T_{n}}，\ensuremath{a_{1}}=-1，\ensuremath{b_{1}}=1，\ensuremath{a_{2}}+\ensuremath{b_{2}}=2．\par
+（1）若\ensuremath{a_{3}}+\ensuremath{b_{3}}=5，求{\ensuremath{b_{n}}}的通项公式；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）设等差数列{\ensuremath{a_{n}}}的公差为d，等比数列{\ensuremath{b_{n}}}的公比为q，\par
+\ensuremath{a_{1}}=-1，\ensuremath{b_{1}}=1，\ensuremath{a_{2}}+\ensuremath{b_{2}}=2，\ensuremath{a_{3}}+\ensuremath{b_{3}}=5，\par
+可得-1+d+q=2，-1+2d+\ensuremath{q^{2}}=5，\par
+解得d=1，q=2或d=3，q=0（舍去），\par
+则{\ensuremath{b_{n}}}的通项公式为\ensuremath{b_{n}}=\ensuremath{2^{n-1}}，n\ensuremath{\in}\ensuremath{N^*}；\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+2．（2014•江西）已知首项是1的两个数列{\ensuremath{a_{n}}}，{\ensuremath{b_{n}}}（\ensuremath{b_{n}}\ensuremath{\ne}0，n\ensuremath{\in}\ensuremath{N^{*}}）\par
+满足\ensuremath{a_{n}}\ensuremath{b_{n+1}}-\ensuremath{a_{n+1}}\ensuremath{b_{n}}+2\ensuremath{b_{n+1}}\ensuremath{b_{n}}=0．\par
+（1）令\ensuremath{c_{n}}=\FormulaOCR{image124.png}{\textstyle{\frac{\mathbf{a_{n}}}{\mathbf{b_{n}}}}}，求数列{\ensuremath{c_{n}}}的通项公式；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）\ensuremath{\because}\ensuremath{a_{n}}\ensuremath{b_{n+1}}-\ensuremath{a_{n+1}}\ensuremath{b_{n}}+2\ensuremath{b_{n+1}}\ensuremath{b_{n}}=0，\ensuremath{c_{n}}=\FormulaOCR{image125.png}{\textstyle{\frac{\mathbf{a_{n}}}{\mathbf{b_{n}}}}}，\par
+\ensuremath{\therefore}\ensuremath{c_{n}}-\ensuremath{c_{n+1}}+2=0，\ensuremath{\therefore}\ensuremath{c_{n+1}}-\ensuremath{c_{n}}=2，\par
+\ensuremath{\because}首项是1的两个数列{\ensuremath{a_{n}}}，{\ensuremath{b_{n}}}，\par
+\ensuremath{\therefore}数列{\ensuremath{c_{n}}}是以1为首项，2为公差的等差数列，\par
+\ensuremath{\therefore}\ensuremath{c_{n}}=2n-1；\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+3．（2017•全国）设数列{\ensuremath{b_{n}}}的各项都为正数，且\FormulaOCR{image126.png}{b_{n+1}=\frac{b_n}{b_n+1}}．\par
+（1）证明数列\FormulaOCR{image127.png}{({\frac{1}{\mathrm{b}_{\mathrm{n}}}})}为等差数列；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）证明：数列{\ensuremath{b_{n}}}的各项都为正数，且\FormulaOCR{image128.png}{b_{n+1}=\frac{b_n}{b_n+1}}，\par
+两边取倒数得\FormulaOCR{image129.png}{\frac1{b_{n+1}}=\frac{b_n+1}{b_n}=1+\frac1{b_n}}，\par
+故数列\FormulaOCR{image130.png}{({\frac{1}{\mathrm{b}_{\mathrm{n}}}})}为等差数列，其公差为1，首项为\FormulaOCR{image131.png}{\frac1{b_1}}；\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+4．（2016•新课标Ⅲ）已知各项都为正数的数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=1，\ensuremath{a_{n}^{2}}-（2\ensuremath{a_{n+1}}-1）\ensuremath{a_{n}}-2\ensuremath{a_{n+1}}=0．\par
+（1）求\ensuremath{a_{2}}，\ensuremath{a_{3}}；（2）求{\ensuremath{a_{n}}}的通项公式．\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）根据题意，\ensuremath{a_{n}^{2}}-（2\ensuremath{a_{n+1}}-1）\ensuremath{a_{n}}-2\ensuremath{a_{n+1}}=0，\par
+当n=1时，有\ensuremath{a_{1}^{2}}-（2\ensuremath{a_{2}}-1）\ensuremath{a_{1}}-2\ensuremath{a_{2}}=0，\par
+而\ensuremath{a_{1}}=1，则有1-（2\ensuremath{a_{2}}-1）-2\ensuremath{a_{2}}=0，解可得\ensuremath{a_{2}}=\FormulaOCR{image132.png}{\frac12}，\par
+当n=2时，有\ensuremath{a_{2}^{2}}-（2\ensuremath{a_{3}}-1）\ensuremath{a_{2}}-2\ensuremath{a_{3}}=0，\par
+又由\ensuremath{a_{2}}=\FormulaOCR{image132.png}{\frac12}，解可得\ensuremath{a_{3}}=\FormulaOCR{image133.png}{\frac{1}{4}}，故\ensuremath{a_{2}}=，\ensuremath{a_{3}}=；\par
+（2）根据题意，\ensuremath{a_{n}^{2}}-（2\ensuremath{a_{n+1}}-1）\ensuremath{a_{n}}-2\ensuremath{a_{n+1}}=0，\par
+变形可得（\ensuremath{a_{n}}-2\ensuremath{a_{n+1}}）（\ensuremath{a_{n}}+1）=0，\par
+即有\ensuremath{a_{n}}=2\ensuremath{a_{n+1}}或\ensuremath{a_{n}}=-1，又由数列{\ensuremath{a_{n}}}各项都为正数，则有\ensuremath{a_{n}}=2\ensuremath{a_{n+1}}，\par
+故数列{\ensuremath{a_{n}}}是首项为\ensuremath{a_{1}}=1，公比为\FormulaOCR{image134.png}{\frac12}的等比数列，\par
+则\ensuremath{a_{n}}=1\ensuremath{\times}（\FormulaOCR{image134.png}{\frac12}）\ensuremath{{}^{n-1}}=（）\ensuremath{{}^{n-1}}，故\ensuremath{a_{n}}=（）\ensuremath{{}^{n-1}}．\par
+\par\endgroup\fi
+
+5（2018•北京）设{\ensuremath{a_{n}}}是等差数列，且\ensuremath{a_{1}}=ln2，\ensuremath{a_{2}}+\ensuremath{a_{3}}=5ln2．\par
+（Ⅰ）求{\ensuremath{a_{n}}}的通项公式；\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）{\ensuremath{a_{n}}}是等差数列，设公差为d，且\ensuremath{a_{1}}=ln2，\ensuremath{a_{2}}+\ensuremath{a_{3}}=5ln2．\par
+可得：2\ensuremath{a_{1}}+3d=5ln2，可得d=ln2，\par
+{\ensuremath{a_{n}}}的通项公式；\ensuremath{a_{n}}=\ensuremath{a_{1}}+（n-1）d=nln2，\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+6．（2015•山东）已知数列{\ensuremath{a_{n}}}是首项为正数的等差数列，数列{\FormulaOCR{image135.png}{\frac1{a_na_{n+1}}}}的前n项和为\FormulaOCR{image136.png}{\textstyle{\frac{1}{n+1}}}．\par
+（1）求数列{\ensuremath{a_{n}}}的通项公式；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）设等差数列{\ensuremath{a_{n}}}的首项为\ensuremath{a_{1}}、公差为d，则\ensuremath{a_{1}}>0，\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=\ensuremath{a_{1}}+（n-1）d，\ensuremath{a_{n+1}}=\ensuremath{a_{1}}+nd，\par
+令\ensuremath{c_{n}}=\FormulaOCR{image137.png}{\frac1{a_na_{n+1}}}，\par
+则\ensuremath{c_{n}}=\FormulaOCR{image138.png}{\frac1{[a_1+(n-1)d](a_1+nd)}}=\FormulaOCR{image139.png}{\frac{1}{\mathrm{d}}}[\FormulaOCR{image140.png}{\frac{1}{\mathbf{a_{1}}^{+}(\mathbf{n-1})\cdot\lambda}}-\FormulaOCR{image141.png}{\frac{1}{\mathbf{a_{1}}+\mathbf{n}\ d}}]，\par
+\ensuremath{\therefore}\ensuremath{c_{1}}+\ensuremath{c_{2}}+\ldots{}+\ensuremath{c_{n-1}}+\ensuremath{c_{n}}=\FormulaOCR{image139.png}{\frac{1}{\mathrm{d}}}[\FormulaOCR{image142.png}{\frac1{a_1}}-\FormulaOCR{image143.png}{\frac1{a_1+d}}+\FormulaOCR{image144.png}{\frac1{a_1+d}}-\FormulaOCR{image145.png}{\frac{1}{\mathbf{a_{1}+2d}}}+\ldots{}+\FormulaOCR{image146.png}{\frac{1}{\mathbf{a_{1}}^{+}(\mathbf{n-1})\cdot\lambda}}-\FormulaOCR{image147.png}{\frac{1}{\mathbf{a_{1}}+\mathbf{n}\ d}}]\par
+=\FormulaOCR{image148.png}{\frac{1}{\mathrm{d}}}[\FormulaOCR{image149.png}{\frac1{a_1}}-\FormulaOCR{image147.png}{\frac{1}{\mathbf{a_{1}}+\mathbf{n}\ d}}]\par
+=\FormulaOCR{image150.png}{\frac{n}{a_1(a_1+nd)}}=\FormulaOCR{image151.png}{\frac{n}{a_1^2+a_1dn}}，又\ensuremath{\because}数列{\FormulaOCR{image152.png}{\frac1{a_na_{n+1}}}}的前n项和为\FormulaOCR{image153.png}{\textstyle{\frac{1}{n+1}}}，\par
+\ensuremath{\therefore}\FormulaOCR{image154.png}{\begin{cases}a_1^2=1,\\a_1d=2,\end{cases}}，\ensuremath{\therefore}\ensuremath{a_{1}}=1或-1（舍），d=2，\ensuremath{\therefore}\ensuremath{a_{n}}=1+2（n-1）=2n-1；\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+7．（2015•天津）已知数列{\ensuremath{a_{n}}}满足\ensuremath{a_{n+2}}=q\ensuremath{a_{n}}（q为实数，且q\ensuremath{\ne}1），n\ensuremath{\in}\ensuremath{N^{*}}，\ensuremath{a_{1}}=1，\ensuremath{a_{2}}=2，且\ensuremath{a_{2}}+\ensuremath{a_{3}}，\ensuremath{a_{3}}+\ensuremath{a_{4}}，\ensuremath{a_{4}}+\ensuremath{a_{5}}成等差数列\par
+（1）求q的值和{\ensuremath{a_{n}}}的通项公式；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）\ensuremath{\because}\ensuremath{a_{n+2}}=q\ensuremath{a_{n}}（q为实数，且q\ensuremath{\ne}1），n\ensuremath{\in}\ensuremath{N^{*}}，\ensuremath{a_{1}}=1，\ensuremath{a_{2}}=2，\par
+\ensuremath{\therefore}\ensuremath{a_{3}}=q，\ensuremath{a_{5}}=\ensuremath{q^{2}}，\ensuremath{a_{4}}=2q，\par
+又\ensuremath{\because}\ensuremath{a_{2}}+\ensuremath{a_{3}}，\ensuremath{a_{3}}+\ensuremath{a_{4}}，\ensuremath{a_{4}}+\ensuremath{a_{5}}成等差数列，\par
+\ensuremath{\therefore}2\ensuremath{\times}3q=2+3q+\ensuremath{q^{2}}，\par
+即\ensuremath{q^{2}}-3q+2=0，\par
+解得q=2或q=1（舍），\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=\FormulaOCR{image155.png}{a_n=\begin{cases}2^{\frac{n-1}{2}},&n\text{为奇数},\\2^{\frac n2},&n\text{为偶数}.\end{cases}}；\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+8．（2022•全国）设等比数列\FormulaOCR{image156.wmf}{\{a_{ n }  \}}的首项为1，公比为\FormulaOCR{image157.wmf}{q}，前\FormulaOCR{image158.wmf}{n}项和为\FormulaOCR{image159.wmf}{S_{ n }}．令\FormulaOCR{image160.wmf}{b_{ n }  =S_{ n }  +2}，若\FormulaOCR{image161.wmf}{\{b_{ n }  \}}也是等比数列，则\FormulaOCR{image162.wmf}{q=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image163.wmf}{\frac { 1 } { 2 }}\qquad{}B．\FormulaOCR{image164.wmf}{\frac { 3 } { 2 }}\qquad{}C．\FormulaOCR{image165.wmf}{\frac { 5 } { 2 }}\qquad{}D．\FormulaOCR{image166.wmf}{\frac { 7 } { 2 }}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：由题意可知，\FormulaOCR{image167.wmf}{a_{ 1 }  =1}，\FormulaOCR{image168.wmf}{a_{ 2 }  =q}，\FormulaOCR{image169.wmf}{a_{ 3 }  =q ^ { 2 }}，\par
+\FormulaOCR{image170.wmf}{\because b_{ n }  =S_{ n }  +2}，若\FormulaOCR{image171.wmf}{\{b_{ n }  \}}也是等比数列，\par
+\FormulaOCR{image172.wmf}{\because}\FormulaOCR{image173.wmf}{b_{ 2 }  ^{ 2 }=b_{ 1 }  b_{ 3 }}，即\FormulaOCR{image174.wmf}{(3+q) ^ { 2 } =(1+2)(3+q+q ^ { 2 } )}，即\FormulaOCR{image175.wmf}{2q ^ { 2 } -3q=0}，解得\FormulaOCR{image176.wmf}{q=\frac { 3 } { 2 }}或\FormulaOCR{image177.wmf}{q=0}（舍去）．\par
+故选：\FormulaOCR{image178.wmf}{B}．\par
+\par\endgroup\fi
+
+\par\bigskip\noindent{\zihao{3}\bfseries 递推公式}\par
+\par\medskip\noindent{\zihao{4}\bfseries 累加法  递推式为：\ensuremath{a_{n+1}}=\ensuremath{a_{n}}+f(n)  (f(n)可求和)}\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+思路：:令n=1,2,\ldots{},n-1可得\par
+\qquad{}\qquad{}     \ensuremath{a_{2}}-\ensuremath{a_{1}}=f(1)\par
+\ensuremath{a_{3}}-\ensuremath{a_{2}}=f(2)\par
+\ensuremath{a_{4}}-\ensuremath{a_{3}}=f(3)\par
+\ldots{}\ldots{}\par
+\ensuremath{a_{n}}-\ensuremath{a_{n-1}}=f(n-1)\par
+将这个式子累加起来可得\par
+\ensuremath{a_{n}}-\ensuremath{a_{1}}=f(1)+f(2)+\ldots{}+f(n-1)\par
+\ensuremath{\because}f(n)可求和\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=\ensuremath{a_{1}}+f(1)+f(2)+ \ldots{}+f(n-1)\par
+当然我们还要验证当n=1时,\ensuremath{a_{1}}是否满足上式\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例1：在数列\FormulaOCR{image179.wmf}{\{a_n\}}中，已知\FormulaOCR{image180.wmf}{a_1}=1，当\FormulaOCR{image181.wmf}{n\geq 2}时，有\FormulaOCR{image182.wmf}{a_{ n }  =a_{ n-1 }  +2n-1}\FormulaOCR{image183.wmf}{\left ( { n\geq 2 } \right )}，求数列的通项公式。\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解析：\FormulaOCR{image184.wmf}{\because a_{ n }  -a_{ n-1 }  =2n-1(n\geq 2)}\par
+\FormulaOCR{image185.wmf}{\vdots}\FormulaOCR{image186.wmf}{\begin{aligned}a_2-a_1&=3,\\a_3-a_2&=5,\\a_4-a_3&=7,\\&\ \vdots\\a_n-a_{n-1}&=2n-1.\end{aligned}}             上述\FormulaOCR{image187.wmf}{n-1}个等式相加可得：\par
+\FormulaOCR{image188.wmf}{a_{ n }  =a_{ 1 }  +3+5+\ldots { \rm{ + } }2n-1=\frac { \left ( { 1+2n-1 } \right ){ \rm{ n } } } { 2 }{ \rm{ = } }n ^ { 2 }}\par
+故\FormulaOCR{image189.wmf}{a_{ n }  =n ^ { 2 }}\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+\qquad{}例2.设数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}＝1，且\ensuremath{a_{n+1}}-\ensuremath{a_{n}}＝n+1(n\ensuremath{\in}\ensuremath{N^{*}})，则数列{\ensuremath{a_{n}}}的通项公式为\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+\qquad{}解析：由题意有\ensuremath{a_{2}}-\ensuremath{a_{1}}＝2，\ensuremath{a_{3}}-\ensuremath{a_{2}}＝3，\ldots{}，\ensuremath{a_{n}}-\ensuremath{a_{n-1}}＝n(n\ensuremath{\ge}2)．\par
+\qquad{}以上各式相加，得\ensuremath{a_{n}}-\ensuremath{a_{1}}＝2+3+\ldots{}+n＝＝.\par
+\qquad{}又\ensuremath{\because}\ensuremath{a_{1}}＝1，\ensuremath{\therefore}\ensuremath{a_{n}}＝(n\ensuremath{\ge}2)．\par
+\qquad{}\ensuremath{\because}当n＝1时也满足上式，\ensuremath{\therefore}\ensuremath{a_{n}}＝(n\ensuremath{\in}\ensuremath{N^{*}})．\par
+\qquad{}答案：\ensuremath{a_{n}}＝(n\ensuremath{\in}\ensuremath{N^{*}})\par
+\par\endgroup\fi
+
+\par\medskip\noindent{\zihao{4}\bfseries 累乘法   递推式为：\ensuremath{a_{n+1}}=f(n)\ensuremath{a_{n}}（f(n)要可求积）}\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+思路：令n=1,2, \ldots{},n-1可得\par
+\ensuremath{a_{2}}/\ensuremath{a_{1}}=f(1)\par
+\ensuremath{a_{3}}/\ensuremath{a_{2}}=f(2)\par
+\ensuremath{a_{4}}/\ensuremath{a_{3}}=f(3)\par
+\ldots{}\ldots{}\par
+\ensuremath{a_{n}}/\ensuremath{a_{n-1}}=f(n-1)\par
+将这个式子相乘可得\ensuremath{a_{n}}/\ensuremath{a_{1}}=f(1)f(2) \ldots{}f(n-1)\par
+\ensuremath{\because}f(n)可求积\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=\ensuremath{a_{1}}f(1)f(2) \ldots{}f(n-1)\par
+当然我们还要验证当n=1时，\ensuremath{a_{1}}是否适合上式\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例1：在数列{\ensuremath{a_{n}}}中,\ensuremath{a_{1}}=2, \FormulaOCR{image190.wmf}{a_{ n+1 }  =\frac { n+1 } { n }a_{ n }},求\ensuremath{a_{n}}\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解： 因为\FormulaOCR{image190.wmf}{a_{ n+1 }  =\frac { n+1 } { n }a_{ n }}\par
+\FormulaOCR{image191.wmf}{\frac { a_{ 2 }   } { a_{ 1 }   }=\frac { 2 } { 1 }; \\ \frac { a_{ 3 }   } { a_{ 2 }   }=\frac { 3 } { 2 }; \\}\par
+\FormulaOCR{image192.wmf}{\frac { a_{ 4 }   } { a_{ 3 }   }=\frac { 4 } { 3 }; \\ \ldots \ldots  \\ \frac { a_{ n }   } { a_{ n-1 }   }=\frac { n } { n-1 }}\par
+\FormulaOCR{image193.wmf}{\frac{a_2}{a_1}\frac{a_3}{a_2}\cdots\frac{a_n}{a_{n-1}}=\frac21\frac32\frac43\cdots\frac{n}{n-1}=n,\quad\frac{a_n}{a_1}=n,\quad a_n=2n}\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+\qquad{}例2．在数列{\ensuremath{a_{n}}}中，\ensuremath{a_{1}}＝1，\ensuremath{a_{n}}＝\ensuremath{a_{n-1}}(n\ensuremath{\ge}2)，则数列{\ensuremath{a_{n}}}的通项公式为\_\_\_\_\_\_\_\_\_\_．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+\qquad{}解析：\ensuremath{\because}\ensuremath{a_{n}}＝\ensuremath{a_{n-1}}(n\ensuremath{\ge}2)，\par
+\qquad{}\ensuremath{\therefore}\ensuremath{a_{n-1}}＝\ensuremath{a_{n-2}}，\ensuremath{a_{n-2}}＝\ensuremath{a_{n-3}}，\ldots{}，\ensuremath{a_{2}}＝\ensuremath{a_{1}}.\par
+\qquad{}以上(n-1)个式子相乘得\par
+\qquad{}\ensuremath{a_{n}}＝\ensuremath{a_{1}}···\ldots{}·＝＝.\par
+\qquad{}当n＝1时，\ensuremath{a_{1}}＝1，上式也成立．\ensuremath{\therefore}\ensuremath{a_{n}}＝(n\ensuremath{\in}\ensuremath{N^{*}})．\par
+\qquad{}答案：\ensuremath{a_{n}}＝(n\ensuremath{\in}\ensuremath{N^{*}})\par
+\par\endgroup\fi
+
+\par\medskip\noindent{\zihao{4}\bfseries 构造法    （1）递推关系式为\ensuremath{a_{n+1}}=p\ensuremath{a_{n}}+q (p,q为常数(构造等比数列)}\par
+（2）构造等差数列\par
+\Needspace{6\baselineskip}
+例1已知数列{\ensuremath{a_{n}}}中，\FormulaOCR{image194.wmf}{a_{ 1 }  =1}，若\FormulaOCR{image195.wmf}{a_{ n+1 }  =3a_{ n }  +3 ^ { n }}则\ensuremath{a_{n=}}\par
+\Needspace{6\baselineskip}
+例2已知数列{\ensuremath{a_{n}}}中，满足\FormulaOCR{image196.wmf}{a_{ 1 }  =3,a_{ n+1 }  =\frac { 6a_{ n }  -4 } { a_{ n }  +2 }}则\ensuremath{a_{n=}}\par
+（提示证明\FormulaOCR{image197.wmf}{\frac { 1 } { a_{ n }  -2 }}是等差数列）\par
+（3）构造等比数列\par
+1：(重庆高考)数列{\ensuremath{a_{n}}}中,\FormulaOCR{image198.wmf}{a_{ 1 }  =1}，对于n>1(n€N)有\ensuremath{a_{n}}=2\ensuremath{a_{n-1}}+3,求\ensuremath{a_{n}}\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：  设递推式可化为\ensuremath{a_{n}}+x=2(\ensuremath{a_{n-1}}+x),得\ensuremath{a_{n}}=2\ensuremath{a_{n-1}}+x,解得x=3\par
+故可将递推式化为\ensuremath{a_{n}}+3=2(\ensuremath{a_{n-1}}+3)\par
+构造数列{\ensuremath{b_{n}}},\ensuremath{b_{n}}=\ensuremath{a_{n}}+3\par
+所以\ensuremath{b_{n}}=2\ensuremath{b_{n-1}}即\ensuremath{b_{n}}/\ensuremath{b_{n-1}}=2,{\ensuremath{b_{n}}}为等比数列且首项为\FormulaOCR{image199.wmf}{b_{ 1 }  =a_{ 1 }  +3=4}，公比为3\par
+所以\ensuremath{b_{n}}=4\ensuremath{\times}\ensuremath{3^{n-1}}\qquad{}\ensuremath{b_{n}}=\ensuremath{a_{n}}+\ensuremath{3^{ }}   \ensuremath{a_{n}}+3=4\ensuremath{\times}\ensuremath{3^{n-1}},\par
+\ensuremath{a_{n}}=4\ensuremath{\times}\ensuremath{3^{n-1}}-3\par
+\par\endgroup\fi
+
+变式1．（2014•新课标Ⅱ）已知数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=1，\ensuremath{a_{n+1}}=3\ensuremath{a_{n}}+1．\par
+（Ⅰ）证明{\ensuremath{a_{n}}+\FormulaOCR{image200.png}{\frac12}}是等比数列，并求{\ensuremath{a_{n}}}的通项公式；\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+证明（Ⅰ）\FormulaOCR{image201.png}{\frac{a_{n+1}+\frac12}{a_n+\frac12}=\frac{3a_n+1+\frac12}{a_n+\frac12}=3}=\FormulaOCR{image202.png}{\frac{3\left(a_n+\frac12\right)}{a_n+\frac12}}=3，\par
+\ensuremath{\because}\FormulaOCR{image203.png}{a_1+\frac12=\frac32}\ensuremath{\ne}0，\ensuremath{\therefore}数列{\ensuremath{a_{n}}+\FormulaOCR{image204.png}{\frac12}}是以首项为\FormulaOCR{image205.png}{\frac{3}{2}}，公比为3的等比数列；\par
+\ensuremath{\therefore}\ensuremath{a_{n}}+\FormulaOCR{image206.png}{\frac12}=\FormulaOCR{image207.png}{{\frac{3}{2}}\times3^{n-1}}=\FormulaOCR{image208.png}{\frac{3^{n}}{2}}，即\FormulaOCR{image209.png}{\mathbf{a}_{\mathbf{n}}={\frac{3^{\mathbf{n}}-1}{2}}}；\par
+\par\endgroup\fi
+
+变式2．（2013•全国）数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=-1，且\ensuremath{a_{n+1}}=2\ensuremath{a_{n}}+3．\par
+（Ⅰ）证明{\ensuremath{a_{n}}+3}是等比数列；\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）证明：\ensuremath{a_{1}}=-1，且\ensuremath{a_{n+1}}=2\ensuremath{a_{n}}+3，\par
+可得\ensuremath{a_{n+1}}+3=2（\ensuremath{a_{n}}+3），\par
+即有{\ensuremath{a_{n}}+3}是首项为2，公比为2的等比数列；\par
+\par\endgroup\fi
+
+变式3. 在数列\FormulaOCR{image210.wmf}{\{a_n\}}中， \FormulaOCR{image211.wmf}{a_{ 1 }  =1}，当\FormulaOCR{image212.wmf}{n\geq 2}时，有\FormulaOCR{image213.wmf}{a_{ n }  =3a_{ n-1 }  +2}，求数列\FormulaOCR{image214.wmf}{\{a_n\}}的通项公式。\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解析：设\FormulaOCR{image215.wmf}{a_{ n }  +t=3\left ( { a_{ n-1 }  +t } \right )}，则\FormulaOCR{image216.wmf}{a_{ n }  =3a_{ n-1 }  +2t}\par
+\ensuremath{\therefore} \FormulaOCR{image217.wmf}{t=1}，于是\FormulaOCR{image218.wmf}{a_{ n }  +1=3\left ( { a_{ n-1 }  +1 } \right )}\par
+\ensuremath{\therefore} \FormulaOCR{image219.wmf}{\{a_n+1\}}是以\FormulaOCR{image220.wmf}{a_{ 1 }  +1=2}为首项，以3为公比的等比数列。\par
+\ensuremath{\therefore} \FormulaOCR{image221.wmf}{a_n=2\cdot3^{n-1}-1}\par
+\par\endgroup\fi
+
+（4）.构造和累加相结合.\par
+\Needspace{6\baselineskip}
+1．（2014•全国）在数列{\ensuremath{a_{n}}}中，\ensuremath{a_{1}}=1，\ensuremath{a_{n+1}}=（1+\FormulaOCR{image222.png}{\frac{1}{\mathbf{n}}}）\ensuremath{a_{n}}+\FormulaOCR{image223.png}{\frac{2}{n+2}}，n=1，2，3，\ldots{}，\par
+（Ⅰ）求\ensuremath{a_{2}}，\ensuremath{a_{3}}，\ensuremath{a_{4}}．\par
+（Ⅱ）求数列{\ensuremath{a_{n}}}的通项公式．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）在数列{\ensuremath{a_{n}}}中，\ensuremath{a_{1}}=1，\ensuremath{a_{n+1}}=（1+\FormulaOCR{image224.png}{\frac{1}{\mathbf{n}}}）\ensuremath{a_{n}}+\FormulaOCR{image225.png}{\frac{2}{n+2}}，n=1，2，3，\ldots{}，\par
+可得\ensuremath{a_{2}}=2\ensuremath{a_{1}}+\FormulaOCR{image226.png}{\frac{1}{\epsilon_{\infty}}}=\FormulaOCR{image227.png}{\frac{8}{3}}，\par
+\ensuremath{a_{3}}=\FormulaOCR{image228.png}{\frac{3}{2}}•\FormulaOCR{image227.png}{\frac{8}{3}}+\FormulaOCR{image229.png}{\frac12}=\FormulaOCR{image230.png}{\frac92}，\par
+\ensuremath{a_{4}}=\FormulaOCR{image231.png}{\frac{4}{3}}•\FormulaOCR{image232.png}{\frac{\vartheta}{\textbf{Z}}}+\FormulaOCR{image233.png}{\frac{1}{\infty}}=\FormulaOCR{image234.png}{\frac{32}{5}}；\par
+（Ⅱ）\ensuremath{a_{n+1}}=（1+\FormulaOCR{image235.png}{\frac{1}{\mathbf{n}}}）\ensuremath{a_{n}}+\FormulaOCR{image236.png}{\frac{2}{n+2}}，\par
+可得n\ensuremath{a_{n+1}}=（1+n）\ensuremath{a_{n}}+\FormulaOCR{image237.png}{\frac{21}{n+2}}，\par
+两边除以n（n+1），可得\par
+\FormulaOCR{image238.png}{\scriptstyle{\frac{\mu_{\mathrm{n+1}}}{n+1}}}=\FormulaOCR{image239.png}{\scriptstyle{\frac{3}{\ln}}}+\FormulaOCR{image240.png}{\frac{2}{(\mathbf{n+1})\ (\mathbf{n+2})}}\par
+即为\FormulaOCR{image241.png}{\scriptstyle{\frac{\mu_{\mathrm{m+1}}}{n+1}}}-\FormulaOCR{image239.png}{\scriptstyle{\frac{3}{\ln}}}=2（\FormulaOCR{image242.png}{\frac{1}{n+1}}-\FormulaOCR{image243.png}{\frac{1}{n+2}}），\par
+则\FormulaOCR{image239.png}{\scriptstyle{\frac{3}{\ln}}}=\FormulaOCR{image244.png}{\textstyle{\frac{31}{1}}}+（\FormulaOCR{image245.png}{\frac{\mathbf{a}_{2}}{2}}-\FormulaOCR{image246.png}{\frac{3_{1}}{1}}）+（\FormulaOCR{image247.png}{\frac{a_{3}}{3}}-）+\ldots{}+（\FormulaOCR{image248.png}{\scriptstyle{\frac{3}{n}}}-\FormulaOCR{image249.png}{\scriptstyle{\frac{3\pi+1}{n-1}}}）\par
+=1+2（\FormulaOCR{image250.png}{\frac12}-\FormulaOCR{image251.png}{\frac{1}{3}}+-\FormulaOCR{image252.png}{\frac{1}{4}}+\ldots{}+\FormulaOCR{image253.png}{\frac{1}{\mathbf{n}}}-\FormulaOCR{image254.png}{\frac{1}{n+1}}）\par
+=1+2（\FormulaOCR{image255.png}{\frac12}-\FormulaOCR{image254.png}{\frac{1}{n+1}}）=\FormulaOCR{image256.png}{\scriptstyle{\frac{21}{n+1}}}，\par
+则\ensuremath{a_{n}}=\FormulaOCR{image257.png}{\frac{2n^{2}}{n+1}}．\par
+\par\endgroup\fi
+
+变式1．（2014•大纲版）数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=1，\ensuremath{a_{2}}=2，\ensuremath{a_{n+2}}=2\ensuremath{a_{n+1}}-\ensuremath{a_{n}}+2．\par
+（Ⅰ）设\ensuremath{b_{n}}=\ensuremath{a_{n+1}}-\ensuremath{a_{n}}，证明{\ensuremath{b_{n}}}是等差数列；\par
+（Ⅱ）求{\ensuremath{a_{n}}}的通项公式．\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）由\ensuremath{a_{n+2}}=2\ensuremath{a_{n+1}}-\ensuremath{a_{n}}+2得，\par
+\ensuremath{a_{n+2}}-\ensuremath{a_{n+1}}=\ensuremath{a_{n+1}}-\ensuremath{a_{n}}+2，\par
+由\ensuremath{b_{n}}=\ensuremath{a_{n+1}}-\ensuremath{a_{n}}得，\ensuremath{b_{n+1}}=\ensuremath{b_{n}}+2，\par
+即\ensuremath{b_{n+1}}-\ensuremath{b_{n}}=2，\par
+又\ensuremath{b_{1}}=\ensuremath{a_{2}}-\ensuremath{a_{1}}=1，\par
+所以{\ensuremath{b_{n}}}是首项为1，公差为2的等差数列．\par
+（Ⅱ）由（Ⅰ）得，\ensuremath{b_{n}}=1+2（n-1）=2n-1，\par
+由\ensuremath{b_{n}}=\ensuremath{a_{n+1}}-\ensuremath{a_{n}}得，\ensuremath{a_{n+1}}-\ensuremath{a_{n}}=2n-1，\par
+则\ensuremath{a_{2}}-\ensuremath{a_{1}}=1，\ensuremath{a_{3}}-\ensuremath{a_{2}}=3，\ensuremath{a_{4}}-\ensuremath{a_{3}}=5，\ldots{}，\ensuremath{a_{n}}-\ensuremath{a_{n-1}}=2（n-1）-1，\par
+所以，\ensuremath{a_{n}}-\ensuremath{a_{1}}=1+3+5+\ldots{}+2（n-1）-1\par
+=\FormulaOCR{image258.png}{\frac{\left(\pm-1\right)\left(1+2n-3\right)}{2}}=\ensuremath{(n-1)^{2}}，\par
+又\ensuremath{a_{1}}=1，\par
+所以{\ensuremath{a_{n}}}的通项公式\ensuremath{a_{n}}=\ensuremath{(n-1)^{2}}+1=\ensuremath{n^{2}}-2n+2．\par
+\par\endgroup\fi
+
+\par\medskip\noindent{\zihao{4}\bfseries 取倒法  （）倒数法}\par
+\Needspace{6\baselineskip}
+1.已知数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=1且\ensuremath{a_{n+1}}=，求\ensuremath{a_{n}}。\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：由\ensuremath{a_{n+1}}=有     = = +  即-=\par
+所以，数列{}是首项为=1、公差为d=的等差数列\par
+则=1+（n-1）=      从而\ensuremath{a_{n}}=\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+2. 已知\FormulaOCR{image262.wmf}{a_{ 1 }  =4}，\FormulaOCR{image263.wmf}{a_{ n+1 }  =\frac { 2\cdot a_{ n }   } { 2a_{ n }  +1 }}，求\FormulaOCR{image264.wmf}{a_n}。\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\ensuremath{\because}\FormulaOCR{image262.wmf}{a_{ 1 }  =4}，\FormulaOCR{image265.wmf}{a_{n+1}=\frac{2a_n}{2a_n+1},\quad\frac1{a_{n+1}}=\frac{2a_n+1}{2a_n}} \ensuremath{\therefore} \FormulaOCR{image266.wmf}{\frac { 1 } { a_{ n+1 }   }=\frac { 1 } { 2 }\cdot \frac { 1 } { a_{ n }   }+1}\par
+令\FormulaOCR{image267.wmf}{b_{ n }  =\frac { 1 } { a_{ n }   }}，则\FormulaOCR{image268.wmf}{b_{ n+1 }  =\frac { 1 } { 2 }b_{ n }  +1}，以下用“待定系数法”可得\par
+\FormulaOCR{image269.wmf}{b_{ n }  =\frac { 2 ^ { n+2 } -7 } { 2 ^ { n+1 }  }}，\ensuremath{\therefore} \FormulaOCR{image270.wmf}{a_n=\frac{2^{n+1}}{2^{n+2}-7}}\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+\qquad{}\qquad{}3. 已知数列\FormulaOCR{image271.wmf}{\{a_n\}}中满足\FormulaOCR{image272.wmf}{a_{ 1 }  =1}，\FormulaOCR{image273.wmf}{a_{ n+1 }  =2a_{ n }  +2 ^ { n } (n\in N_{ + }  )},求数列的通项公式。\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+分析：形如递推公式\FormulaOCR{image274.wmf}{a_{n+1}=qa_n+d^n\quad(q,d\ne0,\ q\ne1,\ d\ne1)}可转化为\FormulaOCR{image275.wmf}{\frac { a_{ n+1 }   } { d ^ { n+1 }  }=\frac { q } { d }.\frac { a_{ n }   } { d ^ { n }  }+\frac { 1 } { d }}，若令\FormulaOCR{image276.wmf}{b_{ _{ n }   }  =\frac { a_{ n }   } { d ^ { n }  }}，则转化为形如\FormulaOCR{image277.wmf}{a_{n+1}=Aa_n+B\quad(A,B\text{为常数})}的方法来求数列的通项。(提示：将\FormulaOCR{image273.wmf}{a_{ n+1 }  =2a_{ n }  +2 ^ { n } (n\in N_{ + }  )}转化为\FormulaOCR{image278.wmf}{\frac{a_{n+1}}{2^{n+1}}-\frac{a_n}{2^n}=\frac12}，解法略。)\par
+\par\endgroup\fi
+
+\par\medskip\noindent{\zihao{4}\bfseries 取对数   这种类型一般是等式两边取对数后转化为，再利用待定系数法求解}\par
+\Needspace{6\baselineskip}
+1. 已知数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=3且\ensuremath{a_{n+1}}=\ensuremath{(a_{n}-1)^{2}}+1，求\ensuremath{a_{n}}。\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：由条件\ensuremath{a_{n+1}}=\ensuremath{(a_{n}-1)^{2}}+1得\ensuremath{a_{n+1}}-1=\ensuremath{(a_{n}-1)^{2}}\par
+两边取对数有lg（\ensuremath{a_{n+1}}-1）=lg（\ensuremath{(a_{n}-1)^{2}}）=2lg（\ensuremath{a_{n}}-1） 即=2\par
+故数列{ lg（\ensuremath{a_{n}}-1）}是首项为lg（\ensuremath{a_{1}}-1）=lg2、公比为2的等比数列\par
+所以，lg（\ensuremath{a_{n}}-1）=lg2·\ensuremath{2^{n-1}}=lg\FormulaOCR{image282.wmf}{2^{2^{n-1}}}\par
+则\ensuremath{a_{n}}-1=\FormulaOCR{image283.wmf}{2^{2^{n-1}}}           即\ensuremath{a_{n}}=\FormulaOCR{image284.wmf}{2^{2^{n-1}}}+1\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+2.已知数列｛\FormulaOCR{image285.wmf}{a_n}｝中，\FormulaOCR{image286.wmf}{a_{1}=1.a_{n+1}={\frac{1}{a}}\cdot a_{n}^{2}}\FormulaOCR{image287.wmf}{(a>0)}，求数列\FormulaOCR{image288.wmf}{\{a_n\}\text{的通项公式：}}\FormulaOCR{image289.wmf}{a_{n}=a({\frac{1}{a}})^{2n-1}}\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解答：\ensuremath{\because}\FormulaOCR{image286.wmf}{a_{1}=1.a_{n+1}={\frac{1}{a}}\cdot a_{n}^{2}}\FormulaOCR{image287.wmf}{(a>0)}\par
+\ensuremath{\therefore} \FormulaOCR{image290.wmf}{log_{ a }  a_{ n+1 }  =log_{ a }  (\frac { 1 } { a }\cdot a_{ n }  ^{ 2 })\Longrightarrow log_{ a }  a_{ n+1 }  =2log_{ a }  a_{ n }  -1}\par
+令\FormulaOCR{image291.wmf}{b_{ n }  =log_{ a }  a_{ n }}，则\FormulaOCR{image292.wmf}{b_{ n+1 }  =2b_{ n }  -1.}\par
+以下用“待定系数法”可得\FormulaOCR{image293.wmf}{b_{ n }  =1-2 ^ { n-1 }}\par
+\qquad{}\ensuremath{\therefore} \FormulaOCR{image294.wmf}{log_{ a }  a_{ n }  =1-2 ^ { n-1 } \Longrightarrow a_{ n }  =a ^ { 1-2 ^ { n-1 }  } =a\cdot a ^ { -2 ^ { n-1 }  } =a\cdot \left ( { \frac { 1 } { a } } \right ) ^ { 2 ^ { n-1 }  } .}\par
+\par\endgroup\fi
+
+\par\medskip\noindent{\zihao{4}\bfseries 其他：类型1}\par
+\Needspace{6\baselineskip}
+1．数列{\ensuremath{a_{n}}}中，\ensuremath{a_{1}}＝1，对所有的n\ensuremath{\ge}2都有\ensuremath{a_{1}}·\ensuremath{a_{2}}·\ensuremath{a_{3}}·\ldots{}·\ensuremath{a_{n}}＝\ensuremath{n^{2}}，则这个数列n\ensuremath{\ge}2的通项公\par
+式是\_\_\_\_\_\_\_\_．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解析：当n＝1时，\ensuremath{a_{1}}＝1，\par
+当n\ensuremath{\ge}2时，\ensuremath{a_{1}}·\ensuremath{a_{2}}·\ensuremath{a_{3}}·\ldots{}·\ensuremath{a_{n-1}}＝(n-1\ensuremath{)^{2}}①\par
+\ensuremath{a_{1}}·\ensuremath{a_{2}}·\ensuremath{a_{3}}·\ldots{}·\ensuremath{a_{n}}＝\ensuremath{n^{2}}②\par
+两式作商，得\ensuremath{a_{n}}＝.\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+2．(2013·青岛模拟)已知数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}+\ensuremath{a_{2}}+\ensuremath{a_{3}}+\ldots{}+\ensuremath{a_{n}}＝2n+1，则{\ensuremath{a_{n}}}的通项公式\par
+为\_\_\_\_\_\_\_\_．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解析：\ensuremath{a_{1}}+\ensuremath{a_{2}}+\ensuremath{a_{3}}+\ldots{}+\ensuremath{a_{n}}＝2n+1.①\par
+\ensuremath{a_{1}}+\ensuremath{a_{2}}+\ensuremath{a_{3}}+\ldots{}+\ensuremath{a_{n-1}}＝2n-1②\par
+①-②得\ensuremath{a_{n}}＝2，\ensuremath{\therefore}\ensuremath{a_{n}}＝\ensuremath{2^{n+1}}.\par
+答案：\ensuremath{a_{n}}＝\ensuremath{2^{n+1}}\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+3．（2017•新课标Ⅲ）设数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}+3\ensuremath{a_{2}}+\ldots{}+（2n-1）\ensuremath{a_{n}}=2n．\par
+（1）求{\ensuremath{a_{n}}}的通项公式；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}+3\ensuremath{a_{2}}+\ldots{}+（2n-1）\ensuremath{a_{n}}=2n．\par
+n\ensuremath{\ge}2时，\ensuremath{a_{1}}+3\ensuremath{a_{2}}+\ldots{}+（2n-3）\ensuremath{a_{n-1}}=2（n-1）．\par
+\ensuremath{\therefore}（2n-1）\ensuremath{a_{n}}=2．\ensuremath{\therefore}\ensuremath{a_{n}}=\FormulaOCR{image295.png}{\frac2{2n-1}}．\par
+当n=1时，\ensuremath{a_{1}}=2，上式也成立．\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=\FormulaOCR{image295.png}{\frac2{2n-1}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+4．（2015•广东）数列{\ensuremath{a_{n}}}满足：\ensuremath{a_{1}}+2\ensuremath{a_{2}}+\ldots{}n\ensuremath{a_{n}}=4-\FormulaOCR{image296.png}{\frac{n+2}{2^{n-1}}}，n\ensuremath{\in}\ensuremath{N^{+}}．\par
+（1）求\ensuremath{a_{3}}的值；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）\ensuremath{\because}\ensuremath{a_{1}}+2\ensuremath{a_{2}}+\ldots{}n\ensuremath{a_{n}}=4-\FormulaOCR{image297.png}{\frac{n+2}{2^{n-1}}}，n\ensuremath{\in}\ensuremath{N^{+}}．\par
+\ensuremath{\therefore}\ensuremath{a_{1}}=4-3=1，1+2\ensuremath{a_{2}}=4-\FormulaOCR{image298.png}{\frac{2+2}{2^{2-1}}}=2，解得\ensuremath{a_{2}}=\FormulaOCR{image299.png}{\frac12}，\par
+\ensuremath{\because}\ensuremath{a_{1}}+2\ensuremath{a_{2}}+\ldots{}+n\ensuremath{a_{n}}=4-\FormulaOCR{image300.png}{\frac{n+2}{2^{n-1}}}，n\ensuremath{\in}\ensuremath{N^{+}}．\par
+\ensuremath{\therefore}\ensuremath{a_{1}}+2\ensuremath{a_{2}}+\ldots{}+（n-1）\ensuremath{a_{n-1}}=4-\FormulaOCR{image301.png}{\frac{n+1}{2^{n-2}}}，n\ensuremath{\in}\ensuremath{N^{+}}．\par
+两式相减得n\ensuremath{a_{n}}=4-\FormulaOCR{image300.png}{\frac{n+2}{2^{n-1}}}-（4-\FormulaOCR{image301.png}{\frac{n+1}{2^{n-2}}}）=\FormulaOCR{image302.png}{\textstyle{\frac{n}{2^{n-1}}}}，n\ensuremath{\ge}2，\par
+则\ensuremath{a_{n}}=\FormulaOCR{image303.png}{\frac1{2^{n-1}}}，n\ensuremath{\ge}2，当n=1时，\ensuremath{a_{1}}=1也满足，\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=\FormulaOCR{image303.png}{\frac1{2^{n-1}}}，n\ensuremath{\ge}1，\par
+则\ensuremath{a_{3}}=\FormulaOCR{image304.png}{{\frac{1}{2^{2}}}={\frac{1}{4}}}；\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+5．（2015•浙江）已知数列{\ensuremath{a_{n}}}和{\ensuremath{b_{n}}}满足\ensuremath{a_{1}}=2，\ensuremath{b_{1}}=1，\ensuremath{a_{n+1}}=2\ensuremath{a_{n}}（n\ensuremath{\in}\ensuremath{N^{*}}），\ensuremath{b_{1}}+\FormulaOCR{image305.png}{\frac12}\ensuremath{b_{2}}+\FormulaOCR{image306.png}{\frac{1}{3}}\ensuremath{b_{3}}+\ldots{}+\FormulaOCR{image307.png}{\frac{1}{\mathbf{n}}}\ensuremath{b_{n}}=\ensuremath{b_{n+1}}-1（n\ensuremath{\in}\ensuremath{N^{*}}）\par
+（Ⅰ）求\ensuremath{a_{n}}与\ensuremath{b_{n}}；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）由\ensuremath{a_{1}}=2，\ensuremath{a_{n+1}}=2\ensuremath{a_{n}}，得\FormulaOCR{image308.png}{a_n=2^n\quad(n\in N^*)}．\par
+由题意知，当n=1时，\ensuremath{b_{1}}=\ensuremath{b_{2}}-1，故\ensuremath{b_{2}}=2，\par
+当 $n\geq2$ 时，$b_1+\dfrac12b_2+\dfrac13b_3+\cdots+\dfrac1{n-1}b_{n-1}=b_n-1$，与原递推式作差得，\par
+\FormulaOCR{image312.png}{\frac{b_n}{n}=b_{n+1}-b_n}，整理得：\FormulaOCR{image313.png}{\frac{b_{n+1}}{n+1}=\frac{b_n}{n}}，(此时\FormulaOCR{image314.wmf}{\frac { b_{ n }   } { n }}是首项为1公差为0的等差数列)\par
+\ensuremath{\therefore}\FormulaOCR{image315.png}{\mathbf{b}_{\mathrm{n}}=\mathbf{u}\in\mathbf{N}^{*})}；\par
+\par\endgroup\fi
+
+6（2018•新课标Ⅰ）已知数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=1，n\ensuremath{a_{n+1}}=2（n+1）\ensuremath{a_{n}}，设\ensuremath{b_{n}}=\FormulaOCR{image316.png}{\scriptstyle{\frac{3}{n}}}．\par
+（1）求\ensuremath{b_{1}}，\ensuremath{b_{2}}，\ensuremath{b_{3}}；\par
+（2）判断数列{\ensuremath{b_{n}}}是否为等比数列，并说明理由；\par
+（3）求{\ensuremath{a_{n}}}的通项公式．\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=1，n\ensuremath{a_{n+1}}=2（n+1）\ensuremath{a_{n}}，则：\FormulaOCR{image317.png}{\frac{\frac{a_{n+1}}{n+1}}{\frac{a_n}{n}}=2}（常数），由于\FormulaOCR{image318.png}{b_n=\frac{a_n}{n}}，故：\FormulaOCR{image319.png}{\frac{b_{n+1}}{b_n}=2}，\par
+数列{\ensuremath{b_{n}}}是以\ensuremath{b_{1}}为首项，2为公比的等比数列．\par
+整理得：\FormulaOCR{image320.png}{b_n=b_1\cdot2^{n-1}=2^{n-1}}，所以：\ensuremath{b_{1}}=1，\ensuremath{b_{2}}=2，\ensuremath{b_{3}}=4．\par
+（2）数列{\ensuremath{b_{n}}}是为等比数列，由于\FormulaOCR{image319.png}{\frac{b_{n+1}}{b_n}=2}（常数）；\par
+（3）由（1）得：\FormulaOCR{image321.png}{\mathbf{b}_{\mathbf{n}}=2^{\mathbf{n}-1}}，根据\FormulaOCR{image318.png}{b_n=\frac{a_n}{n}}，所以：\FormulaOCR{image322.png}{a_n=n\cdot2^{n-1}}．\par
+\par\endgroup\fi
+
+\par\bigskip\noindent{\zihao{3}\bfseries 等差数列的性质}\par
+\par\medskip\noindent\textbf{性质1：如果是等差数列且p+q=r+s}\par
+\begin{minipage}{0.94\linewidth}已知 $\{a_n\}$ 是等差数列。\\(1) $2a_3=a_1+a_5$ 是否成立？$2a_3=a_2+a_4$ 呢？为什么？\\(2) $2a_n=a_{n-1}+a_{n+1}\ (n\geq2)$ 是否成立？你能得出什么结论？\end{minipage}\par
+\Needspace{6\baselineskip}
+1．（2012•重庆）在等差数列{\ensuremath{a_{n}}}中，\ensuremath{a_{2}}=1，\ensuremath{a_{4}}=5，则{\ensuremath{a_{n}}}的前5项和\ensuremath{S_{5}}=（　　）\par
+\qquad{}\qquad{}\qquad{}A．7\qquad{}B．15\qquad{}C．20\qquad{}D．25\qquad{}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\ensuremath{\because}等差数列{\ensuremath{a_{n}}}中，\ensuremath{a_{2}}=1，\ensuremath{a_{4}}=5，\par
+\ensuremath{\therefore}\ensuremath{a_{2}}+\ensuremath{a_{4}}=\ensuremath{a_{1}}+\ensuremath{a_{5}}=6，\ensuremath{\therefore}\ensuremath{S_{5}}=\FormulaOCR{image327.png}{\frac{15}{2}}（\ensuremath{a_{1}}+\ensuremath{a_{5}}）=\FormulaOCR{image328.png}{{\frac{5}{2}}\times6{=}15}故选：B．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+2．（2012•辽宁）在等差数列{\ensuremath{a_{n}}}中，已知\ensuremath{a_{4}}+\ensuremath{a_{8}}=16，则\ensuremath{a_{2}}+\ensuremath{a_{10}}=（　　）\par
+\qquad{}\qquad{}\qquad{}A．12\qquad{}B．16\qquad{}C．20\qquad{}D．24\qquad{}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：由等差数列的性质可得，则\ensuremath{a_{2}}+\ensuremath{a_{10}}=\ensuremath{a_{4}}+\ensuremath{a_{8}}=16，故选：B．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+3．（2010•大纲版Ⅱ）如果等差数列{\ensuremath{a_{n}}}中，\ensuremath{a_{3}}+\ensuremath{a_{4}}+\ensuremath{a_{5}}=12，那么\ensuremath{a_{1}}+\ensuremath{a_{2}}+\ldots{}+\ensuremath{a_{7}}=（　　）\par
+\qquad{}\qquad{}\qquad{}A．14\qquad{}B．21\qquad{}C．28\qquad{}D．35\qquad{}\par
+解．\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解\ensuremath{a_{3}}+\ensuremath{a_{4}}+\ensuremath{a_{5}}=3\ensuremath{a_{4}}=12，\ensuremath{a_{4}}=4，\ensuremath{\therefore}\ensuremath{a_{1}}+\ensuremath{a_{2}}+\ldots{}+\ensuremath{a_{7}}=\FormulaOCR{image329.png}{\frac{7(a_{1}+a_{2})}{2}}=7\ensuremath{a_{4}}=28选：C．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+4．（2006•全国卷Ⅰ）设{\ensuremath{a_{n}}}是公差为正数的等差数列，若\ensuremath{a_{1}}+\ensuremath{a_{2}}+\ensuremath{a_{3}}=15，\ensuremath{a_{1}}\ensuremath{a_{2}}\ensuremath{a_{3}}=80，则\ensuremath{a_{11}}+\ensuremath{a_{12}}+\ensuremath{a_{13}}=（　　）\par
+\qquad{}\qquad{}\qquad{}A．120\qquad{}B．105\qquad{}C．90\qquad{}D．75\qquad{}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：{\ensuremath{a_{n}}}是公差为正数的等差数列，\par
+\ensuremath{\because}\ensuremath{a_{1}}+\ensuremath{a_{2}}+\ensuremath{a_{3}}=15，\ensuremath{a_{1}}\ensuremath{a_{2}}\ensuremath{a_{3}}=80，\ensuremath{\therefore}\ensuremath{a_{2}}=5，\par
+\ensuremath{\therefore}\ensuremath{a_{1}}\ensuremath{a_{3}}=（5-d）（5+d）=16，\ensuremath{\therefore}d=3，\ensuremath{a_{12}}=\ensuremath{a_{2}}+10d=35\ensuremath{\therefore}\ensuremath{a_{11}}+\ensuremath{a_{12}}+\ensuremath{a_{13}}=105故选：B．\par
+\par\endgroup\fi
+
+5（2009•全国卷Ⅱ）设等差数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，若\ensuremath{a_{5}}=5\ensuremath{a_{3}}，则\FormulaOCR{image330.png}{\frac{S_{9}}{S_{5}}}=　9　．\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\ensuremath{\because}{\ensuremath{a_{n}}}为等差数列，\ensuremath{S_{9}}=\ensuremath{a_{1}}+\ensuremath{a_{2}}+\ldots{}+\ensuremath{a_{9}}=9\ensuremath{a_{5}}，\par
+\ensuremath{S_{5}}=\ensuremath{a_{1}}+\ensuremath{a_{2}}+\ldots{}+\ensuremath{a_{5}}=5\ensuremath{a_{3}}，\ensuremath{\therefore}\FormulaOCR{image331.png}{\frac{S_9}{S_5}=\frac{9a_5}{5a_3}=9}故答案为9\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+\qquad{}6．（2012年高考（新课标理））已知\FormulaOCR{image332.wmf}{\{a_{s}\}}为等比数列,\FormulaOCR{image333.wmf}{a_{ 4 }  +a_{ 7 }  =2},\FormulaOCR{image334.wmf}{a_{s}a_{s}=-8}\par
+\qquad{}\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image335.wmf}{7}\qquad{}B．\FormulaOCR{image336.wmf}{5}\qquad{}C．\FormulaOCR{image337.wmf}{-5}\qquad{}D．\FormulaOCR{image338.wmf}{-7}\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+【解析】选\FormulaOCR{image339.wmf}{D}\FormulaOCR{image333.wmf}{a_{ 4 }  +a_{ 7 }  =2},\FormulaOCR{image340.wmf}{a_{ 5 }  a_{ 6 }  =a_{ 4 }  a_{ 7 }  =-8\Longrightarrow a_{ 4 }  =4,a_{ 7 }  =-2}或\FormulaOCR{image341.wmf}{a_{ 4 }  =-2,a_{ 7 }  =4}\par
+\FormulaOCR{image342.wmf}{a_{ 4 }  =4,a_{ 7 }  =-2\Longrightarrow a_{ 1 }  =-8,a_{ 10 }  =1\Longleftrightarrow a_{ 1 }  +a_{ 10 }  =-7}\FormulaOCR{image343.wmf}{a_{ 4 }  =-2,a_{ 7 }  =4\Longrightarrow a_{ 10 }  =-8,a_{ 1 }  =1\Longleftrightarrow a_{ 1 }  +a_{ 10 }  =-7}\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+7．（2015•重庆）在等差数列{\ensuremath{a_{n}}}中，若\ensuremath{a_{2}}=4，\ensuremath{a_{4}}=2，则\ensuremath{a_{6}}=（　　）\par
+\qquad{}\qquad{}\qquad{}A．-1\qquad{}B．0\qquad{}C．1\qquad{}D．6\qquad{}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：在等差数列{\ensuremath{a_{n}}}中，若\ensuremath{a_{2}}=4，\ensuremath{a_{4}}=2，则\ensuremath{a_{4}}=\FormulaOCR{image344.png}{\frac12}（\ensuremath{a_{2}}+\ensuremath{a_{6}}）=\FormulaOCR{image345.png}{{\frac{1}{2}}\left(\mathrm{d}+{\bf a}_{6}\right)}=2，\par
+解得\ensuremath{a_{6}}=0．故选：B\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+8．（2024•甲卷）等差数列\FormulaOCR{image346.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image347.wmf}{n}项和为\FormulaOCR{image348.wmf}{S_{ n }}，若\FormulaOCR{image349.wmf}{S_{ 9 }  =1}，\FormulaOCR{image350.wmf}{a_{ 3 }  +a_{ 7 }  =}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image351.wmf}{-2}\qquad{}B．\FormulaOCR{image352.wmf}{\frac { 7 } { 3 }}\qquad{}C．1\qquad{}D．\FormulaOCR{image353.wmf}{\frac { 2 } { 9 }}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\FormulaOCR{image354.wmf}{S_{ 9 }  =1}，\par
+则\FormulaOCR{image355.wmf}{S_{ 9 }  =\frac { 9(a_{ 1 }  +a_{ 9 }  ) } { 2 }=\frac { 9(a_{ 3 }  +a_{ 7 }  ) } { 2 }=1}，解得\FormulaOCR{image356.wmf}{a_{ 3 }  +a_{ 7 }  =\frac { 2 } { 9 }}．\par
+故选：\FormulaOCR{image357.wmf}{D}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+9．（2024•甲卷）记\FormulaOCR{image358.wmf}{S_{ n }}为等差数列\FormulaOCR{image359.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image360.wmf}{n}项和．若\FormulaOCR{image361.wmf}{S_{ 5 }  =S_{ 10 }}，\FormulaOCR{image362.wmf}{a_{ 5 }  =1}，则\FormulaOCR{image363.wmf}{a_{ 1 }  =}（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image364.wmf}{\frac { 7 } { 2 }}\qquad{}B．\FormulaOCR{image365.wmf}{\frac { 7 } { 3 }}\qquad{}C．\FormulaOCR{image366.wmf}{-\frac { 1 } { 3 }}\qquad{}D．\FormulaOCR{image367.wmf}{-\frac { 7 } { 11 }}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\FormulaOCR{image368.wmf}{S_{ 5 }  =S_{ 10 }}，\par
+则\FormulaOCR{image369.wmf}{S_{ 10 }  -S_{ 5 }  =a_{ 6 }  +a_{ 7 }  +a_{ 8 }  +a_{ 9 }  +a_{ 10 }  =5a_{ 8 }  =0}，解得\FormulaOCR{image370.wmf}{a_{ 8 }  =0}，\par
+又因为\FormulaOCR{image371.wmf}{a_{ 5 }  =1}，所以公差\FormulaOCR{image372.wmf}{d=-\frac { 1 } { 3 }}，\par
+故\FormulaOCR{image373.wmf}{a_{ 1 }  =a_{ 8 }  -7d=\frac { 7 } { 3 }}．\par
+故选：\FormulaOCR{image374.wmf}{B}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+10．（2023•甲卷）记\FormulaOCR{image375.wmf}{S_{ n }}为等差数列\FormulaOCR{image376.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image377.wmf}{n}项和．若\FormulaOCR{image378.wmf}{a_{ 2 }  +a_{ 6 }  =10}，\FormulaOCR{image379.wmf}{a_{ 4 }  a_{ 8 }  =45}，则\FormulaOCR{image380.wmf}{S_{ 5 }  =}（　　）\par
+\qquad{}\qquad{}\qquad{}A．25\qquad{}B．22\qquad{}C．20\qquad{}D．15\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：等差数列\FormulaOCR{image381.wmf}{\{a_{ n }  \}}中，\FormulaOCR{image382.wmf}{a_{ 2 }  +a_{ 6 }  =2a_{ 4 }  =10}，\par
+所以\FormulaOCR{image383.wmf}{a_{ 4 }  =5}，\par
+\FormulaOCR{image384.wmf}{a_{ 4 }  a_{ 8 }  =5a_{ 8 }  =45}，\par
+故\FormulaOCR{image385.wmf}{a_{ 8 }  =9}，\par
+则\FormulaOCR{image386.wmf}{d=\frac { a_{ 8 }  -a_{ 4 }   } { 8-4 }=1}，\FormulaOCR{image387.wmf}{a_{ 1 }  =a_{ 4 }  -3d=5-3=2}，\par
+则\FormulaOCR{image388.wmf}{S_{ 5 }  =5a_{ 1 }  +\frac { 5\times 4 } { 2 }d=10+10=20}．\par
+故选：\FormulaOCR{image389.wmf}{C}．\par
+\par\endgroup\fi
+
+\par\medskip\noindent\textbf{性质2：数列\ensuremath{S_{m}}，\ensuremath{S_{2m}}-\ensuremath{S_{m}}，\ensuremath{S_{3m}}-\ensuremath{S_{2m}}，\ldots{}也是等差数列．}\par
+\qquad{}课本P46数列{\ensuremath{a_{n}}}为等差数列，\FormulaOCR{image390.wmf}{S_{ { \rm{ n } } }}是其前n项和求证：\FormulaOCR{image391.wmf}{S_{ 6 }  ,\quad S_{ 12 }  -S_{ 6 }  ,S_{ 18 }  -S_{ 12 }}也是等差数列。\par
+\Needspace{6\baselineskip}
+1.设\FormulaOCR{image390.wmf}{S_{ { \rm{ n } } }}是等差数列{\ensuremath{a_{n}}}的前n项和，若\FormulaOCR{image392.wmf}{\frac{S_3}{S_6}=\frac13,\quad\frac{S_6}{S_{12}}=}（\FormulaOCR{image393.wmf}{\frac { 3 } { 10 }}）\par
+\Needspace{6\baselineskip}
+2.（2007•辽宁）设等差数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，若\ensuremath{S_{3}}=9，\ensuremath{S_{6}}=36，则\ensuremath{a_{7}}+\ensuremath{a_{8}}+\ensuremath{a_{9}}=（　　）A．63\qquad{}B．45\qquad{}C．36\qquad{}D．27\qquad{}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：由等差数列性质知\ensuremath{S_{3}}、\ensuremath{S_{6}}-\ensuremath{S_{3}}、\ensuremath{S_{9}}-\ensuremath{S_{6}}成等差数列，即9，27，\ensuremath{S_{9}}-\ensuremath{S_{6}}成等差，\ensuremath{\therefore}\ensuremath{S_{9}}-\ensuremath{S_{6}}=45\ensuremath{\therefore}\ensuremath{a_{7}}+\ensuremath{a_{8}}+\ensuremath{a_{9}}=45故选：B．\par
+\par\endgroup\fi
+
+\par\medskip\noindent\textbf{性质3：已知两个等差数列{\ensuremath{a_{n}}}和{\ensuremath{b_{n}}}的前n项和分别为\ensuremath{A_{n}}和\ensuremath{B_{n}}，则有\_{，}}\par
+\Needspace{6\baselineskip}
+\qquad{}1．（2007•湖北）已知两个等差数列{\ensuremath{a_{n}}}和{\ensuremath{b_{n}}}的前n项和分别为\ensuremath{A_{n}}和\ensuremath{B_{n}}，且＝，则使得为整数的正整数的个数是(　　)．\par
+\qquad{}A．2        B．3        C．4  \qquad{}D．5\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解析　由＝得：＝＝＝，要使为整数，则需＝7+\par
+为数，所以n＝1,2,3,5,11，共有5个．答案　D\par
+\par\endgroup\fi
+
+\par\medskip\noindent\textbf{性质4：)若{\ensuremath{a_{n}}}是等差数列，公差为d，则\ensuremath{a_{k}}，\ensuremath{a_{k+m}}，\ensuremath{a_{k+2m}}，\ldots{}(k，m\ensuremath{\in}\ensuremath{N^{*}})是公差为md的等差数列．}\par
+\Needspace{6\baselineskip}
+\qquad{}P39.数列\FormulaOCR{image395.wmf}{\{a_n\}}是等差数列，取出数列中的所有奇数项，组成的新数列，这个数列是等差数列吗？如果是，他的首项和公差是多少？\par
+\par\medskip\noindent\textbf{性质5：若2n为偶数，则\ensuremath{S_{\text{偶}}}-\ensuremath{S_{\text{奇}}}＝nd；，}\par
+\qquad{}若2n—1为奇数，\FormulaOCR{image398.wmf}{s_{ 2n-1 }  =(2n-1)a_{ n }}则\ensuremath{S_{\text{奇}}}-\ensuremath{S_{\text{偶}}}＝\ensuremath{a_{\text{中}}}(中间项)．\FormulaOCR{image399.wmf}{\frac{S_{\text{奇}}}{S_{\text{偶}}}=}\FormulaOCR{image400.wmf}{\frac { { \rm{ n } } } { { \rm{ n } }-1 }}\par
+\Needspace{6\baselineskip}
+1.一个数列共有10项，其偶数项之和是15，奇数项之和是12.5，他的首相与公差分别是（  \FormulaOCR{image401.wmf}{\frac { 1 } { 2 }}，\FormulaOCR{image402.wmf}{\frac { 1 } { 2 }}   ）\par
+\par\medskip\noindent\textbf{性质6.求的最值}\par
+\FormulaOCR{image404.wmf}{S_n=pn^2+qn=\frac{d}{2}n^2+\left(a_1-\frac{d}{2}\right)n}\par
+法一：因等差数列前\FormulaOCR{image405.wmf}{n}项和是关于的二次函数，故可转化为求二次函数的最值，但要注意数列的特殊性\FormulaOCR{image406.wmf}{n\in N ^ { * }}。\par
+法二：（1）“首正”的递减等差数列中，前\FormulaOCR{image407.wmf}{n}项和的最大值是所有非负项之和\par
+即当\FormulaOCR{image408.wmf}{a_{1}>0,\,\,\,d<0,} 由\FormulaOCR{image409.wmf}{\begin{cases}a_n\geq0,\\a_{n+1}\leq0,\end{cases}}可得\FormulaOCR{image410.wmf}{S_{n}}达到最大值时的\FormulaOCR{image411.wmf}{{n}}值．\par
+（2） “首负”的递增等差数列中，前\FormulaOCR{image407.wmf}{n}项和的最小值是所有非正项之和。\par
+即 当\FormulaOCR{image412.wmf}{a_{1}<0,\ \ d>0,} 由\FormulaOCR{image413.wmf}{\binom{a_{n}\leq0}{a_{n+1}\geq0}}可得\FormulaOCR{image410.wmf}{S_{n}}达到最小值时的\FormulaOCR{image411.wmf}{{n}}值．或求\FormulaOCR{image414.wmf}{\scriptstyle\{a_{s}\}}中正负分界项\par
+\qquad{}法三：直接利用二次函数的对称性：由于等差数列前n项和的图像是过原点的二次函数，故n取离二次函数对称轴最近的整数时，\FormulaOCR{image415.wmf}{S_{n}}取最大值（或最小值）。若\ensuremath{S_{ p}} = \ensuremath{S_{ q}}则其对称轴为\FormulaOCR{image416.wmf}{n=\frac { p+q } { 2 }}\par
+\Needspace{6\baselineskip}
+\qquad{}1.设等差数列{\ensuremath{a_{n}}}满足\ensuremath{a_{3}}＝5，\ensuremath{a_{10}}＝-9.\par
+\qquad{}(1)求{\ensuremath{a_{n}}}的通项公式；\par
+\qquad{}(2)求{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}及使得\ensuremath{S_{n}}最大的序号n的值．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+\qquad{}解　(1)由\ensuremath{a_{n}}＝\ensuremath{a_{1}}+(n-1)d及\ensuremath{a_{3}}＝5，\ensuremath{a_{10}}＝-9得\par
+\qquad{}可解得\par
+\qquad{}数列{\ensuremath{a_{n}}}的通项公式为\ensuremath{a_{n}}＝11-2n.\par
+\qquad{}(2)由(1)知，\ensuremath{S_{n}}＝n\ensuremath{a_{1}}+d＝10n-\ensuremath{n^{2}}.\par
+\qquad{}因为\ensuremath{S_{n}}＝-(n-5\ensuremath{)^{2}}+25，所以当n＝5时，\ensuremath{S_{n}}取得最大值．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+\qquad{}2.已知等差数列\FormulaOCR{image323.wmf}{\{a_n\}}中，\FormulaOCR{image417.wmf}{\left | { { \rm{ a } }_{ 5 }   } \right .{ \rm{ \| } }{ \rm{ = } }{ \rm{ \| } }{ \rm{ a } }_{ 9 }  { \rm{ \| } }}，公差d.>0，则使得前n项和\FormulaOCR{image418.wmf}{S_{ { \rm{ n } } }}取得最小值时的正整数n的值是（6和7）  \FormulaOCR{image419.wmf}{a_5\text{与}a_9\text{互为相反数}}\par
+\Needspace{6\baselineskip}
+\qquad{}3.已知等差数列\FormulaOCR{image323.wmf}{\{a_n\}}中，\FormulaOCR{image418.wmf}{S_{ { \rm{ n } } }}是他的前n项和，若\FormulaOCR{image420.wmf}{S_{ 16 }  >0,\quad S_{ 17 }   < 0}则当最大时n的值为（  8）\par
+4（2014•江西）在等差数列{\ensuremath{a_{n}}}中，\ensuremath{a_{1}}=7，公差为d，前n项和为\ensuremath{S_{n}}，当且仅当n=8时\ensuremath{S_{n}}取得最大值，则d的取值范围为　（-1，-\FormulaOCR{image421.png}{\frac78}）　．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\ensuremath{\because}\ensuremath{S_{n }}=7n+\FormulaOCR{image422.png}{\frac{n(n-1)d}{2}}，当且仅当n=8时\ensuremath{S_{n}}取得最大值，\par
+\ensuremath{\therefore}\FormulaOCR{image423.png}{\binom{S_{7}<S_{8}}{s_{9}<S_{8}}}，即\FormulaOCR{image424.png}{\begin{cases}49+21d<56+28d,\\63+36d<56+28d,\end{cases}}，解得：\FormulaOCR{image425.png}{\binom{\lambda>-1}{\lambda<{\frac{7}{8}}}}，\par
+综上：d的取值范围为（-1，-\FormulaOCR{image421.png}{\frac78}）．\par
+\par\endgroup\fi
+
+\par\medskip\noindent\textbf{性质8}\par
+\qquad{}若 $\{a_n\}$ 是等差数列，则 $\left\{\dfrac{S_n}{n}\right\}$ 也是等差数列。 点列 $(1,a_1),(2,a_2),\ldots,(n,a_n)$ 共线；点列 $(1,S_1),(2,S_2),\ldots,(n,S_n)$ 共线。\par
+\Needspace{6\baselineskip}
+9．（2013•新课标Ⅰ）设等差数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，若\ensuremath{S_{m-1}}=-2，\ensuremath{S_{m}}=0，\ensuremath{S_{m+1}}=3，则m=（　　）\par
+\qquad{}\qquad{}\qquad{}A．3\qquad{}B．4\qquad{}C．5\qquad{}D．6\qquad{}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\ensuremath{a_{m}}=\ensuremath{S_{m}}-\ensuremath{S_{m-1}}=2，\ensuremath{a_{m+1}}=\ensuremath{S_{m+1}}-\ensuremath{S_{m}}=3，\par
+所以公差d=\ensuremath{a_{m+1}}-\ensuremath{a_{m}}=1，\ensuremath{S_{m}}=\FormulaOCR{image428.png}{\frac{m(a_1+a_m)}2}=0，m-1>0，m>1，因此m不能为0，得\ensuremath{a_{1}}=-2，所以\ensuremath{a_{m}}=-2+（m-1）•1=2，解得m=5，\par
+另解：等差数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，即有数列{\FormulaOCR{image429.png}{\frac{S_n}{n}}}成等差数列，\par
+则\FormulaOCR{image430.png}{\frac{S_{m-1}}{m-1}}，\FormulaOCR{image431.png}{\frac{S_m}{m}}，\FormulaOCR{image432.png}{\frac{S_{m+1}}{m+1}}成等差数列，可得2•\FormulaOCR{image433.png}{\frac{S_m}{m}}=\FormulaOCR{image434.png}{\frac{S_{m-1}}{m-1}}+\FormulaOCR{image435.png}{\frac{S_{m+1}}{m+1}}，\par
+即有0=\FormulaOCR{image436.png}{-\frac2{m-1}}+\FormulaOCR{image437.png}{\frac3{m+1}}，解得m=5\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+11．（2023•新高考Ⅰ）记\FormulaOCR{image438.wmf}{S_{ n }}为数列\FormulaOCR{image439.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image440.wmf}{n}项和，设甲：\FormulaOCR{image441.wmf}{\{a_{ n }  \}}为等差数列；乙：\FormulaOCR{image442.wmf}{\{\frac { S_{ n }   } { n }\}}为等差数列，则（　　）\par
+A．甲是乙的充分条件但不是必要条件\qquad{}\par
+B．甲是乙的必要条件但不是充分条件\qquad{}\par
+C．甲是乙的充要条件\qquad{}\par
+D．甲既不是乙的充分条件也不是乙的必要条件\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：若\FormulaOCR{image443.wmf}{\{a_{ n }  \}}是等差数列，设数列\FormulaOCR{image444.wmf}{\{a_{ n }  \}}的首项为\FormulaOCR{image445.wmf}{a_{ 1 }}，公差为\FormulaOCR{image446.wmf}{d}，\par
+则\FormulaOCR{image447.wmf}{S_{ n }  =na_{ 1 }  +\frac { n(n-1) } { 2 }d}，\par
+即\FormulaOCR{image448.wmf}{\frac { S_{ n }   } { n }=a_{ 1 }  +\frac { n-1 } { 2 }d=\frac { d } { 2 }n+a_{ 1 }  -\frac { d } { 2 }}，\par
+故\FormulaOCR{image449.wmf}{\{\frac { S_{ n }   } { n }\}}为等差数列，\par
+即甲是乙的充分条件．\par
+反之，若\FormulaOCR{image450.wmf}{\{\frac { S_{ n }   } { n }\}}为等差数列，则可设\FormulaOCR{image451.wmf}{\frac { S_{ n+1 }   } { n+1 }-\frac { S_{ n }   } { n }=D}，\par
+则\FormulaOCR{image452.wmf}{\frac { S_{ n }   } { n }=S_{ 1 }  +(n-1)D}，即\FormulaOCR{image453.wmf}{S_{ n }  =nS_{ 1 }  +n(n-1)D}，\par
+当\FormulaOCR{image454.wmf}{n\geq 2}时，有\FormulaOCR{image455.wmf}{S_{ n-1 }  =(n-1)S_{ 1 }  +(n-1)(n-2)D}，\par
+上两式相减得：\FormulaOCR{image456.wmf}{a_{ n }  =S_{ n }  -S_{ n-1 }  =S_{ 1 }  +2(n-1)D}，\par
+当\FormulaOCR{image457.wmf}{n=1}时，上式成立，所以\FormulaOCR{image458.wmf}{a_{ n }  =a_{ 1 }  +2(n-1)D}，\par
+则\FormulaOCR{image459.wmf}{a_{ n+1 }  -a_{ n }  =a_{ 1 }  +2nD-[a_{ 1 }  +2(n-1)D]=2D}（常数），\par
+所以数列\FormulaOCR{image460.wmf}{\{a_{ n }  \}}为等差数列．\par
+即甲是乙的必要条件．\par
+综上所述，甲是乙的充要条件．\par
+故本题选：\FormulaOCR{image461.wmf}{C}．\par
+\par\endgroup\fi
+
+\qquad{}性质九.\FormulaOCR{image462.wmf}{S_n=S_m\ \Longrightarrow\ S_{m+n}=0}\par
+\qquad{}性质十.\FormulaOCR{image463.wmf}{d=\frac { a_{ { \rm{ n } } }  -a_{ { \rm{ m } } }   } { { \rm{ n } }-{ \rm{ m } } }}\par
+\par\bigskip\noindent{\zihao{3}\bfseries 等比数列的性质}\par
+大纲：2．等差数列、等比数列\par
+（1） 理解等差数列、等比数列的概念.\par
+（2） 掌握等差数列、等比数列的通项公式与前n项和公式.\par
+（3） 能在具体的问题情境中识别数列的等差关系或等比关系，并能用等差数列、等比数列的关知识解决相应的问题.\par
+（4） 了解等差数列与一次函数、等比数列与指数函数的关系.\par
+\par\medskip\noindent\textbf{性质1. 若为等比数列，则.}\par
+\Needspace{6\baselineskip}
+1.（2013·福建）已知等比数列 $\{a_n\}$ 的公比为 $q$，记\[b_n=\sum_{i=1}^{m}a_{m(n-1)+i},\qquad{}c_n=\prod_{i=1}^{m}a_{m(n-1)+i}\]（$m,n\in N^*$），则以下结论一定正确的是（\quad）。\par
+A．数列{\ensuremath{b_{n}}}为等差数列，公差为\ensuremath{q^{m}}\qquad{}B．数列{\ensuremath{b_{n}}}为等比数列，公比为\ensuremath{q^{2m}}\qquad{}\par
+C．数列{\ensuremath{c_{n}}}为等比数列，公比为\FormulaOCR{image468.png}{q^{m^2}}\qquad{}D．数列{\ensuremath{c_{n}}}为等比数列，公比为\FormulaOCR{image469.png}{q^{m^2}}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解析　\ensuremath{\because}\ensuremath{b_{n}}＝\ensuremath{a_{m(n-1)}}(q+\ensuremath{q^{2}}+\ldots{}+\ensuremath{q^{m}})\ensuremath{\therefore}＝＝＝\ensuremath{q^{m}}(常数)．\ensuremath{b_{n+1}}-\ensuremath{b_{n}}不是常数．又\ensuremath{\because}\ensuremath{c_{n}}＝(\ensuremath{a_{m(n-1)}}\ensuremath{)^{m}}\ensuremath{q^{1+2+…+m}}＝(\ensuremath{a_{m(n-1)}}q\ensuremath{)^{m}}，\par
+\ensuremath{\therefore}＝(\ensuremath{)^{m}}＝(\ensuremath{q^{m}}\ensuremath{)^{m}}＝q\ensuremath{m^{2}}(常数)．\ensuremath{c_{n+1}}-\ensuremath{c_{n}}不是常数．\ensuremath{\therefore}选C.\par
+\par\endgroup\fi
+
+\par\medskip\noindent\textbf{性质2. 若为等比数列，且，则.}\par
+\Needspace{6\baselineskip}
+1.（2012•新课标）已知{\ensuremath{a_{n}}}为等比数列，\ensuremath{a_{4}}+\ensuremath{a_{7}}=2，\ensuremath{a_{5}}\ensuremath{a_{6}}=-8，则\ensuremath{a_{1}}+\ensuremath{a_{10}}=（　　）\par
+\qquad{}\qquad{}\qquad{}A．7\qquad{}B．5\qquad{}C．-5\qquad{}D．-7\qquad{}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\ensuremath{\because}\ensuremath{a_{4}}+\ensuremath{a_{7}}=2，由等比数列的性质可得，\ensuremath{a_{5}}\ensuremath{a_{6}}=\ensuremath{a_{4}}\ensuremath{a_{7}}=-8\par
+\ensuremath{\therefore}\ensuremath{a_{4}}=4，\ensuremath{a_{7}}=-2或\ensuremath{a_{4}}=-2，\ensuremath{a_{7}}=4当\ensuremath{a_{4}}=4，\ensuremath{a_{7}}=-2时，\FormulaOCR{image472.png}{\lambda^{3}{=}{\frac{1}{2}}}，\par
+\ensuremath{\therefore}\ensuremath{a_{1}}=-8，\ensuremath{a_{10}}=1，\ensuremath{\therefore}\ensuremath{a_{1}}+\ensuremath{a_{10}}=-7当\ensuremath{a_{4}}=-2，\ensuremath{a_{7}}=4时，\ensuremath{q^{3}}=-2，则\ensuremath{a_{10}}=-8，\ensuremath{a_{1}}=1\par
+\ensuremath{\therefore}\ensuremath{a_{1}}+\ensuremath{a_{10}}=-7综上可得，\ensuremath{a_{1}}+\ensuremath{a_{10}}=-7故选：D．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+2.（2006•湖北）在等比数列{\ensuremath{a_{n}}}中，\ensuremath{a_{1}}=1，\ensuremath{a_{10}}=3，则\ensuremath{a_{2}}\ensuremath{a_{3}}\ensuremath{a_{4}}\ensuremath{a_{5}}\ensuremath{a_{6}}\ensuremath{a_{7}}\ensuremath{a_{8}}\ensuremath{a_{9}}=（　　）\par
+\qquad{}\qquad{}\qquad{}A．81\qquad{}B．27\FormulaOCR{image473.png}{\scriptstyle{\sqrt{27}}}\qquad{}C．\FormulaOCR{image474.png}{{\sqrt{3}}}\qquad{}D．243\qquad{}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：因为数列{\ensuremath{a_{n}}}是等比数列，且\ensuremath{a_{1}}=1，\ensuremath{a_{10}}=3，\par
+所以\ensuremath{a_{2}}\ensuremath{a_{3}}\ensuremath{a_{4}}\ensuremath{a_{5}}\ensuremath{a_{6}}\ensuremath{a_{7}}\ensuremath{a_{8}}\ensuremath{a_{9}}=（\ensuremath{a_{2}}\ensuremath{a_{9}}）（\ensuremath{a_{3}}\ensuremath{a_{8}}）（\ensuremath{a_{4}}\ensuremath{a_{7}}）（\ensuremath{a_{5}}\ensuremath{a_{6}}）=\ensuremath{(a_{1}a_{10})^{4}}=\ensuremath{3^{4}}=81，故选：A．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+3．（2014•广东）若等比数列{\ensuremath{a_{n}}}的各项均为正数，且\ensuremath{a_{10}}\ensuremath{a_{11}}+\ensuremath{a_{9}}\ensuremath{a_{12}}=2\ensuremath{e^{5}}，则ln\ensuremath{a_{1}}+ln\ensuremath{a_{2}}+\ldots{}+ln\ensuremath{a_{20}}=　50　．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\ensuremath{\because}数列{\ensuremath{a_{n}}}为等比数列，且\ensuremath{a_{10}}\ensuremath{a_{11}}+\ensuremath{a_{9}}\ensuremath{a_{12}}=2\ensuremath{e^{5}}，\par
+\ensuremath{\therefore}\ensuremath{a_{10}}\ensuremath{a_{11}}+\ensuremath{a_{9}}\ensuremath{a_{12}}=2\ensuremath{a_{10}}\ensuremath{a_{11}}=2\ensuremath{e^{5}}，\ensuremath{\therefore}\ensuremath{a_{10}}\ensuremath{a_{11}}=\ensuremath{e^{5}}，\par
+\ensuremath{\therefore}ln\ensuremath{a_{1}}+ln\ensuremath{a_{2}}+\ldots{}ln\ensuremath{a_{20}}=ln（\ensuremath{a_{1}}\ensuremath{a_{2}}\ldots{}\ensuremath{a_{20}}）=ln\ensuremath{(a_{10}a_{11})^{10}}=ln\ensuremath{(e^{5})^{10}}=ln\ensuremath{e^{50}}=50．\par
+故答案为：50．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+4.（2014·广东）等比数列 $\{a_n\}$ 的各项均为正数，且$a_1a_5=4$，则\[\log_2a_1+\log_2a_2+\log_2a_3+\log_2a_4+\log_2a_5=5.\]\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\ensuremath{\log_{2}}\ensuremath{a_{1}}+\ensuremath{\log_{2}}\ensuremath{a_{2}}+\ensuremath{\log_{2}}\ensuremath{a_{3}}+\ensuremath{\log_{2}}\ensuremath{a_{4}}+\ensuremath{\log_{2}}\ensuremath{a_{5}}=\ensuremath{\log_{2}}\ensuremath{a_{1}}\ensuremath{a_{2}}\ensuremath{a_{3}}\ensuremath{a_{4}}\ensuremath{a_{5}}=\ensuremath{\log_{2}}\ensuremath{a_{3}^{5}}=5\ensuremath{\log_{2}}\ensuremath{a_{3}}．\par
+又等比数列{\ensuremath{a_{n}}}中，\ensuremath{a_{1}}\ensuremath{a_{5}}=4，即\ensuremath{a_{3}}=2．故5\ensuremath{\log_{2}}\ensuremath{a_{3}}=5\ensuremath{\log_{2}}2=5．故选为：5．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+5.（2012•广东）若等比数列{\ensuremath{a_{n}}}满足\ensuremath{a_{2}}\ensuremath{a_{4}}=\FormulaOCR{image475.png}{\frac12}，则\ensuremath{a_{1}}\ensuremath{a_{3}^{2}}\ensuremath{a_{5}}=　\FormulaOCR{image476.png}{\frac{1}{4}}　．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\ensuremath{\because}等比数列{\ensuremath{a_{n}}}满足\FormulaOCR{image477.png}{\mathbf{a_{2}}\mathbf{a_{4}}{\frac{1}{2}}}=\FormulaOCR{image478.png}{{\bf a_{3}}^{2}}，则\FormulaOCR{image479.png}{a_1a_3^2a_5=a_3^4=\frac14}，\par
+故答案为 \FormulaOCR{image480.png}{\frac{1}{4}}．\par
+\par\endgroup\fi
+
+\par\medskip\noindent\textbf{性质3. 若为等比数列，则仍为等比数列，其中是非零常数.}\par
+\par\medskip\noindent\textbf{性质4. 若为等比数列，则当恒有意义时仍为等比数列，其中是任意常数.}\par
+\par\medskip\noindent\textbf{性质5. 若、为等比数列，则,,,、仍为等比数列.}\par
+\par\medskip\noindent\textbf{性质6. 若为等比数列的前n项和，且，则依次项和仍为等比数列，即\ldots{}仍为等比数列.}\par
+\Needspace{6\baselineskip}
+13．（2023•新高考Ⅱ）记\FormulaOCR{image495.wmf}{S_{ n }}为等比数列\FormulaOCR{image496.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image497.wmf}{n}项和，若\FormulaOCR{image498.wmf}{S_{ 4 }  =-5}，\FormulaOCR{image499.wmf}{S_{ 6 }  =21S_{ 2 }}，则\FormulaOCR{image500.wmf}{S_{ 8 }  =}（　　）\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+\qquad{}\qquad{}\qquad{}A．120\qquad{}B．85\qquad{}C．\FormulaOCR{image501.wmf}{-85}\qquad{}D．\FormulaOCR{image502.wmf}{-120}\par
+解：等比数列\FormulaOCR{image503.wmf}{\{a_{ n }  \}}中，\FormulaOCR{image504.wmf}{S_{ 4 }  =-5}，\FormulaOCR{image505.wmf}{S_{ 6 }  =21S_{ 2 }}，显然公比\FormulaOCR{image506.wmf}{q\ne 1}，\par
+设首项为\FormulaOCR{image507.wmf}{a_{ 1 }}，则\FormulaOCR{image508.wmf}{\frac { a_{ 1 }  (1-q ^ { 4 } ) } { 1-q }=-5}①，\FormulaOCR{image509.wmf}{\frac { a_{ 1 }  (1-q ^ { 6 } ) } { 1-q }=\frac { 21a_{ 1 }  (1-q ^ { 2 } ) } { 1-q }}②，\par
+化简②得\FormulaOCR{image510.wmf}{1-q ^ { 6 } =(1-q ^ { 2 } )(1+q ^ { 2 } +q ^ { 4 } )=21(1-q ^ { 2 } )}，\par
+即\FormulaOCR{image511.wmf}{q ^ { 4 } +q ^ { 2 } -20=0}，解得\FormulaOCR{image512.wmf}{q ^ { 2 } =4}或\FormulaOCR{image513.wmf}{q ^ { 2 } =-5}（不合题意，舍去），\par
+代入①得\FormulaOCR{image514.wmf}{\frac { a_{ 1 }   } { 1-q }=\frac { 1 } { 3 }}，\par
+所以\FormulaOCR{image515.wmf}{S_{ 8 }  =\frac { a_{ 1 }  (1-q ^ { 8 } ) } { 1-q }=\frac { a_{ 1 }   } { 1-q }(1-q ^ { 4 } )(1+q ^ { 4 } )=\frac { 1 } { 3 }\times (-15)\times (1+16)=-85}．\par
+故选：\FormulaOCR{image516.wmf}{C}．\par
+\par\endgroup\fi
+
+\par\medskip\noindent\textbf{性质7.数列为等比数列,每隔k(k)项取出一项()仍为等比数列}\par
+\Needspace{6\baselineskip}
+1.（2010•大纲版Ⅰ）已知各项均为正数的等比数列{\ensuremath{a_{n}}}，\ensuremath{a_{1}}\ensuremath{a_{2}}\ensuremath{a_{3}}=5，\ensuremath{a_{7}}\ensuremath{a_{8}}\ensuremath{a_{9}}=10，则\ensuremath{a_{4}}\ensuremath{a_{5}}\ensuremath{a_{6}}=（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image521.png}{\scriptstyle{1+{\frac{\sqrt{2}}{2}}}}\qquad{}B．7\qquad{}C．6\qquad{}D．\FormulaOCR{image522.png}{\scriptstyle 4{\sqrt{2}}}\qquad{}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\ensuremath{a_{1}}\ensuremath{a_{2}}\ensuremath{a_{3}}=5\ensuremath{\Longrightarrow}\ensuremath{a_{2}^{3}}=5；\ensuremath{a_{7}}\ensuremath{a_{8}}\ensuremath{a_{9}}=10\ensuremath{\Longrightarrow}\ensuremath{a_{8}^{3}}=10，\ensuremath{a_{5}^{2}}=\ensuremath{a_{2}}\ensuremath{a_{8}}，\par
+\ensuremath{\therefore}\FormulaOCR{image523.png}{a_5^6=a_2^3a_8^3=50}，\ensuremath{\therefore}\FormulaOCR{image524.png}{a_{4}\,a_{5}\,a_{6}=a_{5}^{3}{-5{\sqrt{2}}}}，故选：A．\par
+\par\endgroup\fi
+
+\par\medskip\noindent\textbf{性质8.如果是各项均为正数的等比数列,则数列是等差数列}\par
+\par\medskip\noindent\textbf{性质9.①当时，                          ②当时，}\par
+\FormulaOCR{image528.wmf}{\begin{cases}a_1>0,&\{a_n\}\text{为递增数列},\\a_1<0,&\{a_n\}\text{为递减数列},\end{cases}},                 \FormulaOCR{image529.wmf}{\begin{cases}a_1>0,&\{a_n\}\text{为递减数列},\\a_1<0,&\{a_n\}\text{为递增数列},\end{cases}}\par
+③当q=1时,该数列为常数列（此时数列也为等差数列）;\par
+④当q<0时,该数列为摆动数列.\par
+\par\medskip\noindent\textbf{性质10.在等比数列中, 当项数为2n (n)时,,.}\par
+\par\medskip\noindent\textbf{性质11.等比数列的定义及通项公式及求和公式：}\par
+\FormulaOCR{image531.wmf}{a_{ n }  =a_{ 1 }  q ^ { n-1 }}q=1时，\FormulaOCR{image532.wmf}{S_{ n }  =na_{ 1 }}\FormulaOCR{image533.wmf}{q\ne 1,\quad S_{ n }  =\frac { a_{ 1 }  \left ( { 1-q ^ { n }  } \right ) } { 1-q }}：\par
+\par\medskip\noindent\textbf{性质11.数列的周期性.}\par
+\qquad{}解决数列周期性问题的方法，先根据已知条件求出数列的前几项，确定数列的周期，再根据周期性求值．\par
+\Needspace{6\baselineskip}
+\qquad{}例1．已知数列{\ensuremath{a_{n}}}满足\ensuremath{a_{n+1}}＝，若\ensuremath{a_{1}}＝，则\ensuremath{a_{2 018}}＝(　　)\par
+\qquad{}A．-1　   　B.    C．1      D．2\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+\qquad{}解析：选D　由\ensuremath{a_{1}}＝，\ensuremath{a_{n+1}}＝，得\ensuremath{a_{2}}＝＝2，\par
+\qquad{}\ensuremath{a_{3}}＝＝-1，\ensuremath{a_{4}}＝＝，\ensuremath{a_{5}}＝＝2，\ldots{}，\par
+\qquad{}于是可知数列{\ensuremath{a_{n}}}是以3为周期的周期数列，因此\ensuremath{a_{2 018}}＝\ensuremath{a_{3×672+2}}＝\ensuremath{a_{2}}＝2.\par
+\par\endgroup\fi
+
+\par\medskip\noindent\textbf{性质12.数列的单调性.}\par
+\Needspace{6\baselineskip}
+\qquad{}1．已知数列{\ensuremath{a_{n}}}满足\ensuremath{a_{n}}＝(n\ensuremath{\in}\ensuremath{N^{*}})，则数列{\ensuremath{a_{n}}}的最小项是第\_\_\_\_\_\_\_\_项．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+\qquad{}解析：因为\ensuremath{a_{n}}＝，所以数列{\ensuremath{a_{n}}}的最小项必为\ensuremath{a_{n}}<0，即<0,3n-16<0，从而n<.又n\ensuremath{\in}\ensuremath{N^{*}}，所以当n＝5时，\ensuremath{a_{n}}的值最小．答案：5\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+\qquad{}例2．若数列{\ensuremath{a_{n}}}满足：\ensuremath{a_{1}}＝19，\ensuremath{a_{n+1}}＝\ensuremath{a_{n}}-3(n\ensuremath{\in}\ensuremath{N^{*}})，则数列{\ensuremath{a_{n}}}的前n项和数值最大时，n的值为(　　)\par
+\qquad{}A．6      B．7      C．8  \qquad{}D．9\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+\qquad{}解析：选B　\ensuremath{\because}\ensuremath{a_{1}}＝19，\ensuremath{a_{n+1}}-\ensuremath{a_{n}}＝-3，\par
+\qquad{}\ensuremath{\therefore}数列{\ensuremath{a_{n}}}是以19为首项，-3为公差的等差数列，\par
+\qquad{}\ensuremath{\therefore}\ensuremath{a_{n}}＝19+(n-1)\ensuremath{\times}(-3)＝22-3n.\par
+\qquad{}设{\ensuremath{a_{n}}}的前k项和数值最大，\par
+\qquad{}则有k\ensuremath{\in}\ensuremath{N^{*}}，\ensuremath{\therefore}\par
+\qquad{}\ensuremath{\therefore}\ensuremath{\le}k\ensuremath{\le}，\par
+\qquad{}\ensuremath{\because}k\ensuremath{\in}\ensuremath{N^{*}}，\ensuremath{\therefore}k＝7.\ensuremath{\therefore}满足条件的n的值为7.\par
+\par\endgroup\fi
+
+\par\bigskip\noindent{\zihao{3}\bfseries 数列求和}\par
+第一节．公式法\par
+\qquad{}(1)等差数列{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}＝＝n\ensuremath{a_{1}}+.\par
+\qquad{}推导方法：倒序相加法．\par
+\qquad{}(2)等比数列{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}＝\par
+\qquad{}推导方法：乘公比，错位相减法．\par
+\qquad{}(3)一些常见的数列的前n项和：\par
+\qquad{}①1+2+3+\ldots{}+n＝；\par
+\qquad{}②2+4+6+\ldots{}+2n＝n(n+1)；\par
+\qquad{}③1+3+5+\ldots{}+2n-1＝.\par
+\Needspace{6\baselineskip}
+\qquad{}2．求等差数列前n项和\ensuremath{S_{n}}最值的2种方法\par
+\qquad{}(1)函数法：利用等差数列前n项和的函数表达式\ensuremath{S_{n}}＝a\ensuremath{n^{2}}+\ensuremath{b_{n}}，通过配方或借助图象求二次函数最值的方法求解．\par
+\qquad{}(2)邻项变号法：\par
+\qquad{}①当\ensuremath{a_{1}}>0，d<0时，满足的项数m使得\ensuremath{S_{n}}取得最大值为\ensuremath{S_{m}}；\par
+\qquad{}②当\ensuremath{a_{1}}<0，d>0时，满足的项数m使得\ensuremath{S_{n}}取得最小值为\ensuremath{S_{m}}.\par
+\qquad{}3．理清等差数列的前n项和与函数的关系\par
+\qquad{}等差数列的前n项和公式为\ensuremath{S_{n}}＝n\ensuremath{a_{1}}+d可变形为\ensuremath{S_{n}}＝\ensuremath{n^{2}}+n，令A＝，B＝\ensuremath{a_{1}}-，则\ensuremath{S_{n}}＝A\ensuremath{n^{2}}+\ensuremath{B_{n}}.\par
+\qquad{}当A\ensuremath{\ne}0，即d\ensuremath{\ne}0时，\ensuremath{S_{n}}是关于n的二次函数，(n，\ensuremath{S_{n}})在二次函数y＝A\ensuremath{x^{2}}+Bx的图象上，即为抛物线y＝A\ensuremath{x^{2}}+Bx上一群孤立的点．利用此性质可解决前n项和\ensuremath{S_{n}}的最值问题．\par
+\Needspace{6\baselineskip}
+例1．（2015•四川）设数列{\ensuremath{a_{n}}}（n=1，2，3\ldots{}）的前n项和\ensuremath{S_{n}}，满足\ensuremath{S_{n}}=2\ensuremath{a_{n}}-\ensuremath{a_{1}}，且\ensuremath{a_{1}}，\ensuremath{a_{2}}+1，\ensuremath{a_{3}}成等差数列．\par
+（Ⅰ）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）设数列\FormulaOCR{image534.png}{({\frac{1}{a_{\mathrm{n}}}})}的前n项和为\ensuremath{T_{n}}，求\ensuremath{T_{n}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）由已知\ensuremath{S_{n}}=2\ensuremath{a_{n}}-\ensuremath{a_{1}}，有\par
+\ensuremath{a_{n}}=\ensuremath{S_{n}}-\ensuremath{S_{n-1}}=2\ensuremath{a_{n}}-2\ensuremath{a_{n-1}}（n\ensuremath{\ge}2），\par
+即\ensuremath{a_{n}}=2\ensuremath{a_{n-1}}（n\ensuremath{\ge}2），\par
+从而\ensuremath{a_{2}}=2\ensuremath{a_{1}}，\ensuremath{a_{3}}=2\ensuremath{a_{2}}=4\ensuremath{a_{1}}．\par
+又因为\ensuremath{a_{1}}，\ensuremath{a_{2}}+1，\ensuremath{a_{3}}成等差数列，即\ensuremath{a_{1}}+\ensuremath{a_{3}}=2（\ensuremath{a_{2}}+1）\par
+所以\ensuremath{a_{1}}+4\ensuremath{a_{1}}=2（2\ensuremath{a_{1}}+1），\par
+解得：\ensuremath{a_{1}}=2．\par
+所以，数列{\ensuremath{a_{n}}}是首项为2，公比为2的等比数列．\par
+故\ensuremath{a_{n}}=\ensuremath{2^{n}}．\par
+（Ⅱ）由（Ⅰ）得\FormulaOCR{image535.png}{\frac1{a_n}}=\FormulaOCR{image536.png}{\textstyle{\frac{1}{2^{n}}}}，\par
+所以 $T_n=\dfrac12+\dfrac1{2^2}+\cdots+\dfrac1{2^n}=\dfrac{\frac12\left(1-\frac1{2^n}\right)}{1-\frac12}=1-\dfrac1{2^n}$．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例2．（2018•新课标Ⅲ）等比数列{\ensuremath{a_{n}}}中，\ensuremath{a_{1}}=1，\ensuremath{a_{5}}=4\ensuremath{a_{3}}．\par
+（1）求{\ensuremath{a_{n}}}的通项公式；\par
+（2）记\ensuremath{S_{n}}为{\ensuremath{a_{n}}}的前n项和．若\ensuremath{S_{m}}=63，求m．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）\ensuremath{\because}等比数列{\ensuremath{a_{n}}}中，\ensuremath{a_{1}}=1，\ensuremath{a_{5}}=4\ensuremath{a_{3}}．\par
+\ensuremath{\therefore}1\ensuremath{\times}\ensuremath{q^{4}}=4\ensuremath{\times}（1\ensuremath{\times}\ensuremath{q^{2}}），\par
+解得q=±2，\par
+当q=2时，\ensuremath{a_{n}}=\ensuremath{2^{n-1}}，\par
+当q=-2时，\ensuremath{a_{n}}=\ensuremath{(-2)^{n-1}}，\par
+\ensuremath{\therefore}{\ensuremath{a_{n}}}的通项公式为，\ensuremath{a_{n}}=\ensuremath{2^{n-1}}，或\ensuremath{a_{n}}=\ensuremath{(-2)^{n-1}}．\par
+（2）记\ensuremath{S_{n}}为{\ensuremath{a_{n}}}的前n项和．\par
+当\ensuremath{a_{1}}=1，q=-2时，\ensuremath{S_{n}}=\FormulaOCR{image542.png}{\frac{a_1(1-q^n)}{1-q}}=\FormulaOCR{image543.png}{\frac{1-(-2)^{n}}{1-(-2)}}=\FormulaOCR{image544.png}{\frac{1-(-2)^{n}}{3}}，\par
+由\ensuremath{S_{m}}=63，得\ensuremath{S_{m}}=\FormulaOCR{image545.png}{\frac{1-(-2)^{n}}{3}}=63，m\ensuremath{\in}N，无解；\par
+当\ensuremath{a_{1}}=1，q=2时，\ensuremath{S_{n}}=\FormulaOCR{image546.png}{\frac{a_1(1-q^n)}{1-q}}=\FormulaOCR{image547.png}{\frac{1-2^{n}}{1^{-2}}}=\ensuremath{2^{n}}-1，\par
+由\ensuremath{S_{m}}=63，得\ensuremath{S_{m}}=\ensuremath{2^{m}}-1=63，m\ensuremath{\in}N，\par
+解得m=6．\par
+例3．（2018•北京）设{\ensuremath{a_{n}}}是等差数列，且\ensuremath{a_{1}}=ln2，\ensuremath{a_{2}}+\ensuremath{a_{3}}=5ln2．\par
+（Ⅰ）求{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）求e\FormulaOCR{image548.png}{a_1}+e\FormulaOCR{image549.png}{a_2}+\ldots{}+e\FormulaOCR{image550.png}{a_n}．\par
+解：（Ⅰ）{\ensuremath{a_{n}}}是等差数列，且\ensuremath{a_{1}}=ln2，\ensuremath{a_{2}}+\ensuremath{a_{3}}=5ln2．\par
+可得：2\ensuremath{a_{1}}+3d=5ln2，可得d=ln2，\par
+{\ensuremath{a_{n}}}的通项公式；\ensuremath{a_{n}}=\ensuremath{a_{1}}+（n-1）d=nln2，\par
+（Ⅱ）e\FormulaOCR{image550.png}{a_n}=\FormulaOCR{image551.png}{\!\,\sin^{\,\!1\cdot2^{\pi}}}=\ensuremath{2^{n}}，\par
+\ensuremath{\therefore}e\FormulaOCR{image548.png}{a_1}+e\FormulaOCR{image549.png}{a_2}+\ldots{}+e\FormulaOCR{image550.png}{a_n}=\ensuremath{2^{1}}+\ensuremath{2^{2}}+\ensuremath{2^{3}}+\ldots{}+\ensuremath{2^{n}}=\FormulaOCR{image552.png}{\frac{2(1-2^{n})}{1-2}}=\ensuremath{2^{n+1}}-2．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例4．（2017•新课标Ⅰ）记\ensuremath{S_{n}}为等比数列{\ensuremath{a_{n}}}的前n项和．已知\ensuremath{S_{2}}=2，\ensuremath{S_{3}}=-6．\par
+（1）求{\ensuremath{a_{n}}}的通项公式；\par
+（2）求\ensuremath{S_{n}}，并判断\ensuremath{S_{n+1}}，\ensuremath{S_{n}}，\ensuremath{S_{n+2}}是否成等差数列．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）设等比数列{\ensuremath{a_{n}}}首项为\ensuremath{a_{1}}，公比为q，\par
+则\ensuremath{a_{3}}=\ensuremath{S_{3}}-\ensuremath{S_{2}}=-6-2=-8，则\ensuremath{a_{1}}=\FormulaOCR{image553.png}{\textstyle{\frac{\mathbf{a}_{3}}{\mathbf{c}^{2}}}}=\FormulaOCR{image554.png}{\textstyle{\frac{-8}{4}}}，\ensuremath{a_{2}}=\FormulaOCR{image555.png}{\textstyle{\frac{\mathbf{a}_{3}}{\mathbf{a}}}}=\FormulaOCR{image556.png}{\frac{-8}{\mathrm{q}}}，\par
+由\ensuremath{a_{1}}+\ensuremath{a_{2}}=2，\FormulaOCR{image557.png}{\textstyle{\frac{-8}{4}}}+\FormulaOCR{image556.png}{\frac{-8}{\mathrm{q}}}=2，整理得：\ensuremath{q^{2}}+4q+4=0，解得：q=-2，\par
+则\ensuremath{a_{1}}=-2，\ensuremath{a_{n}}=（-2）\ensuremath{(-2)^{n-1}}=\ensuremath{(-2)^{n}}，\par
+\ensuremath{\therefore}{\ensuremath{a_{n}}}的通项公式\ensuremath{a_{n}}=\ensuremath{(-2)^{n}}；\par
+（2）由（1）可知：\ensuremath{S_{n}}=\FormulaOCR{image558.png}{\frac{a_1(1-q^n)}{1-q}}=\FormulaOCR{image559.png}{\frac{-2[1-(-2)^{n}]}{1-(-2)}}=-\FormulaOCR{image560.png}{\frac{1}{3}}[2+\ensuremath{(-2)^{n+1}}]，\par
+则\ensuremath{S_{n+1}}=-\FormulaOCR{image560.png}{\frac{1}{3}}[2+\ensuremath{(-2)^{n+2}}]，\ensuremath{S_{n+2}}=-[2+\ensuremath{(-2)^{n+3}}]，\par
+由\ensuremath{S_{n+1}}+\ensuremath{S_{n+2}}=-\FormulaOCR{image560.png}{\frac{1}{3}}[2+\ensuremath{(-2)^{n+2}}]-\FormulaOCR{image561.png}{\frac{1}{3}}[2+\ensuremath{(-2)^{n+3}}]，\par
+=-\FormulaOCR{image561.png}{\frac{1}{3}}[4+（-2）\ensuremath{\times}\ensuremath{(-2)^{n+1}}+\ensuremath{(-2)^{2}}\ensuremath{\times}\ensuremath{(-2)^{n+1}}]，\par
+=-\FormulaOCR{image561.png}{\frac{1}{3}}[4+2\ensuremath{(-2)^{n+1}}]=2\ensuremath{\times}[-（2+\ensuremath{(-2)^{n+1}}）]，\par
+=2\ensuremath{S_{n}}，\par
+即\ensuremath{S_{n+1}}+\ensuremath{S_{n+2}}=2\ensuremath{S_{n}}，\par
+\ensuremath{\therefore}\ensuremath{S_{n+1}}，\ensuremath{S_{n}}，\ensuremath{S_{n+2}}成等差数列．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例5．（2017•北京）已知等差数列{\ensuremath{a_{n}}}和等比数列{\ensuremath{b_{n}}}满足\ensuremath{a_{1}}=\ensuremath{b_{1}}=1，\ensuremath{a_{2}}+\ensuremath{a_{4}}=10，\ensuremath{b_{2}}\ensuremath{b_{4}}=\ensuremath{a_{5}}．\par
+（Ⅰ）求{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）求和：\ensuremath{b_{1}}+\ensuremath{b_{3}}+\ensuremath{b_{5}}+\ldots{}+\ensuremath{b_{2n-1}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）等差数列{\ensuremath{a_{n}}}，\ensuremath{a_{1}}=1，\ensuremath{a_{2}}+\ensuremath{a_{4}}=10，可得：1+d+1+3d=10，解得d=2，\par
+所以{\ensuremath{a_{n}}}的通项公式：\ensuremath{a_{n}}=1+（n-1）\ensuremath{\times}2=2n-1．\par
+（Ⅱ）由（Ⅰ）可得\ensuremath{a_{5}}=\ensuremath{a_{1}}+4d=9，\par
+等比数列{\ensuremath{b_{n}}}满足\ensuremath{b_{1}}=1，\ensuremath{b_{2}}\ensuremath{b_{4}}=9．可得\ensuremath{b_{3}}=3，或-3（舍去）（等比数列奇数项符号相同）．\par
+\ensuremath{\therefore}\ensuremath{q^{2}}=3，\par
+{\ensuremath{b_{2n-1}}}是等比数列，公比为3，首项为1．\par
+\ensuremath{b_{1}}+\ensuremath{b_{3}}+\ensuremath{b_{5}}+\ldots{}+\ensuremath{b_{2n-1}}=\FormulaOCR{image562.png}{\frac{1-3^n}{1-3}}=\FormulaOCR{image563.png}{\frac{3^{n}-1}{2}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例6．（2013•新课标Ⅱ）已知等差数列{\ensuremath{a_{n}}}的公差不为零，\ensuremath{a_{1}}=25，且\ensuremath{a_{1}}，\ensuremath{a_{11}}，\ensuremath{a_{13}}成等比数列．\par
+（Ⅰ）求{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）求\ensuremath{a_{1}}+\ensuremath{a_{4}}+\ensuremath{a_{7}}+\ldots{}+\ensuremath{a_{3n-2}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（I）设等差数列{\ensuremath{a_{n}}}的公差为d\ensuremath{\ne}0，\par
+由题意\ensuremath{a_{1}}，\ensuremath{a_{11}}，\ensuremath{a_{13}}成等比数列，\ensuremath{\therefore}\FormulaOCR{image564.png}{a_{11}^2=a_1a_{13}}，\par
+\ensuremath{\therefore}\FormulaOCR{image565.png}{(a_1+10d)^2=a_1(a_1+12d)}，化为d（2\ensuremath{a_{1}}+25d）=0，\par
+\ensuremath{\because}d\ensuremath{\ne}0，\ensuremath{\therefore}2\ensuremath{\times}25+25d=0，解得d=-2．\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=25+（n-1）\ensuremath{\times}（-2）=-2n+27．\par
+（II）由（I）可得\ensuremath{a_{3n-2}}=-2（3n-2）+27=-6n+31，可知此数列是以25为首项，-6为公差的等差数列．\par
+\ensuremath{\therefore}\ensuremath{S_{n}}=\ensuremath{a_{1}}+\ensuremath{a_{4}}+\ensuremath{a_{7}}+\ldots{}+\ensuremath{a_{3n-2}}=\FormulaOCR{image566.png}{\frac{n(a_1+a_{3n-2})}{2}}\par
+=\FormulaOCR{image567.png}{\frac{\ln(25-6n+31)}{2}}\par
+=-3\ensuremath{n^{2}}+28n．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例7．（2014•新课标Ⅱ）已知数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=1，\ensuremath{a_{n+1}}=3\ensuremath{a_{n}}+1．\par
+（Ⅰ）证明{\ensuremath{a_{n}}+\FormulaOCR{image568.png}{\frac12}}是等比数列，并求{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）证明：\FormulaOCR{image569.png}{\frac1{a_1}}+\FormulaOCR{image570.png}{\frac1{a_2}}+\ldots{}+\FormulaOCR{image571.png}{\frac1{a_n}}<\FormulaOCR{image572.png}{\frac{3}{2}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+证明（Ⅰ）\FormulaOCR{image573.png}{\frac{a_{n+1}+\frac12}{a_n+\frac12}=\frac{3a_n+1+\frac12}{a_n+\frac12}=3}=\FormulaOCR{image574.png}{\frac{3\left(a_n+\frac12\right)}{a_n+\frac12}}=3，\par
+\ensuremath{\because}\FormulaOCR{image575.png}{a_1+\frac12=\frac32}\ensuremath{\ne}0，\par
+\ensuremath{\therefore}数列{\ensuremath{a_{n}}+\FormulaOCR{image576.png}{\frac12}}是以首项为\FormulaOCR{image572.png}{\frac{3}{2}}，公比为3的等比数列；\par
+\ensuremath{\therefore}\ensuremath{a_{n}}+\FormulaOCR{image576.png}{\frac12}=\FormulaOCR{image577.png}{{\frac{3}{2}}\times3^{n-1}}=\FormulaOCR{image578.png}{\frac{3^{n}}{2}}，即\FormulaOCR{image579.png}{\mathbf{a}_{\mathbf{n}}={\frac{3^{\mathbf{n}}-1}{2}}}；\par
+（Ⅱ）由（Ⅰ）知\FormulaOCR{image580.png}{\frac{1}{8n}\,=\,\frac{2}{3^{n}-1}}，\par
+当n\ensuremath{\ge}2时，\ensuremath{\because}\ensuremath{3^{n}}-1>\ensuremath{3^{n}}-\ensuremath{3^{n-1}}，\ensuremath{\therefore}\FormulaOCR{image580.png}{\frac{1}{8n}\,=\,\frac{2}{3^{n}-1}}<\FormulaOCR{image581.png}{\frac{2}{3^{n}-3^{n-1}}}=\FormulaOCR{image582.png}{\textstyle{\frac{1}{3^{n-1}}}}，\par
+\ensuremath{\therefore}当n=1时，\FormulaOCR{image583.png}{\frac1{a_1}=1<\frac32}成立，\par
+当n\ensuremath{\ge}2时，\FormulaOCR{image584.png}{\frac1{a_1}}+\FormulaOCR{image585.png}{\frac1{a_2}}+\ldots{}+\FormulaOCR{image586.png}{\frac1{a_n}}<1+\FormulaOCR{image587.png}{{\frac{1}{3}}+{\frac{1}{3^{2}}}+}\ldots{}+\FormulaOCR{image588.png}{\textstyle{\frac{1}{3^{n-1}}}}=\FormulaOCR{image589.png}{\frac{1-({\frac{1}{3}})^{n}}{1-{\frac{1}{3}}}}=\FormulaOCR{image590.png}{\textstyle{\frac{3}{2}}\left(1-{\frac{1}{3^{n}}}\right)}<\FormulaOCR{image591.png}{\frac{3}{2}}．\par
+\ensuremath{\therefore}对n\ensuremath{\in}\ensuremath{N_{+}}时，\FormulaOCR{image592.png}{\frac1{a_1}}+\FormulaOCR{image593.png}{\frac1{a_2}}+\ldots{}+\FormulaOCR{image594.png}{\frac1{a_n}}<\FormulaOCR{image595.png}{\frac{3}{2}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例8．（2015•四川）设数列{\ensuremath{a_{n}}}（n=1，2，3，\ldots{}）的前n项和\ensuremath{S_{n}}满足\ensuremath{S_{n}}=2\ensuremath{a_{n}}-\ensuremath{a_{1}}，且\ensuremath{a_{1}}，\ensuremath{a_{2}}+1，\ensuremath{a_{3}}成等差数列．\par
+（Ⅰ）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）记数列{\FormulaOCR{image596.png}{\frac1{a_n}}}的前n项和为\ensuremath{T_{n}}，求使得|\ensuremath{T_{n}}-1|\FormulaOCR{image597.png}{\mathrm{<}{\frac{1}{1000}}}成立的n的最小值．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）由已知\ensuremath{S_{n}}=2\ensuremath{a_{n}}-\ensuremath{a_{1}}，有\par
+\ensuremath{a_{n}}=\ensuremath{S_{n}}-\ensuremath{S_{n-1}}=2\ensuremath{a_{n}}-2\ensuremath{a_{n-1}} （n\ensuremath{\ge}2），\par
+即\ensuremath{a_{n}}=2\ensuremath{a_{n-1}}（n\ensuremath{\ge}2），\par
+从而\ensuremath{a_{2}}=2\ensuremath{a_{1}}，\ensuremath{a_{3}}=2\ensuremath{a_{2}}=4\ensuremath{a_{1}}，\par
+又\ensuremath{\because}\ensuremath{a_{1}}，\ensuremath{a_{2}}+1，\ensuremath{a_{3}}成等差数列，\par
+\ensuremath{\therefore}\ensuremath{a_{1}}+4\ensuremath{a_{1}}=2（2\ensuremath{a_{1}}+1），解得：\ensuremath{a_{1}}=2．\par
+\ensuremath{\therefore}数列{\ensuremath{a_{n}}}是首项为2，公比为2的等比数列．故\FormulaOCR{image598.png}{\mathbf{a}_{n}=2^{n}}；\par
+（Ⅱ）由（Ⅰ）得：\FormulaOCR{image599.png}{{\frac{1}{\mathbf{a_{n}}}}={\frac{1}{2^{\mathbf{n}}}}}，\par
+\ensuremath{\therefore}\FormulaOCR{image600.png}{T_n=\frac12+\frac1{2^2}+\cdots+\frac1{2^n}=\frac{\frac12\left[1-\left(\frac12\right)^n\right]}{1-\frac12}=1-\frac1{2^n}}．\par
+由 $|T_n-1|<\dfrac1{1000}$，得 $\left|1-\dfrac1{2^n}-1\right|<\dfrac1{1000}$，即 $2^n>1000$。又 $2^9=512<1000<1024=2^{10}$，故 $n\geq10$。\par
+\ensuremath{\because}\ensuremath{2^{9}}=512<1000<1024=\ensuremath{2^{10}}，\par
+\ensuremath{\therefore}n\ensuremath{\ge}10．\par
+于是，使|\ensuremath{T_{n}}-1|\FormulaOCR{image603.png}{<\frac1{1000}}成立的n的最小值为10．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例9．（2013•浙江）在公差为d的等差数列{\ensuremath{a_{n}}}中，已知\ensuremath{a_{1}}=10，且\ensuremath{a_{1}}，2\ensuremath{a_{2}}+2，5\ensuremath{a_{3}}成等比数列．\par
+（Ⅰ）求d，\ensuremath{a_{n}}；\par
+（Ⅱ）若d<0，求|\ensuremath{a_{1}}|+|\ensuremath{a_{2}}|+|\ensuremath{a_{3}}|+\ldots{}+|\ensuremath{a_{n}}|．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）由题意得\FormulaOCR{image604.png}{5a_3a_1=(2a_2+2)^2}，即\FormulaOCR{image605.png}{5(a_1+2d)a_1=(2a_1+2d+2)^2}，整理得\ensuremath{d^{2}}-3d-4=0．解得d=-1或d=4．\par
+当d=-1时，\ensuremath{a_{n}}=\ensuremath{a_{1}}+（n-1）d=10-（n-1）=-n+11．\par
+当d=4时，\ensuremath{a_{n}}=\ensuremath{a_{1}}+（n-1）d=10+4（n-1）=4n+6．\par
+所以\ensuremath{a_{n}}=-n+11或\ensuremath{a_{n}}=4n+6；\par
+（Ⅱ）设数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，因为d<0，由（Ⅰ）得d=-1，\ensuremath{a_{n}}=-n+11．\par
+则当n\ensuremath{\le}11时，\FormulaOCR{image606.png}{|a_1|+|a_2|+\cdots+|a_n|=S_n=-\frac12n^2+\frac{21}{2}n}．\par
+当n\ensuremath{\ge}12时，|\ensuremath{a_{1}}|+|\ensuremath{a_{2}}|+|\ensuremath{a_{3}}|+\ldots{}+|\ensuremath{a_{n}}|=-\ensuremath{S_{n}}+2\ensuremath{S_{11}}=\FormulaOCR{image607.png}{\frac12n^2-\frac{21}{2}n+110}．\par
+综上所述，\par
+|\ensuremath{a_{1}}|+|\ensuremath{a_{2}}|+|\ensuremath{a_{3}}|+\ldots{}+|\ensuremath{a_{n}}|=\FormulaOCR{image608.png}{\begin{cases}\frac12n^2+\frac{21}{2}n,&n\leq11,\\\frac12n^2-\frac{21}{2}n+110,&n\geq12.\end{cases}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+2．（2026•山东）一百零八塔位于宁夏回族自治区青铜峡市，以其独特的建筑格局和深远的历史文化闻名遐迩．该塔群共有108座塔，依山势自上而下排成12行，将第\FormulaOCR{image609.wmf}{i}行中塔的座数记为\FormulaOCR{image610.wmf}{a_{ i }  (i=1}，2，\FormulaOCR{image611.wmf}{\ldots}，\FormulaOCR{image612.wmf}{12)}，其中\FormulaOCR{image613.wmf}{a_{ 1 }  =1}，\FormulaOCR{image614.wmf}{a_{ 2 }  =a_{ 3 }  =3}，\FormulaOCR{image615.wmf}{a_{ 4 }  =a_{ 5 }  =5}，且\FormulaOCR{image616.wmf}{a_{ 6 }}，\FormulaOCR{image617.wmf}{a_{ 7 }}，\FormulaOCR{image618.wmf}{\ldots}，\FormulaOCR{image619.wmf}{a_{ 12 }}是一个首项为7，公差为2的等差数列．将\FormulaOCR{image620.wmf}{a_{ 1 }}，\FormulaOCR{image621.wmf}{a_{ 2 }}，\FormulaOCR{image622.wmf}{\ldots}，\FormulaOCR{image623.wmf}{a_{ 12 }}分为6组，每组2个数，使得每组的2个数之和可构成一个项数为6且公差为\FormulaOCR{image624.wmf}{d(d>0)}的等差数列，则\FormulaOCR{image625.wmf}{d=}（　　）\par
+\qquad{}\qquad{}\qquad{}A．2\qquad{}B．4\qquad{}C．6\qquad{}D．8\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：由题可知，\FormulaOCR{image626.wmf}{\sum  \limits_{ i=1 } ^ 12 { a_{ i }   }=1+3+3+5+5+7\times 7+\frac { 7\times 6 } { 2 }\times 2=108}，\par
+设每组的2个数之和可构成的等差数列为\FormulaOCR{image627.wmf}{\{b_{ n }  \}}，前\FormulaOCR{image628.wmf}{n}项和为\FormulaOCR{image629.wmf}{S_{ n }}，\par
+因为\FormulaOCR{image630.wmf}{S_{ 6 }  =108}，\par
+所以\FormulaOCR{image631.wmf}{b_{ 1 }  +b_{ 6 }  =b_{ 2 }  +b_{ 5 }  =b_{ 3 }  +b_{ 4 }  =108÷3=36}，所以\FormulaOCR{image632.wmf}{2b_{ 1 }  +5d=36}，所以\FormulaOCR{image633.wmf}{d}为偶数，所以\FormulaOCR{image634.wmf}{b_{ 1 }  =18-\frac { 5 } { 2 }d}，\par
+因为\FormulaOCR{image635.wmf}{a_{ i }}为奇数，所以\FormulaOCR{image636.wmf}{b_{ n }}为偶数，所以\FormulaOCR{image637.wmf}{d}是4的倍数，因为\FormulaOCR{image638.wmf}{b_{ 1 }  >0}，所以\FormulaOCR{image639.wmf}{d < \frac { 36 } { 5 } < 8}，\par
+所以\FormulaOCR{image640.wmf}{d=4}．故选：\FormulaOCR{image641.wmf}{B}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+12．（2023•甲卷）已知正项等比数列\FormulaOCR{image642.wmf}{\{a_{ n }  \}}中，\FormulaOCR{image643.wmf}{a_{ 1 }  =1}，\FormulaOCR{image644.wmf}{S_{ n }}为\FormulaOCR{image645.wmf}{\{a_{ n }  \}}前\FormulaOCR{image646.wmf}{n}项和，\FormulaOCR{image647.wmf}{S_{ 5 }  =5S_{ 3 }  -4}，则\FormulaOCR{image648.wmf}{S_{ 4 }  =}（　　）\par
+\qquad{}\qquad{}\qquad{}A．7\qquad{}B．9\qquad{}C．15\qquad{}D．30\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：等比数列\FormulaOCR{image649.wmf}{\{a_{ n }  \}}中，设公比为\FormulaOCR{image650.wmf}{q}，\par
+\FormulaOCR{image651.wmf}{a_{ 1 }  =1}，\FormulaOCR{image652.wmf}{S_{ n }}为\FormulaOCR{image653.wmf}{\{a_{ n }  \}}前\FormulaOCR{image654.wmf}{n}项和，\FormulaOCR{image655.wmf}{S_{ 5 }  =5S_{ 3 }  -4}，显然\FormulaOCR{image656.wmf}{q\ne 1}，\par
+（如果\FormulaOCR{image657.wmf}{q=1}，可得\FormulaOCR{image658.wmf}{5=15-4}矛盾），\par
+可得\FormulaOCR{image659.wmf}{\frac { 1-q ^ { 5 }  } { 1-q }=5\cdot \frac { 1-q ^ { 3 }  } { 1-q }-4}，\par
+解得\FormulaOCR{image660.wmf}{q ^ { 2 } =4}，即\FormulaOCR{image661.wmf}{q=2}，\par
+\FormulaOCR{image662.wmf}{S_{ 4 }  =\frac { 1-q ^ { 4 }  } { 1-q }=\frac { 1-16 } { 1-2 }=15}．\par
+故选：\FormulaOCR{image663.wmf}{C}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+13．（2023•新高考Ⅱ）记\FormulaOCR{image495.wmf}{S_{ n }}为等比数列\FormulaOCR{image496.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image497.wmf}{n}项和，若\FormulaOCR{image498.wmf}{S_{ 4 }  =-5}，\FormulaOCR{image499.wmf}{S_{ 6 }  =21S_{ 2 }}，则\FormulaOCR{image500.wmf}{S_{ 8 }  =}（　　）\par
+\qquad{}\qquad{}\qquad{}A．120\qquad{}B．85\qquad{}C．\FormulaOCR{image501.wmf}{-85}\qquad{}D．\FormulaOCR{image502.wmf}{-120}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：等比数列\FormulaOCR{image503.wmf}{\{a_{ n }  \}}中，\FormulaOCR{image504.wmf}{S_{ 4 }  =-5}，\FormulaOCR{image505.wmf}{S_{ 6 }  =21S_{ 2 }}，显然公比\FormulaOCR{image506.wmf}{q\ne 1}，\par
+设首项为\FormulaOCR{image507.wmf}{a_{ 1 }}，则\FormulaOCR{image508.wmf}{\frac { a_{ 1 }  (1-q ^ { 4 } ) } { 1-q }=-5}①，\FormulaOCR{image509.wmf}{\frac { a_{ 1 }  (1-q ^ { 6 } ) } { 1-q }=\frac { 21a_{ 1 }  (1-q ^ { 2 } ) } { 1-q }}②，\par
+化简②得\FormulaOCR{image510.wmf}{1-q ^ { 6 } =(1-q ^ { 2 } )(1+q ^ { 2 } +q ^ { 4 } )=21(1-q ^ { 2 } )}，\par
+即\FormulaOCR{image511.wmf}{q ^ { 4 } +q ^ { 2 } -20=0}，解得\FormulaOCR{image512.wmf}{q ^ { 2 } =4}或\FormulaOCR{image513.wmf}{q ^ { 2 } =-5}（不合题意，舍去），\par
+代入①得\FormulaOCR{image514.wmf}{\frac { a_{ 1 }   } { 1-q }=\frac { 1 } { 3 }}，\par
+所以\FormulaOCR{image515.wmf}{S_{ 8 }  =\frac { a_{ 1 }  (1-q ^ { 8 } ) } { 1-q }=\frac { a_{ 1 }   } { 1-q }(1-q ^ { 4 } )(1+q ^ { 4 } )=\frac { 1 } { 3 }\times (-15)\times (1+16)=-85}．\par
+故选：\FormulaOCR{image516.wmf}{C}．\par
+\par\endgroup\fi
+
+\par\medskip\noindent{\zihao{4}\bfseries 裂项求和}\par
+这是分解与组合思想在数列求和中的具体应用. 裂项法的实质是将数列中的每项（通项）分解，然后重新组合，使之能消去一些项，最终达到求和的目的. 通项分解（裂项）如：\par
+（1）\FormulaOCR{image664.wmf}{a_n=f(n+1)-f(n)}       （2）\FormulaOCR{image665.wmf}{a_n=\frac{1}{n(n+1)}=\frac{1}{n}-\frac{1}{n+1}}\par
+（3）\FormulaOCR{image666.png}{c_n=\frac{\sqrt{n+1}-\sqrt n}{\sqrt{n(n+1)}}}=\FormulaOCR{image667.png}{\frac{1}{\sqrt n}-\frac{1}{\sqrt{n+1}}} （4）\ensuremath{c_{n}}=\FormulaOCR{image668.png}{\frac{1}{(2n+1)(2n+3)}}=\FormulaOCR{image669.png}{\frac{1}{2}}（\FormulaOCR{image670.png}{\frac{1}{2n+1}}-\FormulaOCR{image671.png}{\frac{1}{2n+3}}）\par
+（5）\FormulaOCR{image672.png}{b_n=\frac1{a_{n+1}^2}=\frac1{(2n+1)^2}}\FormulaOCR{image673.png}{<\frac{1}{4n^2+4n}}=\FormulaOCR{image674.png}{\frac{1}{4}\left(\frac{1}{n}-\frac{1}{n+1}\right)}\par
+（6）\FormulaOCR{image675.png}{c_n=\frac{2}{n(n+2)}}=\FormulaOCR{image676.png}{\frac{1}{n}-\frac{1}{n+2}}，\par
+\ensuremath{\therefore}\ensuremath{T_{n}}=\FormulaOCR{image677.png}{\left(1-\frac13\right)+\left(\frac12-\frac14\right)+\cdots+\left(\frac1n-\frac1{n+2}\right)}\par
+=1+\FormulaOCR{image678.png}{\frac{1}{2}}-\FormulaOCR{image679.png}{\frac{1}{n+1}}-\FormulaOCR{image680.png}{\frac{1}{n+2}}=\FormulaOCR{image681.png}{\frac32-\frac{2n+3}{(n+1)(n+2)}=\frac{n(3n+5)}{2(n+1)(n+2)}}．\par
+（7）\FormulaOCR{image682.png}{\frac{2\cdot3^n}{a_na_{n+1}}}=\FormulaOCR{image683.png}{\frac{2\cdot3^n}{(3^n-1)(3^{n+1}-1)}}=\FormulaOCR{image684.png}{\frac{1}{3^{n}-1}}-\FormulaOCR{image685.png}{\frac{1}{3^{n+1}-1}}．\par
+（8）\ensuremath{b_{n}}=\FormulaOCR{image686.png}{\frac1{a_n\sqrt{a_{n+1}}+a_{n+1}\sqrt{a_n}}}=\FormulaOCR{image687.png}{\frac1{n\sqrt{n+1}+(n+1)\sqrt n}}=\FormulaOCR{image688.png}{\frac{\sqrt n}{n}-\frac{\sqrt{n+1}}{n+1}}，\par
+\ensuremath{\therefore}{\ensuremath{b_{n}}}的前n项和为\ensuremath{T_{n}}=\FormulaOCR{image689.png}{1-\frac{\sqrt2}{2}}+\FormulaOCR{image690.png}{\frac{\sqrt2}{2}-\frac{\sqrt3}{3}}+\ldots{}+\FormulaOCR{image691.png}{\left(\frac{\sqrt n}{n}-\frac{\sqrt{n+1}}{n+1}\right)}=\FormulaOCR{image692.png}{1-\frac{\sqrt{n+1}}{n+1}}，\par
+(9) \FormulaOCR{image693.wmf}{\log_a\left(1+\frac1n\right)=\log_a(n+1)-\log_a n}\par
+(10) \FormulaOCR{image694.wmf}{a_n=\frac{n+1}{n^2(n+2)^2}=\frac14\left(\frac1{n^2}-\frac1{(n+2)^2}\right)}\par
+(11). \FormulaOCR{image695.wmf}{a_n=\frac{n+2}{n(n+1)2^n}=\frac{2(n+1)-n}{n(n+1)2^n}}\par
+\FormulaOCR{image696.wmf}{=\frac1{n2^{n-1}}-\frac1{(n+1)2^n}}\par
+则：\FormulaOCR{image697.wmf}{S_n=1-\frac1{(n+1)2^n}}\par
+（12）. \FormulaOCR{image698.wmf}{a_n=\frac1{n(n+1)(n+2)}=\frac12\left[\frac1{n(n+1)}-\frac1{(n+1)(n+2)}\right]}\par
+（13）\FormulaOCR{image699.wmf}{a_n=\frac{(2n)^2}{(2n-1)(2n+1)}=1+\frac12\left(\frac1{2n-1}-\frac1{2n+1}\right)}\par
+(14) \FormulaOCR{image700.wmf}{a_n=\frac1{(An+B)(An+C)}=\frac1{C-B}\left(\frac1{An+B}-\frac1{An+C}\right)}\par
+\Needspace{6\baselineskip}
+例1．（2017•全国）设数列{\ensuremath{b_{n}}}的各项都为正数，且\FormulaOCR{image701.png}{b_{n+1}=\frac{b_n}{b_n+1}}．\par
+（1）证明数列\FormulaOCR{image702.png}{\left\{\frac1{b_n}\right\}}为等差数列；\par
+（2）设\ensuremath{b_{1}}=1，求数列{\ensuremath{b_{n}}\ensuremath{b_{n+1}}}的前n项和\ensuremath{S_{n}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）证明：数列{\ensuremath{b_{n}}}的各项都为正数，且\FormulaOCR{image701.png}{b_{n+1}=\frac{b_n}{b_n+1}}，\par
+两边取倒数得\FormulaOCR{image703.png}{\frac1{b_{n+1}}=\frac{b_n+1}{b_n}=1+\frac1{b_n}}，\par
+故数列\FormulaOCR{image704.png}{({\frac{1}{\mathrm{b}_{\mathrm{n}}}})}为等差数列，其公差为1，首项为\FormulaOCR{image705.png}{\frac1{b_1}}；\par
+（2）由（1）得，\FormulaOCR{image706.png}{\frac1{b_1}=1}，\FormulaOCR{image707.png}{\frac1{b_n}=\frac1{b_1}+(n-1)=n}，\par
+故\FormulaOCR{image708.png}{\mathbf{b}_{n}{\frac{1}{n}}}，所以\FormulaOCR{image709.png}{b_nb_{n+1}=\frac1{n(n+1)}=\frac1n-\frac1{n+1}}，\par
+因此\FormulaOCR{image710.png}{S_n=1-\frac12+\frac12-\frac13+\cdots+\frac1n-\frac1{n+1}=\frac{n}{n+1}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例2．（2017•新课标Ⅲ）设数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}+3\ensuremath{a_{2}}+\ldots{}+（2n-1）\ensuremath{a_{n}}=2n．\par
+（1）求{\ensuremath{a_{n}}}的通项公式；\par
+（2）求数列{\FormulaOCR{image711.png}{\frac{a_n}{2n+1}}}的前n项和．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}+3\ensuremath{a_{2}}+\ldots{}+（2n-1）\ensuremath{a_{n}}=2n．\par
+n\ensuremath{\ge}2时，\ensuremath{a_{1}}+3\ensuremath{a_{2}}+\ldots{}+（2n-3）\ensuremath{a_{n-1}}=2（n-1）．\par
+\ensuremath{\therefore}（2n-1）\ensuremath{a_{n}}=2．\ensuremath{\therefore}\ensuremath{a_{n}}=\FormulaOCR{image712.png}{\frac{2}{2n-1}}．\par
+当n=1时，\ensuremath{a_{1}}=2，上式也成立．\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=\FormulaOCR{image712.png}{\frac{2}{2n-1}}．\par
+（2）\FormulaOCR{image713.png}{\frac{a_n}{2n+1}}=\FormulaOCR{image714.png}{\frac{2}{(2n-1)\left(2n+1\right)}}=\FormulaOCR{image715.png}{\frac{1}{2n-1}}-\FormulaOCR{image716.png}{\frac{1}{2^{n+1}}}．\par
+\ensuremath{\therefore}数列{\FormulaOCR{image713.png}{\frac{a_n}{2n+1}}}的前n项和=\FormulaOCR{image717.png}{(1{\frac{1}{3}})}+\FormulaOCR{image718.png}{({\frac{1}{3}},{\frac{1}{5}})}+\ldots{}+\FormulaOCR{image719.png}{({\frac{1}{2n-1}}-{\frac{1}{2n+1}})}=1-\FormulaOCR{image716.png}{\frac{1}{2^{n+1}}}=\FormulaOCR{image720.png}{\frac{2n}{2n!}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例3．（2013•新课标Ⅰ）已知等差数列{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}满足\ensuremath{S_{3}}=0，\ensuremath{S_{5}}=-5．\par
+（Ⅰ）求{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）求数列{\FormulaOCR{image721.png}{\frac1{a_{2n-1}a_{2n+1}}}}的前n项和．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）设数列{\ensuremath{a_{n}}}的首项为\ensuremath{a_{1}}，公差为d，则\FormulaOCR{image722.png}{S_n=na_1+\frac{n(n-1)d}{2}}．\par
+由已知可得\FormulaOCR{image723.png}{\begin{cases}3a_1+3d=0,\\5a_1+\dfrac{5(5-1)}2d=-5,\end{cases}}，即\FormulaOCR{image724.png}{\binom{a_{1}+4k=0}{a_{1}+2k\pi-1}}，解得\ensuremath{a_{1}}=1，d=-1，\par
+故{\ensuremath{a_{n}}}的通项公式为\ensuremath{a_{n}}=\ensuremath{a_{1}}+（n-1）d=1+（n-1）•（-1）=2-n；\par
+（Ⅱ）由（Ⅰ）知\FormulaOCR{image725.png}{\frac1{a_{2n-1}a_{2n+1}}=\frac1{(3-2n)(1-2n)}=\frac12\left(\frac1{2n-3}-\frac1{2n-1}\right)}．\par
+从而数列{\FormulaOCR{image726.png}{\frac1{a_{2n-1}a_{2n+1}}}}的前n项和\par
+\ensuremath{S_{n}}=\FormulaOCR{image727.png}{\frac12\left[\left(\frac1{-1}-1\right)+\left(1-\frac13\right)+\cdots+\left(\frac1{2n-3}-\frac1{2n-1}\right)\right]}\par
+=\FormulaOCR{image728.png}{\frac12\left(-1-\frac1{2n-1}\right)=\frac{n}{1-2n}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例4．（2013•全国）数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=-1，且\ensuremath{a_{n+1}}=2\ensuremath{a_{n}}+3．\par
+（Ⅰ）证明{\ensuremath{a_{n}}+3}是等比数列；\par
+（Ⅱ）设\FormulaOCR{image729.png}{b_n=\frac1{\log_2(a_n+3)\log_2(a_{n+1}+3)}}，求数列{\ensuremath{b_{n}}}的前n项和\ensuremath{S_{n}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）证明：\ensuremath{a_{1}}=-1，且\ensuremath{a_{n+1}}=2\ensuremath{a_{n}}+3，\par
+可得\ensuremath{a_{n+1}}+3=2（\ensuremath{a_{n}}+3），\par
+即有{\ensuremath{a_{n}}+3}是首项为2，公比为2的等比数列；\par
+（Ⅱ）由（Ⅰ）可得\ensuremath{a_{n}}+3=\ensuremath{2^{n}}，\par
+\FormulaOCR{image729.png}{b_n=\frac1{\log_2(a_n+3)\log_2(a_{n+1}+3)}}\par
+=\FormulaOCR{image730.png}{\frac1{\log_2 2^n\log_2 2^{n+1}}}=\FormulaOCR{image731.png}{\frac{1}{n\left(n+1\right)}}=\FormulaOCR{image732.png}{\frac{1}{\mathbf{n}}}-\FormulaOCR{image733.png}{\frac{1}{n+1}}，\par
+则前n项和\ensuremath{S_{n}}=1-\FormulaOCR{image734.png}{\frac12}+\FormulaOCR{image735.png}{\frac12}-\FormulaOCR{image736.png}{\frac{1}{3}}+\ldots{}+\FormulaOCR{image737.png}{\frac{1}{\mathbf{n}}}-\FormulaOCR{image738.png}{\frac{1}{n+1}}\par
+=1-\FormulaOCR{image738.png}{\frac{1}{n+1}}=\FormulaOCR{image739.png}{\textstyle{\frac{n}{n+1}}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例5．（2015•安徽）已知数列{\ensuremath{a_{n}}}是递增的等比数列，且\ensuremath{a_{1}}+\ensuremath{a_{4}}=9，\ensuremath{a_{2}}\ensuremath{a_{3}}=8．\par
+（1）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（2）设\ensuremath{S_{n}}为数列{\ensuremath{a_{n}}}的前n项和，\ensuremath{b_{n}}=\FormulaOCR{image740.png}{\frac{a_{n+1}}{S_nS_{n+1}}}，求数列{\ensuremath{b_{n}}}的前n项和\ensuremath{T_{n}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）\ensuremath{\because}数列{\ensuremath{a_{n}}}是递增的等比数列，且\ensuremath{a_{1}}+\ensuremath{a_{4}}=9，\ensuremath{a_{2}}\ensuremath{a_{3}}=8．\par
+\ensuremath{\therefore}\ensuremath{a_{1}}+\ensuremath{a_{4}}=9，\ensuremath{a_{1}}\ensuremath{a_{4}}=\ensuremath{a_{2}}\ensuremath{a_{3}}=8．\par
+解得\ensuremath{a_{1}}=1，\ensuremath{a_{4}}=8或\ensuremath{a_{1}}=8，\ensuremath{a_{4}}=1（舍），\par
+解得q=2，即数列{\ensuremath{a_{n}}}的通项公式\ensuremath{a_{n}}=\ensuremath{2^{n-1}}；\par
+（2）\ensuremath{S_{n}}=\FormulaOCR{image741.png}{\frac{a_1(1-q^n)}{1-q}}=\ensuremath{2^{n}}-1，\par
+\ensuremath{\therefore}\ensuremath{b_{n}}=\FormulaOCR{image740.png}{\frac{a_{n+1}}{S_nS_{n+1}}}=\FormulaOCR{image742.png}{\frac{S_{n+1}-S_n}{S_nS_{n+1}}}=\FormulaOCR{image743.png}{\frac1{S_n}}-\FormulaOCR{image744.png}{\frac1{S_{n+1}}}，\par
+\ensuremath{\therefore}数列{\ensuremath{b_{n}}}的前n项和\ensuremath{T_{n}}=\FormulaOCR{image745.png}{\frac1{S_1}}\FormulaOCR{image746.png}{-\frac1{S_2}+\frac1{S_2}-\frac1{S_3}}+\ldots{}+\FormulaOCR{image747.png}{\frac1{S_n}}-\FormulaOCR{image748.png}{\frac1{S_{n+1}}}=\FormulaOCR{image749.png}{\frac1{S_1}}-\par
+=1-\FormulaOCR{image750.png}{\frac{1}{2^{n+1}-1}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例6．（2013•广东）设数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，已知\ensuremath{a_{1}}=1，\FormulaOCR{image751.png}{\frac{2S_n}{n}=a_{n+1}-\frac13n^2-n-\frac23}，n\ensuremath{\in}\ensuremath{N^{*}}．（1）求\ensuremath{a_{2}}的值；\par
+（2）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（3）证明：对一切正整数n，有\FormulaOCR{image752.png}{\frac1{a_1}+\frac1{a_2}+\cdots+\frac1{a_n}<\frac74}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）当n=1时，\FormulaOCR{image753.png}{\frac{2S_1}{1}=2a_1=a_2-\frac13-1-\frac23}，解得\ensuremath{a_{2}}=4\par
+（2）\FormulaOCR{image754.png}{2S_n=na_{n+1}-\frac13n^3-n^2-\frac23n}①\par
+当n\ensuremath{\ge}2时，\FormulaOCR{image755.png}{2S_{n-1}=(n-1)a_n-\frac13(n-1)^3-(n-1)^2-\frac23(n-1)}②\par
+①-②得\FormulaOCR{image756.png}{2a_n=na_{n+1}-(n-1)a_n-n^2-n}\par
+整理得n\ensuremath{a_{n+1}}=（n+1）\ensuremath{a_{n}}+n（n+1），即\FormulaOCR{image757.png}{\frac{a_{n+1}}{n+1}=\frac{a_n}{n}+1}，\FormulaOCR{image758.png}{\frac{a_{n+1}}{n+1}-\frac{a_n}{n}=1}\par
+当n=1时，\FormulaOCR{image759.png}{\frac{a_2}{2}-\frac{a_1}{1}=2-1=1}\par
+所以数列{\FormulaOCR{image760.png}{\scriptstyle{\frac{3}{\mathrm{n}}}}}是以1为首项，1为公差的等差数列\par
+所以\FormulaOCR{image761.png}{\frac{a_n}{n}=n}，即\FormulaOCR{image762.png}{a_n=n^2}\par
+所以数列{\ensuremath{a_{n}}}的通项公式为\FormulaOCR{image762.png}{a_n=n^2}，n\ensuremath{\in}\ensuremath{N^{*}}\par
+（3）因为\FormulaOCR{image763.png}{\frac1{a_n}=\frac1{n^2}<\frac1{(n-1)n}=\frac1{n-1}-\frac1n}（n\ensuremath{\ge}2）\par
+所以\FormulaOCR{image764.png}{\frac1{a_1}+\cdots+\frac1{a_n}=1+\frac1{2^2}+\cdots+\frac1{n^2}<1+\frac14+\left(\frac12-\frac13\right)+\cdots+\left(\frac1{n-1}-\frac1n\right)}=\FormulaOCR{image765.png}{1+\frac14+\frac12-\frac1n=\frac74-\frac1n<\frac74}．\par
+当n=1，2时，也成立．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例7（2017•河南模拟）已知数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，且\ensuremath{a_{2}}=8，\ensuremath{S_{n}}=\FormulaOCR{image766.png}{\frac{a_{n+1}}{2}}-n-1．\par
+（Ⅰ）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）求数列{\FormulaOCR{image682.png}{\frac{2\cdot3^n}{a_na_{n+1}}}}的前n项和\ensuremath{T_{n}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（I）\ensuremath{\because}\ensuremath{a_{2}}=8，\ensuremath{S_{n}}=\FormulaOCR{image767.png}{\frac{a_{n+1}}{2}}-n-1．\par
+可得\ensuremath{a_{1}}=\ensuremath{S_{1}}=\FormulaOCR{image768.png}{\textstyle{\frac{32}{2}}}-2=2，\par
+\ensuremath{\therefore}n\ensuremath{\ge}2时，\ensuremath{a_{n}}=\ensuremath{S_{n}}-\ensuremath{S_{n-1}}=\FormulaOCR{image767.png}{\frac{a_{n+1}}{2}}-n-1-\FormulaOCR{image769.png}{({\frac{\mathbf{a}_{\mathbf{n}}}{2}},\mathbf{n})}，化为：\ensuremath{a_{n+1}}=3\ensuremath{a_{n}}+2，\par
+\ensuremath{\therefore}\ensuremath{a_{n+1}}+1=3（\ensuremath{a_{n}}+1），\ensuremath{\therefore}数列{\ensuremath{a_{n}}+1}是等比数列，第二项为9，公比为3．\par
+\ensuremath{\therefore}\ensuremath{a_{n}}+1=9\ensuremath{\times}\ensuremath{3^{n-2}}=\ensuremath{3^{n}}．对n=1也成立．\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=\ensuremath{3^{n}}-1．\par
+（II）\FormulaOCR{image770.png}{\frac{2\times3^{n}}{\mathrm{a_{n}a_{n+1}}}}=\FormulaOCR{image771.png}{\frac{2\cdot3^n}{(3^n-1)(3^{n+1}-1)}}=\FormulaOCR{image772.png}{\frac{1}{3^{n}-1}}-\FormulaOCR{image773.png}{\frac{1}{3^{n+1}-1}}．\par
+\ensuremath{\therefore}数列{\FormulaOCR{image774.png}{\frac{2\times3^{n}}{\mathrm{a_{n}a_{n+1}}}}}的\par
+前n项和\ensuremath{T_{n}}=\FormulaOCR{image775.png}{({\frac{1}{3-1}}-{\frac{1}{3^{2}-1}})}+\FormulaOCR{image776.png}{(\frac{1}{3^{2}-1}\frac{1}{3^{3}-1})}+\ldots{}+\FormulaOCR{image777.png}{(\frac{1}{3^{n}-1}\frac{1}{3^{n+1}-1})}\par
+=\FormulaOCR{image778.png}{\frac12}-\FormulaOCR{image779.png}{\frac{1}{3^{n+1}-1}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例8．（2013•江西）正项数列{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}满足：\ensuremath{S_{n}^{2}}\FormulaOCR{image780.png}{-(n^2+n-1)S_n-(n^2+n)=0}\par
+（1）求数列{\ensuremath{a_{n}}}的通项公式\ensuremath{a_{n}}；\par
+（2）令b\FormulaOCR{image781.png}{b_n=\frac{n+1}{(n+2)^2a_n^2}}，数列{\ensuremath{b_{n}}}的前n项和为\ensuremath{T_{n}}．证明：对于任意n\ensuremath{\in}\ensuremath{N^{*}}，都有T\FormulaOCR{image782.png}{T_n<\frac5{64}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（I）由\ensuremath{S_{n}^{2}}\FormulaOCR{image783.png}{-(n^2+n-1)S_n-(n^2+n)=0}\par
+可得，[\FormulaOCR{image784.png}{{\sf S}_{n}{\sf-}({\bf n}^{2}{\sf+}_{\sf n})}]（\ensuremath{S_{n}}+1）=0\par
+\ensuremath{\because}正项数列{\ensuremath{a_{n}}}，\ensuremath{S_{n}}>0\par
+\ensuremath{\therefore}\ensuremath{S_{n}}=\ensuremath{n^{2}}+n\par
+于是\ensuremath{a_{1}}=\ensuremath{S_{1}}=2\par
+n\ensuremath{\ge}2时，\ensuremath{a_{n}}=\ensuremath{S_{n}}-\ensuremath{S_{n-1}}=\ensuremath{n^{2}}+n-\ensuremath{(n-1)^{2}}-（n-1）=2n，而n=1时也适合\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=2n\par
+（II）证明：由b\FormulaOCR{image785.png}{b_n=\frac{n+1}{(n+2)^2a_n^2}}=\FormulaOCR{image786.png}{\frac{n+1}{4n^2(n+2)^2}}=\FormulaOCR{image787.png}{\frac1{16}\left(\frac1{n^2}-\frac1{(n+2)^2}\right)}\par
+\ensuremath{\therefore}\FormulaOCR{image788.png}{T_n=\frac1{16}\bigl[\left(1-\frac1{3^2}\right)+\left(\frac1{2^2}-\frac1{4^2}\right)+\cdots}\FormulaOCR{image789.png}{\frac1{(n-1)^2}-\frac1{(n+1)^2}+\frac1{n^2}-\frac1{(n+2)^2}}]\par
+=\FormulaOCR{image790.png}{\frac1{16}\left(1+\frac14-\frac1{(n+1)^2}-\frac1{(n+2)^2}\right)}\par
+\FormulaOCR{image791.png}{<\frac1{16}\left(1+\frac14\right)=\frac5{64}}\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例9．（2014•广东）设各项均为正数的数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}满足\ensuremath{S_{n}^{2}}-（\ensuremath{n^{2}}+n-3）\ensuremath{S_{n}}-3（\ensuremath{n^{2}}+n）=0，n\ensuremath{\in}\ensuremath{N^{*}}．\par
+（1）求\ensuremath{a_{1}}的值；\par
+（2）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（3）证明：对一切正整数n，有\FormulaOCR{image792.png}{\frac1{a_1(a_1+1)}}+\FormulaOCR{image793.png}{\frac1{a_2(a_2+1)}}+\ldots{}+\FormulaOCR{image794.png}{\frac{1}{\mathbf{a_{n}}\left(\mathbf{a_{n}}+1\right)}}<\FormulaOCR{image795.png}{\frac{1}{3}}．\par
+\QuestionSpace{6.0cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）令n=1得：\FormulaOCR{image796.png}{S_{1}^{2}-\left(-1\right)\,S_{1}-3\times2=0}，即\FormulaOCR{image797.png}{S_1^2+S_1-6=0}．\par
+\ensuremath{\therefore}（\ensuremath{S_{1}}+3）（\ensuremath{S_{1}}-2）=0．\par
+\ensuremath{\because}\ensuremath{S_{1}}>0，\ensuremath{\therefore}\ensuremath{S_{1}}=2，即\ensuremath{a_{1}}=2．\par
+（2）由\FormulaOCR{image798.png}{S_n^2-(n^2+n-3)S_n-3(n^2+n)=0}得：\par
+\FormulaOCR{image799.png}{(S_n+3)\bigl[S_n-(n^2+n)\bigr]=0}．\par
+\ensuremath{\because}\ensuremath{a_{n>0}}（n\ensuremath{\in}\ensuremath{N^{*}}），\par
+\ensuremath{\therefore}\ensuremath{S_{n}}>0．\par
+\ensuremath{\therefore}\FormulaOCR{image800.png}{{S}_{n}{=}\mathbf{n}^{2}+\mathbf{n}}．\par
+\ensuremath{\therefore}当n\ensuremath{\ge}2时，\FormulaOCR{image801.png}{a_n=S_n-S_{n-1}=(n^2+n)-[(n-1)^2+(n-1)]=2n}，\par
+又\ensuremath{\because}\ensuremath{a_{1}}=2=2\ensuremath{\times}1，\par
+\ensuremath{\therefore}\FormulaOCR{image802.png}{a_n=2n\quad(n\in N^*)}．\par
+（3）由（2）可知\FormulaOCR{image803.png}{\frac{1}{\mathbf{a_{n}}\left(\mathbf{a_{n}}+1\right)}}=\FormulaOCR{image804.png}{\frac{1}{2n(2n+1)}}，\par
+\ensuremath{\forall}n\ensuremath{\in}\ensuremath{N^{*}}，\FormulaOCR{image803.png}{\frac{1}{\mathbf{a_{n}}\left(\mathbf{a_{n}}+1\right)}}=\FormulaOCR{image804.png}{\frac{1}{2n(2n+1)}}<\FormulaOCR{image805.png}{\frac{1}{(2n-1)\,(2n+1)}}=\FormulaOCR{image806.png}{\frac12}（\FormulaOCR{image807.png}{\frac1{2n-1}-\frac1{2n+1}}），\par
+当n=1时，显然有\FormulaOCR{image808.png}{\frac1{a_1(a_1+1)}}=\FormulaOCR{image809.png}{\frac{1}{6}}<\FormulaOCR{image810.png}{\frac{1}{3}}；\par
+当n\ensuremath{\ge}2时，\FormulaOCR{image811.png}{\frac1{a_1(a_1+1)}+\frac1{a_2(a_2+1)}+\cdots+\frac1{a_n(a_n+1)}}\par
+\[\sum_{k=1}^{n}\frac1{a_k(a_k+1)}<\frac16+\frac12\left(\frac13-\frac1{2n+1}\right)=\frac13-\frac1{2(2n+1)}<\frac13.\]\par
+所以，对一切正整数n，有\FormulaOCR{image817.png}{\frac1{a_1(a_1+1)}+\frac1{a_2(a_2+1)}+\cdots+\frac1{a_n(a_n+1)}}\FormulaOCR{image818.png}{<_{\frac{1}{3}}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例10（2017·郑州二模）已知数列 $\{a_n\}$ 的前 $n$ 项和为 $S_n$，$a_1=-2$，且 $S_n=\dfrac12a_{n+1}+n+1\ (n\in N^*)$。\par
+（Ⅰ）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）若 $b_n=\log_3(-a_n+1)$，求数列$\left\{\dfrac1{b_nb_{n+2}}\right\}$ 的前 $n$ 项和 $T_n$，并证明 $T_n<\dfrac34$。\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+【分析】（I）\ensuremath{S_{n}}=\FormulaOCR{image822.png}{\frac12}\ensuremath{a_{n+1}}+n+1（n\ensuremath{\in}\ensuremath{N^{*}}）．n\ensuremath{\ge}2时，\ensuremath{a_{n}}=\ensuremath{S_{n}}-\ensuremath{S_{n-1}}=\ensuremath{a_{n+1}}+n+1-\FormulaOCR{image823.png}{\left(\frac12a_n+n\right)}，化为：\ensuremath{a_{n+1}}=3\ensuremath{a_{n}}-2，可得：\ensuremath{a_{n+1}}-1=3（\ensuremath{a_{n}}-1），利用等比数列的通项公式即可得出．\par
+（II）\ensuremath{b_{n}}=\ensuremath{\log_{3}}（-\ensuremath{a_{n}}+1）=n，可得\FormulaOCR{image824.png}{\frac{1}{\mathrm{b_{n}b_{n+2}}}}=\FormulaOCR{image825.png}{\frac12\left(\frac1n-\frac1{n+2}\right)}．再利用“裂项求和”方法与数列的单调性即可证明．\par
+（I）解：\ensuremath{\because}\ensuremath{S_{n}}=\FormulaOCR{image826.png}{\frac12}\ensuremath{a_{n+1}}+n+1（n\ensuremath{\in}\ensuremath{N^{*}}）．\ensuremath{\therefore}n=1时，-2=\ensuremath{a_{2}}+2，解得\ensuremath{a_{2}}=-8．\par
+n\ensuremath{\ge}2时，\ensuremath{a_{n}}=\ensuremath{S_{n}}-\ensuremath{S_{n-1}}=\FormulaOCR{image826.png}{\frac12}\ensuremath{a_{n+1}}+n+1-\FormulaOCR{image827.png}{({\frac{1}{2}}\mathbf{a}_{\mathbf{n}}\mathbf{tn})}，\par
+化为：\ensuremath{a_{n+1}}=3\ensuremath{a_{n}}-2，可得：\ensuremath{a_{n+1}}-1=3（\ensuremath{a_{n}}-1），\par
+n=1时，\ensuremath{a_{2}}-1=3（\ensuremath{a_{1}}-1）=-9，\par
+\ensuremath{\therefore}数列{\ensuremath{a_{n}}-1}是等比数列，首项为-3，公比为3．\par
+\ensuremath{\therefore}\ensuremath{a_{n}}-1=-\ensuremath{3^{n}}，即\ensuremath{a_{n}}=1-\ensuremath{3^{n}}．\par
+（II）证明：\ensuremath{b_{n}}=\ensuremath{\log_{3}}（-\ensuremath{a_{n}}+1）=n，\par
+\ensuremath{\therefore}\FormulaOCR{image828.png}{\frac{1}{\mathrm{b_{n}b_{\,n+2}}}}=\FormulaOCR{image829.png}{\frac12\left(\frac1n-\frac1{n+2}\right)}．\par
+\ensuremath{\therefore}数列{\FormulaOCR{image830.png}{\frac{1}{\mathrm{b_{n}b_{\ n+2}}}}}\par
+前n项和为\ensuremath{T_{n}}=\FormulaOCR{image831.png}{\frac12\bigl[\left(1-\frac13\right)+\left(\frac12-\frac14\right)}+\FormulaOCR{image832.png}{({\frac{1}{3}},{\frac{1}{5}})}+\ldots{}+\FormulaOCR{image833.png}{({\frac{1}{\mathbf{n}-1}}{\frac{1}{\mathbf{n}+1}})}+\FormulaOCR{image834.png}{\textstyle{{\frac{1}{n}}{\frac{1}{n}}{\frac{1}{n+2}})!}}\par
+=\FormulaOCR{image835.png}{\frac12}\FormulaOCR{image836.png}{(1+{\frac{1}{2}}\,{\frac{1}{n+1}}\,{\frac{1}{n+2}})}<\FormulaOCR{image837.png}{\frac{3}{4}}．\par
+\ensuremath{\therefore}\ensuremath{T_{n}}<\FormulaOCR{image837.png}{\frac{3}{4}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例11．（2014•山东）已知等差数列{\ensuremath{a_{n}}}的公差为2，前n项和为\ensuremath{S_{n}}，且\ensuremath{S_{1}}，\ensuremath{S_{2}}，\ensuremath{S_{4}}成等比数列．\par
+（Ⅰ）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）令\ensuremath{b_{n}}=\ensuremath{(-1)^{n-1}}\FormulaOCR{image838.png}{\frac{4n}{a_na_{n+1}}}，求数列{\ensuremath{b_{n}}}的前n项和\ensuremath{T_{n}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）\ensuremath{\because}等差数列{\ensuremath{a_{n}}}的公差为2，前n项和为\ensuremath{S_{n}}，\par
+\ensuremath{\therefore}\ensuremath{S_{n}}=\FormulaOCR{image839.png}{na_1+\frac{n(n-1)d}{2}}=\ensuremath{n^{2}}-n+n\ensuremath{a_{1}}，\par
+\ensuremath{\because}\ensuremath{S_{1}}，\ensuremath{S_{2}}，\ensuremath{S_{4}}成等比数列，\par
+\ensuremath{\therefore}\FormulaOCR{image840.png}{S_{2}^{2}=S_{1}*S_{4}}，\par
+\ensuremath{\therefore}\FormulaOCR{image841.png}{(2^2-2+2a_1)^2=a_1(4^2-4+4a_1)}，化为\FormulaOCR{image842.png}{(1+a_1)^2=a_1(3+a_1)}，解得\ensuremath{a_{1}}=1．\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=\ensuremath{a_{1}}+（n-1）d=1+2（n-1）=2n-1．\par
+（Ⅱ）由（Ⅰ）可得$b_n=(-1)^{n-1}\dfrac{4n}{a_na_{n+1}}=(-1)^{n-1}\left(\dfrac1{2n-1}+\dfrac1{2n+1}\right)$。\par
+=\FormulaOCR{image844.png}{(-1)^{n-1}\cdot{\frac{4n}{(2n-1)\cdot(2n+1)}}}=\FormulaOCR{image845.png}{(-1)^{n-1}\left(\frac1{2n-1}+\frac1{2n+1}\right)}．\par
+\ensuremath{\therefore}\ensuremath{T_{n}}=\FormulaOCR{image846.png}{(1+{\frac{1}{3}})}-\FormulaOCR{image847.png}{({\frac{1}{3}}+{\frac{1}{5}})}+\FormulaOCR{image848.png}{({\frac{1}{5}}+{\frac{1}{7}})}+\ldots{}+\FormulaOCR{image845.png}{(-1)^{n-1}\left(\frac1{2n-1}+\frac1{2n+1}\right)}．\par
+当 $n$ 为偶数时，$T_n=1-\dfrac1{2n+1}=\dfrac{2n}{2n+1}$。\par
+当 $n$ 为奇数时，$T_n=1+\dfrac1{2n+1}=\dfrac{2n+2}{2n+1}$。\par
+\ensuremath{\therefore}\ensuremath{T_{n}}=\FormulaOCR{image863.png}{\begin{cases}\dfrac{2n}{2n+1},&n\text{为偶数},\\\dfrac{2n+2}{2n+1},&n\text{为奇数}.\end{cases}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例12．（2014•大纲版）等差数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，已知\ensuremath{a_{1}}=13，\ensuremath{a_{2}}为整数，且\ensuremath{S_{n}}\ensuremath{\le}\ensuremath{S_{4}}．\par
+（1）求{\ensuremath{a_{n}}}的通项公式；\par
+（2）设\ensuremath{b_{n}}=\FormulaOCR{image864.png}{\frac{1}{\mathrm{a_{n}a_{n+1}}}}，求数列{\ensuremath{b_{n}}}的前n项和\ensuremath{T_{n}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）在等差数列{\ensuremath{a_{n}}}中，由\ensuremath{S_{n}}\ensuremath{\le}\ensuremath{S_{4}}得：\par
+\ensuremath{a_{4}}\ensuremath{\ge}0，\ensuremath{a_{5}}\ensuremath{\le}0，\par
+又\ensuremath{\because}\ensuremath{a_{1}}=13，\par
+\ensuremath{\therefore}\FormulaOCR{image865.png}{\begin{cases}13+3d\geq0,\\13+4d\leq0,\end{cases}}，解得-\FormulaOCR{image866.png}{\frac{133}{3}}\ensuremath{\le}d\ensuremath{\le}-\FormulaOCR{image867.png}{\frac{133}{4}}，\par
+\ensuremath{\because}\ensuremath{a_{2}}为整数，\ensuremath{\therefore}d=-4，\par
+\ensuremath{\therefore}{\ensuremath{a_{n}}}的通项为：\ensuremath{a_{n}}=17-4n；\par
+（2）\ensuremath{\because}\ensuremath{a_{n}}=17-4n，\par
+\ensuremath{\therefore}\ensuremath{b_{n}}=\FormulaOCR{image868.png}{\frac{1}{\mathrm{a_{n}a_{n+1}}}}=\FormulaOCR{image869.png}{\frac{1}{(17-4n)\,(21-4n)}}=-\FormulaOCR{image870.png}{\frac{1}{4}}（\FormulaOCR{image871.png}{\frac{1}{4\pi-17}}-\FormulaOCR{image872.png}{\frac{1}{4\pi-21}}），\par
+于是\ensuremath{T_{n}}=\ensuremath{b_{1}}+\ensuremath{b_{2}}+\ldots{}\ldots{}+\ensuremath{b_{n}}\par
+=-\FormulaOCR{image870.png}{\frac{1}{4}}[（\FormulaOCR{image873.png}{\frac{1}{-13}}-\FormulaOCR{image874.png}{\frac{1}{27}}）+（\FormulaOCR{image875.png}{\frac{1}{-9}}-\FormulaOCR{image876.png}{\frac{1}{-13}}）+\ldots{}\ldots{}+（\FormulaOCR{image877.png}{\frac{1}{4\pi-17}}-\FormulaOCR{image878.png}{\frac{1}{4\pi-21}}）]\par
+=-\FormulaOCR{image879.png}{\frac{1}{4}}（\FormulaOCR{image877.png}{\frac{1}{4\pi-17}}-\FormulaOCR{image874.png}{\frac{1}{27}}）\par
+=\FormulaOCR{image880.png}{\frac{\mathrm{n}}{17\,(17-4n)}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例13．（2016•全国）已知数列{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}=\ensuremath{n^{2}}．\par
+（Ⅰ）求{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）记\ensuremath{b_{n}}=\FormulaOCR{image881.png}{\frac1{\sqrt{a_n}+\sqrt{a_{n+1}}}}，求数列{\ensuremath{b_{n}}}的前n项和．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）数列{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}=\ensuremath{n^{2}}，\par
+可得\ensuremath{a_{1}}=\ensuremath{S_{1}}=1；\par
+n\ensuremath{\ge}2时，\ensuremath{a_{n}}=\ensuremath{S_{n}}-\ensuremath{S_{n-1}}=\ensuremath{n^{2}}-\ensuremath{(n-1)^{2}}=2n-1，\par
+上式对n=1也成立，\par
+则\ensuremath{a_{n}}=2n-1，n\ensuremath{\in}\ensuremath{N^*}；\par
+（Ⅱ）$b_n=\dfrac1{\sqrt{a_n}+\sqrt{a_{n+1}}}=\dfrac1{\sqrt{2n-1}+\sqrt{2n+1}}=\dfrac12\left(\sqrt{2n+1}-\sqrt{2n-1}\right)$，\par
+则 $\{b_n\}$ 的前 $n$ 项和为\[\frac12\left[(\sqrt3-1)+(\sqrt5-\sqrt3)+\cdots+(\sqrt{2n+1}-\sqrt{2n-1})\right]=\frac12\left(\sqrt{2n+1}-1\right).\]\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例14．（2018•全国）已知数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，\ensuremath{a_{1}}=\FormulaOCR{image893.png}{{\sqrt{2}}}，\ensuremath{a_{n}}>0，\ensuremath{a_{n+1}}•（\ensuremath{S_{n+1}}+\ensuremath{S_{n}}）=2．（1）求\ensuremath{S_{n}}；\par
+（2）求\FormulaOCR{image894.png}{\frac{1}{S_{1}+S_{2}}}+\FormulaOCR{image895.png}{\frac{1}{S_{2}+S_{3}}}+\ldots{}+\FormulaOCR{image896.png}{\frac{1}{S_{\mathrm{n}}+S_{\mathrm{n+1}}}}．\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）\ensuremath{a_{1}}=\FormulaOCR{image897.png}{{\sqrt{2}}}，\ensuremath{a_{n}}>0，\ensuremath{a_{n+1}}•（\ensuremath{S_{n+1}}+\ensuremath{S_{n}}）=2，\par
+可得（\ensuremath{S_{n+1}}-\ensuremath{S_{n}}）（\ensuremath{S_{n+1}}+\ensuremath{S_{n}}）=2，\par
+可得\ensuremath{S_{n+1}^{2}}-\ensuremath{S_{n}^{2}}=2，\par
+即数列{\ensuremath{S_{n}^{2}}}为首项为2，公差为2的等差数列，\par
+可得\ensuremath{S_{n}^{2}}=2+2（n-1）=2n，\par
+由\ensuremath{a_{n}}>0，可得\ensuremath{S_{n}}=\FormulaOCR{image898.png}{\scriptstyle{\sqrt{2n}}}；\par
+（2）\FormulaOCR{image896.png}{\frac{1}{S_{\mathrm{n}}+S_{\mathrm{n+1}}}}=\FormulaOCR{image899.png}{\frac{1}{\sqrt{2n+1/2(n+1)}}}\par
+=\FormulaOCR{image900.png}{\frac{\sqrt{2}}{2}}（\FormulaOCR{image901.png}{\frac{1}{\sqrt{n+1/n+1}}}）=\FormulaOCR{image902.png}{\frac{\sqrt{2}}{2}}（\FormulaOCR{image903.png}{\sqrt{n+1}}-\FormulaOCR{image904.png}{\sqrt{\mathbf{r}}}），\par
+即有\FormulaOCR{image905.png}{\frac{1}{S_{1}+S_{2}}}+\FormulaOCR{image906.png}{\frac{1}{S_{2}+S_{3}}}+\ldots{}+\FormulaOCR{image907.png}{\frac{1}{S_{\mathrm{n}}+S_{\mathrm{n+1}}}}\par
+=\FormulaOCR{image902.png}{\frac{\sqrt{2}}{2}}（\FormulaOCR{image908.png}{{\sqrt{2}}}-1+\FormulaOCR{image909.png}{{\sqrt{3}}}-\FormulaOCR{image910.png}{{\sqrt{2}}}+2-+\ldots{}+\FormulaOCR{image911.png}{\sqrt{n+1}}-\FormulaOCR{image912.png}{\sqrt{\ _{\pi}}}）\par
+=\FormulaOCR{image913.png}{\frac{\sqrt{2}}{2}}（\FormulaOCR{image911.png}{\sqrt{n+1}}-1）．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例15．（2016•佛山模拟）在数列{\ensuremath{a_{n}}}中，\ensuremath{a_{1}}=1、\FormulaOCR{image914.png}{\scriptstyle\mathbf{a}_{2}{\frac{1}{4}}}，且\FormulaOCR{image915.png}{a_{n+1}=\frac{(n-1)a_n}{n-a_n}\quad(n\geq2)}．\par
+（Ⅰ） 求\ensuremath{a_{3}}、\ensuremath{a_{4}}，猜想\ensuremath{a_{n}}的表达式，并加以证明；\par
+（Ⅱ） 设\FormulaOCR{image916.png}{b_n=\frac{\sqrt{a_na_{n+1}}}{\sqrt{a_n}+\sqrt{a_{n+1}}}}，求证：对任意的自然数n\ensuremath{\in}\ensuremath{N^{*}}，都有\FormulaOCR{image917.png}{b_1+b_2+\cdots+b_n<\sqrt{\frac n3}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+（Ⅰ） 解：（1）\ensuremath{\because}\ensuremath{a_{1}}=1、\FormulaOCR{image918.png}{\scriptstyle\mathbf{a}_{2}{\frac{1}{4}}}，且\FormulaOCR{image919.png}{a_{n+1}=\frac{(n-1)a_n}{n-a_n}\quad(n\geq2)}，\par
+\ensuremath{\therefore}\ensuremath{a_{3}}=\FormulaOCR{image920.png}{\frac{a_2}{2-a_2}}=\FormulaOCR{image921.png}{\frac17}，\FormulaOCR{image922.png}{a_4=\frac{2a_3}{3-a_3}}=\FormulaOCR{image923.png}{\frac{1}{10}}\par
+故可以猜想\FormulaOCR{image924.png}{a_n=\frac1{3n-2}}，下面利用数学归纳法加以证明：\par
+（i） 显然当n=1，2，3，4时，结论成立，\par
+（ii） 假设当n=k（k\ensuremath{\ge}4），结论也成立，即\FormulaOCR{image925.png}{a_k=\frac1{3k-2}}\par
+那么当n=k+1时，由题设与归纳假设可知：\FormulaOCR{image926.png}{a_{k+1}=\frac{(k-1)a_k}{k-a_k}}=\FormulaOCR{image927.png}{\frac{(k-1)\cdot\frac1{3k-2}}{k-\frac1{3k-2}}}=\FormulaOCR{image928.png}{\frac1{3(k+1)-2}}\par
+即当n=k+1时，结论也成立，\par
+综上，\FormulaOCR{image929.png}{a_n=\frac1{3n-2}}成立．\par
+（Ⅱ）证明：\FormulaOCR{image930.png}{b_n=\frac{\sqrt{a_na_{n+1}}}{\sqrt{a_n}+\sqrt{a_{n+1}}}}=\FormulaOCR{image931.png}{\frac13\left(\sqrt{3n+1}-\sqrt{3n-2}\right)}\par
+所以\[\sum_{k=1}^{n}b_k=\frac13\left[(\sqrt4-1)+(\sqrt7-\sqrt4)+\cdots+(\sqrt{3n+1}-\sqrt{3n-2})\right]=\frac13\left(\sqrt{3n+1}-1\right).\]\par
+所以只需要证明\FormulaOCR{image934.png}{\frac13\left(\sqrt{3n+1}-1\right)<\sqrt{\frac n3}}\par
+只需证明\FormulaOCR{image935.png}{{\sqrt{3n+1}}<{\sqrt{3n}}+1}\par
+只需证明：3n+1<3n+2\FormulaOCR{image936.png}{\sqrt{3n}}+1\par
+只需证明0<2\FormulaOCR{image937.png}{\sqrt{3n}}，显然成立\par
+所以对任意的自然数n\ensuremath{\in}\ensuremath{N^{*}}，都有\FormulaOCR{image938.png}{b_1+b_2+\cdots+b_n<\sqrt{\frac n3}}．\par
+\par\endgroup\fi
+
+\par\medskip\noindent{\zihao{4}\bfseries 错位相减}\par
+\FormulaOCR{image939.wmf}{a_{ n }  =(an+b)q ^ { n-1 }}\par
+则\FormulaOCR{image940.wmf}{S_{ n }  =(An+B)q ^ { n } -B}\par
+其中\FormulaOCR{image941.wmf}{A=\frac { a } { q-1 }}，\FormulaOCR{image942.wmf}{B=\frac { b-A } { q-1 }}\par
+(1). \ensuremath{a_{n}}=n•\ensuremath{2^{n-1}}\ensuremath{T_{n}}=1+（n-1）\ensuremath{2^{n}}．\par
+(2). \FormulaOCR{image943.png}{a_nb_n=n\cdot2^n}    \FormulaOCR{image944.png}{T_n=(n-1)2^{n+1}+2}\par
+(3). \ensuremath{b_{n}}=n•\ensuremath{4^{n}}，     \ensuremath{T_{n}}=\FormulaOCR{image945.png}{\frac{(3n-1)4^{n+1}+4}{9}}．\par
+(4). \FormulaOCR{image946.png}{c_{\mathrm{n}}=(2n-1)*2^{n-1}}    \FormulaOCR{image947.png}{S_n=(2n-3)2^n+3\quad(n\in N^*)}\par
+(5). \ensuremath{a_{n}}=（2n-1）•\ensuremath{3^{n-1}} \ensuremath{S_{n}}=（n-1）\ensuremath{3^{n}}+1\par
+(6). \ensuremath{b_{n}} =\FormulaOCR{image948.png}{\frac{2n+1}{2^n}}，      \ensuremath{T_{n}} =5-\FormulaOCR{image949.png}{\frac{2n+5}{2^n}}．\par
+(7). \ensuremath{c_{n}}=\FormulaOCR{image950.png}{\textstyle{\frac{\mathbf{a_{n}}}{\mathbf{b_{n}}}}}=\FormulaOCR{image951.png}{\scriptstyle{\frac{2n-1}{2^{n-1}}}}      \ensuremath{T_{n}}=6-\FormulaOCR{image952.png}{\frac{2n+3}{2^{n-1}}}\par
+(8). \ensuremath{b_{n}}=\FormulaOCR{image953.png}{\textstyle{\frac{n}{2^{n-1}}}}      \ensuremath{T_{n}}=4-\FormulaOCR{image954.png}{\textstyle{\frac{\mathrm{n}^{2}2}{\mathrm{n}^{1-1}}}}．\par
+(9). \FormulaOCR{image955.png}{c_n=b_n=\frac{2n-2}{2^{2n-1}}=\frac{n-1}{4^{n-1}}}．   所以\FormulaOCR{image956.png}{R_n=\frac49\left(1-\frac{3n+1}{4^n}\right)}；\par
+\Needspace{6\baselineskip}
+例1（2014•新课标Ⅰ）已知{\ensuremath{a_{n}}}是递增的等差数列，\ensuremath{a_{2}}，\ensuremath{a_{4}}是方程\ensuremath{x^{2}}-5x+6=0的根．（1）求{\ensuremath{a_{n}}}的通项公式；\par
+（2）求数列{\FormulaOCR{image957.png}{\frac{\mathbf{a}_{11}}{2^{11}}}}的前n项和．\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）方程\ensuremath{x^{2}}-5x+6=0的根为2，3．又{\ensuremath{a_{n}}}是递增的等差数列，\par
+故\ensuremath{a_{2}}=2，\ensuremath{a_{4}}=3，可得2d=1，d=\FormulaOCR{image958.png}{\frac{1}{2}}，\par
+故\ensuremath{a_{n}}=2+（n-2）\ensuremath{\times}\FormulaOCR{image958.png}{\frac{1}{2}}=\FormulaOCR{image959.png}{\frac{1}{2}}n+1，\par
+（2）设数列{\FormulaOCR{image960.png}{\frac{\mathbf{a}_{11}}{2^{11}}}}的前n项和为\ensuremath{S_{n}}，\par
+\ensuremath{S_{n}}=\FormulaOCR{image961.png}{\frac{a_1}{2^1}+\frac{a_2}{2^2}+\cdots+\frac{a_{n-1}}{2^{n-1}}+\frac{a_n}{2^n}}，①\par
+\FormulaOCR{image959.png}{\frac{1}{2}}\ensuremath{S_{n}}=\FormulaOCR{image962.png}{\frac{a_1}{2^2}+\frac{a_2}{2^3}+\cdots+\frac{a_{n-1}}{2^n}+\frac{a_n}{2^{n+1}}}，②\par
+-②得\FormulaOCR{image959.png}{\frac{1}{2}}\ensuremath{S_{n}}=\FormulaOCR{image963.png}{\frac{a_1}{2}+d\left(\frac1{2^2}+\cdots+\frac1{2^n}\right)-\frac{a_n}{2^{n+1}}}\par
+=\FormulaOCR{image964.png}{\frac32+\frac12\cdot\frac{\frac14\left(1-\frac1{2^{n-1}}\right)}{1-\frac12}-\frac{a_n}{2^{n+1}}}，\par
+解得\ensuremath{S_{n}}=\FormulaOCR{image965.png}{\frac32+\frac12\left(1-\frac1{2^{n-1}}\right)-\frac{n+2}{2^{n+1}}}=2-\FormulaOCR{image966.png}{\frac{n+4}{2^{n+1}}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例2（2014•安徽）数列{\ensuremath{a_{n}}}满足\ensuremath{a_{1}}=1，n\ensuremath{a_{n+1}}=（n+1）\ensuremath{a_{n}}+n（n+1），n\ensuremath{\in}\ensuremath{N^{*}}．\par
+（Ⅰ）证明：数列{\FormulaOCR{image967.png}{\scriptstyle{\frac{3}{n}}}}是等差数列；\par
+（Ⅱ）设\ensuremath{b_{n}}=\ensuremath{3^{n}}•\FormulaOCR{image968.png}{\sqrt{\mathrm{a_{n}}}}，求数列{\ensuremath{b_{n}}}的前n项和\ensuremath{S_{n}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+证明（Ⅰ）\ensuremath{\because}n\ensuremath{a_{n+1}}=（n+1）\ensuremath{a_{n}}+n（n+1），\par
+\ensuremath{\therefore}\FormulaOCR{image969.png}{\frac{a_{n+1}}{n+1}=\frac{a_n}{n}+1}，\par
+\ensuremath{\therefore}\FormulaOCR{image970.png}{\frac{a_{n+1}}{n+1}-\frac{a_n}{n}=1}，\par
+\ensuremath{\therefore}数列{\FormulaOCR{image967.png}{\scriptstyle{\frac{3}{n}}}}是以1为首项，以1为公差的等差数列；\par
+（Ⅱ）由（Ⅰ）知，\FormulaOCR{image971.png}{\frac{a_n}{n}=1+(n-1)\cdot1=n}，\par
+\ensuremath{\therefore}\FormulaOCR{image972.png}{\mathbf{a}_{\mathbf{n}}=\mathbf{n}^{2}}，\par
+\ensuremath{b_{n}}=\ensuremath{3^{n}}•\FormulaOCR{image973.png}{\sqrt{\mathrm{a}_{\mathrm{n}}}}=n•\ensuremath{3^{n}}，\par
+\ensuremath{\therefore}\FormulaOCR{image974.png}{S_n=1\cdot3+2\cdot3^2+3\cdot3^3+\cdots+(n-1)}•\ensuremath{3^{n-1}}+n•\ensuremath{3^{n}}①\par
+\FormulaOCR{image975.png}{3S_n=1\cdot3^2+2\cdot3^3+3\cdot3^4+\cdots+(n-1)}•\ensuremath{3^{n}}+n•\ensuremath{3^{n+1}}②\par
+①-②得\FormulaOCR{image976.png}{-2S_n=3+3^2+3^3+\cdots+}\ensuremath{3^{n}}-n•\ensuremath{3^{n+1}}\par
+=\FormulaOCR{image977.png}{{\frac{3-3^{n+1}}{1-3}}-n*3^{n+1}}\par
+=\FormulaOCR{image978.png}{{\frac{1-2n}{2}}\ast{\dot{S}}^{n+1}{\frac{-3}{2}}}\par
+\ensuremath{\therefore}\FormulaOCR{image979.png}{S_n=\frac{2n-1}{4}\,3^{n+1}+\frac34}\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例3（2018•浙江）已知等比数列{\ensuremath{a_{n}}}的公比q>1，且\ensuremath{a_{3}}+\ensuremath{a_{4}}+\ensuremath{a_{5}}=28，\ensuremath{a_{4}}+2是\ensuremath{a_{3}}，\ensuremath{a_{5}}的等差中项．数列{\ensuremath{b_{n}}}满足\ensuremath{b_{1}}=1，数列{（\ensuremath{b_{n+1}}-\ensuremath{b_{n}}）\ensuremath{a_{n}}}的前n项和为2\ensuremath{n^{2}}+n．\par
+（Ⅰ）求q的值；\par
+（Ⅱ）求数列{\ensuremath{b_{n}}}的通项公式．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）等比数列{\ensuremath{a_{n}}}的公比q>1，且\ensuremath{a_{3}}+\ensuremath{a_{4}}+\ensuremath{a_{5}}=28，\ensuremath{a_{4}}+2是\ensuremath{a_{3}}，\ensuremath{a_{5}}的等差中项，\par
+可得2\ensuremath{a_{4}}+4=\ensuremath{a_{3}}+\ensuremath{a_{5}}=28-\ensuremath{a_{4}}，\par
+解得\ensuremath{a_{4}}=8，\par
+由\FormulaOCR{image980.png}{\frac{8}{\mathrm{q}}}+8+8q=28，可得q=2（\FormulaOCR{image981.png}{\frac12}舍去），\par
+则q的值为2；\par
+（Ⅱ）设\ensuremath{c_{n}}=（\ensuremath{b_{n+1}}-\ensuremath{b_{n}}）\ensuremath{a_{n}}=（\ensuremath{b_{n+1}}-\ensuremath{b_{n}}）\ensuremath{2^{n-1}}，\par
+可得n=1时，\ensuremath{c_{1}}=2+1=3，\par
+n\ensuremath{\ge}2时，可得\ensuremath{c_{n}}=2\ensuremath{n^{2}}+n-2\ensuremath{(n-1)^{2}}-（n-1）=4n-1，\par
+上式对n=1也成立，\par
+则（\ensuremath{b_{n+1}}-\ensuremath{b_{n}}）\ensuremath{a_{n}}=4n-1，\par
+即有\ensuremath{b_{n+1}}-\ensuremath{b_{n}}=（4n-1）•（\FormulaOCR{image981.png}{\frac12}）\ensuremath{{}^{n-1}}，\par
+可得\ensuremath{b_{n}}=\ensuremath{b_{1}}+（\ensuremath{b_{2}}-\ensuremath{b_{1}}）+（\ensuremath{b_{3}}-\ensuremath{b_{2}}）+\ldots{}+（\ensuremath{b_{n}}-\ensuremath{b_{n-1}}）\par
+=1+3•（\FormulaOCR{image982.png}{\frac{1}{2}}）\ensuremath{{}^{0}}+7•（）\ensuremath{{}^{1}}+\ldots{}+（4n-5）•（）\ensuremath{{}^{n-2}}，\par
+\FormulaOCR{image982.png}{\frac{1}{2}}\ensuremath{b_{n}}=+3•（）+7•（）\ensuremath{{}^{2}}+\ldots{}+（4n-5）•（）\ensuremath{{}^{n-1}}，\par
+相减可得\FormulaOCR{image982.png}{\frac{1}{2}}\ensuremath{b_{n}}=\FormulaOCR{image983.png}{\frac{7}{2}}+4[（\FormulaOCR{image984.png}{\frac{1}{2}}）+（）\ensuremath{{}^{2}}+\ldots{}+（）\ensuremath{{}^{n-2}}]-（4n-5）•（）\ensuremath{{}^{n-1}}\par
+=\FormulaOCR{image985.png}{\frac{7}{2}}+4•\FormulaOCR{image986.png}{\frac{\frac12\left(1-\frac1{2^{n-2}}\right)}{1-\frac12}}-（4n-5）•（\FormulaOCR{image984.png}{\frac{1}{2}}）\ensuremath{{}^{n-1}}，\par
+化简可得\ensuremath{b_{n}}=15-（4n+3）•（\FormulaOCR{image984.png}{\frac{1}{2}}）\ensuremath{{}^{n-2}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例4．（2017•天津）已知{\ensuremath{a_{n}}}为等差数列，前n项和为\ensuremath{S_{n}}（n\ensuremath{\in}\ensuremath{N^{+}}），{\ensuremath{b_{n}}}是首项为2的等比数列，且公比大于0，\ensuremath{b_{2}}+\ensuremath{b_{3}}=12，\ensuremath{b_{3}}=\ensuremath{a_{4}}-2\ensuremath{a_{1}}，\ensuremath{S_{11}}=11\ensuremath{b_{4}}．\par
+（Ⅰ）求{\ensuremath{a_{n}}}和{\ensuremath{b_{n}}}的通项公式；\par
+（Ⅱ）求数列{\ensuremath{a_{2n}}\ensuremath{b_{2n-1}}}的前n项和（n\ensuremath{\in}\ensuremath{N^{+}}）．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（I）设等差数列{\ensuremath{a_{n}}}的公差为d，等比数列{\ensuremath{b_{n}}}的公比为q．\par
+由已知\ensuremath{b_{2}}+\ensuremath{b_{3}}=12，得\ensuremath{b_{1}}（q+\ensuremath{q^{2}}）=12，而\ensuremath{b_{1}}=2，所以q+\ensuremath{q^{2}}-6=0．\par
+又因为q>0，解得q=2．所以，\ensuremath{b_{n}}=\ensuremath{2^{n}}．\par
+由\ensuremath{b_{3}}=\ensuremath{a_{4}}-2\ensuremath{a_{1}}，可得3d-\ensuremath{a_{1}}=8①．\par
+由\ensuremath{S_{11}}=11\ensuremath{b_{4}}，可得\ensuremath{a_{1}}+5d=16②，\par
+联立①②，解得\ensuremath{a_{1}}=1，d=3，由此可得\ensuremath{a_{n}}=3n-2．\par
+所以，数列{\ensuremath{a_{n}}}的通项公式为\ensuremath{a_{n}}=3n-2，数列{\ensuremath{b_{n}}}的通项公式为\ensuremath{b_{n}}=\ensuremath{2^{n}}．\par
+（II）设数列{\ensuremath{a_{2n}}\ensuremath{b_{2n-1}}}的前n项和为\ensuremath{T_{n}}，\par
+由\ensuremath{a_{2n}}=6n-2，\ensuremath{b_{2n-1}}=\FormulaOCR{image987.png}{{\frac{1}{2}}\times{\frac{1}{2}}\times}\ensuremath{4^{n}}，有\ensuremath{a_{2n}}\ensuremath{b_{2n-1}}=（3n-1）\ensuremath{4^{n}}，\par
+故\ensuremath{T_{n}}=2\ensuremath{\times}4+5\ensuremath{\times}\ensuremath{4^{2}}+8\ensuremath{\times}\ensuremath{4^{3}}+\ldots{}+（3n-1）\ensuremath{4^{n}}，\par
+4\ensuremath{T_{n}}=2\ensuremath{\times}\ensuremath{4^{2}}+5\ensuremath{\times}\ensuremath{4^{3}}+8\ensuremath{\times}\ensuremath{4^{4}}+\ldots{}+（3n-1）\ensuremath{4^{n+1}}，\par
+上述两式相减，得-3\ensuremath{T_{n}}=2\ensuremath{\times}4+3\ensuremath{\times}\ensuremath{4^{2}}+3\ensuremath{\times}\ensuremath{4^{3}}+\ldots{}+3\ensuremath{\times}\ensuremath{4^{n}}-（3n-1）\ensuremath{4^{n+1}}\par
+=\FormulaOCR{image988.png}{{\frac{12\times(1-4^{n})}{1-4}}-4-(3n-1)\ 4^{n+1}}=-（3n-2）\ensuremath{4^{n+1}}-8\par
+得\ensuremath{T_{n}}=\FormulaOCR{image989.png}{{\frac{3\pi^{2}}{3}}\times4^{n1}+{\frac{3}{3}}}．\par
+所以，数列{\ensuremath{a_{2n}}\ensuremath{b_{2n-1}}}的前n项和为\FormulaOCR{image989.png}{{\frac{3\pi^{2}}{3}}\times4^{n1}+{\frac{3}{3}}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例5．（2013•山东）设等差数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，且\ensuremath{S_{4}}=4\ensuremath{S_{2}}，\ensuremath{a_{2n}}=2\ensuremath{a_{n}}+1．\par
+（Ⅰ）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）设数列{\ensuremath{b_{n}}}满足\FormulaOCR{image990.png}{\frac{b_1}{a_1}+\frac{b_2}{a_2}+\cdots+\frac{b_n}{a_n}}=1-\FormulaOCR{image991.png}{\textstyle{\frac{1}{2^{n}}}}，n\ensuremath{\in}\ensuremath{N^{*}}，求{\ensuremath{b_{n}}}的前n项和\ensuremath{T_{n}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）设等差数列{\ensuremath{a_{n}}}的首项为\ensuremath{a_{1}}，公差为d，由\ensuremath{S_{4}}=4\ensuremath{S_{2}}，\ensuremath{a_{2n}}=2\ensuremath{a_{n}}+1得：\FormulaOCR{image992.png}{\begin{cases}4a_1+6d=8a_1+4d,\\a_1+(2n-1)d=2a_1+2(n-1)d+1,\end{cases}}，\par
+解得\ensuremath{a_{1}}=1，d=2．\par
+\ensuremath{\therefore}\ensuremath{a_{n}}=2n-1，n\ensuremath{\in}\ensuremath{N^{*}}．\par
+（Ⅱ）由已知\FormulaOCR{image993.png}{\frac{\mathrm{b}_{1}}{\mathrm{a}_{1}}}+\FormulaOCR{image994.png}{\frac{\mathrm{b}_{2}}{\mathrm{a}_{2}}}+\ldots{}+\FormulaOCR{image995.png}{\frac{\mathrm{B}_{\mathrm{n}}}{\mathrm{a_{n}}}}=1-\FormulaOCR{image996.png}{\textstyle{\frac{1}{2^{n}}}}，n\ensuremath{\in}\ensuremath{N^{*}}，得：\par
+当n=1时，\FormulaOCR{image997.png}{\frac{\mathrm{b}_{1}}{\mathrm{a}_{1}}}=\FormulaOCR{image998.png}{\frac{1}{2}}，\par
+当n\ensuremath{\ge}2时，\FormulaOCR{image999.png}{\frac{b_n}{a_n}}=（1-\FormulaOCR{image1000.png}{\textstyle{\frac{1}{2^{n}}}}）-（1-\FormulaOCR{image1001.png}{\frac1{2^{n-1}}}）=，显然，n=1时符合．\par
+\ensuremath{\therefore}\FormulaOCR{image999.png}{\frac{b_n}{a_n}}=\FormulaOCR{image1002.png}{\textstyle{\frac{1}{2^{n}}}}，n\ensuremath{\in}\ensuremath{N^{*}}\par
+由（Ⅰ）知，\ensuremath{a_{n}}=2n-1，n\ensuremath{\in}\ensuremath{N^{*}}．\par
+\ensuremath{\therefore}\ensuremath{b_{n}}=\FormulaOCR{image1003.png}{\frac{2n-1}{2^n}}，n\ensuremath{\in}\ensuremath{N^{*}}．\par
+又\ensuremath{T_{n}}=\FormulaOCR{image1004.png}{\frac{1}{2}}+\FormulaOCR{image1005.png}{\frac{3}{2^{2}}}+\FormulaOCR{image1006.png}{\frac{5}{2^{3}}}+\ldots{}+\FormulaOCR{image1003.png}{\frac{2n-1}{2^n}}，\par
+\ensuremath{\therefore}\FormulaOCR{image1007.png}{\frac12}\ensuremath{T_{n}}=\FormulaOCR{image1008.png}{\textstyle{\frac{1}{2^{2}}}}+\FormulaOCR{image1009.png}{\frac3{2^3}}+\ldots{}+\FormulaOCR{image1010.png}{\frac{2n-3}{2^n}}+\FormulaOCR{image1011.png}{\scriptstyle{\frac{2n-1}{2^{n+1}}}}，\par
+两式相减得：\FormulaOCR{image1012.png}{\frac{1}{2}}\ensuremath{T_{n}}=+（\FormulaOCR{image1013.png}{\textstyle{\frac{2}{2^{2}}}}+\FormulaOCR{image1014.png}{\textstyle{\frac{2}{2^{3}}}}+\ldots{}+\FormulaOCR{image1015.png}{\frac{2}{2^{n}}}）-\FormulaOCR{image1016.png}{\scriptstyle{\frac{2n-1}{2^{n+1}}}}\par
+=\FormulaOCR{image1017.png}{\frac{3}{2}}-\FormulaOCR{image1018.png}{\textstyle{\frac{1}{2^{n+1}}}}-\FormulaOCR{image1019.png}{\scriptstyle{\frac{2n-1}{2^{n+1}}}}\par
+\ensuremath{\therefore}\ensuremath{T_{n}}=3-\FormulaOCR{image1020.png}{\frac{2n+3}{2^n}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例6．（2015•山东）设数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，已知2\ensuremath{S_{n}}=\ensuremath{3^{n}}+3．\par
+（Ⅰ）求{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）若数列{\ensuremath{b_{n}}}，满足\ensuremath{a_{n}}\ensuremath{b_{n}}=\ensuremath{\log_{3}}\ensuremath{a_{n}}，求{\ensuremath{b_{n}}}的前n项和\ensuremath{T_{n}}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）因为2\ensuremath{S_{n}}=\ensuremath{3^{n}}+3，所以2\ensuremath{a_{1}}=\ensuremath{3^{1}}+3=6，故\ensuremath{a_{1}}=3，\par
+当n>1时，2\ensuremath{S_{n-1}}=\ensuremath{3^{n-1}}+3，\par
+此时，2\ensuremath{a_{n}}=2\ensuremath{S_{n}}-2\ensuremath{S_{n-1}}=\ensuremath{3^{n}}-\ensuremath{3^{n-1}}=2\ensuremath{\times}\ensuremath{3^{n-1}}，即\ensuremath{a_{n}}=\ensuremath{3^{n-1}}，\par
+所以\ensuremath{a_{n}}=\FormulaOCR{image1021.png}{a_n=\begin{cases}3,&n=1,\\3^{n-1},&n>1.\end{cases}}．\par
+（Ⅱ）因为\ensuremath{a_{n}}\ensuremath{b_{n}}=\ensuremath{\log_{3}}\ensuremath{a_{n}}，所以\ensuremath{b_{1}}=\FormulaOCR{image1022.png}{\frac{1}{3}}，\par
+当n>1时，\ensuremath{b_{n}}=\ensuremath{3^{1-n}}•\ensuremath{\log_{3}}\ensuremath{3^{n-1}}=（n-1）\ensuremath{\times}\ensuremath{3^{1-n}}，\par
+所以\ensuremath{T_{1}}=\ensuremath{b_{1}}=\FormulaOCR{image1022.png}{\frac{1}{3}}；\par
+当n>1时，\ensuremath{T_{n}}=\ensuremath{b_{1}}+\ensuremath{b_{2}}+\ldots{}+\ensuremath{b_{n}}=\FormulaOCR{image1022.png}{\frac{1}{3}}+（1\ensuremath{\times}\ensuremath{3^{-1}}+2\ensuremath{\times}\ensuremath{3^{-2}}+\ldots{}+（n-1）\ensuremath{\times}\ensuremath{3^{1-n}}），\par
+所以3\ensuremath{T_{n}}=1+（1\ensuremath{\times}\ensuremath{3^{0}}+2\ensuremath{\times}\ensuremath{3^{-1}}+3\ensuremath{\times}\ensuremath{3^{-2}}+\ldots{}+（n-1）\ensuremath{\times}\ensuremath{3^{2-n}}），\par
+两式相减得：2\ensuremath{T_{n}}=\FormulaOCR{image1023.png}{\frac23}+（\ensuremath{3^{0}}+\ensuremath{3^{-1}}+\ensuremath{3^{-2}}+\ldots{}+\ensuremath{3^{2-n}}-（n-1）\ensuremath{\times}\ensuremath{3^{1-n}}）=+\FormulaOCR{image1024.png}{\frac{1-3^{1-4}}{1-3^{-1}}}-（n-1）\ensuremath{\times}\ensuremath{3^{1-n}}=\FormulaOCR{image1025.png}{\frac{133}{6}}-\FormulaOCR{image1026.png}{\frac{6\pi+3}{2\times3^{n}}}，\par
+所以\ensuremath{T_{n}}=\FormulaOCR{image1027.png}{\frac{133}{12}}-\FormulaOCR{image1028.png}{\frac{6\pi+3}{4\times3^{n}}}，经检验，n=1时也适合，\par
+综上可得\ensuremath{T_{n}}=\FormulaOCR{image1027.png}{\frac{133}{12}}-\FormulaOCR{image1028.png}{\frac{6\pi+3}{4\times3^{n}}}．\par
+\par\endgroup\fi
+
+4．分组求和\par
+\Needspace{6\baselineskip}
+例1．（2015•福建）等差数列{\ensuremath{a_{n}}}中，\ensuremath{a_{2}}=4，\ensuremath{a_{4}}+\ensuremath{a_{7}}=15．\par
+（Ⅰ）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）设\ensuremath{b_{n}}=2\FormulaOCR{image1029.png}{\mathbf{a}_{\mathrm{n}}-2}+n，求\ensuremath{b_{1}}+\ensuremath{b_{2}}+\ensuremath{b_{3}}+\ldots{}+\ensuremath{b_{10}}的值．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）设公差为d，则\FormulaOCR{image1030.png}{\begin{cases}a_1+d=4,\\(a_1+3d)+(a_1+6d)=15,\end{cases}}，\par
+解得\FormulaOCR{image1031.png}{\begin{cases}a_1=3,\\d=1,\end{cases}}，\par
+所以\ensuremath{a_{n}}=3+（n-1）=n+2；\par
+（Ⅱ）\ensuremath{b_{n}}=2\FormulaOCR{image1029.png}{\mathbf{a}_{\mathrm{n}}-2}+n=\ensuremath{2^{n}}+n，\par
+所以\ensuremath{b_{1}}+\ensuremath{b_{2}}+\ensuremath{b_{3}}+\ldots{}+\ensuremath{b_{10}}=（2+1）+（\ensuremath{2^{2}}+2）+\ldots{}+（\ensuremath{2^{10}}+10）\par
+=（2+\ensuremath{2^{2}}+\ldots{}+\ensuremath{2^{10}}）+（1+2+\ldots{}+10）\par
+=\FormulaOCR{image1032.png}{\frac{2(1-2^{10})}{1-2}}+\FormulaOCR{image1033.png}{\textstyle{\frac{(1+1)\times10}{2}}}=2101．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例2．（2014•湖南）已知数列{\ensuremath{a_{n}}}的前n项和\ensuremath{S_{n}}=\FormulaOCR{image1034.png}{\frac{n^{2}\pm\mathrm{n}}{2}}，n\ensuremath{\in}\ensuremath{N^{*}}．\par
+（Ⅰ）求数列{\ensuremath{a_{n}}}的通项公式；\par
+（Ⅱ）设\ensuremath{b_{n}}=\FormulaOCR{image1035.png}{2^{\frac{\mathrm{a}}{\mathrm{a}}}}+\ensuremath{(-1)^{n}}\ensuremath{a_{n}}，求数列{\ensuremath{b_{n}}}的前2n项和．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）当n=1时，\ensuremath{a_{1}}=\ensuremath{s_{1}}=1，\par
+当n\ensuremath{\ge}2时，\ensuremath{a_{n}}=\ensuremath{s_{n}}-\ensuremath{s_{n-1}}=\FormulaOCR{image1036.png}{\frac{n^{2}\pm\mathrm{n}}{2}}-\FormulaOCR{image1037.png}{{\frac{(n-1)^{2}+(n-1)}{2}}}=n，\par
+\ensuremath{\therefore}数列{\ensuremath{a_{n}}}的通项公式是\ensuremath{a_{n}}=n．\par
+（Ⅱ）由（Ⅰ）知，\ensuremath{b_{n}}=\ensuremath{2^{n}}+\ensuremath{(-1)^{n}}n，记数列{\ensuremath{b_{n}}}的前2n项和为\ensuremath{T_{2n}}，则\par
+\ensuremath{T_{2n}}=（\ensuremath{2^{1}}+\ensuremath{2^{2}}+\ldots{}+\ensuremath{2^{2n}}）+（-1+2-3+4-\ldots{}+2n）\par
+=\FormulaOCR{image1038.png}{\frac{2(1-2^{2n})}{1-2}}+n=\ensuremath{2^{2n+1}}+n-2．\par
+\ensuremath{\therefore}数列{\ensuremath{b_{n}}}的前2n项和为\ensuremath{2^{2n+1}}+n-2．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例3．（2018•天津）设{\ensuremath{a_{n}}}是等差数列，其前n项和为\ensuremath{S_{n}}（n\ensuremath{\in}\ensuremath{N^*}）；{\ensuremath{b_{n}}}是等比数列，公比大于0，其前n项和为\ensuremath{T_{n}}（n\ensuremath{\in}\ensuremath{N^*}）．已知\ensuremath{b_{1}}=1，\ensuremath{b_{3}}=\ensuremath{b_{2}}+2，\ensuremath{b_{4}}=\ensuremath{a_{3}}+\ensuremath{a_{5}}，\ensuremath{b_{5}}=\ensuremath{a_{4}}+2\ensuremath{a_{6}}．\par
+（Ⅰ）求\ensuremath{S_{n}}和\ensuremath{T_{n}}；\par
+（Ⅱ）若\ensuremath{S_{n}}+（\ensuremath{T_{1}}+\ensuremath{T_{2}}+\ldots{}\ldots{}+\ensuremath{T_{n}}）=\ensuremath{a_{n}}+4\ensuremath{b_{n}}，求正整数n的值．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）设等比数列{\ensuremath{b_{n}}}的公比为q，由\ensuremath{b_{1}}=1，\ensuremath{b_{3}}=\ensuremath{b_{2}}+2，可得\ensuremath{q^{2}}-q-2=0．\par
+\ensuremath{\because}q>0，可得q=2．\par
+故\FormulaOCR{image1039.png}{\mathbf{b}_{\mathbf{n}}=2^{\mathbf{n}-1}}，\FormulaOCR{image1040.png}{\Gamma_{n}\mathrm{e}^{\frac{1-2^{n}}{1-2}=2^{n}-1}}；\par
+设等差数列{\ensuremath{a_{n}}}的公差为d，由\ensuremath{b_{4}}=\ensuremath{a_{3}}+\ensuremath{a_{5}}，得\ensuremath{a_{1}}+3d=4，\par
+由\ensuremath{b_{5}}=\ensuremath{a_{4}}+2\ensuremath{a_{6}}，得3\ensuremath{a_{1}}+13d=16，\par
+\ensuremath{\therefore}\ensuremath{a_{1}}=d=1．\par
+故\ensuremath{a_{n}}=n，\FormulaOCR{image1041.png}{S_n=\frac{n(n+1)}2}；\par
+（Ⅱ）由（Ⅰ），可得\ensuremath{T_{1}}+\ensuremath{T_{2}}+\ldots{}\ldots{}+\ensuremath{T_{n}}=\FormulaOCR{image1042.png}{(2^1+2^2+\cdots+2^n)-n=\frac{2(1-2^n)}{1-2}-n}=\ensuremath{2^{n+1}}-n-2．\par
+由\ensuremath{S_{n}}+（\ensuremath{T_{1}}+\ensuremath{T_{2}}+\ldots{}\ldots{}+\ensuremath{T_{n}}）=\ensuremath{a_{n}}+4\ensuremath{b_{n}}，\par
+可得\FormulaOCR{image1043.png}{\frac{n(n+1)}2+2^{n+1}-n-2=n+2^{n+1}}，\par
+整理得：\ensuremath{n^{2}}-3n-4=0，解得n=-1（舍）或n=4．\par
+\ensuremath{\therefore}n的值为4．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例4．（2016•北京）已知{\ensuremath{a_{n}}}是等差数列，{\ensuremath{b_{n}}}是等比数列，且\ensuremath{b_{2}}=3，\ensuremath{b_{3}}=9，\ensuremath{a_{1}}=\ensuremath{b_{1}}，\ensuremath{a_{14}}=\ensuremath{b_{4}}．\par
+（1）求{\ensuremath{a_{n}}}的通项公式；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+（2）设\ensuremath{c_{n}}=\ensuremath{a_{n}}+\ensuremath{b_{n}}，求数列{\ensuremath{c_{n}}}的前n项和．\par
+解：（1）设{\ensuremath{a_{n}}}是公差为d的等差数列，\par
+{\ensuremath{b_{n}}}是公比为q的等比数列，\par
+由\ensuremath{b_{2}}=3，\ensuremath{b_{3}}=9，可得q=\FormulaOCR{image1044.png}{\frac{b_3}{b_2}}=3，\par
+\ensuremath{b_{n}}=\ensuremath{b_{2}}\ensuremath{q^{n-2}}=3•\ensuremath{3^{n-2}}=\ensuremath{3^{n-1}}；\par
+即有\ensuremath{a_{1}}=\ensuremath{b_{1}}=1，\ensuremath{a_{14}}=\ensuremath{b_{4}}=27，\par
+则d=\FormulaOCR{image1045.png}{\frac{a_{14}-a_1}{13}}=2，\par
+则\ensuremath{a_{n}}=\ensuremath{a_{1}}+（n-1）d=1+2（n-1）=2n-1；\par
+（2）\ensuremath{c_{n}}=\ensuremath{a_{n}}+\ensuremath{b_{n}}=2n-1+\ensuremath{3^{n-1}}，\par
+则数列{\ensuremath{c_{n}}}的前n项和为\par
+（1+3+\ldots{}+（2n-1））+（1+3+9+\ldots{}+\ensuremath{3^{n-1}}）=\FormulaOCR{image1046.png}{\frac12}n•2n+\FormulaOCR{image1047.png}{\frac{1-3^{n}}{1-3}}\par
+=\ensuremath{n^{2}}+\FormulaOCR{image1048.png}{\frac{3^{n}-1}{2}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+例5．（2016•浙江）设数列{\ensuremath{a_{n}}}的前n项和为\ensuremath{S_{n}}，已知\ensuremath{S_{2}}=4，\ensuremath{a_{n+1}}=2\ensuremath{S_{n}}+1，n\ensuremath{\in}\ensuremath{N^{*}}．\par
+（Ⅰ）求通项公式\ensuremath{a_{n}}；\par
+（Ⅱ）求数列{|\ensuremath{a_{n}}-n-2|}的前n项和．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）\ensuremath{\because}\ensuremath{S_{2}}=4，\ensuremath{a_{n+1}}=2\ensuremath{S_{n}}+1，n\ensuremath{\in}\ensuremath{N^{*}}．\par
+\ensuremath{\therefore}\ensuremath{a_{1}}+\ensuremath{a_{2}}=4，\ensuremath{a_{2}}=2\ensuremath{S_{1}}+1=2\ensuremath{a_{1}}+1，\par
+解得\ensuremath{a_{1}}=1，\ensuremath{a_{2}}=3，\par
+当n\ensuremath{\ge}2时，\ensuremath{a_{n+1}}=2\ensuremath{S_{n}}+1，\ensuremath{a_{n}}=2\ensuremath{S_{n-1}}+1，\par
+两式相减得\ensuremath{a_{n+1}}-\ensuremath{a_{n}}=2（\ensuremath{S_{n}}-\ensuremath{S_{n-1}}）=2\ensuremath{a_{n}}，\par
+即\ensuremath{a_{n+1}}=3\ensuremath{a_{n}}，当n=1时，\ensuremath{a_{1}}=1，\ensuremath{a_{2}}=3，\par
+满足\ensuremath{a_{n+1}}=3\ensuremath{a_{n}}，\par
+\ensuremath{\therefore}\FormulaOCR{image1049.png}{\frac{a_{n+1}}{a_{n}}}=3，则数列{\ensuremath{a_{n}}}是公比q=3的等比数列，\par
+则通项公式\ensuremath{a_{n}}=\ensuremath{3^{n-1}}．\par
+（Ⅱ）\ensuremath{a_{n}}-n-2=\ensuremath{3^{n-1}}-n-2，\par
+设\ensuremath{b_{n}}=|\ensuremath{a_{n}}-n-2|=|\ensuremath{3^{n-1}}-n-2|，\par
+则\ensuremath{b_{1}}=|\ensuremath{3^{0}}-1-2|=2，\ensuremath{b_{2}}=|3-2-2|=1，\par
+当n\ensuremath{\ge}3时，\ensuremath{3^{n-1}}-n-2>0，\par
+则\ensuremath{b_{n}}=|\ensuremath{a_{n}}-n-2|=\ensuremath{3^{n-1}}-n-2，\par
+此时数列{|\ensuremath{a_{n}}-n-2|}的前n项和\ensuremath{T_{n}}=3+\FormulaOCR{image1050.png}{\frac{3(1-3^{1-2})}{1-3}}-\FormulaOCR{image1051.png}{\frac{(n+7)(n-2)}2}=\FormulaOCR{image1052.png}{\frac{3^{n}-n^{2}-5n+11}{2}}，\par
+则 $T_n=\begin{cases}2,&n=1,\\3,&n=2,\\\dfrac{3^n-n^2-5n+11}{2},&n\geq3.\end{cases}$\par
+\par\endgroup\fi
+
+数列2022--2026\par
+二．多选题（共2小题）\par
+\Needspace{6\baselineskip}
+（多选）1．（2026•重庆）等比数列\FormulaOCR{image1055.wmf}{\{a_{ n }  \}}的公比\FormulaOCR{image1056.wmf}{q\ne 1}，\FormulaOCR{image1057.wmf}{a_{ 1 }  >0}，\FormulaOCR{image1058.wmf}{2a_{ 3 }  =a_{ 1 }  +a_{ 2 }}，记数列\FormulaOCR{image1059.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1060.wmf}{n}项和为\FormulaOCR{image1061.wmf}{S_{ n }}，则（　　）\par
+\qquad{}A．\FormulaOCR{image1062.wmf}{q=-\frac { 1 } { 2 }}\qquad{}B．\FormulaOCR{image1063.wmf}{S_{ n }  >\frac { 2 } { 3 }a_{ 1 }}\qquad{}\par
+\qquad{}C．\FormulaOCR{image1064.wmf}{2S_{ n+2 }  =S_{ n+1 }  +S_{ n }}\qquad{}D．\FormulaOCR{image1065.wmf}{\sum  \limits_{ k=1 } ^ n { S_{ k }   }>\frac { 2n } { 3 }a_{ 1 }}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：由题意，\FormulaOCR{image1066.wmf}{2a_{ 1 }  q ^ { 2 } =a_{ 1 }  q+a_{ 1 }}，\par
+因为\FormulaOCR{image1067.wmf}{a_{ 1 }  >0}，所以\FormulaOCR{image1068.wmf}{2q ^ { 2 } =q+1}，\par
+因为\FormulaOCR{image1069.wmf}{q\ne 1}，所以\FormulaOCR{image1070.wmf}{q=-\frac { 1 } { 2 }}，\FormulaOCR{image1071.wmf}{A}正确；\par
+\FormulaOCR{image1072.wmf}{S_{ 2 }  =a_{ 2 }  +a_{ 1 }  =\frac { 1 } { 2 }a_{ 1 }   < \frac { 2a_{ 1 }   } { 3 }}，\FormulaOCR{image1073.wmf}{B}错误；\par
+因为\FormulaOCR{image1074.wmf}{q=-\frac { 1 } { 2 }}，所以\FormulaOCR{image1075.wmf}{2S_{ n+2 }  =2S_{ n+1 }  +2a_{ n+2 }  =2S_{ n+1 }  -a_{ n+1 }}，\par
+因为\FormulaOCR{image1076.wmf}{S_{ n+1 }  +S_{ n }  =2S_{ n+1 }  -a_{ n+1 }}，所以\FormulaOCR{image1077.wmf}{2S_{ n+2 }  =S_{ n+1 }  +S_{ n }}，\FormulaOCR{image1078.wmf}{C}正确；\par
+\FormulaOCR{image1079.wmf}{\sum  \limits_{ k=1 } ^ n { S_{ k }   }=\frac { 2 } { 3 }a_{ 1 }  [n-(-\frac { 1 } { 2 })-(-\frac { 1 } { 2 }) ^ { 2 } -\ldots -(-\frac { 1 } { 2 }) ^ { n } ]=\frac { 2na_{ 1 }   } { 3 }-\frac { 2a_{ 1 }   } { 3 }\cdot \frac { (-\frac { 1 } { 2 })[1-(-\frac { 1 } { 2 }) ^ { n } ] } { 1+\frac { 1 } { 2 } }}，\par
+\FormulaOCR{image1080.wmf}{n→+\infty }时，\FormulaOCR{image1081.wmf}{\frac { 2a_{ 1 }   } { 3 }\cdot \frac { (-\frac { 1 } { 2 })[1-(-\frac { 1 } { 2 }) ^ { n } ] } { 1+\frac { 1 } { 2 } }→\frac { 2a_{ 1 }   } { 3 }\cdot \frac { (-\frac { 1 } { 2 }) } { 1+\frac { 1 } { 2 } }=-\frac { 2a_{ 1 }   } { 9 }}，\par
+所以\FormulaOCR{image1082.wmf}{\sum  \limits_{ k=1 } ^ n { S_{ k }   }>\frac { 2na_{ 1 }   } { 3 }}，\FormulaOCR{image1083.wmf}{D}正确．\par
+故选：\FormulaOCR{image1084.wmf}{ACD}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+（多选）2．（2025•重庆）记\FormulaOCR{image1085.wmf}{S_{ n }}为等比数列\FormulaOCR{image1086.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1087.wmf}{n}项和，\FormulaOCR{image1088.wmf}{q}为\FormulaOCR{image1089.wmf}{\{a_{ n }  \}}的公比，\FormulaOCR{image1090.wmf}{q>0}．若\FormulaOCR{image1091.wmf}{S_{ 3 }  =7}，\FormulaOCR{image1092.wmf}{a_{ 3 }  =1}，则（　　）\par
+\qquad{}\qquad{}\qquad{}A．\FormulaOCR{image1093.wmf}{q=\frac { 1 } { 2 }}\qquad{}B．\FormulaOCR{image1094.wmf}{a_{ 5 }  =\frac { 1 } { 9 }}\qquad{}C．\FormulaOCR{image1095.wmf}{S_{ 5 }  =8}\qquad{}D．\FormulaOCR{image1096.wmf}{a_{ n }  +S_{ n }  =8}\par
+\QuestionSpace{1.2cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：由已知，\FormulaOCR{image1097.wmf}{S_{ 3 }  =a_{ 1 }  +a_{ 2 }  +a_{ 3 }  =\frac { 1 } { q ^ { 2 }  }+\frac { 1 } { q }+1=7}，\par
+即\FormulaOCR{image1098.wmf}{6q ^ { 2 } -q-1=0}，解得\FormulaOCR{image1099.wmf}{q=\frac { 1 } { 2 }}（负根舍去），故\FormulaOCR{image1100.wmf}{A}正确，\par
+\FormulaOCR{image1101.wmf}{a_{ 5 }  =q ^ { 2 } =\frac { 1 } { 4 }}，故\FormulaOCR{image1102.wmf}{B}错误，\par
+\FormulaOCR{image1103.wmf}{S_{ 5 }  =S_{ 3 }  +q+q ^ { 2 } =7+\frac { 1 } { 2 }+\frac { 1 } { 4 }=\frac { 31 } { 4 }}，故\FormulaOCR{image1104.wmf}{C}错误，\par
+\FormulaOCR{image1105.wmf}{a_{ n }  =a_{ 3 }  q ^ { n-3 } =\frac { 1 } { 2 ^ { n-3 }  }}，\FormulaOCR{image1106.wmf}{S_{ n }  =\frac { 4(1-\frac { 1 } { 2 ^ { n }  }) } { 1-\frac { 1 } { 2 } }=8-\frac { 1 } { 2 ^ { n-3 }  }}，\par
+所以\FormulaOCR{image1107.wmf}{a_{ n }  +S_{ n }  =\frac { 1 } { 2 ^ { n-3 }  }+8-\frac { 1 } { 2 ^ { n-3 }  }=8}，故\FormulaOCR{image1108.wmf}{D}正确．\par
+故选：\FormulaOCR{image1109.wmf}{AD}．\par
+\par\endgroup\fi
+
+三．填空题（共18小题）\par
+\Needspace{6\baselineskip}
+3．（2026•重庆）记\FormulaOCR{image1110.wmf}{S_{ n }}为等差数列\FormulaOCR{image1111.wmf}{\{a_{ n }  \}}前\FormulaOCR{image1112.wmf}{n}项和，若\FormulaOCR{image1113.wmf}{a_{ 1 }  =-1}，\FormulaOCR{image1114.wmf}{a_{ 4 }  =5}，则\FormulaOCR{image1115.wmf}{S_{ 6 }  =}　24　 ．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\FormulaOCR{image1116.wmf}{S_{ n }}为等差数列\FormulaOCR{image1117.wmf}{\{a_{ n }  \}}前\FormulaOCR{image1118.wmf}{n}项和，\FormulaOCR{image1119.wmf}{a_{ 1 }  =-1}，\FormulaOCR{image1120.wmf}{a_{ 4 }  =5}，\par
+\FormulaOCR{image1121.wmf}{\therefore}公差\FormulaOCR{image1122.wmf}{d=\frac { a_{ 4 }  -a_{ 1 }   } { 4-1 }=\frac { 5-(-1) } { 3 }=2}，\par
+则\FormulaOCR{image1123.wmf}{S_{ 6 }  =6a_{ 1 }  +\frac { 6\times 5 } { 2 }d=-6+30=24}．\par
+故答案为：24．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+4．（2026•上海）已知\FormulaOCR{image1124.wmf}{\{a_{ n }  \}}为等差数列，\FormulaOCR{image1125.wmf}{a_{ 1 }  =0}，\FormulaOCR{image1126.wmf}{d}为公差，\FormulaOCR{image1127.wmf}{S_{ n }}为\FormulaOCR{image1128.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1129.wmf}{n}项和，若\FormulaOCR{image1130.wmf}{S_{ n }}中至少有两项位于\FormulaOCR{image1131.wmf}{(0,1)}之间，则公差\FormulaOCR{image1132.wmf}{d}的取值范围为\FormulaOCR{image1133.wmf}{(0,\frac { 1 } { 3 })} ．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：若\FormulaOCR{image1134.wmf}{d\leq 0}，显然\FormulaOCR{image1135.wmf}{a_{ n }  \leq 0}，则\FormulaOCR{image1136.wmf}{S_{ n }  \leq 0}不满足题意；\par
+若\FormulaOCR{image1137.wmf}{d>0}，只需\FormulaOCR{image1138.wmf}{\begin{cases}S_2=d<1,\\S_3=3d<1,\end{cases}\Longrightarrow d<\frac13}，\par
+故\FormulaOCR{image1139.wmf}{d\in (0,\frac { 1 } { 3 })}．\par
+故答案为：\FormulaOCR{image1140.wmf}{(0,\frac { 1 } { 3 })}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+5．（2026•上海）已知数列\FormulaOCR{image1141.wmf}{\{a_{ n }  \}}是等比数列，且\FormulaOCR{image1142.wmf}{a_{ 1 }  =2}，\FormulaOCR{image1143.wmf}{a_{ 2 }  =6}，则\FormulaOCR{image1144.wmf}{a_{ 4 }  =}　54　 ．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：数列\FormulaOCR{image1145.wmf}{\{a_{ n }  \}}是等比数列，且\FormulaOCR{image1146.wmf}{a_{ 1 }  =2}，\FormulaOCR{image1147.wmf}{a_{ 2 }  =6}，\par
+由题意，\FormulaOCR{image1148.wmf}{q=3\Longrightarrow a_{ 4 }  =a_{ 1 }  \cdot q ^ { 3 } =54}．\par
+故答案为：54．\par
+6．（2025•上海）已知\FormulaOCR{image1149.wmf}{\{a_{ n }  \}}是首项为1、公差为1的等差数列，\FormulaOCR{image1150.wmf}{\{b_{ n }  \}}是首项为1、公比为\FormulaOCR{image1151.wmf}{q(q>0)}的等比数列．若数列\FormulaOCR{image1152.wmf}{\{a_{ n }  \cdot b_{ n }  \}}的前三项和为2，则\FormulaOCR{image1153.wmf}{q=}\FormulaOCR{image1154.wmf}{\frac { 1 } { 3 }} ．\par
+解：由题意可得，\FormulaOCR{image1155.wmf}{a_{ n }  =n}，\FormulaOCR{image1156.wmf}{b_{ n }  =q ^ { n-1 }}，\FormulaOCR{image1157.wmf}{q>0}，\par
+若数列\FormulaOCR{image1158.wmf}{\{a_{ n }  \cdot b_{ n }  \}}的前三项和为2，则\FormulaOCR{image1159.wmf}{1+2q+3q ^ { 2 } =2}，\par
+解得\FormulaOCR{image1160.wmf}{q=\frac { 1 } { 3 }}或\FormulaOCR{image1161.wmf}{q=-1}（舍\FormulaOCR{image1162.wmf}{)}．\par
+故答案为：\FormulaOCR{image1163.wmf}{\frac { 1 } { 3 }}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+7．（2025•山东）若一个正项等比数列的前4项和为4，前8项和为68，则该等比数列的公比为 　2　 ．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：根据题意可得\FormulaOCR{image1164.wmf}{a_{ 1 }  +a_{ 2 }  +a_{ 3 }  +a_{ 4 }  =4}，\FormulaOCR{image1165.wmf}{a_{ 5 }  +a_{ 6 }  +a_{ 7 }  +a_{ 8 }  =68-4=64}，\par
+所以\FormulaOCR{image1166.wmf}{a_{ 5 }  +a_{ 6 }  +a_{ 7 }  +a_{ 8 }  =(a_{ 1 }  +a_{ 2 }  +a_{ 3 }  +a_{ 4 }  )\times q ^ { 4 } =4\times q ^ { 4 } =64}，\par
+解得\FormulaOCR{image1167.wmf}{q=2(q=-2}舍）．\par
+故答案为：2．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+8．（2025•上海）已知等差数列\FormulaOCR{image1168.wmf}{\{a_{ n }  \}}的首项\FormulaOCR{image1169.wmf}{a_{ 1 }  =-3}，公差\FormulaOCR{image1170.wmf}{d=2}，则该数列的前6项和为　12　 ．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：因为等差数列\FormulaOCR{image1171.wmf}{\{a_{ n }  \}}的首项\FormulaOCR{image1172.wmf}{a_{ 1 }  =-3}，公差\FormulaOCR{image1173.wmf}{d=2}，\par
+所以\FormulaOCR{image1174.wmf}{S_{ 6 }  =6a_{ 1 }  +\frac { 6\times 5 } { 2 }d=12}．\par
+故答案为：12．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+9．（2024•新高考Ⅱ）记\FormulaOCR{image1175.wmf}{S_{ n }}为等差数列\FormulaOCR{image1176.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1177.wmf}{n}项和，若\FormulaOCR{image1178.wmf}{a_{ 3 }  +a_{ 4 }  =7}，\FormulaOCR{image1179.wmf}{3a_{ 2 }  +a_{ 5 }  =5}，则\FormulaOCR{image1180.wmf}{S_{ 10 }  =}　95　 ．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：等差数列\FormulaOCR{image1181.wmf}{\{a_{ n }  \}}中，\FormulaOCR{image1182.wmf}{a_{ 3 }  +a_{ 4 }  =2a_{ 1 }  +5d=7}，\FormulaOCR{image1183.wmf}{3a_{ 2 }  +a_{ 5 }  =4a_{ 1 }  +7d=5}，\par
+解得，\FormulaOCR{image1184.wmf}{d=3}，\FormulaOCR{image1185.wmf}{a_{ 1 }  =-4}，\par
+则\FormulaOCR{image1186.wmf}{S_{ 10 }  =10\times (-4)+\frac { 10\times 9 } { 2 }\times 3=95}．\par
+故答案为：95．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+10．（2024•上海）数列\FormulaOCR{image1187.wmf}{\{a_{ n }  \}}，\FormulaOCR{image1188.wmf}{a_{ n }  =n+c}，\FormulaOCR{image1189.wmf}{S_{ 7 }   < 0}，\FormulaOCR{image1190.wmf}{c}的取值范围为 　　．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：等差数列由\FormulaOCR{image1191.wmf}{a_{ n }  =n+c}，知数列\FormulaOCR{image1192.wmf}{\{a_{ n }  \}}为等差数列\FormulaOCR{image1193.wmf}{S_{ 7 }  =\frac { 7(a_{ 1 }  +a_{ 7 }  ) } { 2 }=7a_{ 4 }   < 0}，\par
+即\FormulaOCR{image1194.wmf}{7(4+c) < 0}，\par
+解得\FormulaOCR{image1195.wmf}{c < -4}．\par
+故\FormulaOCR{image1196.wmf}{c}的取值范围为\FormulaOCR{image1197.wmf}{(-\infty ,-4)}．\par
+故答案为：\FormulaOCR{image1198.wmf}{(-\infty ,-4)}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+11．（2023•北京）我国度量衡的发展有着悠久的历史，战国时期就出现了类似于砝码的用来测量物体质量的“环权”．已知9枚环权的质量（单位：铢）从小到大构成项数为9的数列\FormulaOCR{image1199.wmf}{\{a_{ n }  \}}，该数列的前3项成等差数列，后7项成等比数列，且\FormulaOCR{image1200.wmf}{a_{ 1 }  =1}，\FormulaOCR{image1201.wmf}{a_{ 5 }  =12}，\FormulaOCR{image1202.wmf}{a_{ 9 }  =192}，则\FormulaOCR{image1203.wmf}{a_{ 7 }  =}　48　 ，数列\FormulaOCR{image1204.wmf}{\{a_{ n }  \}}的所有项的和为 　　 ．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\FormulaOCR{image1205.wmf}{\because}数列\FormulaOCR{image1206.wmf}{\{a_{ n }  \}}的后7项成等比数列，\FormulaOCR{image1207.wmf}{a_{ n }  >0}，\par
+\FormulaOCR{image1208.wmf}{\therefore a_{ 7 }  =\sqrt[] { a_{ 5 }  a_{ 9 }   }=\sqrt[] { 12\times 192 }=48}，\par
+\FormulaOCR{image1209.wmf}{\therefore a_{ 3 }  =\frac { a_{ 5 }  ^{ 2 } } { a_{ 7 }   }=\frac { 12 ^ { 2 }  } { 48 }=3}，\par
+\FormulaOCR{image1210.wmf}{\therefore}公比\FormulaOCR{image1211.wmf}{q=\sqrt[] { \frac { a_{ 5 }   } { a_{ 3 }   } }=\sqrt[] { \frac { 12 } { 3 } }=2}．\par
+\FormulaOCR{image1212.wmf}{\therefore a_{ 4 }  =3\times 2=6}，\par
+又该数列的前3项成等差数列，\par
+\FormulaOCR{image1213.wmf}{\therefore}数列\FormulaOCR{image1214.wmf}{\{a_{ n }  \}}的所有项的和为\FormulaOCR{image1215.wmf}{\frac { 3(a_{ 1 }  +a_{ 3 }  ) } { 2 }+\frac { 6\times (2 ^ { 6 } -1) } { 2-1 }=\frac { 3\times (1+3) } { 2 }+378=384}．\par
+故答案为：48；384．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+12．（2023•甲卷）记\FormulaOCR{image1216.wmf}{S_{ n }}为等比数列\FormulaOCR{image1217.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1218.wmf}{n}项和．若\FormulaOCR{image1219.wmf}{8S_{ 6 }  =7S_{ 3 }}，则\FormulaOCR{image1220.wmf}{\{a_{ n }  \}}的公比为 　\FormulaOCR{image1221.wmf}{-\frac { 1 } { 2 }}　 ．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：等比数列\FormulaOCR{image1222.wmf}{\{a_{ n }  \}}中，\FormulaOCR{image1223.wmf}{8S_{ 6 }  =7S_{ 3 }}，\par
+则\FormulaOCR{image1224.wmf}{q\ne 1}，\par
+所以\FormulaOCR{image1225.wmf}{8\times \frac { a_{ 1 }  (1-q ^ { 6 } ) } { 1-q }=7\times \frac { a_{ 1 }  (1-q ^ { 3 } ) } { 1-q }}，\par
+解得\FormulaOCR{image1226.wmf}{q=-\frac { 1 } { 2 }}．\par
+故答案为：\FormulaOCR{image1227.wmf}{-\frac { 1 } { 2 }}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+13．（2023•上海）已知首项为3，公比为2的等比数列，设等比数列的前\FormulaOCR{image1228.wmf}{n}项和为\FormulaOCR{image1229.wmf}{S_{ n }}，则\FormulaOCR{image1230.wmf}{S_{ 6 }  =}　189　．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\FormulaOCR{image1231.wmf}{\because}等比数列的首项为3，公比为2，\par
+\FormulaOCR{image1232.wmf}{\therefore S_{ 6 }  =\frac { 3\times (1-2 ^ { 6 } ) } { 1-2 }=189}．\par
+故答案为：189．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+14．（2023•乙卷）已知\FormulaOCR{image1233.wmf}{\{a_{ n }  \}}为等比数列，\FormulaOCR{image1234.wmf}{a_{ 2 }  a_{ 4 }  a_{ 5 }  =a_{ 3 }  a_{ 6 }}，\FormulaOCR{image1235.wmf}{a_{ 9 }  a_{ 10 }  =-8}，则\FormulaOCR{image1236.wmf}{a_{ 7 }  =}　\FormulaOCR{image1237.wmf}{-2}　．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\FormulaOCR{image1238.wmf}{\because}等比数列\FormulaOCR{image1239.wmf}{\{a_{ n }  \}}，\par
+\FormulaOCR{image1240.wmf}{\therefore a_{ 2 }  a_{ 4 }  a_{ 5 }  =a_{ 2 }  a_{ 3 }  a_{ 6 }  =a_{ 3 }  a_{ 6 }}，解得\FormulaOCR{image1241.wmf}{a_{ 2 }  =1}，\par
+而\FormulaOCR{image1242.wmf}{a_{ 9 }  a_{ 10 }  =a_{ 2 }  q ^ { 7 } a_{ 2 }  q ^ { 8 } =(a_{ 2 }  ) ^ { 2 } q ^ { 15 } =-8}，可得\FormulaOCR{image1243.wmf}{q ^ { 15 } =(q ^ { 5 } ) ^ { 3 } =-8}，\par
+即\FormulaOCR{image1244.wmf}{q ^ { 5 } =-2}，\par
+\FormulaOCR{image1245.wmf}{a_{ 7 }  =a_{ 2 }  \cdot q ^ { 5 } =1\times (-2)=-2}．\par
+故答案为：\FormulaOCR{image1246.wmf}{-2}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+15．（2022•乙卷）记\FormulaOCR{image1247.wmf}{S_{ n }}为等差数列\FormulaOCR{image1248.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1249.wmf}{n}项和．若\FormulaOCR{image1250.wmf}{2S_{ 3 }  =3S_{ 2 }  +6}，则公差\FormulaOCR{image1251.wmf}{d=}　　．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：\FormulaOCR{image1252.wmf}{\because 2S_{ 3 }  =3S_{ 2 }  +6}，\par
+\FormulaOCR{image1253.wmf}{\therefore 2(a_{ 1 }  +a_{ 2 }  +a_{ 3 }  )=3(a_{ 1 }  +a_{ 2 }  )+6}，\par
+\FormulaOCR{image1254.wmf}{\{a_n\}}为等差数列，\par
+\FormulaOCR{image1255.wmf}{\therefore 6a_{ 2 }  =3a_{ 1 }  +3a_{ 2 }  +6}，\par
+\FormulaOCR{image1256.wmf}{\therefore 3(a_{ 2 }  -a_{ 1 }  )=3d=6}，解得\FormulaOCR{image1257.wmf}{d=2}．\par
+故答案为：2．\par
+\par\endgroup\fi
+
+四．解答题（共19小题）\par
+\Needspace{6\baselineskip}
+16．（2026•）记\FormulaOCR{image1258.wmf}{S_{ n }}为等差数列\FormulaOCR{image1259.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1260.wmf}{n}项和，已知\FormulaOCR{image1261.wmf}{a_{ 1 }  a_{ 2 }  =6}，\FormulaOCR{image1262.wmf}{a_{ 2 }  a_{ 3 }  =12}，求\FormulaOCR{image1263.wmf}{S_{ n }}．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：设等差数列的公差为\FormulaOCR{image1264.wmf}{d}，\par
+所以\FormulaOCR{image1265.wmf}{a_{ 1 }  a_{ 2 }  =a_{ 1 }  (a_{ 1 }  +d)=6}，\FormulaOCR{image1266.wmf}{a_{ 2 }  a_{ 3 }  =(a_{ 1 }  +d)(a_{ 1 }  +2d)=12}，\par
+解得\FormulaOCR{image1267.wmf}{\begin{cases}a_1=2,\\d=1,\end{cases}}或\FormulaOCR{image1268.wmf}{\begin{cases}a_1=-2,\\d=-1,\end{cases}}，\par
+当\FormulaOCR{image1269.wmf}{\begin{cases}a_1=2,\\d=1,\end{cases}}时，\FormulaOCR{image1270.wmf}{S_{ n }  =2n+\frac { n(n-1) } { 2 }=\frac { n ^ { 2 } +3n } { 2 }}，\par
+当\FormulaOCR{image1271.wmf}{\begin{cases}a_1=-2,\\d=-1,\end{cases}}时，\FormulaOCR{image1272.wmf}{S_{ n }  =-2n+\frac { n(n-1)(-1) } { 2 }=-\frac { n ^ { 2 } +3n } { 2 }}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+17．（2025•天津）\FormulaOCR{image1273.wmf}{\{a_{ n }  \}}是等差数列，\FormulaOCR{image1274.wmf}{\{b_{ n }  \}}是等比数列，\FormulaOCR{image1275.wmf}{a_{ 1 }  =b_{ 1 }  =2}，\FormulaOCR{image1276.wmf}{a_{ 2 }  =b_{ 2 }  +1}，\FormulaOCR{image1277.wmf}{a_{ 3 }  =b_{ 3 }}．\par
+\FormulaOCR{image1278.wmf}{(I)}求\FormulaOCR{image1279.wmf}{\{a_{ n }  \}}，\FormulaOCR{image1280.wmf}{\{b_{ n }  \}}的通项公式；\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）设等差数列\FormulaOCR{image1281.wmf}{\{a_{ n }  \}}的公差为\FormulaOCR{image1282.wmf}{d}，等比数列\FormulaOCR{image1283.wmf}{\{b_{ n }  \}}公比为\FormulaOCR{image1284.wmf}{q(q\ne 0)}，\par
+因为\FormulaOCR{image1285.wmf}{a_{ 1 }  =b_{ 1 }  =2}，\FormulaOCR{image1286.wmf}{a_{ 2 }  =b_{ 2 }  +1}，\FormulaOCR{image1287.wmf}{a_{ 3 }  =b_{ 3 }}，\par
+所以\FormulaOCR{image1288.wmf}{\begin{cases}2+d=2q+1,\\2+2d=2q^2,\end{cases}}，解得\FormulaOCR{image1289.wmf}{\begin{cases}d=3,\\q=2,\end{cases}}，\par
+所以\FormulaOCR{image1290.wmf}{a_{ n }  =2+3(n-1)=3n-1,b_{ n }  =2\times 2 ^ { n-1 } =2 ^ { n }}；\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+18．（2024•天津）已知\FormulaOCR{image1291.wmf}{\{a_{ n }  \}}为公比大于0的等比数列，其前\FormulaOCR{image1292.wmf}{n}项和为\FormulaOCR{image1293.wmf}{S_{ n }}，且\FormulaOCR{image1294.wmf}{a_{ 1 }  =1}，\FormulaOCR{image1295.wmf}{S_{ 2 }  =a_{ 3 }  -1}．\par
+（1）求\FormulaOCR{image1296.wmf}{\{a_{ n }  \}}的通项公式及\FormulaOCR{image1297.wmf}{S_{ n }}；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）\FormulaOCR{image1298.wmf}{a_{ 1 }  =1}，\FormulaOCR{image1299.wmf}{S_{ 2 }  =a_{ 3 }  -1=a_{ 1 }  +a_{ 2 }}，\par
+可得\FormulaOCR{image1300.wmf}{1+q=q ^ { 2 } -1}，整理得\FormulaOCR{image1301.wmf}{q ^ { 2 } -q-2=0}，\par
+解得\FormulaOCR{image1302.wmf}{q=2}或\FormulaOCR{image1303.wmf}{q=-1}，\par
+因为数列\FormulaOCR{image1304.wmf}{\{a_{ n }  \}}的公比大于0，所以\FormulaOCR{image1305.wmf}{q=2}，\par
+所以\FormulaOCR{image1306.wmf}{a_{ n }  =2 ^ { n-1 }}，\FormulaOCR{image1307.wmf}{S_{ n }  =\frac { 1-2 ^ { n }  } { 1-2 }=2 ^ { n } -1}；\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+19．（2024•全国）记数列\FormulaOCR{image1308.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1309.wmf}{n}项和为\FormulaOCR{image1310.wmf}{S_{ n }}，已知\FormulaOCR{image1311.wmf}{a_{ 1 }  =4}，\FormulaOCR{image1312.wmf}{a_{ n+1 }  =\frac { 4(n+1) } { 2n-1 }(S_{ n }  -1)}．\par
+（1）证明：数列\FormulaOCR{image1313.wmf}{\{\frac { S_{ n }  -1 } { 2n-1 }\}}是等比数列；\par
+（2）求\FormulaOCR{image1314.wmf}{\{a_{ n }  \}}的通项公式．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）证明：\FormulaOCR{image1315.wmf}{\because}\FormulaOCR{image1316.wmf}{a_{ n+1 }  =\frac { 4(n+1) } { 2n-1 }(S_{ n }  -1)}，\par
+\FormulaOCR{image1317.wmf}{\because}\FormulaOCR{image1318.wmf}{S_{ n+1 }  -S_{ n }  =\frac { 4(n+1) } { 2n-1 }(S_{ n }  -1)}，\par
+\FormulaOCR{image1319.wmf}{\therefore (2n-1)S_{ n+1 }  -(2n-1)S_{ n }  =4(n+1)S_{ n }  -4(n+1)}，\par
+\FormulaOCR{image1320.wmf}{\therefore (2n-1)S_{ n+1 }  =(6n+3)S_{ n }  -4(n+1)}，\par
+\FormulaOCR{image1321.wmf}{\therefore (2n-1)(S_{ n+1 }  -1)=(6n+3)S_{ n }  -(6n+3)}，\par
+\FormulaOCR{image1322.wmf}{\therefore (2n-1)(S_{ n+1 }  -1)=3(2n+1)(S_{ n }  -1)}，\par
+\FormulaOCR{image1323.wmf}{\therefore}\FormulaOCR{image1324.wmf}{\frac { S_{ n+1 }  -1 } { 2n+1 }=3(\frac { S_{ n }  -1 } { 2n-1 })}，又\FormulaOCR{image1325.wmf}{\frac { S_{ 1 }  -1 } { 2\times 1-1 }=a_{ 1 }  -1=3}，\par
+\FormulaOCR{image1326.wmf}{\therefore}数列\FormulaOCR{image1327.wmf}{\{\frac { S_{ n }  -1 } { 2n-1 }\}}是以首项为3，公比为3的等比数列；\par
+（2）由（1）可得\FormulaOCR{image1328.wmf}{\frac { S_{ n }  -1 } { 2n-1 }=3 ^ { n }}，\par
+\FormulaOCR{image1329.wmf}{\therefore}\FormulaOCR{image1330.wmf}{S_{ n }  -1=(2n-1)\times 3 ^ { n }}①，\par
+当\FormulaOCR{image1331.wmf}{n\geq 2}时，\FormulaOCR{image1332.wmf}{S_{ n-1 }  -1=(2n-3)\times 3 ^ { n-1 }}②，\par
+①\FormulaOCR{image1333.wmf}{-}②可得\FormulaOCR{image1334.wmf}{a_{ n }  =(2n-1)\times 3 ^ { n } -(2n-3)\times 3 ^ { n-1 } =4n\cdot 3 ^ { n-1 } (n\geq 2)}，\par
+又\FormulaOCR{image1335.wmf}{a_{ 1 }  =4}，也满足上式，\par
+\FormulaOCR{image1336.wmf}{\therefore a_{ n }  =4n\cdot 3 ^ { n-1 }}，\FormulaOCR{image1337.wmf}{n\in N ^ { * }}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+20．（2024•甲卷）已知等比数列\FormulaOCR{image1338.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1339.wmf}{n}项和为\FormulaOCR{image1340.wmf}{S_{ n }}，且\FormulaOCR{image1341.wmf}{2S_{ n }  =3a_{ n+1 }  -3}．\par
+（1）求\FormulaOCR{image1342.wmf}{\{a_{ n }  \}}的通项公式；\par
+（2）求数列\FormulaOCR{image1343.wmf}{\{S_{ n }  \}}的前\FormulaOCR{image1344.wmf}{n}项和．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）因为\FormulaOCR{image1345.wmf}{2S_{ n }  =3a_{ n+1 }  -3}，\par
+所以\FormulaOCR{image1346.wmf}{2S_{ n+1 }  =3a_{ n+2 }  -3}，\par
+两式相减可得：\FormulaOCR{image1347.wmf}{2a_{ n+1 }  =3a_{ n+2 }  -3a_{ n+1 }}，即\FormulaOCR{image1348.wmf}{3a_{ n+2 }  =5a_{ n+1 }}，\par
+所以等比数列\FormulaOCR{image1349.wmf}{\{a_{ n }  \}}的公比\FormulaOCR{image1350.wmf}{q=\frac { 5 } { 3 }}，\par
+又因为\FormulaOCR{image1351.wmf}{2S_{ 1 }  =3a_{ 2 }  -3=5a_{ 1 }  -3}，\par
+所以\FormulaOCR{image1352.wmf}{a_{ 1 }  =1}，\FormulaOCR{image1353.wmf}{a_{ n }  =(\frac { 5 } { 3 }) ^ { n-1 }}；\par
+（2）因为\FormulaOCR{image1354.wmf}{2S_{ n }  =3a_{ n+1 }  -3}，\par
+所以\FormulaOCR{image1355.wmf}{S_{ n }  =\frac { 3 } { 2 }(a_{ n+1 }  -1)=\frac { 3 } { 2 }[(\frac { 5 } { 3 }) ^ { n } -1]}．\par
+所以\FormulaOCR{image1356.wmf}{\{S_{ n }  \}}的前\FormulaOCR{image1357.wmf}{n}项和\FormulaOCR{image1358.wmf}{T_{ n }  =S_{ 1 }  +S_{ 2 }  +S_{ 3 }  +...+S_{ n }}\par
+\FormulaOCR{image1359.wmf}{=\frac { 3 } { 2 }[(\frac { 5 } { 3 })+(\frac { 5 } { 3 }) ^ { 2 } +(\frac { 5 } { 3 }) ^ { 3 } +\ldots +(\frac { 5 } { 3 }) ^ { n } ]-\frac { 3 } { 2 }n}\par
+\FormulaOCR{image1360.wmf}{=\frac { 3 } { 2 }\cdot \frac { \frac { 5 } { 3 }[1-(\frac { 5 } { 3 }) ^ { n } ] } { 1-\frac { 5 } { 3 } }-\frac { 3 } { 2 }n}\par
+\FormulaOCR{image1361.wmf}{=\frac { 15 } { 4 }(\frac { 5 } { 3 }) ^ { n } -\frac { 3 } { 2 }n-\frac { 15 } { 4 }}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+21．（2024•新高考Ⅰ）设\FormulaOCR{image1362.wmf}{m}为正整数，数列\FormulaOCR{image1363.wmf}{a_{ 1 }}，\FormulaOCR{image1364.wmf}{a_{ 2 }}，\FormulaOCR{image1365.wmf}{\ldots}，\FormulaOCR{image1366.wmf}{a_{ 4m+2 }}是公差不为0的等差数列，若从中删去两项\FormulaOCR{image1367.wmf}{a_{ i }}和\FormulaOCR{image1368.wmf}{a_{ j }  (i < j)}后剩余的\FormulaOCR{image1369.wmf}{4m}项可被平均分为\FormulaOCR{image1370.wmf}{m}组，且每组的4个数都能构成等差数列，则称数列\FormulaOCR{image1371.wmf}{a_{ 1 }}，\FormulaOCR{image1372.wmf}{a_{ 2 }  \ldots }，\FormulaOCR{image1373.wmf}{a_{ 4m+2 }}是\FormulaOCR{image1374.wmf}{(i,j)}——可分数列．\par
+（1）写出所有的\FormulaOCR{image1375.wmf}{(i,j)}，\FormulaOCR{image1376.wmf}{1\leq i < j\leq 6}，使数列\FormulaOCR{image1377.wmf}{a_{ 1 }}，\FormulaOCR{image1378.wmf}{a_{ 2 }}，\FormulaOCR{image1379.wmf}{\ldots}，\FormulaOCR{image1380.wmf}{a_{ 6 }}是\FormulaOCR{image1381.wmf}{(i,j)}——可分数列；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）根据题意，可得当\FormulaOCR{image1382.wmf}{(i,j)}取\FormulaOCR{image1383.wmf}{(1,2)}时，可以分为\FormulaOCR{image1384.wmf}{a_{ 3 }}，\FormulaOCR{image1385.wmf}{a_4}，\FormulaOCR{image1386.wmf}{a_{ 5 }}，\FormulaOCR{image1387.wmf}{a_{ 6 }}一组公差为\FormulaOCR{image1388.wmf}{d}的等差数列，\par
+当\FormulaOCR{image1389.wmf}{(i,j)}取\FormulaOCR{image1390.wmf}{(1,6)}时，可以分为\FormulaOCR{image1391.wmf}{a_{ 2 }}，\FormulaOCR{image1392.wmf}{a_{ 3 }}，\FormulaOCR{image1393.wmf}{a_4}，\FormulaOCR{image1394.wmf}{a_{ 5 }}一组公差为\FormulaOCR{image1395.wmf}{d}的等差数列，\par
+当\FormulaOCR{image1396.wmf}{(i,j)}取\FormulaOCR{image1397.wmf}{(5,6)}时，可以分为\FormulaOCR{image1398.wmf}{a_{ 1 }}，\FormulaOCR{image1399.wmf}{a_{ 2 }}，\FormulaOCR{image1400.wmf}{a_{ 3 }}，\FormulaOCR{image1401.wmf}{a_4}一组公差为\FormulaOCR{image1402.wmf}{d}的等差数列，\par
+所以\FormulaOCR{image1403.wmf}{(i,j)}可以为\FormulaOCR{image1404.wmf}{(1,2)}，\FormulaOCR{image1405.wmf}{(1,6)}，\FormulaOCR{image1406.wmf}{(5,6)}；\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+22．（2023•乙卷）记\FormulaOCR{image1407.wmf}{S_{ n }}为等差数列\FormulaOCR{image1408.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1409.wmf}{n}项和，已知\FormulaOCR{image1410.wmf}{a_{ 2 }  =11}，\FormulaOCR{image1411.wmf}{S_{ 10 }  =40}．\par
+（1）求\FormulaOCR{image1412.wmf}{\{a_{ n }  \}}的通项公式；\par
+（2）求数列\FormulaOCR{image1413.wmf}{\{\|a_{ n }  \|\}}的前\FormulaOCR{image1414.wmf}{n}项和\FormulaOCR{image1415.wmf}{T_{ n }}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）在等差数列中，\FormulaOCR{image1416.wmf}{\because a_{ 2 }  =11}，\FormulaOCR{image1417.wmf}{S_{ 10 }  =40}．\par
+\FormulaOCR{image1418.wmf}{\therefore}\FormulaOCR{image1419.wmf}{\begin{cases}a_1+d=11,\\10a_1+\dfrac{10\cdot9}{2}d=40,\end{cases}}，即\FormulaOCR{image1420.wmf}{\begin{cases}a_1+d=11,\\a_1+\dfrac92d=4,\end{cases}}，\par
+得\FormulaOCR{image1421.wmf}{a_{ 1 }  =13}，\FormulaOCR{image1422.wmf}{d=-2}，\par
+则\FormulaOCR{image1423.wmf}{a_{ n }  =13-2(n-1)=-2n+15(n\in N ^ { \cdot  } )}．\par
+（2）\FormulaOCR{image1424.wmf}{|a_n|=|-2n+15|=\begin{cases}-2n+15,&1\leq n\leq7,\\2n-15,&n\geq8.\end{cases}}，\par
+即\FormulaOCR{image1425.wmf}{1\leq n\leq7}时，\FormulaOCR{image1426.wmf}{\|a_{ n }  \|=a_{ n }}，\par
+当\FormulaOCR{image1427.wmf}{n\geq 8}时，\FormulaOCR{image1428.wmf}{\|a_{ n }  \|=-a_{ n }}，\par
+当\FormulaOCR{image1429.wmf}{1\leq n\leq7}时，数列\FormulaOCR{image1430.wmf}{\{\|a_{ n }  \|\}}的前\FormulaOCR{image1431.wmf}{n}项和\FormulaOCR{image1432.wmf}{T_{ n }  =a_{ 1 }  +\cdots +a_{ n }  =13n+\frac { n(n-1) } { 2 }\times (-2)=-n ^ { 2 } +14n}，\par
+当\FormulaOCR{image1433.wmf}{n\geq 8}时，数列\FormulaOCR{image1434.wmf}{\{\|a_{ n }  \|\}}的前\FormulaOCR{image1435.wmf}{n}项和\FormulaOCR{image1436.wmf}{T_{ n }  =a_{ 1 }  +\cdots +a_{ 7 }  -\cdots -a_{ n }  =-S_{ n }  +2(a_{ 1 }  +\cdots +a_{ 7 }  )=-[13n+\frac { n(n-1) } { 2 }\times (-2)]+2\times \frac { 13+1 } { 2 }\times 7=n ^ { 2 } -14n+98}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+23．（2023•天津）已知\FormulaOCR{image1437.wmf}{\{a_{ n }  \}}是等差数列，\FormulaOCR{image1438.wmf}{a_{ 2 }  +a_{ 5 }  =16}，\FormulaOCR{image1439.wmf}{a_{ 5 }  -a_{ 3 }  =4}．\par
+（Ⅰ）求\FormulaOCR{image1440.wmf}{\{a_{ n }  \}}的通项公式及\FormulaOCR{image1441.wmf}{\sum_{i=2^{n-1}}^{2^n-1}a_i\quad(n\in N^*)}；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）\FormulaOCR{image1442.wmf}{\{a_n\}}是等差数列，\FormulaOCR{image1443.wmf}{a_{ 2 }  +a_{ 5 }  =16}，\FormulaOCR{image1444.wmf}{a_{ 5 }  -a_{ 3 }  =4}．\par
+\FormulaOCR{image1445.wmf}{\therefore}\FormulaOCR{image1446.wmf}{\begin{cases}a_1+d+a_1+4d=2a_1+5d=16,\\a_1+4d-a_1-2d=2d=4,\end{cases}}，得\FormulaOCR{image1447.wmf}{d=2}，\FormulaOCR{image1448.wmf}{a_{ 1 }  =3}，\par
+则\FormulaOCR{image1449.wmf}{\{a_{ n }  \}}的通项公式\FormulaOCR{image1450.wmf}{a_{ n }  =3+2(n-1)=2n+1(n\in N ^ { \cdot  } )}，\par
+\FormulaOCR{image1451.wmf}{\sum_{i=2^{n-1}}^{2^n-1}a_i}中的首项为\FormulaOCR{image1452.wmf}{a_{2^{n-1}}=2\cdot2^{n-1}+1=2^n+1}，项数为\FormulaOCR{image1453.wmf}{2 ^ { n } -1-2 ^ { n-1 } +1=2 ^ { n } -2 ^ { n-1 } =2\times 2 ^ { n-1 } -2 ^ { n-1 } =2 ^ { n-1 }}，\par
+则\FormulaOCR{image1454.wmf}{\sum_{i=2^{n-1}}^{2^n-1}a_i=\frac{2^{n-1}\left[(2^n+1)+(2^{n+1}-1)\right]}2=3\cdot2^{2n-2}}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+24．（2023•新高考Ⅰ）设等差数列\FormulaOCR{image1455.wmf}{\{a_{ n }  \}}的公差为\FormulaOCR{image1456.wmf}{d}，且\FormulaOCR{image1457.wmf}{d>1}．令\FormulaOCR{image1458.wmf}{b_{ n }  =\frac { n ^ { 2 } +n } { a_{ n }   }}，记\FormulaOCR{image1459.wmf}{S_{ n }}，\FormulaOCR{image1460.wmf}{T_{ n }}分别为数列\FormulaOCR{image1461.wmf}{\{a_{ n }  \}}，\FormulaOCR{image1462.wmf}{\{b_{ n }  \}}的前\FormulaOCR{image1463.wmf}{n}项和．\par
+（1）若\FormulaOCR{image1464.wmf}{3a_{ 2 }  =3a_{ 1 }  +a_{ 3 }}，\FormulaOCR{image1465.wmf}{S_{ 3 }  +T_{ 3 }  =21}，求\FormulaOCR{image1466.wmf}{\{a_{ n }  \}}的通项公式；\par
+（2）若\FormulaOCR{image1467.wmf}{\{b_{ n }  \}}为等差数列，且\FormulaOCR{image1468.wmf}{S_{ 99 }  -T_{ 99 }  =99}，求\FormulaOCR{image1469.wmf}{d}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）\FormulaOCR{image1470.wmf}{\because 3a_{ 2 }  =3a_{ 1 }  +a_{ 3 }}，\FormulaOCR{image1471.wmf}{S_{ 3 }  +T_{ 3 }  =21}，\par
+\FormulaOCR{image1472.wmf}{\because}根据题意可得\FormulaOCR{image1473.wmf}{\begin{cases}3(a_1+d)=3a_1+a_1+2d,\\3a_1+3d+\left(\dfrac2{a_1}+\dfrac6{a_1+d}+\dfrac{12}{a_1+2d}\right)=21,\end{cases}}，\par
+\FormulaOCR{image1474.wmf}{\therefore}\FormulaOCR{image1475.wmf}{\begin{cases}a_1=d,\\6d+\dfrac9d=21,\end{cases}}，\par
+\FormulaOCR{image1476.wmf}{\therefore 2d ^ { 2 } -7d+3=0}，又\FormulaOCR{image1477.wmf}{d>1}，\par
+\FormulaOCR{image1478.wmf}{\therefore}解得\FormulaOCR{image1479.wmf}{d=3}，\FormulaOCR{image1480.wmf}{\therefore a_{ 1 }  =d=3}，\par
+\FormulaOCR{image1481.wmf}{\therefore a_{ n }  =a_{ 1 }  +(n-1)d=3n}，\FormulaOCR{image1482.wmf}{n\in N*}；\par
+（2）\FormulaOCR{image1483.wmf}{\{a_n\}}为等差数列，\FormulaOCR{image1484.wmf}{\{b_{ n }  \}}为等差数列，且\FormulaOCR{image1485.wmf}{b_{ n }  =\frac { n ^ { 2 } +n } { a_{ n }   }}，\par
+\FormulaOCR{image1486.wmf}{\because}根据等差数列的通项公式的特点，可设\FormulaOCR{image1487.wmf}{a_{ n }  =tn}，则\FormulaOCR{image1488.wmf}{b_{ n }  =\frac { n+1 } { t }}，且\FormulaOCR{image1489.wmf}{d=t>1}；\par
+或设\FormulaOCR{image1490.wmf}{a_{ n }  =k(n+1)}，则\FormulaOCR{image1491.wmf}{b_{ n }  =\frac { n } { k }}，且\FormulaOCR{image1492.wmf}{d=k>1}，\par
+①当\FormulaOCR{image1493.wmf}{a_{ n }  =tn}，\FormulaOCR{image1494.wmf}{b_{ n }  =\frac { n+1 } { t }}，\FormulaOCR{image1495.wmf}{d=t>1}时，\par
+则\FormulaOCR{image1496.wmf}{S_{ 99 }  -T_{ 99 }  =\frac { (t+99t)\times 99 } { 2 }-(\frac { 2 } { t }+\frac { 100 } { t })\times \frac { 99 } { 2 }=99}，\par
+\FormulaOCR{image1497.wmf}{\therefore}\FormulaOCR{image1498.wmf}{50t-\frac { 51 } { t }=1}，\FormulaOCR{image1499.wmf}{\therefore 50t ^ { 2 } -t-51=0}，又\FormulaOCR{image1500.wmf}{d=t>1}，\par
+\FormulaOCR{image1501.wmf}{\therefore}解得\FormulaOCR{image1502.wmf}{d=t=\frac { 51 } { 50 }}；\par
+②当\FormulaOCR{image1503.wmf}{a_{ n }  =k(n+1)}，\FormulaOCR{image1504.wmf}{b_{ n }  =\frac { n } { k }}，\FormulaOCR{image1505.wmf}{d=k>1}时，\par
+则\FormulaOCR{image1506.wmf}{S_{ 99 }  -T_{ 99 }  =\frac { (2k+100k)\times 99 } { 2 }-(\frac { 1 } { k }+\frac { 99 } { k })\times \frac { 99 } { 2 }=99}，\par
+\FormulaOCR{image1507.wmf}{\therefore}\FormulaOCR{image1508.wmf}{51k-\frac { 50 } { k }=1}，\FormulaOCR{image1509.wmf}{\therefore 51k ^ { 2 } -k-50=0}，又\FormulaOCR{image1510.wmf}{d=k>1}，\par
+\FormulaOCR{image1511.wmf}{\therefore}此时\FormulaOCR{image1512.wmf}{k}无解，\par
+\FormulaOCR{image1513.wmf}{\therefore}综合可得\FormulaOCR{image1514.wmf}{d=\frac { 51 } { 50 }}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+25．（2023•北京）数列\FormulaOCR{image1515.wmf}{\{a_{ n }  \}}，\FormulaOCR{image1516.wmf}{\{b_{ n }  \}}的项数均为\FormulaOCR{image1517.wmf}{m\ (m>2)}，且\FormulaOCR{image1518.wmf}{a_n}，\FormulaOCR{image1519.wmf}{b_{ n }  \in \{1}，2，\FormulaOCR{image1520.wmf}{\ldots}，\FormulaOCR{image1521.wmf}{m\}}，\FormulaOCR{image1522.wmf}{\{a_{ n }  \}}，\FormulaOCR{image1523.wmf}{\{b_{ n }  \}}的前\FormulaOCR{image1524.wmf}{n}项和分别为\FormulaOCR{image1525.wmf}{A_{ n }}，\FormulaOCR{image1526.wmf}{B_{ n }}，并规定\FormulaOCR{image1527.wmf}{A_{ 0 }  =B_{ 0 }  =0}．对于\FormulaOCR{image1528.wmf}{k\in\{0}，1，2，\FormulaOCR{image1529.wmf}{\ldots}，\FormulaOCR{image1530.wmf}{m\}}，定义\FormulaOCR{image1531.wmf}{r_k=\max\{i\mid B_i\leq A_k}，\FormulaOCR{image1532.wmf}{i\in\{0}，1，2，\FormulaOCR{image1533.wmf}{\ldots}，\FormulaOCR{image1534.wmf}{m\}\}}，其中，\FormulaOCR{image1535.wmf}{\max M}表示数集\FormulaOCR{image1536.wmf}{M}中最大的数．\par
+（Ⅰ）若\FormulaOCR{image1537.wmf}{a_{ 1 }  =2}，\FormulaOCR{image1538.wmf}{a_{ 2 }  =1}，\FormulaOCR{image1539.wmf}{a_{ 3 }  =3}，\FormulaOCR{image1540.wmf}{b_{ 1 }  =1}，\FormulaOCR{image1541.wmf}{b_{ 2 }  =3}，\FormulaOCR{image1542.wmf}{b_{ 3 }  =3}，求\FormulaOCR{image1543.wmf}{r_0}，\FormulaOCR{image1544.wmf}{r_1}，\FormulaOCR{image1545.wmf}{r_2}，\FormulaOCR{image1546.wmf}{r_3}的值；\par
+\QuestionSpace{3.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）列表如下，对比可知\FormulaOCR{image1547.wmf}{r_{ 0 }  =0}，\FormulaOCR{image1548.wmf}{r_{ 1 }  =1}，\FormulaOCR{image1549.wmf}{r_{ 2 }  =1}，\FormulaOCR{image1550.wmf}{r_{ 3 }  =2}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+26．（2023•全国）已知\FormulaOCR{image1557.wmf}{\{a_{ n }  \}}为等比数列，其前\FormulaOCR{image1558.wmf}{n}项和为\FormulaOCR{image1559.wmf}{S_{ n }}，\FormulaOCR{image1560.wmf}{S_{ 3 }  =21}，\FormulaOCR{image1561.wmf}{S_6=189}．\par
+（1）求\FormulaOCR{image1562.wmf}{\{a_{ n }  \}}的通项公式；\par
+（2）若\FormulaOCR{image1563.wmf}{b_{ n }  =(-1) ^ { n } a_{ n }}，求\FormulaOCR{image1564.wmf}{\{b_{ n }  \}}的前\FormulaOCR{image1565.wmf}{n}项和\FormulaOCR{image1566.wmf}{T_{ n }}．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）\FormulaOCR{image1567.wmf}{\{a_n\}}为等比数列，其前\FormulaOCR{image1568.wmf}{n}项和为\FormulaOCR{image1569.wmf}{S_{ n }}，\FormulaOCR{image1570.wmf}{S_{ 3 }  =21}，\FormulaOCR{image1571.wmf}{S_6=189}．\par
+\FormulaOCR{image1572.wmf}{\therefore S_{ 6 }  \ne 2S_{ 3 }}，\FormulaOCR{image1573.wmf}{\therefore q\ne 1}，\par
+则\FormulaOCR{image1574.wmf}{\begin{cases}\dfrac{a_1(1-q^3)}{1-q}=21,\\\dfrac{a_1(1-q^6)}{1-q}=189.\end{cases}}，两式作商得\FormulaOCR{image1575.wmf}{1+q^3=9}，即\FormulaOCR{image1576.wmf}{q^3=8}，\par
+得\FormulaOCR{image1577.wmf}{q=2}，\FormulaOCR{image1578.wmf}{a_{ 1 }  =3}，\par
+则\FormulaOCR{image1579.wmf}{a_{ n }  =3\times 2 ^ { n-1 }}，\FormulaOCR{image1580.wmf}{(n\in N ^ { \cdot  } )}．\par
+（2）\FormulaOCR{image1581.wmf}{\because}\FormulaOCR{image1582.wmf}{b_{ n }  =(-1) ^ { n } a_{ n }  =(-1) ^ { n } \cdot 3\times 2 ^ { n-1 }}，\par
+\FormulaOCR{image1583.wmf}{\because}当\FormulaOCR{image1584.wmf}{n\geq 2}时，\FormulaOCR{image1585.wmf}{\frac { b_{ n }   } { b_{ n-1 }   }=\frac { (-1) ^ { n } \cdot 3\times 2 ^ { n-1 }  } { (-1) ^ { n-1 } \cdot 3\times 2 ^ { n-2 }  }=-2}，\par
+即\FormulaOCR{image1586.wmf}{\{b_{ n }  \}}是公比为\FormulaOCR{image1587.wmf}{-2}的等比数列，首项\FormulaOCR{image1588.wmf}{b_{ 1 }  =-3}，\par
+则\FormulaOCR{image1589.wmf}{T_{ n }  =\frac { -3[1-(-2) ^ { n } ] } { 1-(-2) }=\frac { -3[1-(-2) ^ { n } ] } { 3 }=-1+(-2) ^ { n }}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+27．（2022•新高考Ⅰ）记\FormulaOCR{image1590.wmf}{S_{ n }}为数列\FormulaOCR{image1591.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1592.wmf}{n}项和，已知\FormulaOCR{image1593.wmf}{a_{ 1 }  =1}，\FormulaOCR{image1594.wmf}{\{\frac { S_{ n }   } { a_{ n }   }\}}是公差为\FormulaOCR{image1595.wmf}{\frac { 1 } { 3 }}的等差数列．\par
+\QuestionSpace{2.5cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+（1）求\FormulaOCR{image1596.wmf}{\{a_{ n }  \}}的通项公式；\par
+\par\endgroup\fi
+
+（2）证明：\FormulaOCR{image1597.wmf}{\frac { 1 } { a_{ 1 }   }+\frac { 1 } { a_{ 2 }   }+\ldots +\frac { 1 } { a_{ n }   } < 2}．\par
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）已知\FormulaOCR{image1598.wmf}{a_{ 1 }  =1}，\FormulaOCR{image1599.wmf}{\{\frac { S_{ n }   } { a_{ n }   }\}}是公差为\FormulaOCR{image1600.wmf}{\frac { 1 } { 3 }}的等差数列，\par
+所以\FormulaOCR{image1601.wmf}{\frac { S_{ n }   } { a_{ n }   }=1+\frac { 1 } { 3 }(n-1)=\frac { 1 } { 3 }n+\frac { 2 } { 3 }}，整理得\FormulaOCR{image1602.wmf}{S_{ n }  =\frac { 1 } { 3 }na_{ n }  +\frac { 2 } { 3 }a_{ n }}，①，\par
+故当\FormulaOCR{image1603.wmf}{n\geq 2}时，\FormulaOCR{image1604.wmf}{S_{ n-1 }  =\frac { 1 } { 3 }(n-1)a_{ n-1 }  +\frac { 2 } { 3 }a_{ n-1 }}，②，\par
+①\FormulaOCR{image1605.wmf}{-}②得：\FormulaOCR{image1606.wmf}{\frac { 1 } { 3 }a_{ n }  =\frac { 1 } { 3 }na_{ n }  -\frac { 1 } { 3 }na_{ n-1 }  -\frac { 1 } { 3 }a_{ n-1 }}，\par
+故\FormulaOCR{image1607.wmf}{(n-1)a_{ n }  =(n+1)a_{ n-1 }}，\par
+化简得：\FormulaOCR{image1608.wmf}{\frac { a_{ n }   } { a_{ n-1 }   }=\frac { n+1 } { n-1 }}，\FormulaOCR{image1609.wmf}{\frac { a_{ n-1 }   } { a_{ n-2 }   }=\frac { n } { n-2 }}，\FormulaOCR{image1610.wmf}{........}，\FormulaOCR{image1611.wmf}{\frac { a_{ 3 }   } { a_{ 2 }   }=\frac { 4 } { 2 }}，\FormulaOCR{image1612.wmf}{\frac { a_{ 2 }   } { a_{ 1 }   }=\frac { 3 } { 1 }}；\par
+所以\FormulaOCR{image1613.wmf}{\frac { a_{ n }   } { a_{ 1 }   }=\frac { n(n+1) } { 2 }}，\par
+故\FormulaOCR{image1614.wmf}{a_{ n }  =\frac { n(n+1) } { 2 }}（首项符合通项）．\par
+所以\FormulaOCR{image1615.wmf}{a_{ n }  =\frac { n(n+1) } { 2 }}．\par
+证明：（2）由于\FormulaOCR{image1616.wmf}{a_{ n }  =\frac { n(n+1) } { 2 }}，\par
+所以\FormulaOCR{image1617.wmf}{\frac { 1 } { a_{ n }   }=\frac { 2 } { n(n+1) }=2(\frac { 1 } { n }-\frac { 1 } { n+1 })}，\par
+所以\FormulaOCR{image1618.wmf}{\frac { 1 } { a_{ 1 }   }+\frac { 1 } { a_{ 2 }   }+...+\frac { 1 } { a_{ n }   }=2(1-\frac { 1 } { 2 }+\frac { 1 } { 2 }-\frac { 1 } { 3 }+...+\frac { 1 } { n }-\frac { 1 } { n+1 })=2\times (1-\frac { 1 } { n+1 }) < 2}．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+28．（2022•浙江）已知等差数列\FormulaOCR{image1619.wmf}{\{a_{ n }  \}}的首项\FormulaOCR{image1620.wmf}{a_{ 1 }  =-1}，公差\FormulaOCR{image1621.wmf}{d>1}．记\FormulaOCR{image1622.wmf}{\{a_{ n }  \}}的前\FormulaOCR{image1623.wmf}{n}项和为\FormulaOCR{image1624.wmf}{S_{ n }  (n\in N ^ { * } )}．\par
+（Ⅰ）若\FormulaOCR{image1625.wmf}{S_{ 4 }  -2a_{ 2 }  a_{ 3 }  +6=0}，求\FormulaOCR{image1626.wmf}{S_{ n }}；\par
+（Ⅱ）若对于每个\FormulaOCR{image1627.wmf}{n\in N ^ { * }}，存在实数\FormulaOCR{image1628.wmf}{c_{ n }}，使\FormulaOCR{image1629.wmf}{a_{ n }  +c_{ n }}，\FormulaOCR{image1630.wmf}{a_{ n+1 }  +4c_{ n }}，\FormulaOCR{image1631.wmf}{a_{ n+2 }  +15c_{ n }}成等比数列，求\FormulaOCR{image1632.wmf}{d}的取值范围．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（Ⅰ）因为等差数列\FormulaOCR{image1633.wmf}{\{a_{ n }  \}}的首项\FormulaOCR{image1634.wmf}{a_{ 1 }  =-1}，公差\FormulaOCR{image1635.wmf}{d>1}，\par
+因为\FormulaOCR{image1636.wmf}{S_{ 4 }  -2a_{ 2 }  a_{ 3 }  +6=0}，可得\FormulaOCR{image1637.wmf}{\frac { 4(a_{ 1 }  +a_{ 4 }  ) } { 2 }-2a_{ 2 }  a_{ 3 }  +6=0}，即\FormulaOCR{image1638.wmf}{2(a_{ 1 }  +a_{ 4 }  )-2a_{ 2 }  a_{ 3 }  +6=0}，\par
+\FormulaOCR{image1639.wmf}{a_{ 1 }  +a_{ 1 }  +3d-(a_{ 1 }  +d)(a_{ 1 }  +2d)+3=0}，即\FormulaOCR{image1640.wmf}{-1-1+3d-(-1+d)(-1+2d)+3=0}，\par
+整理可得：\FormulaOCR{image1641.wmf}{d ^ { 2 } =3d}，解得\FormulaOCR{image1642.wmf}{d=3}，\par
+所以\FormulaOCR{image1643.wmf}{S_{ n }  =na_{ 1 }  +\frac { n(n-1) } { 2 }d=-n+\frac { 3n ^ { 2 } -3n } { 2 }=\frac { 3n ^ { 2 } -5n } { 2 }}，\par
+即\FormulaOCR{image1644.wmf}{S_{ n }  =\frac { 3n ^ { 2 } -5n } { 2 }}；\par
+（Ⅱ）因为对于每个\FormulaOCR{image1645.wmf}{n\in N ^ { * }}，存在实数\FormulaOCR{image1646.wmf}{c_{ n }}，使\FormulaOCR{image1647.wmf}{a_{ n }  +c_{ n }}，\FormulaOCR{image1648.wmf}{a_{ n+1 }  +4c_{ n }}，\FormulaOCR{image1649.wmf}{a_{ n+2 }  +15c_{ n }}成等比数列，\par
+则\FormulaOCR{image1650.wmf}{(a_{ 1 }  +nd+4c_{ n }  ) ^ { 2 } =[a_{ 1 }  +(n-1)d+c_{ n }  ][(a_{ 1 }  +(n+1)d+15c_{ n }  ]}，\FormulaOCR{image1651.wmf}{a_{ 1 }  =-1}，\par
+整理可得：\FormulaOCR{image1652.wmf}{c_{ n }  ^{ 2 }+[(14-8n)d+8]c_{ n }  +d ^ { 2 } =0}，则\ensuremath{\triangle}\FormulaOCR{image1653.wmf}{=[(14-8n)d+8] ^ { 2 } -4d ^ { 2 } \geq 0}恒成立在\FormulaOCR{image1654.wmf}{n\in N ^ { + }}，\par
+整理可得\FormulaOCR{image1655.wmf}{[(2n-3)d-2][n-2)d-1]\geq 0}，\par
+当\FormulaOCR{image1656.wmf}{n=1}时，可得\FormulaOCR{image1657.wmf}{d\leq -2}或\FormulaOCR{image1658.wmf}{d\geq -1}，而\FormulaOCR{image1659.wmf}{d>1}，\par
+所以\FormulaOCR{image1660.wmf}{d}的范围为\FormulaOCR{image1661.wmf}{(1,+\infty )}；\par
+\FormulaOCR{image1662.wmf}{n=2}时，不等式变为\FormulaOCR{image1663.wmf}{(d-2)(-1)\geq 0}，解得\FormulaOCR{image1664.wmf}{d\leq 2}，而\FormulaOCR{image1665.wmf}{d>1}，\par
+所以此时\FormulaOCR{image1666.wmf}{d\in (1}，\FormulaOCR{image1667.wmf}{2]}，\par
+当\FormulaOCR{image1668.wmf}{n\geq 3}时，\FormulaOCR{image1669.wmf}{d>1}，则\FormulaOCR{image1670.wmf}{[(2n-3)d-2][n-2)d-1]>(2n-5)(n-3)\geq 0}符合要求，\par
+综上所述，对于每个\FormulaOCR{image1671.wmf}{n\in N ^ { * }}，\FormulaOCR{image1672.wmf}{d}的取值范围为\FormulaOCR{image1673.wmf}{(1}，\FormulaOCR{image1674.wmf}{2]}，使\FormulaOCR{image1675.wmf}{a_{ n }  +c_{ n }}，\FormulaOCR{image1676.wmf}{a_{ n+1 }  +4c_{ n }}，\FormulaOCR{image1677.wmf}{a_{ n+2 }  +15c_{ n }}成等比数列．\par
+\par\endgroup\fi
+
+\Needspace{6\baselineskip}
+29．（2022•新高考Ⅱ）已知\FormulaOCR{image1678.wmf}{\{a_{ n }  \}}是等差数列，\FormulaOCR{image1679.wmf}{\{b_{ n }  \}}是公比为2的等比数列，且\FormulaOCR{image1680.wmf}{a_{ 2 }  -b_{ 2 }  =a_{ 3 }  -b_{ 3 }  =b_{ 4 }  -a_{ 4 }}．\par
+（1）证明：\FormulaOCR{image1681.wmf}{a_{ 1 }  =b_{ 1 }}；\par
+（2）求集合\FormulaOCR{image1682.wmf}{\left\{k\mid b_k=a_m+a_1,\right.}，\FormulaOCR{image1683.wmf}{\left.1\leq m\leq500\right\}}中元素的个数．\par
+\QuestionSpace{4.8cm}
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+解：（1）证明：设等差数列\FormulaOCR{image1684.wmf}{\{a_{ n }  \}}的公差为\FormulaOCR{image1685.wmf}{d}，\par
+由\FormulaOCR{image1686.wmf}{a_{ 2 }  -b_{ 2 }  =a_{ 3 }  -b_{ 3 }}，得\FormulaOCR{image1687.wmf}{a_{ 1 }  +d-2b_{ 1 }  =a_{ 1 }  +2d-4b_{ 1 }}，则\FormulaOCR{image1688.wmf}{d=2b_{ 1 }}，\par
+由\FormulaOCR{image1689.wmf}{a_{ 2 }  -b_{ 2 }  =b_{ 4 }  -a_{ 4 }}，得\FormulaOCR{image1690.wmf}{a_{ 1 }  +d-2b_{ 1 }  =8b_{ 1 }  -(a_{ 1 }  +3d)}，\par
+即\FormulaOCR{image1691.wmf}{a_{ 1 }  +d-2b_{ 1 }  =4d-(a_{ 1 }  +3d)}，\par
+\FormulaOCR{image1692.wmf}{\therefore a_{ 1 }  =b_{ 1 }}．\par
+（2）由（1）知，\FormulaOCR{image1693.wmf}{d=2b_{ 1 }  =2a_{ 1 }}，\par
+由\FormulaOCR{image1694.wmf}{b_{ k }  =a_{ m }  +a_{ 1 }}知，\FormulaOCR{image1695.wmf}{b_{ 1 }  \cdot 2 ^ { k-1 } =a_{ 1 }  +(m-1)d+a_{ 1 }}，\par
+\FormulaOCR{image1696.wmf}{\therefore}\FormulaOCR{image1697.wmf}{b_{ 1 }  \cdot 2 ^ { k-1 } =b_{ 1 }  +(m-1)\cdot 2b_{ 1 }  +b_{ 1 }}，即\FormulaOCR{image1698.wmf}{2^{k-1}=2m}，\par
+又\FormulaOCR{image1699.wmf}{1\leq m\leq500}，故\FormulaOCR{image1700.wmf}{2\leq2m\leq1000}，则\FormulaOCR{image1701.wmf}{2\leq k\leq10}，\par
+故集合\FormulaOCR{image1702.wmf}{\left\{k\mid b_k=a_m+a_1,\right.}，\FormulaOCR{image1703.wmf}{\left.1\leq m\leq500\right\}}中元素个数为9个．\par
+\par\endgroup\fi
+
+\ifshowanswers
+\par\begingroup\color{solutioncolor}\noindent\textbf{解答}\quad
+\qquad{}\par
+\par\endgroup\fi
+
+
+\ifshowanswers
+\section*{教学补充：典型问题的多种解法}
+
+\subsection*{一、等差数列前 $n$ 项和的最值}
+设 $a_n=a_1+(n-1)d$，且 $a_1>0,\ d<0$。
+
+\textbf{方法一（看项的正负）}\quad
+$S_{n+1}-S_n=a_{n+1}$，所以部分和在下一项为正时增加、为负时减少。
+若 $a_m>0,\ a_{m+1}<0$，则 $S_m$ 是唯一最大值；
+若 $a_{m+1}=0$，则 $S_m=S_{m+1}$，两者同为最大值。
+这一步能够避免只看二次函数对称轴时漏掉“两个相邻整数同为最值”的情形。
+
+\textbf{方法二（二次函数）}\quad
+\[
+S_n=na_1+\frac{n(n-1)}2d
+=\frac d2n^2+\left(a_1-\frac d2\right)n .
+\]
+其对称轴为
+\[
+n_0=\frac12-\frac{a_1}{d}.
+\]
+在正整数中取离 $n_0$ 最近的整数；若 $n_0$ 恰为半整数，则两个相邻整数对应的部分和相等。
+
+\textbf{方法三（中间项）}\quad
+$S_n=\dfrac n2(a_1+a_n)$。在已经能判断正、负项分界的位置时，
+用 $a_n$ 与 $a_{n+1}$ 的符号直接确定最值，通常比展开 $S_n$ 更快。
+
+\subsection*{二、$\{a_n\}$ 与 $\left\{\dfrac{S_n}{n}\right\}$ 的等差性}
+\textbf{正向证明}\quad 若 $\{a_n\}$ 是等差数列，则
+\[
+\frac{S_n}{n}=\frac{a_1+a_n}{2},
+\]
+右端是关于 $n$ 的一次式，故 $\left\{\dfrac{S_n}{n}\right\}$ 也是等差数列。
+
+\textbf{反向证明}\quad 若
+\[
+\frac{S_n}{n}=u+(n-1)v,
+\]
+则 $S_n=vn^2+(u-v)n$。由 $a_1=S_1$，以及 $n\ge2$ 时
+$a_n=S_n-S_{n-1}$，统一得到
+\[
+a_n=u+2(n-1)v,
+\]
+所以 $\{a_n\}$ 是等差数列。这里必须单独检查 $n=1$，不能只写
+$a_n=S_n-S_{n-1}$ 后默认结论对首项成立。
+
+\subsection*{三、等差乘等比型求和}
+以 $T_n=\sum_{k=1}^n kq^k$ 为例。
+
+\textbf{方法一（错位相减）}\quad 当 $q\ne1$ 时，把 $T_n$ 与 $qT_n$ 对齐相减：
+\[
+(1-q)T_n=q+q^2+\cdots+q^n-nq^{n+1},
+\]
+从而
+\[
+T_n=\frac{q\left[1-(n+1)q^n+nq^{n+1}\right]}{(1-q)^2}.
+\]
+当 $q=1$ 时，$T_n=\dfrac{n(n+1)}2$。
+
+\textbf{方法二（求导法）}\quad 由
+\[
+1+q+\cdots+q^n=\frac{1-q^{n+1}}{1-q}
+\]
+两边对 $q$ 求导，再乘以 $q$，即可得到同一公式。
+此法适合教师讲解公式来源；考场书写通常以错位相减更稳妥。
+
+\subsection*{四、裂项求和中的等号与放缩}
+例如
+\[
+\frac{1}{n(n+2)}
+=\frac12\left(\frac1n-\frac1{n+2}\right)
+\]
+是恒等变形，可以直接得到精确和；而
+\[
+\frac1{n^2}<\frac1{n(n-1)}
+=\frac1{n-1}-\frac1n\qquad(n\ge2)
+\]
+是放缩，只能推出上界。教学时应明确标出“恒等裂项”与“为便于求界而放缩”的区别，
+并检查放缩方向及起始项，避免把严格不等式误写成等式。
+\fi
