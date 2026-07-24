@@ -2144,16 +2144,110 @@ F_1(-\sqrt{17},0),\qquad F_2(\sqrt{17},0),
 	\]
 	故 $k_{AB}\cdot k_{PF}=-1$，即 $PF\perp AB$。
 	
-	\subsection*{6.\ 进一步补充：它本质上是“切点弦/极点极线”}
-	对任意圆锥曲线 $\mathcal C$：
-	若从外点 $P$ 向 $\mathcal C$ 作两条切线，切于 $A,B$，
-	则\textbf{连线 $AB$ 称为 $P$ 关于 $\mathcal C$ 的极线（polar），点 $P$ 称为直线 $AB$ 的极点（pole）}。
-	这意味着：
+	\subsection*{6.\ 阿基米德三角形与极点极线}
+
+	二者不是偶然相关，而是同一个构型的两种语言。设 $A,B$ 是圆锥曲线
+	$\mathcal C$ 上两点，过 $A,B$ 的切线交于 $P$，则
+	\[
+	\boxed{\text{阿基米德三角形的顶点 }P
+	\text{ 是极点，底边 }AB\text{ 是 }P\text{ 的极线。}}
+	\]
+	换言之，阿基米德三角形首先是一个``极点---极线---两个切点''构型；
+	其中关于中线、面积和垂直的性质，是在这个射影骨架上继续叠加仿射或欧氏度量后得到的。
+
+	\subsubsection*{6.1\ 在标准抛物线上的坐标验证}
+
+	对抛物线
+	\[
+	\mathcal P:\ y^2=2px\quad(p>0),
+	\]
+	点 $P(u,v)$ 的极线方程为
+	\[
+	\boxed{vy=p(x+u).}
+	\]
+	若
+	\[
+	A=A(t_1)=\left(\frac p2t_1^2,pt_1\right),\qquad
+	B=A(t_2)=\left(\frac p2t_2^2,pt_2\right),
+	\]
+	则两点处的切线分别为
+	\[
+	t_1y=x+\frac p2t_1^2,\qquad
+	t_2y=x+\frac p2t_2^2.
+	\]
+	两切线交点为
+	\[
+	P\left(\frac p2t_1t_2,\frac p2(t_1+t_2)\right).
+	\]
+	把 $P$ 的坐标代入极线方程，得到
+	\[
+	\boxed{(t_1+t_2)y=2x+pt_1t_2,}
+	\]
+	而 $A(t_1),B(t_2)$ 都满足此式，所以这条极线正是底边 $AB$。
+
+	因此，``两切线交于 $P$，求切点弦 $AB$''可以直接转化为
+	``已知极点 $P$，写出它的极线''，不必再分别求两个切点。
+
+	\subsubsection*{6.2\ La Hire 定理给出的两类轨迹互换}
+
+	La Hire 定理说明：对圆锥曲线，有
+	\[
+	Q\in\operatorname{polar}(P)
+	\quad\Longleftrightarrow\quad
+	P\in\operatorname{polar}(Q).
+	\]
+	用于阿基米德三角形，可得到两个非常实用的对偶结论：
 	\begin{enumerate}
-		\item 许多“阿基米德三角形”的轨迹题，本质是“极线随点动而绕某定点转动”的射影性质；
-		\item 若一个点在某条线的极线上，则该线的极点在该点的极线上（La Hire 定理的互逆性）。
+		\item 若底边 $AB$ 恒过定点 $Q$，则顶点 $P$ 恒在 $Q$ 的极线上；
+		\item 若顶点 $P$ 恒在定直线 $l$ 上，则底边 $AB$ 恒过直线 $l$ 的极点。
 	\end{enumerate}
-	因此：\textbf{遇到“切线交点、切点弦、过焦点/准线、直角”等关键词时，往往可以尝试极点极线视角简化。}
+	这正是许多``切线交点的轨迹''与``切点弦过定点''问题能够互相转化的原因。
+
+	\subsubsection*{6.3\ 焦点与准线：焦点阿基米德三角形的本质}
+
+	抛物线焦点为 $F(\frac p2,0)$。将 $F$ 代入极线公式，得到
+	\[
+	0\cdot y=p\left(x+\frac p2\right),
+	\]
+	即
+	\[
+	\boxed{\operatorname{polar}(F):\ x=-\frac p2,}
+	\]
+	这恰好是抛物线的准线。因此，\textbf{焦点与准线互为极点、极线}。
+	再由 La Hire 定理，
+	\[
+	\boxed{F\in AB
+	\quad\Longleftrightarrow\quad
+	P\in\operatorname{polar}(F)
+	\quad\Longleftrightarrow\quad
+	P\text{ 在准线上}.}
+	\]
+	所以``阿基米德三角形的底边过焦点时，顶点在准线上''不是一个需要单独记忆的结论，
+	而是极点极线对偶性的直接推论。
+
+	此时参数条件为 $t_1t_2=-1$，还可推出两条切线互相垂直。
+	需要注意：``底边过焦点 $\Longleftrightarrow$ 顶点在准线''是射影对偶结论；
+	``两切线垂直''则使用了角度与垂直概念，属于在射影结构之上增加的欧氏性质。
+
+	\subsubsection*{6.4\ 哪些性质来自极点极线}
+
+	\begin{center}
+		\begin{tabular}{p{0.38\textwidth}p{0.49\textwidth}}
+			\toprule
+			性质 & 所属层次 \\ \midrule
+			顶点 $P$ 与底边 $AB$ 互为极点、极线 & 射影性质 \\
+			底边过定点与顶点在定直线之间的互换 & La Hire 对偶，射影性质 \\
+			底边过焦点与顶点在准线之间的互换 & 焦点、准线的配极关系 \\
+			底边中线平行于抛物线轴 & 仿射性质 \\
+			两切线垂直、角平分线等 & 欧氏度量性质 \\
+			面积比、面积最值 & 仿射面积或度量性质，不是纯射影性质 \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+
+	因此，遇到``两切线交点、切点弦、过定点、顶点轨迹、焦点与准线''
+	这些关键词时，优先使用极点极线；遇到``平行、中点、垂直、面积''时，
+	再分别补上仿射或欧氏工具。这样能避免把所有阿基米德三角形结论都误认为是纯射影结论。
 	
 	\subsection*{7.\ 常见高考/竞赛题型与套路（补充）}
 	\begin{enumerate}
