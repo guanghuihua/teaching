@@ -1,34 +1,4 @@
 # Triangle-topic OCR intermediates and LaTeX build files
-/题目积累/专题四解三角形专题-公式识别.json
-/题目积累/专题四解三角形专题-assets/*
-!/题目积累/专题四解三角形专题-assets/image98.png
-!/题目积累/专题四解三角形专题-assets/image111.png
-!/题目积累/专题四解三角形专题-assets/image124.png
-!/题目积累/专题四解三角形专题-assets/image144.png
-!/题目积累/专题四解三角形专题-assets/image157.png
-!/题目积累/专题四解三角形专题-assets/image158.png
-!/题目积累/专题四解三角形专题-assets/image162.png
-!/题目积累/专题四解三角形专题-assets/image163.png
-!/题目积累/专题四解三角形专题-assets/image170.png
-!/题目积累/专题四解三角形专题-assets/image181.png
-!/题目积累/专题四解三角形专题-assets/image393.png
-!/题目积累/专题四解三角形专题-assets/image414.png
-!/题目积累/专题四解三角形专题-assets/image792.png
-/题目积累/专题四解三角形专题-答案版.aux
-/题目积累/专题四解三角形专题-答案版.fdb_latexmk
-/题目积累/专题四解三角形专题-答案版.fls
-/题目积累/专题四解三角形专题-答案版.log
-/题目积累/专题四解三角形专题-答案版.out
-/题目积累/专题四解三角形专题-答案版.pdf
-/题目积累/专题四解三角形专题-答案版.xdv
-/题目积累/专题四解三角形专题-试卷版.aux
-/题目积累/专题四解三角形专题-试卷版.fdb_latexmk
-/题目积累/专题四解三角形专题-试卷版.fls
-/题目积累/专题四解三角形专题-试卷版.log
-/题目积累/专题四解三角形专题-试卷版.out
-/题目积累/专题四解三角形专题-试卷版.pdf
-/题目积累/专题四解三角形专题-试卷版.xdv
-
 # Reproducible LaTeX, Python, and Word temporary files
 *.aux
 *.bbl
@@ -51,3 +21,4 @@
 __pycache__/
 *.py[cod]
 ~$*
+deepseek_api_key.md
