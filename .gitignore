@@ -31,11 +31,22 @@
 
 # Reproducible LaTeX, Python, and Word temporary files
 *.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
 *.fdb_latexmk
 *.fls
+*.lof
 *.log
+*.lot
+*.nav
 *.out
+*.run.xml
+*.snm
 *.synctex.gz
+*.toc
+*.vrb
 *.xdv
 __pycache__/
 *.py[cod]
