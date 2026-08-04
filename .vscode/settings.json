@@ -1,0 +1,6 @@
+{
+  "autoGitOnExit.enabled": true,
+  "autoGitOnExit.saveAll": true,
+  "autoGitOnExit.commitMessagePrefix": "chore: auto-save",
+  "autoGitOnExit.commandTimeoutSeconds": 90
+}
