@@ -13,6 +13,16 @@
 - TeX, PDF, PPT, images, and other source files remain the formal lesson, handout, assessment, and presentation materials.
 - The long-term goal is to turn authentic teaching experience, student difficulties, and problem-solving evidence into a personalized AI-assisted mathematics education system.
 
+## Repository Map
+
+- `00_开始这里.md` is the repository entry point. `00_课程标准与总纲/` holds curriculum-standard sources and teaching-content mappings.
+- `01_知识点索引/` contains concept entry pages. Update these pages when adding reusable material for an existing topic.
+- `04_题库积累/` is the curated problem-bank layer; `好题索引.md` is its main entry point.
+- `题目积累/` stores topic-level working materials and source-derived problem collections. OCR or model-extracted content remains a draft until a teacher has checked it.
+- `教学课件/` contains lesson-specific materials and reusable presentation or handout templates.
+- `高考真题/` contains source papers, their TeX/PDF derivatives, the `exam-zh` corpus, and the twelve-topic classification. Do not change a question's source wording, answer, or classification without recording the source and reason.
+- `AlJabr-1-master/` is a third-party TeX textbook source. Keep its upstream structure and license intact; make local changes there only when explicitly requested.
+
 ## Knowledge Organization
 
 - Start from `00_开始这里.md` and the relevant concept index before reorganizing content.
@@ -21,6 +31,8 @@
 - Keep Obsidian links valid and use repository-relative paths.
 - Do not silently rename or move large groups of linked notes, images, TeX files, PDFs, or slides.
 - Preserve original source material; generated summaries, OCR output, and derived artifacts must remain distinguishable from originals.
+- When importing a problem, retain enough provenance to locate the original paper, book, image, or solution. Flag uncertain transcriptions rather than guessing.
+- For materials under `题目积累/圆锥曲线/图片资料整理/`, treat `pages/`, `qa/`, `import_reports/`, and `revision_work/` as reproducible working output. Do not promote an OCR candidate into a classroom problem or answer key until it has been manually checked against the source image.
 
 ## Mathematical and Teaching Quality
 
@@ -38,6 +50,7 @@
 - For PDF, Word, slide, image, or spreadsheet work, use the relevant artifact workflow and visually verify the result.
 - Keep temporary OCR, render, build, and visual-QA output in ignored directories.
 - Avoid rewriting binary teaching materials when an index or companion note is sufficient.
+- Do not commit TeX auxiliary files or generated PDFs merely because a local compilation produced them. Retain PDFs only when they are intentional, tracked teaching deliverables.
 
 ## Security and Privacy
 
@@ -48,10 +61,11 @@
 
 ## Verification
 
-- Inspect modified Markdown links, referenced paths, formulas, and source attribution.
-- Verify generated questions and solutions independently before classroom use.
+- For Markdown changes, open the changed note, confirm its Obsidian links resolve to the intended repository note, and check displayed mathematics, referenced paths, and source attribution.
+- For TeX changes, compile only the affected document from its own directory. Use `xelatex -interaction=nonstopmode "<file>.tex"` twice when cross-references are involved, or use that directory's documented `latexmk`/`make` target. Inspect the `.log` for errors and verify the resulting PDF opens.
+- For generated question sets, independently verify every question, answer, diagram reference, and scoring rule before classroom use. Items listed in `需复核题目.csv` or a `review-items.csv` remain review work, not validated material.
 - For broad reorganizations, report moved files, repaired links, unresolved references, and any material requiring manual review.
-- Check `git status` and `git diff` before committing.
+- Before committing, run `git diff --check`, inspect `git diff --cached`, and confirm `git status --short` contains only the intended files.
 
 ## Git Workflow
 
