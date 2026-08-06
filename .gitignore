@@ -31,3 +31,6 @@ DeepSeekAPI
 /题目积累/圆锥曲线/图片资料整理/import_reports/
 /题目积累/圆锥曲线/图片资料整理/revision_work/
 /tmp/
+.env
+.env.*
+.aider*
