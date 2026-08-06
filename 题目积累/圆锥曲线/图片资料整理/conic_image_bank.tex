@@ -1,0 +1,3148 @@
+\documentclass[UTF8,a4paper,11pt]{ctexart}
+
+\usepackage[margin=2.2cm]{geometry}
+
+\usepackage{amsmath,amssymb,mathtools,bm}
+
+\usepackage{enumitem,longtable,booktabs,xcolor,hyperref,seqsplit}
+
+\xeCJKsetup{CJKmath=true}
+
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+
+\setlist{nosep,leftmargin=2em}
+
+\newcommand{\sourceinfo}[2]{\par\smallskip{\small\color{gray}\raggedright 源图：\texttt{#1}\par SHA256：\texttt{\seqsplit{#2}}\par}\medskip}
+
+\title{圆锥曲线图片资料整理稿}
+
+\author{MindDuet Math 数据准备}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{quote}
+
+本稿由视觉模型批量识别生成，所有内容均为教师复核前草稿。模糊内容和图形以“待人工核对”或“图形见原图”标记；源图及哈希用于追溯。
+
+\end{quote}
+
+\tableofcontents
+
+\clearpage
+
+\section{隐圆——几何法与代数法}
+
+\sourceinfo{微信图片\_20260806202921\_83\_34.jpg}{d1734347e94bef97781b58728d6741a9748af8cb8d8668cb60cf4a7271b06528}
+
+\subsection*{技巧43}
+\paragraph{巧辨题——隐圆问题的应用场景}
+隐圆问题指在题设中没有明确给出圆的相关信息，而是隐含在题目中，要通过分析、转化，发现圆或圆的方程，从而利用圆的知识求解，我们称这类问题为“隐圆”问题。
+
+常见隐圆1：看到题干中出现线段比例
+
+常见隐圆2：看到题干中出现椭圆两条互相垂直的切线交点轨迹
+
+看到\ \textbullet\ 关键信息
+
+想到\ 解题技巧
+
+\paragraph{速答题——2种轨迹}
+\begin{enumerate}
+  \item 阿氏圆
+
+  已知平面上两点 $A,B$，点 $P$ 与点 $A,B$ 在同一平面上，则所有满足
+  \[
+  \frac{|PA|}{|PB|}=\lambda\,(\lambda>0,\text{且 }\lambda\ne 1)
+  \]
+  的点 $P$ 的轨迹是一个圆，这个轨迹最先由古希腊数学家阿波罗尼斯发现，故又称阿氏圆，还称圆的第二定义。
+
+  特别地，当 $\lambda=1$ 时，点 $P$ 的轨迹是线段 $AB$ 的中垂线。
+
+  设 $P(x,y),A(a,0),B(b,0)\,(a\ne b)$，因为
+  \[
+  \frac{|PA|}{|PB|}=\lambda\,(\lambda>0,\text{且 }\lambda\ne 1),
+  \]
+  所以
+  \[
+  \frac{\sqrt{(x-a)^2+y^2}}{\sqrt{(x-b)^2+y^2}}=\lambda,
+  \]
+  整理得
+  \[
+  (1-\lambda^2)x^2+(1-\lambda^2)y^2+(2\lambda^2b-2a)x+(a^2-\lambda^2b^2)=0,
+  \]
+  配方得
+  \[
+  \left(x+\frac{\lambda^2b-a}{1-\lambda^2}\right)^2+y^2=\frac{\lambda^2(a-b)^2}{(1-\lambda^2)^2}.
+  \]
+
+  表示圆心为
+  \[
+  \left(-\frac{\lambda^2b-a}{1-\lambda^2},0\right),
+  \]
+  半径为
+  \[
+  \frac{\lambda(a-b)}{1-\lambda^2}
+  \]
+  的圆。\,[待人工核对]
+
+  \item 蒙日圆
+
+  法国著名数学家加斯帕尔·蒙日在研究圆锥曲线时发现：椭圆的任意两条互相垂直的切线的交点 $P$ 的轨迹是以椭圆的中心为圆心，$\sqrt{a^2+b^2}$（$a$ 为椭圆的长半轴长，$b$ 为椭圆的短半轴长）为半径的圆，这个圆被称为蒙日圆。
+
+  设椭圆方程为
+  \[
+  \frac{x^2}{a^2}+\frac{y^2}{b^2}=1\,(a>b>0),
+  \]
+  如图，\textbf{[图形见原图]}
+
+  $PA,PB$ 是椭圆两条互相垂直的切线，延长 $PA,PB$ 与蒙日圆分别交于点 $M,N$，$OP$ 与 $AB$ 交于点 $Q$。
+
+  则(1)点 $P$ 的轨迹方程是
+  \[
+  x^2+y^2=a^2+b^2.
+  \]
+
+  (2) $M,O,N$ 三点共线。
+
+  (3) $MN\parallel AB$.
+
+  (4)
+  \[
+  k_{OP}\cdot k_{MN}=k_{OP}\cdot k_{AB}=k_{OB}\cdot k_{PB}=-\frac{b^2}{a^2}.
+  \]
+\end{enumerate}
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页眉右上角为“技巧43”，主体标题为“隐圆——几何法与代数法”。
+
+\item “看到 关键信息 / 想到 解题技巧”中间为图标与箭头装饰，非主要正文。
+
+\item 阿氏圆部分最后一句半径表达式原图疑似为 \$\textbackslash{}sqrt\{\textbackslash{}frac\{\textbackslash{}lambda\textasciicircum{}2(a-b)\textasciicircum{}2\}\{(1-\textbackslash{}lambda\textasciicircum{}2)\textasciicircum{}2\}\}\$，但为避免补写，已标注待人工核对。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧应用}
+
+\sourceinfo{微信图片\_20260806202925\_84\_34.jpg}{bd85981f4db4f8372c806023485ced9a1190e6ced8d2f4b35e4cabf447c7f873}
+
+\paragraph{典例}（2024 福建龙岩联考）在平面直角坐标系 $xOy$ 中，$A(-1,0),B(2,0)$，点 $P$ 满足 $\left|\frac{PA}{PB}\right|=\frac{1}{2}$，则点 $P$ 到直线 $x+\sqrt{3}y=4$ 的距离的最小值为
+
+A. $1$ \qquad B. $\sqrt{2}$ \qquad C. $2$ \qquad D. $3$
+
+【答案】A
+
+【解析】（常规法）设点 $P$ 的坐标为 $(x,y)$，
+\[
+\frac{\sqrt{(x+1)^2+y^2}}{\sqrt{(x-2)^2+y^2}}=\frac{1}{2},
+\]
+整理得
+\[
+x^2+y^2+4x=0,
+\]
+即
+\[
+(x+2)^2+y^2=4,
+\]
+可得圆心坐标为 $(-2,0)$，半径 $r=2$.
+
+由圆心 $(-2,0)$ 到直线 $x+\sqrt{3}y=4$ 的距离
+\[
+d=\frac{|{-2}-4|}{\sqrt{1^2+(\sqrt{3})^2}}=3,
+\]
+得点 $P$ 到直线 $x+\sqrt{3}y=4$ 的距离的最小值为 $d-r=3-2=1$.
+
+故选 A.
+
+【技巧法】依题意，由阿氏圆的定义知点 $P$ 的轨迹是圆心为
+\[
+\left(\frac{-\frac{1}{4}\times 2-(-1)}{1-\frac{1}{4}},0\right),
+\]
+半径为
+\[
+\sqrt{\frac{\frac{1}{4}(-1-2)^2}{\left(1-\frac{1}{4}\right)^2}}
+\]
+的圆.
+
+即圆心坐标为 $(-2,0)$，半径 $r=2$，点 $P$ 的轨迹方程为 $(x+2)^2+y^2=4$.
+
+由圆心 $(-2,0)$ 到直线 $x+\sqrt{3}y=4$ 的距离
+\[
+d=\frac{|{-2}-4|}{\sqrt{1^2+(\sqrt{3})^2}}=3,
+\]
+得点 $P$ 到直线 $x+\sqrt{3}y=4$ 的距离的最小值为 $d-r=3-2=1$.
+
+故选 A.
+
+\paragraph{速解点拨}
+\begin{enumerate}
+  \item 到两定点的距离之商为定值（大于 $0$ 且不等于 $1$）的点的轨迹是阿波罗尼斯圆.
+  \item 到两定点的距离之和为定值（比这两点之间的距离要大）的点的轨迹是椭圆.
+  \item 到两定点的距离之差的绝对值为定值（比这两点之间的距离要小）的点的轨迹是双曲线.
+  \item 到两定点的距离之积为定值的点的轨迹是卡西尼卵形线.
+\end{enumerate}
+
+\paragraph{变式}（2025 福建厦门月考）已知 $O(0,0),Q\left(0,\frac{\sqrt{2}}{2}\right)$，直线 $l_1:kx-y+2k+3=0$，直线 $l_2:$ [待人工核对]，$ky+3k+2=0$，若 $P$ 为 $l_1,l_2$ 的交点，则 $\left|\frac{3}{2}\right||PO|+|PQ|$ 的最小值为\underline{\qquad}.
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 典例题干中“点 \$P\$ 满足”后的条件在原图为竖排分式样式，识别为 \$\textbackslash{}left|\textbackslash{}frac\{PA\}\{PB\}\textbackslash{}right|=\textbackslash{}frac\{1\}\{2\}\$，需人工复核排版细节。
+
+\item “变式”中直线 \$l\_2\$ 的方程右侧被裁切，仅能辨认出“\$x+\$”以及下一行“\$ky+3k+2=0\$”的一部分，完整式子无法确认。
+
+\item “变式”末尾代数式印刷接近 \$\textbackslash{}left|\textbackslash{}frac\{3\}\{2\}\textbackslash{}right||PO|+|PQ|\$，其中绝对值符号与系数位置需人工核对。
+
+\end{itemize}
+
+\clearpage
+
+\section{四 过关斩将}
+
+\sourceinfo{微信图片\_20260806202928\_85\_34.jpg}{776973824b6277a6956aaaa2b1149ea60723204ba391a0fb8d4e6594d8ff8a53}
+
+\section*{四\ 过关斩将}
+\paragraph{一、单选题}
+1.（2024 河南商丘二十校联考）若动点 $M$ 与两定点 $A(1,2)$，$B(1,10)$ 的距离之比为 $\dfrac{1}{3}$，则动点 $M$ 所形成的轨迹的圆心坐标为
+
+A. $(-1,0)$ \qquad B. $(1,0)$ \qquad C. $(-1,1)$ \qquad D. $(1,1)$ \hfill （\quad）
+
+2.（2024 天津期末）若椭圆 $\Gamma: \dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\,(a>b>0)$ 的蒙日圆为圆 $C: x^2+y^2=3b^2$，则椭圆 $\Gamma$ 的离心率为
+
+A. $\dfrac{1}{3}$ \qquad B. $\dfrac{1}{2}$ \qquad C. $\dfrac{\sqrt{3}}{2}$ \qquad D. $\dfrac{\sqrt{2}}{2}$ \hfill （\quad）
+
+\paragraph{二、多选题}
+3.（2025 江苏苏州期中）法国数学家蒙日在研究圆锥曲线时发现：椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\,(a>b>0)$ 的任意两条互相垂直的切线的交点 $Q$ 的轨迹是以坐标原点为圆心，$\sqrt{a^2+b^2}$ 为半径的圆，这个圆称为蒙日圆。若矩形 $G$ 的四边均与椭圆 $C: \dfrac{x^2}{5}+\dfrac{y^2}{4}=1$ 相切，则下列说法正确的是 \hfill （\quad）
+
+A. 椭圆 $C$ 的蒙日圆的方程为 $x^2+y^2=9$
+
+B. 若 $G$ 为正方形，则 $G$ 的边长为 $3\sqrt{2}$
+
+C. 若圆 $(x-4)^2+(y-m)^2=4$ 与椭圆 $C$ 的蒙日圆有且仅有一个公共点，则 $m=\pm 3$
+
+D. 过直线 $l: x+2y-3=0$ 上一点 $P$ 作椭圆 $C$ 的两条切线，切点分别为 $M,N$，当 $\angle MPN$ 为直角时，直线 $OP\,(O\text{为坐标原点})$ 的斜率为 $-\dfrac{4}{3}$
+
+\paragraph{三、填空题}
+4.（2024 福建福州联考）在 $\triangle ABC$ 中，$\sin B=2\sin A$，$|AB|=6$，当 $\triangle ABC$ 的面积最大时，$|AC|=$ \underline{\hspace{3cm}}.
+
+5.（2024 四川南充期末）已知椭圆 $C: \dfrac{x^2}{4}+y^2=1$，则椭圆 $C$ 的蒙日圆方程为 \underline{\hspace{3cm}}；若一矩形的四边边与椭圆 $C$ 均相切，则此矩形面积的最大值为 \underline{\hspace{3cm}}。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页眉识别为“技巧43 隐圆——几何法与代数法”，其中“隐圆”字样较浅，建议人工核对。
+
+\item 第5题题干中“若一矩形的四边边与椭圆 \$C\$ 均相切”语句可能存在重字“边”，按原图照录，建议人工核对。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧44 圆锥曲线第一定义}
+
+\sourceinfo{微信图片\_20260806202932\_86\_34.jpg}{b19e875fd5203f4b86496d63decac0d9b956b9f5309264925471eef0cefa0a73}
+
+\paragraph{一\ 巧辨题——圆锥曲线第一定义的应用场景}
+圆锥曲线的定义有第一定义、第二定义和第三定义。第一定义是学习圆锥曲线的基础，既可以用来判断动点的轨迹形状，又可以作为圆锥曲线的性质应用。
+
+常见场景1：看到距离之和为定值
+
+常见场景2：看到距离之差为定值
+
+常见场景3：看到距离相等
+
+看到\ \textbullet\ 关键信息
+
+想到\ 解题技巧
+
+\paragraph{二\ 速答题——3个定义}
+
+\begin{quote}
+\textbf{1. 椭圆的定义}
+
+（1）平面内与两个定点 $F_1,F_2$ 的距离的和等于常数（大于 $|F_1F_2|$）的点的轨迹叫做椭圆。这两个定点叫做椭圆的焦点，两焦点间的距离叫做椭圆的焦距，焦距的一半称为半焦距。
+
+（2）其数学表达式：集合
+\[
+P=\{M\mid |MF_1|+|MF_2|=2a\},\ |F_1F_2|=2c,
+\]
+其中 $a>0,c>0$，且 $a,c$ 为常数。
+
+(1)若 $a>c$，则集合 $P$ 为椭圆；
+
+(2)若 $a=c$，则集合 $P$ 为线段；
+
+(3)若 $a<c$，则集合 $P$ 为空集。
+\end{quote}
+
+\begin{quote}
+\textbf{2. 双曲线的定义}
+
+（1）平面内与两个定点 $F_1,F_2$ 的距离差的绝对值等于非零常数（小于 $|F_1F_2|$）的点的轨迹叫做双曲线。这两个定点叫做双曲线的焦点，两焦点间的距离叫做双曲线的焦距。
+
+（2）其数学表达式：集合
+\[
+P=\{M\mid \bigl||MF_1|-|MF_2|\bigr|=2a\},\ |F_1F_2|=2c,
+\]
+其中 $a,c$ 为常数，且 $a>0,c>0$。
+
+(1)若 $a<c$，则集合 $P$ 为双曲线；
+
+(2)若 $a=c$，则集合 $P$ 为两条射线；
+
+(3)若 $a>c$，则集合 $P$ 为空集。
+\end{quote}
+
+\begin{quote}
+\textbf{3. 抛物线的定义}
+
+（1）平面内与一个定点 $F$ 和一条定直线 $l$（$l$ 不经过点 $F$）的距离相等的点的轨迹叫做抛物线，点 $F$ 叫做抛物线的焦点，直线 $l$ 叫做抛物线的准线。
+
+（2）其数学表达式：$\text{[待人工核对]}$
+\[
+|MF|=d
+\]
+（$d$ 为点 $M$ 到准线 $l$ 的距离）。
+\end{quote}
+
+\paragraph{三\ 技巧应用}
+
+\textbf{典例}（2025陕西宝鸡一模）已知动点 $A(x,y)$ 满足等式
+\[
+\sqrt{(x+3)^2+y^2}=8-\sqrt{(x-3)^2+y^2},
+\]
+则点 $A$ 的轨迹方程是
+
+A. \[\frac{x^2}{4}+\frac{y^2}{9}=1\]
+
+B. \[\frac{x^2}{8}+\frac{y^2}{3}=1\]
+
+C. \[\frac{x^2}{16}+\frac{y^2}{9}=1\]
+
+D. \[\frac{x^2}{16}+\frac{y^2}{7}=1\]
+
+[待人工核对]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 抛物线定义第（2）问的集合形式起始部分被遮挡，仅能确认末尾为“\$|MF|=d\$（\$d\$ 为点 \$M\$ 到准线 \$l\$ 的距离）”
+
+\item “看到\textbackslash{}textbullet 关键信息”“想到 解题技巧”中间为装饰性箭头图示，非正文
+
+\item 页底典例后的答案与解析未出现在本页完整范围内
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧44 圆锥曲线第一定义}
+
+\sourceinfo{微信图片\_20260806202935\_87\_34.jpg}{bc6f727ac6bb273c125bbaf6b9da7b842371316ab3bea114ca6605b14d2203c6}
+
+\section*{技巧44\ 圆锥曲线第一定义}
+
+【答案】D
+
+【解析】（常规法）因为动点 $A(x,y)$ 满足等式
+\[
+\sqrt{(x+3)^2+y^2}=8-\sqrt{(x-3)^2+y^2},
+\]
+两边平方得
+\[
+(x+3)^2+y^2=64-16\sqrt{(x-3)^2+y^2}+(x-3)^2+y^2,
+\]
+所以
+\[
+3x-16=-4\sqrt{(x-3)^2+y^2},
+\]
+两边平方得
+\[
+7x^2+16y^2=112,
+\]
+两边同除以 $112$，得
+\[
+\frac{x^2}{16}+\frac{y^2}{7}=1,
+\]
+即点 $A$ 的轨迹方程。
+
+【技巧法】因为动点 $A(x,y)$ 满足等式
+\[
+\sqrt{(x+3)^2+y^2}=8-\sqrt{(x-3)^2+y^2},
+\]
+所以表示点 $A$ 到点 $F_1(-3,0),F_2(3,0)$ 的距离之和为 $8$，且 $|F_1F_2|<8$，
+所以点 $A$ 的轨迹是以 $F_1(-3,0),F_2(3,0)$ 为焦点的椭圆，
+其中 $a=4,c=3,b^2=7$，
+所以椭圆的方程是
+\[
+\frac{x^2}{16}+\frac{y^2}{7}=1.
+\]
+
+故选 D。
+
+\paragraph{避误点拨}
+求动点的轨迹，既要求轨迹方程，还要说明方程表示的曲线名称。
+
+\paragraph{变式}
+（2025 湖南娄底期末）已知点 $P(x,y)$ 的坐标满足
+\[
+\sqrt{(x-1)^2+y^2}-\sqrt{(x+1)^2+y^2}=\sqrt{2},
+\]
+则动点 $P$ 的轨迹是\hfill （\quad）
+
+A. 椭圆\qquad B. 双曲线
+
+C. 两条射线\qquad D. 双曲线的一支
+
+\paragraph{过关斩将}
+\subparagraph{单选题}
+1.（2024 河北 L6 联盟模拟）已知 $P$ 为平面内一动点，设甲：点 $P$ 的运动轨迹为抛物线，乙：点 $P$ 到平面内一定点的距离与到平面内一定直线的距离相等，则\hfill （\quad）
+
+A. 甲是乙的充分条件但不是必要条件
+
+B. 甲是乙的必要条件但不是充分条件
+
+C. 甲是乙的充要条件
+
+D. 甲既不是乙的充分条件也不是乙的必要条件
+
+2.（2025 江苏无锡月考）某椭圆的两焦点坐标分别为 $F_1(-\sqrt{5},0),F_2(\sqrt{5},0)$，$P$ 是椭圆上一点，若 $PF_1\perp PF_2$，$|PF_1|\cdot |PF_2|=8$，则该椭圆的方程是\hfill （\quad）
+
+A. $\dfrac{x^2}{7}+\dfrac{y^2}{2}=1$
+\qquad B. $\dfrac{x^2}{2}+\dfrac{y^2}{7}=1$
+
+C. $\dfrac{x^2}{9}+\dfrac{y^2}{4}=1$
+\qquad D. $\dfrac{x^2}{4}+\dfrac{y^2}{9}=1$
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页首上一题的题干未出现在本页，仅能识别到“【答案】D”及后续解析。
+
+\item “变式”题中等式右端常数识别为 \$\textbackslash{}sqrt\{2\}\$，受图片清晰度影响，需人工核对。
+
+\item 第 2 题选项区域下半部分较暗，但四个选项方程整体可辨；仍建议人工复核排版细节。
+
+\end{itemize}
+
+\clearpage
+
+\section{高中数学解题技巧}
+
+\sourceinfo{微信图片\_20260806202939\_88\_34.jpg}{6b9224ef498776fc3005ee6da97525d453888e8089adf33f0191bdf2a8eb7e13}
+
+\section*{高中数学解题技巧}
+
+3.（2025甘肃庆阳一模）若双曲线$\dfrac{x^2}{9}-\dfrac{y^2}{11}=1$的右支上一点$P$到右焦点的距离为$9$，则点$P$到[待人工核对]点的距离为
+
+A.$\ 3$ \qquad B.$\ 12$ \qquad C.$\ 15$ \qquad D.$\ 3$或$15$
+
+\section*{二、 多选题}
+
+4.（2025甘肃武威月考）已知平面内点$A(-1,0),B(1,0),P$为该平面内一动点，则
+
+A.$|PA|+|PB|=4$，点$P$的轨迹为椭圆
+
+B.$|PA|-|PB|=1$，点$P$的轨迹为双曲线
+
+C.$|PA|\cdot|PB|=1$，点$P$的轨迹为抛物线
+
+D.$\dfrac{|PA|}{|PB|}=2$，点$P$的轨迹为圆
+
+\section*{三、 填空题}
+
+5.（2025湖北武汉月考）在平面直角坐标系$xOy$中，点$F$的坐标为$(2,0)$，以线段$FP$为直径的圆与圆$O:x^2+y^2=3$相切，则动点$P$的轨迹方程为\underline{\hspace{8em}}。
+
+6.（2025广东东莞阶段测试）设$D=\sqrt{(x-a)^2+(e^x-2\sqrt{a})^2}+a+1$，其中$e\approx 2.718\ 28$，则$D$的最小值为\underline{\hspace{6em}}。
+
+7.（2025广东八校第四次联考）已知点$P(5,4)$，$F$为抛物线$C:y^2=8x$的焦点．若以$P,F$为焦点的椭圆与抛物线有公共点，则椭圆的离心率的最大值为\underline{\hspace{6em}}。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 第3题题干末尾“则点P到[待人工核对：后一焦点文字被裁切遮挡]点的距离为”中，“左焦点”两字未完整清晰显示，不能据相邻页补写。
+
+\item 第3题右侧括号区域靠页面边缘，版式略有裁切，但选项A、B、C、D可辨。
+
+\end{itemize}
+
+\clearpage
+
+\section{圆锥曲线第二定义}
+
+\sourceinfo{微信图片\_20260806202943\_89\_34.jpg}{68adcf800a94c739efa7e14b4714cf803c8fa296d297adfe0f4dcd4faac1d4cc}
+
+\paragraph{巧辨题——圆锥曲线第二定义的应用场景}
+常见场景：看到在平面内，到定点的距离与到定直线（定点不在定直线上）的距离之比是常数的点的轨迹问题，想到圆锥曲线。该常数是离心率，根据离心率的不同，圆锥曲线可以分为椭圆（离心率小于$1$）、双曲线（离心率大于$1$）和抛物线（离心率等于$1$）。
+
+\paragraph{速答题——3个定义}
+看到\quad 关键信息
+
+想到\quad 解题技巧
+
+\begin{enumerate}
+  \item 椭圆的第二定义：平面上到定点的距离与到定直线（定点不在定直线上）的距离之比为常数$e(0<e<1)$的点的集合构成椭圆. 定点是椭圆的焦点，定直线是椭圆的准线，常数是椭圆的离心率.
+
+  若平面内的动点$M(x,y)$到定点$F(c,0)$的距离与它到直线$l:x=\frac{a^2}{c}$的距离的比是常数$\frac{c}{a}$（$0<\frac{c}{a}<1$），则点$M$的轨迹是椭圆.
+
+  \item 双曲线的第二定义：平面内动点到一个定点的距离和它到一条定直线（定点不在定直线上）的距离的比是常数$e(e>1)$，这个动点的轨迹是双曲线. 定点是双曲线的焦点，定直线是双曲线的准线，常数$e$是双曲线的离心率.
+
+  \item 抛物线的第二定义：平面内动点到一个定点的距离和它到一条定直线（定点不在定直线上）的距离的比是常数$e(e=1)$，这个动点的轨迹是抛物线. 定点是抛物线的焦点，定直线是抛物线的准线，常数$e$是抛物线的离心率.
+\end{enumerate}
+
+\paragraph{技巧应用}
+\paragraph{典例}（2024陕西安康期末）若动点$P(x,y)$到点$A(5,0)$的距离与它到直线$3x+2=0$的距离之比为$\frac{5}{4}$，则动点$P$的轨迹为\hfill （\qquad）
+
+A. 椭圆 \qquad B. 双曲线 \qquad C. 直线 \qquad D. 抛物线
+
+【答案】B
+
+【解析】（技巧法）依题意，动点$P(x,y)$到点$A(5,0)$的距离与它到直线$3x+2=0$的距离之比为$\frac{5}{4}$，且$\frac{5}{4}>1$，
+
+由双曲线的第二定义知，动点$P$的轨迹为以$A(5,0)$为一个焦点，离心率为$\frac{5}{4}$的双曲线.
+
+故选B.
+
+\paragraph{速解点拨}
+求点的轨迹既要求出动点满足的方程（注意字母的取值范围），还要说明轨迹的形状.
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item “看到 关键信息 / 想到 解题技巧”之间的版式为图示流程，文字可辨，但具体图标样式未转写。
+
+\item 页底“速解点拨”下方后续内容已被裁切，未补写。
+
+\end{itemize}
+
+\clearpage
+
+\section{高中数学解题技巧}
+
+\sourceinfo{微信图片\_20260806202946\_90\_34.jpg}{6097b7b2e82f01bc9d027dfcae698fd8b00976576bdc3137f83887cc3972452d}
+
+\section*{高中数学解题技巧}
+
+\paragraph{变式1}（2024广西南宁适应性试卷）若动点 $P(x,y)$ 到点 $A(0,-\sqrt{3})$ 的距离与它到直线 $y+\frac{4\sqrt{3}}{3}=0$ 的距离之比为 $\frac{\sqrt{3}}{2}$，则动点 $P$ 的轨迹为\hfill（\quad）
+
+A. 椭圆\qquad B. 双曲线\qquad C. 直线\qquad D. 抛物线
+
+\paragraph{变式2}（2024湖南娄底期末）若动点 $P(x,y)$ 满足
+\[
+4\sqrt{(x-1)^2+(y-2)^2}=|3x+4y+2|,
+\]
+则动点 $P$ 的轨迹为\hfill（\quad）
+
+A. 椭圆\qquad B. 双曲线\qquad C. 直线\qquad D. 抛物线
+
+\section*{四\ 过关斩将}
+
+\subsection*{一、单选题}
+
+1. （2023云南模拟）在3世纪，古希腊数学家帕普斯在他的著作《数学汇编》中完善了欧几里得关于圆锥曲线的统一定义。他指出，到定点的距离与到定直线的距离的比是常数 $e$ 的点的轨迹叫做圆锥曲线。当 $0<e<1$ 时，其轨迹为椭圆；当 $e=1$ 时，其轨迹为抛物线；当 $e>1$ 时，其轨迹为双曲线。现有方程 $(x+2y+1)^2=x^2+y^2-4x+4$ 表示的曲线是双曲线，则 $k$ 的取值范围为\hfill（\quad）
+
+A. $(0,\frac{1}{5})$\qquad B. $(\frac{1}{5},+\infty)$\qquad C. $(5,+\infty)$\qquad D. $(0,5)$
+
+2. （2025北京期末）在正方体 $ABCD$-$A_1B_1C_1D_1$ 中，点 $M$ 为平面 $ABB_1A_1$ 内的一动点，$d_1$ 是点 $M$ 到平面 $ADD_1A_1$ 的距离，$d_2$ 是点 $M$ 到直线 $BC$ 的距离，且 $d_1=\lambda d_2(\lambda>0,\lambda$ 为常数$)$，则点 $M$ 的轨迹不可能是\hfill（\quad）
+
+A. 圆\qquad B. 椭圆\qquad C. 双曲线\qquad D. 抛物线
+
+3. （2025河南焦作期中）已知椭圆 $C:\dfrac{x^2}{4}+\dfrac{y^2}{b^2}=1(0<b<2)$ 的左、右焦点分别为 $F_1,F_2$，过点 $F_2$ 的直线与椭圆 $C$ 交于点 $A,B$，若 $|AF_1|+|BF_2|=2|AF_2|$，且 $(\overrightarrow{F_1A}+\overrightarrow{F_1F_2})\cdot\overrightarrow{AF_2}=0$，则 $\left|\dfrac{BF_1}{AF_1}\right|=$\hfill（\quad）
+
+A. $\dfrac{19-\sqrt{41}}{10}$\qquad B. $\dfrac{9-\sqrt{21}}{6}$\qquad C. $\dfrac{6-\sqrt{21}}{5}$\qquad D. $\dfrac{\sqrt{77}-7}{4}$
+
+\subsection*{二、多选题}
+
+4. （2024云南曲靖期中）已知定点 $A(-1,0),B(1,0)$，动点 $P$ 到点 $B$ 的距离和它到直线 $l:x=4$ 的距离的比是常数 $\dfrac{1}{2}$，$O$ 为坐标原点，则下列说法正确的是\hfill（\quad）
+
+A. 点 $P$ 的轨迹方程为 $\dfrac{x^2}{4}+y^2=1$
+
+B. 点 $P,A,B$ 不共线时，$\triangle PAB$ 面积的最大值为 $\sqrt{3}$
+
+C. 存在点 $P$，使得 $\angle APB=90^\circ$
+
+D. $|PO|+2|PB|$ 的最小值为 $4$
+
+\subsection*{三、填空题}
+
+5. （2023吉林期末）在平面直角坐标系中，点 $P$ 的坐标 $(x,y)$ 满足
+\[
+\begin{cases}
+ x=5\cos\theta,\\
+ y=4\sin\theta,
+\end{cases}
+\]
+其中 $\theta\in[0,2\pi)$，则
+\[
+z=\sqrt{(x-1)^2+(y-1)^2}+\sqrt{(x-3)^2+y^2}+\frac{2}{5}\left|x-\frac{25}{3}\right|
+\]
+的最小值为\underline{\qquad\qquad}。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 第1题题干中的“则 \$k\$ 的取值范围为”与前面的方程 \$(x+2y+1)\textasciicircum{}2=x\textasciicircum{}2+y\textasciicircum{}2-4x+4\$ 存在变量不一致，原图可见如此，疑有印刷或识别问题，待人工核对。
+
+\item 第5题末尾填空横线后的版面较淡，未见答案或后续内容。
+
+\item 右侧相邻页仅见部分栏目标题与碎片内容，已忽略。
+
+\end{itemize}
+
+\clearpage
+
+\section{圆锥曲线第三定义}
+
+\sourceinfo{微信图片\_20260806202950\_91\_34.jpg}{1e46b48437717d8a4e2c5f9bd6271a6e7622a2e6b699f9b34b45d3b05e17d120}
+
+\section*{圆锥曲线第三定义\hfill 技巧46}
+
+\paragraph{巧辨题——圆锥曲线第三定义的应用场景}
+常见场景：看到平面内与两定点连线斜率之积等于常数的动点轨迹问题，想到圆锥曲线第三定义，常数为$e^2-1$或$\dfrac{1}{e^2-1}$；当$0<e<1$时，轨迹为椭圆；当$e>1$时，轨迹为双曲线。
+
+\paragraph{速答题——2个定义}
+看到 \textbullet\ 关键信息
+
+想到 解题技巧
+
+\begin{quote}
+\textbf{[图形见原图]}
+
+圆锥曲线第三定义的对应关系如下：
+
+当焦点在$x$轴上时：
+\[
+k_{PA}k_{PB}=e^2-1=-\frac{b^2}{a^2}\qquad(\text{椭圆})
+\]
+\[
+k_{PA}k_{PB}=e^2-1=\frac{b^2}{a^2}\qquad(\text{双曲线})
+\]
+
+当焦点在$y$轴上时：
+\[
+k_{PA}k_{PB}=\frac{1}{e^2-1}=-\frac{a^2}{b^2}\qquad(\text{椭圆})
+\]
+\[
+k_{PA}k_{PB}=\frac{1}{e^2-1}=\frac{a^2}{b^2}\qquad(\text{双曲线})
+\]
+
+说明：$A,B$分别为圆锥曲线的左、右顶点（上、下顶点）时是$A,B$关于原点对称的特殊情况。
+\end{quote}
+
+\paragraph{技巧应用}
+\paragraph{典例}
+（2025四川眉山期中）已知$A,B,P$是双曲线$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$上不同的三点，且$A,B$连线经过坐标原点，若直线$PA,PB$的斜率乘积为$\dfrac{4}{3}$，则该双曲线的离心率为
+
+A.$\dfrac{\sqrt{5}}{2}$ \qquad B.$\dfrac{\sqrt{6}}{2}$ \qquad C.$\sqrt{2}$ \qquad D.$\dfrac{\sqrt{21}}{3}$
+
+答案：D
+
+【解析】（常规法）设$A(x_1,y_1)$，$P(x_2,y_2)$，根据对称性，知$B(-x_1,-y_1)$，所以$k_{PA}\cdot k_{PB}=$
+[待人工核对]
+
+\[
+\frac{y_2-y_1}{x_2-x_1}\cdot \frac{y_2+y_1}{x_2+x_1}=\frac{y_2^2-y_1^2}{x_2^2-x_1^2}
+\]
+因为点$A,P$在双曲线上，所以
+\[
+\begin{cases}
+\dfrac{x_1^2}{a^2}-\dfrac{y_1^2}{b^2}=1,\\
+\dfrac{x_2^2}{a^2}-\dfrac{y_2^2}{b^2}=1,
+\end{cases}
+\]
+两式相减得$\dfrac{x_2^2-x_1^2}{a^2}=\text{[待人工核对]}$
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item “看到 关键信息 / 想到 解题技巧”之间的装饰性箭头区域存在淡字底纹，无法辨认是否有额外印刷文字。
+
+\item 典例解析中“所以\$k\_\{PA\}\textbackslash{}cdot k\_\{PB\}=\$”后的公式下半部分被裁切。
+
+\item 典例解析最后“两式相减得”后的公式仅能辨认出左端\$\textbackslash{}dfrac\{x\_2\textasciicircum{}2-x\_1\textasciicircum{}2\}\{a\textasciicircum{}2\}=\$，后续内容被裁切。
+
+\item 页面左侧邻页有零散文字残片，已忽略。
+
+\end{itemize}
+
+\clearpage
+
+\section{四 过关斩将}
+
+\sourceinfo{微信图片\_20260806202954\_92\_34.jpg}{2270fc3ca6af24d4e3f1c48c592fb35c014b57d9e3af1d070eaa4e9698b89019}
+
+由
+\[
+\frac{y_2^2-y_1^2}{b^2},\text{所以}\frac{b^2}{a^2}=\frac{y_2^2-y_1^2}{x_2^2-x_1^2},\text{所以 }k_{PA}\cdot k_{PB}=\frac{b^2}{a^2}=\frac{4}{3},\text{所以 }e^2=\frac{a^2+b^2}{a^2}=\frac{7}{3},\text{所以 }e=\frac{\sqrt{21}}{3}.
+\]
+故选 D。
+
+（技巧法）依题意，由双曲线的第三定义得 $e^2-1=\frac{4}{3}$，因为 $e>1$，所以 $e=\frac{\sqrt{21}}{3}$。故选 D。
+
+\paragraph{速解点拨}
+圆锥曲线的定义有三个，从不同的角度描述了圆锥曲线的本质特征，需要根据题意灵活选择。第一定义涉及焦半径；第二定义涉及离心率和准线；第三定义涉及斜率和离心率。
+
+\paragraph{变式}
+（2024 湖南邵阳模拟）在平面直角坐标系中，已知点 $A(2,0)$，$B(-2,0)$，$P$ 是平面内动点，直线 $PA,PB$ 的斜率之积为 $3$，求动点 $P$ 的轨迹方程。
+
+\section*{四\ 过关斩将}
+\subsection*{一、单选题}
+1. （2023 福建莆田月考）已知点 $A(-\sqrt{6},0)$，$B(\sqrt{6},0)$，动点 $P(m,n)$ 满足直线 $PA,PB$ 的斜率之积为 $-\frac{1}{2}$，则 $|m+n|$ 的最大值为\hfill（\quad）
+
+A. 1\qquad B. 2\qquad C. 3\qquad D. 4
+
+2. （2024 河北沧州期末）已知定点 $A(-1,0),B(1,0)$，$P$ 是动点且直线 $PA,PB$ 的斜率之积为 $\lambda$，$\lambda\ne 0$，则动点 $P$ 的轨迹不可能是\hfill（\quad）
+
+A. 圆的一部分\qquad B. 椭圆的一部分\qquad C. 双曲线的一部分\qquad D. 抛物线的一部分
+
+\subsection*{二、多选题}
+3. （2024 海南海口月考）在平面直角坐标系中，已知两定点 $A(-a,0),B(a,0)$，直线 $PA,PB$ 相交于点 $P$，且直线 $PA$ 与直线 $PB$ 的斜率之积为 $m$，其中 $m\ne 0,a>0$。下列说法正确的是\hfill（\quad）
+
+A. 当 $m=-1$ 时，动点 $P$ 的轨迹是以原点为圆心，半径为 $a$ 的圆，且除去 $(-a,0),(a,0)$ 两点
+
+B. 当 $m>0$ 时，动点 $P$ 的轨迹是焦点在 $x$ 轴上的双曲线，且除去 $(-a,0),(a,0)$ 两点
+
+C. 当 $m<0$ 且 $m\ne -1$ 时，动点 $P$ 的轨迹是焦点在 $x$ 轴上的椭圆，且除去 $(-a,0),(a,0)$ 两点
+
+D. 当 $m=2,a=\sqrt{3}$ 时，动点 $P$ 的轨迹为曲线 $C$，过点 $(3,0)$ 且倾斜角为 $30^\circ$ 的直线与曲线 $C$ 交于 $M,N$ 两点，则 $|MN|=\frac{16\sqrt{3}}{5}$
+
+\subsection*{三、填空题}
+4. （2025 云南玉溪适应性考试）已知 $A,B$ 是双曲线 $E:\frac{y^2}{a^2}-\frac{x^2}{b^2}=1(a>0,b>0)$ 上关于原点对称的两点，动点 $P$ 在双曲线 $E$ 上，且 $PA,PB$ 的斜率之积为 $e^2$（$e$ 为双曲线 $E$ 的离心率），则 $e=$ [待人工核对]。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页首上一题推导起始处仅见“\textbackslash{}frac\{y\_2\textasciicircum{}2-y\_1\textasciicircum{}2\}\{b\textasciicircum{}2\}”等残句，前文被裁切，无法完整确认。
+
+\item 填空题第 4 题末尾答案空格后的完整版式被裁掉，仅能确认“则 \$e=\$”。
+
+\end{itemize}
+
+\clearpage
+
+\section{手电筒模型}
+
+\sourceinfo{微信图片\_20260806202958\_93\_34.jpg}{5fd5d120b8c7fb1bf60d56278842537b2244f76812e27f7c73d17ab78edcba2e}
+
+\section*{手电筒模型\hfill 技巧47}
+
+\paragraph{巧辨题——手电筒模型的应用场景}
+在解析几何中，有这样的一个图形：在平面直角坐标系中，已知动直线与圆锥曲线交于两点，从一定点向动点引两直线，看到两直线的斜率和（积）为定值时，想到两点所在的动直线有定斜率或过定点等不变属性，定点像一个点光源，向两个动点射出光线，犹如“手电筒”，这类问题称作“手电筒模型”。
+
+\paragraph{速答题——12个模型结论}
+“手电筒模型”在圆锥曲线中的应用是一个有趣的命题热点。这个模型的基本思想如下：在圆锥曲线上任取一个定点，向曲线上任意两个非该定点的动点引出直线，若引出直线的斜率之和或者斜率之积为定值，则两动点的连线过定点或者斜率为定值（可能有多个，需检验）。
+
+\textbf{[图形见原图]}
+
+设点 $P(x_0,y_0)$，直线 $PA,PB$ 的斜率分别为 $k_1,k_2$。
+
+\begin{align*}
+&\text{当 } k_1+k_2=0 \text{ 时：}\\
+&\text{椭圆：}\quad k_{AB}=\frac{b^2x_0}{a^2y_0}=-k_{P\text{切}},\\
+&\text{双曲线：}\quad k_{AB}=-\frac{b^2x_0}{a^2y_0}=-k_{P\text{切}},\\
+&\text{抛物线：}\quad k_{AB}=-\frac{p}{y_0}=-k_{P\text{切}}.
+\end{align*}
+
+\begin{align*}
+&\text{当 } k_1+k_2=\lambda\,(\lambda\neq 0) \text{ 时，则有 } AB \text{ 过定点：}\\
+&\text{椭圆：}\quad \left(x_0-\frac{2y_0}{\lambda},-y_0-\frac{2b^2x_0}{\lambda a^2}\right),\\
+&\text{双曲线：}\quad \left(x_0-\frac{2y_0}{\lambda},-y_0+\frac{2b^2x_0}{\lambda a^2}\right),\\
+&\text{抛物线：}\quad \left(x_0-\frac{2y_0}{\lambda},-y_0+\frac{2p}{\lambda}\right).
+\end{align*}
+
+\begin{align*}
+&\text{当 } k_1\cdot k_2=1-e^2 \text{ 时：}\\
+&\text{椭圆：}\quad k_{AB}=-\frac{y_0}{x_0},\\
+&\text{双曲线：}\quad k_{AB}=-\frac{y_0}{x_0},\\
+&\text{抛物线：}\quad AB \text{ 过定点 } \left(x_0-\frac{2p}{\lambda},-y_0\right). \quad [待人工核对]
+\end{align*}
+
+\begin{align*}
+&\text{当 } k_1\cdot k_2=\lambda\,,\ (\lambda\neq 1-e^2) \text{ 且 } \lambda\neq 0 \text{ 时，则有 } AB \text{ 过定点：}\\
+&\text{椭圆：}\quad \left(\frac{\lambda a^2+b^2}{\lambda a^2-b^2}x_0,\frac{-b^2-\lambda a^2}{\lambda a^2-b^2}y_0\right),\\
+&\text{双曲线：}\quad \left(\frac{\lambda a^2-b^2}{\lambda a^2+b^2}x_0,\frac{b^2-\lambda a^2}{\lambda a^2+b^2}y_0\right),\\
+&\text{抛物线：}\quad \left(x_0-\frac{2p}{\lambda},-y_0\right).
+\end{align*}
+
+\paragraph{技巧应用}
+\paragraph{典例}
+（2025山东学业考试）已知椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 的左、右焦点分别为 $F_1(-1,0)$，
+[待人工核对]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页首右上角标题确认为“手电筒模型”“技巧47”。
+
+\item “看到 关键信息”“想到 解题技巧”为版面提示语，不属于题目主体。
+
+\item 表格第三行抛物线列在照片中仅清晰见到“AB过定点\textbackslash{},(x\_0-\textbackslash{}frac\{2p\}\{\textbackslash{}lambda\},-y\_0)”样式内容，但与左侧行条件“\$k\_1\textbackslash{}cdot k\_2=1-e\textasciicircum{}2\$”的对应关系存在版面阅……（完整说明见逐页 JSON）
+
+\item 页底“典例”仅能识别到“（2025山东学业考试）已知椭圆 \$\textbackslash{}frac\{x\textasciicircum{}2\}\{a\textasciicircum{}2\}+\textbackslash{}frac\{y\textasciicircum{}2\}\{b\textasciicircum{}2\}=1(a>b>0)\$ 的左、右焦点分别为 \$F\_1(-1,0)\$”，后续被裁切……（完整说明见逐页 JSON）
+
+\end{itemize}
+
+\clearpage
+
+\section{高中数学解题技巧}
+
+\sourceinfo{微信图片\_20260806203002\_94\_34.jpg}{c9118a4cca4d647fa6114b5af0c385395a6df152264d764f626a571f27724d86}
+
+\section*{高中数学解题技巧}
+$F_2(1,0)$，右顶点为 $A$，$M,N$ 是椭圆上关于原点对称且异于顶点的两点，记直线 $MA$ 与直线 $NA$ 的斜率分别为 $k_{MA},k_{NA}$，且 $k_{MA}\cdot k_{NA}=-\frac{3}{4}$。
+
+(1)求椭圆的方程；
+
+(2)若直线 $l$ 交椭圆于 $P,Q$ 两点，记直线 $PA$ 与直线 $AQ$ 的斜率分别为 $k_{PA},k_{AQ}$，且 $k_{PA}+k_{AQ}=-1$，求证：直线 $l$ 恒过定点。
+
+【解析】(1)设 $M(m,n)$，由题意知 $N(-m,-n)$，因为 $A(a,0)$，所以
+\[
+k_{MA}=\frac{n}{m-a},\quad k_{NA}=\frac{-n}{-m-a}.
+\]
+因为 $k_{MA}\cdot k_{NA}=-\frac{3}{4}$，所以
+\[
+\frac{n^2}{m^2-a^2}=-\frac{3}{4}.
+\]
+因为点 $M(m,n)$ 在椭圆 $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ 上，所以
+\[
+\frac{m^2}{a^2}+\frac{n^2}{b^2}=1,
+\]
+所以 $n^2=\frac{b^2}{a^2}(a^2-m^2)$，所以
+\[
+-\frac{b^2}{a^2}=-\frac{3}{4}.
+\]
+因为椭圆的半焦距 $c=1$，所以 $b^2=a^2-1$，所以 $a^2=4,b^2=3$，所以椭圆方程为
+\[
+\frac{x^2}{4}+\frac{y^2}{3}=1.
+\]
+
+(2)证明：当直线 $l$ 的斜率不存在时，由直线 $PA$ 与直线 $AQ$ 关于 $x$ 轴对称，得 $k_{PA}+k_{AQ}=0$，不合题意，舍去。
+
+当直线 $l$ 的斜率存在时，设其方程为 $y=kx+t$，$P(x_1,y_1)$，$Q(x_2,y_2)$，
+\[
+\left\{\begin{aligned}
+y&=kx+t,\\
+\frac{x^2}{4}+\frac{y^2}{3}&=1,
+\end{aligned}\right.
+\]
+消去 $y$ 得
+\[
+(4k^2+3)x^2+8ktx+4t^2-12=0,
+\]
+则
+\[
+\Delta=(8kt)^2-4(4k^2+3)(4t^2-12)=48(4k^2-t^2+3)>0,
+\]
+由一元二次方程根与系数的关系得
+\[
+x_1+x_2=-\frac{8kt}{4k^2+3},\quad x_1x_2=\frac{4t^2-12}{4k^2+3},
+\]
+因为
+\[
+k_{PA}=\frac{y_1}{x_1-2},\quad k_{AQ}=\frac{y_2}{x_2-2},\quad y_1=kx_1+t,\quad y_2=kx_2+t,
+\]
+且 $k_{PA}+k_{AQ}=-1$，
+所以
+\[
+\frac{y_1}{x_1-2}+\frac{y_2}{x_2-2}=-1,
+\]
+所以
+\[
+\frac{kx_1+t}{x_1-2}+\frac{kx_2+t}{x_2-2}=-1,
+\]
+整理得
+\[
+(2k+1)x_1x_2-(2k-t+2)(x_1+x_2)-4t+4=0,
+\]
+所以
+\[
+(2k+1)\cdot \frac{4t^2-12}{4k^2+3}+(2k-t+2)\cdot \frac{8kt}{4k^2+3}-4t+4=0,
+\]
+整理得
+\[
+t^2-3t+4k^2-6k+4kt=0,
+\]
+即
+\[
+(t+2k)^2-3(t+2k)=0,
+\]
+所以 $t+2k=0$ 或 $t+2k=3$。
+
+当 $t+2k=0$ 时，$\Delta=144>0$，直线 $l:y=kx-2k$ 恒过定点 $(2,0)$，不合题意。
+
+当 $t+2k=3$ 时，
+\[
+\Delta=48(4k^2-t^2+3)=48(12k-6)>0,
+\]
+解得 $k>\frac{1}{2}$。
+
+[待人工核对]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 题干开头左侧被裁切，疑为焦点信息前半句，仅可辨认为“\$F\_2(1,0)\$”
+
+\item 题干中“且 \$k\_\{PA\}+k\_\{AQ\}=-1\$”后的标点和语气可辨，但后续完整排版需人工复核
+
+\item 本页底部内容被裁切，‘当 \$t+2k=3\$ 时’之后的证明未完整显示
+
+\item 页内浅色背景中的下层印刷内容为透页干扰，未计入正文
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧47 手电筒模型}
+
+\sourceinfo{微信图片\_20260806203006\_95\_34.jpg}{929976e988a659ea9bc932450137897f843ce6f3d318f8f903210ee2d9d8ec38}
+
+所以直线$l:y=kx+3-2k$恒过定点$(2,3)$。
+
+（技巧法）因为$k_{PA}+k_{AQ}=-1$，椭圆方程为$\dfrac{x^2}{4}+\dfrac{y^2}{3}=1$。
+
+所以椭圆的右顶点为$A(2,0)$，即$x_0=2,y_0=0$，
+
+所以直线$AB$过定点$(2,3)$。
+
+若$k_1+k_2=t(t\ne 0)$，则直线$AB$过定点$\left(x_0-\dfrac{2y_0}{t},-y_0-\dfrac{2x_0b^2}{ta^2}\right)$。
+
+\section*{速解点拨}
+直线过定点的求解方法有取特殊值法、方程思想法、点斜式法。
+
+1. 取特殊值法：给直线方程中的参数取两个特殊值，得到关于$x,y$的二元一次方程组，解出该二元一次方程组即可得到该直线所过的定点坐标。
+
+2. 方程思想法：先将题目给出的方程合并同类项，含参数的作为一项，不含参数的作为另一项，对任意的参数值这个方程都要成立，那么只有这两项都为$0$。
+
+3. 点斜式法：直线的点斜式方程为$y-y_0=k(x-x_0)$，该直线过定点$(x_0,y_0)$。
+
+\section*{变式}
+已知椭圆$C:\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$的离心率为$\dfrac{\sqrt{6}}{3}$，且过点$A(0,1)$。
+
+(1)求椭圆$C$的方程；
+
+(2)已知点$M,N$在椭圆$C$上，且$AM\perp AN$，求证：直线$MN$过定点。
+
+\section*{四 过关斩将}
+\subsection*{解答题}
+1.（2025 江西赣州模拟）已知动点$P$在曲线$y^2=8x$上运动，$O$为坐标原点，$Q$为线段$OP$的中点，记$Q$的轨迹为曲线$C$。
+
+(1)求$Q$的轨迹方程；
+
+(2)已知$A(1,2)$及曲线$C$上的两点$B$和$D$，直线$AB$和直线$AD$的斜率分别为$k_1$和$k_2$，且$k_1+k_2=1$，求证：直线$BD$过定点。
+
+\clearpage
+
+\section{高中数学解题技巧}
+
+\sourceinfo{微信图片\_20260806203009\_96\_34.jpg}{2b9d3b0012cb93e8994b1c849c2c1092f4b24b799df650e2cb32ee5efd5757da}
+
+\section*{高中数学解题技巧}
+
+2.（2024江西模拟）已知双曲线 $C:\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的离心率为 $\sqrt{5}$，点 $P(3,4)$ 在 $C$ 上.
+
+（1）求双曲线 $C$ 的方程；
+
+（2）直线 $l$ 与双曲线 $C$ 交于不同的两点 $A,B$，若直线 $PA,PB$ 的斜率互为倒数，求证：直线 $l$ 过定点.
+
+3.（2023四川模拟）以 $F_1(0,-1),F_2(0,1)$ 为焦点的椭圆 $C$ 过点 $P\left(\dfrac{\sqrt{2}}{2},1\right)$.
+
+（1）求椭圆 $C$ 的方程；
+
+（2）过点 $S\left(-\dfrac{1}{3},0\right)$ 的动直线 $l$ 交椭圆 $C$ 于 $A,B$ 两点，试问：在坐标平面上是否存在一个定点 $T$，使得无论 $l$ 如何转动，以 $AB$ 为直径的圆恒过点 $T$？若存在，求出点 $T$ 的坐标；若不存在，请说明理由.
+
+\clearpage
+
+\section{阿基米德三角形}
+
+\sourceinfo{微信图片\_20260806203013\_97\_34.jpg}{3ed64b5f89da863237e9e183cf7dfe6e827fc21aa61a3f5dbc017e6b627ce360}
+
+\paragraph{技巧48}
+
+\paragraph{巧辨题——阿基米德三角形的应用场景}
+看到椭圆、双曲线和抛物线的弦与过弦的端点的两条切线所围成的三角形，想到阿基米德三角形，阿基米德三角形包含了直线与圆锥曲线相交、相切两种位置关系，聚焦了轨迹方程、定值、定点、斜率、面积等解析几何的核心问题，“坐标法”的解题思想和数形结合的优势体现得淋漓尽致，能很好地提升学生解决圆锥曲线问题的能力，落实逻辑推理、数学抽象、数学运算等核心素养。在高考复习中，要注意阿基米德三角形的运用。
+
+\paragraph{速答题——3个阿基米德三角形}
+看到 关键信息
+
+想到 解题技巧
+
+\begin{quote}
+1. 椭圆中的阿基米德三角形
+
+如图，已知椭圆
+\[
+\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\ (a>b>0)
+\]
+的弦 $AB$，分别过 $A,B$ 两点作椭圆的切线，两切线交于点 $Q$，则 $\triangle ABQ$ 称为椭圆中的阿基米德三角形。其性质如下：
+
+(1) 弦 $AB$ 绕着定点 $P(m,0)$ 转动时，点 $Q$ 必在直线 $x=\frac{a^2}{m}$ 上；当 $P$ 为左焦点时，点 $Q$ 在左准线 $x=-\frac{a^2}{c}$ 上；当 $P$ 为右焦点时，点 $Q$ 在右准线 $x=\frac{a^2}{c}$ 上。
+
+(2) 直线 $AQ,PQ,BQ$ 的斜率成等差数列，即 $2k_{PQ}=k_{AQ}+k_{BQ}$。
+
+(3) 当点 $P$ 为焦点时，$PQ\perp AB$。
+
+\textbf{[图形见原图]}
+
+2. 双曲线中的阿基米德三角形
+
+如图，已知双曲线
+\[
+\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\ (a>0,b>0)
+\]
+的弦 $AB$，分别过 $A,B$ 两点作双曲线的切线，两切线交于点 $Q$，则 $\triangle ABQ$ 称为双曲线中的阿基米德三角形。其性质如下：
+
+(1) 弦 $AB$ 绕着定点 $P(m,0)$ 转动时，点 $Q$ 必在直线 $x=\frac{a^2}{m}$ 上；当 $P$ 为左焦点时，点 $Q$ 在左准线 $x=-\frac{a^2}{c}$ 上；当 $P$ 为右焦点时，点 $Q$ 在右准线 $x=\frac{a^2}{c}$ 上。
+
+(2) 直线 $AQ,PQ,BQ$ 的斜率成等差数列，即 $2k_{PQ}=k_{AQ}+k_{BQ}$。
+
+(3) 当点 $P$ 为焦点时，$PQ\perp AB$。
+
+\textbf{[图形见原图]}
+\end{quote}
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item “看到 关键信息 / 想到 解题技巧”之间为图示箭头与图标排版，无法完整用纯文字还原。
+
+\item 双曲线部分下方图形附近有轻微裁切，但正文三条性质基本可辨。
+
+\item 页面左侧存在相邻页残片，已忽略。
+
+\end{itemize}
+
+\clearpage
+
+\section{3. 抛物线中的阿基米德三角形}
+
+\sourceinfo{微信图片\_20260806203016\_98\_34.jpg}{9b9d84179d8001ac6bfb3f3f61fd836c6d756b960fafb2927f4f7e2b5b3835bd}
+
+如图，已知抛物线 $y^2=2px\,(p>0)$ 的弦 $AB$，分别过 $A,B$ 两点作抛物线的切线，两切线交于点 $P$，则 $\triangle ABP$ 称为抛物线中的阿基米德三角形，其性质如下：
+\begin{enumerate}
+\item 阿基米德三角形底边 $AB$ 上的中线平行于抛物线的对称轴。
+\item 若阿基米德三角形的底边 $AB$ 经过抛物线内的定点 $C$，则点 $P$ 的轨迹是一条直线。
+\item 若直线 $l$ 与抛物线没有公共点，以 $l$ 上的点为顶点的阿基米德三角形的底边 $AB$ 经过定点.若直线 $l$ 的方程为 $ax+by+c=0$，则定点的坐标为 $\left(\frac{c}{a},-\frac{bp}{a}\right)$.
+\item 底边 $AB$ 的长为 $a$ 的阿基米德三角形的面积的最大值为 $\dfrac{a^3}{8p}$.
+\item 若阿基米德三角形的底边 $AB$ 经过抛物线的焦点，则顶点 $P$ 在抛物线的准线上，且 $\triangle ABP$ 的面积的最小值为 $p^2$.
+\item 在阿基米德三角形中，$\angle AFP=\angle BFP$.
+\item $|AF|\,|BF|=|PF|^2$.
+\item 在抛物线上任取一点 $I$（不与点 $A,B$ 重合），经过点 $I$ 作抛物线的切线分别交 $AP,BP$ 于点 $S,T$，连接 $AI,BI$，则三角形 $ABI$ 的面积是三角形 $PST$ 的面积的 $2$ 倍.
+\end{enumerate}
+
+\paragraph{特殊情况} 如图，抛物线 $y^2=2px\,(p>0)$ 的弦 $AB$ 经过焦点 $F$，$PA,PB$ 是抛物线的两条切线，$\triangle PAB$ 称为特殊的阿基米德三角形，其性质如下：
+\begin{enumerate}
+\item 点 $P$ 在抛物线的准线 $x=-\dfrac{p}{2}$ 上.
+\item $\triangle PAB$ 是直角三角形，且 $\angle APB$ 为直角.
+\item $PF\perp AB$.
+\item 若 $AB$ 的中点为 $C$，则 $PC\parallel x$ 轴.
+\item $\triangle PAB$ 的面积的最小值为 $p^2$.
+\end{enumerate}
+
+\subsection{技巧应用}
+\paragraph{典例} （2024 吉林白山二模）已知抛物线 $C:y^2=8x$ 的焦点为 $F$，顶点为 $O$，斜率为 $\dfrac{4}{3}$ 的直线 $l$ 过点 $F$ 且与抛物线 $C$ 交于 $M,N$ 两点，若 $\triangle PMN$ 为阿基米德三角形，则 $|OP|=$ \hfill （\qquad）
+
+A. $\sqrt{11}$ \qquad B. $2\sqrt{3}$ \qquad C. $\sqrt{13}$ \qquad D. $\sqrt{14}$
+
+【答案】C
+
+【解析】（常规法）依题意，$F(2,0)$，设直线 $l:y=\dfrac{4}{3}(x-2)$，联立
+\[
+\begin{cases}
+y=\dfrac{4}{3}(x-2),\\
+y^2=8x,
+\end{cases}
+\]
+[待人工核对]
+
+\textbf{[图形见原图]}
+
+\textbf{[图形见原图]}
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 第(3)条中“底边 \$AB\$ 经过定点”后标点和衔接处略模糊，已按可辨认内容转写。
+
+\item 例题解析自联立方程组之后的内容被页面下边裁切，无法确认。
+
+\item 页眉左上角页码区域不清晰，未录入。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧48 阿基米德三角形}
+
+\sourceinfo{微信图片\_20260806203020\_99\_34.jpg}{55c8bffe829729a48467cfe55bd3da5c2580483f90a54b43ca5048c7bd04b9fe}
+
+得 $y^2-6y-16=0$，解得 $y=8$ 或 $y=-2$，不妨设 $M(8,8),N\left(\frac{1}{2},-2\right)$.
+
+设直线 $PM$ 的方程为 $y-8=k(x-8)$，
+
+联立
+\[
+\begin{cases}
+y-8=k(x-8),\\
+y^2=8x,
+\end{cases}
+\]
+得 $[k(x-8)+8]^2=8x$，
+
+整理得 $k^2x^2+(16k-16k^2-8)x+64k^2-128k+64=0$，
+
+由 $\Delta=(16k-16k^2-8)^2-4k^2(64k^2-128k+64)=0$，得 $k=\frac{1}{2}$，
+
+故直线 $PM$ 的斜率 $k=\frac{1}{2}$，故直线 $PM$ 的方程为 $y=\frac{1}{2}x+4$，
+
+同理，可得直线 $PN$ 的斜率 $k'=-2$，故直线 $PN$ 的方程为 $y=-2x-1$，
+
+联立
+\[
+\begin{cases}
+y=\frac{1}{2}x+4,\\
+y=-2x-1,
+\end{cases}
+\]
+解得 $x=-2,y=3$，
+
+即 $P(-2,3)$，则 $|OP|=\sqrt{13}$.
+
+故选 C.
+
+\paragraph{(技巧法)} 依题意，$F(2,0)$，设直线 $l:y=\frac{4}{3}(x-2)$，联立
+\[
+\begin{cases}
+y=\frac{4}{3}(x-2),\\
+y^2=8x,
+\end{cases}
+\]
+得 $y^2-6y-16=0$，解得 $y=8$ 或 $y=-2$，不妨设 $M(8,8),N\left(\frac{1}{2},-2\right)$，
+
+因为 $\triangle PMN$ 为阿基米德三角形，所以点 $P$ 在直线 $x=-2$ 上.
+
+设 $P(-2,t)$，所以 $\overrightarrow{PM}=(10,8-t),\ \overrightarrow{PN}=\left(\frac{5}{2},-2-t\right)$，
+
+由 $\overrightarrow{PM}\cdot\overrightarrow{PN}=(10,8-t)\cdot\left(\frac{5}{2},-2-t\right)=0$，得 $t^2-6t+9=0$，解得 $t=3$，
+
+所以 $P(-2,3)$，则 $|OP|=\sqrt{13}$，故选 C.
+
+\paragraph{速解点拨} 阿基米德三角形是一种特殊的三角形，在解析几何中有着广泛的应用，利用阿基米德三角形处理与圆锥曲线相关的问题时，应掌握其基本性质，巧妙利用对称性和中点.特别注意弦经过焦点的特殊情况。
+
+\paragraph{变式} （2024 重庆模拟）椭圆 $C:\frac{x^2}{4}+\frac{y^2}{3}=1$，过其左焦点 $F$ 的弦 $AB$，过点 $A,B$ 分别作椭圆的[待人工核对]，则 $\triangle ABP$ 的面积的最小值为
+
+A. $\frac{9}{4}$ \qquad B. $\frac{9}{2}$ \qquad C. $\frac{3}{4}$ \qquad D. $\frac{3}{2}$
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 本页上方解题对应的原题题干未显示，仅能识别后半段解答与“故选C”。
+
+\item “变式”题题干下半部分被页面下边缘裁切，无法确认“过点A,B分别作椭圆的……”之后的完整内容。
+
+\item 绿色高亮条中的印刷句子辨认为“因为\$\textbackslash{}triangle PMN\$为阿基米德三角形，所以点\$P\$在直线\$x=-2\$上。”，可靠度中等。
+
+\end{itemize}
+
+\clearpage
+
+\section{四 过关斩将}
+
+\sourceinfo{微信图片\_20260806203024\_100\_34.jpg}{0128038cb9f8bbebeefa0f2cbc99da866221ef6185bbd624ed75f881baa7a63f}
+
+\subsection*{一、单选题}
+
+1.（2025辽宁二模）已知椭圆 $\dfrac{y^2}{9}+\dfrac{x^2}{8}=1$，倾斜角为 $45^\circ$ 的弦 $MN$ 经过上焦点 $F$，过 $M,N$ 的切线交于 $Q$，$O$ 为坐标原点，则 $|OQ|=$
+
+A. $5\sqrt{3}$ \qquad B. $10$ \qquad C. $\sqrt{145}$ \qquad D. $13$
+
+2.（2024江苏盐城模拟）已知过抛物线 $x^2=16y$ 焦点的直线 $l$ 与抛物线交于 $A,B$ 两点，分别过 $A,B$ 的两条切线交于点 $P$，若点 $P$ 的横坐标为 $2$，则直线 $AB$ 的方程为
+
+A. $x+2y-8=0$ \qquad B. $x-2y+8=0$ \qquad C. $x-4y+16=0$ \qquad D. $x+4y-16=0$
+
+3.（2024湖南邵阳期末）设抛物线 $y^2=2px\,(p>0)$，弦 $AB$ 过焦点 $F$，$\triangle ABQ$ 为阿基米德三角形，则 $\triangle ABQ$ 的形状为
+
+A. 锐角三角形
+
+B. 直角三角形
+
+C. 钝角三角形
+
+D. 随着点 $A,B$ 位置的变化，以上三种情况都有可能
+
+\subsection*{二、多选题}
+
+4.（2024湖南邵阳期末）抛物线的弦与过弦的端点的两条切线所围成的三角形称为阿基米德三角形. 设抛物线 $y^2=2px\,(p>0)$，弦 $AB$ 过焦点 $F$，$\triangle ABQ$ 为其阿基米德三角形，则下列结论一定成立的是
+
+A. 存在点 $Q$，使得 $\overrightarrow{QA}\cdot\overrightarrow{QB}>0$
+
+B. $\overrightarrow{AQ}\cdot\overrightarrow{AB}=|\overrightarrow{AF}|\cdot|\overrightarrow{AB}|$
+
+C. 对于任意的点 $Q$，必有向量 $\overrightarrow{QA}+\overrightarrow{QB}$ 与向量 $\bm{a}=(-1,0)$ 共线
+
+D. $\triangle ABQ$ 面积的最小值为 $p^2$
+
+\subsection*{三、填空题}
+
+5.（2024新疆乌鲁木齐期中）过椭圆 $C:\dfrac{x^2}{4}+\dfrac{y^2}{3}=1$ 上的点 $A(x_1,y_1),B(x_2,y_2)$ 分别作 $C$ 的切线，若两切线的交点恰好在直线 $l:x=4$ 上，则 $y_1\cdot y_2$ 的最小值为\underline{\hspace{3cm}}。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 题1题干末尾括号处右侧选项标记区域被右页遮挡，但不影响题干与选项主体识别。
+
+\item 题4选项C中的向量记号采用粗体字母 \$\textbackslash{}bm\{a\}\$ 近似表示，原书字体样式需人工核对。
+
+\end{itemize}
+
+\clearpage
+
+\section{点差法解弦中点问题}
+
+\sourceinfo{微信图片\_20260806203028\_101\_34.jpg}{0dfc06ea2ecc262b619b21d8d2a62220862ff6bddad073e9fcb465a049aeebbe}
+
+\section*{点差法解弦中点问题}
+\paragraph{巧解题——中点弦问题的应用场景}
+在求与圆锥曲线的中点弦有关的问题时，若已知直线与圆锥曲线相交被截的线段的中点坐标，可利用直线和圆锥曲线的两个交点，把交点坐标代入圆锥曲线的方程，并作差，求出直线的斜率，然后再利用中点坐标求出直线方程。用此方法，可在椭圆、双曲线、抛物线中得到5个不同结论。
+
+\paragraph{速答题——5个结论}
+\paragraph{想到——解题技巧}
+若 $A(x_1,y_1),B(x_2,y_2)(x_1\ne x_2)$ 是圆锥曲线上的不同的两点，直线 $AB$ 的斜率存在，$M(x_0,y_0)(x_0\ne 0,y_0\ne 0)$ 为弦 $AB$ 的中点.
+
+1. 椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 中，$k_{AB}=-\dfrac{b^2x_0}{a^2y_0}$，$k_{AB}k_{OM}=-\dfrac{b^2}{a^2}=e^2-1$.
+
+\textbf{[图形见原图]}
+
+2. 椭圆 $\dfrac{y^2}{a^2}+\dfrac{x^2}{b^2}=1(a>b>0)$ 中，$k_{AB}=-\dfrac{a^2x_0}{b^2y_0}$，$k_{AB}k_{OM}=-\dfrac{a^2}{b^2}=\dfrac{1}{e^2-1}$.
+
+\textbf{[图形见原图]}
+
+3. 双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 中，$k_{AB}=\dfrac{b^2x_0}{a^2y_0}$，$k_{AB}k_{OM}=\dfrac{b^2}{a^2}=e^2-1$.
+
+\textbf{[图形见原图]}
+
+4. 双曲线 $\dfrac{y^2}{a^2}-\dfrac{x^2}{b^2}=1(a>0,b>0)$ 中，$k_{AB}=\dfrac{a^2x_0}{b^2y_0}$，$k_{AB}k_{OM}=\dfrac{a^2}{b^2}=\dfrac{1}{e^2-1}$.
+
+\textbf{[图形见原图]}
+
+5. 抛物线 $y^2=2px\,(p>0)$ 中（如图1），$k_{AB}=\dfrac{p}{y_0}$。
+
+\textbf{[图形见原图]}
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页面中部装饰性栏目字样附近的个别小字较淡，但不影响主体内容识别。
+
+\item 第5条下方图形未完整拍入，仅能确认正文为“抛物线 \$y\textasciicircum{}2=2px\textbackslash{},(p>0)\$ 中（如图1），\$k\_\{AB\}=\textbackslash{}frac\{p\}\{y\_0\}\$”。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧应用}
+
+\sourceinfo{微信图片\_20260806203032\_102\_34.jpg}{d5203d7ec302cd172c2488f8f51e53cba799b68340093930c28a4e8ee2a52258}
+
+\paragraph{高中数学解题技巧}
+抛物线 $y^2=-2px\,(p>0)$ 中（如图2），$k_{AB}=-\dfrac{p}{y_0}$。
+
+抛物线 $x^2=2py\,(p>0)$ 中（如图3），$k_{AB}=\dfrac{x_0}{p}$。
+
+抛物线 $x^2=-2py\,(p>0)$ 中（如图4），$k_{AB}=-\dfrac{x_0}{p}$。
+
+\textbf{[图形见原图]}
+
+\section*{技巧应用}
+
+\paragraph{典例}（2024 安徽芜湖模拟）已知椭圆 $\dfrac{x^2}{4}+\dfrac{y^2}{3}=1$，一组斜率为 $\dfrac{3}{2}$ 的平行直线与椭圆相交，求这些直线被椭圆截得的线段的中点所在的直线方程为
+
+A. $y=\dfrac{1}{2}x$ \qquad B. $y=-2x$ \qquad C. $y=-\dfrac{1}{2}x$ \qquad D. $y=2x$
+
+【答案】C
+
+【解析】（常规法）因为一组斜率为 $\dfrac{3}{2}$ 的平行直线与椭圆相交，
+
+所以设直线的方程为 $y=\dfrac{3}{2}x+m$，
+
+联立方程组
+\[
+\begin{cases}
+ y=\dfrac{3}{2}x+m,\\
+ \dfrac{x^2}{4}+\dfrac{y^2}{3}=1,
+\end{cases}
+\]
+消去 $y$ 得 $12x^2+12mx+4m^2-12=0$，
+
+设直线与椭圆相交于点 $A(x_1,y_1),B(x_2,y_2)$，且中点为 $M(x,y)$，
+
+由根与系数的关系得 $x_1+x_2=-m，x_1x_2=\dfrac{m^2-3}{3}$，则 $y_1+y_2=\dfrac{3}{2}(x_1+x_2)+2m=\dfrac{m}{2}$；
+
+所以 $x=-\dfrac{m}{2},\ y=\dfrac{m}{4}$，即 $M\left(-\dfrac{m}{2},\dfrac{m}{4}\right)$，
+
+依题意，这些直线被椭圆截得的线段的中点所在的直线经过坐标原点，
+
+所以所求直线的斜率为 $\dfrac{m/4}{-m/2}=-\dfrac{1}{2}$，所以直线方程为 $y=-\dfrac{1}{2}x$，故选 C。
+
+\paragraph{（技巧法）}设斜率为 $\dfrac{3}{2}$ 的平行直线与椭圆相交于点 $A(x_1,y_1),B(x_2,y_2)$，且中点为 $M(x,y)$，
+
+可得 $x_1+x_2=2x,\ y_1+y_2=2y,$
+
+[待人工核对]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页眉左上角页码区域较模糊，无法完整确认。
+
+\item 上方公式总结中未见图1对应文字，本页仅清晰可辨图2、图3、图4对应三条公式。
+
+\item “技巧法”后续内容被页面下边缘裁切，无法确认。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧49 点差法解弦中点问题}
+
+\sourceinfo{微信图片\_20260806203036\_103\_34.jpg}{6f81f0ed254527412e6346dd5de24992c3984a8d2dfcbf54f320136c2032e3cd}
+
+\[
+\left\{
+\begin{aligned}
+\frac{x_1^2}{4}+\frac{y_1^2}{3}&=1,\\
+\frac{x_2^2}{4}+\frac{y_2^2}{3}&=1,
+\end{aligned}
+\right.
+\]
+
+两式相减得
+\[
+\frac{(x_1+x_2)(x_1-x_2)}{4}+\frac{(y_1+y_2)(y_1-y_2)}{3}=0,
+\]
+
+整理得
+\[
+\frac{y_1-y_2}{x_1-x_2}=-\frac{3(x_1+x_2)}{4(y_1+y_2)}=-\frac{3\times 2x}{4\times 2y}=\frac{3}{2},
+\]
+
+可得 $y=-\frac{1}{2}x$，
+
+即这些直线被椭圆截得的线段的中点所在的直线方程为 $y=-\frac{1}{2}x$，故选 C.
+
+\paragraph{变式} 已知双曲线 $C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1(a>0,b>0)$，过点 $P(-4,0)$ 的直线与双曲线 $C$ 交于 $A,B$ 两点，线段 $AB$ 的中点是 $M(2,6)$，则双曲线 $C$ 的离心率为\hfill（\qquad）
+
+A.$\sqrt{2}$ \qquad B.$\sqrt{3}$ \qquad C.$2$ \qquad D.$3$
+
+\subsection{过关斩将}
+
+\subsection*{一、单选题}
+
+1.（2024吉林通化一中期中）已知直线 $l$ 与抛物线 $y=x^2$ 相交于 $A,B$ 两点，且线段 $AB$ 的中点坐标为 $(-1,3)$，则直线 $l$ 的斜率为\hfill（\qquad）
+
+A.$-2$ \qquad B.$2$ \qquad C.$-6$ \qquad D.$6$
+
+2.（2023全国乙卷第11题）设 $A,B$ 为双曲线 $x^2-\frac{y^2}{9}=1$ 上两点，下列四个点中，可为线段 $AB$ 中点的是\hfill（\qquad）
+
+A.$(1,1)$ \qquad B.$(-1,2)$ \qquad C.$(1,3)$ \qquad D.$(-1,-4)$
+
+\subsection*{二、多选题}
+
+3.（2024安徽质检）已知双曲线 $x^2-\frac{y^2}{3}=1$，过原点 $O$ 的直线 $AC,BD$ 分别交双曲线于点 $A,C$ 和点 $B,D(A,B,C,D$ 四点逆时针排列$)$，且两直线的斜率之积为 $-\frac{1}{3}$，则下列结论正确的是\hfill（\qquad）
+
+A.四边形 $ABCD$ 一定是平行四边形
+
+B.四边形 $ABCD$ 可能为菱形
+
+C.$AB$ 的中点可能为 $(2,2)$
+
+D.$\tan\angle AOB$ 的值可能为 $\frac{4\sqrt{3}}{3}$
+
+\subsection*{三、填空题}
+
+4.（2024河北衡水三模）已知椭圆 $C:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a>b>0)$ 的左、右焦点分别为 $F_1,F_2$，焦距为 $6$，点 $M(1,1)$，直线 $MF_2$ 与 $C$ 交于 $A,B$ 两点，且 $M$ 为 $AB$ 的中点，则 $\triangle AF_1B$ 的周长为\underline{\qquad}.
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页首推导部分左侧绿色小标签文字较模糊，疑为“解”或类似标识，未纳入正文。
+
+\item 页首推导中等式链最后一项印刷结果与后文结论存在版面视觉歧义，按可辨认内容保留后文结论 \$y=-\textbackslash{}frac\{1\}\{2\}x\$。
+
+\item 多选题题干中“\$A,B,C,D\$ 四点逆时针排列”后的括号内排版较紧，已按可辨认内容录入。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧50 焦点三角形面积问题}
+
+\sourceinfo{微信图片\_20260806203040\_104\_34.jpg}{529d1c69b9d172ff8420cff377eee4e30d8c0d2fcf7117201b13ae1d015650f3}
+
+\paragraph{巧辨题——焦点三角形面积问题的应用场景}
+椭圆或双曲线的焦点三角形是指以两个焦点与曲线上任意一点（不与焦点共线）为顶点的三角形，抛物线的焦点三角形是指以过焦点的弦的端点与原点为顶点的三角形。
+
+\paragraph{速答题——3个面积结论}
+
+\subsection*{1. 椭圆中焦点三角形的面积}
+（1）根据条件及椭圆的定义求 $|PF_1|+|PF_2|$，$|F_1F_2|$，再利用余弦定理求焦点三角形内角的余弦值，由 $\sin^2\theta+\cos^2\theta=1$ 求该内角的正弦值，则焦点三角形的面积
+\[
+S=\frac{1}{2}|PF_1|\,|PF_2|\sin\angle F_1PF_2.
+\]
+
+（2）如图1，若 $P$ 是以 $F_1,F_2$ 为焦点的椭圆上任意一点，$\angle F_1PF_2=\theta$，则焦点三角形的面积
+\[
+S_{\triangle PF_1F_2}=\frac{1}{2}\cdot\frac{2b^2}{1+\cos\theta}\cdot\sin\theta
+=\frac{b^2\cdot 2\sin\dfrac{\theta}{2}\cos\dfrac{\theta}{2}}{2\cos^2\dfrac{\theta}{2}}
+=b^2\cdot\tan\frac{\theta}{2}.
+\]
+
+\textbf{[图形见原图]}
+
+\subsection*{2. 双曲线中焦点三角形的面积}
+（1）根据条件及双曲线的定义求 $\bigl||PF_1|-|PF_2|\bigr|$，$|F_1F_2|$，再利用余弦定理结合已知条件，求焦点三角形内角的余弦值，由 $\sin^2\theta+\cos^2\theta=1$ 求该内角的正弦值，则焦点三角形的面积
+\[
+S=\frac{1}{2}|PF_1|\cdot|PF_2|\sin\angle F_1PF_2.
+\]
+
+（2）如图2，若 $P$ 是以 $F_1,F_2$ 为焦点的双曲线上任意一点，$\angle F_1PF_2=\theta$，则焦点三角形的面积
+\[
+S=\frac{b^2}{\tan\dfrac{\theta}{2}}.
+\]
+
+\textbf{[图形见原图]}
+
+\paragraph{证明}
+设 $P$ 是焦点为 $F_1,F_2$ 的双曲线上任意一点，$\angle F_1PF_2=\theta$，由双曲线的定义知，$\bigl||PF_1|-|PF_2|\bigr|=2a$，
+\[
+\text{所以 }|PF_1|^2+|PF_2|^2-2|PF_1||PF_2|=4a^2,
+\]
+由余弦定理知
+\[
+|F_1F_2|^2=|PF_1|^2+|PF_2|^2-2|PF_1||PF_2|\cos\theta,
+\]
+所以
+\[
+4c^2=4a^2+2|PF_1||PF_2|-2|PF_1||PF_2|\cos\theta,
+\]
+所以
+\[
+|PF_1||PF_2|=\frac{4b^2}{2(1-\cos\theta)}=\frac{2b^2}{1-\cos\theta},
+\]
+所以
+\[
+S_{\triangle PF_1F_2}=\frac{1}{2}\cdot\frac{2b^2}{1-\cos\theta}\cdot\sin\theta
+=\frac{b^2\cdot 2\sin\dfrac{\theta}{2}\cos\dfrac{\theta}{2}}{2\sin^2\dfrac{\theta}{2}}
+=\frac{b^2}{\tan\dfrac{\theta}{2}}.
+\]
+
+\paragraph{}150
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item “看到 关键信息”“想到 解题技巧”区域主要为栏目提示，版式中有装饰箭头，未单独展开为正文。
+
+\item 证明部分首个推导式前后行文较清晰，但“所以”后的整行排版略受拍摄透视影响，已按可辨认内容转写。
+
+\item 页码“150”为页脚内容。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧50 焦点三角形面积问题}
+
+\sourceinfo{微信图片\_20260806203044\_105\_34.jpg}{d4145792a33bdbf33f3cd7434f24a88e865e74fc0f83986484c08563a7328def}
+
+\section*{技巧50\ 焦点三角形面积问题}
+
+\subsection*{3. 抛物线中焦点三角形的面积}
+如图3，若$F$是抛物线$y^2=2px\,(p>0)$的焦点，倾斜角为$\theta\,(\theta\in(0,\pi))$的直线过$F$交抛物线于$A(x_1,y_1)$，$B(x_2,y_2)$两点，$O$为坐标原点，则$\triangle OAB$是等腰三角形.
+
+则$S_{\triangle OAB}=\dfrac{p^2}{2\sin\theta}$.
+
+\textbf{[图形见原图]}
+
+\subsection*{技巧应用}
+\paragraph{典例}（2023上海青浦质检）双曲线$x^2-\dfrac{y^2}{4}=1$的左、右两个焦点为$F_1,F_2$，第二象限内的一点$P$在双曲线上，且$\angle F_1PF_2=\dfrac{2\pi}{3}$，则$\triangle F_1PF_2$的面积是\underline{\hspace{2cm}}.
+
+答案：$\dfrac{4\sqrt{3}}{3}$
+
+\paragraph{解析1（常规法）}由$x^2-\dfrac{y^2}{4}=1$可得$a=1,b=2,c=\sqrt{5}$.
+
+如图，设$|PF_1|=m,|PF_2|=n$，则$n-m=2$.(1)
+
+在$\triangle PF_1F_2$中，由余弦定理得
+\[
+20=m^2+n^2-2mn\cos\dfrac{2\pi}{3},
+\]
+即
+\[
+m^2+n^2+mn=(m-n)^2+3mn=20.(2)
+\]
+
+由(1)(2)联立，解得$mn=\dfrac{16}{3}$，
+
+所以三角形$F_1PF_2$的面积为$\dfrac{1}{2}mn\sin\dfrac{2\pi}{3}=\dfrac{\sqrt{3}}{4}\times\dfrac{16}{3}=\dfrac{4}{3}\sqrt{3}$.
+
+\paragraph{（技巧法）}由$x^2-\dfrac{y^2}{4}=1$可得$b=2$，
+
+因为$\angle F_1PF_2=\dfrac{2\pi}{3}$，所以
+\[
+S_{\triangle F_1PF_2}=\frac{4}{\tan\dfrac{2\pi}{3}/2}=\frac{4\sqrt{3}}{3}.
+\]
+
+\textbf{[图形见原图]}
+
+\subsection*{避解点拨}
+1. 焦点三角形是圆锥曲线中的重要内容，求解三角形的面积的方法很多，熟记本文技巧，可\newline
+[待人工核对]。
+
+2. 三角形常用的面积公式
+
+(1) $S=\dfrac{1}{2}a\cdot h_a\,(h_a\text{表示}a\text{边上的高})$.
+
+(2) $S=\dfrac{1}{2}ab\sin C=\dfrac{1}{2}ac\sin B=\dfrac{1}{2}bc\sin A=\dfrac{abc}{4R}$.
+
+(3) $S=\dfrac{1}{2}r(a+b+c)\,(r\text{为内切圆半径})$.
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item “则\$\textbackslash{}triangle OAB\$是[待人工核对：等腰/直角等字样较模糊]三角形”中三角形性质表述不够清晰，但下方公式可辨认为\$S\_\{\textbackslash{}triangle OAB\}=\textbackslash{}dfrac\{p\textasciicircum{}2\}\{2\textbackslash{}sin\textbackslash{}……（完整说明见逐页 JSON）
+
+\item “避解点拨”第1条后半句较模糊，未可靠辨认，仅保留可见部分并标注待核对。
+
+\item 技巧法面积公式原排版中分式层次不十分清晰，按版面判断为\$S\_\{\textbackslash{}triangle F\_1PF\_2\}=\textbackslash{}dfrac\{4\}\{\textbackslash{}tan\textbackslash{}left(\textbackslash{}dfrac\{2\textbackslash{}pi\}\{3\}/2\textbackslash{}right)\}=\textbackslash{}dfr……（完整说明见逐页 JSON）
+
+\end{itemize}
+
+\clearpage
+
+\section{四 过关斩将}
+
+\sourceinfo{微信图片\_20260806203049\_106\_34.jpg}{6e8320ae56fcb0587f061590e3a71c61f787c6eb5463289a2cbeccbced7d954d}
+
+\paragraph{变式1} 已知 $F_1,F_2$ 为双曲线 $C:x^2-y^2=2$ 的左、右焦点，点 $P$ 在 $C$ 上，$\overrightarrow{PF_1}\cdot\overrightarrow{PF_2}=0$，则 $\triangle F_1PF_2$ 的面积为\underline{\hspace{2cm}}。
+
+\paragraph{变式2} 设 $M$ 是椭圆 $\dfrac{x^2}{25}+\dfrac{y^2}{16}=1$ 上的一点，$F_1,F_2$ 为焦点，$\angle F_1MF_2=\dfrac{\pi}{6}$，则 $\triangle MF_1F_2$ 的面积为（\hspace{1cm}）
+
+A. $\dfrac{16\sqrt{3}}{3}$ \qquad B. $16(2+\sqrt{3})$ \qquad C. $16(2-\sqrt{3})$ \qquad D. $16$
+
+\section*{四\ 过关斩将}
+
+\subsection*{一、单选题}
+
+1. （2023 全国甲卷第12题）设 $O$ 为坐标原点，$F_1,F_2$ 为椭圆 $C:\dfrac{x^2}{9}+\dfrac{y^2}{6}=1$ 的两个焦点，点 $P$ 在 $C$ 上，$\cos\angle F_1PF_2=\dfrac{3}{5}$，则 $|OP|=$（\hspace{1cm}）
+
+A. $\dfrac{13}{5}$ \qquad B. $\dfrac{\sqrt{30}}{2}$ \qquad C. $\dfrac{14}{5}$ \qquad D. $\dfrac{\sqrt{35}}{2}$
+
+2. （2024 吉林通化期末）已知 $F_1,F_2$ 分别是双曲线 $C:\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的左、右焦点，$P$ 为 $C$ 上一点，$PF_1\perp PF_2$，且 $\triangle F_1PF_2$ 的面积等于 $8$，则 $b=$（\hspace{1cm}）
+
+A. $\sqrt{2}$ \qquad B. $2$ \qquad C. $2\sqrt{2}$ \qquad D. $4$
+
+\subsection*{二、多选题}
+
+3. （2023 江西上饶月考）已知 $P$ 为双曲线 $\dfrac{x^2}{4}-y^2=1$ 右支上的一个动点（不经过顶点），$F_1,F_2$ 分别是双曲线的左、右焦点，$\triangle PF_1F_2$ 的内切圆圆心为 $I$，过点 $F_2$ 作 $F_2A\perp PI$，垂足为 $A$，下列结论正确的是（\hspace{1cm}）
+
+A. 点 $I$ 的横坐标为 $2$
+
+B. $\dfrac{S_{\triangle PIF_1}-S_{\triangle PIF_2}}{S_{\triangle IF_1F_2}}=\dfrac{2\sqrt{5}}{5}$
+
+C. $|OA|=2$
+
+D. $\dfrac{S_{\triangle PF_1F_2}}{S_{\triangle IF_1F_2}}=\dfrac{2\sqrt{5}+5}{5}$
+
+\subsection*{三、填空题}
+
+4. （2024 江苏南通月考）已知 $O$ 为坐标原点，直线 $y=x-2$ 与抛物线 $y^2=8x$ 相交于 $A,B$ 两点，则 $\triangle AOB$ 的面积为\underline{\hspace{2cm}}。
+
+5. （2023 江西期末）已知椭圆 $C:\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 的左、右焦点分别为 $F_1,F_2$，点 $P$ 在椭圆 $C$ 上，$PF_2$ 的延长线交椭圆 $C$ 于点 $Q$，且 $|PF_1|=|PQ|$，$\triangle PF_1F_2$ 的面积为 $b^2$，记 $\triangle PF_1F_2$ 与 $\triangle QF_1F_2$ 的面积分别为 $S_1,S_2$，则 $\dfrac{S_1}{S_2}=$ \underline{\hspace{2cm}}。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页眉处可见“高中数学解题技巧”，但是否属于本页主体标题需人工核对。
+
+\item 变式1、变式2右侧括号位置可能有题号或空白，图中不够清晰。
+
+\item 变式1、变式2下方绿色手写样式标注“焦点三角形”看似印刷提示，但字体风格接近批注，建议人工核对其属性。
+
+\end{itemize}
+
+\clearpage
+
+\section{焦点三角形弦长问题}
+
+\sourceinfo{微信图片\_20260806203053\_107\_34.jpg}{5d8007ad80b27802a2c4cf60aa67fe40cac5f7058b9e9b4b2278cf586f1532d4}
+
+\section*{焦点三角形弦长问题}
+\paragraph{巧辨题——焦点三角形弦长问题的应用场景}
+如果圆锥曲线的一条弦所在的直线经过焦点，则称该弦为焦点弦。圆锥曲线的焦点弦问题涉及斜率、直线的斜率（或倾斜角）、定比分点、焦半径、弦长等知识。焦点弦是圆锥曲线的“动脉神经”，集数学知识、思想方法和解题策略于一体。
+
+\paragraph{速答题——5个弦长结论}
+\textbf{[图形见原图]}
+
+1. 设直线 $y=kx+m$ 与圆锥曲线的交点坐标为 $A(x_1,y_1),\,B(x_2,y_2)$，
+\[
+|AB|=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}
+\]
+\[
+|AB|=\sqrt{1+k^2}\cdot |x_1-x_2|=\sqrt{1+k^2}\cdot \sqrt{(x_1+x_2)^2-4x_1x_2}
+\]
+\[
+|AB|=\sqrt{1+\frac{1}{k^2}}\cdot |y_1-y_2|=\sqrt{1+\frac{1}{k^2}}\cdot \sqrt{(y_1+y_2)^2-4y_1y_2}\quad (k\ne 0)
+\]
+
+2. 如图1，$F$ 是椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 的一个焦点，弦 $AB$ 经过点 $F$，$AB$ 的倾斜角为 $\alpha$。其中，椭圆上的点到焦点的距离，称为焦半径。
+\[
+|AF|=a+ex_A=\frac{b^2}{a+c\cos\alpha},\quad |BF|=a-ex_B=\frac{b^2}{a-c\cos\alpha}
+\]
+\[
+|AB|=\frac{2ab^2}{a^2-c^2\cos^2\alpha}
+\]
+特别地，当 $\alpha=90^\circ$ 时，
+\[
+|AB|=\frac{2b^2}{a}\; (\text{通径})
+\]
+当 $\alpha=0^\circ$ 时，
+\[
+|AF|=a-c,\quad |BF|=a+c
+\]
+
+3. 如图2，$F$ 是椭圆 $\dfrac{y^2}{a^2}+\dfrac{x^2}{b^2}=1(a>b>0)$ 的一个焦点，弦 $AB$ 经过点 $F$，$AB$ 的倾斜角为 $\alpha$。
+\[
+|AF|=a+ey_A=\frac{b^2}{a-c\sin\alpha},\quad |BF|=a+ey_B=\frac{b^2}{a+c\sin\alpha}
+\]
+\[
+|AB|=\frac{2ab^2}{a^2-c^2\sin^2\alpha}
+\]
+特别地，当 $\alpha=0^\circ$ 时，
+\[
+|AB|=\frac{2b^2}{a}\; (\text{通径})
+\]
+当 $\alpha=90^\circ$ 时，
+\[
+|AF|=a+c,\quad |BF|=a-c
+\]
+
+4. 如图3，$F$ 是双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的一个焦点，弦 $MN$ 经过点 $F$，$MN$ 的倾斜角为 $\alpha$。若点 $M,N$ 是双曲线右支上的两点，
+\[
+|MF|=|ex_M-a|=\frac{b^2}{a+c\cos\alpha},\quad |NF|=|ex_N-a|=\frac{b^2}{a-c\cos\alpha},\quad |MN|=\frac{2ab^2}{a^2-c^2\cos^2\alpha}
+\]
+[待人工核对]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item “焦点弦问题涉及[待人工核对：疑似‘斜率’前后有重复或并列短语]”
+
+\item 第2条中 \$|BF|=a-ex\_B\$ 后接分式辨认为 \$\textbackslash{}frac\{b\textasciicircum{}2\}\{a-c\textbackslash{}cos\textbackslash{}alpha\}\$，需人工复核。
+
+\item 第3条中两处焦半径公式的符号方向需人工结合原书核对。
+
+\item 第4条底部内容被裁切，后续结论未完整显示。
+
+\end{itemize}
+
+\clearpage
+
+\section{高中数学解题技巧}
+
+\sourceinfo{微信图片\_20260806203057\_108\_34.jpg}{7a67d4f13620f5293795674218cb0b4fdd4489435d1d822473894356c311fef5}
+
+\section*{高中数学解题技巧}
+
+特别地，当 $\alpha=90^\circ$，$|MN|=\dfrac{2b^2}{a}$（通径）。
+
+若 $M,N$ 是双曲线不同支上的两点，如图4，则
+\[
+|MF|=|ex_M-a|=\frac{b^2}{a+c\cos\alpha},\quad |NF|=|ex_N-a|=\frac{b^2}{c\cos\alpha-a},\quad |MN|=\frac{2ab^2}{c^2\cos^2\alpha-a^2}.
+\]
+特别地，当 $\alpha=0^\circ$ 时，$M,N$ 分别为双曲线的左、右顶点时，$|MF|=c-a$，$|NF|=c+a$。
+
+\textbf{[图形见原图]}
+
+5. 如图5，设 $MN$ 是过抛物线 $y^2=2px\,(p>0)$ 焦点 $F$ 的弦，若 $M(x_1,y_1)$，$N(x_2,y_2)$，$\alpha$ 为弦 $MN$ 的倾斜角，则
+\[
+|MF|=x_1+\frac{p}{2},\quad |NF|=x_2+\frac{p}{2},\quad |MN|=x_1+x_2+p=\frac{2p}{\sin^2\alpha}.
+\]
+
+设 $MN$ 是过抛物线 $x^2=2py\,(p>0)$ 焦点 $F$ 的弦，若 $M(x_1,y_1)$，$N(x_2,y_2)$，$\alpha$ 为弦 $MN$ 与对称轴的夹角，则
+\[
+|MF|=y_1+\frac{p}{2},\quad |NF|=y_2+\frac{p}{2},\quad |MN|=y_1+y_2+p=\frac{2p}{\sin^2\alpha}.
+\]
+
+设 $MN$ 是过抛物线 $y^2=-2px\,(p>0)$ 焦点 $F$ 的弦，若 $M(x_1,y_1)$，$N(x_2,y_2)$，$\alpha$ 为弦 $MN$ 的倾斜角，则
+\[
+|MF|=-x_1+\frac{p}{2},\quad |NF|=-x_2+\frac{p}{2},\quad |MN|=-x_1-x_2+p=\frac{2p}{\sin^2\alpha}.
+\]
+
+设 $MN$ 是过抛物线 $x^2=-2py\,(p>0)$ 焦点 $F$ 的弦，若 $M(x_1,y_1)$，$N(x_2,y_2)$，$\alpha$ 为弦 $MN$ 与对称轴的夹角，则
+\[
+|MF|=-y_1+\frac{p}{2},\quad |NF|=-y_2+\frac{p}{2},\quad |MN|=-y_1-y_2+p=\frac{2p}{\sin^2\alpha}.
+\]
+
+\section*{技巧应用}
+
+\paragraph{典例}（2024 甘肃武威开学考试）已知倾斜角为 $45^\circ$ 的直线 $l$ 经过椭圆 $\dfrac{x^2}{5}+\dfrac{y^2}{4}=1$ 的右焦点 $F_1$，与椭圆相交于 $A,B$ 两点，则弦 $AB$ 的长为\underline{\qquad\qquad}。
+
+【答案】$\dfrac{16\sqrt{5}}{9}$
+
+【解析】（常规法）因为直线 $l$ 过椭圆 $\dfrac{x^2}{5}+\dfrac{y^2}{4}=1$ 的右焦点 $F_1(1,0)$，又直线的倾斜角为 $45^\circ$，所以直线的斜率为 $1$，所以直线 $l$ 的方程为 $y=x-1$，即 $x-y-1=0$。
+
+由方程组
+\[
+\begin{cases}
+\dfrac{x^2}{5}+\dfrac{y^2}{4}=1,\\
+x-y-1=0,
+\end{cases}
+\]
+消去 $y$ 得 $9x^2-10x-15=0$，
+
+因为 $\Delta=(-10)^2-4\times 9\times(-15)=640>0$，
+
+设 $A(x_1,y_1),B(x_2,y_2)$，由根与系数的关系得 $x_1+x_2=\dfrac{10}{9}$，$x_1x_2=-\dfrac{15}{9}$。
+
+[待人工核对]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 双曲线部分公式中 \$|MF|=|ex\_M-a|\$、\$|NF|=|ex\_N-a|\$ 的下标与绝对值写法依据图片判断，建议人工复核。
+
+\item “特别地，当 \$\textbackslash{}alpha=90\textasciicircum{}\textbackslash{}circ\$”上一段内容不在本页完整显示，未补写来源。
+
+\item 典例解析在“由根与系数的关系得 \$x\_1+x\_2=\textbackslash{}dfrac\{10\}\{9\},x\_1x\_2=-\textbackslash{}dfrac\{15\}\{9\}\$”后被裁切，后续缺失。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧51 焦点三角形弦长问题}
+
+\sourceinfo{微信图片\_20260806203102\_109\_34.jpg}{a1bd62710f9ffb4d57e246af771666c12d001f528b2af4367c402cfb47e385e2}
+
+\section*{技巧51\ 焦点三角形弦长问题}
+
+所以
+\[
+|AB|=\sqrt{1+1}\cdot \sqrt{(x_1+x_2)^2-4x_1x_2}
+\]
+\[
+=\sqrt{2}\times \sqrt{\left(\frac{10}{9}\right)^2-4\times \left(-\frac{15}{9}\right)}
+\]
+\[
+=\frac{16\sqrt{5}}{9}.
+\]
+
+\paragraph{(技巧法)} 因为椭圆方程为
+\[
+\frac{x^2}{5}+\frac{y^2}{4}=1,
+\]
+所以 $a=\sqrt{5},\ b=2$, 所以 $c=\sqrt{5-4}=1$.
+
+因为直线 $l$ 经过椭圆的右焦点，且倾斜角为 $45^\circ$，$\cos45^\circ=\frac{\sqrt{2}}{2}$，
+
+所以
+\[
+|AB|=\frac{2ab^2}{a^2-c^2\cos^2\alpha}
+\]
+
+aaa[待人工核对]
+\[
+=\frac{2\sqrt{5}\times 4}{5-1\times \left(\frac{\sqrt{2}}{2}\right)^2}=\frac{16\sqrt{5}}{9}.
+\]
+
+\paragraph{速解点拨} 焦点弦是圆锥曲线中特殊的弦，求解方法很多，若已知圆锥曲线方程，直线的倾斜角，且直线经过焦点，用技巧法求解最佳。
+
+\paragraph{变式} （2023山东潍坊期末）过双曲线
+\[
+x^2-\frac{y^2}{3}=1
+\]
+的左焦点 $F_1$，作倾斜角为 $\frac{\pi}{6}$ 的直线与双曲线交于 $A,B$ 两点，则 $|AB|=$\hfill（\quad）
+
+A. $2$\qquad B. $3$\qquad C. $4$\qquad D. $5$
+
+\paragraph{四\ 过关斩将}
+
+\subparagraph{一、单选题}
+
+1. （2023江西宜春期中）已知斜率为 $1$ 的直线 $l$ 过椭圆
+\[
+\frac{x^2}{4}+\frac{y^2}{3}=1
+\]
+的右焦点，交椭圆于 $A,B$ 两点，则弦 $AB$ 的长为\hfill（\quad）
+
+A. $\frac{20}{7}$\qquad B. $\frac{22}{7}$\qquad C. $\frac{24}{7}$\qquad D. $\frac{26}{7}$
+
+2. （2024河南期中）已知抛物线 $y^2=6x$，直线 $l$ 过抛物线的焦点，直线 $l$ 与抛物线交于 $A,B$ 两点，弦 $AB$ 长为 $12$，则直线 $l$ 的方程为\hfill（\quad）
+
+A. $y=\frac{1}{2}x-\frac{3}{2}$ 或 $y=-\frac{1}{2}x+\frac{3}{2}$
+
+B. $y=x-\frac{3}{2}$ 或 $y=-x+\frac{3}{2}$
+
+C. $y=\sqrt{3}x-\frac{1}{2}$ 或 $y=-\sqrt{3}x+\frac{1}{2}$
+
+D. $y=2x-\frac{1}{2}$ 或 $y=-2x+\frac{1}{2}$
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页面上半部分为上一题解答的续页，缺少题干，仅能可靠识别到计算过程与“技巧法”部分。
+
+\item “所以 \$|AB|=\textbackslash{}frac\{2ab\textasciicircum{}2\}\{a\textasciicircum{}2-c\textasciicircum{}2\textbackslash{}cos\textasciicircum{}2\textbackslash{}alpha\}\$”下方有一行浅色小字注释公式，内容无法辨认。
+
+\item 第2题下方选项区域靠近页底，个别符号边缘较虚，已按可辨内容录入，仍建议人工复核。
+
+\end{itemize}
+
+\clearpage
+
+\section{高中数学解题技巧}
+
+\sourceinfo{微信图片\_20260806203105\_110\_34.jpg}{f179b06e8eb221aede9d393db2a294d708b71db1af53138dcba2bc4df5d32948}
+
+\paragraph{3.}（2024 山东青岛期末）过双曲线 $\dfrac{x^2}{16}-\dfrac{y^2}{3}=1$ 的右焦点 $F$ 作直线 $l$ 与双曲线交于 $A,B$ 两点，若 $|AB|=6$，则直线 $l$ 有
+
+A. 4条 \qquad B. 3条 \qquad C. 2条 \qquad D. 1条
+
+\section*{二、多选题}
+
+\paragraph{4.}（2024 河南洛阳期末）已知双曲线 $\Gamma: \dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的离心率为 $e$，过其右焦点 $F$ 的直线 $l$ 与 $\Gamma$ 交于点 $A,B$，下列结论正确的是
+
+A. 若 $a=b$，则 $e=\sqrt{2}$
+
+B. $|AB|$ 的最小值为 $2a$
+
+C. 若满足 $|AB|=2a$ 的直线 $l$ 恰有一条，则 $e>\sqrt{2}$
+
+D. 若满足 $|AB|=2a$ 的直线 $l$ 恰有三条，则 $1<e<\sqrt{2}$
+
+\section*{三、填空题}
+
+\paragraph{5.}（2024 黑龙江期中）如图所示，$F$ 是椭圆 $\dfrac{x^2}{4}+\dfrac{y^2}{3}=1$ 的右焦点，过点 $F$ 作一条与坐标轴不垂直的直线 $l$ 交椭圆于点 $A,B$，线段 $AB$ 的中垂线 $l$ 交 $x$ 轴于点 $M$，交 $AB$ 于点 $N$，则 $\left|\dfrac{AB}{FM}\right|$ 的值为\underline{\qquad}。
+
+\begin{center}
+\textbf{[图形见原图]}
+\end{center}
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 第4题题干中“过其右焦点F的直线”后至“与\textbackslash{}Gamma交于点A,B”之间有轻微模糊，识别为“过其右焦点F的直线\$l\$与\$\textbackslash{}Gamma\$交于点A,B”。
+
+\item 第5题中“线段AB的中垂线l”与前文“过点F作一条……直线l”字母可能重复，原图印刷如此，未擅自改动。
+
+\item 第5题的填空式写法识别为 \$\textbackslash{}left|\textbackslash{}dfrac\{AB\}\{FM\}\textbackslash{}right|\$，原图为竖式绝对值包围分式。
+
+\end{itemize}
+
+\clearpage
+
+\section{焦点三角形离心率问题}
+
+\sourceinfo{微信图片\_20260806203110\_111\_34.jpg}{1525c3413c85470cde08451bfcbd57078ccdf2843ffb1daafeedcdb761dfb4e3}
+
+\paragraph{巧解题} 焦点三角形离心率问题的应用场景
+
+圆锥曲线中的焦点三角形与离心率之间存在着密切的关系，通过研究焦点三角形的几何属性，可求圆锥曲线的离心率，并进一步理解圆锥曲线的形状和性质．圆锥曲线中的焦点三角形、离心率综合问题，以下推导出 $4$ 个离心率结论．
+
+\paragraph{结论题} $4$ 个离心率结论
+
+\textbf{[图形见原图]}
+
+1. 设 $F_1,F_2$ 分别是椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 的左、右焦点，点 $P$ 是椭圆上除长轴上两个端点以外的任意一点，$\angle PF_1F_2=\alpha$，$\angle PF_2F_1=\beta$，
+\[
+[待人工核对] = \frac{\cos \frac{\alpha+\beta}{2}}{\cos \frac{\alpha-\beta}{2}}.
+\]
+
+\textbf{[图形见原图]}
+
+2. 设 $F_1,F_2$ 分别是椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 的焦点，点 $P$ 是椭圆上除$x$轴上两个端点以外的任意一点，$\angle PF_1F_2=\alpha$，$\angle PF_2F_1=\beta$，[待人工核对] $=\theta$，
+
+椭圆的离心率
+\[
+e=\frac{|F_1F_2|}{|PF_1|+|PF_2|}=\frac{\sin\theta}{\sin\alpha+\sin\beta}=\frac{\sin(\alpha+\beta)}{\sin\alpha+\sin\beta}.
+\]
+
+\textbf{[图形见原图]}
+
+3. 设 $F_1,F_2$ 分别是双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的左、右焦点，点 $P$ 是双曲线上除实轴上两个端点以外的任意一点，$\angle PF_1F_2=\alpha$，$\angle PF_2F_1=\beta$，则
+\[
+e=\left|\frac{\sin \frac{\alpha+\beta}{2}}{\sin \frac{\alpha-\beta}{2}}\right|.
+\]
+
+\textbf{证明：}由正弦定理得
+\[
+\frac{|PF_1|}{\sin\beta}=\frac{|PF_2|}{\sin\alpha}=\frac{|F_1F_2|}{\sin(\alpha+\beta)},
+\]
+所以
+\[
+\frac{\bigl||PF_1|-|PF_2|\bigr|}{|\sin\beta-\sin\alpha|}=\frac{|F_1F_2|}{\sin(\alpha+\beta)},
+\]
+所以
+\[
+\frac{2a}{|\sin\beta-\sin\alpha|}=\frac{2c}{\sin(\alpha+\beta)},
+\]
+所以
+\[
+e=\left|\frac{\sin(\alpha+\beta)}{\sin\beta-\sin\alpha}\right|=\left|\frac{2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha+\beta}{2}}{2\cos\frac{\alpha+\beta}{2}\sin\frac{\alpha-\beta}{2}}\right|=\left|\frac{\sin\frac{\alpha+\beta}{2}}{\sin\frac{\alpha-\beta}{2}}\right|.
+\]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 第1题结论公式左端被左侧遮挡，仅能清晰看到右端 \$\textbackslash{}frac\{\textbackslash{}cos \textbackslash{}frac\{\textbackslash{}alpha+\textbackslash{}beta\}\{2\}\}\{\textbackslash{}cos \textbackslash{}frac\{\textbackslash{}alpha-\textbackslash{}beta\}\{2\}\}\$。
+
+\item 第2题题干中在 \$\textbackslash{}angle PF\_2F\_1=\textbackslash{}beta\$ 之后、‘椭圆的离心率’之前还有一个角的表述，疑似 \$\textbackslash{}angle F\_1PF\_2=\textbackslash{}theta\$，但无法完全确认。
+
+\item 本页标题中说明‘以下推导出4个离心率结论’，但本页仅清晰出现前3个，第4个未出现在本图可见范围内。
+
+\end{itemize}
+
+\clearpage
+
+\section{高中数学解题技巧}
+
+\sourceinfo{微信图片\_20260806203115\_112\_34.jpg}{074e142f4f5f0db1a902a09ffc97b5b09fd9d34e352d91253b66867d7d7945b8}
+
+同理，设$F_1,F_2$分别是双曲线$\dfrac{y^2}{a^2}-\dfrac{x^2}{b^2}=1\,(a>0,b>0)$的左、右焦点，点$P$是双曲线上除实轴上两个端点以外的任意一点，$\angle PF_1F_2=\alpha$，$\angle PF_2F_1=\beta$，则
+\[
+e=\frac{\sin\dfrac{\alpha+\beta}{2}}{\left|\sin\dfrac{\alpha-\beta}{2}\right|}.
+\]
+
+4. 设$F_1,F_2$分别是双曲线的焦点，点$P$是双曲线上除实轴上两个端点以外的任意一点，$\angle PF_1F_2=\alpha$，$\angle PF_2F_1=\beta$，$\angle F_1PF_2=\theta$，双曲线的离心率$e=
+\dfrac{|F_1F_2|}{||PF_1|-|PF_2||}=\dfrac{\sin\theta}{|\sin\alpha-\sin\beta|}=\dfrac{\sin(\alpha+\beta)}{|\sin\alpha-\sin\beta|}$。
+
+\section*{技巧应用}
+
+\paragraph{典例}（2023四川凉山期末）已知椭圆$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\,(a>b>0)$的左、右焦点分别为$F_1,F_2$，点$P$在椭圆上，且$\angle PF_2F_1=15^\circ$，$\angle F_1PF_2=90^\circ$，则椭圆的离心率$e$等于\underline{\qquad\qquad}。
+
+【答案】$\dfrac{\sqrt6}{3}$
+
+【解析】（常规法）依题意，在$\mathrm{Rt}\triangle PF_1F_2$中，$\angle PF_2F_1=15^\circ$，所以$\angle PF_1F_2=75^\circ$。
+由直角三角形三角函数的定义知$|PF_2|=2c\cos15^\circ$，$|PF_1|=2c\cos75^\circ$，
+由勾股定理得$|PF_1|^2+|PF_2|^2=|F_1F_2|^2=4c^2$，
+由椭圆的定义得$|PF_1|+|PF_2|=2a$，
+所以$4a^2=4c^2+2|PF_1||PF_2|$，
+所以$4a^2=4c^2+8c^2\cos15^\circ\cos75^\circ$，
+所以$a^2=c^2+2c^2\cdot\dfrac{\sqrt6+\sqrt2}{4}\times\dfrac{\sqrt6-\sqrt2}{4}$，
+所以$e^2=\dfrac{c^2}{a^2}=\dfrac{2}{3}$。因为$e>0$，所以$e=\dfrac{\sqrt6}{3}$。
+
+（技巧法）依题意，椭圆的离心率$e=\dfrac{\cos\dfrac{15^\circ+75^\circ}{2}}{\cos\dfrac{15^\circ-75^\circ}{2}}=\dfrac{\cos45^\circ}{\cos(-30^\circ)}=\dfrac{\sqrt6}{3}$。
+
+\paragraph{速解点拨}
+圆锥曲线的离心率是高考常青树，求解方法很多，若已知焦点三角形的内角，用技巧法计算量较小。
+
+\paragraph{变式}（2023辽宁盘锦一模）已知双曲线$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\,(a>0,b>0)$的左、右焦点分别为$F_1,F_2$，点$P$
+[待人工核对]。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页首绿色框中的第4条末尾公式印刷较小，识别为\$e=\textbackslash{}dfrac\{|F\_1F\_2|\}\{||PF\_1|-|PF\_2||\}=\textbackslash{}dfrac\{\textbackslash{}sin\textbackslash{}theta\}\{|\textbackslash{}sin\textbackslash{}alpha-\textbackslash{}sin\textbackslash{}beta|……（完整说明见逐页 JSON）
+
+\item 底部“变式”题目下半部分被裁切，无法完整识别。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧52 焦点三角形离心率问题}
+
+\sourceinfo{微信图片\_20260806203120\_113\_34.jpg}{dea47cdca3acafcfcc4f55ab879f0cdd5ff1a5f5118ca3fce338d90cce9434f1}
+
+\section*{技巧52\ 焦点三角形离心率问题}
+
+\section*{过关斩将}
+
+\subsection*{一、单选题}
+
+1.（2024 黑龙江期末）已知双曲线 $C:\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\ (a>0,b>0)$ 的左、右焦点分别为 $F_1,F_2$，点 $P$ 是 $C$ 上一点，且 $\angle F_1PF_2=\dfrac{\pi}{3}$，$|PF_2|=3|PF_1|$，则 $C$ 的离心率为\hfill（\ \ ）
+
+A. $\dfrac{7}{4}$ \qquad B. $\dfrac{\sqrt{6}}{2}$ \qquad C. $\sqrt{7}$ \qquad D. $\dfrac{\sqrt{7}}{2}$
+
+2.（2023 西藏模拟）设 $F_1,F_2$ 分别是椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\ (a>b>0)$ 的左、右焦点，点 $P$ 在椭圆上，线段 $PF_1$ 的中点在 $y$ 轴上，若 $\angle PF_1F_2=45^\circ$，则椭圆的离心率为\hfill（\ \ ）
+
+A. $\sqrt{2}-1$ \qquad B. $\sqrt{3}-1$ \qquad C. $\dfrac{\sqrt{2}-1}{2}$ \qquad D. $\dfrac{\sqrt{2}+1}{2}$
+
+\subsection*{二、多选题}
+
+3.（2024 重庆期中）已知 $F_1,F_2$ 是椭圆 $\dfrac{x^2}{a_1^2}+\dfrac{y^2}{b_1^2}=1\ (a_1>b_1>0)$ 和双曲线 $\dfrac{x^2}{a_2^2}-\dfrac{y^2}{b_2^2}=1\ (a_2>0,b_2>0)$ 的公共焦点，$P$ 是它们在第一象限的交点，设 $\angle F_1PF_2=\theta$，$e_1,e_2$ 分别为椭圆和双曲线的离心率，则以下结论正确的是\hfill（\ \ ）
+
+A. $a_1^2-b_1^2=a_2^2-b_2^2$
+
+B. 当 $\theta=\dfrac{\pi}{3}$ 时，$b_1^2=3b_2^2$
+
+C. 若 $\theta=\dfrac{\pi}{3}$，则 $\dfrac{1}{e_1^2}+\dfrac{1}{e_2^2}=4$
+
+D. $\triangle PF_1F_2$ 的面积为 $b_1b_2$
+
+\hfill\textbf{[图形见原图]}
+
+\subsection*{三、填空题}
+
+4.（2024 河南周口期末）设 $P$ 是椭圆 $\dfrac{x^2}{4}+\dfrac{y^2}{2}=1$ 上一点，$F_1,F_2$ 分别为左、右焦点，$\angle F_1PF_2=90^\circ$，则 $\angle PF_1F_2=$\underline{\hspace{2cm}}。
+
+5.（2024 河南驻马店期末）椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\ (a>b>0)$ 的左、右焦点分别为 $F_1,F_2$，若椭圆上存在点 $Q$，使 $\angle F_1QF_2=120^\circ$，则椭圆离心率 $e$ 的取值范围为\underline{\hspace{2cm}}。
+
+\clearpage
+
+\section{技巧53 焦比弦公式模型}
+
+\sourceinfo{微信图片\_20260806203124\_114\_34.jpg}{d5ce0f3ae854393e4ea6121eb11b7419af4cd1d26f1f89cb363b714f58fd32a3}
+
+\section*{技巧53\ 焦比弦公式模型}
+
+\paragraph{巧辨题——焦比弦公式的应用场景}
+在圆锥曲线中，过焦点的弦与离心率、倾斜角以及线段比例关系可以通过焦比弦公式快速求解。焦比弦公式是高中数学中圆锥曲线部分的一个重要工具，它简化了焦点弦相关问题的解决过程。通过理解和应用这一公式，可以更高效地应对考试中的相关题目。
+
+\paragraph{速答题——6个模型结论}
+
+\textbf{看到} \quad 关键信息
+
+\textbf{想到} \quad 解题技巧
+
+\begin{enumerate}
+  \item 过椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 的焦点 $F$ 的直线与椭圆相交于点 $A$，$B$，若 $AB$ 的倾斜角为 $\theta$，离心率为 $e$，$\overrightarrow{AF}=\lambda\overrightarrow{FB}(\lambda>0)$，则
+  \[
+  |\cos\theta|=\frac{1}{e}\left|\frac{\lambda-1}{\lambda+1}\right|
+  \]
+  （如图1）。
+
+  \item 过椭圆 $\dfrac{y^2}{a^2}+\dfrac{x^2}{b^2}=1(a>b>0)$ 的焦点 $F$ 的直线与椭圆相交于点 $A$，$B$，若 $AB$ 的倾斜角为 $\theta$，离心率为 $e$，$\overrightarrow{AF}=\lambda\overrightarrow{FB}$，则
+  \[
+  \sin\theta=\frac{1}{e}\left|\frac{\lambda-1}{\lambda+1}\right|
+  \]
+  （如图2）。
+
+  \item 过双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的焦点 $F$ 的直线与双曲线相交于点 $A$，$B(F$ 在弦 $AB$ 上$)$，若 $AB$ 的倾斜角为 $\theta$，离心率为 $e$，$\overrightarrow{AF}=\lambda\overrightarrow{FB}$，则
+  \[
+  \cos\theta=\frac{1}{e}\left|\frac{\lambda-1}{\lambda+1}\right|
+  \]
+  （如图3）。
+
+  \item 过双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的焦点 $F$ 的直线与双曲线相交于点 $A$，$B(F$ 在弦 $AB$ 延长线 上$)$，若 $AB$ 的倾斜角为 $\theta$，离心率为 $e$，$\overrightarrow{AF}=\lambda\overrightarrow{FB}$，则
+  \[
+  |\cos\theta|=\frac{1}{e}\left|\frac{\lambda+1}{\lambda-1}\right|
+  \]
+  （如图4）。
+
+  \item 过抛物线 $y^2=2px(p>0)$ 的焦点 $F$ 的直线与抛物线相交于点 $A$，$B$，若 $AB$ 的倾斜角为 $\theta$，离心率为 $1$，$\overrightarrow{AF}=\lambda\overrightarrow{FB}$，则
+  \[
+  |\cos\theta|=\left|\frac{\lambda-1}{\lambda+1}\right|
+  \]
+  （如图5）。
+\end{enumerate}
+
+\textbf{[图形见原图]}
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 第4条中“\$B(F\$ 在弦 \$AB\$ 延长线 上\$)\$”处“延长线上”前后空格及排版不清，需人工核对。
+
+\item 页中“看到 关键信息”“想到 解题技巧”之间有装饰性箭头图标，未作为正文处理。
+
+\item 本页标题下导语中个别字受高光和遮挡影响，整体句意可辨，但局部字形建议人工复核。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧53 焦比弦公式模型}
+
+\sourceinfo{微信图片\_20260806203129\_115\_34.jpg}{8a88a5f486a7f59d49f483952a938407236546dafdbe5936168ee2eed957faa5}
+
+\section*{技巧53\ 焦比弦公式模型}
+6. 过抛物线 $x^2=2py\,(p>0)$ 的焦点 $F$ 的直线与抛物线相交于点 $A,B$，若 $AB$ 的倾斜角为 $\theta$，离心率为 $1$，$\overline{AF}=\lambda\overline{FB}$，则
+\[
+\sin\theta=\left|\frac{\lambda-1}{\lambda+1}\right|
+\]
+（如图6）.
+
+\textbf{[图形见原图]}
+
+\section*{技巧应用}
+\paragraph{典例}（2025辽宁三模）过椭圆 $C:\dfrac{x^2}{4}+\dfrac{y^2}{3}=1$ 的左焦点 $F$ 作倾斜角为 $60^\circ$ 的直线 $l$ 与椭圆 $C$ 交于 $A,B$ 两点（$A$ 点在上），则 $\dfrac{|AF|}{|BF|}=$
+
+A. $\dfrac{4}{3}$ \qquad B. $\dfrac{3}{4}$ \qquad C. $\dfrac{3}{5}$ \qquad D. $\dfrac{5}{3}$
+
+【答案】D
+
+【解析】（常规法）由 $\dfrac{x^2}{4}+\dfrac{y^2}{3}=1$，得 $a^2=4,b^2=3,c^2=a^2-b^2=1$，左焦点为 $(-1,0)$.
+
+过左焦点 $F$，倾斜角为 $60^\circ$ 的直线 $l$ 的方程为 $y=\sqrt{3}(x+1)$，代入 $\dfrac{x^2}{4}+\dfrac{y^2}{3}=1$，得 $5x^2+8x=0$，所以 $x=0$ 或 $x=-\dfrac{8}{5}$.
+
+由焦半径公式得 $|AF|=2-\dfrac{1}{2}\times 0=2$，$|BF|=2+\dfrac{1}{2}\times\left(-\dfrac{8}{5}\right)=\dfrac{6}{5}$，
+
+所以 $\dfrac{|AF|}{|BF|}=\dfrac{5}{3}$，故选 D.
+
+（技巧法）因为椭圆方程为 $\dfrac{x^2}{4}+\dfrac{y^2}{3}=1$，所以其离心率 $e=\dfrac{1}{2}$，
+
+依题意，设 $|AF|=\lambda|BF|$，
+\[
+|\cos\theta|=\frac{1}{e}\left|\frac{\lambda-1}{\lambda+1}\right|
+\]
+由 $\cos60^\circ=\dfrac{1}{2}=\dfrac{1}{1/2}\cdot\left|\dfrac{\lambda-1}{\lambda+1}\right|$，解得 $\lambda=\dfrac{5}{3}$，
+
+所以 $|AF|=\dfrac{5}{3}|BF|$，所以 $\dfrac{|AF|}{|BF|}=\dfrac{5}{3}$，故选 D.
+
+\section*{凝解点拨}
+\textbf{[待人工核对]}
+
+\paragraph{变式}（2023广东期末）已知抛物线 $y^2=8x$ 的焦点为 $F$，直线 $y=\sqrt{3}(x-2)$ 与抛物线交于 A，
+
+\textbf{[待人工核对]}
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item “凝解点拨”栏正文大部分可见但局部模糊，无法逐字可靠转写。
+
+\item “变式”题题干下半部分被页面下边缘裁切，仅能识别到“已知抛物线 \$y\textasciicircum{}2=8x\$ 的焦点为 \$F\$，直线 \$y=\textbackslash{}sqrt\{3\}(x-2)\$ 与抛物线交于A，……”
+
+\item 页左侧露出的图1至图5属于相邻页内容，不计入本页正文。
+
+\end{itemize}
+
+\clearpage
+
+\section{四 过关斩将}
+
+\sourceinfo{微信图片\_20260806203134\_116\_34.jpg}{2d589a11ff6476a5ff6f55a251cc1f421d09609a0d53d94254941c8ecd93f2c3}
+
+\section*{四\ 过关斩将}
+
+\subsection*{一、单选题}
+
+1.（2025 河北三模）直线 $y=kx+2$ 与抛物线 $x^2=8y$ 相交于 $A,B$ 两点（$A$ 点在 $B$ 点右边），且 $|AF|=4|BF|$，则 $k=$
+
+A. $\frac{9}{16}$ \qquad B. $\frac{3}{4}$ \qquad C. $-\frac{4}{3}$ \qquad D. $\frac{4}{5}$
+
+2.（2024 河南开学考）已知 $F$ 是双曲线 $C:x^2-\frac{y^2}{3}=1$ 的左焦点，过点 $F$ 的直线与 $C$ 交于 $A,B$ 两点（点 $A,B$ 在 $C$ 的同一支上），且 $|BF|=2|AF|$，则直线 $AB$ 的倾斜角 $\theta$ 的余弦值为
+
+A. $\frac{\sqrt{2}}{2}$ \qquad B. $\frac{1}{2}$ \qquad C. $\frac{1}{6}$ \qquad D. $\pm\frac{5}{6}$
+
+\subsection*{二、多选题}
+
+3.（2023 苏州开学）设 $F_1,F_2$ 为双曲线 $C:x^2-\frac{y^2}{b^2}=1\,(b>0)$ 的左、右焦点，过点 $F_2$ 的直线交双曲线 $C$ 的右支于 $P,Q$ 两点（点 $P$ 在第一象限），直线 $l:\sqrt{3}x-y=0$ 为双曲线 $C$ 的一条渐近线，则
+
+A. $b=\sqrt{3}$
+
+B. 当弦 $PQ$ 长为最小值时，$\triangle OPQ$ 的面积为 $6$
+
+C. 若 $|PF|=5|QF|$，[待人工核对]，则直线 $PQ$ 在 $y$ 轴上的截距为 $4\sqrt{2}$
+
+D. 点 $P$ 到直线 $m:\sqrt{3}x-y+2=0$ 距离的最小值为 $1$
+
+\subsection*{三、填空题}
+
+4.（2025 江西期末）已知椭圆 $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\,(a>b>0)$ 的离心率为 $\frac{\sqrt{2}}{2}$．设 $l$ 为过椭圆右焦点 $F$ 的直线，交椭圆于 $M,N$ 两点，且 $l$ 的倾斜角为 $60^\circ$，则 $\left|\frac{MF}{NF}\right|=$\underline{\qquad\qquad}。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 第3题选项C中的焦点记号下标模糊，图中可见为 \$F\$，疑似应为带下标的焦点，需人工核对。
+
+\end{itemize}
+
+\clearpage
+
+\section{圆锥曲线切线问题}
+
+\sourceinfo{微信图片\_20260806203138\_117\_34.jpg}{a646321f938d467427f8414dbb25568666a21cf485c2a1bf6994ed1700d25e2a}
+
+\paragraph{巧辨题} 圆锥曲线切线问题的应用场景
+
+圆锥曲线的切线问题是高考压轴题的一大题型，在高考中主要考查重要结论，解题时可以直接套用。本文主要分为\underline{过曲线上一点}作曲线的切线和\underline{过曲线外一点}作曲线的切线两种，并给出对应结论。
+
+\paragraph{速答题} 11 个切线方程
+
+看到 \textbullet\ 关键信息
+
+想到 解题技巧
+
+\begin{enumerate}
+  \item 过曲线上一点作曲线的切线
+  \begin{enumerate}
+    \item 椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 在点 $P(x_0,y_0)$ 处的切线方程为 $\dfrac{x_0x}{a^2}+\dfrac{y_0y}{b^2}=1$.
+    \item 椭圆 $\dfrac{y^2}{a^2}+\dfrac{x^2}{b^2}=1(a>b>0)$ 在点 $P(x_0,y_0)$ 处的切线方程为 $\dfrac{y_0y}{a^2}+\dfrac{x_0x}{b^2}=1$.
+    \item 双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 在点 $P(x_0,y_0)$ 处的切线方程为 $\dfrac{x_0x}{a^2}-\dfrac{y_0y}{b^2}=1$.
+    \item 双曲线 $\dfrac{y^2}{a^2}-\dfrac{x^2}{b^2}=1(a>0,b>0)$ 在点 $P(x_0,y_0)$ 处的切线方程为 $\dfrac{y_0y}{a^2}-\dfrac{x_0x}{b^2}=1$.
+    \item 抛物线 $y^2=2px(p>0)$ 在点 $P(x_0,y_0)$ 处的切线方程为 $y_0y=p(x+x_0)$.
+    \item 抛物线 $x^2=2py(p>0)$ 在点 $P(x_0,y_0)$ 处的切线方程为 $x_0x=p(y+y_0)$.
+    \item 抛物线 $y^2=-2px(p>0)$ 在点 $P(x_0,y_0)$ 处的切线方程为 $y_0y=-p(x+x_0)$.
+    \item 抛物线 $x^2=-2py(p>0)$ 在点 $P(x_0,y_0)$ 处的切线方程为 $x_0x=-p(y+y_0)$.
+  \end{enumerate}
+  \item 过曲线外一点作曲线的切线
+  \begin{enumerate}
+    \item 过椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 外一点 $P(x_0,y_0)$ 作椭圆的两条切线，则切点连线的方程为 $\dfrac{x_0x}{a^2}+\dfrac{y_0y}{b^2}=1$.
+    \item 过双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 外一点 $P(x_0,y_0)$ 作双曲线的两条切线，则切点连线的方程为 $\dfrac{x_0x}{a^2}-\dfrac{y_0y}{b^2}=1$.
+    \item 过抛物线 $y^2=2px(p>0)$ 外一点 $P(x_0,y_0)$ 作抛物线的两条切线，则切点连线的方程为 $y_0y=p(x+x_0)$.
+  \end{enumerate}
+\end{enumerate}
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item “看到 关键信息”“想到 解题技巧”之间有装饰性箭头图示，非数学图形。
+
+\item 左栏标题写有“11 个切线方程”，但本页清晰可见的具体条目仅有 8 条；是否有后续内容续至下页，需人工结合整章版式核对，但本页不补写。
+
+\item 页眉左侧栏目标签为“巧辨题”或近似字样，清晰度一般，建议人工核对栏目名。
+
+\end{itemize}
+
+\clearpage
+
+\section{三 技巧应用}
+
+\sourceinfo{微信图片\_20260806203142\_118\_34.jpg}{c95d5ced5122d63192107707137ae000976e8dd589da6da739f75c8fe6afbf1c}
+
+\section*{三\ 技巧应用}
+
+\paragraph{典例}（2024山东威海期中）已知椭圆 $E: \dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$，原点为 $O$，动点 $P$ 在直线 $y=\dfrac{1}{2}x$ 上运动，且在椭圆 $E$ 外，过点 $P$ 的直线与 $E$ 分别相切于 $A,B$ 两点，则 $k_{AB}=\underline{\qquad\qquad}$。
+
+【答案】$-\dfrac{2b^2}{a^2}$
+
+【解析】（常规法）设 $P(x_0,y_0),A(x_1,y_1),B(x_2,y_2),l_{AP}:y=k(x-x_1)+y_1$，
+
+将直线方程与椭圆方程联立化简得 $b^2x^2+a^2(kx-kx_1+y_1)^2-a^2b^2=0$，
+
+即 $(a^2k^2+b^2)x^2+2a^2(y_1-kx_1)kx+a^2(y_1-kx_1)^2-a^2b^2=0,\Delta=0$，
+
+故 $4a^4(y_1-kx_1)^2k^2-4(a^2k^2+b^2)\big[a^2(y_1-kx_1)^2-a^2b^2\big]=0$，
+
+整理得 $a^2k^2-(y_1-kx_1)^2+b^2=0$，即 $(a^2-x_1^2)k^2+2x_1y_1k-y_1^2+b^2=0$，
+
+所以 $\dfrac{a^2}{b^2}y_1^2k^2+2x_1y_1k+\dfrac{b^2}{a^2}x_1^2=0$，则
+\[
+k=-\frac{x_1}{y_1}\cdot \frac{b^2}{a^2},
+\]
+
+则 $l_{AP}:\dfrac{x_1x}{a^2}+\dfrac{y_1y}{b^2}=1$，同理 $l_{BP}:\dfrac{x_2x}{a^2}+\dfrac{y_2y}{b^2}=1$，
+
+由于 $P(x_0,y_0)$ 在 $l_{AP}$ 和 $l_{BP}$ 上，所以
+\[
+\begin{cases}
+\dfrac{x_1x_0}{a^2}+\dfrac{y_1y_0}{b^2}=1,\\
+\dfrac{x_2x_0}{a^2}+\dfrac{y_2y_0}{b^2}=1.
+\end{cases}
+\]
+
+又 $A(x_1,y_1),B(x_2,y_2)$ 满足方程 $\dfrac{xx_0}{a^2}+\dfrac{yy_0}{b^2}=1$，则 $l_{AB}:\dfrac{xx_0}{a^2}+\dfrac{yy_0}{b^2}=1$，
+
+所以
+\[
+k_{AB}=-\frac{b^2x_0}{a^2y_0}=-\frac{2b^2}{a^2}.
+\]
+
+\paragraph{（技巧法）}依题意，设 $P(x_0,y_0)$，
+
+则直线 $AB$ 的方程为 $\dfrac{x_0x}{a^2}+\dfrac{y_0y}{b^2}=1$，
+
+即 $b^2x_0x+a^2y_0y-a^2b^2=0$.
+
+因为点 $P$ 在直线 $y=\dfrac{1}{2}x$ 上运动，所以 $\dfrac{y_0}{x_0}=\dfrac{1}{2}$，所以
+\[
+-\frac{b^2x_0}{a^2y_0}=-\frac{2b^2}{a^2}.
+\]
+
+\paragraph{速解点拨}圆锥曲线的切线与圆锥曲线有唯一一交点，反之与圆锥曲线有唯一一交点的直线不一定是切线。例如：平行于双曲线渐近线的直线与双曲线有唯一一交点，但该直线不是切线；平行于抛物线的对称轴的直线与抛物线有唯一一交点，但该直线不是切线。
+
+\paragraph{变式}（2025广东广州模拟）已知点 $P(2,m)$ 在椭圆 $C: \dfrac{x^2}{a^2}+\dfrac{y^2}{4}=1$ 上，过点 $P$ 作椭圆的切线 $l$，若直线 $l$ 经过点 $(4,0)$，则椭圆的离心率为（\qquad）
+
+A. $\dfrac{1}{2}$ \qquad B. $\dfrac{\sqrt{2}}{2}$ \qquad C. $\dfrac{\sqrt{3}}{3}$ \qquad D. $\dfrac{2}{3}$
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页眉主标题上方小字疑为“高中数学解题技巧”，识别较可靠
+
+\item “速解点拨”框前面的图标样式无法准确用文字还原
+
+\item 右侧相邻页内容仅见残片，已忽略
+
+\item 变式题后续解析在本页未出现
+
+\end{itemize}
+
+\clearpage
+
+\section{过关斩将}
+
+\sourceinfo{微信图片\_20260806203146\_119\_34.jpg}{82a0ba838e573d30547db798b75a01947ddba44282d916e4cd4ec70b398b6249}
+
+\paragraph{技巧54\quad 圆锥曲线切线问题}
+
+\subsection*{一、单选题}
+\begin{enumerate}
+  \item （2024 江苏扬州期中）已知抛物线 $y^2=4x$，则抛物线上一点 $P$ 到直线 $x-y+5=0$ 的最小距离为\hfill（\qquad）
+  
+  A. $2\sqrt{2}$ \qquad B. $4$ \qquad C. $\frac{5\sqrt{2}}{2}$ \qquad D. $5$
+  
+  \item （2023 上海期末）设双曲线 $C$ 经过点 $(2,2)$，且与 $\frac{y^2}{4}-x^2=1$ 具有相同的渐近线，则经过点 $(\sqrt{3},0)$ 且与双曲线 $C$ 有且只有一个公共点的直线有\hfill（\qquad）
+  
+  A. $0$ 条 \qquad B. $1$ 条 \qquad C. $2$ 条 \qquad D. $3$ 条
+  
+  \item （2024 河南驻马店期中）已知椭圆具有如下性质：若椭圆的方程为 $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a>b>0)$，则椭圆上一点 $P(x_0,y_0)$ 处的切线方程为 $\frac{x_0x}{a^2}+\frac{y_0y}{b^2}=1$．试运用该性质解决以下问题：若椭圆 $C: \frac{x^2}{9}+\frac{y^2}{4}=1$，点 $A$ 为椭圆 $C$ 在第一象限内的任意一点，过点 $A$ 作椭圆 $C$ 的切线 $l$，$l$ 分别与 $x$ 轴和 $y$ 轴的正半轴交于 $M,N$ 两点，则 $\triangle OMN$ 面积的最小值为\hfill（\qquad）
+  
+  A. $3$ \qquad B. $6$ \qquad C. $9$ \qquad D. $18$
+\end{enumerate}
+
+\subsection*{二、多选题}
+\begin{enumerate}
+  \setcounter{enumi}{3}
+  \item （2023 浙江绍兴适应性测试）已知 $F_1,F_2$ 分别是双曲线 $C:x^2-\frac{y^2}{2}=1$ 的左、右焦点，过点 $Q\left(\frac{\sqrt{3}}{3},0\right)$ 作双曲线的切线交双曲线于点 $P(P$ 在第一象限$)$，点 $M$ 在 $F_1P$ 的延长线上，则下列说法正确的是\hfill（\qquad）
+  
+  A. $k_{QP}=\frac{2\sqrt{3}}{3}$ \qquad B. $|\overrightarrow{PF_1}|=\frac{3}{2}|\overrightarrow{PF_2}|$
+  
+  C. $PQ$ 为 $\angle F_1PF_2$ 的平分线 \qquad D. $\angle F_2PM$ 的平分线所在直线的倾斜角为 $\frac{5\pi}{6}$
+\end{enumerate}
+
+\subsection*{三、填空题}
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item （2024 河北衡水期末）过点 $P(3,3)$ 作双曲线 $C:x^2-y^2=1$ 的两条切线，切点分别为 $A,B$，则直线 $AB$ 的方程为\underline{\qquad\qquad\qquad\qquad}．
+  
+  \item （2025 山东一模）设直线 $ay-x+1=0$ 与抛物线 $C:y^2=4x$ 交于 $A,B$ 两点，若 $C$ 在点 $A,B$ 处的切线的交点的横、纵坐标之比为 $2$，则 $a=$\underline{\qquad\qquad\qquad}．
+\end{enumerate}
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页眉中的栏目名识别为“技巧54 圆锥曲线切线问题”，可靠度较高。
+
+\item 题4中“\$P(P\$在第一象限\$)\$”的括注排版略受拍摄影响，但内容基本可辨。
+
+\item 题5下划线后的句号位置较淡，可能需人工复核。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧55—— 离心率的渐近线倾斜角模型}
+
+\sourceinfo{微信图片\_20260806203151\_120\_34.jpg}{a0c9ec56206fc3249e547e41671b09fd0c462747b63b5c0519b83f6c5e0bb1e5}
+
+\section*{技巧55\quad 离心率的渐近线倾斜角模型}
+
+\paragraph{一\quad 巧辨题——双曲线离心率与渐近线的关系的应用场景}
+双曲线的离心率与渐近线之间存在着密切的联系，渐近线的斜率与其倾斜角有关。具体来说，双曲线的离心率 $e$ 可以通过渐近线的斜率来表达；渐近线的斜率与双曲线的实半轴 $a$ 和虚半轴 $b$ 有关，而离心率 $e$ 则是焦距 $2c$ 与实轴 $2a$ 的比值。在高考复习中，要熟练掌握双曲线离心率与渐近线的关系。
+
+看到\quad 关键信息
+
+想到\quad 解题技巧
+
+\paragraph{二\quad 速答题——2个技巧}
+\begin{enumerate}
+  \item 双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的渐近线方程为
+  \[
+  \frac{x^2}{a^2}-\frac{y^2}{b^2}=0,
+  \]
+  即
+  \[
+  y=\pm \frac{b}{a}x.
+  \]
+
+  设渐近线 $y=\dfrac{b}{a}x$ 的倾斜角为 $\theta\in\left(0,\dfrac{\pi}{2}\right)$，则渐近线 $y=-\dfrac{b}{a}x$ 的倾斜角为 $\pi-\theta$，
+  \[
+  \tan\theta=\frac{b}{a},\quad \tan(\pi-\theta)=-\frac{b}{a}.
+  \]
+  离心率
+  \[
+  e=\frac{c}{a}=\sqrt{1+\frac{b^2}{a^2}}=\sqrt{1+\tan^2\theta}=\frac{1}{\cos\theta}.
+  \]
+
+  证明：由
+  \[
+  \begin{cases}
+  e=\dfrac{c}{a},\\
+  c^2=a^2+b^2,
+  \end{cases}
+  \]
+  得
+  \[
+  e^2=\left(\frac{b}{a}\right)^2+1,
+  \]
+  因为 $\tan\theta=\dfrac{b}{a}$，所以
+  \[
+  e^2=\frac{1}{\cos^2\theta}.
+  \]
+  因为 $e>1,0<\theta<\dfrac{\pi}{2}$，所以
+  \[
+  e=\frac{1}{\cos\theta}.
+  \]
+
+  \textbf{[图形见原图]}
+
+  \item 双曲线 $\dfrac{y^2}{a^2}-\dfrac{x^2}{b^2}=1(a>0,b>0)$ 的渐近线方程为
+  \[
+  \frac{y^2}{a^2}-\frac{x^2}{b^2}=0,
+  \]
+  即
+  \[
+  y=\pm \frac{a}{b}x.
+  \]
+
+  设渐近线 $y=\dfrac{a}{b}x$ 的倾斜角为 $\theta\in\left(0,\dfrac{\pi}{2}\right)$，则渐近线 $y=-\dfrac{a}{b}x$ 的倾斜角为 $\pi-\theta$，
+  \[
+  \tan\theta=\frac{a}{b},\quad \tan(\pi-\theta)=-\frac{a}{b}.
+  \]
+  离心率
+  \[
+  e=\frac{c}{a}=\sqrt{1+\frac{b^2}{a^2}}=\sqrt{1+\frac{1}{\tan^2\theta}}=\frac{1}{\sin\theta}.
+  \]
+\end{enumerate}
+
+\paragraph{三\quad 技巧应用}
+
+典例\quad （2025广东广州模拟）若双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的一条渐近线的倾斜角为 $60^\circ$，则双曲线的离心率 $e=$\underline{\qquad\qquad}。
+
+[待人工核对]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页标题中的装饰符号“——”为版式装饰，是否应计入正文待人工核对。
+
+\item “看到 关键信息”“想到 解题技巧”为版式提示语，原图中间有图标与箭头装饰。
+
+\item 页底手写批注内容未纳入印刷正文。
+
+\item 右侧相邻页面仅见残片，已忽略。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧55—— 离心率的渐近线倾斜角模型}
+
+\sourceinfo{微信图片\_20260806203156\_121\_34.jpg}{91d884033954ea73ba35be208a8da46b444bfd75b918eae8426dbe3c4b7309b3}
+
+\section*{技巧55\quad 离心率的渐近线倾斜角模型}
+
+【答案】2
+
+【解析】（常规法）依题意，$\tan 60^\circ=\dfrac{b}{a}$，
+所以$\dfrac{b^2}{a^2}=3$。因为$a^2+b^2=c^2$，所以$\dfrac{c^2-a^2}{a^2}=3$，即$c^2=4a^2$。
+因为$e=\dfrac{c}{a}>1$，所以$e=2$。
+
+（技巧法）依题意，双曲线一条渐近线的斜率为$\tan 60^\circ=\dfrac{b}{a}$，即$\dfrac{b^2}{a^2}=3$，
+所以双曲线的离心率$e=\sqrt{1+3}=2$。
+
+（技巧法）因为双曲线的一条渐近线的倾斜角为$60^\circ$，
+所以双曲线的离心率$e=\dfrac{1}{\cos 60^\circ}=2$。
+
+\paragraph{速解点拨}
+离心率是双曲线的一个重要几何性质，一方面刻画了双曲线的形状，另一方面也体现了参数之间的联系。若一条渐近线的倾斜角为$\theta\in\left(0,\dfrac{\pi}{2}\right)$，则离心率
+\[
+e=\dfrac{c}{a}=\sqrt{1+\dfrac{b^2}{a^2}}=\sqrt{1+\tan^2\theta}=\dfrac{1}{\cos\theta}.
+\]
+
+\paragraph{变式1}
+（2025安徽黄山模拟）若双曲线$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\,(a>0,b>0)$的一条渐近线的倾斜角的正[待人工核对]值为$\dfrac{2}{3}$，则双曲线的离心率$e=$
+
+A.$\sqrt{2}$ \qquad B.$\dfrac{3\sqrt{5}}{5}$ \qquad C.$\sqrt{3}$ \qquad D.$\sqrt{5}$
+
+\paragraph{变式2}
+（2024贵州模拟）已知双曲线$C:\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\,(a>0,b>0)$的左焦点为$F$，过$F$的直线$l$与双曲线$C$的一条渐近线交于点$M$，与双曲线$C$的右支交于点$P$，若$OM\perp l\,(O$为坐标原点$)$，且$|FM|=|MP|$，则双曲线$C$的离心率为\quad $(\qquad)$
+
+A.$\dfrac{\sqrt{15}}{2}$ \qquad B.$\dfrac{\sqrt{11}}{2}$ \qquad C.$\dfrac{\sqrt{10}}{2}$ \qquad D.$\dfrac{\sqrt{13}}{2}$
+
+\paragraph{过关斩将}
+\paragraph{单选题}
+1. （2024陕西西安模拟）双曲线$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\,(a>0,b>0)$的一条渐近线经过点$(1,2\sqrt{2})$，则该双曲线的离心率为\quad $(\qquad)$
+
+A.$2$ \qquad B.$3$ \qquad C.$2\sqrt{2}$ \qquad D.$2\sqrt{3}$
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 标题中的分隔符样式识别为“——”，需人工核对原书版式
+
+\item 变式1题干中“倾斜角的正[待人工核对：题干中“正……”后续被裁切]值”为页面右侧裁切，无法确认完整表述
+
+\item 页首“【答案】2”对应的原题题干不在本页，应仅视为承接上一页的答案与解析
+
+\end{itemize}
+
+\clearpage
+
+\section{高中数学解题技巧}
+
+\sourceinfo{微信图片\_20260806203200\_122\_34.jpg}{c03a4d812aec965a3a9ab5e8af28f77a7f5d81ccb218f9fb48b356adcab93ac9}
+
+\section*{高中数学解题技巧}
+
+2.（2023 陕西模拟）已知双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的左、右焦点分别是 $F_1,F_2$，若在其渐近线上存在一点 $P$，满足 $\bigl||PF_1|-|PF_2|\bigr|=2b$，则该双曲线离心率的取值范围为\hfill（\quad）
+
+A. $(1,\sqrt{2})$ \qquad B. $(\sqrt{2},2)$ \qquad C. $(\sqrt{2},\sqrt{3})$ \qquad D. $(2,3)$
+
+3.（2024 湖北华师附中期末）已知椭圆 $C_1$ 与双曲线 $C_2$ 有相同的左、右焦点 $F_1,F_2$，$P$ 为椭圆 $C_1$ 与双曲线 $C_2$ 在第一象限内的一个公共点，设椭圆 $C_1$ 与双曲线 $C_2$ 的离心率分别为 $e_1,e_2$，且 $\dfrac{e_1}{e_2}=\dfrac{1}{3}$，若 $\angle F_1PF_2=\dfrac{\pi}{3}$，则双曲线 $C_2$ 的渐近线方程为\hfill（\quad）
+
+A. $x\pm y=0$ \qquad B. $x\pm \dfrac{\sqrt{3}}{3}y=0$ \qquad C. $x\pm \dfrac{\sqrt{2}}{2}y=0$ \qquad D. $x\pm 2y=0$
+
+\section*{二、多选题}
+
+4.（2024 河北石家庄期末）已知 $F_1,F_2$ 分别为双曲线 $E:\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的左、右焦点，过 $F_2$ 的直线 $l$ 与圆 $O:x^2+y^2=a^2$ 相切于点 $M$，且直线 $l$ 与双曲线 $E$ 及其渐近线在第二象限的交点分别为 $P,Q$，则下列说法正确的是\hfill（\quad）
+
+A. 直线 $OM$ 是 $E$ 的一条渐近线
+
+B. 若 $|MF_1|=3|OM|$，则 $E$ 的渐近线方程为 $y=\pm x$
+
+C. 若 $|QF_2|=3|MF_2|$，则 $E$ 的离心率为 $\sqrt{3}$
+
+D. 若 $|PF_2|=3|MF_2|$，则 $E$ 的离心率为 $\dfrac{\sqrt{13}}{2}$
+
+\section*{三、填空题}
+
+5.（2024 辽宁省实验中学期末）已知双曲线 $C:\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的右焦点为 $F$，$O$ 为坐标原点，过点 $F$ 的直线与双曲线 $C$ 的两条渐近线分别交于 $P,Q$ 两点，点 $P$ 为线段 $FQ$ 的中点，且 $\overrightarrow{OP}\cdot\overrightarrow{FQ}=0$，则双曲线 $C$ 的离心率为\underline{\qquad\qquad}。
+
+6.（2025 浙江杭州一模）已知双曲线 $C_1,C_2$ 都经过点 $(1,1)$，离心率分别记为 $e_1,e_2$，设双曲线 $C_1,C_2$ 的渐近线分别为 $y=\pm k_1x$ 和 $y=\pm k_2x$。若 $k_1k_2=1$，则 $\dfrac{e_1}{e_2}=$ \underline{\qquad\qquad}。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页眉处仅清晰可见“高中数学解题技巧”，未见更具体分栏标题。
+
+\item 第 3 题条件中的分式确认为 \$\textbackslash{}dfrac\{e\_1\}\{e\_2\}=\textbackslash{}dfrac\{1\}\{3\}\$，但原图该处较浅，建议人工复核。
+
+\item 第 5 题中“点 \$P\$ 为线段 \$FQ\$ 的中点”与“\$\textbackslash{}overrightarrow\{OP\}\textbackslash{}cdot\textbackslash{}overrightarrow\{FQ\}=0\$”之间的连接标点较浅，内容本身可辨。
+
+\item 第 6 题题干末尾空格长度无法精确还原，已用下划线占位。
+
+\end{itemize}
+
+\clearpage
+
+\section{超级韦达定理}
+
+\sourceinfo{微信图片\_20260806203205\_123\_34.jpg}{d2b2f272946b32a950b600a7faa2295324683557a946f806a86f336092088a21}
+
+\subsection{巧辨题——超级韦达定理的应用场景}
+超级韦达定理是在韦达定理基础上的进一步拓展。韦达定理主要是关于一元二次方程根与系数关系，而超级韦达定理更多地涉及直线与圆锥曲线（椭圆、双曲线、抛物线）联立方程后的二次齐次关系。这类问题常在解答题中出现，难度中等及以上。
+
+\subsection{速答题——5个步骤解题}
+已知二次曲线 $C:\dfrac{x^2}{m}+\dfrac{y^2}{n}=1\,(m,n\text{ 至少一个为正数})$，定点 $P(x_0,y_0)$，且不经过点 $P$ 的直线 $l$：
+\[
+p(x-x_0)+q(y-y_0)=1\,(p,q\text{ 至少一个不为 }0)
+\]
+与曲线 $C$ 交于 $A(x_1,y_1),B(x_2,y_2)$ 两点，若直线 $PA,PB$ 的斜率 $k_{PA},k_{PB}$ 都存在，则可按下面步骤得到斜率和 $k_{PA}+k_{PB}$ 和斜率积 $k_{PA}k_{PB}$。
+
+第一步：联立曲线 $C$ 的方程
+\[
+\frac{x^2}{m}+\frac{y^2}{n}=1
+\]
+与直线 $l$ 的方程
+\[
+p(x-x_0)+q(y-y_0)=1.
+\]
+
+第二步：将曲线 $C$ 的方程
+\[
+\frac{x^2}{m}+\frac{y^2}{n}=1
+\]
+配凑成
+\[
+\frac{[(x-x_0)+x_0]^2}{m}+\frac{[(y-y_0)+y_0]^2}{n}=1.
+\]
+
+第三步：把 $1$ 替换成 $[p(x-x_0)+q(y-y_0)]^2$ 得到关于 $x-x_0,y-y_0$ 的二次方程
+\[
+\frac{[(x-x_0)+x_0]^2}{m}+\frac{[(y-y_0)+y_0]^2}{n}=[p(x-x_0)+q(y-y_0)]^2.
+\]
+
+第四步：对关于 $x-x_0,y-y_0$ 的二次方程，两边除以 $(x-x_0)^2$，就得到实数根为直线 $PA,PB$ 的斜率 $k_{PA},k_{PB}$ 的一元二次方程。
+
+第五步：用韦达定理得到斜率和 $k_{PA}+k_{PB}$ 和斜率积 $k_{PA}k_{PB}$。
+
+对于斜率和 $k_{PA}+k_{PB}$ 和斜率积 $k_{PA}k_{PB}$ 问题，超级韦达定理运算更简便，但要避免出现不能[待人工核对]的情形，只有不过点 $P(x_0,y_0)$，才能把直线设为 $l:p(x-x_0)+q(y-y_0)=1\,(p,q\text{ 至少一个为 }0)$。
+
+\subsection{技巧应用}
+\paragraph{典例}（2024 陕西华清中学月考）已知椭圆 $C:\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\,(a>b>0)$ 的离心率为 $\dfrac{\sqrt{6}}{3}$，且过点 $A(0,1)$。
+
+(1) 求椭圆 $C$ 的方程；
+
+(2) 已知点 $M,N$ 在椭圆 $C$ 上，且 $AM\perp AN$，证明：直线 $MN$ 过定点。
+
+\paragraph{解} (1) 由题意可得 $\dfrac{c}{a}=\dfrac{\sqrt{6}}{3},\ b=1,\ a^2=b^2+c^2$，[待人工核对]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item “巧辨题”段落中绿色竖排标签附近有局部遮挡，个别字形受弯曲影响。
+
+\item “看到 关键信息”“想到 解题技巧”为版式提示语，位置明确，但是否构成正文栏目需人工复核。
+
+\item “对于斜率和……问题”后一句中“要避免出现不能[待人工核对：末行局部被裁切]的情形”存在裁切，无法确认完整表述。
+
+\item 末句“只有不过点 \$P(x\_0,y\_0)\$，才能把直线设为 \$l:p(x-x\_0)+q(y-y\_0)=1\textbackslash{},(p,q\textbackslash{}text\{ 至少一个为 \}0)\$”中“一个为0”疑似应为“一个不为0”，但图中仅能……（完整说明见逐页 JSON）
+
+\item “技巧应用”下例题解答仅拍到开头，后续内容被裁切。
+
+\end{itemize}
+
+\clearpage
+
+\section{高中数学解题技巧}
+
+\sourceinfo{微信图片\_20260806203210\_124\_34.jpg}{d25a524c290a48b5718d880b2543ef02e006381c91102719d2070880f8b3897e}
+
+\section*{高中数学解题技巧}
+
+解得 $a^2=3,b^2=1,c^2=2$,
+
+故椭圆方程为
+\[
+\frac{x^2}{3}+y^2=1.
+\]
+
+（2）设点 $M(x_1,y_1),N(x_2,y_2)$.
+
+因为 $AM\perp AN$，所以 $\overrightarrow{AM}\cdot\overrightarrow{AN}=0$，即
+\[
+x_1x_2+(y_1-1)(y_2-1)=0.\qquad (i)
+\]
+
+由题意知直线 $MN$ 的斜率一定存在，设直线方程为 $y=kx+m$，
+\[
+\begin{cases}
+y=kx+m,\\
+\frac{x^2}{3}+y^2=1
+\end{cases}
+\]
+消去 $y$ 并整理得
+\[
+(1+3k^2)x^2+6kmx+3m^2-3=0,
+\]
+\[
+x_1+x_2=-\frac{6km}{1+3k^2},\ x_1x_2=\frac{3m^2-3}{1+3k^2}.\qquad (ii)
+\]
+
+根据 $y_1=kx_1+m,y_2=kx_2+m$，代入 $(i)$ 整理可得
+\[
+(k^2+1)x_1x_2+(km-k)(x_1+x_2)+(m-1)^2=0.
+\]
+
+将 $(ii)$ 代入，得
+\[
+(k^2+1)\frac{3m^2-3}{1+3k^2}+(km-k)\frac{-6km}{1+3k^2}+(m-1)^2=0,
+\]
+
+整理得 $2m^2-m-1=0$，解得 $m=1$ 或 $m=-\frac{1}{2}$.
+
+因为 $m=1$ 时直线恒过定点 $A(0,1)$，不合题意，舍去.
+
+所以 $m=-\frac{1}{2}$，直线恒过定点 $\left(0,-\frac{1}{2}\right)$.
+
+\paragraph{（技巧法）}因为 $A(0,1)$，依题意设直线 $MN$ 的方程为 $px+q(y-1)=1$（$p,q$ 至少一个不为 0），
+
+因为椭圆方程为 $\frac{x^2}{3}+y^2=1$，
+
+所以
+\[
+\frac{x^2}{3}+[(y-1)+px+q(y-1)]^2=[px+q(y-1)]^2,
+\]
+
+两边同除以 $x^2$ 得
+\[
+\frac{1}{3}+\left[\frac{y-1}{x}+p+q\cdot\frac{y-1}{x}\right]^2=\left[p+q\frac{y-1}{x}\right]^2.
+\]
+
+因为直线 $AM,AN$ 的斜率分别为 $k_1,k_2$，
+
+所以 $k_1,k_2$ 是关于 $k$ 的一元二次方程
+\[
+\frac{1}{3}+(k+p+qk)^2=(p+qk)^2
+\]
+的两根，
+
+即 $k_1,k_2$ 是关于 $k$ 的一元二次方程
+\[
+(6q+3)k^2+6pk+1=0
+\]
+的两根，
+
+由韦达定理可得
+\[
+k_1k_2=\frac{1}{6q+3}.
+\]
+
+因为 $AM\perp AN$，所以 $k_1k_2=-1$，所以
+\[
+\frac{1}{6q+3}=-1,
+\]
+解得 $q=-\frac{2}{3}$，
+
+所以直线 $MN$ 的方程为
+\[
+px-\frac{2}{3}(y-1)=1.
+\]
+令 $x=0$，得 $y=-\frac{1}{2}$，所以直线 $MN$ 恒过定点
+\[
+\left(0,-\frac{1}{2}\right).
+\]
+
+\textbf{[图形见原图]}
+
+\paragraph{变式}（2025 四川巴中三诊）已知点 $F_1,F_2$ 分别为双曲线 $E:\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$ 的左右焦点，点 $F_1$ 到双曲线 $E$ 的渐近线的距离为 $2\sqrt{2}$，点 $A$ 为双曲线 $E$ 的右顶点，且 $AF_1=2AF_2$.
+[待人工核对]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页眉中除“高中数学解题技巧”外，前置栏目文字较模糊。
+
+\item 本页开头承接上一部分内容，原题题干及第（1）问未完整显示。
+
+\item “所以 \$k\_1,k\_2\$ 是关于 \$k\$ 的一元二次方程……”一行中的变量字母按版面判断为 \$k\$，存在轻微识别不确定。
+
+\item “变式”题仅首行题干可见，后续内容被裁切。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧56 超级韦达定理}
+
+\sourceinfo{微信图片\_20260806203214\_125\_34.jpg}{514612bede82806445b8f9778e56280276301a43474cae4f0135a4a774e47a80}
+
+[待人工核对]
+
+\subsection*{迁关斩将}
+
+\paragraph{}（2024山东泰安月考）已知椭圆 $C:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a>b>0)$ 经过点 $\left(\sqrt{3},\frac{1}{2}\right)$，其右焦点为 $F(\sqrt{3},0)$。
+
+(1) 求椭圆 $C$ 的离心率；
+
+(2) 过点 $P,Q$ 在椭圆 $C$ 上；右顶点为 $A$，且满足直线 $AP$ 与 $AQ$ 的斜率之积为 $\frac{1}{20}$，求证：直线 $PQ$ 过定点。
+
+\paragraph{}（2022新高考I卷第21题）已知点 $A(2,1)$ 在双曲线 $C:\frac{x^2}{a^2}-\frac{y^2}{a^2-1}=1(a>1)$ 上，直线 $l$ 交 $C$ 于 $P,Q$ 两点，直线 $AP, AQ$ 的斜率之和为 $0$。
+
+(1) 求 $l$ 的斜率；
+
+(2) 若 $\tan\angle PAQ=2\sqrt{2}$，求 $\triangle PAQ$ 的面积。
+
+\paragraph{}（2025江西赣州模拟）已知动点 $P$ 在曲线 $y^2=8x$ 上运动，$O$ 为坐标原点，$Q$ 为线段 $OP$ 中点，记 $Q$ 的轨迹为曲线 $C$.
+
+(1) 求 $Q$ 的轨迹方程 $C$；
+
+(2) 已知 $A(1,2)$ 及曲线 $C$ 上的两点 $B$ 和 $D$，直线 $AB$ 和直线 $AD$ 的斜率分别为 $k_1$ 和 $k_2$，且 $k_1+k_2=1$，求证：直线 $BD$ 过定点。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页首上一部分残留文字仅能辨认出“求双曲线E的标准方程；”“若四边形ABCD为矩形，其中点B,D在双曲线E上，求证：直线BD过定点”之类局部内容，所属题目不完整，未纳入 questions。
+
+\item “迁关斩将”标题识别较清楚，但栏目左侧装饰文字可能存在细微误差。
+
+\item 第一题第(2)问开头受反光影响，无法确认是“设点P,Q在椭圆C上”还是其他近似表述。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧57\textbackslash{}quad 非对称处理}
+
+\sourceinfo{微信图片\_20260806203218\_126\_34.jpg}{7f935ed135360cd0a4ea52439f256935bc9436a5ff1af056aa4143692a726499}
+
+\section*{技巧57\quad 非对称处理}
+
+\paragraph{一\quad 巧辨题——非对称处理的应用场景}
+在圆锥曲线问题中，我们联立直线和圆锥曲线方程，消去$x$或$y$，得到一个一元二次方程，往往能够利用韦达定理来快速处理$|x_1-x_2|$，$x_1^2+x_2^2$，$\dfrac{1}{x_1}+\dfrac{1}{x_2}$之类的结构，但在有些问题中，我们会遇到涉及$x_1,x_2$的不同系数的代数式的运算，比如求$\dfrac{3x_1x_2+2x_1-x_2}{2x_1x_2-x_1+x_2}$或$\lambda x_1+\mu x_2$之类的结构，我们把这种系数不对等的结构，称为非对称韦达结构。
+
+\paragraph{二\quad 速答题——非对称处理的步骤}
+
+\paragraph{看到\quad 关键信息}
+
+\paragraph{想到\quad 解题技巧}
+非对称韦达定理是一种利用韦达定理进行求解的特定题型，它通过和积关系来进行计算，有时也可以通过代一半的方法解决，但最高效的方法无疑是构造对称。蝶形图形通常与非对称韦达定理紧密相关，这已成为近期频繁考查的模式。
+
+已知点$A(x_1,y_1)$，$B(x_2,y_2)$在椭圆$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$上，要求$\dfrac{(x_2-a)y_1}{(x_1+a)y_2}$或$\dfrac{(y_1-b)x_2}{(y_2+b)x_1}$的值.这类问题无法直接用韦达定理代入求解，因此称为非对称问题。
+
+因为点$A(x_1,y_1)$，$B(x_2,y_2)$在椭圆$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$上，
+\[
+\text{所以}\begin{cases}
+ x_1^2=\dfrac{a^2}{b^2}(b^2-y_1^2)=-\dfrac{a^2}{b^2}(y_1-b)(y_1+b),\\
+ x_2^2=\dfrac{a^2}{b^2}(b^2-y_2^2)=-\dfrac{a^2}{b^2}(y_2-b)(y_2+b),
+\end{cases}
+\]
+\[
+\begin{cases}
+ y_1^2=\dfrac{b^2}{a^2}(a^2-x_1^2)=-\dfrac{b^2}{a^2}(x_1-a)(x_1+a),\\
+ y_2^2=\dfrac{b^2}{a^2}(a^2-x_2^2)=-\dfrac{b^2}{a^2}(x_2-a)(x_2+a),
+\end{cases}
+\]
+
+\[
+\text{所以}\left[\dfrac{(x_2-a)y_1}{(x_1+a)y_2}\right]^2
+=\dfrac{(x_2-a)^2y_1^2}{(x_1+a)^2y_2^2}
+=\dfrac{(x_2-a)^2\cdot \dfrac{b^2}{a^2}(a^2-x_1^2)}{(x_1+a)^2\cdot \dfrac{b^2}{a^2}(a^2-x_2^2)}
+=\dfrac{(x_2-a)^2(x_1-a)(x_1+a)}{(x_1+a)^2(x_2-a)(x_2+a)}
+\]
+\[
+=\dfrac{(x_2-a)(x_1-a)}{(x_2+a)(x_1+a)}
+=\dfrac{x_1x_2-a(x_1+x_2)+a^2}{x_1x_2+a(x_1+x_2)+a^2}.
+\]
+
+\[
+\text{或}\left[\dfrac{(y_1-b)x_2}{(y_2+b)x_1}\right]^2
+=\dfrac{(y_1-b)^2x_2^2}{(y_2+b)^2x_1^2}
+=\dfrac{(y_1-b)^2\cdot \dfrac{a^2}{b^2}(b^2-y_2^2)}{(y_2+b)^2\cdot \dfrac{a^2}{b^2}(b^2-y_1^2)}
+=\dfrac{(y_1-b)^2(y_2-b)(y_2+b)}{(y_2+b)^2(y_1-b)(y_1+b)}
+\]
+\[
+=\dfrac{(y_1-b)(y_2-b)}{(y_1+b)(y_2+b)}
+=\dfrac{y_1y_2-b(y_1+y_2)+b^2}{y_1y_2+b(y_1+y_2)+b^2}.
+\]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item “看到”“想到”之间的竖向装饰性箭头/图标为版式元素，未单独转写。
+
+\item 页右侧相邻页面有残片，均已忽略。
+
+\item “蝶形图形通常与非对称韦达定理紧密相关”一句清晰度一般，建议人工复核“蝶形图形”四字。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧57\textbackslash{}quad 非对称处理}
+
+\sourceinfo{微信图片\_20260806203222\_127\_34.jpg}{2f03f7ef19031ff7f1cca427a4eb1314f72407026d01b83c65a7a45c493cf134}
+
+\section*{技巧57\quad 非对称处理}
+\subsection*{技巧应用}
+\paragraph{典例}（2024 广东深圳外国语学校调研）已知椭圆
+\[
+\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\ (a>b>0)
+\]
+上的点到焦点的最大距离为 $2+2\sqrt{2}$，离心率为 $\frac{\sqrt{2}}{2}$.
+
+(1)求椭圆的标准方程；
+
+(2)记椭圆的上、下顶点分别为 $A,B$，过点 $(0,4)$ 且斜率为 $k$ 的直线与椭圆交于 $M,N$ 两点，求直线 $BM$ 与 $AN$ 的交点 $P$ 在定直线上，并求出定直线的方程.
+
+\paragraph{解析} (1)依题意
+\[
+\left\{
+\begin{aligned}
+ a+c&=2+2\sqrt{2},\\
+ \frac{c}{a}&=\frac{\sqrt{2}}{2},
+\end{aligned}
+\right.
+\]
+所以
+\[
+\left\{
+\begin{aligned}
+ a&=2\sqrt{2},\\
+ c&=2,
+\end{aligned}
+\right.
+\]
+因为 $a^2=b^2+c^2$，所以 $b^2=4$，
+
+所以椭圆方程为
+\[
+\frac{x^2}{8}+\frac{y^2}{4}=1.
+\]
+
+(2)(常规法)由(1)知椭圆 $\frac{x^2}{8}+\frac{y^2}{4}=1$ 的上顶点 $A(0,2)$，下顶点 $B(0,-2)$，
+
+过定点 $(0,4)$ 且斜率为 $k$ 的直线方程为 $y=kx+4$，
+
+设 $M(x_1,y_1),N(x_2,y_2)$，联立
+\[
+\left\{
+\begin{aligned}
+\frac{x^2}{8}+\frac{y^2}{4}&=1,\\
+y&=kx+4,
+\end{aligned}
+\right.
+\]
+消去 $y$ 得 $(1+2k^2)x^2+16kx+24=0$，
+
+由一元二次方程的根与系数关系得
+\[
+ x_1+x_2=\frac{-16k}{1+2k^2},\ x_1x_2=\frac{24}{1+2k^2}.
+\]
+
+直线 $AN$ 的方程为 $y-2=\frac{y_2-2}{x_2}x$，直线 $BM$ 的方程为 $y+2=\frac{y_1+2}{x_1}x$.
+
+联立
+\[
+\left\{
+\begin{aligned}
+ y-2&=\frac{y_2-2}{x_2}x,\\
+ y+2&=\frac{y_1+2}{x_1}x,
+\end{aligned}
+\right.
+\]
+得
+\[
+\frac{y-2}{y+2}=\frac{(y_2-2)x_1}{(y_1+2)x_2}=\frac{(kx_2+2)x_1}{(kx_1+6)x_2}=\frac{kx_1x_2+2x_1}{kx_1x_2+6x_2}.
+\]
+
+由 $(1+2k^2)x^2+16kx+24=0$ 得
+\[
+ x_1=\frac{-8k-2\sqrt{4k^2-6}}{1+2k^2},\ x_2=\frac{-8k+2\sqrt{4k^2-6}}{1+2k^2},
+\]
+
+所以
+\[
+\frac{y-2}{y+2}=\frac{\frac{24k}{1+2k^2}+\frac{-16k-4\sqrt{4k^2-6}}{1+2k^2}}{\frac{24k}{1+2k^2}+\frac{-48k+12\sqrt{4k^2-6}}{1+2k^2}}=\frac{-8k-4\sqrt{4k^2-6}}{-24k+12\sqrt{4k^2-6}}=\frac{1}{3},
+\]
+
+所以 $y=1$，即直线 $BM$ 与 $AN$ 的交点 $P$ 在定直线 $y=1$ 上.
+
+\paragraph{(技巧法1)}由(1)知椭圆 $\frac{x^2}{8}+\frac{y^2}{4}=1$ 的上顶点 $A(0,2)$，下顶点 $B(0,-2)$，
+
+设过点 $(0,4)$ 且斜率为 $k$ 的直线方程为 $y=kx+4$，
+
+设 $M(x_1,y_1),N(x_2,y_2)$，联立
+\[
+\left\{
+\begin{aligned}
+\frac{x^2}{8}+\frac{y^2}{4}&=1,\\
+y&=kx+4,
+\end{aligned}
+\right.
+\]
+消去 $y$ 得 $(1+2k^2)x^2+16kx+24=0$，
+
+[待人工核对]
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 页首左侧栏目标题应为“技巧应用”，字样较清晰。
+
+\item 题干中“点到焦点的最大[待人工核对：应为距离]为 \$2+2\textbackslash{}sqrt\{2\}\$”中“距离”二字局部较模糊。
+
+\item “求直线 \$BM\$ 与 \$AN\$ 的交点 \$P\$ 在定直线上”后半句识别为“并求出定直线的方程”，需人工复核。
+
+\item “(技巧法1)”以下内容仅到“消去 \$y\$ 得 \$(1+2k\textasciicircum{}2)x\textasciicircum{}2+16kx+24=0\$”为止，后续被裁切。
+
+\end{itemize}
+
+\clearpage
+
+\section{高中数学解题技巧}
+
+\sourceinfo{微信图片\_20260806203227\_128\_34.jpg}{9a95c38a5f484df69428e547fb5dae9aedafe5df3ef9e8d6f9b773a9df01c6ea}
+
+\section*{高中数学解题技巧}
+
+由一元二次方程的根与系数关系得
+\[
+x_1+x_2=\frac{-16k}{1+2k^2},\quad x_1x_2=\frac{24}{1+2k^2}.
+\]
+
+直线 $AN$ 的方程为 $y-2=\frac{y_2-2}{x_2}x$，直线 $BM$ 的方程为 $y+2=\frac{y_1+2}{x_1}x$，
+
+联立
+\[
+\begin{cases}
+y-2=\dfrac{y_2-2}{x_2}x,\\
+y+2=\dfrac{y_1+2}{x_1}x,
+\end{cases}
+\]
+得
+\[
+\frac{y-2}{y+2}=\frac{(y_2-2)x_1}{(y_1+2)x_2}=\frac{(kx_2+2)x_1}{(kx_1+6)x_2}=\frac{kx_1x_2+2x_1}{kx_1x_2+6x_2},
+\]
+
+由 $x_1+x_2=\frac{-16k}{1+2k^2}$，得
+\[
+x_1=\frac{-16k}{1+2k^2}-x_2,
+\]
+所以
+\[
+\frac{y-2}{y+2}=\frac{\dfrac{24k}{1+2k^2}+2\left(\dfrac{-16k}{1+2k^2}-x_2\right)}{\dfrac{24k}{1+2k^2}+6x_2}=\frac{-8k-(2+4k^2)x_2}{24k+(6+12k^2)x_2}=-\frac{1}{3},
+\]
+所以 $y=1$，即直线 $BM$ 与 $AN$ 的交点 $P$ 在定直线 $y=1$ 上。
+
+\paragraph{（技巧法2）}由(1)知椭圆 $\dfrac{x^2}{8}+\dfrac{y^2}{4}=1$ 的上顶点 $A(0,2)$，下顶点 $B(0,-2)$。
+
+设过点 $(0,4)$ 且斜率为 $k$ 的直线方程为 $y=kx+4$，设 $M(x_1,y_1),N(x_2,y_2)$，则直线 $AN$ 的方程为 $y-2=\dfrac{y_2-2}{x_2}x$，直线 $BM$ 的方程为 $y+2=\dfrac{y_1+2}{x_1}x$，
+
+联立
+\[
+\begin{cases}
+y-2=\dfrac{y_2-2}{x_2}x,\\
+y+2=\dfrac{y_1+2}{x_1}x,
+\end{cases}
+\]
+得
+\[
+\frac{y-2}{y+2}=\frac{(y_2-2)x_1}{(y_1+2)x_2},\text{ 所以 }\left(\frac{y-2}{y+2}\right)^2=\frac{(y_2-2)^2x_1^2}{(y_1+2)^2x_2^2}.
+\]
+
+联立
+\[
+\begin{cases}
+\dfrac{x^2}{8}+\dfrac{y^2}{4}=1,\\
+y=kx+4,
+\end{cases}
+\]
+消去 $x$，得
+\[
+(2k^2+1)y^2-8y+16-8k^2=0.
+\]
+
+由一元二次方程的根与系数关系得
+\[
+y_1+y_2=\frac{8}{2k^2+1},\quad y_1y_2=\frac{16-8k^2}{2k^2+1},
+\]
+又因为 $M,N$ 两点在椭圆 $\dfrac{x^2}{8}+\dfrac{y^2}{4}=1$ 上，所以
+\[
+\begin{cases}
+x_1^2=2(4-y_1^2),\\
+x_2^2=2(4-y_2^2),
+\end{cases}
+\]
+所以
+\[
+\left(\frac{y-2}{y+2}\right)^2=\frac{(y_2-2)^2x_1^2}{(y_1+2)^2x_2^2}=\frac{(y_2-2)^2(2-y_1)(2+y_1)}{(y_1+2)^2(2-y_2)(2+y_2)}=\frac{y_1y_2-2(y_1+y_2)+4}{y_1y_2+2(y_1+y_2)+4}=\frac{1}{9},
+\]
+所以 $\dfrac{y-2}{y+2}=-\dfrac{1}{3}$（正值舍去），则 $y=1$，即直线 $BM$ 与 $AN$ 的交点 $P$ 在定直线 $y=1$ 上。
+
+\paragraph{速解点拨}非对称韦达定理的六种处理方法如下
+\begin{enumerate}
+\item 局部运算，整体约分：通过适当的“配凑”，将分子、分母这种非对称结构“凑”成一致的，剩下的可以转化为对称的韦达定理进行运算，最后通过运算，发现分子、分母可以整体约分，从而达到解决问题的目的。
+\item 代换：消去 $x$ 或 $y$ 中的一个，方向一：直线代换；方向二：曲线代换。
+\item 和积消元法：通过消去和积中的一个变量，使得另一个变量能够被表示出来，从而达到解决问题的目的。
+\item [待人工核对]
+\end{enumerate}
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 本页顶部内容为上接前文，原题题干与“(1)”的完整表述未出现。
+
+\item “速解点拨”中“非对称韦达定理的六种处理方法如下”仅完整显示前3条，其余内容被照片下边缘裁切。
+
+\item 个别分式中的常数与字母虽基本可辨，但因拍摄透视与阴影影响，建议人工复核。
+
+\end{itemize}
+
+\clearpage
+
+\section{技巧57 非对称处理}
+
+\sourceinfo{微信图片\_20260806203232\_129\_34.jpg}{f823ee05860e0cc0b1a49d5a35387766a0c20a1392f80db6c4a8b849e4d2270b}
+
+\begin{quote}
+(4) 配凑：对于坐标化后的部分式子，也需要作配凑处理。
+
+(5) 解方程组：通过解方程组，可以得到我们需要的结果。
+
+(6) 半代换：对能代换的部分用韦达定理进行代换，剩下的部分进行配凑。
+
+以上方法并不是孤立的，而是相互关联、相互补充的。在实际应用中，我们需要根据具体问题的特点，灵活运用这些方法，才能有效地解决非对称韦达定理问题。
+\end{quote}
+
+\paragraph{变式} 设椭圆 $\dfrac{x^2}{9}+y^2=1$ 的左、右顶点分别为 $A,B$，过点 $\left(\dfrac{3}{2},0\right)$ 的直线 $l$ 与 $E$ 交于 $C,D$ 两点，直线 $AC$ 的斜率为 $k_1$，直线 $BD$ 的斜率为 $k_2$，是否存在实常数 $\lambda$，使得 $k_1=\lambda k_2$ 恒成立，若不存在，请说明理由；若存在，请求出 $\lambda$ 的值。
+
+\subsection*{过关斩将}
+
+\paragraph{答题} 
+1. (2023新高考II卷第21题) 已知双曲线 $C$ 的中心为坐标原点，左焦点为 $(-2\sqrt{5},0)$，离心率为 $\sqrt{5}$。
+
+(1) 求 $C$ 的方程；
+
+(2) 记 $C$ 的左、右顶点分别为 $A_1,A_2$，过点 $(-4,0)$ 的直线与 $C$ 的左支交于 $M,N$ 两点，点 $M$ 在第二象限，直线 $MA_1$ 与 $NA_2$ 交于点 $P$。证明：点 $P$ 在定直线上。
+
+2. (2024青海西宁模拟) 已知椭圆 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 的左、右顶点分别为 $A$ 和 $B$，离心率为 $\dfrac{1}{2}$，且点 $\left(\text{\text{[待人工核对]}},1,\dfrac{3}{2}\right)$ 在椭圆上。
+
+(1) 求椭圆的标准方程；
+
+(2) 若直线 $l:y=k(x-1)$ 与椭圆交于 $M,N$ 两点，求证：直线 $AM$ 与直线 $BN$ 的交点在一条定直线上。
+
+3. (2024上海金山期末) 已知双曲线 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a>0,b>0)$，虚轴的一个端点为 $(0,4)$，焦距为 $4\sqrt{5}$。
+
+(1) 求双曲线的标准方程；
+
+(2) 记 $C$ 的左、右顶点分别为 $A_1,A_2$，过点 $(-4,0)$ 的直线与 $C$ 的左支交于 $M,N$ 两点，$M$ 在第二象限，直线 $MA_1$ 与 $NA_2$ 交于点 $P$。求证：点 $P$ 在定直线上。
+
+\subsection*{待人工核对}
+
+\begin{itemize}
+
+\item 变式中“直线 \$l\$ 与 E 交于 \$C,D\$ 两点”里的字母 \$E\$ 疑为椭圆记号，但原图确为该字样，需人工核对。
+
+\item 第2题“且点……在椭圆上”中的点坐标左侧部分被装订处与阴影影响，无法可靠辨认。
+
+\item 页首绿色总结框仅拍到第(4)(5)(6)点及总结句，前文未入镜，未补写。
+
+\end{itemize}
+
+\clearpage
+
+\appendix
+
+\section{导入说明}
+
+识别模型：\texttt{gpt-5.4}。源图总数：47。
+
+所有结构化题目数据位于同目录的 \texttt{pages/*.json}，复核状态默认为待教师审核。
+
+\end{document}
+

@@ -1,4 +1,5 @@
 {
+  "git.openRepositoryInParentFolders": "never",
   "autoGitOnExit.enabled": true,
   "autoGitOnExit.saveAll": true,
   "autoGitOnExit.commitMessagePrefix": "chore: auto-save",
