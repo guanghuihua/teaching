@@ -13,7 +13,7 @@
 
 ## 重跑方式
 
-程序位于 `E:\Guanghui\MindDuet\mindduet-math`，提取后的教师资产默认写入
+程序位于 `E:\Guanghui\mindduet-math`，提取后的教师资产默认写入
 `E:\Guanghui\teaching\题目积累\圆锥曲线\图片资料整理`。在项目根目录设置临时环境变量后运行：
 
 ```powershell

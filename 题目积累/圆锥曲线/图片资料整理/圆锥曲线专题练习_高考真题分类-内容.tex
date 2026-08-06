@@ -1,0 +1,920 @@
+\section*{使用说明}
+
+本册按技巧分类选取2016--2025年高考真题。所有题目均保留年份、卷别和题号；建议先独立完成，再使用答案版复盘方法选择与运算过程。
+
+\section{技巧43：隐圆：几何法与代数法}
+
+\begin{question}
+设 $O$ 为坐标原点，动点 $M$ 在椭圆 $C:\frac{x^2}{2}+y^2=1$ 上，过 $M$ 作 $x$ 轴的垂线，垂足为 $N$，点 $P$ 满足 $\overrightarrow{NP}=\sqrt{2}\overrightarrow{NM}$．
+（1）求点 $P$ 的轨迹方程；
+（2）设点 $Q$ 在直线 $x=-3$ 上，且 $\overrightarrow{OP}\cdot\overrightarrow{PQ}=1$．证明：过点 $P$ 且垂直于 $OQ$ 的直线 $l$ 过 $C$ 的左焦点 $F$．
+\begin{solution}
+\textbf{答案：}（1）$x^2+y^2=2$；（2）略
+
+\textbf{详解：}（1）设 $M(x_0,y_0)$，由题意可得 $N(x_0,0)$，设 $P(x,y)$，由点 $P$ 满足 $\overrightarrow{NP}=\sqrt{2}\overrightarrow{NM}$．可得 $(x-x_0,y)=\sqrt{2}(0,y_0)$，可得 $x-x_0=0$，$y=\sqrt{2}y_0$，即有 $x_0=x$，$y_0=\frac{y}{\sqrt{2}}$，代入椭圆方程 $\frac{x^2}{2}+y^2=1$，可得 $\frac{x^2}{2}+\frac{y^2}{2}=1$，即有点 $P$ 的轨迹方程为圆 $x^2+y^2=2$；
+（2）证明：设 $Q(-3,m)$，$P(\sqrt{2}\cos\alpha,\sin\alpha)$（$0\le\alpha<2\pi$），$\overrightarrow{OP}\cdot\overrightarrow{PQ}=1$，可得 $(\sqrt{2}\cos\alpha,\sin\alpha)\cdot(-3-\sqrt{2}\cos\alpha,m-\sin\alpha)=1$，即为 $-3\sqrt{2}\cos\alpha-2\cos^2\alpha+\sqrt{2}m\sin\alpha-2\sin^2\alpha=1$，当 $\alpha=0$ 时，上式不成立，则 $0<\alpha<2\pi$，解得 $m=\frac{3(1+\sqrt{2}\cos\alpha)}{\sqrt{2}\sin\alpha}$，即有 $Q(-3,\frac{3(1+\sqrt{2}\cos\alpha)}{\sqrt{2}\sin\alpha})$，椭圆 $\frac{x^2}{2}+y^2=1$ 的左焦点 $F(-1,0)$，由 $\overrightarrow{PF}\cdot\overrightarrow{OQ}=(-1-\sqrt{2}\cos\alpha,-\sin\alpha)\cdot(-3,\frac{3(1+\sqrt{2}\cos\alpha)}{\sqrt{2}\sin\alpha})=3+3\sqrt{2}\cos\alpha-3(1+\sqrt{2}\cos\alpha)=0$．可得过点 $P$ 且垂直于 $OQ$ 的直线 $l$ 过 $C$ 的左焦点 $F$．
+
+\textcolor{gray}{\footnotesize 题源：2017 年高考数学 全国II卷-理科第20题}
+\end{solution}
+\end{question}
+
+\begin{question}
+设椭圆 $C: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \ (a > b > 0)$ 的离心率为 $\frac{2\sqrt{2}}{3}$，下顶点为 $A$，右顶点为 $B$，$|AB| = \sqrt{10}$.
+
+（1）求椭圆的标准方程；
+
+（2）已知动点 $P$ 不在 $y$ 轴上，点 $R$ 在射线 $AP$ 上，且满足 $AR \cdot AP = 3$.
+
+（i）设 $P(m,n)$，求点 $R$ 的坐标（用 $m$，$n$ 表示）；
+
+（ii）设 $O$ 为坐标原点，$M$ 是椭圆上的动点，直线 $OR$ 的斜率为直线 $OP$ 的斜率的 $3$ 倍，求 $|PM|$ 的最大值.
+\begin{solution}
+\textbf{答案：}（1）$\frac{x^2}{9} + y^2 = 1$；（2）(i) $\left( \frac{3m}{m^2+(n+1)^2}, \frac{n+2 - m^2 - n^2}{m^2+(n+1)^2} \right)$；(ii) $3(\sqrt{3}+2)$
+
+\textbf{详解：}（1）由题知 $A(0,-b)$，$B(a,0)$，$e = \frac{c}{a} = \frac{2\sqrt{2}}{3}$，$|AB| = \sqrt{a^2+b^2} = \sqrt{10}$，又 $c^2 = a^2 - b^2$，解得 $a^2=9$，$b^2=1$，$c^2=8$，故椭圆方程为 $\frac{x^2}{9} + y^2 = 1$.
+（2）(i)设 $R(x_0,y_0)$，$A(0,-1)$，由 $A,P,R$ 共线得 $\frac{y_0+1}{x_0} = \frac{n+1}{m}$，由 $AR\cdot AP = 3$ 得 $\sqrt{x_0^2+(y_0+1)^2} \cdot \sqrt{m^2+(n+1)^2} = 3$，联立解得 $x_0 = \frac{3m}{m^2+(n+1)^2}$，$y_0 = \frac{n+2 - m^2 - n^2}{m^2+(n+1)^2}$，故 $R\left(\frac{3m}{m^2+(n+1)^2}, \frac{n+2 - m^2 - n^2}{m^2+(n+1)^2}\right)$.
+(ii) $k_{OP} = \frac{n}{m}$，$k_{OR} = \frac{y_0}{x_0} = \frac{n+2 - m^2 - n^2}{3m}$，由 $k_{OR}=3k_{OP}$ 得 $\frac{n+2 - m^2 - n^2}{3m} = \frac{3n}{m}$，化简得 $m^2+n^2+8n-2=0$，即 $m^2+(n+4)^2=18$（$m \neq 0$），所以点 $P$ 在以 $N(0,-4)$ 为圆心，$3\sqrt{2}$ 为半径的圆上. 设 $M(3\cos\theta,\sin\theta)$，则 $|MN|^2 = (3\cos\theta)^2 + (\sin\theta+4)^2 = 9\cos^2\theta + \sin^2\theta + 8\sin\theta + 16 = 8\cos^2\theta + 8\sin\theta + 17 = -8\sin^2\theta + 8\sin\theta + 25 = -8\left(\sin\theta - \frac{1}{2}\right)^2 + 27 \le 27$，当且仅当 $\sin\theta = \frac{1}{2}$ 时取等，故 $|PM|_{\max} = \sqrt{27} + 3\sqrt{2} = 3(\sqrt{3}+2)$.
+
+\textcolor{gray}{\footnotesize 题源：2025 年高考数学 全国I卷第18题}
+\end{solution}
+\end{question}
+
+\section{技巧44：圆锥曲线第一定义}
+
+\begin{question}
+设圆$x^2+y^2+2x-15=0$的圆心为$A$，直线$l$过点$B(1,0)$且与$x$轴不重合，$l$交圆$A$于$C$，$D$两点，过$B$作$AC$的平行线交$AD$于点$E$．
+（I）证明$|EA|+|EB|$为定值，并写出点$E$的轨迹方程；
+（II）设点$E$的轨迹为曲线$C_1$，直线$l$交$C_1$于$M$，$N$两点，过$B$且与$l$垂直的直线与圆$A$交于$P$，$Q$两点，求四边形$MPNQ$面积的取值范围．
+\begin{center}
+\begin{tikzpicture}[scale=0.9,>=stealth]
+  \draw[->] (-5,0) -- (3,0) node[right] {$x$};
+  \draw[->] (0,-1) -- (0,4.5) node[above] {$y$};
+  \draw[thick] (-1,0) circle (2);
+  \fill (-1,0) circle (1.2pt) node[below] {$A$};
+  \fill (1,0) circle (1.2pt) node[below] {$B$};
+  \draw[thick] (0,0) ellipse (2 and 1.73);
+  \fill (0.2,1.55) circle (1.2pt) node[above] {$E$};
+  \draw (0.2,1.55)--(-1,0);
+  \draw (0.2,1.55)--(1,0);
+  \node at (0,-2.4) {$|EA|+|EB|=4$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}（I）$|EA|+|EB|=4$，轨迹方程为$\frac{x^2}{4}+\frac{y^2}{3}=1$（$y\neq0$）；（II）$[12,8\sqrt{3})$
+
+\textbf{详解：}解：（I）证明：圆$x^2+y^2+2x-15=0$即为$(x+1)^2+y^2=16$，可得圆心$A(-1,0)$，半径$r=4$，由$BE\parallel AC$，可得$\angle C=\angle EBD$，由$AC=AD$，可得$\angle D=\angle C$，即为$\angle D=\angle EBD$，即有$EB=ED$，则$|EA|+|EB|=|EA|+|ED|=|AD|=4$，故$E$的轨迹为以$A$，$B$为焦点的椭圆，且有$2a=4$，即$a=2$，$c=1$，$b=\sqrt{a^2-c^2}=\sqrt{3}$，则点$E$的轨迹方程为$\frac{x^2}{4}+\frac{y^2}{3}=1$（$y\neq0$）；（II）椭圆$C_1:\frac{x^2}{4}+\frac{y^2}{3}=1$，设直线$l:x=my+1$，由$PQ\perp l$，设$PQ:y=-m(x-1)$，由$\begin{cases}\frac{x^2}{4}+\frac{y^2}{3}=1\\x=my+1\end{cases}$可得$(3m^2+4)y^2+6my-9=0$，设$M(x_1,y_1)$，$N(x_2,y_2)$，可得$y_1+y_2=-\frac{6m}{3m^2+4}$，$y_1y_2=-\frac{9}{3m^2+4}$，则$|MN|=\sqrt{1+m^2}\cdot|y_1-y_2|=\sqrt{1+m^2}\cdot\sqrt{(y_1+y_2)^2-4y_1y_2}=\sqrt{1+m^2}\cdot\sqrt{\frac{36m^2}{(3m^2+4)^2}+\frac{36}{3m^2+4}}=12\cdot\frac{1+m^2}{3m^2+4}$，$A$到$PQ$的距离为$d=\frac{|0+m(-1-1)|}{\sqrt{1+m^2}}=\frac{|2m|}{\sqrt{1+m^2}}$，$|PQ|=2\sqrt{r^2-d^2}=2\sqrt{16-\frac{4m^2}{1+m^2}}=4\sqrt{\frac{3m^2+4}{1+m^2}}$，则四边形$MPNQ$面积为$S=\frac{1}{2}|PQ|\cdot|MN|=\frac{1}{2}\cdot4\sqrt{\frac{3m^2+4}{1+m^2}}\cdot12\cdot\frac{1+m^2}{3m^2+4}=24\sqrt{\frac{1+m^2}{3m^2+4}}=24\sqrt{\frac{1}{3+\frac{1}{1+m^2}}}$，当$m=0$时，$S$取得最小值$12$，又$\frac{1}{1+m^2}>0$，可得$S<24\sqrt{\frac{1}{3}}=8\sqrt{3}$，即有四边形$MPNQ$面积的取值范围是$[12,8\sqrt{3})$．
+
+\textcolor{gray}{\footnotesize 题源：2016 年高考数学 全国I卷-理科第20题}
+\end{solution}
+\end{question}
+
+\begin{question}
+（1）团队在 $O$ 点西侧、东侧20千米处设有 $A$、$B$ 两站点，测量距离发现一点 $P$ 满足 $|PA|-|PB|=20$ 千米，可知 $P$ 在 $A$、$B$ 为焦点的双曲线上，以 $O$ 点为原点，东侧为 $x$ 轴正半轴，北侧为 $y$ 轴正半轴，建立平面直角坐标系，$P$ 在北偏东 $60^\circ$ 处，求双曲线标准方程和 $P$ 点坐标．\newline（2）团队又在南侧、北侧15千米处设有 $C$、$D$ 两站点，测量距离发现 $|QA|-|QB|=30$ 千米，$|QC|-|QD|=10$ 千米，求 $|OQ|$（精确到1米）和 $Q$ 点位置（精确到1米，$1^\circ$）
+\begin{center}
+\begin{tikzpicture}[scale=0.9,>=stealth]
+  \draw[->] (-3.5,0) -- (3.5,0) node[right] {$x$};
+  \draw[->] (0,-2.8) -- (0,2.8) node[above] {$y$};
+  \draw[thick,domain=-3:-1.05,samples=120,smooth] plot (\x,{0.9*sqrt(\x*\x-1)});
+  \draw[thick,domain=-3:-1.05,samples=120,smooth] plot (\x,{-0.9*sqrt(\x*\x-1)});
+  \draw[thick,domain=1.05:3,samples=120,smooth] plot (\x,{0.9*sqrt(\x*\x-1)});
+  \draw[thick,domain=1.05:3,samples=120,smooth] plot (\x,{-0.9*sqrt(\x*\x-1)});
+  \fill (-2,0) circle (1.2pt) node[below] {$A$};
+  \fill (2,0) circle (1.2pt) node[below] {$B$};
+  \draw[dashed] (1.8,0)--(1.2,2.08);
+  \draw[dashed] (-1.8,0)--(1.2,2.08);
+  \fill (1.2,2.08) circle (1.2pt) node[right] {$P$};
+  \node at (0,-2.3) {$\bigl||PA|-|PB|\bigr|=20$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}$(1)\ \frac{x^2}{100}-\frac{y^2}{300}=1,\ P(\frac{15\sqrt{2}}{2},\frac{5\sqrt{6}}{2})$；$(2)\ |OQ|\approx 19$ 米，$Q$ 点位置北偏东 $66^\circ$
+
+\textbf{详解：}（1）由题意可得 $a=10$，$c=20$，所以 $b^2=300$，所以双曲线的标准方程为 $\frac{x^2}{100}-\frac{y^2}{300}=1$，直线 $OP:y=\frac{\sqrt{3}}{3}x$，联立双曲线方程，可得 $x=\frac{15\sqrt{2}}{2}$，$y=\frac{5\sqrt{6}}{2}$，即点 $P$ 的坐标为 $(\frac{15\sqrt{2}}{2},\frac{5\sqrt{6}}{2})$．\newline（2）(1) $|QA|-|QB|=30$，则 $a=15$，$c=20$，所以 $b^2=175$，双曲线方程为 $\frac{x^2}{225}-\frac{y^2}{175}=1$；(2) $|QC|-|QD|=10$，则 $a=5$，$c=15$，所以 $b^2=200$，双曲线方程为 $\frac{y^2}{25}-\frac{x^2}{200}=1$，两双曲线方程联立，得 $Q(\frac{14400}{47},\frac{2975}{47})$，所以 $|OQ|\approx 19$ 米，$Q$ 点位置北偏东 $66^\circ$．
+
+\textcolor{gray}{\footnotesize 题源：2021 年高考数学 上海春季卷第19题}
+\end{solution}
+\end{question}
+
+\begin{question}
+已知 $F_1,F_2$ 是椭圆 $C:\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 的两个焦点，$P$ 为 $C$ 上一点，$O$ 为坐标原点．
+（1）若 $\triangle POF_2$ 为等边三角形，求 $C$ 的离心率；
+（2）如果存在点 $P$，使得 $PF_1\perp PF_2$，且 $\triangle F_1PF_2$ 的面积等于 $16$，求 $b$ 的值和 $a$ 的取值范围．
+\begin{center}
+\begin{tikzpicture}[scale=0.95,>=stealth]
+  \draw[->] (-4,0) -- (4,0) node[right] {$x$};
+  \draw[->] (0,-2.6) -- (0,2.6) node[above] {$y$};
+  \draw[thick] (0,0) ellipse (3 and 2);
+  \fill (-1.8,0) circle (1.2pt) node[below] {$F_1$};
+  \fill (1.8,0) circle (1.2pt) node[below] {$F_2$};
+  \fill (0.9,1.9) circle (1.2pt) node[above] {$P$};
+  \draw (-1.8,0)--(0.9,1.9);
+  \draw (1.8,0)--(0.9,1.9);
+  \draw (0.56,1.66)--(0.73,1.42)--(0.97,1.59);
+  \node at (0,-2.2) {$|PF_1|+|PF_2|=2a$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}（1）$e=\sqrt{3}-1$；（2）$b=4$，$a$ 的取值范围为 $[4\sqrt{2},+\infty)$
+
+\textbf{详解：}（1）连结 $PF_1$，由 $\triangle POF_2$ 为等边三角形可知：在 $\triangle F_1PF_2$ 中，$\angle F_1PF_2=90^\circ$，$PF_2=c$，$PF_1=\sqrt{3}c$，于是 $2a=PF_1+PF_2=c+\sqrt{3}c$，故椭圆 $C$ 的离心率为 $e=\dfrac{c}{a}=\dfrac{1}{1+\sqrt{3}}=\sqrt{3}-1$．
+（2）由题意可知，满足条件的点 $P(x,y)$ 存在，当且仅当 $\dfrac{1}{2}|y|\cdot2c=16$，$\dfrac{y}{x+c}\cdot\dfrac{y}{x-c}=-1$，$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$，即 $c|y|=16$ (1)，$x^2+y^2=c^2$ (2)，$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$ (3)，由(2)(3)以及 $a^2=b^2+c^2$ 得 $y^2=\dfrac{b^4}{c^2}$，又由(1)知 $y^2=\dfrac{16^2}{c^2}$，故 $b=4$；由(2)(3)得 $x^2=\dfrac{a^2}{c^2}(c^2-b^2)$，所以 $c^2\ge b^2$，从而 $a^2=b^2+c^2\ge 2b^2=32$，故 $a\ge 4\sqrt{2}$；当 $b=4$，$a\ge 4\sqrt{2}$ 时，存在满足条件的点 $P$．所以 $b=4$，$a$ 的取值范围为 $[4\sqrt{2},+\infty)$．
+
+\textcolor{gray}{\footnotesize 题源：2019 年高考数学 全国II卷-文科第20题}
+\end{solution}
+\end{question}
+
+\section{技巧45：圆锥曲线第二定义}
+
+\begin{question}
+已知抛物线 $C: y^2 = 8x$ 的焦点为 $F$ ，点 $M$ 在 $C$ 上．若 $M$ 到直线 $x = -3$ 的距离为 $5$，则 $|MF| =$ （ ）
+\begin{choices}
+\item $7$
+\item $6$
+\item $5$
+\item $4$
+\end{choices}
+\begin{center}
+\begin{tikzpicture}[scale=0.9,>=stealth]
+  \draw[->] (-4,0) -- (5,0) node[right] {$x$};
+  \draw[->] (0,-4) -- (0,4) node[above] {$y$};
+  \draw[domain=-3.2:3.2,smooth,variable=\y,thick] plot ({\y*\y/8}, {\y});
+  \draw[dashed] (-2,-3.8) -- (-2,3.8) node[above] {$x=-2$};
+  \draw[dashed] (-3,-3.8) -- (-3,3.8) node[above] {$x=-3$};
+  \fill (2,0) circle (1.2pt) node[below] {$F(2,0)$};
+  \fill (1,2.828) circle (1.2pt) node[right] {$M$};
+  \draw[dashed] (1,2.828) -- (-3,2.828);
+  \draw (2,0) -- (1,2.828);
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}D
+
+\textbf{详解：}因为抛物线 $C: y^2 = 8x$ 的焦点 $F(2,0)$ ，准线方程为 $x = -2$ ，点 $M$ 在 $C$ 上，所以 $M$ 到准线 $x = -2$ 的距离为 $|MF|$，又 $M$ 到直线 $x = -3$ 的距离为 $5$，所以 $|MF| + 1 = 5$，故 $|MF| = 4$.
+
+\textcolor{gray}{\footnotesize 题源：2023 年高考数学 北京卷第6题}
+\end{solution}
+\end{question}
+
+\begin{question}
+设$F$为抛物线$C: y^2 = 4x$的焦点，点$A$在$C$上，点$B(3, 0)$，若$|AF| = |BF|$，则$|AB| =$（\qquad）
+\begin{choices}
+\item $2$
+\item $2\sqrt{2}$
+\item $3$
+\item $3\sqrt{2}$
+\end{choices}
+\begin{center}
+\begin{tikzpicture}[scale=1,>=stealth]
+  \draw[->] (-2,0) -- (4.5,0) node[right] {$x$};
+  \draw[->] (0,-3.5) -- (0,3.5) node[above] {$y$};
+  \draw[domain=-3:3,smooth,variable=\y,thick] plot ({\y*\y/4}, {\y});
+  \draw[dashed] (-1,-3.2) -- (-1,3.2) node[above] {$x=-1$};
+  \fill (1,0) circle (1.2pt) node[below] {$F(1,0)$};
+  \fill (3,0) circle (1.2pt) node[below] {$B(3,0)$};
+  \fill (1,2) circle (1.2pt) node[right] {$A$};
+  \draw[dashed] (1,2) -- (-1,2);
+  \draw (1,0) -- (1,2);
+  \draw (1,2) -- (3,0);
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}B
+
+\textbf{详解：}由题意得，$F(1,0)$，则$|AF| = |BF| = 2$，\\即点$A$到准线$x=-1$的距离为2，所以点$A$的横坐标为$-1+2=1$，\\不妨设点$A$在$x$轴上方，代入得，$A(1,2)$，\\所以$|AB| = \sqrt{(3-1)^2 + (0-2)^2} = 2\sqrt{2}$.
+
+\textcolor{gray}{\footnotesize 题源：2022 年高考数学 全国乙卷-理科第5题}
+\end{solution}
+\end{question}
+
+\begin{question}
+设抛物线 $C:y^2=2px(p>0)$ 的焦点为 $F$，点 $A$ 在 $C$ 上，过 $A$ 作 $C$ 的准线的垂线，垂足为 $B$，若直线 $BF$ 的方程为 $y=-2x+2$，则 $|AF|=$（ ）
+\begin{choices}
+\item $3$
+\item $4$
+\item $5$
+\item $6$
+\end{choices}
+\begin{center}
+\begin{tikzpicture}[scale=0.95,>=stealth]
+  \draw[->] (-2.5,0) -- (5,0) node[right] {$x$};
+  \draw[->] (0,-1) -- (0,5.5) node[above] {$y$};
+  \draw[domain=0:4.6,smooth,variable=\x,thick] plot ({\x},{sqrt(4*\x)});
+  \draw[domain=0:4.6,smooth,variable=\x,thick] plot ({\x},{-sqrt(4*\x)});
+  \draw[dashed] (-1,-0.8) -- (-1,5.2) node[above] {$x=-1$};
+  \draw[thick] (-0.2,2.4) -- (2.2,-2.4) node[right] {$BF$};
+  \fill (1,0) circle (1.2pt) node[below] {$F(1,0)$};
+  \fill (-1,4) circle (1.2pt) node[left] {$B$};
+  \fill (4,4) circle (1.2pt) node[right] {$A$};
+  \draw[dashed] (4,4) -- (-1,4);
+  \draw (1,0) -- (4,4);
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}$C$
+
+\textbf{详解：}对 $l_{BF}:y=-2x+2$，令 $y=0$，则 $x=1$，所以 $F(1,0)$，$p=2$ 即抛物线 $C:y^2=4x$，故抛物线的准线方程为 $x=-1$，故 $B(-1,4)$，则 $y_A=4$，代入抛物线 $C:y^2=4x$ 得 $x_A=4$，所以 $AF=AB=x_A+\frac{p}{2}=4+1=5$.
+
+\textcolor{gray}{\footnotesize 题源：2025 年高考数学 全国II卷第6题}
+\end{solution}
+\end{question}
+
+\section{技巧46：圆锥曲线第三定义}
+
+\begin{question}
+椭圆 $C:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a>b>0)$ 的左顶点为A，点P，Q均在C上，且关于y轴对称. 若直线AP, AQ的斜率之积为 $\frac{1}{4}$，则C的离心率为（ ）
+\begin{choices}
+\item $\frac{\sqrt{3}}{2}$
+\item $\frac{\sqrt{2}}{2}$
+\item $\frac{1}{2}$
+\item $\frac{1}{3}$
+\end{choices}
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  \draw[->] (-3.8,0) -- (3.8,0) node[right] {$x$};
+  \draw[->] (0,-2.6) -- (0,2.6) node[above] {$y$};
+  \draw[thick,domain=0:360,samples=200,smooth] plot ({3*cos(\x)},{2*sin(\x)});
+  \coordinate (A) at (-3,0);
+  \coordinate (P) at (1.5,1.5);
+  \coordinate (Q) at (-1.5,1.5);
+  \fill (A) circle (1.4pt) node[below left] {$A$};
+  \fill (P) circle (1.4pt) node[above right] {$P$};
+  \fill (Q) circle (1.4pt) node[above left] {$Q$};
+  \draw[blue] (A) -- (P) node[midway,below] {$AP$};
+  \draw[blue] (A) -- (Q) node[midway,left] {$AQ$};
+  \draw[dashed] (P) -- (Q);
+  \node at (0,-2.1) {$P,Q$ 关于 $y$ 轴对称，关注 $k_{AP}k_{AQ}$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}A
+
+\textbf{详解：}设$P(x_1,y_1)$，则$Q(-x_1,y_1)$，则由$k_{AP}\cdot k_{AQ}=\frac{1}{4}$得：$k_{AP}\cdot k_{AQ}=\frac{y_1}{x_1+a}\cdot\frac{y_1}{-x_1+a}=\frac{y_1^2}{-x_1^2+a^2}=\frac{1}{4}$. 由$\frac{x_1^2}{a^2}+\frac{y_1^2}{b^2}=1$得$y_1^2=\frac{b^2(a^2-x_1^2)}{a^2}$，代入得$\frac{b^2(a^2-x_1^2)}{a^2(-x_1^2+a^2)}=\frac{1}{4}$，即$\frac{b^2}{a^2}=\frac{1}{4}$，所以椭圆C的离心率$e=\frac{c}{a}=\sqrt{1-\frac{b^2}{a^2}}=\sqrt{1-\frac{1}{4}}=\frac{\sqrt{3}}{2}$. 故选A.
+
+\textcolor{gray}{\footnotesize 题源：2022 年高考数学 全国甲卷-理科第10题}
+\end{solution}
+\end{question}
+
+\begin{question}
+已知点 $A(-2,0)$，$B(2,0)$，动点 $M(x,y)$ 满足直线 $AM$ 与 $BM$ 的斜率之积为 $-\frac{1}{2}$．记 $M$ 的轨迹为曲线 $C$．
+（1）求 $C$ 的方程，并说明 $C$ 是什么曲线；
+（2）过坐标原点的直线交 $C$ 于 $P$，$Q$ 两点，点 $P$ 在第一象限，$PE\perp x$ 轴，垂足为 $E$，连结 $QE$ 并延长交 $C$ 于点 $G$．
+     （i）证明：$\triangle PQG$ 是直角三角形；
+     （ii）求 $\triangle PQG$ 面积的最大值．
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+  \draw[->] (-3.8,0) -- (3.8,0) node[right] {$x$};
+  \draw[->] (0,-2.8) -- (0,2.8) node[above] {$y$};
+  \draw[thick,domain=0:360,samples=200,smooth] plot ({2.8*cos(\x)},{2.0*sin(\x)});
+  \coordinate (A) at (-2,0);
+  \coordinate (B) at (2,0);
+  \coordinate (M) at (1.2,1.6);
+  \fill (A) circle (1.4pt) node[below left] {$A(-2,0)$};
+  \fill (B) circle (1.4pt) node[below right] {$B(2,0)$};
+  \fill (M) circle (1.4pt) node[above right] {$M(x,y)$};
+  \draw[blue] (A) -- (M) node[midway,above left] {$AM$};
+  \draw[blue] (B) -- (M) node[midway,above right] {$BM$};
+  \node at (0,-2.25) {$k_{AM}k_{BM}=-\dfrac12$，对应椭圆第三定义};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}（1）$\frac{x^2}{4}+\frac{y^2}{2}=1\ (|x|\neq 2)$，$C$ 为中心在坐标原点，焦点在 $x$ 轴上的椭圆，不含左右顶点；（2）（i）证明见解析；（ii）$\frac{16}{9}$
+
+\textbf{详解：}（1）直线 $AM$ 的斜率为 $\frac{y}{x+2}\ (x\neq -2)$，直线 $BM$ 的斜率为 $\frac{y}{x-2}\ (x\neq 2)$，由题意可知 $\frac{y}{x+2}\cdot\frac{y}{x-2}=-\frac{1}{2}$，化简得 $\frac{x^2}{4}+\frac{y^2}{2}=1\ (x\neq\pm 2)$，所以 $C$ 为中心在坐标原点，焦点在 $x$ 轴上的椭圆，不含左右顶点．
+（2）（i）设直线 $PQ$ 的斜率为 $k$，则其方程为 $y=kx\ (k>0)$．由 $\begin{cases} y=kx \\ \frac{x^2}{4}+\frac{y^2}{2}=1 \end{cases}$ 得 $x=\pm\frac{2}{\sqrt{1+2k^2}}$．记 $u=\frac{2}{\sqrt{1+2k^2}}$，则 $P(u,uk)$，$Q(-u,-uk)$，$E(u,0)$．于是直线 $QG$ 的斜率为 $\frac{k}{2}$，方程为 $y=\frac{k}{2}(x-u)$．由 $\begin{cases} y=\frac{k}{2}(x-u) \\ \frac{x^2}{4}+\frac{y^2}{2}=1 \end{cases}$ 得 $(2+k^2)x^2-2uk^2x+k^2u^2-8=0$．(1) 设 $G(x_G,y_G)$，则 $-u$ 和 $x_G$ 是方程(1)的解，故 $x_G=\frac{u(3k^2+2)}{2+k^2}$，$y_G=\frac{uk^3}{2+k^2}$．从而直线 $PG$ 的斜率为 $\frac{\frac{uk^3}{2+k^2}-uk}{\frac{u(3k^2+2)}{2+k^2}-u}=-\frac{1}{k}$．所以 $PQ\perp PG$，即 $\triangle PQG$ 是直角三角形．
+（ii）由（i）得 $|PQ|=2u\sqrt{1+k^2}$，$|PG|=\frac{2uk\sqrt{1+k^2}}{2+k^2}$，所以 $\triangle PQG$ 的面积 $S=\frac{1}{2}|PQ||PG|=\frac{8k(1+k^2)}{(1+2k^2)(2+k^2)}=\frac{8(\frac{1}{k}+k)}{1+2(\frac{1}{k}+k)^2}$．设 $t=k+\frac{1}{k}$，则由 $k>0$ 得 $t\geq 2$，当且仅当 $k=1$ 时取等号．因为 $S=\frac{8t}{1+2t^2}$ 在 $[2,+\infty)$ 单调递减，所以当 $t=2$，即 $k=1$ 时，$S$ 取得最大值 $\frac{16}{9}$．因此，$\triangle PQG$ 面积的最大值为 $\frac{16}{9}$．
+
+\textcolor{gray}{\footnotesize 题源：2019 年高考数学 全国II卷-理科第21题}
+\end{solution}
+\end{question}
+
+\section{技巧47：手电筒模型}
+
+\begin{question}
+已知椭圆 $C:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$（$a>b>0$），四点 $P_1(1,1)$，$P_2(0,1)$，$P_3(-1,\frac{\sqrt{3}}{2})$，$P_4(1,\frac{\sqrt{3}}{2})$ 中恰有三点在椭圆 $C$ 上．
+（1）求 $C$ 的方程；
+（2）设直线 $l$ 不经过 $P_2$ 点且与 $C$ 相交于 $A$，$B$ 两点．若直线 $P_2A$ 与直线 $P_2B$ 的斜率的和为 $-1$，证明：$l$ 过定点．
+\begin{center}
+\begin{tikzpicture}[scale=0.95,>=stealth]
+  \draw[->] (-3.2,0)--(3.4,0) node[right]{$x$};
+  \draw[->] (0,-2.0)--(0,2.2) node[above]{$y$};
+  \draw[thick] (0,0) ellipse (2 and 1.6);
+  \coordinate (P2) at (0,1.6);
+  \coordinate (A) at (-1.55,-1.02);
+  \coordinate (B) at (1.8,0.7);
+  \coordinate (D) at (2,-1.6);
+  \draw[thick] (A)--(B) node[pos=0.55,below]{$l$};
+  \draw[thick] (P2)--(A);
+  \draw[thick] (P2)--(B);
+  \fill (P2) circle (1.4pt) node[above right]{$P_2(0,1)$};
+  \fill (A) circle (1.4pt) node[left]{$A$};
+  \fill (B) circle (1.4pt) node[right]{$B$};
+  \fill (D) circle (1.4pt) node[below right]{$(2,-1)$};
+  \node at (-1.2,0.55) {$k_{P_2A}$};
+  \node at (1.08,1.35) {$k_{P_2B}$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}（1）$\frac{x^2}{4}+y^2=1$；（2）证明见解析，定点为 $(2,-1)$
+
+\textbf{详解：}解：（1）根据椭圆的对称性，$P_3(-1,\frac{\sqrt{3}}{2})$，$P_4(1,\frac{\sqrt{3}}{2})$ 两点必在椭圆 $C$ 上，又 $P_4$ 的横坐标为 1，\ensuremath{\therefore}椭圆必不过 $P_1(1,1)$，\ensuremath{\therefore}$P_2(0,1)$，$P_3(-1,\frac{\sqrt{3}}{2})$，$P_4(1,\frac{\sqrt{3}}{2})$ 三点在椭圆 $C$ 上．把 $P_2(0,1)$，$P_3(-1,\frac{\sqrt{3}}{2})$ 代入椭圆 $C$，得：$\begin{cases} \frac{0}{a^2}+\frac{1}{b^2}=1 \\ \frac{1}{a^2}+\frac{3}{4b^2}=1 \end{cases}$，解得 $a^2=4$，$b^2=1$，\ensuremath{\therefore}椭圆 $C$ 的方程为 $\frac{x^2}{4}+y^2=1$．
+证明：（2）(1)当斜率不存在时，设 $l:x=m$，$A(m,y_A)$，$B(m,-y_A)$，\ensuremath{\because}直线 $P_2A$ 与直线 $P_2B$ 的斜率的和为 $-1$，\ensuremath{\therefore}$\frac{y_A-1}{m-0}+\frac{-y_A-1}{m-0}=\frac{-2}{m}=-1$，解得 $m=2$，此时 $l$ 过椭圆右顶点，不存在两个交点，故不满足．(2)当斜率存在时，设 $l:y=kx+t$，($t\neq1$)，$A(x_1,y_1)$，$B(x_2,y_2)$，联立 $\begin{cases} y=kx+t \\ \frac{x^2}{4}+y^2=1 \end{cases}$，整理，得 $(1+4k^2)x^2+8ktx+4t^2-4=0$，$\Delta>0$，$x_1+x_2=-\frac{8kt}{1+4k^2}$，$x_1x_2=\frac{4t^2-4}{1+4k^2}$，则 $k_{P_2A}+k_{P_2B}=\frac{y_1-1}{x_1}+\frac{y_2-1}{x_2}=\frac{kx_1+t-1}{x_1}+\frac{kx_2+t-1}{x_2}=2k+\frac{t-1}{x_1}+\frac{t-1}{x_2}=2k+(t-1)\frac{x_1+x_2}{x_1x_2}=2k+(t-1)\frac{-\frac{8kt}{1+4k^2}}{\frac{4t^2-4}{1+4k^2}}=2k-\frac{2k(t-1)}{t+1}=\frac{2k(t+1)-2k(t-1)}{t+1}=\frac{4k}{t+1}=-1$，又 $t\neq1$，\ensuremath{\therefore}$t=-2k-1$，此时 $\Delta=64k^2-16(1+4k^2)(t^2-1)$，代入得 $\Delta=-64k$，存在 $k$，使得 $\Delta>0$ 成立，\ensuremath{\therefore}直线 $l$ 的方程为 $y=kx-2k-1$，当 $x=2$ 时，$y=-1$，\ensuremath{\therefore}$l$ 过定点 $(2,-1)$．
+
+\textcolor{gray}{\footnotesize 题源：2017 年高考数学 全国I卷-理科第20题}
+\end{solution}
+\end{question}
+
+\begin{question}
+已知$A,B$分别为椭圆$E:\frac{x^2}{a^2}+y^2=1(a>1)$的左、右顶点，$G$为$E$的上顶点，$\overrightarrow{AG}\cdot\overrightarrow{GB}=8$。$P$为直线$x=6$上的动点，$PA$与$E$的另一交点为$C$，$PB$与$E$的另一交点为$D$。
+(1)求$E$的方程；
+(2)证明：直线$CD$过定点。
+\begin{center}
+\begin{tikzpicture}[scale=0.85,>=stealth]
+  \draw[->] (-4.2,0)--(7.2,0) node[right]{$x$};
+  \draw[->] (0,-3.0)--(0,3.2) node[above]{$y$};
+  \draw[thick] (0,0) ellipse (3 and 2);
+  \coordinate (A) at (-3,0);
+  \coordinate (B) at (3,0);
+  \coordinate (P) at (6,2.2);
+  \coordinate (C) at (-0.7,1.34);
+  \coordinate (D) at (1.86,-0.78);
+  \coordinate (F) at (1.5,0);
+  \draw[thick] (P)--(A);
+  \draw[thick] (P)--(B);
+  \draw[thick] (C)--(D);
+  \fill (A) circle (1.4pt) node[below]{$A$};
+  \fill (B) circle (1.4pt) node[below]{$B$};
+  \fill (P) circle (1.4pt) node[right]{$P$};
+  \fill (C) circle (1.4pt) node[above left]{$C$};
+  \fill (D) circle (1.4pt) node[below right]{$D$};
+  \fill (F) circle (1.4pt) node[above]{$\left(\frac{3}{2},0\right)$};
+  \draw[dashed] (6,-3)--(6,3);
+  \node at (6.35,-2.55) {$x=6$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}(1)$\frac{x^2}{9}+y^2=1$；(2)直线$CD$过定点$\left(\frac{3}{2},0\right)$
+
+\textbf{详解：}(1)由椭圆方程得$A(-a,0),B(a,0),G(0,1)$，则$\overrightarrow{AG}=(a,1),\overrightarrow{GB}=(a,-1)$，$\overrightarrow{AG}\cdot\overrightarrow{GB}=a^2-1=8$，解得$a^2=9$，故椭圆方程为$\frac{x^2}{9}+y^2=1$。
+(2)设$P(6,y_0)$，则直线$AP$方程为$y=\frac{y_0}{9}(x+3)$，与椭圆联立得$(y_0^2+9)x^2+6y_0^2x+9y_0^2-81=0$，由韦达定理$x_A\cdot x_C=\frac{9y_0^2-81}{y_0^2+9}$，而$x_A=-3$，得$x_C=\frac{-3y_0^2+27}{y_0^2+9}$，代入得$y_C=\frac{6y_0}{y_0^2+9}$，故$C\left(\frac{-3y_0^2+27}{y_0^2+9},\frac{6y_0}{y_0^2+9}\right)$。同理直线$PB$方程$y=\frac{y_0}{3}(x-3)$，与椭圆联立得$D\left(\frac{3y_0^2-3}{y_0^2+1},\frac{-2y_0}{y_0^2+1}\right)$。当$y_0\neq0$时，直线$CD$斜率$k=\frac{\frac{6y_0}{y_0^2+9}-\frac{-2y_0}{y_0^2+1}}{\frac{-3y_0^2+27}{y_0^2+9}-\frac{3y_0^2-3}{y_0^2+1}}=\frac{4y_0}{3(3-y_0^2)}$，直线$CD$方程为$y-\frac{-2y_0}{y_0^2+1}=\frac{4y_0}{3(3-y_0^2)}\left(x-\frac{3y_0^2-3}{y_0^2+1}\right)$，化简得$y=\frac{4y_0}{3(3-y_0^2)}\left(x-\frac{3}{2}\right)$，故过定点$\left(\frac{3}{2},0\right)$。当$y_0=0$时，$C(3,0),D(3,0)$，直线$CD$为$x=3$，也过$\left(\frac{3}{2},0\right)$。综上，直线$CD$过定点$\left(\frac{3}{2},0\right)$。
+
+\textcolor{gray}{\footnotesize 题源：2020 年高考数学 全国I卷-理科第20题}
+\end{solution}
+\end{question}
+
+\section{技巧48：阿基米德三角形}
+
+\begin{question}
+已知抛物线$C:x^2=2py$（$p>0$）的焦点为$F$，且$F$与圆$M:x^2+(y+4)^2=1$上点的距离的最小值为4。
+（1）求$p$；
+（2）若点$P$在$M$上，$PA$，$PB$是$C$的两条切线，$A$，$B$是切点，求$\triangle PAB$面积的最大值。
+\begin{solution}
+\textbf{答案：}（1）$p=2$；（2）$20\sqrt{5}$
+
+\textbf{详解：}（1）焦点$F(0,\frac{p}{2})$到圆$x^2+(y+4)^2=1$的最短距离为$\frac{p}{2}+3=4$，所以$p=2$。
+（2）抛物线$y=\frac14x^2$，设$A(x_1,y_1)$，$B(x_2,y_2)$，$P(x_0,y_0)$，得$l_{PA}: y=\frac12x_1(x-x_1)+y_1=\frac12x_1x-\frac14x_1^2=\frac12x_1x-y_1$，$l_{PB}: y=\frac12x_2x-y_2$，且$x_0^2=-y_0^2-8y_0-15$。$l_{PA}$，$l_{PB}$都过点$P(x_0,y_0)$，则$\begin{cases} y_0=\frac12x_1x_0-y_1 \\ y_0=\frac12x_2x_0-y_2 \end{cases}$，故$l_{AB}: y_0=\frac12x_0x-y$，即$y=\frac12x_0x-y_0$。联立$\begin{cases} y=\frac12x_0x-y_0 \\ x^2=4y \end{cases}$，得$x^2-2x_0x+4y_0=0$，$\Delta=4x_0^2-16y_0$。所以$|AB|=\sqrt{1+\frac{x_0^2}{4}}\cdot\sqrt{4x_0^2-16y_0}=\sqrt{4+x_0^2}\cdot\sqrt{x_0^2-4y_0}$，$d_{P\to AB}=\frac{|x_0^2-4y_0|}{\sqrt{x_0^2+4}}$，所以$S_{\triangle PAB}=\frac12|AB|\cdot d_{P\to AB}=\frac12\sqrt{x_0^2-4y_0}\cdot\sqrt{x_0^2-4y_0}=\frac12(x_0^2-4y_0)^{\frac32}=\frac12(-y_0^2-12y_0-15)^{\frac32}$。而$y_0\in[-5,-3]$，故当$y_0=-5$时，$S_{\triangle PAB}$达到最大，最大值为$20\sqrt{5}$。
+
+\textcolor{gray}{\footnotesize 题源：2021 年高考数学 全国乙卷-理科第21题}
+\end{solution}
+\end{question}
+
+\begin{question}
+已知曲线 $C: y=\dfrac{x^2}{2}$，$D$ 为直线 $y=-\dfrac{1}{2}$ 上的动点，过 $D$ 作 $C$ 的两条切线，切点分别为 $A$，$B$。
+（1）证明：直线 $AB$ 过定点；
+（2）若以 $E\left(0,\dfrac{5}{2}\right)$ 为圆心的圆与直线 $AB$ 相切，且切点为线段 $AB$ 的中点，求四边形 $ADBE$ 的面积。
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+  \draw[->] (-3.2,0) -- (3.8,0) node[right] {$x$};
+  \draw[->] (0,-1.4) -- (0,4.2) node[above] {$y$};
+  \draw[thick,domain=-2.6:2.6,samples=200] plot (\x,{0.5*\x*\x});
+  \draw[dashed] (-3,-0.5) -- (3.5,-0.5) node[right] {$y=-\dfrac12$};
+  \coordinate (D) at (2,-0.5);
+  \coordinate (A) at (1,0.5);
+  \coordinate (B) at (-1,0.5);
+  \coordinate (T) at (0,0.5);
+  \draw[thick] (D)--(A) (D)--(B) (A)--(B);
+  \fill (D) circle (1.2pt) node[below right] {$D$};
+  \fill (A) circle (1.2pt) node[above right] {$A$};
+  \fill (B) circle (1.2pt) node[above left] {$B$};
+  \fill (T) circle (1.2pt) node[above] {$\left(0,\dfrac12\right)$};
+  \node at (1.8,3.2) {$y=\dfrac{x^2}{2}$};
+  \node at (1.2,1.2) {$AB$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}（1）定点为 $\left(0,\dfrac{1}{2}\right)$；（2）四边形 $ADBE$ 的面积为 $3$ 或 $4\sqrt{2}$。
+
+\textbf{详解：}（1）设 $D\left(t,-\dfrac{1}{2}\right)$，$A(x_1,y_1)$，则 $x_1^2=2y_1$。由于 $y'=x$，所以切线 $DA$ 的斜率为 $x_1$，故 $\dfrac{y_1+\frac{1}{2}}{x_1-t}=x_1$，整理得 $2tx_1-2y_1+1=0$。设 $B(x_2,y_2)$，同理可得 $2tx_2-2y_2+1=0$。故直线 $AB$ 的方程为 $2tx-2y+1=0$，所以直线 $AB$ 过定点 $\left(0,\dfrac{1}{2}\right)$。
+（2）由（1）得直线 $AB$ 的方程为 $y=tx+\dfrac{1}{2}$。与 $y=\dfrac{x^2}{2}$ 联立得 $x^2-2tx-1=0$，于是 $x_1+x_2=2t$，$x_1x_2=-1$，$y_1+y_2=t(x_1+x_2)+1=2t^2+1$，$|AB|=\sqrt{1+t^2}|x_1-x_2|=\sqrt{1+t^2}\times\sqrt{(x_1+x_2)^2-4x_1x_2}=2(t^2+1)$。设 $d_1,d_2$ 分别为点 $D$，$E$ 到直线 $AB$ 的距离，则 $d_1=\sqrt{t^2+1}$，$d_2=\dfrac{2}{\sqrt{t^2+1}}$。因此四边形 $ADBE$ 的面积 $S=\dfrac{1}{2}|AB|(d_1+d_2)=(t^2+3)\sqrt{t^2+1}$。设 $M$ 为线段 $AB$ 的中点，则 $M\left(t,t^2+\dfrac{1}{2}\right)$。由于 $\overrightarrow{EM}\perp\overrightarrow{AB}$，而 $\overrightarrow{EM}=(t,t^2-2)$，$\overrightarrow{AB}$ 与向量 $(1,t)$ 平行，所以 $t+(t^2-2)t=0$，解得 $t=0$ 或 $t=\pm1$。当 $t=0$ 时，$S=3$；当 $t=\pm1$ 时，$S=4\sqrt{2}$。因此，四边形 $ADBE$ 的面积为 $3$ 或 $4\sqrt{2}$。
+
+\textcolor{gray}{\footnotesize 题源：2019 年高考数学 全国III卷-理科第21题}
+\end{solution}
+\end{question}
+
+\begin{question}
+已知曲线$C:y=\frac{x^2}{2}$，D为直线$y=-\frac{1}{2}$上的动点，过D作C的两条切线，切点分别为A,B。
+(1)证明：直线AB过定点；
+(2)若以$E(0,\frac{5}{2})$为圆心的圆与直线AB相切，且切点为线段AB的中点，求该圆的方程。
+\begin{solution}
+\textbf{答案：}(1)见详解; (2) $x^2+(y-\frac{5}{2})^2=4$或$x^2+(y-\frac{5}{2})^2=2$
+
+\textbf{详解：}(1)证明：设$D(t,-\frac{1}{2})$，$A(x_1,y_1)$，则$y_1=\frac{1}{2}x_1^2$。又因为$y=\frac{1}{2}x^2$，所以$y'=x$。则切线DA的斜率为$x_1$，故$\frac{y_1+\frac{1}{2}}{x_1-t}=x_1$，整理得$2tx_1-2y_1+1=0$。设$B(x_2,y_2)$，同理得$2tx_2-2y_2+1=0$。$A(x_1,y_1),B(x_2,y_2)$都满足直线方程$2tx-2y+1=0$。于是直线$2tx-2y+1=0$过点A,B，而两个不同的点确定一条直线，所以直线AB方程为$2tx-2y+1=0$。即$2tx+(-2y+1)=0$，当$2t=0,-2y+1=0$时等式恒成立。所以直线AB恒过定点$(0,\frac{1}{2})$。
+(2)由(1)得直线AB方程为$2tx-2y+1=0$，和抛物线方程联立得：$\begin{cases} 2tx-2y+1=0 \\ y=\frac{1}{2}x^2 \end{cases}$，化简得$x^2-2tx-1=0$。于是$x_1+x_2=2t$，$y_1+y_2=t(x_1+x_2)+1=2t^2+1$。设M为线段AB的中点，则$M(t,t^2+\frac{1}{2})$。由于$EM\perp AB$，而$\overrightarrow{EM}=(t,t^2-2)$，$\overrightarrow{AB}$与向量$(1,t)$平行，所以$t+t(t^2-2)=0$，解得$t=0$或$t=\pm1$。
+当$t=0$时，$\overrightarrow{EM}=(0,-2)$，$|\overrightarrow{EM}|=2$，所求圆的方程为$x^2+(y-\frac{5}{2})^2=4$；
+当$t=\pm1$时，$\overrightarrow{EM}=(1,-1)$或$(-1,-1)$，$|\overrightarrow{EM}|=\sqrt{2}$，所求圆的方程为$x^2+(y-\frac{5}{2})^2=2$。
+所以圆的方程为$x^2+(y-\frac{5}{2})^2=4$或$x^2+(y-\frac{5}{2})^2=2$。
+
+\textcolor{gray}{\footnotesize 题源：2019 年高考数学 全国III卷-文科第21题}
+\end{solution}
+\end{question}
+
+\section{技巧49：点差法解弦中点问题}
+
+\begin{question}
+设 $A$，$B$ 为双曲线 $x^2-\frac{y^2}{9}=1$ 上两点，下列四个点中，可为线段 $AB$ 中点的是（ ）
+\begin{choices}
+\item $(1,1)$
+\item $(-1,2)$
+\item $(1,3)$
+\item $(-1,-4)$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$(-1,-4)$
+
+\textbf{详解：}设 $A(x_1,y_1),B(x_2,y_2)$，则 $AB$ 的中点 $M(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2})$，可得 $k_{AB}=\frac{y_1-y_2}{x_1-x_2}$，$k=\frac{\frac{y_1+y_2}{2}}{\frac{x_1+x_2}{2}}=\frac{y_1+y_2}{x_1+x_2}$，因为 $A,B$ 在双曲线上，则 $\begin{cases} x_1^2-\frac{y_1^2}{9}=1 \\ x_2^2-\frac{y_2^2}{9}=1 \end{cases}$，两式相减得 $(x_1^2-x_2^2)-\frac{y_1^2-y_2^2}{9}=0$，所以 $k_{AB}\cdot k=\frac{y_1^2-y_2^2}{x_1^2-x_2^2}=9$. 对于选项A：可得 $k=1$，$k_{AB}=9$，则 $AB:y=9x-8$，联立方程 $\begin{cases} y=9x-8 \\ x^2-\frac{y^2}{9}=1 \end{cases}$，消去 $y$ 得 $72x^2-2\times72x+73=0$，此时 $\Delta=(-2\times72)^2-4\times72\times73=-288<0$，所以直线 $AB$ 与双曲线没有交点，故A错误；对于选项B：可得 $k=-2$，$k_{AB}=-\frac{9}{2}$，则 $AB:y=-\frac{9}{2}x-\frac{5}{2}$，联立方程 $\begin{cases} y=-\frac{9}{2}x-\frac{5}{2} \\ x^2-\frac{y^2}{9}=1 \end{cases}$，消去 $y$ 得 $45x^2+2\times45x+61=0$，此时 $\Delta=(2\times45)^2-4\times45\times61=-4\times45\times16<0$，所以直线 $AB$ 与双曲线没有交点，故B错误；对于选项C：可得 $k=3$，$k_{AB}=3$，则 $AB:y=3x$，由双曲线方程可得 $a=1,b=3$，则 $AB:y=3x$ 为双曲线的渐近线，所以直线 $AB$ 与双曲线没有交点，故C错误；对于选项D：$k=4$，$k_{AB}=\frac{9}{4}$，则 $AB:y=\frac{9}{4}x-\frac{7}{4}$，联立方程 $\begin{cases} y=\frac{9}{4}x-\frac{7}{4} \\ x^2-\frac{y^2}{9}=1 \end{cases}$，消去 $y$ 得 $63x^2+126x-193=0$，此时 $\Delta=126^2+4\times63\times193>0$，故直线 $AB$ 与双曲线有两个交点，故D正确.
+
+\textcolor{gray}{\footnotesize 题源：2023 年高考数学 全国乙卷-理科第11题}
+\end{solution}
+\end{question}
+
+\begin{question}
+已知抛物线 $C: y^2=2x$ 的焦点为 $F$, 平行于 $x$ 轴的两条直线 $l_1$, $l_2$ 分别交 $C$ 于 $A$, $B$ 两点, 交 $C$ 的准线于 $P$, $Q$ 两点.
+(I) 若 $F$ 在线段 $AB$ 上, $R$ 是 $PQ$ 的中点, 证明 $AR\parallel FQ$;
+(II) 若 $\triangle PQF$ 的面积是 $\triangle ABF$ 的面积的两倍, 求 $AB$ 中点的轨迹方程.
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+  \draw[->] (-1.2,0) -- (4.8,0) node[right] {$x$};
+  \draw[->] (0,-2.4) -- (0,2.8) node[above] {$y$};
+  \draw (0,0) node[below left] {$O$};
+
+  \draw[thick,domain=-2.1:2.1,samples=200,smooth] plot ({0.5*(\x)^2},{\x});
+  \draw[dashed] (-0.7,0) -- (-0.7,2.4) node[above] {准线 $x=-\frac12$};
+
+  \coordinate (A) at (0.5,1.0);
+  \coordinate (B) at (4.5,-3.0);
+  \coordinate (M) at (2.5,-1.0);
+  \coordinate (N) at (1.0,0.0);
+  \coordinate (F) at (0.5,0.0);
+  \coordinate (P) at (-0.5,1.0);
+  \coordinate (Q) at (-0.5,-3.0);
+
+  \draw[thick] (A) -- (B);
+  \draw[dashed] (P) -- (Q);
+  \draw[dashed] (F) -- (Q);
+
+  \fill (A) circle (1.2pt) node[above right] {$A$};
+  \fill (B) circle (1.2pt) node[below right] {$B$};
+  \fill (M) circle (1.2pt) node[below] {$M$};
+  \fill (N) circle (1.2pt) node[above] {$N$};
+  \fill (F) circle (1.2pt) node[below] {$F$};
+  \fill (P) circle (1.2pt) node[left] {$P$};
+  \fill (Q) circle (1.2pt) node[left] {$Q$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}见解析
+
+\textbf{详解：}(I) 连接 $RF$, $PF$. 由 $AP=AF$, $BQ=BF$ 及 $AP\parallel BQ$, 得 $\angle AFP+\angle BFQ=90^{\circ}$, 所以 $\angle PFQ=90^{\circ}$. 因为 $R$ 是 $PQ$ 的中点, 所以 $RF=RP=RQ$, 所以 $\triangle PAR\cong\triangle FAR$, 所以 $\angle PAR=\angle FAR$, $\angle PRA=\angle FRA$. 又 $\angle BQF+\angle BFQ=180^{\circ}-\angle QBF=\angle PAF=2\angle PAR$, 所以 $\angle FQB=\angle PAR$, 所以 $\angle PRA=\angle PQF$, 所以 $AR\parallel FQ$.
+(II) 设 $A(x_1,y_1)$, $B(x_2,y_2)$, $F(\frac{1}{2},0)$, 准线为 $x=-\frac{1}{2}$. $S_{\triangle PQF}=\frac{1}{2}|PQ|=\frac{1}{2}|y_1-y_2|$. 设直线 $AB$ 与 $x$ 轴交点为 $N$, 则 $S_{\triangle ABF}=\frac{1}{2}|FN||y_1-y_2|$. 因为 $\triangle PQF$ 的面积是 $\triangle ABF$ 的面积的两倍, 所以 $2|FN|=1$, 得 $x_N=1$, 即 $N(1,0)$. 设 $AB$ 中点为 $M(x,y)$, 由 $\begin{cases}y_1^2=2x_1\\ y_2^2=2x_2\end{cases}$ 得 $(y_1-y_2)(y_1+y_2)=2(x_1-x_2)$, 又 $\dfrac{y_1-y_2}{x_1-x_2}=\dfrac{y}{x-1}$, 所以 $y\cdot2y=2$, 即 $y^2=x-1$. 所以 $AB$ 中点轨迹方程为 $y^2=x-1$.
+
+\textcolor{gray}{\footnotesize 题源：2016 年高考数学 全国III卷-文科第20题}
+\end{solution}
+\end{question}
+
+\section{技巧50：焦点三角形面积问题}
+
+\begin{question}
+设 $F_1, F_2$ 是双曲线 $C: x^2 - \frac{y^2}{3} = 1$ 的两个焦点，$O$ 为坐标原点，点 $P$ 在 $C$ 上且 $|OP| = 2$, 则 $\triangle PF_1F_2$ 的面积为
+\begin{choices}
+\item $\frac{7}{2}$
+\item $3$
+\item $\frac{5}{2}$
+\item $2$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$3$
+
+\textbf{详解：}由已知，$F_1(-2,0), F_2(2,0)$, 则 $a=1, c=2$, 因为 $|OP|=2 = \frac{1}{2}|F_1F_2|$, 所以点 $P$ 在以 $F_1F_2$ 为直径的圆上，即 $\triangle PF_1F_2$ 是以 $P$ 为直角顶点的直角三角形，故 $|PF_1|^2 + |PF_2|^2 = |F_1F_2|^2 = 16$, 又 $|PF_1|-|PF_2|=2a=2$, 所以 $4 = (|PF_1|-|PF_2|)^2 = |PF_1|^2 + |PF_2|^2 - 2|PF_1||PF_2| = 16 - 2|PF_1||PF_2|$, 解得 $|PF_1||PF_2|=6$, 所以 $S_{\triangle PF_1F_2} = \frac{1}{2}|PF_1||PF_2|=3$.
+
+\textcolor{gray}{\footnotesize 题源：2020 年高考数学 全国I卷-文科第11题}
+\end{solution}
+\end{question}
+
+\begin{question}
+设 $O$ 为坐标原点，$F_1$，$F_2$ 为椭圆 $C: \frac{x^2}{9} + \frac{y^2}{6} = 1$ 的两个焦点，点 $P$ 在 $C$ 上，$\cos\angle F_1PF_2 = \frac{3}{5}$，则 $|OP| = $（         ）
+\begin{choices}
+\item $\frac{\sqrt{13}}{5}$
+\item $\frac{\sqrt{30}}{2}$
+\item $\frac{\sqrt{14}}{5}$
+\item $\frac{\sqrt{35}}{2}$
+\end{choices}
+\begin{solution}
+\textbf{答案：}B
+
+\textbf{详解：}方法一：设 $\angle F_1PF_2 = 2\theta$，$0<\theta<\frac{\pi}{2}$，所以 $S_{\triangle PF_1F_2} = b^2\tan\frac{\angle F_1PF_2}{2} = b^2\tan\theta$，由 $\cos\angle F_1PF_2 = \cos2\theta = \frac{\cos^2\theta-\sin^2\theta}{\cos^2\theta+\sin^2\theta} = \frac{1-\tan^2\theta}{1+\tan^2\theta} = \frac{3}{5}$，解得：$\tan\theta = \frac{1}{2}$，由椭圆方程可知，$a^2=9$，$b^2=6$，$c^2=a^2-b^2=3$，所以 $S_{\triangle PF_1F_2} = \frac{1}{2}\times F_1F_2\times|y_p| = \frac{1}{2}\times2\sqrt{3}\times|y_p| = 6\times\frac{1}{2}$，解得：$y_p^2=3$，则 $x_p^2 = 9\times\left(1-\frac{3}{6}\right) = \frac{9}{2}$，因此 $|OP| = \sqrt{x_p^2+y_p^2} = \sqrt{3+\frac{9}{2}} = \frac{\sqrt{30}}{2}$．故选：B．
+方法二：因为 $|PF_1|+|PF_2|=2a=6$ (1)，$|PF_1|^2+|PF_2|^2-2|PF_1||PF_2|\cos\angle F_1PF_2 = |F_1F_2|^2$，即 $|PF_1|^2+|PF_2|^2 - \frac{6}{5}|PF_1||PF_2| = 12$ (2)，联立(1)(2)，解得：$|PF_1||PF_2| = \frac{15}{2}$，$|PF_1|^2+|PF_2|^2 = 21$，而 $\overrightarrow{PO} = \frac{1}{2}(\overrightarrow{PF_1}+\overrightarrow{PF_2})$，所以 $|\overrightarrow{OP}| = |\overrightarrow{PO}| = \frac{1}{2}\sqrt{|\overrightarrow{PF_1}|^2+|\overrightarrow{PF_2}|^2+2\overrightarrow{PF_1}\cdot\overrightarrow{PF_2}} = \frac{1}{2}\sqrt{21+2\times\frac{3}{5}\times\frac{15}{2}} = \frac{\sqrt{30}}{2}$．故选：B．
+方法三：因为 $|PF_1|+|PF_2|=2a=6$ (1)，$|PF_1|^2+|PF_2|^2-2|PF_1||PF_2|\cos\angle F_1PF_2 = |F_1F_2|^2$，即 $|PF_1|^2+|PF_2|^2 - \frac{6}{5}|PF_1||PF_2| = 12$ (2)，联立(1)(2)，解得：$|PF_1|^2+|PF_2|^2 = 21$，由中线定理可知，$2(|OP|^2+|OF_1|^2) = |PF_1|^2+|PF_2|^2 = 42$，易知 $|F_1F_2| = 2\sqrt{3}$，解得：$|OP| = \frac{\sqrt{30}}{2}$．故选：B．
+
+\textcolor{gray}{\footnotesize 题源：2023 年高考数学 全国甲卷-理科第12题}
+\end{solution}
+\end{question}
+
+\begin{question}
+设双曲线 $C:\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\ (a>0,b>0)$ 的左、右焦点分别为 $F_1,F_2$，离心率为 $\sqrt{5}$。$P$ 是 $C$ 上一点，且 $F_1P\perp F_2P$。若 $\triangle PF_1F_2$ 的面积为 $4$，则 $a=$
+\begin{choices}
+\item $1$
+\item $2$
+\item $4$
+\item $8$
+\end{choices}
+\begin{solution}
+\textbf{答案：}$A$
+
+\textbf{详解：}因为 $e=\dfrac{c}{a}=\sqrt{5}$，所以 $c=\sqrt{5}a$。根据双曲线定义 $|PF_1|-|PF_2|=2a$。$\triangle PF_1F_2$ 面积 $\dfrac12|PF_1|\cdot|PF_2|=4$，得 $|PF_1|\cdot|PF_2|=8$。又 $F_1P\perp F_2P$，所以 $|PF_1|^2+|PF_2|^2=(2c)^2=20a^2$。而 $(|PF_1|-|PF_2|)^2=4a^2$，即 $|PF_1|^2+|PF_2|^2-2|PF_1|\cdot|PF_2|=4a^2$，所以 $20a^2-16=4a^2$，得 $16a^2=16$，$a=1$。故选 $A$。
+
+\textcolor{gray}{\footnotesize 题源：2020 年高考数学 全国III卷-理科第11题}
+\end{solution}
+\end{question}
+
+\section{技巧51：焦点弦长问题}
+
+\begin{question}
+已知 $F$ 为抛物线 $C:y^2=4x$ 的焦点，过 $F$ 作两条互相垂直的直线 $l_1$，$l_2$，直线 $l_1$ 与 $C$ 交于 $A$、$B$ 两点，直线 $l_2$ 与 $C$ 交于 $D$、$E$ 两点，则 $|AB|+|DE|$ 的最小值为（ ）
+\begin{choices}
+\item $16$
+\item $14$
+\item $12$
+\item $10$
+\end{choices}
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+  \draw[->] (-1.8,0) -- (5.2,0) node[right] {$x$};
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};
+  \draw[smooth,domain=-3.1:3.1,samples=200] plot ({(\x*\x)/4},{\x});
+  \fill (1,0) circle (1.2pt) node[below] {$F$};
+  \draw (-0.4,-1.4) -- (3.9,2.9) node[right] {$l_2$};
+  \draw (-0.4,1.4) -- (3.9,-2.9) node[right] {$l_1$};
+  \fill (2.914,1.914) circle (1.2pt) node[above right] {$D$};
+  \fill (0.086,-0.914) circle (1.2pt) node[below left] {$E$};
+  \fill (2.914,-1.914) circle (1.2pt) node[below right] {$A$};
+  \fill (0.086,0.914) circle (1.2pt) node[above left] {$B$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}A
+
+\textbf{详解：}方法一：如图，$l_1\perp l_2$，要使 $|AB|+|DE|$ 最小，则 $A$ 与 $D$，$B$，$E$ 关于 $x$ 轴对称，即直线 $DE$ 的斜率为 1，又直线 $l_2$ 过点 $(1,0)$，则直线 $l_2$ 的方程为 $y=x-1$，联立 $\begin{cases} y^2=4x \\ y=x-1 \end{cases}$，则 $y^2-4y-4=0$，\ensuremath{\therefore}$y_1+y_2=4$，$y_1y_2=-4$，\ensuremath{\therefore}$|DE|=\sqrt{1+1^2}\cdot|y_1-y_2|=\sqrt{2}\times\sqrt{4^2+16}=8$，\ensuremath{\therefore}$|AB|+|DE|$ 的最小值为 $2|DE|=16$．方法二：设直线 $l_1$ 的倾斜角为 $\theta$，则 $l_2$ 的倾斜角为 $\frac{\pi}{2}+\theta$，根据焦点弦长公式可得 $|AB|=\frac{2p}{\sin^2\theta}=\frac{4}{\sin^2\theta}$，$|DE|=\frac{4}{\sin^2(\frac{\pi}{2}+\theta)}=\frac{4}{\cos^2\theta}$，\ensuremath{\therefore}$|AB|+|DE|=\frac{4}{\sin^2\theta}+\frac{4}{\cos^2\theta}=\frac{4}{\sin^2\theta\cos^2\theta}=\frac{16}{\sin^2 2\theta}$，\ensuremath{\because}$0<\sin^2 2\theta\leq 1$，\ensuremath{\therefore}当 $\theta=45^\circ$ 时，$|AB|+|DE|$ 最小，最小为 16．故选：A．
+
+\textcolor{gray}{\footnotesize 题源：2017 年高考数学 全国I卷-理科第10题}
+\end{solution}
+\end{question}
+
+\begin{question}
+设$O$为坐标原点，直线$y=-\sqrt{3}(x-1)$过抛物线$C:y^{2}=2px(p>0)$的焦点，且与$C$交于$M$，$N$两点，$l$为$C$的准线，则（ \quad ）
+\begin{choices}
+\item A. $p=2$
+\item B. $|MN|=\dfrac{8}{3}$
+\item C. 以$MN$为直径的圆与$l$相切
+\item D. $\triangle OMN$为等腰三角形
+\end{choices}
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+  \draw[->] (-1.8,0) -- (5.2,0) node[right] {$x$};
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};
+  \draw[smooth,domain=-3.1:3.1,samples=200] plot ({(\x*\x)/4},{\x});
+  \draw[dashed] (-1,-3.0) -- (-1,3.0) node[above] {$l$};
+  \fill (1,0) circle (1.2pt) node[below] {$F$};
+  \draw (-0.3,2.25) -- (3.7,-0.06);
+  \fill (3,-1.732) circle (1.2pt) node[below right] {$M$};
+  \fill (0.333,0.577) circle (1.2pt) node[above left] {$N$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}AC
+
+\textbf{详解：}A选项：直线$y=-\sqrt{3}(x-1)$过点$(1,0)$，所以抛物线$C:y^{2}=2px(p>0)$的焦点$F(1,0)$，所以$\dfrac{p}{2}=1$，$p=2$，$2p=4$，则A正确，且抛物线$C$的方程为$y^{2}=4x$.
+B选项：设$M(x_{1},y_{1})$，$N(x_{2},y_{2})$，由$\begin{cases}y=-\sqrt{3}(x-1)\\ y^{2}=4x\end{cases}$消去$y$并化简得$3x^{2}-10x+3=(x-3)(3x-1)=0$，解得$x_{1}=3$，$x_{2}=\dfrac{1}{3}$，所以$|MN|=x_{1}+x_{2}+p=3+\dfrac{1}{3}+2=\dfrac{16}{3}$，B错误.
+C选项：设$MN$的中点为$A$，$M,N,A$到直线$l$的距离分别为$d_{1},d_{2},d$，因为$d=\dfrac{1}{2}(d_{1}+d_{2})=\dfrac{1}{2}(|MF|+|NF|)=\dfrac{1}{2}|MN|$，即$A$到直线$l$的距离等于$|MN|$的一半，所以以$MN$为直径的圆与直线$l$相切，C正确.
+D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的距离为$d=\dfrac{\sqrt{3}}{2}$，所以三角形$OMN$的面积为$\dfrac{1}{2}\times\dfrac{16}{3}\times\dfrac{\sqrt{3}}{2}=\dfrac{4\sqrt{3}}{3}$，由上述分析可知$y_{1}=-\sqrt{3}(3-1)=-2\sqrt{3}$，$y_{2}=-\sqrt{3}\left(\dfrac{1}{3}-1\right)=\dfrac{2\sqrt{3}}{3}$，所以$|OM|=\sqrt{3^{2}+(-2\sqrt{3})^{2}}=\sqrt{21}$，$|ON|=\sqrt{\left(\dfrac{1}{3}\right)^{2}+\left(\dfrac{2\sqrt{3}}{3}\right)^{2}}=\dfrac{\sqrt{13}}{3}$，所以三角形$OMN$不是等腰三角形，D错误.
+
+\textcolor{gray}{\footnotesize 题源：2023 年高考数学 新高考II卷第10题}
+\end{solution}
+\end{question}
+
+\begin{question}
+已知椭圆$C_1:\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$的右焦点$F$与抛物线$C_2$的焦点重合，$C_1$的中心与$C_2$的顶点重合.过$F$且与$x$轴垂直的直线交$C_1$于$A,B$两点，交$C_2$于$C,D$两点，且$|CD|=\dfrac43|AB|$.
+（1）求$C_1$的离心率；
+（2）设$M$是$C_1$与$C_2$的公共点，若$|MF|=5$，求$C_1$与$C_2$的标准方程.
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+  \draw[->] (-4.2,0) -- (4.5,0) node[right] {$x$};
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};
+  \draw[smooth,domain=0:360,samples=200] plot ({3*cos(\x)},{2.2*sin(\x)});
+  \draw[smooth,domain=-3.2:3.2,samples=200] plot ({(\x*\x)/4},{\x});
+  \fill (1.5,0) circle (1.2pt) node[below] {$F$};
+  \draw[dashed] (1.5,-3.0) -- (1.5,3.0);
+  \fill (1.5,1.903) circle (1.2pt) node[right] {$A$};
+  \fill (1.5,-1.903) circle (1.2pt) node[right] {$B$};
+  \fill (1.5,2.449) circle (1.2pt) node[right] {$C$};
+  \fill (1.5,-2.449) circle (1.2pt) node[right] {$D$};
+  \node at (2.8,2.55) {$x=c$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}（1）$\dfrac12$；（2）$C_1:\dfrac{x^2}{36}+\dfrac{y^2}{27}=1$，$C_2:y^2=12x$
+
+\textbf{详解：}（1）$\because F(c,0)$，$AB\perp x$轴且与椭圆$C_1$相交于$A,B$两点，则直线$AB$的方程为$x=c$，联立$\begin{cases}x=c\\\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\end{cases}$，解得$y=\pm\dfrac{b^2}{a}$，则$|AB|=\dfrac{2b^2}{a}$，抛物线$C_2$的方程为$y^2=4cx$，联立$\begin{cases}x=c\\y^2=4cx\end{cases}$，解得$y=\pm2c$，$\therefore |CD|=4c$，$\because CD=\dfrac43AB$，即$4c=\dfrac43\times\dfrac{2b^2}{a}$，$\therefore 2b^2=3ac$，即$2(a^2-c^2)=3ac$，即$2c^2+3ac-2a^2=0$，即$2e^2+3e-2=0$，$\because 0<e<1$，解得$e=\dfrac12$.
+（2）由（1）知$a=2c$，$b=\sqrt3c$，椭圆$C_1$的方程为$\dfrac{x^2}{4c^2}+\dfrac{y^2}{3c^2}=1$，联立$\begin{cases}y^2=4cx\\\dfrac{x^2}{4c^2}+\dfrac{y^2}{3c^2}=1\end{cases}$，消去$y$并整理得$3x^2+16cx-12c^2=0$，解得$x=\dfrac23c$或$x=-6c$（舍去），由抛物线的定义可得$|MF|=\dfrac23c+c=\dfrac{5c}{3}=5$，解得$c=3$，$\therefore$曲线$C_1$的标准方程为$\dfrac{x^2}{36}+\dfrac{y^2}{27}=1$，曲线$C_2$的标准方程为$y^2=12x$.
+
+\textcolor{gray}{\footnotesize 题源：2020 年高考数学 全国II卷-理科第19题}
+\end{solution}
+\end{question}
+
+\section{技巧52：焦点三角形离心率问题}
+
+\begin{question}
+双曲线$C$的两个焦点为$F_1, F_2$，以$C$的实轴为直径的圆记为$D$，过$F_1$作$D$的切线与$C$的两支交于$M, N$两点，且$\cos\angle F_1NF_2 = \frac{3}{5}$，则$C$的离心率为（\qquad）
+\begin{choices}
+\item $\frac{\sqrt{5}}{2}$
+\item $\frac{3}{2}$
+\item $\frac{\sqrt{13}}{2}$
+\item $\frac{\sqrt{17}}{2}$
+\end{choices}
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\coordinate (O) at (0,0);
+\coordinate (F1) at (-3,0);
+\coordinate (F2) at (3,0);
+\coordinate (A1) at (-1.6,0);
+\coordinate (A2) at (1.6,0);
+\coordinate (N) at (4.8,2.1);
+\coordinate (G) at (-1.6,1.2);
+\draw[thick] (O) circle (3);
+\draw[thick] (-4.8,-2.88) -- (4.8,2.88);
+\draw[thick] (-4.8,2.88) -- (4.8,-2.88);
+\draw[thick,samples=100,smooth,domain=-2.3:-1.62] plot (\x,{0.8*sqrt((\x*\x/2.56-1)*2.0)});
+\draw[thick,samples=100,smooth,domain=-2.3:-1.62] plot (\x,{-0.8*sqrt((\x*\x/2.56-1)*2.0)});
+\draw[thick,samples=100,smooth,domain=1.62:4.9] plot (\x,{0.8*sqrt((\x*\x/2.56-1)*2.0)});
+\draw[thick,samples=100,smooth,domain=1.62:4.9] plot (\x,{-0.8*sqrt((\x*\x/2.56-1)*2.0)});
+\draw[thick] (F1)--(N)--(F2);
+\draw[dashed] (O)--(G);
+\draw[dashed] (F1)--(G);
+\fill (F1) circle (1.4pt) node[below] {$F_1$};
+\fill (F2) circle (1.4pt) node[below] {$F_2$};
+\fill (A1) circle (1.2pt) node[below] {$A_1$};
+\fill (A2) circle (1.2pt) node[below] {$A_2$};
+\fill (N) circle (1.4pt) node[above] {$N$};
+\fill (O) circle (1.2pt) node[below right] {$O$};
+\fill (G) circle (1.2pt) node[left] {$G$};
+\node at (0,-0.45) {实轴};
+\draw (N)+(-160:0.5) arc[start angle=-160,end angle=-132,radius=0.5];
+\node at (4.05,1.92) {$\angle F_1NF_2$};
+\draw (G)+(-90:0.28) -- +(0:0.28) -- +(0:0.28)+(90:0.28);
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}C
+
+\textbf{详解：}解：依题意不妨设双曲线焦点在$x$轴，设过$F_1$作圆$D$的切线切点为$G$，\\所以$OG \perp NF_1$，因为$\cos\angle F_1NF_2 = \frac{3}{5} > 0$，所以$N$在双曲线的右支，\\所以$OG = a$，$OF_1 = c$，$GF_1 = b$，设$\angle F_1NF_2 = \alpha$，$\angle F_2F_1N = \beta$，\\由$\cos\angle F_1NF_2 = \frac{3}{5}$，即$\cos\alpha = \frac{3}{5}$，则$\sin\alpha = \frac{4}{5}$，$\sin\beta = \frac{a}{c}$，$\cos\beta = \frac{b}{c}$，\\在$\triangle F_2F_1N$中，$\sin\angle F_1F_2N = \sin(\pi-\alpha-\beta) = \sin(\alpha+\beta)$\\$= \sin\alpha\cos\beta + \cos\alpha\sin\beta = \frac{4}{5}\cdot\frac{b}{c} + \frac{3}{5}\cdot\frac{a}{c} = \frac{3a+4b}{5c}$，\\由正弦定理得$\frac{2c}{\sin\alpha} = \frac{NF_2}{\sin\beta} = \frac{NF_1}{\sin\angle F_1F_2N} = \frac{5c}{2}$，\\所以$NF_1 = \frac{5c}{2}\sin\angle F_1F_2N = \frac{5c}{2}\cdot\frac{3a+4b}{5c} = \frac{3a+4b}{2}$，$NF_2 = \frac{5c}{2}\sin\beta = \frac{5c}{2}\cdot\frac{a}{c} = \frac{5a}{2}$\\又$NF_1 - NF_2 = \frac{3a+4b}{2} - \frac{5a}{2} = \frac{4b-2a}{2} = 2a$，\\所以$2b = 3a$，即$\frac{b}{a} = \frac{3}{2}$，\\所以双曲线的离心率$e = \frac{c}{a} = \sqrt{1+\frac{b^2}{a^2}} = \frac{\sqrt{13}}{2}$.
+
+\textcolor{gray}{\footnotesize 题源：2022 年高考数学 全国乙卷-理科第11题}
+\end{solution}
+\end{question}
+
+\section{技巧53：焦比弦公式模型}
+
+\begin{question}
+已知椭圆 $C$ 的焦点为 $F_1(-1, 0)$, $F_2(1, 0)$，过 $F_2$ 的直线与 $C$ 交于 $A$, $B$ 两点．若 $|AF_2| = 2|F_2B|$, $|AB| = |BF_1|$, 则 $C$ 的方程为
+\begin{choices}
+\item $\frac{x^2}{2} + y^2 = 1$
+\item $\frac{x^2}{3} + \frac{y^2}{2} = 1$
+\item $\frac{x^2}{4} + \frac{y^2}{3} = 1$
+\item $\frac{x^2}{5} + \frac{y^2}{4} = 1$
+\end{choices}
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+  \draw[->] (-3.8,0) -- (3.8,0) node[right] {$x$};
+  \draw[->] (0,-2.6) -- (0,2.6) node[above] {$y$};
+  \draw[thick] (0,0) ellipse (3 and 2.2);
+  \fill (-1,0) circle (1.2pt) node[below] {$F_1$};
+  \fill (1,0) circle (1.2pt) node[below] {$F_2$};
+  \coordinate (A) at (-0.8,2.12);
+  \coordinate (B) at (2.55,-0.96);
+  \draw[thick] (A) -- (B);
+  \fill (A) circle (1.2pt) node[above left] {$A$};
+  \fill (B) circle (1.2pt) node[below right] {$B$};
+  \node at (1.0,1.1) {$|AF_2|=2|F_2B|$};
+  \node at (1.1,0.45) {$|AB|=|BF_1|$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}$B$
+
+\textbf{详解：}如图，由已知可设 $|F_2B| = n$，则 $|AF_2| = 2n$, $|BF_1| = |AB| = 3n$，由椭圆的定义有 $2a = |BF_1| + |BF_2| = 4n$, $\therefore |AF_1| = 2a - |AF_2| = 2n$．在 $\triangle AF_1B$ 中，由余弦定理推论得 $\cos \angle F_1AB = \frac{4n^2 + 9n^2 - 9n^2}{2 \cdot 2n \cdot 3n} = \frac{1}{3}$．在 $\triangle AF_1F_2$ 中，由余弦定理得 $4n^2 + 4n^2 - 2 \cdot 2n \cdot 2n \cdot \frac{1}{3} = 4$，解得 $n = \frac{\sqrt{3}}{2}$．$\therefore 2a = 4n = 2\sqrt{3}$, $\therefore a = \sqrt{3}$, $\therefore b^2 = a^2 - c^2 = 3 - 1 = 2$, $\therefore$ 所求椭圆方程为 $\frac{x^2}{3} + \frac{y^2}{2} = 1$，故选 $B$．
+
+\textcolor{gray}{\footnotesize 题源：2019 年高考数学 全国I卷-理科第10题}
+\end{solution}
+\end{question}
+
+\begin{question}
+设抛物线 $C: y^2 = 6x$ 的焦点为 $F$，过 $F$ 的直线交 $C$ 于 $A$、$B$，过 $F$ 且垂直于 $AB$ 的直线交 $l: x = -\frac{3}{2}$ 于 $E$，过点 $A$ 作准线 $l$ 的垂线，垂足为 $D$，则（ ）
+\begin{choices}
+\item $|AD| = |AF|$
+\item $|AE| = |AB|$
+\item $|AB| \ge 6$
+\item $|AE| \cdot |BE| \ge 18$
+\end{choices}
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+  \draw[->] (-2.2,0) -- (6.4,0) node[right] {$x$};
+  \draw[->] (0,-4.0) -- (0,4.0) node[above] {$y$};
+  \draw[thick,domain=-4.1:4.1,samples=160] plot ({\x*\x/6},{\x});
+  \draw[dashed] (-1.5,-3.8) -- (-1.5,3.8) node[above] {$l:x=-\dfrac{3}{2}$};
+  \fill (1.5,0) circle (1.2pt) node[below] {$F$};
+  \coordinate (A) at (0.167,-1.0);
+  \coordinate (B) at (5.167,5.0);
+  \draw[thick] (A) -- (B);
+  \fill (A) circle (1.1pt) node[below left] {$A$};
+  \fill (B) circle (1.1pt) node[above right] {$B$};
+  \draw[thick] (-0.7,1.833) -- (3.3,-1.5);
+  \fill (-1.5,-1.5) circle (1.1pt) node[left] {$E$};
+  \draw[dashed] (0.167,-1.0) -- (-1.5,-1.0);
+  \fill (-1.5,-1.0) circle (1.1pt) node[left] {$D$};
+  \node at (3.4,1.0) {$AB\perp FE$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}ACD
+
+\textbf{详解：}法一：对于 A，抛物线 $y^2=6x$，$p=3$，准线方程 $x=-\frac{3}{2}$，焦点 $F\left(\frac{3}{2},0\right)$，由抛物线定义，$|AD| = |AF|$，故 A 正确；对于 B，过点 $B$ 作准线垂线交于点 $P$，易证 $\triangle ADE \cong \triangle AFE$，$\triangle BEP \cong \triangle BEF$，则 $\angle AED = \angle AEF$，$\angle BEP = \angle BEF$，又 $\angle AED+\angle AEF+\angle BEP+\angle BEF=180^\circ$，所以 $\angle AEF+\angle BEF=90^\circ$，即 $\angle AEB=90^\circ$，$AB$ 为斜边，则 $|AE| < |AB|$，故 B 错误；对于 C，设直线 $AB$ 方程为 $x = my + \frac{3}{2}$，与 $y^2=6x$ 联立得 $y^2-6my-9=0$，$y_1+y_2=6m$，$y_1y_2=-9$，$|AB| = x_1+x_2+p = m(y_1+y_2)+3+3 = 6m^2+6 \ge 6$，当且仅当 $m=0$ 时取等号，故 C 正确；对于 D，在 $\triangle ABE$ 与 $\triangle AEF$ 中，$\angle BAE = \angle EAF$，所以 $\triangle ABE \sim \triangle AEF$，则 $\frac{AE}{AB} = \frac{AF}{AE}$，即 $AE^2 = AF \cdot AB$，同理 $BE^2 = BF \cdot AB$，$AF \cdot BF = (x_1+\frac{3}{2})(x_2+\frac{3}{2}) = (my_1+3)(my_2+3) = m^2 y_1 y_2 + 3m(y_1+y_2)+9 = -9m^2+18m^2+9 = 9(m^2+1)$，$AB = 6(m^2+1)$，则 $AE^2 \cdot BE^2 = BF \cdot AF \cdot AB^2 = 9(m^2+1) \times 36(m^2+1)^2$，所以 $AE \cdot BE = 3(m^2+1)^{\frac{1}{2}} \times 6(m^2+1) = 18(m^2+1)^{\frac{3}{2}} \ge 18$，故 D 正确. 故选：ACD. 法二：略.
+
+\textcolor{gray}{\footnotesize 题源：2025 年高考数学 全国I卷第10题}
+\end{solution}
+\end{question}
+
+\section{技巧54：圆锥曲线切线问题}
+
+\begin{question}
+已知椭圆 $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ($a > b > 0$) 的右焦点为 $F$，上顶点为 $B$，离心率为 $\frac{2\sqrt{5}}{5}$，且 $|BF| = \sqrt{5}$．
+（I）求椭圆的方程；
+（II）直线 $l$ 与椭圆有唯一的公共点 $M$，与 $y$ 轴的正半轴交于点 $N$，过 $N$ 与 $BF$ 垂直的直线交 $x$ 轴于点 $P$．若 $MP // BF$，求直线 $l$ 的方程．
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+  \draw[->] (-3.4,0) -- (3.6,0) node[right] {$x$};
+  \draw[->] (0,-1.8) -- (0,2.2) node[above] {$y$};
+  \draw[thick] (0,0) ellipse [x radius=2.236, y radius=1];
+  \coordinate (F) at (2,0);
+  \coordinate (B) at (0,1);
+  \coordinate (M) at (-1.6,0.6997);
+  \draw[thick] (-2.9,-0.92)--(0.2,1.56);
+  \draw[dashed] (0,0)--(F);
+  \draw[dashed] (0,0)--(B);
+  \fill (F) circle (1.4pt) node[below] {$F$};
+  \fill (B) circle (1.4pt) node[left] {$B$};
+  \fill (M) circle (1.4pt) node[above left] {$M$};
+  \node at (0,-1.35) {$\displaystyle \frac{x^2}{5}+y^2=1$};
+  \node at (-2.45,1.05) {$l$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}（I）$\frac{x^2}{5} + y^2 = 1$；（II）$x - y + \sqrt{6} = 0$
+
+\textbf{详解：}（I）$F(c,0)$，$B(0,b)$，$|BF| = \sqrt{c^2+b^2} = a = \sqrt{5}$，离心率 $e = \frac{c}{a} = \frac{2\sqrt{5}}{5}$，得 $c=2$，$b = \sqrt{a^2-c^2} = 1$，所以椭圆方程为 $\frac{x^2}{5} + y^2 = 1$；
+（II）设 $M(x_0,y_0)$ 为椭圆上一点，则椭圆在 $M$ 处的切线方程为 $\frac{x_0 x}{5} + y_0 y = 1$，令 $x=0$ 得 $N\left(0,\frac{1}{y_0}\right)$，$BF$ 斜率为 $k_{BF} = -\frac{b}{c} = -\frac{1}{2}$，则 $PN$ 方程为 $y = 2x + \frac{1}{y_0}$，令 $y=0$ 得 $P\left(-\frac{1}{2y_0},0\right)$，$k_{MP} = \frac{y_0}{x_0+\frac{1}{2y_0}} = \frac{2y_0^2}{2x_0 y_0+1}$，由 $MP // BF$ 得 $\frac{2y_0^2}{2x_0 y_0+1} = -\frac{1}{2}$，整理得 $(x_0+5y_0)^2=0$，所以 $x_0 = -5y_0$，代入椭圆方程得 $\frac{25y_0^2}{5}+y_0^2=6y_0^2=1$，$y_0 = \frac{\sqrt{6}}{6}$，$x_0 = -\frac{5\sqrt{6}}{6}$，所以直线 $l$ 方程为 $\frac{-\frac{5\sqrt{6}}{6}x}{5} + \frac{\sqrt{6}}{6}y = 1$，即 $x - y + \sqrt{6}=0$.
+
+\textcolor{gray}{\footnotesize 题源：2021 年高考数学 天津卷第18题}
+\end{solution}
+\end{question}
+
+\section{技巧55：离心率的渐近线倾斜角模型}
+
+\begin{question}
+双曲线 $C: \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ ($a>0,b>0$) 的一条渐近线的倾斜角为 130°，则 $C$ 的离心率为
+\begin{choices}
+\item $2\sin40°$
+\item $2\cos40°$
+\item $\frac{1}{\sin50°}$
+\item $\frac{1}{\cos50°}$
+\end{choices}
+\begin{solution}
+\textbf{答案：}D
+
+\textbf{详解：}由已知可得 $-\frac{b}{a} = \tan130°$，$\Rightarrow \frac{b}{a} = \tan50°$，$\Rightarrow e = \frac{c}{a} = \sqrt{1+\left(\frac{b}{a}\right)^2} = \sqrt{1+\tan^2 50°} = \sqrt{1+\frac{\sin^2 50°}{\cos^2 50°}} = \sqrt{\frac{\sin^2 50°+\cos^2 50°}{\cos^2 50°}} = \frac{1}{\cos50°}$，故选 D。
+
+\textcolor{gray}{\footnotesize 题源：2019 年高考数学 全国I卷-文科第10题}
+\end{solution}
+\end{question}
+
+\begin{question}
+设双曲线 $C:\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\ (a>0,b>0)$ 的一条渐近线为 $y=\sqrt{2}x$，则 $C$ 的离心率为
+\begin{solution}
+\textbf{答案：}$\sqrt{3}$
+
+\textbf{详解：}由双曲线方程可得其焦点在 $x$ 轴上，因为其一条渐近线为 $y=\sqrt{2}x$，所以 $\frac{b}{a}=\sqrt{2}$，$e=\frac{c}{a}=\sqrt{1+\frac{b^2}{a^2}}=\sqrt{3}$.
+
+\textcolor{gray}{\footnotesize 题源：2020 年高考数学 全国III卷-文科第14题}
+\end{solution}
+\end{question}
+
+\begin{question}
+已知双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1(a>0,b>0)$的离心率为$2$，则该双曲线的渐近线方程为\underline{\hspace{3cm}}
+\begin{solution}
+\textbf{答案：}$y=\pm\sqrt{3}x$
+
+\textbf{详解：}因为双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1(a>0,b>0)$的离心率为$2$，所以$e^2=\frac{c^2}{a^2}=\frac{a^2+b^2}{a^2}=2$，所以$\frac{b^2}{a^2}=3$，所以该双曲线的渐近线方程为$y=\pm\frac{b}{a}x=\pm\sqrt{3}x$.故答案为：$y=\pm\sqrt{3}x$.
+
+\textcolor{gray}{\footnotesize 题源：2021 年高考数学 新高考II卷第13题}
+\end{solution}
+\end{question}
+
+\section{技巧56：超级韦达定理}
+
+\begin{question}
+已知椭圆 $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a>b>0)$ 的离心率 $e=\frac{1}{2}$. 左顶点为 $A$, 下顶点为 $B$, $C$ 是线段 $OB$ 的中点, 其中 $S_{\triangle ABC}=\frac{3\sqrt{3}}{2}$.
+(1) 求椭圆方程.
+(2) 过点 $(0,-\frac{3}{2})$ 的动直线与椭圆有两个交点 $P$, $Q$. 在 $y$ 轴上是否存在点 $T$ 使得 $\overrightarrow{TP}\cdot\overrightarrow{TQ}\leq 0$ 恒成立. 若存在求出这个 $T$ 点纵坐标的取值范围, 若不存在请说明理由.
+\begin{solution}
+\textbf{答案：}(1) $\frac{x^2}{12}+\frac{y^2}{9}=1$; (2) 存在 $T(0,t)$ 且 $-3\leq t\leq \frac{3}{2}$, 使得 $\overrightarrow{TP}\cdot\overrightarrow{TQ}\leq 0$ 恒成立.
+
+\textbf{详解：}(1) 因为 $e=\frac{1}{2}$, 故 $a=2c$, $b=\sqrt{3}c$. 所以 $A(-2c,0)$, $B(0,-\sqrt{3}c)$, $C(0,-\frac{\sqrt{3}}{2}c)$. $S_{\triangle ABC}=\frac{1}{2}\times 2c\times \frac{\sqrt{3}}{2}c=\frac{\sqrt{3}}{2}c^2=\frac{3\sqrt{3}}{2}$, 解得 $c=\sqrt{3}$, 所以 $a=2\sqrt{3}$, $b=3$, 故椭圆方程为 $\frac{x^2}{12}+\frac{y^2}{9}=1$.
+(2) 设过点 $(0,-\frac{3}{2})$ 的动直线方程为 $y=kx-\frac{3}{2}$, $P(x_1,y_1)$, $Q(x_2,y_2)$, $T(0,t)$. 联立 $\begin{cases} 3x^2+4y^2=36 \\ y=kx-\frac{3}{2} \end{cases}$, 得 $(3+4k^2)x^2-12kx-27=0$, $\Delta>0$, $x_1+x_2=\frac{12k}{3+4k^2}$, $x_1x_2=-\frac{27}{3+4k^2}$. $\overrightarrow{TP}=(x_1,y_1-t)$, $\overrightarrow{TQ}=(x_2,y_2-t)$. $\overrightarrow{TP}\cdot\overrightarrow{TQ}=x_1x_2+(y_1-t)(y_2-t)=x_1x_2+(kx_1-\frac{3}{2}-t)(kx_2-\frac{3}{2}-t)=(1+k^2)x_1x_2-k(\frac{3}{2}+t)(x_1+x_2)+(\frac{3}{2}+t)^2$. 代入韦达定理, 得 $\frac{[(3+2t)^2-12t-45]k^2+3(\frac{3}{2}+t)^2-27}{3+4k^2}$. 要使 $\overrightarrow{TP}\cdot\overrightarrow{TQ}\leq 0$ 恒成立, 需 $\begin{cases} (3+2t)^2-12t-45\leq 0 \\ 3(\frac{3}{2}+t)^2-27\leq 0 \end{cases}$, 解得 $-3\leq t\leq \frac{3}{2}$. 当斜率不存在时, 直线为 $x=0$, 与椭圆交于 $(0,3)$, $(0,-3)$, 此时需 $-3\leq t\leq 3$, 结合得 $-3\leq t\leq \frac{3}{2}$. 综上, 存在 $T(0,t)$ 且 $-3\leq t\leq \frac{3}{2}$, 使得 $\overrightarrow{TP}\cdot\overrightarrow{TQ}\leq 0$ 恒成立.
+
+\textcolor{gray}{\footnotesize 题源：2024 年高考数学 天津卷第18题}
+\end{solution}
+\end{question}
+
+\begin{question}
+已知点$M(-1,1)$和抛物线$C:y^2=4x$，过$C$的焦点且斜率为$k$的直线与$C$交于$A$，$B$两点．若$\angle AMB=90^\circ$，则$k=$\underline{\hspace{3cm}}．
+\begin{solution}
+\textbf{答案：}$2$
+
+\textbf{详解：}焦点$F(1,0)$，设直线$AB:y=k(x-1)$，联立$\begin{cases}y=k(x-1)\\y^2=4x\end{cases}$得$k^2x^2-2(2+k^2)x+k^2=0$，设$A(x_1,y_1)$，$B(x_2,y_2)$，则$x_1+x_2=\frac{2(2+k^2)}{k^2}$，$x_1x_2=1$，$y_1+y_2=k(x_1+x_2-2)=\frac{4}{k}$，$y_1y_2=k^2(x_1-1)(x_2-1)=k^2[x_1x_2-(x_1+x_2)+1]=-4$，$\because \angle AMB=90^\circ$，$\overrightarrow{MA}\cdot\overrightarrow{MB}=0$，即$(x_1+1)(x_2+1)+(y_1-1)(y_2-1)=0$，整理得$x_1x_2+(x_1+x_2)+y_1y_2-(y_1+y_2)+2=0$，代入得$1+\frac{2(2+k^2)}{k^2}-4-\frac{4}{k}+2=0$，解得$k=2$．
+
+\textcolor{gray}{\footnotesize 题源：2018 年高考数学 全国III卷-理科第16题}
+\end{solution}
+\end{question}
+
+\section{技巧57：非对称处理}
+
+\begin{question}
+已知双曲线$C$的中心为坐标原点，左焦点为$(-2\sqrt{5},0)$，离心率为$\sqrt{5}$．
+（1）求$C$的方程；
+（2）记$C$的左、右顶点分别为$A_{1}$，$A_{2}$，过点$(-4,0)$的直线与$C$的左支交于$M$，$N$两点，$M$在第二象限，直线$MA_{1}$与$NA_{2}$交于点$P$．证明:点$P$在定直线上.
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  \draw[->] (-6,0) -- (6,0) node[right] {$x$};
+  \draw[->] (0,-5) -- (0,5) node[above] {$y$};
+  \draw[smooth,domain=-5.2:-2.05,samples=200] plot(\x,{sqrt((\x*\x/4-1)*16)});
+  \draw[smooth,domain=-5.2:-2.05,samples=200] plot(\x,{-sqrt((\x*\x/4-1)*16)});
+  \draw[smooth,domain=2.05:5.2,samples=200] plot(\x,{sqrt((\x*\x/4-1)*16)});
+  \draw[smooth,domain=2.05:5.2,samples=200] plot(\x,{-sqrt((\x*\x/4-1)*16)});
+  \draw[dashed] (-4,-4.5) -- (-4,4.5);
+  \coordinate (A1) at (-2,0);
+  \coordinate (A2) at (2,0);
+  \coordinate (M) at (-4.4,3.2);
+  \coordinate (N) at (-3.0,-2.0);
+  \coordinate (P) at (-4,0.8);
+  \draw[thick] (-5.1,4.32) -- (-2.65,-1.8);
+  \draw[thick] (A1) -- (M);
+  \draw[thick] (A2) -- (N);
+  \fill (A1) circle (1.5pt) node[below] {$A_1$};
+  \fill (A2) circle (1.5pt) node[below] {$A_2$};
+  \fill (M) circle (1.5pt) node[above left] {$M$};
+  \fill (N) circle (1.5pt) node[below left] {$N$};
+  \fill (P) circle (1.5pt) node[above left] {$P$};
+  \node at (-4.55,-4.1) {$x=my-4$};
+  \node[right] at (-4,0.8) {$P\in x=-4$};
+\end{tikzpicture}
+\end{center}
+\begin{solution}
+\textbf{答案：}（1）$\dfrac{x^{2}}{4}-\dfrac{y^{2}}{16}=1$；（2）证明见解析.
+
+\textbf{详解：}（1）设双曲线方程为$\dfrac{x^{2}}{a^{2}}-\dfrac{y^{2}}{b^{2}}=1(a>0,b>0)$，由焦点坐标可知$c=2\sqrt{5}$，则由$e=\dfrac{c}{a}=\sqrt{5}$可得$a=2$，$b=\sqrt{c^{2}-a^{2}}=4$，双曲线方程为$\dfrac{x^{2}}{4}-\dfrac{y^{2}}{16}=1$.
+（2）由(1)可得$A_{1}(-2,0)$，$A_{2}(2,0)$，设$M(x_{1},y_{1})$，$N(x_{2},y_{2})$，显然直线的斜率不为$0$，所以设直线$MN$的方程为$x=my-4$，且$-\dfrac{1}{2}<m<\dfrac{1}{2}$，与$\dfrac{x^{2}}{4}-\dfrac{y^{2}}{16}=1$联立可得$(4m^{2}-1)y^{2}-32my+48=0$，且$\Delta=64(4m^{2}+3)>0$，则$y_{1}+y_{2}=\dfrac{32m}{4m^{2}-1}$，$y_{1}y_{2}=\dfrac{48}{4m^{2}-1}$，直线$MA_{1}$的方程为$y=\dfrac{y_{1}}{x_{1}+2}(x+2)$，直线$NA_{2}$的方程为$y=\dfrac{y_{2}}{x_{2}-2}(x-2)$，联立直线$MA_{1}$与直线$NA_{2}$的方程可得：$\dfrac{x+2}{x-2}=\dfrac{y_{2}(x_{1}+2)}{y_{1}(x_{2}-2)}=\dfrac{y_{2}(my_{1}-2)}{y_{1}(my_{2}-6)}=\dfrac{my_{1}y_{2}-2y_{1}}{my_{1}y_{2}-6y_{1}}=\dfrac{m\cdot\dfrac{48}{4m^{2}-1}-2y_{1}}{m\cdot\dfrac{48}{4m^{2}-1}-6y_{1}}=\dfrac{\dfrac{48m}{4m^{2}-1}-2y_{1}}{\dfrac{48m}{4m^{2}-1}-6y_{1}}=\dfrac{\dfrac{48m}{4m^{2}-1}-2y_{1}}{\dfrac{48m}{4m^{2}-1}-6y_{1}}$，由$y_{1}+y_{2}=\dfrac{32m}{4m^{2}-1}$可得$\dfrac{48m}{4m^{2}-1}=2\cdot\dfrac{16m}{4m^{2}-1}+\dfrac{16m}{4m^{2}-1}=\dfrac{1}{2}(y_{1}+y_{2})+\dfrac{16m}{4m^{2}-1}$，代入得$\dfrac{x+2}{x-2}=\dfrac{\dfrac{1}{2}(y_{1}+y_{2})+\dfrac{16m}{4m^{2}-1}-2y_{1}}{\dfrac{1}{2}(y_{1}+y_{2})+\dfrac{16m}{4m^{2}-1}-6y_{1}}=\dfrac{-\dfrac{3}{2}y_{1}+\dfrac{1}{2}y_{2}+\dfrac{16m}{4m^{2}-1}}{-\dfrac{11}{2}y_{1}+\dfrac{1}{2}y_{2}+\dfrac{16m}{4m^{2}-1}}$，又$y_{2}=\dfrac{32m}{4m^{2}-1}-y_{1}$，代入得$\dfrac{x+2}{x-2}=\dfrac{-\dfrac{3}{2}y_{1}+\dfrac{1}{2}(\dfrac{32m}{4m^{2}-1}-y_{1})+\dfrac{16m}{4m^{2}-1}}{-\dfrac{11}{2}y_{1}+\dfrac{1}{2}(\dfrac{32m}{4m^{2}-1}-y_{1})+\dfrac{16m}{4m^{2}-1}}=\dfrac{-2y_{1}+\dfrac{32m}{4m^{2}-1}}{-6y_{1}+\dfrac{32m}{4m^{2}-1}}=\dfrac{2(-y_{1}+\dfrac{16m}{4m^{2}-1})}{6(-y_{1}+\dfrac{16m}{4m^{2}-1})}=\dfrac{1}{3}$，即$\dfrac{x+2}{x-2}=\dfrac{1}{3}$，解得$x=-4$，故点$P$在定直线$x=-4$上.
+
+\textcolor{gray}{\footnotesize 题源：2023 年高考数学 新高考II卷第21题}
+\end{solution}
+\end{question}
+
+\begin{question}
+已知椭圆$E$的中心为坐标原点，对称轴为$x$轴、$y$轴，且过$A(0,-2), B\left(\frac{3}{2},-1\right)$两点．
+(1)求$E$的方程；
+(2)设过点$P(1,-2)$的直线交$E$于$M,N$两点，过$M$且平行于$x$轴的直线与线段$AB$交于点$T$，点$H$满足$\overrightarrow{MT}=\overrightarrow{TH}$．证明：直线$HN$过定点．
+\begin{solution}
+\textbf{答案：}(1) $\frac{y^2}{4}+\frac{x^2}{3}=1$
+(2) $(0,-2)$
+
+\textbf{详解：}【小问1详解】\\解：设椭圆E的方程为$mx^2+ny^2=1$，过$A(0,-2), B\left(\frac{3}{2},-1\right)$，\\则$\begin{cases} 4n=1 \\ \frac{9}{4}m+n=1 \end{cases}$，解得$m=\frac{1}{3}, n=\frac{1}{4}$，\\所以椭圆E的方程为：$\frac{y^2}{4}+\frac{x^2}{3}=1$.\\【小问2详解】\\$A(0,-2), B(\frac{3}{2},-1)$，所以$AB: y+2 = \frac{2}{3}x$，\\(1)若过点$P(1,-2)$的直线斜率不存在，直线$x=1$.代入$\frac{x^2}{3}+\frac{y^2}{4}=1$，\\可得$M\left(1,\frac{2\sqrt{6}}{3}\right), N\left(1,-\frac{2\sqrt{6}}{3}\right)$，代入AB方程$y=\frac{2}{3}x-2$，可得\\$T\left(\sqrt{6}+3,\frac{2\sqrt{6}}{3}\right)$，由$\overrightarrow{MT}=\overrightarrow{TH}$得到$H\left(2\sqrt{6}+5,\frac{2\sqrt{6}}{3}\right)$.求得HN方程：$y=\left(2-\frac{2\sqrt{6}}{3}\right)x-2$，过点$(0,-2)$.\\(2)若过点$P(1,-2)$的直线斜率存在，设$kx-y-(k+2)=0, M(x_1,y_1), N(x_2,y_2)$.\\联立$\begin{cases} kx-y-(k+2)=0 \\ \frac{x^2}{3}+\frac{y^2}{4}=1 \end{cases}$，得$(3k^2+4)x^2 - 6k(2+k)x + 3k(k+4)=0$，\\可得$\begin{cases} x_1+x_2 = \frac{6k(2+k)}{3k^2+4} \\ x_1x_2 = \frac{3k(4+k)}{3k^2+4} \end{cases}$，$\begin{cases} y_1+y_2 = \frac{-8(2+k)}{3k^2+4} \\ y_1y_2 = \frac{4(4+4k-2k^2)}{3k^2+4} \end{cases}$，\\且$x_1y_2+x_2y_1 = \frac{-24k}{3k^2+4}$ (*)\\联立$\begin{cases} y=y_1 \\ y=\frac{2}{3}x-2 \end{cases}$，可得$T\left(\frac{3y_1}{2}+3, y_1\right), H(3y_1+6-x_1, y_1)$.\\可求得此时$HN: y-y_2 = \frac{y_1-y_2}{3y_1+6-x_1-x_2}(x-x_2)$，\\将$(0,-2)$代入整理得$2(x_1+x_2)-6(y_1+y_2)+x_1y_2+x_2y_1-3y_1y_2-12=0$，\\将(*)代入，得$24k+12k^2+96+48k-24k-48-48k+24k^2-36k^2-48=0$，显然成立，\\综上，可得直线HN过定点$(0,-2)$.
+
+\textcolor{gray}{\footnotesize 题源：2022 年高考数学 全国乙卷-理科第20题}
+\end{solution}
+\end{question}

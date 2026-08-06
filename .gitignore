@@ -22,8 +22,12 @@ __pycache__/
 *.py[cod]
 ~$*
 deepseek_api_key.md
+APIKEY
+DeepSeekAPI
 
 # Reproducible OCR and visual-QA intermediates for the conic image import.
 /题目积累/圆锥曲线/图片资料整理/pages/
 /题目积累/圆锥曲线/图片资料整理/qa/
 /题目积累/圆锥曲线/图片资料整理/import_reports/
+/题目积累/圆锥曲线/图片资料整理/revision_work/
+/tmp/

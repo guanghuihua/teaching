@@ -1,0 +1,534 @@
+{
+  "model": "gpt-5.4",
+  "source_policy": "gaokao_local_json_exact_text",
+  "technique_count": 15,
+  "selected_question_count": 39,
+  "results": [
+    {
+      "technique_number": 43,
+      "clean_title": "隐圆：几何法与代数法",
+      "summary_tex": "隐圆问题的关键，不在于题目明说“圆”，而在于先把条件化成熟悉的圆的判定形式，再调用圆的性质求解。常见入口有两类：\n\n一类是\\textbf{比值型轨迹}：若点 $P$ 满足到两定点 $A,B$ 的距离之比为定值 $\\lambda$，即\n\\[\n\\frac{|PA|}{|PB|}=\\lambda\\quad(\\lambda>0,\\ \\lambda\\ne 1),\n\\]\n则点 $P$ 的轨迹是阿波罗尼斯圆；当 $\\lambda=1$ 时，轨迹退化为线段 $AB$ 的中垂线。\n\n另一类是\\textbf{圆锥曲线中转化出圆}：题目虽从椭圆、抛物线、向量或斜率关系切入，但经过代换、消元、配方或参数化后，轨迹方程化为\n\\[\nx^2+y^2+Dx+Ey+F=0,\n\\]\n或等价地化为\n\\[\n(x-a)^2+(y-b)^2=r^2,\n\\]\n这时就应立即识别为圆，再用圆心、半径、弦、切线、最值等工具处理。\n\n从解题方式看，\\textbf{几何法}强调从垂直、对称、定比、定长中直接识别圆；\\textbf{代数法}强调设点坐标、列式、化简、配方，最终把轨迹写成标准圆方程。",
+      "method_steps_tex": [
+        "先判断题目中是否存在“隐含的圆条件”：如到两定点距离之比为定值、由圆锥曲线经过线性变换后出现 $x^2+y^2$、或由垂直关系可导出直角从而落到圆上。",
+        "若出现距离比条件，优先考虑阿波罗尼斯圆：设点坐标，平方去根号后整理；若能直接调用结论，则直接写出轨迹是圆。",
+        "若题目来自椭圆、抛物线、双曲线背景，不急于死算，先看能否把已知关系改写成轨迹方程；一旦得到二元二次式，就检查 $x^2,y^2$ 的系数是否相等，并及时配方。",
+        "若已得到圆方程 $(x-a)^2+(y-b)^2=r^2$，立即提取圆心与半径，再转入圆的常规问题：距离最值、直线与圆位置关系、弦长、切线等。",
+        "若是证明题，可反向使用圆的等价判定：如证明某点在以 $AB$ 为直径的圆上，只需证 $\\angle APB=90^\\circ$；若要证明某轨迹为圆，只需证到某定点距离为定值，或方程可化为标准圆方程。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=1]\n  \\coordinate (A) at (-3,0);\n  \\coordinate (B) at (2,0);\n  \\coordinate (O) at (-1.3333333333,0);\n  \\coordinate (P) at (-0.4,1.4944341181);\n  \\draw[->] (-4.2,0) -- (3.2,0) node[right] {$x$};\n  \\draw[->] (0,-2.2) -- (0,2.6) node[above] {$y$};\n  \\draw (O) circle [radius=1.6666666667];\n  \\draw[dashed] (A) -- (P) -- (B);\n  \\fill (A) circle (1.2pt) node[below] {$A$};\n  \\fill (B) circle (1.2pt) node[below] {$B$};\n  \\fill (O) circle (1.2pt) node[below] {$O$};\n  \\fill (P) circle (1.2pt) node[above] {$P$};\n  \\node at (-0.9,1.9) {$\\dfrac{|PA|}{|PB|}=\\lambda\\ (\\lambda\\ne 1)$};\n  \\node at (-1.2,-1.5) {阿波罗尼斯圆};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2017-全国II卷-理科::20",
+          "match_reason_tex": "这道题与“隐圆”高度契合。题面出发点是椭圆 $C:\\dfrac{x^2}{2}+y^2=1$ 上的点 $M$，再由向量关系 $\\overrightarrow{NP}=\\sqrt{2}\\overrightarrow{NM}$ 定义点 $P$，题目并没有直接出现圆的信息；但在第（1）问中，设 $M(x_0,y_0),P(x,y)$ 后可得 $x=x_0,\\ y=\\sqrt{2}y_0$，代回椭圆方程立即化为\n\\[\n\\frac{x^2}{2}+\\frac{y^2}{2}=1\\quad\\Longleftrightarrow\\quad x^2+y^2=2.\n\\]\n于是隐藏的轨迹其实是一个圆。这正体现了本技巧中的“代数法识别隐圆”：由非圆背景中的点、向量、椭圆条件，经代换消元后显出圆方程。后续第（2）问再围绕这个圆展开，说明识别出圆是解题的核心转折。",
+          "question_tikz": ""
+        },
+        {
+          "id": "2025-全国I卷::18",
+          "match_reason_tex": "这道题虽以椭圆与线段乘积条件为背景，但第（2）问本质上也是典型的“隐圆”转化。由 $AR\\cdot AP=3$ 及斜率条件 $k_{OR}=3k_{OP}$，解析中最终推出\n\\[\nm^2+n^2+8n-2=0,\n\\]\n即\n\\[\nm^2+(n+4)^2=18.\n\\]\n这说明动点 $P$ 的轨迹实际上是一个圆，只是题面并未直接给出。它很好地体现了本技巧中的另一条主线：在较复杂的解析几何关系中，通过坐标表示、代数化简、配方，把隐含轨迹还原为圆，再借助圆的几何意义处理最值。与前一题相比，这题更能体现“先代数显圆，再几何用圆”的完整思路。",
+          "question_tikz": ""
+        }
+      ],
+      "review_notes": [
+        "候选题中没有直接出现“到两定点距离之比为定值”的高考真题，也没有直接考查“椭圆两条互相垂直的切线交点轨迹”为蒙日圆的题目，因此未机械套用原摘录中的两个固定场景。",
+        "本次选题遵循“必须与技巧有实质对应”的要求，优先选取了能够通过代换、消元、配方把非圆背景转化为圆轨迹的真题。",
+        "原摘录中阿波罗尼斯圆半径公式处存在 OCR 风险；讲义表述时宜写成经配方得到标准式，再读取圆心、半径，以避免符号歧义。"
+      ]
+    },
+    {
+      "technique_number": 44,
+      "clean_title": "圆锥曲线第一定义",
+      "summary_tex": "圆锥曲线第一定义的核心是把“数量关系”直接识别为“轨迹特征”。\n\n椭圆：平面内到两个定点 $F_1,F_2$ 的距离之和等于常数 $2a$ 的点的轨迹；当且仅当 $2a>|F_1F_2|$ 时，轨迹是椭圆。\n\\[\nP=\\{M\\mid |MF_1|+|MF_2|=2a\\},\\quad |F_1F_2|=2c,\n\\]\n其中 $a>c>0$.\n\n双曲线：平面内到两个定点 $F_1,F_2$ 的距离差的绝对值等于正常数 $2a$ 的点的轨迹；当且仅当 $0<2a<|F_1F_2|$ 时，轨迹是双曲线。\n\\[\nP=\\{M\\mid \\bigl||MF_1|-|MF_2|\\bigr|=2a\\},\\quad |F_1F_2|=2c,\n\\]\n其中 $0<a<c$.\n\n抛物线：平面内到一个定点 $F$ 与一条定直线 $l$ 的距离相等的点的轨迹。\n\\[\nP=\\{M\\mid |MF|=d(M,l)\\},\n\\]\n其中 $d(M,l)$ 表示点 $M$ 到直线 $l$ 的距离，且 $F\\notin l$.\n\n因此，解题时若题目出现“距离之和为定值”“距离之差为定值”“到定点与定直线距离相等”等信息，应优先联想到圆锥曲线第一定义，再由焦点、焦距、离心率或标准方程继续求解。",
+      "method_steps_tex": [
+        "先把题目中的根式、线段长、点到直线距离等量，翻译成“点到定点”或“点到定直线”的距离。",
+        "若出现 $|MF_1|+|MF_2|=\\text{常数}$，先比较该常数与 $|F_1F_2|$：大于时判定为椭圆；等于时为线段；小于时无轨迹。",
+        "若出现 $\\bigl||MF_1|-|MF_2|\\bigr|=\\text{常数}$，先比较该常数与 $|F_1F_2|$：小于时判定为双曲线；等于时为两条射线；大于时无轨迹。",
+        "若出现 $|MF|=d(M,l)$，直接判定轨迹为抛物线，并确认定点是焦点、定直线是准线。",
+        "判定出曲线类型后，再由焦点坐标求 $c$，由定义中的常数求 $a$，最后用 $b^2=a^2-c^2$（椭圆）或 $b^2=c^2-a^2$（双曲线）写出标准方程。",
+        "若题目要求“求轨迹”，结论应写完整：既要给出方程，也要说明该方程表示的曲线名称。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=0.9,>=stealth]\n  % Ellipse\n  \\draw[->] (-5.2,0) -- (-0.8,0);\n  \\draw[->] (-3, -2.2) -- (-3,2.2);\n  \\draw[thick] (-3,0) ellipse (1.7 and 1.1);\n  \\fill (-3.8,0) circle (1.2pt) node[below] {$F_1$};\n  \\fill (-2.2,0) circle (1.2pt) node[below] {$F_2$};\n  \\fill (-2.0,0.65) circle (1.2pt) node[right] {$M$};\n  \\draw (-2.0,0.65) -- (-3.8,0);\n  \\draw (-2.0,0.65) -- (-2.2,0);\n  \\node at (-3,-1.8) {$|MF_1|+|MF_2|=2a$};\n\n  % Hyperbola\n  \\draw[->] (0.2,0) -- (4.8,0);\n  \\draw[->] (2.5,-2.2) -- (2.5,2.2);\n  \\draw[thick,domain=-1.4:-0.45,samples=120,smooth] plot ({2.5+\\x},{0.9*sqrt(\\x*\\x/0.45/0.45-1)});\n  \\draw[thick,domain=-1.4:-0.45,samples=120,smooth] plot ({2.5+\\x},{-0.9*sqrt(\\x*\\x/0.45/0.45-1)});\n  \\draw[thick,domain=0.45:1.4,samples=120,smooth] plot ({2.5+\\x},{0.9*sqrt(\\x*\\x/0.45/0.45-1)});\n  \\draw[thick,domain=0.45:1.4,samples=120,smooth] plot ({2.5+\\x},{-0.9*sqrt(\\x*\\x/0.45/0.45-1)});\n  \\fill (1.7,0) circle (1.2pt) node[below] {$F_1$};\n  \\fill (3.3,0) circle (1.2pt) node[below] {$F_2$};\n  \\fill (3.55,1.0) circle (1.2pt) node[right] {$M$};\n  \\draw (3.55,1.0) -- (1.7,0);\n  \\draw (3.55,1.0) -- (3.3,0);\n  \\node at (2.5,-1.8) {$\\bigl||MF_1|-|MF_2|\\bigr|=2a$};\n\n  % Parabola\n  \\draw[->] (6.0,0) -- (10.4,0);\n  \\draw[->] (8.2,-2.2) -- (8.2,2.2);\n  \\draw[thick,domain=-1.5:1.5,samples=120,smooth] plot ({7.1+0.55*\\x*\\x},{\\x});\n  \\draw[dashed] (6.6,-2) -- (6.6,2) node[above] {$l$};\n  \\fill (7.6,0) circle (1.2pt) node[below] {$F$};\n  \\fill (7.6,1.05) circle (1.2pt) node[right] {$M$};\n  \\draw (7.6,1.05) -- (7.6,0);\n  \\draw[dashed] (7.6,1.05) -- (6.6,1.05);\n  \\node at (8.3,-1.8) {$|MF|=d(M,l)$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2016-全国I卷-理科::20",
+          "match_reason_tex": "第（Ⅰ）问先证明 $|EA|+|EB|$ 为定值，再写出点 $E$ 的轨迹方程，这正是椭圆第一定义的直接应用：由两定点 $A,B$ 到动点 $E$ 的距离之和为常数，立即判断轨迹为以 $A,B$ 为焦点的椭圆。该题与本技巧的对应最直接、最完整，不仅有“识别定义”，还有“由定义写标准方程”的完整链条。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.9,>=stealth]\n  \\draw[->] (-5,0) -- (3,0) node[right] {$x$};\n  \\draw[->] (0,-1) -- (0,4.5) node[above] {$y$};\n  \\draw[thick] (-1,0) circle (2);\n  \\fill (-1,0) circle (1.2pt) node[below] {$A$};\n  \\fill (1,0) circle (1.2pt) node[below] {$B$};\n  \\draw[thick] (0,0) ellipse (2 and 1.73);\n  \\fill (0.2,1.55) circle (1.2pt) node[above] {$E$};\n  \\draw (0.2,1.55)--(-1,0);\n  \\draw (0.2,1.55)--(1,0);\n  \\node at (0,-2.4) {$|EA|+|EB|=4$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2021-上海春季卷::19",
+          "match_reason_tex": "题干中先后出现 $|PA|-|PB|=20$ 与 $|QA|-|QB|=30$、$|QC|-|QD|=10$，都是“到两个定点的距离差为定值”，这正对应双曲线第一定义。该题的价值在于：不需要先代数化简，只需先识别出轨迹类型，再由焦点位置与常数确定双曲线方程，能突出“看到距离差定值就想双曲线”的方法意识。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.9,>=stealth]\n  \\draw[->] (-3.5,0) -- (3.5,0) node[right] {$x$};\n  \\draw[->] (0,-2.8) -- (0,2.8) node[above] {$y$};\n  \\draw[thick,domain=-3:-1.05,samples=120,smooth] plot (\\x,{0.9*sqrt(\\x*\\x-1)});\n  \\draw[thick,domain=-3:-1.05,samples=120,smooth] plot (\\x,{-0.9*sqrt(\\x*\\x-1)});\n  \\draw[thick,domain=1.05:3,samples=120,smooth] plot (\\x,{0.9*sqrt(\\x*\\x-1)});\n  \\draw[thick,domain=1.05:3,samples=120,smooth] plot (\\x,{-0.9*sqrt(\\x*\\x-1)});\n  \\fill (-2,0) circle (1.2pt) node[below] {$A$};\n  \\fill (2,0) circle (1.2pt) node[below] {$B$};\n  \\draw[dashed] (1.8,0)--(1.2,2.08);\n  \\draw[dashed] (-1.8,0)--(1.2,2.08);\n  \\fill (1.2,2.08) circle (1.2pt) node[right] {$P$};\n  \\node at (0,-2.3) {$\\bigl||PA|-|PB|\\bigr|=20$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2019-全国II卷-文科::20",
+          "match_reason_tex": "本题两问都紧扣椭圆焦点定义。第（1）问直接用椭圆上点满足 $|PF_1|+|PF_2|=2a$；第（2）问在 $PF_1\\perp PF_2$ 的条件下，仍需结合椭圆第一定义处理焦点三角形中的长度关系。它不是单纯“判轨迹”，而是把第一定义作为椭圆性质来用，能体现本技巧在综合题中的深层作用。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.95,>=stealth]\n  \\draw[->] (-4,0) -- (4,0) node[right] {$x$};\n  \\draw[->] (0,-2.6) -- (0,2.6) node[above] {$y$};\n  \\draw[thick] (0,0) ellipse (3 and 2);\n  \\fill (-1.8,0) circle (1.2pt) node[below] {$F_1$};\n  \\fill (1.8,0) circle (1.2pt) node[below] {$F_2$};\n  \\fill (0.9,1.9) circle (1.2pt) node[above] {$P$};\n  \\draw (-1.8,0)--(0.9,1.9);\n  \\draw (1.8,0)--(0.9,1.9);\n  \\draw (0.56,1.66)--(0.73,1.42)--(0.97,1.59);\n  \\node at (0,-2.2) {$|PF_1|+|PF_2|=2a$};\n\\end{tikzpicture}"
+        }
+      ],
+      "review_notes": [
+        "已将抛物线定义中的遮挡内容按标准教材表述整理为 $P=\\{M\\mid |MF|=d(M,l)\\}$，其中 $d(M,l)$ 为点到直线距离。",
+        "原稿中的核心场景应明确为三类：距离之和为定值对应椭圆，距离之差为定值对应双曲线，到定点与定直线距离相等对应抛物线。",
+        "候选题中没有全国卷层面直接以抛物线第一定义为核心展开的题目，因此本次选择重点呈现椭圆、双曲线两类最典型真题。",
+        "所选三题都与“第一定义”有实质对应，其中 2016-全国I卷-理科::20 的匹配度最高，最适合作为主例。"
+      ]
+    },
+    {
+      "technique_number": 45,
+      "clean_title": "圆锥曲线第二定义",
+      "summary_tex": "在平面内，若动点 $P$ 到定点 $F$ 的距离与它到定直线 $l$ 的距离之比为常数 $e$，且定点不在定直线上，则点 $P$ 的轨迹是圆锥曲线，其中 $F$ 为焦点，$l$ 为准线，$e$ 为离心率. 具体地：当 $0<e<1$ 时，轨迹是椭圆；当 $e>1$ 时，轨迹是双曲线；当 $e=1$ 时，轨迹是抛物线. 因而，题目中一旦出现“到定点的距离”和“到定直线的距离”的比为常数，就应优先联想到圆锥曲线第二定义；若已知点在某条抛物线上，也可反过来把“到焦点的距离”转化为“到准线的距离”.",
+      "method_steps_tex": [
+        "先识别题干中是否同时出现“定点”“定直线”“距离之比为常数”这三个要素.",
+        "若比值为常数 $e$，直接按 $e$ 的范围判断轨迹类型：$0<e<1$ 为椭圆，$e>1$ 为双曲线，$e=1$ 为抛物线.",
+        "若题目已经给出具体圆锥曲线，先写出其焦点与准线，再把“点到焦点的距离”与“点到准线的距离”互相转化.",
+        "求距离时注意：点到直线的距离常可由图形直接读出；若准线平行于坐标轴，常可直接用横坐标差或纵坐标差表示.",
+        "最后不仅要得到数量关系，还要说明轨迹类型或所求结论对应的圆锥曲线性质."
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=0.95,>=stealth]\n  % 椭圆\n  \\begin{scope}[xshift=0cm]\n    \\draw[->] (-2.8,0) -- (2.8,0);\n    \\draw[->] (0,-2.2) -- (0,2.2);\n    \\draw[thick] (0,0) ellipse (2 and 1.3);\n    \\draw[dashed] (1.6,-2) -- (1.6,2);\n    \\fill (1,0) circle (1.2pt) node[below] {$F$};\n    \\fill (0.8,1.2) circle (1.2pt) node[above] {$P$};\n    \\draw[dashed] (0.8,1.2) -- (1.6,1.2);\n    \\node[right] at (1.6,1.7) {$l$};\n    \\draw (1,0) -- (0.8,1.2);\n    \\node at (0,-1.8) {$0<e<1$};\n    \\node at (0,-2.05) {椭圆};\n  \\end{scope}\n  % 双曲线\n  \\begin{scope}[xshift=6.2cm]\n    \\draw[->] (-2.8,0) -- (2.8,0);\n    \\draw[->] (0,-2.2) -- (0,2.2);\n    \\draw[domain=-2.5:-1.05,smooth,variable=\\x,thick] plot ({\\x},{0.9*sqrt((\\x*\\x/1.2)-1)});\n    \\draw[domain=-2.5:-1.05,smooth,variable=\\x,thick] plot ({\\x},{-0.9*sqrt((\\x*\\x/1.2)-1)});\n    \\draw[domain=1.05:2.5,smooth,variable=\\x,thick] plot ({\\x},{0.9*sqrt((\\x*\\x/1.2)-1)});\n    \\draw[domain=1.05:2.5,smooth,variable=\\x,thick] plot ({\\x},{-0.9*sqrt((\\x*\\x/1.2)-1)});\n    \\draw[dashed] (-0.9,-2) -- (-0.9,2);\n    \\fill (0.9,0) circle (1.2pt) node[below] {$F$};\n    \\fill (1.8,1.25) circle (1.2pt) node[above] {$P$};\n    \\draw[dashed] (1.8,1.25) -- (-0.9,1.25);\n    \\node[left] at (-0.9,1.7) {$l$};\n    \\draw (0.9,0) -- (1.8,1.25);\n    \\node at (0,-1.8) {$e>1$};\n    \\node at (0,-2.05) {双曲线};\n  \\end{scope}\n  % 抛物线\n  \\begin{scope}[xshift=12.4cm]\n    \\draw[->] (-2.8,0) -- (2.8,0);\n    \\draw[->] (0,-2.2) -- (0,2.2);\n    \\draw[domain=-2:2,smooth,variable=\\y,thick] plot ({0.25*\\y*\\y}, {\\y});\n    \\draw[dashed] (-1,-2) -- (-1,2);\n    \\fill (1,0) circle (1.2pt) node[below] {$F$};\n    \\fill (1,2) circle (1.2pt) node[above] {$P$};\n    \\draw[dashed] (1,2) -- (-1,2);\n    \\node[left] at (-1,1.7) {$l$};\n    \\draw (1,0) -- (1,2);\n    \\node at (0,-1.8) {$e=1$};\n    \\node at (0,-2.05) {抛物线};\n  \\end{scope}\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2023-北京卷::6",
+          "match_reason_tex": "这道题与本技巧对应最直接. 题中已知点 $M$ 在抛物线 $C:y^2=8x$ 上，因此可立即调用抛物线第二定义：点到焦点的距离等于点到准线的距离. 先由方程得焦点 $F(2,0)$、准线 $x=-2$，再把“$M$ 到直线 $x=-3$ 的距离为 $5$”转化为“$M$ 到准线 $x=-2$ 的距离为 $4$”，从而直接得到 $|MF|=4$. 该题突出体现了第二定义的逆用：不必求点的坐标，也能迅速得到焦半径.",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.9,>=stealth]\n  \\draw[->] (-4,0) -- (5,0) node[right] {$x$};\n  \\draw[->] (0,-4) -- (0,4) node[above] {$y$};\n  \\draw[domain=-3.2:3.2,smooth,variable=\\y,thick] plot ({\\y*\\y/8}, {\\y});\n  \\draw[dashed] (-2,-3.8) -- (-2,3.8) node[above] {$x=-2$};\n  \\draw[dashed] (-3,-3.8) -- (-3,3.8) node[above] {$x=-3$};\n  \\fill (2,0) circle (1.2pt) node[below] {$F(2,0)$};\n  \\fill (1,2.828) circle (1.2pt) node[right] {$M$};\n  \\draw[dashed] (1,2.828) -- (-3,2.828);\n  \\draw (2,0) -- (1,2.828);\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2022-全国乙卷-理科::5",
+          "match_reason_tex": "这道题的核心同样是抛物线第二定义. 由 $C:y^2=4x$ 可知焦点为 $F(1,0)$，准线为 $x=-1$. 题设 $|AF|=|BF|$，而 $B(3,0)$ 到焦点的距离易得为 $2$，于是 $|AF|=2$. 再由第二定义，点 $A$ 到准线的距离也为 $2$，故可直接确定 $A$ 的横坐标为 $1$，进而求出 $A$ 坐标与 $|AB|$. 这道题体现了“已知点在抛物线上，把焦点距离改写成准线距离”的标准用法.",
+          "question_tikz": "\\begin{tikzpicture}[scale=1,>=stealth]\n  \\draw[->] (-2,0) -- (4.5,0) node[right] {$x$};\n  \\draw[->] (0,-3.5) -- (0,3.5) node[above] {$y$};\n  \\draw[domain=-3:3,smooth,variable=\\y,thick] plot ({\\y*\\y/4}, {\\y});\n  \\draw[dashed] (-1,-3.2) -- (-1,3.2) node[above] {$x=-1$};\n  \\fill (1,0) circle (1.2pt) node[below] {$F(1,0)$};\n  \\fill (3,0) circle (1.2pt) node[below] {$B(3,0)$};\n  \\fill (1,2) circle (1.2pt) node[right] {$A$};\n  \\draw[dashed] (1,2) -- (-1,2);\n  \\draw (1,0) -- (1,2);\n  \\draw (1,2) -- (3,0);\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2025-全国II卷::6",
+          "match_reason_tex": "这题比前两题多了一层几何转化，但本质仍是抛物线第二定义. 由直线 $BF$ 的方程先确定焦点 $F(1,0)$，从而得到抛物线 $C:y^2=4x$ 及准线 $x=-1$. 又因 $B$ 是点 $A$ 向准线所作垂线的垂足，所以 $AB$ 正是点 $A$ 到准线的距离. 根据第二定义，$|AF|=|AB|$. 题目再借助 $BF$ 的方程确定 $B$ 的位置，最终求出 $|AF|$. 该题很好地展示了第二定义与“准线垂足”信息的配合使用.",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.95,>=stealth]\n  \\draw[->] (-2.5,0) -- (5,0) node[right] {$x$};\n  \\draw[->] (0,-1) -- (0,5.5) node[above] {$y$};\n  \\draw[domain=-0.2:4.6,smooth,variable=\\x,thick] plot ({\\x},{sqrt(4*\\x)});\n  \\draw[domain=-0.2:4.6,smooth,variable=\\x,thick] plot ({\\x},{-sqrt(4*\\x)});\n  \\draw[dashed] (-1,-0.8) -- (-1,5.2) node[above] {$x=-1$};\n  \\draw[thick] (-0.2,2.4) -- (2.2,-2.4) node[right] {$BF$};\n  \\fill (1,0) circle (1.2pt) node[below] {$F(1,0)$};\n  \\fill (-1,4) circle (1.2pt) node[left] {$B$};\n  \\fill (4,4) circle (1.2pt) node[right] {$A$};\n  \\draw[dashed] (4,4) -- (-1,4);\n  \\draw (1,0) -- (4,4);\n\\end{tikzpicture}"
+        }
+      ],
+      "review_notes": [
+        "原摘录中双曲线、抛物线第二定义里的“距离和它到一条定直线的距离的比”应理解为“距离与它到一条定直线的距离的比”.",
+        "本技巧最适合处理两类题：一类是由“点到定点、定直线的距离比”判断轨迹类型；另一类是已知点在抛物线上，用“到焦点的距离等于到准线的距离”做长度转化.",
+        "候选题中，含有焦点、准线但主要依赖弦长公式、联立方程或综合性质的题，不宜作为本技巧的代表题；因此只选取对第二定义依赖最强的题目."
+      ]
+    },
+    {
+      "technique_number": 46,
+      "clean_title": "圆锥曲线第三定义",
+      "summary_tex": "在平面内，若动点 $P$ 与两个定点 $A,B$ 的连线斜率之积为常数，则常可用圆锥曲线第三定义判断轨迹或求离心率。设圆锥曲线中心在原点：\n\n当焦点在 $x$ 轴上，且 $A,B$ 为左右顶点时，若 $P$ 在椭圆 $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$ 上，则\n\\[\nk_{PA}k_{PB}=-\\frac{b^2}{a^2}=e^2-1\\quad(0<e<1).\n\\]\n若 $P$ 在双曲线 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$ 上，则\n\\[\nk_{PA}k_{PB}=\\frac{b^2}{a^2}=e^2-1\\quad(e>1).\n\\]\n\n当焦点在 $y$ 轴上，且 $A,B$ 为上、下顶点时，对应地有\n\\[\nk_{PA}k_{PB}=-\\frac{a^2}{b^2}=\\frac{1}{e^2-1}\\quad(\\text{椭圆}),\n\\qquad\nk_{PA}k_{PB}=\\frac{a^2}{b^2}=\\frac{1}{e^2-1}\\quad(\\text{双曲线}).\n\\]\n\n因此，题目中若出现“过两个定点作连线，且斜率之积为定值”，就应优先联想到第三定义：负常数多对应椭圆，正常数多对应双曲线。原摘录中“看到平面内与两定点连线斜率之积等于常数的动点轨迹问题”这一判断是正确的。",
+      "method_steps_tex": [
+        "先辨认两定点 $A,B$ 是否关于圆心对称，且常见为左右顶点或上、下顶点。",
+        "再看已知量是“斜率之积为常数”还是“要求离心率/轨迹方程”。若是，就优先调用第三定义。",
+        "若焦点在 $x$ 轴上：椭圆用 $k_{PA}k_{PB}=-\\dfrac{b^2}{a^2}=e^2-1$，双曲线用 $k_{PA}k_{PB}=\\dfrac{b^2}{a^2}=e^2-1$。",
+        "若焦点在 $y$ 轴上：椭圆用 $k_{PA}k_{PB}=-\\dfrac{a^2}{b^2}=\\dfrac{1}{e^2-1}$，双曲线用 $k_{PA}k_{PB}=\\dfrac{a^2}{b^2}=\\dfrac{1}{e^2-1}$。",
+        "若要求离心率，就把已知斜率积直接与上式对应，先求 $\\dfrac{b^2}{a^2}$ 或 $\\dfrac{a^2}{b^2}$，再求 $e$。",
+        "若要求轨迹方程，可先由第三定义判断曲线类型，再写出标准方程；也可设 $P(x,y)$，把斜率积化简为标准方程，用来验证第三定义。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=0.95]\n  \\draw[->] (-4.2,0) -- (4.2,0) node[right] {$x$};\n  \\draw[->] (0,-2.8) -- (0,2.8) node[above] {$y$};\n\n  % ellipse\n  \\draw[thick,domain=0:360,samples=200,smooth] plot ({3*cos(\\x)},{1.8*sin(\\x)});\n\n  % vertices and point\n  \\coordinate (A) at (-3,0);\n  \\coordinate (B) at (3,0);\n  \\coordinate (P) at (1.6,1.44);\n  \\coordinate (O) at (0,0);\n\n  \\fill (A) circle (1.4pt) node[below left] {$A(-a,0)$};\n  \\fill (B) circle (1.4pt) node[below right] {$B(a,0)$};\n  \\fill (P) circle (1.4pt) node[above right] {$P(x,y)$};\n  \\fill (O) circle (1.2pt) node[below left] {$O$};\n\n  \\draw[dashed] (P) -- (1.6,0) node[below] {};\n  \\draw[dashed] (P) -- (0,1.44);\n  \\draw[blue] (A) -- (P) node[midway,above left] {$k_{PA}$};\n  \\draw[blue] (B) -- (P) node[midway,above right] {$k_{PB}$};\n\n  \\node at (0,-2.2) {$\\displaystyle k_{PA}k_{PB}=-\\frac{b^2}{a^2}\\ \\text{(椭圆)}\\qquad k_{PA}k_{PB}=\\frac{b^2}{a^2}\\ \\text{(双曲线)}$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2022-全国甲卷-理科::10",
+          "match_reason_tex": "这题与该技巧是\\textbf{完全对应}的。题设给出“椭圆 $C$ 的左顶点为 $A$，点 $P,Q$ 在 $C$ 上且关于 $y$ 轴对称，若直线 $AP,AQ$ 的斜率之积为 $\\dfrac14$”，其中固定点 $A$ 与其对称关系共同构成了第三定义的典型场景。\n\n从解法看，题目本质上正是在用\n\\[\nk_{AP}k_{AQ}=-\\frac{b^2}{a^2}\n\\]\n这一关系求椭圆离心率。虽然原解答采用设点代算，但化简结果正好落到 $\\dfrac{b^2}{a^2}=\\dfrac14$，这正是第三定义的代数呈现，因此最适合作为本技巧的高考真题示范。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.9]\n  \\draw[->] (-3.8,0) -- (3.8,0) node[right] {$x$};\n  \\draw[->] (0,-2.6) -- (0,2.6) node[above] {$y$};\n  \\draw[thick,domain=0:360,samples=200,smooth] plot ({3*cos(\\x)},{2*sin(\\x)});\n  \\coordinate (A) at (-3,0);\n  \\coordinate (P) at (1.5,1.5);\n  \\coordinate (Q) at (-1.5,1.5);\n  \\fill (A) circle (1.4pt) node[below left] {$A$};\n  \\fill (P) circle (1.4pt) node[above right] {$P$};\n  \\fill (Q) circle (1.4pt) node[above left] {$Q$};\n  \\draw[blue] (A) -- (P) node[midway,below] {$AP$};\n  \\draw[blue] (A) -- (Q) node[midway,left] {$AQ$};\n  \\draw[dashed] (P) -- (Q);\n  \\node at (0,-2.1) {$P,Q$ 关于 $y$ 轴对称，关注 $k_{AP}k_{AQ}$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2019-全国II卷-理科::21",
+          "match_reason_tex": "这题与该技巧也有\\textbf{实质且直接}的对应。第（1）问已知 $A(-2,0),B(2,0)$，动点 $M(x,y)$ 满足直线 $AM$ 与 $BM$ 的斜率之积为 $-\\dfrac12$，要求轨迹方程并判断曲线类型。\n\n这正是原摘录中“看到平面内与两定点连线斜率之积等于常数的动点轨迹问题”的标准模型。由\n\\[\nk_{AM}k_{BM}=-\\frac12\n\\]\n立刻可联想到焦点在 $x$ 轴上的椭圆第三定义，即\n\\[\n-\\frac{b^2}{a^2}=-\\frac12.\n\\]\n于是可快速判断轨迹为椭圆，再得到对应标准方程。该题比上一题更能体现第三定义在“\\textbf{识别轨迹类型}”中的作用。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.95]\n  \\draw[->] (-3.8,0) -- (3.8,0) node[right] {$x$};\n  \\draw[->] (0,-2.8) -- (0,2.8) node[above] {$y$};\n  \\draw[thick,domain=0:360,samples=200,smooth] plot ({2.8*cos(\\x)},{2.0*sin(\\x)});\n  \\coordinate (A) at (-2,0);\n  \\coordinate (B) at (2,0);\n  \\coordinate (M) at (1.2,1.6);\n  \\fill (A) circle (1.4pt) node[below left] {$A(-2,0)$};\n  \\fill (B) circle (1.4pt) node[below right] {$B(2,0)$};\n  \\fill (M) circle (1.4pt) node[above right] {$M(x,y)$};\n  \\draw[blue] (A) -- (M) node[midway,above left] {$AM$};\n  \\draw[blue] (B) -- (M) node[midway,above right] {$BM$};\n  \\node at (0,-2.25) {$k_{AM}k_{BM}=-\\dfrac12$，对应椭圆第三定义};\n\\end{tikzpicture}"
+        }
+      ],
+      "review_notes": [
+        "优先选取了与“斜率之积为常数”这一核心识别信号直接对应的题目，未选仅涉及离心率但不含该结构的题目。",
+        "候选中最贴切的是 2022-全国甲卷-理科::10 和 2019-全国II卷-理科::21；二者分别体现“由斜率积求离心率”和“由斜率积判轨迹”两类典型用法。",
+        "原摘录中的示例与高考候选并非同题，且示例年份为校内期中题，不可替代高考真题，因此这里只从候选中严格筛选。"
+      ]
+    },
+    {
+      "technique_number": 47,
+      "clean_title": "手电筒模型",
+      "summary_tex": "在圆锥曲线中，若有一个定点 $P$，动直线与圆锥曲线交于两点 $A,B$，再连接 $PA,PB$，并且题目给出 $PA,PB$ 的斜率和或斜率积为定值，就要优先想到“由两束射线反推弦 $AB$ 的不变量”：通常结论是弦 $AB$ 斜率为定值，或弦 $AB$ 恒过定点。这一结构像定点 $P$ 发出两束光照到曲线上，故称“手电筒模型”。\n\n就本页摘录可直接整理出的高中层面常用结论看：\n\n1. 对椭圆 $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$，若定点为 $P(x_0,y_0)$，直线 $PA,PB$ 的斜率分别为 $k_1,k_2$，当 $k_1+k_2=\\lambda\\,(\\lambda\\ne 0)$ 时，弦 $AB$ 过定点\n\\[\n\\left(x_0-\\frac{2y_0}{\\lambda},\\,-y_0-\\frac{2b^2x_0}{\\lambda a^2}\\right).\n\\]\n2. 当 $k_1+k_2=0$ 时，常可转化为弦 $AB$ 的斜率为定值。\n3. 当 $k_1k_2$ 为定值时，也常能推出弦 $AB$ 斜率恒定或恒过定点，但具体公式要按椭圆、双曲线、抛物线分别使用。\n\nOCR中有两点需特别校正：其一，摘录中“若 $k_1\\cdot k_2=1-e^2$ 时”的抛物线一行与左侧条件对应关系有版面歧义，不能直接照抄使用；其二，例题后半页混入了别的栏目标题，不属于题意本身。讲义使用时，应以“定点 $P$ + 两条连线斜率和/积为定值 $\\Rightarrow$ 弦的定点或定斜率性质”为核心，不机械背诵残缺公式。",
+      "method_steps_tex": [
+        "先辨型：看是否存在一个定点 $P$，以及一条动直线与圆锥曲线交于两点 $A,B$，再看题目是否给出 $k_{PA}+k_{PB}$ 或 $k_{PA}k_{PB}$ 为定值。",
+        "若已知圆锥曲线标准方程和定点坐标，优先把题目与现成模型对照：是“斜率和为定值”，还是“斜率积为定值”；是椭圆、双曲线，还是抛物线。",
+        "若题目正好对应结论型模型，则直接写出弦 $AB$ 的定点或定斜率结论，再代入参数化简。",
+        "若题目没有完全落入现成公式，也可保留“手电筒模型”的思路：设动直线方程，与曲线联立，利用韦达定理表示两交点，再把 $k_{PA}+k_{PB}$ 或 $k_{PA}k_{PB}$ 化成关于直线参数的关系。",
+        "整理得到的关系后，若能化为直线方程的点斜式或一般式中某点恒满足，就得到“过定点”；若能化为斜率与参数无关，就得到“定斜率”。",
+        "得到结论后要补检验：斜率不存在、重合点、切线情形、题设排除的特殊位置，通常需要单独说明。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=0.9,>=stealth]\n  \\draw[->] (-4.5,0)--(4.8,0) node[right]{$x$};\n  \\draw[->] (0,-3.2)--(0,3.6) node[above]{$y$};\n  \\draw[thick] (0,0) ellipse (3.6 and 2.2);\n  \\coordinate (P) at (0.8,1.2);\n  \\coordinate (A) at (-2.6,1.5);\n  \\coordinate (B) at (3.1,-1.1);\n  \\draw[thick] (A)--(B);\n  \\draw[thick] (P)--(A);\n  \\draw[thick] (P)--(B);\n  \\fill (P) circle (1.5pt) node[above right]{$P(x_0,y_0)$};\n  \\fill (A) circle (1.5pt) node[above left]{$A$};\n  \\fill (B) circle (1.5pt) node[below right]{$B$};\n  \\node at (-1.1,2.25) {$k_1$};\n  \\node at (2.25,0.45) {$k_2$};\n  \\node at (0.9,-1.45) {$AB$};\n  \\node at (2.7,2.8) {若 $k_1+k_2$ 或 $k_1k_2$ 为定值};\n  \\node at (2.45,2.35) {则常推出弦 $AB$ 的不变量};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2017-全国I卷-理科::20",
+          "match_reason_tex": "这道题与“手电筒模型”是高度同构的典型题。题中定点是 $P_2(0,1)$，动直线 $l$ 与椭圆交于 $A,B$ 两点，且给出 $k_{P_2A}+k_{P_2B}=-1$ 为定值，正对应摘录中“椭圆里，从定点向两动点引线，若斜率和为定值，则弦 $AB$ 过定点”的结论。\n\n把椭圆方程先求出为 $\\dfrac{x^2}{4}+y^2=1$，于是 $a^2=4,b^2=1$，定点 $P_2(0,1)$ 即 $x_0=0,y_0=1$，又 $\\lambda=-1$。代入摘录中的椭圆结论\n\\[\n\\left(x_0-\\frac{2y_0}{\\lambda},-y_0-\\frac{2b^2x_0}{\\lambda a^2}\\right)\n\\]\n可得定点\n\\[\n\\left(0-\\frac{2\\cdot 1}{-1},-1-\\frac{2\\cdot 1\\cdot 0}{(-1)\\cdot 4}\\right)=(2,-1),\n\\]\n与题目答案完全一致。因此这题几乎就是该模型的标准落地：题目原解用联立与韦达定理完成证明，而技巧法可直接缩短判断路径。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.95,>=stealth]\n  \\draw[->] (-3.2,0)--(3.4,0) node[right]{$x$};\n  \\draw[->] (0,-2.0)--(0,2.2) node[above]{$y$};\n  \\draw[thick] (0,0) ellipse (2 and 1.6);\n  \\coordinate (P2) at (0,1.6);\n  \\coordinate (A) at (-1.55,-1.02);\n  \\coordinate (B) at (1.8,0.7);\n  \\coordinate (D) at (2,-1.6);\n  \\draw[thick] (A)--(B) node[pos=0.55,below]{$l$};\n  \\draw[thick] (P2)--(A);\n  \\draw[thick] (P2)--(B);\n  \\fill (P2) circle (1.4pt) node[above right]{$P_2(0,1)$};\n  \\fill (A) circle (1.4pt) node[left]{$A$};\n  \\fill (B) circle (1.4pt) node[right]{$B$};\n  \\fill (D) circle (1.4pt) node[below right]{$(2,-1)$};\n  \\node at (-1.2,0.55) {$k_{P_2A}$};\n  \\node at (1.08,1.35) {$k_{P_2B}$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2020-全国I卷-理科::20",
+          "match_reason_tex": "这道题不是摘录中“斜率和/积为定值”的原型题，但与该模型有实质共通性，适合作为同类拓展。题中定点是动点 $P(6,y_0)$，分别连到椭圆两个固定顶点 $A,B$，再由直线 $PA,PB$ 与椭圆的另一个交点得到 $C,D$，最终证明弦 $CD$ 过定点。其核心仍然是“以一个点为光源，发出两束线，借两交点之间的弦寻找不变量”。\n\n与技巧47的对应关系在于：虽然题设没有直接给出 $k_{PA}+k_{PB}$ 或 $k_{PA}k_{PB}$ 为定值，但整体结构仍是“定点（此处对每个位置的 $P$ 而言）$\\to$ 两条射线 $\\to$ 曲线上两点 $\\to$ 弦的不变量”。它能帮助学生把“过定点”的结论视为同一类几何机制，而不只局限于公式套用。\n\n不过从贴合度看，这题弱于 2017 年全国 I 卷理科第 20 题，因为它主要靠代数求点坐标再消元，不是斜率和/积触发的标准手电筒结论。故本题更适合作为“同结构迁移题”，不宜作为首选例题。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.85,>=stealth]\n  \\draw[->] (-4.2,0)--(7.2,0) node[right]{$x$};\n  \\draw[->] (0,-3.0)--(0,3.2) node[above]{$y$};\n  \\draw[thick] (0,0) ellipse (3 and 2);\n  \\coordinate (A) at (-3,0);\n  \\coordinate (B) at (3,0);\n  \\coordinate (P) at (6,2.2);\n  \\coordinate (C) at (-0.7,1.34);\n  \\coordinate (D) at (1.86,-0.78);\n  \\coordinate (F) at (1.5,0);\n  \\draw[thick] (P)--(A);\n  \\draw[thick] (P)--(B);\n  \\draw[thick] (C)--(D);\n  \\fill (A) circle (1.4pt) node[below]{$A$};\n  \\fill (B) circle (1.4pt) node[below]{$B$};\n  \\fill (P) circle (1.4pt) node[right]{$P$};\n  \\fill (C) circle (1.4pt) node[above left]{$C$};\n  \\fill (D) circle (1.4pt) node[below right]{$D$};\n  \\fill (F) circle (1.4pt) node[above]{$\\left(\\frac{3}{2},0\\right)$};\n  \\draw[dashed] (6,-3)--(6,3);\n  \\node at (6.35,-2.55) {$x=6$};\n\\end{tikzpicture}"
+        }
+      ],
+      "review_notes": [
+        "首选真题应为 2017-全国I卷-理科::20：它与“定点发出两条连线，斜率和为定值，弦过定点”的模型完全同构。",
+        "2020-全国I卷-理科::20 只可作为同结构拓展，不宜写成该技巧的标准范例，因为题设并未直接出现“斜率和/积为定值”。",
+        "未选 2019-全国II卷-理科::21 的原因是：它虽出现两条连线斜率积为定值，但对象是动点 $M$ 相对于两个定点 $A,B$ 的轨迹问题，重心在求轨迹，不是由定点向曲线上两点发线后研究弦的不变量。",
+        "未选 2023-新高考II卷::21 的原因是：其结论是交点 $P$ 落在定直线上，结构并非摘录中的“同一定点向同一圆锥曲线上的两点引线，利用斜率和/积研究弦 $AB$”。",
+        "摘录中的抛物线部分存在版面歧义，讲义中不应把那一行当作可直接调用的结论。"
+      ]
+    },
+    {
+      "technique_number": 48,
+      "clean_title": "阿基米德三角形",
+      "summary_tex": "阿基米德三角形，指圆锥曲线的一条弦与该弦两端点处切线所围成的三角形。对椭圆、双曲线，通常记弦为 $AB$，两切线交于 $Q$，得到 $\\triangle ABQ$；对抛物线，通常记两切线交于 $P$，得到 $\\triangle ABP$。\n\n本技巧的识别标志是：题目同时出现“圆锥曲线上的两点”“过这两点作切线”“两切线交点”“弦经过定点或焦点”“求轨迹、定点、垂直、面积最值”等信息。此时应主动把“弦 $AB$ 与切线交点”整体看成阿基米德三角形，而不是把切线、弦、焦点分散处理。\n\n原摘录中有明显的 OCR 混乱，需作如下规范：\n\n1. 抛物线部分应统一为：已知抛物线 $y^2=2px\\,(p>0)$ 的弦 $AB$，过 $A,B$ 分别作抛物线的切线，两切线交于点 $P$，则 $\\triangle ABP$ 为抛物线中的阿基米德三角形。\n2. 当抛物线的弦 $AB$ 经过焦点 $F$ 时，顶点 $P$ 在准线上，且这是最常用的特殊情形。\n3. 椭圆、双曲线中，若弦 $AB$ 过焦点，则切线交点落在对应准线上，并且连接“焦点与切线交点”的线段垂直于弦 $AB$。\n\n解题价值主要体现在两类转化：一类是把“切线条件”转化为“切点参数关系或交点轨迹”；另一类是把“弦过焦点”转化为“顶点在准线、且与弦垂直”这一强几何性质，从而快速求点、求长、求面积。",
+      "method_steps_tex": [
+        "先判断是否出现“弦的两个端点处作切线，切线相交”这一结构；若出现，就优先联想到阿基米德三角形。",
+        "若是椭圆或双曲线，重点检查弦 $AB$ 是否过某个定点 $P(m,0)$；若过焦点，则切线交点在对应准线上，这是求轨迹、定点的直接入口。",
+        "若是抛物线，重点检查弦 $AB$ 是否过焦点 $F$；若经过焦点，则切线交点 $P$ 在准线上，且 $PF\\perp AB$，常可据此设出点 $P$ 的坐标。",
+        "遇到面积问题时，优先把三角形面积写成“底乘高”的形式；其中底边常取弦 $AB$，高常利用“交点在准线”或“垂直关系”来确定。",
+        "遇到轨迹或定点问题时，不急于分别求两条切线；应先把弦的方程与圆锥曲线联立，再利用阿基米德三角形的整体性质确定交点所在直线。",
+        "若题中已给出焦点、准线、过焦点的弦、切线交点等信息，可优先走几何性质；只有在性质不足以闭合时，再回到坐标联立计算。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=0.9]\n  \\draw[->] (-2.2,0) -- (6.2,0) node[right] {$x$};\n  \\draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};\n  \\draw[dashed] (-1,-3) -- (-1,3) node[above] {$x=-1$};\n  \\draw[thick,domain=0:4.8,samples=200] plot (\\x,{2*sqrt(\\x)});\n  \\draw[thick,domain=0:4.8,samples=200] plot (\\x,{-2*sqrt(\\x)});\n  \\coordinate (F) at (1,0);\n  \\coordinate (A) at (4,4);\n  \\coordinate (B) at (0.25,-1);\n  \\coordinate (P) at (-1,1.5);\n  \\draw[thick] (P)--(A) (P)--(B) (A)--(B) (P)--(F);\n  \\fill (F) circle (1.2pt) node[below right] {$F$};\n  \\fill (A) circle (1.2pt) node[above right] {$A$};\n  \\fill (B) circle (1.2pt) node[below right] {$B$};\n  \\fill (P) circle (1.2pt) node[above left] {$P$};\n  \\node at (2.8,2.7) {$y^2=4x$};\n  \\draw ($(F)+(0.18,0.18)$) -- ($(F)+(-0.02,0.38)$) -- ($(F)+(-0.22,0.18)$);\n  \\node at (2.0,-1.9) {$AB$ 过焦点时，$P$ 在准线上，且 $PF\\perp AB$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2021-全国乙卷-理科::21",
+          "match_reason_tex": "这道题与抛物线中的阿基米德三角形对应最直接。题目已明确给出：点 $P$ 在定圆上，$PA,PB$ 是抛物线的两条切线，$A,B$ 为切点，于是天然形成阿基米德三角形 $\\triangle PAB$。第（2）问要求三角形面积最大值，正对应原摘录中“抛物线中的阿基米德三角形”关于面积问题的典型应用场景。\n\n从方法上看，本题虽然标准解答主要使用坐标联立，但若教学中引入阿基米德三角形视角，学生能更快抓住结构核心：$P$ 是三角形顶点，$AB$ 是抛物线的一条弦，而两边 $PA,PB$ 恰是切线。这样处理时，面积公式、弦方程、切线关系不再是零散结论，而是统一服务于同一个几何对象，十分适合作为本技巧的真题支撑。",
+          "question_tikz": ""
+        },
+        {
+          "id": "2019-全国III卷-理科::21",
+          "match_reason_tex": "这道题与原摘录中“若直线 $l$ 与抛物线没有公共点，以 $l$ 上的点为顶点的阿基米德三角形的底边 $AB$ 经过定点”高度对应。题中点 $D$ 在直线 $y=-\\dfrac12$ 上运动，过 $D$ 作抛物线 $C:y=\\dfrac{x^2}{2}$ 的两条切线，切点为 $A,B$，于是 $\\triangle DAB$ 正是抛物线中的阿基米德三角形。\n\n第（1）问证明直线 $AB$ 过定点，正是该技巧中最有代表性的“顶点在线上动，底边过定点”模型；第（2）问继续讨论中点、切圆、面积，体现了阿基米德三角形在定点、对称与面积计算中的综合作用。相较于一般切线题，本题更能突出“先识别阿基米德三角形，再整体处理”的方法价值。",
+          "question_tikz": "\\begin{tikzpicture}[scale=1.0]\n  \\draw[->] (-3.2,0) -- (3.8,0) node[right] {$x$};\n  \\draw[->] (0,-1.4) -- (0,4.2) node[above] {$y$};\n  \\draw[thick,domain=-2.6:2.6,samples=200] plot (\\x,{0.5*\\x*\\x});\n  \\draw[dashed] (-3,-0.5) -- (3.5,-0.5) node[right] {$y=-\\dfrac12$};\n  \\coordinate (D) at (2,-0.5);\n  \\coordinate (A) at (1,0.5);\n  \\coordinate (B) at (-1,0.5);\n  \\coordinate (T) at (0,0.5);\n  \\draw[thick] (D)--(A) (D)--(B) (A)--(B);\n  \\fill (D) circle (1.2pt) node[below right] {$D$};\n  \\fill (A) circle (1.2pt) node[above right] {$A$};\n  \\fill (B) circle (1.2pt) node[above left] {$B$};\n  \\fill (T) circle (1.2pt) node[above] {$\\left(0,\\dfrac12\\right)$};\n  \\node at (1.8,3.2) {$y=\\dfrac{x^2}{2}$};\n  \\node at (1.2,1.2) {$AB$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2019-全国III卷-文科::21",
+          "match_reason_tex": "此题与上一题为同一题源的文科版本，核心结构完全一致：点 $D$ 在定直线上运动，过 $D$ 向抛物线作两条切线，切点为 $A,B$，形成抛物线中的阿基米德三角形 $\\triangle DAB$。第（1）问证明 $AB$ 过定点，与原摘录中的定点性质严格同类；第（2）问再利用线段中点与垂直关系求圆方程，体现了该技巧在中点、垂直、轨迹上的连续应用。\n\n若讲义面向不同选科学生，可把这道题作为与理科卷并列的补充例证；若只保留两题，则优先保留理科卷版本即可，因为两题的技巧指向相同。",
+          "question_tikz": ""
+        }
+      ],
+      "review_notes": [
+        "候选题中，与本技巧实质对应最强的是“过外点向抛物线作两条切线，切点连成弦”的题型，因此优先选择 2021-全国乙卷-理科第21题与 2019-全国III卷第21题。",
+        "2023-新高考II卷第10题虽涉及焦点弦、准线与圆，但并未出现“弦两端点处切线交成三角形”的核心结构，因此不作为首选。",
+        "2024-新高考II卷第10题涉及抛物线、准线、圆的切线，但切线是对圆作的，不是对圆锥曲线两端点作切线，不宜归入阿基米德三角形主例。",
+        "原摘录中抛物线部分符号有混乱：切线交点应统一记为同一个顶点字母，且“弦经过焦点时顶点在准线上”是最关键的特殊性质之一，讲义中应突出。",
+        "所给概念图采用抛物线特殊情形，便于展示“弦过焦点、顶点在准线、垂直关系”这一本技巧最常用的切入点。"
+      ]
+    },
+    {
+      "technique_number": 49,
+      "clean_title": "点差法解弦中点问题",
+      "summary_tex": "当直线与圆锥曲线相交于两点 $A(x_1,y_1),B(x_2,y_2)$，且已知弦 $AB$ 的中点 $M(x_0,y_0)$ 时，可把 $A,B$ 的坐标分别代入曲线方程，再将两式作差。这样会出现平方差因式 $(x_1^2-x_2^2)=(x_1-x_2)(x_1+x_2)$、$(y_1^2-y_2^2)=(y_1-y_2)(y_1+y_2)$，从而把弦的斜率 $k_{AB}=\\dfrac{y_1-y_2}{x_1-x_2}$ 与中点坐标 $x_0=\\dfrac{x_1+x_2}{2},\\ y_0=\\dfrac{y_1+y_2}{2}$ 联系起来，这就是“点差法”的核心。\n\n对常见标准方程，可直接得到：\n\n若 $M(x_0,y_0)$ 是椭圆 $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\ (a>b>0)$ 的一条斜率存在的弦的中点，则\n\\[\nk_{AB}=-\\frac{b^2x_0}{a^2y_0},\\qquad k_{AB}k_{OM}=-\\frac{b^2}{a^2}.\n\\]\n\n若 $M(x_0,y_0)$ 是双曲线 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$ 的一条斜率存在的弦的中点，则\n\\[\nk_{AB}=\\frac{b^2x_0}{a^2y_0},\\qquad k_{AB}k_{OM}=\\frac{b^2}{a^2}.\n\\]\n\n若 $M(x_0,y_0)$ 是抛物线 $y^2=2px\\,(p>0)$ 的一条斜率存在的弦的中点，则\n\\[\nk_{AB}=\\frac{p}{y_0}.\n\\]\n\n类似地，抛物线 $y^2=-2px$、$x^2=2py$、$x^2=-2py$ 也都可以由点差法得到对应的中点弦斜率公式。应用时要注意：该法本质上服务于“已知中点求弦所在直线”或“研究中点轨迹”两类问题。",
+      "method_steps_tex": [
+        "设弦的两个端点为 $A(x_1,y_1),B(x_2,y_2)$，中点为 $M(x_0,y_0)$，并写出\n\\[\nx_1+x_2=2x_0,\\qquad y_1+y_2=2y_0.\n\\]",
+        "把 $A,B$ 的坐标分别代入圆锥曲线方程，得到两个等式。",
+        "将这两个等式作差，利用平方差公式化为含 $(x_1-x_2),(x_1+x_2),(y_1-y_2),(y_1+y_2)$ 的关系式。",
+        "把 $x_1+x_2,\\ y_1+y_2$ 用 $2x_0,\\ 2y_0$ 代换，再把\n\\[\n\\frac{y_1-y_2}{x_1-x_2}\n\\]\n识别为弦 $AB$ 的斜率 $k_{AB}$，得到 $k_{AB}$ 与 $M(x_0,y_0)$ 的关系。",
+        "若要求弦所在直线方程，再用点斜式\n\\[\ny-y_0=k_{AB}(x-x_0)\n\\]\n即可写出。",
+        "若要求中点轨迹，则把已知的弦斜率或直线条件代入上一步关系式，消去参数，得到中点满足的方程。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=0.95]\n  \\draw[->] (-3.6,0) -- (3.8,0) node[right] {$x$};\n  \\draw[->] (0,-2.8) -- (0,2.8) node[above] {$y$};\n  \\draw (0,0) node[below left] {$O$};\n\n  \\draw[thick,domain=0:360,samples=200,smooth] plot ({3*cos(\\x)},{2*sin(\\x)});\n\n  \\coordinate (A) at (-2.4,1.2);\n  \\coordinate (B) at (1.2,-1.8333333333);\n  \\coordinate (M) at (-0.6,-0.3166666667);\n\n  \\draw[thick] (A) -- (B);\n  \\draw[dashed] (0,0) -- (M);\n\n  \\fill (A) circle (1.4pt) node[above left] {$A(x_1,y_1)$};\n  \\fill (B) circle (1.4pt) node[below right] {$B(x_2,y_2)$};\n  \\fill (M) circle (1.4pt) node[below left] {$M(x_0,y_0)$};\n\n  \\draw[dashed] (M) -- (-0.6,0) node[below] {$x_0$};\n  \\draw[dashed] (M) -- (0,-0.3166666667) node[left] {$y_0$};\n\n  \\node at (2.25,2.15) {$\\displaystyle \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$};\n  \\node at (2.2,-2.15) {$\\displaystyle k_{AB}=-\\frac{b^2x_0}{a^2y_0}$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2023-全国乙卷-理科::11",
+          "match_reason_tex": "这题与本技巧的对应最直接、最典型。题目已知双曲线上的一条弦 $AB$，判断哪个点可以作为其中点。其标准解正是先设中点为 $M\\bigl(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\bigr)$，再对双曲线\n\\[\nx^2-\\frac{y^2}{9}=1\n\\]\n中两点坐标代入后的两个方程作差，得到\n\\[\n(x_1^2-x_2^2)-\\frac{y_1^2-y_2^2}{9}=0,\n\\]\n进而把弦斜率与中点方向联系起来，即\n\\[\nk_{AB}\\cdot k_{OM}=9.\n\\]\n这正对应原摘录中双曲线 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$ 的结论\n\\[\nk_{AB}k_{OM}=\\frac{b^2}{a^2}.\n\\]\n本题不是一般地“联立求交点”，而是把“中点”作为核心信息来处理，点差法是主方法而不是陪衬方法，因此最能体现该技巧。",
+          "question_tikz": ""
+        },
+        {
+          "id": "2016-全国III卷-文科::20",
+          "match_reason_tex": "本题第（Ⅱ）问虽然表述为“求 $AB$ 中点的轨迹方程”，但核心步骤仍然是标准的点差法。设 $A(x_1,y_1),B(x_2,y_2)$ 在抛物线 $y^2=2x$ 上，由\n\\[\ny_1^2=2x_1,\\qquad y_2^2=2x_2\n\\]\n作差得\n\\[\n(y_1-y_2)(y_1+y_2)=2(x_1-x_2).\n\\]\n再结合中点 $M(x,y)$ 满足\n\\[\ny_1+y_2=2y,\n\\]\n以及直线 $AB$ 经过定点时带来的斜率关系，便可推出中点轨迹。这与本技巧“由两点在曲线上，作差后把 $(x_1+x_2),(y_1+y_2)$ 换成中点坐标”的操作完全一致。\n\n更重要的是，这题展示了点差法的另一类典型用途：不仅能由中点求弦方程，还能反过来研究一族弦的中点轨迹。这正好补充了原摘录中的“中点弦问题的应用场景”。",
+          "question_tikz": "\\begin{tikzpicture}[scale=1.0]\n  \\draw[->] (-1.2,0) -- (4.8,0) node[right] {$x$};\n  \\draw[->] (0,-2.4) -- (0,2.8) node[above] {$y$};\n  \\draw (0,0) node[below left] {$O$};\n\n  \\draw[thick,domain=-2.1:2.1,samples=200,smooth] plot ({0.5*(\\x)^2},{\\x});\n  \\draw[dashed] (-0.7,0) -- (-0.7,2.4) node[above] {准线 $x=-\\frac12$};\n\n  \\coordinate (A) at (0.5,1.0);\n  \\coordinate (B) at (4.5,-3.0);\n  \\coordinate (M) at (2.5,-1.0);\n  \\coordinate (N) at (1.0,0.0);\n  \\coordinate (F) at (0.5,0.0);\n  \\coordinate (P) at (-0.5,1.0);\n  \\coordinate (Q) at (-0.5,-3.0);\n\n  \\draw[thick] (A) -- (B);\n  \\draw[dashed] (P) -- (Q);\n  \\draw[dashed] (F) -- (Q);\n\n  \\fill (A) circle (1.2pt) node[above right] {$A$};\n  \\fill (B) circle (1.2pt) node[below right] {$B$};\n  \\fill (M) circle (1.2pt) node[below] {$M$};\n  \\fill (N) circle (1.2pt) node[above] {$N$};\n  \\fill (F) circle (1.2pt) node[below] {$F$};\n  \\fill (P) circle (1.2pt) node[left] {$P$};\n  \\fill (Q) circle (1.2pt) node[left] {$Q$};\n\\end{tikzpicture}"
+        }
+      ],
+      "review_notes": [
+        "原摘录中双曲线与椭圆的乘积关系应分别保留符号差异：椭圆为负，双曲线为正；这是由方程作差后的符号决定的。",
+        "原摘录中“$k_{AB}k_{OM}=-\\dfrac{b^2}{a^2}=e^2-1$”这一写法只对椭圆第一标准方程成立时，右端应理解为负数；讲义中更稳妥的写法是直接保留为 $-\\dfrac{b^2}{a^2}$，避免与离心率公式混淆。",
+        "原摘录中抛物线部分夹杂了无关栏目字样，已去除；保留的核心应是不同开口方向下中点弦斜率与中点坐标的对应公式。",
+        "候选题中，2023-全国乙卷-理科::11 与本技巧高度同构，是优先选用的真题；2016-全国III卷-文科::20 选取的是其第（Ⅱ）问所体现的中点轨迹思想。",
+        "未选 2024-全国甲卷-理科::20、2024-全国甲卷-文科::18 等题，原因是它们虽然涉及椭圆与弦，但核心解法并不以“已知中点，用点差法求弦或轨迹”为主。"
+      ]
+    },
+    {
+      "technique_number": 50,
+      "clean_title": "焦点三角形面积问题",
+      "summary_tex": "焦点三角形面积问题，指以圆锥曲线的焦点与曲线上一点构成的三角形面积问题。对椭圆、双曲线，常见图形是$\\triangle PF_1F_2$；对抛物线，常见图形是过焦点的弦$AB$与顶点（或原点）构成的三角形。\n\n这类问题的核心，不是先硬算点坐标，而是优先调用圆锥曲线定义与三角形面积公式。\n\n对于椭圆$\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\,(a>b>0)$，若$P$在椭圆上，$F_1,F_2$为焦点，$\\angle F_1PF_2=\\theta$，则\n\\[\n|PF_1|+|PF_2|=2a,\n\\qquad\nS_{\\triangle PF_1F_2}=\\frac12|PF_1|\\,|PF_2|\\sin\\theta.\n\\]\n进一步可推出\n\\[\n|PF_1|\\,|PF_2|=\\frac{2b^2}{1+\\cos\\theta},\n\\qquad\nS_{\\triangle PF_1F_2}=b^2\\tan\\frac{\\theta}{2}.\n\\]\n\n对于双曲线$\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$，若$P$在双曲线上，$F_1,F_2$为焦点，$\\angle F_1PF_2=\\theta$，则\n\\[\n\\bigl||PF_1|-|PF_2|\\bigr|=2a,\n\\qquad\nS_{\\triangle PF_1F_2}=\\frac12|PF_1|\\,|PF_2|\\sin\\theta.\n\\]\n进一步可推出\n\\[\n|PF_1|\\,|PF_2|=\\frac{2b^2}{1-\\cos\\theta},\n\\qquad\nS_{\\triangle PF_1F_2}=\\frac{b^2}{\\tan\\dfrac{\\theta}{2}}.\n\\]\n\n对于抛物线$y^2=2px\\,(p>0)$，过焦点$F$的直线交抛物线于$A,B$两点，$O$为原点，若该直线倾斜角为$\\theta\\in(0,\\pi)$，则$\\triangle OAB$是等腰三角形，且\n\\[\nS_{\\triangle OAB}=\\frac{p^2}{2\\sin\\theta}.\n\\]\n\n因此，遇到焦点三角形面积时，应先判断是椭圆、双曲线还是抛物线，再看题目给的是角、边长关系、垂直关系，还是坐标与弦的条件，选择对应公式或由定义配合余弦定理求解。",
+      "method_steps_tex": [
+        "先辨认图形是否为焦点三角形：椭圆、双曲线中通常是$\\triangle PF_1F_2$，抛物线中通常是过焦点的弦与顶点构成的三角形",
+        "先写出圆锥曲线定义：椭圆用$|PF_1|+|PF_2|=2a$，双曲线用$\\bigl||PF_1|-|PF_2|\\bigr|=2a$，抛物线优先利用焦点弦性质",
+        "若已知$\\angle F_1PF_2=\\theta$，直接考虑面积公式$S=\\dfrac12|PF_1|\\,|PF_2|\\sin\\theta$",
+        "椭圆中若已知顶角$\\theta$，可直接用$S=b^2\\tan\\dfrac{\\theta}{2}$；双曲线中若已知顶角$\\theta$，可直接用$S=\\dfrac{b^2}{\\tan\\dfrac{\\theta}{2}}$",
+        "若题目给出垂直关系，如$PF_1\\perp PF_2$，则先化为$\\angle F_1PF_2=90^\\circ$，再把面积公式大幅简化",
+        "若题目给出原点到点$P$的距离、斜率、数量积等条件，可先转化出角或边的关系，再回到焦点三角形面积",
+        "当直接公式不能一步得到结果时，用余弦定理把$|F_1F_2|,|PF_1|,|PF_2|,\\angle F_1PF_2$联系起来，再配合定义求面积",
+        "计算结束后，注意核对所求到底是三角形面积、四边形面积，还是由面积反求参数"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=1.0]\n  \\coordinate (F1) at (-2.2,0);\n  \\coordinate (F2) at (2.2,0);\n  \\coordinate (P1) at (0,2.1);\n  \\coordinate (P2) at (0,2.6);\n\n  \\draw[thick] (0,0) ellipse (3 and 2);\n  \\draw[thick] (0,0) plot[domain=-3.2:-1.15,smooth,variable=\\x] ({\\x},{sqrt(0.75*(\\x*\\x-1.44))});\n  \\draw[thick] (0,0) plot[domain=-3.2:-1.15,smooth,variable=\\x] ({\\x},{-sqrt(0.75*(\\x*\\x-1.44))});\n  \\draw[thick] (0,0) plot[domain=1.15:3.2,smooth,variable=\\x] ({\\x},{sqrt(0.75*(\\x*\\x-1.44))});\n  \\draw[thick] (0,0) plot[domain=1.15:3.2,smooth,variable=\\x] ({\\x},{-sqrt(0.75*(\\x*\\x-1.44))});\n\n  \\draw[dashed] (F1)--(F2);\n  \\draw[blue,thick] (P1)--(F1)--(F2)--cycle;\n  \\draw[red,thick] (P2)--(F1)--(F2)--cycle;\n\n  \\fill (F1) circle (1.4pt) node[below] {$F_1$};\n  \\fill (F2) circle (1.4pt) node[below] {$F_2$};\n  \\fill (P1) circle (1.4pt) node[above right] {$P$};\n  \\fill (P2) circle (1.4pt) node[above right] {$P$};\n\n  \\node at (0,-2.35) {椭圆中$S_{\\triangle PF_1F_2}=b^2\\tan\\dfrac{\\theta}{2}$};\n  \\node at (0,3.05) {双曲线中$S_{\\triangle PF_1F_2}=\\dfrac{b^2}{\\tan\\dfrac{\\theta}{2}}$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2020-全国I卷-文科::11",
+          "match_reason_tex": "这道题与本技巧的对应最直接。题目所求正是双曲线焦点三角形$\\triangle PF_1F_2$的面积，且解答过程本质上围绕焦点三角形展开：由$|OP|=2=\\dfrac12|F_1F_2|$先判定$\\angle F_1PF_2=90^\\circ$，再结合双曲线定义$|PF_1|-|PF_2|=2a$求出$|PF_1|\\,|PF_2|$，最后用\n\\[\nS_{\\triangle PF_1F_2}=\\frac12|PF_1|\\,|PF_2|\n\\]\n得到面积。它完整体现了“焦点三角形面积问题”的标准做法：先找角，再用定义与边角关系算面积。",
+          "question_tikz": ""
+        },
+        {
+          "id": "2023-全国甲卷-理科::12",
+          "match_reason_tex": "这道题高度体现了椭圆焦点三角形面积公式的应用价值。题设直接给出$\\cos\\angle F_1PF_2=\\dfrac35$，而本技巧中椭圆情形的核心结论正是\n\\[\nS_{\\triangle PF_1F_2}=b^2\\tan\\frac{\\theta}{2}.\n\\]\n解答中先由$\\cos\\angle F_1PF_2$转化出$\\tan\\dfrac{\\theta}{2}$，再迅速得到焦点三角形面积，继而反求点$P$的纵坐标，最终求出$|OP|$。这说明焦点三角形面积公式不仅能直接求面积，还能作为中间量服务于后续求点的位置或距离，是本技巧的典型延伸应用。",
+          "question_tikz": ""
+        },
+        {
+          "id": "2020-全国III卷-理科::11",
+          "match_reason_tex": "这道题与双曲线焦点三角形面积技巧具有实质对应。题目已知$F_1P\\perp F_2P$，这等价于焦点三角形$\\triangle PF_1F_2$在$P$处为直角三角形，于是面积满足\n\\[\nS_{\\triangle PF_1F_2}=\\frac12|PF_1|\\,|PF_2|.\n\\]\n再结合双曲线定义$|PF_1|-|PF_2|=2a$以及勾股关系$|PF_1|^2+|PF_2|^2=(2c)^2$，即可由面积反推出参数$a$。它体现了本技巧中“由垂直条件先把焦点三角形特殊化，再借定义求参数”的常见路径。",
+          "question_tikz": ""
+        }
+      ],
+      "review_notes": [
+        "已将原摘录中明显的版面/OCR问题作了整理，例如去除了孤立的“150”等无关内容。",
+        "保留并强化了椭圆、双曲线、抛物线三类焦点三角形面积结论，其中椭圆与双曲线的半角公式是本技巧的核心。",
+        "候选题中，2020-全国I卷-文科::11、2023-全国甲卷-理科::12、2020-全国III卷-理科::11与本技巧对应最紧，其共同点都是围绕焦点三角形的角、边、面积关系展开。",
+        "未选入的一些题目虽然也涉及圆锥曲线中的面积，但焦点三角形不是核心对象，或面积只是附带结论，故未作为优先示例。"
+      ]
+    },
+    {
+      "technique_number": 51,
+      "clean_title": "焦点弦长问题",
+      "summary_tex": "若圆锥曲线的一条弦所在直线经过焦点，这条弦叫做焦点弦。此类问题的关键，不是先把交点坐标硬算出来，而是优先识别“过焦点”“给倾斜角或斜率”“求弦长、焦半径、最值”这些信号，然后直接调用焦点弦的长度关系。\n\n对直线 $y=kx+m$ 与圆锥曲线交于 $A(x_1,y_1),B(x_2,y_2)$，总有\n\\[\n|AB|=\\sqrt{1+k^2}\\,|x_1-x_2|\n\\]\n或在 $k\\ne 0$ 时\n\\[\n|AB|=\\sqrt{1+\\frac1{k^2}}\\,|y_1-y_2|.\n\\]\n这只是一般弦长公式；若它还是焦点弦，就能进一步化简。\n\n椭圆 $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\,(a>b>0)$ 中，设焦点弦 $AB$ 过右焦点 $F(c,0)$，其倾斜角为 $\\alpha$，则\n\\[\n|AF|=\\frac{b^2}{a+c\\cos\\alpha},\\qquad |BF|=\\frac{b^2}{a-c\\cos\\alpha},\n\\]\n\\[\n|AB|=\\frac{2ab^2}{a^2-c^2\\cos^2\\alpha}.\n\\]\n特别地，当弦垂直于长轴时，它是通径，\n\\[\n|AB|=\\frac{2b^2}{a}.\n\\]\n\n抛物线 $y^2=2px\\,(p>0)$ 中，若焦点弦 $MN$ 的倾斜角为 $\\alpha$，则\n\\[\n|MN|=\\frac{2p}{\\sin^2\\alpha},\n\\]\n并且若 $M(x_1,y_1),N(x_2,y_2)$，还有\n\\[\n|MN|=x_1+x_2+p.\n\\]\n因此：已知焦点、方向角、通径位置或两端点与焦点的数量关系时，应优先用焦点弦公式；只有在条件不足时，再回到联立方程与根系关系。",
+      "method_steps_tex": [
+        "\\item 先判断所求弦是否经过焦点；若是，就把题目归入焦点弦问题。",
+        "\\item 再看已知条件属于哪一类：给倾斜角（或斜率）、给通径、给焦半径和、给弦长最值，分别对应不同的焦点弦结论。",
+        "\\item 椭圆或双曲线中，若已知焦点弦的倾斜角，优先使用 $|AB|$ 关于 $a,b,c,\\alpha$ 的公式；不要急于联立直线与曲线方程。",
+        "\\item 抛物线中，若直线过焦点，优先考虑 $|MN|=\\dfrac{2p}{\\sin^2\\alpha}$ 或 $|MN|=x_1+x_2+p$；这通常比设点、消元更快。",
+        "\\item 若题目给的是斜率而不是倾斜角，先由 $k=\\tan\\alpha$ 转成三角量，再代入焦点弦公式。",
+        "\\item 若题目只给出交点坐标和直线斜率，可先用一般弦长公式 $|AB|=\\sqrt{1+k^2}\\,|x_1-x_2|$，再结合根与系数关系化简。",
+        "\\item 求最值时，焦点弦公式往往会把问题化成关于 $\\sin^2\\alpha$ 或 $\\cos^2\\alpha$ 的最值，这一步通常比坐标法更直接。",
+        "\\item 算完后要检查图形位置：如双曲线要分同支、异支两种情形；抛物线要注意倾斜角不能使直线与对称轴平行到不成弦。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=1.05]\n  \\draw[->] (-3.6,0) -- (3.8,0) node[right] {$x$};\n  \\draw[->] (0,-2.5) -- (0,2.7) node[above] {$y$};\n  \\def\\a{3}\n  \\def\\b{2}\n  \\def\\c{2.2360679}\n  \\draw[smooth,domain=0:360,samples=200] plot ({\\a*cos(\\x)},{\\b*sin(\\x)});\n  \\fill (\\c,0) circle (1.2pt) node[below right] {$F$};\n  \\fill (-\\c,0) circle (1.2pt);\n  \\draw[dashed] (\\c,0) -- ++(35:2.8);\n  \\draw[name path=line] (-0.4,-1.85) -- (3.5,0.88);\n  \\fill (0.122,-1.484) circle (1.2pt) node[below] {$A$};\n  \\fill (2.958,0.501) circle (1.2pt) node[above right] {$B$};\n  \\draw (0.122,-1.484) -- (2.958,0.501);\n  \\draw (\\c+0.42,0) arc[start angle=0,end angle=35,radius=0.42];\n  \\node at (2.9,0.22) {$\\alpha$};\n  \\node at (1.55,1.95) {$\\displaystyle \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$};\n  \\node at (1.55,-2.1) {过焦点的弦 $AB$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2017-全国I卷-理科::10",
+          "match_reason_tex": "这题与本技巧对应最直接。题设明确给出“过抛物线焦点作两条互相垂直的直线”，两条截得的都是焦点弦，所求又是 $|AB|+|DE|$ 的最小值。其标准解法正是把两条弦长写成\n\\[\n|AB|=\\frac{2p}{\\sin^2\\theta},\\qquad |DE|=\\frac{2p}{\\cos^2\\theta}\n\\]\n再转化为三角最值问题。这充分体现了焦点弦长公式在“过焦点+给方向关系+求长度最值”中的优势。",
+          "question_tikz": "\\begin{tikzpicture}[scale=1.0]\n  \\draw[->] (-1.8,0) -- (5.2,0) node[right] {$x$};\n  \\draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};\n  \\draw[smooth,domain=-3.1:3.1,samples=200] plot ({(\\x*\\x)/4},{\\x});\n  \\fill (1,0) circle (1.2pt) node[below] {$F$};\n  \\draw (-0.4,-1.4) -- (3.9,2.9) node[right] {$l_2$};\n  \\draw (-0.4,1.4) -- (3.9,-2.9) node[right] {$l_1$};\n  \\fill (2.914,1.914) circle (1.2pt) node[above right] {$D$};\n  \\fill (0.086,-0.914) circle (1.2pt) node[below left] {$E$};\n  \\fill (2.914,-1.914) circle (1.2pt) node[below right] {$A$};\n  \\fill (0.086,0.914) circle (1.2pt) node[above left] {$B$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2023-新高考II卷::10",
+          "match_reason_tex": "这题也是典型焦点弦题。直线 $y=-\\sqrt{3}(x-1)$ 过抛物线 $C:y^2=2px$ 的焦点，并与抛物线交于 $M,N$ 两点，所以 $MN$ 就是焦点弦。选项 B 直接考查 $|MN|$，可由抛物线焦点弦长公式快速得到；选项 C 又利用了焦点弦与准线之间的几何关系。因此本题不仅考查“会算焦点弦长”，还考查“会用焦点弦的几何结构”。",
+          "question_tikz": "\\begin{tikzpicture}[scale=1.0]\n  \\draw[->] (-1.8,0) -- (5.2,0) node[right] {$x$};\n  \\draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};\n  \\draw[smooth,domain=-3.1:3.1,samples=200] plot ({(\\x*\\x)/4},{\\x});\n  \\draw[dashed] (-1,-3.0) -- (-1,3.0) node[above] {$l$};\n  \\fill (1,0) circle (1.2pt) node[below] {$F$};\n  \\draw (-0.3,2.25) -- (3.7,-0.06);\n  \\fill (3,-1.732) circle (1.2pt) node[below right] {$M$};\n  \\fill (0.333,0.577) circle (1.2pt) node[above left] {$N$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2020-全国II卷-理科::19",
+          "match_reason_tex": "这题虽然是椭圆与抛物线综合题，但第（1）问中“过焦点且与 $x$ 轴垂直的直线交椭圆于 $A,B$ 两点”本质上就是椭圆的通径问题。解答中直接用到\n\\[\n|AB|=\\frac{2b^2}{a},\n\\]\n这正是焦点弦长问题中最常用的特殊结论之一。它很好体现了“识别通径，绕开联立方程”的技巧价值。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.95]\n  \\draw[->] (-4.2,0) -- (4.5,0) node[right] {$x$};\n  \\draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};\n  \\draw[smooth,domain=0:360,samples=200] plot ({3*cos(\\x)},{2.2*sin(\\x)});\n  \\draw[smooth,domain=-3.2:3.2,samples=200] plot ({(\\x*\\x)/4},{\\x});\n  \\fill (1.5,0) circle (1.2pt) node[below] {$F$};\n  \\draw[dashed] (1.5,-3.0) -- (1.5,3.0);\n  \\fill (1.5,1.903) circle (1.2pt) node[right] {$A$};\n  \\fill (1.5,-1.903) circle (1.2pt) node[right] {$B$};\n  \\fill (1.5,2.449) circle (1.2pt) node[right] {$C$};\n  \\fill (1.5,-2.449) circle (1.2pt) node[right] {$D$};\n  \\node at (2.8,2.55) {$x=c$};\n\\end{tikzpicture}"
+        }
+      ],
+      "review_notes": [
+        "原摘录标题前后出现“焦点三角形弦长问题”“焦点弦长问题”等表述，按内容应统一为“焦点弦长问题”。",
+        "原摘录中的椭圆、抛物线弦长公式整体可用；但双曲线部分原文已注明后续内容裁切，因此不宜据此扩展未显示的结论。",
+        "原摘录中“技巧应用”后的浅色注释与截断内容不可作为定稿依据，讲义中应只保留清晰可核对的公式。",
+        "候选题中，真正与本技巧实质对应的是“过焦点的弦长、通径、弦长最值”类题目；仅涉及焦半径而不突出焦点弦结构的题，不宜优先选入。"
+      ]
+    },
+    {
+      "technique_number": 52,
+      "clean_title": "焦点三角形中的离心率求法",
+      "summary_tex": "设点 $P$ 在圆锥曲线上，$F_1,F_2$ 为焦点，则三角形 $PF_1F_2$ 常称为焦点三角形．这类问题的关键是把“离心率”转化为焦点三角形中的边角关系．\n\n对椭圆 $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1(a>b>0)$，若 $\\angle PF_1F_2=\\alpha,\\ \\angle PF_2F_1=\\beta$，则\n\\[\ne=\\frac{c}{a}=\\frac{|F_1F_2|}{|PF_1|+|PF_2|}\n=\\frac{\\sin(\\alpha+\\beta)}{\\sin\\alpha+\\sin\\beta}\n=\\frac{\\cos\\dfrac{\\alpha+\\beta}{2}}{\\cos\\dfrac{\\alpha-\\beta}{2}}.\n\\]\n其中 $\\angle F_1PF_2=\\pi-(\\alpha+\\beta)$，故上式中的 $\\sin(\\alpha+\\beta)$ 也可理解为 $\\sin\\angle F_1PF_2$．\n\n对双曲线 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1(a>0,b>0)$，若 $\\angle PF_1F_2=\\alpha,\\ \\angle PF_2F_1=\\beta$，则\n\\[\ne=\\frac{c}{a}=\\frac{|F_1F_2|}{\\bigl||PF_1|-|PF_2|\\bigr|}\n=\\left|\\frac{\\sin(\\alpha+\\beta)}{\\sin\\beta-\\sin\\alpha}\\right|\n=\\left|\\frac{\\sin\\dfrac{\\alpha+\\beta}{2}}{\\sin\\dfrac{\\alpha-\\beta}{2}}\\right|.\n\\]\n\n因此，已知焦点三角形的角，优先用正弦定理与椭圆、双曲线定义建立 $a,c$ 的关系，往往比坐标运算更直接．",
+      "method_steps_tex": [
+        "先判断曲线类型：若是椭圆，用 $|PF_1|+|PF_2|=2a$；若是双曲线，用 $\\bigl||PF_1|-|PF_2|\\bigr|=2a$．",
+        "在 $\\triangle PF_1F_2$ 中设两底角分别为 $\\alpha,\\beta$，则顶角为 $\\pi-(\\alpha+\\beta)$，从而 $\\sin\\angle F_1PF_2=\\sin(\\alpha+\\beta)$．",
+        "由正弦定理写出\n\\[\n\\frac{|PF_1|}{\\sin\\beta}=\\frac{|PF_2|}{\\sin\\alpha}=\\frac{|F_1F_2|}{\\sin(\\alpha+\\beta)}.\n\\]\n据此把 $|PF_1|,|PF_2|$ 都化成含 $|F_1F_2|$ 与角的式子．",
+        "若求椭圆离心率，就把 $e=\\dfrac{|F_1F_2|}{|PF_1|+|PF_2|}$ 代入化简；若求双曲线离心率，就把 $e=\\dfrac{|F_1F_2|}{\\bigl||PF_1|-|PF_2|\\bigr|}$ 代入化简．",
+        "若题目出现 $PF_1\\perp PF_2$，则顶角为 $90^\\circ$，有 $\\alpha+\\beta=90^\\circ$，公式会进一步简化，这是高频切入点．",
+        "若题目没有直接给出角，而给出等边、直角、面积、切线、圆等几何条件，应先把这些条件转化为焦点三角形中的边角关系，再套用上述思路．"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=1]\n\\coordinate (F1) at (-2,0);\n\\coordinate (F2) at (2,0);\n\\coordinate (P) at (0.6,2.6);\n\\draw[thick] (-3.6,0) -- (3.6,0);\n\\draw[thick] (F1) -- (P) -- (F2) -- cycle;\n\\fill (F1) circle (1.5pt) node[below] {$F_1$};\n\\fill (F2) circle (1.5pt) node[below] {$F_2$};\n\\fill (P) circle (1.5pt) node[above] {$P$};\n\\node at (0,-0.35) {$2c$};\n\\draw (F1)+(0.55,0) arc[start angle=0,end angle=58,radius=0.55];\n\\node at (-1.18,0.32) {$\\beta$};\n\\draw (F2)+(-0.55,0) arc[start angle=180,end angle=132,radius=0.55];\n\\node at (1.18,0.32) {$\\alpha$};\n\\draw (P)+(-106:0.55) arc[start angle=-106,end angle=-48,radius=0.55];\n\\node at (0.62,1.82) {$\\theta$};\n\\node at (-0.95,1.45) {$|PF_1|$};\n\\node at (1.15,1.4) {$|PF_2|$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2019-全国II卷-文科::20",
+          "match_reason_tex": "本题第（1）问与该技巧对应最紧：题中虽然没有直接给出 $\\alpha,\\beta$，但由“$\\triangle POF_2$ 为等边三角形”可迅速转化出焦点三角形 $\\triangle F_1PF_2$ 为直角三角形，并得到 $PF_2=c,\\ PF_1=\\sqrt3 c$，再结合椭圆定义 $PF_1+PF_2=2a$，立即求出离心率．这正体现了本技巧的核心思想：先抓住焦点三角形的几何结构，再把离心率写成 $\\dfrac{c}{a}$ 或 $\\dfrac{|F_1F_2|}{|PF_1|+|PF_2|}$ 来处理．\n\n此外，第（2）问又出现 $PF_1\\perp PF_2$，这是焦点三角形离心率问题中的典型特征条件，虽然该问最终要求的是 $b$ 与 $a$ 的范围，但其建模出发点仍然是焦点三角形的边角关系，因此与本技巧有实质联系。",
+          "question_tikz": "\\begin{tikzpicture}[scale=1]\n\\coordinate (O) at (0,0);\n\\coordinate (F1) at (-2,0);\n\\coordinate (F2) at (2,0);\n\\coordinate (P) at (1,1.732);\n\\draw[thick] (F1)--(F2);\n\\draw[thick] (F1)--(P)--(F2);\n\\draw[dashed] (O)--(P)--(F2)--cycle;\n\\fill (F1) circle (1.4pt) node[below] {$F_1$};\n\\fill (F2) circle (1.4pt) node[below] {$F_2$};\n\\fill (O) circle (1.2pt) node[below] {$O$};\n\\fill (P) circle (1.4pt) node[above] {$P$};\n\\node at (1.5,0.52) {$c$};\n\\node at (0.1,1.1) {$\\sqrt3 c$};\n\\draw (P)+(240:0.32) -- +(330:0.32) -- +(330:0.32)+(60:0.32);\n\\node at (0.68,1.42) {$90^\\circ$};\n\\node at (1.42,1) {等边};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2022-全国乙卷-理科::11",
+          "match_reason_tex": "这道题与本技巧中的“双曲线焦点三角形离心率公式”对应非常典型．题目直接给出焦点三角形中的角信息 $\\cos\\angle F_1NF_2=\\dfrac35$，目标又是求双曲线离心率，完全符合“由焦点三角形角度求离心率”的应用场景．\n\n解题中先利用切线与以实轴为直径的圆的性质，把有关线段关系转化到三角形 $F_1NF_2$ 内，再借助正弦定理与双曲线定义 $|NF_1|-|NF_2|=2a$，最终推出 $e$．这正是原技巧第 3、4 条结论的实际运用：双曲线的离心率可以通过焦点三角形的角、边差来表达。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.9]\n\\coordinate (O) at (0,0);\n\\coordinate (F1) at (-3,0);\n\\coordinate (F2) at (3,0);\n\\coordinate (A1) at (-1.6,0);\n\\coordinate (A2) at (1.6,0);\n\\coordinate (N) at (4.8,2.1);\n\\coordinate (G) at (-1.6,1.2);\n\\draw[thick] (O) circle (3);\n\\draw[thick] (-4.8,-2.88) -- (4.8,2.88);\n\\draw[thick] (-4.8,2.88) -- (4.8,-2.88);\n\\draw[thick,samples=100,smooth,domain=-2.3:-1.62] plot (\\x,{0.8*sqrt((\\x*\\x/2.56-1)*2.0)});\n\\draw[thick,samples=100,smooth,domain=-2.3:-1.62] plot (\\x,{-0.8*sqrt((\\x*\\x/2.56-1)*2.0)});\n\\draw[thick,samples=100,smooth,domain=1.62:4.9] plot (\\x,{0.8*sqrt((\\x*\\x/2.56-1)*2.0)});\n\\draw[thick,samples=100,smooth,domain=1.62:4.9] plot (\\x,{-0.8*sqrt((\\x*\\x/2.56-1)*2.0)});\n\\draw[thick] (F1)--(N)--(F2);\n\\draw[dashed] (O)--(G);\n\\draw[dashed] (F1)--(G);\n\\fill (F1) circle (1.4pt) node[below] {$F_1$};\n\\fill (F2) circle (1.4pt) node[below] {$F_2$};\n\\fill (A1) circle (1.2pt) node[below] {$A_1$};\n\\fill (A2) circle (1.2pt) node[below] {$A_2$};\n\\fill (N) circle (1.4pt) node[above] {$N$};\n\\fill (O) circle (1.2pt) node[below right] {$O$};\n\\fill (G) circle (1.2pt) node[left] {$G$};\n\\node at (0,-0.45) {实轴};\n\\draw (N)+(-160:0.5) arc[start angle=-160,end angle=-132,radius=0.5];\n\\node at (4.05,1.92) {$\\angle F_1NF_2$};\n\\draw (G)+(-90:0.28) -- +(0:0.28) -- +(0:0.28)+(90:0.28);\n\\end{tikzpicture}"
+        }
+      ],
+      "review_notes": [
+        "原稿中椭圆情形第 1 条被遮挡的等式，结合后文“技巧法”可确定应为 $e=\\dfrac{\\cos\\frac{\\alpha+\\beta}{2}}{\\cos\\frac{\\alpha-\\beta}{2}}$。",
+        "原稿中椭圆情形第 2 条的“[待人工核对：中间角符号不清晰]$=\\theta$”应表述为 $\\angle F_1PF_2=\\theta$，且由三角形内角和有 $\\theta=\\pi-(\\alpha+\\beta)$，所以 $\\sin\\theta=\\sin(\\alpha+\\beta)$。",
+        "双曲线情形第 3、4 条默认对应横轴在 $x$ 轴上的双曲线 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$；若题目图形位置改变，使用公式时要同步注意 $|PF_1|-|PF_2|$ 的取绝对值。",
+        "候选题中最贴合本技巧的是直接围绕焦点三角形角度、直角、边差或边和来处理离心率的问题，因此只选取了对应最强的 2 题。"
+      ]
+    },
+    {
+      "technique_number": 53,
+      "clean_title": "焦点弦的比例—角度—离心率关系",
+      "summary_tex": "在圆锥曲线中，若一条直线过焦点并与曲线交于两点 $A,B$，常把 $\\lambda=\\dfrac{|AF|}{|BF|}$ 作为焦点分比。此时，弦的倾斜角 $\\theta$、离心率 $e$ 与 $\\lambda$ 之间常有直接关系，可绕开繁琐联立计算。对高中阶段最常用的几类标准方程，可整理为：\n\\[\n\\left|\\cos\\theta\\right|=\\frac{1}{e}\\left|\\frac{\\lambda-1}{\\lambda+1}\\right|\\quad\\text{（横轴椭圆）},\n\\]\n\\[\n\\left|\\sin\\theta\\right|=\\frac{1}{e}\\left|\\frac{\\lambda-1}{\\lambda+1}\\right|\\quad\\text{（纵轴椭圆）},\n\\]\n\\[\n\\cos\\theta=\\frac{1}{e}\\left|\\frac{\\lambda-1}{\\lambda+1}\\right|\\quad\\text{（双曲线焦点在线段 }AB\\text{ 上）},\n\\]\n\\[\n\\left|\\cos\\theta\\right|=\\frac{1}{e}\\left|\\frac{\\lambda+1}{\\lambda-1}\\right|\\quad\\text{（双曲线焦点在线段 }AB\\text{ 的延长线上）},\n\\]\n\\[\n\\left|\\cos\\theta\\right|=\\left|\\frac{\\lambda-1}{\\lambda+1}\\right|\\quad\\text{（抛物线 }y^2=2px\\text{）},\n\\]\n\\[\n\\left|\\sin\\theta\\right|=\\left|\\frac{\\lambda-1}{\\lambda+1}\\right|\\quad\\text{（抛物线 }x^2=2py\\text{）}.\n\\]\n这里 OCR 原稿中的 $\\overrightarrow{AF}=\\lambda\\overrightarrow{FB}$ 更适合改写为长度比 $|AF|=\\lambda|BF|$；本模型实质上讨论的是焦点对弦的分比，而不是向量方向关系。使用时先辨认“过焦点的弦”，再判断是看 $\\sin\\theta$ 还是 $\\cos\\theta$，最后用比例 $\\lambda$ 与离心率 $e$ 建立方程。",
+      "method_steps_tex": [
+        "先确认题目中出现“过焦点的直线（或弦）与圆锥曲线交于两点”这一触发条件。",
+        "把已知线段关系统一写成 $\\lambda=\\dfrac{|AF|}{|BF|}$，若题目给的是中点、倍分、向量共线等信息，也先转成长度比。",
+        "根据曲线类型与标准方程方向选公式：横轴型通常对应 $\\cos\\theta$，纵轴型通常对应 $\\sin\\theta$；双曲线还要区分焦点在线段 $AB$ 上还是在线段延长线上。",
+        "把离心率 $e$ 与倾斜角 $\\theta$ 代入公式，直接求 $\\lambda$，或反过来由 $\\lambda$ 求 $e$、求角。",
+        "若题目还有第二个几何条件，可把焦比弦公式作为“第一步快算”，再结合定义、余弦定理、焦半径公式或弦长公式完成收尾。",
+        "计算结束后检查范围：$\\lambda>0$，椭圆离心率满足 $0<e<1$，双曲线离心率满足 $e>1$，并核对所取三角函数绝对值是否合理。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=1.0]\n  \\draw[->] (-3.8,0) -- (3.8,0) node[right] {$x$};\n  \\draw[->] (0,-2.6) -- (0,2.6) node[above] {$y$};\n  \\draw[thick] (0,0) ellipse (3 and 2);\n  \\fill (-2.236,0) circle (1.2pt) node[below] {$F_1$};\n  \\fill (2.236,0) circle (1.2pt) node[below] {$F$};\n  \\coordinate (A) at (-0.05,1.994);\n  \\coordinate (B) at (2.90,-0.515);\n  \\draw[thick] (A) -- (B);\n  \\fill (A) circle (1.2pt) node[above left] {$A$};\n  \\fill (B) circle (1.2pt) node[below right] {$B$};\n  \\draw[dashed] (2.236,0) -- ++(1.1,0);\n  \\draw (3.0,0) arc[start angle=0,end angle=140,radius=0.764];\n  \\node at (2.75,0.42) {$\\theta$};\n  \\node at (1.2,1.15) {$|AF|=\\lambda|BF|$};\n  \\node at (0.6,2.15) {$\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2019-全国I卷-理科::10",
+          "match_reason_tex": "这题与本模型的对应最直接。题干中有“过 $F_2$ 的直线与椭圆交于 $A,B$ 两点”，这是典型的焦点弦背景；又已知 $|AF_2|=2|F_2B|$，可立即设 $\\lambda=2$。虽然题目最终还给了 $|AB|=|BF_1|$ 这一附加条件，完整求解仍需结合椭圆定义与三角形性质，但“先把焦点分比读出来”正是本技巧的核心入口。也就是说，本题不是只考焦比弦公式本身，却非常适合作为“识别焦点弦分比信息”的真题样本。",
+          "question_tikz": "\\begin{tikzpicture}[scale=1.0]\n  \\draw[->] (-3.8,0) -- (3.8,0) node[right] {$x$};\n  \\draw[->] (0,-2.6) -- (0,2.6) node[above] {$y$};\n  \\draw[thick] (0,0) ellipse (3 and 2.2);\n  \\fill (-1,0) circle (1.2pt) node[below] {$F_1$};\n  \\fill (1,0) circle (1.2pt) node[below] {$F_2$};\n  \\coordinate (A) at (-0.8,2.12);\n  \\coordinate (B) at (2.55,-0.96);\n  \\draw[thick] (A) -- (B);\n  \\fill (A) circle (1.2pt) node[above left] {$A$};\n  \\fill (B) circle (1.2pt) node[below right] {$B$};\n  \\node at (1.0,1.1) {$|AF_2|=2|F_2B|$};\n  \\node at (1.1,0.45) {$|AB|=|BF_1|$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2017-全国I卷-理科::10",
+          "match_reason_tex": "这题与抛物线焦点弦公式高度相关。题干中两条直线都过焦点，分别与抛物线交成两条焦点弦 $AB,DE$，并且两弦互相垂直。题解给出的“方法二”直接使用了抛物线过焦点弦长公式 $|AB|=\\dfrac{2p}{\\sin^2\\theta}$，本质上就是焦点弦模型在长度问题中的标准落地。虽然它没有显式给出分比 $\\lambda$，但它完整体现了本技巧所属的“过焦点弦，优先找角与弦长关系”的思路，因此与本条技巧有实质同源性。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.95]\n  \\draw[->] (-1,0) -- (6.2,0) node[right] {$x$};\n  \\draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};\n  \\draw[thick,domain=-3:3,samples=120] plot ({\\x*\\x/4},{\\x});\n  \\fill (1,0) circle (1.2pt) node[below] {$F$};\n  \\draw[thick] (-0.2,-2.4) -- (3.8,1.6) node[right] {$l_1$};\n  \\draw[thick] (0.0,2.6) -- (2.6,0.0) node[right] {$l_2$};\n  \\fill (0.086,0.588) circle (1.1pt) node[above left] {$A$};\n  \\fill (3.414,-2.588) circle (1.1pt) node[below right] {$B$};\n  \\fill (0.172,-0.828) circle (1.1pt) node[left] {$D$};\n  \\fill (2.828,2.828) circle (1.1pt) node[above right] {$E$};\n  \\node at (1.35,0.5) {$l_1\\perp l_2$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2025-全国I卷::10",
+          "match_reason_tex": "这题与技巧53的贴合度也很高。题干中“过 $F$ 的直线交 $C$ 于 $A,B$”直接给出抛物线焦点弦，后续又作过 $F$ 且垂直于 $AB$ 的直线，形成两条互相关联的焦点弦方向信息。官方解析中的 C、D 两项都用了过焦点弦的参数关系与长度关系，其中 C 项得到 $|AB|=6(m^2+1)\\ge 6$，本质上仍是在利用焦点弦模型快速处理弦长。它比上一题更综合，但仍然保留了本技巧最关键的结构特征。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.95]\n  \\draw[->] (-2.2,0) -- (6.4,0) node[right] {$x$};\n  \\draw[->] (0,-4.0) -- (0,4.0) node[above] {$y$};\n  \\draw[thick,domain=-4.1:4.1,samples=160] plot ({\\x*\\x/6},{\\x});\n  \\draw[dashed] (-1.5,-3.8) -- (-1.5,3.8) node[above] {$l:x=-\\dfrac{3}{2}$};\n  \\fill (1.5,0) circle (1.2pt) node[below] {$F$};\n  \\coordinate (A) at (0.167,-1.0);\n  \\coordinate (B) at (5.167,5.0);\n  \\draw[thick] (A) -- (B);\n  \\fill (A) circle (1.1pt) node[below left] {$A$};\n  \\fill (B) circle (1.1pt) node[above right] {$B$};\n  \\draw[thick] (-0.7,1.833) -- (3.3,-1.5);\n  \\fill (-1.5,-1.5) circle (1.1pt) node[left] {$E$};\n  \\draw[dashed] (0.167,-1.0) -- (-1.5,-1.0);\n  \\fill (-1.5,-1.0) circle (1.1pt) node[left] {$D$};\n  \\node at (3.4,1.0) {$AB\\perp FE$};\n\\end{tikzpicture}"
+        }
+      ],
+      "review_notes": [
+        "优先选择了真正出现“过焦点的弦”的高考题，未选那些只有焦点、但核心并非焦点弦结构的题目。",
+        "2019-全国I卷-理科::10 与 2019-全国I卷-文科::12 题目完全同构，保留其中一道即可，避免重复。",
+        "2017-全国II卷-文科::12 虽然也是过焦点的抛物线直线问题，但主问是点到直线距离，焦比弦公式不是最自然主线，因此未优先入选。",
+        "2021-全国甲卷-理科::5 与 2022-全国乙卷-理科::11 都涉及双曲线焦点与角，但并非“过焦点弦”模型的标准应用场景，故不作为首选。"
+      ]
+    },
+    {
+      "technique_number": 54,
+      "clean_title": "圆锥曲线切线问题",
+      "summary_tex": "圆锥曲线切线问题常见为两类：一类是\\underline{过曲线上一点}求切线，另一类是\\underline{过曲线外一点}作两条切线并研究两切点连线。处理这类题时，关键不是每次都从判别式重推，而是优先识别是否可以直接调用标准结论。\n\n对椭圆、双曲线、抛物线，若已知切点 $P(x_0,y_0)$ 在曲线上，则切线方程通常可由对应的“点式切线公式”直接写出；若已知曲线外一点 $P(x_0,y_0)$ 向曲线引两条切线，切点分别为 $A,B$，则直线 $AB$ 往往可由“切点弦方程”直接写出。例如：\n\\[\n\\text{椭圆 }\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\Rightarrow \\frac{x_0x}{a^2}+\\frac{y_0y}{b^2}=1,\n\\]\n\\[\n\\text{双曲线 }\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\Rightarrow \\frac{x_0x}{a^2}-\\frac{y_0y}{b^2}=1,\n\\]\n\\[\n\\text{抛物线 }y^2=2px\\Rightarrow y_0y=p(x+x_0).\n\\]\n\n要注意：直线与圆锥曲线只有一个公共点，并不一定就是切线。双曲线中平行于渐近线的某些直线、抛物线中平行于对称轴的某些直线，都可能只与曲线有一个公共点，但并不是切线。",
+      "method_steps_tex": [
+        "先判断题型：是“过曲线上一点求切线”，还是“过曲线外一点作两条切线并研究切点弦”。",
+        "若已知切点坐标，直接写点式切线方程；不要先设斜率、再联立、再令判别式为零。",
+        "若已知曲线外一点 $P(x_0,y_0)$，且从该点向圆锥曲线引两条切线，切点为 $A,B$，则优先写出切点弦 $AB$ 的方程。",
+        "遇到“定点、定斜率、平行、垂直、中点、面积”这类结论时，先把切线或切点弦方程化成直线一般式，再读出斜率或代入特殊点验证。",
+        "若题目中的直线只是与曲线“有唯一公共点”，必须再核查它是否真是切线，不能把“唯一交点”等同于“相切”。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=0.9]\n  \\draw[->] (-4.2,0) -- (4.8,0) node[right] {$x$};\n  \\draw[->] (0,-3.2) -- (0,3.6) node[above] {$y$};\n  \\draw[thick] (0,0) ellipse [x radius=3, y radius=2];\n  \\coordinate (P) at (4.1,1.2);\n  \\coordinate (A) at (1.44,1.75);\n  \\coordinate (B) at (2.56,-1.04);\n  \\draw[thick] (P)--(A);\n  \\draw[thick] (P)--(B);\n  \\draw[dashed] (A)--(B);\n  \\fill (P) circle (1.5pt) node[right] {$P(x_0,y_0)$};\n  \\fill (A) circle (1.5pt) node[above] {$A$};\n  \\fill (B) circle (1.5pt) node[below] {$B$};\n  \\node at (0,-2.55) {$\\displaystyle \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$};\n  \\node at (1.6,2.6) {$PA,PB$ 为切线};\n  \\node at (2.35,0.7) {$AB$ 为切点弦};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2019-全国III卷-理科::21",
+          "match_reason_tex": "这道题与本技巧的对应最直接。题设是“过直线上的动点 $D$ 作抛物线 $C:y=\\dfrac{x^2}{2}$ 的两条切线，切点分别为 $A,B$”，本质上正是“过曲线外一点作抛物线的两条切线”。题解第（1）问得到 $AB$ 的方程为 $2tx-2y+1=0$，这与抛物线 $y^2=2x$ 的切点弦公式 $y_0y=x+x_0$ 完全一致：当 $D(t,-\\tfrac12)$ 时，代入可得 $-\\tfrac12 y=x+t$，即 $2tx-2y+1=0$ 的同类结构。该题充分体现了：一旦识别出“外点引两切线”，就应优先考虑切点弦方程，从而快速得到定点、面积等结论。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.95]\n  \\draw[->] (-2.2,0) -- (4.4,0) node[right] {$x$};\n  \\draw[->] (0,-1.4) -- (0,4.4) node[above] {$y$};\n  \\draw[thick,domain=0:2.8,samples=120] plot(\\x,{0.5*\\x*\\x});\n  \\draw[dashed] (-2.0,-0.5)--(4.2,-0.5) node[right] {$y=-\\frac12$};\n  \\coordinate (D) at (2.2,-0.5);\n  \\coordinate (A) at (1,0.5);\n  \\coordinate (B) at (-0.4142,0.0858);\n  \\draw[thick] (D)--(A);\n  \\draw[thick] (D)--(B);\n  \\draw[dashed] (A)--(B);\n  \\fill (D) circle (1.4pt) node[below right] {$D$};\n  \\fill (A) circle (1.4pt) node[above right] {$A$};\n  \\fill (B) circle (1.4pt) node[above left] {$B$};\n  \\node at (2.9,3.7) {$C:y=\\dfrac{x^2}{2}$};\n  \\node at (1.2,1.35) {$AB$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2021-全国乙卷-理科::21",
+          "match_reason_tex": "这道题同样属于“过曲线外一点作抛物线的两条切线”，而且第（2）问直接把技巧用到了面积最值中。题解先由切点 $A(x_1,y_1)$、$B(x_2,y_2)$ 写出切线，再由点 $P(x_0,y_0)$ 同时在两条切线上，推出 $AB$ 的方程为 $y=\\dfrac12 x_0x-y_0$。这正是抛物线 $x^2=2py$ 在外点 $P(x_0,y_0)$ 的切点弦公式 $x_0x=p(y+y_0)$ 在本题 $p=2$ 情形下的等价形式。题目说明：切点弦公式不仅能解决定点、定值问题，还能显著简化面积与最值计算。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.8]\n  \\draw[->] (-3.2,0) -- (3.2,0) node[right] {$x$};\n  \\draw[->] (0,-6.2) -- (0,1.8) node[above] {$y$};\n  \\draw[thick,domain=-3:3,samples=120] plot(\\x,{0.25*\\x*\\x});\n  \\draw[thick] (0,-4) circle (1);\n  \\coordinate (P) at (0.8,-4.6);\n  \\coordinate (A) at (2,1);\n  \\coordinate (B) at (-2,1);\n  \\draw[thick] (P)--(A);\n  \\draw[thick] (P)--(B);\n  \\draw[dashed] (A)--(B);\n  \\fill (P) circle (1.4pt) node[below right] {$P$};\n  \\fill (A) circle (1.4pt) node[above right] {$A$};\n  \\fill (B) circle (1.4pt) node[above left] {$B$};\n  \\node at (2.15,-3.1) {$M:x^2+(y+4)^2=1$};\n  \\node at (1.9,1.55) {$C:x^2=4y$};\n  \\node at (0,1.45) {$AB$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2021-天津卷::18",
+          "match_reason_tex": "这道题对应的是“过曲线上一点作椭圆的切线”。第（II）问设椭圆上一点 $M(x_0,y_0)$ 后，直接写出切线方程 $\\dfrac{x_0x}{5}+y_0y=1$，这是椭圆点式切线公式的标准应用。它非常适合作为本技巧中“已知切点，直接写切线”的典型真题。与前两题相比，本题不涉及外点引两切线，而是突出另一类核心场景：已知切点时，利用点式切线公式进行后续几何关系推导。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.95]\n  \\draw[->] (-3.4,0) -- (3.6,0) node[right] {$x$};\n  \\draw[->] (0,-1.8) -- (0,2.2) node[above] {$y$};\n  \\draw[thick] (0,0) ellipse [x radius=2.236, y radius=1];\n  \\coordinate (F) at (2,0);\n  \\coordinate (B) at (0,1);\n  \\coordinate (M) at (-1.6,0.6997);\n  \\draw[thick] (-2.9,-0.92)--(0.2,1.56);\n  \\draw[dashed] (0,0)--(F);\n  \\draw[dashed] (0,0)--(B);\n  \\fill (F) circle (1.4pt) node[below] {$F$};\n  \\fill (B) circle (1.4pt) node[left] {$B$};\n  \\fill (M) circle (1.4pt) node[above left] {$M$};\n  \\node at (0,-1.35) {$\\displaystyle \\frac{x^2}{5}+y^2=1$};\n  \\node at (-2.45,1.05) {$l$};\n\\end{tikzpicture}"
+        }
+      ],
+      "review_notes": [
+        "原稿中的核心分类是准确的：切线问题确应分为“过曲线上一点”和“过曲线外一点”两大类。",
+        "原稿中的“11个切线方程”里，前8个是点式切线公式，后3个实际是外点所对应的切点弦方程；讲义中宜明确区分，避免学生把二者混为同一种“切线方程”。",
+        "“与圆锥曲线有唯一一交点的直线不一定是切线”这一提醒非常必要，属于本技巧的易错点，应保留。",
+        "候选题中，2019-全国III卷-理科::21与2021-全国乙卷-理科::21最能体现“外点引两切线，直接写切点弦”；2021-天津卷::18最能体现“已知切点，直接写切线”。三题覆盖了本技巧的两个核心场景。"
+      ]
+    },
+    {
+      "technique_number": 55,
+      "clean_title": "双曲线离心率与渐近线倾斜角的关系",
+      "summary_tex": "对双曲线 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1\\,(a>0,b>0)$，其渐近线为 $y=\\pm \\dfrac{b}{a}x$。若其中一条渐近线的倾斜角为 $\\theta$，且取 $\\theta\\in\\left(0,\\dfrac{\\pi}{2}\\right)$ 对应正斜率渐近线，则\n\\[\n\\tan\\theta=\\frac{b}{a},\\qquad e=\\frac{c}{a}=\\sqrt{1+\\frac{b^2}{a^2}}=\\sqrt{1+\\tan^2\\theta}=\\frac{1}{\\cos\\theta}.\n\\]\n因此，已知双曲线为横轴型且已知某条渐近线的倾斜角，就可以直接由 $e=\\dfrac{1}{\\cos\\theta}$ 求离心率。反过来，若已知离心率 $e$，则有\n\\[\n\\frac{b}{a}=\\sqrt{e^2-1},\n\\]\n从而可写出渐近线方程 $y=\\pm \\sqrt{e^2-1}\\,x$。若题目给出的倾斜角大于 $90^\\circ$，应先利用另一条渐近线或结合三角函数把斜率化为正斜率形式再代入。",
+      "method_steps_tex": [
+        "先判断双曲线类型：若是 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$，则使用 $y=\\pm \\dfrac{b}{a}x$；若是 $\\dfrac{y^2}{a^2}-\\dfrac{x^2}{b^2}=1$，则使用 $y=\\pm \\dfrac{a}{b}x$。",
+        "把“渐近线倾斜角”转化为“渐近线斜率”：横轴型中有 $\\tan\\theta=\\dfrac{b}{a}$；若已给的是钝角倾斜角，要先由图形或三角函数关系化到锐角。",
+        "遇到横轴型双曲线且已知锐角倾斜角 $\\theta$ 时，直接套用\n\\[\ne=\\sqrt{1+\\tan^2\\theta}=\\frac{1}{\\cos\\theta}.\n\\]",
+        "若已知离心率 $e$，则先求\n\\[\n\\frac{b}{a}=\\sqrt{e^2-1},\n\\]\n再写渐近线方程 $y=\\pm \\dfrac{b}{a}x$。",
+        "若题目外层包裹了焦点、圆、距离、垂直等条件，最后仍需回到“求出渐近线斜率”这一步，再转化为离心率。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=1.05]\n  \\draw[->] (-4.2,0)--(4.2,0) node[right]{$x$};\n  \\draw[->] (0,-3.2)--(0,3.2) node[above]{$y$};\n  \\draw[dashed] (-3.6,-2.4)--(3.6,2.4);\n  \\draw[dashed] (-3.6,2.4)--(3.6,-2.4);\n  \\draw[domain=-3.2:-1.05,smooth,variable=\\x] plot ({\\x},{sqrt((\\x*\\x/1.44-1)*0.64)});\n  \\draw[domain=-3.2:-1.05,smooth,variable=\\x] plot ({\\x},{-sqrt((\\x*\\x/1.44-1)*0.64)});\n  \\draw[domain=1.05:3.2,smooth,variable=\\x] plot ({\\x},{sqrt((\\x*\\x/1.44-1)*0.64)});\n  \\draw[domain=1.05:3.2,smooth,variable=\\x] plot ({\\x},{-sqrt((\\x*\\x/1.44-1)*0.64)});\n  \\fill (0,0) circle(1.2pt) node[below left]{$O$};\n  \\fill (1.2,0) circle(1.2pt) node[below]{$A(a,0)$};\n  \\fill (-1.2,0) circle(1.2pt) node[below]{$A_1$};\n  \\fill (1.442,0) circle(1.2pt) node[below]{$F(c,0)$};\n  \\draw (1.0,0) arc[start angle=0,end angle=33.69,radius=1.0];\n  \\node at (1.35,0.33){$\\theta$};\n  \\node[right] at (2.65,1.77){$y=\\dfrac{b}{a}x$};\n  \\node[right] at (2.6,-1.7){$y=-\\dfrac{b}{a}x$};\n  \\node at (0.9,2.7){$\\tan\\theta=\\dfrac{b}{a}$};\n  \\node at (2.1,2.35){$e=\\dfrac{1}{\\cos\\theta}$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2019-全国I卷-文科::10",
+          "match_reason_tex": "这道题与本技巧完全同构。题干直接给出横轴型双曲线的一条渐近线倾斜角为 $130^\\circ$，核心就是把倾斜角转化为渐近线斜率，再由\n\\[\ne=\\sqrt{1+\\left(\\frac{b}{a}\\right)^2}=\\frac{1}{\\cos 50^\\circ}\n\\]\n求离心率。它最能体现“由渐近线倾斜角直接求离心率”的模型，只是题目给的是钝角，需要先化为与正斜率对应的锐角 $50^\\circ$，这也正好能训练学生对倾斜角概念的辨析。",
+          "question_tikz": ""
+        },
+        {
+          "id": "2020-全国III卷-文科::14",
+          "match_reason_tex": "这道题是本技巧的最直接基础型。题目直接给出一条渐近线为 $y=\\sqrt{2}x$，立刻得到 $\\dfrac{b}{a}=\\sqrt{2}$，从而\n\\[\ne=\\sqrt{1+\\frac{b^2}{a^2}}=\\sqrt{3}.\n\\]\n它没有额外几何包装，能最清楚地呈现“渐近线斜率 $\\to$ 离心率”的主线，适合放在技巧讲解中的首题或例题。",
+          "question_tikz": ""
+        },
+        {
+          "id": "2021-新高考II卷::13",
+          "match_reason_tex": "这道题与前两题形成良好的双向对应。前两题是“由渐近线求离心率”，本题则是“由离心率求渐近线”。由 $e=2$ 得\n\\[\n\\frac{b}{a}=\\sqrt{e^2-1}=\\sqrt{3},\n\\]\n于是渐近线方程为 $y=\\pm\\sqrt{3}x$。它能帮助学生把本技巧理解为双向转化关系，而不只是一条单向公式。",
+          "question_tikz": ""
+        }
+      ],
+      "review_notes": [
+        "已将标题压缩为高中课堂常用表述，避免使用原摘录中的栏目化措辞。",
+        "原摘录中“若一条渐近线的倾斜角为 $\\theta$，则离心率 $e=\\dfrac{1}{\\cos\\theta}$”这一结论仅对横轴型双曲线 $\\dfrac{x^2}{a^2}-\\dfrac{y^2}{b^2}=1$ 且取正斜率渐近线的锐角倾斜角成立；纵轴型应对应 $e=\\dfrac{1}{\\sin\\theta}$。",
+        "候选题中最贴合本技巧的是直接出现“渐近线倾斜角”或“渐近线方程”的题目；涉及复杂构型但最后仍要借助渐近线斜率的题，教学上不如所选三题集中、纯粹。"
+      ]
+    },
+    {
+      "technique_number": 56,
+      "clean_title": "超级韦达定理",
+      "summary_tex": "所谓“超级韦达定理”，本质上是把“定点与圆锥曲线上的两交点”这一几何关系，转化为关于过该定点的两条连线斜率的一元二次方程，再用韦达定理处理斜率和、斜率积或垂直关系。常见背景是：一条不过定点 $P(x_0,y_0)$ 的直线与椭圆、双曲线或抛物线交于两点 $A,B$，然后研究 $PA,PB$ 的斜率 $k_1,k_2$。操作时，先把曲线方程改写成关于 $x-x_0,y-y_0$ 的形式，再利用所给直线方程把常数项替换掉，最后除以 $(x-x_0)^2$，得到以 $k=\\dfrac{y-y_0}{x-x_0}$ 为未知数的二次方程，其两根正是 $k_1,k_2$。这样可直接由韦达定理得到 $k_1+k_2,k_1k_2$，从而处理“斜率和为定值”“两线垂直”“点积恒正或恒负”“过定点”等问题。使用前提是：所设直线不能经过定点 $P$，并且所研究的两条连线斜率都存在。",
+      "method_steps_tex": [
+        "设圆锥曲线为 $C$，定点为 $P(x_0,y_0)$，不过点 $P$ 的动直线设为 $l: p(x-x_0)+q(y-y_0)=1\\,(p,q\\text{不同时为}0)$。",
+        "把圆锥曲线方程改写成含 $(x-x_0)$、$(y-y_0)$ 的形式。例如椭圆可写成 $\\dfrac{[(x-x_0)+x_0]^2}{m}+\\dfrac{[(y-y_0)+y_0]^2}{n}=1$。",
+        "利用直线方程中的 $1=p(x-x_0)+q(y-y_0)$，常配合平方，代入曲线方程，把原式化为关于 $(x-x_0),(y-y_0)$ 的二次齐次关系。",
+        "两边同除以 $(x-x_0)^2$，并令 $k=\\dfrac{y-y_0}{x-x_0}$，得到一个关于 $k$ 的一元二次方程。",
+        "该方程的两个实根就是 $k_{PA},k_{PB}$，再由韦达定理求出 $k_{PA}+k_{PB}$ 与 $k_{PA}k_{PB}$。",
+        "若题目给出 $PA\\perp PB$，则可直接用 $k_{PA}k_{PB}=-1$；若给出向量点积条件，如 $\\overrightarrow{PA}\\cdot\\overrightarrow{PB}\\le 0$，也常可先转化为关于 $k_{PA}+k_{PB},k_{PA}k_{PB}$ 的代数条件。",
+        "最后把所得参数关系还原到动直线方程中，进而求定点、参数范围或证明结论。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=1.0]\n  \\draw[->] (-3.6,0) -- (4.2,0) node[right] {$x$};\n  \\draw[->] (0,-2.6) -- (0,3.2) node[above] {$y$};\n  \\draw[thick] (0,0) ellipse (3 and 2);\n  \\fill (0,2.6) circle (1.2pt) node[left] {$P(x_0,y_0)$};\n  \\coordinate (A) at (-2.15,1.1);\n  \\coordinate (B) at (2.25,0.05);\n  \\draw[thick] (-2.8,1.25) -- (3.1,-0.15) node[right] {$l$};\n  \\fill (A) circle (1.2pt) node[above left] {$A$};\n  \\fill (B) circle (1.2pt) node[below right] {$B$};\n  \\draw[dashed] (0,2.6) -- (A);\n  \\draw[dashed] (0,2.6) -- (B);\n  \\node at (-1.45,2.2) {$k_{PA}$};\n  \\node at (1.55,1.65) {$k_{PB}$};\n  \\node at (2.4,2.45) {$C$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2017-全国I卷-理科::20",
+          "match_reason_tex": "这道题与该方法的对应度最高。题设固定点为 $P_2(0,1)$，动直线 $l$ 不过 $P_2$，与椭圆交于 $A,B$，并直接给出 $P_2A,P_2B$ 的斜率和为 $-1$。这正是“把交点信息转化为过定点两连线的斜率关系”的标准场景。若按超级韦达定理设 $l:px+q(y-1)=1$，联立椭圆 $\\dfrac{x^2}{4}+y^2=1$ 后可直接构造出关于 $k=\\dfrac{y-1}{x}$ 的二次方程，其两根就是 $k_{P_2A},k_{P_2B}$，再由 $k_{P_2A}+k_{P_2B}=-1$ 反推出 $p,q$ 的关系，最终得到直线 $l$ 过定点。题目考查目标、设点方式、斜率条件和结论类型都与该技巧完全同构。",
+          "question_tikz": ""
+        },
+        {
+          "id": "2024-天津卷::18",
+          "match_reason_tex": "第(2)问与该技巧也有实质对应。题中固定点是 $\\left(0,-\\dfrac{3}{2}\\right)$ 与待求点 $T(0,t)$，动直线过固定点与椭圆交于 $P,Q$。条件是 $\\overrightarrow{TP}\\cdot\\overrightarrow{TQ}\\le 0$ 恒成立。把点积展开后，恰好出现 $x_1x_2,(x_1+x_2)$ 这样的交点对称式，再代入联立方程后的韦达关系即可。若进一步从“以 $T$ 为定点、研究 $TP,TQ$ 两条连线”角度理解，本题与超级韦达定理的核心思想一致：先把圆锥曲线与不过定点的直线联立，再借助韦达定理把几何关系压缩为参数不等式。它不像前一题那样直接给出斜率和或斜率积，但其本质仍是同一类“定点—割线—韦达”模型。",
+          "question_tikz": ""
+        },
+        {
+          "id": "2018-全国III卷-理科::16",
+          "match_reason_tex": "这道填空题虽然篇幅短，但非常典型。固定点是抛物线焦点，过焦点的直线与抛物线交于 $A,B$，条件为 $\\angle AMB=90^\\circ$。由于 $M(-1,1)$ 已知，垂直条件可化为 $\\overrightarrow{MA}\\cdot\\overrightarrow{MB}=0$；而联立抛物线与过焦点直线后，借助韦达定理可迅速得到 $x_1+x_2,x_1x_2,y_1+y_2,y_1y_2$，最终解出斜率 $k$。它与技巧原稿中的“由两交点导出过某定点两连线的斜率积或垂直关系”高度一致，尤其适合说明该方法对抛物线同样有效。",
+          "question_tikz": ""
+        }
+      ],
+      "review_notes": [
+        "原摘录中“只能把直线设为 $l:p(x-x_0)+q(y-y_0)=1\\,(p,q\\text{ 至少一个为 }0)$”明显有 OCR 错误，应为“$p,q$ 至少一个不为 $0$”。",
+        "原摘录中的“韦达定理主要是关于一元二次方程根与系数关系，而超级韦达定理更多地涉及直线与圆锥曲线联立方程后的二次齐次关系”这一表述可保留其教学含义，但应强调它不是独立于韦达定理之外的新定理，而是一类常用设法与变形套路。",
+        "在实际使用中，必须额外检查 $x-x_0\\neq 0$，即所研究的 $PA,PB$ 斜率都存在；否则“除以 $(x-x_0)^2$”这一步不成立。",
+        "候选题中最贴合的是 2017-全国I卷-理科::20；其余所选题目属于同一方法族，但与原摘录相比，一个偏向点积恒成立，一个偏向垂直条件求参数，适合作为补充展示。",
+        "未选 2020-全国I卷-理科::20、2022-全国乙卷-理科::20 等题，原因是它们更偏向常规联立与坐标计算，虽可借助韦达处理交点，但“过定点两连线斜率的二次方程”这一核心特征不如已选题鲜明。"
+      ]
+    },
+    {
+      "technique_number": 57,
+      "clean_title": "非对称处理",
+      "summary_tex": "在圆锥曲线与直线联立后，若所求式子不能直接化为$x_1+x_2,\\ x_1x_2,\\ x_1^2+x_2^2,\\ \\dfrac1{x_1}+\\dfrac1{x_2}$这类对称式，而是出现$\\lambda x_1+\\mu x_2$、$\\dfrac{ax_1x_2+bx_1+cx_2}{dx_1x_2+ex_1+fx_2}$、$\\dfrac{(y_2-b)x_1}{(y_1+b)x_2}$这类“左右系数不等”的式子时，就要做非对称处理。核心思路不是硬代两个根，而是设法把非对称式改造成可由韦达定理控制的对称式。常见做法有：利用曲线方程把某些一次因子改写成平方关系；对分子分母同时配凑；只代换一部分，保留另一部分待约分；或借助交点共线、蝴蝶型构图中的比例式，把非对称关系转成关于和与积的运算。原摘录中有一处明显符号错误：若$\\dfrac{y-2}{y+2}=-\\dfrac13$，则解得$y=1$。",
+      "method_steps_tex": [
+        "先辨认目标式是否为非对称结构：若$x_1,x_2$或$y_1,y_2$前的系数不同，或分子分母中对应项不整齐，一般不能直接套韦达。",
+        "联立直线与圆锥曲线，固定消元方向，求出两交点对应变量的一元二次方程，并记下根与系数关系。",
+        "观察目标式中哪些部分可由曲线方程改写，例如椭圆上可把$a^2-x_i^2$改写为关于$y_i^2$的式子，把$(a-x_i)(a+x_i)$或$(b-y_i)(b+y_i)$成对制造出来。",
+        "若原式是分式，可优先考虑平方、通分、配凑、拆项，把分子分母分别化为同类结构，再整体约分。",
+        "若式中只对$x_1$或$x_2$单边出现，可用“半代换”：先由$x_1+x_2=S$写成$x_1=S-x_2$，再把结果配成公因式，争取出现整体约分。",
+        "遇到蝴蝶型图形或两线交点问题，先由两直线方程联立写出比例式，如$\\dfrac{y-y_A}{y-y_B}=\\dfrac{\\text{一侧截距式}}{\\text{另一侧截距式}}$，再对右端做非对称处理。",
+        "最后回代时要检查符号与几何位置，特别是平方后得到的正负号，需要结合点所在象限或线段位置舍取。"
+      ],
+      "concept_tikz": "\\begin{tikzpicture}[scale=0.9]\n  \\draw[->] (-6,0) -- (6,0) node[right] {$x$};\n  \\draw[->] (0,-5) -- (0,5) node[above] {$y$};\n  \\draw[smooth,domain=-5.2:-2.05,samples=200] plot(\\x,{sqrt((\\x*\\x/4-1)*16)});\n  \\draw[smooth,domain=-5.2:-2.05,samples=200] plot(\\x,{-sqrt((\\x*\\x/4-1)*16)});\n  \\draw[smooth,domain=2.05:5.2,samples=200] plot(\\x,{sqrt((\\x*\\x/4-1)*16)});\n  \\draw[smooth,domain=2.05:5.2,samples=200] plot(\\x,{-sqrt((\\x*\\x/4-1)*16)});\n  \\draw[dashed] (-4,-4.5) -- (-4,4.5);\n  \\coordinate (A1) at (-2,0);\n  \\coordinate (A2) at (2,0);\n  \\coordinate (M) at (-4.4,3.2);\n  \\coordinate (N) at (-3.0,-2.0);\n  \\coordinate (P) at (-4,0.8);\n  \\draw[thick] (-5.1,4.32) -- (-2.65,-1.8);\n  \\draw[thick] (A1) -- (M);\n  \\draw[thick] (A2) -- (N);\n  \\fill (A1) circle (1.5pt) node[below] {$A_1(-2,0)$};\n  \\fill (A2) circle (1.5pt) node[below] {$A_2(2,0)$};\n  \\fill (M) circle (1.5pt) node[above left] {$M$};\n  \\fill (N) circle (1.5pt) node[below left] {$N$};\n  \\fill (P) circle (1.5pt) node[above left] {$P$};\n  \\node at (-4.55,-4.1) {$x=my-4$};\n  \\node at (3.9,4.1) {$\\displaystyle \\frac{x+2}{x-2}=\\frac{y_2(x_1+2)}{y_1(x_2-2)}$};\n\\end{tikzpicture}",
+      "selected": [
+        {
+          "id": "2023-新高考II卷::21",
+          "match_reason_tex": "这道题与该技巧的对应最强。第(2)问中，设$M(x_1,y_1),N(x_2,y_2)$后，由直线$MA_1$与$NA_2$相交，直接得到\n\\[\n\\frac{x+2}{x-2}=\\frac{y_2(x_1+2)}{y_1(x_2-2)}.\n\\]\n右端正是典型的非对称结构：$y_2$配$x_1+2$，$y_1$配$x_2-2$，无法直接代入韦达。解析中采用了“半代换+配凑”的办法：先用$x_i=my_i-4$把$x_1+2,x_2-2$改写成$my_1-2,my_2-6$，再借助$y_1+y_2,\\ y_1y_2$把分子分母配成同一因子，最终整体约分为常数$\\dfrac13$，从而得到定直线$x=-4$。这正体现了非对称处理的本质：把不能直接用韦达的式子，通过局部改写转化为可控的和积结构。",
+          "question_tikz": "\\begin{tikzpicture}[scale=0.9]\n  \\draw[->] (-6,0) -- (6,0) node[right] {$x$};\n  \\draw[->] (0,-5) -- (0,5) node[above] {$y$};\n  \\draw[smooth,domain=-5.2:-2.05,samples=200] plot(\\x,{sqrt((\\x*\\x/4-1)*16)});\n  \\draw[smooth,domain=-5.2:-2.05,samples=200] plot(\\x,{-sqrt((\\x*\\x/4-1)*16)});\n  \\draw[smooth,domain=2.05:5.2,samples=200] plot(\\x,{sqrt((\\x*\\x/4-1)*16)});\n  \\draw[smooth,domain=2.05:5.2,samples=200] plot(\\x,{-sqrt((\\x*\\x/4-1)*16)});\n  \\draw[dashed] (-4,-4.5) -- (-4,4.5);\n  \\coordinate (A1) at (-2,0);\n  \\coordinate (A2) at (2,0);\n  \\coordinate (M) at (-4.4,3.2);\n  \\coordinate (N) at (-3.0,-2.0);\n  \\coordinate (P) at (-4,0.8);\n  \\draw[thick] (-5.1,4.32) -- (-2.65,-1.8);\n  \\draw[thick] (A1) -- (M);\n  \\draw[thick] (A2) -- (N);\n  \\fill (A1) circle (1.5pt) node[below] {$A_1$};\n  \\fill (A2) circle (1.5pt) node[below] {$A_2$};\n  \\fill (M) circle (1.5pt) node[above left] {$M$};\n  \\fill (N) circle (1.5pt) node[below left] {$N$};\n  \\fill (P) circle (1.5pt) node[above left] {$P$};\n  \\node at (-4.55,-4.1) {$x=my-4$};\n  \\node[right] at (-4,0.8) {$P\\in x=-4$};\n\\end{tikzpicture}"
+        },
+        {
+          "id": "2022-全国乙卷-理科::20",
+          "match_reason_tex": "这道题也能体现非对称处理，但强度略次于前题。第(2)问中，设直线与椭圆交于$M(x_1,y_1),N(x_2,y_2)$后，为证明$HN$过定点，解析最后化到\n\\[\n2(x_1+x_2)-6(y_1+y_2)+x_1y_2+x_2y_1-3y_1y_2-12=0.\n\\]\n其中$x_1y_2+x_2y_1$不是标准韦达对象，属于由两组坐标交叉形成的非对称混合项。解答中先分别求出$x_1+x_2,y_1+y_2,y_1y_2$，再额外构造$x_1y_2+x_2y_1$，从而把结论凑成恒等式。这说明：当目标式出现交叉项时，不能只盯住单一变量的韦达关系，而要结合直线方程把$x_i,y_i$联系起来，主动制造新的“对称可算量”。这与技巧57强调的“配凑、代换、和积消元”完全一致。",
+          "question_tikz": ""
+        }
+      ],
+      "review_notes": [
+        "优先选取了真正依赖“非对称韦达结构”化简的题目；未选部分候选题虽然也是圆锥曲线定点问题，但主要做法是直接求点坐标或常规韦达，和本技巧的专属性不够强。",
+        "对原摘录作了必要纠错：由$\\dfrac{y-2}{y+2}=-\\dfrac13$应推出$y=1$；若写成$\\dfrac13$则会得到错误结论。",
+        "概念图采用双曲线“蝴蝶型”构图，是因为给定候选中，2023-新高考II卷最能代表该技巧的核心场景。"
+      ]
+    }
+  ]
+}
