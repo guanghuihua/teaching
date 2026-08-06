@@ -1,6 +1,8 @@
 \section*{使用说明}
 
-本册按技巧分类选取2016--2025年高考真题。所有题目均保留年份、卷别和题号；建议先独立完成，再使用答案版复盘方法选择与运算过程。
+本册按方法分类选取本地题库中的2016--2025年高考真题。每题均保留年份、卷别和题号，题干、答案和解析以所列题源的 \texttt{questions.json} 为核对依据。
+
+本册不把模型自动生成的示意图作为课堂图形使用。需要图形信息时，应先查阅所列原卷；教师自绘图必须逐一核对曲线方程、点的归属、直线关系及长度或角度条件。建议学生先独立完成，再使用答案版复盘方法选择与运算过程。
 
 \section{技巧43：隐圆：几何法与代数法}
 
@@ -9,7 +11,7 @@
 （1）求点 $P$ 的轨迹方程；
 （2）设点 $Q$ 在直线 $x=-3$ 上，且 $\overrightarrow{OP}\cdot\overrightarrow{PQ}=1$．证明：过点 $P$ 且垂直于 $OQ$ 的直线 $l$ 过 $C$ 的左焦点 $F$．
 \begin{solution}
-\textbf{答案：}（1）$x^2+y^2=2$；（2）略
+\textbf{答案：}（1）$x^2+y^2=2$；（2）证明见详解
 
 \textbf{详解：}（1）设 $M(x_0,y_0)$，由题意可得 $N(x_0,0)$，设 $P(x,y)$，由点 $P$ 满足 $\overrightarrow{NP}=\sqrt{2}\overrightarrow{NM}$．可得 $(x-x_0,y)=\sqrt{2}(0,y_0)$，可得 $x-x_0=0$，$y=\sqrt{2}y_0$，即有 $x_0=x$，$y_0=\frac{y}{\sqrt{2}}$，代入椭圆方程 $\frac{x^2}{2}+y^2=1$，可得 $\frac{x^2}{2}+\frac{y^2}{2}=1$，即有点 $P$ 的轨迹方程为圆 $x^2+y^2=2$；
 （2）证明：设 $Q(-3,m)$，$P(\sqrt{2}\cos\alpha,\sin\alpha)$（$0\le\alpha<2\pi$），$\overrightarrow{OP}\cdot\overrightarrow{PQ}=1$，可得 $(\sqrt{2}\cos\alpha,\sin\alpha)\cdot(-3-\sqrt{2}\cos\alpha,m-\sin\alpha)=1$，即为 $-3\sqrt{2}\cos\alpha-2\cos^2\alpha+\sqrt{2}m\sin\alpha-2\sin^2\alpha=1$，当 $\alpha=0$ 时，上式不成立，则 $0<\alpha<2\pi$，解得 $m=\frac{3(1+\sqrt{2}\cos\alpha)}{\sqrt{2}\sin\alpha}$，即有 $Q(-3,\frac{3(1+\sqrt{2}\cos\alpha)}{\sqrt{2}\sin\alpha})$，椭圆 $\frac{x^2}{2}+y^2=1$ 的左焦点 $F(-1,0)$，由 $\overrightarrow{PF}\cdot\overrightarrow{OQ}=(-1-\sqrt{2}\cos\alpha,-\sin\alpha)\cdot(-3,\frac{3(1+\sqrt{2}\cos\alpha)}{\sqrt{2}\sin\alpha})=3+3\sqrt{2}\cos\alpha-3(1+\sqrt{2}\cos\alpha)=0$．可得过点 $P$ 且垂直于 $OQ$ 的直线 $l$ 过 $C$ 的左焦点 $F$．
@@ -46,18 +48,7 @@
 （I）证明$|EA|+|EB|$为定值，并写出点$E$的轨迹方程；
 （II）设点$E$的轨迹为曲线$C_1$，直线$l$交$C_1$于$M$，$N$两点，过$B$且与$l$垂直的直线与圆$A$交于$P$，$Q$两点，求四边形$MPNQ$面积的取值范围．
 \begin{center}
-\begin{tikzpicture}[scale=0.9,>=stealth]
-  \draw[->] (-5,0) -- (3,0) node[right] {$x$};
-  \draw[->] (0,-1) -- (0,4.5) node[above] {$y$};
-  \draw[thick] (-1,0) circle (2);
-  \fill (-1,0) circle (1.2pt) node[below] {$A$};
-  \fill (1,0) circle (1.2pt) node[below] {$B$};
-  \draw[thick] (0,0) ellipse (2 and 1.73);
-  \fill (0.2,1.55) circle (1.2pt) node[above] {$E$};
-  \draw (0.2,1.55)--(-1,0);
-  \draw (0.2,1.55)--(1,0);
-  \node at (0,-2.4) {$|EA|+|EB|=4$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}（I）$|EA|+|EB|=4$，轨迹方程为$\frac{x^2}{4}+\frac{y^2}{3}=1$（$y\neq0$）；（II）$[12,8\sqrt{3})$
@@ -71,20 +62,7 @@
 \begin{question}
 （1）团队在 $O$ 点西侧、东侧20千米处设有 $A$、$B$ 两站点，测量距离发现一点 $P$ 满足 $|PA|-|PB|=20$ 千米，可知 $P$ 在 $A$、$B$ 为焦点的双曲线上，以 $O$ 点为原点，东侧为 $x$ 轴正半轴，北侧为 $y$ 轴正半轴，建立平面直角坐标系，$P$ 在北偏东 $60^\circ$ 处，求双曲线标准方程和 $P$ 点坐标．\newline（2）团队又在南侧、北侧15千米处设有 $C$、$D$ 两站点，测量距离发现 $|QA|-|QB|=30$ 千米，$|QC|-|QD|=10$ 千米，求 $|OQ|$（精确到1米）和 $Q$ 点位置（精确到1米，$1^\circ$）
 \begin{center}
-\begin{tikzpicture}[scale=0.9,>=stealth]
-  \draw[->] (-3.5,0) -- (3.5,0) node[right] {$x$};
-  \draw[->] (0,-2.8) -- (0,2.8) node[above] {$y$};
-  \draw[thick,domain=-3:-1.05,samples=120,smooth] plot (\x,{0.9*sqrt(\x*\x-1)});
-  \draw[thick,domain=-3:-1.05,samples=120,smooth] plot (\x,{-0.9*sqrt(\x*\x-1)});
-  \draw[thick,domain=1.05:3,samples=120,smooth] plot (\x,{0.9*sqrt(\x*\x-1)});
-  \draw[thick,domain=1.05:3,samples=120,smooth] plot (\x,{-0.9*sqrt(\x*\x-1)});
-  \fill (-2,0) circle (1.2pt) node[below] {$A$};
-  \fill (2,0) circle (1.2pt) node[below] {$B$};
-  \draw[dashed] (1.8,0)--(1.2,2.08);
-  \draw[dashed] (-1.8,0)--(1.2,2.08);
-  \fill (1.2,2.08) circle (1.2pt) node[right] {$P$};
-  \node at (0,-2.3) {$\bigl||PA|-|PB|\bigr|=20$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}$(1)\ \frac{x^2}{100}-\frac{y^2}{300}=1,\ P(\frac{15\sqrt{2}}{2},\frac{5\sqrt{6}}{2})$；$(2)\ |OQ|\approx 19$ 米，$Q$ 点位置北偏东 $66^\circ$
@@ -100,18 +78,7 @@
 （1）若 $\triangle POF_2$ 为等边三角形，求 $C$ 的离心率；
 （2）如果存在点 $P$，使得 $PF_1\perp PF_2$，且 $\triangle F_1PF_2$ 的面积等于 $16$，求 $b$ 的值和 $a$ 的取值范围．
 \begin{center}
-\begin{tikzpicture}[scale=0.95,>=stealth]
-  \draw[->] (-4,0) -- (4,0) node[right] {$x$};
-  \draw[->] (0,-2.6) -- (0,2.6) node[above] {$y$};
-  \draw[thick] (0,0) ellipse (3 and 2);
-  \fill (-1.8,0) circle (1.2pt) node[below] {$F_1$};
-  \fill (1.8,0) circle (1.2pt) node[below] {$F_2$};
-  \fill (0.9,1.9) circle (1.2pt) node[above] {$P$};
-  \draw (-1.8,0)--(0.9,1.9);
-  \draw (1.8,0)--(0.9,1.9);
-  \draw (0.56,1.66)--(0.73,1.42)--(0.97,1.59);
-  \node at (0,-2.2) {$|PF_1|+|PF_2|=2a$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）$e=\sqrt{3}-1$；（2）$b=4$，$a$ 的取值范围为 $[4\sqrt{2},+\infty)$
@@ -134,17 +101,7 @@
 \item $4$
 \end{choices}
 \begin{center}
-\begin{tikzpicture}[scale=0.9,>=stealth]
-  \draw[->] (-4,0) -- (5,0) node[right] {$x$};
-  \draw[->] (0,-4) -- (0,4) node[above] {$y$};
-  \draw[domain=-3.2:3.2,smooth,variable=\y,thick] plot ({\y*\y/8}, {\y});
-  \draw[dashed] (-2,-3.8) -- (-2,3.8) node[above] {$x=-2$};
-  \draw[dashed] (-3,-3.8) -- (-3,3.8) node[above] {$x=-3$};
-  \fill (2,0) circle (1.2pt) node[below] {$F(2,0)$};
-  \fill (1,2.828) circle (1.2pt) node[right] {$M$};
-  \draw[dashed] (1,2.828) -- (-3,2.828);
-  \draw (2,0) -- (1,2.828);
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}D
@@ -164,18 +121,7 @@
 \item $3\sqrt{2}$
 \end{choices}
 \begin{center}
-\begin{tikzpicture}[scale=1,>=stealth]
-  \draw[->] (-2,0) -- (4.5,0) node[right] {$x$};
-  \draw[->] (0,-3.5) -- (0,3.5) node[above] {$y$};
-  \draw[domain=-3:3,smooth,variable=\y,thick] plot ({\y*\y/4}, {\y});
-  \draw[dashed] (-1,-3.2) -- (-1,3.2) node[above] {$x=-1$};
-  \fill (1,0) circle (1.2pt) node[below] {$F(1,0)$};
-  \fill (3,0) circle (1.2pt) node[below] {$B(3,0)$};
-  \fill (1,2) circle (1.2pt) node[right] {$A$};
-  \draw[dashed] (1,2) -- (-1,2);
-  \draw (1,0) -- (1,2);
-  \draw (1,2) -- (3,0);
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}B
@@ -195,19 +141,7 @@
 \item $6$
 \end{choices}
 \begin{center}
-\begin{tikzpicture}[scale=0.95,>=stealth]
-  \draw[->] (-2.5,0) -- (5,0) node[right] {$x$};
-  \draw[->] (0,-1) -- (0,5.5) node[above] {$y$};
-  \draw[domain=0:4.6,smooth,variable=\x,thick] plot ({\x},{sqrt(4*\x)});
-  \draw[domain=0:4.6,smooth,variable=\x,thick] plot ({\x},{-sqrt(4*\x)});
-  \draw[dashed] (-1,-0.8) -- (-1,5.2) node[above] {$x=-1$};
-  \draw[thick] (-0.2,2.4) -- (2.2,-2.4) node[right] {$BF$};
-  \fill (1,0) circle (1.2pt) node[below] {$F(1,0)$};
-  \fill (-1,4) circle (1.2pt) node[left] {$B$};
-  \fill (4,4) circle (1.2pt) node[right] {$A$};
-  \draw[dashed] (4,4) -- (-1,4);
-  \draw (1,0) -- (4,4);
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}$C$
@@ -229,21 +163,7 @@
 \item $\frac{1}{3}$
 \end{choices}
 \begin{center}
-\begin{tikzpicture}[scale=0.9]
-  \draw[->] (-3.8,0) -- (3.8,0) node[right] {$x$};
-  \draw[->] (0,-2.6) -- (0,2.6) node[above] {$y$};
-  \draw[thick,domain=0:360,samples=200,smooth] plot ({3*cos(\x)},{2*sin(\x)});
-  \coordinate (A) at (-3,0);
-  \coordinate (P) at (1.5,1.5);
-  \coordinate (Q) at (-1.5,1.5);
-  \fill (A) circle (1.4pt) node[below left] {$A$};
-  \fill (P) circle (1.4pt) node[above right] {$P$};
-  \fill (Q) circle (1.4pt) node[above left] {$Q$};
-  \draw[blue] (A) -- (P) node[midway,below] {$AP$};
-  \draw[blue] (A) -- (Q) node[midway,left] {$AQ$};
-  \draw[dashed] (P) -- (Q);
-  \node at (0,-2.1) {$P,Q$ 关于 $y$ 轴对称，关注 $k_{AP}k_{AQ}$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}A
@@ -261,20 +181,7 @@
      （i）证明：$\triangle PQG$ 是直角三角形；
      （ii）求 $\triangle PQG$ 面积的最大值．
 \begin{center}
-\begin{tikzpicture}[scale=0.95]
-  \draw[->] (-3.8,0) -- (3.8,0) node[right] {$x$};
-  \draw[->] (0,-2.8) -- (0,2.8) node[above] {$y$};
-  \draw[thick,domain=0:360,samples=200,smooth] plot ({2.8*cos(\x)},{2.0*sin(\x)});
-  \coordinate (A) at (-2,0);
-  \coordinate (B) at (2,0);
-  \coordinate (M) at (1.2,1.6);
-  \fill (A) circle (1.4pt) node[below left] {$A(-2,0)$};
-  \fill (B) circle (1.4pt) node[below right] {$B(2,0)$};
-  \fill (M) circle (1.4pt) node[above right] {$M(x,y)$};
-  \draw[blue] (A) -- (M) node[midway,above left] {$AM$};
-  \draw[blue] (B) -- (M) node[midway,above right] {$BM$};
-  \node at (0,-2.25) {$k_{AM}k_{BM}=-\dfrac12$，对应椭圆第三定义};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）$\frac{x^2}{4}+\frac{y^2}{2}=1\ (|x|\neq 2)$，$C$ 为中心在坐标原点，焦点在 $x$ 轴上的椭圆，不含左右顶点；（2）（i）证明见解析；（ii）$\frac{16}{9}$
@@ -294,24 +201,7 @@
 （1）求 $C$ 的方程；
 （2）设直线 $l$ 不经过 $P_2$ 点且与 $C$ 相交于 $A$，$B$ 两点．若直线 $P_2A$ 与直线 $P_2B$ 的斜率的和为 $-1$，证明：$l$ 过定点．
 \begin{center}
-\begin{tikzpicture}[scale=0.95,>=stealth]
-  \draw[->] (-3.2,0)--(3.4,0) node[right]{$x$};
-  \draw[->] (0,-2.0)--(0,2.2) node[above]{$y$};
-  \draw[thick] (0,0) ellipse (2 and 1.6);
-  \coordinate (P2) at (0,1.6);
-  \coordinate (A) at (-1.55,-1.02);
-  \coordinate (B) at (1.8,0.7);
-  \coordinate (D) at (2,-1.6);
-  \draw[thick] (A)--(B) node[pos=0.55,below]{$l$};
-  \draw[thick] (P2)--(A);
-  \draw[thick] (P2)--(B);
-  \fill (P2) circle (1.4pt) node[above right]{$P_2(0,1)$};
-  \fill (A) circle (1.4pt) node[left]{$A$};
-  \fill (B) circle (1.4pt) node[right]{$B$};
-  \fill (D) circle (1.4pt) node[below right]{$(2,-1)$};
-  \node at (-1.2,0.55) {$k_{P_2A}$};
-  \node at (1.08,1.35) {$k_{P_2B}$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）$\frac{x^2}{4}+y^2=1$；（2）证明见解析，定点为 $(2,-1)$
@@ -328,28 +218,7 @@
 (1)求$E$的方程；
 (2)证明：直线$CD$过定点。
 \begin{center}
-\begin{tikzpicture}[scale=0.85,>=stealth]
-  \draw[->] (-4.2,0)--(7.2,0) node[right]{$x$};
-  \draw[->] (0,-3.0)--(0,3.2) node[above]{$y$};
-  \draw[thick] (0,0) ellipse (3 and 2);
-  \coordinate (A) at (-3,0);
-  \coordinate (B) at (3,0);
-  \coordinate (P) at (6,2.2);
-  \coordinate (C) at (-0.7,1.34);
-  \coordinate (D) at (1.86,-0.78);
-  \coordinate (F) at (1.5,0);
-  \draw[thick] (P)--(A);
-  \draw[thick] (P)--(B);
-  \draw[thick] (C)--(D);
-  \fill (A) circle (1.4pt) node[below]{$A$};
-  \fill (B) circle (1.4pt) node[below]{$B$};
-  \fill (P) circle (1.4pt) node[right]{$P$};
-  \fill (C) circle (1.4pt) node[above left]{$C$};
-  \fill (D) circle (1.4pt) node[below right]{$D$};
-  \fill (F) circle (1.4pt) node[above]{$\left(\frac{3}{2},0\right)$};
-  \draw[dashed] (6,-3)--(6,3);
-  \node at (6.35,-2.55) {$x=6$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}(1)$\frac{x^2}{9}+y^2=1$；(2)直线$CD$过定点$\left(\frac{3}{2},0\right)$
@@ -382,23 +251,7 @@
 （1）证明：直线 $AB$ 过定点；
 （2）若以 $E\left(0,\dfrac{5}{2}\right)$ 为圆心的圆与直线 $AB$ 相切，且切点为线段 $AB$ 的中点，求四边形 $ADBE$ 的面积。
 \begin{center}
-\begin{tikzpicture}[scale=1.0]
-  \draw[->] (-3.2,0) -- (3.8,0) node[right] {$x$};
-  \draw[->] (0,-1.4) -- (0,4.2) node[above] {$y$};
-  \draw[thick,domain=-2.6:2.6,samples=200] plot (\x,{0.5*\x*\x});
-  \draw[dashed] (-3,-0.5) -- (3.5,-0.5) node[right] {$y=-\dfrac12$};
-  \coordinate (D) at (2,-0.5);
-  \coordinate (A) at (1,0.5);
-  \coordinate (B) at (-1,0.5);
-  \coordinate (T) at (0,0.5);
-  \draw[thick] (D)--(A) (D)--(B) (A)--(B);
-  \fill (D) circle (1.2pt) node[below right] {$D$};
-  \fill (A) circle (1.2pt) node[above right] {$A$};
-  \fill (B) circle (1.2pt) node[above left] {$B$};
-  \fill (T) circle (1.2pt) node[above] {$\left(0,\dfrac12\right)$};
-  \node at (1.8,3.2) {$y=\dfrac{x^2}{2}$};
-  \node at (1.2,1.2) {$AB$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）定点为 $\left(0,\dfrac{1}{2}\right)$；（2）四边形 $ADBE$ 的面积为 $3$ 或 $4\sqrt{2}$。
@@ -415,7 +268,7 @@
 (1)证明：直线AB过定点；
 (2)若以$E(0,\frac{5}{2})$为圆心的圆与直线AB相切，且切点为线段AB的中点，求该圆的方程。
 \begin{solution}
-\textbf{答案：}(1)见详解; (2) $x^2+(y-\frac{5}{2})^2=4$或$x^2+(y-\frac{5}{2})^2=2$
+\textbf{答案：}（1）证明见详解；（2）$x^2+(y-\frac{5}{2})^2=4$ 或 $x^2+(y-\frac{5}{2})^2=2$
 
 \textbf{详解：}(1)证明：设$D(t,-\frac{1}{2})$，$A(x_1,y_1)$，则$y_1=\frac{1}{2}x_1^2$。又因为$y=\frac{1}{2}x^2$，所以$y'=x$。则切线DA的斜率为$x_1$，故$\frac{y_1+\frac{1}{2}}{x_1-t}=x_1$，整理得$2tx_1-2y_1+1=0$。设$B(x_2,y_2)$，同理得$2tx_2-2y_2+1=0$。$A(x_1,y_1),B(x_2,y_2)$都满足直线方程$2tx-2y+1=0$。于是直线$2tx-2y+1=0$过点A,B，而两个不同的点确定一条直线，所以直线AB方程为$2tx-2y+1=0$。即$2tx+(-2y+1)=0$，当$2t=0,-2y+1=0$时等式恒成立。所以直线AB恒过定点$(0,\frac{1}{2})$。
 (2)由(1)得直线AB方程为$2tx-2y+1=0$，和抛物线方程联立得：$\begin{cases} 2tx-2y+1=0 \\ y=\frac{1}{2}x^2 \end{cases}$，化简得$x^2-2tx-1=0$。于是$x_1+x_2=2t$，$y_1+y_2=t(x_1+x_2)+1=2t^2+1$。设M为线段AB的中点，则$M(t,t^2+\frac{1}{2})$。由于$EM\perp AB$，而$\overrightarrow{EM}=(t,t^2-2)$，$\overrightarrow{AB}$与向量$(1,t)$平行，所以$t+t(t^2-2)=0$，解得$t=0$或$t=\pm1$。
@@ -451,34 +304,7 @@
 (I) 若 $F$ 在线段 $AB$ 上, $R$ 是 $PQ$ 的中点, 证明 $AR\parallel FQ$;
 (II) 若 $\triangle PQF$ 的面积是 $\triangle ABF$ 的面积的两倍, 求 $AB$ 中点的轨迹方程.
 \begin{center}
-\begin{tikzpicture}[scale=1.0]
-  \draw[->] (-1.2,0) -- (4.8,0) node[right] {$x$};
-  \draw[->] (0,-2.4) -- (0,2.8) node[above] {$y$};
-  \draw (0,0) node[below left] {$O$};
-
-  \draw[thick,domain=-2.1:2.1,samples=200,smooth] plot ({0.5*(\x)^2},{\x});
-  \draw[dashed] (-0.7,0) -- (-0.7,2.4) node[above] {准线 $x=-\frac12$};
-
-  \coordinate (A) at (0.5,1.0);
-  \coordinate (B) at (4.5,-3.0);
-  \coordinate (M) at (2.5,-1.0);
-  \coordinate (N) at (1.0,0.0);
-  \coordinate (F) at (0.5,0.0);
-  \coordinate (P) at (-0.5,1.0);
-  \coordinate (Q) at (-0.5,-3.0);
-
-  \draw[thick] (A) -- (B);
-  \draw[dashed] (P) -- (Q);
-  \draw[dashed] (F) -- (Q);
-
-  \fill (A) circle (1.2pt) node[above right] {$A$};
-  \fill (B) circle (1.2pt) node[below right] {$B$};
-  \fill (M) circle (1.2pt) node[below] {$M$};
-  \fill (N) circle (1.2pt) node[above] {$N$};
-  \fill (F) circle (1.2pt) node[below] {$F$};
-  \fill (P) circle (1.2pt) node[left] {$P$};
-  \fill (Q) circle (1.2pt) node[left] {$Q$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}见解析
@@ -556,18 +382,7 @@
 \item $10$
 \end{choices}
 \begin{center}
-\begin{tikzpicture}[scale=1.0]
-  \draw[->] (-1.8,0) -- (5.2,0) node[right] {$x$};
-  \draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};
-  \draw[smooth,domain=-3.1:3.1,samples=200] plot ({(\x*\x)/4},{\x});
-  \fill (1,0) circle (1.2pt) node[below] {$F$};
-  \draw (-0.4,-1.4) -- (3.9,2.9) node[right] {$l_2$};
-  \draw (-0.4,1.4) -- (3.9,-2.9) node[right] {$l_1$};
-  \fill (2.914,1.914) circle (1.2pt) node[above right] {$D$};
-  \fill (0.086,-0.914) circle (1.2pt) node[below left] {$E$};
-  \fill (2.914,-1.914) circle (1.2pt) node[below right] {$A$};
-  \fill (0.086,0.914) circle (1.2pt) node[above left] {$B$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}A
@@ -587,16 +402,7 @@
 \item D. $\triangle OMN$为等腰三角形
 \end{choices}
 \begin{center}
-\begin{tikzpicture}[scale=1.0]
-  \draw[->] (-1.8,0) -- (5.2,0) node[right] {$x$};
-  \draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};
-  \draw[smooth,domain=-3.1:3.1,samples=200] plot ({(\x*\x)/4},{\x});
-  \draw[dashed] (-1,-3.0) -- (-1,3.0) node[above] {$l$};
-  \fill (1,0) circle (1.2pt) node[below] {$F$};
-  \draw (-0.3,2.25) -- (3.7,-0.06);
-  \fill (3,-1.732) circle (1.2pt) node[below right] {$M$};
-  \fill (0.333,0.577) circle (1.2pt) node[above left] {$N$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}AC
@@ -615,19 +421,7 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 （1）求$C_1$的离心率；
 （2）设$M$是$C_1$与$C_2$的公共点，若$|MF|=5$，求$C_1$与$C_2$的标准方程.
 \begin{center}
-\begin{tikzpicture}[scale=0.95]
-  \draw[->] (-4.2,0) -- (4.5,0) node[right] {$x$};
-  \draw[->] (0,-3.2) -- (0,3.2) node[above] {$y$};
-  \draw[smooth,domain=0:360,samples=200] plot ({3*cos(\x)},{2.2*sin(\x)});
-  \draw[smooth,domain=-3.2:3.2,samples=200] plot ({(\x*\x)/4},{\x});
-  \fill (1.5,0) circle (1.2pt) node[below] {$F$};
-  \draw[dashed] (1.5,-3.0) -- (1.5,3.0);
-  \fill (1.5,1.903) circle (1.2pt) node[right] {$A$};
-  \fill (1.5,-1.903) circle (1.2pt) node[right] {$B$};
-  \fill (1.5,2.449) circle (1.2pt) node[right] {$C$};
-  \fill (1.5,-2.449) circle (1.2pt) node[right] {$D$};
-  \node at (2.8,2.55) {$x=c$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）$\dfrac12$；（2）$C_1:\dfrac{x^2}{36}+\dfrac{y^2}{27}=1$，$C_2:y^2=12x$
@@ -650,36 +444,7 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \item $\frac{\sqrt{17}}{2}$
 \end{choices}
 \begin{center}
-\begin{tikzpicture}[scale=0.9]
-\coordinate (O) at (0,0);
-\coordinate (F1) at (-3,0);
-\coordinate (F2) at (3,0);
-\coordinate (A1) at (-1.6,0);
-\coordinate (A2) at (1.6,0);
-\coordinate (N) at (4.8,2.1);
-\coordinate (G) at (-1.6,1.2);
-\draw[thick] (O) circle (3);
-\draw[thick] (-4.8,-2.88) -- (4.8,2.88);
-\draw[thick] (-4.8,2.88) -- (4.8,-2.88);
-\draw[thick,samples=100,smooth,domain=-2.3:-1.62] plot (\x,{0.8*sqrt((\x*\x/2.56-1)*2.0)});
-\draw[thick,samples=100,smooth,domain=-2.3:-1.62] plot (\x,{-0.8*sqrt((\x*\x/2.56-1)*2.0)});
-\draw[thick,samples=100,smooth,domain=1.62:4.9] plot (\x,{0.8*sqrt((\x*\x/2.56-1)*2.0)});
-\draw[thick,samples=100,smooth,domain=1.62:4.9] plot (\x,{-0.8*sqrt((\x*\x/2.56-1)*2.0)});
-\draw[thick] (F1)--(N)--(F2);
-\draw[dashed] (O)--(G);
-\draw[dashed] (F1)--(G);
-\fill (F1) circle (1.4pt) node[below] {$F_1$};
-\fill (F2) circle (1.4pt) node[below] {$F_2$};
-\fill (A1) circle (1.2pt) node[below] {$A_1$};
-\fill (A2) circle (1.2pt) node[below] {$A_2$};
-\fill (N) circle (1.4pt) node[above] {$N$};
-\fill (O) circle (1.2pt) node[below right] {$O$};
-\fill (G) circle (1.2pt) node[left] {$G$};
-\node at (0,-0.45) {实轴};
-\draw (N)+(-160:0.5) arc[start angle=-160,end angle=-132,radius=0.5];
-\node at (4.05,1.92) {$\angle F_1NF_2$};
-\draw (G)+(-90:0.28) -- +(0:0.28) -- +(0:0.28)+(90:0.28);
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}C
@@ -701,20 +466,7 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \item $\frac{x^2}{5} + \frac{y^2}{4} = 1$
 \end{choices}
 \begin{center}
-\begin{tikzpicture}[scale=1.0]
-  \draw[->] (-3.8,0) -- (3.8,0) node[right] {$x$};
-  \draw[->] (0,-2.6) -- (0,2.6) node[above] {$y$};
-  \draw[thick] (0,0) ellipse (3 and 2.2);
-  \fill (-1,0) circle (1.2pt) node[below] {$F_1$};
-  \fill (1,0) circle (1.2pt) node[below] {$F_2$};
-  \coordinate (A) at (-0.8,2.12);
-  \coordinate (B) at (2.55,-0.96);
-  \draw[thick] (A) -- (B);
-  \fill (A) circle (1.2pt) node[above left] {$A$};
-  \fill (B) circle (1.2pt) node[below right] {$B$};
-  \node at (1.0,1.1) {$|AF_2|=2|F_2B|$};
-  \node at (1.1,0.45) {$|AB|=|BF_1|$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}$B$
@@ -734,23 +486,7 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \item $|AE| \cdot |BE| \ge 18$
 \end{choices}
 \begin{center}
-\begin{tikzpicture}[scale=0.95]
-  \draw[->] (-2.2,0) -- (6.4,0) node[right] {$x$};
-  \draw[->] (0,-4.0) -- (0,4.0) node[above] {$y$};
-  \draw[thick,domain=-4.1:4.1,samples=160] plot ({\x*\x/6},{\x});
-  \draw[dashed] (-1.5,-3.8) -- (-1.5,3.8) node[above] {$l:x=-\dfrac{3}{2}$};
-  \fill (1.5,0) circle (1.2pt) node[below] {$F$};
-  \coordinate (A) at (0.167,-1.0);
-  \coordinate (B) at (5.167,5.0);
-  \draw[thick] (A) -- (B);
-  \fill (A) circle (1.1pt) node[below left] {$A$};
-  \fill (B) circle (1.1pt) node[above right] {$B$};
-  \draw[thick] (-0.7,1.833) -- (3.3,-1.5);
-  \fill (-1.5,-1.5) circle (1.1pt) node[left] {$E$};
-  \draw[dashed] (0.167,-1.0) -- (-1.5,-1.0);
-  \fill (-1.5,-1.0) circle (1.1pt) node[left] {$D$};
-  \node at (3.4,1.0) {$AB\perp FE$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}ACD
@@ -768,22 +504,7 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 （I）求椭圆的方程；
 （II）直线 $l$ 与椭圆有唯一的公共点 $M$，与 $y$ 轴的正半轴交于点 $N$，过 $N$ 与 $BF$ 垂直的直线交 $x$ 轴于点 $P$．若 $MP // BF$，求直线 $l$ 的方程．
 \begin{center}
-\begin{tikzpicture}[scale=0.95]
-  \draw[->] (-3.4,0) -- (3.6,0) node[right] {$x$};
-  \draw[->] (0,-1.8) -- (0,2.2) node[above] {$y$};
-  \draw[thick] (0,0) ellipse [x radius=2.236, y radius=1];
-  \coordinate (F) at (2,0);
-  \coordinate (B) at (0,1);
-  \coordinate (M) at (-1.6,0.6997);
-  \draw[thick] (-2.9,-0.92)--(0.2,1.56);
-  \draw[dashed] (0,0)--(F);
-  \draw[dashed] (0,0)--(B);
-  \fill (F) circle (1.4pt) node[below] {$F$};
-  \fill (B) circle (1.4pt) node[left] {$B$};
-  \fill (M) circle (1.4pt) node[above left] {$M$};
-  \node at (0,-1.35) {$\displaystyle \frac{x^2}{5}+y^2=1$};
-  \node at (-2.45,1.05) {$l$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}（I）$\frac{x^2}{5} + y^2 = 1$；（II）$x - y + \sqrt{6} = 0$
@@ -870,30 +591,7 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 （1）求$C$的方程；
 （2）记$C$的左、右顶点分别为$A_{1}$，$A_{2}$，过点$(-4,0)$的直线与$C$的左支交于$M$，$N$两点，$M$在第二象限，直线$MA_{1}$与$NA_{2}$交于点$P$．证明:点$P$在定直线上.
 \begin{center}
-\begin{tikzpicture}[scale=0.9]
-  \draw[->] (-6,0) -- (6,0) node[right] {$x$};
-  \draw[->] (0,-5) -- (0,5) node[above] {$y$};
-  \draw[smooth,domain=-5.2:-2.05,samples=200] plot(\x,{sqrt((\x*\x/4-1)*16)});
-  \draw[smooth,domain=-5.2:-2.05,samples=200] plot(\x,{-sqrt((\x*\x/4-1)*16)});
-  \draw[smooth,domain=2.05:5.2,samples=200] plot(\x,{sqrt((\x*\x/4-1)*16)});
-  \draw[smooth,domain=2.05:5.2,samples=200] plot(\x,{-sqrt((\x*\x/4-1)*16)});
-  \draw[dashed] (-4,-4.5) -- (-4,4.5);
-  \coordinate (A1) at (-2,0);
-  \coordinate (A2) at (2,0);
-  \coordinate (M) at (-4.4,3.2);
-  \coordinate (N) at (-3.0,-2.0);
-  \coordinate (P) at (-4,0.8);
-  \draw[thick] (-5.1,4.32) -- (-2.65,-1.8);
-  \draw[thick] (A1) -- (M);
-  \draw[thick] (A2) -- (N);
-  \fill (A1) circle (1.5pt) node[below] {$A_1$};
-  \fill (A2) circle (1.5pt) node[below] {$A_2$};
-  \fill (M) circle (1.5pt) node[above left] {$M$};
-  \fill (N) circle (1.5pt) node[below left] {$N$};
-  \fill (P) circle (1.5pt) node[above left] {$P$};
-  \node at (-4.55,-4.1) {$x=my-4$};
-  \node[right] at (-4,0.8) {$P\in x=-4$};
-\end{tikzpicture}
+{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）$\dfrac{x^{2}}{4}-\dfrac{y^{2}}{16}=1$；（2）证明见解析.
