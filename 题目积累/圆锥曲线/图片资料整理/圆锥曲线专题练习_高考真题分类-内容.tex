@@ -4,15 +4,6 @@
 设 $O$ 为坐标原点，动点 $M$ 在椭圆 $C:\frac{x^2}{2}+y^2=1$ 上，过 $M$ 作 $x$ 轴的垂线，垂足为 $N$，点 $P$ 满足 $\overrightarrow{NP}=\sqrt{2}\overrightarrow{NM}$．
 （1）求点 $P$ 的轨迹方程；
 （2）设点 $Q$ 在直线 $x=-3$ 上，且 $\overrightarrow{OP}\cdot\overrightarrow{PQ}=1$．证明：过点 $P$ 且垂直于 $OQ$ 的直线 $l$ 过 $C$ 的左焦点 $F$．
-\begin{center}
-\begin{tikzpicture}[x=1.15cm,y=1.15cm]
-  \draw[->] (-1.7,0)--(1.8,0) node[right] {$x$}; \draw[->] (0,-1.2)--(0,1.3) node[above] {$y$};
-  \draw[curve] (0,0) ellipse ({sqrt(2)} and 1);
-  \draw[construction] (0.2,0.707)--(0.2,0)--(0.2,1);
-  \foreach \p/\lab/\pos in {(0.2,0.707)/M/right,(0.2,0)/N/below,(0.2,1)/P/right,(-1,0)/F/below}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}（1）$x^2+y^2=2$；（2）证明见详解
 
@@ -50,17 +41,6 @@
 设圆$x^2+y^2+2x-15=0$的圆心为$A$，直线$l$过点$B(1,0)$且与$x$轴不重合，$l$交圆$A$于$C$，$D$两点，过$B$作$AC$的平行线交$AD$于点$E$．
 （I）证明$|EA|+|EB|$为定值，并写出点$E$的轨迹方程；
 （II）设点$E$的轨迹为曲线$C_1$，直线$l$交$C_1$于$M$，$N$两点，过$B$且与$l$垂直的直线与圆$A$交于$P$，$Q$两点，求四边形$MPNQ$面积的取值范围．
-\begin{center}
-\begin{tikzpicture}[x=.65cm,y=.65cm]
-  \draw[->] (-5,0)--(4,0) node[right] {$x$}; \draw[->] (0,-4)--(0,3) node[above] {$y$};
-  \draw[curve] (-1,0) circle (4);
-  \draw[construction] (1,0)--(2.646,1.646) node[right] {$l$};
-  \draw[construction] (-1,0)--(2.646,1.646) (-1,0)--(-2.646,-3.646);
-  \draw[construction] (1,0)--(-.756,-1.134);
-  \foreach \p/\lab/\pos in {(-1,0)/A/below,(1,0)/B/below,(2.646,1.646)/C/right,(-2.646,-3.646)/D/below,(-.756,-1.134)/E/above}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}（I）$|EA|+|EB|=4$，轨迹方程为$\frac{x^2}{4}+\frac{y^2}{3}=1$（$y\neq0$）；（II）$[12,8\sqrt{3})$
 
@@ -105,17 +85,6 @@
 \item $5$
 \item $4$
 \end{choices}
-\begin{center}
-\begin{tikzpicture}[x=.5cm,y=.5cm]
-  \draw[->] (-4,0)--(6,0) node[right] {$x$}; \draw[->] (0,-4)--(0,5) node[above] {$y$};
-  \draw[auxiliary] (-2,-3.5)--(-2,4.5) node[above] {$x=-2$};
-  \draw[auxiliary] (-3,-3.5)--(-3,4.5) node[above] {$x=-3$};
-  \draw[curve,domain=-5.5:5.5,smooth] plot ({\x*\x/8},{\x});
-  \draw[construction] (2,0)--(2,4);
-  \foreach \p/\lab/\pos in {(2,0)/F/below,(2,4)/M/right}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}D
 
@@ -133,16 +102,6 @@
 \item $3$
 \item $3\sqrt{2}$
 \end{choices}
-\begin{center}
-\begin{tikzpicture}[x=.7cm,y=.7cm]
-  \draw[->] (-2,0)--(4,0) node[right] {$x$}; \draw[->] (0,-1)--(0,3) node[above] {$y$};
-  \draw[auxiliary] (-1,-.8)--(-1,2.8) node[above] {$x=-1$};
-  \draw[curve,domain=-3.2:3.2,smooth] plot ({\x*\x/4},{\x});
-  \draw[construction] (1,2)--(3,0) (1,0)--(1,2);
-  \foreach \p/\lab/\pos in {(1,0)/F/below,(1,2)/A/left,(3,0)/B/below}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}B
 
@@ -160,16 +119,6 @@
 \item $5$
 \item $6$
 \end{choices}
-\begin{center}
-\begin{tikzpicture}[x=.7cm,y=.7cm]
-  \draw[->] (-2,0)--(5,0) node[right] {$x$}; \draw[->] (0,-1)--(0,5) node[above] {$y$};
-  \draw[auxiliary] (-1,-.8)--(-1,4.7) node[above] {$x=-1$};
-  \draw[curve,domain=-4.3:4.3,smooth] plot ({\x*\x/4},{\x});
-  \draw[construction] (-1,4)--(1,0)--(4,4)--(-1,4);
-  \foreach \p/\lab/\pos in {(1,0)/F/below,(-1,4)/B/left,(4,4)/A/right}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}$C$
 
@@ -189,15 +138,6 @@
 \item $\frac{1}{2}$
 \item $\frac{1}{3}$
 \end{choices}
-\begin{center}
-\begin{tikzpicture}[x=.7cm,y=.7cm]
-  \draw[->] (-3,0)--(3,0) node[right] {$x$}; \draw[->] (0,-2)--(0,3) node[above] {$y$};
-  \draw[curve] (0,0) ellipse (2 and 1);
-  \draw[construction] (-2,0)--(1,0.866) (-2,0)--(-1,0.866);
-  \foreach \p/\lab/\pos in {(-2,0)/A/below,(1,.866)/P/above,(-1,.866)/Q/above}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}A
 
@@ -213,16 +153,6 @@
 （2）过坐标原点的直线交 $C$ 于 $P$，$Q$ 两点，点 $P$ 在第一象限，$PE\perp x$ 轴，垂足为 $E$，连结 $QE$ 并延长交 $C$ 于点 $G$．
      （i）证明：$\triangle PQG$ 是直角三角形；
      （ii）求 $\triangle PQG$ 面积的最大值．
-\begin{center}
-\begin{tikzpicture}[x=.72cm,y=.72cm]
-  \draw[->] (-3,0)--(3,0) node[right] {$x$}; \draw[->] (0,-2)--(0,2) node[above] {$y$};
-  \draw[curve] (0,0) ellipse (2 and {sqrt(2)});
-  \draw[construction] (-1.155,-1.155)--(1.155,1.155) (-1.155,-1.155)--(1.925,.385) (1.155,1.155)--(1.925,.385);
-  \draw[auxiliary] (1.155,1.155)--(1.155,0);
-  \foreach \p/\lab/\pos in {(1.155,1.155)/P/above,(-1.155,-1.155)/Q/below,(1.155,0)/E/below,(1.925,.385)/G/right}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}（1）$\frac{x^2}{4}+\frac{y^2}{2}=1\ (|x|\neq 2)$，$C$ 为中心在坐标原点，焦点在 $x$ 轴上的椭圆，不含左右顶点；（2）（i）证明见解析；（ii）$\frac{16}{9}$
 
@@ -240,15 +170,6 @@
 已知椭圆 $C:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$（$a>b>0$），四点 $P_1(1,1)$，$P_2(0,1)$，$P_3(-1,\frac{\sqrt{3}}{2})$，$P_4(1,\frac{\sqrt{3}}{2})$ 中恰有三点在椭圆 $C$ 上．
 （1）求 $C$ 的方程；
 （2）设直线 $l$ 不经过 $P_2$ 点且与 $C$ 相交于 $A$，$B$ 两点．若直线 $P_2A$ 与直线 $P_2B$ 的斜率的和为 $-1$，证明：$l$ 过定点．
-\begin{center}
-\begin{tikzpicture}[x=.8cm,y=.8cm]
-  \draw[->] (-3,0)--(3,0) node[right] {$x$}; \draw[->] (0,-1.5)--(0,2) node[above] {$y$};
-  \draw[curve] (0,0) ellipse (2 and 1);
-  \draw[construction] (-1.414,.707)--(1.414,-.707) (0,1)--(-1.414,.707) (0,1)--(1.414,-.707) (2,-1)--(-1.414,.707);
-  \foreach \p/\lab/\pos in {(0,1)/P_2/above,(-1.414,.707)/A/above,(1.414,-.707)/B/below,(2,-1)/T/right}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}（1）$\frac{x^2}{4}+y^2=1$；（2）证明见解析，定点为 $(2,-1)$
 
@@ -263,15 +184,6 @@
 已知$A,B$分别为椭圆$E:\frac{x^2}{a^2}+y^2=1(a>1)$的左、右顶点，$G$为$E$的上顶点，$\overrightarrow{AG}\cdot\overrightarrow{GB}=8$。$P$为直线$x=6$上的动点，$PA$与$E$的另一交点为$C$，$PB$与$E$的另一交点为$D$。
 (1)求$E$的方程；
 (2)证明：直线$CD$过定点。
-\begin{center}
-\begin{tikzpicture}[x=.62cm,y=.62cm]
-  \draw[->] (-4,0)--(7,0) node[right] {$x$}; \draw[->] (0,-2)--(0,4) node[above] {$y$};
-  \draw[curve] (0,0) ellipse (3 and 1);
-  \draw[construction] (-3,0)--(6,3)--(0,1) (3,0)--(6,3)--(2.4,-.6) (0,1)--(2.4,-.6);
-  \foreach \p/\lab/\pos in {(-3,0)/A/below,(3,0)/B/below,(6,3)/P/right,(0,1)/C/left,(2.4,-.6)/D/below}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}(1)$\frac{x^2}{9}+y^2=1$；(2)直线$CD$过定点$\left(\frac{3}{2},0\right)$
 
@@ -302,16 +214,6 @@
 已知曲线 $C: y=\dfrac{x^2}{2}$，$D$ 为直线 $y=-\dfrac{1}{2}$ 上的动点，过 $D$ 作 $C$ 的两条切线，切点分别为 $A$，$B$。
 （1）证明：直线 $AB$ 过定点；
 （2）若以 $E\left(0,\dfrac{5}{2}\right)$ 为圆心的圆与直线 $AB$ 相切，且切点为线段 $AB$ 的中点，求四边形 $ADBE$ 的面积。
-\begin{center}
-\begin{tikzpicture}[x=.9cm,y=.9cm]
-  \draw[->] (-2,0)--(2,0) node[right] {$x$}; \draw[->] (0,-1)--(0,3) node[above] {$y$};
-  \draw[curve,domain=-1.8:1.8,smooth] plot ({\x},{\x*\x/2});
-  \draw[construction] (0,-.5)--(-1,.5) (0,-.5)--(1,.5) (-1,.5)--(1,.5);
-  \draw[auxiliary] (0,.5)--(0,2.5);
-  \foreach \p/\lab/\pos in {(0,-.5)/D/below,(-1,.5)/A/above,(1,.5)/B/above,(0,2.5)/E/right}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}（1）定点为 $\left(0,\dfrac{1}{2}\right)$；（2）四边形 $ADBE$ 的面积为 $3$ 或 $4\sqrt{2}$。
 
@@ -362,16 +264,6 @@
 已知抛物线 $C: y^2=2x$ 的焦点为 $F$, 平行于 $x$ 轴的两条直线 $l_1$, $l_2$ 分别交 $C$ 于 $A$, $B$ 两点, 交 $C$ 的准线于 $P$, $Q$ 两点.
 (I) 若 $F$ 在线段 $AB$ 上, $R$ 是 $PQ$ 的中点, 证明 $AR\parallel FQ$;
 (II) 若 $\triangle PQF$ 的面积是 $\triangle ABF$ 的面积的两倍, 求 $AB$ 中点的轨迹方程.
-\begin{center}
-\begin{tikzpicture}[x=.8cm,y=.8cm]
-  \draw[->] (-1,0)--(3,0) node[right] {$x$}; \draw[->] (0,-3)--(0,3) node[above] {$y$};
-  \draw[auxiliary] (-.5,-2.7)--(-.5,2.7) node[above] {$x=-\frac12$};
-  \draw[curve,domain=-2.3:2.3,smooth] plot ({\x*\x/2},{\x});
-  \draw[construction] (-.5,2)--(2,2) (-.5,-2)--(2,-2) (-.5,2)--(-.5,-2) (2,2)--(2,-2) (2,2)--(-.5,0);
-  \foreach \p/\lab/\pos in {(2,2)/A/right,(2,-2)/B/right,(-.5,2)/P/left,(-.5,-2)/Q/left,(-.5,0)/R/left,(.5,0)/F/below}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}见解析
 
@@ -447,15 +339,6 @@
 \item $12$
 \item $10$
 \end{choices}
-\begin{center}
-\begin{tikzpicture}[x=.65cm,y=.65cm]
-  \draw[->] (-1,0)--(4,0) node[right] {$x$}; \draw[->] (0,-3)--(0,3) node[above] {$y$};
-  \draw[curve,domain=-2.4:2.4,smooth] plot ({\x*\x/4},{\x});
-  \draw[construction] (.333,.667)--(3,-2) (.333,-.667)--(3,2);
-  \foreach \p/\lab/\pos in {(1,0)/F/below,(3,2)/A/right,(.333,.667)/B/left,(3,-2)/D/right,(.333,-.667)/E/left}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}A
 
@@ -473,16 +356,6 @@
 \item C. 以$MN$为直径的圆与$l$相切
 \item D. $\triangle OMN$为等腰三角形
 \end{choices}
-\begin{center}
-\begin{tikzpicture}[x=.65cm,y=.65cm]
-  \draw[->] (-2,0)--(4,0) node[right] {$x$}; \draw[->] (0,-4)--(0,4) node[above] {$y$};
-  \draw[auxiliary] (-1,-3.6)--(-1,3.6) node[above] {$l$};
-  \draw[curve,domain=-3.7:3.7,smooth] plot ({\x*\x/4},{\x});
-  \draw[construction] (.333,1.155)--(3,-3.464) (1,0)--(3,-3.464);
-  \foreach \p/\lab/\pos in {(1,0)/F/below,(3,-3.464)/M/right,(.333,1.155)/N/left}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}AC
 
@@ -499,16 +372,6 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 已知椭圆$C_1:\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$的右焦点$F$与抛物线$C_2$的焦点重合，$C_1$的中心与$C_2$的顶点重合.过$F$且与$x$轴垂直的直线交$C_1$于$A,B$两点，交$C_2$于$C,D$两点，且$|CD|=\dfrac43|AB|$.
 （1）求$C_1$的离心率；
 （2）设$M$是$C_1$与$C_2$的公共点，若$|MF|=5$，求$C_1$与$C_2$的标准方程.
-\begin{center}
-\begin{tikzpicture}[x=.55cm,y=.55cm]
-  \draw[->] (-7,0)--(7,0) node[right] {$x$}; \draw[->] (0,-7)--(0,7) node[above] {$y$};
-  \draw[curve] (0,0) ellipse (6 and 5.196);
-  \draw[curve,domain=-6:6,smooth] plot ({\x*\x/12},{\x});
-  \draw[construction] (3,-6)--(3,6);
-  \foreach \p/\lab/\pos in {(3,0)/F/below,(3,4.5)/A/right,(3,-4.5)/B/right,(3,6)/C/right,(3,-6)/D/right}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}（1）$\dfrac12$；（2）$C_1:\dfrac{x^2}{36}+\dfrac{y^2}{27}=1$，$C_2:y^2=12x$
 
@@ -565,16 +428,6 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \item $|AB| \ge 6$
 \item $|AE| \cdot |BE| \ge 18$
 \end{choices}
-\begin{center}
-\begin{tikzpicture}[x=.65cm,y=.65cm]
-  \draw[->] (-2,0)--(4,0) node[right] {$x$}; \draw[->] (0,-4)--(0,4) node[above] {$y$};
-  \draw[auxiliary] (-1.5,-3.6)--(-1.5,3.6) node[above] {$l$};
-  \draw[curve,domain=-4.2:4.2,smooth] plot ({\x*\x/6},{\x});
-  \draw[construction] (1.5,-3)--(1.5,3) (-1.5,0)--(1.5,0) (-1.5,3)--(1.5,3);
-  \foreach \p/\lab/\pos in {(1.5,0)/F/below,(1.5,3)/A/right,(1.5,-3)/B/right,(-1.5,3)/D/left,(-1.5,0)/E/below}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}ACD
 
@@ -590,15 +443,6 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 已知椭圆 $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ($a > b > 0$) 的右焦点为 $F$，上顶点为 $B$，离心率为 $\frac{2\sqrt{5}}{5}$，且 $|BF| = \sqrt{5}$．
 （I）求椭圆的方程；
 （II）直线 $l$ 与椭圆有唯一的公共点 $M$，与 $y$ 轴的正半轴交于点 $N$，过 $N$ 与 $BF$ 垂直的直线交 $x$ 轴于点 $P$．若 $MP // BF$，求直线 $l$ 的方程．
-\begin{center}
-\begin{tikzpicture}[x=.75cm,y=.75cm]
-  \draw[->] (-3,0)--(3,0) node[right] {$x$}; \draw[->] (0,-1.5)--(0,3.2) node[above] {$y$};
-  \draw[curve] (0,0) ellipse ({sqrt(5)} and 1);
-  \draw[construction] (-2.041,.408)--(.3,2.749) (0,2.449)--(-1.225,0) (-2.041,.408)--(-1.225,0) (0,1)--(2,0);
-  \foreach \p/\lab/\pos in {(2,0)/F/below,(0,1)/B/above,(-2.041,.408)/M/above,(0,2.449)/N/right,(-1.225,0)/P/below}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}（I）$\frac{x^2}{5} + y^2 = 1$；（II）$x - y + \sqrt{6} = 0$
 
@@ -683,18 +527,6 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 已知双曲线$C$的中心为坐标原点，左焦点为$(-2\sqrt{5},0)$，离心率为$\sqrt{5}$．
 （1）求$C$的方程；
 （2）记$C$的左、右顶点分别为$A_{1}$，$A_{2}$，过点$(-4,0)$的直线与$C$的左支交于$M$，$N$两点，$M$在第二象限，直线$MA_{1}$与$NA_{2}$交于点$P$．证明:点$P$在定直线上.
-\begin{center}
-\begin{tikzpicture}[x=.55cm,y=.55cm]
-  \draw[->] (-7,0)--(7,0) node[right] {$x$}; \draw[->] (0,-7.5)--(0,7.5) node[above] {$y$};
-  \draw[curve,domain=-7:-2,smooth] plot ({\x},{sqrt(4*(\x*\x-4))});
-  \draw[curve,domain=-7:-2,smooth] plot ({\x},{-sqrt(4*(\x*\x-4))});
-  \draw[curve,domain=2:7,smooth] plot ({\x},{sqrt(4*(\x*\x-4))});
-  \draw[curve,domain=2:7,smooth] plot ({\x},{-sqrt(4*(\x*\x-4))});
-  \draw[construction] (-4,-7)--(-4,7) (-4,6.928)--(-1,-3.464) (-4,-6.928)--(-1,-3.464);
-  \foreach \p/\lab/\pos in {(-4,6.928)/M/left,(-4,-6.928)/N/left,(-2,0)/A_1/above,(2,0)/A_2/above,(-1,-3.464)/P/right}
-    \fill \p circle (1.2pt) node[\pos] {$\lab$};
-\end{tikzpicture}
-\end{center}
 \begin{solution}
 \textbf{答案：}（1）$\dfrac{x^{2}}{4}-\dfrac{y^{2}}{16}=1$；（2）证明见解析.
 
