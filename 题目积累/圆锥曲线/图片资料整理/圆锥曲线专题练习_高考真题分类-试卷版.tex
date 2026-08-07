@@ -4,11 +4,16 @@
 \usepackage{xcolor,tikz,pgfplots}
 \usetikzlibrary{arrows.meta,calc,intersections,patterns,positioning,quotes,angles}
 \pgfplotsset{compat=1.18}
+\tikzset{curve/.style={thick,blue!65!black}, construction/.style={semithick,orange!80!black}, auxiliary/.style={densely dashed,gray!80}, point/.style={fill=black,circle,inner sep=1.2pt}}
 \geometry{a4paper,margin=1.8cm}
 \setchoices{max-columns=4}
 \emergencystretch=3em
 \setcounter{secnumdepth}{0}
 \examsetup{question/show-answer=false,solution/show-solution=hide}
+% 学生卷隐藏方法分类，并在每题答案区前保留演算空间。
+\newcommand{\answersection}[1]{}
+\newcommand{\studentworkarea}{\par\vspace*{2.4cm}}
+\BeforeBeginEnvironment{solution}{\studentworkarea}
 \begin{document}
 \begin{center}
 {\zihao{2}\bfseries 圆锥曲线专题练习：高考真题分类}\\[4pt]

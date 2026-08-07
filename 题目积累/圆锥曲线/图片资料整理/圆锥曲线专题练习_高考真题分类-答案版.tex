@@ -4,11 +4,14 @@
 \usepackage{xcolor,tikz,pgfplots}
 \usetikzlibrary{arrows.meta,calc,intersections,patterns,positioning,quotes,angles}
 \pgfplotsset{compat=1.18}
+\tikzset{curve/.style={thick,blue!65!black}, construction/.style={semithick,orange!80!black}, auxiliary/.style={densely dashed,gray!80}, point/.style={fill=black,circle,inner sep=1.2pt}}
 \geometry{a4paper,margin=1.8cm}
 \setchoices{max-columns=4}
 \emergencystretch=3em
 \setcounter{secnumdepth}{0}
 \examsetup{question/show-answer=true,solution/show-solution=show-stay}
+\newcommand{\answersection}[1]{\section{#1}}
+\newcommand{\studentworkarea}{}
 \begin{document}
 \begin{center}
 {\zihao{2}\bfseries 圆锥曲线专题练习：高考真题分类}\\[4pt]

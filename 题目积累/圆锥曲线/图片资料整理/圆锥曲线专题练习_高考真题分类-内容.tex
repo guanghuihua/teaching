@@ -1,15 +1,18 @@
-\section*{使用说明}
-
-本册按方法分类选取本地题库中的2016--2025年高考真题。每题均保留年份、卷别和题号，题干、答案和解析以所列题源的 \texttt{questions.json} 为核对依据。
-
-本册不把模型自动生成的示意图作为课堂图形使用。需要图形信息时，应先查阅所列原卷；教师自绘图必须逐一核对曲线方程、点的归属、直线关系及长度或角度条件。建议学生先独立完成，再使用答案版复盘方法选择与运算过程。
-
-\section{技巧43：隐圆：几何法与代数法}
+\answersection{技巧43：隐圆：几何法与代数法}
 
 \begin{question}
 设 $O$ 为坐标原点，动点 $M$ 在椭圆 $C:\frac{x^2}{2}+y^2=1$ 上，过 $M$ 作 $x$ 轴的垂线，垂足为 $N$，点 $P$ 满足 $\overrightarrow{NP}=\sqrt{2}\overrightarrow{NM}$．
 （1）求点 $P$ 的轨迹方程；
 （2）设点 $Q$ 在直线 $x=-3$ 上，且 $\overrightarrow{OP}\cdot\overrightarrow{PQ}=1$．证明：过点 $P$ 且垂直于 $OQ$ 的直线 $l$ 过 $C$ 的左焦点 $F$．
+\begin{center}
+\begin{tikzpicture}[x=1.15cm,y=1.15cm]
+  \draw[->] (-1.7,0)--(1.8,0) node[right] {$x$}; \draw[->] (0,-1.2)--(0,1.3) node[above] {$y$};
+  \draw[curve] (0,0) ellipse ({sqrt(2)} and 1);
+  \draw[construction] (0.2,0.707)--(0.2,0)--(0.2,1);
+  \foreach \p/\lab/\pos in {(0.2,0.707)/M/right,(0.2,0)/N/below,(0.2,1)/P/right,(-1,0)/F/below}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
+\end{center}
 \begin{solution}
 \textbf{答案：}（1）$x^2+y^2=2$；（2）证明见详解
 
@@ -41,14 +44,22 @@
 \end{solution}
 \end{question}
 
-\section{技巧44：圆锥曲线第一定义}
+\answersection{技巧44：圆锥曲线第一定义}
 
 \begin{question}
 设圆$x^2+y^2+2x-15=0$的圆心为$A$，直线$l$过点$B(1,0)$且与$x$轴不重合，$l$交圆$A$于$C$，$D$两点，过$B$作$AC$的平行线交$AD$于点$E$．
 （I）证明$|EA|+|EB|$为定值，并写出点$E$的轨迹方程；
 （II）设点$E$的轨迹为曲线$C_1$，直线$l$交$C_1$于$M$，$N$两点，过$B$且与$l$垂直的直线与圆$A$交于$P$，$Q$两点，求四边形$MPNQ$面积的取值范围．
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.65cm,y=.65cm]
+  \draw[->] (-5,0)--(4,0) node[right] {$x$}; \draw[->] (0,-4)--(0,3) node[above] {$y$};
+  \draw[curve] (-1,0) circle (4);
+  \draw[construction] (1,0)--(2.646,1.646) node[right] {$l$};
+  \draw[construction] (-1,0)--(2.646,1.646) (-1,0)--(-2.646,-3.646);
+  \draw[construction] (1,0)--(-.756,-1.134);
+  \foreach \p/\lab/\pos in {(-1,0)/A/below,(1,0)/B/below,(2.646,1.646)/C/right,(-2.646,-3.646)/D/below,(-.756,-1.134)/E/above}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}（I）$|EA|+|EB|=4$，轨迹方程为$\frac{x^2}{4}+\frac{y^2}{3}=1$（$y\neq0$）；（II）$[12,8\sqrt{3})$
@@ -61,9 +72,6 @@
 
 \begin{question}
 （1）团队在 $O$ 点西侧、东侧20千米处设有 $A$、$B$ 两站点，测量距离发现一点 $P$ 满足 $|PA|-|PB|=20$ 千米，可知 $P$ 在 $A$、$B$ 为焦点的双曲线上，以 $O$ 点为原点，东侧为 $x$ 轴正半轴，北侧为 $y$ 轴正半轴，建立平面直角坐标系，$P$ 在北偏东 $60^\circ$ 处，求双曲线标准方程和 $P$ 点坐标．\newline（2）团队又在南侧、北侧15千米处设有 $C$、$D$ 两站点，测量距离发现 $|QA|-|QB|=30$ 千米，$|QC|-|QD|=10$ 千米，求 $|OQ|$（精确到1米）和 $Q$ 点位置（精确到1米，$1^\circ$）
-\begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
-\end{center}
 \begin{solution}
 \textbf{答案：}$(1)\ \frac{x^2}{100}-\frac{y^2}{300}=1,\ P(\frac{15\sqrt{2}}{2},\frac{5\sqrt{6}}{2})$；$(2)\ |OQ|\approx 19$ 米，$Q$ 点位置北偏东 $66^\circ$
 
@@ -77,9 +85,6 @@
 已知 $F_1,F_2$ 是椭圆 $C:\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0)$ 的两个焦点，$P$ 为 $C$ 上一点，$O$ 为坐标原点．
 （1）若 $\triangle POF_2$ 为等边三角形，求 $C$ 的离心率；
 （2）如果存在点 $P$，使得 $PF_1\perp PF_2$，且 $\triangle F_1PF_2$ 的面积等于 $16$，求 $b$ 的值和 $a$ 的取值范围．
-\begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
-\end{center}
 \begin{solution}
 \textbf{答案：}（1）$e=\sqrt{3}-1$；（2）$b=4$，$a$ 的取值范围为 $[4\sqrt{2},+\infty)$
 
@@ -90,7 +95,7 @@
 \end{solution}
 \end{question}
 
-\section{技巧45：圆锥曲线第二定义}
+\answersection{技巧45：圆锥曲线第二定义}
 
 \begin{question}
 已知抛物线 $C: y^2 = 8x$ 的焦点为 $F$ ，点 $M$ 在 $C$ 上．若 $M$ 到直线 $x = -3$ 的距离为 $5$，则 $|MF| =$ （ ）
@@ -101,7 +106,15 @@
 \item $4$
 \end{choices}
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.5cm,y=.5cm]
+  \draw[->] (-4,0)--(6,0) node[right] {$x$}; \draw[->] (0,-4)--(0,5) node[above] {$y$};
+  \draw[auxiliary] (-2,-3.5)--(-2,4.5) node[above] {$x=-2$};
+  \draw[auxiliary] (-3,-3.5)--(-3,4.5) node[above] {$x=-3$};
+  \draw[curve,domain=-5.5:5.5,smooth] plot ({\x*\x/8},{\x});
+  \draw[construction] (2,0)--(2,4);
+  \foreach \p/\lab/\pos in {(2,0)/F/below,(2,4)/M/right}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}D
@@ -121,7 +134,14 @@
 \item $3\sqrt{2}$
 \end{choices}
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.7cm,y=.7cm]
+  \draw[->] (-2,0)--(4,0) node[right] {$x$}; \draw[->] (0,-1)--(0,3) node[above] {$y$};
+  \draw[auxiliary] (-1,-.8)--(-1,2.8) node[above] {$x=-1$};
+  \draw[curve,domain=-3.2:3.2,smooth] plot ({\x*\x/4},{\x});
+  \draw[construction] (1,2)--(3,0) (1,0)--(1,2);
+  \foreach \p/\lab/\pos in {(1,0)/F/below,(1,2)/A/left,(3,0)/B/below}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}B
@@ -141,7 +161,14 @@
 \item $6$
 \end{choices}
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.7cm,y=.7cm]
+  \draw[->] (-2,0)--(5,0) node[right] {$x$}; \draw[->] (0,-1)--(0,5) node[above] {$y$};
+  \draw[auxiliary] (-1,-.8)--(-1,4.7) node[above] {$x=-1$};
+  \draw[curve,domain=-4.3:4.3,smooth] plot ({\x*\x/4},{\x});
+  \draw[construction] (-1,4)--(1,0)--(4,4)--(-1,4);
+  \foreach \p/\lab/\pos in {(1,0)/F/below,(-1,4)/B/left,(4,4)/A/right}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}$C$
@@ -152,7 +179,7 @@
 \end{solution}
 \end{question}
 
-\section{技巧46：圆锥曲线第三定义}
+\answersection{技巧46：圆锥曲线第三定义}
 
 \begin{question}
 椭圆 $C:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a>b>0)$ 的左顶点为A，点P，Q均在C上，且关于y轴对称. 若直线AP, AQ的斜率之积为 $\frac{1}{4}$，则C的离心率为（ ）
@@ -163,7 +190,13 @@
 \item $\frac{1}{3}$
 \end{choices}
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.7cm,y=.7cm]
+  \draw[->] (-3,0)--(3,0) node[right] {$x$}; \draw[->] (0,-2)--(0,3) node[above] {$y$};
+  \draw[curve] (0,0) ellipse (2 and 1);
+  \draw[construction] (-2,0)--(1,0.866) (-2,0)--(-1,0.866);
+  \foreach \p/\lab/\pos in {(-2,0)/A/below,(1,.866)/P/above,(-1,.866)/Q/above}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}A
@@ -181,7 +214,14 @@
      （i）证明：$\triangle PQG$ 是直角三角形；
      （ii）求 $\triangle PQG$ 面积的最大值．
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.72cm,y=.72cm]
+  \draw[->] (-3,0)--(3,0) node[right] {$x$}; \draw[->] (0,-2)--(0,2) node[above] {$y$};
+  \draw[curve] (0,0) ellipse (2 and {sqrt(2)});
+  \draw[construction] (-1.155,-1.155)--(1.155,1.155) (-1.155,-1.155)--(1.925,.385) (1.155,1.155)--(1.925,.385);
+  \draw[auxiliary] (1.155,1.155)--(1.155,0);
+  \foreach \p/\lab/\pos in {(1.155,1.155)/P/above,(-1.155,-1.155)/Q/below,(1.155,0)/E/below,(1.925,.385)/G/right}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）$\frac{x^2}{4}+\frac{y^2}{2}=1\ (|x|\neq 2)$，$C$ 为中心在坐标原点，焦点在 $x$ 轴上的椭圆，不含左右顶点；（2）（i）证明见解析；（ii）$\frac{16}{9}$
@@ -194,14 +234,20 @@
 \end{solution}
 \end{question}
 
-\section{技巧47：手电筒模型}
+\answersection{技巧47：手电筒模型}
 
 \begin{question}
 已知椭圆 $C:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$（$a>b>0$），四点 $P_1(1,1)$，$P_2(0,1)$，$P_3(-1,\frac{\sqrt{3}}{2})$，$P_4(1,\frac{\sqrt{3}}{2})$ 中恰有三点在椭圆 $C$ 上．
 （1）求 $C$ 的方程；
 （2）设直线 $l$ 不经过 $P_2$ 点且与 $C$ 相交于 $A$，$B$ 两点．若直线 $P_2A$ 与直线 $P_2B$ 的斜率的和为 $-1$，证明：$l$ 过定点．
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.8cm,y=.8cm]
+  \draw[->] (-3,0)--(3,0) node[right] {$x$}; \draw[->] (0,-1.5)--(0,2) node[above] {$y$};
+  \draw[curve] (0,0) ellipse (2 and 1);
+  \draw[construction] (-1.414,.707)--(1.414,-.707) (0,1)--(-1.414,.707) (0,1)--(1.414,-.707) (2,-1)--(-1.414,.707);
+  \foreach \p/\lab/\pos in {(0,1)/P_2/above,(-1.414,.707)/A/above,(1.414,-.707)/B/below,(2,-1)/T/right}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）$\frac{x^2}{4}+y^2=1$；（2）证明见解析，定点为 $(2,-1)$
@@ -218,7 +264,13 @@
 (1)求$E$的方程；
 (2)证明：直线$CD$过定点。
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.62cm,y=.62cm]
+  \draw[->] (-4,0)--(7,0) node[right] {$x$}; \draw[->] (0,-2)--(0,4) node[above] {$y$};
+  \draw[curve] (0,0) ellipse (3 and 1);
+  \draw[construction] (-3,0)--(6,3)--(0,1) (3,0)--(6,3)--(2.4,-.6) (0,1)--(2.4,-.6);
+  \foreach \p/\lab/\pos in {(-3,0)/A/below,(3,0)/B/below,(6,3)/P/right,(0,1)/C/left,(2.4,-.6)/D/below}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}(1)$\frac{x^2}{9}+y^2=1$；(2)直线$CD$过定点$\left(\frac{3}{2},0\right)$
@@ -230,7 +282,7 @@
 \end{solution}
 \end{question}
 
-\section{技巧48：阿基米德三角形}
+\answersection{技巧48：阿基米德三角形}
 
 \begin{question}
 已知抛物线$C:x^2=2py$（$p>0$）的焦点为$F$，且$F$与圆$M:x^2+(y+4)^2=1$上点的距离的最小值为4。
@@ -251,7 +303,14 @@
 （1）证明：直线 $AB$ 过定点；
 （2）若以 $E\left(0,\dfrac{5}{2}\right)$ 为圆心的圆与直线 $AB$ 相切，且切点为线段 $AB$ 的中点，求四边形 $ADBE$ 的面积。
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.9cm,y=.9cm]
+  \draw[->] (-2,0)--(2,0) node[right] {$x$}; \draw[->] (0,-1)--(0,3) node[above] {$y$};
+  \draw[curve,domain=-1.8:1.8,smooth] plot ({\x},{\x*\x/2});
+  \draw[construction] (0,-.5)--(-1,.5) (0,-.5)--(1,.5) (-1,.5)--(1,.5);
+  \draw[auxiliary] (0,.5)--(0,2.5);
+  \foreach \p/\lab/\pos in {(0,-.5)/D/below,(-1,.5)/A/above,(1,.5)/B/above,(0,2.5)/E/right}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）定点为 $\left(0,\dfrac{1}{2}\right)$；（2）四边形 $ADBE$ 的面积为 $3$ 或 $4\sqrt{2}$。
@@ -280,7 +339,7 @@
 \end{solution}
 \end{question}
 
-\section{技巧49：点差法解弦中点问题}
+\answersection{技巧49：点差法解弦中点问题}
 
 \begin{question}
 设 $A$，$B$ 为双曲线 $x^2-\frac{y^2}{9}=1$ 上两点，下列四个点中，可为线段 $AB$ 中点的是（ ）
@@ -304,7 +363,14 @@
 (I) 若 $F$ 在线段 $AB$ 上, $R$ 是 $PQ$ 的中点, 证明 $AR\parallel FQ$;
 (II) 若 $\triangle PQF$ 的面积是 $\triangle ABF$ 的面积的两倍, 求 $AB$ 中点的轨迹方程.
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.8cm,y=.8cm]
+  \draw[->] (-1,0)--(3,0) node[right] {$x$}; \draw[->] (0,-3)--(0,3) node[above] {$y$};
+  \draw[auxiliary] (-.5,-2.7)--(-.5,2.7) node[above] {$x=-\frac12$};
+  \draw[curve,domain=-2.3:2.3,smooth] plot ({\x*\x/2},{\x});
+  \draw[construction] (-.5,2)--(2,2) (-.5,-2)--(2,-2) (-.5,2)--(-.5,-2) (2,2)--(2,-2) (2,2)--(-.5,0);
+  \foreach \p/\lab/\pos in {(2,2)/A/right,(2,-2)/B/right,(-.5,2)/P/left,(-.5,-2)/Q/left,(-.5,0)/R/left,(.5,0)/F/below}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}见解析
@@ -316,7 +382,7 @@
 \end{solution}
 \end{question}
 
-\section{技巧50：焦点三角形面积问题}
+\answersection{技巧50：焦点三角形面积问题}
 
 \begin{question}
 设 $F_1, F_2$ 是双曲线 $C: x^2 - \frac{y^2}{3} = 1$ 的两个焦点，$O$ 为坐标原点，点 $P$ 在 $C$ 上且 $|OP| = 2$, 则 $\triangle PF_1F_2$ 的面积为
@@ -371,7 +437,7 @@
 \end{solution}
 \end{question}
 
-\section{技巧51：焦点弦长问题}
+\answersection{技巧51：焦点弦长问题}
 
 \begin{question}
 已知 $F$ 为抛物线 $C:y^2=4x$ 的焦点，过 $F$ 作两条互相垂直的直线 $l_1$，$l_2$，直线 $l_1$ 与 $C$ 交于 $A$、$B$ 两点，直线 $l_2$ 与 $C$ 交于 $D$、$E$ 两点，则 $|AB|+|DE|$ 的最小值为（ ）
@@ -382,7 +448,13 @@
 \item $10$
 \end{choices}
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.65cm,y=.65cm]
+  \draw[->] (-1,0)--(4,0) node[right] {$x$}; \draw[->] (0,-3)--(0,3) node[above] {$y$};
+  \draw[curve,domain=-2.4:2.4,smooth] plot ({\x*\x/4},{\x});
+  \draw[construction] (.333,.667)--(3,-2) (.333,-.667)--(3,2);
+  \foreach \p/\lab/\pos in {(1,0)/F/below,(3,2)/A/right,(.333,.667)/B/left,(3,-2)/D/right,(.333,-.667)/E/left}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}A
@@ -402,7 +474,14 @@
 \item D. $\triangle OMN$为等腰三角形
 \end{choices}
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.65cm,y=.65cm]
+  \draw[->] (-2,0)--(4,0) node[right] {$x$}; \draw[->] (0,-4)--(0,4) node[above] {$y$};
+  \draw[auxiliary] (-1,-3.6)--(-1,3.6) node[above] {$l$};
+  \draw[curve,domain=-3.7:3.7,smooth] plot ({\x*\x/4},{\x});
+  \draw[construction] (.333,1.155)--(3,-3.464) (1,0)--(3,-3.464);
+  \foreach \p/\lab/\pos in {(1,0)/F/below,(3,-3.464)/M/right,(.333,1.155)/N/left}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}AC
@@ -421,7 +500,14 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 （1）求$C_1$的离心率；
 （2）设$M$是$C_1$与$C_2$的公共点，若$|MF|=5$，求$C_1$与$C_2$的标准方程.
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.55cm,y=.55cm]
+  \draw[->] (-7,0)--(7,0) node[right] {$x$}; \draw[->] (0,-7)--(0,7) node[above] {$y$};
+  \draw[curve] (0,0) ellipse (6 and 5.196);
+  \draw[curve,domain=-6:6,smooth] plot ({\x*\x/12},{\x});
+  \draw[construction] (3,-6)--(3,6);
+  \foreach \p/\lab/\pos in {(3,0)/F/below,(3,4.5)/A/right,(3,-4.5)/B/right,(3,6)/C/right,(3,-6)/D/right}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）$\dfrac12$；（2）$C_1:\dfrac{x^2}{36}+\dfrac{y^2}{27}=1$，$C_2:y^2=12x$
@@ -433,7 +519,7 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \end{solution}
 \end{question}
 
-\section{技巧52：焦点三角形离心率问题}
+\answersection{技巧52：焦点三角形离心率问题}
 
 \begin{question}
 双曲线$C$的两个焦点为$F_1, F_2$，以$C$的实轴为直径的圆记为$D$，过$F_1$作$D$的切线与$C$的两支交于$M, N$两点，且$\cos\angle F_1NF_2 = \frac{3}{5}$，则$C$的离心率为（\qquad）
@@ -443,9 +529,6 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \item $\frac{\sqrt{13}}{2}$
 \item $\frac{\sqrt{17}}{2}$
 \end{choices}
-\begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
-\end{center}
 \begin{solution}
 \textbf{答案：}C
 
@@ -455,7 +538,7 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \end{solution}
 \end{question}
 
-\section{技巧53：焦比弦公式模型}
+\answersection{技巧53：焦比弦公式模型}
 
 \begin{question}
 已知椭圆 $C$ 的焦点为 $F_1(-1, 0)$, $F_2(1, 0)$，过 $F_2$ 的直线与 $C$ 交于 $A$, $B$ 两点．若 $|AF_2| = 2|F_2B|$, $|AB| = |BF_1|$, 则 $C$ 的方程为
@@ -465,9 +548,6 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \item $\frac{x^2}{4} + \frac{y^2}{3} = 1$
 \item $\frac{x^2}{5} + \frac{y^2}{4} = 1$
 \end{choices}
-\begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
-\end{center}
 \begin{solution}
 \textbf{答案：}$B$
 
@@ -486,7 +566,14 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \item $|AE| \cdot |BE| \ge 18$
 \end{choices}
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.65cm,y=.65cm]
+  \draw[->] (-2,0)--(4,0) node[right] {$x$}; \draw[->] (0,-4)--(0,4) node[above] {$y$};
+  \draw[auxiliary] (-1.5,-3.6)--(-1.5,3.6) node[above] {$l$};
+  \draw[curve,domain=-4.2:4.2,smooth] plot ({\x*\x/6},{\x});
+  \draw[construction] (1.5,-3)--(1.5,3) (-1.5,0)--(1.5,0) (-1.5,3)--(1.5,3);
+  \foreach \p/\lab/\pos in {(1.5,0)/F/below,(1.5,3)/A/right,(1.5,-3)/B/right,(-1.5,3)/D/left,(-1.5,0)/E/below}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}ACD
@@ -497,14 +584,20 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \end{solution}
 \end{question}
 
-\section{技巧54：圆锥曲线切线问题}
+\answersection{技巧54：圆锥曲线切线问题}
 
 \begin{question}
 已知椭圆 $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ($a > b > 0$) 的右焦点为 $F$，上顶点为 $B$，离心率为 $\frac{2\sqrt{5}}{5}$，且 $|BF| = \sqrt{5}$．
 （I）求椭圆的方程；
 （II）直线 $l$ 与椭圆有唯一的公共点 $M$，与 $y$ 轴的正半轴交于点 $N$，过 $N$ 与 $BF$ 垂直的直线交 $x$ 轴于点 $P$．若 $MP // BF$，求直线 $l$ 的方程．
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.75cm,y=.75cm]
+  \draw[->] (-3,0)--(3,0) node[right] {$x$}; \draw[->] (0,-1.5)--(0,3.2) node[above] {$y$};
+  \draw[curve] (0,0) ellipse ({sqrt(5)} and 1);
+  \draw[construction] (-2.041,.408)--(.3,2.749) (0,2.449)--(-1.225,0) (-2.041,.408)--(-1.225,0) (0,1)--(2,0);
+  \foreach \p/\lab/\pos in {(2,0)/F/below,(0,1)/B/above,(-2.041,.408)/M/above,(0,2.449)/N/right,(-1.225,0)/P/below}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}（I）$\frac{x^2}{5} + y^2 = 1$；（II）$x - y + \sqrt{6} = 0$
@@ -516,7 +609,7 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \end{solution}
 \end{question}
 
-\section{技巧55：离心率的渐近线倾斜角模型}
+\answersection{技巧55：离心率的渐近线倾斜角模型}
 
 \begin{question}
 双曲线 $C: \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ ($a>0,b>0$) 的一条渐近线的倾斜角为 130°，则 $C$ 的离心率为
@@ -557,7 +650,7 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \end{solution}
 \end{question}
 
-\section{技巧56：超级韦达定理}
+\answersection{技巧56：超级韦达定理}
 
 \begin{question}
 已知椭圆 $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a>b>0)$ 的离心率 $e=\frac{1}{2}$. 左顶点为 $A$, 下顶点为 $B$, $C$ 是线段 $OB$ 的中点, 其中 $S_{\triangle ABC}=\frac{3\sqrt{3}}{2}$.
@@ -584,14 +677,23 @@ D选项：直线$y=-\sqrt{3}(x-1)$即$\sqrt{3}x+y-\sqrt{3}=0$，$O$到直线的�
 \end{solution}
 \end{question}
 
-\section{技巧57：非对称处理}
+\answersection{技巧57：非对称处理}
 
 \begin{question}
 已知双曲线$C$的中心为坐标原点，左焦点为$(-2\sqrt{5},0)$，离心率为$\sqrt{5}$．
 （1）求$C$的方程；
 （2）记$C$的左、右顶点分别为$A_{1}$，$A_{2}$，过点$(-4,0)$的直线与$C$的左支交于$M$，$N$两点，$M$在第二象限，直线$MA_{1}$与$NA_{2}$交于点$P$．证明:点$P$在定直线上.
 \begin{center}
-{\small\textit{图形信息以题设及所列原卷为准；本讲义不保留未经题设反算验证的自动示意图。}}
+\begin{tikzpicture}[x=.55cm,y=.55cm]
+  \draw[->] (-7,0)--(7,0) node[right] {$x$}; \draw[->] (0,-7.5)--(0,7.5) node[above] {$y$};
+  \draw[curve,domain=-7:-2,smooth] plot ({\x},{sqrt(4*(\x*\x-4))});
+  \draw[curve,domain=-7:-2,smooth] plot ({\x},{-sqrt(4*(\x*\x-4))});
+  \draw[curve,domain=2:7,smooth] plot ({\x},{sqrt(4*(\x*\x-4))});
+  \draw[curve,domain=2:7,smooth] plot ({\x},{-sqrt(4*(\x*\x-4))});
+  \draw[construction] (-4,-7)--(-4,7) (-4,6.928)--(-1,-3.464) (-4,-6.928)--(-1,-3.464);
+  \foreach \p/\lab/\pos in {(-4,6.928)/M/left,(-4,-6.928)/N/left,(-2,0)/A_1/above,(2,0)/A_2/above,(-1,-3.464)/P/right}
+    \fill \p circle (1.2pt) node[\pos] {$\lab$};
+\end{tikzpicture}
 \end{center}
 \begin{solution}
 \textbf{答案：}（1）$\dfrac{x^{2}}{4}-\dfrac{y^{2}}{16}=1$；（2）证明见解析.
