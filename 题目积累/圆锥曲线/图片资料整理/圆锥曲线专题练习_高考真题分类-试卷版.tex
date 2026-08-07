@@ -19,7 +19,10 @@
   \par\Needspace{3\baselineskip}\noindent\hspace*{2em}\textbf{#1}\quad
 }
 \newcommand{\studentworkarea}{\par\vspace*{2.4cm}}
-\BeforeBeginEnvironment{solution}{\studentworkarea}
+\newif\ifquestionhaschoices
+\BeforeBeginEnvironment{question}{\global\questionhaschoicesfalse}
+\BeforeBeginEnvironment{choices}{\global\questionhaschoicestrue}
+\BeforeBeginEnvironment{solution}{\ifquestionhaschoices\else\studentworkarea\fi}
 \begin{document}
 \begin{center}
 {\zihao{2}\bfseries 圆锥曲线专题练习：高考真题分类}\\[4pt]

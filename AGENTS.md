@@ -46,6 +46,7 @@
 ## File and Artifact Rules
 
 - Use UTF-8 for text files and preserve existing Chinese filenames unless a rename is explicitly required.
+- Before creating or revising a student-facing question paper, read and follow `试题排版规范.md`. In particular, selection questions do not receive answer space; subjective questions receive space only after the complete question; subquestions start on their own lines but are not separated by answer-space gaps.
 - For TeX changes, compile the affected document and inspect warnings and output when the toolchain is available.
 - For PDF, Word, slide, image, or spreadsheet work, use the relevant artifact workflow and visually verify the result.
 - Keep temporary OCR, render, build, and visual-QA output in ignored directories.
