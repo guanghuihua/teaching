@@ -1,6 +1,7 @@
 % !TeX program = xelatex
 \documentclass[zihao=-4]{exam-zh}
 \usepackage{mathtools}
+\usepackage{needspace}
 \usepackage{xcolor,tikz,pgfplots}
 \usetikzlibrary{arrows.meta,calc,intersections,patterns,positioning,quotes,angles}
 \pgfplotsset{compat=1.18}
@@ -11,8 +12,20 @@
 \examsetup{question/show-answer=false,solution/show-solution=hide}
 % 学生卷隐藏方法分类，并在每题答案区前保留演算空间。
 \newcommand{\answersection}[1]{}
-\newcommand{\subquestion}[1]{\par\medskip\noindent\textbf{#1}\enspace}
-\newcommand{\subsubquestion}[1]{\par\smallskip\noindent\hspace*{2em}\textbf{#1}\enspace}
+\newif\iffirstsubquestion
+\newif\iffirstsubsubquestion
+\BeforeBeginEnvironment{question}{\global\firstsubquestiontrue\global\firstsubsubquestiontrue}
+\newcommand{\subquestion}[1]{%
+  \iffirstsubquestion\global\firstsubquestionfalse
+  \else\par\vspace*{1.6cm}\fi
+  \par\Needspace{4\baselineskip}\noindent\textbf{#1}\quad
+  \global\firstsubsubquestiontrue
+}
+\newcommand{\subsubquestion}[1]{%
+  \iffirstsubsubquestion\global\firstsubsubquestionfalse
+  \else\par\vspace*{1.1cm}\fi
+  \par\Needspace{3\baselineskip}\noindent\hspace*{2em}\textbf{#1}\quad
+}
 \newcommand{\studentworkarea}{\par\vspace*{2.4cm}}
 \BeforeBeginEnvironment{solution}{\studentworkarea}
 \begin{document}
