@@ -11,6 +11,8 @@
 \examsetup{question/show-answer=false,solution/show-solution=hide}
 % 学生卷隐藏方法分类，并在每题答案区前保留演算空间。
 \newcommand{\answersection}[1]{}
+\newcommand{\subquestion}[1]{\par\medskip\noindent\textbf{#1}\enspace}
+\newcommand{\subsubquestion}[1]{\par\smallskip\noindent\hspace*{2em}\textbf{#1}\enspace}
 \newcommand{\studentworkarea}{\par\vspace*{2.4cm}}
 \BeforeBeginEnvironment{solution}{\studentworkarea}
 \begin{document}
