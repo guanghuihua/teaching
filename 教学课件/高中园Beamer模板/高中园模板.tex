@@ -1,0 +1,23 @@
+% !TeX program = xelatex
+% 从本文件所在目录编译；复制模板时一并复制 sty、book-path.tex 和 assets。
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+% 优先匹配原模板字体，其他系统自动使用 TeX Live 自带的 Fandol。
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+
+\title{标题}
+\author{姓名}
+\date{2026.08.12}
+
+\begin{document}
+\campusmaketitle
+
+\begin{frame}[t]{\underline{任务一：}}
+  % 在这里填写正文，支持公式、列表、图片和 Beamer 分步显示。
+  % 例如：\[ (a+b)^2=a^2+2ab+b^2. \]
+\end{frame}
+
+% 复制上面的 frame 即可添加任务页。
+\campusclosing
+\end{document}
