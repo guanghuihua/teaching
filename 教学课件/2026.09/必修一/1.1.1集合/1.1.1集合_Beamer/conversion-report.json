@@ -1,0 +1,253 @@
+[
+  {
+    "slide": 1,
+    "title": "1.1.1 集合",
+    "steps": 1,
+    "reviewed_layout": true,
+    "source_issues": [
+      "对象 10 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 14 是非文本矢量形状，自动稿未绘制其路径/线框。"
+    ],
+    "notes": []
+  },
+  {
+    "slide": 2,
+    "title": "学习目标",
+    "steps": 4,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 3,
+    "title": "新课导学",
+    "steps": 5,
+    "reviewed_layout": true,
+    "source_issues": [
+      "对象 3 含 Office 数学公式，自动稿仅转为符号文本，建议审核为原生 LaTeX。"
+    ],
+    "notes": [
+      "补回 Office Math 中的等号；保留原有四次点击，不额外增加 C 项答案。"
+    ]
+  },
+  {
+    "slide": 4,
+    "title": "新知探索",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 5,
+    "title": "新知探索",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 6,
+    "title": "新知探索",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": [
+      "原图包含“不属于”符号的多个字体写法，统一为标准 LaTeX \\notin；含义不变。"
+    ]
+  },
+  {
+    "slide": 7,
+    "title": "新知探索",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 8,
+    "title": "新知探索",
+    "steps": 5,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 9,
+    "title": "新知探索",
+    "steps": 2,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 10,
+    "title": "新知探索",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 11,
+    "title": "新知探索",
+    "steps": 2,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 12,
+    "title": "新知探索",
+    "steps": 4,
+    "reviewed_layout": true,
+    "source_issues": [
+      "对象 18 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 18 的旋转/镜像未自动复刻。",
+      "对象 19 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 20 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 21 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 21 的旋转/镜像未自动复刻。"
+    ],
+    "notes": []
+  },
+  {
+    "slide": 13,
+    "title": "新知探索",
+    "steps": 4,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 14,
+    "title": "新知探索",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 15,
+    "title": "新知探索",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 16,
+    "title": "新知探索",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 17,
+    "title": "新知探索",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 18,
+    "title": "新知探索",
+    "steps": 4,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 19,
+    "title": "新知探索",
+    "steps": 2,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 20,
+    "title": "例题讲解",
+    "steps": 4,
+    "reviewed_layout": true,
+    "source_issues": [
+      "对象 142 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 143 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 145 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 146 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 148 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 149 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 151 是非文本矢量形状，自动稿未绘制其路径/线框。",
+      "对象 152 是非文本矢量形状，自动稿未绘制其路径/线框。"
+    ],
+    "notes": [
+      "第 3 次点击的便签文字已从嵌入 EMF 提取为原生公式；保留其最后出现的时机。"
+    ]
+  },
+  {
+    "slide": 21,
+    "title": "课堂巩固",
+    "steps": 4,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 22,
+    "title": "课堂巩固",
+    "steps": 4,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 23,
+    "title": "课堂巩固",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 24,
+    "title": "课堂巩固",
+    "steps": 2,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 25,
+    "title": "课堂巩固",
+    "steps": 4,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 26,
+    "title": "课堂巩固",
+    "steps": 3,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 27,
+    "title": "课堂总结",
+    "steps": 2,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  },
+  {
+    "slide": 28,
+    "title": "谢谢观看",
+    "steps": 1,
+    "reviewed_layout": true,
+    "source_issues": [],
+    "notes": []
+  }
+]

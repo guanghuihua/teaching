@@ -1,0 +1,3718 @@
+{
+  "schema": 1,
+  "source_name": "1.1.1集合.pptx",
+  "source_size_emu": {
+    "cx": "12192000",
+    "cy": "6858000"
+  },
+  "source_sha256": "ded6a93140171470b51c9c877d8c2c78a234c2c5840375efca4ecf9cc6eb9b03",
+  "slide_count": 28,
+  "slides": [
+    {
+      "number": 1,
+      "part": "ppt/slides/slide1.xml",
+      "hidden": false,
+      "title": "第 1 页",
+      "title_id": null,
+      "steps": 1,
+      "events": [],
+      "objects": [
+        {
+          "id": "14",
+          "ancestors": [],
+          "kind": "cxnSp",
+          "name": "直接连接符 13",
+          "box": [
+            277.267,
+            479.839,
+            725.467,
+            0.0
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1
+          ]
+        },
+        {
+          "id": "10",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "矩形 9",
+          "box": [
+            0.0,
+            279.507,
+            1280.0,
+            477.827
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1
+          ],
+          "decoration": true
+        },
+        {
+          "id": "13",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 12",
+          "box": [
+            95.733,
+            442.6,
+            1117.333,
+            106.4
+          ],
+          "text": "1.1.1 集合",
+          "tex": "1.1.1 集合",
+          "font_pt": 40.0,
+          "media": null,
+          "visible": [
+            1
+          ]
+        },
+        {
+          "id": "101",
+          "ancestors": [],
+          "kind": "pic",
+          "name": "图片 100",
+          "box": [
+            519.244,
+            95.133,
+            241.512,
+            242.268
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image9.png",
+          "visible": [
+            1
+          ],
+          "asset": "source-media/image9.png"
+        },
+        {
+          "id": "5",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本1",
+          "box": [
+            331.732,
+            320.732,
+            736.133,
+            159.133
+          ],
+          "text": "第一章  集合与逻辑",
+          "tex": "第一章  集合与逻辑",
+          "font_pt": 60.0,
+          "media": null,
+          "visible": [
+            1
+          ]
+        }
+      ],
+      "issues": [
+        "对象 10 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 14 是非文本矢量形状，自动稿未绘制其路径/线框。"
+      ]
+    },
+    {
+      "number": 2,
+      "part": "ppt/slides/slide2.xml",
+      "hidden": false,
+      "title": "学习目标",
+      "title_id": "3",
+      "steps": 4,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "2"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "15"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 4,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "18"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "学习目标",
+          "tex": "学习目标",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "13",
+          "ancestors": [
+            "2"
+          ],
+          "kind": "sp",
+          "name": "文本框 12",
+          "box": [
+            277.8,
+            170.733,
+            686.8,
+            106.733
+          ],
+          "text": "理解集合的含义，能判断给定对象能否构成集合.",
+          "tex": "理解集合的含义，能判断给定对象能否构成集合.",
+          "font_pt": 32.0,
+          "media": null,
+          "visible": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "14",
+          "ancestors": [
+            "2"
+          ],
+          "kind": "sp",
+          "name": "文本框 13",
+          "box": [
+            169.867,
+            182.933,
+            112.933,
+            96.8
+          ],
+          "text": "01",
+          "tex": "01",
+          "font_pt": 54.0,
+          "media": null,
+          "visible": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "16",
+          "ancestors": [
+            "15"
+          ],
+          "kind": "sp",
+          "name": "文本框 15",
+          "box": [
+            279.633,
+            309.733,
+            697.937,
+            113.0
+          ],
+          "text": "掌握集合的常用表示方法，能根据集合特点选择合适方法表示集合.",
+          "tex": "掌握集合的常用表示方法，能根据集合特点选择合适方法表示集合.",
+          "font_pt": 32.0,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "17",
+          "ancestors": [
+            "15"
+          ],
+          "kind": "sp",
+          "name": "文本框 16",
+          "box": [
+            170.467,
+            315.2,
+            100.129,
+            95.333
+          ],
+          "text": "02",
+          "tex": "02",
+          "font_pt": 54.0,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "19",
+          "ancestors": [
+            "18"
+          ],
+          "kind": "sp",
+          "name": "文本框 18",
+          "box": [
+            284.666,
+            447.467,
+            692.934,
+            113.0
+          ],
+          "text": "熟知常见数集的记法，会用区间表示集合.",
+          "tex": "熟知常见数集的记法，会用区间表示集合.",
+          "font_pt": 32.0,
+          "media": null,
+          "visible": [
+            4
+          ]
+        },
+        {
+          "id": "20",
+          "ancestors": [
+            "18"
+          ],
+          "kind": "sp",
+          "name": "文本框 19",
+          "box": [
+            170.467,
+            455.667,
+            103.767,
+            96.8
+          ],
+          "text": "03",
+          "tex": "03",
+          "font_pt": 54.0,
+          "media": null,
+          "visible": [
+            4
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 3,
+      "part": "ppt/slides/slide3.xml",
+      "hidden": false,
+      "title": "新课导学",
+      "title_id": "5",
+      "steps": 5,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "34"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "36"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 4,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "3"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 5,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "8"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "5",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            95.528,
+            6.018,
+            544.312,
+            61.267
+          ],
+          "text": "新课导学",
+          "tex": "新课导学",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "34",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 33",
+          "box": [
+            83.933,
+            103.2,
+            1116.8,
+            124.267
+          ],
+          "text": "《三国志》记载：＂布有良马曰赤兔．＂据《三国演义》描述，这匹宝马后来跟随关羽并大展神威.",
+          "tex": "《三国志》记载：＂布有良马曰赤兔．＂据《三国演义》描述，这匹宝马后来跟随关羽并大展神威.",
+          "font_pt": 24.0,
+          "media": null,
+          "visible": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "36",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 35",
+          "box": [
+            94.067,
+            236.8,
+            800.267,
+            214.867
+          ],
+          "text": "思考：下面三句话里的＂是＂各自的含义是什么？\nA．关羽千里走单骑的坐骑是赤兔马．\nB．赤兔马是红马．\nC．红马是马.",
+          "tex": "思考：下面三句话里的＂是＂各自的含义是什么？\\par A．关羽千里走单骑的坐骑是赤兔马．\\par B．赤兔马是红马．\\par C．红马是马.",
+          "font_pt": 24.0,
+          "media": null,
+          "visible": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 2",
+          "box": [
+            88.733,
+            433.067,
+            779.333,
+            84.533
+          ],
+          "text": "第一个＂是＂的含义相当于＂＝＂，另外两个呢？",
+          "tex": "第一个＂是＂的含义相当于＂=＂，另外两个呢？",
+          "font_pt": 24.0,
+          "media": null,
+          "visible": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "8",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "圆角矩形 7",
+          "box": [
+            144.533,
+            535.333,
+            899.0,
+            127.467
+          ],
+          "text": "B 中 ＂是＂表示属于，即赤兔马属于红马这一类别.",
+          "tex": "B 中 ＂是＂表示属于，即赤兔马属于红马这一类别.",
+          "font_pt": 24.0,
+          "media": null,
+          "visible": [
+            5
+          ]
+        }
+      ],
+      "issues": [
+        "对象 3 含 Office 数学公式，自动稿仅转为符号文本，建议审核为原生 LaTeX。"
+      ]
+    },
+    {
+      "number": 4,
+      "part": "ppt/slides/slide4.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "25"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "24"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "24",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "矩形 23",
+          "box": [
+            75.933,
+            202.133,
+            1111.0,
+            365.6
+          ],
+          "text": "我们在思考问题时，常常需要把一些对象放在一起考虑，并且给这些对象一个总的名称．\n在数学语言中，把一些对象放在一起考虑时，就说这些对象组成了一个集合或集．这些对象的总的名称，就是这个集合的名字．这些对象中的每一个，都叫作这个集合的一个元素．",
+          "tex": "我们在思考问题时，常常需要把一些对象放在一起考虑，并且给这些对象一个总的名称．\\par 在数学语言中，把一些对象放在一起考虑时，就说这些对象组成了一个集合或集．这些对象的总的名称，就是这个集合的名字．这些对象中的每一个，都叫作这个集合的一个元素．",
+          "font_pt": 26.0,
+          "media": null,
+          "visible": [
+            3
+          ]
+        },
+        {
+          "id": "25",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 24",
+          "box": [
+            88.2,
+            104.8,
+            451.6,
+            74.2
+          ],
+          "text": "1. 集合与元素概念",
+          "tex": "1. 集合与元素概念",
+          "font_pt": 40.0,
+          "media": null,
+          "visible": [
+            2,
+            3
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 5,
+      "part": "ppt/slides/slide5.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "2"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "4"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 1",
+          "box": [
+            156.359,
+            125.1,
+            1030.677,
+            223.284
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image11.emf",
+          "visible": [
+            2,
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image11.emf.png"
+        },
+        {
+          "id": "4",
+          "ancestors": [],
+          "kind": "pic",
+          "name": "图片 3",
+          "box": [
+            264.6,
+            341.467,
+            744.867,
+            310.867
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image12.png",
+          "visible": [
+            3
+          ],
+          "asset": "source-media/image12.png"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 6,
+      "part": "ppt/slides/slide6.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "9"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "8"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "8",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 7",
+          "box": [
+            133.468,
+            257.607,
+            1012.533,
+            306.133
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image13.emf",
+          "visible": [
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image13.emf.png"
+        },
+        {
+          "id": "9",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 8",
+          "box": [
+            128.333,
+            140.6,
+            536.2,
+            74.2
+          ],
+          "text": "2. 集合与元素的关系",
+          "tex": "2. 集合与元素的关系",
+          "font_pt": 40.0,
+          "media": null,
+          "visible": [
+            2,
+            3
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 7,
+      "part": "ppt/slides/slide7.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "8"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "12"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "8",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 7",
+          "box": [
+            180.328,
+            165.3,
+            982.677,
+            157.897
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image14.emf",
+          "visible": [
+            2,
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image14.emf.png"
+        },
+        {
+          "id": "12",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 11",
+          "box": [
+            185.933,
+            392.167,
+            760.819,
+            89.391
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image15.emf",
+          "visible": [
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image15.emf.png"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 8,
+      "part": "ppt/slides/slide8.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 5,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "8"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "9"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 4,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "11"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 5,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "12"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "5",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 4",
+          "box": [
+            26.4,
+            94.667,
+            640.0,
+            67.733
+          ],
+          "text": "思考 军训时教官喊13班集合：",
+          "tex": "思考 军训时教官喊13班集合：",
+          "font_pt": 36.0,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "8",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 7",
+          "box": [
+            65.6,
+            235.933,
+            640.0,
+            371.467
+          ],
+          "text": "14班学生会不会跑到13班来？\n\n教官调整了站位后班级里的人有没有发生变化？\n    班级会不会发生改变？\n\n教官要求报数的目的是什么？一个人是否会报两次？",
+          "tex": "14班学生会不会跑到13班来？\\par \\par 教官调整了站位后班级里的人有没有发生变化？\\par     班级会不会发生改变？\\par \\par 教官要求报数的目的是什么？一个人是否会报两次？",
+          "font_pt": 28.0,
+          "media": null,
+          "visible": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "9",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 8",
+          "box": [
+            838.933,
+            247.0,
+            160.333,
+            48.067
+          ],
+          "text": "确定性",
+          "tex": "确定性",
+          "font_pt": 28.0,
+          "media": null,
+          "visible": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "11",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 10",
+          "box": [
+            838.933,
+            391.8,
+            135.667,
+            43.667
+          ],
+          "text": "无序性",
+          "tex": "无序性",
+          "font_pt": 28.0,
+          "media": null,
+          "visible": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "12",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 11",
+          "box": [
+            838.933,
+            532.2,
+            168.133,
+            54.8
+          ],
+          "text": "互异性",
+          "tex": "互异性",
+          "font_pt": 28.0,
+          "media": null,
+          "visible": [
+            5
+          ]
+        },
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 9,
+      "part": "ppt/slides/slide9.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 2,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "9"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 1",
+          "box": [
+            287.533,
+            193.0,
+            856.467,
+            141.8
+          ],
+          "text": "对于一个给定的集合，它的元素必须是确定的。\n也就是说，对于一个已知的集合来说，某个元素在不在这个集合里，是确定的，要么在 ，要么不在，不能含糊其辞。",
+          "tex": "对于一个给定的集合，它的元素必须是确定的。\\par 也就是说，对于一个已知的集合来说，某个元素在不在这个集合里，是确定的，要么在 ，要么不在，不能含糊其辞。",
+          "font_pt": 20.0,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "4",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 3",
+          "box": [
+            287.533,
+            343.067,
+            390.067,
+            34.667
+          ],
+          "text": "集合中的元素无先后顺序。",
+          "tex": "集合中的元素无先后顺序。",
+          "font_pt": 24.0,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "5",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 4",
+          "box": [
+            76.8,
+            193.0,
+            179.4,
+            53.667
+          ],
+          "text": "1.确定性：",
+          "tex": "1.确定性：",
+          "font_pt": 28.0,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "6",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 5",
+          "box": [
+            82.333,
+            332.6,
+            198.467,
+            54.8
+          ],
+          "text": "2.无序性：",
+          "tex": "2.无序性：",
+          "font_pt": 28.0,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "7",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 6",
+          "box": [
+            82.333,
+            429.067,
+            192.867,
+            45.867
+          ],
+          "text": "3.互异性：",
+          "tex": "3.互异性：",
+          "font_pt": 28.0,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "8",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 7",
+          "box": [
+            280.8,
+            430.667,
+            430.467,
+            33.0
+          ],
+          "text": "集合中的元素必须互不相同",
+          "tex": "集合中的元素必须互不相同",
+          "font_pt": 24.0,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "9",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 8",
+          "box": [
+            109.867,
+            516.6,
+            790.2,
+            106.467
+          ],
+          "text": "集合相等：只要构成两个集合的元素一样，\n               我们就称这两个集合是相等的。",
+          "tex": "集合相等：只要构成两个集合的元素一样，\\par                我们就称这两个集合是相等的。",
+          "font_pt": 24.0,
+          "media": null,
+          "visible": [
+            2
+          ]
+        },
+        {
+          "id": "11",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 10",
+          "box": [
+            82.333,
+            99.2,
+            640.0,
+            74.2
+          ],
+          "text": "3. 元素的性质",
+          "tex": "3. 元素的性质",
+          "font_pt": 40.0,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 10,
+      "part": "ppt/slides/slide10.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "12",
+          "subtype": "4",
+          "targets": [
+            "9"
+          ],
+          "filters": [
+            "wipe(up)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "13"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "13",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "矩形 12",
+          "box": [
+            178.2,
+            207.6,
+            934.0,
+            360.533
+          ],
+          "text": "数学里最常用的集合是各种数的集合，简称数集．例如：\n全体自然数组成的集合叫自然数集，记作 N．\n全体整数组成的集合叫整数集，记作 Z ．\n全体有理数组成的集合叫有理数集，记作 Q ．\n全体实数组成的集合叫实数集，记作 R．",
+          "tex": "数学里最常用的集合是各种数的集合，简称数集．例如：\\par 全体自然数组成的集合叫自然数集，记作 N．\\par 全体整数组成的集合叫整数集，记作 Z ．\\par 全体有理数组成的集合叫有理数集，记作 Q ．\\par 全体实数组成的集合叫实数集，记作 R．",
+          "font_pt": 24.0,
+          "media": null,
+          "visible": [
+            3
+          ]
+        },
+        {
+          "id": "9",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 8",
+          "box": [
+            128.2,
+            111.933,
+            472.333,
+            74.2
+          ],
+          "text": "4. 常见数集及分类",
+          "tex": "4. 常见数集及分类",
+          "font_pt": 40.0,
+          "media": null,
+          "visible": [
+            2,
+            3
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 11,
+      "part": "ppt/slides/slide11.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 2,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "2"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 1",
+          "box": [
+            153.077,
+            209.076,
+            928.252,
+            304.578
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image16.emf",
+          "visible": [
+            2
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image16.emf.png"
+        },
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 12,
+      "part": "ppt/slides/slide12.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 4,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "12"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "17"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 4,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "14"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "12",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 11",
+          "box": [
+            121.133,
+            118.867,
+            835.2,
+            308.267
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image17.emf",
+          "visible": [
+            2,
+            3,
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image17.emf.png"
+        },
+        {
+          "id": "14",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 13",
+          "box": [
+            146.933,
+            450.333,
+            830.733,
+            216.8
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image18.emf",
+          "visible": [
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image18.emf.png"
+        },
+        {
+          "id": "18",
+          "ancestors": [
+            "17"
+          ],
+          "kind": "sp",
+          "name": "圆角矩形 17",
+          "box": [
+            982.131,
+            65.555,
+            266.203,
+            176.312
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "19",
+          "ancestors": [
+            "17"
+          ],
+          "kind": "sp",
+          "name": "圆角矩形 18",
+          "box": [
+            988.787,
+            49.364,
+            255.852,
+            186.123
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "20",
+          "ancestors": [
+            "17"
+          ],
+          "kind": "sp",
+          "name": "椭圆 19",
+          "box": [
+            975.583,
+            59.465,
+            13.167,
+            17.399
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "21",
+          "ancestors": [
+            "17"
+          ],
+          "kind": "sp",
+          "name": "弧形 20",
+          "box": [
+            960.733,
+            34.333,
+            35.881,
+            47.413
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "22",
+          "ancestors": [
+            "17"
+          ],
+          "kind": "sp",
+          "name": "文本框 21",
+          "box": [
+            988.751,
+            55.841,
+            243.782,
+            167.032
+          ],
+          "text": "如果一个大于 1 的整数，除 1 和自身外无其他正因数，则称这个正整数为素数",
+          "tex": "如果一个大于 1 的整数，除 1 和自身外无其他正因数，则称这个正整数为素数",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ]
+        }
+      ],
+      "issues": [
+        "对象 18 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 18 的旋转/镜像未自动复刻。",
+        "对象 19 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 20 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 21 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 21 的旋转/镜像未自动复刻。"
+      ]
+    },
+    {
+      "number": 13,
+      "part": "ppt/slides/slide13.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 4,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "12",
+          "subtype": "4",
+          "targets": [
+            "25"
+          ],
+          "filters": [
+            "wipe(up)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "24"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 4,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "5"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "24",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "矩形 23",
+          "box": [
+            75.933,
+            202.133,
+            1138.267,
+            255.267
+          ],
+          "text": "表示一个集合，就是把它有哪些元素交代清楚.\n生活中常见的方法，是把集合中的元素一一列举出来. 饭馆里的菜单，计算机里的文件夹，各种委员会名单，都是这样做的．这种表示法叫作列举法．",
+          "tex": "表示一个集合，就是把它有哪些元素交代清楚.\\par 生活中常见的方法，是把集合中的元素一一列举出来. 饭馆里的菜单，计算机里的文件夹，各种委员会名单，都是这样做的．这种表示法叫作列举法．",
+          "font_pt": 26.0,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "25",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 24",
+          "box": [
+            118.667,
+            114.467,
+            655.533,
+            74.2
+          ],
+          "text": "5. 表示集合的方法--列举法",
+          "tex": "5. 表示集合的方法--列举法",
+          "font_pt": 40.0,
+          "media": null,
+          "visible": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "5",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 4",
+          "box": [
+            76.0,
+            457.4,
+            1138.133,
+            181.8
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image19.emf",
+          "visible": [
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image19.emf.png"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 14,
+      "part": "ppt/slides/slide14.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "2"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "10"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 1",
+          "box": [
+            195.833,
+            126.4,
+            696.189,
+            222.639
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image20.emf",
+          "visible": [
+            2,
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image20.emf.png"
+        },
+        {
+          "id": "10",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 9",
+          "box": [
+            195.867,
+            408.867,
+            955.087,
+            218.495
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image21.emf",
+          "visible": [
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image21.emf.png"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 15,
+      "part": "ppt/slides/slide15.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "25"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "24"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "24",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "矩形 23",
+          "box": [
+            75.933,
+            206.133,
+            1118.333,
+            408.733
+          ],
+          "text": "无限集一般不能用列举法表示．有限集如果元素太多或叫不出名字来，例如某池塘里所有鱼的集合，也不便用列举法来表示．这时可以把集合中元素共有的，也只有该集合中元素才有的属性描述出来，以确定这个集合．这种表示法叫作描述法．\n集会时介绍嘉宾常用列举法，致辞里说＂女士们，先生们＂用的就是描述法．",
+          "tex": "无限集一般不能用列举法表示．有限集如果元素太多或叫不出名字来，例如某池塘里所有鱼的集合，也不便用列举法来表示．这时可以把集合中元素共有的，也只有该集合中元素才有的属性描述出来，以确定这个集合．这种表示法叫作描述法．\\par 集会时介绍嘉宾常用列举法，致辞里说＂女士们，先生们＂用的就是描述法．",
+          "font_pt": 26.0,
+          "media": null,
+          "visible": [
+            3
+          ]
+        },
+        {
+          "id": "25",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 24",
+          "box": [
+            108.533,
+            114.467,
+            652.333,
+            74.2
+          ],
+          "text": "6. 表示集合的方法--描述法",
+          "tex": "6. 表示集合的方法--描述法",
+          "font_pt": 40.0,
+          "media": null,
+          "visible": [
+            2,
+            3
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 16,
+      "part": "ppt/slides/slide16.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "12",
+          "subtype": "4",
+          "targets": [
+            "9"
+          ],
+          "filters": [
+            "wipe(up)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "2"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 1",
+          "box": [
+            173.6,
+            166.5,
+            932.8,
+            433.667
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image22.emf",
+          "visible": [
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image22.emf.png"
+        },
+        {
+          "id": "9",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 8",
+          "box": [
+            427.367,
+            100.933,
+            425.267,
+            51.6
+          ],
+          "text": "描述法表示集合的格式",
+          "tex": "描述法表示集合的格式",
+          "font_pt": 28.0,
+          "media": null,
+          "visible": [
+            2,
+            3
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 17,
+      "part": "ppt/slides/slide17.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "2"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "4"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 1",
+          "box": [
+            248.867,
+            133.667,
+            733.733,
+            205.467
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image23.emf",
+          "visible": [
+            2,
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image23.emf.png"
+        },
+        {
+          "id": "4",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 3",
+          "box": [
+            255.733,
+            389.133,
+            631.267,
+            206.067
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image24.emf",
+          "visible": [
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image24.emf.png"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 18,
+      "part": "ppt/slides/slide18.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 4,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "12",
+          "subtype": "4",
+          "targets": [
+            "10"
+          ],
+          "filters": [
+            "wipe(up)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "8"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 4,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "9"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "8",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 7",
+          "box": [
+            115.133,
+            202.933,
+            794.933,
+            410.267
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image25.emf",
+          "visible": [
+            3,
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image25.emf.png"
+        },
+        {
+          "id": "9",
+          "ancestors": [],
+          "kind": "pic",
+          "name": "图片 8",
+          "box": [
+            928.467,
+            222.8,
+            305.467,
+            320.4
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image26.png",
+          "visible": [
+            4
+          ],
+          "asset": "source-media/image26.png"
+        },
+        {
+          "id": "10",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 9",
+          "box": [
+            107.8,
+            110.0,
+            202.4,
+            84.267
+          ],
+          "text": "7. 区间",
+          "tex": "7. 区间",
+          "font_pt": 40.0,
+          "media": null,
+          "visible": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 19,
+      "part": "ppt/slides/slide19.xml",
+      "hidden": false,
+      "title": "新知探索",
+      "title_id": "3",
+      "steps": 2,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "2"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "新知探索",
+          "tex": "新知探索",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 1",
+          "box": [
+            154.39,
+            202.867,
+            955.087,
+            350.916
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image27.emf",
+          "visible": [
+            2
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image27.emf.png"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 20,
+      "part": "ppt/slides/slide20.xml",
+      "hidden": false,
+      "title": "例题讲解",
+      "title_id": "3",
+      "steps": 4,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "2"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "4"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 4,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "4",
+          "subtype": "16",
+          "targets": [
+            "32"
+          ],
+          "filters": [
+            "box(in)"
+          ],
+          "durations_ms": [
+            "1",
+            "2000"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            113.0
+          ],
+          "text": "例题讲解",
+          "tex": "例题讲解\\par ",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 1",
+          "box": [
+            258.733,
+            132.933,
+            511.933,
+            199.733
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image28.emf",
+          "visible": [
+            2,
+            3,
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image28.emf.png"
+        },
+        {
+          "id": "4",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 3",
+          "box": [
+            258.733,
+            380.667,
+            555.0,
+            209.4
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image29.emf",
+          "visible": [
+            3,
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image29.emf.png"
+        },
+        {
+          "id": "142",
+          "ancestors": [
+            "32",
+            "140",
+            "141"
+          ],
+          "kind": "sp",
+          "name": "任意多边形: 形状 141",
+          "box": [
+            950.226,
+            64.608,
+            289.699,
+            170.405
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "143",
+          "ancestors": [
+            "32",
+            "140",
+            "141"
+          ],
+          "kind": "sp",
+          "name": "任意多边形: 形状 142",
+          "box": [
+            949.822,
+            64.04,
+            290.507,
+            171.541
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "145",
+          "ancestors": [
+            "32",
+            "140",
+            "144"
+          ],
+          "kind": "sp",
+          "name": "任意多边形: 形状 144",
+          "box": [
+            947.397,
+            60.631,
+            289.699,
+            170.405
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "146",
+          "ancestors": [
+            "32",
+            "140",
+            "144"
+          ],
+          "kind": "sp",
+          "name": "任意多边形: 形状 145",
+          "box": [
+            946.993,
+            60.063,
+            290.507,
+            171.541
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "148",
+          "ancestors": [
+            "32",
+            "140",
+            "147"
+          ],
+          "kind": "sp",
+          "name": "任意多边形: 形状 147",
+          "box": [
+            943.679,
+            54.951,
+            289.699,
+            170.405
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "149",
+          "ancestors": [
+            "32",
+            "140",
+            "147"
+          ],
+          "kind": "sp",
+          "name": "任意多边形: 形状 148",
+          "box": [
+            942.467,
+            53.247,
+            292.123,
+            173.813
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "151",
+          "ancestors": [
+            "32",
+            "140",
+            "150"
+          ],
+          "kind": "sp",
+          "name": "任意多边形: 形状 150",
+          "box": [
+            949.58,
+            48.362,
+            3.233,
+            4.885
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "152",
+          "ancestors": [
+            "32",
+            "140",
+            "150"
+          ],
+          "kind": "sp",
+          "name": "任意多边形: 形状 151",
+          "box": [
+            946.601,
+            38.959,
+            26.154,
+            57.799
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            4
+          ],
+          "decoration": true
+        },
+        {
+          "id": "30",
+          "ancestors": [
+            "32"
+          ],
+          "kind": "graphicFrame",
+          "name": "对象 29",
+          "box": [
+            973.067,
+            69.4,
+            261.533,
+            148.467
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image30.emf",
+          "visible": [
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image30.emf.png"
+        }
+      ],
+      "issues": [
+        "对象 142 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 143 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 145 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 146 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 148 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 149 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 151 是非文本矢量形状，自动稿未绘制其路径/线框。",
+        "对象 152 是非文本矢量形状，自动稿未绘制其路径/线框。"
+      ]
+    },
+    {
+      "number": 21,
+      "part": "ppt/slides/slide21.xml",
+      "hidden": false,
+      "title": "课堂巩固",
+      "title_id": "3",
+      "steps": 4,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "8"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "10"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 4,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "9"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "课堂巩固",
+          "tex": "课堂巩固",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "8",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 7",
+          "box": [
+            188.933,
+            108.933,
+            745.6,
+            200.933
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image31.emf",
+          "visible": [
+            2,
+            3,
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image31.emf.png"
+        },
+        {
+          "id": "9",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 8",
+          "box": [
+            199.667,
+            350.867,
+            861.4,
+            304.533
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image32.emf",
+          "visible": [
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image32.emf.png"
+        },
+        {
+          "id": "10",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 9",
+          "box": [
+            694.467,
+            108.933,
+            45.733,
+            61.267
+          ],
+          "text": "D",
+          "tex": "D ",
+          "font_pt": 36.0,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 22,
+      "part": "ppt/slides/slide22.xml",
+      "hidden": false,
+      "title": "第 22 页",
+      "title_id": null,
+      "steps": 4,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "2"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "10"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 4,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "13"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 1",
+          "box": [
+            201.0,
+            113.8,
+            638.74,
+            192.412
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image33.emf",
+          "visible": [
+            2,
+            3,
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image33.emf.png"
+        },
+        {
+          "id": "10",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 9",
+          "box": [
+            489.067,
+            114.267,
+            52.067,
+            67.733
+          ],
+          "text": "C",
+          "tex": "C",
+          "font_pt": 36.0,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "13",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 12",
+          "box": [
+            201.0,
+            322.533,
+            597.333,
+            268.6
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image34.emf",
+          "visible": [
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image34.emf.png"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 23,
+      "part": "ppt/slides/slide23.xml",
+      "hidden": false,
+      "title": "课堂巩固",
+      "title_id": "2",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "8"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "9"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "课堂巩固",
+          "tex": "课堂巩固",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "8",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 7",
+          "box": [
+            213.117,
+            151.874,
+            675.184,
+            400.63
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image35.emf",
+          "visible": [
+            2,
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image35.emf.png"
+        },
+        {
+          "id": "9",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 8",
+          "box": [
+            802.133,
+            151.867,
+            58.333,
+            67.733
+          ],
+          "text": "A",
+          "tex": "A",
+          "font_pt": 36.0,
+          "media": null,
+          "visible": [
+            3
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 24,
+      "part": "ppt/slides/slide24.xml",
+      "hidden": false,
+      "title": "课堂巩固",
+      "title_id": "2",
+      "steps": 2,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "3"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "课堂巩固",
+          "tex": "课堂巩固",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 2",
+          "box": [
+            167.937,
+            181.369,
+            944.126,
+            357.263
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image36.emf",
+          "visible": [
+            2
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image36.emf.png"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 25,
+      "part": "ppt/slides/slide25.xml",
+      "hidden": false,
+      "title": "课堂巩固",
+      "title_id": "2",
+      "steps": 4,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "8"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "9"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 4,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "11"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "课堂巩固",
+          "tex": "课堂巩固",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "8",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 7",
+          "box": [
+            138.133,
+            137.6,
+            968.267,
+            182.0
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image37.emf",
+          "visible": [
+            2,
+            3,
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image37.emf.png"
+        },
+        {
+          "id": "9",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 8",
+          "box": [
+            256.333,
+            198.733,
+            53.733,
+            67.733
+          ],
+          "text": "D",
+          "tex": "D",
+          "font_pt": 36.0,
+          "media": null,
+          "visible": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "11",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 10",
+          "box": [
+            147.873,
+            327.583,
+            932.787,
+            211.768
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image38.emf",
+          "visible": [
+            4
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image38.emf.png"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 26,
+      "part": "ppt/slides/slide26.xml",
+      "hidden": false,
+      "title": "课堂巩固",
+      "title_id": "2",
+      "steps": 3,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "3"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        },
+        {
+          "step": 3,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "2",
+          "subtype": "4",
+          "targets": [
+            "4"
+          ],
+          "filters": [],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "2",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            61.267
+          ],
+          "text": "课堂巩固",
+          "tex": "课堂巩固",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 2",
+          "box": [
+            163.723,
+            108.933,
+            955.087,
+            208.563
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image39.emf",
+          "visible": [
+            2,
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image39.emf.png"
+        },
+        {
+          "id": "4",
+          "ancestors": [],
+          "kind": "graphicFrame",
+          "name": "对象 3",
+          "box": [
+            164.0,
+            322.667,
+            932.787,
+            352.947
+          ],
+          "text": "",
+          "tex": "",
+          "font_pt": 24,
+          "media": "ppt/media/image40.emf",
+          "visible": [
+            3
+          ],
+          "note": "OLE 预览图片；嵌入文档不执行。",
+          "asset": "source-media/image40.emf.png"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 27,
+      "part": "ppt/slides/slide27.xml",
+      "hidden": false,
+      "title": "课堂总结",
+      "title_id": "3",
+      "steps": 2,
+      "events": [
+        {
+          "step": 2,
+          "class": "entr",
+          "trigger": "clickEffect",
+          "preset": "3",
+          "subtype": "10",
+          "targets": [
+            "13"
+          ],
+          "filters": [
+            "blinds(horizontal)"
+          ],
+          "durations_ms": [
+            "1",
+            "500"
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "id": "3",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "TextBox 4",
+          "box": [
+            83.861,
+            15.885,
+            544.312,
+            113.0
+          ],
+          "text": "课堂总结",
+          "tex": "课堂总结\\par ",
+          "font_pt": 24,
+          "media": null,
+          "visible": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "13",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "矩形 12",
+          "box": [
+            476.667,
+            205.333,
+            339.267,
+            303.0
+          ],
+          "text": "1、集合的概念.\n2、集合的表示方法.\n3、常见数集.\n4、区间",
+          "tex": "1、集合的概念.\\par 2、集合的表示方法.\\par 3、常见数集.\\par 4、区间",
+          "font_pt": 26.0,
+          "media": null,
+          "visible": [
+            2
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "number": 28,
+      "part": "ppt/slides/slide28.xml",
+      "hidden": false,
+      "title": "第 28 页",
+      "title_id": null,
+      "steps": 1,
+      "events": [],
+      "objects": [
+        {
+          "id": "29",
+          "ancestors": [],
+          "kind": "sp",
+          "name": "文本框 28",
+          "box": [
+            230.733,
+            235.067,
+            816.8,
+            221.133
+          ],
+          "text": "谢谢观看",
+          "tex": "谢谢观看",
+          "font_pt": 138.0,
+          "media": null,
+          "visible": [
+            1
+          ]
+        }
+      ],
+      "issues": []
+    }
+  ]
+}
