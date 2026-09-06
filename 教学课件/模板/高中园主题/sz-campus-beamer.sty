@@ -1,0 +1,183 @@
+% 深圳中学高中园 Beamer 主题
+% 视觉依据：教学课件/高中园模板.pptx
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{sz-campus-beamer}[2026/09/06 Shenzhen campus Beamer theme]
+
+\RequirePackage{fontspec}
+\RequirePackage{amsmath,amssymb,bm}
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{booktabs,array,multicol}
+\RequirePackage{ragged2e}
+\usetikzlibrary{calc,positioning}
+
+% ---------- 字体 ----------
+\IfFontExistsTF{Arial}{\setsansfont{Arial}}{\setsansfont{TeX Gyre Heros}}
+\IfFontExistsTF{DengXian}{\setCJKsansfont{DengXian}}{}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ---------- 课程信息：在主文件中用 \renewcommand 修改 ----------
+\providecommand{\CourseTitle}{这里填写课题}
+\providecommand{\CourseSubtitle}{这里填写章节或课型}
+\providecommand{\TeacherName}{这里填写姓名}
+\providecommand{\LessonDate}{\number\year.\two@digits\month.\two@digits\day}
+\providecommand{\EndText}{敬请批评指正}
+\providecommand{\CampusAssetRoot}{assets}
+
+% ---------- 颜色 ----------
+\definecolor{CampusGreen}{HTML}{126831}
+\definecolor{CampusGreenDark}{HTML}{0E5428}
+\definecolor{CampusGreenLight}{HTML}{EAF4ED}
+\definecolor{CampusLine}{HTML}{75A986}
+\definecolor{CampusGold}{HTML}{D7A84B}
+\definecolor{CampusInk}{HTML}{1F2B24}
+\definecolor{CampusMuted}{HTML}{5B6960}
+
+% ---------- Beamer 基础 ----------
+\mode<presentation>
+\usetheme{default}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamersize{text margin left=0.65cm,text margin right=0.65cm}
+\setbeamercolor{normal text}{fg=CampusInk,bg=white}
+\setbeamerfont{normal text}{size=\fontsize{14}{18}\selectfont}
+\setbeamerfont{frametitle}{size=\fontsize{24}{28}\selectfont,series=\bfseries}
+\setbeamercolor{structure}{fg=CampusGreen}
+\setbeamercolor{alerted text}{fg=CampusGreenDark}
+\setbeamertemplate{itemize item}{\color{CampusGreen}\raisebox{0.18ex}{\rule{0.55ex}{0.55ex}}}
+\setbeamertemplate{itemize subitem}{\color{CampusLine}\textbullet}
+\setbeamertemplate{enumerate item}{\color{CampusGreen}\bfseries\insertenumlabel.}
+\setlength{\parskip}{0.18em}
+
+% ---------- 正文页页眉 ----------
+\newcommand{\CampusBookIcon}{%
+  \begin{tikzpicture}[baseline=-0.55ex,x=0.17cm,y=0.17cm,line width=0.8pt]
+    \draw[white,rounded corners=0.5pt] (0,0)--(0,2.2).. controls (1.0,2.55) and (1.65,2.45)..(2.15,2.08)--(2.15,-0.12)..controls (1.45,0.2) and (0.8,0.2)..(0,0);
+    \draw[white,rounded corners=0.5pt] (4.3,0)--(4.3,2.2).. controls (3.3,2.55) and (2.65,2.45)..(2.15,2.08)--(2.15,-0.12)..controls (2.85,0.2) and (3.5,0.2)..(4.3,0);
+  \end{tikzpicture}%
+}
+
+\setbeamercolor{frametitle}{fg=white,bg=CampusGreen}
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.05cm,dp=0.24cm,leftskip=0.40cm,rightskip=0.35cm]{frametitle}
+    \CampusBookIcon\hspace{0.28cm}%
+    \insertframetitle
+    \ifx\insertframesubtitle\@empty\else
+      {\hspace{0.35cm}\fontsize{13}{16}\selectfont\mdseries\insertframesubtitle}
+    \fi
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=east] at ([xshift=-0.35cm,yshift=-0.65cm]current page.north east)
+        {\includegraphics[height=0.72cm]{\CampusAssetRoot/校名横标.png}};
+    \end{tikzpicture}
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{%
+  \leavevmode
+  \hbox{%
+    \begin{beamercolorbox}[wd=.82\paperwidth,ht=0.27cm,dp=0.12cm,leftskip=.55cm]{author in head/foot}%
+      \color{CampusMuted}\fontsize{7.5}{9}\selectfont \CourseTitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.18\paperwidth,ht=0.27cm,dp=0.12cm,rightskip=.55cm plus1fil]{date in head/foot}%
+      \color{CampusGreen}\fontsize{8}{9}\selectfont \insertframenumber
+    \end{beamercolorbox}%
+  }
+}
+
+% ---------- 封面拼贴 ----------
+\newcommand{\CampusMosaic}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \path[clip] (current page.north west) rectangle ([yshift=-4.55cm]current page.north east);
+    \node[anchor=north] at (current page.north)
+      {\includegraphics[width=\paperwidth,height=4.55cm]{\CampusAssetRoot/校园建筑.jpeg}};
+    % 原PPT的白色窗格节奏
+    \foreach \x in {0,1.35,2.7,4.05,5.4,6.75,8.1,9.45,10.8,12.15,13.5,14.85,16.2}{
+      \draw[white,line width=2.0pt] ([xshift=\x cm]current page.north west)--([xshift=\x cm,yshift=-4.55cm]current page.north west);
+    }
+    \draw[white,line width=2.0pt] ([yshift=-1.48cm]current page.north west)--([yshift=-1.48cm]current page.north east);
+    \draw[white,line width=2.0pt] ([yshift=-3.03cm]current page.north west)--([yshift=-3.03cm]current page.north east);
+    \fill[CampusGreen] ([xshift=9.7cm,yshift=-1.48cm]current page.north west)
+      rectangle ([yshift=-3.03cm]current page.north east);
+    \node at ([xshift=13.05cm,yshift=-2.27cm]current page.north west)
+      {\includegraphics[width=6.0cm]{\CampusAssetRoot/校训.png}};
+    \node at ([xshift=8.1cm,yshift=-0.79cm]current page.north west)
+      {\includegraphics[width=1.55cm]{\CampusAssetRoot/校徽.png}};
+    \fill[CampusGreen] ([yshift=-4.60cm]current page.north west) rectangle ++(10.8cm,0.12cm);
+    \fill[black!45] ([xshift=10.8cm,yshift=-4.60cm]current page.north west) rectangle ++(5.45cm,0.05cm);
+  \end{tikzpicture}%
+}
+
+\newcommand{\CampusTitlePage}{%
+  \begin{frame}[plain]
+    \CampusMosaic
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[CampusGreen,font=\bfseries\fontsize{31}{37}\selectfont,align=center,text width=13.5cm]
+        at ([yshift=-5.80cm]current page.north) {\CourseTitle};
+      \node[CampusMuted,font=\fontsize{14}{18}\selectfont]
+        at ([yshift=-6.63cm]current page.north) {\CourseSubtitle};
+      \draw[CampusLine,line width=0.45pt]
+        ([xshift=-7.55cm,yshift=1.10cm]current page.south)--([xshift=-3.20cm,yshift=1.10cm]current page.south);
+      \draw[CampusLine,line width=0.45pt]
+        ([xshift=3.20cm,yshift=1.10cm]current page.south)--([xshift=7.55cm,yshift=1.10cm]current page.south);
+      \node[CampusGreen,font=\bfseries\fontsize{18}{22}\selectfont]
+        at ([yshift=1.28cm]current page.south) {\TeacherName};
+      \node[CampusGreen,font=\fontsize{11}{14}\selectfont,anchor=east]
+        at ([xshift=-0.65cm,yshift=0.47cm]current page.south east) {\LessonDate};
+    \end{tikzpicture}
+  \end{frame}%
+}
+
+\newcommand{\CampusEndPage}{%
+  \begin{frame}[plain]
+    \CampusMosaic
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[CampusGreen,font=\bfseries\fontsize{31}{37}\selectfont]
+        at ([yshift=-6.20cm]current page.north) {\EndText};
+    \end{tikzpicture}
+  \end{frame}%
+}
+
+\newcommand{\CampusSectionPage}[2][]{%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[CampusGreen] (current page.south west) rectangle (current page.north east);
+      \node[anchor=north east] at ([xshift=-0.55cm,yshift=-0.45cm]current page.north east)
+        {\includegraphics[width=5.0cm]{\CampusAssetRoot/校名横标.png}};
+      \node[white,font=\bfseries\fontsize{32}{38}\selectfont,align=center,text width=13cm]
+        at ([yshift=0.35cm]current page.center) {#2};
+      \node[white!75,font=\fontsize{14}{18}\selectfont]
+        at ([yshift=-0.65cm]current page.center) {#1};
+      \fill[CampusGold] ([xshift=-1.3cm,yshift=-1.3cm]current page.center) rectangle ++(2.6cm,0.08cm);
+    \end{tikzpicture}
+  \end{frame}%
+}
+
+% ---------- 教学内容组件 ----------
+\newtcolorbox{definitionbox}[1][概念]{
+  enhanced,colback=CampusGreenLight,colframe=CampusGreen,
+  title={#1},fonttitle=\bfseries,boxrule=0.7pt,arc=1mm,
+  left=2.5mm,right=2.5mm,top=1.5mm,bottom=1.5mm
+}
+\newtcolorbox{questionbox}[1][思考]{
+  enhanced,colback=white,colframe=CampusLine,
+  title={#1},fonttitle=\bfseries,coltitle=CampusGreenDark,
+  boxrule=0.7pt,arc=1mm,left=2.5mm,right=2.5mm,top=1.5mm,bottom=1.5mm
+}
+\newtcolorbox{examplebox}[1][例题]{
+  enhanced,colback=white,colframe=CampusGreenDark,
+  title={#1},fonttitle=\bfseries,colbacktitle=CampusGreenDark,coltitle=white,
+  boxrule=0.7pt,arc=1mm,left=2.5mm,right=2.5mm,top=1.5mm,bottom=1.5mm
+}
+\newtcolorbox{notebox}[1][提醒]{
+  enhanced,colback=CampusGold!10,colframe=CampusGold!85!black,
+  title={#1},fonttitle=\bfseries,coltitle=CampusInk,
+  boxrule=0.6pt,arc=1mm,left=2.5mm,right=2.5mm,top=1.5mm,bottom=1.5mm
+}
+
+\newcommand{\keypoint}[1]{\textcolor{CampusGreenDark}{\bfseries #1}}
+\newcommand{\answer}[1]{\par\smallskip\textcolor{CampusGreenDark}{\bfseries 答案：}#1}
+\newcommand{\method}[1]{\par\smallskip\textcolor{CampusGreenDark}{\bfseries 方法：}#1}
+
+\endinput

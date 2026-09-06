@@ -1,0 +1,110 @@
+% !TeX program = xelatex
+% 使用方式：复制本文件和 sz-campus-beamer.sty、assets 文件夹，再修改课程信息和各页内容。
+\documentclass[UTF8,aspectratio=169,11pt]{ctexbeamer}
+\usepackage{sz-campus-beamer}
+
+%==================== 课程信息 ====================
+\renewcommand{\CourseTitle}{这里填写课题}
+\renewcommand{\CourseSubtitle}{这里填写章节或课型}
+\renewcommand{\TeacherName}{华光辉}
+\renewcommand{\LessonDate}{2026.09.06}
+\renewcommand{\EndText}{敬请批评指正}
+
+\title{\CourseTitle}
+\author{\TeacherName}
+\date{\LessonDate}
+
+\begin{document}
+
+%==================== 封面 ====================
+\CampusTitlePage
+
+%==================== 章节过渡页 ====================
+\CampusSectionPage[从情境进入核心问题]{第一部分\quad 情境与问题}
+
+%==================== 普通内容页 ====================
+\begin{frame}{任务一：核心问题}
+  \begin{questionbox}[观察与思考]
+    这里填写本页最重要的问题。先让学生独立思考，再交流理由。
+  \end{questionbox}
+
+  \vspace{0.2cm}
+  \begin{itemize}
+    \item 已知条件：这里填写条件。
+    \item 研究对象：这里明确本节课研究什么。
+    \item 需要回答：这里写出可检查的学习任务。
+  \end{itemize}
+\end{frame}
+
+%==================== 概念建立页 ====================
+\begin{frame}{概念建立}{从实例到数学表达}
+  \begin{definitionbox}[定义]
+    这里填写教材定义，并用\keypoint{关键词}标出对象、条件和结论。
+  \end{definitionbox}
+
+  \pause
+  \begin{columns}[T,totalwidth=\textwidth]
+    \column{0.48\textwidth}
+      \textbf{正例}\par
+      这里填写满足定义的例子。
+    \column{0.48\textwidth}
+      \textbf{反例}\par
+      这里填写容易混淆但不满足定义的例子。
+  \end{columns}
+\end{frame}
+
+%==================== 双栏讲解页 ====================
+\begin{frame}{表示与解释}
+  \begin{columns}[T,totalwidth=\textwidth]
+    \column{0.52\textwidth}
+      \begin{questionbox}[符号语言]
+        \[
+          f(x)=x^2-2x+1=(x-1)^2
+        \]
+      \end{questionbox}
+      这里解释符号中的对象、条件和数量关系。
+
+    \column{0.44\textwidth}
+      \begin{definitionbox}[图形或表格区域]
+        插入图片时可使用：
+
+        \medskip
+        {\footnotesize\texttt{\textbackslash includegraphics[width=}\\
+        \texttt{\textbackslash linewidth]\{图片\}}}
+      \end{definitionbox}
+  \end{columns}
+\end{frame}
+
+%==================== 例题页 ====================
+\begin{frame}{例题训练}
+  \begin{examplebox}[例1]
+    这里填写完整题目。题目出现后先给学生独立思考时间。
+  \end{examplebox}
+
+  \pause
+  \answer{这里填写答案。}
+  \method{写出关键依据，说明为什么选择这一方法。}
+
+  \begin{notebox}[易错点]
+    这里记录学生可能漏掉的条件、混淆的概念或推理断点。
+  \end{notebox}
+\end{frame}
+
+%==================== 小结页 ====================
+\begin{frame}{课堂小结}
+  \begin{enumerate}
+    \item 本节课研究的核心对象是什么？
+    \item 定义中不能遗漏的条件是什么？
+    \item 哪一道题能够检验是否真正理解？
+  \end{enumerate}
+
+  \vspace{0.25cm}
+  \begin{questionbox}[离堂检测]
+    这里放一道可以独立完成、能够直接检验目标是否达成的小题。
+  \end{questionbox}
+\end{frame}
+
+%==================== 结束页 ====================
+\CampusEndPage
+
+\end{document}
