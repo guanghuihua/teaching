@@ -248,6 +248,8 @@
     "steps": 1,
     "reviewed_layout": true,
     "source_issues": [],
-    "notes": []
+    "notes": [
+      "按用户 2026-09-07 要求，在结束页前新增理发师悖论思考题；4 个揭示状态、3 次新增点击，非原 PPT 动画。"
+    ]
   }
 ]

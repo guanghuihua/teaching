@@ -385,6 +385,9 @@ def generate(manifest, output, config, theme):
                                  output / "source-media" / Path(b["asset"]).name)
                 tex += render_block(b, slide)
             tex += r"\end{campuscanvas}" + "\n" + r"\end{frame}" + "\n"
+        # Explicitly authored additions remain separate from source-derived objects.
+        if c.get("before_tex"):
+            tex = "% Teacher-authored addition, not in the source PPTX.\n" + c["before_tex"] + "\n" + tex
         (output / "slides" / f"slide-{slide['number']:02d}.tex").write_text(tex, encoding="utf-8")
         reports.append({"slide": slide["number"], "title": title, "steps": slide["steps"],
                         "reviewed_layout": bool(c), "source_issues": slide["issues"], "notes": c.get("notes", [])})
