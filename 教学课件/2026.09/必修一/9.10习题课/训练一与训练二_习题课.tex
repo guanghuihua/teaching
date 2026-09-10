@@ -1,0 +1,586 @@
+% !TeX program = xelatex
+% 复制本文件到本次备课目录，修改下列信息，再替换各页占位文字。
+% 本文件是投影课件模板，不是可直接发给学生的试卷。
+\documentclass[UTF8,10pt,aspectratio=169]{ctexbeamer}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta,positioning,shapes.geometric}
+\usepackage{newtxtext,newtxmath}
+\usetheme{default}
+\usecolortheme{default}
+\usefonttheme{serif}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\newcommand{\LessonTitle}{集合基础与集合关系}
+\newcommand{\LessonSubtitle}{训练（一）与训练（二）讲评}
+\newcommand{\LessonInfo}{2026年9月10日}
+\newcommand{\PageHeading}[1]{\begin{center}{\Large\bfseries #1}\end{center}\vspace{0.2cm}}
+\newcommand{\Answer}[1]{\par\vspace{0.2cm}\textbf{【答案】}#1}
+\newcommand{\Analysis}[1]{\par\vspace{0.2cm}\textbf{【详解】}#1}
+\newcommand{\Choices}[4]{\par\vspace{0.2cm}\begin{tabular}{@{}p{0.47\textwidth}p{0.47\textwidth}@{}}A. #1 & B. #2 \\[0.15cm] C. #3 & D. #4\end{tabular}}
+
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\blank}{\underline{\hspace{1.6cm}}}
+\newcommand{\Tip}[1]{\par\vspace{0.2cm}\textbf{【辨析】}#1}
+\newcommand{\Source}[1]{{\scriptsize\color{gray}#1}\par\vspace{0.25cm}}
+\begin{document}
+\begin{frame}
+\begin{center}
+{\Large\bfseries \LessonTitle}\par\vspace{0.5cm}
+{\large \LessonSubtitle}\par\vspace{0.3cm}\LessonInfo
+\end{center}
+\vspace{0.4cm}
+\textbf{本课任务}
+\begin{enumerate}
+\item 分清元素、集合与有序数对，正确使用集合符号。
+\item 把集合条件转化为方程、不等式，并检验参数。
+\item 判断包含关系时，先考虑空集，再处理非空情形。
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\PageHeading{讲评路线}
+\begin{enumerate}
+\item 训练（一）1：集合与元素（第1--14题）。
+\item 训练（一）2：表示集合的方法（第1--14题）。
+\item 训练（二）：子集和补集（第1--14题）。
+\end{enumerate}
+\vspace{0.3cm}
+先独立判断，再核对理由；参数题必须把候选值代回原条件。
+\par\vspace{0.3cm}
+{\small 来源：《课时作业内文（基础版）》第1--3页；\par
+参考答案：《课时作业答案（基础版）》第1--3页。}
+\end{frame}
+\section{训练（一）1：集合与元素}
+\begin{frame}
+\PageHeading{训练（一）1：集合与元素}
+原作业第1页\par\vspace{0.4cm}
+\textbf{先做题，再说清每一步的依据。}
+\end{frame}
+% 教学记录：确定性；检查判定标准；易错为把模糊描述当成集合；基础；逐项说明
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第1题}
+下面给出的四类对象中，能构成集合的是（\quad）。
+\Choices{比较大的数}{未来世界的高科技产品}{$\pi$的近似值}{中国古代四大发明}
+\pause
+\Answer{D}
+\Analysis{判断对象是否属于这一类，必须有确定的标准。D中的对象是确定的。}
+\Tip{“比较大”“未来”“近似值”在本题中没有给出明确判定标准。}
+\end{frame}
+% 教学记录：元素个数与无序性；逐项反证；易错为空集与零混淆；基础；正确选出所有错误项
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第2题}
+（多选题）下列说法中不正确的是（\quad）。
+\par A. 集合$\{x\in\R\mid x^2=1\}$中有两个元素
+\par B. 集合$\{0\}$中没有元素
+\par C. $\sqrt{13}\in\{x\mid x<2\sqrt3\}$
+\par D. $\{1,2\}$与$\{2,1\}$是不同的集合
+\pause
+\Answer{BCD}
+\Analysis{A：解集为$\{-1,1\}$；B：$\{0\}$有一个元素$0$。
+\par C：$\sqrt{13}>\sqrt{12}=2\sqrt3$；D：元素无序，两个集合相等。}
+\end{frame}
+% 教学记录：归属与开端点；代入范围；易错为包含端点；基础；说明四个数的位置
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第3题}
+集合$M$是由大于$-3$且小于$1$的实数构成的，则下列关系正确的是（\quad）。
+\Choices{$\sqrt3\in M$}{$0\notin M$}{$1\in M$}{$-1\in M$}
+\pause
+\Answer{D}
+\Analysis{$M=(-3,1)$，且$-3<-1<1$。$\sqrt3>1$，$0\in M$，$1\notin M$。}
+\end{frame}
+% 教学记录：有限与无限；解不等式并计数；易错忽略根式定义域；基础；列出有限集合
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第4题}
+下列给出的对象能构成集合并且为无限集的是（\quad）。
+\par A. 所有很大的实数组成的集合
+\par B. 满足不等式$\sqrt{x+1}<2$的所有整数解组成的集合
+\par C. 所有大于$-4$的偶数组成的集合
+\par D. 所有到$x,y$轴距离均为$1$的点组成的集合
+\pause
+\Answer{C}
+\Analysis{B：$-1\le x<3$，整数解仅$-1,0,1,2$。
+\par C：$\{-2,0,2,4,\ldots\}$无限；D：仅$(\pm1,\pm1)$四个点。A标准不确定。}
+\end{frame}
+% 教学记录：互异性；比较边长关系；易错为只看图形名称；基础；解释排除理由
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第5题}
+若$a,b,c,d$为集合$A$的四个元素，则以$a,b,c,d$为边长构成的四边形可能是（\quad）。
+\Choices{矩形}{平行四边形}{菱形}{梯形}
+\pause
+\Answer{D}
+\Analysis{四个元素互不相同。矩形、平行四边形存在相等的对边，菱形四边相等；梯形的四边可以互不相等。}
+\end{frame}
+% 教学记录：常见数集；定义辨析；易错为自然数漏0；基础；说出N与N+区别
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第6题}
+下列说法中正确的是（\quad）。
+\par A. 集合$\N$中最小的数是$1$
+\par B. 若$-a\notin\Z$，则$a\in\Z$
+\par C. 所有的正实数组成集合$\R_+$
+\par D. 由很小的数可组成集合$A$
+\pause
+\Answer{C}
+\Analysis{本资料中$\N=\{0,1,2,\ldots\}$。若$-a$不是整数，则$a$也不是整数；“很小”没有确定标准。}
+\end{frame}
+% 教学记录：互异性；因式分解并去重；易错为数根次数；基础；写出集合
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第7题}
+以方程$x^2-5x+6=0$和方程$x^2-x-2=0$的根为元素组成的集合中共有\blank 个元素。
+\pause
+\Answer{$3$}
+\Analysis{$(x-2)(x-3)=0$给出$2,3$；$(x-2)(x+1)=0$给出$2,-1$。合起来是$\{-1,2,3\}$。}
+\Tip{同一个数只计作一个元素。}
+\end{frame}
+% 教学记录：参数与互异性；分类代入；易错漏检a=2；中等；列出有效集合
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第8题}
+设集合$A$中含有三个元素$1,a-1,a^2$，若$4\in A$，则$a=$\blank。
+\pause
+\Answer{$-2$或$5$}
+\Analysis{$a-1=4\Rightarrow a=5$；$a^2=4\Rightarrow a=\pm2$。
+\par 当$a=2$时，$a-1=1$，不足三个不同元素，舍去。
+\par $a=-2$时为$\{1,-3,4\}$；$a=5$时为$\{1,4,25\}$。}
+\end{frame}
+% 教学记录：根与元素；代入求参数再求根；易错止于参数；基础；写出完整解集
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第9题}
+已知集合$M$是方程$x^2-x+k=0$的解组成的集合，若$2\in M$，则下列判断正确的是（\quad）。
+\Choices{$1\in M$}{$0\in M$}{$-1\in M$}{$-2\in M$}
+\pause
+\Answer{C}
+\Analysis{$4-2+k=0\Rightarrow k=-2$。方程化为$(x-2)(x+1)=0$，故$M=\{-1,2\}$。}
+\end{frame}
+% 教学记录：双重归属；枚举；易错只检查a；基础；检查两个条件
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第10题}
+集合$A$中含有三个元素$2,4,6$，若$a\in A$，且$6-a\in A$，则$a$的值为\blank。
+\pause
+\Answer{$2$或$4$}
+\Analysis{当$a=2,4,6$时，$6-a$分别为$4,2,0$，只有前两种属于$A$。}
+\end{frame}
+% 教学记录：元素个数与端点；夹逼；易错把严格不等号反用；中等；写出5<a≤6
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第11题}
+已知集合$P$中元素$x$满足：$x\in\N$且$2<x<a$，又集合$P$中恰有三个元素，则整数$a=$\blank。
+\pause
+\Answer{$6$}
+\Analysis{三个自然数只能为$3,4,5$。包含$5$需$a>5$，不包含$6$需$a\le6$；结合$a\in\Z$，得$a=6$。}
+\end{frame}
+% 教学记录：互异性条件；两两比较；易错漏x²=x；中等；逐一写出不等关系
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第12题}
+已知集合$A$中有三个元素，分别为$2,x,x^2$。
+\par （1）求实数$x$应该满足哪些条件？
+\par （2）若$1\in A$，求$x$的取值。
+\pause
+\Answer{（1）$x\notin\{0,1,2,\sqrt2,-\sqrt2\}$；（2）$x=-1$。}
+\Analysis{（1）互异性要求$x\ne2$，$x^2\ne2$，$x^2\ne x$。
+\par （2）$x=1$或$x^2=1$；$x=1$不满足三个不同元素，故$x=-1$。}
+\end{frame}
+% 教学记录：集合相等与方程；代入两根；易错常数项符号；中等；因式分解回检
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第13题}
+已知集合$A$含有两个元素$1$和$2$，集合$B$表示方程$x^2+ax-b=0$的解组成的集合，且集合$A$与集合$B$是同一个集合，求$a,b$的值。
+\pause
+\Answer{$a=-3,\ b=-2$。}
+\Analysis{由$1,2$均为方程的根，
+\[1+a-b=0,\qquad4+2a-b=0.\]
+相减得$a=-3$，代入得$b=-2$。检验：$x^2-3x+2=(x-1)(x-2)$。}
+\Tip{注意常数项是$-b$，不是$b$。}
+\end{frame}
+% 教学记录：退化方程与根数；先分a=0；易错只用判别式；重点；完整分类
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第14题}
+已知方程$ax^2-3x+2=0\ (a\in\R)$的实根组成集合$A$。
+\par （1）若集合$A$中只有一个元素，求实数$a$的值，并写出该元素；
+\par （2）若集合$A$中至多有一个元素，求实数$a$的取值范围。
+\pause
+\Answer{（1）$a=0$，元素为$\frac23$；或$a=\frac98$，元素为$\frac43$。\par （2）$a\in\{0\}\cup[\frac98,+\infty)$。}
+\end{frame}
+\begin{frame}
+\Source{课时作业内文（基础版）第1页 · 训练（一）1：集合与元素 · 第14题 · 解析续页}
+
+\textbf{第14题：先看是不是二次方程}
+\par\vspace{0.3cm}
+当$a=0$时，$-3x+2=0$只有一个实根$\frac23$。
+\pause\par\vspace{0.3cm}
+当$a\ne0$时，$\Delta=9-8a$：
+\begin{center}\begin{tabular}{c|c|c}
+条件 & 不同实根个数 & 参数\\\hline
+$\Delta>0$ & 2 & $a<\frac98$，且$a\ne0$\\[0.15cm]
+$\Delta=0$ & 1 & $a=\frac98$\\[0.15cm]
+$\Delta<0$ & 0 & $a>\frac98$
+\end{tabular}\end{center}
+\pause
+\Tip{“至多一个”包含没有元素；二重根只对应一个元素。}
+
+\end{frame}
+\section{训练（一）2：表示集合的方法}
+\begin{frame}
+\PageHeading{训练（一）2：表示集合的方法}
+原作业第2页\par\vspace{0.4cm}
+\textbf{先做题，再说清每一步的依据。}
+\end{frame}
+% 教学记录：描述法转列举法；先范围后筛选；易错把0算入；基础；列举准确
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第1题}
+集合$\{x\in\N_+\mid x-2\le1\}$用列举法表示为（\quad）。
+\Choices{$\{0,1,2,3\}$}{$\{1,2,3\}$}{$\{0,1,2,3,4\}$}{$\{1,2,3,4\}$}
+\pause
+\Answer{B}
+\Analysis{$x\le3$且$x$为正整数，故只能取$1,2,3$。}
+\end{frame}
+% 教学记录：描述法；属性与范围兼顾；易错漏整数条件；基础；指出多余元素
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第2题}
+集合$\{2,4,6,8,10\}$用描述法表示正确的是（\quad）。
+\par A. $\{x\mid1<x<10\}$\qquad B. $\{x\mid2\le x\le10\}$
+\par C. $\{x\mid x\le10,x\in\N\}$
+\par D. $\{x\mid x=2n,n\in\N,1\le n\le5\}$
+\pause
+\Answer{D}
+\Analysis{既要规定偶数形式$x=2n$，也要限制$n$的整数属性及范围。A、B含非整数；C含$0$和奇数。}
+\end{frame}
+% 教学记录：解集表示；因式分解；易错把等式当元素；基础；规范写法
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第3题}
+方程$x^2-4x-5=0$的解集是（\quad）。
+\Choices{$\{x=-1,x=5\}$}{$\{x\mid-1,5\}$}{$\{x^2-4x-5=0\}$}{$\{-1,5\}$}
+\pause
+\Answer{D}
+\Analysis{$(x+1)(x-5)=0$，解为$-1,5$。解集的元素是数，不是方程或等式。}
+\end{frame}
+% 教学记录：点集；看代表元素再代入；易错数与点混淆；基础；说明元素类型
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第4题}
+已知$A=\{(x,y)\mid y=x^2,x\in\R\}$，则（\quad）。
+\Choices{$-1\in A$}{$1\in A$}{$(-1,1)\in A$}{$(1,-1)\in A$}
+\pause
+\Answer{C}
+\Analysis{$A$的元素是有序数对。$(-1)^2=1$，所以$(-1,1)\in A$；$1^2\ne-1$。}
+\end{frame}
+% 教学记录：集合相等；比较元素类型；易错混用两种无序性；基础；分别说出元素
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第5题}
+下列集合中表示同一个集合的是（\quad）。
+\par A. $P=\{(3,2)\},\ Q=\{(2,3)\}$
+\par B. $P=\{2,3\},\ Q=\{3,2\}$
+\par C. $P=\{(x,y)\mid x+y=1\},\ Q=\{y\mid x+y=1\}$
+\par D. $P=\{2,3\},\ Q=\{(2,3)\}$
+\pause
+\Answer{B}
+\Analysis{集合中的元素无序，但有序数对内部有顺序。C左边是点集，右边是数集；D左边两个数，右边一个点。}
+\end{frame}
+% 教学记录：集合记号的歧义；分别检查题面与补充条件；易错把重复列写判非法；重点；说明答案所需条件
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第6题}
+若$1\in\{x+2,x^2\}$，则实数$x$的值为（\quad）。
+\Choices{$-1$}{$1$}{$1$或$-1$}{$1$或$3$}
+\pause
+\Answer{原参考答案为B（须补充“集合有两个元素”）。}
+\Analysis{$x+2=1$或$x^2=1$，候选为$-1,1$。若要求两个不同元素，$x=-1$被排除，得$x=1$。}
+\Tip{按题面集合记号本身，$\{1,1\}=\{1\}$仍是集合，故严格按原题应选C。}
+\end{frame}
+% 教学记录：归属分类与题面条件；逐项代回；易错无条件排重；重点；比较两种口径
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第7题}
+若$x\in\{1,2,x^2\}$，则$x$的所有可能取值为\blank。
+\pause
+\Answer{按原题：$0,1,2$；若补充“三个元素”：$0,2$（原参考答案）。}
+\Analysis{$x=1$，或$x=2$，或$x=x^2$；最后一式给出$x=0,1$。三者均满足原题归属关系。}
+\Tip{只有明确要求集合有三个不同元素，才能排除$x=1$。}
+\end{frame}
+% 教学记录：区间互译；核对端点；易错无穷大处方括号；基础；写法与范围一致
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第8题}
+用区间或集合表示下列数集：
+\par （1）$\{x\mid2<x\le4\}=$\blank；
+\par （2）$[-3,+\infty)=$\blank。
+\pause
+\Answer{（1）$(2,4]$；（2）$\{x\in\R\mid x\ge-3\}$。}
+\Analysis{严格不等号对应圆括号；包含端点对应方括号；无穷大一侧始终用圆括号。}
+\end{frame}
+% 教学记录：集合构造；枚举去重；易错计组合不计值；基础；列出B
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第9题}
+已知集合$A=\{1,2\}$，$B=\{x\mid x=a+b,a\in A,b\in A\}$，则集合$B$中的元素个数为（\quad）。
+\Choices{$1$}{$2$}{$3$}{$4$}
+\pause
+\Answer{C}
+\Analysis{四次相加得到$2,3,3,4$，去重后$B=\{2,3,4\}$，有三个元素。}
+\Tip{有四种取数组合，不等于有四个不同的和。}
+\end{frame}
+% 教学记录：区间端点约定；比较左右端点；易错未说明等号；重点；检验边界
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第10题}
+已知区间$A=[1-a,2a+2]$，则实数$a$的取值范围为\blank。（用区间表示）
+\pause
+\Answer{按原资料的非退化区间约定：$(-\frac13,+\infty)$。}
+\Analysis{$1-a<2a+2\Rightarrow a>-\frac13$。}
+\Tip{若允许退化闭区间$[u,u]=\{u\}$，则应为$[-\frac13,+\infty)$；边界处$A=\{\frac43\}$。}
+\end{frame}
+% 教学记录：含参列举式；解方程再代入；易错缺条件排除a=1；重点；说明歧义
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第11题}
+已知集合$A=\{a,1,a^2-5a+6\}$，若$2\in A$，则实数$a$的值构成的集合为\blank。
+\pause
+\Answer{按原题：$\{1,2,4\}$；若补充“三个元素”：$\{2,4\}$（原参考答案）。}
+\Analysis{$a=2$或$a^2-5a+6=2$，得到$a=2,1,4$。$a=1$时$A=\{1,2\}$，仍含元素$2$。}
+\Tip{原参考答案排除$a=1$，需要额外要求三个不同元素。}
+\end{frame}
+% 教学记录：集合表示综合；按元素类型选方法；易错把点集写成数集；中等；五问均规范
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第12题}
+选择适当方法表示下列集合：
+\par （1）方程$x(x^2+2x+1)=0$的解构成的集合；
+\par （2）在自然数集内，小于$1000$的奇数构成的集合；
+\par （3）不等式$x-2>6$的解构成的集合；
+\par （4）大于$0.5$且不大于$6$的全体自然数构成的集合；
+\par （5）方程组$\begin{cases}2x+y=3,\\x-2y=4\end{cases}$的解$(x,y)$构成的集合。
+\pause
+\Answer{（1）$\{-1,0\}$；（2）$\{2n+1\mid n\in\N,0\le n\le499\}$；\par （3）$(8,+\infty)$；（4）$\{1,2,3,4,5,6\}$；（5）$\{(2,-1)\}$。}
+\end{frame}
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第12题 · 解析续页}
+
+\textbf{第12题：先看元素是什么，再选表示方法}
+\par\vspace{0.3cm}
+（1）$x(x+1)^2=0$：根为$0,-1$，重根只列一次。
+\par （2）奇数写成$2n+1$；$2n+1<1000$给出$n\le499$。
+\par （3）$x>8$，是连续的实数范围，适合区间。
+\pause\par\vspace{0.3cm}
+（4）自然数筛选后只有$1,2,3,4,5,6$。
+\par （5）第一式乘$2$再加第二式，得$5x=10$，故$x=2,y=-1$。
+\Tip{$\{(2,-1)\}$只有一个元素；$\{2,-1\}$有两个元素。}
+
+\end{frame}
+% 教学记录：退化与重根；分类；易错漏a=0；重点；写出每种集合
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第13题}
+集合$A=\{x\mid ax^2+2x+1=0\}$中有且仅有一个元素，求实数$a$的值。
+\pause
+\Answer{$a=0$或$a=1$。}
+\Analysis{$a=0$时，$2x+1=0$有唯一根$-\frac12$。
+\par $a\ne0$时，需$\Delta=4-4a=0$，得$a=1$，此时唯一元素为$-1$。}
+\Tip{“有且仅有一个元素”要求一个不同实根，不意味着一定是二次方程。}
+\end{frame}
+% 教学记录：代表元素与整除；因数枚举；易错把A与B等同；重点；写出对应表
+\begin{frame}
+\Source{课时作业内文（基础版）第2页 · 训练（一）2：表示集合的方法 · 第14题}
+已知集合
+\[A=\left\{x\in\N\ \middle|\ \frac9{10-x}\in\N\right\},\quad
+B=\left\{\frac9{10-x}\in\N\ \middle|\ x\in\N\right\},\]
+试问集合$A$与$B$有几个相同的元素？并写出由这些相同元素组成的集合。
+\pause
+\Answer{有$2$个，相同元素组成$\{1,9\}$。}
+\Analysis{$10-x$必须是$9$的正因数，即$1,3,9$。对应$x=9,7,1$，分式值为$9,3,1$。所以$A=\{1,7,9\}$，$B=\{1,3,9\}$。}
+\Tip{A收集输入$x$，B收集分式的值；两者不是同一类代表元素。}
+\end{frame}
+\section{训练（二）：子集和补集}
+\begin{frame}
+\PageHeading{训练（二）：子集和补集}
+原作业第3页\par\vspace{0.4cm}
+\textbf{先做题，再说清每一步的依据。}
+\end{frame}
+% 教学记录：属于与包含；辨对象类型；易错花括号忽略；基础；改正两式
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第1题}
+下列各式：
+\par ① $1\subseteq\{0,1,2\}$；② $\{1\}\in\{0,1,2\}$；
+\par ③ $\{0,1,2\}\subseteq\{0,1,2\}$；④ $\varnothing\subseteq\{0,1,2\}$；
+\par ⑤ $\{2,1,0\}=\{0,1,2\}$。其中错误的个数是（\quad）。
+\Choices{$1$}{$2$}{$3$}{$4$}
+\pause
+\Answer{B}
+\Analysis{①应写$1\in\{0,1,2\}$；②应写$\{1\}\subseteq\{0,1,2\}$。③④⑤均正确。}
+\end{frame}
+% 教学记录：有限集合包含；列举比较；易错端点5；基础；给出差异元素
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第2题}
+已知集合$A=\{x\in\N\mid-1<x<5\}$，$B=\{0,1,2,3,4,5\}$，则（\quad）。
+\Choices{$B\subseteq A$}{$A=B$}{$B\in A$}{$A\ne B$}
+\pause
+\Answer{D}
+\Analysis{$A=\{0,1,2,3,4\}$，$5\in B$但$5\notin A$，所以$A\subsetneq B$，从而$A\ne B$。}
+\end{frame}
+% 教学记录：封闭性计数；配对成组；易错选0或遗漏非空；重点；说明四组为何独立
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第3题}
+若$x\in A$，则$\frac1x\in A$，就称$A$是伙伴关系集合。集合
+\[M=\left\{-1,0,\frac13,\frac12,1,2,3,4\right\}\]
+的所有非空子集中，具有伙伴关系的集合的个数为（\quad）。
+\Choices{$15$}{$16$}{$2^8$}{$2^5$}
+\pause
+\Answer{A}
+\Analysis{$0$不能选；$4$的倒数不在$M$中，也不能选。
+\par 可独立选择四组：$\{-1\}$、$\{1\}$、$\{\frac13,3\}$、$\{\frac12,2\}$。
+\par 每组“全选或不选”，再除去空集，共$2^4-1=15$个。}
+\end{frame}
+% 教学记录：方程组解集；消元并辨元素；易错数集点集混淆；基础；写出唯一元素
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第4题}
+（多选题）下列与集合
+\[M=\left\{(x,y)\ \middle|\ \begin{cases}x+y=1,\\x-y-3=0\end{cases}\right\}\]
+表示同一个集合的有（\quad）。
+\Choices{$\{(2,-1)\}$}{$\{2,-1\}$}{$\{(x,y)\mid x=2,y=-1\}$}{$\{x=2,y=-1\}$}
+\pause
+\Answer{AC}
+\Analysis{联立解得$x=2,y=-1$。$M$是点集，元素为有序数对$(2,-1)$。}
+\end{frame}
+% 教学记录：空集与参数；先零后非零；易错漏a=0；重点；分类不遗漏
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第5题}
+（多选题）设$A=\{-3,8\}$，$B=\{x\mid ax=2\}$，若$B\subseteq A$，则实数$a$的值为（\quad）。
+\Choices{$-\frac23$}{$\frac14$}{$\frac23$}{$0$}
+\pause
+\Answer{ABD}
+\Analysis{$a=0$时，方程无解，$B=\varnothing\subseteq A$。
+\par $a\ne0$时，$B=\{\frac2a\}$，令$\frac2a=-3$或$\frac2a=8$，得$a=-\frac23$或$\frac14$。}
+\Tip{子集可以是空集，不能一开始就除以$a$。}
+\end{frame}
+% 教学记录：关系符号；对象类型与空集；易错空集当0；基础；改正四个错误式
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第6题}
+判断下列表示是否正确：
+\begin{tabular}{@{}p{0.48\textwidth}p{0.48\textwidth}@{}}
+（1）$a\subseteq\{a\}$ & （2）$\{a\}\in\{a,b\}$\\[0.2cm]
+（3）$\{a,b\}\subseteq\{b,a\}$ & （4）$\{-1,1\}\subsetneq\{-1,0,1\}$\\[0.2cm]
+（5）$0\in\varnothing$ & （6）$\{0\}=\varnothing$\\[0.2cm]
+（7）$\varnothing\subseteq\{0\}$ & （8）$\varnothing\subsetneq\{-1,1\}$
+\end{tabular}
+\pause
+\Answer{（1）错；（2）错；（3）对；（4）对；（5）错；（6）错；（7）对；（8）对。}
+\Analysis{按原题将$a,b$视为数。$\varnothing$没有元素，$\{0\}$有一个元素。任意集合是自身的子集；空集是任意非空集合的真子集。}
+\end{frame}
+% 教学记录：有约束子集计数；必选与可选；易错真包含；中等；完整列举
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第7题}
+符合条件$\{a\}\subsetneq P\subseteq\{a,b,c\}$的集合$P$的个数是\blank 个。
+\pause
+\Answer{$3$（按$a,b,c$互不相同）。}
+\Analysis{$a$必须选，$b,c$至少选一个：$\{a,b\}$、$\{a,c\}$、$\{a,b,c\}$。}
+\Tip{真包含排除了$P=\{a\}$；原题的计数默认$a,b,c$互不相同。}
+\end{frame}
+% 教学记录：数集与关系；定义；易错集合当元素；基础；规范改写
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第8题}
+下列表达式中，正确的序号是\blank。
+\par ① $\pi\in\Q$\qquad ② $\varnothing\subseteq(-\infty,10)$
+\par ③ $\{2\}\in\{1,2,3,4\}$\qquad ④ $\N\subseteq\Z$
+\pause
+\Answer{②④。}
+\Analysis{$\pi$是无理数；③应写$\{2\}\subseteq\{1,2,3,4\}$。自然数都是整数，空集是任意集合的子集。}
+\end{frame}
+% 教学记录：区间包含；考察最小元素；易错端点或方向；中等；检验边界
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第9题}
+设集合$A=\{x\mid-1\le x\le4\}$，集合$B=\{x\mid x\ge a\}$，若$A\subseteq B$，则$a$的取值范围为（\quad）。
+\Choices{$a\ge4$}{$-1\le a\le4$}{$a<-1$}{$a\le-1$}
+\pause
+\Answer{D}
+\Analysis{要让$[-1,4]$中的每个数都满足$x\ge a$，只需且必须最小值$-1\ge a$。}
+\Tip{$a=-1$时仍包含整个$A$，等号不能漏。}
+\end{frame}
+% 教学记录：解集真包含；先求集合；易错参数集合不加括号；基础；说明真包含成立
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第10题}
+已知集合$A=\{x\mid x^2-2x-3=0\}$，$B=\{x\mid x-a=0\}$，若$B\subsetneq A$，则实数$a$的值构成的集合是\blank。
+\pause
+\Answer{$\{-1,3\}$。}
+\Analysis{$A=\{-1,3\}$，$B=\{a\}$。只要$a=-1$或$3$，单元素集合$B$就是$A$的真子集。}
+\end{frame}
+% 教学记录：新定义集合关系；零与正数分类；易错漏空集；重点；检查两种关系
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第11题}
+若一个集合是另一个集合的子集，则称两个集合构成“鲸吞”；若两个集合有公共元素，且互不为对方子集，则称两个集合构成“蚕食”。对于集合
+\[A=\{-1,2\},\quad B=\{x\mid ax^2=2,\ a\ge0\},\]
+若这两个集合构成“鲸吞”或“蚕食”，则$a$的取值集合为\blank。
+\pause
+\Answer{$\{0,\frac12,2\}$。}
+\end{frame}
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第11题 · 解析续页}
+
+\textbf{第11题：把新名称翻译成集合关系}
+\par\vspace{0.25cm}
+$a=0$时，$B=\varnothing\subseteq A$，构成“鲸吞”。
+\pause\par\vspace{0.25cm}
+$a>0$时，$B=\{-r,r\}$，其中$r=\sqrt{2/a}>0$。
+\par $A,B$各有两个元素，若有包含关系就必须相等；但$A=\{-1,2\}$不关于$0$对称，不可能等于$B$。
+\pause\par\vspace{0.25cm}
+因此只能有公共元素且互不包含：
+\[-r=-1\Rightarrow r=1\Rightarrow a=2;\qquad
+r=2\Rightarrow a=\frac12.\]
+两种情况下均仅有一个公共元素。故$a\in\{0,\frac12,2\}$。
+
+\end{frame}
+% 教学记录：集合关系；列举区间与参数换元；易错表面公式不同；中等；给出包含依据
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第12题}
+判断下列两个集合之间的关系：
+\par （1）$A=\{1,2,4\},\ B=\{x\mid x\text{是}8\text{的约数}\}$；
+\par （2）$A=\{x\mid0<x<2\},\ B=\{x\mid-1<x\le3\}$；
+\par （3）$A=\{x\mid x=2k+1,k\in\Z\},\ B=\{x\mid x=2k-1,k\in\Z\}$。
+\pause
+\Answer{（1）$A\subsetneq B$；（2）$A\subsetneq B$；（3）$A=B$。}
+\Analysis{（1）按正约数，$B=\{1,2,4,8\}$。（2）$(0,2)$被$(-1,3]$包含且不相等。（3）两集合均为全体奇数。}
+\end{frame}
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第12题 · 解析续页}
+
+\textbf{第12题（3）：公式不同，集合可以相同}
+\par\vspace{0.3cm}
+任取$x\in A$，存在整数$k$使$x=2k+1$。
+\[x=2(k+1)-1,\qquad k+1\in\Z,\]
+所以$x\in B$，即$A\subseteq B$。
+\pause
+任取$x\in B$，存在整数$k$使$x=2k-1$。
+\[x=2(k-1)+1,\qquad k-1\in\Z,\]
+所以$x\in A$，即$B\subseteq A$。因此$A=B$。
+
+\end{frame}
+% 教学记录：集合相等；归属反推；易错位置对应；中等；回检P=Q
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第13题}
+设$a,b\in\R$，$P=\{1,a\}$，$Q=\{-1,-b\}$，若$P=Q$，求$a-b$的值。
+\pause
+\Answer{$0$。}
+\Analysis{$-1\in Q=P$，而$-1\ne1$，故$a=-1$。又$1\in P=Q$，而$1\ne-1$，故$-b=1$，即$b=-1$。所以$a-b=0$。}
+\Tip{集合相等按元素匹配，不能按书写位置机械配对。}
+\end{frame}
+% 教学记录：含参解集包含；空集和单元素分类；易错除a前未分类；重点；列出全部参数
+\begin{frame}
+\Source{课时作业内文（基础版）第3页 · 训练（二）：子集和补集 · 第14题}
+已知$A=\{x\mid x^2+3x-4=0\}$，$B=\{x\mid ax-1+a=0\}$，且$B\subseteq A$，求所有$a$的值所构成的集合$M$。
+\pause
+\Answer{$M=\{0,-\frac13,\frac12\}$。}
+\Analysis{$A=\{-4,1\}$。当$a=0$时，$-1=0$无解，$B=\varnothing$，符合。
+\par 当$a\ne0$时，$B=\{\frac{1-a}{a}\}$。令$\frac{1-a}{a}=-4$或$1$，得$a=-\frac13$或$\frac12$。}
+\Tip{只有一元一次方程，$B$至多一个元素，不需要讨论$B=A$。}
+\end{frame}
+
+\begin{frame}
+\PageHeading{归纳提升：四个检查动作}
+\textbf{1. 看对象}\par 是数、点，还是集合？先看花括号里的代表元素。
+\pause\par\vspace{0.25cm}
+\textbf{2. 看条件}\par 明确数集、端点、元素个数；不擅自补充“互不相同”。
+\pause\par\vspace{0.25cm}
+\textbf{3. 先分类}\par 含参数方程先看最高次项系数是否为零；子集条件先看空集。
+\pause\par\vspace{0.25cm}
+\textbf{4. 再代回}\par 把候选值代回原式，检验元素、关系与边界。
+\end{frame}
+\begin{frame}
+\PageHeading{课堂收束}
+\textbf{独立复述}\par
+为什么训练（一）1第14题不能只令判别式为零？
+\par 为什么训练（二）第5题中$a=0$也符合条件？
+\par 为什么$\{(2,-1)\}$与$\{2,-1\}$不相等？
+\pause\par\vspace{0.3cm}
+\textbf{订正要求}\par 每道错题补写一条漏掉的条件或推理依据，再代回检查。
+\end{frame}
+\end{document}
