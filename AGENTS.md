@@ -45,6 +45,8 @@
 
 ## File and Artifact Rules
 
+- For exercise lessons and exam-review slides, default to `教学课件/习题课模板/习题课模板.tex` and read `教学课件/习题课模板/使用说明.md`. Copy it into the lesson directory before filling content; follow a different style when the user requests one.
+
 - Use UTF-8 for text files and preserve existing Chinese filenames unless a rename is explicitly required.
 - Before creating or revising a student-facing question paper, read and follow `试题排版规范.md`. Independently check every question's mathematical correctness before layout; selection questions do not receive answer space; subjective questions receive space only after the complete question; subquestions start on their own lines but are not separated by answer-space gaps.
 - For TeX changes, compile the affected document and inspect warnings and output when the toolchain is available.

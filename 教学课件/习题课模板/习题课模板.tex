@@ -1,0 +1,134 @@
+% !TeX program = xelatex
+% 复制本文件到本次备课目录，修改下列信息，再替换各页占位文字。
+% 本文件是投影课件模板，不是可直接发给学生的试卷。
+\documentclass[UTF8,10pt,aspectratio=169]{ctexbeamer}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta,positioning,shapes.geometric}
+\usepackage{newtxtext,newtxmath}
+\usetheme{default}
+\usecolortheme{default}
+\usefonttheme{serif}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\newcommand{\LessonTitle}{专题名称：习题课}
+\newcommand{\LessonSubtitle}{高一数学／试卷讲评}
+\newcommand{\LessonInfo}{班级：待填写\qquad 日期：待填写}
+\newcommand{\PageHeading}[1]{\begin{center}{\Large\bfseries #1}\end{center}\vspace{0.2cm}}
+\newcommand{\Answer}[1]{\par\vspace{0.2cm}\textbf{【答案】}#1}
+\newcommand{\Analysis}[1]{\par\vspace{0.2cm}\textbf{【详解】}#1}
+\newcommand{\Choices}[4]{\par\vspace{0.2cm}\begin{tabular}{@{}p{0.47\textwidth}p{0.47\textwidth}@{}}A. #1 & B. #2 \\[0.15cm] C. #3 & D. #4\end{tabular}}
+
+\begin{document}
+
+\begin{frame}
+  \begin{center}
+    {\Large\bfseries \LessonTitle}\par\vspace{0.5cm}
+    {\large \LessonSubtitle}\par\vspace{0.4cm}
+    \LessonInfo
+  \end{center}
+  \vspace{0.4cm}
+  \textbf{学习目标：}
+  \begin{enumerate}
+    \item 待填写：本课需要识别的条件或结构。
+    \item 待填写：本课需要掌握的方法及其适用条件。
+    \item 待填写：用哪一道独立练习检验迁移。
+  \end{enumerate}
+\end{frame}
+
+% 可选：纯试卷讲评时可删除本页，直接进入题目。
+\begin{frame}
+  \PageHeading{知识回顾}
+  \textbf{核心概念：}待填写定义、范围与必要条件。
+  \par\vspace{0.3cm}
+  \textbf{结构联系：}待填写前置知识与本课方法的联系。
+  \pause
+  \par\vspace{0.3cm}
+  \textbf{适用边界：}待填写不能省略的条件及反例。
+\end{frame}
+
+% 复制此页可生成选择题；填空题删除 Choices 并添加 underline。
+% 备课记录（不投影）：目标概念／预期方法／易错点／难度／评价方式。
+% 来源：填写原卷名称、年份、题号或仓库内来源路径；来源待核对。
+\begin{frame}
+  1.（来源待填写）待替换为完整题干及条件。（\quad）
+  \Choices{选项内容}{选项内容}{选项内容}{选项内容}
+  % 填空题示例：待替换为题干，结果为 \underline{\hspace{2cm}}。
+  \pause
+  \Answer{待填写并独立核验。}
+  \Analysis{待填写关键推理；解析较长时移至独立续页。}
+\end{frame}
+
+% 图形必须按真实条件构造；下方仅为图位，不含示例数学结论。
+\begin{frame}
+  2.（来源待填写）待替换为带图题的完整题干。
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[gray] (0,0) rectangle (6,2.2);
+      \node[align=center] at (3,1.1) {替换为已核验的 TikZ 图形或原图\\点位、比例和标注须与题设一致};
+    \end{tikzpicture}
+  \end{center}
+  \pause
+  \Answer{待填写。}
+  \Analysis{待填写简短解析。}
+\end{frame}
+
+% 小问各自另起一行；复杂题可按小问拆页并保留所需公共条件。
+\begin{frame}
+  3.（来源待填写）待填写公共条件与完整设问。
+  \par\vspace{0.2cm}
+  （1）待填写第一问。
+  \par
+  （2）待填写第二问。
+  \pause
+  \Answer{（1）待填写；（2）待填写。}
+\end{frame}
+
+\begin{frame}
+  \textbf{第3题（1）\quad【详解】}
+  \par\vspace{0.3cm}
+  待填写：重述本页所需条件，给出第一步推理及依据。
+  \pause
+  \par\vspace{0.3cm}
+  待填写：关键计算或证明。
+  \pause
+  \par\vspace{0.3cm}
+  待填写：结论与范围、等号条件等检查。
+\end{frame}
+
+\begin{frame}
+  \textbf{第3题（2）\quad【详解（续）】}
+  \par\vspace{0.3cm}
+  待填写：需要沿用的条件或上一问结论。
+  \pause
+  \par\vspace{0.3cm}
+  待填写：本问推导与结论。内容过多时继续拆页，避免缩小字号硬塞。
+\end{frame}
+
+\begin{frame}
+  \PageHeading{归纳提升}
+  \textbf{1. 结构识别}\par
+  待填写：题目中出现什么条件时，可以考虑本课方法。
+  \pause
+  \par\vspace{0.3cm}
+  \textbf{2. 方法与条件}\par
+  待填写：关键步骤以及每一步成立的前提。
+  \pause
+  \par\vspace{0.3cm}
+  \textbf{3. 易错辨析}\par
+  待填写：具体错误推理及其修正，不虚构学生表现。
+\end{frame}
+
+% 可选：迁移练习可复制题目页放在本页前面。
+\begin{frame}
+  \PageHeading{课堂收束}
+  \textbf{方法回顾：}待填写本课最关键的一条推理。
+  \par\vspace{0.3cm}
+  \textbf{独立检验：}待填写练习题号和达标依据。
+  \par\vspace{0.3cm}
+  \textbf{课后任务：}待填写题号及需订正的推理环节。
+\end{frame}
+
+% 课后记录（不投影）：学生卡点／有效解释／下次修改／可入库好题。
+\end{document}
