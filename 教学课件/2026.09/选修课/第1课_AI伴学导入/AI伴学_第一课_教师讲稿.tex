@@ -14,15 +14,17 @@
 \begin{center}{\LARGE\bfseries\color{schoolgreen}AI伴学第一课}\par\vspace{4mm}{\large 教师讲稿}\par\vspace{3mm}华光辉\quad 40分钟\end{center}
 
 
-这份讲稿对应同目录29页Beamer，研究信息核查至2026年9月11日。正文是可直接讲述的话，方括号式操作提示供教师看，不必读给学生。可以按自己的口头习惯改词；系统演示中的“这里”“这一步”，要对应课前选好的真实资料。
 
-40分钟路线：课程要求5分钟；AI历史、2分钟神经网络入门与两段完整视频共17分钟；数学进展10分钟；Scholar演示7分钟；结束书写1分钟。21页讲完直接跳29页。22—28页是集合题拓展，不计入这40分钟。
 
-课前准备：提前打开两段B站视频并检查声音；启动Scholar，打开已登录的本地实例；预选一页资料和一条非敏感练习记录；另备已保存的对话，以防网络响应较慢。视频为联网链接，不是PDF内嵌文件。
+这份讲稿对应同目录27页Beamer，研究信息核查至2026年9月11日。正文可直接讲述，操作与备课提示供教师查看。可按自己的口头习惯改词；系统演示中的“这里”“这一步”，要对应课前选好的真实资料。
 
-如果现场超时：优先压缩第12页背景成果介绍和系统界面浏览，不省略第3页学分说明、第17页成果范围和第21页收尾。若完整播放两段视频，集合题通常留到下次课。不要在现场临时寻找未经预看的视频片段。
+40分钟路线：课程要求5分钟；AI历史、神经网络入门和两段完整视频17分钟；IMO成绩引入1分钟；NS方程通俗介绍4分钟；Scholar演示12分钟；结束书写1分钟。第19页讲完直接跳第27页。第20—26页是集合题拓展，不计入这40分钟。
 
-朗读段落之外预留了学生数图、简短回答、视频切换和系统操作时间。教师不需要按稿子持续读满40分钟。
+课前准备：提前打开两段B站视频并检查声音；启动Scholar，打开已登录的本地实例；预选一页资料和一条非敏感练习记录；另备已保存的对话，以防网络响应较慢。视频是联网链接，不是PDF内嵌文件。
+
+本版删去2021、2023年的数学成果，以及单位距离、雅可比猜想的讲解。NS部分只讲水流情境、一个高中函数和AI参与的研究，不展示微分方程与证明细节。
+
+Scholar的12分钟包含真实操作、对照原文、学生复述或追问，无需持续读稿。到39分钟直接回第19页收尾；集合题通常留到下次课。
 
 
 \clearpage
@@ -175,103 +177,71 @@
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第12页　AI已经参与了哪些数学工作}
+\section*{第12页　从解竞赛题，到研究新问题}
 
 {\small\noindent 22:00—23:00\par}
 
-AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，研究者用机器学习分析纽结，帮助数学家发现并证明新的联系。2023年的FunSearch则让模型写程序，再用程序的实际表现筛选候选方案，改进了组合数学中的构造。
+2025年，增强版Gemini Deep Think做国际数学奥林匹克试题，六道解出了五道，得了35分，达到当年的金牌标准。大家要注意，竞赛题很难，但它已经有答案和评分标准。研究问题更进一步，可能连数学家也还不知道答案。
 
-2025年，增强版Gemini Deep Think在IMO试题上达到35分，也就是金牌标准。接下来这三个问题更进一步：它们讨论的是研究者原来还不知道答案的事情。
+下面我们不看复杂的代数问题，就从大家熟悉的水流，说起一个研究问题。
 
-\tip{背景事实对应R11—R13。cap set只需说明是一类有约束的集合构造，不在这里展开定义。}
+\tip{R13。模型达到金牌标准，不是作为学生参赛获得奖牌。这一页只作过渡，不展开竞赛解法。}
 
 \end{minipage}\par\vspace{2mm}
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第13页　四个点，能连出几条单位线段}
+\section*{第13页　NS方程：用数学描述水怎样流动}
 
 {\small\noindent 23:00—24:15\par}
 
-先看一个大家都能动手的问题。四个点，只把相距恰好为1的点连起来。正方形有几条？四条，对角线不是1，所以不算。
+想象用勺子搅动一杯水。水会转起来，停下以后，又会慢慢平静下来。要描述这个过程，不能只说整杯水朝哪个方向走，因为杯子不同位置的水，速度和方向都可能不同。
 
-现在把这四个点改成右边的样子：两个等边三角形共用一条边。上面三条、下面三条，公共边只能算一次，所以共有五条。只是换了点的位置，数量就增加了。
+NS方程的基本想法，和物理课里的牛顿第二定律相通：研究一小部分水受到什么作用、运动怎样改变。压力差会推挤它，邻近的水会因为黏性彼此牵制，也可能有重力或其他外力。方程把这些作用联系起来，描述各处的水接下来怎样流动。
 
-如果不是四个点，而是很多个点，最多能有多少对点相距1？这就是单位距离问题。我们关心的不是图画得漂亮，而是怎样安排点的位置，才能得到更多这样的点对。
+这里不需要记方程，只要知道：它是在用数学追踪流体的运动。
 
-\tip{给学生约10秒数图。右图五条线段都长1；上下顶点距离为根号3。它只是引入，不是2026年论文的构造。}
-
-\end{minipage}\par\vspace{2mm}
-
-\par\noindent\begin{minipage}{\linewidth}
-
-\section*{第14页　单位距离猜想的反例}
-
-{\small\noindent 24:15—26:15\par}
-
-数学家把这个最大数记作u(n)。原来的猜想认为，它的增长率可以写成n的1加一个趋近于0的小量次方。这个符号现在不要求大家掌握；先注意“多出的指数会趋近于0”。
-
-2026年5月公布的构造给出了另一种情况：对无穷多个规模，多出的指数可以保持为一个固定的正数。固定的正数，与越来越接近0，是关键差别。因此它反驳了原来的猜想。
-
-这项论证由OpenAI的内部模型给出，外部数学家核查并整理；Sawin随后把指数具体做到1.014。这里值得我们注意的是，反驳一个猜想也能解决重要问题。前面四个点的图只是帮我们理解题意，真正的构造用到了代数数论。最大值究竟怎样增长，仍然有问题可以继续研究。
-
-\tip{R1—R3。1.014归于Sawin；“无穷多个n”不能改成“每个n”。学生问o(1)时，可用1/log n作趋零量的例子，无需讲完整渐近记号。}
+\tip{R8、R10。用手势表示不同位置的流速即可，不做真实流体实验。杯中水是引入情境，不是论文研究区域；黏性不是所有流速都单调减小的保证。不引入偏导数、散度或拉普拉斯算子。}
 
 \end{minipage}\par\vspace{2mm}
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第15页　雅可比猜想：局部与整体}
+\section*{第14页　难在哪里：一直算下去，会发生什么}
 
-{\small\noindent 26:15—28:30\par}
+{\small\noindent 24:15—25:45\par}
 
-第二个例子叫雅可比猜想。它的条件需要大学数学，我们今天先理解问题的意思：一个由多项式组成的变换，在每一点附近都能倒推，是不是就能从整个输出中唯一找到输入？
+难题在于：从一个很光滑的状态开始，按方程一直算下去，流动能始终保持光滑吗？还是可能在有限时间内出现奇异性？这里说的是速度等量变化得是否平顺，不是水面有没有波纹。我们先用一个高中函数，理解其中一种“失控”的意思。
 
-2026年7月，Alpöge借助Claude Fable 5得到一个三维反例。这里的行列式恒等于负2，是满足原猜想条件的一项关键检查。下面这一行更容易看懂：这三个输入明明不同，输出却完全一样。只知道输出，你就没办法判断原来是哪一个输入。
+看表格，t取0.9，y是10；取0.99，y是100；再接近1一点，就变成1000。请大家接着算：t取0.9999，y是多少？对，是10000。时间没有走到无穷远，只是在接近1，函数值却可以超过任何预先给定的数。
 
-这说明“在每一点附近可以倒推”和“在整个空间唯一倒推”之间，有需要证明的东西。三维及更高维有了反例，但二维仍没有因此解决。我们今天不用展开那个很长的多项式，只要看懂反例为什么能否定结论。
+数学上的“有限时间爆破”，指的就是这种无界增长。这不是水真的爆炸，也不是说只要水流很乱就发生了爆破。这个函数只是帮助我们理解词义，真实的NS问题复杂得多。
 
-\tip{R4—R6。显式多项式及精确复算在核查记录中。本地已验证det DF=-2及三组代入值。不要拿x平方的正负碰撞当作本猜想反例，因为它不满足原条件。}
-
-\end{minipage}\par\vspace{2mm}
-
-\par\noindent\begin{minipage}{\linewidth}
-
-\section*{第16页　流体会在有限时间内失去光滑吗}
-
-{\small\noindent 28:30—29:45\par}
-
-第三个问题和水、空气的运动有关。NS是Navier–Stokes的缩写。这行方程里，u表示速度，p表示压力，nu与黏性有关，f是外力。今天只看它要问什么：流动开始时很光滑，后来会不会在有限时间内出现奇异性？
-
-右边用一个简单函数帮助理解“有限时间爆破”。t取0.9，函数值是10；取0.99，就是100。时间并没有趋向无穷大，而是在接近1时，函数值不断增大。这张图只是解释词义，真实的流体问题要复杂得多。
-
-\tip{R10支持方程与问题设定。板书可写0.9$\to$10、0.99$\to$100。这不是NS方程的候选解。}
+\tip{留约10秒让学生口算。正确答案10000。只讨论t从小于1的一侧趋近1；t=1不在定义域。光滑性问题比单个速度值是否有界更一般，这里用速度爆破介绍新论文涉及的一种情形。湍流或普通漩涡不等于数学奇异性。}
 
 \end{minipage}\par\vspace{2mm}
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第17页　NS方程：最近的研究进展}
+\section*{第15页　AI参与了什么}
 
-{\small\noindent 29:45—32:00\par}
+{\small\noindent 25:45—27:00\par}
 
-这里要按时间区分两项工作。2025年的研究用神经网络，在相关流体方程里找到很难捕捉的不稳定奇异解候选，精度很高。这给严格证明提供了线索。
+今年9月8日，OpenAI公布了一项研究，报告AI系统构造了一种特殊的三维流动：在光滑外力作用下，数学模型中的速度能够在有限时间内无界增长。团队同时公开了证明论文，以及供计算机逐步核查推理的代码。
 
-今年9月8日，OpenAI又公布了一篇NS论文和Lean形式化代码。它报告的是：在光滑外力作用下，原本静止的三维不可压流动会在有限时间内爆破，同时动能仍有界。论文作者认为，这符合千禧年问题的C、D表述。
+这件事让我们看到，AI已经在参与寻找新构造和证明。但这是刚公布的结果，仍需要进一步独立审查。现实中的水也不会真的达到无穷大的速度；数学模型出现这样的结果，提醒我们要分清模型和现实。
 
-这是一项刚公布的重要进展。截至我备课核查的9月11日，Clay页面仍标为Active，我们应当说它是正在等待进一步独立审查的新结果。
+今天不要求大家掌握证明。知道这个问题在问什么、AI参与了什么，就够了。下面回到我们自己的学习，看看我怎样使用Scholar。
 
-大家可以看到，前沿消息里，“算出了一个现象”“给出了一份证明”和“经过了怎样的核查”，各自说明的事情不同。看懂这些区别，我们才能把一个数学消息讲准确。下面回到自己的学习，看看这样的检查习惯怎样落实。
-
-\tip{R7—R10。不要说“AI已经拿到千禧年奖金”。官方C、D允许适当的光滑外力，不能因为有外力就说与官方题目无关。此处不讲尚未核查的归属争议。}
+\tip{R8—R10。2026-09-11复查作者公布页和Clay页面；后者仍列Active。精确条件是三维不可压、有适当光滑外力、初始静止且动能有界。课堂不讲C、D表述、能量估计或Lean语法；没有独立复核论文和代码，不宣布正式获奖或已获普遍认可。}
 
 \end{minipage}\par\vspace{2mm}
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第18页　我怎样使用Scholar学习}
+\section*{第16页　我怎样使用Scholar学习}
 
-{\small\noindent 32:00—33:00\par}
+{\small\noindent 27:00—28:00\par}
 
 接下来介绍我自己搭建的Scholar系统。前面讲的是数学研究，现在看日常学习：我把教材、笔记和学习记录放在一起。读到不懂的地方就问，做题卡住了就先保存尝试，再要一点提示，过几天还能回来看。
 
@@ -283,9 +253,9 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第19页　演示：读到一句没看懂的话}
+\section*{第17页　演示：读到一句没看懂的话}
 
-{\small\noindent 33:00—35:30\par}
+{\small\noindent 28:00—33:00\par}
 
 这里我打开一份准备好的资料。我们只看这一句话，不把整本书的问题一次丢给AI。我先说自己的理解，再问这一步用了什么条件。
 
@@ -293,15 +263,15 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 读书时，Ask \& Understand适合这样连续讨论。看懂回答以后，我还会用自己的话再说一遍，看看自己到底能不能解释。
 
-\tip{Library$\to$Open reader$\to$定位预选页面$\to$选中一句话$\to$Explain/Check me或输入课件提示。用约90秒真实操作；剩余时间讲解和对照。响应超过30秒，打开课前已有记录并说明这是以前保存的对话。}
+\tip{Library$\to$Open reader$\to$定位预选页面$\to$选中一句话$\to$Explain/Check me或输入课件提示。约3分钟真实操作与原文对照，留1分钟请学生用自己的话复述或提出追问。响应超过30秒，打开课前已有记录并说明这是以前保存的对话。}
 
 \end{minipage}\par\vspace{2mm}
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第20页　演示：一道题暂时做不下去}
+\section*{第18页　演示：一道题暂时做不下去}
 
-{\small\noindent 35:30—39:00\par}
+{\small\noindent 33:00—39:00\par}
 
 再看练习的情况。我先写出已经想到的部分，保存下来。这时如果确实做不下去，就点一次“给我一个提示”。
 
@@ -309,13 +279,13 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 最后安排一下复习。系统有1天后和7天后的入口；时间到了，我重新做一次。是不是学会了，要看那时自己能否完成。大家以后可以用同样的方法处理自己的问题，不一定和我演示的题一样。
 
-\tip{Practice \& Prove$\to$Attempt$\to$Save attempt$\to$Request one hint$\to$保存修改$\to$Schedule 1d + 7d reviews$\to$Reports。用约2分钟操作。到39分钟必须回第21页；只有前面明显提前结束，才点集合题。}
+\tip{Practice \& Prove$\to$Attempt$\to$Save attempt$\to$Request one hint$\to$保存修改$\to$Schedule 1d + 7d reviews$\to$Reports。约4分钟真实操作，留1分钟请学生判断提示是否解决了卡点。到39分钟必须回第19页；只有提前完成，才点集合题。}
 
 \end{minipage}\par\vspace{2mm}
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第21页　下课前}
+\section*{第19页　下课前}
 
 {\small\noindent 39:00—40:00\par}
 
@@ -323,15 +293,15 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 不用写得很大，具体一点最好。下次课，我们带着自己的问题，配置和试用学习助手。
 
-\tip{给学生约30秒书写。点击“结束”跳到第29页，避免顺序进入集合附录。}
+\tip{给学生约30秒书写。点击“结束”跳到第27页，避免顺序进入集合附录。}
 
 \end{minipage}\par\vspace{2mm}
 
-\clearpage
+\par\vspace{4mm}
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第22页　选讲：集合中的一个难题}
+\section*{第20页　选讲：集合中的一个难题}
 
 {\small\noindent 机动；首次展示约1分钟\par}
 
@@ -345,7 +315,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第23页　选讲：先让AI帮哪一步}
+\section*{第21页　选讲：先让AI帮哪一步}
 
 {\small\noindent 机动；约1分钟\par}
 
@@ -359,7 +329,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第24页　选讲：第一问的完整列举}
+\section*{第22页　选讲：第一问的完整列举}
 
 {\small\noindent 拓展；约1分钟\par}
 
@@ -373,7 +343,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第25页　选讲：第二问的完整列举}
+\section*{第23页　选讲：第二问的完整列举}
 
 {\small\noindent 拓展；约1分钟\par}
 
@@ -387,7 +357,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第26页　选讲：配对法的关键分支}
+\section*{第24页　选讲：配对法的关键分支}
 
 {\small\noindent 拓展；约2分钟\par}
 
@@ -401,7 +371,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第27页　选讲：一个余数引理}
+\section*{第25页　选讲：一个余数引理}
 
 {\small\noindent 拓展；约3分钟\par}
 
@@ -417,7 +387,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第28页　选讲：完成第三问的证明}
+\section*{第26页　选讲：完成第三问的证明}
 
 {\small\noindent 拓展；约2分钟\par}
 
@@ -433,50 +403,32 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第29页　结束页}
+\section*{第27页　结束页}
 
 {\small\noindent 结束\par}
 
 下次课见。
 
-\tip{正常40分钟路线由第21页直接跳转至此。}
+\tip{正常40分钟路线由第19页直接跳转至此。}
 
 \end{minipage}\par\vspace{2mm}
 
 \clearpage\section*{备课文献}
 
-以下链接供教师追溯，不在课件中放映。研究结论的精确范围、雅可比反例公式及复算说明，见同目录《前沿数学核查记录.md》。本讲稿没有宣称独立验证NS论文或其Lean工程。
+以下链接供教师备课，不在课件中放映。研究结论的精确范围见同目录《前沿数学核查记录.md》。
 
 \begin{enumerate}[label={},leftmargin=0pt,itemsep=6pt]
+
+\item R8　\href{https://openai.com/index/navier-stokes-solution/}{NS研究公布说明}
+
+\item R9　\href{https://github.com/openai/NavierStokesAndEuler}{作者的Lean代码与构建说明}
+
+\item R10　\href{https://www.claymath.org/millennium/navier-stokes-equation/}{Clay的NS问题页面}
+
+\item R13　\href{https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/}{2025年IMO金牌标准}
 
 \item R14　\href{https://developers.google.com/machine-learning/crash-course/neural-networks/nodes-hidden-layers}{神经网络：节点、权重与隐藏层}
 
 \item R15　\href{https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions}{神经网络：激活函数}
-
-\item R1　\href{https://openai.com/index/model-disproves-discrete-geometry-conjecture/}{单位距离：OpenAI公布页}
-
-\item R2　\href{https://arxiv.org/abs/2605.20695}{单位距离：外部数学家的核查与整理}
-
-\item R3　\href{https://arxiv.org/abs/2605.20579}{单位距离：Sawin的显式下界}
-
-\item R4　\href{https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/}{雅可比猜想：Tao的解释与显式反例}
-
-\item R5　\href{https://arxiv.org/abs/2608.00222}{雅可比猜想：Gao的高维反例预印本}
-
-\item R6　\href{https://www.anthropic.com/research/riemann-zeta}{Claude参与雅可比反例：作者说明的脚注2}
-
-\item R7　\href{https://arxiv.org/abs/2509.14185}{2025年流体研究：Discovery of Unstable Singularities}
-
-\item R8　\href{https://openai.com/index/navier-stokes-solution/}{2026年NS论文及公布说明}
-
-\item R9　\href{https://github.com/openai/NavierStokesAndEuler}{作者的Lean代码与构建说明}
-
-\item R10　\href{https://www.claymath.org/millennium/navier-stokes-equation/}{Clay的NS问题页面与正式表述入口}
-
-\item R11　\href{https://doi.org/10.1038/s41586-021-04086-x}{2021年：机器学习引导数学直觉}
-
-\item R12　\href{https://doi.org/10.1038/s41586-023-06924-6}{2023年：FunSearch论文}
-
-\item R13　\href{https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/}{2025年：IMO金牌标准}
 
 \end{enumerate}\end{document}

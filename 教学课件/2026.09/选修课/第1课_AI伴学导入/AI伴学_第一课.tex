@@ -1,6 +1,6 @@
 % !TeX program = xelatex
 % 从本文件所在目录编译。完整主题与 assets 随课件提供。
-% 主讲1--21页；集合题22--28页；第29页结束。研究信息核查至2026-09-11。
+% 主讲1--19页；集合题20--26页；第27页结束。研究信息核查至2026-09-11。
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
@@ -176,121 +176,69 @@
 \end{frame}
 
 % 文献与核查说明见《前沿数学核查记录.md》，放映版不显示出处。
-\begin{frame}[t]{AI已经参与了哪些数学工作}
-  \renewcommand{\arraystretch}{1.4}
-  \begin{tabular}{@{}lp{118mm}@{}}
-    \key{2021} & 分析纽结数据，帮助数学家发现并证明新的联系。\\[4mm]
-    \key{2023} & FunSearch通过生成和筛选程序，改进cap set问题的构造。\\[4mm]
-    \key{2025} & 增强版Gemini Deep Think在IMO试题上得到35/42分，达到金牌标准。\\
+
+\begin{frame}[t]{从解竞赛题，到研究新问题}
+  \key{2025年\quad 国际数学奥林匹克（IMO）试题}
+  \par\vspace{8mm}
+  增强版Gemini Deep Think解出6道题中的5道，\par
+  得到35分（满分42分），达到当年的金牌标准。
+  \par\vspace{10mm}
+  竞赛题有已知的答案和评分标准。\par
+  研究问题，则可能连数学家也还不知道答案。
+  \vfill
+  下面从大家熟悉的水流，说起一个研究问题。
+\end{frame}
+
+\begin{frame}[t,label=nsintro]{NS方程：用数学描述水怎样流动}
+  搅动一杯水，水会旋转；停止搅动后，它又会慢慢平静下来。
+  \par\vspace{6mm}
+  \key{基本想法：把牛顿第二定律 $F=ma$ 用到流体上。}
+  \par\vspace{5mm}
+  \begin{tabular}{@{}lp{113mm}@{}}
+    压力差 & 水的不同位置，受到的推挤不同。\\[4mm]
+    黏性 & 相邻的流体彼此牵制，倾向于减小速度差。\\[4mm]
+    外力 & 例如重力，或搅动带来的作用。\\
   \end{tabular}
   \vfill
-  下面看三个前沿问题：单位距离、雅可比猜想、NS方程。
+  NS（Navier--Stokes）方程把这些作用联系起来，\par
+  描述各处的流速、方向怎样随时间变化。
 \end{frame}
 
-\begin{frame}[t]{四个点，能连出几条单位线段}
-  平面上放四个点，只连接距离恰好为1的点。
+\begin{frame}[t,label=nsquestion]{难在哪里：一直算下去，会发生什么}
+  \smallbody
+  从光滑的初始状态出发，流动能一直保持光滑吗？\par
+  还是会在\key{有限时间}内，出现越来越尖锐的变化？
+  \par\vspace{4mm}
+  先看一个熟悉的函数：$y=\dfrac{1}{1-t}$，其中$0\le t<1$。
   \par\vspace{3mm}
-  \begin{columns}[T,onlytextwidth]
-  \column{.48\textwidth}
-    \begin{center}
-    \begin{tikzpicture}[scale=1.7,line width=1pt]
-      \draw[campusgreen] (0,0)--(1,0)--(1,1)--(0,1)--cycle;
-      \foreach \x/\y in {0/0,1/0,1/1,0/1}{\fill (\x,\y) circle(1.6pt);}
-      \node[below] at (.5,0){$1$};
-    \end{tikzpicture}
-    \par\vspace{3mm}正方形：4条
-    \end{center}
-  \column{.48\textwidth}
-    \begin{center}
-    \begin{tikzpicture}[scale=1.7,line width=1pt]
-      \draw[campusgreen] (0,0)--(1,0)--(.5,.8660254)--(0,0)--(.5,-.8660254)--(1,0);
-      \foreach \x/\y in {0/0,1/0,.5/.8660254,.5/-.8660254}{\fill (\x,\y) circle(1.6pt);}
-      \node[above] at (.5,0){$1$};
-    \end{tikzpicture}
-    \par 两个等边三角形：5条
-    \end{center}
-  \end{columns}
+  \begin{center}
+  \renewcommand{\arraystretch}{1.35}
+  \setlength{\tabcolsep}{7mm}
+  \begin{tabular}{c|cccc}
+    $t$ & $0$ & $0.9$ & $0.99$ & $0.999$\\\hline
+    $y$ & $1$ & $10$ & $100$ & $1000$
+  \end{tabular}
+  \end{center}
+  \par\vspace{3mm}
+  $t$越来越接近1，$y$却没有上界。\par
+  “有限时间爆破”说的是这种数学上的无界增长。
   \vfill
-  如果有$n$个点，最多能连出多少条这样的线段？
+  {\fontsize{9}{12}\selectfont 这个函数只是类比，不是NS方程的解；“爆破”也不是水真的爆炸。}
 \end{frame}
 
-\begin{frame}[t]{单位距离猜想的反例}
+\begin{frame}[t,label=nsprogress]{AI参与了什么}
   \smallbody
-  记$u(n)$为平面上$n$个不同点能确定的单位距离对数的最大值。
+  \key{2026年9月8日\quad 一项新公布的研究}
   \par\vspace{4mm}
-  Erd\H{o}s猜想：当$n$很大时，增长率可以写成$n^{1+o(1)}$。
-  \par 也就是说，指数比1多出的部分会逐渐趋近于0。
+  OpenAI报告：AI系统构造了一种特殊的三维流动，\par
+  在\textbf{光滑外力}作用下，数学模型中的速度可在有限时间内无界增长。
   \par\vspace{5mm}
-  \key{2026年5月}\quad OpenAI内部模型给出一族反例：
-  \[
-    u(n)\ge n^{1+\varepsilon}\qquad
-    \text{对无穷多个 }n\text{ 成立，且 }\varepsilon>0\text{ 固定。}
-  \]
-  外部数学家核查并整理了证明；Sawin进一步得到指数$1.014$。
-  \vfill
-  被推翻的是原来的增长率猜想。$u(n)$的精确增长率仍未确定。
-\end{frame}
-
-\begin{frame}[t]{雅可比猜想：局部与整体}
-  \smallbody
-  一个多项式变换，在每一点附近都能倒推回去，\par
-  是否就能在整个空间中唯一地倒推？
-  \par\vspace{4mm}
-  \key{2026年7月}\quad Alp\"oge借助Claude Fable 5得到三维反例。
-  \par 该多项式映射$F:\mathbb C^3\to\mathbb C^3$满足$\det DF\equiv-2$，却有
-  \[
-    \begin{aligned}
-      F(0,0,-\tfrac14)
-      &=F(1,-\tfrac32,\tfrac{13}2)\\
-      &=F(-1,\tfrac32,\tfrac{13}2)=(-\tfrac14,0,0).
-    \end{aligned}
-  \]
-  三个不同的输入，得到了同一个输出。
-  \vfill
-  三维及更高维存在反例；二维情形仍是开放问题。
-\end{frame}
-
-\begin{frame}[t]{流体会在有限时间内失去光滑吗}
-  \smallbody
-  Navier--Stokes方程描述水和空气等流体的运动：
-  \[
-    \partial_t u+(u\cdot\nabla)u=-\nabla p+\nu\Delta u+f,
-    \qquad \nabla\cdot u=0.
-  \]
-  {\fontsize{10}{14}\selectfont $u$：速度\qquad $p$：压力\qquad $\nu>0$：黏性系数\qquad $f$：外力}
-  \par\vspace{4mm}
-  \begin{columns}[c,onlytextwidth]
-    \column{.56\textwidth}
-      起初光滑的流动，\par 会不会在有限时间内出现奇异性？
-      \par\vspace{4mm}
-      先用$y=\dfrac1{1-t}$理解“有限时间爆破”：\par
-      $t$趋近于1时，$y$可以无限增大。
-    \column{.39\textwidth}
-      \begin{tikzpicture}[x=3cm,y=.34cm,>=stealth]
-        \draw[->] (0,0)--(1.15,0) node[right]{$t$};
-        \draw[->] (0,0)--(0,8.5) node[above]{$y$};
-        \draw[dashed,gray] (1,0)--(1,8);
-        \node[below] at (1,0){$1$};
-        \draw[campusgreen,line width=1.2pt,domain=0:.87,samples=70] plot(\x,{1/(1-\x)});
-      \end{tikzpicture}
-  \end{columns}
-  \vfill
-  {\fontsize{9}{12}\selectfont 右图仅解释“有限时间爆破”的含义，不是NS方程的解。}
-\end{frame}
-
-\begin{frame}[t]{NS方程：最近的研究进展}
-  \smallbody
-  \key{2025年9月\quad 高精度数值发现}
-  \par 神经网络找到多孔介质方程、带边界Euler方程中的\par
-  不稳定奇异解候选，为严格证明提供线索。
+  研究团队公开了证明论文，也公开了供计算机核查推理的代码。
   \par\vspace{5mm}
-  \key{2026年9月8日\quad 新公布的NS证明方案}
-  \par OpenAI发布论文与Lean形式化代码，报告在\par
-  \textbf{光滑外力作用下}，三维不可压NS流动可在有限时间爆破，\par
-  同时保持有界动能；作者称其满足千禧年问题的C、D表述。
+  对数学研究而言，AI正在参与寻找新构造和证明。
   \vfill
-  这是一项刚公布的结果，仍待进一步独立审查。\par
-  截至2026年9月11日，Clay页面仍列为Active。
+  {\fontsize{10}{14}\selectfont 结果刚公布，仍需进一步独立审查。\par
+  这也不意味着现实中的水会达到无穷大的速度。}
 \end{frame}
 
 \begin{frame}[t]{我怎样使用Scholar学习}
