@@ -1,6 +1,6 @@
 % !TeX program = xelatex
 % 从本文件所在目录编译。完整主题与 assets 随课件提供。
-% 主讲 1--16 页；17--24 页为集合题选讲；25--26 页为参考资料。
+% 主讲 1--17 页；18--24 页为集合题选讲；25--26 页为参考资料。
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
@@ -27,11 +27,11 @@
 \begin{frame}[t]{今天的40分钟}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{@{}lp{105mm}@{}}
-    \key{00--07分钟} & 课程评价：期末拿什么说明自己学会了？\\[2mm]
-    \key{07--15分钟} & AI简史：机器解决问题的方式怎样变化？\\[2mm]
-    \key{15--24分钟} & 数学突破：反例、联系、构造与解题。\\[2mm]
-    \key{24--35分钟} & 现场演示：我怎样使用Scholar学习？\\[2mm]
-    \key{35--40分钟} & 有余时体验集合难题，最后一分钟回顾。\\
+    \key{00--06分钟} & 课程评价：期末拿什么说明自己学会了？\\[2mm]
+    \key{06--21分钟} & AI简史，观看Hinton访谈（10分27秒）。\\[2mm]
+    \key{21--29分钟} & 数学突破：反例、联系、构造与解题。\\[2mm]
+    \key{29--38分钟} & 现场演示：我怎样使用Scholar学习？\\[2mm]
+    \key{38--40分钟} & 课堂回顾；有余时进入集合题选讲。\\
   \end{tabular}
   \vfill
   \key{这学期的方向}\quad 学会带着目标使用AI，并检查自己的理解。
@@ -101,6 +101,24 @@
   \vfill
   \key{想一想}\quad “识别图像”和“选择一步棋”，反馈有什么不同？
   \source{https://deepmind.google/research/alphago/}{Google DeepMind：AlphaGo；AlexNet原论文见参考资料}
+\end{frame}
+
+\begin{frame}[t,label=hintonvideo]{视频：Hinton谈研究经历}
+  \key{Geoffrey Hinton谈职业生涯坎坷}
+  \par\vspace{3mm}
+  {\smallbody 视频标题中的话题：\par
+  “若非图灵和冯诺依曼英年早逝，人工智能历史可能大不同”。}
+  \par\vspace{6mm}
+  \begin{center}
+    \href{https://www.bilibili.com/video/BV1xr4y1j7hR/}{\color{campusgreen}\bfseries\fontsize{18}{24}\selectfont\underline{点击播放B站视频}}
+    \par\vspace{3mm}
+    时长：10分27秒\quad 需联网，在浏览器中播放
+  \end{center}
+  \vspace{3mm}
+  \key{观看思考}\quad 研究者的个人选择与时代条件有什么关系？
+  \par\vspace{2mm}
+  {\smallbody “如果当年……”是一种历史假设，需要与已发生的事实区分。}
+  \source{https://www.bilibili.com/video/BV1xr4y1j7hR/}{用户指定视频，B站 BV1xr4y1j7hR}
 \end{frame}
 
 \begin{frame}[t]{AI简史：语言模型与工具协作}
@@ -295,7 +313,7 @@
   （3）若 $a_i\in\{1,2,3,\ldots,2n-1\}\ (i=1,2,\ldots,n)$，证明：
   存在非空集合 $B\subseteq A$，使得 $T(B)$ 是 $2n$ 的倍数。
   \par\vfill
-  {\fontsize{8}{10}\selectfont 来源：教师提供的照片，第19题。原图见后附页。}\backtosummary
+  {\fontsize{8}{10}\selectfont 来源：教师提供的第19题，按印刷题面整理。}\backtosummary
 \end{frame}
 
 \begin{frame}[t]{选讲：怎样向AI提出这个问题}
@@ -394,13 +412,6 @@
   \par\vspace{3mm}
   因此一定存在所求的非空集合 $B$。\hfill$\square$
   \vfill\backtosummary
-\end{frame}
-
-\begin{frame}[t]{选讲：题目原始照片}
-  \centering
-  \includegraphics[angle=90,width=.77\textwidth,height=59mm,keepaspectratio]{assets/关于集合的一个难题_原图.jpg}
-  \par{\fontsize{7}{9}\selectfont 教师提供的第19题照片。保留原件，手写内容不作为标准答案。}
-  \backtosummary
 \end{frame}
 
 \begin{frame}[t,label=sources]{参考资料：AI简史}
