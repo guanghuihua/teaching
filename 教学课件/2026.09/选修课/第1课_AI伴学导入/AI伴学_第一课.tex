@@ -1,6 +1,6 @@
 % !TeX program = xelatex
 % 从本文件所在目录编译。完整主题与 assets 随课件提供。
-% 主讲1--19页；集合题20--26页；第27页结束。研究信息核查至2026-09-11。
+% 主讲1--21页；集合题22--28页；第29页结束。研究信息核查至2026-09-11。
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
@@ -84,6 +84,57 @@
   \end{tabular}
   \vfill
   棋盘上的变化太多，棋手和计算机都需要判断哪些变化值得继续看。
+\end{frame}
+
+\begin{frame}[t,label=neuron]{一个“神经元”怎样计算}
+  \smallbody
+  把图片等信息变成数。每个输入乘一个系数，再加起来。
+  \par\vspace{4mm}
+  \begin{center}
+  \begin{tikzpicture}[x=1cm,y=1cm,>=stealth]
+    \node (a) at (0,.65) {$x_1=1$};
+    \node (b) at (0,-.65) {$x_2=0.5$};
+    \node[draw,circle,minimum size=11mm] (sum) at (3,0) {$s$};
+    \node[draw,minimum width=29mm,minimum height=10mm] (act) at (6,0) {负数变成0};
+    \node (out) at (9,0) {输出$0.3$};
+    \draw[->] (a)--node[above,sloped] {$\times\,0.6$}(sum);
+    \draw[->] (b)--node[below,sloped] {$\times\,0.4$}(sum);
+    \node[below] at (3,-.65) {再减去$0.5$};
+    \draw[->] (sum)--(act);\draw[->] (act)--(out);
+  \end{tikzpicture}
+  \end{center}
+  \[
+    s=\underbrace{0.6}_{\text{权重}}x_1+\underbrace{0.4}_{\text{权重}}x_2
+      \underbrace{-0.5}_{\text{偏置}}=0.3,
+    \qquad y=\max\{0,s\}.
+  \]
+  \vfill
+  最后这一步叫\key{激活函数}。这里用的是ReLU：负数变成0，非负数保留。
+  \par\vspace{2mm}
+  {\fontsize{9}{12}\selectfont 数字仅作课堂示例；这个输出还不是识别结论，也不是概率。}
+\end{frame}
+
+\begin{frame}[t,label=network]{连成网络，再用例子训练}
+  \begin{center}
+  \begin{tikzpicture}[x=1cm,y=1cm,>=stealth]
+    \foreach \i/\y in {1/.6,2/-.6}{\node[draw,circle,minimum size=6mm] (i\i) at (0,\y) {};}
+    \foreach \j/\y in {1/.9,2/0,3/-.9}{\node[draw,circle,minimum size=6mm] (h\j) at (3.6,\y) {};}
+    \node[draw,circle,minimum size=7mm] (o) at (7.2,0) {};
+    \foreach \i in {1,2}{\foreach \j in {1,2,3}{\draw[->,gray] (i\i)--(h\j);}}
+    \foreach \j in {1,2,3}{\draw[->,gray] (h\j)--(o);}
+    \node[above] at (0,1.2) {输入};
+    \node[above] at (3.6,1.2) {中间一层};
+    \node[above] at (7.2,1.2) {输出};
+  \end{tikzpicture}
+  \end{center}
+  \smallbody
+  中间层的圆点做这样的计算，再把结果传给下一层。
+  \par\vspace{4mm}
+  \key{训练时}\quad 输入例子\ $\longrightarrow$\ 算出结果\ $\longrightarrow$\ 和已知答案比较。
+  \par\vspace{3mm}
+  根据误差调整权重和偏置，再试一次，让\textbf{总体误差}尽量减小。
+  \vfill
+  训练完，还要用\textbf{没参与训练的例子}检查效果。
 \end{frame}
 
 \begin{frame}[t,label=alphagovideo]{纪录片《AlphaGo》预告}

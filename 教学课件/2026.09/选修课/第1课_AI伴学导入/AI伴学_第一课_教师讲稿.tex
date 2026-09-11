@@ -14,13 +14,13 @@
 \begin{center}{\LARGE\bfseries\color{schoolgreen}AI伴学第一课}\par\vspace{4mm}{\large 教师讲稿}\par\vspace{3mm}华光辉\quad 40分钟\end{center}
 
 
-这份讲稿对应同目录27页Beamer，研究信息核查至2026年9月11日。正文是可直接讲述的话，方括号式操作提示供教师看，不必读给学生。可以按自己的口头习惯改词；系统演示中的“这里”“这一步”，要对应课前选好的真实资料。
+这份讲稿对应同目录29页Beamer，研究信息核查至2026年9月11日。正文是可直接讲述的话，方括号式操作提示供教师看，不必读给学生。可以按自己的口头习惯改词；系统演示中的“这里”“这一步”，要对应课前选好的真实资料。
 
-40分钟路线：课程要求5分钟；AI历史与两段完整视频17分钟；数学进展10分钟；Scholar演示7分钟；结束书写1分钟。19页讲完直接跳27页。20—26页是集合题拓展，不计入这40分钟。
+40分钟路线：课程要求5分钟；AI历史、2分钟神经网络入门与两段完整视频共17分钟；数学进展10分钟；Scholar演示7分钟；结束书写1分钟。21页讲完直接跳29页。22—28页是集合题拓展，不计入这40分钟。
 
 课前准备：提前打开两段B站视频并检查声音；启动Scholar，打开已登录的本地实例；预选一页资料和一条非敏感练习记录；另备已保存的对话，以防网络响应较慢。视频为联网链接，不是PDF内嵌文件。
 
-如果现场超时：优先压缩第10页背景成果介绍和系统界面浏览，不省略第3页学分说明、第15页成果范围和第19页收尾。若完整播放两段视频，集合题通常留到下次课。不要在现场临时寻找未经预看的视频片段。
+如果现场超时：优先压缩第12页背景成果介绍和系统界面浏览，不省略第3页学分说明、第17页成果范围和第21页收尾。若完整播放两段视频，集合题通常留到下次课。不要在现场临时寻找未经预看的视频片段。
 
 朗读段落之外预留了学生数图、简短回答、视频切换和系统操作时间。教师不需要按稿子持续读满40分钟。
 
@@ -87,11 +87,9 @@
 
 \section*{第5页　人工智能并不是这几年才出现的}
 
-{\small\noindent 05:00—06:15\par}
+{\small\noindent 05:00—05:45\par}
 
-人工智能这个研究方向已经有很长的历史。1956年的达特茅斯夏季研究计划，是通常会提到的一个起点。那时研究者就在问：机器能不能使用语言、形成概念、解决问题？
-
-早期一种很自然的想法，是把知识和规则写给计算机。数学推理里有已知条件、有定理，似乎可以一步一步照着做。但很多事很难写成几条规则。比如认猫：有尾巴、有耳朵就一定是猫吗？这就给另一种思路留下了空间——能不能让计算机从例子里学？
+人工智能并不是这几年才出现的。1956年的达特茅斯夏季研究计划，通常被看作一个重要起点。研究者已经在问：机器能不能使用语言、形成概念、解决问题？早期一种想法，是把知识和规则写给计算机。但认出照片里的猫，很难只靠几条简单规则。另一条思路，就是让计算机从例子中学习。
 
 \tip{“1956年”指夏季研究计划；提案写于1955年。不要讲成AI在某一天突然被发明。}
 
@@ -101,11 +99,9 @@
 
 \section*{第6页　让计算机从例子中学习}
 
-{\small\noindent 06:15—07:30\par}
+{\small\noindent 05:45—06:15\par}
 
-如果我们给出很多标注好的图片，模型就可以不断调整，让识别结果更接近标注。2012年的AlexNet是图像识别中的一个重要节点。这里的研究和刚才说的规则方法不同，但后来很多系统会把几种办法结合起来。
-
-2016年AlphaGo战胜李世石，是另一个大家比较熟悉的事件。围棋的变化太多，不可能把每一种变化都看完。计算机也需要判断哪些下法值得继续搜索。下面这段预告，能让我们感受到这场比赛在人们心中的分量。
+2012年的AlexNet在图像识别中取得重要进展，2016年的AlphaGo以4比1战胜李世石。这些系统都用到了神经网络。这个名字听起来复杂，我们先看其中一次计算，其实只需要高中学过的代数。
 
 \tip{4比1是2016年与李世石五番棋的总比分。不要把AlphaGo说成单纯穷举全部棋局。}
 
@@ -113,9 +109,37 @@
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第7页　纪录片《AlphaGo》预告}
+\section*{第7页　一个“神经元”怎样计算}
 
-{\small\noindent 07:30—09:15（含视频1分30秒）\par}
+{\small\noindent 06:15—07:15\par}
+
+图片可以用一串数字表示。我们先只取两个输入，看看这个小单元怎么处理。每个数先乘一个系数，再相加，最后加一个常数。这和我们学过的代数式很像，系数叫权重，最后的常数叫偏置。
+
+代入1和0.5，算出来是0.3。接着过一道简单规则：负数变成0，非负数保留。这叫激活函数，这里用的是ReLU。如果刚才算出来是负0.2，输出是多少？对，是0。这个数还要传给后面的计算。
+
+\tip{指着箭头和算式讲，留5秒让学生算负数的情况。示例参数由教师给定，0.3不是识别概率。无需讲导数或反向传播公式。}
+
+\end{minipage}\par\vspace{2mm}
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\section*{第8页　连成网络，再用例子训练}
+
+{\small\noindent 07:15—08:15\par}
+
+把许多这样的小单元连起来，上一层算出的结果交给下一层，就组成一个网络。中间可以有很多层。激活函数让这些计算能够表达比一条直线更复杂的关系。
+
+训练时，先给它一个例子，让它算，再和已知答案比较。结果差得多，就根据误差调整权重和偏置，使用许多例子反复练习。训练完，我们还要拿它没见过的例子来检查效果。就像做过的题会了，还要看换一道题能不能做。下面回到AlphaGo，看看人们怎样看待它的表现。
+
+\tip{这里讲的是监督学习的简化情形。输入节点只传入数据；隐藏层做计算，输出层按任务设计。参数不是教师逐个手调，而是由训练算法更新；每一步不保证所有例子都改善。学生追问时再介绍“反向传播计算参数怎样影响误差”，不展开公式。}
+
+\end{minipage}\par\vspace{2mm}
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\section*{第9页　纪录片《AlphaGo》预告}
+
+{\small\noindent 08:15—10:00（含视频1分30秒）\par}
 
 我们先看这段有中文字幕的预告。看完后，大家想一想：一台机器下出人没想到的棋，对棋手来说意味着什么？
 
@@ -125,9 +149,9 @@
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第8页　Hinton谈自己的研究经历}
+\section*{第10页　Hinton谈自己的研究经历}
 
-{\small\noindent 09:15—20:00（含视频10分27秒）\par}
+{\small\noindent 10:00—20:45（含视频10分27秒）\par}
 
 下面听Hinton谈自己的研究经历。今天熟悉的技术，研究过程中也经历过曲折。听一听他怎样回顾当时的选择。
 
@@ -137,15 +161,13 @@
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第9页　今天的AI为什么能和我们对话}
+\section*{第11页　今天的AI为什么能和我们对话}
 
-{\small\noindent 20:00—22:00\par}
+{\small\noindent 20:45—22:00\par}
 
-现在我们常用的聊天式AI，背后还有一个重要节点：2017年提出的Transformer。我们暂时不推公式，只知道它的一项关键机制是处理上下文中信息之间的联系。模型经过训练，能够接着上下文生成文字，也能写代码和解释问题。
+刚才看到的神经网络，只是一个很小的示意。今天的聊天式AI，使用的网络结构复杂得多。2017年提出的Transformer，用注意力机制处理上下文中信息之间的联系。模型训练后，可以接着上下文生成文字，也能写代码和解释问题。
 
-如果再接上计算程序、检索和证明检查工具，就可以边尝试边检查。这一点在数学里特别有用。不过，回答的样子像标准答案，还不能代替每一步都有理由。大家做题时见过“结论对了，中间推理不对”的情况吗？
-
-接下来，我们看看AI参与数学研究的几个例子。有些已经有数学家核查的反例，有些是刚公布、还要继续审查的新结果。
+再接上检索、计算和证明检查工具，就能边尝试边检查。不过，回答像标准答案，还不能代替每一步都有理由。接下来我们看看，它们在数学研究里做出了哪些进展。
 
 \tip{可等待一个简短回答，控制在15秒内。不把语言模型说成拥有保证正确的内置知识库。}
 
@@ -153,7 +175,7 @@
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第10页　AI已经参与了哪些数学工作}
+\section*{第12页　AI已经参与了哪些数学工作}
 
 {\small\noindent 22:00—23:00\par}
 
@@ -167,7 +189,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第11页　四个点，能连出几条单位线段}
+\section*{第13页　四个点，能连出几条单位线段}
 
 {\small\noindent 23:00—24:15\par}
 
@@ -183,7 +205,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第12页　单位距离猜想的反例}
+\section*{第14页　单位距离猜想的反例}
 
 {\small\noindent 24:15—26:15\par}
 
@@ -199,7 +221,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第13页　雅可比猜想：局部与整体}
+\section*{第15页　雅可比猜想：局部与整体}
 
 {\small\noindent 26:15—28:30\par}
 
@@ -215,7 +237,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第14页　流体会在有限时间内失去光滑吗}
+\section*{第16页　流体会在有限时间内失去光滑吗}
 
 {\small\noindent 28:30—29:45\par}
 
@@ -229,7 +251,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第15页　NS方程：最近的研究进展}
+\section*{第17页　NS方程：最近的研究进展}
 
 {\small\noindent 29:45—32:00\par}
 
@@ -247,7 +269,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第16页　我怎样使用Scholar学习}
+\section*{第18页　我怎样使用Scholar学习}
 
 {\small\noindent 32:00—33:00\par}
 
@@ -261,7 +283,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第17页　演示：读到一句没看懂的话}
+\section*{第19页　演示：读到一句没看懂的话}
 
 {\small\noindent 33:00—35:30\par}
 
@@ -277,7 +299,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第18页　演示：一道题暂时做不下去}
+\section*{第20页　演示：一道题暂时做不下去}
 
 {\small\noindent 35:30—39:00\par}
 
@@ -287,13 +309,13 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 最后安排一下复习。系统有1天后和7天后的入口；时间到了，我重新做一次。是不是学会了，要看那时自己能否完成。大家以后可以用同样的方法处理自己的问题，不一定和我演示的题一样。
 
-\tip{Practice \& Prove$\to$Attempt$\to$Save attempt$\to$Request one hint$\to$保存修改$\to$Schedule 1d + 7d reviews$\to$Reports。用约2分钟操作。到39分钟必须回第19页；只有前面明显提前结束，才点集合题。}
+\tip{Practice \& Prove$\to$Attempt$\to$Save attempt$\to$Request one hint$\to$保存修改$\to$Schedule 1d + 7d reviews$\to$Reports。用约2分钟操作。到39分钟必须回第21页；只有前面明显提前结束，才点集合题。}
 
 \end{minipage}\par\vspace{2mm}
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第19页　下课前}
+\section*{第21页　下课前}
 
 {\small\noindent 39:00—40:00\par}
 
@@ -301,7 +323,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 不用写得很大，具体一点最好。下次课，我们带着自己的问题，配置和试用学习助手。
 
-\tip{给学生约30秒书写。点击“结束”跳到第27页，避免顺序进入集合附录。}
+\tip{给学生约30秒书写。点击“结束”跳到第29页，避免顺序进入集合附录。}
 
 \end{minipage}\par\vspace{2mm}
 
@@ -309,7 +331,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第20页　选讲：集合中的一个难题}
+\section*{第22页　选讲：集合中的一个难题}
 
 {\small\noindent 机动；首次展示约1分钟\par}
 
@@ -323,7 +345,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第21页　选讲：先让AI帮哪一步}
+\section*{第23页　选讲：先让AI帮哪一步}
 
 {\small\noindent 机动；约1分钟\par}
 
@@ -337,7 +359,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第22页　选讲：第一问的完整列举}
+\section*{第24页　选讲：第一问的完整列举}
 
 {\small\noindent 拓展；约1分钟\par}
 
@@ -351,7 +373,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第23页　选讲：第二问的完整列举}
+\section*{第25页　选讲：第二问的完整列举}
 
 {\small\noindent 拓展；约1分钟\par}
 
@@ -365,7 +387,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第24页　选讲：配对法的关键分支}
+\section*{第26页　选讲：配对法的关键分支}
 
 {\small\noindent 拓展；约2分钟\par}
 
@@ -379,7 +401,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第25页　选讲：一个余数引理}
+\section*{第27页　选讲：一个余数引理}
 
 {\small\noindent 拓展；约3分钟\par}
 
@@ -395,7 +417,7 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第26页　选讲：完成第三问的证明}
+\section*{第28页　选讲：完成第三问的证明}
 
 {\small\noindent 拓展；约2分钟\par}
 
@@ -411,13 +433,13 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\section*{第27页　结束页}
+\section*{第29页　结束页}
 
 {\small\noindent 结束\par}
 
 下次课见。
 
-\tip{正常40分钟路线由第19页直接跳转至此。}
+\tip{正常40分钟路线由第21页直接跳转至此。}
 
 \end{minipage}\par\vspace{2mm}
 
@@ -426,6 +448,10 @@ AI参与数学研究，并不是只有做竞赛题这一种形式。2021年，�
 以下链接供教师追溯，不在课件中放映。研究结论的精确范围、雅可比反例公式及复算说明，见同目录《前沿数学核查记录.md》。本讲稿没有宣称独立验证NS论文或其Lean工程。
 
 \begin{enumerate}[label={},leftmargin=0pt,itemsep=6pt]
+
+\item R14　\href{https://developers.google.com/machine-learning/crash-course/neural-networks/nodes-hidden-layers}{神经网络：节点、权重与隐藏层}
+
+\item R15　\href{https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions}{神经网络：激活函数}
 
 \item R1　\href{https://openai.com/index/model-disproves-discrete-geometry-conjecture/}{单位距离：OpenAI公布页}
 
