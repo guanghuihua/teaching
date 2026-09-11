@@ -1,6 +1,6 @@
 % !TeX program = xelatex
 % 从本文件所在目录编译。完整主题与 assets 随课件提供。
-% 主讲 1--18 页；19--25 页为集合题选讲；第26页结束。
+% 主讲1--19页；集合题20--26页；第27页结束。研究信息核查至2026-09-11。
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
@@ -17,302 +17,283 @@
 \newcommand{\backtosummary}{\hfill\hyperlink{summary}{\beamerbutton{回到课堂小结}}}
 \hypersetup{pdftitle={AI伴学 第一课},pdfauthor={华光辉},unicode=true}
 
-\title{AI伴学：数学学习的新工具}
-\author{华光辉}
-\date{第一课\quad 2026.09.12}
 
+\title[AI伴学 第一课]{\texorpdfstring{AI伴学\quad 第一课}{AI伴学 第一课}}
+\author{华光辉}
+\date{2026.09.12}
 \begin{document}
 \usebeamerfont{normal text}
 \campusmaketitle
 
-\begin{frame}[t]{今天的40分钟}
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{@{}lp{105mm}@{}}
-    \key{00--06分钟} & 课程评价：期末拿什么说明自己学会了？\\[2mm]
-    \key{06--23分钟} & AI简史，观看AlphaGo预告与Hinton访谈。\\[2mm]
-    \key{23--30分钟} & 数学突破：反例、联系、构造与解题。\\[2mm]
-    \key{30--39分钟} & 现场演示：我怎样使用Scholar学习？\\[2mm]
-    \key{39--40分钟} & 课堂回顾；集合题在有结余时间时选讲。\\
+\begin{frame}[t]{这门课怎么上}
+  这学期，我们试着用AI帮助自己读书、思考和解决数学问题。
+  \par\vspace{8mm}
+  \begin{tabular}{@{}lp{109mm}@{}}
+    \key{课程要求} & 期末交什么，怎样认定学分。\\[5mm]
+    \key{认识AI} & 看两段视频，聊一聊它的发展和数学研究中的新进展。\\[5mm]
+    \key{现场演示} & 我怎样使用自己搭建的Scholar系统。\\
   \end{tabular}
   \vfill
-  \key{这学期的方向}\quad 学会带着目标使用AI，并检查自己的理解。
+  如果时间够，我们再看一道集合题。
 \end{frame}
 
-\begin{frame}[t]{期末评价与学分认定}
+\begin{frame}[t]{期末评价与学分}
   \renewcommand{\arraystretch}{1.5}
-  \begin{tabular}{@{}llp{71mm}@{}}
-    \key{40\%} & 方法与反思档案 & 留下尝试、提示、修改与核验的证据。\\
-    \key{30\%} & 独立数学任务 & 关闭AI后，自己解释和解决问题。\\
-    \key{30\%} & 探究与迁移展示 & 用具体案例说明方法如何迁移。\\
+  \begin{tabular}{@{}llp{72mm}@{}}
+    \key{40\%} & 方法与反思档案 & 保存自己的尝试、AI的建议和修改过程。\\
+    \key{30\%} & 独立数学任务 & 不借助AI，解释或完成一道数学任务。\\
+    \key{30\%} & 探究与迁移展示 & 讲清一个问题，以及这次学到的方法。\\
   \end{tabular}\par
+  \vspace{7mm}
+  平时把学习记录存好，期末从中选出能说明自己进步的材料。
+  \vfill
+  {\smallbody 学分数及认定条件以学校公布为准，目前课程申报表中尚待核定。}
+\end{frame}
+
+\begin{frame}[t]{学习记录可以这样写}
+  \begin{tabular}{@{}lp{114mm}@{}}
+    \key{题目} & 我这次想解决什么？\\[5mm]
+    \key{尝试} & 我已经做到了哪一步？\\[5mm]
+    \key{求助} & 我问了什么？哪条建议有用，哪条不对？\\[5mm]
+    \key{回头再做} & 不看对话记录，我能不能自己完成？\\
+  \end{tabular}
+  \vfill
+  一份记录不用很长，但要看得出自己的思考。
+\end{frame}
+
+\begin{frame}[t]{人工智能并不是这几年才出现的}
+  \key{1956年\quad 达特茅斯夏季研究计划}
+  \par\vspace{3mm}
+  研究者提出：机器能否使用语言、形成概念、解决问题？
+  \par\vspace{7mm}
+  早期的一条思路，是把知识和推理规则写给计算机。
+  \[
+    \text{已知条件}\quad +\quad \text{推理规则}\quad \longrightarrow\quad \text{结论}
+  \]
+  \vfill
+  可是，认出一张照片里的猫，能写成几条简单规则吗？
+\end{frame}
+
+\begin{frame}[t]{让计算机从例子中学习}
+  给出许多例子，调整模型，使它逐渐学会识别和预测。
+  \par\vspace{7mm}
+  \begin{tabular}{@{}lp{117mm}@{}}
+    \key{2012} & AlexNet在图像识别比赛中取得突出成绩。\\[6mm]
+    \key{2016} & AlphaGo以4比1战胜李世石。\\[2mm]
+              & 它结合了神经网络、搜索和强化学习。\\
+  \end{tabular}
+  \vfill
+  棋盘上的变化太多，棋手和计算机都需要判断哪些变化值得继续看。
+\end{frame}
+
+\begin{frame}[t,label=alphagovideo]{纪录片《AlphaGo》预告}
   \vspace{4mm}
-  \key{现在就能准备：}持续记录学习过程，保留独立完成的成果。
-  \par\vspace{3mm}
-  {\smallbody 学分数及认定条件以学校公布为准。课程申报表中学分数尚待核定。}
-  \source{../校本课程申报表_华光辉.docx}{课程申报表：评价方式与课程学分栏}
-\end{frame}
-
-\begin{frame}[t]{一份学习档案的内容}
-  \begin{columns}[T,onlytextwidth]
-    \column{.49\textwidth}
-      \key{每次学习留下什么}
-      \begin{enumerate}\setlength{\itemsep}{2mm}
-        \item 我的目标和第一次尝试。
-        \item 我向AI提出的具体问题。
-        \item 我为什么接受或修改建议。
-        \item 关闭AI后的独立检验。
-      \end{enumerate}
-    \column{.46\textwidth}
-      \key{期末展示可以讲什么}
-      \par\vspace{3mm}
-      一个陌生主题的探索，\par 或一次课内问题的完整复盘。
-      \par\vspace{4mm}
-      说明：\par 原来卡在哪里？\par 什么帮助有效？\par 现在能独立完成什么？
-  \end{columns}
-  \vfill
-  {\smallbody 角色外观、付费工具、聊天次数、编程水平，不作为成绩依据。}
-  \source{../教学内容（暂定）.docx}{教学内容（暂定）：实施与评价边界、第17--18课时}
-\end{frame}
-
-\begin{frame}[t]{AI简史：研究问题的提出}
-  \key{1955年提案，1956年夏季研究计划}
-  \par\vspace{2mm}
-  达特茅斯研究提案提出“人工智能”：\par
-  探索机器怎样使用语言、形成概念、解决问题和改进自身。
-  \par\vspace{5mm}
-  \key{规则与符号推理}
-  \par\vspace{2mm}
-  人把知识和推理规则写清楚，计算机据此搜索与推导。
-  \par\vspace{3mm}
-  {\smallbody 类比：把“已知条件”和“可用定理”交给一个按规则推理的系统。\par
-  难点：知识怎样表达？规则没覆盖的情形怎么办？}
-  \source{https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html}{McCarthy等，达特茅斯研究提案（1955）；专家系统史见参考资料}
-\end{frame}
-
-\begin{frame}[t]{AI简史：从数据与反馈中学习}
-  \key{机器学习与深度学习}
-  \par\vspace{2mm}
-  根据数据调整模型，学习识别和预测所需的规律。
-  \par\vspace{4mm}
-  \begin{tabular}{@{}lp{116mm}@{}}
-    \key{2012} & AlexNet在图像分类任务上取得显著进展。\\[4mm]
-    \key{2016} & AlphaGo以4比1战胜李世石。\\[1mm]
-              & 结合神经网络、搜索与强化学习。\\
-  \end{tabular}
-  \vfill
-  \key{想一想}\quad “识别图像”和“选择一步棋”，反馈有什么不同？
-  \source{https://deepmind.google/research/alphago/}{Google DeepMind：AlphaGo；AlexNet原论文见参考资料}
-\end{frame}
-
-\begin{frame}[t,label=alphagovideo]{视频：纪录片《AlphaGo》预告}
-  \key{【中字】纪录片《AlphaGo》首支官方预告}
-  \par\vspace{6mm}
-  2016年，人类围棋高手与人工智能展开了一场引人关注的对局。
-  \par\vspace{6mm}
+  先看一段预告，感受一下当时人们怎样看待这场比赛。
+  \par\vspace{12mm}
   \begin{center}
-    \href{https://www.bilibili.com/video/BV13x411x7kY/}{\color{campusgreen}\bfseries\fontsize{18}{24}\selectfont\underline{点击播放AlphaGo预告}}
-    \par\vspace{3mm}
-    时长：1分30秒\quad 需联网，在浏览器中播放
+    \href{https://www.bilibili.com/video/BV13x411x7kY/}{\color{campusgreen}\bfseries\fontsize{19}{25}\selectfont\underline{播放视频}}
+    \par\vspace{4mm}
+    中文字幕\qquad 1分30秒
   \end{center}
   \vfill
-  \key{观看思考}\quad 如果AI做出了人没想到的一步棋，\par
-  我们怎样评价它，又能从中学到什么？
+  {\smallbody 点击后在浏览器播放，需要联网。}
 \end{frame}
 
-\begin{frame}[t,label=hintonvideo]{视频：Hinton谈研究经历}
-  \key{Geoffrey Hinton谈职业生涯坎坷}
-  \par\vspace{3mm}
-  {\smallbody 视频标题中的话题：\par
-  “若非图灵和冯诺依曼英年早逝，人工智能历史可能大不同”。}
-  \par\vspace{6mm}
+\begin{frame}[t,label=hintonvideo]{Hinton谈自己的研究经历}
+  \vspace{4mm}
+  一项今天看来很成功的研究，在当时未必受到认可。
+  \par\vspace{12mm}
   \begin{center}
-    \href{https://www.bilibili.com/video/BV1xr4y1j7hR/}{\color{campusgreen}\bfseries\fontsize{18}{24}\selectfont\underline{点击播放B站视频}}
-    \par\vspace{3mm}
-    时长：10分27秒\quad 需联网，在浏览器中播放
+    \href{https://www.bilibili.com/video/BV1xr4y1j7hR/}{\color{campusgreen}\bfseries\fontsize{19}{25}\selectfont\underline{播放访谈}}
+    \par\vspace{4mm}
+    10分27秒
   \end{center}
-  \vspace{3mm}
-  \key{观看思考}\quad 研究者的个人选择与时代条件有什么关系？
-  \par\vspace{2mm}
-  {\smallbody “如果当年……”是一种历史假设，需要与已发生的事实区分。}
-  \source{https://www.bilibili.com/video/BV1xr4y1j7hR/}{用户指定视频，B站 BV1xr4y1j7hR}
-\end{frame}
-
-\begin{frame}[t]{AI简史：语言模型与工具协作}
-  \key{2017\quad Transformer}
-  \par\vspace{2mm}
-  用注意力机制处理序列中信息的联系，成为许多语言模型的基础。
-  \par\vspace{4mm}
-  \key{大语言模型}
-  \par\vspace{1mm}
-  用自然语言进行解释、翻译、对话和代码生成。
-  \par\vspace{4mm}
-  \key{结合工具的智能体应用}
-  \par\vspace{1mm}
-  围绕任务调用检索、计算或程序执行工具，再依据结果继续处理。
   \vfill
-  {\smallbody 多种技术路线可以共同工作。语言流畅程度与结论正确性需要分别判断。}
-  \source{https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html}{Vaswani等，Attention Is All You Need（2017）；工具协作案例见FunSearch}
+  {\smallbody 点击后在浏览器播放，需要联网。}
 \end{frame}
 
-\begin{frame}[t]{数学突破一：搜索反例}
-  \key{Wagner，2021\quad 组合数学与图论}
+\begin{frame}[t]{今天的AI为什么能和我们对话}
+  \key{2017年\quad Transformer}
   \par\vspace{3mm}
-  用强化学习辅助构造数学对象，寻找已有猜想的反例。
-  \par\vspace{4mm}
-  \begin{columns}[T,onlytextwidth]
-    \column{.47\textwidth}
-      \key{AI参与的部分}\par\vspace{2mm}
-      在大量候选对象中搜索，\par 找到值得检查的例子。
-    \column{.48\textwidth}
-      \key{结果成立的依据}\par\vspace{2mm}
-      对象满足前提，\par 却不满足猜想的结论。
-  \end{columns}
+  注意力机制帮助模型处理上下文中不同信息的联系。
+  \par\vspace{7mm}
+  大语言模型能接着上下文生成文字，也能写代码、解释问题。
+  \par\vspace{7mm}
+  接上检索、计算和证明检查工具之后，能做的事情更多了。
   \vfill
-  {\smallbody 课堂类比：命题“所有实数都满足 $x^2\ge x$”，\par
-  取 $x=\tfrac12$，就有 $\tfrac14<\tfrac12$。这是一个反例。}
-  \source{https://arxiv.org/abs/2104.14516}{Wagner，Constructions in combinatorics via neural networks（2021）}
+  比如，一道题的答案看起来很像标准答案，它就一定对吗？
 \end{frame}
 
-\begin{frame}[t]{数学突破二：发现新的联系}
-  \key{Davies等，2021\quad 纽结理论}
-  \par\vspace{3mm}
-  可以先把纽结想成一根闭合绳子的不同打结方式。
-  \par\vspace{4mm}
-  研究者用机器学习分析数据，发现几何信息与代数信息之间的联系，\par
-  为数学家的猜想与严格论证提供线索，形成新的数学结果。
-  \par\vspace{5mm}
-  \key{这里的合作方式}
-  \par\vspace{2mm}
-  模型帮助寻找规律，数学家解释规律并建立论证。
-  \vfill
-  {\smallbody “数据中似乎有规律”仍需要走向“为什么成立”。}
-  \source{https://doi.org/10.1038/s41586-021-04086-x}{Davies等，Advancing mathematics by guiding human intuition with AI，Nature（2021）}
-\end{frame}
-
-\begin{frame}[t]{数学突破三：更好的构造}
-  \key{FunSearch，2023\quad 大语言模型与自动评估}
-  \par\vspace{3mm}
-  在给定约束下，寻找元素更多的合法集合。
-  \par\vspace{4mm}
-  \begin{enumerate}\setlength{\itemsep}{2mm}
-    \item 语言模型生成候选程序。
-    \item 评估器运行程序，检查合法性与效果。
-    \item 保留表现好的程序，继续改进。
-  \end{enumerate}
-  \vspace{2mm}
-  \key{成果}\quad 在cap set问题上改进当时已知的构造与下界。
-  \par\vspace{2mm}
-  {\smallbody 找到更大的合法集合，并不等于证明已找到最终最大值。}
-  \source{https://deepmind.google/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/}{Romera-Paredes等，Nature（2023）；Google DeepMind：FunSearch}
-\end{frame}
-
-\begin{frame}[t]{数学突破四：竞赛证明题}
-  \begin{columns}[T,onlytextwidth]
-    \column{.47\textwidth}
-      \key{2024\quad 银牌水平}
-      \par\vspace{3mm}
-      AlphaProof与AlphaGeometry 2\par
-      解出6题中的4题，得28分。
-      \par\vspace{3mm}
-      {\smallbody 需专家进行形式语言转换，\par 计算耗时约2--3天。}
-    \column{.48\textwidth}
-      \key{2025\quad 金牌水平}
-      \par\vspace{3mm}
-      增强版Gemini Deep Think\par
-      解出6题中的5题，得35分。
-      \par\vspace{3mm}
-      {\smallbody 使用自然语言作答，\par 在比赛时间限制内完成。}
-  \end{columns}
-  \vspace{5mm}
-  \key{这里衡量的是}\quad 对指定竞赛题给出证明的能力。
-  \par\vspace{2mm}
-  {\smallbody 特定研究系统的成绩，不能保证日常聊天模型每次作答正确。\par
-  竞赛解题与解决尚未解决的研究问题，也需要分别评价。}
-  \source{https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/}{Google DeepMind，2025-07-21；文中说明IMO协调员对2025结果的评定}
-\end{frame}
-
-\begin{frame}[t]{我使用的MindDuet Scholar}
-  \key{围绕自己的资料，保存真实的学习过程}
-  \par\vspace{4mm}
-  \renewcommand{\arraystretch}{1.15}
-  \begin{tabular}{@{}lp{106mm}@{}}
-    \key{Library} & 搜索本地教材与笔记，找到问题的出处。\\
-    \key{PDF Reader} & 选中不懂的内容，结合当前页解释与追问。\\
-    \key{Sessions} & 按目标进行理解对话或独立练习。\\
-    \key{Reports} & 查看诊断信号、学习记录和待完成的复习。\\
+% 文献与核查说明见《前沿数学核查记录.md》，放映版不显示出处。
+\begin{frame}[t]{AI已经参与了哪些数学工作}
+  \renewcommand{\arraystretch}{1.4}
+  \begin{tabular}{@{}lp{118mm}@{}}
+    \key{2021} & 分析纽结数据，帮助数学家发现并证明新的联系。\\[4mm]
+    \key{2023} & FunSearch通过生成和筛选程序，改进cap set问题的构造。\\[4mm]
+    \key{2025} & 增强版Gemini Deep Think在IMO试题上得到35/42分，达到金牌标准。\\
   \end{tabular}
   \vfill
-  {\smallbody 我用它学习本科、研究生数学，也用于英语学习。\par
-  今天观察使用方法，高中阶段可以从熟悉的问题开始。}
-  \source{https://github.com/guanghuihua/MindDuet-Scholar}{MindDuet Scholar：README、使用说明与当前界面代码}
+  下面看三个前沿问题：单位距离、雅可比猜想、NS方程。
 \end{frame}
 
-\begin{frame}[t]{现场演示：带着资料提问}
-  \key{Library中的一份教材或笔记}
+\begin{frame}[t]{四个点，能连出几条单位线段}
+  平面上放四个点，只连接距离恰好为1的点。
   \par\vspace{3mm}
-  搜索资料，打开PDF，定位到一个定义或证明步骤。
-  \par\vspace{4mm}
-  \key{PDF Reader中的一次追问}
-  \par\vspace{2mm}
-  选中一句话，请助手解释符号、补充理由，或检查我的理解。
-  \par\vspace{3mm}
-  {\smallbody 示例提问：\par
-  “这一步用了什么条件？请指出原文依据，再用一个简单例子解释。”}
-  \vfill
-  \key{观看任务}\quad 找到“原文依据”和“补充解释”的区别。
-  \source{https://github.com/guanghuihua/MindDuet-Scholar}{使用说明：Library、PDF Reader；现场切换至教师本机系统}
-\end{frame}
-
-\begin{frame}[t]{现场演示：两种学习会话}
   \begin{columns}[T,onlytextwidth]
-    \column{.47\textwidth}
-      \key{Ask \& Understand}
-      \par 理解与追问
-      \par\vspace{4mm}
-      适合陌生符号、定义和联系。
-      \par\vspace{3mm}
-      可以直接提问，\par 持续追问，保留对话。
-    \column{.48\textwidth}
-      \key{Practice \& Prove}
-      \par 练习与证明
-      \par\vspace{4mm}
-      适合检查自己能否完成。
-      \par\vspace{3mm}
-      先保存尝试，再请求提示，\par 留下修改和复习记录。
+  \column{.48\textwidth}
+    \begin{center}
+    \begin{tikzpicture}[scale=1.7,line width=1pt]
+      \draw[campusgreen] (0,0)--(1,0)--(1,1)--(0,1)--cycle;
+      \foreach \x/\y in {0/0,1/0,1/1,0/1}{\fill (\x,\y) circle(1.6pt);}
+      \node[below] at (.5,0){$1$};
+    \end{tikzpicture}
+    \par\vspace{3mm}正方形：4条
+    \end{center}
+  \column{.48\textwidth}
+    \begin{center}
+    \begin{tikzpicture}[scale=1.7,line width=1pt]
+      \draw[campusgreen] (0,0)--(1,0)--(.5,.8660254)--(0,0)--(.5,-.8660254)--(1,0);
+      \foreach \x/\y in {0/0,1/0,.5/.8660254,.5/-.8660254}{\fill (\x,\y) circle(1.6pt);}
+      \node[above] at (.5,0){$1$};
+    \end{tikzpicture}
+    \par 两个等边三角形：5条
+    \end{center}
   \end{columns}
   \vfill
-  \key{观看任务}\quad 什么时候需要解释？什么时候需要自己先做？
-  \source{https://github.com/guanghuihua/MindDuet-Scholar}{README、使用说明：Sessions；两种模式的当前实现}
+  如果有$n$个点，最多能连出多少条这样的线段？
 \end{frame}
 
-\begin{frame}[t]{现场演示：留下学习证据}
-  \begin{enumerate}\setlength{\itemsep}{3mm}
-    \item \key{保存尝试}\quad 写下自己的思路与卡点。
-    \item \key{请求一个提示}\quad Request one hint。
-    \item \key{修改并说明理由}\quad 保留修改前后的过程。
-    \item \key{安排复习}\quad 1天后和7天后，再检查独立掌握。
+\begin{frame}[t]{单位距离猜想的反例}
+  \smallbody
+  记$u(n)$为平面上$n$个不同点能确定的单位距离对数的最大值。
+  \par\vspace{4mm}
+  Erd\H{o}s猜想：当$n$很大时，增长率可以写成$n^{1+o(1)}$。
+  \par 也就是说，指数比1多出的部分会逐渐趋近于0。
+  \par\vspace{5mm}
+  \key{2026年5月}\quad OpenAI内部模型给出一族反例：
+  \[
+    u(n)\ge n^{1+\varepsilon}\qquad
+    \text{对无穷多个 }n\text{ 成立，且 }\varepsilon>0\text{ 固定。}
+  \]
+  外部数学家核查并整理了证明；Sawin进一步得到指数$1.014$。
+  \vfill
+  被推翻的是原来的增长率猜想。$u(n)$的精确增长率仍未确定。
+\end{frame}
+
+\begin{frame}[t]{雅可比猜想：局部与整体}
+  \smallbody
+  一个多项式变换，在每一点附近都能倒推回去，\par
+  是否就能在整个空间中唯一地倒推？
+  \par\vspace{4mm}
+  \key{2026年7月}\quad Alp\"oge借助Claude Fable 5得到三维反例。
+  \par 该多项式映射$F:\mathbb C^3\to\mathbb C^3$满足$\det DF\equiv-2$，却有
+  \[
+    \begin{aligned}
+      F(0,0,-\tfrac14)
+      &=F(1,-\tfrac32,\tfrac{13}2)\\
+      &=F(-1,\tfrac32,\tfrac{13}2)=(-\tfrac14,0,0).
+    \end{aligned}
+  \]
+  三个不同的输入，得到了同一个输出。
+  \vfill
+  三维及更高维存在反例；二维情形仍是开放问题。
+\end{frame}
+
+\begin{frame}[t]{流体会在有限时间内失去光滑吗}
+  \smallbody
+  Navier--Stokes方程描述水和空气等流体的运动：
+  \[
+    \partial_t u+(u\cdot\nabla)u=-\nabla p+\nu\Delta u+f,
+    \qquad \nabla\cdot u=0.
+  \]
+  {\fontsize{10}{14}\selectfont $u$：速度\qquad $p$：压力\qquad $\nu>0$：黏性系数\qquad $f$：外力}
+  \par\vspace{4mm}
+  \begin{columns}[c,onlytextwidth]
+    \column{.56\textwidth}
+      起初光滑的流动，\par 会不会在有限时间内出现奇异性？
+      \par\vspace{4mm}
+      先用$y=\dfrac1{1-t}$理解“有限时间爆破”：\par
+      $t$趋近于1时，$y$可以无限增大。
+    \column{.39\textwidth}
+      \begin{tikzpicture}[x=3cm,y=.34cm,>=stealth]
+        \draw[->] (0,0)--(1.15,0) node[right]{$t$};
+        \draw[->] (0,0)--(0,8.5) node[above]{$y$};
+        \draw[dashed,gray] (1,0)--(1,8);
+        \node[below] at (1,0){$1$};
+        \draw[campusgreen,line width=1.2pt,domain=0:.87,samples=70] plot(\x,{1/(1-\x)});
+      \end{tikzpicture}
+  \end{columns}
+  \vfill
+  {\fontsize{9}{12}\selectfont 右图仅解释“有限时间爆破”的含义，不是NS方程的解。}
+\end{frame}
+
+\begin{frame}[t]{NS方程：最近的研究进展}
+  \smallbody
+  \key{2025年9月\quad 高精度数值发现}
+  \par 神经网络找到多孔介质方程、带边界Euler方程中的\par
+  不稳定奇异解候选，为严格证明提供线索。
+  \par\vspace{5mm}
+  \key{2026年9月8日\quad 新公布的NS证明方案}
+  \par OpenAI发布论文与Lean形式化代码，报告在\par
+  \textbf{光滑外力作用下}，三维不可压NS流动可在有限时间爆破，\par
+  同时保持有界动能；作者称其满足千禧年问题的C、D表述。
+  \vfill
+  这是一项刚公布的结果，仍待进一步独立审查。\par
+  截至2026年9月11日，Clay页面仍列为Active。
+\end{frame}
+
+\begin{frame}[t]{我怎样使用Scholar学习}
+  我把教材、笔记和学习记录放在同一个系统里。
+  \par\vspace{7mm}
+  \begin{tabular}{@{}lp{109mm}@{}}
+    \key{读资料} & 打开教材，找到自己没看懂的一句话。\\[5mm]
+    \key{问问题} & 请AI解释，或者检查自己的理解。\\[5mm]
+    \key{做练习} & 先写尝试，需要时再要一个提示。\\[5mm]
+    \key{过几天再看} & 回顾记录，检查自己还能不能完成。\\
+  \end{tabular}
+  \vfill
+  下面切换到系统，实际做一遍。
+\end{frame}
+
+\begin{frame}[t]{演示：读到一句没看懂的话}
+  在Library中打开一份资料，选中一个定义或证明步骤。
+  \par\vspace{8mm}
+  \key{我会这样问}
+  \par\vspace{3mm}
+  “这一步为什么成立？用了前面的哪一个条件？\par
+  请先解释这一小步，再给一个简单例子。”
+  \par\vspace{7mm}
+  看完回答，再回到原文，对照它解释的那一步。
+  \vfill
+  Ask \& Understand：适合读书时的解释和追问。
+\end{frame}
+
+\begin{frame}[t]{演示：一道题暂时做不下去}
+  \begin{enumerate}\setlength{\itemsep}{5mm}
+    \item 先把已经写出的思路保存下来。
+    \item 点Request one hint，只要一个提示。
+    \item 自己继续写，说明改动了哪一步。
+    \item 安排1天后、7天后的复习。
   \end{enumerate}
   \vfill
-  {\smallbody 观看后回答：这次学习中，哪一步必须由学习者自己完成？}
-  \par\vspace{2mm}
-  \hyperlink{setproblem}{\beamerbutton{有余时：集合难题}}\hfill
+  Practice \& Prove：适合练习和证明。
+  \par\vspace{3mm}
+  \hyperlink{setproblem}{\beamerbutton{集合题}}\hfill
   \hyperlink{summary}{\beamerbutton{课堂小结}}
-  \source{https://github.com/guanghuihua/MindDuet-Scholar}{使用说明：Practice \& Prove、Reports；复习安排不等于已经掌握}
 \end{frame}
 
-\begin{frame}[t,label=summary]{今天留下的三个问题}
-  \begin{enumerate}\setlength{\itemsep}{4mm}
-    \item \key{我想学什么？}\par 写下一个本学期想探索的数学问题。
-    \item \key{我希望AI怎样帮助我？}\par 解释、提示、追问，还是帮助检查？
-    \item \key{我怎样知道自己学会了？}\par 写下一种不看答案的检验方法。
-  \end{enumerate}
+\begin{frame}[t,label=summary]{下课前}
+  \vspace{4mm}
+  写下一个你希望这学期弄懂的问题。
+  \par\vspace{9mm}
+  可以是一道题、一本书里的一句话，\par
+  也可以是今天听到的一个数学问题。
+  \par\vspace{9mm}
+  下次课，我们从自己的问题开始，配置和试用学习助手。
   \vfill
-  下次课：配置并测试自己的AI学习助手。
-  \par\vspace{2mm}
   \hyperlink{setproblem}{\beamerbutton{集合题选讲}}\hfill
   \hyperlink{finish}{\beamerbutton{结束}}
 \end{frame}
-
 \appendix
 \begin{frame}[t,label=setproblem]{选讲：集合中的一个难题}
   \smallbody
@@ -331,20 +312,20 @@
   \backtosummary
 \end{frame}
 
-\begin{frame}[t]{选讲：怎样向AI提出这个问题}
+\begin{frame}[t]{选讲：先让AI帮哪一步}
   \smallbody
-  \key{第一轮：确认题意}
+  \key{先读题}
   \par “请复述题目。$T(B)$ 是元素之和，$B$ 非空，集合元素互异。\par
   先检查条件，不要直接给完整证明。”
   \par\vspace{3mm}
-  \key{第二轮：找到入口}
+  \key{再找思路}
   \par “前两问怎样分类才能不重不漏？第三问能否先看两个数的和？”
   \par\vspace{3mm}
-  \key{第三轮：检查关键跳步}
+  \key{最后检查证明}
   \par “如果按和为 $2n$ 配对，单独的 $n$ 怎么处理？\par
   每一步推理使用了什么条件？请给我一个小提示。”
   \vfill
-  \key{检验重点}\quad 列举是否完整？找到了例子，还是证明了一般结论？
+   列举是否完整？找到了例子，还是证明了一般结论？
   \par\vspace{2mm}\backtosummary
 \end{frame}
 
@@ -389,7 +370,7 @@
   \key{情况二}\quad 每一对至多取一个数。
   \par 因为 $|A|=n$，所以必须有 $n\in A$，且每一对恰好取一个数。
   \par\vspace{4mm}
-  \key{这一步不能省略}
+  \key{注意}
   \par 这里共有 $n$ 组，选 $n$ 个数，不保证某一组一定选到两个。
   \vfill\backtosummary
 \end{frame}
@@ -429,43 +410,7 @@
   \vfill\backtosummary
 \end{frame}
 
-% 参考资料仅保留为备课记录，不输出到PDF。
-\iffalse
-\begin{frame}[t,label=sources]{参考资料：AI简史}
-  \setbeamerfont{itemize/enumerate body}{size=\fontsize{10}{13}\selectfont}
-  \fontsize{10}{14}\selectfont
-  \begin{enumerate}\setlength{\itemsep}{3mm}
-    \item McCarthy等（1955）.\par
-    \href{https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html}{A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence}.
-    \item Computer History Museum.\par
-    \href{https://www.computerhistory.org/timeline/ai-robotics/}{AI \& Robotics: Timeline of Computer History}.
-    \item Krizhevsky, Sutskever, Hinton（2012）.\par
-    \href{https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html}{ImageNet Classification with Deep Convolutional Neural Networks}.
-    \item Google DeepMind.\quad\href{https://deepmind.google/research/alphago/}{AlphaGo}.
-    \item Vaswani等（2017）.\quad
-    \href{https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html}{Attention Is All You Need}.
-  \end{enumerate}
-  \vfill\backtosummary
-\end{frame}
 
-\begin{frame}[t]{参考资料：数学与学习系统}
-  \setbeamerfont{itemize/enumerate body}{size=\fontsize{10}{13}\selectfont}
-  \fontsize{10}{14}\selectfont
-  \begin{enumerate}\setlength{\itemsep}{3mm}
-    \item Wagner（2021）.\par
-    \href{https://arxiv.org/abs/2104.14516}{Constructions in combinatorics via neural networks}.
-    \item Davies等（2021），Nature.\par
-    \href{https://doi.org/10.1038/s41586-021-04086-x}{Advancing mathematics by guiding human intuition with AI}.
-    \item Romera-Paredes等（2023年在线发表），Nature.\par
-    \href{https://doi.org/10.1038/s41586-023-06924-6}{Mathematical discoveries from program search with large language models}.
-    \item Google DeepMind（2025-07-21）.\par
-    \href{https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/}{Advanced Gemini with Deep Think: IMO gold-medal standard}.
-    \item \href{https://github.com/guanghuihua/MindDuet-Scholar}{MindDuet Scholar}：README、使用说明与界面代码。
-  \end{enumerate}
-  \vfill\backtosummary
-\end{frame}
-
-\fi
 \hypertarget{finish}{}
-\campusclosing[带着问题，开始探索]
+\campusclosing[下次课见]
 \end{document}
