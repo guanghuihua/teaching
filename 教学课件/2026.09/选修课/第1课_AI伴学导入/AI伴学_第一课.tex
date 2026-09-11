@@ -1,0 +1,442 @@
+% !TeX program = xelatex
+% 从本文件所在目录编译。完整主题与 assets 随课件提供。
+% 主讲 1--16 页；17--24 页为集合题选讲；25--26 页为参考资料。
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\usepackage{booktabs,array}
+\setbeamerfont{normal text}{size=\fontsize{12}{17}\selectfont}
+\setbeamerfont{itemize/enumerate body}{size=\fontsize{12}{17}\selectfont}
+\setbeamerfont{itemize/enumerate subbody}{size=\fontsize{11}{15}\selectfont}
+\setbeamertemplate{itemize items}[circle]
+\newcommand{\key}[1]{{\color{campusgreen}\bfseries #1}}
+\newcommand{\source}[2]{\par\vfill{\fontsize{7}{9}\selectfont\color{gray}来源：\href{#1}{#2}\par}}
+\newcommand{\smallbody}{\fontsize{11}{15}\selectfont}
+\newcommand{\backtosummary}{\hfill\hyperlink{summary}{\beamerbutton{回到课堂小结}}}
+\hypersetup{pdftitle={AI伴学 第一课},pdfauthor={华光辉},unicode=true}
+
+\title{AI伴学：数学学习的新工具}
+\author{华光辉}
+\date{第一课\quad 2026.09.12}
+
+\begin{document}
+\usebeamerfont{normal text}
+\campusmaketitle
+
+\begin{frame}[t]{今天的40分钟}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{@{}lp{105mm}@{}}
+    \key{00--07分钟} & 课程评价：期末拿什么说明自己学会了？\\[2mm]
+    \key{07--15分钟} & AI简史：机器解决问题的方式怎样变化？\\[2mm]
+    \key{15--24分钟} & 数学突破：反例、联系、构造与解题。\\[2mm]
+    \key{24--35分钟} & 现场演示：我怎样使用Scholar学习？\\[2mm]
+    \key{35--40分钟} & 有余时体验集合难题，最后一分钟回顾。\\
+  \end{tabular}
+  \vfill
+  \key{这学期的方向}\quad 学会带着目标使用AI，并检查自己的理解。
+\end{frame}
+
+\begin{frame}[t]{期末评价与学分认定}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{@{}llp{71mm}@{}}
+    \key{40\%} & 方法与反思档案 & 留下尝试、提示、修改与核验的证据。\\
+    \key{30\%} & 独立数学任务 & 关闭AI后，自己解释和解决问题。\\
+    \key{30\%} & 探究与迁移展示 & 用具体案例说明方法如何迁移。\\
+  \end{tabular}\par
+  \vspace{4mm}
+  \key{现在就能准备：}持续记录学习过程，保留独立完成的成果。
+  \par\vspace{3mm}
+  {\smallbody 学分数及认定条件以学校公布为准。课程申报表中学分数尚待核定。}
+  \source{../校本课程申报表_华光辉.docx}{课程申报表：评价方式与课程学分栏}
+\end{frame}
+
+\begin{frame}[t]{一份学习档案的内容}
+  \begin{columns}[T,onlytextwidth]
+    \column{.49\textwidth}
+      \key{每次学习留下什么}
+      \begin{enumerate}\setlength{\itemsep}{2mm}
+        \item 我的目标和第一次尝试。
+        \item 我向AI提出的具体问题。
+        \item 我为什么接受或修改建议。
+        \item 关闭AI后的独立检验。
+      \end{enumerate}
+    \column{.46\textwidth}
+      \key{期末展示可以讲什么}
+      \par\vspace{3mm}
+      一个陌生主题的探索，\par 或一次课内问题的完整复盘。
+      \par\vspace{4mm}
+      说明：\par 原来卡在哪里？\par 什么帮助有效？\par 现在能独立完成什么？
+  \end{columns}
+  \vfill
+  {\smallbody 角色外观、付费工具、聊天次数、编程水平，不作为成绩依据。}
+  \source{../教学内容（暂定）.docx}{教学内容（暂定）：实施与评价边界、第17--18课时}
+\end{frame}
+
+\begin{frame}[t]{AI简史：研究问题的提出}
+  \key{1955年提案，1956年夏季研究计划}
+  \par\vspace{2mm}
+  达特茅斯研究提案提出“人工智能”：\par
+  探索机器怎样使用语言、形成概念、解决问题和改进自身。
+  \par\vspace{5mm}
+  \key{规则与符号推理}
+  \par\vspace{2mm}
+  人把知识和推理规则写清楚，计算机据此搜索与推导。
+  \par\vspace{3mm}
+  {\smallbody 类比：把“已知条件”和“可用定理”交给一个按规则推理的系统。\par
+  难点：知识怎样表达？规则没覆盖的情形怎么办？}
+  \source{https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html}{McCarthy等，达特茅斯研究提案（1955）；专家系统史见参考资料}
+\end{frame}
+
+\begin{frame}[t]{AI简史：从数据与反馈中学习}
+  \key{机器学习与深度学习}
+  \par\vspace{2mm}
+  根据数据调整模型，学习识别和预测所需的规律。
+  \par\vspace{4mm}
+  \begin{tabular}{@{}lp{116mm}@{}}
+    \key{2012} & AlexNet在图像分类任务上取得显著进展。\\[4mm]
+    \key{2016} & AlphaGo以4比1战胜李世石。\\[1mm]
+              & 结合神经网络、搜索与强化学习。\\
+  \end{tabular}
+  \vfill
+  \key{想一想}\quad “识别图像”和“选择一步棋”，反馈有什么不同？
+  \source{https://deepmind.google/research/alphago/}{Google DeepMind：AlphaGo；AlexNet原论文见参考资料}
+\end{frame}
+
+\begin{frame}[t]{AI简史：语言模型与工具协作}
+  \key{2017\quad Transformer}
+  \par\vspace{2mm}
+  用注意力机制处理序列中信息的联系，成为许多语言模型的基础。
+  \par\vspace{4mm}
+  \key{大语言模型}
+  \par\vspace{1mm}
+  用自然语言进行解释、翻译、对话和代码生成。
+  \par\vspace{4mm}
+  \key{结合工具的智能体应用}
+  \par\vspace{1mm}
+  围绕任务调用检索、计算或程序执行工具，再依据结果继续处理。
+  \vfill
+  {\smallbody 多种技术路线可以共同工作。语言流畅程度与结论正确性需要分别判断。}
+  \source{https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html}{Vaswani等，Attention Is All You Need（2017）；工具协作案例见FunSearch}
+\end{frame}
+
+\begin{frame}[t]{数学突破一：搜索反例}
+  \key{Wagner，2021\quad 组合数学与图论}
+  \par\vspace{3mm}
+  用强化学习辅助构造数学对象，寻找已有猜想的反例。
+  \par\vspace{4mm}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}
+      \key{AI参与的部分}\par\vspace{2mm}
+      在大量候选对象中搜索，\par 找到值得检查的例子。
+    \column{.48\textwidth}
+      \key{结果成立的依据}\par\vspace{2mm}
+      对象满足前提，\par 却不满足猜想的结论。
+  \end{columns}
+  \vfill
+  {\smallbody 课堂类比：命题“所有实数都满足 $x^2\ge x$”，\par
+  取 $x=\tfrac12$，就有 $\tfrac14<\tfrac12$。这是一个反例。}
+  \source{https://arxiv.org/abs/2104.14516}{Wagner，Constructions in combinatorics via neural networks（2021）}
+\end{frame}
+
+\begin{frame}[t]{数学突破二：发现新的联系}
+  \key{Davies等，2021\quad 纽结理论}
+  \par\vspace{3mm}
+  可以先把纽结想成一根闭合绳子的不同打结方式。
+  \par\vspace{4mm}
+  研究者用机器学习分析数据，发现几何信息与代数信息之间的联系，\par
+  为数学家的猜想与严格论证提供线索，形成新的数学结果。
+  \par\vspace{5mm}
+  \key{这里的合作方式}
+  \par\vspace{2mm}
+  模型帮助寻找规律，数学家解释规律并建立论证。
+  \vfill
+  {\smallbody “数据中似乎有规律”仍需要走向“为什么成立”。}
+  \source{https://doi.org/10.1038/s41586-021-04086-x}{Davies等，Advancing mathematics by guiding human intuition with AI，Nature（2021）}
+\end{frame}
+
+\begin{frame}[t]{数学突破三：更好的构造}
+  \key{FunSearch，2023\quad 大语言模型与自动评估}
+  \par\vspace{3mm}
+  在给定约束下，寻找元素更多的合法集合。
+  \par\vspace{4mm}
+  \begin{enumerate}\setlength{\itemsep}{2mm}
+    \item 语言模型生成候选程序。
+    \item 评估器运行程序，检查合法性与效果。
+    \item 保留表现好的程序，继续改进。
+  \end{enumerate}
+  \vspace{2mm}
+  \key{成果}\quad 在cap set问题上改进当时已知的构造与下界。
+  \par\vspace{2mm}
+  {\smallbody 找到更大的合法集合，并不等于证明已找到最终最大值。}
+  \source{https://deepmind.google/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/}{Romera-Paredes等，Nature（2023）；Google DeepMind：FunSearch}
+\end{frame}
+
+\begin{frame}[t]{数学突破四：竞赛证明题}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}
+      \key{2024\quad 银牌水平}
+      \par\vspace{3mm}
+      AlphaProof与AlphaGeometry 2\par
+      解出6题中的4题，得28分。
+      \par\vspace{3mm}
+      {\smallbody 需专家进行形式语言转换，\par 计算耗时约2--3天。}
+    \column{.48\textwidth}
+      \key{2025\quad 金牌水平}
+      \par\vspace{3mm}
+      增强版Gemini Deep Think\par
+      解出6题中的5题，得35分。
+      \par\vspace{3mm}
+      {\smallbody 使用自然语言作答，\par 在比赛时间限制内完成。}
+  \end{columns}
+  \vspace{5mm}
+  \key{这里衡量的是}\quad 对指定竞赛题给出证明的能力。
+  \par\vspace{2mm}
+  {\smallbody 特定研究系统的成绩，不能保证日常聊天模型每次作答正确。\par
+  竞赛解题与解决尚未解决的研究问题，也需要分别评价。}
+  \source{https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/}{Google DeepMind，2025-07-21；文中说明IMO协调员对2025结果的评定}
+\end{frame}
+
+\begin{frame}[t]{我使用的MindDuet Scholar}
+  \key{围绕自己的资料，保存真实的学习过程}
+  \par\vspace{4mm}
+  \renewcommand{\arraystretch}{1.15}
+  \begin{tabular}{@{}lp{106mm}@{}}
+    \key{Library} & 搜索本地教材与笔记，找到问题的出处。\\
+    \key{PDF Reader} & 选中不懂的内容，结合当前页解释与追问。\\
+    \key{Sessions} & 按目标进行理解对话或独立练习。\\
+    \key{Reports} & 查看诊断信号、学习记录和待完成的复习。\\
+  \end{tabular}
+  \vfill
+  {\smallbody 我用它学习本科、研究生数学，也用于英语学习。\par
+  今天观察使用方法，高中阶段可以从熟悉的问题开始。}
+  \source{https://github.com/guanghuihua/MindDuet-Scholar}{MindDuet Scholar：README、使用说明与当前界面代码}
+\end{frame}
+
+\begin{frame}[t]{现场演示：带着资料提问}
+  \key{Library中的一份教材或笔记}
+  \par\vspace{3mm}
+  搜索资料，打开PDF，定位到一个定义或证明步骤。
+  \par\vspace{4mm}
+  \key{PDF Reader中的一次追问}
+  \par\vspace{2mm}
+  选中一句话，请助手解释符号、补充理由，或检查我的理解。
+  \par\vspace{3mm}
+  {\smallbody 示例提问：\par
+  “这一步用了什么条件？请指出原文依据，再用一个简单例子解释。”}
+  \vfill
+  \key{观看任务}\quad 找到“原文依据”和“补充解释”的区别。
+  \source{https://github.com/guanghuihua/MindDuet-Scholar}{使用说明：Library、PDF Reader；现场切换至教师本机系统}
+\end{frame}
+
+\begin{frame}[t]{现场演示：两种学习会话}
+  \begin{columns}[T,onlytextwidth]
+    \column{.47\textwidth}
+      \key{Ask \& Understand}
+      \par 理解与追问
+      \par\vspace{4mm}
+      适合陌生符号、定义和联系。
+      \par\vspace{3mm}
+      可以直接提问，\par 持续追问，保留对话。
+    \column{.48\textwidth}
+      \key{Practice \& Prove}
+      \par 练习与证明
+      \par\vspace{4mm}
+      适合检查自己能否完成。
+      \par\vspace{3mm}
+      先保存尝试，再请求提示，\par 留下修改和复习记录。
+  \end{columns}
+  \vfill
+  \key{观看任务}\quad 什么时候需要解释？什么时候需要自己先做？
+  \source{https://github.com/guanghuihua/MindDuet-Scholar}{README、使用说明：Sessions；两种模式的当前实现}
+\end{frame}
+
+\begin{frame}[t]{现场演示：留下学习证据}
+  \begin{enumerate}\setlength{\itemsep}{3mm}
+    \item \key{保存尝试}\quad 写下自己的思路与卡点。
+    \item \key{请求一个提示}\quad Request one hint。
+    \item \key{修改并说明理由}\quad 保留修改前后的过程。
+    \item \key{安排复习}\quad 1天后和7天后，再检查独立掌握。
+  \end{enumerate}
+  \vfill
+  {\smallbody 观看后回答：这次学习中，哪一步必须由学习者自己完成？}
+  \par\vspace{2mm}
+  \hyperlink{setproblem}{\beamerbutton{有余时：集合难题}}\hfill
+  \hyperlink{summary}{\beamerbutton{课堂小结}}
+  \source{https://github.com/guanghuihua/MindDuet-Scholar}{使用说明：Practice \& Prove、Reports；复习安排不等于已经掌握}
+\end{frame}
+
+\begin{frame}[t,label=summary]{今天留下的三个问题}
+  \begin{enumerate}\setlength{\itemsep}{4mm}
+    \item \key{我想学什么？}\par 写下一个本学期想探索的数学问题。
+    \item \key{我希望AI怎样帮助我？}\par 解释、提示、追问，还是帮助检查？
+    \item \key{我怎样知道自己学会了？}\par 写下一种不看答案的检验方法。
+  \end{enumerate}
+  \vfill
+  下次课：配置并测试自己的AI学习助手。
+  \par\vspace{2mm}
+  \hyperlink{setproblem}{\beamerbutton{集合题选讲}}\hfill
+  \hyperlink{sources}{\beamerbutton{参考资料}}\quad
+  \hyperlink{finish}{\beamerbutton{结束}}
+\end{frame}
+
+\appendix
+\begin{frame}[t,label=setproblem]{选讲：集合中的一个难题}
+  \smallbody
+  已知集合 $A=\{a_1,a_2,\ldots,a_n\}$，其中 $n\in\mathbb N^*$ 且 $n\ge4$，
+  $a_i\in\mathbb N^*\ (i=1,2,\ldots,n)$。非空集合 $B\subseteq A$，
+  记 $T(B)$ 为集合 $B$ 中所有元素之和；若 $B=\{b\}$，则 $T(B)=b$。
+  \par\vspace{3mm}
+  （1）若 $A=\{1,2,5,6,7,8\}$，$T(B)=8$，写出所有可能的集合 $B$。
+  \par\vspace{3mm}
+  （2）若 $A=\{3,4,5,9,10,11\}$，$B=\{b_1,b_2,b_3\}$，且 $T(B)$ 是
+  $12$ 的倍数，求集合 $B$ 的个数。
+  \par\vspace{3mm}
+  （3）若 $a_i\in\{1,2,3,\ldots,2n-1\}\ (i=1,2,\ldots,n)$，证明：
+  存在非空集合 $B\subseteq A$，使得 $T(B)$ 是 $2n$ 的倍数。
+  \par\vfill
+  {\fontsize{8}{10}\selectfont 来源：教师提供的照片，第19题。原图见后附页。}\backtosummary
+\end{frame}
+
+\begin{frame}[t]{选讲：怎样向AI提出这个问题}
+  \smallbody
+  \key{第一轮：确认题意}
+  \par “请复述题目。$T(B)$ 是元素之和，$B$ 非空，集合元素互异。\par
+  先检查条件，不要直接给完整证明。”
+  \par\vspace{3mm}
+  \key{第二轮：找到入口}
+  \par “前两问怎样分类才能不重不漏？第三问能否先看两个数的和？”
+  \par\vspace{3mm}
+  \key{第三轮：检查关键跳步}
+  \par “如果按和为 $2n$ 配对，单独的 $n$ 怎么处理？\par
+  每一步推理使用了什么条件？请给我一个小提示。”
+  \vfill
+  \key{检验重点}\quad 列举是否完整？找到了例子，还是证明了一般结论？
+  \par\vspace{2mm}\backtosummary
+\end{frame}
+
+\begin{frame}[t]{选讲：第一问的完整列举}
+  \key{$A=\{1,2,5,6,7,8\}$，元素和为8}
+  \par\vspace{4mm}
+  \begin{tabular}{@{}lp{103mm}@{}}
+    1个元素 & $\{8\}$\\[3mm]
+    2个元素 & $\{1,7\},\ \{2,6\}$\\[3mm]
+    3个元素 & $\{1,2,5\}$\\[3mm]
+    至少4个元素 & 最小的和为 $1+2+5+6=14>8$，不可能。\\
+  \end{tabular}
+  \vfill
+  \key{共4个。}\quad 按元素个数分类，可以说明为什么没有遗漏。
+  \par\vspace{3mm}\backtosummary
+\end{frame}
+
+\begin{frame}[t]{选讲：第二问的完整列举}
+  \key{$A=\{3,4,5,9,10,11\}$，取3个元素}
+  \par\vspace{3mm}
+  最小和为 $3+4+5=12$，最大和为 $9+10+11=30$。\par
+  因此只需检查 $T(B)=12$ 或 $T(B)=24$。
+  \par\vspace{4mm}
+  \begin{tabular}{@{}lp{109mm}@{}}
+    $T(B)=12$ & $\{3,4,5\}$\\[4mm]
+    $T(B)=24$ & $\{3,10,11\},\ \{4,9,11\},\ \{5,9,10\}$\\
+  \end{tabular}
+  \vfill
+  \key{共4个。}\quad 集合不计顺序，同一组元素只算一次。
+  \par\vspace{3mm}\backtosummary
+\end{frame}
+
+\begin{frame}[t]{选讲：配对法的关键分支}
+  \smallbody
+  将 $1,2,\ldots,2n-1$ 分为
+  \[
+    \{1,2n-1\},\ \{2,2n-2\},\ \ldots,\ \{n-1,n+1\},\ \{n\}.
+  \]
+  \key{情况一}\quad $A$ 取到了某一对的两个数。
+  \par 这两个数的和就是 $2n$，取它们组成 $B$ 即可。
+  \par\vspace{4mm}
+  \key{情况二}\quad 每一对至多取一个数。
+  \par 因为 $|A|=n$，所以必须有 $n\in A$，且每一对恰好取一个数。
+  \par\vspace{4mm}
+  \key{这一步不能省略}
+  \par 这里共有 $n$ 组，选 $n$ 个数，不保证某一组一定选到两个。
+  \vfill\backtosummary
+\end{frame}
+
+\begin{frame}[t]{选讲：一个余数引理}
+  \smallbody
+  \key{引理}\quad 若 $n-1$ 个整数的任意非空选取之和都不被 $n$ 整除，\par
+  则这些整数除以 $n$ 的余数全部相同。
+  \par\vspace{3mm}
+  \key{证明}\quad 将它们任意排列为 $c_1,c_2,\ldots,c_{n-1}$，令
+  \[
+     S_1=c_1,\quad S_2=c_1+c_2,\quad\ldots,\quad S_{n-1}=c_1+\cdots+c_{n-1}.
+  \]
+  各 $S_i$ 的余数非零；若 $S_i,S_j\ (i<j)$ 同余，\par
+  则 $c_{i+1}+\cdots+c_j$ 被 $n$ 整除，矛盾。
+  \par\vspace{3mm}
+  所以这 $n-1$ 个余数恰好是 $1,2,\ldots,n-1$。
+  \par 交换 $c_1,c_2$ 后，只有第一个部分和改变，其余不变，\par
+  故 $c_1\equiv c_2\pmod n$。任意两项都可放在前两位，结论成立。
+  \vfill\backtosummary
+\end{frame}
+
+\begin{frame}[t]{选讲：完成第三问的证明}
+  \smallbody
+  在情况二中，反设没有非空子集的元素和被 $2n$ 整除。\par
+  令 $C=A\setminus\{n\}$，则 $|C|=n-1$。
+  \par\vspace{3mm}
+  \key{第一步}\quad $C$ 的任意非空子集的和都不被 $n$ 整除。
+  \par 否则设其和为 $kn$：若 $k$ 为偶数，已经得到结论；\par
+  若 $k$ 为奇数，再加入元素 $n$，和为 $(k+1)n$，也被 $2n$ 整除。
+  \par\vspace{3mm}
+  \key{第二步}\quad 由引理，$C$ 的所有元素模 $n$ 同余。
+  \par 在 $1,2,\ldots,2n-1$ 中，同一非零余数最多对应两个数：$r,r+n$。
+  \par 但 $|C|=n-1\ge3$，且元素互异，矛盾。
+  \par\vspace{3mm}
+  因此一定存在所求的非空集合 $B$。\hfill$\square$
+  \vfill\backtosummary
+\end{frame}
+
+\begin{frame}[t]{选讲：题目原始照片}
+  \centering
+  \includegraphics[angle=90,width=.77\textwidth,height=59mm,keepaspectratio]{assets/关于集合的一个难题_原图.jpg}
+  \par{\fontsize{7}{9}\selectfont 教师提供的第19题照片。保留原件，手写内容不作为标准答案。}
+  \backtosummary
+\end{frame}
+
+\begin{frame}[t,label=sources]{参考资料：AI简史}
+  \setbeamerfont{itemize/enumerate body}{size=\fontsize{10}{13}\selectfont}
+  \fontsize{10}{14}\selectfont
+  \begin{enumerate}\setlength{\itemsep}{3mm}
+    \item McCarthy等（1955）.\par
+    \href{https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html}{A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence}.
+    \item Computer History Museum.\par
+    \href{https://www.computerhistory.org/timeline/ai-robotics/}{AI \& Robotics: Timeline of Computer History}.
+    \item Krizhevsky, Sutskever, Hinton（2012）.\par
+    \href{https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html}{ImageNet Classification with Deep Convolutional Neural Networks}.
+    \item Google DeepMind.\quad\href{https://deepmind.google/research/alphago/}{AlphaGo}.
+    \item Vaswani等（2017）.\quad
+    \href{https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html}{Attention Is All You Need}.
+  \end{enumerate}
+  \vfill\backtosummary
+\end{frame}
+
+\begin{frame}[t]{参考资料：数学与学习系统}
+  \setbeamerfont{itemize/enumerate body}{size=\fontsize{10}{13}\selectfont}
+  \fontsize{10}{14}\selectfont
+  \begin{enumerate}\setlength{\itemsep}{3mm}
+    \item Wagner（2021）.\par
+    \href{https://arxiv.org/abs/2104.14516}{Constructions in combinatorics via neural networks}.
+    \item Davies等（2021），Nature.\par
+    \href{https://doi.org/10.1038/s41586-021-04086-x}{Advancing mathematics by guiding human intuition with AI}.
+    \item Romera-Paredes等（2023年在线发表），Nature.\par
+    \href{https://doi.org/10.1038/s41586-023-06924-6}{Mathematical discoveries from program search with large language models}.
+    \item Google DeepMind（2025-07-21）.\par
+    \href{https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/}{Advanced Gemini with Deep Think: IMO gold-medal standard}.
+    \item \href{https://github.com/guanghuihua/MindDuet-Scholar}{MindDuet Scholar}：README、使用说明与界面代码。
+  \end{enumerate}
+  \vfill\backtosummary
+\end{frame}
+
+\hypertarget{finish}{}
+\campusclosing[带着问题，开始探索]
+\end{document}
