@@ -1,0 +1,362 @@
+% !TeX program = xelatex
+% 自编教学资料；A3 张贴用，含例题、练习及解答，不作为无答案试卷。
+\documentclass[UTF8,fontset=windows,zihao=-4]{ctexart}
+\usepackage[a3paper,margin=17mm,headheight=18pt,headsep=8mm,footskip=9mm]{geometry}
+\usepackage{amsmath,amssymb,multicol,array,booktabs,tikz,fancyhdr}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\columnsep}{12mm}
+\setlength{\columnseprule}{0.3pt}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small 方程与不等式基础知识}
+\fancyhead[R]{\small 实数范围}
+\fancyfoot[C]{\small\thepage}
+\newcommand{\sheet}[1]{\begin{center}\heiti\fontsize{24}{30}\selectfont #1\end{center}\vspace{3mm}}
+\newcommand{\topic}[1]{\par\vspace{7pt}{\heiti\fontsize{17}{23}\selectfont #1}\par\vspace{2pt}}
+\newcommand{\ex}[1]{\par\textbf{例}\quad #1\par}
+\newcommand{\cross}[4]{%
+\begin{tikzpicture}[baseline=(current bounding box.center),x=1cm,y=1cm]
+\node (a) at (0,0.8) {$#1$};\node (b) at (1.7,0.8) {$#2$};
+\node (c) at (0,-0.1) {$#3$};\node (d) at (1.7,-0.1) {$#4$};
+\draw (a.south east)--(d.north west);\draw (c.north east)--(b.south west);
+\end{tikzpicture}}
+\begin{document}
+\raggedcolumns
+\linespread{1}\fontsize{14}{19}\selectfont
+\setlength{\abovedisplayskip}{5pt}\setlength{\belowdisplayskip}{5pt}
+\setlength{\abovedisplayshortskip}{3pt}\setlength{\belowdisplayshortskip}{3pt}
+\sheet{一、基本运算与一元二次方程}
+\begin{multicols*}{2}
+\topic{1. 字母、代数式与方程的解}
+$2x$ 表示 $2\times x$，$x^2$ 表示 $x\times x$。例如 $x=-3$ 时，
+\[2x=-6,\qquad x^2=(-3)^2=9.\]
+使方程左右两边相等的未知数的值，叫作方程的\textbf{解}，也叫作\textbf{根}。
+
+例如 $x+2=5$ 的解是 $x=3$，因为 $3+2=5$。检验一个数是不是解，可以把它代回原方程。
+\topic{2. 负数运算与去括号}
+同号相乘得正，异号相乘得负。
+\[(-3)(-2)=6,\qquad(-3)\times2=-6.\]
+注意平方与负号的运算顺序：
+\[(-3)^2=9,\qquad -3^2=-(3^2)=-9.\]
+去括号时，括号前的数要乘到每一项：
+\[2(x-3)=2x-6,\quad -2(x-3)=-2x+6.\]
+相同字母、相同次数的项才能合并：
+\[3x+2x=5x.\]
+$x^2$ 与 $2x$ 不是同类项，不能合并成一项。
+\topic{3. 等式性质与移项}
+等式两边同加、同减同一个数，或同乘、同除以同一个非零数，所得等式仍成立。
+
+移项要改变该项的符号。例如
+\[x+3=7\quad\Rightarrow\quad x=7-3=4.\]
+这相当于原方程两边同时减去 $3$。
+\ex{解方程 $2(x-1)+3=7$。}
+\[
+\begin{aligned}
+2x-2+3&=7&&\text{（去括号）},\\
+2x+1&=7&&\text{（合并）},\\
+2x&=6&&\text{（两边减去 1）},\\
+x&=3&&\text{（两边除以 2）}.
+\end{aligned}
+\]
+\topic{4. 一元二次方程的一般形式}
+\[\boxed{ax^2+bx+c=0\quad(a\ne0)}\]
+$a,b,c$ 分别是二次项系数、一次项系数和常数项，\textbf{符号也包括在系数中}。
+
+例如 $2x^2=3x+2$，整理为
+\[2x^2-3x-2=0,\]
+所以 $a=2,b=-3,c=-2$。方程 $x^2-5=0$ 中，$a=1,b=0,c=-5$。
+\columnbreak
+\topic{5. 直接开平方法}
+实数的平方不小于 $0$。因此
+\[
+x^2=k\ \Longrightarrow\ \begin{cases}
+x=\pm\sqrt{k},&k>0,\\
+x=0,&k=0,\\
+\text{无实数解},&k<0.
+\end{cases}
+\]
+$\sqrt9=3$，但 $x^2=9$ 的根为 $3$ 和 $-3$。符号 $\pm$ 表示正、负两种情况。
+\ex{解方程 $(x-1)^2=9$。}
+把 $x-1$ 看作一个整体，开平方得
+\[x-1=3\quad\text{或}\quad x-1=-3.\]
+分别解得 $x=4$ 或 $x=-2$。
+\ex{解方程 $(x+2)^2=5$。}
+\[x+2=\pm\sqrt5,\qquad x=-2\pm\sqrt5.\]
+$\sqrt5$ 是平方等于 $5$ 的正数，约为 $2.236$；答案一般保留根号。
+\topic{6. 因式分解法}
+若 $AB=0$，则 $A=0$ 或 $B=0$。解题时先将方程一边化为 $0$，再分解另一边。
+\ex{解方程 $x^2=3x$。}
+\[x^2-3x=0\quad\Rightarrow\quad x(x-3)=0.\]
+所以 $x=0$ 或 $x-3=0$，即 $x=0$ 或 $x=3$。
+
+\textbf{注意：}不能直接两边除以 $x$，因为 $x$ 可能为 $0$，这样会漏根。
+
+常用的因式分解公式：
+\[
+\begin{aligned}
+x^2-d^2&=(x-d)(x+d),\\
+x^2+2dx+d^2&=(x+d)^2,\\
+x^2-2dx+d^2&=(x-d)^2.
+\end{aligned}
+\]
+例如 $x^2-9=(x-3)(x+3)$，所以方程 $x^2-9=0$ 的根为 $3$ 和 $-3$。
+\topic{练习}
+（1）解方程 $3x-4=8$。
+
+（2）解方程 $(x+2)^2=16$。
+
+（3）解方程 $x^2-4x=0$。
+\topic{解答}
+（1）$3x=12$，所以 $x=4$。
+
+（2）$x+2=\pm4$，所以 $x=2$ 或 $-6$。
+
+（3）$x(x-4)=0$，所以 $x=0$ 或 $4$。
+\end{multicols*}
+\newpage
+\sheet{二、十字相乘法}
+\begin{multicols*}{2}
+\topic{1. 十字相乘是在检查什么？}
+十字相乘法是分解二次三项式的一种方法。它的依据是乘法展开式：
+\[(px+q)(rx+s)=prx^2+(ps+qr)x+qs.\]
+要分解 $ax^2+bx+c$，就要找到 $p,q,r,s$，使
+\[pr=a,\qquad qs=c,\qquad ps+qr=b.\]
+\begin{center}\cross{px}{q}{rx}{s}\end{center}
+左边竖着相乘得到 $ax^2$，右边竖着相乘得到 $c$；\textbf{交叉相乘后相加，必须得到一次项 $bx$}。检查通过后，按两行分别写成两个因式。
+\topic{2. 二次项系数为 1 的例子}
+\ex{分解 $x^2-5x+6$，并解方程 $x^2-5x+6=0$。}
+先把 $x^2$ 拆为 $x\cdot x$；把 $6$ 拆为两个数的乘积。因为一次项是 $-5x$，试用 $-2$ 与 $-3$：
+\begin{center}\cross{x}{-2}{x}{-3}\end{center}
+交叉相乘，再相加：
+\[x\cdot(-3)+x\cdot(-2)=-3x-2x=-5x.\]
+与原式的一次项相同，所以
+\[x^2-5x+6=(x-2)(x-3).\]
+原方程变为 $(x-2)(x-3)=0$，于是
+\[x-2=0\ \text{或}\ x-3=0,\]
+所以 $x=2$ 或 $x=3$。
+\topic{3. 怎样选择右边两个数的符号？}
+对 $x^2+bx+c$，要找的两个数的\textbf{积为 $c$、和为 $b$}。
+
+$c>0$：两个数同号。$b>0$ 时都为正，$b<0$ 时都为负。
+
+$c<0$：两个数异号。它们的和的符号，由绝对值较大的那个数决定。
+
+例如分解 $x^2+x-6$，可试 $3$ 与 $-2$，因为
+\[3(-2)=-6,\qquad3+(-2)=1,\]
+所以 $x^2+x-6=(x+3)(x-2)$。
+\columnbreak
+\topic{4. 二次项系数不是 1 的例子}
+\ex{分解 $2x^2-3x-2$，并解方程 $2x^2-3x-2=0$。}
+把 $2x^2$ 拆为 $2x\cdot x$；把 $-2$ 拆为 $1\cdot(-2)$。安排如下：
+\begin{center}\cross{2x}{1}{x}{-2}\end{center}
+交叉相乘，再相加：
+\[2x\cdot(-2)+x\cdot1=-4x+x=-3x.\]
+因此
+\[2x^2-3x-2=(2x+1)(x-2).\]
+原方程变为 $(2x+1)(x-2)=0$，所以
+\[2x+1=0\quad\text{或}\quad x-2=0,\]
+即 $x=-\dfrac12$ 或 $x=2$。
+
+\textbf{为什么右边两个数的位置不能随意放？}
+
+如果写成下面的排列：
+\begin{center}\cross{2x}{-2}{x}{1}\end{center}
+交叉乘积之和是 $2x-2x=0$，不是 $-3x$，所以这个排列不符合原式。
+\topic{5. 分解后的检查}
+把两个因式展开，看三项是否都与原式一致：
+\[
+\begin{aligned}
+(2x+1)(x-2)
+&=2x^2-4x+x-2\\
+&=2x^2-3x-2.
+\end{aligned}
+\]
+\textbf{注意：}十字相乘不是每次都能用小整数试出来。例如 $x^2+x-1$ 不能分解为两个整系数的一次因式，可改用配方法或公式法。
+\topic{练习}
+用十字相乘法分解左边，再解方程。
+
+（1）$x^2-7x+12=0$。
+
+（2）$x^2+x-6=0$。
+
+（3）$2x^2+x-3=0$。
+\topic{解答}
+（1）$(x-3)(x-4)=0$，$x=3$ 或 $4$。
+
+（2）$(x+3)(x-2)=0$，$x=-3$ 或 $2$。
+
+（3）$(2x+3)(x-1)=0$，$x=-\dfrac32$ 或 $1$。交叉检查：$-2x+3x=x$。
+\end{multicols*}
+\newpage
+\sheet{三、配方法、公式法与根的关系}
+\begin{multicols*}{2}
+\topic{1. 配方法}
+把方程整理成“一个式子的平方等于一个数”，再开平方求解。
+
+二次项系数先化为 $1$；移去常数项后，两边同加\textbf{一次项系数的一半的平方}。
+
+例如 $x^2+4x$ 要补 $\left(\dfrac42\right)^2=4$，因为
+\[x^2+4x+4=(x+2)^2.\]
+\ex{解方程 $x^2+4x-1=0$。}
+\[
+\begin{aligned}
+x^2+4x&=1,\\
+x^2+4x+4&=1+4,\\
+(x+2)^2&=5,\\
+x+2&=\pm\sqrt5.
+\end{aligned}
+\]
+所以 $x=-2+\sqrt5$ 或 $x=-2-\sqrt5$。
+
+\textbf{注意：}只能两边同加，不能只改变左边。
+\topic{2. 判别式与求根公式}
+对 $ax^2+bx+c=0\ (a\ne0)$，令
+\[\Delta=b^2-4ac.\]
+“$\Delta$”读作德尔塔，叫作判别式。
+
+$\Delta>0$：有两个不相等的实数根。
+
+$\Delta=0$：有两个相等的实数根，即重根，只有一个不同的根值。
+
+$\Delta<0$：没有实数根。
+
+当 $\Delta\ge0$ 时，求根公式为
+\[\boxed{x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}.\]
+整个分子都要除以 $2a$，不是只除根号部分。
+\ex{解方程 $2x^2-3x-2=0$。}
+$a=2,b=-3,c=-2$，所以
+\[\Delta=(-3)^2-4\times2\times(-2)=25.\]
+代入求根公式：
+\[x=\frac{3\pm5}{4},\]
+所以 $x=2$ 或 $x=-\dfrac12$。
+\columnbreak
+\topic{3. 怎样选择解法？}
+能整理成 $(x-h)^2=k$ 的，直接开平方。
+
+各项有公因式的，先提公因式；容易分解的，可以用平方差、完全平方公式或十字相乘法。
+
+一时看不出怎样分解的，可以用配方法或公式法。\textbf{十字相乘法属于因式分解法}，不是求根公式的必要步骤。
+\topic{4. 韦达定理}
+若 $ax^2+bx+c=0\ (a\ne0)$ 有两个实数根 $x_1,x_2$（可以相等），则
+\[\boxed{x_1+x_2=-\frac ba,\qquad x_1x_2=\frac ca}.\]
+即两根之和为 $-b/a$，两根之积为 $c/a$。使用实数根时，应先确认 $\Delta\ge0$。
+
+这是因为
+\[
+\begin{aligned}
+a(x-x_1)(x-x_2)
+&=ax^2-a(x_1+x_2)x\\
+&\quad+ax_1x_2,
+\end{aligned}
+\]
+与原二次三项式比较系数，就得到上述关系。
+\ex{不求根，求 $x^2-5x+3=0$ 两根的平方和。}
+$\Delta=25-12=13>0$，两实根存在。
+\[x_1+x_2=5,\qquad x_1x_2=3.\]
+利用完全平方公式变形：
+\[
+\begin{aligned}
+x_1^2+x_2^2&=(x_1+x_2)^2-2x_1x_2\\
+&=25-6=19.
+\end{aligned}
+\]
+\topic{练习}
+（1）解方程 $x^2+6x+5=0$。
+
+（2）用公式法解 $x^2-2x-3=0$。
+
+（3）已知 $x^2-5x+m=0$ 的一个根为 $2$，求另一个根及 $m$。
+\topic{解答}
+（1）配方得 $(x+3)^2=4$，所以 $x=-1$ 或 $-5$。
+
+（2）$\Delta=16$，$x=\dfrac{2\pm4}{2}$，所以 $x=3$ 或 $-1$。
+
+（3）代入已知根得 $4-10+m=0$，故 $m=6$。方程化为 $(x-2)(x-3)=0$，另一个根是 $3$；也可用根的和算得 $5-2=3$。
+\end{multicols*}
+\newpage
+\sheet{四、一元一次不等式与一元二次不等式}
+\begin{multicols*}{2}
+\topic{1. 不等式的解与基本性质}
+解不等式，是求使不等式成立的所有未知数的值。例如 $x+2<5$ 的解为 $x<3$，包括满足条件的整数、小数等所有实数。
+
+两边同加、同减同一个数，不等号方向不变；同乘、同除以同一个正数，方向不变；\textbf{同乘、同除以同一个负数，方向改变}。
+\ex{解不等式 $3-2x\ge7$。}
+\[-2x\ge4\quad\Rightarrow\quad x\le-2.\]
+最后一步除以 $-2$，所以不等号改变方向。
+\topic{2. 解集的表示}
+\[
+\begin{array}{c|c}
+\text{不等式表示}&\text{区间表示}\\\hline
+2<x<5&(2,5)\\
+2\le x\le5&[2,5]\\
+x\le-2&(-\infty,-2]\\
+x<2\ \text{或}\ x>5&(-\infty,2)\cup(5,+\infty)
+\end{array}
+\]
+圆括号不含端点，方括号包含端点。$\infty$ 表示无穷，无穷处只用圆括号；$\cup$ 表示把两部分合在一起。所有实数记为 $\mathbb R$，无解时解集为空集 $\varnothing$。
+\topic{3. 二次三项式的正负}
+以 $x^2-7x+10=(x-2)(x-5)$ 为例，两个根 $2,5$ 将数轴分为三个区间。
+\[\renewcommand{\arraystretch}{1.15}
+\begin{array}{c|ccc}
+x&x<2&2<x<5&x>5\\\hline
+x-2&-&+&+\\
+x-5&-&-&+\\\hline
+(x-2)(x-5)&+&-&+
+\end{array}
+\]
+例如 $x<2$ 时，两个因式都为负，乘积为正。因此
+\[
+\begin{aligned}
+x^2-7x+10<0&\Rightarrow 2<x<5,\\
+x^2-7x+10>0&\Rightarrow x<2\ \text{或}\ x>5.
+\end{aligned}
+\]
+若题目为 $\le0$，则包含两个端点，得 $[2,5]$。
+
+\textbf{适用条件：}二次项系数为正，且有两个不同实根时，两根之间为负、两侧为正。端点处等于 $0$。
+\columnbreak
+\topic{4. 解题举例}
+\ex{解不等式 $x^2-x\le6$。}
+移项得 $x^2-x-6\le0$。对应方程为
+\[(x-3)(x+2)=0,\]
+两根是 $-2,3$。二次项系数为正，取两根之间并包含端点，解集为 $[-2,3]$。
+\ex{解不等式 $-x^2+x+6>0$。}
+两边乘 $-1$，注意改变不等号方向：
+\[x^2-x-6<0.\]
+两根仍为 $-2,3$，取两根之间但不含端点，解集为 $(-2,3)$。
+\topic{5. 重根与无实根的情况}
+以下均已将二次项系数化为正。
+
+\textbf{（1）$\Delta=0$。}例如
+\[x^2-4x+4=(x-2)^2\ge0.\]
+只有 $x=2$ 时取到 $0$，所以
+\[
+\begin{array}{c|c}
+\text{不等式}&\text{解}\\\hline
+(x-2)^2>0&x\ne2\\
+(x-2)^2\ge0&\text{所有实数}\\
+(x-2)^2<0&\text{无解}\\
+(x-2)^2\le0&x=2
+\end{array}
+\]
+\textbf{（2）$\Delta<0$。}二次式恒为正。例如
+\[x^2+2x+3=(x+1)^2+2>0.\]
+所以它大于（或等于）$0$ 时，解为所有实数；小于（或等于）$0$ 时，无解。
+
+一般地，$a>0,\Delta<0$ 时，
+\[ax^2+bx+c=a\left(x+\frac b{2a}\right)^2-\frac\Delta{4a}>0.\]
+\textbf{注意：}对应方程无实根，并不意味着不等式无解。
+\topic{练习与解答}
+（1）$5-3x<11$。
+
+解：$-3x<6$，所以 $x>-2$。
+
+（2）$-x^2+x+6\ge0$。
+
+解：化为 $x^2-x-6\le0$，解集为 $[-2,3]$。
+
+（3）$x^2+1\le0$。
+
+解：因为 $x^2+1\ge1>0$，所以无解。
+\end{multicols*}
+\end{document}
