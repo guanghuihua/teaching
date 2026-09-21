@@ -1,0 +1,42 @@
+\documentclass[UTF8,a4paper,12pt]{ctexart}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb,needspace,fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\newcommand{\subq}[1]{\par\Needspace{3\baselineskip}（#1）}
+\newcommand{\src}[1]{{\small\textit{#1}}\par}
+\begin{document}
+\begin{center}{\LARGE 高一数学拓展练习}\\[5pt]集合、逻辑与基本不等式（有来源版）\\[4pt]时间：60分钟\qquad 满分：100分\end{center}
+姓名：\underline{\hspace{3cm}}\qquad 班级：\underline{\hspace{3cm}}
+
+\textbf{1．（16分）}\src{改编自2024年北京景山学校高一上学期期中第12题}
+对于实数参数 $a$，令
+\[A=\{x\in\mathbb R\mid (a-1)x^2-2x+1=0\}.\]
+如果 $A$ 的子集总数为 $2$，求出所有可能的 $a$，并写出相应的集合 $A$。
+\par\vspace*{2.4cm}
+
+\textbf{2．（16分）}\src{改编自2024年北京景山学校高一上学期期中第7题}
+在 $a>0,b>0$ 的条件下，记 $p:a+b\le4$，$q:ab\le4$。
+判断 $p$ 是 $q$ 的充分不必要条件、必要不充分条件、充要条件，还是既不充分也不必要条件，并给出证明或反例。
+\par\vspace*{2.4cm}
+
+\textbf{3．（20分）}\src{改编自2021年天津高考数学第13题}
+当 $a,b$ 为正实数时，求表达式
+\[\frac1a+\frac{a}{b^2}+b\]
+的最小值。请证明所求结论，并确定取得最小值时的 $a,b$。
+\par\vspace*{2.4cm}
+\newpage
+\textbf{4．（24分）}\src{选自2020年全国III卷文科数学第23题（措辞调整）}
+三个实数 $a,b,c$ 满足 $a+b+c=0$ 与 $abc=1$。完成下列证明：
+\subq{1}$ab+bc+ca<0$。
+\subq{2}令 $M$ 为 $a,b,c$ 中最大的数，证明 $M\ge\sqrt[3]{4}$。
+\par\vspace*{4cm}
+
+\textbf{5．（24分）}\src{摘编自2024年北京景山学校高一上学期期中第21题（I）（II）}
+给定整数 $n\ge3$，将所有由 $n$ 个 $0$ 或 $1$ 按顺序组成的数组放在集合 $\Omega_n$ 中。例如，$(1,0,0)$ 和 $(0,1,0)$ 是 $\Omega_3$ 中不同的元素。
+对于 $\alpha=(x_1,\ldots,x_n)$、$\beta=(y_1,\ldots,y_n)$，规定运算
+\[\alpha*\beta=(x_1+y_1-x_1y_1)+\cdots+(x_n+y_n-x_ny_n).\]
+\subq{1}取 $n=3$、$\alpha=(1,1,0)$，列出所有使 $\alpha*\beta=3$ 的 $\beta\in\Omega_3$。
+\subq{2}若 $\alpha,\beta\in\Omega_n$ 且 $\alpha*\alpha+\beta*\beta=n$，确定 $\alpha*\beta$ 的最大值与最小值，并说明这两个值能够取得。
+\par\vspace*{4cm}
+\end{document}
