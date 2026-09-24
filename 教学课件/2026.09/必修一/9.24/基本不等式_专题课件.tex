@@ -24,45 +24,9 @@
 \setbeamersize{text margin left=0.7cm,text margin right=0.7cm}
 
 
+
 \begin{document}
-\begin{frame}[t]{基本不等式：八类题型精讲}
-\vspace{0.5cm}
-{\Large 条件 · 结构 · 界 · 等号}\par\vspace{0.5cm}
-第1课时：直接法、配凑法与分式\par\vspace{0.25cm}
-第2课时：常数代换、换元与消元\par\vspace{0.25cm}
-第3课时：和积共存、恒成立与有解\par\vspace{0.5cm}
-学习目标：说清比较量，求出有效的界，验证合法的取等点。
-\end{frame}
-\begin{frame}[t]{课前诊断：每句话都对吗？}
-① 对任意实数 $a,b$，有 $a+b\ge2\sqrt{ab}$。\par\vspace{0.3cm}
-② 若 $x>0$，由 $x+\dfrac{4}{x}\ge4$ 可知最小值为4。\par\vspace{0.3cm}
-③ 若 $x>3$，$x+\dfrac{4}{x}$ 的最小值仍为4。
-\pause
-\Answer{①错，例如 $a=b=-1$；②对，在 $x=2$ 取到；③错，等号点不在定义域内。}
-\Analysis{“总不小于某个数”只给出下界；还要找到能取到它的合法取值。}
-\end{frame}
-\begin{frame}[t]{基本不等式的来源与适用条件}
-当 $a,b\ge0$ 时，
-\[(\sqrt a-\sqrt b)^2\ge0\quad\Rightarrow\quad a+b\ge2\sqrt{ab}.\]
-等号成立当且仅当 $a=b$。
-\pause
-\par\vspace{0.3cm}若和 $a+b=S$ 为定值，则 $ab\le \dfrac{S^2}{4}$。\par\vspace{0.25cm}
-若积 $ab=P$ 为定值，则 $a+b\ge2\sqrt P$。\par\vspace{0.3cm}
-有倒数时，相应分母必须非零；本专题多数应用使用严格正数。
-\end{frame}
-\begin{frame}[t]{写出最值解答的四步}
-1. \textbf{条件：}本次比较的两个量是什么？是否非负？\par\vspace{0.3cm}
-2. \textbf{结构：}它们的和或积是否为定值？需不需要整理？\par\vspace{0.3cm}
-3. \textbf{求界：}不等式给出的是上界还是下界？\par\vspace{0.3cm}
-4. \textbf{取等：}等号方程与原约束能否同时成立？\par\vspace{0.4cm}
-每道题最后都写：“当……时等号成立，所以最大／最小值为……”。
-\end{frame}
-\section{专题1：直接法求最值}
-\begin{frame}[t]{专题1：直接法求最值}
-\textbf{本节问题：}积为定值求和的下界；和为定值求积的上界。\par\vspace{0.4cm}
-\textbf{先做什么：}圈出参加比较的两个量，计算它们的积或和。\par\vspace{0.4cm}
-\textbf{必须检查：}基本不等式的正数条件针对两个表达式，不一定针对原字母；平方和不等式可用于实数。
-\end{frame}
+\section{专题1}
 \begin{frame}[t]{专题1 · 第1题}
 函数 $y=3x+\dfrac1x\ (x>0)$ 的最小值是（\quad）。
 \Choices{$4$}{$5$}{$3\sqrt2$}{$2\sqrt3$}
@@ -84,12 +48,12 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$a=4b$，联立原条件得 $a=\dfrac{1}{2},b=\dfrac{1}{8}$，最大值为 $\dfrac{1}{16}$。
 \Answer{$\dfrac{1}{16}$}
 \end{frame}
-\section{专题2：配凑法求最值}
-\begin{frame}[t]{专题2：配凑法求最值}
-\textbf{本节问题：}用分母提示要凑出的整体。\par\vspace{0.4cm}
-\textbf{先做什么：}分母是 $a-1$，分子里的 $4a$ 可以怎样拆？\par\vspace{0.4cm}
-\textbf{必须检查：}添减必须保持恒等；原定义域没有正性时，先分情况或改用配方。
+\begin{frame}[t]{专题1小结：直接法求最值}
+\textbf{方法归纳：}积为定值求和的下界；和为定值求积的上界。\par\vspace{0.4cm}
+\textbf{解题切入：}圈出参加比较的两个量，计算它们的积或和。\par\vspace{0.4cm}
+\textbf{必须检查：}基本不等式的正数条件针对两个表达式，不一定针对原字母；平方和不等式可用于实数。
 \end{frame}
+\section{专题2}
 \begin{frame}[t]{专题2 · 第1题}
 若 $a>1$，则 $4a+\dfrac1{a-1}$ 的最小值为（\quad）。
 \Choices{$4$}{$6$}{$8$}{$\text{无最小值}$}
@@ -112,12 +76,12 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$x=\dfrac{3}{4}$，最大值为 $\dfrac{9}{8}$。若用基本不等式，须另处理 $x\notin(0,\dfrac{3}{2})$。
 \Answer{D}
 \end{frame}
-\section{专题3：分式求最值}
-\begin{frame}[t]{专题3：分式求最值}
-\textbf{本节问题：}先除、再配、后比较。\par\vspace{0.4cm}
-\textbf{先做什么：}先把分式写成整式与倒数项之和，再寻找定积结构。\par\vspace{0.4cm}
-\textbf{必须检查：}分母负时先设正元；乘负数、取倒数都会影响不等号方向。
+\begin{frame}[t]{专题2小结：配凑法求最值}
+\textbf{方法归纳：}用分母提示要凑出的整体。\par\vspace{0.4cm}
+\textbf{解题切入：}由分母 $a-1$，将 $4a$ 拆为 $4(a-1)+4$。\par\vspace{0.4cm}
+\textbf{必须检查：}添减必须保持恒等；原定义域没有正性时，先分情况或改用配方。
 \end{frame}
+\section{专题3}
 \begin{frame}[t]{专题3 · 第2题}
 设 $x>1$，则 $\dfrac{x^2-2x+3}{x-1}$ 的最小值为\underline{\hspace{1.5cm}}。
 \par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
@@ -139,18 +103,18 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$t=4$，即 $x=-5$，最大值为 $-11$。负号把下界变成上界。
 \Answer{A}
 \end{frame}
+\begin{frame}[t]{专题3小结：分式求最值}
+\textbf{方法归纳：}先除、再配、后比较。\par\vspace{0.4cm}
+\textbf{解题切入：}先把分式写成整式与倒数项之和，再寻找定积结构。\par\vspace{0.4cm}
+\textbf{必须检查：}分母负时先设正元；乘负数、取倒数都会影响不等号方向。
+\end{frame}
 \begin{frame}[t]{第1课时收束：定值与正性}
 回看原题一5：相等的是 $a$ 与 $4b$，不是 $a$ 与 $b$。\par\vspace{0.3cm}
 回看原题二3：原题没有正数限制，配方能覆盖整个定义域。\par\vspace{0.3cm}
 回看原题三3：先设 $t=-x-1>0$，整体负号使下界变成上界。\par\vspace{0.4cm}
 自查：能否在解答中标明比较量、定值、取等点？
 \end{frame}
-\section{专题4：常数代换法求最值}
-\begin{frame}[t]{专题4：常数代换法求最值}
-\textbf{本节问题：}把约束中的1代入目标，制造乘积不变的交叉项。\par\vspace{0.4cm}
-\textbf{先做什么：}若分别估计 $\dfrac{1}{x}$ 与 $\dfrac{4}{y}$，两个等号能否同时成立？\par\vspace{0.4cm}
-\textbf{必须检查：}乘的是等于1的整体；不能把 x+y=1 理解成 x=y；比例由参与比较的两项相等决定。
-\end{frame}
+\section{专题4}
 \begin{frame}[t]{专题4 · 第1题}
 已知 $x>0,y>0$ 且 $x+y=1$，则 $\dfrac1x+\dfrac4y$ 的最小值为（\quad）。
 \Choices{$5$}{$6$}{$7$}{$9$}
@@ -162,12 +126,12 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$\dfrac{y}{x}=\dfrac{4x}{y}$，即 $y=2x$；故 $x=\dfrac{1}{3},y=\dfrac{2}{3}$，最小值为 $9$。
 \Answer{D}
 \end{frame}
-\section{专题5：换元法求最值}
-\begin{frame}[t]{专题5：换元法求最值}
-\textbf{本节问题：}把反复出现的整体命名，并同步改写约束。\par\vspace{0.4cm}
-\textbf{先做什么：}圈出 $1+a$、$1+b$，令它们为 $u,v$，再计算 $u+v$。\par\vspace{0.4cm}
-\textbf{必须检查：}新变量范围不能丢；在扩大后的范围求出候选点，必须代回检查原约束。
+\begin{frame}[t]{专题4小结：常数代换法求最值}
+\textbf{方法归纳：}把约束中的1代入目标，制造乘积不变的交叉项。\par\vspace{0.4cm}
+\textbf{解题切入：}乘以 $x+y=1$，展开后比较乘积为定值的交叉项。\par\vspace{0.4cm}
+\textbf{必须检查：}乘的是等于1的整体；不能把 x+y=1 理解成 x=y；比例由参与比较的两项相等决定。
 \end{frame}
+\section{专题5}
 \begin{frame}[t]{专题5 · 第1题}
 已知 $a>0,b>0$，若 $a+b=2$，则 $\dfrac4{1+a}+\dfrac1{1+b}$ 的最小值为（\quad）。
 \Choices{$2$}{$\frac74$}{$\frac94$}{$2+\sqrt2$}
@@ -179,12 +143,12 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$u=2v$，得 $u=\dfrac{8}{3},v=\dfrac{4}{3}$；还原 $a=\dfrac{5}{3},b=\dfrac{1}{3}>0$。
 \Answer{C}
 \end{frame}
-\section{专题6：消元法求最值}
-\begin{frame}[t]{专题6：消元法求最值}
-\textbf{本节问题：}用约束减少变量，再找 $t+\dfrac{k}{t}$ 结构。\par\vspace{0.4cm}
-\textbf{先做什么：}能否用一个变量表示另一个？消元之后允许的范围是什么？\par\vspace{0.4cm}
-\textbf{必须检查：}两项分别达到最小时可能不在同一点；原题六4未规定 $a>0$，不得擅加。
+\begin{frame}[t]{专题5小结：换元法求最值}
+\textbf{方法归纳：}把反复出现的整体命名，并同步改写约束。\par\vspace{0.4cm}
+\textbf{解题切入：}圈出 $1+a$、$1+b$，令它们为 $u,v$，再计算 $u+v$。\par\vspace{0.4cm}
+\textbf{必须检查：}新变量范围不能丢；在扩大后的范围求出候选点，必须代回检查原约束。
 \end{frame}
+\section{专题6}
 \begin{frame}[t]{专题6 · 第1题}
 已知正数 $x,y$ 满足 $x+\dfrac1y=1$，则 $\dfrac1x+2y$ 的最小值是（\quad）。
 \Choices{$2+2\sqrt2$}{$6$}{$4\sqrt2$}{$3+2\sqrt2$}
@@ -218,6 +182,11 @@
 \par\vspace{0.2cm}\textbf{取等检查：}最小值为 $0$。也可消元得 $a^2b=b+\dfrac{1}{b}-2\ge0$，在 $b=1$ 取等号。
 \Answer{A}
 \end{frame}
+\begin{frame}[t]{专题6小结：消元法求最值}
+\textbf{方法归纳：}用约束减少变量，再找 $t+\dfrac{k}{t}$ 结构。\par\vspace{0.4cm}
+\textbf{解题切入：}用约束表示一个变量，并由原条件确定消元后的范围。\par\vspace{0.4cm}
+\textbf{必须检查：}两项分别达到最小时可能不在同一点；原题六4未规定 $a>0$，不得擅加。
+\end{frame}
 \begin{frame}[t]{第2课时收束：把约束用进目标}
 原题四1：乘以等于1的整体。\par\vspace{0.3cm}
 原题五1：换元时同时改写约束和范围。\par\vspace{0.3cm}
@@ -225,12 +194,7 @@
 原题六4：只给了 $b>0$，不要擅自增加 $a>0$。\par\vspace{0.3cm}
 自查：独立完成六2后，能否说明 $x=\sqrt{\frac{2}{5}}$ 为什么合法？
 \end{frame}
-\section{专题7：和积共存求最值}
-\begin{frame}[t]{专题7：和积共存求最值}
-\textbf{本节问题：}把和或积整体设元，建立一个变量的不等式。\par\vspace{0.4cm}
-\textbf{先做什么：}令 $s=x+y,p=xy$，将 $p=s+8$ 与 $s^2\ge4p$ 联立。\par\vspace{0.4cm}
-\textbf{必须检查：}求取值范围不仅要证必要性，还要证每个候选值都能由正数实现。
-\end{frame}
+\section{专题7}
 \begin{frame}[t]{专题7 · 第1题}
 若正数 $x,y$ 满足 $x+y+8=xy$，\par（1）求 $xy$ 的取值范围；\par（2）求 $x+y$ 的取值范围。
 \par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
@@ -241,12 +205,12 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$s=8$ 时 $x=y=4$。对任意 $s\ge8$，方程 $z^2-sz+(s+8)=0$ 有两个正实根，故两个范围都可取遍。
 \Answer{（1）$[16,+\infty)$；（2）$[8,+\infty)$}
 \end{frame}
-\section{专题8：恒成立、有解问题}
-\begin{frame}[t]{专题8：恒成立、有解问题}
-\textbf{本节问题：}先翻译量词，再比较最值。\par\vspace{0.4cm}
-\textbf{先做什么：}“每一组合法变量都满足”与“至少一组合法变量满足”有什么区别？\par\vspace{0.4cm}
-\textbf{必须检查：}不能背成恒成立永远找最小值；须看不等号方向，并检查严格不等号与端点可达性。
+\begin{frame}[t]{专题7小结：和积共存求最值}
+\textbf{方法归纳：}把和或积整体设元，建立一个变量的不等式。\par\vspace{0.4cm}
+\textbf{解题切入：}令 $s=x+y,p=xy$，将 $p=s+8$ 与 $s^2\ge4p$ 联立。\par\vspace{0.4cm}
+\textbf{必须检查：}求取值范围不仅要证必要性，还要证每个候选值都能由正数实现。
 \end{frame}
+\section{专题8}
 \begin{frame}[t]{专题8 · 第1题}
 若两个正实数 $x,y$ 满足 $\dfrac1x+\dfrac4y=1$，且不等式 $x+\dfrac y4<m$ 有解，则实数 $m$ 的取值范围是（\quad）。
 \Choices{$m<4$}{$m>4$}{$m<2$}{$m>2$}
@@ -269,6 +233,11 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$u=\dfrac{16}{3},v=\dfrac{8}{3}$，即 $x=\dfrac{13}{3},y=\dfrac{2}{3}$ 可取。恒成立等价于 $2m+1\le\dfrac{9}{8}$，故 $m\le\dfrac{1}{16}$。
 \Answer{A}
 \end{frame}
+\begin{frame}[t]{专题8小结：恒成立、有解问题}
+\textbf{方法归纳：}先翻译量词，再比较最值。\par\vspace{0.4cm}
+\textbf{解题切入：}恒成立要求每一组合法变量都满足；有解只要求至少一组满足。\par\vspace{0.4cm}
+\textbf{必须检查：}不能背成恒成立永远找最小值；须看不等号方向，并检查严格不等号与端点可达性。
+\end{frame}
 \begin{frame}[t]{第3课时收束：范围、量词与端点}
 七1：证明 $s\ge8$ 后，还要说明每个 $s\ge8$ 都能实现。\par\vspace{0.3cm}
 八1：存在 $F<m$，且 $F$ 的最小值4能取到，所以 $m>4$。\par\vspace{0.3cm}
@@ -276,6 +245,31 @@
 口头退出题：八1若把 $<$ 改为 $\le$，参数范围怎样变？
 \pause
 \Answer{$m\ge4$。最小值4能取到，改为非严格不等号后允许端点。}
+\end{frame}
+\section{全课总结}
+\begin{frame}[t]{总结辨析：每句话都对吗？}
+① 对任意实数 $a,b$，有 $a+b\ge2\sqrt{ab}$。\par\vspace{0.3cm}
+② 若 $x>0$，由 $x+\dfrac{4}{x}\ge4$ 可知最小值为4。\par\vspace{0.3cm}
+③ 若 $x>3$，$x+\dfrac{4}{x}$ 的最小值仍为4。
+\pause
+\Answer{①错，例如 $a=b=-1$；②对，在 $x=2$ 取到；③错，等号点不在定义域内。}
+\Analysis{“总不小于某个数”只给出下界；还要找到能取到它的合法取值。}
+\end{frame}
+\begin{frame}[t]{全课总结：基本不等式与适用条件}
+当 $a,b\ge0$ 时，
+\[(\sqrt a-\sqrt b)^2\ge0\quad\Rightarrow\quad a+b\ge2\sqrt{ab}.\]
+等号成立当且仅当 $a=b$。
+\pause
+\par\vspace{0.3cm}若和 $a+b=S$ 为定值，则 $ab\le \dfrac{S^2}{4}$。\par\vspace{0.25cm}
+若积 $ab=P$ 为定值，则 $a+b\ge2\sqrt P$。\par\vspace{0.3cm}
+有倒数时，相应分母必须非零；本专题多数应用使用严格正数。
+\end{frame}
+\begin{frame}[t]{全课总结：最值解答的四步}
+1. \textbf{条件：}本次比较的两个量是什么？是否非负？\par\vspace{0.3cm}
+2. \textbf{结构：}它们的和或积是否为定值？需不需要整理？\par\vspace{0.3cm}
+3. \textbf{求界：}不等式给出的是上界还是下界？\par\vspace{0.3cm}
+4. \textbf{取等：}等号方程与原约束能否同时成立？\par\vspace{0.4cm}
+每道题最后都写：“当……时等号成立，所以最大／最小值为……”。
 \end{frame}
 \begin{frame}[t]{解题检查与课后订正}
 看到题目，先问：\par\vspace{0.25cm}
