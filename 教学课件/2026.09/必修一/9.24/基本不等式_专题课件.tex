@@ -1,6 +1,6 @@
 % !TeX program = xelatex
-% 复制本文件到本次备课目录，修改下列信息，再替换各页占位文字。
-% 本文件是投影课件模板，不是可直接发给学生的试卷。
+% 基于仓库习题课模板：精选14道原题，保留原题编号。
+% 投影课件含答案；不作为无答案学生卷。
 \documentclass[UTF8,10pt,aspectratio=169]{ctexbeamer}
 \usepackage{amsmath,amssymb}
 \usepackage{tikz}
@@ -12,8 +12,8 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}[frame number]
 
-\newcommand{\LessonTitle}{基本不等式：九类题型专题课}
-\newcommand{\LessonSubtitle}{高一数学／四课时专题}
+\newcommand{\LessonTitle}{基本不等式：八类题型精讲}
+\newcommand{\LessonSubtitle}{高一数学／三课时专题}
 \newcommand{\LessonInfo}{条件 · 结构 · 界 · 等号}
 \newcommand{\PageHeading}[1]{\begin{center}{\Large\bfseries #1}\end{center}\vspace{0.2cm}}
 \newcommand{\Answer}[1]{\par\vspace{0.2cm}\textbf{【答案】}#1}
@@ -24,15 +24,15 @@
 \setbeamersize{text margin left=0.7cm,text margin right=0.7cm}
 \newcommand{\Source}[1]{\par\vspace{0.12cm}{\scriptsize\color{gray}原资料：专题 基本不等式，第#1页。题号沿用原资料。}}
 
+
 \begin{document}
-\begin{frame}[t]{基本不等式：九类题型专题课}
+\begin{frame}[t]{基本不等式：八类题型精讲}
 \vspace{0.5cm}
-{\Large 先识别结构，再检查最值能否取到}\par\vspace{0.5cm}
-第1课时：直接法、配凑法与分式\par\vspace{0.2cm}
-第2课时：常数代换、换元与消元\par\vspace{0.2cm}
-第3课时：和积共存、恒成立与有解\par\vspace{0.2cm}
-第4课时：实际应用与综合检验\par\vspace{0.4cm}
-学习目标：能说出参与比较的量，写出有效的界，并找到合法的取等点。
+{\Large 条件 · 结构 · 界 · 等号}\par\vspace{0.5cm}
+第1课时：直接法、配凑法与分式\par\vspace{0.25cm}
+第2课时：常数代换、换元与消元\par\vspace{0.25cm}
+第3课时：和积共存、恒成立与有解\par\vspace{0.5cm}
+学习目标：说清比较量，求出有效的界，验证合法的取等点。
 \end{frame}
 \begin{frame}[t]{课前诊断：每句话都对吗？}
 ① 对任意实数 $a,b$，有 $a+b\ge2\sqrt{ab}$。\par\vspace{0.3cm}
@@ -62,7 +62,6 @@
 \begin{frame}[t]{专题1：直接法求最值}
 \textbf{本节问题：}积为定值求和的下界；和为定值求积的上界。\par\vspace{0.4cm}
 \textbf{先做什么：}圈出参加比较的两个量，计算它们的积或和。\par\vspace{0.4cm}
-\pause
 \textbf{必须检查：}基本不等式的正数条件针对两个表达式，不一定针对原字母；平方和不等式可用于实数。
 \end{frame}
 \begin{frame}[t]{专题1 · 第1题}
@@ -75,42 +74,6 @@
 两个正数是 $3x$ 与 $1/x$，乘积为 $3$。\[3x+\frac1x\ge2\sqrt{3x\cdot\frac1x}=2\sqrt3.\]
 \pause
 \par\vspace{0.2cm}\textbf{取等检查：}$3x=1/x$，即 $x=1/\sqrt3$，最小值为 $2\sqrt3$。
-\Answer{D}
-\end{frame}
-\begin{frame}[t]{专题1 · 第2题}
-已知 $x,y$ 是非零实数，则 $\dfrac{y^2}{x^2}+\dfrac{9x^2}{y^2}$ 的最小值为（\quad）。
-\Choices{$6$}{$12$}{$2$}{$4$}
-\Source{1}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题1 · 第2题解析}
-原变量可以为负，但参与比较的两项均为正，且乘积为 $9$。\[\frac{y^2}{x^2}+\frac{9x^2}{y^2}\ge 2\sqrt9=6.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$y^2=3x^2$，即 $y=\pm\sqrt3x$（$x\ne0$），最小值为 $6$。
-\Answer{A}
-\end{frame}
-\begin{frame}[t]{专题1 · 第3题}
-若 $x>0$，则 $y=(1-x)\left(8-\dfrac2x\right)$ 的最大值是（\quad）。
-\Choices{$-2$}{$0$}{$1$}{$2$}
-\Source{1}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题1 · 第3题解析}
-先展开，不直接比较两个可能为负的因子：\[y=10-\left(8x+\frac2x\right)\le10-2\sqrt{16}=2.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$8x=2/x$，即 $x=1/2$，最大值为 $2$。
-\Answer{D}
-\end{frame}
-\begin{frame}[t]{专题1 · 第4题}
-已知实数 $m,n$ 满足 $m^2+n^2=8$，则 $mn$ 的最大值为（\quad）。
-\Choices{$1$}{$2$}{$3$}{$4$}
-\Source{1}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题1 · 第4题解析}
-这里不必假设 $m,n>0$。由平方的非负性：\[(m-n)^2\ge0\quad\Rightarrow\quad2mn\le m^2+n^2=8.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$m=n=2$ 或 $m=n=-2$，最大值为 $4$。
 \Answer{D}
 \end{frame}
 \begin{frame}[t]{专题1 · 第5题}
@@ -128,7 +91,6 @@
 \begin{frame}[t]{专题2：配凑法求最值}
 \textbf{本节问题：}用分母提示要凑出的整体。\par\vspace{0.4cm}
 \textbf{先做什么：}分母是 $a-1$，分子里的 $4a$ 可以怎样拆？\par\vspace{0.4cm}
-\pause
 \textbf{必须检查：}添减必须保持恒等；原定义域没有正性时，先分情况或改用配方。
 \end{frame}
 \begin{frame}[t]{专题2 · 第1题}
@@ -142,18 +104,6 @@
 \pause
 \par\vspace{0.2cm}\textbf{取等检查：}$4(a-1)=1/(a-1)$，得 $a=3/2>1$，最小值为 $8$。
 \Answer{C}
-\end{frame}
-\begin{frame}[t]{专题2 · 第2题}
-已知 $x\in(0,+\infty)$，则 $y=x+\dfrac12+\dfrac1{2x+1}$ 的最小值为（\quad）。
-\Choices{$\sqrt2$}{$2$}{$2\sqrt2$}{$\sqrt3$}
-\Source{1}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题2 · 第2题解析}
-把 $x+1/2$ 看成 $(2x+1)/2$：\[y=\frac{2x+1}{2}+\frac1{2x+1}\ge2\sqrt{\frac12}=\sqrt2.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$2x+1=\sqrt2$，得 $x=(\sqrt2-1)/2>0$，最小值为 $\sqrt2$。
-\Answer{A}
 \end{frame}
 \begin{frame}[t]{专题2 · 第3题}
 函数 $y=x(3-2x)$ 的最大值为（\quad）。
@@ -171,19 +121,7 @@
 \begin{frame}[t]{专题3：分式求最值}
 \textbf{本节问题：}先除、再配、后比较。\par\vspace{0.4cm}
 \textbf{先做什么：}先把分式写成整式与倒数项之和，再寻找定积结构。\par\vspace{0.4cm}
-\pause
 \textbf{必须检查：}分母负时先设正元；乘负数、取倒数都会影响不等号方向。
-\end{frame}
-\begin{frame}[t]{专题3 · 第1题}
-若 $x>0$，则 $\dfrac{2x^2-3x+1}{x}$ 的最小值是\underline{\hspace{1.5cm}}。
-\Source{2}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题3 · 第1题解析}
-逐项除以 $x$：\[\frac{2x^2-3x+1}{x}=2x+\frac1x-3\ge2\sqrt2-3.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$2x=1/x$，得 $x=1/\sqrt2$，最小值为 $2\sqrt2-3$。
-\Answer{$2\sqrt2-3$}
 \end{frame}
 \begin{frame}[t]{专题3 · 第2题}
 设 $x>1$，则 $\dfrac{x^2-2x+3}{x-1}$ 的最小值为\underline{\hspace{1.5cm}}。
@@ -208,31 +146,16 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$t=4$，即 $x=-5$，最大值为 $-11$。负号把下界变成上界。
 \Answer{A}
 \end{frame}
-\begin{frame}[t]{专题3 · 第4题}
-设正实数 $x,y,z$ 满足 $x^2-xy+y^2-z=0$，则 $\dfrac{xy}{z}$ 的最大值为（\quad）。
-\Choices{$4$}{$2$}{$3$}{$1$}
-\Source{2}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题3 · 第4题解析}
-分母可以直接比较：\[z=x^2-xy+y^2=(x-y)^2+xy\ge xy>0.\]\[\frac{xy}{z}\le1.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$x=y>0$ 且 $z=x^2$，最大值为 $1$。
-\Answer{D}
-\end{frame}
-\begin{frame}[t]{第1课时收束：先整理，再用不等式}
-独立完成：原题一5、二2、三1。\par\vspace{0.35cm}
-每题圈出两个比较量，写清定值与取等点。\par\vspace{0.35cm}
-辨错：为什么不能对 $x<-1$ 时的 $x+1$ 与 $16/(x+1)$ 直接使用正数基本不等式？
-\pause
-\Answer{一5：$1/16$；二2：$\sqrt2$；三1：$2\sqrt2-3$。}
-\Analysis{两个量都为负；应先设正元，并注意整体负号使方向改变。}
+\begin{frame}[t]{第1课时收束：定值与正性}
+回看原题一5：相等的是 $a$ 与 $4b$，不是 $a$ 与 $b$。\par\vspace{0.3cm}
+回看原题二3：原题没有正数限制，配方能覆盖整个定义域。\par\vspace{0.3cm}
+回看原题三3：先设 $t=-x-1>0$，整体负号使下界变成上界。\par\vspace{0.4cm}
+自查：能否在解答中标明比较量、定值、取等点？
 \end{frame}
 \section{专题4：常数代换法求最值}
 \begin{frame}[t]{专题4：常数代换法求最值}
 \textbf{本节问题：}把约束中的1代入目标，制造乘积不变的交叉项。\par\vspace{0.4cm}
 \textbf{先做什么：}若分别估计 $1/x$ 与 $4/y$，两个等号能否同时成立？\par\vspace{0.4cm}
-\pause
 \textbf{必须检查：}乘的是等于1的整体；不能把 x+y=1 理解成 x=y；比例由参与比较的两项相等决定。
 \end{frame}
 \begin{frame}[t]{专题4 · 第1题}
@@ -247,47 +170,10 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$y/x=4x/y$，即 $y=2x$；故 $x=1/3,y=2/3$，最小值为 $9$。
 \Answer{D}
 \end{frame}
-\begin{frame}[t]{专题4 · 第2题}
-已知 $m,n\in(0,+\infty)$，$2m+n=1$，则 $\dfrac nm+\dfrac1n$ 的取值范围是（\quad）。
-\Choices{$(0,+\infty)$}{$[\sqrt2+1,+\infty)$}{$[4,+\infty)$}{$[2\sqrt2+1,+\infty)$}
-\Source{2}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题4 · 第2题解析}
-用 $1=2m+n$ 改写 $1/n$，再设 $t=n/m>0$：\[\frac nm+\frac1n=\frac nm+\frac{2m+n}{n}=1+t+\frac2t\ge1+2\sqrt2.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$t=\sqrt2$ 可取；每个 $t>0$ 对应 $m=1/(t+2),n=t/(t+2)$。$t+2/t$ 取遍 $[2\sqrt2,+\infty)$。
-\Answer{D}
-\end{frame}
-\begin{frame}[t]{专题4 · 第3题}
-已知 $x>0,y>0$，且 $x+2y-2xy=0$，则 $x+2y$ 的最小值是（\quad）。
-\Choices{$4$}{$5$}{$6$}{$7$}
-\Source{3}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题4 · 第3题解析}
-除以 $2xy>0$，得到 $1/x+1/(2y)=1$，因此\[x+2y=(x+2y)\left(\frac1x+\frac1{2y}\right)=2+\frac{x}{2y}+\frac{2y}{x}\ge4.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$x=2y$，联立原式得 $x=2,y=1$，最小值为 $4$。
-\Answer{A}
-\end{frame}
-\begin{frame}[t]{专题4 · 第4题}
-已知 $a>0,b>0$，$a+\dfrac1b=1$，则 $\dfrac1a+b$ 的最小值是（\quad）。
-\Choices{$1$}{$2$}{$4$}{$8$}
-\Source{3}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题4 · 第4题解析}
-乘以等于 $1$ 的整体：\[\frac1a+b=\left(\frac1a+b\right)\left(a+\frac1b\right)=2+ab+\frac1{ab}\ge4.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$ab=1$ 且 $a+1/b=1$，得 $a=1/2,b=2$，最小值为 $4$。
-\Answer{C}
-\end{frame}
 \section{专题5：换元法求最值}
 \begin{frame}[t]{专题5：换元法求最值}
 \textbf{本节问题：}把反复出现的整体命名，并同步改写约束。\par\vspace{0.4cm}
 \textbf{先做什么：}圈出 $1+a$、$1+b$，令它们为 $u,v$，再计算 $u+v$。\par\vspace{0.4cm}
-\pause
 \textbf{必须检查：}新变量范围不能丢；在扩大后的范围求出候选点，必须代回检查原约束。
 \end{frame}
 \begin{frame}[t]{专题5 · 第1题}
@@ -302,46 +188,10 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$u=2v$，得 $u=8/3,v=4/3$；还原 $a=5/3,b=1/3>0$。
 \Answer{C}
 \end{frame}
-\begin{frame}[t]{专题5 · 第2题}
-已知 $0<x<1$，则 $\dfrac1x+\dfrac{16}{1-x}$ 的最小值是（\quad）。
-\Choices{$16$}{$25$}{$27$}{$34$}
-\Source{3}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题5 · 第2题解析}
-把 $x$ 与 $1-x$ 看成两个和为 $1$ 的正数：\[\frac1x+\frac{16}{1-x}=17+\frac{1-x}{x}+\frac{16x}{1-x}\ge17+8=25.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$1-x=4x$，即 $x=1/5\in(0,1)$，最小值为 $25$。
-\Answer{B}
-\end{frame}
-\begin{frame}[t]{专题5 · 第3题}
-已知正实数 $a,b$ 满足 $2a+b=3$，则 $\dfrac{4a^2+1}{2a}+\dfrac{b^2+2b+2}{b+1}$ 的最小值为（\quad）。
-\Choices{$6$}{$5$}{$4$}{$3$}
-\Source{3}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题5 · 第3题解析}
-设 $u=2a>0,v=b+1>1$，则 $u+v=4$，原式为\[u+v+\frac1u+\frac1v=4+\frac4{uv}\ge5,\quad uv\le4.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$u=v=2$，还原 $a=1,b=1$，最小值为 $5$。
-\Answer{B}
-\end{frame}
-\begin{frame}[t]{专题5 · 第4题}
-若 $x>0,y>0$，且 $\dfrac1{x+1}+\dfrac3{x+y}=\dfrac12$，则 $4x+3y$ 的最小值为\underline{\hspace{1.5cm}}。
-\Source{3}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题5 · 第4题解析}
-设 $u=x+1,v=x+y$，则目标为 $u+3v-1$。\[\frac{u+3v}{2}=(u+3v)\left(\frac1u+\frac3v\right)=10+3\left(\frac uv+\frac vu\right)\ge16.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$u=v=8$，还原 $x=7,y=1$，符合原条件，故最小值为 $32-1=31$。
-\Answer{$31$}
-\end{frame}
 \section{专题6：消元法求最值}
 \begin{frame}[t]{专题6：消元法求最值}
 \textbf{本节问题：}用约束减少变量，再找 $t+k/t$ 结构。\par\vspace{0.4cm}
 \textbf{先做什么：}能否用一个变量表示另一个？消元之后允许的范围是什么？\par\vspace{0.4cm}
-\pause
 \textbf{必须检查：}两项分别达到最小时可能不在同一点；原题六4未规定 $a>0$，不得擅加。
 \end{frame}
 \begin{frame}[t]{专题6 · 第1题}
@@ -368,18 +218,6 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$x=\sqrt{2/5}\in(0,\sqrt2)$，$y=4\sqrt{10}/15$，最小值为 $2\sqrt{10}/3$。
 \Answer{A}
 \end{frame}
-\begin{frame}[t]{专题6 · 第3题}
-已知正实数 $m,n$ 满足 $mn=2$，则 $\dfrac1m+\dfrac2n+\dfrac9{2m+n}$ 的最小值为（\quad）。
-\Choices{$2\sqrt2$}{$3$}{$3\sqrt2$}{$4$}
-\Source{4}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题6 · 第3题解析}
-由 $mn=2$ 得 $1/m=n/2,2/n=m$。设 $t=2m+n\ge4$，则\[\text{原式}=\frac t2+\frac9t\ge3\sqrt2.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$t=3\sqrt2\ge4$，可取 $(m,n)=(\sqrt2,\sqrt2)$ 或 $(\sqrt2/2,2\sqrt2)$。
-\Answer{C}
-\end{frame}
 \begin{frame}[t]{专题6 · 第4题}
 设 $b>0,ab+b=1$，则 $a^2b$ 的最小值为（\quad）。
 \Choices{$0$}{$1$}{$2$}{$4$}
@@ -392,19 +230,17 @@
 \par\vspace{0.2cm}\textbf{取等检查：}最小值为 $0$。也可消元得 $a^2b=b+1/b-2\ge0$，在 $b=1$ 取等号。
 \Answer{A}
 \end{frame}
-\begin{frame}[t]{第2课时收束：约束怎样进入目标？}
-原题四1：$x+y=1$，可乘以这个等于1的整体。\par\vspace{0.3cm}
-原题五1：$1+a,1+b$ 反复出现，可整体换元。\par\vspace{0.3cm}
-原题六1：$x+1/y=1$ 可直接表示 $x$，可消元。\par\vspace{0.4cm}
-独立完成原题四4、五3、六2。说明每次变形后变量的范围。
-\pause
-\Answer{四4：4；五3：5；六2：$2\sqrt{10}/3$。}
+\begin{frame}[t]{第2课时收束：把约束用进目标}
+原题四1：乘以等于1的整体。\par\vspace{0.3cm}
+原题五1：换元时同时改写约束和范围。\par\vspace{0.3cm}
+原题六2：用消元后的范围检查等号点。\par\vspace{0.4cm}
+原题六4：只给了 $b>0$，不要擅自增加 $a>0$。\par\vspace{0.3cm}
+自查：独立完成六2后，能否说明 $x=\sqrt{2/5}$ 为什么合法？
 \end{frame}
 \section{专题7：和积共存求最值}
 \begin{frame}[t]{专题7：和积共存求最值}
 \textbf{本节问题：}把和或积整体设元，建立一个变量的不等式。\par\vspace{0.4cm}
 \textbf{先做什么：}令 $s=x+y,p=xy$，将 $p=s+8$ 与 $s^2\ge4p$ 联立。\par\vspace{0.4cm}
-\pause
 \textbf{必须检查：}求取值范围不仅要证必要性，还要证每个候选值都能由正数实现。
 \end{frame}
 \begin{frame}[t]{专题7 · 第1题}
@@ -418,35 +254,10 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$s=8$ 时 $x=y=4$。对任意 $s\ge8$，方程 $z^2-sz+(s+8)=0$ 有两个正实根，故两个范围都可取遍。
 \Answer{（1）$[16,+\infty)$；（2）$[8,+\infty)$}
 \end{frame}
-\begin{frame}[t]{专题7 · 第2题}
-已知 $a\ge b,b>0$ 且 $ab=a+b+15$，则 $ab$ 的最小值是（\quad）。
-\Choices{$3$}{$9$}{$5$}{$25$}
-\Source{4}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题7 · 第2题解析}
-设 $t=\sqrt{ab}>0$，由 $a+b\ge2t$ 得\[t^2=a+b+15\ge2t+15\Rightarrow(t-5)(t+3)\ge0\Rightarrow t\ge5.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$a=b=5$ 符合全部条件，最小值为 $25$。
-\Answer{D}
-\end{frame}
-\begin{frame}[t]{专题7 · 第3题}
-已知正数 $a,b$，且 $b>\dfrac12$，满足 $a+2b=2ab-3$，则（\quad）。
-\Choices{$a\text{ 的取值范围是 }[1,+\infty)$}{$a+\frac1a\text{ 的最小值为 }2$}{$ab\text{ 的最大值为 }\frac92$}{$2a+b\text{ 的最小值为 }\frac{13}2$}
-\Source{4}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题7 · 第3题解析}
-由 $2b(a-1)=a+3$ 知 $a>1$。设 $t=a-1>0$，则 $b=1/2+2/t$，\[2a+b=\frac52+2t+\frac2t\ge\frac{13}2.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$t=1$ 时 $(a,b)=(2,5/2)$。A漏开端点；B的2取不到；C把 $ab$ 的最小值写成最大值。
-\Answer{D}
-\end{frame}
 \section{专题8：恒成立、有解问题}
 \begin{frame}[t]{专题8：恒成立、有解问题}
 \textbf{本节问题：}先翻译量词，再比较最值。\par\vspace{0.4cm}
 \textbf{先做什么：}“每一组合法变量都满足”与“至少一组合法变量满足”有什么区别？\par\vspace{0.4cm}
-\pause
 \textbf{必须检查：}不能背成恒成立永远找最小值；须看不等号方向，并检查严格不等号与端点可达性。
 \end{frame}
 \begin{frame}[t]{专题8 · 第1题}
@@ -473,91 +284,20 @@
 \par\vspace{0.2cm}\textbf{取等检查：}$u=16/3,v=8/3$，即 $x=13/3,y=2/3$ 可取。恒成立等价于 $2m+1\le9/8$，故 $m\le1/16$。
 \Answer{A}
 \end{frame}
-\begin{frame}[t]{专题8 · 第3题}
-已知 $x>0,y>0$，且 $x+2y=1$，若 $\dfrac2x+\dfrac1y\ge m^2+7m$ 恒成立，则实数 $m$ 的取值范围是（\quad）。
-\Choices{$\{m\mid-8\le m\le1\}$}{$\{m\mid m\le-8\text{ 或 }m\ge1\}$}{$\{m\mid-1\le m\le8\}$}{$\{m\mid m\le-1\text{ 或 }m\ge8\}$}
-\Source{5}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题8 · 第3题解析}
-乘以 $x+2y=1$：\[\frac2x+\frac1y=4+\frac{4y}x+\frac xy\ge8.\]在 $x=1/2,y=1/4$ 时取到8。
+\begin{frame}[t]{第3课时收束：范围、量词与端点}
+七1：证明 $s\ge8$ 后，还要说明每个 $s\ge8$ 都能实现。\par\vspace{0.3cm}
+八1：存在 $F<m$，且 $F$ 的最小值4能取到，所以 $m>4$。\par\vspace{0.3cm}
+八2：任意合法变量都满足 $F\ge2m+1$，故 $2m+1\le9/8$。\par\vspace{0.4cm}
+口头退出题：八1若把 $<$ 改为 $\le$，参数范围怎样变？
 \pause
-\par\vspace{0.2cm}\textbf{取等检查：}恒成立等价于 $m^2+7m\le8$，即 $(m+8)(m-1)\le0$，故 $m\in[-8,1]$。
-\Answer{A}
-\end{frame}
-\begin{frame}[t]{第3课时收束：量词与端点}
-假设 $F$ 的最小值 $L$ 能取到：
-\[\forall\,\text{合法变量},\ F\ge k\quad\Longleftrightarrow\quad k\le L.\]
-\[\exists\,\text{合法变量},\ F<k\quad\Longleftrightarrow\quad k>L.\]
-\pause
-独立完成原题七2、八3。\par\vspace{0.3cm}
-若把原题八1的 $<$ 改成 $\le$，参数范围如何变化？
-\Answer{七2：25；八3：$[-8,1]$；改为 $\le$ 后为 $m\ge4$。}
-\end{frame}
-\section{专题9：利用基本不等式解决实际问题}
-\begin{frame}[t]{专题9：利用基本不等式解决实际问题}
-\textbf{本节问题：}先建立目标量及约束，再求最值并回到情境。\par\vspace{0.4cm}
-\textbf{先做什么：}先明确要求的量，再写出平衡关系、变量条件或最后一列车的行程。\par\vspace{0.4cm}
-\pause
-\textbf{必须检查：}不等臂排除等号；分式分母不能为0；17列车只有16个间隔。
-\end{frame}
-\begin{frame}[t]{专题9 · 第1题}
-一家商店用两边臂不等长的天平称黄金。一位顾客购买 $10\,\mathrm g$ 黄金：先将 $5\,\mathrm g$ 砝码放在左盘，黄金放在右盘，平衡后交给顾客；再将 $5\,\mathrm g$ 砝码放在右盘，另一份黄金放在左盘，平衡后交给顾客。商店在销售后（\quad）。
-\Choices{$\text{黄金少给了}$}{$\text{黄金刚好10g}$}{$\text{黄金多给了}$}{$\text{与砝码放置顺序有关}$}
-\Source{5}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题9 · 第1题解析}
-设两臂长 $L,R>0$ 且 $L\ne R$，两次黄金质量为 $M_1,M_2$。由平衡条件\[5L=M_1R,\quad M_2L=5R,\quad M_1+M_2=5\left(\frac LR+\frac RL\right)>10.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}等号要求 $L=R$，被“不等臂”排除，因此严格多给了黄金。
-\Answer{C}
-\end{frame}
-\begin{frame}[t]{专题9 · 第2题}
-某类昆虫在水平方向上速度为 $v$（单位：米/秒）时，跳跃高度 $H$（单位：米）满足 $v^2=\dfrac{4H}{1-Hv^2}$，则该类昆虫的最大跳跃高度为（\quad）。
-\Choices{$0.25\text{ 米}$}{$0.5\text{ 米}$}{$0.75\text{ 米}$}{$1\text{ 米}$}
-\Source{5}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题9 · 第2题解析}
-先整理 $H=v^2/(v^4+4)$。$v=0$ 时 $H=0$；$v>0$ 时\[H=\frac1{v^2+4/v^2}\le\frac14.\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$v=\sqrt2,H=1/4$，原分母 $1-Hv^2=1/2\ne0$，最大高度为 $0.25$ 米。
-\Answer{A}
-\end{frame}
-\begin{frame}[t]{专题9 · 第3题}
-一批货物随 $17$ 列货车从 A 市以 $v\,\mathrm{km/h}$ 匀速直达 B 市。两地铁路线长 $400\,\mathrm{km}$，相邻两列货车间距不得小于 $\left(\dfrac v{20}\right)^2\,\mathrm{km}$（货车长度忽略不计）。这批货物全部运到 B 市最快需要（\quad）。
-\Choices{$2\text{ 小时}$}{$4\text{ 小时}$}{$6\text{ 小时}$}{$8\text{ 小时}$}
-\Source{5}
-\par\vspace{0.3cm}\textbf{先独立尝试：}标出条件，想一想第一步怎样整理。
-\end{frame}
-\begin{frame}[t]{专题9 · 第3题解析}
-从第一列出发到最后一列到达计时，取允许的最小间距。17列有16个间隔：\[T=\frac{400+16(v/20)^2}{v}=\frac{400}{v}+\frac v{25}\ge8\quad(v>0).\]
-\pause
-\par\vspace{0.2cm}\textbf{取等检查：}$v=100\,\mathrm{km/h}$，间距25千米，发车总间隔4小时，行程4小时，共8小时。
-\Answer{D}
-\end{frame}
-\begin{frame}[t]{综合检验：先判定方法，再计算}
-① $t>0$，求 $2t+8/t$ 的最小值。（新增基础题）\par\vspace{0.3cm}
-② $a,b>0,a+b=3$，求 $1/a+4/b$ 的最小值。（新增迁移题）\par\vspace{0.3cm}
-③ 对所有 $t>0$，$2t+8/t\ge k$ 恒成立，求 $k$ 的范围。\par\vspace{0.3cm}
-④ 判断：“17列车的队列长度是17个间距。”说明理由。
-\pause
-\Answer{①8，$t=2$；②3，$a=1,b=2$；③$k\le8$；④错，只有16个间隔。}
-\end{frame}
-\begin{frame}[t]{综合检验解析与自查}
-① $2t+8/t\ge2\sqrt{16}=8$，在 $t=2$ 取等号。\par\vspace{0.3cm}
-② $1/a+4/b=\frac13(1/a+4/b)(a+b)$\[=\frac13\left(5+\frac ba+\frac{4a}b\right)\ge3.\]
-取等要求 $b=2a$，与 $a+b=3$ 联立得 $a=1,b=2$。\par\vspace{0.25cm}
-③ 对任意 $t$ 成立，必须让 $k$ 不超过已经取到的最小值8。\par\vspace{0.25cm}
-④ 从第一列到第十七列，共有 $17-1=16$ 个相邻间隔。
+\Answer{$m\ge4$。最小值4能取到，改为非严格不等号后允许端点。}
 \end{frame}
 \begin{frame}[t]{解题检查与课后订正}
 看到题目，先问：\par\vspace{0.25cm}
 \textbf{哪些量为正？怎样把约束用进来？}\par\vspace{0.3cm}
 写出不等式后，再问：\par\vspace{0.25cm}
 \textbf{我求的是界还是最值？等号能否真的取到？}\par\vspace{0.4cm}
-课后：按自己的错误类型，从对应专题各补做1题。\par\vspace{0.3cm}
+课后：订正当堂独立完成的一5、六2、八2，补全缺失的推理。\par\vspace{0.3cm}
 订正必须写出原来漏掉的条件或推理，不只抄最终答案。
 \end{frame}
 \end{document}
