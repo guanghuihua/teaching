@@ -1,0 +1,46 @@
+% 来源：用户于2026年10月6日提供的题目；分母按3a+b、2a+4b理解。
+\documentclass[UTF8,a4paper,12pt,fontset=none]{ctexart}
+% 使用嵌入式 TrueType 中文字体，避免部分阅读器缺少 Adobe-GB1 映射。
+\setCJKmainfont{SimSun}[BoldFont=SimHei]
+\setCJKsansfont{SimHei}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\begin{document}
+\begin{center}
+  {\Large\bfseries 倒数和约束下的最值问题}
+\end{center}
+\medskip
+\textbf{题目}\quad 若 $a,b$ 是正实数，且
+\[
+  \frac{1}{3a+b}+\frac{1}{2a+4b}=1,
+\]
+则 $a+b$ 的最小值为\underline{\hspace{2cm}}。
+
+\bigskip
+\textbf{答案}\quad $\displaystyle\boxed{\frac45}$。
+
+\bigskip
+\textbf{解析}\quad 令 $x=3a+b$，$y=2a+4b$，则 $x,y>0$，且
+\[
+  \frac1x+\frac1y=1.
+\]
+由基本不等式，
+\[
+  5(a+b)=x+y
+  =(x+y)\left(\frac1x+\frac1y\right)
+  =2+\frac{x}{y}+\frac{y}{x}
+  \ge 4.
+\]
+因此 $a+b\ge\dfrac45$。
+
+当且仅当 $x=y$，即 $3a+b=2a+4b$，也就是 $a=3b$ 时取等号。
+代入原条件得
+\[
+  \frac{1}{10b}+\frac{1}{10b}=1,
+  \qquad b=\frac15,\quad a=\frac35.
+\]
+此时 $a,b$ 均为正实数，满足原条件，且 $a+b=\dfrac45$。
+故所求最小值为 $\boxed{\dfrac45}$。
+\end{document}
