@@ -2,9 +2,17 @@
 % 基于用户指定的高中园模板。请从本目录编译。
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
-\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+% 教材风格：宋体正文与 XITS 数学字体。字体随 TeX Live 提供。
+\setCJKmainfont{FandolSong-Regular}[BoldFont=FandolSong-Bold]
+\setCJKsansfont{FandolSong-Regular}[BoldFont=FandolSong-Bold]
 \usetheme{GaoZhongYuan}
 \usepackage{amsmath,amssymb,booktabs,adjustbox}
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\setmainfont{XITS}
+\setsansfont{XITS}
+\usepackage{unicode-math}
+\setmathfont{XITS Math}
 \setbeamerfont{normal text}{size=\large}
 \newcommand{\R}{\mathbb R}
 \newcommand{\Z}{\mathbb Z}
