@@ -1,0 +1,29 @@
+% !TeX program = xelatex
+% 由用户指定习题课模板复制；题目与解析分文件保存。
+% 本文件是投影课件模板，不是可直接发给学生的试卷。
+\ifdefined\LectureHandout
+\documentclass[UTF8,10pt,aspectratio=169,handout]{ctexbeamer}
+\else
+\documentclass[UTF8,10pt,aspectratio=169]{ctexbeamer}
+\fi
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta,positioning,shapes.geometric}
+\usepackage{newtxtext,newtxmath}
+\usetheme{default}
+\usecolortheme{default}
+\usefonttheme{serif}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\newcommand{\LessonTitle}{广州二中月考（一）：试卷讲评}
+\newcommand{\LessonSubtitle}{2026学年第一学期 · 高一数学}
+\newcommand{\LessonInfo}{原卷19题\qquad 满分150分\qquad 考试用时120分钟}
+\newcommand{\PageHeading}[1]{\begin{center}{\Large\bfseries #1}\end{center}\vspace{0.2cm}}
+\newcommand{\Answer}[1]{\par\vspace{0.2cm}\textbf{【答案】}#1}
+\newcommand{\Analysis}[1]{\par\vspace{0.2cm}\textbf{【详解】}#1}
+\newcommand{\Choices}[4]{\par\vspace{0.2cm}\begin{tabular}{@{}p{0.47\textwidth}p{0.47\textwidth}@{}}A. #1 & B. #2 \\[0.15cm] C. #3 & D. #4\end{tabular}}
+
+\begin{document}
+\input{题目与解析.tex}
+\end{document}
