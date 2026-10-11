@@ -1,0 +1,498 @@
+% 题目逐项对照同目录上一级四张原卷图片。解析为独立推导，非原卷官方答案。
+\begin{frame}
+\begin{center}
+{\Large\bfseries \LessonTitle}\par\vspace{5mm}
+{\large \LessonSubtitle}\par\vspace{4mm}
+\LessonInfo
+\end{center}
+\vspace{4mm}
+\textbf{学习目标：}
+\begin{enumerate}
+\item 从题干中识别定义域、量词、取等条件与空集情形。
+\item 掌握基本不等式、参数分类及分段函数分析方法。
+\item 用第15、18、19题检验分类讨论的完整性。
+\end{enumerate}
+\end{frame}
+
+% Q1：集合互异性／分支代入／未排除重复元素／基础／说明每个候选值取舍。
+\begin{frame}
+\PageHeading{第1题\quad 集合与元素}
+若 $a+2\in\{1,3,a^2\}$，则 $a$ 的值为（\quad）。
+\Choices{$-1$ 或 $1$ 或 $2$}{$-1$ 或 $1$}{$-1$ 或 $2$}{$2$}
+\pause
+\Answer{D（按中学列举法的元素互异性约定）。}
+\Analysis{分别令 $a+2=1$、$a+2=3$、$a+2=a^2$，得到候选值 $-1,1,2$。
+当 $a=\pm1$ 时，$a^2=1$，与已列出的元素重复；故取 $a=2$。}
+\par\vspace{2mm}
+\textbf{表述辨析：}若允许集合重复列举后自动去重，按字面应选A。本题答案依赖上述教材约定。
+\end{frame}
+
+% Q2：全称命题否定／量词与关系同时改变／只否定结论／基础／准确写出否定。
+\begin{frame}
+\PageHeading{第2题\quad 全称命题的否定}
+已知命题 $p:\forall x\in\mathbb R,\ x^2+2x+2>0$，则 $\neg p$ 为（\quad）。
+\Choices{$\forall x\in\mathbb R,\ x^2+2x+2<0$}{$\exists x\in\mathbb R,\ x^2+2x+2\le0$}{$\exists x\in\mathbb R,\ x^2+2x+2<0$}{$\forall x\in\mathbb R,\ x^2+2x+2\ge0$}
+\pause
+\Answer{B。}
+\Analysis{否定“对任意 $x$ 都成立”，应改为“存在 $x$ 不成立”；$>0$ 的否定是 $\le0$。}
+\end{frame}
+
+% Q3：整数解计数／平移后对称计数／端点误计／基础／列出端点和总数。
+\begin{frame}
+\PageHeading{第3题\quad 整数集合的元素个数}
+若集合 $A=\{x\in\mathbb Z\mid |x-1|<a,\ a\in\mathbb Z\}$ 内的元素个数为 $2027$，则 $a=$（\quad）。
+\Choices{$1012$}{$1013$}{$1014$}{$1015$}
+\pause
+\Answer{C。}
+\Analysis{集合非空，所以 $a>0$。由 $1-a<x<1+a$，整数 $x$ 依次为
+\[2-a,\ 3-a,\ldots,\ a.\]
+元素个数为 $a-(2-a)+1=2a-1=2027$，解得 $a=1014$。}
+\end{frame}
+
+% Q4：复合表达式定义域／取交集／分母根号端点／基础／正确排除-2。
+\begin{frame}
+\PageHeading{第4题\quad 函数的定义域}
+已知函数 $y=f(x)$ 的定义域是 $[-3,3]$，则 $y=\dfrac{f(x)}{\sqrt{x+2}}$ 的定义域是（\quad）。
+\Choices{$(-\infty,3]$}{$[-2,3]$}{$(-2,3]$}{$[-3,3]$}
+\pause
+\Answer{C。}
+\Analysis{既要有 $x\in[-3,3]$，又要有 $x+2>0$，所以
+\[x\in[-3,3]\cap(-2,+\infty)=(-2,3].\]}
+\end{frame}
+
+% Q5：恒成立与最值／分离参数、基本不等式／把最大值求成最小值／中等／核对x=2取等。
+\begin{frame}
+\PageHeading{第5题\quad 不等式恒成立}
+不等式 $x^2+ax+4\ge0$ 对 $\forall x\in[1,3]$ 恒成立，则 $a$ 的最小值是（\quad）。
+\Choices{$-5$}{$-\dfrac{13}{3}$}{$-4$}{$-3$}
+\pause
+\Answer{C。}
+\Analysis{因为 $x>0$，原式等价于 $a\ge-x-4/x$。由
+\[x+\frac4x\ge4\quad(\text{当且仅当 }x=2\text{ 时取等}),\]
+且 $2\in[1,3]$，得 $\max(-x-4/x)=-4$，所以 $a\ge-4$。}
+\end{frame}
+
+% Q6：不等式性质／作差与反例／遗漏零及符号条件／基础／给出三个反例。
+\begin{frame}
+\PageHeading{第6题\quad 不等式的性质}
+下列命题中正确的是（\quad）。
+\Choices{若 $a>b$，则 $ac>bc$}{若 $\dfrac1a<\dfrac1b$，则 $a>b>0$}{若 $a>b>0$，则 $a|c|>b|c|$}{若 $x>y>0$，则 $x+\dfrac1y>y+\dfrac1x$}
+\pause
+\Answer{D。}
+\Analysis{A：取 $c=0$ 即不成立。B：取 $a=-1,b=1$ 即不成立。
+C：取 $c=0$ 即不成立。对于D，
+\[\left(x+\frac1y\right)-\left(y+\frac1x\right)=(x-y)\left(1+\frac1{xy}\right)>0.\]}
+\end{frame}
+
+% Q7：二次不等式与韦达定理／由根确定系数／开口符号／中等／还原原二次式。
+\begin{frame}
+\PageHeading{第7题\quad 由解集反求系数}
+已知不等式 $ax^2-bx-1>0$ 的解集是 $\left\{x\mid-\dfrac12<x<-\dfrac13\right\}$，则不等式 $x^2-bx-a<0$ 的解集是（\quad）。
+\Choices{$\{x\mid2<x<3\}$}{$\{x\mid x<2\text{ 或 }x>3\}$}{$\left\{x\mid\dfrac13<x<\dfrac12\right\}$}{$\left\{x\mid x<\dfrac13\text{ 或 }x>\dfrac12\right\}$}
+\pause
+\Answer{A。}
+\Analysis{由两根之积 $-1/a=1/6$，得 $a=-6$；由两根之和 $b/a=-5/6$，得 $b=5$。
+所以 $x^2-5x+6=(x-2)(x-3)<0$，解得 $2<x<3$。}
+\end{frame}
+
+% Q8：约束代换与最值／凑成u/(u²+2)／未检验等号可达／较难／构造取等的x,y。
+\begin{frame}
+\PageHeading{第8题\quad 约束条件下的最值}
+若实数 $x,y$ 满足 $2x^2+xy-y^2=1$，则 $\dfrac{x-2y}{5x^2-2xy+2y^2}$ 的最大值为（\quad）。
+\Choices{$\dfrac{\sqrt2}{4}$}{$\dfrac{\sqrt2}{2}$}{$1$}{$\sqrt2$}
+\pause
+\Answer{A。}
+\Analysis{令 $u=x-2y$，则
+\[5x^2-2xy+2y^2=(x-2y)^2+2(2x^2+xy-y^2)=u^2+2.\]
+由 $(u-\sqrt2)^2\ge0$，得 $\dfrac{u}{u^2+2}\le\dfrac{\sqrt2}{4}$。}
+\end{frame}
+
+\begin{frame}
+\PageHeading{第8题续\quad 最大值能否取到}
+取等要求 $u=x-2y=\sqrt2$。还需要与原约束同时成立。
+由恒等式
+\[4(2x^2+xy-y^2)=9x^2-(x-2y)^2,\]
+可令
+\[x=\frac{\sqrt6}{3},\qquad y=\frac12\left(\frac{\sqrt6}{3}-\sqrt2\right).\]
+此时 $9x^2-u^2=6-2=4$，满足原约束，所以最大值确实可达。
+\par\vspace{3mm}
+\textbf{方法提醒：}由不等式得到上界后，还要核查取等条件与原条件相容。
+\end{frame}
+
+% Q9：函数定义／逐项检查存在唯一与陪域／误要求满射／基础／解释C无需取到6。
+\begin{frame}
+\PageHeading{第9题\quad 函数的定义（多选）}
+下列对应为集合 $B$ 到 $C$ 的函数的是（\quad）。
+\par\vspace{3mm}
+A. $B=[0,+\infty),\ C=\mathbb R,\ x\in B,\ f:x\mapsto y,\ y^2=x$\par\vspace{2mm}
+B. $B=\mathbb R,\ C=\mathbb R,\ x\in B,\ f:x\mapsto y,\ y=|x|$\par\vspace{2mm}
+C. $B=\{2,4,5\},\ C=\{4,6,8,10\},\ x\in B,\ f:x\mapsto2x$\par\vspace{2mm}
+D. $B=\mathbb Z,\ C=\mathbb Q,\ x\in B,\ f:x\mapsto y,\ y=5x$
+\pause
+\Answer{BCD。}
+\Analysis{A中正数 $x$ 对应两个实数 $y$，不唯一。B、C、D均满足每个输入有唯一输出且输出属于 $C$；不要求 $C$ 中每个元素都被取到。}
+\end{frame}
+
+% Q10：约束最值／配凑及柯西不等式／把下确界当最小值／中等／逐项写出取等点。
+\begin{frame}
+\PageHeading{第10题\quad 最值与取等条件（多选）}
+已知 $x>0,\ y>0,\ x+2y=4$，则下列正确的是（\quad）。
+\Choices{$xy$ 的最大值为 $2$}{$x^2+y^2$ 的最小值为 $\dfrac{16}{5}$}{$\dfrac1x+\dfrac2y$ 的最小值为 $\dfrac94$}{$\dfrac1{x+1}+\dfrac8y$ 的最小值为 $5$}
+\pause
+\Answer{ABC。}
+\Analysis{先求界，再检查等号是否能在 $x>0,y>0$ 的条件下成立。D给出的数是下确界，不能取到。}
+\end{frame}
+
+\begin{frame}
+\PageHeading{第10题续\quad A、B、C的取等点}
+\textbf{A：}$4=x+2y\ge2\sqrt{2xy}$，所以 $xy\le2$。\par
+当 $x=2y$，即 $(x,y)=(2,1)$ 时取等。
+\par\vspace{3mm}
+\textbf{B：}$5(x^2+y^2)-(x+2y)^2=(2x-y)^2\ge0$。\par
+所以 $x^2+y^2\ge16/5$，当 $(x,y)=(4/5,8/5)$ 时取等。
+\par\vspace{3mm}
+\textbf{C：}
+\[4\left(\frac1x+\frac2y\right)=(x+2y)\left(\frac1x+\frac2y\right)
+=5+2\left(\frac xy+\frac yx\right)\ge9.\]
+当 $x=y=4/3$ 时取等，故最小值为 $9/4$。
+\end{frame}
+
+\begin{frame}
+\PageHeading{第10题续\quad D为什么不成立}
+令 $u=x+1>1$，$v=2y>0$，则 $u+v=5$，且
+\[\frac1{x+1}+\frac8y=\frac1u+\frac{16}{v}.\]
+利用
+\[(u+v)\left(\frac1u+\frac{16}{v}\right)-25
+=\frac{(4u-v)^2}{uv}\ge0,\]
+可得原式 $\ge5$。但等号要求 $v=4u$，联立 $u+v=5$ 得 $u=1$，即 $x=0$，不满足题设。
+\pause
+\par\vspace{3mm}
+当 $x$ 为趋近 $0$ 的正数时，原式趋近 $5$；因此下确界为 $5$，\textbf{没有最小值}。
+\end{frame}
+
+% Q11：新定义集合／容斥、端点计数、构造／混淆A-B和A/B／较难／给出C达到18的实例。
+\begin{frame}
+\PageHeading{第11题\quad 新定义集合（多选）}
+非空集合 $A,B$ 满足 $A\cup B=\{1,2,\ldots,10\}$，且 $A\cap B$ 中元素个数不大于 $1$。定义
+\[A\pm B=\{x\pm y\mid x\in A,y\in B\},\qquad
+\frac AB=\{x\mid x\in A,x\notin B\},\]
+则（\quad）。
+\Choices{集合 $A,B$ 中元素个数之和为 $10$ 或 $11$}{集合 $A-B$ 中元素个数最多为 $1$}{集合 $A+B$ 中元素个数最多为 $18$}{集合 $\dfrac AB$ 中元素个数最多为 $9$}
+\pause
+\Answer{ACD。}
+\end{frame}
+
+\begin{frame}
+\PageHeading{第11题续\quad A、B、D的判断}
+\textbf{A：}由容斥公式，
+\[|A|+|B|=|A\cup B|+|A\cap B|=10\text{ 或 }11.\]
+\textbf{B：}取 $A=\{1,2,\ldots,9\}$，$B=\{10\}$，则
+\[A-B=\{-9,-8,\ldots,-1\},\]
+有9个元素，因此B错误。
+\par\vspace{2mm}
+\textbf{D：}因为 $B\ne\varnothing$，至少有一个全集元素不属于 $A/B$，所以 $|A/B|\le9$。上面的例子能取到9。
+\par\vspace{2mm}
+\textbf{注意：}本题的 $A-B$ 是“差组成的集合”，$A/B$ 才是通常的集合差。
+\end{frame}
+
+\begin{frame}
+\PageHeading{第11题续\quad 和集最多18个元素}
+所有可能的和都在 $\{2,3,\ldots,20\}$ 中，共19个候选值。
+若和为2，则 $1\in A\cap B$；若和为20，则 $10\in A\cap B$。
+\par\vspace{2mm}
+交集元素个数不大于1，所以2和20不能同时出现，故
+\[|A+B|\le18.\]
+\pause
+取 $A=\{1,2,\ldots,9\}$，$B=\{1,10\}$，满足题设，且
+\[A+B=\{2,3,\ldots,10\}\cup\{11,12,\ldots,19\},\]
+恰有18个元素，因此C正确。
+\end{frame}
+
+% Q12：解析式与换元／t=1-x／遗漏定义域／基础／回代原式。
+\begin{frame}
+\PageHeading{第12题\quad 换元求解析式}
+已知函数 $f(1-x)=\dfrac{1-x^2}{x^2}$（$x\ne0$），则 $f(x)=$\underline{\hspace{3cm}}。
+\pause
+\Answer{$\displaystyle f(x)=\frac1{(1-x)^2}-1\quad(x\ne1)$。}
+\Analysis{令 $t=1-x$，则 $x=1-t$，且 $t\ne1$。
+\[f(t)=\frac{1-(1-t)^2}{(1-t)^2}=\frac1{(1-t)^2}-1.\]
+把 $t$ 换写成 $x$ 即得。}
+\end{frame}
+
+% Q13：集合与乘积结构／四个三元乘积相乘／漏掉非零条件／中等／四组乘积回验。
+\begin{frame}
+\PageHeading{第13题\quad 三元子集的乘积}
+若集合 $A=\{a_1,a_2,a_3,a_4\}$ 的所有三元子集的三数之积构成集合 $B=\{24,30,40,60\}$，则 $A=$\underline{\hspace{3cm}}。
+\pause
+\Answer{$\{2,3,4,5\}$。}
+\Analysis{令 $P=a_1a_2a_3a_4$。所有三元乘积均非零，故各 $a_i\ne0$。
+四个三元乘积相乘，得到
+\[P^3=24\times30\times40\times60=120^3,\quad P=120.\]
+于是 $A=\{120/24,120/30,120/40,120/60\}=\{2,3,4,5\}$。}
+\end{frame}
+
+% Q14：量词与区间振幅／顶点居中、端点中点恒等式／把存在改任意／较难／证明必要且充分。
+\begin{frame}
+\PageHeading{第14题\quad 任意单位区间上的函数变化}
+已知函数 $f(x)=ax^2+x+1$（$a>0$）。定义：闭区间 $[x_1,x_2]$（$x_1<x_2$）的长度为 $x_2-x_1$。
+\par\vspace{3mm}
+若对于任意长度为1的闭区间 $D$，存在 $s,t\in D$，使 $|f(s)-f(t)|\ge1$，求实数 $a$ 的最小值\underline{\hspace{2cm}}。
+\pause
+\Answer{$4$。}
+\Analysis{先选以抛物线顶点为中点的区间得到必要条件，再证明任意单位区间都满足要求。}
+\end{frame}
+
+\begin{frame}
+\PageHeading{第14题续\quad 必要性与充分性}
+\textbf{必要性：}设顶点横坐标 $h=-1/(2a)$。在 $[h-1/2,h+1/2]$ 上，函数最大值与最小值之差为 $a/4$。
+所以必须有 $a/4\ge1$，即 $a\ge4$。
+\pause
+\par\vspace{3mm}
+\textbf{充分性：}任取 $D=[u,u+1]$，令 $v=u+1/2$。直接展开得
+\[\frac{f(u)+f(u+1)}2-f(v)=\frac a4.\]
+两端点中至少一个函数值不小于平均值。取该端点为 $s$，取 $t=v$，便有
+\[|f(s)-f(t)|\ge\frac a4\ge1.\]
+因此 $a\ge4$ 充分且必要，最小值为4。
+\end{frame}
+
+% Q15：集合运算与充分不必要／真包含及空集分类／遗漏a<0／中等／给出完整参数区间。
+\begin{frame}
+\PageHeading{第15题\quad 集合运算与条件关系}
+设 $\mathbb R$ 为全集，集合
+\[A=\{x\mid a+1\le x\le2a+1\},\qquad
+B=\{y\mid y=x^2+2x-2,\ 0\le x\le2\}.\]
+（1）若 $a=3$，求 $A\cap B$，$(\complement_{\mathbb R}A)\cap B$；\par
+（2）若“$x\in A$”是“$x\in B$”的充分不必要条件，求实数 $a$ 的取值范围。
+\pause
+\Answer{（1）$[4,6]$，$[-2,4)$；\quad（2）$(-\infty,5/2]$。}
+\end{frame}
+
+\begin{frame}
+\PageHeading{第15题续\quad 真包含与空集}
+因为 $y=(x+1)^2-3$ 在 $[0,2]$ 上递增，所以 $B=[-2,6]$。
+\par\vspace{2mm}
+（1）$a=3$ 时，$A=[4,7]$，故 $A\cap B=[4,6]$，$(\complement_{\mathbb R}A)\cap B=[-2,4)$。
+\pause
+\par\vspace{3mm}
+（2）题意为 $A\subsetneq B$。
+\begin{itemize}
+\item 若 $a<0$，则 $a+1>2a+1$，$A=\varnothing$，满足真包含。
+\item 若 $a\ge0$，则需 $a+1\ge-2$ 且 $2a+1\le6$，得 $0\le a\le5/2$。这些区间均不等于 $B$。
+\end{itemize}
+综合得 $a\le5/2$。\textbf{题设未规定 $A$ 非空，不能漏掉空集。}
+\end{frame}
+
+% Q16：单调性定义／作差因式分解与自变量范围／只比较2t和1-t／中等／证明严格性并取交集。
+\begin{frame}
+\PageHeading{第16题\quad 单调性与函数不等式}
+已知函数 $f(x)=\dfrac{ax-b}{1+x^2}$ 是定义在 $[-1,1]$ 上的函数，$f(0)=0$ 且 $f(1)=-1$。
+\par\vspace{3mm}
+（1）求出 $a,b$ 的值并写出函数 $f(x)$ 的解析式；\par
+（2）用定义法证明 $f(x)$ 在 $[-1,1]$ 上是减函数；\par
+（3）若不等式 $f(2t)>f(1-t)$ 成立，求实数 $t$ 的取值范围。
+\pause
+\Answer{（1）$a=-2,b=0$，$f(x)=-\dfrac{2x}{1+x^2}$（$x\in[-1,1]$）；\par
+（2）证明见下一页；\quad（3）$t\in[0,1/3)$。}
+\end{frame}
+
+\begin{frame}
+\PageHeading{第16题续\quad 用定义法证明递减}
+由 $f(0)=-b=0$，得 $b=0$；由 $f(1)=a/2=-1$，得 $a=-2$。
+\par\vspace{3mm}
+任取 $-1\le x_1<x_2\le1$，有
+\begin{align*}
+f(x_1)-f(x_2)
+&=\frac{-2x_1(1+x_2^2)+2x_2(1+x_1^2)}{(1+x_1^2)(1+x_2^2)}\\
+&=\frac{2(x_2-x_1)(1-x_1x_2)}{(1+x_1^2)(1+x_2^2)}.
+\end{align*}
+其中 $x_2-x_1>0$，且 $x_1x_2<1$（等于1只能在两数同时为1或同时为 $-1$ 时发生，与 $x_1<x_2$ 矛盾）。
+所以 $f(x_1)>f(x_2)$，$f$ 在 $[-1,1]$ 上为减函数。
+\end{frame}
+
+\begin{frame}
+\PageHeading{第16题续\quad 先检查定义域}
+由两个函数值均有意义，得
+\[-1\le2t\le1,\qquad -1\le1-t\le1,\]
+即 $t\in[-1/2,1/2]\cap[0,2]=[0,1/2]$。
+\pause
+因为 $f$ 在定义域上严格递减，所以
+\[f(2t)>f(1-t)\iff2t<1-t\iff t<\frac13.\]
+取交集，得 $\boxed{t\in[0,1/3)}$。
+\par\vspace{3mm}
+\textbf{易错点：}只由单调性得到 $t<1/3$，会把函数值无意义的负数 $t$ 包含进来。
+\end{frame}
+
+% Q17：实际函数模型／收入减生产成本再减促销费／遗漏m费用／中等／核对单位与取等点。
+\begin{frame}
+\PageHeading{第17题\quad 促销费用与利润}
+某厂家拟在2025年举行某产品的促销活动。经调查测算，该产品的年销售量（即该厂的年产量）$x$ 万件与年促销费用 $m$ 万元（$m\ge0$）满足
+\[x=4-\frac{k}{m+1}\quad(k\text{ 为常数}).\]
+如果不搞促销活动，那么该产品的年销售量只能是3万件。已知生产该产品的固定投入为9万元，每生产1万件该产品需要再投入18万元。
+\par\vspace{2mm}
+厂家将每件产品的销售价格定为每件产品年平均成本（此处按 $\dfrac{9+18x}{x}$ 元计算）的1.5倍。
+\par\vspace{2mm}
+（1）将2025年该产品的利润 $y$ 万元表示为年促销费用 $m$ 万元的函数；\par
+（2）该厂2025年的促销费用投入多少万元时，厂家的利润最大？最大利润是多少？
+\end{frame}
+
+\begin{frame}
+\PageHeading{第17题续\quad 建模与求最值}
+不促销时 $m=0,x=3$，故 $3=4-k$，得 $k=1$。
+销售收入为 $1.5(9+18x)$ 万元，所以利润为
+\begin{align*}
+y&=1.5(9+18x)-(9+18x)-m\\
+&=\frac92+9x-m
+=\frac{81}{2}-m-\frac9{m+1},\qquad m\ge0.
+\end{align*}
+\pause
+令 $u=m+1\ge1$，则
+\[y=\frac{83}{2}-\left(u+\frac9u\right)\le\frac{83}{2}-6=\frac{71}{2}.\]
+当 $u=3$，即 $m=2$ 时取等。因此投入促销费用\textbf{2万元}时，最大利润为\textbf{35.5万元}。
+\end{frame}
+
+% Q18：参数二次不等式／因式分解、分离参数、端点／遗漏m=0及重根／较难／列全分类并验边界。
+\begin{frame}
+\PageHeading{第18题\quad 含参数不等式}
+已知函数 $f(x)=mx^2-mx-1$。
+\par\vspace{4mm}
+（1）解关于 $x$ 的不等式 $f(x)<(m-1)x+1$；\par\vspace{3mm}
+（2）若不等式 $f(x)+x+m\ge0$ 对 $\forall x\in[-1/2,1/2]$ 恒成立，求实数 $m$ 的取值范围；\par\vspace{3mm}
+（3）若对于 $m\in[-2,2]$，不等式 $f(x)<(2-m)x+m-2$ 恒成立，求实数 $x$ 的取值范围。
+\end{frame}
+
+\begin{frame}
+\PageHeading{第18题（1）\quad 系数、两根与大小关系}
+原不等式等价于
+\[mx^2+(1-2m)x-2<0\iff(x-2)(mx+1)<0.\]
+先区分 $m=0$ 与 $m\ne0$；当 $m\ne0$ 时，两根为 $2$ 与 $-1/m$。
+\pause
+\[
+\boxed{
+\begin{array}{c|l}
+ m\text{ 的范围}&x\text{ 的解集}\\\hline
+ m>0&(-1/m,\,2)\\[1mm]
+ m=0&(-\infty,\,2)\\[1mm]
+ -1/2<m<0&(-\infty,\,2)\cup(-1/m,+\infty)\\[1mm]
+ m=-1/2&(-\infty,\,2)\cup(2,+\infty)\\[1mm]
+ m<-1/2&(-\infty,-1/m)\cup(2,+\infty)
+\end{array}}
+\]
+\end{frame}
+
+\begin{frame}
+\PageHeading{第18题（2）\quad 恒成立与参数分离}
+原式等价于
+\[m(x^2-x+1)+x-1\ge0.\]
+因为 $x^2-x+1=(x-1/2)^2+3/4>0$，所以
+\[m\ge\frac{1-x}{x^2-x+1}\quad\text{对所有 }x\in[-1/2,1/2]\text{ 成立}.\]
+\pause
+注意
+\[1-\frac{1-x}{x^2-x+1}=\frac{x^2}{x^2-x+1}\ge0,\]
+且 $x=0$ 在给定区间内，故右侧最大值为1。
+\[\boxed{m\in[1,+\infty).}\]
+\end{frame}
+
+\begin{frame}
+\PageHeading{第18题（3）\quad 把参数看成自变量}
+原不等式化为
+\[m(x^2-1)-2x+1<0\qquad(\forall m\in[-2,2]).\]
+固定 $x$ 后，左侧是关于 $m$ 的一次式或常数式。区间内恒小于0，当且仅当两个端点都小于0：
+\[\begin{cases}
+2x^2-2x-1<0,\\
+-2x^2-2x+3<0.
+\end{cases}\]
+\pause
+第一式给出 $\dfrac{1-\sqrt3}{2}<x<\dfrac{1+\sqrt3}{2}$；第二式给出
+\[x<\frac{-1-\sqrt7}{2}\quad\text{或}\quad x>\frac{-1+\sqrt7}{2}.\]
+取交集，得 $\boxed{x\in\left(\dfrac{\sqrt7-1}{2},\dfrac{1+\sqrt3}{2}\right)}$。
+\end{frame}
+
+% Q19：分段函数与复合函数／按像所在区间分段、参数构造／直接合并跨断点区间／较难／证明乘积范围必要且可达。
+\begin{frame}
+\PageHeading{第19题\quad 分段函数与复合函数}
+已知函数
+\[f(x)=\begin{cases}x^2+2x+2,&x\le-1,\\[1mm]-\dfrac1x,&x>-1\text{ 且 }x\ne0.\end{cases}\]
+（1）求函数的单调区间；\par\vspace{2mm}
+（2）若存在两个不同的实数 $x_1,x_2$，满足 $f(x_1)=f(x_2)$，求证：$x_1+x_2<-2$；\par\vspace{2mm}
+（3）若存在两个不同的实数 $x_1,x_2$，满足 $f(f(x_1))=f(f(x_2))$，求 $x_1x_2$ 的取值范围。
+\end{frame}
+
+\begin{frame}
+\PageHeading{第19题（1）\quad 单调区间}
+当 $x\le-1$ 时，$f(x)=(x+1)^2+1$，在 $(-\infty,-1]$ 上严格递减，值域为 $[1,+\infty)$。
+\par\vspace{3mm}
+当 $-1<x<0$ 时，$f(x)=-1/x$ 严格递增，函数值大于1；结合 $f(-1)=1$，可把增区间延伸到 $[-1,0)$。
+\par\vspace{3mm}
+当 $x>0$ 时，$f(x)=-1/x$ 严格递增，值域为 $(-\infty,0)$。
+\pause
+\Answer{减区间：$(-\infty,-1]$；增区间：$[-1,0)$、$(0,+\infty)$。}
+\par\vspace{2mm}
+不能把后两个增区间合写成“在 $(-1,0)\cup(0,+\infty)$ 上递增”。
+\end{frame}
+
+\begin{frame}
+\PageHeading{第19题（2）\quad 相同函数值的两个输入}
+三个单调分支各自一一对应；正半轴上的函数值为负数，与负半轴上的正函数值不相同。
+因此不妨设 $x_1<-1<x_2<0$。令 $x_1=-1-t$，其中 $t>0$，则
+\[f(x_1)=t^2+1=f(x_2)=-\frac1{x_2},\quad x_2=-\frac1{t^2+1}.\]
+\pause
+于是
+\begin{align*}
+x_1+x_2+2
+&=1-t-\frac1{t^2+1}\\
+&=-\frac{t(t^2-t+1)}{t^2+1}<0,
+\end{align*}
+因为 $t^2-t+1=(t-1/2)^2+3/4>0$。故 $\boxed{x_1+x_2<-2}$。
+\end{frame}
+
+\begin{frame}
+\PageHeading{第19题（3）\quad 先求复合函数}
+令 $g(x)=f(f(x))$。因为 $f(x)\ne0$，复合函数的定义域仍为 $\mathbb R\setminus\{0\}$。
+按 $f(x)$ 落入外层函数的哪一段，得到
+\[g(x)=\begin{cases}
+-\dfrac1{(x+1)^2+1},&x\le-1,\\[2mm]
+x,&-1<x<0,\\[1mm]
+\left(1-\dfrac1x\right)^2+1,&0<x\le1,\\[2mm]
+x,&x>1.
+\end{cases}\]
+当 $x<0$ 时 $g(x)<0$，当 $x>0$ 时 $g(x)>0$。所以相同函数值对应的两个不同输入必须同号，\textbf{必有 $x_1x_2>0$}。
+\end{frame}
+
+\begin{frame}
+\PageHeading{第19题（3）续\quad 所有正乘积都能实现}
+\textbf{先构造乘积 $p\in(0,1]$。}
+取 $x_1=-1-t$，$x_2=-1/(t^2+1)$，其中 $t\ge1$。
+这两个输入不同，且 $g(x_1)=g(x_2)$，乘积为
+\[p=\frac{t+1}{t^2+1}.\]
+对任意 $0<p\le1$，方程 $pt^2-t+p-1=0$ 的根
+\[t=\frac{1+\sqrt{1+4p-4p^2}}{2p}\ge1\]
+满足要求：$p\le1/2$ 时显然；$p>1/2$ 时比较根号与 $2p-1$，平方差为 $8p(1-p)\ge0$。
+所以 $(0,1]$ 中的每个乘积都能实现。
+\end{frame}
+
+\begin{frame}
+\PageHeading{第19题（3）续\quad 构造大于等于1的乘积}
+\textbf{再构造任意乘积 $p\ge1$。}
+取 $0<u\le1/2$，令
+\[x_1=u,\qquad x_2=\left(1-\frac1u\right)^2+1\ge2.\]
+两个输入不同，且 $g(x_1)=x_2=g(x_2)$，乘积为
+\[p=2u-2+\frac1u.\]
+对任意 $p\ge1$，可取
+\[u=\frac{2}{p+2+\sqrt{(p+2)^2-8}}\in(0,1/2],\]
+它满足 $2u^2-(p+2)u+1=0$，所以实现该乘积。
+结合必要条件与两类构造，得 $\boxed{x_1x_2\in(0,+\infty)}$。
+\end{frame}
+
+\begin{frame}
+\PageHeading{归纳提升}
+\textbf{1. 条件完整}\par
+集合题检查空集与元素约定；函数题先检查定义域；最值题必须检查取等条件。
+\pause
+\par\vspace{4mm}
+\textbf{2. 恒成立问题}\par
+明确“对哪个变量任意”，再分离参数、求最值，或把参数看成自变量检查端点。
+\pause
+\par\vspace{4mm}
+\textbf{3. 复合函数问题}\par
+先确定内层函数值落入哪一段，再写复合解析式；求范围时既证明必要性，也说明每个值可达。
+\end{frame}
