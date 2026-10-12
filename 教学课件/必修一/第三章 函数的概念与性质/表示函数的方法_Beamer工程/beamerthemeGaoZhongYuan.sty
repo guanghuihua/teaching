@@ -1,0 +1,80 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamerthemeGaoZhongYuan}[2026/09/06 Campus PPTX adaptation]
+\RequirePackage{tikz}
+\RequirePackage{graphicx}
+\definecolor{campusgreen}{HTML}{126831}
+\definecolor{campusmotto}{HTML}{13742F}
+\setbeamercolor{normal text}{fg=black,bg=white}
+\setbeamercolor{structure}{fg=campusgreen}
+\setbeamercolor{block title}{fg=white,bg=campusgreen}
+\setbeamercolor{block body}{fg=black,bg=campusgreen!5}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{headline}{}
+\setbeamersize{text margin left=7mm,text margin right=7mm}
+% Coordinates use the original 1280 x 720 design, scaled to 160 x 90 mm.
+\newenvironment{campuscanvas}{%
+  \begin{tikzpicture}[remember picture,overlay]
+  \begin{scope}[shift={(current page.north west)},x=.125mm,y=-.125mm]
+}{\end{scope}\end{tikzpicture}}
+\newcommand{\campusphoto}{%
+  \begin{scope}
+    \clip (0,0) rectangle (1280,375.47);
+    % Original crop: top 16.832%, bottom 17.021%.
+    \node[anchor=north west,inner sep=0] at (0,-95.54)
+      {\includegraphics[width=160mm,height=70.955mm]{assets/campus.jpeg}};
+  \end{scope}
+  \fill[white] (128,.4) rectangle (256,121.33);
+  \fill[white] (640,.4) rectangle (768,121.33);
+  \fill[white] (0,121.33) rectangle (128,242.26);
+  \fill[white] (896,242.26) rectangle (1024,363.19);
+  \fill[campusmotto] (768,121.33) rectangle (1280,242.26);
+  \draw[white,line width=1.5pt] (0,.4) rectangle (1280,363.19);
+  \foreach \y in {121.33,242.26} {\draw[white,line width=1.5pt] (0,\y)--(1280,\y);}
+  \foreach \x in {128,256,384,512,640,768} {\draw[white,line width=1.5pt] (\x,.4)--(\x,363.19);}
+  \foreach \x in {896,1024,1152} {
+    \draw[white,line width=1.5pt] (\x,.4)--(\x,121.33);
+    \draw[white,line width=1.5pt] (\x,242.26)--(\x,363.19);}
+  \node[anchor=north west,inner sep=0] at (645,6.8)
+    {\includegraphics[width=14.2mm,height=13.625mm]{assets/badge.png}};
+  \node[anchor=north west,inner sep=0] at (771.6,129.93)
+    {\includegraphics[width=63.067mm,height=12.975mm]{assets/motto.png}};
+  \fill[gray!50] (849.6,364.93) rectangle (1280,375.47);
+  \fill[campusgreen] (0,364.93) rectangle (849.6,375.47);
+}
+\setbeamertemplate{title page}{%
+  \begin{campuscanvas}
+    \campusphoto
+    \node[text=campusgreen,font=\bfseries\fontsize{22}{27}\selectfont,
+      align=center,text width=140mm,inner sep=0] at (640,480) {\inserttitle};
+    \node[text=campusgreen,font=\bfseries\fontsize{14}{18}\selectfont,
+      align=center,text width=90mm,inner sep=0] at (730,594) {\insertauthor};
+    \draw[campusgreen,line width=.25pt] (24.67,606.34)--(199.74,606.34);
+    \draw[campusgreen,line width=.25pt] (1088.64,606.34)--(1251.64,606.34);
+    \node[text=campusgreen,font=\bfseries\fontsize{10}{13}\selectfont,
+      anchor=east,inner sep=0] at (1045,650) {\insertdate};
+  \end{campuscanvas}
+}
+\newcommand{\campusmaketitle}{\begin{frame}[plain]\titlepage\end{frame}}
+\setbeamertemplate{frametitle}{%
+  \begin{campuscanvas}
+    \fill[campusgreen] (0,0) rectangle (1280,98.4);
+    \begin{scope}[shift={(38.31,26.03)},x=8.336mm,y=-5.67mm]
+      \input{book-path.tex}
+    \end{scope}
+    \node[anchor=west,text=white,font=\bfseries\fontsize{16}{20}\selectfont,
+      inner sep=0,text width=95mm] at (133,51) {\insertframetitle};
+    \node[anchor=north west,inner sep=0] at (919,17.21)
+      {\includegraphics[width=43.253mm,height=8.651mm]{assets/school-name.png}};
+  \end{campuscanvas}
+  \vspace*{12mm}
+}
+\newcommand{\campusclosing}[1][敬请批评指正]{%
+  \begin{frame}[plain]
+    \begin{campuscanvas}
+      \campusphoto
+      \node[text=campusgreen,font=\bfseries\fontsize{22}{27}\selectfont,
+        align=center,text width=140mm,inner sep=0] at (640,480) {#1};
+    \end{campuscanvas}
+  \end{frame}
+}
