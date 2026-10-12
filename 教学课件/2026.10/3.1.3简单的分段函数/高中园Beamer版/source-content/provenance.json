@@ -1,0 +1,583 @@
+{
+  "source_name": "3.1.3 简单的分段函数.pptx",
+  "source_path": "D:/guanghui/AI读取/3.1.3 简单的分段函数.pptx",
+  "source_sha256": "cffe38207c204c1371568679745c30708c7eccb2044ebadb50c779aa2f6820c0",
+  "original_slides": 16,
+  "display_states": 79,
+  "method": "PowerPoint native vector export, original body objects retained; original slide background and header decorations removed; Beamer GaoZhongYuan template applied.",
+  "template": "教学课件/高中园Beamer模板/高中园模板.tex",
+  "mapping": [
+    {
+      "page": 1,
+      "slide": 1,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 2,
+      "slide": 2,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 3,
+      "slide": 2,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 4,
+      "slide": 2,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 5,
+      "slide": 2,
+      "step": 4,
+      "final": true
+    },
+    {
+      "page": 6,
+      "slide": 3,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 7,
+      "slide": 3,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 8,
+      "slide": 3,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 9,
+      "slide": 3,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 10,
+      "slide": 3,
+      "step": 5,
+      "final": true
+    },
+    {
+      "page": 11,
+      "slide": 4,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 12,
+      "slide": 4,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 13,
+      "slide": 5,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 14,
+      "slide": 5,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 15,
+      "slide": 5,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 16,
+      "slide": 5,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 17,
+      "slide": 5,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 18,
+      "slide": 5,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 19,
+      "slide": 5,
+      "step": 7,
+      "final": false
+    },
+    {
+      "page": 20,
+      "slide": 5,
+      "step": 8,
+      "final": false
+    },
+    {
+      "page": 21,
+      "slide": 5,
+      "step": 9,
+      "final": false
+    },
+    {
+      "page": 22,
+      "slide": 5,
+      "step": 10,
+      "final": false
+    },
+    {
+      "page": 23,
+      "slide": 5,
+      "step": 11,
+      "final": false
+    },
+    {
+      "page": 24,
+      "slide": 5,
+      "step": 12,
+      "final": false
+    },
+    {
+      "page": 25,
+      "slide": 5,
+      "step": 13,
+      "final": false
+    },
+    {
+      "page": 26,
+      "slide": 5,
+      "step": 14,
+      "final": true
+    },
+    {
+      "page": 27,
+      "slide": 6,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 28,
+      "slide": 6,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 29,
+      "slide": 6,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 30,
+      "slide": 6,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 31,
+      "slide": 6,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 32,
+      "slide": 6,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 33,
+      "slide": 6,
+      "step": 7,
+      "final": false
+    },
+    {
+      "page": 34,
+      "slide": 6,
+      "step": 8,
+      "final": false
+    },
+    {
+      "page": 35,
+      "slide": 6,
+      "step": 9,
+      "final": true
+    },
+    {
+      "page": 36,
+      "slide": 7,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 37,
+      "slide": 7,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 38,
+      "slide": 7,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 39,
+      "slide": 7,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 40,
+      "slide": 7,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 41,
+      "slide": 7,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 42,
+      "slide": 7,
+      "step": 7,
+      "final": false
+    },
+    {
+      "page": 43,
+      "slide": 7,
+      "step": 8,
+      "final": false
+    },
+    {
+      "page": 44,
+      "slide": 7,
+      "step": 9,
+      "final": false
+    },
+    {
+      "page": 45,
+      "slide": 7,
+      "step": 10,
+      "final": false
+    },
+    {
+      "page": 46,
+      "slide": 7,
+      "step": 11,
+      "final": false
+    },
+    {
+      "page": 47,
+      "slide": 7,
+      "step": 12,
+      "final": true
+    },
+    {
+      "page": 48,
+      "slide": 8,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 49,
+      "slide": 8,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 50,
+      "slide": 9,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 51,
+      "slide": 9,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 52,
+      "slide": 9,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 53,
+      "slide": 10,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 54,
+      "slide": 10,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 55,
+      "slide": 10,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 56,
+      "slide": 10,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 57,
+      "slide": 10,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 58,
+      "slide": 10,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 59,
+      "slide": 10,
+      "step": 7,
+      "final": false
+    },
+    {
+      "page": 60,
+      "slide": 10,
+      "step": 8,
+      "final": true
+    },
+    {
+      "page": 61,
+      "slide": 11,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 62,
+      "slide": 11,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 63,
+      "slide": 11,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 64,
+      "slide": 11,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 65,
+      "slide": 11,
+      "step": 5,
+      "final": true
+    },
+    {
+      "page": 66,
+      "slide": 12,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 67,
+      "slide": 12,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 68,
+      "slide": 12,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 69,
+      "slide": 12,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 70,
+      "slide": 12,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 71,
+      "slide": 12,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 72,
+      "slide": 12,
+      "step": 7,
+      "final": true
+    },
+    {
+      "page": 73,
+      "slide": 13,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 74,
+      "slide": 13,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 75,
+      "slide": 13,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 76,
+      "slide": 14,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 77,
+      "slide": 15,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 78,
+      "slide": 15,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 79,
+      "slide": 16,
+      "step": 1,
+      "final": true
+    }
+  ],
+  "crop_boxes_pdf_points": {
+    "1": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "2": [
+      0,
+      125,
+      960,
+      422
+    ],
+    "3": [
+      0,
+      76,
+      960,
+      424
+    ],
+    "4": [
+      0,
+      92,
+      960,
+      333
+    ],
+    "5": [
+      0,
+      16,
+      960,
+      509
+    ],
+    "6": [
+      0,
+      1,
+      960,
+      528
+    ],
+    "7": [
+      0,
+      80,
+      960,
+      531
+    ],
+    "8": [
+      0,
+      69,
+      960,
+      466
+    ],
+    "9": [
+      0,
+      67,
+      960,
+      525
+    ],
+    "10": [
+      0,
+      85,
+      960,
+      486
+    ],
+    "11": [
+      0,
+      123,
+      960,
+      434
+    ],
+    "12": [
+      0,
+      90,
+      960,
+      482
+    ],
+    "13": [
+      0,
+      87,
+      960,
+      510
+    ],
+    "14": [
+      0,
+      65,
+      960,
+      485
+    ],
+    "15": [
+      0,
+      99,
+      960,
+      428
+    ],
+    "16": [
+      0,
+      68,
+      960,
+      435
+    ]
+  }
+}
