@@ -1,0 +1,1994 @@
+{
+  "source_name": "3.2.2 函数的奇偶性的概念 第1课时　.pptx",
+  "source_path": "D:/guanghui/AI读取/3.2.2 函数的奇偶性的概念 第1课时　.pptx",
+  "source_sha256": "131c78ea47994bb62f2196f233e4d90e093ca0f1b9c702dc8587a18a91d9a22c",
+  "original_slides": 61,
+  "hidden_slides_included": [
+    2,
+    3,
+    4,
+    5,
+    7
+  ],
+  "layout": {
+    "1": {
+      "title": "函数的奇偶性的概念",
+      "remove": [
+        "8",
+        "25",
+        "26",
+        "7",
+        "15",
+        "18",
+        "19",
+        "20",
+        "27",
+        "14",
+        "16"
+      ],
+      "kind": "cover",
+      "hidden": false,
+      "subtitle": "第1课时　·　第3章"
+    },
+    "2": {
+      "title": "学习目标",
+      "remove": [
+        "11",
+        "3",
+        "2",
+        "5"
+      ],
+      "kind": "body",
+      "hidden": true
+    },
+    "3": {
+      "title": "导语",
+      "remove": [
+        "15",
+        "17",
+        "16",
+        "14"
+      ],
+      "kind": "body",
+      "hidden": true
+    },
+    "4": {
+      "title": "内容索引",
+      "remove": [
+        "18",
+        "15",
+        "19",
+        "17"
+      ],
+      "kind": "body",
+      "hidden": true
+    },
+    "5": {
+      "title": "一　函数的奇偶性的概念及判断",
+      "remove": [
+        "18",
+        "21"
+      ],
+      "kind": "section",
+      "hidden": true
+    },
+    "6": {
+      "title": "问题探究",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "7": {
+      "title": "问题探究",
+      "remove": [],
+      "kind": "body",
+      "hidden": true
+    },
+    "8": {
+      "title": "问题探究",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "9": {
+      "title": "知识梳理",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "10": {
+      "title": "知识梳理",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "11": {
+      "title": "注意点",
+      "remove": [
+        "13",
+        "12",
+        "4"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "12": {
+      "title": "例1　判断函数的奇偶性",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "13": {
+      "title": "例1　判断函数的奇偶性",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "14": {
+      "title": "例1　判断函数的奇偶性",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "15": {
+      "title": "反思感悟",
+      "remove": [
+        "5",
+        "4",
+        "9"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "16": {
+      "title": "跟踪训练1",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "17": {
+      "title": "跟踪训练1",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "18": {
+      "title": "二　利用函数的奇偶性求值",
+      "remove": [
+        "65",
+        "63"
+      ],
+      "kind": "section",
+      "hidden": false
+    },
+    "19": {
+      "title": "例2　利用奇偶性求值",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "20": {
+      "title": "例2　利用奇偶性求值",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "21": {
+      "title": "反思感悟",
+      "remove": [
+        "7",
+        "6",
+        "8"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "22": {
+      "title": "跟踪训练2",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "23": {
+      "title": "跟踪训练2",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "24": {
+      "title": "跟踪训练2",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "25": {
+      "title": "三　奇、偶函数的图象及应用",
+      "remove": [
+        "63",
+        "65"
+      ],
+      "kind": "section",
+      "hidden": false
+    },
+    "26": {
+      "title": "例3　奇、偶函数的图象",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "27": {
+      "title": "例3　奇、偶函数的图象",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "28": {
+      "title": "例3　奇、偶函数的图象",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "29": {
+      "title": "函数的奇偶性的概念",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "30": {
+      "title": "反思感悟",
+      "remove": [
+        "7",
+        "6",
+        "8"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "31": {
+      "title": "跟踪训练3",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "32": {
+      "title": "跟踪训练3",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "33": {
+      "title": "课堂小结",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "34": {
+      "title": "四　随堂演练",
+      "remove": [
+        "36",
+        "38"
+      ],
+      "kind": "section",
+      "hidden": false
+    },
+    "35": {
+      "title": "随堂演练",
+      "remove": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "36": {
+      "title": "随堂演练",
+      "remove": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "37": {
+      "title": "随堂演练",
+      "remove": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "38": {
+      "title": "随堂演练",
+      "remove": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "39": {
+      "title": "五　课时对点练",
+      "remove": [
+        "36",
+        "38"
+      ],
+      "kind": "section",
+      "hidden": false
+    },
+    "40": {
+      "title": "基础巩固",
+      "remove": [
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100",
+        "33",
+        "2",
+        "6",
+        "25"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "41": {
+      "title": "基础巩固",
+      "remove": [
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "42": {
+      "title": "基础巩固",
+      "remove": [
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "43": {
+      "title": "基础巩固",
+      "remove": [
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "44": {
+      "title": "基础巩固",
+      "remove": [
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "74",
+        "75"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "45": {
+      "title": "基础巩固",
+      "remove": [
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "46": {
+      "title": "基础巩固",
+      "remove": [
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "47": {
+      "title": "基础巩固",
+      "remove": [
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "48": {
+      "title": "基础巩固",
+      "remove": [
+        "42",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "49": {
+      "title": "基础巩固",
+      "remove": [
+        "42",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "50": {
+      "title": "基础巩固",
+      "remove": [
+        "42",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "51": {
+      "title": "基础巩固",
+      "remove": [
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "52": {
+      "title": "基础巩固",
+      "remove": [
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "53": {
+      "title": "综合运用",
+      "remove": [
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "41",
+        "31",
+        "34",
+        "35"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "54": {
+      "title": "综合运用",
+      "remove": [
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "55": {
+      "title": "综合运用",
+      "remove": [
+        "58",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "56": {
+      "title": "综合运用",
+      "remove": [
+        "58",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "57": {
+      "title": "综合运用",
+      "remove": [
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "58": {
+      "title": "拓广探究",
+      "remove": [
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "29",
+        "25",
+        "26",
+        "28"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "59": {
+      "title": "拓广探究",
+      "remove": [
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "60": {
+      "title": "拓广探究",
+      "remove": [
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "61": {
+      "title": "本课结束",
+      "remove": [
+        "2",
+        "4",
+        "5",
+        "6",
+        "7",
+        "9",
+        "12",
+        "14",
+        "15",
+        "17",
+        "18"
+      ],
+      "kind": "closing",
+      "hidden": false
+    }
+  },
+  "display_states": 130,
+  "method": "PowerPoint native vector export, original body objects retained; original slide background and header decorations removed; Beamer GaoZhongYuan template applied.",
+  "template": "教学课件/高中园Beamer模板/高中园模板.tex",
+  "mapping": [
+    {
+      "page": 1,
+      "slide": 1,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 2,
+      "slide": 2,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 3,
+      "slide": 3,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 4,
+      "slide": 4,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 5,
+      "slide": 5,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 6,
+      "slide": 6,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 7,
+      "slide": 6,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 8,
+      "slide": 7,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 9,
+      "slide": 7,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 10,
+      "slide": 8,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 11,
+      "slide": 8,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 12,
+      "slide": 9,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 13,
+      "slide": 9,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 14,
+      "slide": 9,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 15,
+      "slide": 10,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 16,
+      "slide": 10,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 17,
+      "slide": 10,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 18,
+      "slide": 10,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 19,
+      "slide": 10,
+      "step": 5,
+      "final": true
+    },
+    {
+      "page": 20,
+      "slide": 11,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 21,
+      "slide": 12,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 22,
+      "slide": 12,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 23,
+      "slide": 13,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 24,
+      "slide": 13,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 25,
+      "slide": 13,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 26,
+      "slide": 14,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 27,
+      "slide": 14,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 28,
+      "slide": 15,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 29,
+      "slide": 16,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 30,
+      "slide": 16,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 31,
+      "slide": 17,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 32,
+      "slide": 17,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 33,
+      "slide": 18,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 34,
+      "slide": 19,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 35,
+      "slide": 19,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 36,
+      "slide": 19,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 37,
+      "slide": 19,
+      "step": 4,
+      "final": true
+    },
+    {
+      "page": 38,
+      "slide": 20,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 39,
+      "slide": 20,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 40,
+      "slide": 20,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 41,
+      "slide": 21,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 42,
+      "slide": 22,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 43,
+      "slide": 22,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 44,
+      "slide": 23,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 45,
+      "slide": 24,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 46,
+      "slide": 24,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 47,
+      "slide": 24,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 48,
+      "slide": 25,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 49,
+      "slide": 26,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 50,
+      "slide": 26,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 51,
+      "slide": 27,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 52,
+      "slide": 27,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 53,
+      "slide": 28,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 54,
+      "slide": 28,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 55,
+      "slide": 29,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 56,
+      "slide": 29,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 57,
+      "slide": 30,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 58,
+      "slide": 31,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 59,
+      "slide": 31,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 60,
+      "slide": 32,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 61,
+      "slide": 32,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 62,
+      "slide": 33,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 63,
+      "slide": 34,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 64,
+      "slide": 35,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 65,
+      "slide": 35,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 66,
+      "slide": 35,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 67,
+      "slide": 36,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 68,
+      "slide": 36,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 69,
+      "slide": 36,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 70,
+      "slide": 37,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 71,
+      "slide": 37,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 72,
+      "slide": 37,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 73,
+      "slide": 38,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 74,
+      "slide": 38,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 75,
+      "slide": 38,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 76,
+      "slide": 39,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 77,
+      "slide": 40,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 78,
+      "slide": 40,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 79,
+      "slide": 40,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 80,
+      "slide": 41,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 81,
+      "slide": 41,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 82,
+      "slide": 41,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 83,
+      "slide": 42,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 84,
+      "slide": 42,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 85,
+      "slide": 42,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 86,
+      "slide": 43,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 87,
+      "slide": 43,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 88,
+      "slide": 43,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 89,
+      "slide": 44,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 90,
+      "slide": 44,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 91,
+      "slide": 44,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 92,
+      "slide": 45,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 93,
+      "slide": 45,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 94,
+      "slide": 45,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 95,
+      "slide": 46,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 96,
+      "slide": 46,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 97,
+      "slide": 46,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 98,
+      "slide": 47,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 99,
+      "slide": 47,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 100,
+      "slide": 47,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 101,
+      "slide": 48,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 102,
+      "slide": 48,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 103,
+      "slide": 49,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 104,
+      "slide": 49,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 105,
+      "slide": 50,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 106,
+      "slide": 50,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 107,
+      "slide": 51,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 108,
+      "slide": 51,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 109,
+      "slide": 52,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 110,
+      "slide": 52,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 111,
+      "slide": 53,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 112,
+      "slide": 53,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 113,
+      "slide": 53,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 114,
+      "slide": 54,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 115,
+      "slide": 54,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 116,
+      "slide": 54,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 117,
+      "slide": 55,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 118,
+      "slide": 55,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 119,
+      "slide": 56,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 120,
+      "slide": 57,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 121,
+      "slide": 57,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 122,
+      "slide": 57,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 123,
+      "slide": 58,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 124,
+      "slide": 58,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 125,
+      "slide": 58,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 126,
+      "slide": 59,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 127,
+      "slide": 59,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 128,
+      "slide": 60,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 129,
+      "slide": 60,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 130,
+      "slide": 61,
+      "step": 1,
+      "final": true
+    }
+  ],
+  "crop_boxes_pdf_points": {
+    "1": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "2": [
+      0,
+      170,
+      960,
+      289
+    ],
+    "3": [
+      0,
+      166,
+      960,
+      403
+    ],
+    "4": [
+      0,
+      176,
+      960,
+      463
+    ],
+    "5": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "6": [
+      0,
+      54,
+      960,
+      408
+    ],
+    "7": [
+      0,
+      20,
+      960,
+      391
+    ],
+    "8": [
+      0,
+      43,
+      960,
+      454
+    ],
+    "9": [
+      0,
+      127,
+      960,
+      415
+    ],
+    "10": [
+      0,
+      76,
+      960,
+      317
+    ],
+    "11": [
+      0,
+      66,
+      960,
+      531
+    ],
+    "12": [
+      0,
+      57,
+      960,
+      392
+    ],
+    "13": [
+      0,
+      41,
+      960,
+      481
+    ],
+    "14": [
+      0,
+      63,
+      960,
+      413
+    ],
+    "15": [
+      0,
+      19,
+      960,
+      532
+    ],
+    "16": [
+      0,
+      60,
+      960,
+      441
+    ],
+    "17": [
+      0,
+      71,
+      960,
+      535
+    ],
+    "18": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "19": [
+      0,
+      40,
+      960,
+      441
+    ],
+    "20": [
+      0,
+      82,
+      960,
+      373
+    ],
+    "21": [
+      0,
+      74,
+      960,
+      389
+    ],
+    "22": [
+      0,
+      89,
+      960,
+      283
+    ],
+    "23": [
+      0,
+      73,
+      960,
+      373
+    ],
+    "24": [
+      0,
+      36,
+      960,
+      535
+    ],
+    "25": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "26": [
+      0,
+      30,
+      960,
+      503
+    ],
+    "27": [
+      0,
+      64,
+      960,
+      401
+    ],
+    "28": [
+      0,
+      64,
+      960,
+      401
+    ],
+    "29": [
+      0,
+      49,
+      960,
+      469
+    ],
+    "30": [
+      0,
+      75,
+      960,
+      344
+    ],
+    "31": [
+      0,
+      35,
+      960,
+      509
+    ],
+    "32": [
+      0,
+      56,
+      960,
+      441
+    ],
+    "33": [
+      0,
+      154,
+      960,
+      535
+    ],
+    "34": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "35": [
+      0,
+      70,
+      960,
+      413
+    ],
+    "36": [
+      0,
+      25,
+      960,
+      496
+    ],
+    "37": [
+      0,
+      70,
+      960,
+      430
+    ],
+    "38": [
+      0,
+      54,
+      960,
+      535
+    ],
+    "39": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "40": [
+      0,
+      93,
+      960,
+      434
+    ],
+    "41": [
+      0,
+      25,
+      960,
+      469
+    ],
+    "42": [
+      0,
+      70,
+      960,
+      413
+    ],
+    "43": [
+      0,
+      62,
+      960,
+      435
+    ],
+    "44": [
+      0,
+      59,
+      960,
+      452
+    ],
+    "45": [
+      0,
+      56,
+      960,
+      458
+    ],
+    "46": [
+      0,
+      87,
+      960,
+      359
+    ],
+    "47": [
+      0,
+      34,
+      960,
+      418
+    ],
+    "48": [
+      0,
+      82,
+      960,
+      367
+    ],
+    "49": [
+      0,
+      85,
+      960,
+      339
+    ],
+    "50": [
+      0,
+      52,
+      960,
+      458
+    ],
+    "51": [
+      0,
+      15,
+      960,
+      486
+    ],
+    "52": [
+      0,
+      19,
+      960,
+      486
+    ],
+    "53": [
+      0,
+      92,
+      960,
+      469
+    ],
+    "54": [
+      0,
+      36,
+      960,
+      492
+    ],
+    "55": [
+      0,
+      105,
+      960,
+      261
+    ],
+    "56": [
+      0,
+      16,
+      960,
+      458
+    ],
+    "57": [
+      0,
+      42,
+      960,
+      469
+    ],
+    "58": [
+      0,
+      84,
+      960,
+      475
+    ],
+    "59": [
+      0,
+      48,
+      960,
+      458
+    ],
+    "60": [
+      0,
+      59,
+      960,
+      535
+    ],
+    "61": [
+      0,
+      0,
+      960,
+      540
+    ]
+  }
+}

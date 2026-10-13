@@ -1,0 +1,49 @@
+% !TeX program = xelatex
+% 在本目录编译。正文为保留原公式、图表和字形的矢量 PDF，不是可逐字编辑的 LaTeX。
+\ifdefined\HandoutMode
+  \documentclass[aspectratio=169,10pt,handout]{beamer}
+\else
+  \documentclass[aspectratio=169,10pt]{beamer}
+\fi
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\newsavebox{\campustitlebox}
+\newcommand{\fitcampustitle}[1]{\sbox{\campustitlebox}{#1}\ifdim\wd\campustitlebox>94mm\resizebox{94mm}{!}{#1}\else#1\fi}
+\author{}
+\date{}
+\begin{document}
+\input{slides/slide-01.tex}
+\input{slides/slide-02.tex}
+\input{slides/slide-03.tex}
+\input{slides/slide-04.tex}
+\input{slides/slide-05.tex}
+\input{slides/slide-06.tex}
+\input{slides/slide-07.tex}
+\input{slides/slide-08.tex}
+\input{slides/slide-09.tex}
+\input{slides/slide-10.tex}
+\input{slides/slide-11.tex}
+\input{slides/slide-12.tex}
+\input{slides/slide-13.tex}
+\input{slides/slide-14.tex}
+\input{slides/slide-15.tex}
+\input{slides/slide-16.tex}
+\input{slides/slide-17.tex}
+\input{slides/slide-18.tex}
+\input{slides/slide-19.tex}
+\input{slides/slide-20.tex}
+\input{slides/slide-21.tex}
+\input{slides/slide-22.tex}
+\input{slides/slide-23.tex}
+\input{slides/slide-24.tex}
+\input{slides/slide-25.tex}
+\input{slides/slide-26.tex}
+\input{slides/slide-27.tex}
+\input{slides/slide-28.tex}
+\input{slides/slide-29.tex}
+\input{slides/slide-30.tex}
+\input{slides/slide-31.tex}
+\input{slides/slide-32.tex}
+\input{slides/slide-33.tex}
+\end{document}
