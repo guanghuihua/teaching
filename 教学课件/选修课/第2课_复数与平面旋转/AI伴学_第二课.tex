@@ -1,0 +1,371 @@
+% !TeX program = xelatex
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\setbeamerfont{normal text}{size=\fontsize{12}{17}\selectfont}
+\newcommand{\key}[1]{{\color{campusgreen}\bfseries #1}}
+\newcommand{\smallbody}{\fontsize{11}{15}\selectfont}
+\title{复数与平面旋转}
+\author{华光辉\quad AI伴学·第二课}
+\date{2026.09.18}
+\begin{document}\usebeamerfont{normal text}\campusmaketitle
+
+
+\begin{frame}[t]{先做三个小检查}
+不用AI，先写在纸上。
+\par\vspace{6mm}
+（1）点$(2,1)$：先向右走几格，再向上走几格？
+\par\vspace{6mm}
+（2）$(-1)\times(-1)=\underline{\qquad}$。
+\par\vspace{6mm}
+（3）$3(a-2)=\underline{\qquad}$。
+\vfill 今天只需要坐标、正负数和去括号。
+\end{frame}
+
+\begin{frame}[t]{先在图上转一个直角}
+\begin{columns}[c,onlytextwidth]\column{.48\textwidth}\begin{tikzpicture}[x=.68cm,y=.68cm,>=stealth,font=\small]
+\draw[step=1,gray!20,very thin] (-2.8,-2.8) grid (2.8,2.8);
+\draw[->] (-3,0)--(3.15,0) node[right]{$x$};
+\draw[->] (0,-3)--(0,3.15) node[above]{$y$};
+\node[below left] at (0,0){$O$};
+\foreach \t in {-2,-1,1,2}{\node[below,fill=white,inner sep=1pt] at (\t,0){\scriptsize $\t$};\node[left,fill=white,inner sep=1pt] at (0,\t){\scriptsize $\t$};}
+\draw[->,very thick,campusgreen] (0,0)--(2,0);\fill (2,0) circle(2pt) node[above right]{$P(2,0)$};\draw[->,thick] (1,0) arc(0:90:1);\node at (1,1){$90^\circ$};\end{tikzpicture}\column{.48\textwidth}
+以$O$为中心，\par 将$OP$\key{逆时针旋转$90^\circ$}。
+\par\vspace{5mm}终点在哪里？\par 到$O$的距离变了吗？
+\par\vspace{5mm}先用手势转，再在纸上标点。
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{认识一个新数：i}
+在实数中，$x^2=-1$没有解。
+\par\vspace{5mm}我们把数的范围扩大，引入一个新数$i$，规定
+\[\boxed{i^2=-1}.\]
+今天会用到$2+i$、$1+2i$、$3-2i$这样的数。
+\par\vspace{5mm}它们叫\key{复数}，可以写成$a+bi$，其中$a,b$是实数。
+\vfill 运算时仍可用分配律；遇到$i^2$，就换成$-1$。
+\end{frame}
+
+\begin{frame}[t]{把一个复数放到平面上}
+\begin{columns}[c,onlytextwidth]\column{.48\textwidth}\begin{tikzpicture}[x=.68cm,y=.68cm,>=stealth,font=\small]
+\draw[step=1,gray!20,very thin] (-2.8,-2.8) grid (2.8,2.8);
+\draw[->] (-3,0)--(3.15,0) node[right]{$x$};
+\draw[->] (0,-3)--(0,3.15) node[above]{$y$};
+\node[below left] at (0,0){$O$};
+\foreach \t in {-2,-1,1,2}{\node[below,fill=white,inner sep=1pt] at (\t,0){\scriptsize $\t$};\node[left,fill=white,inner sep=1pt] at (0,\t){\scriptsize $\t$};}
+\fill[campusgreen] (2,1) circle(2pt) node[above right]{$2+i$};\draw[dashed,campusgreen] (0,0)--(2,0)--(2,1);\fill[orange!80!black] (1,2) circle(2pt) node[above right]{$1+2i$};\end{tikzpicture}\column{.48\textwidth}
+\[a+bi\quad\longleftrightarrow\quad(a,b)\]
+横坐标看$a$，纵坐标看$b$。
+\par\vspace{5mm}$2+i\leftrightarrow(2,1)$。\par $1+2i\leftrightarrow(1,2)$。
+\par\vspace{5mm}\key{试一试：}\par $3-2i$对应哪个点？
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{连续乘i，先看四个特殊的点}
+\begin{columns}[c,onlytextwidth]\column{.48\textwidth}\begin{tikzpicture}[x=.68cm,y=.68cm,>=stealth,font=\small]
+\draw[step=1,gray!20,very thin] (-2.8,-2.8) grid (2.8,2.8);
+\draw[->] (-3,0)--(3.15,0) node[right]{$x$};
+\draw[->] (0,-3)--(0,3.15) node[above]{$y$};
+\node[below left] at (0,0){$O$};
+\foreach \t in {-2,-1,1,2}{\node[below,fill=white,inner sep=1pt] at (\t,0){\scriptsize $\t$};\node[left,fill=white,inner sep=1pt] at (0,\t){\scriptsize $\t$};}
+\foreach \x/\y/\n/\pos in {1/0/1/above right,0/1/i/above right,-1/0/-1/above left,0/-1/-i/below right}{\fill[campusgreen] (\x,\y) circle(2pt) node[\pos,fill=white]{$\n$};}\draw[->,thick,campusgreen] (.75,0) arc(0:80:.75);\draw[->,thick,campusgreen] (0,.75) arc(90:170:.75);\draw[->,thick,campusgreen] (-.75,0) arc(180:260:.75);\draw[->,thick,campusgreen] (0,-.75) arc(270:350:.75);\end{tikzpicture}\column{.48\textwidth}
+\[1\xrightarrow{\times i}i\xrightarrow{\times i}-1\]
+\[-1\xrightarrow{\times i}-i\xrightarrow{\times i}1\]
+每次都朝哪个方向转？\par 每次转了多少度？
+\par\vspace{5mm}接下来检查不在坐标轴上的点。
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{只多做一步熟悉的去括号}
+把$2+i$乘以$i$：
+\begin{align*}
+i(2+i)&=2i+i^2\\[3mm]
+      &=2i-1\\[3mm]
+      &=-1+2i.
+\end{align*}
+\vfill 对应的点：$(2,1)\longrightarrow(-1,2)$。\par 注意：$i^2=-1$，不能把$i^2$直接删掉。
+\end{frame}
+
+\begin{frame}[t]{乘以i，为什么对应转90°}
+\begin{columns}[c,onlytextwidth]\column{.48\textwidth}\begin{tikzpicture}[x=.68cm,y=.68cm,>=stealth,font=\small]
+\draw[step=1,gray!20,very thin] (-2.8,-2.8) grid (2.8,2.8);
+\draw[->] (-3,0)--(3.15,0) node[right]{$x$};
+\draw[->] (0,-3)--(0,3.15) node[above]{$y$};
+\node[below left] at (0,0){$O$};
+\foreach \t in {-2,-1,1,2}{\node[below,fill=white,inner sep=1pt] at (\t,0){\scriptsize $\t$};\node[left,fill=white,inner sep=1pt] at (0,\t){\scriptsize $\t$};}
+\draw[->,very thick,campusgreen] (0,0)--(2,1) node[right]{$P(2,1)$};
+\draw[->,very thick,orange!80!black] (0,0)--(-1,2) node[above left]{$Q(-1,2)$};
+\draw[->,thick] (.72,.36) arc[start angle=26.565,end angle=116.565,radius=.805];
+\node at (.6,1.2){$90^\circ$};\end{tikzpicture}\column{.48\textwidth}\smallbody
+横向的位移转成纵向，\par 纵向的位移转成反向横向。
+\par\vspace{4mm}坐标的变化是
+\[(x,y)\longrightarrow(-y,x).\]
+而$i(x+yi)=-y+xi$。
+\par\vspace{4mm}\key{乘以$i$：绕原点逆时针转$90^\circ$，距离不变。}
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{你来算，再看点的位置}
+计算，并写出结果对应的点。
+\par\vspace{7mm}（1）$i(1+2i)$。
+\par\vspace{8mm}（2）$i(3-2i)$。
+\vfill 做完后检查：旋转方向对吗？\par 先独立写，再和同桌比较。
+\end{frame}
+
+\begin{frame}[t]{核对：负号最容易错在哪里}
+\begin{align*}
+i(1+2i)&=i+2i^2={\color{campusgreen}-2+i},\\[5mm]
+i(3-2i)&=3i-2i^2=3i-2(-1)={\color{campusgreen}2+3i}.
+\end{align*}
+\par\vspace{5mm}对应的点分别是$(-2,1)$和$(2,3)$。
+\vfill 第二题的实部是$+2$，因为$-2\times(-1)=+2$。
+\end{frame}
+
+\begin{frame}[t]{用它找出一个正方形}
+\begin{columns}[c,onlytextwidth]\column{.48\textwidth}\begin{tikzpicture}[x=.68cm,y=.68cm,>=stealth,font=\small]
+\draw[step=1,gray!20,very thin] (-2.8,-2.8) grid (2.8,2.8);
+\draw[->] (-3,0)--(3.15,0) node[right]{$x$};
+\draw[->] (0,-3)--(0,3.15) node[above]{$y$};
+\node[below left] at (0,0){$O$};
+\foreach \t in {-2,-1,1,2}{\node[below,fill=white,inner sep=1pt] at (\t,0){\scriptsize $\t$};\node[left,fill=white,inner sep=1pt] at (0,\t){\scriptsize $\t$};}
+\fill[campusgreen] (2,1) circle(2pt) node[above right]{$A(2,1)$};\end{tikzpicture}\column{.48\textwidth}\smallbody
+正方形$ABCD$的中心是原点$O$，\par 四个顶点按逆时针顺序排列。
+\par\vspace{4mm}已知$A(2,1)$，\par 求$B,C,D$的坐标。
+\par\vspace{5mm}从$A$走向下一个顶点，\par 应该绕$O$转多少度？
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{同一个动作，接着做三次}
+\begin{columns}[c,onlytextwidth]\column{.46\textwidth}\begin{tikzpicture}[x=.68cm,y=.68cm,>=stealth,font=\small]
+\draw[step=1,gray!20,very thin] (-2.8,-2.8) grid (2.8,2.8);
+\draw[->] (-3,0)--(3.15,0) node[right]{$x$};
+\draw[->] (0,-3)--(0,3.15) node[above]{$y$};
+\node[below left] at (0,0){$O$};
+\foreach \t in {-2,-1,1,2}{\node[below,fill=white,inner sep=1pt] at (\t,0){\scriptsize $\t$};\node[left,fill=white,inner sep=1pt] at (0,\t){\scriptsize $\t$};}
+\draw[thick,campusgreen,fill=campusgreen!6] (2,1)--(-1,2)--(-2,-1)--(1,-2)--cycle;
+\draw[dashed,gray] (2,1)--(-2,-1) (-1,2)--(1,-2);
+\foreach \x/\y/\n/\pos in {2/1/A/right,-1/2/B/above,-2/-1/C/left,1/-2/D/below}{\fill (\x,\y) circle(2pt) node[\pos]{$\n$};}\end{tikzpicture}\column{.5\textwidth}\smallbody
+\begin{align*}
+z_A&=2+i,\\[2mm]
+z_B&=i(2+i)=-1+2i,\\[2mm]
+z_C&=i(-1+2i)=-2-i,\\[2mm]
+z_D&=i(-2-i)=1-2i.
+\end{align*}
+$B(-1,2),\ C(-2,-1),\ D(1,-2)$。
+\par\vspace{3mm}再乘一次$i$，会回到哪里？
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{画得像正方形，还要说明理由}
+\begin{columns}[c,onlytextwidth]\column{.46\textwidth}\begin{tikzpicture}[x=.68cm,y=.68cm,>=stealth,font=\small]
+\draw[step=1,gray!20,very thin] (-2.8,-2.8) grid (2.8,2.8);
+\draw[->] (-3,0)--(3.15,0) node[right]{$x$};
+\draw[->] (0,-3)--(0,3.15) node[above]{$y$};
+\node[below left] at (0,0){$O$};
+\foreach \t in {-2,-1,1,2}{\node[below,fill=white,inner sep=1pt] at (\t,0){\scriptsize $\t$};\node[left,fill=white,inner sep=1pt] at (0,\t){\scriptsize $\t$};}
+\draw[thick,campusgreen,fill=campusgreen!6] (2,1)--(-1,2)--(-2,-1)--(1,-2)--cycle;
+\draw[dashed,gray] (2,1)--(-2,-1) (-1,2)--(1,-2);
+\foreach \x/\y/\n/\pos in {2/1/A/right,-1/2/B/above,-2/-1/C/left,1/-2/D/below}{\fill (\x,\y) circle(2pt) node[\pos]{$\n$};}\end{tikzpicture}\column{.5\textwidth}\smallbody
+四条半径$OA,OB,OC,OD$相等，\par 相邻两条的夹角都是$90^\circ$。
+\par\vspace{4mm}得到四个全等的直角等腰三角形。
+\par\vspace{4mm}所以四条边相等；\par 每个顶角都是$45^\circ+45^\circ=90^\circ$。
+\par\vspace{4mm}因此$ABCD$确实是正方形。
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{请助手检查，我们也来检查}
+\smallbody
+一段待检查的计算：
+\[i(3-2i)=3i-2i^2=\color{red!70!black}-2+3i.\]
+\par\vspace{3mm}\key{给助手的请求}
+\par “我刚学复数，只会去括号。请指出最早出错的等号，\par 先给一个检查提示，不要重做整题。”
+\par\vspace{5mm}先在纸上改，再看投屏。\par 检查它的解释是否用到了$i^2=-1$，再核对点的位置。
+\vfill {\fontsize{9}{12}\selectfont 上面的错误算式为课堂自编练习，并非真实AI回答。}
+\end{frame}
+
+\begin{frame}[t]{不看刚才的解答，自己完成}
+（1）计算$i(2-i)$，写出结果对应的点。
+\par\vspace{7mm}（2）用一句话说明：乘以$i$，图形上发生了什么？
+\par\vspace{7mm}（3）如果你得到$-1+2i$，应重新检查哪一步？
+\vfill 独立完成；暂时不看AI，也不和同桌讨论。
+\end{frame}
+
+\begin{frame}[t]{最后核对一次}
+\[i(2-i)=2i-i^2=2i+1=\boxed{1+2i}.\]
+\par\vspace{5mm}对应的点是$(1,2)$。
+\par\vspace{5mm}乘以$i$：绕\key{原点}，\key{逆时针}转$90^\circ$，距离不变。
+\vfill 若算成$-1+2i$，检查$-i^2=-(-1)=1$。
+\end{frame}
+
+\begin{frame}[t]{今天可以留下怎样一份学习记录}
+\key{一个问题}\par 怎样由一个顶点，找出中心在原点的正方形？
+\par\vspace{5mm}\key{一次理解的变化}\par 我原来容易算错什么？画图怎样帮助我检查？
+\par\vspace{5mm}\key{一条现在能解释的结论}\par 为什么乘以$i$能用来处理旋转？
+\vfill 这些记录可以作为期末小报告的材料。
+\end{frame}
+
+% ===== 追加探究：原有课件内容保持不变 =====
+% 来源：Needham, Visual Complex Analysis, 25th Anniversary Edition (2023),
+% Ch.1, §1.3.3 Geometry, pp.18--19, Fig.1.12（结论与构型）；
+% 下文改用逆时针凸四边形的顶点复数重新推导，四个正方形均向外作。
+% 教学目标：将边的位移、中点与直角旋转组合起来，解释等长和垂直。
+% 预期方法：先猜想，再表达正方形中心，最后比较两条中心连线的位移。
+% 难度：观察入门；中心表达中等；一般证明选学，可由教师分步展示。
+% 易错：外侧方向应为 -i；点与位移混淆；把中心四边形误判为正方形。
+% 评价：能解释 p=(a+b)/2-i(b-a)/2，并从 s-q=i(r-p)读出两个结论。
+\begingroup
+\newcommand{\aubelplot}[1]{%
+\begin{tikzpicture}[x=.62cm,y=.62cm,font=\small,>=stealth]
+\coordinate(A)at(-1.5,-.8);\coordinate(B)at(1.4,-1);
+\coordinate(C)at(1.7,1);\coordinate(D)at(-1,1.4);
+\draw[campusgreen!65,fill=campusgreen!5] (A)--(B)--(1.2,-3.9)--(-1.7,-3.7)--cycle;
+\draw[campusgreen!65,fill=campusgreen!5] (B)--(C)--(3.7,.7)--(3.4,-1.3)--cycle;
+\draw[campusgreen!65,fill=campusgreen!5] (C)--(D)--(-.6,4.1)--(2.1,3.7)--cycle;
+\draw[campusgreen!65,fill=campusgreen!5] (D)--(A)--(-3.7,-.3)--(-3.2,1.9)--cycle;
+\draw[thick] (A)--(B)--(C)--(D)--cycle;
+\coordinate(P)at(-.15,-2.35);\coordinate(Q)at(2.55,-.15);
+\coordinate(R)at(.55,2.55);\coordinate(S)at(-2.35,.55);
+\foreach\v/\pos in {A/below left,B/below right,C/above right,D/above left}
+  {\fill(\v)circle(1.7pt)node[\pos]{$\v$};}
+\ifnum#1=1
+  \draw[very thick,campusgreen,->] (P)--(R);
+  \draw[very thick,orange!85!black,dashed,->] (Q)--(S);
+\fi
+\foreach\v/\pos in {P/below,Q/right,R/above,S/left}
+  {\fill(\v)circle(2pt)node[\pos]{$\v$};}
+\end{tikzpicture}}
+
+\begin{frame}[t]{再看一个几何谜题}
+\begin{columns}[c,onlytextwidth]
+\column{.49\textwidth}\centering\aubelplot{0}
+\column{.48\textwidth}\smallbody
+任取一个凸四边形$ABCD$，\par 在四条边外侧分别作正方形。
+\par\vspace{4mm}$P,Q,R,S$依次是\par 四个正方形的中心。
+\par\vspace{4mm}\key{连接$PR$和$QS$，你猜会出现什么？}
+\par\vspace{4mm}先猜长度关系，再猜夹角。
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{四边形变了，这个关系却没有变}
+\begin{columns}[c,onlytextwidth]
+\column{.49\textwidth}\centering\aubelplot{1}
+\column{.48\textwidth}\smallbody
+\[\boxed{PR=QS,\qquad PR\perp QS}\]
+这是\key{凡·奥贝尔定理}\par（Van Aubel's theorem）。
+\par\vspace{4mm}不要求原来的四边形是\par 正方形、长方形或平行四边形。
+\par\vspace{4mm}\href{https://www.geogebra.org/m/xc4wEeWt}{\beamergotobutton{打开动态构型}}
+\par\vspace{3mm}改变凸四边形，观察这两条连线。
+\end{columns}
+\vfill{\fontsize{8}{10}\selectfont 来源：Needham，\textit{Visual Complex Analysis}，第1章第18--19页，图1.12。}
+\end{frame}
+
+\begin{frame}[t]{先补两个小工具：位移与中点}
+\smallbody
+点$A,B$对应复数$a,b$。
+\par\vspace{4mm}从$A$指向$B$的位移，对应\key{$b-a$}；\par 中点$M$对应\key{$m=(a+b)/2$}。
+\par\vspace{5mm}例如：$a=1+i,\ b=5+3i$。
+\[b-a=4+2i,\qquad m=3+2i.\]
+\par\vspace{4mm}在图上核对：从$(1,1)$出发，\par 向右$4$、向上$2$，是否到达$(5,3)$？
+\vfill \key{减法描述怎样走；平均数描述中点在哪里。}
+\end{frame}
+
+\begin{frame}[t]{怎样一步找到正方形的中心}
+\begin{columns}[c,onlytextwidth]
+\column{.44\textwidth}\centering
+\begin{tikzpicture}[x=.8cm,y=.8cm,font=\small,>=stealth]
+\draw[thick,campusgreen,fill=campusgreen!5](0,0)--(4,0)--(4,-4)--(0,-4)--cycle;
+\draw[dashed,gray](0,0)--(4,-4)(4,0)--(0,-4);
+\fill(0,0)circle(2pt)node[above left]{$A(a)$};
+\fill(4,0)circle(2pt)node[above right]{$B(b)$};
+\fill(2,0)circle(2pt)node[above]{$M$};
+\fill(2,-2)circle(2pt)node[below right]{$P(p)$};
+\draw[->,very thick,campusgreen](0,0)--(2,0);
+\draw[->,very thick,orange!85!black](2,0)--(2,-2);
+\end{tikzpicture}
+\column{.53\textwidth}\smallbody
+$ABCD$按逆时针排列，\par 外侧在有向边$AB$的右边。
+\par\vspace{3mm}先到中点$M$，再把半条边\par\key{顺时针转$90^\circ$}：
+\[p=\underbrace{\frac{a+b}{2}}_{\text{中点}}\;\underbrace{-\,i\frac{b-a}{2}}_{\text{向外走半条边}}.\]
+\par\vspace{3mm}顺时针对应$-i$。
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{四条边，都用同一个动作}
+\smallbody
+用$a,b,c,d$表示逆时针凸四边形的四个顶点，\par 四个外接正方形的中心依次为$p,q,r,s$。
+\begin{align*}
+p&=\frac{a+b-i(b-a)}2,&q&=\frac{b+c-i(c-b)}2,\\[4mm]
+r&=\frac{c+d-i(d-c)}2,&s&=\frac{d+a-i(a-d)}2.
+\end{align*}
+\par\vspace{3mm}\key{每个式子：边的中点，加上向外的半边旋转。}
+\vfill 要比较$PR$与$QS$，接下来比较哪两个位移？
+\end{frame}
+
+\begin{frame}[t]{挑战：把两条连线放在一起比较}
+\smallbody
+把前面的式子相减、去括号，得到
+\begin{align*}
+2(r-p)&=(c+d-a-b)-i(a+d-b-c),\\[3mm]
+2(s-q)&=(a+d-b-c)+i(c+d-a-b).
+\end{align*}
+\par\vspace{3mm}暂记$u=c+d-a-b,\ v=a+d-b-c$，则
+\[2(r-p)=u-iv,\qquad 2(s-q)=v+iu.\]
+\par\vspace{3mm}\key{试一试：$i(u-iv)$等于什么？}\par 用到的仍然只是分配律和$i^2=-1$。
+\end{frame}
+
+\begin{frame}[t]{两个几何结论，藏在同一个等式里}
+\smallbody
+\[i(u-iv)=iu-i^2v=v+iu.\]
+所以$2(s-q)=2i(r-p)$，即
+\[\boxed{s-q=i(r-p)}.\]
+\par\vspace{3mm}从$P$到$R$的位移，乘以$i$，\par 就得到从$Q$到$S$的位移。
+\par\vspace{4mm}\key{长度不变：$PR=QS$；方向转过直角：$PR\perp QS$。}
+\vfill 动态图给出猜想；这个等式解释为什么一直成立。
+\end{frame}
+
+% 自编核对练习；已独立计算全部中心和位移。
+% 目标：迁移中心公式；方法：代入、分配律；难度：中等。
+% 易错：-i(2-4i) 的实部为 -4；评价：中点与旋转各能解释一步。
+\begin{frame}[t]{换一个四边形，你能找到它的中心吗}
+\smallbody
+四个顶点按逆时针顺序排列，对应复数为
+\[a=0,\quad b=4,\quad c=2+2i,\quad d=-2+4i.\]
+仍在四边形外侧作正方形。
+\par\vspace{4mm}（1）求边$AB$上正方形的中心$p$。
+\par\vspace{3mm}（2）求边$CD$上正方形的中心$r$，再算$r-p$。
+\par\vspace{3mm}（3）已知$q=4+2i,\ s=-3+i$，\par 检查是否有$s-q=i(r-p)$。
+\vfill 先独立计算，再用几何关系检查旋转方向。
+\end{frame}
+
+\begin{frame}[t]{核对：算出的两条线段能互相检查}
+\smallbody
+\begin{align*}
+p&=\frac{0+4-i(4-0)}2=2-2i,\\[3mm]
+r&=\frac{(2+2i)+(-2+4i)-i[(-2+4i)-(2+2i)]}2\\[2mm]
+ &=\frac{6i-i(-4+2i)}2=1+5i.
+\end{align*}
+\[r-p=-1+7i,\qquad s-q=-7-i.\]
+\[i(r-p)=i(-1+7i)=-7-i=s-q.\]
+\vfill 不必分别算长度和夹角，也能读出等长与垂直。
+\end{frame}
+
+\begin{frame}[t]{旋转的小箭头，还可以画出什么}
+\smallbody
+一根箭头转圈；把几根转圈的箭头\key{首尾相接}，\par 最后一根箭头的终点会留下怎样的轨迹？
+\par\vspace{5mm}\href{https://www.bilibili.com/video/BV1o4411D7vm/}{\beamergotobutton{3Blue1Brown：傅立叶级数绘图动画}}
+\par\vspace{4mm}建议选播约$30$--$60$秒，观察终点怎样画出图案。
+\par\vspace{5mm}\key{与今天的联系}\par 箭头可以用复数表示；\par 首尾相接对应加法，旋转可以用乘法描述。
+\vfill 后续探索：旋转怎样从一个直角，变成任意角度？
+\end{frame}
+
+\begin{frame}[t]{留下一个你现在能够解释的惊喜}
+\smallbody
+\key{先说清楚结论}\par 在凸四边形四边外侧作正方形，\par 相对的两个正方形中心的连线等长且垂直。
+\par\vspace{4mm}\key{再解释一个关键等式}\par 为什么$s-q=i(r-p)$能一次说明两个几何关系？
+\par\vspace{4mm}\key{还可以追问}\par 如果把四个正方形都改作在内侧，会怎样？
+\vfill 提示：$-i$变成$+i$。先想想：四个中心有可能重合吗？
+\end{frame}
+\endgroup
+% ===== 追加探究结束 =====
+
+\end{document}
