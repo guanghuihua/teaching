@@ -1,0 +1,403 @@
+% !TeX program = xelatex
+% 复制本文件到本次备课目录，修改下列信息，再替换各页占位文字。
+% 本文件是投影课件模板，不是可直接发给学生的试卷。
+\documentclass[UTF8,10pt,aspectratio=169]{ctexbeamer}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta,positioning,shapes.geometric}
+\usepackage{newtxtext,newtxmath}
+\usetheme{default}
+\usecolortheme{default}
+\usefonttheme{serif}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\newcommand{\LessonTitle}{古诗词基础与鉴赏}
+\newcommand{\LessonSubtitle}{语文必修上册／习题讲评}
+\newcommand{\LessonInfo}{}
+\newcommand{\PageHeading}[1]{\begin{center}{\Large\bfseries #1}\end{center}\vspace{0.2cm}}
+\newcommand{\Answer}[1]{\par\vspace{0.2cm}\textbf{【答案】}#1}
+\newcommand{\Analysis}[1]{\par\vspace{0.2cm}\textbf{【详解】}#1}
+\newcommand{\Choices}[4]{\par\vspace{0.2cm}\begin{tabular}{@{}p{0.47\textwidth}p{0.47\textwidth}@{}}A. #1 & B. #2 \\[0.15cm] C. #3 & D. #4\end{tabular}}
+
+\begin{document}
+% 封面；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{古诗词基础与鉴赏}
+语文必修上册 · 第三单元习题课\par\vspace{0.23cm}
+《梦游天姥吟留别》  《登高》  《琵琶行并序》\par\vspace{0.23cm}
+基础知识积累与陈与义《夜雨》阅读\par\vspace{0.23cm}
+\end{frame}
+% 导学；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{本课任务}
+基础积累：辨字音字形，结合语境解释词义。\par\vspace{0.23cm}
+文言辨析：判断词类活用，区分古今词义。\par\vspace{0.23cm}
+诗歌鉴赏：用具体诗句支撑手法、情感和作用。\par\vspace{0.23cm}
+课堂安排：基础部分与鉴赏部分可分两课时使用。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{一、识记字音（1）}
+给下列词语中的重点字注音。\par\vspace{0.23cm}
+天姥　　天台　　剡溪\par\vspace{0.23cm}
+渌水　　脚著　　木屐\par\vspace{0.23cm}
+暝色　　殷岩泉　战栗\par\vspace{0.23cm}
+层巅　　澹澹　　悄然\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{一、识记字音（1） · 参考答案}
+天姥 mǔ　　 天台 tāi　　 剡溪 shàn\par\vspace{0.23cm}
+渌水 lù　　 脚著 zhuó　 木屐 jī\par\vspace{0.23cm}
+暝色 míng　 殷岩泉 yǐn　战栗 lì\par\vspace{0.23cm}
+层巅 diān　 澹澹 dàn　　悄然 qiǎo\par\vspace{0.23cm}
+注意：地名“天台”“剡溪”须按专名读音。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{一、识记字音（2）}
+给下列词语中的重点字注音。\par\vspace{0.23cm}
+霓裳　　鸾鸟　　魂魄\par\vspace{0.23cm}
+双鬓　　商贾　　惘然\par\vspace{0.23cm}
+憔悴　　转徙　　迁谪\par\vspace{0.23cm}
+荻花　　虾蟆陵　钿头\par\vspace{0.23cm}
+银篦　　嘲哳\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{一、识记字音（2） · 参考答案}
+霓裳 cháng　鸾鸟 luán　魂魄 pò\par\vspace{0.23cm}
+双鬓 bìn　　商贾 gǔ　　惘然 wǎng\par\vspace{0.23cm}
+憔悴 qiáo cuì　转徙 xǐ　迁谪 zhé\par\vspace{0.23cm}
+荻花 dí　　虾蟆陵 há má　钿头 diàn\par\vspace{0.23cm}
+银篦 bì　　嘲哳 zhāo zhā\par\vspace{0.23cm}
+“霓裳”“商贾”“虾蟆陵”不可按常见字音猜读。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{一、识记字音（3）}
+辨析多音字，在对应词语中注音。\par\vspace{0.23cm}
+咽：幽咽（　）　咽喉（　）　下咽（　）\par\vspace{0.23cm}
+悄：悄无言（　）　静悄悄（　）\par\vspace{0.23cm}
+横：向天横（　）　蛮横（　）\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{一、识记字音（3） · 参考答案}
+咽：幽咽 yè　　咽喉 yān　　下咽 yàn\par\vspace{0.23cm}
+悄：悄无言 qiǎo　　静悄悄 qiāo\par\vspace{0.23cm}
+横：向天横 héng　　蛮横 hèng\par\vspace{0.23cm}
+辨音依据：先确定词义，再确定读音。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{二、辨识字形}
+依据拼音填写汉字。\par\vspace{0.23cm}
+（míng）\_\_色　青\_\_　\_\_蛉\par\vspace{0.23cm}
+（cáo）\_\_杂　（zāo）\_\_糕　（cáo）水\_\_\par\vspace{0.23cm}
+（jiē）\_\_叹　（cuō）\_\_跎　（cuō）\_\_商\par\vspace{0.23cm}
+（xián）管\_\_　（xuán）\_\_妙　（xián）船\_\_\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{二、辨识字形 · 参考答案}
+暝色　　青冥　　螟蛉\par\vspace{0.23cm}
+嘈杂　　糟糕　　水槽\par\vspace{0.23cm}
+嗟叹　　蹉跎　　磋商\par\vspace{0.23cm}
+管弦　　玄妙　　船舷\par\vspace{0.23cm}
+字形联系字义：日暮用“暝”，昆虫用“螟”。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{三、解释词语（1）}
+解释方括号中的词语。\par\vspace{0.23cm}
+1. 云霞明灭［或］可睹\par\vspace{0.23cm}
+2. 天姥连天［向天横］\par\vspace{0.23cm}
+3. 我欲［因］之梦吴越\par\vspace{0.23cm}
+4. ［渌］水荡漾［清］猿啼\par\vspace{0.23cm}
+5. 迷花倚石忽已［暝］\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{三、解释词语（1） · 参考答案}
+1. 或：有时。\par\vspace{0.23cm}
+2. 向天横：遮蔽天空。横，有遮蔽之意。\par\vspace{0.23cm}
+3. 因：依据。这里指依据越人的传说。\par\vspace{0.23cm}
+4. 渌：清澈。清：凄清、清亮（形容猿声）。\par\vspace{0.23cm}
+5. 暝：天黑、夜晚。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{三、解释词语（2）}
+6. 云［青青］兮欲雨\par\vspace{0.23cm}
+7. 忽魂［悸］以［魄动］\par\vspace{0.23cm}
+8. 惟［觉］时之枕席\par\vspace{0.23cm}
+9. ［失向来］之烟霞\par\vspace{0.23cm}
+10. ［且］放白鹿青崖间\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{三、解释词语（2） · 参考答案}
+6. 青青：黑沉沉的。\par\vspace{0.23cm}
+7. 悸：因惊惧而心跳。魄动：心神震动。\par\vspace{0.23cm}
+8. 觉：醒。补充：惟，只有。\par\vspace{0.23cm}
+9. 失：消失。向来：原来，指此前梦中所见。\par\vspace{0.23cm}
+10. 且：暂且。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{三、解释词语（3）}
+11. 弦弦掩抑声声［思］\par\vspace{0.23cm}
+12. 低眉［信手］［续续］弹\par\vspace{0.23cm}
+13. 秋月春风［等闲］度\par\vspace{0.23cm}
+14. ［去来］江口守空船\par\vspace{0.23cm}
+15. ［却］坐促弦弦转急\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{三、解释词语（3） · 参考答案}
+11. 思（sì）：愁思、情思。补充：掩抑，声音低沉。\par\vspace{0.23cm}
+12. 信手：随手。续续：连续不断的样子。\par\vspace{0.23cm}
+13. 等闲：随随便便地、轻易地。\par\vspace{0.23cm}
+14. 去来：走了以后。来，语气助词。\par\vspace{0.23cm}
+15. 却：退回。补充：促弦，把弦拧紧。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{四、词类活用（1）}
+指出方括号中的词的用法并解释。\par\vspace{0.23cm}
+1. 对此欲倒［东南］倾\par\vspace{0.23cm}
+2. 熊咆龙吟［殷］岩泉\par\vspace{0.23cm}
+3. ［栗］深林兮［惊］层巅\par\vspace{0.23cm}
+4. 云青青兮欲［雨］\par\vspace{0.23cm}
+5. 虎［鼓］瑟兮鸾［回］车\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{四、词类活用（1） · 参考答案}
+1. 东南：名词作状语，向东南。\par\vspace{0.23cm}
+2. 殷：形容词作动词，震响、震动。\par\vspace{0.23cm}
+3. 栗、惊：使动用法，使……战栗、使……震惊。\par\vspace{0.23cm}
+4. 雨：名词作动词，下雨。\par\vspace{0.23cm}
+5. 鼓：名词作动词，弹奏。回：使动，使……回转。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{四、词类活用（2）}
+6. 安能摧眉折腰［事］权贵\par\vspace{0.23cm}
+7. 遂命［酒］\par\vspace{0.23cm}
+8. ［歌］以赠之\par\vspace{0.23cm}
+9. 浔阳江头［夜］送客\par\vspace{0.23cm}
+10. 商人［重］利［轻］别离\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{四、词类活用（2） · 参考答案}
+6. 事：名词作动词，侍奉。\par\vspace{0.23cm}
+7. 酒：名词作动词，摆酒席。\par\vspace{0.23cm}
+8. 歌：名词作动词，作歌。\par\vspace{0.23cm}
+9. 夜：名词作状语，在夜里。\par\vspace{0.23cm}
+10. 重、轻：意动用法，看重……、轻视……。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{五、古今异义（1）}
+解释加括号词语在句中的古义。\par\vspace{0.23cm}
+1. 烟涛微茫［信］难求\par\vspace{0.23cm}
+2. ［明年］秋，送客湓浦口\par\vspace{0.23cm}
+3. ［因为］长句\par\vspace{0.23cm}
+4. 铁骑［突出］刀枪鸣\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{五、古今异义（1） · 参考答案}
+1. 信：实在、确实。今常指书信或相信。\par\vspace{0.23cm}
+2. 明年：第二年。今指今年的下一年。\par\vspace{0.23cm}
+3. 因为：于是创作。因，副词。为，动词。\par\vspace{0.23cm}
+4. 突出：突然冲出。今指鼓出来或显著。\par\vspace{0.23cm}
+“因为长句”须拆开解释，不能套用现代因果连词。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{五、古今异义（2）}
+5. ［整顿］衣裳起敛容\par\vspace{0.23cm}
+6. 暮去朝来［颜色］故\par\vspace{0.23cm}
+7. ［老大］嫁作商人妇\par\vspace{0.23cm}
+提示：先把词放回人物动作或人生经历中理解。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{五、古今异义（2） · 参考答案}
+5. 整顿：整理。今常指使紊乱的变整齐。\par\vspace{0.23cm}
+6. 颜色：容貌、脸色。今常指物体的色彩。\par\vspace{0.23cm}
+7. 老大：年纪大了。今可指排行第一的人。\par\vspace{0.23cm}
+语境判断：“颜色故”写容颜衰老，“老大”写年华逝去。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{六、李白与杜甫：比较阅读}
+结合《梦游天姥吟留别》《登高》及以前学过的诗歌，\par\vspace{0.23cm}
+分析二人在创作风格和意象选择上的区别。\par\vspace{0.23cm}
+作答要求：分别概括风格，并各举两处诗中证据。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{李白：想象奇特，气势奔放}
+创作风格：本诗想象丰富，夸张大胆，情感强烈。\par\vspace{0.23cm}
+意象选择：天姥高峰、云霓、金银台、仙人、白鹿。\par\vspace{0.23cm}
+“天台四万八千丈，对此欲倒东南倾”\par\vspace{0.23cm}
+以夸张与衬托写天姥的高峻，显示雄奇气势。\par\vspace{0.23cm}
+“霓为衣兮风为马”：神奇想象构成瑰丽仙境。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{杜甫：沉郁顿挫，情景交融}
+创作风格：本诗情感深沉，语言凝练，节奏富于变化。\par\vspace{0.23cm}
+意象选择：急风、哀猿、飞鸟、落木、长江、霜鬓。\par\vspace{0.23cm}
+“无边落木萧萧下，不尽长江滚滚来”\par\vspace{0.23cm}
+以苍凉阔大的秋景，寄托漂泊衰老与身世之悲。\par\vspace{0.23cm}
+比较须立足具体诗篇，两位诗人的风格并非单一。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{七、《登高》的格律}
+结合平仄、用韵和对仗，分析这首七言律诗。\par\vspace{0.23cm}
+风急天高猿啸哀，渚清沙白鸟飞回。\par\vspace{0.23cm}
+无边落木萧萧下，不尽长江滚滚来。\par\vspace{0.23cm}
+万里悲秋常作客，百年多病独登台。\par\vspace{0.23cm}
+艰难苦恨繁霜鬓，潦倒新停浊酒杯。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{《登高》：体式与用韵}
+体式：全诗八句，每句七字，共四联。\par\vspace{0.23cm}
+用韵：哀、回、来、台、杯，同属平水韵上平十灰。\par\vspace{0.23cm}
+首句入韵，第二、四、六、八句押韵，一韵到底。\par\vspace{0.23cm}
+效果：韵脚反复照应，朗读时形成回环连贯的声韵。\par\vspace{0.23cm}
+判断古诗押韵和平仄，不能只看普通话读音。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{《登高》：平仄与对仗}
+平仄示例：风急天高猿啸哀＝平仄平平平仄平。\par\vspace{0.23cm}
+“急”古属入声，判为仄声。\par\vspace{0.23cm}
+全诗四联皆对，首联又有“风急／天高”等句中对。\par\vspace{0.23cm}
+颔联：无边／不尽，落木／长江，萧萧／滚滚，下／来。\par\vspace{0.23cm}
+叠词形成节奏，“下”“来”使秋景具有动态与气势。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{八、《琵琶行》的景物描写}
+找出《琵琶行并序》中描写景物的诗句，\par\vspace{0.23cm}
+说明这些景物描写的作用。\par\vspace{0.23cm}
+作答路径：景物特征＋所在情境＋情感或结构作用。\par\vspace{0.23cm}
+注意区分：真实环境描写与音乐描写中的比喻。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{景物作用（1）：离别与余音}
+“浔阳江头夜送客，枫叶荻花秋瑟瑟。”\par\vspace{0.23cm}
+秋夜江边，枫叶荻花与秋风构成萧瑟环境，烘托离愁。\par\vspace{0.23cm}
+“醉不成欢惨将别，别时茫茫江浸月。”\par\vspace{0.23cm}
+茫茫江水与月色渲染愁绪，为琵琶声出现作铺垫。\par\vspace{0.23cm}
+“东船西舫悄无言，唯见江心秋月白。”\par\vspace{0.23cm}
+以环境寂静和听众无言，侧面烘托音乐的感染力。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{景物作用（2）：孤独与迁谪}
+“去来江口守空船，绕船月明江水寒。”\par\vspace{0.23cm}
+清冷的月色和江水，烘托琵琶女独守空船的孤寂。\par\vspace{0.23cm}
+“住近湓江地低湿，黄芦苦竹绕宅生。”\par\vspace{0.23cm}
+荒僻、低湿的居住环境，衬托诗人谪居的苦闷。\par\vspace{0.23cm}
+“其间旦暮闻何物？杜鹃啼血猿哀鸣。”\par\vspace{0.23cm}
+借哀切的声音渲染悲凉，使“同是天涯沦落人”有依托。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{九、《琵琶行》的音乐描写}
+《琵琶行并序》如何描绘音乐？有哪些好处？\par\vspace{0.23cm}
+请从比喻、拟声、节奏变化、侧面描写等角度选择作答。\par\vspace{0.23cm}
+每一种手法至少配一处诗句，并说明声音特点。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{音乐描写（1）：把声音写得可感}
+“大弦嘈嘈如急雨，小弦切切如私语。”\par\vspace{0.23cm}
+比喻与拟声结合，分别写出粗重急促、轻细柔和。\par\vspace{0.23cm}
+“大珠小珠落玉盘”：以比喻写清脆圆润、错落有致。\par\vspace{0.23cm}
+“间关莺语花底滑，幽咽泉流冰下难。”\par\vspace{0.23cm}
+由流畅婉转转为低沉阻塞，声音变化对应情感起伏。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{音乐描写（2）：停顿、高潮与余韵}
+“此时无声胜有声”：暂歇中含有幽愁暗恨。\par\vspace{0.23cm}
+“银瓶乍破水浆迸，铁骑突出刀枪鸣”\par\vspace{0.23cm}
+以鲜明比喻写突然爆发的激越声势。\par\vspace{0.23cm}
+“四弦一声如裂帛”：强烈一击，戛然而止。\par\vspace{0.23cm}
+“东船西舫悄无言”：听众反应与寂静环境构成侧写。\par\vspace{0.23cm}
+作用：展现乐曲层次，使抽象声音与人物情感相联系。\par\vspace{0.23cm}
+\end{frame}
+% 阅读；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{十、迁移阅读《夜雨》}
+陈与义〔宋代〕\par\vspace{0.23cm}
+经岁柴门百事乖，此身只合卧苍苔。\par\vspace{0.23cm}
+蝉声未足秋风起，木叶俱鸣夜雨来。\par\vspace{0.23cm}
+棋局可观浮世理，灯花应为好诗开。\par\vspace{0.23cm}
+独无宋玉悲歌念，但喜新凉入酒杯。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{《夜雨》选择题：选项 A、B}
+下列对这首诗的理解与赏析，不正确的一项是（　）\par\vspace{0.23cm}
+A．诗的开头交代，诗人虽多年身处柴门中，\par\vspace{0.23cm}
+但诸事顺遂，快乐无忧，希望如隐者般卧于苍苔。\par\vspace{0.23cm}
+B．颔联写蝉声未尽，秋风已至，夜雨骤起，\par\vspace{0.23cm}
+木叶齐鸣，通过视听结合描绘了秋夜的独特意蕴。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{《夜雨》选择题：选项 C、D}
+C．颈联借“棋局”感悟大千世界的浮沉之道，\par\vspace{0.23cm}
+与《约客》中“闲敲棋子落灯花”的立意不同。\par\vspace{0.23cm}
+D．本诗的结构独特，以情起，以景承，以理结，\par\vspace{0.23cm}
+既是吟秋，亦是写怀，既有雅趣，又有诗兴。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{《夜雨》选择题 · 参考答案}
+答案：A。\par\vspace{0.23cm}
+“百事乖”的“乖”指不顺、违背心意。\par\vspace{0.23cm}
+“只合卧苍苔”流露失意、自嘲与无奈。\par\vspace{0.23cm}
+A把“百事乖”理解成“诸事顺遂、快乐无忧”，与原意相反。\par\vspace{0.23cm}
+判断依据：先解释关键字词，再核对选项的情感判断。\par\vspace{0.23cm}
+\end{frame}
+% 练习；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{《夜雨》：情感变化}
+本诗写出了诗人情感变化的过程，\par\vspace{0.23cm}
+请结合诗句简要分析。\par\vspace{0.23cm}
+独立作答：按诗歌顺序，写清起点、转折与终点。\par\vspace{0.23cm}
+每一层都要有对应词句，不能只写“先悲后喜”。\par\vspace{0.23cm}
+\end{frame}
+% 答案；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{《夜雨》：情感变化参考答案}
+起初失意无奈：“百事乖”“只合”写诸事不顺的苦闷。\par\vspace{0.23cm}
+继而有所转变：秋风夜雨带来季节变化，诗人转向观景。\par\vspace{0.23cm}
+逐渐自适：“棋局可观”“灯花应为”，写观棋悟理、得诗之趣。\par\vspace{0.23cm}
+最终欣喜旷达：“独无”否定悲秋，“但喜”点明新凉与饮酒之乐。\par\vspace{0.23cm}
+全诗从失意转向自我排遣，终以喜悦收束。\par\vspace{0.23cm}
+\end{frame}
+% 总结；来源：用户照片第68—69页。
+\begin{frame}
+\PageHeading{课堂收束}
+词义题：解释必须放回原句。\par\vspace{0.23cm}
+活用题：用法名称与语境释义一起回答。\par\vspace{0.23cm}
+鉴赏题：手法或情感判断后，要给出诗句和具体分析。\par\vspace{0.23cm}
+课后订正：选三处错题，写明误读原因及正确依据。\par\vspace{0.23cm}
+\end{frame}
+\end{document}
