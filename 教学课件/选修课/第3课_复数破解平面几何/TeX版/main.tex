@@ -1,8 +1,11 @@
 % !TeX program = xelatex
-% 单文件 Beamer 课件，无外置主题、图片或字体文件依赖。
+% 课堂放映版：保留点击覆盖页。PDF一页对应一次点击状态，不是连续新增知识页。
 % 编译：在本目录运行 xelatex -interaction=nonstopmode "main.tex" 两次。
-% 在下一行取消注释，可另行编译出每张幻灯片后附教师备注的版本。
+% 备课全显版（不能当作课堂首屏）：取消下一行的注释。
+% \def\HandoutVersion{1}
+% 教师备注版：取消下一行的注释；时间只写在备注，不进入学生页脚。
 % \def\TeacherNotes{1}
+\ifdefined\HandoutVersion\PassOptionsToClass{handout}{beamer}\fi
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
@@ -12,7 +15,6 @@
 \definecolor{ink}{HTML}{183025}
 \definecolor{muted}{HTML}{63756B}
 \definecolor{warm}{HTML}{A65A1F}
-\definecolor{errorred}{HTML}{AB3838}
 \setbeamercolor{normal text}{fg=ink,bg=white}
 \setbeamercolor{structure}{fg=campusgreen}
 \setbeamercolor{frametitle}{fg=campusgreen,bg=white}
@@ -22,321 +24,344 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{headline}{}
 \setbeamertemplate{frametitle}{\vspace*{3mm}\insertframetitle\par\vspace*{3mm}}
-\newcommand{\LessonTime}{00:00--00:30}
+% 左下角留空；学生投屏只显示右下角逻辑页码。
+\setbeamertemplate{footline}{\hfill{\color{muted}\fontsize{7}{9}\selectfont\insertframenumber/\inserttotalframenumber}\hspace*{8mm}\vspace*{3mm}}
+\setbeamercovered{invisible}
+\ifdefined\TeacherNotes\setbeameroption{show notes}\else\setbeameroption{hide notes}\fi
+\newcommand{\LessonTime}{}
 \newcommand{\settime}[1]{\gdef\LessonTime{#1}}
-\setbeamertemplate{footline}{%
-  \hspace*{8mm}{\color{muted}\fontsize{7}{9}\selectfont\LessonTime\quad 分钟}%
-  \hfill{\color{muted}\fontsize{7}{9}\selectfont\insertframenumber/\inserttotalframenumber}\hspace*{8mm}\vspace*{3mm}}
-\ifdefined\TeacherNotes
-  \setbeameroption{show notes}
-\else
-  \setbeameroption{hide notes}
-\fi
+\newcommand{\teachnote}[1]{\note{建议时间：\LessonTime。#1}}
 \newcommand{\key}[1]{{\color{campusgreen}\bfseries #1}}
 \newcommand{\bigmath}[1]{\begingroup\color{campusgreen}\fontsize{18}{25}\selectfont\[#1\]\endgroup}
-\newcommand{\gap}{\par\vspace{4mm}}
-\newcommand{\vcaref}{Needham，\textit{Visual Complex Analysis}，25周年版（2023），第1章\S1.3.3，第18--22页。}
+\newcommand{\gap}{\par\vspace{3mm}}
+\newcommand{\vcaref}{Needham，\textit{Visual Complex Analysis}，25周年版（2023），\S1.3.3，第18--22页。}
+\newcommand{\fhref}{Finsler与Hadwiger，\textit{Einige Relationen im Dreieck}，1937，第324页，doi:10.1007/BF01214300。}
+\newcommand{\napref}{Zaslavsky与Skopenkov，\textit{Mathematics via Problems, Part 2: Geometry}，\S1.9，第25页。}
 
-% 主构型由明确坐标独立重绘，非书中图像截图。
-% A=0，B=4+i，C=3-3i，ABC顺时针。
-% 左侧正方形中心p=(3+5i)/2，右侧中心s=-3i，m=(7-2i)/2。
-% 因而p-m=-2+3.5i，s-m=-3.5-2i=i(p-m)。
-\newcommand{\trianglefigure}[1]{%
+% 主构型：A=0，B=4+i，C=3-3i；ABC顺时针。
+% 参数：1=显示复数坐标；2=从第几次覆盖显示MP/MS，0为不显示；
+%       3=从第几次覆盖显示直角，0为始终不显示。
+\newcommand{\trianglefigure}[3]{%
 \begin{tikzpicture}[x=.42cm,y=.42cm,font=\scriptsize,>=Stealth]
-  \path[use as bounding box] (-3.7,-6.8) rectangle (5.1,5.8);
+  \path[use as bounding box](-3.7,-6.8)rectangle(5.1,5.8);
   \coordinate(A)at(0,0);\coordinate(B)at(4,1);\coordinate(C)at(3,-3);
   \coordinate(P)at(1.5,2.5);\coordinate(S)at(0,-3);\coordinate(M)at(3.5,-1);
-  \filldraw[draw=campusgreen!70,fill=campusgreen!7] (A)--(B)--(3,5)--(-1,4)--cycle;
-  \filldraw[draw=campusgreen!70,fill=campusgreen!7] (A)--(C)--(0,-6)--(-3,-3)--cycle;
-  \draw[thick,ink] (A)--(B)--(C)--cycle;
-  \draw[very thick,campusgreen] (M)--(P);
-  \draw[very thick,warm] (M)--(S);
-  \pic[draw=ink,angle radius=3mm] {right angle=P--M--S};
+  \filldraw[draw=campusgreen!70,fill=campusgreen!7](A)--(B)--(3,5)--(-1,4)--cycle;
+  \filldraw[draw=campusgreen!70,fill=campusgreen!7](A)--(C)--(0,-6)--(-3,-3)--cycle;
+  \draw[thick,ink](A)--(B)--(C)--cycle;
+  \ifnum#2>0\only<#2->{\draw[very thick,campusgreen](M)--(P);\draw[very thick,warm](M)--(S);}\fi
+  \ifnum#3>0\only<#3->{\pic[draw=ink,angle radius=3mm]{right angle=P--M--S};}\fi
   \foreach\v in {A,B,C,P,S,M}{\fill[ink](\v)circle(1.5pt);}
   \ifnum#1=1
     \node[left]at(A){$A(0)$};\node[right]at(B){$B(b)$};\node[below right]at(C){$C(c)$};
   \else
     \node[left]at(A){$A$};\node[right]at(B){$B$};\node[below right]at(C){$C$};
   \fi
-  \node[above left]at(P){$P(p)$};\node[below left]at(S){$S(s)$};\node[right]at(M){$M(m)$};
+  \node[above left]at(P){$P$};\node[below left]at(S){$S$};\node[right]at(M){$M$};
 \end{tikzpicture}}
 
-\newcommand{\centerfigure}{%
-\begin{tikzpicture}[x=.65cm,y=.65cm,font=\small,>=Stealth]
-  \filldraw[draw=campusgreen!70,fill=campusgreen!6] (0,0)rectangle(4,4);
-  \draw[gray,dashed](0,0)--(4,4)(0,4)--(4,0);
-  \draw[very thick,->,campusgreen](0,0)--(2,0);
-  \draw[very thick,->,warm](2,0)--(2,2);
-  \fill(0,0)circle(1.5pt)node[below]{$A(a)$};
-  \fill(4,0)circle(1.5pt)node[below]{$B(b)$};
-  \fill(2,0)circle(1.5pt)node[below]{$M$};
-  \fill(2,2)circle(1.5pt)node[right]{$P$};
-\end{tikzpicture}}
-
+% 终点W与答案箭头仅在第3次覆盖出现，首屏不泄露小检查答案。
 \newcommand{\rotationfigure}{%
-\begin{tikzpicture}[x=.72cm,y=.72cm,font=\small,>=Stealth]
+\begin{tikzpicture}[x=.70cm,y=.70cm,font=\small,>=Stealth]
+  \path[use as bounding box](-.7,-.5)rectangle(4.8,4.5);
   \draw[step=1,gray!18](-.3,-.3)grid(4,4);
   \draw[->](-.3,0)--(4.15,0)node[right]{$x$};\draw[->](0,-.3)--(0,4.15)node[above]{$y$};
   \coordinate(A)at(1,1);\coordinate(Z)at(3,1);\coordinate(W)at(1,3);
   \draw[very thick,->,campusgreen](A)--(Z);
-  \draw[very thick,->,warm](A)--(W);
-  \draw[->,ink](1.8,1)arc(0:90:.8);
-  \fill(A)circle(1.5pt)node[below left]{$A(1,1)$};
-  \fill(Z)circle(1.5pt)node[below right]{$Z(3,1)$};
-  \fill(W)circle(1.5pt)node[above right]{$W$};
+  \fill(A)circle(1.5pt)node[below left]{$A(1,1)$};\fill(Z)circle(1.5pt)node[below right]{$Z(3,1)$};
+  \only<3->{\draw[very thick,->,warm](A)--(W);\draw[->](1.8,1)arc(0:90:.8);\fill(W)circle(1.5pt)node[above right]{$W(1,3)$};}
 \end{tikzpicture}}
 
-% 凸四边形ABCD逆时针；四个正方形均向外。
+\newcommand{\centerfigure}{%
+\begin{tikzpicture}[x=.62cm,y=.62cm,font=\small,>=Stealth]
+  \path[use as bounding box](-.7,-.8)rectangle(4.7,4.5);
+  \filldraw[draw=campusgreen!70,fill=campusgreen!6](0,0)rectangle(4,4);
+  \draw[gray,dashed](0,0)--(4,4)(0,4)--(4,0);
+  \fill(0,0)circle(1.5pt)node[below]{$A(a)$};\fill(4,0)circle(1.5pt)node[below]{$B(b)$};
+  \fill(2,2)circle(1.5pt)node[right]{$P$};
+  \only<2->{\fill(2,0)circle(1.5pt)node[below]{$M$};\draw[very thick,->,campusgreen](0,0)--(2,0);}
+  \only<3->{\draw[very thick,->,warm](2,0)--(2,2);}
+\end{tikzpicture}}
+
+% 共顶点的两个正方形：A=0，B=4，D=4i，E=-1-2i，G=2-i。
+% P=2+2i，Q=.5-1.5i，M=3-.5i，N=-.5+i。PMQN顺时针。
+\newcommand{\finslerfigure}[1]{%
+\begin{tikzpicture}[x=.55cm,y=.55cm,font=\scriptsize]
+  \path[use as bounding box](-1.9,-3.9)rectangle(4.9,4.9);
+  \coordinate(A)at(0,0);\coordinate(B)at(4,0);\coordinate(D)at(0,4);
+  \coordinate(E)at(-1,-2);\coordinate(G)at(2,-1);
+  \coordinate(P)at(2,2);\coordinate(Q)at(.5,-1.5);
+  \coordinate(M)at(3,-.5);\coordinate(N)at(-.5,1);
+  \filldraw[draw=campusgreen!65,fill=campusgreen!6](A)--(B)--(4,4)--(D)--cycle;
+  \filldraw[draw=warm!65,fill=warm!5](A)--(E)--(1,-3)--(G)--cycle;
+  \draw[gray,dashed](B)--(G)(D)--(E);
+  \foreach\v/\pos in {A/above left,B/right,D/above,E/below left,G/below right,P/above,Q/below,M/right,N/left}{\fill(\v)circle(1.4pt)node[\pos]{$\v$};}
+  \ifnum#1>0\only<#1->{\draw[very thick,campusgreen](P)--(M)--(Q)--(N)--cycle;}\fi
+\end{tikzpicture}}
+
 \newcommand{\quadrifigure}{%
-\begin{tikzpicture}[x=.52cm,y=.52cm,font=\scriptsize]
-  \coordinate(A)at(-1.5,-.8);\coordinate(B)at(1.4,-1);
-  \coordinate(C)at(1.7,1);\coordinate(D)at(-1,1.4);
+\begin{tikzpicture}[x=.49cm,y=.49cm,font=\scriptsize]
+  \path[use as bounding box](-4.2,-4.6)rectangle(4.4,4.7);
+  \coordinate(A)at(-1.5,-.8);\coordinate(B)at(1.4,-1);\coordinate(C)at(1.7,1);\coordinate(D)at(-1,1.4);
   \filldraw[draw=campusgreen!65,fill=campusgreen!6](A)--(B)--(1.2,-3.9)--(-1.7,-3.7)--cycle;
   \filldraw[draw=campusgreen!65,fill=campusgreen!6](B)--(C)--(3.7,.7)--(3.4,-1.3)--cycle;
   \filldraw[draw=campusgreen!65,fill=campusgreen!6](C)--(D)--(-.6,4.1)--(2.1,3.7)--cycle;
   \filldraw[draw=campusgreen!65,fill=campusgreen!6](D)--(A)--(-3.7,-.3)--(-3.2,1.9)--cycle;
   \draw[thick](A)--(B)--(C)--(D)--cycle;
-  \coordinate(P)at(-.15,-2.35);\coordinate(Q)at(2.55,-.15);
-  \coordinate(R)at(.55,2.55);\coordinate(S)at(-2.35,.55);
-  \draw[very thick,campusgreen](P)--(R);\draw[very thick,warm](Q)--(S);
-  \draw[gray,dashed](B)--(D);
+  \coordinate(P)at(-.15,-2.35);\coordinate(Q)at(2.55,-.15);\coordinate(R)at(.55,2.55);\coordinate(S)at(-2.35,.55);
+  \only<2->{\draw[very thick,campusgreen](P)--(R);\draw[very thick,warm](Q)--(S);\draw[gray,dashed](B)--(D);}
   \foreach\v/\pos in {A/below left,B/below right,C/above right,D/above left,P/below,Q/right,R/above,S/left}{\fill(\v)circle(1.5pt)node[\pos]{$\v$};}
+\end{tikzpicture}}
+
+% AI探索构型：ABC逆时针，三边均向外作等边三角形。
+% 只显示中心连线，不画等边记号，不在学生页给出结论。
+\newcommand{\napoleonfigure}{%
+\begin{tikzpicture}[x=.53cm,y=.53cm,font=\scriptsize]
+  \path[use as bounding box](-2,-4.2)rectangle(5.2,4.2);
+  \coordinate(A)at(0,0);\coordinate(B)at(4,0);\coordinate(C)at(1,2);
+  \coordinate(X)at(2,{-2*sqrt(3)});
+  \coordinate(Y)at({2.5+sqrt(3)},{1+1.5*sqrt(3)});
+  \coordinate(Z)at({.5-sqrt(3)},{1+.5*sqrt(3)});
+  \coordinate(U)at(2,{-2*sqrt(3)/3});
+  \coordinate(V)at({2.5+sqrt(3)/3},{1+sqrt(3)/2});
+  \coordinate(W)at({.5-sqrt(3)/3},{1+sqrt(3)/6});
+  \filldraw[draw=campusgreen!65,fill=campusgreen!6](A)--(B)--(X)--cycle;
+  \filldraw[draw=campusgreen!65,fill=campusgreen!6](B)--(C)--(Y)--cycle;
+  \filldraw[draw=campusgreen!65,fill=campusgreen!6](C)--(A)--(Z)--cycle;
+  \draw[thick](A)--(B)--(C)--cycle;
+  \foreach\v/\pos in {A/above left,B/above right,C/above,U/below,V/right,W/left}{\fill(\v)circle(1.4pt)node[\pos]{$\v$};}
+  \only<2->{\draw[very thick,warm](U)--(V)--(W)--cycle;}
 \end{tikzpicture}}
 
 \begin{document}
 \usebeamerfont{normal text}
 
 \settime{00:00--00:30}
-\begin{frame}[plain]
-\vspace{11mm}
+\begin{frame}[plain]\label{fr:cover}
+\vspace{10mm}
 {\color{campusgreen}\bfseries\fontsize{25}{32}\selectfont 复数破解平面几何\par}
-\vspace{8mm}
-{\fontsize{17}{23}\selectfont 两个正方形，藏着什么关系？\par}
-\vspace{13mm}
-AI伴学·第3课时\qquad 华光辉\par\vspace{4mm}45分钟\hfill\textcolor{muted}{几何探索课}
-\note{本课以几何问题为主体。上次用乘i描述直角旋转，今天把这一动作与位移、中点组合起来，解释一个对任意三角形都成立的关系。}
+\vspace{8mm}{\fontsize{17}{23}\selectfont 从正方形的中心，走进几何证明\par}
+\vspace{14mm}AI伴学·第3课时\qquad 华光辉
+\teachnote{数学探究约40分钟，最后5分钟介绍AI探索与作业。课堂使用普通放映版，不能启用handout；每次点击揭示一层信息，学生先尝试再揭示。}
 \end{frame}
 
-\settime{00:30--04:00}
-\begin{frame}[t]{任意三角形中的一个意外关系}
+\settime{00:30--03:00}
+\begin{frame}[t]{两个中心和一个中点，你能猜到什么}\label{fr:triangle-question}
 \begin{columns}[c,onlytextwidth]
-\column{.36\textwidth}\centering\trianglefigure{0}
+\column{.36\textwidth}\centering\trianglefigure{0}{2}{3}
 \column{.61\textwidth}
-在三角形$ABC$的两边$AB,AC$\par 外侧分别作正方形。
-\gap 中心为$P,S$，$M$为$BC$中点。
-\bigmath{MP=MS,\qquad MP\perp MS}
-为什么三角形怎样变化，\par 这个关系都成立？
+三角形$ABC$两边$AB,AC$外侧作正方形，中心为$P,S$。
+\gap $M$是$BC$中点。
+\uncover<2->{\gap 连接$MP,MS$，比较长度与夹角。}
+\uncover<3->{\gap 待证明的猜想：\bigmath{MP=MS,\quad MP\perp MS}}
 \end{columns}
-\note{先读非退化三角形、外侧、中心、中点等条件。图中已标直角，任务是解释为什么必然成立，不作盲测猜想。让学生纸笔尝试1分钟。这类问题有初等解法，本课展示复数的统一表达。依据：\vcaref 图1.12b。图形按自选坐标独立重绘。}
+\teachnote{首屏只有构造，无两条连线、无直角、无等长结论。先请学生观察；点击1出现连线，再让学生纸笔猜测约1分钟；点击2才显示猜想和直角。依据\vcaref 图1.12b；本课图形独立重绘。}
 \end{frame}
 
-\settime{04:00--07:00}
-\begin{frame}[t]{几何中的一段路，用复数相减}
-点$A,B$对应复数$a,b$。从$A$到$B$的位移是
-\bigmath{b-a.}
-例如：
-\[(4+3i)-(1+i)=3+2i.\]
-\gap 点的位置，与从一个点走到另一个点的位移不同。
-\gap\key{比较两条线段的方向，先把它们写成位移。}
-\note{终点减起点，不能写反。例子解释为向右3、向上2。不要求额外掌握向量公理。}
+\settime{03:00--05:00}
+\begin{frame}[t]{从一个点走到另一个点}\label{fr:displacement}
+点$A,B$对应复数$a,b$。从$A$到$B$的位移怎样写？
+\uncover<2->{\bigmath{b-a}\[ (4+3i)-(1+i)=3+2i.\]}
+\uncover<3->{\gap\key{终点减起点；向右3、向上2。}\gap 比较方向时，要比较位移。}
+\teachnote{先请学生说终点减起点，点击后才核对。再让学生解释3+2i，最后点击出现方向解释。此页不作独立测验，只恢复必要工具。}
 \end{frame}
 
-\settime{07:00--10:00}
-\begin{frame}[t]{旋转中心换了，先减再加}
-以点$A(a)$为中心，将点$Z(z)$逆时针旋转$90^\circ$：
-\bigmath{w=a+i(z-a).}
-\gap $z-a$：从中心出发的位移。
-\gap $i(z-a)$：将这段位移逆时针旋转$90^\circ$。
-\gap\key{再加$a$：得到终点的位置。}
-\note{iz只表示绕原点的旋转。先将中心平移到原点，旋转后再平移回来。依据原书第20页的旋转分解，只取直角旋转，不引入欧拉公式。}
+\settime{05:00--07:00}
+\begin{frame}[t]{绕任意点旋转，公式怎样写}\label{fr:rotation-rule}
+以$A(a)$为中心，将$Z(z)$逆时针旋转$90^\circ$。
+\uncover<2->{\gap 从中心出发的位移：$z-a$。}
+\uncover<3->{\gap 旋转这段位移：$i(z-a)$。}
+\uncover<4->{\gap 加回中心的位置：\bigmath{w=a+i(z-a)}}
+\teachnote{首屏先问为什么不能直接写iz。每次点击分别对应减中心、旋转、加回。学生必须说明每一步的几何意义，不只抄公式。}
 \end{frame}
 
-\settime{10:00--12:00}
-\begin{frame}[t]{小检查：中心不是原点}
+\settime{07:00--09:00}
+\begin{frame}[t]{你来做：中心不是原点}\label{fr:rotation-check}
 \begin{columns}[c,onlytextwidth]
 \column{.38\textwidth}\centering\rotationfigure
 \column{.59\textwidth}
-以$A(1,1)$为中心，\par 将$Z(3,1)$逆时针旋转$90^\circ$。
-\gap 先在纸上判断终点，\par 再写复数算式。
-\[a=1+i,\qquad z=3+i.\]
-\key{最后有没有加回中心的位置？}
+绕$A(1,1)$将$Z(3,1)$逆时针旋转$90^\circ$，求终点$W$。
+\gap 先在纸上画，再写算式。
+\uncover<2->{\gap 提示：$w=a+i(z-a)$。}
+\uncover<3->{\gap\key{$w=1+3i$，即$W(1,3)$。}}
 \end{columns}
-\note{目标：区别位置与位移；难度基础。独立1分钟后核对：w=1+3i，对应(1,3)。先减中心与最后加回中心各1分。错用iz会得到(-1,3)。图中W提示方向但未给出坐标答案，应要求解释计算。}
+\teachnote{首屏不画W、不画答案方向的箭头。保留约1分钟独立作答，必要时点击提示，再点击核对算式及图。目标：位置与位移；难度基础；评价：先减中心、最后加回，各1分。}
 \end{frame}
 
-\settime{12:00--16:00}
-\begin{frame}[t]{一个正方形的中心怎样表示}
+\settime{09:00--12:00}
+\begin{frame}[t]{正方形中心，由哪两段路组成}\label{fr:square-center}
 \begin{columns}[c,onlytextwidth]
 \column{.34\textwidth}\centering\centerfigure
 \column{.63\textwidth}
-沿有向边$AB$，先到中点，\par 再向侧面走半条边。
-\[\text{边的中点：}\quad\frac{a+b}{2}.\]
-\[\text{左侧中心：}\quad\frac{a+b}{2}+i\frac{b-a}{2}.\]
-\[\text{右侧中心：}\quad\frac{a+b}{2}-i\frac{b-a}{2}.\]
+沿有向边$AB$，怎样走到正方形中心$P$？
+\uncover<2->{\[\text{先到中点：}\quad\frac{a+b}{2}.\]}
+\uncover<3->{\[\text{再向左走：}\quad i\frac{b-a}{2}.\]}
+\uncover<4->{\[p=\frac{a+b}{2}+i\frac{b-a}{2}.\]\key{若作在右侧，$+i$改成$-i$。}}
 \end{columns}
-\note{半条边旋转90度恰是边中点到正方形中心的位移。左右侧相对于有向边，不是屏幕上方、下方。图示左侧情形，右侧同理。让学生解释式中的每一项。}
+\teachnote{图中两段箭头随公式分次出现。左右是相对于有向边AB，不是屏幕上下。半边旋转的长度等于边中点到中心的距离。此页是建模工具，学生回答后再点击。}
 \end{frame}
 
-\settime{16:00--18:00}
-\begin{frame}[t]{主问题：把公共顶点取为原点}
+\settime{12:00--13:00}
+\begin{frame}[t]{主问题：把公共顶点取为原点}\label{fr:choose-origin}
 \begin{columns}[c,onlytextwidth]
-\column{.36\textwidth}\centering\trianglefigure{1}
+\column{.36\textwidth}\centering\trianglefigure{1}{1}{0}
 \column{.61\textwidth}
-$A$取为原点，$B,C$对应$b,c$。
-\gap $A,B,C$按\key{顺时针}排列。
-\gap $AB$外接正方形中心对应$p$。
-\gap $AC$外接正方形中心对应$s$。
-\gap $BC$中点对应$m$。
+$A$取为原点，$B,C$对应$b,c$。\gap $A,B,C$按顺时针排列。
+\uncover<2->{\gap 中心$P,S$对应$p,s$，\par 中点$M$对应$m$。\gap\key{平移坐标原点，不改变长度和夹角。}}
 \end{columns}
-\note{改变原点不改变长度和夹角，不损失一般性。ABC顺时针，AB外侧在有向AB左侧，AC外侧在有向AC右侧。大写P,S,M表示点，小写p,s,m表示相应复数。}
+\teachnote{只建立标号，不再显示待证直角。说明选择A为原点不损失一般性。两正方形均向三角形外侧。}
+\end{frame}
+
+\settime{13:00--15:00}
+\begin{frame}[t]{先求第一个中心}\label{fr:center-p}
+\begin{columns}[c,onlytextwidth]
+\column{.36\textwidth}\centering\trianglefigure{1}{1}{0}
+\column{.61\textwidth}
+$AB$外侧在有向边$AB$左侧。\gap 请先写$p$的表达式。
+\uncover<2->{\bigmath{p=\frac b2+i\frac b2}}
+\uncover<3->{\bigmath{p=\frac{b+ib}{2}}\key{中点位置，加上向外的半边旋转。}}
+\end{columns}
+\teachnote{首屏先让学生写，点击1核对两个加数，点击2合并。预期方法为中点加位移；易错：把整条边旋转后直接加上。}
+\end{frame}
+
+\settime{15:00--17:00}
+\begin{frame}[t]{第二个中心，旋转方向相同吗}\label{fr:center-s}
+\begin{columns}[c,onlytextwidth]
+\column{.36\textwidth}\centering\trianglefigure{1}{1}{0}
+\column{.61\textwidth}
+$AC$外侧在有向边$AC$哪一侧？\gap 请先写$s$的表达式。
+\uncover<2->{\bigmath{s=\frac c2-i\frac c2}}
+\uncover<3->{\bigmath{s=\frac{c-ic}{2}}\textcolor{warm}{右侧：顺时针$90^\circ$，乘$-i$。}}
+\end{columns}
+\teachnote{先判断有向边左右侧，再核对公式。不要在第一个中心后直接报第二个答案。ABC若改为逆时针，两个符号必须同步改变。}
+\end{frame}
+
+\settime{17:00--18:00}
+\begin{frame}[t]{中点怎样进入计算}\label{fr:midpoint}
+中点$M$对应的复数$m$怎样写？
+\uncover<2->{\bigmath{m=\frac{b+c}{2}}}
+\uncover<3->{\[p=\frac{b+ib}{2},\qquad s=\frac{c-ic}{2},\qquad m=\frac{b+c}{2}.\]\gap\key{接下来比较位置，还是从$M$出发的位移？}}
+\teachnote{先让学生解释横纵坐标各取平均。最后点击汇总三个位置，过渡到位移，不把三个式子当作要求背诵的新公式。}
 \end{frame}
 
 \settime{18:00--20:00}
-\begin{frame}[t]{第一个中心：半条边，再转直角}
-\begin{columns}[c,onlytextwidth]
-\column{.36\textwidth}\centering\trianglefigure{1}
-\column{.61\textwidth}
-$AB$外侧在有向边$AB$左侧。
-\bigmath{p=\frac b2+i\frac b2}
-\bigmath{p=\frac{b+ib}{2}}
-\key{先到中点，再向外侧走。}
-\end{columns}
-\note{让学生分别说明两个加数。若三角形顶点顺序改变，旋转符号必须同步改变。}
+\begin{frame}[t]{等长且垂直，怎样翻译成算式}\label{fr:target}
+要证明$MP=MS$且$MP\perp MS$，应该比较哪两个量？
+\uncover<2->{\gap 从$M$到$P$：$p-m$；从$M$到$S$：$s-m$。}
+\uncover<3->{\bigmath{s-m=i(p-m)}\gap\key{一个位移乘$i$，得到另一个位移。}}
+\teachnote{给学生说出两个位移的机会，再揭示目标。顺时针排列对应此处正i关系。不能写s=ip，后者的旋转中心是原点。非退化条件保证这两段非零。}
 \end{frame}
 
-\settime{20:00--22:00}
-\begin{frame}[t]{第二个中心：这次向右转}
-\begin{columns}[c,onlytextwidth]
-\column{.36\textwidth}\centering\trianglefigure{1}
-\column{.61\textwidth}
-$AC$外侧在有向边$AC$右侧。
-\bigmath{s=\frac c2-i\frac c2}
-\bigmath{s=\frac{c-ic}{2}}
-\textcolor{warm}{顺时针$90^\circ$，对应乘$-i$。}
-\end{columns}
-\note{目标为方向表达，难度中等。若两个中心都取+i，要求沿有向AC观察外侧。可用-i乘1得到-i，核对顺时针方向。}
-\end{frame}
-
-\settime{22:00--23:00}
-\begin{frame}[t]{第三边的中点，只需要平均数}
-\bigmath{p=\frac{b+ib}{2},\qquad s=\frac{c-ic}{2}}
-\vspace{3mm}
-\bigmath{m=\frac{b+c}{2}}
-\gap\key{中点：横坐标取平均，纵坐标也取平均。}
-\note{让学生把三个表达式放在同一张纸上。下一步比较的不是p与s，而是从m出发的两段位移。}
-\end{frame}
-
-\settime{23:00--25:00}
-\begin{frame}[t]{等长且垂直，合成一个目标}
-从$M$到$P$：$p-m$；\qquad 从$M$到$S$：$s-m$。
-\bigmath{s-m=i(p-m)}
-\gap 如果这个等式成立，就同时得到：
-\bigmath{MP=MS,\qquad MP\perp MS.}
-\note{位移乘i保持长度并逆时针旋转90度。旋转中心是M，不能写成s=ip。非退化三角形与外侧构造保证两段位移非零。}
-\end{frame}
-
-\settime{25:00--28:00}
-\begin{frame}[t]{两段位移之间的直角旋转}
+\settime{20:00--23:00}
+\begin{frame}[t]{你先化简，再比较两段位移}\label{fr:proof}
 \begin{align*}
-2(p-m)&=ib-c,\\[4mm]
-2(s-m)&=-b-ic.
+2(p-m)&=\uncover<2->{ib-c,}\\[3mm]
+2(s-m)&=\uncover<3->{-b-ic.}
 \end{align*}
-\bigmath{i(ib-c)=i^2b-ic=-b-ic}
-\gap 同一个表达式出现了：\key{$s-m=i(p-m)$}。
-\note{先让学生独立化简p-m，再展示另一式。只需分配律、i平方等于负1。易错为i平方乘b写成正b。不要转而分别求长度和斜率。}
+\uncover<4->{\bigmath{i(ib-c)=i^2b-ic=-b-ic}}
+\uncover<5->{\key{所以\quad$s-m=i(p-m)$。}}
+\teachnote{首屏只有待化简的左边，学生独立写30--45秒。点击1揭示第一式，点击2第二式，点击3乘i比较，点击4才给结论。易错：i平方乘b应为负b。不要连续翻过全部覆盖页。}
 \end{frame}
 
-\settime{28:00--30:00}
-\begin{frame}[t]{一个等式，解释两个几何结论}
+\settime{23:00--24:00}
+\begin{frame}[t]{这个等式，在图上说了什么}\label{fr:meaning}
 \begin{columns}[c,onlytextwidth]
-\column{.36\textwidth}\centering\trianglefigure{0}
+\column{.36\textwidth}\centering\trianglefigure{0}{1}{2}
 \column{.61\textwidth}
 \bigmath{s-m=i(p-m)}
-以$M$为中心，\par $P$逆时针旋转$90^\circ$后到$S$。
-\gap\key{$MP=MS$，且$MP\perp MS$。}
-\gap 除方向、非退化的条件外，\par 推导没有限定$b,c$的具体数值。
+请完整说出中心、方向与角度。
+\uncover<2->{\gap 以$M$为中心，将$P$逆时针转$90^\circ$到$S$。\gap\key{$MP=MS$且$MP\perp MS$。}}
+\uncover<3->{\gap 未限定$b,c$的具体数值，\par 因而证明适用于任意该类三角形。}
 \end{columns}
-\note{让学生用完整的一句话复述，必须说出旋转中心M。回到原图而非只停留在算式。原书图1.12b提供问题，本课采用自行选择原点的直接代数证明。}
+\teachnote{学生先复述，点击后核对，图中直角也仅在该次点击出现。数学依据：位移乘i保持长度并转90度。}
 \end{frame}
 
-\settime{30:00--33:00}
-\begin{frame}[t]{换一组数，检验你能否使用它}
-\bigmath{A:0,\qquad B:4+2i,\qquad C:6-2i}
-仍在$AB,AC$外侧作正方形，中心对应$p,s$。
-\gap （1）求$p,s$，以及$BC$的中点$m$。
-\gap （2）计算$p-m,s-m$，检查旋转关系。
-\note{自编中等题，ABC顺时针。答案p=1+3i，s=2-4i，m=5。位移为-4+3i、-3-4i。三个位置各1分，位移与关系各1分，共5分。基础支持只先算p。一组数据不能替代一般证明。}
+\settime{24:00--27:00}
+\begin{frame}[t]{独立完成这一组数据}\label{fr:practice}
+\bigmath{A:0,\qquad B:4,\qquad C:2-2i}
+仍在$AB,AC$外侧作正方形，中心对应$p,s$，$M$为$BC$中点。
+\gap （1）求$p,s,m$。
+\uncover<2->{\gap （2）计算两段位移，用等式说明长度与夹角关系。}
+\teachnote{两问均为任务，首屏和第二屏都不含答案。先让学生算位置，再点击第二问。保留约2分钟独立书写。难度中等，目标为迁移中心模型与位移关系。答案在下一逻辑页，未收集作答前不要翻页。}
 \end{frame}
 
-\settime{33:00--34:00}
-\begin{frame}[t]{核对：两条位移互相检查}
-\[p=1+3i,\qquad s=2-4i,\qquad m=5.\]
-\bigmath{p-m=-4+3i}
-\bigmath{s-m=-3-4i=i(-4+3i)}
-算对一个例子，不能代替所有情况的一般证明。
-\note{两线段长度均为5。长度核验只能检查部分运算，解释垂直的是乘i关系。保留原始步骤，定位最早不同的等号。}
+\settime{27:00--29:00}
+\begin{frame}[t]{核对：最早不同的是哪一步}\label{fr:practice-answer}
+保留原始步骤，先说出你算出的三个位置。
+\uncover<2->{\[p=2+2i,\qquad s=-2i,\qquad m=3-i.\]}
+\uncover<3->{\[p-m=-1+3i,\qquad s-m=-3-i.\]}
+\uncover<4->{\bigmath{s-m=i(p-m)}\key{中心是$M$；两条线段等长且垂直。}}
+\teachnote{先请学生报结果再点。共6分：三个位置各1分，两位移共1分，关系1分，几何解释1分。若中心同号错误，回到有向边左右侧；若位移错，回到终点减起点。}
+\end{frame}
+
+\settime{29:00--31:00}
+\begin{frame}[t]{两块正方形里的四个点}\label{fr:finsler-question}
+\begin{columns}[c,onlytextwidth]
+\column{.40\textwidth}\centering\finslerfigure{2}
+\column{.57\textwidth}
+两个不同正方形共用$A$。\par $AD$是$AB$逆时针旋转$90^\circ$的像；$AG$同理由$AE$得到。
+\gap $P,Q$是中心，$M,N$分别是$BG,DE$的中点。
+\uncover<2->{\gap 按$P,M,Q,N$的顺序连接。}
+\uncover<3->{\gap\key{这个四边形会是什么形状？}}
+\end{columns}
+\teachnote{新增问题，结论是Finsler--Hadwiger定理。此页不揭示答案，先看定义，点击1连线，点击2收集猜想。两个正方形取相同定向，且不重合；本课用b不等于e保证新四边形非退化。来源：\fhref。证明为本课独立的复数重写。}
+\end{frame}
+
+\settime{31:00--34:00}
+\begin{frame}[t]{这四个点，能用同一套工具表示吗}\label{fr:finsler-coordinates}
+$A$取为原点，$B,E$对应$b,e$。请先写$D,G$。
+\uncover<2->{\[d=ib,\quad g=ie,\qquad p=\frac{b+ib}{2},\quad q=\frac{e+ie}{2}.\]}
+\uncover<3->{\[m=\frac{b+ie}{2},\qquad n=\frac{ib+e}{2}.\]\gap\key{中心与中点，都可以由平均数得到。}}
+\teachnote{先让学生只写d、g，再点击核对旋转与中心，最后让学生补中点后点击。这里的p、q取各正方形对角顶点的平均数，不需要增加一般复数乘法知识。若学生标号困难，保留前页图在黑板上。}
 \end{frame}
 
 \settime{34:00--36:00}
-\begin{frame}[t]{请AI查错：漏掉的是什么}
-\textcolor{muted}{\small 课堂自编错误样例}
-\gap\textcolor{errorred}{“以$M$为中心，逆时针旋转$90^\circ$，所以$s=ip$。”}
-\gap 给AI的请求：
-\gap\key{“先问我一个关于旋转中心的问题，\par 帮助我检查这句话，不直接给完整证明。”}
-\gap 核验依据：这里应比较点的位置，还是两段位移？
-\note{正确关系s-m=i(p-m)。本页不冒充真实AI回答。教师仅输入匿名样例，最多等30秒，无网则教师问：i乘的是点的位置，还是从M出发的位移？不上传学生身份信息或整本教材。}
+\begin{frame}[t]{四段位移，能读出什么图形}\label{fr:finsler-proof}
+依次比较$PM,MQ,QN,NP$，暂记$\delta=(e-b)/2$。
+\uncover<2->{\[m-p=i\delta,\qquad q-m=\delta.\]}
+\uncover<3->{\[n-q=-i\delta,\qquad p-n=-\delta.\]}
+\uncover<4->{四边等长，相邻边相差一个直角。\bigmath{PMQN\text{是正方形}}}
+\teachnote{首屏先算第一段；点击1两段相邻位移，点击2相反两段，点击3才给正方形结论。b不等于e，故delta非零。该结果称Finsler--Hadwiger定理，来源见原论文第324页。难度进阶，评价以能解释一对相邻位移关系为基本要求，完成四段为提高目标。}
 \end{frame}
 
-\settime{36:00--39:00}
-\begin{frame}[t]{独立迁移：这次不看AI和例题}
-\bigmath{A:0,\qquad B:4,\qquad C:2-2i}
-外接正方形中心仍对应$p,s$，$BC$中点对应$m$。
-\gap （1）求$p,s,m$，再求从$M$出发的两段位移。
-\gap （2）用一个等式说明两线段的长度与夹角关系。
-\note{独立3分钟。答案p=2+2i，s=-2i，m=3-i；位移-1+3i、-3-i。共6分：三个位置各1分，两位移共1分，等式1分，几何解释1分。如教师提供公式，应记录为有提示完成。}
-\end{frame}
-
-\settime{39:00--40:00}
-\begin{frame}[t]{核对：结论要回到图形}
-\[p=2+2i,\qquad s=-2i,\qquad m=3-i.\]
-\bigmath{p-m=-1+3i}
-\bigmath{s-m=-3-i=i(p-m)}
-\key{旋转中心是$M$。两条线段等长且垂直。}
-\note{若中心同号错误，回到有向边左右侧；若位置对而位移错，回到终点减起点。不要抹去原始作答。}
-\end{frame}
-
-\settime{40:00--42:00}
-\begin{frame}[t]{回看上次的四边形谜题}
+\settime{36:00--38:00}
+\begin{frame}[t]{同一工具，还能解释上次的四边形谜题}\label{fr:van-aubel}
 \begin{columns}[c,onlytextwidth]
 \column{.40\textwidth}\centering\quadrifigure
 \column{.57\textwidth}
-在凸四边形四条边外作正方形。
-\gap 相对中心的连线，\par\key{也等长且垂直。}
-\gap 提示：沿对角线$BD$分开，\par 能否找到今天的两个小构型？
+凸四边形四边外作正方形，\par 中心依次为$P,Q,R,S$。
+\uncover<2->{\gap 连接相对中心，\par 并沿$BD$把图形分开。}
+\uncover<3->{\gap\key{$PR=QS$，且$PR\perp QS$。}\gap 两个三角形的小结论，可以拼接。}
 \end{columns}
-\note{这是第2课附加内容的回扣，不作全新结论。ABCD逆时针，令M为BD中点：S-M=-i(P-M)，R-M=i(Q-M)，故i(R-P)=-(Q-M)+(S-M)=S-Q。课堂只介绍沿对角线分成两小构型的思路，完整拼接可选做。\vcaref 图1.12a。}
+\teachnote{第2课内容回扣，不再讲完整长代数。M为BD中点：s-m=-i(p-m)，r-m=i(q-m)，从而s-q=i(r-p)。前两屏无结论，点击2才核对。此处只展示迁移方向，避免挤占独立任务或最后探索。\vcaref 图1.12a。}
 \end{frame}
 
-\settime{42:00--44:00}
-\begin{frame}[t]{困难的几何关系，怎样变成算式}
-位置相减，得到有向位移。
-\gap 中点取平均，直角旋转乘$i$或$-i$。
-\gap\key{比较两段位移，用一个等式表达等长与垂直。}
-\vfill 离堂问题：为什么不能把
-\[s-m=i(p-m)\]
-随意改写成$s=ip$？
-\note{s=ip表示绕原点旋转，原式表示绕M旋转；若要直接删掉m，须有m=0。要求学生用自己的话解释，不以背术语替代理解。}
+\settime{38:00--40:00}
+\begin{frame}[t]{离堂前，能否独立解释这一步}\label{fr:exit}
+为什么不能把$s-m=i(p-m)$随意写成$s=ip$？
+\uncover<2->{\gap 原式表示绕$M$旋转；$s=ip$表示绕原点旋转。}
+\uncover<3->{\gap\key{解题时，把几何条件译成位置与位移。}\gap 直角旋转乘$i$或$-i$，中点用平均数。}
+\teachnote{先留20--30秒让学生写一句解释，再点击核对。独立离堂解释保留，不让工具代答；到此所有数学主课结束。后两页才进入AI探索。}
 \end{frame}
 
-\settime{44:00--45:00}
-\begin{frame}[t]{课后可以留下怎样一份几何报告}
-必做：用一张图和关键等式，解释今天的结论。
-\gap\key{写清：哪个条件用在了哪一步？}
-\gap 选做：把$M$换成$BC$上任意点$T(t)$。\par
-若仍有$s-t=i(p-t)$，$T$必须是中点吗？
-\vfill{\color{muted}\fontsize{8}{11}\selectfont
-参考：\vcaref\par
-\href{https://api.pageplace.de/preview/DT0400.9780192695451_A46510629/preview-9780192695451_A46510629.pdf}{出版社公开预览}。本课TikZ图形按明确坐标独立重绘。}
-\note{必做约8分钟，标明AI支持部分与独立完成部分。选做由(1-i)t=s-ip=(1-i)(b+c)/2得t=m。此为独立设计的进一步探究，不冒充原书练习原文。不要求学生阅读整本英文教材。}
+\settime{40:00--42:00}
+\begin{frame}[t]{最后的探索：正方形换成等边三角形}\label{fr:ai-question}
+\begin{columns}[c,onlytextwidth]
+\column{.40\textwidth}\centering\napoleonfigure
+\column{.57\textwidth}
+在任意非退化三角形的\key{三边外侧}分别作等边三角形，中心为$U,V,W$。
+\uncover<2->{\gap 连接三个中心。\par 你猜会出现怎样的关系？}
+\uncover<3->{\gap 现在请AI协助规划探索。\par\key{先写猜想，再问怎样检验。}}
+\end{columns}
+\teachnote{学生页不出现定理名称、等边结论、等长标记或证明。教师备知：这是外拿破仑定理，UVW必为等边三角形。来源：\napref；该书第100页亦提出用复数给出证明。新先修仅在课后按需补：60度旋转、等边三角形中心。这里不展开，以免超出45分钟。}
+\end{frame}
+
+\settime{42:00--45:00}
+\begin{frame}[t]{用AI做一次有证据的几何探索}\label{fr:ai-homework}
+先向AI说明：\par
+\key{“我会乘$i$的直角旋转。请一次只给一个提示，\par 先帮我确定还需补什么，不直接报定理名称和结论。”}
+\uncover<2->{\gap 必做：提交自己的图、猜想，以及\key{一组亲自核算的数据}。}
+\uncover<3->{\gap 再记录一条AI建议：你为什么采纳或否定？\gap 选做：将猜想写成复数等式，并解释它的几何意义。}
+\teachnote{作业基础层约15分钟，可两人讨论但独立记录；有设备者课后用学校认可工具，无设备者用教师提供的提示卡，数学要求相同。模型若直接泄题，记录这一偏离并继续独立核验，不复制全文充当成果。评价8分：图与条件2分、明确猜想1分、独立算例3分、判断提示的理由2分；选做一般证明仅作拓展。不上传学生身份或整本书。教师完整解答、精确核验例及来源见授课说明。}
 \end{frame}
 \end{document}
