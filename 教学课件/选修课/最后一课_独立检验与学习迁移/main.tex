@@ -1,0 +1,239 @@
+% !TeX program = xelatex
+% 结课课，45分钟。PDF每页是一次点击状态；先作答，再揭示。
+% 在本目录用XeLaTeX编译两次。保留sty、book-path.tex和assets/。
+% 备课全显模式，勿用于课堂首屏：\def\HandoutVersion{1}
+% 教师备注模式：\def\TeacherNotes{1}
+\ifdefined\HandoutVersion\PassOptionsToClass{handout}{beamer}\fi
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usepackage{amsmath,amssymb,tikz,booktabs,array}
+\usetheme{GaoZhongYuan}
+\usefonttheme{professionalfonts}
+\usepackage{unicode-math}
+\setmathfont{TeX Gyre Termes Math}
+\usetikzlibrary{arrows.meta,calc}
+\definecolor{ink}{HTML}{183025}
+\definecolor{muted}{HTML}{63756B}
+\definecolor{warm}{HTML}{A65A1F}
+\setbeamercolor{normal text}{fg=ink,bg=white}
+\setbeamerfont{normal text}{size=\fontsize{12}{18}\selectfont}
+\setbeamertemplate{footline}{\hfill{\color{muted}\fontsize{7}{9}\selectfont\insertframenumber/\inserttotalframenumber}\hspace*{8mm}\vspace*{3mm}}
+\setbeamercovered{invisible}
+\ifdefined\TeacherNotes\setbeameroption{show notes}\else\setbeameroption{hide notes}\fi
+\newcommand{\LessonTime}{}
+\newcommand{\settime}[1]{\gdef\LessonTime{#1}}
+\newcommand{\teachnote}[1]{\note{建议时间：\LessonTime。#1}}
+\newcommand{\key}[1]{{\color{campusgreen}\bfseries #1}}
+\newcommand{\gap}{\par\vspace{3mm}}
+\newcommand{\bigmath}[1]{\begingroup\color{campusgreen}\fontsize{18}{24}\selectfont\[#1\]\endgroup}
+\title{把学习方法带走}
+\author[华光辉]{华光辉\texorpdfstring{\quad}{ }AI伴学·结课课}
+\date{}
+
+% A=2-i，Z=5-i；绕A逆时针90度得到W=2+2i。
+% 参数为显示答案的覆盖层编号；0表示整个逻辑页都不出现答案。
+\newcommand{\rotationtask}[1]{%
+\begin{tikzpicture}[x=.62cm,y=.62cm,font=\scriptsize,>=Stealth]
+  \path[use as bounding box](-.7,-2)rectangle(6.7,3.1);
+  \begin{scope}[overlay]
+  \draw[step=1,gray!17](-.3,-1.5)grid(5.7,2.6);
+  \draw[->](-.3,0)--(5.9,0)node[right]{$x$};
+  \draw[->](0,-1.6)--(0,2.8)node[above]{$y$};
+  \node[above left]at(0,0){$O$};
+  \coordinate(A)at(2,-1);\coordinate(Z)at(5,-1);\coordinate(W)at(2,2);
+  \fill(A)circle(1.6pt)node[below left]{$A(2,-1)$};
+  \fill(Z)circle(1.6pt)node[below right]{$Z(5,-1)$};
+  \draw[very thick,->,campusgreen](A)--(Z);
+  \ifnum#1>0\only<#1->{\fill[warm](W)circle(1.6pt)node[above right]{$W(2,2)$};
+    \draw[very thick,->,warm](A)--(W);\draw[->](2.8,-1)arc(0:90:.8);}\fi
+  \end{scope}
+\end{tikzpicture}}
+
+\begin{document}
+\usebeamerfont{normal text}
+
+\settime{00:00--00:30}
+\begin{frame}[plain]\label{fr:cover}
+\titlepage
+\teachnote{按整门课程的结课课设计。保留45分钟与上一课的主题、数学字体和覆盖页方式。课程文件原计划40分钟，本次依据此前用户要求扩为45分钟。不得把文档中的暂定课时顺序当成全部内容已实际教过的证明。}
+\end{frame}
+
+\settime{00:30--02:00}
+\begin{frame}[t]{合上对话，你还能解释什么}\label{fr:goals}
+今天留下一份属于自己的数学解释。
+\uncover<2->{\gap 先独立完成三个小任务，保留原始步骤。}
+\uncover<3->{\gap 再核对理由，找出下一步要补的知识。\gap 最后，把一次理解的变化写清楚。}
+\teachnote{先给学生10秒思考一个现在能解释的问题，再点击说明本课过程。需要纸笔和此前的学习记录；没有记录者可用今天的任务起草。不要宣布新的成绩权重、字数门槛或报告截止日期。}
+\end{frame}
+
+\settime{02:00--04:00}
+\begin{frame}[t]{复习：旋转、位移与证据}\label{fr:review}
+乘$i$：绕哪个点，向哪个方向，转多少度？
+\gap 从$A(a)$到$B(b)$的位移怎样写？
+\uncover<2->{\gap 绕原点逆时针$90^\circ$；位移为$b-a$。}
+\uncover<3->{\gap\key{算对一个例子，与说明一般情形，需要的证据相同吗？}}
+\teachnote{承接第2课乘i和第3课位置、位移的区别；末问回扣第1课的反例体验。先口答再揭示，不提前给下一题的任意中心完整算式。一般情形须有覆盖所讨论范围的论证；单个有效反例可以否定全称命题。}
+\end{frame}
+
+\settime{04:00--08:00}
+\begin{frame}[t]{任务一：中心换了，怎样旋转}\label{fr:task-rotation}
+\begin{columns}[c,onlytextwidth]
+\column{.40\textwidth}\centering\rotationtask{0}
+\column{.57\textwidth}
+绕$A(2,-1)$，将$Z(5,-1)$\key{逆时针旋转$90^\circ$}，得到$W$。
+\gap 求$W$对应的复数，\par 写一句话解释你的计算。
+\uncover<2->{\gap 提示：先找从旋转中心\par 到点$Z$的位移。}
+\end{columns}
+\teachnote{04--06分钟先独立写，按需要才显示提示。目标：任意中心旋转；基础到中等。预期先求z-a，乘i后加回a；易错直接乘iz。记录是否在提示前完成，作为诊断信息，不折算学分。答案只在第8逻辑页。}
+\end{frame}
+
+\settime{08:00--12:00}
+\begin{frame}[t]{任务二：三个例子够不够}\label{fr:task-claim}
+一个待检查的说法：
+\bigmath{\text{对所有实数 }x,\quad x^2+2\ge3x.}
+有人验了$x=0,1,2$，三个例子都成立。
+\gap 这足以支持“所有实数”吗？请写可检查的理由。
+\uncover<2->{\gap 提示：除了整数，还可以检查什么数？}
+\teachnote{待检查说法为课堂自编，不能冒充学生或AI的真实发言。先独立判断，最后1分钟按需显示提示。目标：反例与全称命题；难度基础到中等。预期在1与2之间找反例，例如3/2；易错把几个成立例子当证明。较快学生可求成立范围x不大于1或不小于2，但此范围不是全班必做。}
+\end{frame}
+
+\settime{12:00--16:00}
+\begin{frame}[t]{任务三：反复操作后的数}\label{fr:task-iteration}
+从$0$开始，每次把当前数\key{除以2，再加3}。
+\bigmath{\text{当前数 }u\quad\longmapsto\quad\frac u2+3}
+（1）写出包含初始数$0$在内的前四个数。
+\gap （2）找一个经过此操作保持不变的数。
+\uncover<2->{\gap （3）前四个数与这个不变的数，相距多远？}
+\teachnote{规则完全给定，不要求已学数列或迭代专题。目标：按规则计算、找固定值、比较差距；难度基础，关系说明为提高。先给约2分钟做前两问，再显示第三问。答案0、3、9/2、21/4；固定值6；差距6、3、3/2、3/4。不要求极限或通项。}
+\end{frame}
+
+\settime{16:00--18:00}
+\begin{frame}[t]{先保留自己的原始作答}\label{fr:self-check}
+停笔，圈出最需要核验的一步。
+\gap 写下：我为什么相信这一步？
+\uncover<2->{\gap 核对时，在旁边另写修订和理由。\gap\key{原稿保留，才能看清理解在哪里改变。}}
+\teachnote{给约1分钟自查、1分钟收集一到两条理由。可以写不确定，不能据此虚构学生已达成目标。三个任务是本课形成性独立证据，不把纸笔活动新增为期末考试或30分加权测评。进入核对后不回写原答案冒充独立完成。}
+\end{frame}
+
+\settime{18:00--20:00}
+\begin{frame}[t]{核对一：先减中心，再加回}\label{fr:answer-rotation}
+\begin{columns}[c,onlytextwidth]
+\column{.40\textwidth}\centering\rotationtask{3}
+\column{.57\textwidth}
+$a=2-i$，$z=5-i$。\gap 先说出你从哪里开始计算。
+\uncover<2->{\[w=(2-i)+i\bigl[(5-i)-(2-i)\bigr].\]}
+\uncover<3->{\bigmath{w=2+2i}\key{绕$A$旋转，应先处理$z-a$。}}
+\end{columns}
+\teachnote{先收集原作答，点击1显示建模，点击2才显示W、箭头和结果。验证z-a=3，乘i为3i，加回2-i得到2+2i，坐标(2,2)。直接iz=1+5i是绕O的像，不能当成绕A的结果。反馈看中心、位移、加回三处，不只看最终答案。}
+\end{frame}
+
+\settime{20:00--22:00}
+\begin{frame}[t]{核对二：一个反例说明什么}\label{fr:answer-claim}
+$x=0,1,2$都成立，能说明所有实数都成立吗？
+\uncover<2->{\gap 取$x=\dfrac32$：\[x^2+2=\frac{17}{4}<\frac{18}{4}=3x.\]}
+\uncover<3->{\gap\key{一个有效反例，就足以否定这个全称命题。}\gap 三个成立例子，不能代替一般证明。}
+\teachnote{先让学生报自己的反例，再点击本课示例。接受任何1<x<2的精确反例。可检查x平方减3x加2=(x-1)(x-2)。反馈重点为把数代进原不等式两侧并比较，而非只说这个数不对。不能把小数测量或图形印象冒充精确反例。}
+\end{frame}
+
+\settime{22:00--24:00}
+\begin{frame}[t]{核对三：与不变的数比较}\label{fr:answer-iteration}
+从$0$开始，每次除以2再加3。先核对四个数。
+\uncover<2->{\[0,\qquad3,\qquad\frac92,\qquad\frac{21}{4}.\]}
+\uncover<3->{不变的数$t$满足$t=\dfrac t2+3$，所以$t=6$。}
+\uncover<4->{\gap 与$6$的距离依次为$6,3,\dfrac32,\dfrac34$。\[\left(\frac u2+3\right)-6=\frac{u-6}{2}.\]\key{每操作一次，与$6$的距离减半。}}
+\teachnote{先请学生读前四项，再依次揭示固定值和差距。若时间紧，最后的代数恒等式只由教师指读，不新增证明要求。从0出发的有限步骤不等于已到6；本课只研究规则与差距，不把它讲成无条件的极限知识。}
+\end{frame}
+
+\settime{24:00--26:00}
+\begin{frame}[t]{把一处差异写成下一步行动}\label{fr:repair}
+对照原稿，只选一处最值得修改的地方。
+\uncover<2->{\gap 我最早不同的一步是\underline{\qquad\qquad}；\par 原因是\underline{\qquad\qquad\qquad}。}
+\uncover<3->{\gap 下一次，我会先检查\underline{\qquad\qquad}。\gap\key{写具体的一步，而不只写“以后认真”。}}
+\teachnote{学生用2分钟完成一处修订。可选的真实诊断对象：把iz误作任意中心旋转；成立例未覆盖全称范围；忽略初值计入前四个数。它们只是可能错误，不是已观察到的课堂数据。需要教师确认其修订指向原稿中的实际步骤。}
+\end{frame}
+
+\settime{26:00--28:00}
+\begin{frame}[t]{新问题：100天后是星期几}\label{fr:weekday-question}
+假设今天是\key{星期二}。
+\bigmath{100\text{天后是星期几？}}
+先写一种不用逐日数的方法。
+\uncover<2->{\gap 提示：7天后、14天后，星期怎样变化？}
+\teachnote{这是课程最后一课安排的新主题入门示例，不声称学生已经学过模运算。按通常约定今天为第0天，明天为1天后。先独立思考，再按需给周期提示。周末等特殊日期不影响7天周期；此题不涉及具体日历日期。}
+\end{frame}
+
+\settime{28:00--30:00}
+\begin{frame}[t]{先把问题缩到一周}\label{fr:weekday-answer}
+完整经过一周，回到同一个星期。
+\uncover<2->{\bigmath{100=14\times7+2}}
+\uncover<3->{\gap 先走14个整周，再走2天。\gap\key{星期二\ $\longrightarrow$\ 星期四。}\gap 决定星期变化的是除以7的余数。}
+\teachnote{先请学生说明商与余数分别表示什么，再点击式子和结果。规范表达100天后余2，星期二后移2天为星期四。不把100天后的第100个日期与包含今天的第100天混用。只需带余除法和周期，不引入同余符号作额外门槛。}
+\end{frame}
+
+\settime{30:00--32:00}
+\begin{frame}[t]{换一个天数，再独立检验}\label{fr:weekday-transfer}
+仍假设今天是星期二，\key{1000天后}是星期几？
+\gap 写出除法、余数与星期。
+\uncover<2->{\gap 提示：$1000=142\times7+\underline{\qquad}$。}
+\uncover<3->{\[1000=142\times7+6.\]\key{星期二后移6天，是星期一。}}
+\teachnote{先至少保留40秒独立写，按需给商的提示；最后才核对。评价：整周与余数分开、余数在0到6之间、星期前进方向正确。若只会重复100天的答案，说明还需新例检验。原问题和迁移问题都不调用工具代算。}
+\end{frame}
+
+\settime{32:00--35:00}
+\begin{frame}[t]{把新主题拆成可做的第一步}\label{fr:learning-plan}
+想继续研究“星期与余数”，你会先做什么？
+\uncover<2->{\gap\begin{tabular}{@{}ll@{}}
+\key{目标} & 解释为什么只需看除以7的余数。\\[2mm]
+\key{先修} & 整数除法；余数只能是$0,1,\ldots,6$。\\[2mm]
+\key{小任务} & 比较7、8、14、15天后的星期。\\[2mm]
+\key{材料} & 教材中的带余除法、教师审核的例题。\\
+\end{tabular}}
+\uncover<3->{\gap\key{独立检验：换成2026天，先自己算，再核对。}}
+\teachnote{先给1分钟写自己的第一步，点击后用此示例对照，不要求照抄。目标应足够小且可检查，先修只补当前任务需要的部分。教师答案：2026=289乘7+3，若今天周二则为周五；答案不在放映页给出，作为课后新例。学生也可选其他主题，用同样五项写计划。不得把写出计划算作掌握整个数论。}
+\end{frame}
+
+\settime{35:00--38:00}
+\begin{frame}[t]{把一次理解的变化写清楚}\label{fr:evidence}
+从今天或此前的一个问题中，选一处理解的变化。
+\gap 写清：\key{原来怎样想；哪一步改变；现在怎样检验。}
+\uncover<2->{\gap 写法示例：\par “我原来直接乘$i$，后来先求$z-a$，\par 再旋转并加回$a$。”}
+\uncover<3->{\gap 还要补上自己的证据：\par\key{换一个中心或点，我能否独立完成并解释？}}
+\teachnote{这是课堂自编的表达示例，不是学生真实成长记录。留约1分钟写原始尝试和修改，再请学生补一条独立证据。没有早期材料者可用今天保留的原稿；不要要求伪造以往对话或学习经历。正确答案本身不足以替代理解过程说明。}
+\end{frame}
+
+\settime{38:00--40:00}
+\begin{frame}[t]{你现在能独立说明什么}\label{fr:explain}
+不看刚才的答案，从三个任务中任选一个，\par 向同桌解释关键依据。
+\gap 再写一处你\key{还不能说明}的地方。
+\uncover<2->{\gap 把这处困难改写成一个下次能检查的问题。\gap 例如：我换了旋转中心，还知道先减去什么吗？}
+\teachnote{两人各用约40秒解释，剩余时间写一个具体问题。标准为条件、关键依据、结论是否连贯；不要求展示所有三题。到40分钟停止新增数学内容，后5分钟才进入AI路径检查和结课报告。}
+\end{frame}
+
+\settime{40:00--42:00}
+\begin{frame}[t]{最后：让助手检查你的路径}\label{fr:ai}
+把你已经写好的目标、尝试和检验方法交给AI。
+\uncover<2->{\gap\key{“我想弄懂\underline{\quad}，我会\underline{\quad}，卡在\underline{\quad}。\par
+请检查第一步是否太大。一次只给一个提示，\par
+先问我怎样核验，不替我完成最终解释。”}}
+\uncover<3->{\gap 收到建议后，保留一条，并写出采纳或否定的理由。\gap\key{下一步是否合适，要由你根据证据判断。}}
+\teachnote{AI段集中在最后5分钟，不要求学生现场登录、付费或完成实际调用。可由教师投屏发一次匿名数学请求；无网时用这段提示词作纸笔检查，不伪造模型输出。若选择实际调用，只输入必要的匿名数学片段。任何直接给答案或过大路径，都需要学生自行判断。}
+\end{frame}
+
+\settime{42:00--44:00}
+\begin{frame}[t]{完成你的结课小报告}\label{fr:report}
+沿用第一课的要求：\key{完成一份小报告}。
+\gap 说明如何用自己的学习助手，\par 逐步理解一个你觉得有意思的数学问题。
+\uncover<2->{\gap 我想弄懂什么？原来哪里不懂？\par 哪次求助有用？现在我能怎样独立解释？}
+\uncover<3->{\gap 可附关键对话、草稿或计算。\par\key{用自己的话讲清过程，说明哪些部分独立完成。}}
+\teachnote{以第1课当前源文件的学分口径为准：完成一份小报告，可以选学过或未学过的数学问题、奥赛习题。不沿用原申报表中旧的40/30/30权重，不新增字数、页数、难度门槛、截止日期或具体学分数。若已有报告，可据本课核验修订；尚未完成者整理一个真实问题和证据即可。}
+\end{frame}
+
+\settime{44:00--45:00}
+\begin{frame}[t]{离开课堂前，写下你的下一步}\label{fr:exit}
+我想继续弄懂\underline{\qquad\qquad\qquad}。
+\gap 我准备先做\underline{\qquad\qquad\qquad\quad}。
+\gap 我将不用AI，独立检验\underline{\qquad\qquad}。
+\uncover<2->{\gap\key{带走一个能自己解释的结果，\par 也带走一个仍值得追问的问题。}}
+\teachnote{收束三项书面记录：原作答与一处修订、可执行的下一步、报告证据。课后建议执行一次小任务并保留独立核验；它是延伸活动，不擅自增加学分考核。结尾不要求学生宣称已获得终身学习能力。}
+\end{frame}
+\end{document}
