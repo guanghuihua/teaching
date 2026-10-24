@@ -1,0 +1,510 @@
+{
+  "statistics": {
+    "total": 757,
+    "by_type": {
+      "思考": 54,
+      "例题": 135,
+      "练习": 164,
+      "习题": 239,
+      "小结与复习": 34,
+      "复习题": 122,
+      "案例": 5,
+      "数学实验": 4
+    },
+    "by_chapter": {
+      "1": 107,
+      "2": 104,
+      "3": 92,
+      "4": 178,
+      "5": 172,
+      "6": 104
+    },
+    "midterm": 368,
+    "source_pages_with_items": 229,
+    "cross_page_records": 109
+  },
+  "groups": [
+    {
+      "group": "1.1",
+      "expected": 17,
+      "found": 17,
+      "sequence": "连续"
+    },
+    {
+      "group": "1.2",
+      "expected": 10,
+      "found": 10,
+      "sequence": "连续"
+    },
+    {
+      "group": "复习题一",
+      "expected": 19,
+      "found": 19,
+      "sequence": "连续"
+    },
+    {
+      "group": "2.1",
+      "expected": 12,
+      "found": 12,
+      "sequence": "连续"
+    },
+    {
+      "group": "2.2",
+      "expected": 7,
+      "found": 7,
+      "sequence": "连续"
+    },
+    {
+      "group": "2.3",
+      "expected": 12,
+      "found": 12,
+      "sequence": "连续"
+    },
+    {
+      "group": "复习题二",
+      "expected": 17,
+      "found": 17,
+      "sequence": "连续"
+    },
+    {
+      "group": "3.1",
+      "expected": 16,
+      "found": 16,
+      "sequence": "连续"
+    },
+    {
+      "group": "3.2",
+      "expected": 13,
+      "found": 13,
+      "sequence": "连续"
+    },
+    {
+      "group": "复习题三",
+      "expected": 20,
+      "found": 20,
+      "sequence": "连续"
+    },
+    {
+      "group": "4.1",
+      "expected": 13,
+      "found": 13,
+      "sequence": "连续"
+    },
+    {
+      "group": "4.2",
+      "expected": 15,
+      "found": 15,
+      "sequence": "连续"
+    },
+    {
+      "group": "4.3",
+      "expected": 19,
+      "found": 19,
+      "sequence": "连续"
+    },
+    {
+      "group": "4.4",
+      "expected": 7,
+      "found": 7,
+      "sequence": "连续"
+    },
+    {
+      "group": "4.5",
+      "expected": 8,
+      "found": 8,
+      "sequence": "连续"
+    },
+    {
+      "group": "复习题四",
+      "expected": 25,
+      "found": 25,
+      "sequence": "连续"
+    },
+    {
+      "group": "5.1",
+      "expected": 13,
+      "found": 13,
+      "sequence": "连续"
+    },
+    {
+      "group": "5.2",
+      "expected": 15,
+      "found": 15,
+      "sequence": "连续"
+    },
+    {
+      "group": "5.3",
+      "expected": 14,
+      "found": 14,
+      "sequence": "连续"
+    },
+    {
+      "group": "5.4",
+      "expected": 8,
+      "found": 8,
+      "sequence": "连续"
+    },
+    {
+      "group": "5.5",
+      "expected": 5,
+      "found": 5,
+      "sequence": "连续"
+    },
+    {
+      "group": "复习题五",
+      "expected": 24,
+      "found": 24,
+      "sequence": "连续"
+    },
+    {
+      "group": "6.1",
+      "expected": 5,
+      "found": 5,
+      "sequence": "连续"
+    },
+    {
+      "group": "6.2",
+      "expected": 8,
+      "found": 8,
+      "sequence": "连续"
+    },
+    {
+      "group": "6.3",
+      "expected": 8,
+      "found": 8,
+      "sequence": "连续"
+    },
+    {
+      "group": "6.4",
+      "expected": 14,
+      "found": 14,
+      "sequence": "连续"
+    },
+    {
+      "group": "复习题六",
+      "expected": 17,
+      "found": 17,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.4 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.6 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.8 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.11 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.16 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.19 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.21 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.23 练习",
+      "found": 1,
+      "sequence": "原文未编号，整组保留"
+    },
+    {
+      "group": "p.34 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.37 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.40 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.42 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.47 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.53 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.55 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.58 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.67 练习",
+      "found": 5,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.72 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.76 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.82 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.84 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.97 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.100 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.103 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.108 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.113 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.116 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.118 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.121 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.124 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.132 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.135 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.143 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.146 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.158 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.161 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.165 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.167 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.169 练习",
+      "found": 5,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.172 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.174 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.180 练习",
+      "found": 1,
+      "sequence": "原文未编号，整组保留"
+    },
+    {
+      "group": "p.183 练习",
+      "found": 4,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.186 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.191 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.195 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.201 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.213 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.217 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.220 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.227 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.230 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.238 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.241 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.247 练习",
+      "found": 3,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.250 练习",
+      "found": 2,
+      "sequence": "连续"
+    },
+    {
+      "group": "p.253 练习",
+      "found": 2,
+      "sequence": "连续"
+    }
+  ],
+  "manual_label_fixes": [
+    [
+      93,
+      1046,
+      11,
+      "3.2"
+    ],
+    [
+      276,
+      465,
+      17,
+      "复习题六"
+    ]
+  ],
+  "manual_practice_label_fixes": {
+    "128": [
+      [
+        230,
+        1
+      ]
+    ],
+    "234": [
+      [
+        229,
+        1
+      ]
+    ],
+    "248": [
+      [
+        659,
+        1
+      ]
+    ]
+  },
+  "mathematical_transcription_reviewed": false
+}
