@@ -1,0 +1,137 @@
+{
+  "review_date": "2026-10-25",
+  "question_count": 76,
+  "mathematics": "逐题重算并核对选项、量词、定义域、取等条件、全部端点和证明分类；未发现需订正的数学错误。",
+  "scoring": "20道解答题按实际打印的分步评分逐小问求和，含各1分/各2分；每卷150分。",
+  "source_consistency": "数据与TeX逐字一致，八份源文件各编译两遍；新编译32页与既有正式PDF逐页文本及像素一致。",
+  "imposition": "A3横向420×297mm；每页左右各一张A4原尺寸，32逻辑页合16物理页；字号不缩小。",
+  "student_sources_visible": false,
+  "teacher_sources_retained": true,
+  "paper_dimensions_mm": [
+    420,
+    297
+  ],
+  "physical_pages": 16,
+  "duplex_sheets": 8,
+  "print_scale": "100%",
+  "duplex_flip": "short-edge",
+  "sections": [
+    {
+      "edition": "学生卷",
+      "paper": "A",
+      "physical_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "edition": "学生卷",
+      "paper": "B",
+      "physical_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "edition": "学生卷",
+      "paper": "C",
+      "physical_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "edition": "学生卷",
+      "paper": "D",
+      "physical_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "edition": "教师版",
+      "paper": "A",
+      "physical_pages": [
+        9,
+        10
+      ]
+    },
+    {
+      "edition": "教师版",
+      "paper": "B",
+      "physical_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "edition": "教师版",
+      "paper": "C",
+      "physical_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "edition": "教师版",
+      "paper": "D",
+      "physical_pages": [
+        15,
+        16
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "paper": "A",
+      "edition": "main",
+      "pages": 4,
+      "source_pdf_sha256": "59b4cbcc1078cc8e4c6acf2e406b7640a870686fb79b751fcbbf67f25adfb8db"
+    },
+    {
+      "paper": "A",
+      "edition": "教师版",
+      "pages": 4,
+      "source_pdf_sha256": "2a6ee9fa11eeca5eaf1eecf18f4b1af0bff1dc88bf9a327d0717c4a958db8a3f"
+    },
+    {
+      "paper": "B",
+      "edition": "main",
+      "pages": 4,
+      "source_pdf_sha256": "9e8bbc7d5ed9d4af69d36b17b008ad9dd23e7132a0abc21f65d736dc89f35050"
+    },
+    {
+      "paper": "B",
+      "edition": "教师版",
+      "pages": 4,
+      "source_pdf_sha256": "0a5d06e7219566f75554f12c239a5936d207d389955aada4b86acbcc2a47acc8"
+    },
+    {
+      "paper": "C",
+      "edition": "main",
+      "pages": 4,
+      "source_pdf_sha256": "11e0a5828393bb2e562189c9d0b0bf3e6005d9f7be6fd57d5e644e38241d1edf"
+    },
+    {
+      "paper": "C",
+      "edition": "教师版",
+      "pages": 4,
+      "source_pdf_sha256": "099b6295332690c9b99867cb0bb6c3d6bc650c4759562170c02a962c800635d6"
+    },
+    {
+      "paper": "D",
+      "edition": "main",
+      "pages": 4,
+      "source_pdf_sha256": "4c415c49b3dbeaa931045d0e646bf91ae9d49846594e27c00e398d9966bcfa18"
+    },
+    {
+      "paper": "D",
+      "edition": "教师版",
+      "pages": 4,
+      "source_pdf_sha256": "9673fecac418a33cfbee5952923ea7dde8a0ecc053f3e8f277bc9ccf8abdb52d"
+    }
+  ],
+  "output_sha256": "0dd92903db7fb3cbd32ec859ed27a1a54df0aee735dbb7d9846d548eb5b28933",
+  "visual_review": "见打印说明中的逐页复核记录；渲染图保存在忽略目录tmp/midterm_three/a3_render。",
+  "limitations": "未进行真实打印机试印；不代替教师最终审定，未声称获得教师签核。"
+}
