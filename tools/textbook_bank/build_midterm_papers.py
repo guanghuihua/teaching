@@ -1,4 +1,4 @@
-"""Generate three printable student papers and separate scored teacher editions."""
+"""Generate printable student papers without sources and sourced teacher editions."""
 from pathlib import Path
 import json,csv,re
 from collections import Counter
@@ -79,7 +79,7 @@ def student(key,items):
         if item['options']:
             macro='optsfour' if n in (1,4,7,8) else 'opts'
             s+='\\'+macro+''.join('{'+v+'}' for v in item['options'])+'\n'
-        s+=r'\src{'+ '；'.join(r['brief'] for r in item['sources'])+'}\n'
+        # User-requested print edition: provenance is retained only in teacher material.
         if n<=14:s+=r'\end{minipage}\par\smallskip'+'\n'
         else:s+=r'\work{'+({15:('3.0cm' if key=='C' else '4.0cm'),16:'6.7cm',17:'7.0cm',18:'6.6cm',19:'6.5cm'}[n])+'}\n'
     return s+r'\end{document}'+'\n'
@@ -131,6 +131,6 @@ def main():
     with (OUT/'命题细目与教材出处.csv').open('w',encoding='utf-8-sig',newline='') as f:
         w=csv.DictWriter(f,fieldnames=manifest[0].keys());w.writeheader();w.writerows(manifest)
     assert sum(POINTS)==150
-    print('Generated 3 student papers, 3 teacher editions, 57 source mappings; 150 points each.')
+    print(f'Generated {len(PAPERS)} student papers, {len(PAPERS)} teacher editions, {len(manifest)} source mappings; 150 points each.')
 
 if __name__=='__main__':main()
