@@ -1,0 +1,332 @@
+% !TeX program = xelatex
+% 源：教学课件/A往年高一上学期课件/第4章/4.2.2指数函数的图象和性质课件.pptx
+% 原稿含前置幂函数复习、4.2.1概念内容，均保留并分节。
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\input{公共设置.tex}
+\title{4.2.2 指数函数的图象和性质}
+\author{深圳中学高中园}
+\date{}
+\begin{document}
+\campusmaketitle
+
+% 原第1--5页，复习内容保留。
+\begin{frame}[t]{课前复习：幂函数}
+ \begin{itemize}
+  \item 根据图象判断幂指数。
+  \item 利用已知函数值确定幂函数。
+  \item 利用幂函数的单调性比较大小。
+ \end{itemize}
+ \gap
+ \key{幂函数中变量在底数位置，指数为常数。}
+\end{frame}
+\input{幂函数典例.tex}
+
+% 原第6--8页
+\begin{frame}[t]{任务一：指数函数的概念}
+ 在幂的表达式 $a^x$ 中，若底数 $a$ 为常数，指数 $x$ 为自变量，\\
+ 就得到函数
+ \[\boxed{y=a^x\qquad(a>0\text{ 且 }a\ne1)}.\]
+ 它叫做\key{指数函数}，定义域为 $\R$。
+ \pause
+ \gap
+ \begin{columns}[T,onlytextwidth]
+  \begin{column}{.46\textwidth}
+   \key{幂函数 $y=x^\alpha$}\\变量在底数，指数固定。
+  \end{column}
+  \begin{column}{.48\textwidth}
+   \key{指数函数 $y=a^x$}\\底数固定，变量在指数。
+  \end{column}
+ \end{columns}
+\end{frame}
+
+\begin{frame}[t]{任务一：底数为何受限制}
+ \begin{itemize}
+  \item 若 $a=0$，$x\le0$ 时 $0^x$ 无定义，不能在 $\R$ 上定义。
+  \item 若 $a<0$，如 $(-4)^{1/2}$ 在实数范围内无意义，\\
+        因而也不能对每个实数 $x$ 定义 $a^x$。
+  \item 若 $a=1$，则 $1^x=1$，得到常函数。
+ \end{itemize}
+ \pause
+ \gap
+ 因此，指数函数的定义规定 $\ans{a>0\text{ 且 }a\ne1}$。
+\end{frame}
+
+% 原第9页，判断题与求值分开。
+\begin{frame}[t]{概念自检：判断正误}
+ 判断下列说法是否正确：
+ \begin{enumerate}
+  \item $y=x^2$ 是指数函数。
+  \item 指数函数 $y=a^x$ 的底数 $a$ 可以为负数。
+  \item $y=2^x-1$ 是指数函数。
+ \end{enumerate}
+ \pause
+ \ans{三项均错误。}
+ \gap
+ 第1项为幂函数；第2项违反底数条件；\\
+ 第3项是由指数函数平移得到的函数，不符合定义的标准形式。
+\end{frame}
+
+\begin{frame}[t]{概念自检：由函数值求底数}
+ 若 $f(x)$ 是指数函数，且 $f(2)=2$，求 $f(x)$。
+ \pause
+ 设 $f(x)=a^x\ (a>0,a\ne1)$，由
+ \[a^2=2\]
+ 及 $a>0$，得 $a=\sqrt2$。所以
+ \[\ans{f(x)=(\sqrt2)^x}.\]
+\end{frame}
+
+% 原第10页
+\begin{frame}[t]{例1：识别指数函数}
+ 下列函数中，哪些是指数函数？
+ \[\text{(1) }y=2(\sqrt2)^x;\qquad
+   \text{(2) }y=2^{x-1};\qquad
+   \text{(3) }y=\left(\frac\pi2\right)^x.\]
+ \pause
+ \begin{itemize}
+  \item (1) 的系数为 $2$，不符合 $y=a^x$。
+  \item (2) 可写成 $y=\frac12\cdot2^x$，也不符合标准形式。
+  \item (3) 的底数 $\pi/2>0$ 且不等于 $1$，符合定义。
+ \end{itemize}
+ \ans{答案：(3)。}
+\end{frame}
+
+% 原第11页
+\begin{frame}[t]{例1：由定义求参数}
+ 若 $y=(k+2)a^x+2-b\ (a>0,a\ne1)$ 是指数函数，求 $k,b$。
+ \pause
+ 比较标准形式 $y=a^x$，得
+ \[\begin{cases}k+2=1,\\2-b=0.\end{cases}\]
+ 所以
+ \[\ans{k=-1,\qquad b=2}.\]
+\end{frame}
+
+% 原第12页
+\begin{frame}[t]{例1：由已知点确定函数}
+ 若 $f(x)$ 是指数函数，且 $f(2)=9$，求 $f(x)$。
+ \pause
+ 设 $f(x)=a^x\ (a>0,a\ne1)$，则
+ \[a^2=9.\]
+ 由 $a>0$ 得 $a=3$，所以
+ \[\ans{f(x)=3^x}.\]
+\end{frame}
+
+% 原第13页
+\begin{frame}[t]{跟踪训练：底数条件}
+ 若 $y=(2a-1)^x$ 是指数函数，则 $a$ 的取值范围是（\quad）。
+ \normalsize
+ \begin{align*}
+  \mathrm A.&\ (0,1)\cup(1,+\infty);&
+  \mathrm B.&\ [0,1)\cup(1,+\infty);\\[.5em]
+  \mathrm C.&\ (\tfrac12,1)\cup(1,+\infty);&
+  \mathrm D.&\ [\tfrac12,+\infty).
+ \end{align*}
+ \pause
+ \[2a-1>0,\quad 2a-1\ne1\quad\Longrightarrow\quad
+   a>\frac12,\quad a\ne1.\]
+ \ans{答案：C。}
+\end{frame}
+
+% 原第14--15页
+\begin{frame}[t]{任务二：指数增长与衰减}
+ \begin{columns}[T,onlytextwidth]
+  \begin{column}{.47\textwidth}
+   \key{当 $a>1$ 时}\\
+   $a^x$ 随 $x$ 增大而增大。\\
+   $x$ 充分增大时，函数值可任意大。\\
+   这是指数增长，也称指数爆炸。
+  \end{column}
+  \begin{column}{.47\textwidth}
+   \key{当 $0<a<1$ 时}\\
+   $a^x$ 随 $x$ 增大而减小。\\
+   $x$ 充分增大时，函数值无限接近 $0$。\\
+   这是指数衰减。
+  \end{column}
+ \end{columns}
+ \pause
+ \gap
+ \[2^0=1,\quad2^5=32,\quad2^{10}=1024;\qquad
+  (\tfrac12)^0=1,\quad(\tfrac12)^5=\tfrac1{32}.\]
+\end{frame}
+
+% 原第16--17页
+\begin{frame}[t]{任务三：描点作出指数图象}
+ 用描点法作 $y=2^x$ 的图象：列表、描点、用平滑曲线连接。
+ \begin{columns}[T,onlytextwidth]
+  \begin{column}{.38\textwidth}
+   \centering\normalsize\renewcommand{\arraystretch}{1.55}
+   \begin{tabular}{c|c}
+    $x$ & $2^x$\\\hline
+    $-2$ & $\frac14$\\$-1$ & $\frac12$\\$0$ & $1$\\$1$ & $2$\\$2$ & $4$
+   \end{tabular}
+   \pause
+   \par\gap
+   曲线经过 $(0,1)$，\\始终位于 $x$ 轴上方。
+  \end{column}
+  \begin{column}{.58\textwidth}\centering\expplot[1]\end{column}
+ \end{columns}
+\end{frame}
+
+% 原第18页
+\begin{frame}[t]{任务三：衰减函数的图象}
+ 再作 $y=(1/2)^x$ 的图象，与 $y=2^x$ 比较。
+ \begin{columns}[T,onlytextwidth]
+  \begin{column}{.38\textwidth}
+   \centering\normalsize\renewcommand{\arraystretch}{1.55}
+   \begin{tabular}{c|c|c}
+    $x$ & $2^x$ & $(1/2)^x$\\\hline
+    $-2$ & $\frac14$ & $4$\\$-1$ & $\frac12$ & $2$\\
+    $0$ & $1$ & $1$\\$1$ & $2$ & $\frac12$\\$2$ & $4$ & $\frac14$
+   \end{tabular}
+  \end{column}
+  \begin{column}{.58\textwidth}\centering\expplot\end{column}
+ \end{columns}
+\end{frame}
+
+% 原第19--20页
+\begin{frame}[t]{任务四：互为倒数的底数}
+ \begin{columns}[T,onlytextwidth]
+  \begin{column}{.52\textwidth}\centering\expplot\end{column}
+  \begin{column}{.45\textwidth}
+   设 $f(x)=a^x$，则
+   \[\left(\frac1a\right)^x=a^{-x}=f(-x).\]
+   \pause
+   因而 $y=a^x$ 与 $y=(1/a)^x$ 的图象\key{关于 $y$ 轴对称}。
+   \gap
+   两者都经过 $(0,1)$。
+  \end{column}
+ \end{columns}
+\end{frame}
+
+% 原第20--22页
+\begin{frame}[t]{任务四：不同底数的图象}
+ \begin{columns}[T,onlytextwidth]
+  \begin{column}{.52\textwidth}\centering\expplot[4]\end{column}
+  \begin{column}{.45\textwidth}
+   观察 $2^x,3^x,(1/2)^x,(1/3)^x$：
+   \begin{enumerate}
+    \item 图象经过哪些象限？
+    \item 共同经过哪个点？
+    \item 增减性与底数有何关系？
+   \end{enumerate}
+   \pause
+   $a>1$ 时递增；\\$0<a<1$ 时递减。
+  \end{column}
+ \end{columns}
+\end{frame}
+
+% 原第23页，补充x<0一行。
+\begin{frame}[t]{任务五：指数函数的性质}
+ \centering\normalsize\renewcommand{\arraystretch}{1.65}
+ \begin{tabular}{c|c|c}
+  \toprule $y=a^x$ & $a>1$ & $0<a<1$\\\midrule
+  定义域 & $\R$ & $\R$\\
+  值域 & $(0,+\infty)$ & $(0,+\infty)$\\
+  定点 & $(0,1)$ & $(0,1)$\\
+  $x>0$ & $a^x>1$ & $0<a^x<1$\\
+  $x<0$ & $0<a^x<1$ & $a^x>1$\\
+  单调性 & 在 $\R$ 上递增 & 在 $\R$ 上递减\\\bottomrule
+ \end{tabular}
+ \gap
+ \key{图象位于第一、二象限，并经过 $y$ 轴上的点 $(0,1)$。}
+\end{frame}
+
+% 原第24页
+\begin{frame}[t]{例2：指数式大小比较}
+ 比较各组中两个数的大小：
+ \begin{align*}
+  (1)&\quad 1.7^{2.5}\quad\text{与}\quad1.7^3;\\[.5em]
+  (2)&\quad 0.8^{-\sqrt2}\quad\text{与}\quad0.8^{-\sqrt3};\\[.5em]
+  (3)&\quad 1.7^{0.3}\quad\text{与}\quad0.9^{3.1}.
+ \end{align*}
+ \pause
+ \normalsize
+ (1) $1.7>1$，递增：$\ans{1.7^{2.5}<1.7^3}$。\\[.3em]
+ (2) $0<0.8<1$，递减；$-\sqrt2>-\sqrt3$：$\ans{0.8^{-\sqrt2}<0.8^{-\sqrt3}}$。\\[.3em]
+ (3) 借助 $1$：$\ans{1.7^{0.3}>1>0.9^{3.1}}$。
+\end{frame}
+
+% 原第25页
+\begin{frame}[t]{跟踪训练：指数式比较}
+ 比较各组中两个数的大小：
+ \begin{align*}
+  (1)&\quad 0.99^{3.3}\quad\text{与}\quad0.99^{4.5};\\[.5em]
+  (2)&\quad 1.01^{2.7}\quad\text{与}\quad1.01^{3.5};\\[.5em]
+  (3)&\quad 2.3^{-0.5}\quad\text{与}\quad0.2^{-0.1}.
+ \end{align*}
+ \pause
+ \[\ans{0.99^{3.3}>0.99^{4.5}},\qquad
+   \ans{1.01^{2.7}<1.01^{3.5}}.\]
+ \[\ans{2.3^{-0.5}<1<0.2^{-0.1}}.\]
+\end{frame}
+
+% 原第26页；补充同指数类型以串联两课。
+\begin{frame}[t]{大小比较的方法}
+ \begin{itemize}
+  \item \key{底数相同，指数不同}：利用指数函数的单调性。
+  \item \key{指数相同，底数不同}：在合适区间利用幂函数的单调性。
+  \item \key{底数、指数均不同}：尝试化为同底数、同指数，\\
+        或借助 $1$ 等中间量比较。
+ \end{itemize}
+ \gap
+ \reason{比较前，先看清哪个量相同、哪个量在变化。}
+\end{frame}
+
+% 原第27页
+\begin{frame}[t]{例3：指数型函数的定点}
+ 函数 $y=a^{x-1}\ (a>0,a\ne1)$ 的图象经过什么定点？
+ \pause
+ 令 $x-1=0$，得 $x=1$，此时 $y=a^0=1$。
+ \[\ans{\text{定点为 }(1,1)}.\]
+ \pause
+ \key{跟踪训练}\quad $y=2a^{x+1}-3\ (a>0,a\ne1)$ 呢？
+ \pause
+ 令 $x+1=0$，得 $x=-1$，$y=2\cdot1-3=-1$。
+ \[\ans{\text{定点为 }(-1,-1)}.\]
+\end{frame}
+
+% 原第28页，补全D项的底数约束。
+\begin{frame}[t]{当堂检测：性质辨析}
+ （多选）下列判断正确的是（\quad）。
+ \normalsize
+ \begin{enumerate}[A.]
+  \item $a^3>a^2\ (a>0\text{ 且 }a\ne1)$。
+  \item $y=(1/2)^x\ (x\ge0)$ 的值域为 $(0,1]$。
+  \item $y=2^{1/x}$ 的定义域为 $\R$。
+  \item $y=a^{x-1}-1\ (a>0\text{ 且 }a\ne1)$ 的图象过定点 $(1,0)$。
+ \end{enumerate}
+ \pause
+ \ans{答案：B、D。}\\
+ A 在 $0<a<1$ 时不成立；C 应排除 $x=0$。\\
+ B 的函数值可趋近 $0$ 但取不到 $0$；D 中令 $x=1$ 即得 $y=0$。
+\end{frame}
+
+% 原第29页
+\begin{frame}[t]{课堂小结}
+ \begin{itemize}
+  \item 指数函数 $y=a^x$：$a>0$ 且 $a\ne1$，定义域为 $\R$。
+  \item 值域为 $(0,+\infty)$，图象经过定点 $(0,1)$。
+  \item $a>1$ 时递增，$0<a<1$ 时递减。
+  \item 应用：比较大小，求指数型函数的定点。
+ \end{itemize}
+ \gap
+ \key{数形结合、归纳类比、分类讨论。}
+\end{frame}
+
+% 原第30页；将有限小数前的等号纠正为约等号。
+\begin{frame}[t]{课后作业与思考}
+ \key{课后作业}
+ \begin{itemize}
+  \item 书本第113页练习第3题、习题4.2第5题。
+  \item 同步训练第30页。
+ \end{itemize}
+ \gap
+ \[1.01^{365}\approx37.8,\qquad0.99^{365}\approx0.03.\]
+ \normalsize
+ 勤学如初见之苗，不见其增，日有所长；\\
+ 辍学如磨刀之石，不见其损，日有所亏。
+\end{frame}
+\campusclosing[谢谢]
+\end{document}
