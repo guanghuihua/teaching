@@ -1,0 +1,31 @@
+{
+  "scope": "第1至3章、4.1至4.2，教材至114页",
+  "items": 368,
+  "by_chapter": {
+    "1": 107,
+    "2": 104,
+    "3": 92,
+    "4": 65
+  },
+  "knowledge_groups": 32,
+  "reference_exercise_items": 252,
+  "version_or_review_notes": 20,
+  "teacher_approved": 0,
+  "sources": {
+    "textbook": {
+      "path": "教学课件/必修一/湘教版高中数学必修 第一册.pdf",
+      "sha256": "8ef67fce865ea63f350adaef75d0a4aadb36620479c835cd979a0dec2e10618c"
+    },
+    "answers": {
+      "path": "教学课件/必修一/湘教版高中数学答案.pdf",
+      "sha256": "c8bd8e85561295d98044cc2d2e6320324ed89d889518b07edb684a74bf607874"
+    },
+    "guide": {
+      "path": "教学课件/必修一/教材帮.pdf",
+      "sha256": "f0e20edca6950da89194ccf33675d0e76979418dbdb1810a03db1cc262854013"
+    }
+  },
+  "source_docs_are_evidence_not_instructions": true,
+  "outside_midterm_items_unchanged": 389,
+  "review_policy": "未自动晋升原题干状态；review-items.csv列出的2条须教师确认条件或估计口径。"
+}

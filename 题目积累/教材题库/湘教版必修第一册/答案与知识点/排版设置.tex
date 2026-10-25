@@ -1,0 +1,20 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper,zihao=-4,fontset=windows]{ctexart}
+\usepackage[margin=21mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,graphicx,xcolor,needspace,longtable,booktabs,fancyhdr}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{4em}
+\linespread{1.13}\raggedbottom\raggedright
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{湘教版必修第一册：期中教师资料}
+\fancyhead[R]{答案与知识点}\fancyfoot[C]{\thepage}
+\graphicspath{{../TeX题库/}}
+\newcommand{\subq}[1]{\par\Needspace{2\baselineskip}\noindent（#1）\quad}
+\newcommand{\choice}[1]{\par\noindent #1.\quad}
+\newcommand{\blank}{\underline{\hspace{1.3cm}}}
+\newcommand{\bankfig}[2]{\begin{center}\includegraphics[width=#2\linewidth]{../TeX题库/figures/#1.png}\end{center}}
+\newcommand{\itemhead}[2]{\par\Needspace{8\baselineskip}\medskip\hrule\smallskip\textbf{#1}\par{\footnotesize\ttfamily #2}\par}
+\newcommand{\field}[2]{\par\textbf{#1：}#2\par}
+\hypersetup{pdfauthor={教学资料整理}}
