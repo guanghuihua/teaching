@@ -1,0 +1,29 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper,zihao=-4,fontset=windows,oneside,openany]{ctexbook}
+\usepackage[margin=22mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,graphicx,xcolor,needspace,longtable,fancyhdr}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{3em}
+\linespread{1.2}
+\raggedbottom
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{湘教版数学必修第一册：教师转写工作稿}
+\fancyhead[R]{题干与公式可编辑}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\newcommand{\subq}[1]{\par\Needspace{2\baselineskip}\noindent（#1）\quad}
+\newcommand{\choice}[1]{\par\noindent #1.\quad}
+\newcommand{\blank}{\underline{\hspace{1.7cm}}}
+\newcommand{\bankfig}[2]{\begin{center}\includegraphics[width=#2\linewidth]{figures/#1.png}\end{center}}
+\newcommand{\ocrglyph}[1]{\textcolor{red!70!black}{[识别字符 U+#1 待核]}}
+\newenvironment{bankitem}[4]{\par\Needspace{5\baselineskip}\noindent
+  {\bfseries #1}\par{\small\color{blue!55!black}#2}\par
+  {\footnotesize\ttfamily\detokenize{#3}}\par
+  {\footnotesize\color{red!65!black}#4}\par\nopagebreak}
+  {\par\medskip\hrule\medskip}
+\newenvironment{ocrdraft}{\begingroup\small\color{black!65}}{\par\endgroup}
+\newcommand{\questioninput}[1]{\input{questions/#1.tex}}
+\hypersetup{pdftitle={湘教版必修第一册教材题库：转写工作稿},pdfauthor={教学资料整理}}

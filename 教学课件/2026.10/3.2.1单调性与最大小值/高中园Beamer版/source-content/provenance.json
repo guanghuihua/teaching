@@ -1,0 +1,1368 @@
+{
+  "source_name": "3.2.1 单调性与最大（小).pptx",
+  "source_path": "D:/guanghui/AI读取/3.2.1 单调性与最大（小).pptx",
+  "source_sha256": "e6a379d519dc1756a7765f66cd3acd1f56e782c25b074b6406b33f23822462d4",
+  "original_slides": 33,
+  "hidden_slides_included": [
+    6,
+    9,
+    11,
+    12
+  ],
+  "layout": {
+    "1": {
+      "title": "3.2.1 单调性与最大（小）",
+      "remove": [
+        "2",
+        "4"
+      ],
+      "kind": "cover",
+      "hidden": false,
+      "subtitle": "第三章　函数的概念与性质"
+    },
+    "2": {
+      "title": "（一）新知导入",
+      "remove": [
+        "3",
+        "6"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "3": {
+      "title": "艾宾浩斯遗忘曲线",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "4": {
+      "title": "思考",
+      "remove": [
+        "3"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "5": {
+      "title": "新知探究",
+      "remove": [
+        "5",
+        "2"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "6": {
+      "title": "新知探究",
+      "remove": [
+        "6"
+      ],
+      "kind": "body",
+      "hidden": true
+    },
+    "7": {
+      "title": "新知探究",
+      "remove": [
+        "6"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "8": {
+      "title": "新知探究",
+      "remove": [
+        "5",
+        "4"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "9": {
+      "title": "新知探究",
+      "remove": [
+        "5",
+        "6"
+      ],
+      "kind": "body",
+      "hidden": true
+    },
+    "10": {
+      "title": "概念辨析",
+      "remove": [
+        "5",
+        "4"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "11": {
+      "title": "概念辨析",
+      "remove": [
+        "4",
+        "9"
+      ],
+      "kind": "body",
+      "hidden": true
+    },
+    "12": {
+      "title": "单调递增的定义",
+      "remove": [],
+      "kind": "body",
+      "hidden": true
+    },
+    "13": {
+      "title": "概念生成",
+      "remove": [
+        "6",
+        "7"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "14": {
+      "title": "概念辨析",
+      "remove": [
+        "3"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "15": {
+      "title": "概念辨析",
+      "remove": [
+        "15",
+        "16"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "16": {
+      "title": "概念辨析",
+      "remove": [
+        "3",
+        "6"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "17": {
+      "title": "新知探究",
+      "remove": [
+        "5",
+        "2"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "18": {
+      "title": "典例解析",
+      "remove": [
+        "7",
+        "8"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "19": {
+      "title": "方法小结",
+      "remove": [
+        "5",
+        "2"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "20": {
+      "title": "典例解析",
+      "remove": [
+        "7",
+        "4"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "21": {
+      "title": "题型探究",
+      "remove": [
+        "9",
+        "3145730"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "22": {
+      "title": "能力提升：利用单调性解不等式",
+      "remove": [
+        "27",
+        "12"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "23": {
+      "title": "题型探究",
+      "remove": [
+        "9"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "24": {
+      "title": "题型探究",
+      "remove": [
+        "9",
+        "3145730"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "25": {
+      "title": "课堂小结",
+      "remove": [
+        "8",
+        "9"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "26": {
+      "title": "做一做",
+      "remove": [
+        "4"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "27": {
+      "title": "函数的最值",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "28": {
+      "title": "题型一　图象法求函数的最值",
+      "remove": [
+        "7"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "29": {
+      "title": "通性通法",
+      "remove": [
+        "3"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "30": {
+      "title": "跟踪训练",
+      "remove": [
+        "4"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "31": {
+      "title": "跟踪训练",
+      "remove": [
+        "5"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "32": {
+      "title": "跟踪训练",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "33": {
+      "title": "跟踪训练",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    }
+  },
+  "display_states": 146,
+  "method": "PowerPoint native vector export, original body objects retained; original slide background and header decorations removed; Beamer GaoZhongYuan template applied.",
+  "template": "教学课件/高中园Beamer模板/高中园模板.tex",
+  "mapping": [
+    {
+      "page": 1,
+      "slide": 1,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 2,
+      "slide": 2,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 3,
+      "slide": 3,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 4,
+      "slide": 4,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 5,
+      "slide": 4,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 6,
+      "slide": 4,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 7,
+      "slide": 5,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 8,
+      "slide": 5,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 9,
+      "slide": 5,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 10,
+      "slide": 5,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 11,
+      "slide": 5,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 12,
+      "slide": 5,
+      "step": 6,
+      "final": true
+    },
+    {
+      "page": 13,
+      "slide": 6,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 14,
+      "slide": 6,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 15,
+      "slide": 6,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 16,
+      "slide": 6,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 17,
+      "slide": 6,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 18,
+      "slide": 6,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 19,
+      "slide": 6,
+      "step": 7,
+      "final": false
+    },
+    {
+      "page": 20,
+      "slide": 6,
+      "step": 8,
+      "final": false
+    },
+    {
+      "page": 21,
+      "slide": 6,
+      "step": 9,
+      "final": false
+    },
+    {
+      "page": 22,
+      "slide": 6,
+      "step": 10,
+      "final": true
+    },
+    {
+      "page": 23,
+      "slide": 7,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 24,
+      "slide": 7,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 25,
+      "slide": 7,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 26,
+      "slide": 7,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 27,
+      "slide": 7,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 28,
+      "slide": 7,
+      "step": 6,
+      "final": true
+    },
+    {
+      "page": 29,
+      "slide": 8,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 30,
+      "slide": 8,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 31,
+      "slide": 8,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 32,
+      "slide": 8,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 33,
+      "slide": 8,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 34,
+      "slide": 8,
+      "step": 6,
+      "final": true
+    },
+    {
+      "page": 35,
+      "slide": 9,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 36,
+      "slide": 9,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 37,
+      "slide": 10,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 38,
+      "slide": 10,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 39,
+      "slide": 10,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 40,
+      "slide": 11,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 41,
+      "slide": 11,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 42,
+      "slide": 11,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 43,
+      "slide": 11,
+      "step": 4,
+      "final": true
+    },
+    {
+      "page": 44,
+      "slide": 12,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 45,
+      "slide": 13,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 46,
+      "slide": 13,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 47,
+      "slide": 13,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 48,
+      "slide": 13,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 49,
+      "slide": 13,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 50,
+      "slide": 13,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 51,
+      "slide": 13,
+      "step": 7,
+      "final": false
+    },
+    {
+      "page": 52,
+      "slide": 13,
+      "step": 8,
+      "final": true
+    },
+    {
+      "page": 53,
+      "slide": 14,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 54,
+      "slide": 14,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 55,
+      "slide": 14,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 56,
+      "slide": 14,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 57,
+      "slide": 14,
+      "step": 5,
+      "final": true
+    },
+    {
+      "page": 58,
+      "slide": 15,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 59,
+      "slide": 15,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 60,
+      "slide": 15,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 61,
+      "slide": 15,
+      "step": 4,
+      "final": true
+    },
+    {
+      "page": 62,
+      "slide": 16,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 63,
+      "slide": 16,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 64,
+      "slide": 16,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 65,
+      "slide": 16,
+      "step": 4,
+      "final": true
+    },
+    {
+      "page": 66,
+      "slide": 17,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 67,
+      "slide": 17,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 68,
+      "slide": 17,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 69,
+      "slide": 17,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 70,
+      "slide": 17,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 71,
+      "slide": 17,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 72,
+      "slide": 17,
+      "step": 7,
+      "final": false
+    },
+    {
+      "page": 73,
+      "slide": 17,
+      "step": 8,
+      "final": false
+    },
+    {
+      "page": 74,
+      "slide": 17,
+      "step": 9,
+      "final": false
+    },
+    {
+      "page": 75,
+      "slide": 17,
+      "step": 10,
+      "final": true
+    },
+    {
+      "page": 76,
+      "slide": 18,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 77,
+      "slide": 18,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 78,
+      "slide": 18,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 79,
+      "slide": 18,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 80,
+      "slide": 18,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 81,
+      "slide": 18,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 82,
+      "slide": 18,
+      "step": 7,
+      "final": false
+    },
+    {
+      "page": 83,
+      "slide": 18,
+      "step": 8,
+      "final": false
+    },
+    {
+      "page": 84,
+      "slide": 18,
+      "step": 9,
+      "final": false
+    },
+    {
+      "page": 85,
+      "slide": 18,
+      "step": 10,
+      "final": false
+    },
+    {
+      "page": 86,
+      "slide": 18,
+      "step": 11,
+      "final": true
+    },
+    {
+      "page": 87,
+      "slide": 19,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 88,
+      "slide": 19,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 89,
+      "slide": 19,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 90,
+      "slide": 19,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 91,
+      "slide": 19,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 92,
+      "slide": 19,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 93,
+      "slide": 19,
+      "step": 7,
+      "final": true
+    },
+    {
+      "page": 94,
+      "slide": 20,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 95,
+      "slide": 20,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 96,
+      "slide": 20,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 97,
+      "slide": 20,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 98,
+      "slide": 20,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 99,
+      "slide": 20,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 100,
+      "slide": 20,
+      "step": 7,
+      "final": false
+    },
+    {
+      "page": 101,
+      "slide": 20,
+      "step": 8,
+      "final": false
+    },
+    {
+      "page": 102,
+      "slide": 20,
+      "step": 9,
+      "final": false
+    },
+    {
+      "page": 103,
+      "slide": 20,
+      "step": 10,
+      "final": false
+    },
+    {
+      "page": 104,
+      "slide": 20,
+      "step": 11,
+      "final": false
+    },
+    {
+      "page": 105,
+      "slide": 20,
+      "step": 12,
+      "final": true
+    },
+    {
+      "page": 106,
+      "slide": 21,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 107,
+      "slide": 21,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 108,
+      "slide": 21,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 109,
+      "slide": 22,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 110,
+      "slide": 23,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 111,
+      "slide": 23,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 112,
+      "slide": 23,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 113,
+      "slide": 23,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 114,
+      "slide": 23,
+      "step": 5,
+      "final": true
+    },
+    {
+      "page": 115,
+      "slide": 24,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 116,
+      "slide": 24,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 117,
+      "slide": 25,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 118,
+      "slide": 25,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 119,
+      "slide": 25,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 120,
+      "slide": 25,
+      "step": 4,
+      "final": false
+    },
+    {
+      "page": 121,
+      "slide": 25,
+      "step": 5,
+      "final": false
+    },
+    {
+      "page": 122,
+      "slide": 25,
+      "step": 6,
+      "final": false
+    },
+    {
+      "page": 123,
+      "slide": 25,
+      "step": 7,
+      "final": false
+    },
+    {
+      "page": 124,
+      "slide": 25,
+      "step": 8,
+      "final": false
+    },
+    {
+      "page": 125,
+      "slide": 25,
+      "step": 9,
+      "final": false
+    },
+    {
+      "page": 126,
+      "slide": 25,
+      "step": 10,
+      "final": true
+    },
+    {
+      "page": 127,
+      "slide": 26,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 128,
+      "slide": 26,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 129,
+      "slide": 27,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 130,
+      "slide": 27,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 131,
+      "slide": 27,
+      "step": 3,
+      "final": false
+    },
+    {
+      "page": 132,
+      "slide": 27,
+      "step": 4,
+      "final": true
+    },
+    {
+      "page": 133,
+      "slide": 28,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 134,
+      "slide": 28,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 135,
+      "slide": 29,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 136,
+      "slide": 30,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 137,
+      "slide": 30,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 138,
+      "slide": 31,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 139,
+      "slide": 31,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 140,
+      "slide": 31,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 141,
+      "slide": 32,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 142,
+      "slide": 32,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 143,
+      "slide": 32,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 144,
+      "slide": 33,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 145,
+      "slide": 33,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 146,
+      "slide": 33,
+      "step": 3,
+      "final": true
+    }
+  ],
+  "crop_boxes_pdf_points": {
+    "1": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "2": [
+      0,
+      65,
+      960,
+      498
+    ],
+    "3": [
+      0,
+      22,
+      960,
+      503
+    ],
+    "4": [
+      0,
+      178,
+      960,
+      362
+    ],
+    "5": [
+      0,
+      59,
+      960,
+      535
+    ],
+    "6": [
+      0,
+      103,
+      960,
+      532
+    ],
+    "7": [
+      0,
+      48,
+      960,
+      484
+    ],
+    "8": [
+      0,
+      101,
+      960,
+      488
+    ],
+    "9": [
+      0,
+      41,
+      960,
+      327
+    ],
+    "10": [
+      0,
+      82,
+      960,
+      444
+    ],
+    "11": [
+      0,
+      54,
+      960,
+      507
+    ],
+    "12": [
+      0,
+      41,
+      960,
+      364
+    ],
+    "13": [
+      0,
+      53,
+      960,
+      535
+    ],
+    "14": [
+      0,
+      52,
+      960,
+      412
+    ],
+    "15": [
+      0,
+      60,
+      960,
+      431
+    ],
+    "16": [
+      0,
+      62,
+      960,
+      497
+    ],
+    "17": [
+      0,
+      59,
+      960,
+      465
+    ],
+    "18": [
+      0,
+      57,
+      960,
+      516
+    ],
+    "19": [
+      0,
+      104,
+      960,
+      516
+    ],
+    "20": [
+      0,
+      65,
+      960,
+      485
+    ],
+    "21": [
+      0,
+      67,
+      960,
+      445
+    ],
+    "22": [
+      0,
+      78,
+      960,
+      383
+    ],
+    "23": [
+      0,
+      67,
+      960,
+      498
+    ],
+    "24": [
+      0,
+      68,
+      960,
+      527
+    ],
+    "25": [
+      0,
+      97,
+      960,
+      521
+    ],
+    "26": [
+      0,
+      134,
+      960,
+      471
+    ],
+    "27": [
+      0,
+      63,
+      960,
+      532
+    ],
+    "28": [
+      0,
+      124,
+      960,
+      464
+    ],
+    "29": [
+      0,
+      142,
+      960,
+      478
+    ],
+    "30": [
+      0,
+      86,
+      960,
+      530
+    ],
+    "31": [
+      0,
+      117,
+      960,
+      428
+    ],
+    "32": [
+      0,
+      87,
+      960,
+      513
+    ],
+    "33": [
+      0,
+      87,
+      960,
+      436
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "checks_passed": 3129,
+  "items": 368,
+  "knowledge_groups": 32,
+  "documents": [
+    {
+      "file": "期中教材题库_答案与知识点.pdf",
+      "pages": 161,
+      "size": 2532142
+    },
+    {
+      "file": "期中知识点总表.pdf",
+      "pages": 11,
+      "size": 188924
+    }
+  ],
+  "meaning": "结构、来源路径、全部ID、图件与若干关键算式/边界的程序检查；不代替逐题推理或教师签核。",
+  "teacher_approved": 0,
+  "review_items": 2,
+  "proofs_and_open_responses": "368条参考答案含逐题关键推理或开放回应；作图题附图或关键点/作图规则。"
+}

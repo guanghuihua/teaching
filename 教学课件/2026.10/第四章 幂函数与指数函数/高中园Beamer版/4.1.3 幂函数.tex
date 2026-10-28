@@ -1,0 +1,331 @@
+% !TeX program = xelatex
+% 源：教学课件/A往年高一上学期课件/第4章/4.1.3 幂函数.pptx
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\input{公共设置.tex}
+\title{4.1.3 幂函数}
+\author{深圳中学高中园}
+\date{}
+\begin{document}
+\campusmaketitle
+
+% 原第2页
+\begin{frame}[t]{任务一：生活中的幂函数}
+ \renewcommand{\arraystretch}{1.65}
+ \centering
+ \begin{tabular}{lll}
+  \toprule 情境 & 自变量 & 关系式\\\midrule
+  铅笔单价为1元，购买 $x$ 支 & $x\in\mathbb N^*$ & $p=x$\\
+  边长为 $x$ 的正方形 & $x>0$ & $S=x^2$\\
+  棱长为 $x$ 的立方体 & $x>0$ & $V=x^3$\\\bottomrule
+ \end{tabular}
+ \pause
+ \gap
+ 三个式子中，变量都在\key{底数}位置，指数是常数。
+ \[y=x,\qquad y=x^2,\qquad y=x^3.\]
+\end{frame}
+
+% 原第3--4页，沿用原教材非零实数指数的口径。
+\begin{frame}[t]{任务二：幂函数的定义}
+ 一般地，当 $\alpha$ 为非零实数时，函数
+ \[\boxed{y=x^\alpha}\]
+ 叫做（$\alpha$ 次）幂函数。本课沿用此定义约定。
+ \pause
+ \begin{itemize}
+  \item $x$ 是自变量，$\alpha$ 是常数。
+  \item 系数为 $1$，底数为单个自变量 $x$。
+  \item 只有 $x^\alpha$ 这一项，不另加常数项。
+ \end{itemize}
+ \[y=x^{-1},\quad y=x^{-2},\quad y=x^{1/2}=\sqrt x.\]
+\end{frame}
+
+% 原第5--6页
+\begin{frame}[t]{任务三：五个基本幂函数}
+ \begin{columns}[T,onlytextwidth]
+  \begin{column}{.52\textwidth}\centering\fivepowers\end{column}
+  \begin{column}{.45\textwidth}
+   观察 $y=x,x^2,x^3,\sqrt x,1/x$：
+   \begin{enumerate}
+    \item 定义域和值域分别是什么？
+    \item 哪些是奇函数、偶函数？
+    \item 各自在哪些区间单调？
+    \item 有哪些共同经过的点？
+   \end{enumerate}
+  \end{column}
+ \end{columns}
+\end{frame}
+
+% 原第7页表格拆分，避免拥挤。
+\begin{frame}[t]{任务三：定义域、值域与奇偶性}
+ \centering\normalsize
+ \renewcommand{\arraystretch}{1.65}
+ \begin{tabular}{c|c|c|c}
+  \toprule 函数 & 定义域 & 值域 & 奇偶性\\\midrule
+  $y=x$ & $\R$ & $\R$ & 奇函数\\
+  $y=x^2$ & $\R$ & $[0,+\infty)$ & 偶函数\\
+  $y=x^3$ & $\R$ & $\R$ & 奇函数\\
+  $y=\sqrt x$ & $[0,+\infty)$ & $[0,+\infty)$ & 非奇非偶\\
+  $y=1/x$ & $(-\infty,0)\cup(0,+\infty)$ & $(-\infty,0)\cup(0,+\infty)$ & 奇函数\\\bottomrule
+ \end{tabular}
+ \gap
+ \reason{判断奇偶性前，先检查定义域是否关于原点对称。}
+\end{frame}
+
+\begin{frame}[t]{任务三：单调区间与定点}
+ \normalsize\renewcommand{\arraystretch}{1.7}
+ \centering
+ \begin{tabular}{c|l|c}
+  \toprule 函数 & 单调性 & 经过的点\\\midrule
+  $y=x$ & 在 $\R$ 上递增 & $(0,0),(1,1)$\\
+  $y=x^2$ & 在 $(-\infty,0]$ 上递减，在 $[0,+\infty)$ 上递增 & $(0,0),(1,1)$\\
+  $y=x^3$ & 在 $\R$ 上递增 & $(0,0),(1,1)$\\
+  $y=\sqrt x$ & 在 $[0,+\infty)$ 上递增 & $(0,0),(1,1)$\\
+  $y=1/x$ & 在 $(-\infty,0)$、$(0,+\infty)$ 上分别递减 & $(1,1)$\\\bottomrule
+ \end{tabular}
+ \gap
+ \ans{$1/x$ 的两个单调区间不能合写成一个单调区间。}
+\end{frame}
+
+% 原第8、13页；纠正把所有负整数次幂都按奇函数描述的问题。
+\begin{frame}[t]{任务四：整数次幂的奇偶性}
+ 对非零整数 $k$，$y=x^k$ 满足
+ \[f(-x)=(-x)^k=(-1)^k x^k.\]
+ \pause
+ \begin{itemize}
+  \item $k$ 为奇数：奇函数，图象关于原点对称。
+  \item $k$ 为偶数：偶函数，图象关于 $y$ 轴对称。
+ \end{itemize}
+ \gap
+ 当 $k<0$ 时，$x=0$ 不在定义域内；两支曲线分别趋近坐标轴。\\
+ \ans{$y=x^{-1}$ 的左支在第三象限，$y=x^{-2}$ 的左支在第二象限。}
+\end{frame}
+
+% 原第9、11、13页的重复内容合并，明确只是非负/正半轴性质。
+\begin{frame}[t]{任务五：正半轴上的性质}
+ 对 $y=x^\alpha\ (\alpha\ne0)$：
+ \begin{itemize}
+  \item 当 $\alpha>0$ 时，在 $[0,+\infty)$ 上有定义且递增，\\
+        这一部分的值域为 $[0,+\infty)$，过 $(0,0),(1,1)$。
+  \item 当 $\alpha<0$ 时，在 $(0,+\infty)$ 上有定义且递减，\\
+        这一部分的值域为 $(0,+\infty)$，过 $(1,1)$。
+ \end{itemize}
+ \pause
+ \gap
+ 完整定义域、完整值域还需结合具体指数判断。\\
+ 例如 $y=x^3$ 的值域为 $\R$，$y=x^2$ 的值域为 $[0,+\infty)$。
+\end{frame}
+
+% 原第10--11页
+\begin{frame}[t]{任务五：象限与定义域}
+ 对任意允许的指数 $\alpha$，当 $x>0$ 时，$x^\alpha>0$。
+ \pause
+ \begin{itemize}
+  \item 第一象限一定有图象，第四象限一定没有图象。
+  \item $x<0$ 时是否有定义，以及函数值的符号，取决于指数。
+  \item 分数次幂按相应根式判断，例如
+   \[x^{1/2}=\sqrt x\ (x\ge0),\qquad x^{1/3}=\sqrt[3]x\ (x\in\R).\]
+ \end{itemize}
+ \reason{不能把第一象限中的性质直接当成整个定义域上的性质。}
+\end{frame}
+
+% 原第12--14页
+\begin{frame}[t]{任务六：指数与图象高低}
+ 对同一个 $x>0$，设 $\alpha<\beta$。
+ \pause
+ \begin{columns}[T,onlytextwidth]
+  \begin{column}{.47\textwidth}
+   \key{当 $0<x<1$ 时}
+   \[\ans{x^\alpha>x^\beta}.\]
+   指数越大，图象越低。
+  \end{column}
+  \begin{column}{.47\textwidth}
+   \key{当 $x>1$ 时}
+   \[\ans{x^\alpha<x^\beta}.\]
+   指数越大，图象越高。
+  \end{column}
+ \end{columns}
+ \gap
+ 当 $x=1$ 时，$1^\alpha=1^\beta=1$。\\
+ 例如 $0<x<1$ 时 $x^3<x^2<x<\sqrt x$；$x>1$ 时次序反向。
+\end{frame}
+
+% 原第13页的代数解释。
+\begin{frame}[t]{任务六：同指数幂的比较依据}
+ 设 $a>b>0$，则 $a/b>1$。
+ \pause
+ \begin{align*}
+  r>0&:\quad \frac{a^r}{b^r}=\left(\frac ab\right)^r>1
+       \quad\Longrightarrow\quad a^r>b^r,\\[.8em]
+  r<0&:\quad \frac{a^r}{b^r}=\left(\frac ab\right)^r<1
+       \quad\Longrightarrow\quad a^r<b^r.
+ \end{align*}
+ \gap
+ \reason{这说明了正半轴上幂函数的增减性。}
+\end{frame}
+
+% 原第15页为第二课时封面。
+\begin{frame}[t]{第二课时：幂函数的应用}
+ \begin{enumerate}
+  \item 由定义识别幂函数，求参数。
+  \item 根据图象判断指数，利用已知点求解析式。
+  \item 利用单调性比较大小、解不等式。
+ \end{enumerate}
+ \gap
+ \key{每次使用性质前，先确定定义域与单调区间。}
+\end{frame}
+
+% 原第16页(1)
+\begin{frame}[t]{例1：幂函数的概念}
+ （多选）下列函数中是幂函数的是（\quad）。
+ \begin{align*}
+  \mathrm A.\ y&=\left(\frac12\right)^x;&
+  \mathrm B.\ y&=x^5;\\[.6em]
+  \mathrm C.\ y&=4x^2;&\mathrm D.\ y&=x.
+ \end{align*}
+ \pause
+ \ans{答案：B、D。}
+ \gap
+ A 中变量位于指数位置；C 中 $x^2$ 的系数为 $4$。\\
+ B、D 均满足本课定义的标准形式 $y=x^\alpha$。
+\end{frame}
+
+% 原第16页(2)
+\begin{frame}[t]{例1：由定义求参数}
+ 已知
+ \[y=(m^2+2m-2)x^{m^2-2}+2n-3\]
+ 是幂函数，求 $m,n$ 的值。
+ \pause
+ 由系数为 $1$、常数项为 $0$，得
+ \[\begin{cases}m^2+2m-2=1,\\2n-3=0.\end{cases}\]
+ 所以 $\ans{m=-3\text{ 或 }1,\quad n=\frac32}$。\\
+ 两种情况下指数分别为 $7,-1$，均非零，符合本课定义。
+\end{frame}
+
+% 原第17页
+\begin{frame}[t]{跟踪训练1：定义与单调性}
+ 若 $y=(m^2+2m-2)x^m$ 为幂函数，且在第一象限为增函数，\\
+ 则 $m$ 的值为（\quad）。
+ \[\mathrm A.\ 1\qquad\mathrm B.\ {-3}\qquad
+   \mathrm C.\ {-1}\qquad\mathrm D.\ 3\]
+ \pause
+ \[\begin{cases}m^2+2m-2=1,\\m>0,\end{cases}
+   \quad\Longrightarrow\quad\ans{m=1}.\]
+ \ans{答案：A。}
+\end{frame}
+
+\input{幂函数典例.tex}
+
+% 原第21--22页，顺序调到典例之后。
+\begin{frame}[t]{跟踪训练2：图象与指数}
+ \begin{columns}[T,onlytextwidth]
+  \begin{column}{.5\textwidth}
+   $y=x^n$ 中 $n$ 取 $2,\frac12,-2$。\\
+   曲线 $c_1,c_2,c_3$ 的指数依次为（\quad）。
+   \normalsize
+   \begin{align*}
+    \mathrm A.&\ {-2},\tfrac12,2;&\mathrm B.&\ 2,\tfrac12,-2;\\
+    \mathrm C.&\ {-2},2,\tfrac12;&\mathrm D.&\ 2,-2,\tfrac12.
+   \end{align*}
+   \pause
+   取 $x=4$，三个值为 $16,2,\frac1{16}$。\\
+   \ans{答案：B。}
+  \end{column}
+  \begin{column}{.48\textwidth}
+   \begin{tikzpicture}\begin{axis}[lessonaxis,xmin=0,xmax=3.2,ymin=0,ymax=4,
+    xtick={1},ytick={1},legend pos=north west]
+    \addplot[lessonred,domain=0:1.98]{x^2};\addlegendentry{$c_1$}
+    \addplot[campusgreen,domain=0:3.1]{sqrt(x)};\addlegendentry{$c_2$}
+    \addplot[lessonblue,domain=.51:3.1]{x^(-2)};\addlegendentry{$c_3$}
+    \addplot[dashed,gray,forget plot] coordinates {(0,1)(1,1)(1,0)};
+   \end{axis}\end{tikzpicture}
+  \end{column}
+ \end{columns}
+\end{frame}
+
+\begin{frame}[t]{跟踪训练2：图象所在象限}
+ 当 $\alpha\in\{-1,\frac12,1,2,3\}$ 时，幂函数 $y=x^\alpha$ 的图象\\
+ 不可能经过第\underline{\hspace{1cm}}象限。
+ \pause
+ \begin{itemize}
+  \item $y=x^{-1},x,x^3$ 经过第一、三象限。
+  \item $y=\sqrt x$ 经过第一象限。
+  \item $y=x^2$ 经过第一、二象限。
+ \end{itemize}
+ \ans{答案：四。}
+\end{frame}
+
+% 原第24页
+\begin{frame}[t]{跟踪训练3：由点求值}
+ 已知幂函数 $f(x)$ 的图象经过点 $\left(3,\frac19\right)$，求 $f(4)$。
+ \pause
+ 设 $f(x)=x^\alpha$，则
+ \[3^\alpha=\frac19=3^{-2}\quad\Longrightarrow\quad\alpha=-2.\]
+ 因而
+ \[\ans{f(4)=4^{-2}=\frac1{16}}.\]
+\end{frame}
+
+% 原第27--28页
+\begin{frame}[t]{跟踪训练4：借助中间量比较}
+ 将下列各数从小到大排列：
+ \[\left(\frac23\right)^{-1/3},\quad
+   \left(\frac35\right)^{1/2},\quad
+   \left(\frac25\right)^{1/2},\quad
+   \left(\frac76\right)^0.\]
+ \pause
+ $\left(\frac76\right)^0=1$，$\left(\frac23\right)^{-1/3}>1$；另外
+ \[0<\left(\frac25\right)^{1/2}<\left(\frac35\right)^{1/2}<1.\]
+ 因此
+ \[\ans{\left(\frac25\right)^{1/2}<\left(\frac35\right)^{1/2}
+ <\left(\frac76\right)^0<\left(\frac23\right)^{-1/3}}.\]
+\end{frame}
+
+% 原第29页；用完整符号表避免漏分情况。
+\begin{frame}[t]{例5：倒数不等式}
+ 已知 $(a+1)^{-1}<(3-2a)^{-1}$，求 $a$ 的取值范围。
+ \pause
+ 先排除 $a=-1,\frac32$，移项得
+ \[\frac1{a+1}-\frac1{3-2a}
+   =\frac{2-3a}{(a+1)(3-2a)}<0.\]
+ \renewcommand{\arraystretch}{1.4}\centering\normalsize
+ \begin{tabular}{c|cccc}
+  $a$ & $(-\infty,-1)$ & $(-1,\frac23)$ & $(\frac23,\frac32)$ & $(\frac32,+\infty)$\\\hline
+  分式符号 & $-$ & $+$ & $-$ & $+$
+ \end{tabular}
+ \[\ans{a\in(-\infty,-1)\cup\left(\frac23,\frac32\right)}.\]
+\end{frame}
+
+% 原第30页
+\begin{frame}[t]{解不等式的方法}
+ \begin{enumerate}
+  \item 先由根式、分母等确定有意义的条件。
+  \item 确认两个自变量是否处于同一单调区间。
+  \item 同一区间内用单调性转化；跨区间时分类或比较符号。
+  \item 将所得范围与有意义的条件取交集，检查端点。
+ \end{enumerate}
+ \gap
+ \reason{例如倒数函数两侧分别递减，但不能直接跨越零点反向比较。}
+\end{frame}
+
+% 原第31页；纠正解答中把非负条件写成严格大于零。
+\begin{frame}[t]{跟踪训练5：根式不等式}
+ 若 $(3-2m)^{1/2}>(m+1)^{1/2}$，求实数 $m$ 的取值范围。
+ \pause
+ $y=\sqrt x$ 在 $[0,+\infty)$ 上递增，所以原不等式等价于
+ \[\begin{cases}3-2m\ge0,\\m+1\ge0,\\3-2m>m+1.\end{cases}\]
+ 解得
+ \[\ans{m\in\left[-1,\frac23\right)}.\]
+\end{frame}
+
+\begin{frame}[t]{课堂小结}
+ \begin{itemize}
+  \item 幂函数：变量在底数位置，先核对系数与附加项。
+  \item 定义域与奇偶性：结合具体指数判断。
+  \item 正半轴单调性：正指数递增，负指数递减。
+  \item 比较大小：同指数用幂函数，必要时借助 $1$ 等中间量。
+  \item 解不等式：先定范围，再用性质，最后检查端点。
+ \end{itemize}
+\end{frame}
+\campusclosing[谢谢]
+\end{document}

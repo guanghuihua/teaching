@@ -1,0 +1,238 @@
+% !TeX program = xelatex
+% 源：教学课件/A往年高一上学期课件/第4章/4.1.1 有理指数幂.pptx
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\input{公共设置.tex}
+\title{4.1.1 有理指数幂}
+\author{深圳中学高中园}
+\date{}
+\begin{document}
+\campusmaketitle
+
+% 原第2页；修正平方根与正边长的区别。
+\begin{frame}[t]{任务一：从乘方到开方}
+ 正方形的边长为 $a$，面积为 $a^2$；立方体的棱长为 $a$，体积为 $a^3$。
+ \gap
+ \begin{itemize}
+  \item 正方形面积为 $4$ 时，边长为 $2$。
+  \item 正方形面积为 $5$ 时，边长为 $\sqrt5$。
+ \end{itemize}
+ \pause
+ \key{已知幂与指数，怎样求底数？}
+ \[x^2=5\quad\Longrightarrow\quad x=\pm\sqrt5.\]
+ 作为\key{边长}时取正值 $\sqrt5$。能否把它写成 $5$ 的某次幂？
+\end{frame}
+
+% 原第3页
+\begin{frame}[t]{任务二：\texorpdfstring{$n$}{n} 次方根}
+ \renewcommand{\arraystretch}{1.7}
+ \centering
+ \begin{tabular}{lll}
+  \toprule 方程 & 名称 & 实数解\\\midrule
+  $x^2=a\ (a>0)$ & $a$ 的平方根 & $x=\pm\sqrt a$\\
+  $x^3=a$ & $a$ 的立方根 & $x=\sqrt[3]a$\\
+  $x^4=a\ (a>0)$ & $a$ 的四次方根 & $x=\pm\sqrt[4]a$\\\bottomrule
+ \end{tabular}
+ \pause
+ \begin{block}{定义}
+  如果 $x^n=a$，那么 $x$ 叫做 $a$ 的 $n$ 次方根。\\
+  其中 $n\in\mathbb N$，且 $n\ge2$。本节在实数范围内讨论。
+ \end{block}
+\end{frame}
+
+% 原第4页
+\begin{frame}[t]{任务二：方根的存在性与个数}
+ \renewcommand{\arraystretch}{1.65}
+ \centering
+ \begin{tabular}{c|c|c}
+  \toprule 被开方数 & $n$ 为奇数 & $n$ 为偶数\\\midrule
+  $a>0$ & 一个：$\sqrt[n]a>0$ & 两个：$\pm\sqrt[n]a$\\
+  $a=0$ & \multicolumn{2}{c}{一个：$0$}\\
+  $a<0$ & 一个：$\sqrt[n]a<0$ & 没有实数方根\\\bottomrule
+ \end{tabular}
+ \pause
+ \gap
+ \begin{itemize}
+  \item 奇次方根对任意实数都存在，并且唯一。
+  \item 偶次方根需要 $a\ge0$；当 $a>0$ 时有两个。
+ \end{itemize}
+\end{frame}
+
+% 原第5页
+\begin{frame}[t]{任务三：根式的含义}
+ \[\boxed{\sqrt[n]{a}}\qquad n\ge2\]
+ \begin{itemize}
+  \item $n$ 是\key{根指数}，$a$ 是\key{被开方数}。
+  \item 当 $n$ 为奇数时，$\sqrt[n]a$ 表示唯一的实 $n$ 次方根。
+  \item 当 $n$ 为偶数时，$\sqrt[n]a$ 表示\key{非负}的 $n$ 次方根。
+ \end{itemize}
+ \pause
+ \[\sqrt9=3,\qquad x^2=9\text{ 的解为 }x=\pm3.\]
+ \ans{根式的值与方程的全部实数解需要区分。}
+\end{frame}
+
+% 原第6页拆为两页，明确有意义的条件。
+\begin{frame}[t]{任务四：先开方，再乘方}
+ 只要 $\sqrt[n]a$ 在实数范围内有意义，就有
+ \[\boxed{\left(\sqrt[n]a\right)^n=a}.\]
+ \pause
+ \begin{itemize}
+  \item $n$ 为奇数：$a\in\R$。
+  \item $n$ 为偶数：$a\ge0$。
+ \end{itemize}
+ \gap
+ \[\left(\sqrt[3]{-8}\right)^3=-8,\qquad (\sqrt9)^2=9.\]
+ \reason{在有意义的前提下，结果始终等于被开方数 $a$。}
+\end{frame}
+
+\begin{frame}[t]{任务四：先乘方，再开方}
+ 对任意 $a\in\R$，
+ \[\boxed{\sqrt[n]{a^n}=\begin{cases}a,&n\text{ 为奇数},\\ |a|,&n\text{ 为偶数}.\end{cases}}\]
+ \pause
+ \[\sqrt[3]{(-2)^3}=-2,\qquad \sqrt{(-2)^2}=|-2|=2.\]
+ \gap
+ \ans{偶次根式的值非负，不能直接约去根号与偶数次幂。}
+\end{frame}
+
+% 原第7页的引入、定义和运算性质分开。
+\begin{frame}[t]{任务五：分数指数的引入}
+ \[\sqrt2\cdot\sqrt3=\sqrt6,\qquad
+   \sqrt[3]{3^2}\cdot\sqrt[3]4=\sqrt[3]{36}.\]
+ 根指数不同时，例如 $\sqrt2\cdot\sqrt[3]3$，怎样统一表示？
+ \pause
+ \begin{block}{正数的分数指数幂}
+  对 $a>0$，$m,n$ 为正整数且 $n\ge2$，规定
+  \[a^{m/n}=\sqrt[n]{a^m},\qquad
+    a^{-m/n}=\frac1{a^{m/n}}=\frac1{\sqrt[n]{a^m}}.\]
+ \end{block}
+ 因而 $\sqrt5=5^{1/2}$，$\sqrt2\cdot\sqrt[3]3=2^{1/2}3^{1/3}$。
+\end{frame}
+
+\begin{frame}[t]{任务五：零与底数条件}
+ \begin{itemize}
+  \item $0$ 的正有理数次幂规定为 $0$。
+  \item $0$ 的负有理数次幂没有意义。
+  \item 本节不定义 $0^0$。
+ \end{itemize}
+ \pause
+ \gap
+ \ans{分数指数幂的统一定义与运算法则在正底数条件下使用。}
+ \gap
+ 负数的奇次方根可以有意义，例如 $\sqrt[3]{-8}=-2$；\\
+ 这不能作为任意底数都能套用分数指数幂法则的依据。
+\end{frame}
+
+\begin{frame}[t]{任务六：有理指数幂的运算}
+ 对 $a>0$，$b>0$，$r,s\in\Q$，有
+ \begin{align*}
+  a^r a^s&=a^{r+s},& \frac{a^r}{a^s}&=a^{r-s},\\[.7em]
+  (a^r)^s&=a^{rs},& (ab)^r&=a^r b^r.
+ \end{align*}
+ \pause
+ \[\left(\frac ab\right)^r=\frac{a^r}{b^r}.\]
+ \gap
+ \reason{根式先化成分数指数幂，再按指数运算法则计算。}
+\end{frame}
+
+% 原第8页
+\begin{frame}[t]{例1：根式求值}
+ 求下列各式的值：
+ \begin{align*}
+  &(1)\ \sqrt[3]{(-8)^3}; &&(2)\ \sqrt{(-10)^2};\\[.5em]
+  &(3)\ \sqrt[4]{(3-\pi)^4}; &&(4)\ \sqrt{(a-b)^2}\quad(a>b).
+ \end{align*}
+ \pause
+ \begin{align*}
+  &(1)\ \ans{-8}; &&(2)\ |-10|=\ans{10};\\[.5em]
+  &(3)\ |3-\pi|=\ans{\pi-3}; &&(4)\ |a-b|=\ans{a-b}.
+ \end{align*}
+ \reason{先看根指数的奇偶性，再判断绝对值内部的符号。}
+\end{frame}
+
+% 原第9页，保留两种核心算法。
+\begin{frame}[t]{例2：分数指数幂求值}
+ \[(1)\ 8^{2/3};\qquad (2)\ \left(\frac{16}{81}\right)^{-3/4}.\]
+ \pause
+ \begin{align*}
+  8^{2/3}&=(2^3)^{2/3}=2^2=\ans4,\\[.5em]
+  \left(\frac{16}{81}\right)^{-3/4}
+   &=\left[\left(\frac23\right)^4\right]^{-3/4}
+     =\left(\frac23\right)^{-3}=\ans{\frac{27}8}.
+ \end{align*}
+ \pause
+ 也可以先开方：$8^{2/3}=(\sqrt[3]8)^2=4$。\\
+ 负指数先取倒数：$\left(\frac{16}{81}\right)^{-3/4}=\left(\frac{81}{16}\right)^{3/4}$。
+\end{frame}
+
+% 原第10页
+\begin{frame}[t]{例3：根式与指数式互化}
+ 用分数指数幂表示并化简（$a>0$）：
+ \[(1)\ a^2\sqrt[3]{a^2};\qquad (2)\ \sqrt{a\sqrt[3]a}.\]
+ \pause
+ \begin{align*}
+  a^2\sqrt[3]{a^2}&=a^2a^{2/3}=\ans{a^{8/3}},\\[.7em]
+  \sqrt{a\sqrt[3]a}&=(a\cdot a^{1/3})^{1/2}
+                  =(a^{4/3})^{1/2}=\ans{a^{2/3}}.
+ \end{align*}
+ \reason{相乘时指数相加，幂的乘方时指数相乘。}
+\end{frame}
+
+% 原第11页，独立补全答案。
+\begin{frame}[t]{例4：含字母的幂运算}
+ 计算（式中字母均为正数）：
+ \[(1)\ (a^{1/3}b^{-5/6})^6;\]
+ \[(2)\ (3m^{3/4}n^{3/2})(-4m^{-1/4}n^{1/3})
+          \div(-6m^{1/2}n^{5/6}).\]
+ \pause
+ \begin{align*}
+  (1)&\quad a^{6/3}b^{-30/6}=\ans{a^2b^{-5}=\frac{a^2}{b^5}},\\[.5em]
+  (2)&\quad\frac{3(-4)}{-6}\,
+  m^{\frac34-\frac14-\frac12}n^{\frac32+\frac13-\frac56}
+  =\ans{2n}.
+ \end{align*}
+\end{frame}
+
+% 原第12页(1)(2)，补全原稿未给出的计算。
+\begin{frame}[t]{例5：根式综合化简}
+ 用分数指数幂表示并化简（字母均为正数）：
+ \[(1)\ \frac{\sqrt[3]{a^2}\sqrt b}{\sqrt a\sqrt[3]b};\qquad
+   (2)\ (\sqrt[3]3-\sqrt{27})\div\sqrt[6]3.\]
+ \pause
+ \begin{align*}
+  (1)&\quad a^{\frac23-\frac12}b^{\frac12-\frac13}
+       =\ans{a^{1/6}b^{1/6}},\\[.7em]
+  (2)&\quad 3^{\frac13-\frac16}-3^{\frac32-\frac16}
+       =\ans{3^{1/6}-3^{4/3}}.
+ \end{align*}
+ \ans{商对差式运算时，差式中的每一项都要除以除数。}
+\end{frame}
+
+% 原第12页(3)，根号范围与原图核对。
+\begin{frame}[t]{例5：嵌套根式}
+ 化简（$x>0$，$y>0$）：
+ \[\sqrt[3]{xy^2(\sqrt{xy})^3}.\]
+ \pause
+ \begin{align*}
+  \sqrt[3]{xy^2(\sqrt{xy})^3}
+  &=\left[xy^2(xy)^{3/2}\right]^{1/3}\\[.5em]
+  &=\left(x^{5/2}y^{7/2}\right)^{1/3}
+    =\ans{x^{5/6}y^{7/6}}.
+ \end{align*}
+ \reason{先明确每层根号的范围，再从内到外改写指数。}
+\end{frame}
+
+\begin{frame}[t]{课堂小结}
+ \begin{enumerate}
+  \item $n$ 次方根：先判断存在性，再判断个数。
+  \item 两个基本公式：
+   \[(\sqrt[n]a)^n=a,\qquad
+     \sqrt[n]{a^n}=\begin{cases}a,&n\text{ 奇},\\|a|,&n\text{ 偶}.\end{cases}\]
+  \item 正底数的根式可转为分数指数幂，统一使用指数法则。
+ \end{enumerate}
+ \gap
+ \key{自检：条件写全了吗？偶次根式非负吗？负指数处理正确吗？}
+\end{frame}
+\campusclosing[谢谢]
+\end{document}

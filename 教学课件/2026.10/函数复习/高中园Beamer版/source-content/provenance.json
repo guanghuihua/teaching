@@ -1,0 +1,208 @@
+{
+  "source_name": "复习.pptx",
+  "source_path": "D:/guanghui/AI读取/复习.pptx",
+  "source_sha256": "bfa6a3b9229f8228f75ea46f5a240590fbd5bdc884f35de2c45838bbd5c0741c",
+  "original_slides": 7,
+  "hidden_slides_included": [],
+  "layout": {
+    "1": {
+      "title": "相等函数的判定",
+      "remove": [
+        "5"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "2": {
+      "title": "相等函数的判定",
+      "remove": [],
+      "kind": "body",
+      "hidden": false
+    },
+    "3": {
+      "title": "求已知函数定义域",
+      "remove": [
+        "2"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "4": {
+      "title": "求函数的解析式",
+      "remove": [
+        "6"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "5": {
+      "title": "求已知函数值域",
+      "remove": [
+        "3"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "6": {
+      "title": "求已知函数值域",
+      "remove": [
+        "4"
+      ],
+      "kind": "body",
+      "hidden": false
+    },
+    "7": {
+      "title": "函数奇偶性的应用",
+      "remove": [
+        "7"
+      ],
+      "kind": "body",
+      "hidden": false
+    }
+  },
+  "display_states": 16,
+  "method": "PowerPoint native vector export, original body objects retained; original slide background and header decorations removed; Beamer GaoZhongYuan template applied.",
+  "template": "教学课件/高中园Beamer模板/高中园模板.tex",
+  "mapping": [
+    {
+      "page": 1,
+      "slide": 1,
+      "step": 1,
+      "final": true
+    },
+    {
+      "page": 2,
+      "slide": 2,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 3,
+      "slide": 2,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 4,
+      "slide": 2,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 5,
+      "slide": 3,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 6,
+      "slide": 3,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 7,
+      "slide": 4,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 8,
+      "slide": 4,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 9,
+      "slide": 4,
+      "step": 3,
+      "final": true
+    },
+    {
+      "page": 10,
+      "slide": 5,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 11,
+      "slide": 5,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 12,
+      "slide": 6,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 13,
+      "slide": 6,
+      "step": 2,
+      "final": true
+    },
+    {
+      "page": 14,
+      "slide": 7,
+      "step": 1,
+      "final": false
+    },
+    {
+      "page": 15,
+      "slide": 7,
+      "step": 2,
+      "final": false
+    },
+    {
+      "page": 16,
+      "slide": 7,
+      "step": 3,
+      "final": true
+    }
+  ],
+  "crop_boxes_pdf_points": {
+    "1": [
+      0,
+      68,
+      960,
+      442
+    ],
+    "2": [
+      0,
+      61,
+      960,
+      530
+    ],
+    "3": [
+      0,
+      68,
+      960,
+      458
+    ],
+    "4": [
+      0,
+      51,
+      960,
+      490
+    ],
+    "5": [
+      0,
+      90,
+      960,
+      401
+    ],
+    "6": [
+      0,
+      87,
+      960,
+      506
+    ],
+    "7": [
+      0,
+      73,
+      960,
+      506
+    ]
+  }
+}

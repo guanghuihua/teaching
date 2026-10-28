@@ -1,0 +1,23 @@
+% !TeX program = xelatex
+% 在本目录编译。正文为保留原公式、图表和字形的矢量 PDF，不是可逐字编辑的 LaTeX。
+\ifdefined\HandoutMode
+  \documentclass[aspectratio=169,10pt,handout]{beamer}
+\else
+  \documentclass[aspectratio=169,10pt]{beamer}
+\fi
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\newsavebox{\campustitlebox}
+\newcommand{\fitcampustitle}[1]{\sbox{\campustitlebox}{#1}\ifdim\wd\campustitlebox>94mm\resizebox{94mm}{!}{#1}\else#1\fi}
+\author{}
+\date{}
+\begin{document}
+\input{slides/slide-01.tex}
+\input{slides/slide-02.tex}
+\input{slides/slide-03.tex}
+\input{slides/slide-04.tex}
+\input{slides/slide-05.tex}
+\input{slides/slide-06.tex}
+\input{slides/slide-07.tex}
+\end{document}

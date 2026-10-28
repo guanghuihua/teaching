@@ -1,0 +1,67 @@
+{
+  "papers": 4,
+  "questions": 76,
+  "points_per_paper": 150,
+  "module_points": {
+    "集合与逻辑": 30,
+    "不等式": 31,
+    "函数": 59,
+    "幂指数": 30
+  },
+  "checks_passed": 551,
+  "documents": [
+    {
+      "paper": "A",
+      "edition": "main",
+      "pages": 4,
+      "pdf": "A卷\\A卷_学生卷.pdf"
+    },
+    {
+      "paper": "A",
+      "edition": "教师版",
+      "pages": 4,
+      "pdf": "A卷\\A卷_教师版.pdf"
+    },
+    {
+      "paper": "B",
+      "edition": "main",
+      "pages": 4,
+      "pdf": "B卷\\B卷_学生卷.pdf"
+    },
+    {
+      "paper": "B",
+      "edition": "教师版",
+      "pages": 4,
+      "pdf": "B卷\\B卷_教师版.pdf"
+    },
+    {
+      "paper": "C",
+      "edition": "main",
+      "pages": 4,
+      "pdf": "C卷\\C卷_学生卷.pdf"
+    },
+    {
+      "paper": "C",
+      "edition": "教师版",
+      "pages": 4,
+      "pdf": "C卷\\C卷_教师版.pdf"
+    },
+    {
+      "paper": "D",
+      "edition": "main",
+      "pages": 4,
+      "pdf": "D卷\\D卷_学生卷.pdf"
+    },
+    {
+      "paper": "D",
+      "edition": "教师版",
+      "pages": 4,
+      "pdf": "D卷\\D卷_教师版.pdf"
+    }
+  ],
+  "student_source_labels": false,
+  "teacher_source_labels": true,
+  "mathematical_review": "76题逐题独立验算；选择题逐项判断，参数题分类、定义域与端点已检查；数值检查仅支持证明，不代替证明。",
+  "limitations": "预计难度与易错点未经班级试测；未预设均分、达标率。",
+  "teacher_approval_claimed": false
+}
