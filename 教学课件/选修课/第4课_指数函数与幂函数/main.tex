@@ -1,9 +1,6 @@
 % !TeX program = xelatex
-% 临时调整的第4课：指数函数、幂函数与微积分直观；45分钟。
-% XeLaTeX编译两次。每页PDF为一次点击状态，题目先于答案。
-% 搬运时保留sty、book-path.tex与assets/。
-% 备课全显模式（勿作课堂首屏）：\def\HandoutVersion{1}
-% 教师备注模式：\def\TeacherNotes{1}
+% 新高一基础版，45分钟；时间仅在备注。课堂逐次点击。
+% HandoutVersion仅供备课；TeacherNotes打开教师备注。
 \ifdefined\HandoutVersion\PassOptionsToClass{handout}{beamer}\fi
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
@@ -29,55 +26,56 @@
 \newcommand{\key}[1]{{\color{campusgreen}\bfseries #1}}
 \newcommand{\gap}{\par\vspace{3mm}}
 \newcommand{\bigmath}[1]{\begingroup\color{campusgreen}\fontsize{18}{24}\selectfont\[#1\]\endgroup}
-\pgfplotsset{lessonaxis/.style={width=6cm,height=4.7cm,axis lines=left,grid=major,grid style={gray!14},tick label style={font=\scriptsize},label style={font=\small},xlabel={$x$},ylabel={$y$},samples=101,enlargelimits=false,clip=true}}
-\title{幂函数与指数函数}
-\author[华光辉]{华光辉\texorpdfstring{\quad}{ }AI伴学·增长与微积分初步}
+\title{平方增长与翻倍增长}
+\author[华光辉]{华光辉\texorpdfstring{\quad}{ }AI伴学·幂函数与指数函数}
 \date{}
+
+\newcommand{\squarepicture}{%
+\begin{tikzpicture}[x=.75cm,y=.75cm]
+\path[use as bounding box](-.3,-.55)rectangle(4.4,4.35);
+\begin{scope}[overlay]
+\foreach \i in {0,1,2}{\foreach \j in {0,1,2}{
+\fill[campusgreen!20](\i,\j)rectangle++(1,1);
+\draw[white,line width=1.2pt](\i,\j)rectangle++(1,1);}}
+\node[font=\small]at(1.5,-.35){原来：$3\times3$};
+\uncover<2->{
+\foreach \i in {0,1,2,3}{\fill[warm!35](\i,3)rectangle++(1,1);\draw[white,line width=1.2pt](\i,3)rectangle++(1,1);}
+\foreach \j in {0,1,2}{\fill[warm!35](3,\j)rectangle++(1,1);\draw[white,line width=1.2pt](3,\j)rectangle++(1,1);}
+\draw[<->,warm,thick](4.15,0)--node[right,font=\small]{$4$}(4.15,4);}
+\end{scope}
+\end{tikzpicture}}
 
 \newcommand{\growthplot}{%
 \begin{tikzpicture}
-\begin{axis}[lessonaxis,xmin=0,xmax=5.2,ymin=0,ymax=34,xtick={0,1,2,3,4,5},ytick={0,8,16,24,32}]
-  \addplot[very thick,campusgreen,domain=0:5.2]{x^2};
-  \node[campusgreen,fill=white,inner sep=1pt]at(axis cs:4.6,19){$x^2$};
-  \only<2->{\addplot[very thick,warm,domain=0:5.05]{2^x};
-    \node[warm,fill=white,inner sep=1pt]at(axis cs:4.4,30){$2^x$};}
-  \only<3->{\addplot[only marks,mark=*,mark size=1.7pt,ink]coordinates{(2,4)(4,16)};}
+\begin{axis}[width=6.6cm,height=4.7cm,axis lines=left,xmin=0,xmax=6.4,ymin=0,ymax=68,
+xtick={1,2,3,4,5,6},ytick={0,16,32,48,64},grid=major,grid style={gray!15},
+tick label style={font=\scriptsize},label style={font=\small},xlabel={$x$},ylabel={$y$},enlargelimits=false,clip=true]
+\addplot[only marks,mark=*,mark size=2pt,campusgreen]coordinates{(1,1)(2,4)(3,9)(4,16)(5,25)(6,36)};
+\node[campusgreen,anchor=west,font=\small]at(axis cs:5.2,40){$x^2$};
+\only<2->{\addplot[only marks,mark=square*,mark size=2pt,warm]coordinates{(1,2)(2,4)(3,8)(4,16)(5,32)(6,64)};
+\node[warm,anchor=east,font=\small]at(axis cs:5.7,60){$2^x$};}
+\only<3->{\draw[dashed,muted](axis cs:3,0)--(axis cs:3,12);
+\draw[dashed,muted](axis cs:5,0)--(axis cs:5,35);}
 \end{axis}
 \end{tikzpicture}}
 
 \newcommand{\secantplot}{%
 \begin{tikzpicture}
-\begin{axis}[lessonaxis,xmin=0,xmax=3.4,ymin=0,ymax=11.5,xtick={0,1,2,3},ytick={0,4,8},width=6.1cm]
-  \addplot[very thick,ink,domain=0:3.35]{x^2};
-  \addplot[only marks,mark=*,mark size=1.7pt,campusgreen]coordinates{(2,4)};
-  \node[below right,font=\scriptsize]at(axis cs:2,4){$P(2,4)$};
-  \only<2>{\addplot[thick,warm,domain=1.2:3.35]{5*x-6};
-    \addplot[only marks,mark=*,warm]coordinates{(3,9)};\node[above left,font=\scriptsize]at(axis cs:3,9){$Q$};}
-  \only<3>{\addplot[thick,warm,domain=1.03:3.35]{4.1*x-4.2};
-    \addplot[only marks,mark=*,warm]coordinates{(2.1,4.41)};\node[above left,font=\scriptsize]at(axis cs:2.1,4.41){$Q$};}
-  \only<4->{\addplot[very thick,campusgreen,domain=1:3.35]{4*x-4};
-    \node[campusgreen,fill=white,inner sep=1pt,font=\scriptsize]at(axis cs:2.75,5.4){切线};}
-\end{axis}
-\end{tikzpicture}}
-
-\newcommand{\approxplot}{%
-\begin{tikzpicture}
-\begin{axis}[lessonaxis,xmin=0,xmax=2.15,ymin=0,ymax=8.8,xtick={0,1,2},ytick={0,2,4,6,8},width=6cm,legend style={at={(.03,.97)},anchor=north west,font=\scriptsize,draw=none,fill=white},legend cell align=left]
-  \addplot[thick,campusgreen!45,domain=0:2.15]{1+x};\addlegendentry{$n=1$}
-  \only<2->{\addplot[thick,campusgreen!75,domain=0:2.15]{(1+x/5)^5};\addlegendentry{$n=5$}
-    \addplot[very thick,campusgreen,domain=0:2.15]{(1+x/20)^20};\addlegendentry{$n=20$}}
-  \only<3->{\addplot[very thick,warm,dashed,domain=0:2.15]{exp(x)};\addlegendentry{$e^x$}}
-\end{axis}
-\end{tikzpicture}}
-
-\newcommand{\areaplot}{%
-\begin{tikzpicture}
-\begin{axis}[lessonaxis,xmin=0,xmax=3,ymin=0,ymax=6.3,xlabel={$t$},xtick={2},xticklabels={$x$},ytick={4},yticklabels={$2x$},width=5.9cm]
-  \only<2->{\addplot[fill=campusgreen!18,draw=none]coordinates{(0,0)(2,4)(2,0)}\closedcycle;}
-  \addplot[very thick,campusgreen,domain=0:2.85]{2*x};
-  \draw[dashed,gray](axis cs:2,0)--(axis cs:2,4);
-  \node[font=\small,anchor=west]at(axis cs:1.9,5.4){$y=2t$};
-  \only<3->{\node[campusgreen,font=\small]at(axis cs:1.35,1.1){$A(x)$};}
+\begin{axis}[width=6.3cm,height=4.7cm,axis lines=left,xmin=0,xmax=3.4,ymin=0,ymax=11.5,
+xtick={0,1,2,3},ytick={0,4,8},grid=major,grid style={gray!15},
+tick label style={font=\scriptsize},label style={font=\small},xlabel={$x$},ylabel={$y$},enlargelimits=false,clip=true]
+\addplot[very thick,ink,domain=0:3.35,samples=101]{x^2};
+\node[font=\small,ink]at(axis cs:1.25,3.7){$y=x^2$};
+\addplot[only marks,mark=*,mark size=2pt,campusgreen]coordinates{(2,4)};
+\node[below right,font=\scriptsize]at(axis cs:2,4){$P(2,4)$};
+\only<2>{\addplot[thick,warm,domain=1.2:3.35]{5*x-6};
+\addplot[only marks,mark=*,warm]coordinates{(3,9)};
+\node[above left,font=\scriptsize]at(axis cs:3,9){$Q(3,9)$};}
+\only<3>{\addplot[thick,warm,domain=1.03:3.35]{4.1*x-4.2};
+\addplot[only marks,mark=*,warm]coordinates{(2.1,4.41)};
+\node[above left,font=\scriptsize]at(axis cs:2.1,4.41){$Q(2.1,4.41)$};}
+\only<4->{\addplot[very thick,campusgreen,domain=1:3.35]{4*x-4};
+\node[campusgreen,fill=white,inner sep=1pt,font=\small]at(axis cs:2.8,5.4){切线};}
 \end{axis}
 \end{tikzpicture}}
 
@@ -87,231 +85,237 @@
 \settime{00:00--00:30}
 \begin{frame}[plain]\label{fr:cover}
 \titlepage
-\teachnote{45分钟直观探究，面向会坐标、乘方和简单代数的高中生，不以会极限或导数为前提。本次为临时调整主题，替代本次授课的复数几何方案；从零引入，不需要用复数知识。数学40分钟，最后5分钟AI探索。}
+\teachnote{从正整数输入和乘方起步，只比较平方与翻倍；不要求学过指数函数。数学40分钟，最后5分钟AI作业。30至35分钟为变化快慢直观，不进行求导训练。封面AI伴学为课程名称，AI任务在最后。}
 \end{frame}
 
 \settime{00:30--03:00}
-\begin{frame}[t]{两个式子，谁在变化}\label{fr:forms}
-\bigmath{x^2\qquad\text{与}\qquad2^x}
-请指出：哪个位置是变量，哪个数保持不变？
-\uncover<2->{\gap 幂函数：$y=x^p$，指数$p$固定。\par 指数函数：$y=a^x$，底数$a>0$且$a\ne1$固定。}
-\uncover<3->{\gap\key{今天主要看$x>0$、固定正整数幂，以及$a>1$的增长。}}
-\teachnote{先由学生指出变量位置，再命名。幂函数的一般指数p可为实数，本课主要推导正整数n的导数；统一取x>0避免不同指数的定义域混淆。不把2x、2的系数倍幂函数自动称为标准y=x^p，不把a=1纳入教材标准指数函数。来源OpenStax Calculus 1 §1.5。}
+\begin{frame}[t]{先找回乘方的意思}\label{fr:review}
+请独立算一算，再说说你是怎样算的。
+\bigmath{2^2=\ ?\qquad 2^3=\ ?\qquad 3^2=\ ?}
+\uncover<2->{\gap $2^2=2\times2=4$\par $2^3=2\times2\times2=8$\par $3^2=3\times3=9$}
+\uncover<3->{\gap\key{$2^3$与$3^2$：位置换了，意思也换了。}}
+\teachnote{给45秒独立计算，再请一人解释。若把2的3次方算成6，先回到三个2相乘。本页复习乘方，无需复数先修。}
 \end{frame}
 
 \settime{03:00--05:00}
-\begin{frame}[t]{同样增长，规则相同吗}\label{fr:rules}
-让$x$加1，$2^x$怎样变化？让$x$翻倍，$x^2$怎样变化？
-\uncover<2->{\[2^{x+1}=2\cdot2^x,\qquad(2x)^2=4x^2.\]}
-\uncover<3->{\gap\key{指数函数：输入每增加同样一段，输出乘同样倍数。}\gap\key{幂函数：输入按同样倍数缩放，输出也按固定倍数缩放。}}
-\teachnote{用加1和乘2的区别建立结构。一般式a^{x+h}/a^x=a^h、(cx)^p/x^p=c^p，在x,c>0成立。两种规则不能混写。本页只看有限变化，不把一步增量称为瞬时速度。}
+\begin{frame}[t]{正方形怎样长大}\label{fr:square}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{.43\textwidth}\centering\squarepicture\end{column}
+\begin{column}{.54\textwidth}
+每个小方格的面积为$1$。
+\gap 边长从$3$增加到$4$，\par 一共多了几个小方格？
+\uncover<2->{\gap $4^2=16$，原来有$3^2=9$。\par 新增$16-9=7$个。}
+\uncover<3->{\gap 再长到边长$5$呢？\par $5^2=25$，又新增$9$个。}
+\end{column}
+\end{columns}
+\teachnote{先想怎样补成4乘4，再点击补L形，避免一开始展示新增7。第三次点击前留20秒口算25减16。边长每次加1，面积并非每次加同一个数。}
 \end{frame}
 
 \settime{05:00--07:00}
-\begin{frame}[t]{先比较几个数}\label{fr:value-table}
-你猜$x^2$和$2^x$，是不是有一个始终更大？
-\uncover<2->{\gap\centering\begin{tabular}{c|rrrrr}
-$x$ & 1 & 3 & 4 & 8 & 16\\\hline
-$x^2$ & 1 & 9 & 16 & 64 & 256\\
-$2^x$ & 2 & 8 & 16 & 256 & 65536
-\end{tabular}\par}
-\uncover<3->{\gap\key{眼前谁更大，与长期谁增长更快，是两个问题。}}
-\teachnote{先请学生口算x=3、4，再揭示全表。目标为辨别函数值比较的范围；基础。反例x=3足以否定2^x在每处都更大，有限表格不能证明长期结论。完整长期定理后面只接受结论，教师说明有证明。}
+\begin{frame}[t]{另一种长大：每轮翻倍}\label{fr:double}
+开始只有$1$个点。每过一轮，每个点变成两个。
+\bigmath{1\ \longrightarrow\ 2\ \longrightarrow\ 4\ \longrightarrow\ ?\ \longrightarrow\ ?\ \longrightarrow\ ?}
+下一轮有几个？三轮以后呢？
+\uncover<2->{\gap\centering $1\ \longrightarrow\ 2\ \longrightarrow\ 4\ \longrightarrow\ 8\ \longrightarrow\ 16\ \longrightarrow\ 32$\par}
+\uncover<3->{\gap\raggedright\key{每轮乘$2$，是“翻倍”；每轮加$2$，不是翻倍。}}
+\teachnote{开始是第0轮，经历1、2、3轮依次2、4、8。学生可画分叉图；检查第三轮是否错数为4。}
 \end{frame}
 
 \settime{07:00--09:00}
-\begin{frame}[t]{把数值放回同一张图}\label{fr:growth-graph}
-\begin{columns}[c,onlytextwidth]
-\column{.47\textwidth}\centering\growthplot
-\column{.50\textwidth}
-先看$x^2$，再加入$2^x$。
-\uncover<2->{\gap 请比较$x=3$与$x=5$附近。}
-\uncover<3->{\gap $x=2,4$时两者相等。\gap\key{图上这段超过了，\par 不等于处处都超过。}}
+\begin{frame}[t]{两种规则，两个名字}\label{fr:names}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{.47\textwidth}
+\key{边长为$x$的正方形}
+\bigmath{y={\color{warm}x}^{2}}
+面积：$x$乘$x$。
+\uncover<2->{\gap 变的是底数$x$，\par 指数$2$固定。\par 它是\key{幂函数}的一个例子。}
+\end{column}
+\begin{column}{.47\textwidth}
+\key{从$1$开始，翻倍$x$轮}
+\bigmath{y=2^{\color{warm}x}}
+数量：$x$个$2$相乘。
+\uncover<3->{\gap 底数$2$固定，\par 变的是指数$x$。\par 它是\key{指数函数}的一个例子。}
+\end{column}
 \end{columns}
-\teachnote{第一屏只有平方曲线，第二屏才加入指数，第三屏标两个交点。坐标同尺度，不能通过改变坐标轴制造指数始终在上方的印象。图形只是有限窗口，不承担最终超过任意幂的证明。}
+\teachnote{翻倍模型先取正整数x，0轮数量为1可口头回顾。这里只给两个例子的名字，不推广一般底数、指数和定义域分类。非整数幂留待正式课程。}
 \end{frame}
 
-\settime{09:00--10:00}
-\begin{frame}[t]{高度，与此刻的增长速度}\label{fr:value-rate}
-“当前有多少”与“每增加一点，会增加多少”相同吗？
-\uncover<2->{\gap 函数值是曲线的高度。\gap\key{变化速度看斜率：往右一小步，往上增加多少。}\gap 下一步，把“一小步”越取越小。}
-\teachnote{从熟悉的高度与坡度入手，不借助未经建立的导数口诀。这里的速度是y对x的变化率，x不必是时间。没有虚构增长数据或物理单位。}
+\settime{09:00--11:00}
+\begin{frame}[t]{先猜：谁的结果更大}\label{fr:predict}
+同样输入一个数，哪种规则得到的结果更大？
+\bigmath{x^2\qquad\text{与}\qquad 2^x}
+请先写下你的猜想，再算两个位置：
+\gap \centering $x=3$时\hspace{22mm}$x=5$时\par
+\uncover<2->{\gap\raggedright $3^2=9>8=2^3$\par $5^2=25<32=2^5$\gap\key{只算一个位置，还不能替所有位置作决定。}}
+\teachnote{60秒先猜后算，两人交流；保留原猜想并修订，不立刻给“指数增长更快”的口号。}
 \end{frame}
 
-\settime{10:00--12:00}
-\begin{frame}[t]{先算一段路的平均速度}\label{fr:average}
-对$f(x)=x^2$，从$x=2$走到$x=3$，增加了多少？
-\uncover<2->{\bigmath{\frac{f(3)-f(2)}{3-2}=\frac{9-4}{1}=5}}
-\uncover<3->{\gap 一般地，从$x$走到$x+h$：\[\text{平均变化率}=\frac{f(x+h)-f(x)}{h},\qquad h\ne0.\]}
-\teachnote{先问纵向增加5、横向增加1，后给比值。不能直接把平均斜率5当成x=2处的切线斜率。基本目标为分子分母的意义，难度基础。}
-\end{frame}
-
-\settime{12:00--14:00}
-\begin{frame}[t]{让第二个点慢慢靠近}\label{fr:secants}
-\begin{columns}[c,onlytextwidth]
-\column{.48\textwidth}\centering\secantplot
-\column{.49\textwidth}
-固定$P(2,4)$，让$Q$沿曲线靠近它。
-\uncover<2->{\gap $h=1$，割线斜率$5$。}
-\uncover<3->{\gap $h=0.1$，割线斜率$4.1$。}
-\uncover<4->{\gap\key{斜率越来越接近$4$。}\par 极限位置是切线。}
-\end{columns}
-\teachnote{首屏无割线和切线；第二屏Q=(3,9)，第三屏Q=(2.1,4.41)，最后切线y=4x-4。点、线与斜率同步，模拟靠近过程。一般切线不能定义成只碰曲线一次，本课用割线的极限解释。}
-\end{frame}
-
-\settime{14:00--16:00}
-\begin{frame}[t]{平方函数的瞬时速度}\label{fr:derivative-square}
-固定$x$，先在$h\ne0$时化简：
-\uncover<2->{\[\frac{(x+h)^2-x^2}{h}=\frac{2xh+h^2}{h}=2x+h.\]}
-\uncover<3->{\gap 当$h$越来越接近0，比值越来越接近$2x$。\bigmath{f'(x)=2x}\key{导数：某一点的瞬时变化率，也就是切线斜率。}}
-\teachnote{这是完整的一次差商推导，不是把h=0直接代入0/0。x=2时得4，解释前页图。h从左右趋0均成立，只须使x+h仍在讨论区间内。来源OpenStax §3.1；不讲epsilon-delta定义。}
-\end{frame}
-
-\settime{16:00--18:00}
-\begin{frame}[t]{幂函数：求导后降一阶}\label{fr:power-rule}
-平方之外，立方会怎样？
-\uncover<2->{\[\frac{(x+h)^3-x^3}{h}=3x^2+3xh+h^2\ \longrightarrow\ 3x^2.\]}
-\uncover<3->{\bigmath{(x^n)'=nx^{n-1}\qquad(n\text{为固定正整数})}\gap 例如：$(x^2)'=2x$，$(x^3)'=3x^2$。}
-\teachnote{n的规则可由二项式展开证明；平方、立方在这里实际展示，通式作为同类推导的结论。不把n也随x变化，不在本课推导所有实数指数的规则。关注指数降1、前面乘原指数；不能误解为函数值等于导数值。}
-\end{frame}
-
-\settime{18:00--20:00}
-\begin{frame}[t]{每步翻倍，就等于瞬时速度吗}\label{fr:base-two}
-$g(x)=2^x$。它每增加1单位会翻倍，瞬时速度也等于自身吗？
-\uncover<2->{\[\frac{2^{x+h}-2^x}{h}=2^x\frac{2^h-1}{h}.\]
-\begin{columns}[c,onlytextwidth]
-\column{.42\textwidth}\centering\begin{tabular}{c|c}$h$ & $(2^h-1)/h$（约）\\\hline
-0.1 & 0.7177\\0.01 & 0.6956\\0.001 & 0.6934
+\settime{11:00--14:00}
+\begin{frame}[t]{把比较做成一张数表}\label{fr:table}
+先独立补表，再和同桌核对。可在草稿上连乘。
+\gap\centering
+\renewcommand{\arraystretch}{1.55}
+\begin{tabular}{c|rrrrrrr}
+$x$ &1&2&3&4&5&6&8\\\hline
+$x^2$ &1&4&\uncover<2->{9}&\uncover<2->{16}&\uncover<2->{25}&\uncover<2->{36}&\uncover<2->{64}\\
+$2^x$ &2&4&\uncover<2->{8}&\uncover<2->{16}&\uncover<2->{32}&\uncover<2->{64}&\uncover<2->{256}\\
 \end{tabular}
-\column{.55\textwidth}\uncover<3->{\key{系数接近0.6931，\par 并不是1。}\gap 一整步的增量，\par 不能代替瞬时速度。}
-\end{columns}}
-\teachnote{差商分解精确，表格为四舍五入近似。h=1时系数为1，h趋0时是ln2约0.693147，课堂不要求先学对数。数据用于观察，不冒充极限存在及值的证明。来源OpenStax §3.9。}
+\uncover<3->{\gap\raggedright 在表中圈出：\key{相等的位置}，以及\key{大小关系反过来的位置}。}
+\teachnote{保留90秒以上补表。允许写2的8次方为64乘4。相等位置x为2、4；x3时平方大，x5、6、8时指数大。只讨论表中数据，不从有限点证明一般结论。}
 \end{frame}
 
-\settime{20:00--22:00}
-\begin{frame}[t]{把一次增长，分成许多小步}\label{fr:steps}
-初始数量为1。一次增长100\%，结果是多少？
-\gap\begin{columns}[t,onlytextwidth]
-\column{.48\textwidth}\uncover<2->{两段：每段在\key{当前数量}上增长50\%。\bigmath{\left(1+\frac12\right)^2=2.25}}
-\column{.48\textwidth}\uncover<3->{$n$段：每段乘$1+1/n$。\bigmath{\left(1+\frac1n\right)^n}}
+\settime{14:00--17:00}
+\begin{frame}[t]{把数表画在同一张图上}\label{fr:points}
+\renewcommand{\gap}{\par\vspace{2mm}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{.52\textwidth}\centering\growthplot\end{column}
+\begin{column}{.45\textwidth}
+绿圆点：$y=x^2$。
+\gap 先找$(3,9)$和$(5,25)$。
+\uncover<2->{\gap 橙方点：$y=2^x$。\par 再找$(3,8)$和$(5,32)$。}
+\uncover<3->{\gap 同一个$x$，\par\key{比较两个点的高度。}\par $x=3$与$x=5$，\par 谁更高发生了变化。}
+\end{column}
 \end{columns}
-\teachnote{这是自编数量游戏，不是投资承诺。每段增长比例作用于变化后的当前量，不能始终按初始1相加。相同的是预先分配的名义比例总和1，不是最终实际增长幅度。先让学生算一次结果2，再揭示两步2.25。}
+\teachnote{先让学生定位再点击橙点。两组点共用相同坐标轴，仅画整数输入，不借小数指数增加负担。相等位置x2、4两标记重合；请学生指出表和图的对应，不从有限图窗推出所有大x。}
 \end{frame}
 
-\settime{22:00--24:00}
-\begin{frame}[t]{步数增加，会无限大吗}\label{fr:e-definition}
-请猜：$(1+1/n)^n$会越来越接近什么？
-\uncover<2->{\gap\begin{columns}[c,onlytextwidth]
-\column{.48\textwidth}\centering\begin{tabular}{r|c}$n$ & 结果（约）\\\hline
-1 & 2.000000\\2 & 2.250000\\10 & 2.593742\\100 & 2.704814\\10000 & 2.718146
+\settime{17:00--19:00}
+\begin{frame}[t]{一句话，能不能说得太满}\label{fr:counter}
+小明说：\key{“$2^x$总是比$x^2$大。”}
+\gap 你同意吗？请用刚才的一组数说明。
+\uncover<2->{\bigmath{x=3:\qquad 2^3=8<9=3^2}}
+\uncover<3->{\key{一个算对的反例，就能推翻“总是”。}\gap 今天看到：同一个$x$，两种规则有时相等，\par 有时一方大，有时另一方大。}
+\teachnote{给20秒独立寻找反例。“不同意”必须附算式，不能只说图上看起来。不要求实数解集或证明指数最终超过平方。}
+\end{frame}
+
+\settime{19:00--21:00}
+\begin{frame}[t]{每次加一，究竟加了多少}\label{fr:steps}
+输入$x$每次增加$1$。比较下面两行的\key{增加量}。
+\gap\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{c|rrrrr}
+$x$ &1&2&3&4&5\\\hline
+$x^2$ &1&4&9&16&25\\
+$2^x$ &2&4&8&16&32\\
 \end{tabular}
-\column{.49\textwidth}\uncover<3->{\key{定理：这列数趋向一个有限值。}\bigmath{e\approx2.7182818}\gap 用$e$命名这个数。}
-\end{columns}}
-\teachnote{先猜后揭示数据。n=1、2可手算，其余由教师提供，不要求现场大数乘法。定义e为此序列极限，极限存在、有限与其特殊导数性质是本课接受的结论，不能由五行表就声称已证明。幂式仍含指数运算，但此时n是变化的步数，不是在比较同一个固定幂函数。}
+\uncover<2->{\gap\raggedright 平方这一行：依次增加$3,\ 5,\ 7,\ 9$。\par 翻倍这一行：依次增加$2,\ 4,\ 8,\ 16$。}
+\uncover<3->{\gap\key{两行都不是每次加同一个数；第二行每次乘$2$。}}
+\teachnote{请两组学生分别报相邻数之差，教师板书箭头。“增加量变大”不是指数函数独有，平方增加量也变大。本例关键是固定倍数。}
 \end{frame}
 
-\settime{24:00--26:00}
-\begin{frame}[t]{一列幂式，怎样逼近指数}\label{fr:bridge}
-\begin{columns}[c,onlytextwidth]
-\column{.47\textwidth}\centering\approxplot
-\column{.50\textwidth}
-固定$x\ge0$，研究\[P_n(x)=\left(1+\frac xn\right)^n.\]
-\uncover<2->{\gap 每个固定的$n$，\par 都给出一个$n$次多项式。}
-\uncover<3->{\gap\key{定理：固定$x$，让$n\to\infty$，\par 有$P_n(x)\to e^x$。}}
+\settime{21:00--23:00}
+\begin{frame}[t]{输入翻倍，结果也翻倍吗}\label{fr:scale}
+把输入从$3$变成$6$。请先算结果，再算倍数。
+\begin{columns}[T,onlytextwidth]
+\begin{column}{.47\textwidth}
+\bigmath{x^2}
+$9\ \longrightarrow\ ?$
+\uncover<2->{\gap $6^2=36$\par $36\div9=4$\par 面积变为原来的\key{$4$倍}。}
+\end{column}
+\begin{column}{.47\textwidth}
+\bigmath{2^x}
+$8\ \longrightarrow\ ?$
+\uncover<3->{\gap $2^6=64$\par $64\div8=8$\par 数量变为原来的\key{$8$倍}。}
+\end{column}
 \end{columns}
-\teachnote{第一屏n=1，第二屏n=5和20，第三屏目标指数曲线。注意P_n是平移伸缩后的幂式，通常不是标准x^p形式；不能误称每个P_n都是标准幂函数。极限恒等式是接受的定理，图像提供直观而非证明。固定x、变化n及系数，稍后与固定n、增大x作区别。}
+\teachnote{从3到6是乘2，不是加1。平方输入翻倍用边长翻倍解释；指数输出这里8倍，不能说输入翻倍就总8倍。后面用4到8核验。}
 \end{frame}
 
-\settime{26:00--28:00}
-\begin{frame}[t]{为什么$e^x$特别适合描述增长}\label{fr:e-derivative}
-同样作差商：\[\frac{e^{x+h}-e^x}{h}=e^x\frac{e^h-1}{h}.\]
-\uncover<2->{\begin{columns}[c,onlytextwidth]
-\column{.43\textwidth}\centering\begin{tabular}{c|c}$h$ & $(e^h-1)/h$（约）\\\hline
-0.1 & 1.0517\\0.01 & 1.0050\\0.001 & 1.0005
-\end{tabular}
-\column{.54\textwidth}\uncover<3->{定理：系数趋向1，因此\bigmath{(e^x)'=e^x}\key{瞬时增长速度，\par 恰好等于当前的量。}}
-\end{columns}}
-\teachnote{不能说所有指数函数的导数都等于自身。极限(e^h-1)/h=1是与前页e定义一致的定理，本课未作完整证明；在接受它之后，差商分解才推出导数等式。表中只列正h作演示，结论是双侧极限。来源OpenStax §3.9、§6.7。}
+\settime{23:00--25:00}
+\begin{frame}[t]{现在更大，下一步也多加吗}\label{fr:value-step}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{.47\textwidth}
+\key{在$x=3$时，谁的值大？}
+\bigmath{3^2\qquad2^3}
+\uncover<2->{$9>8$\gap 平方这一项\key{现在更大}。}
+\end{column}
+\begin{column}{.47\textwidth}
+\key{从$x=3$到$4$，谁多加？}
+\gap 平方：$9\longrightarrow16$\par 翻倍：$8\longrightarrow16$
+\uncover<3->{\gap 平方增加$7$，翻倍增加$8$。\par 翻倍这一项\key{这一步多加}。}
+\end{column}
+\end{columns}
+\teachnote{分别用“值”和“增加量”作主语。这是同一个单位区间总增量，不说成某点瞬时速度，也不把更陡用于前面的散点。}
+\end{frame}
+
+\settime{25:00--28:00}
+\begin{frame}[t]{自己做一次，不急着核对}\label{fr:practice}
+在草稿上写出计算过程。
+\gap 1. 输入$x=4$时，$x^2$与$2^x$的值相同吗？
+\gap 2. 输入从$4$增加到$5$时，\par\hspace{5mm}两种结果各增加多少？
+\gap 3. 输入从$4$翻倍到$8$时，\par\hspace{5mm}两种结果各变为原来的几倍？
+\gap\color{muted}做完后，给同桌解释：“增加多少”和“变为几倍”怎样区分。
+\teachnote{本页无答案，至少90秒独立书写，随后互讲。第3题迁移，可使用先前数表。收集原步骤再翻核对页，不把照抄当作独立完成。}
 \end{frame}
 
 \settime{28:00--30:00}
-\begin{frame}[t]{两类函数的变化率}\label{fr:rate-comparison}
-幂函数与指数函数，求导后的形状怎样不同？
-\uncover<2->{\[\begin{array}{c|c}
-\text{函数} & \text{导数}\\\hline
-x^n & nx^{n-1}\\
-a^x & k_a a^x
-\end{array}\qquad k_a>0\ (a>1).\]}
-\uncover<3->{\gap\key{幂函数降一阶；指数函数仍与自身成比例。}\gap 底数决定常数：$k_2\approx0.6931$，$k_e=1$。}
-\teachnote{n固定正整数、x>0，a>1。一般系数k_a=ln a，学生无需先学对数，本课只把它看成由底数决定的常数。源自极限(a^h-1)/h，与x无关。若a在0与1之间则系数为负，本课增长讨论不包含该情形，不能把表的正号无条件推广。}
+\begin{frame}[t]{核对时，找出差在了哪里}\label{fr:answers}
+1. 输入$4$：$4^2=16$，$2^4=16$，\key{相同}。
+\uncover<2->{\gap 2. 从$4$到$5$：\par\hspace{5mm}平方增加$25-16=9$；\par\hspace{5mm}翻倍增加$32-16=16$。}
+\uncover<3->{\gap 3. 从$4$到$8$：\par\hspace{5mm}平方变为$64\div16=4$倍；\par\hspace{5mm}翻倍变为$256\div16=16$倍。}
+\teachnote{首屏仅核对1，点击给2、3。做差回答增加多少，做除法回答几倍。第3题指数16倍与输入3到6的8倍不同，防止学生只记住一个倍数。}
 \end{frame}
 
 \settime{30:00--32:00}
-\begin{frame}[t]{长期增长，为什么会拉开差距}\label{fr:eventual}
-把瞬时速度除以当前量，得到\key{相对变化率}。
-\uncover<2->{\[\frac{(x^n)'}{x^n}=\frac nx,\qquad\frac{(a^x)'}{a^x}=k_a.\]\gap 前者逐渐接近0，后者保持同一个正数。}
-\uncover<3->{\gap 定理：固定$n>0$、$a>1$，当$x$足够大时，\bigmath{a^x>x^n}\key{“最终超过”不等于“每个位置都更大”。}}
-\teachnote{课堂以相对速率给直觉，不能把它冒充完整长期比较证明。严格定理还给x^n/a^x趋0；教师说明用二项式给出无需洛必达的证明。注意函数值有起点差异，瞬时相对速率的比较不能直接替代任意位置的值比较。来源OpenStax §4.8。}
+\begin{frame}[t]{再小一点，看变化快慢}\label{fr:small-step}
+仍看$y=x^2$，从$x=2$出发。
+\gap 到$3$：横向增加$1$，纵向增加$9-4=5$。
+\uncover<2->{\gap 到$2.1$：横向增加$0.1$，\par 纵向增加$2.1^2-4=4.41-4=0.41$。}
+\uncover<3->{\gap 折算成“每增加$1$，平均增加多少”：\par 到$3$这一段：$5\div1=5$；\par 到$2.1$这一小段：$0.41\div0.1=4.1$。}
+\teachnote{用路程除以时间类比折算每1单位，再用小数算式；不写差商通式。如小数除法卡住，提供4.1，重点辨认横向0.1与纵向0.41。}
 \end{frame}
 
-\settime{32:00--34:00}
-\begin{frame}[t]{反过来：把变化速度累积起来}\label{fr:area}
-\begin{columns}[c,onlytextwidth]
-\column{.46\textwidth}\centering\areaplot
-\column{.51\textwidth}
-从0到$x\ge0$，\par 直线$y=2t$下方的面积是多少？
-\uncover<2->{\[A(x)=\frac12\times x\times2x=x^2.\]}
-\uncover<3->{\gap\key{$x^2$求变化率得到$2x$；\par 累积$2t$的面积又回到$x^2$。}\gap 这种累积，用积分描述。}
+\settime{32:00--35:00}
+\begin{frame}[t]{靠近一点，直线怎样转动}\label{fr:tangent}
+\renewcommand{\gap}{\par\vspace{2mm}}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{.51\textwidth}\centering\secantplot\end{column}
+\begin{column}{.46\textwidth}
+固定$P(2,4)$，让$Q$靠近$P$。
+\uncover<2->{\gap $Q$在$x=3$：\par 平均每单位增加$5$。}
+\uncover<3->{\gap $Q$在$x=2.1$：\par 平均每单位增加$4.1$。}
+\uncover<4->{\gap $Q$越来越靠近，直线趋近\key{切线}。\par 它的倾斜程度，描述\par\key{此刻的变化快慢}。}
+\end{column}
 \end{columns}
-\teachnote{图中x为右端点的符号，不是固定取值2；示意按相同比例绘制。面积用三角形公式精确求出，不需积分技巧。x>=0确保非负面积。微积分互逆的普遍性需要连续等条件，本课只用该例建立直观，来源OpenStax §5.3。}
+\teachnote{手动四个状态，先固定P，再出现远Q、近Q、切线。可口述Q在2.01时平均4.01，感受靠近4。本例切线斜率4；几条线是示意而非严格证明。最多口述“研究这一点的变化快慢，后来叫求导数”，不给新符号或求导规则。切线不以只碰曲线一次作一般定义。若前面练习用时长，此页缩到1分钟，保留末5分钟AI。}
 \end{frame}
 
-\settime{34:00--35:30}
-\begin{frame}[t]{累积指数，为什么要减去1}\label{fr:exponential-area}
-把$e^t$从0到$x\ge0$的面积记作$A(x)$，那么$A(0)$是多少？
-\uncover<2->{\gap 从0到0没有面积，所以$A(0)=0$。}
-\uncover<3->{\gap 微积分基本定理给出\bigmath{A(x)=\int_0^x e^t\,dt=e^x-1}\key{减去起点的1，面积才从0开始。}}
-\teachnote{积分号只作面积记号，不讲积分计算技巧。该等式由(e^x)'=e^x和基本定理得出；不是单靠A(0)=0就能唯一确定A。两项依据分别是累积函数导数为e^x和初值0。避免把积分误写成e^x、漏起点常数。来源OpenStax §5.3、§6.7。}
+\settime{35:00--37:00}
+\begin{frame}[t]{用自己的话说明白}\label{fr:retell}
+两人一组，轮流说一句，并用算式支持。
+\gap 1. $x^2$与$2^x$，变的是哪个位置？
+\uncover<2->{\gap 2. 为什么不能说“$2^x$总是更大”？\par{\color{muted}可用$x=3$的一组数作证。}}
+\uncover<3->{\gap 3. “现在的值大”和“下一步多加”，一样吗？\par{\color{muted}可用从$x=3$到$4$的两行数说明。}}
+\teachnote{每人各说30秒。只念名称不算完成；听变量位置、反例9与8、同区间增量7与8。第2、3层是追问，不替学生给完整解释。}
 \end{frame}
 
-\settime{35:30--38:00}
-\begin{frame}[t]{独立判断，再说明理由}\label{fr:practice}
-（1）$f(x)=x^3$，$f(2)$与$f'(2)$分别是多少？
-\gap （2）“$(2^x)'=2^x$”对吗？
-\gap （3）“每个$x>0$都有$2^x>x^2$”对吗？
-\uncover<2->{\gap 提示：分清值与速度；\par 找一个反例，就能否定“每个”。}
-\teachnote{先给至少90秒独立作答，提示按需再显示。目标为三类关系的迁移；基础到中等。答案下一页，保留原稿。先看解释中的对象和范围，不把猜对选项当成掌握。}
-\end{frame}
-
-\settime{38:00--39:00}
-\begin{frame}[t]{核对：错在对象，还是范围}\label{fr:practice-answer}
-先保留自己的原作答，再核对。
-\uncover<2->{\gap （1）$f(2)=8$，$f'(2)=3\times2^2=12$。}
-\uncover<3->{\gap （2）不对：$(2^x)'=k_2\,2^x$，$k_2\approx0.6931$。\gap （3）不对：例如$x=3$，$2^3=8<9=3^2$。}
-\teachnote{形成性检查：能否分清函数值与导数值、知道底数影响速度系数、能给出准确反例。三个要点都只用于反馈，不另增学分权重。核对只有1分钟，避免重新讲一遍整课。}
-\end{frame}
-
-\settime{39:00--40:00}
-\begin{frame}[t]{两个结论，真的冲突吗}\label{fr:limits-exit}
-“指数最终超过固定幂”，与“幂式极限能得到指数”，冲突吗？
-\uncover<2->{\gap 比较增长：\key{固定幂次$n$，让$x$越来越大。}\gap 逼近指数：\key{固定$x$，让$P_n$的次数$n$越来越大。}\gap 对象和变化的量不同。}
-\teachnote{先留20秒用自己的话说量词区别，再揭示。P_n还随n改变系数，是一列不同多项式，不是一个固定x^n。无需讲极限交换或一致收敛，但不能混淆两个过程。数学主课到此40分钟。}
+\settime{37:00--40:00}
+\begin{frame}[t]{最后两问，检查是否真的懂}\label{fr:exit}
+\renewcommand{\gap}{\par\vspace{2mm}}
+已知$x=5$时两种结果为$25$和$32$；\par $x=6$时两种结果为$36$和$64$。
+\gap 1. 从$5$到$6$，哪一种多增加？请写减法。
+\gap 2. “两种规则都是每次加同一个数。”对吗？\par\hspace{5mm}请用两次相邻变化说明。
+\uncover<2->{\gap 1. 平方增加$11$；翻倍增加$32$。}
+\uncover<3->{\gap 2. 不对。例如平方前两次增加$3,5$；\par\hspace{5mm}翻倍前两次增加$2,4$，都不同。}
+\teachnote{留45秒独立小纸条或草稿，核对后回应错误。题1错往往是直接比值而没做差；题2只说不对但没给两次增量，证据不足。按算式与解释反馈，不新增正式考试分数。}
 \end{frame}
 
 \settime{40:00--42:00}
-\begin{frame}[t]{最后的探索：底数和指数都在变}\label{fr:ai-question}
-\bigmath{y=x^x,\qquad x>0}
-它是幂函数，还是指数函数？
-\uncover<2->{\gap 它与$2^x$谁更大？\par 结论会不会随着$x$改变？}
-\uncover<3->{\gap 请AI一次只给关于变量位置或比较方法的提示，\par\key{先保留自己的判断，再检查它的建议。}}
-\teachnote{学生页不报分类和区间答案。x>0保证实数幂有意义。教师答案与一般比较在说明：它不属于两种标准形式，x<2时小于2^x，x=2相等，x>2时大于。无需对数即可比较同一个正指数下的底数。}
+\begin{frame}[t]{留给AI的一个新问题}\label{fr:ai-question}
+如果把“平方”换成“立方”呢？
+\bigmath{x^3\qquad\text{与}\qquad2^x}
+只看正整数输入。先试$x=3$，再试$x=8$。
+\gap 猜一猜：继续往后，大小关系会不会反过来？
+\uncover<2->{\gap\key{先留下自己的算式和猜想，再问AI。}\par 不需要新公式，还是“算数值、作比较”。}
+\teachnote{最后5分钟才引入AI。提醒立方是三个x相乘。先算27与8、512与256；答案仅在教师说明。不把这两点当成所有正整数的结论，不提x的x次方。}
 \end{frame}
 
 \settime{42:00--45:00}
-\begin{frame}[t]{作业：检查一条完整的猜想}\label{fr:ai-homework}
-先不用AI，分别取$x=1$、$x=3$，比较$x^x$与$2^x$。
-\uncover<2->{\gap 写出完整的区间猜想，并说明你的比较方法。\par\key{两组数是核验，完整理由还要覆盖所说的区间。}}
-\uncover<3->{\gap 再向AI要一条提示，提交原稿、修订与判断依据。\gap 选做：若想研究$x^x$的瞬时速度，\par 还需要补什么知识？}
-\teachnote{基础约15分钟，分类与值比较用已有知识完成；记录一条AI建议的取舍理由。选做需按需补自然对数及求导，答案为x^x(ln x+1)，不要求本课已会。无设备者用教师提示卡：在同一正指数下比较两个正底数。只输入必要匿名数学片段，不要求现场付费登录，不伪造模型对话。}
+\begin{frame}[t]{作业：找到一次反转}\label{fr:ai-homework}
+\key{问题：在$x=8,9,10$中，谁大谁小会改变吗？}
+\gap 1. 补一张三列表：$x$、$x^3$、$2^x$。\par\hspace{5mm}先自己算$x=8$，再借AI核查$9$和$10$。
+\uncover<2->{\gap 2. 选一行，用连乘或拆分计算，独立检查AI。\par\hspace{5mm}写一句结论，指出你核验过的位置。}
+\uncover<3->{\gap\small 可这样问：“我在比较$x^3$和$2^x$，只考虑正整数。\par 请先给我一个计算提示，别先给完整表格。我算完后，\par 再帮我检查，并说明为什么只算几个点还不够说明所有情况。”\gap 交：数表＋核验算式＋一句结论＋一条AI建议的取舍理由。}
+\teachnote{作业10至15分钟，不要求证明长期增长定理。无设备用草稿连乘，课后给提示，数学任务相同。教师答案在授课说明；9与10之间一次反转，不在投影公布。独立核验和结论范围为检查重点，AI截图不是数学证据。}
 \end{frame}
 \end{document}
