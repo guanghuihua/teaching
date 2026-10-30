@@ -1,0 +1,317 @@
+% !TeX program = xelatex
+% 临时调整的第4课：指数函数、幂函数与微积分直观；45分钟。
+% XeLaTeX编译两次。每页PDF为一次点击状态，题目先于答案。
+% 搬运时保留sty、book-path.tex与assets/。
+% 备课全显模式（勿作课堂首屏）：\def\HandoutVersion{1}
+% 教师备注模式：\def\TeacherNotes{1}
+\ifdefined\HandoutVersion\PassOptionsToClass{handout}{beamer}\fi
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usepackage{amsmath,amssymb,tikz,pgfplots,booktabs,array}
+\usetheme{GaoZhongYuan}
+\usefonttheme{professionalfonts}
+\usepackage{unicode-math}
+\setmathfont{TeX Gyre Termes Math}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{calc,arrows.meta}
+\definecolor{ink}{HTML}{183025}
+\definecolor{muted}{HTML}{63756B}
+\definecolor{warm}{HTML}{A65A1F}
+\setbeamercolor{normal text}{fg=ink,bg=white}
+\setbeamerfont{normal text}{size=\fontsize{12}{18}\selectfont}
+\setbeamertemplate{footline}{\hfill{\color{muted}\fontsize{7}{9}\selectfont\insertframenumber/\inserttotalframenumber}\hspace*{8mm}\vspace*{3mm}}
+\setbeamercovered{invisible}
+\ifdefined\TeacherNotes\setbeameroption{show notes}\else\setbeameroption{hide notes}\fi
+\newcommand{\LessonTime}{}
+\newcommand{\settime}[1]{\gdef\LessonTime{#1}}
+\newcommand{\teachnote}[1]{\note{建议时间：\LessonTime。#1}}
+\newcommand{\key}[1]{{\color{campusgreen}\bfseries #1}}
+\newcommand{\gap}{\par\vspace{3mm}}
+\newcommand{\bigmath}[1]{\begingroup\color{campusgreen}\fontsize{18}{24}\selectfont\[#1\]\endgroup}
+\pgfplotsset{lessonaxis/.style={width=6cm,height=4.7cm,axis lines=left,grid=major,grid style={gray!14},tick label style={font=\scriptsize},label style={font=\small},xlabel={$x$},ylabel={$y$},samples=101,enlargelimits=false,clip=true}}
+\title{幂函数与指数函数}
+\author[华光辉]{华光辉\texorpdfstring{\quad}{ }AI伴学·增长与微积分初步}
+\date{}
+
+\newcommand{\growthplot}{%
+\begin{tikzpicture}
+\begin{axis}[lessonaxis,xmin=0,xmax=5.2,ymin=0,ymax=34,xtick={0,1,2,3,4,5},ytick={0,8,16,24,32}]
+  \addplot[very thick,campusgreen,domain=0:5.2]{x^2};
+  \node[campusgreen,fill=white,inner sep=1pt]at(axis cs:4.6,19){$x^2$};
+  \only<2->{\addplot[very thick,warm,domain=0:5.05]{2^x};
+    \node[warm,fill=white,inner sep=1pt]at(axis cs:4.4,30){$2^x$};}
+  \only<3->{\addplot[only marks,mark=*,mark size=1.7pt,ink]coordinates{(2,4)(4,16)};}
+\end{axis}
+\end{tikzpicture}}
+
+\newcommand{\secantplot}{%
+\begin{tikzpicture}
+\begin{axis}[lessonaxis,xmin=0,xmax=3.4,ymin=0,ymax=11.5,xtick={0,1,2,3},ytick={0,4,8},width=6.1cm]
+  \addplot[very thick,ink,domain=0:3.35]{x^2};
+  \addplot[only marks,mark=*,mark size=1.7pt,campusgreen]coordinates{(2,4)};
+  \node[below right,font=\scriptsize]at(axis cs:2,4){$P(2,4)$};
+  \only<2>{\addplot[thick,warm,domain=1.2:3.35]{5*x-6};
+    \addplot[only marks,mark=*,warm]coordinates{(3,9)};\node[above left,font=\scriptsize]at(axis cs:3,9){$Q$};}
+  \only<3>{\addplot[thick,warm,domain=1.03:3.35]{4.1*x-4.2};
+    \addplot[only marks,mark=*,warm]coordinates{(2.1,4.41)};\node[above left,font=\scriptsize]at(axis cs:2.1,4.41){$Q$};}
+  \only<4->{\addplot[very thick,campusgreen,domain=1:3.35]{4*x-4};
+    \node[campusgreen,fill=white,inner sep=1pt,font=\scriptsize]at(axis cs:2.75,5.4){切线};}
+\end{axis}
+\end{tikzpicture}}
+
+\newcommand{\approxplot}{%
+\begin{tikzpicture}
+\begin{axis}[lessonaxis,xmin=0,xmax=2.15,ymin=0,ymax=8.8,xtick={0,1,2},ytick={0,2,4,6,8},width=6cm,legend style={at={(.03,.97)},anchor=north west,font=\scriptsize,draw=none,fill=white},legend cell align=left]
+  \addplot[thick,campusgreen!45,domain=0:2.15]{1+x};\addlegendentry{$n=1$}
+  \only<2->{\addplot[thick,campusgreen!75,domain=0:2.15]{(1+x/5)^5};\addlegendentry{$n=5$}
+    \addplot[very thick,campusgreen,domain=0:2.15]{(1+x/20)^20};\addlegendentry{$n=20$}}
+  \only<3->{\addplot[very thick,warm,dashed,domain=0:2.15]{exp(x)};\addlegendentry{$e^x$}}
+\end{axis}
+\end{tikzpicture}}
+
+\newcommand{\areaplot}{%
+\begin{tikzpicture}
+\begin{axis}[lessonaxis,xmin=0,xmax=3,ymin=0,ymax=6.3,xlabel={$t$},xtick={2},xticklabels={$x$},ytick={4},yticklabels={$2x$},width=5.9cm]
+  \only<2->{\addplot[fill=campusgreen!18,draw=none]coordinates{(0,0)(2,4)(2,0)}\closedcycle;}
+  \addplot[very thick,campusgreen,domain=0:2.85]{2*x};
+  \draw[dashed,gray](axis cs:2,0)--(axis cs:2,4);
+  \node[font=\small,anchor=west]at(axis cs:1.9,5.4){$y=2t$};
+  \only<3->{\node[campusgreen,font=\small]at(axis cs:1.35,1.1){$A(x)$};}
+\end{axis}
+\end{tikzpicture}}
+
+\begin{document}
+\usebeamerfont{normal text}
+
+\settime{00:00--00:30}
+\begin{frame}[plain]\label{fr:cover}
+\titlepage
+\teachnote{45分钟直观探究，面向会坐标、乘方和简单代数的高中生，不以会极限或导数为前提。本次为临时调整主题，替代本次授课的复数几何方案；从零引入，不需要用复数知识。数学40分钟，最后5分钟AI探索。}
+\end{frame}
+
+\settime{00:30--03:00}
+\begin{frame}[t]{两个式子，谁在变化}\label{fr:forms}
+\bigmath{x^2\qquad\text{与}\qquad2^x}
+请指出：哪个位置是变量，哪个数保持不变？
+\uncover<2->{\gap 幂函数：$y=x^p$，指数$p$固定。\par 指数函数：$y=a^x$，底数$a>0$且$a\ne1$固定。}
+\uncover<3->{\gap\key{今天主要看$x>0$、固定正整数幂，以及$a>1$的增长。}}
+\teachnote{先由学生指出变量位置，再命名。幂函数的一般指数p可为实数，本课主要推导正整数n的导数；统一取x>0避免不同指数的定义域混淆。不把2x、2的系数倍幂函数自动称为标准y=x^p，不把a=1纳入教材标准指数函数。来源OpenStax Calculus 1 §1.5。}
+\end{frame}
+
+\settime{03:00--05:00}
+\begin{frame}[t]{同样增长，规则相同吗}\label{fr:rules}
+让$x$加1，$2^x$怎样变化？让$x$翻倍，$x^2$怎样变化？
+\uncover<2->{\[2^{x+1}=2\cdot2^x,\qquad(2x)^2=4x^2.\]}
+\uncover<3->{\gap\key{指数函数：输入每增加同样一段，输出乘同样倍数。}\gap\key{幂函数：输入按同样倍数缩放，输出也按固定倍数缩放。}}
+\teachnote{用加1和乘2的区别建立结构。一般式a^{x+h}/a^x=a^h、(cx)^p/x^p=c^p，在x,c>0成立。两种规则不能混写。本页只看有限变化，不把一步增量称为瞬时速度。}
+\end{frame}
+
+\settime{05:00--07:00}
+\begin{frame}[t]{先比较几个数}\label{fr:value-table}
+你猜$x^2$和$2^x$，是不是有一个始终更大？
+\uncover<2->{\gap\centering\begin{tabular}{c|rrrrr}
+$x$ & 1 & 3 & 4 & 8 & 16\\\hline
+$x^2$ & 1 & 9 & 16 & 64 & 256\\
+$2^x$ & 2 & 8 & 16 & 256 & 65536
+\end{tabular}\par}
+\uncover<3->{\gap\key{眼前谁更大，与长期谁增长更快，是两个问题。}}
+\teachnote{先请学生口算x=3、4，再揭示全表。目标为辨别函数值比较的范围；基础。反例x=3足以否定2^x在每处都更大，有限表格不能证明长期结论。完整长期定理后面只接受结论，教师说明有证明。}
+\end{frame}
+
+\settime{07:00--09:00}
+\begin{frame}[t]{把数值放回同一张图}\label{fr:growth-graph}
+\begin{columns}[c,onlytextwidth]
+\column{.47\textwidth}\centering\growthplot
+\column{.50\textwidth}
+先看$x^2$，再加入$2^x$。
+\uncover<2->{\gap 请比较$x=3$与$x=5$附近。}
+\uncover<3->{\gap $x=2,4$时两者相等。\gap\key{图上这段超过了，\par 不等于处处都超过。}}
+\end{columns}
+\teachnote{第一屏只有平方曲线，第二屏才加入指数，第三屏标两个交点。坐标同尺度，不能通过改变坐标轴制造指数始终在上方的印象。图形只是有限窗口，不承担最终超过任意幂的证明。}
+\end{frame}
+
+\settime{09:00--10:00}
+\begin{frame}[t]{高度，与此刻的增长速度}\label{fr:value-rate}
+“当前有多少”与“每增加一点，会增加多少”相同吗？
+\uncover<2->{\gap 函数值是曲线的高度。\gap\key{变化速度看斜率：往右一小步，往上增加多少。}\gap 下一步，把“一小步”越取越小。}
+\teachnote{从熟悉的高度与坡度入手，不借助未经建立的导数口诀。这里的速度是y对x的变化率，x不必是时间。没有虚构增长数据或物理单位。}
+\end{frame}
+
+\settime{10:00--12:00}
+\begin{frame}[t]{先算一段路的平均速度}\label{fr:average}
+对$f(x)=x^2$，从$x=2$走到$x=3$，增加了多少？
+\uncover<2->{\bigmath{\frac{f(3)-f(2)}{3-2}=\frac{9-4}{1}=5}}
+\uncover<3->{\gap 一般地，从$x$走到$x+h$：\[\text{平均变化率}=\frac{f(x+h)-f(x)}{h},\qquad h\ne0.\]}
+\teachnote{先问纵向增加5、横向增加1，后给比值。不能直接把平均斜率5当成x=2处的切线斜率。基本目标为分子分母的意义，难度基础。}
+\end{frame}
+
+\settime{12:00--14:00}
+\begin{frame}[t]{让第二个点慢慢靠近}\label{fr:secants}
+\begin{columns}[c,onlytextwidth]
+\column{.48\textwidth}\centering\secantplot
+\column{.49\textwidth}
+固定$P(2,4)$，让$Q$沿曲线靠近它。
+\uncover<2->{\gap $h=1$，割线斜率$5$。}
+\uncover<3->{\gap $h=0.1$，割线斜率$4.1$。}
+\uncover<4->{\gap\key{斜率越来越接近$4$。}\par 极限位置是切线。}
+\end{columns}
+\teachnote{首屏无割线和切线；第二屏Q=(3,9)，第三屏Q=(2.1,4.41)，最后切线y=4x-4。点、线与斜率同步，模拟靠近过程。一般切线不能定义成只碰曲线一次，本课用割线的极限解释。}
+\end{frame}
+
+\settime{14:00--16:00}
+\begin{frame}[t]{平方函数的瞬时速度}\label{fr:derivative-square}
+固定$x$，先在$h\ne0$时化简：
+\uncover<2->{\[\frac{(x+h)^2-x^2}{h}=\frac{2xh+h^2}{h}=2x+h.\]}
+\uncover<3->{\gap 当$h$越来越接近0，比值越来越接近$2x$。\bigmath{f'(x)=2x}\key{导数：某一点的瞬时变化率，也就是切线斜率。}}
+\teachnote{这是完整的一次差商推导，不是把h=0直接代入0/0。x=2时得4，解释前页图。h从左右趋0均成立，只须使x+h仍在讨论区间内。来源OpenStax §3.1；不讲epsilon-delta定义。}
+\end{frame}
+
+\settime{16:00--18:00}
+\begin{frame}[t]{幂函数：求导后降一阶}\label{fr:power-rule}
+平方之外，立方会怎样？
+\uncover<2->{\[\frac{(x+h)^3-x^3}{h}=3x^2+3xh+h^2\ \longrightarrow\ 3x^2.\]}
+\uncover<3->{\bigmath{(x^n)'=nx^{n-1}\qquad(n\text{为固定正整数})}\gap 例如：$(x^2)'=2x$，$(x^3)'=3x^2$。}
+\teachnote{n的规则可由二项式展开证明；平方、立方在这里实际展示，通式作为同类推导的结论。不把n也随x变化，不在本课推导所有实数指数的规则。关注指数降1、前面乘原指数；不能误解为函数值等于导数值。}
+\end{frame}
+
+\settime{18:00--20:00}
+\begin{frame}[t]{每步翻倍，就等于瞬时速度吗}\label{fr:base-two}
+$g(x)=2^x$。它每增加1单位会翻倍，瞬时速度也等于自身吗？
+\uncover<2->{\[\frac{2^{x+h}-2^x}{h}=2^x\frac{2^h-1}{h}.\]
+\begin{columns}[c,onlytextwidth]
+\column{.42\textwidth}\centering\begin{tabular}{c|c}$h$ & $(2^h-1)/h$（约）\\\hline
+0.1 & 0.7177\\0.01 & 0.6956\\0.001 & 0.6934
+\end{tabular}
+\column{.55\textwidth}\uncover<3->{\key{系数接近0.6931，\par 并不是1。}\gap 一整步的增量，\par 不能代替瞬时速度。}
+\end{columns}}
+\teachnote{差商分解精确，表格为四舍五入近似。h=1时系数为1，h趋0时是ln2约0.693147，课堂不要求先学对数。数据用于观察，不冒充极限存在及值的证明。来源OpenStax §3.9。}
+\end{frame}
+
+\settime{20:00--22:00}
+\begin{frame}[t]{把一次增长，分成许多小步}\label{fr:steps}
+初始数量为1。一次增长100\%，结果是多少？
+\gap\begin{columns}[t,onlytextwidth]
+\column{.48\textwidth}\uncover<2->{两段：每段在\key{当前数量}上增长50\%。\bigmath{\left(1+\frac12\right)^2=2.25}}
+\column{.48\textwidth}\uncover<3->{$n$段：每段乘$1+1/n$。\bigmath{\left(1+\frac1n\right)^n}}
+\end{columns}
+\teachnote{这是自编数量游戏，不是投资承诺。每段增长比例作用于变化后的当前量，不能始终按初始1相加。相同的是预先分配的名义比例总和1，不是最终实际增长幅度。先让学生算一次结果2，再揭示两步2.25。}
+\end{frame}
+
+\settime{22:00--24:00}
+\begin{frame}[t]{步数增加，会无限大吗}\label{fr:e-definition}
+请猜：$(1+1/n)^n$会越来越接近什么？
+\uncover<2->{\gap\begin{columns}[c,onlytextwidth]
+\column{.48\textwidth}\centering\begin{tabular}{r|c}$n$ & 结果（约）\\\hline
+1 & 2.000000\\2 & 2.250000\\10 & 2.593742\\100 & 2.704814\\10000 & 2.718146
+\end{tabular}
+\column{.49\textwidth}\uncover<3->{\key{定理：这列数趋向一个有限值。}\bigmath{e\approx2.7182818}\gap 用$e$命名这个数。}
+\end{columns}}
+\teachnote{先猜后揭示数据。n=1、2可手算，其余由教师提供，不要求现场大数乘法。定义e为此序列极限，极限存在、有限与其特殊导数性质是本课接受的结论，不能由五行表就声称已证明。幂式仍含指数运算，但此时n是变化的步数，不是在比较同一个固定幂函数。}
+\end{frame}
+
+\settime{24:00--26:00}
+\begin{frame}[t]{一列幂式，怎样逼近指数}\label{fr:bridge}
+\begin{columns}[c,onlytextwidth]
+\column{.47\textwidth}\centering\approxplot
+\column{.50\textwidth}
+固定$x\ge0$，研究\[P_n(x)=\left(1+\frac xn\right)^n.\]
+\uncover<2->{\gap 每个固定的$n$，\par 都给出一个$n$次多项式。}
+\uncover<3->{\gap\key{定理：固定$x$，让$n\to\infty$，\par 有$P_n(x)\to e^x$。}}
+\end{columns}
+\teachnote{第一屏n=1，第二屏n=5和20，第三屏目标指数曲线。注意P_n是平移伸缩后的幂式，通常不是标准x^p形式；不能误称每个P_n都是标准幂函数。极限恒等式是接受的定理，图像提供直观而非证明。固定x、变化n及系数，稍后与固定n、增大x作区别。}
+\end{frame}
+
+\settime{26:00--28:00}
+\begin{frame}[t]{为什么$e^x$特别适合描述增长}\label{fr:e-derivative}
+同样作差商：\[\frac{e^{x+h}-e^x}{h}=e^x\frac{e^h-1}{h}.\]
+\uncover<2->{\begin{columns}[c,onlytextwidth]
+\column{.43\textwidth}\centering\begin{tabular}{c|c}$h$ & $(e^h-1)/h$（约）\\\hline
+0.1 & 1.0517\\0.01 & 1.0050\\0.001 & 1.0005
+\end{tabular}
+\column{.54\textwidth}\uncover<3->{定理：系数趋向1，因此\bigmath{(e^x)'=e^x}\key{瞬时增长速度，\par 恰好等于当前的量。}}
+\end{columns}}
+\teachnote{不能说所有指数函数的导数都等于自身。极限(e^h-1)/h=1是与前页e定义一致的定理，本课未作完整证明；在接受它之后，差商分解才推出导数等式。表中只列正h作演示，结论是双侧极限。来源OpenStax §3.9、§6.7。}
+\end{frame}
+
+\settime{28:00--30:00}
+\begin{frame}[t]{两类函数的变化率}\label{fr:rate-comparison}
+幂函数与指数函数，求导后的形状怎样不同？
+\uncover<2->{\[\begin{array}{c|c}
+\text{函数} & \text{导数}\\\hline
+x^n & nx^{n-1}\\
+a^x & k_a a^x
+\end{array}\qquad k_a>0\ (a>1).\]}
+\uncover<3->{\gap\key{幂函数降一阶；指数函数仍与自身成比例。}\gap 底数决定常数：$k_2\approx0.6931$，$k_e=1$。}
+\teachnote{n固定正整数、x>0，a>1。一般系数k_a=ln a，学生无需先学对数，本课只把它看成由底数决定的常数。源自极限(a^h-1)/h，与x无关。若a在0与1之间则系数为负，本课增长讨论不包含该情形，不能把表的正号无条件推广。}
+\end{frame}
+
+\settime{30:00--32:00}
+\begin{frame}[t]{长期增长，为什么会拉开差距}\label{fr:eventual}
+把瞬时速度除以当前量，得到\key{相对变化率}。
+\uncover<2->{\[\frac{(x^n)'}{x^n}=\frac nx,\qquad\frac{(a^x)'}{a^x}=k_a.\]\gap 前者逐渐接近0，后者保持同一个正数。}
+\uncover<3->{\gap 定理：固定$n>0$、$a>1$，当$x$足够大时，\bigmath{a^x>x^n}\key{“最终超过”不等于“每个位置都更大”。}}
+\teachnote{课堂以相对速率给直觉，不能把它冒充完整长期比较证明。严格定理还给x^n/a^x趋0；教师说明用二项式给出无需洛必达的证明。注意函数值有起点差异，瞬时相对速率的比较不能直接替代任意位置的值比较。来源OpenStax §4.8。}
+\end{frame}
+
+\settime{32:00--34:00}
+\begin{frame}[t]{反过来：把变化速度累积起来}\label{fr:area}
+\begin{columns}[c,onlytextwidth]
+\column{.46\textwidth}\centering\areaplot
+\column{.51\textwidth}
+从0到$x\ge0$，\par 直线$y=2t$下方的面积是多少？
+\uncover<2->{\[A(x)=\frac12\times x\times2x=x^2.\]}
+\uncover<3->{\gap\key{$x^2$求变化率得到$2x$；\par 累积$2t$的面积又回到$x^2$。}\gap 这种累积，用积分描述。}
+\end{columns}
+\teachnote{图中x为右端点的符号，不是固定取值2；示意按相同比例绘制。面积用三角形公式精确求出，不需积分技巧。x>=0确保非负面积。微积分互逆的普遍性需要连续等条件，本课只用该例建立直观，来源OpenStax §5.3。}
+\end{frame}
+
+\settime{34:00--35:30}
+\begin{frame}[t]{累积指数，为什么要减去1}\label{fr:exponential-area}
+把$e^t$从0到$x\ge0$的面积记作$A(x)$，那么$A(0)$是多少？
+\uncover<2->{\gap 从0到0没有面积，所以$A(0)=0$。}
+\uncover<3->{\gap 微积分基本定理给出\bigmath{A(x)=\int_0^x e^t\,dt=e^x-1}\key{减去起点的1，面积才从0开始。}}
+\teachnote{积分号只作面积记号，不讲积分计算技巧。该等式由(e^x)'=e^x和基本定理得出；不是单靠A(0)=0就能唯一确定A。两项依据分别是累积函数导数为e^x和初值0。避免把积分误写成e^x、漏起点常数。来源OpenStax §5.3、§6.7。}
+\end{frame}
+
+\settime{35:30--38:00}
+\begin{frame}[t]{独立判断，再说明理由}\label{fr:practice}
+（1）$f(x)=x^3$，$f(2)$与$f'(2)$分别是多少？
+\gap （2）“$(2^x)'=2^x$”对吗？
+\gap （3）“每个$x>0$都有$2^x>x^2$”对吗？
+\uncover<2->{\gap 提示：分清值与速度；\par 找一个反例，就能否定“每个”。}
+\teachnote{先给至少90秒独立作答，提示按需再显示。目标为三类关系的迁移；基础到中等。答案下一页，保留原稿。先看解释中的对象和范围，不把猜对选项当成掌握。}
+\end{frame}
+
+\settime{38:00--39:00}
+\begin{frame}[t]{核对：错在对象，还是范围}\label{fr:practice-answer}
+先保留自己的原作答，再核对。
+\uncover<2->{\gap （1）$f(2)=8$，$f'(2)=3\times2^2=12$。}
+\uncover<3->{\gap （2）不对：$(2^x)'=k_2\,2^x$，$k_2\approx0.6931$。\gap （3）不对：例如$x=3$，$2^3=8<9=3^2$。}
+\teachnote{形成性检查：能否分清函数值与导数值、知道底数影响速度系数、能给出准确反例。三个要点都只用于反馈，不另增学分权重。核对只有1分钟，避免重新讲一遍整课。}
+\end{frame}
+
+\settime{39:00--40:00}
+\begin{frame}[t]{两个结论，真的冲突吗}\label{fr:limits-exit}
+“指数最终超过固定幂”，与“幂式极限能得到指数”，冲突吗？
+\uncover<2->{\gap 比较增长：\key{固定幂次$n$，让$x$越来越大。}\gap 逼近指数：\key{固定$x$，让$P_n$的次数$n$越来越大。}\gap 对象和变化的量不同。}
+\teachnote{先留20秒用自己的话说量词区别，再揭示。P_n还随n改变系数，是一列不同多项式，不是一个固定x^n。无需讲极限交换或一致收敛，但不能混淆两个过程。数学主课到此40分钟。}
+\end{frame}
+
+\settime{40:00--42:00}
+\begin{frame}[t]{最后的探索：底数和指数都在变}\label{fr:ai-question}
+\bigmath{y=x^x,\qquad x>0}
+它是幂函数，还是指数函数？
+\uncover<2->{\gap 它与$2^x$谁更大？\par 结论会不会随着$x$改变？}
+\uncover<3->{\gap 请AI一次只给关于变量位置或比较方法的提示，\par\key{先保留自己的判断，再检查它的建议。}}
+\teachnote{学生页不报分类和区间答案。x>0保证实数幂有意义。教师答案与一般比较在说明：它不属于两种标准形式，x<2时小于2^x，x=2相等，x>2时大于。无需对数即可比较同一个正指数下的底数。}
+\end{frame}
+
+\settime{42:00--45:00}
+\begin{frame}[t]{作业：检查一条完整的猜想}\label{fr:ai-homework}
+先不用AI，分别取$x=1$、$x=3$，比较$x^x$与$2^x$。
+\uncover<2->{\gap 写出完整的区间猜想，并说明你的比较方法。\par\key{两组数是核验，完整理由还要覆盖所说的区间。}}
+\uncover<3->{\gap 再向AI要一条提示，提交原稿、修订与判断依据。\gap 选做：若想研究$x^x$的瞬时速度，\par 还需要补什么知识？}
+\teachnote{基础约15分钟，分类与值比较用已有知识完成；记录一条AI建议的取舍理由。选做需按需补自然对数及求导，答案为x^x(ln x+1)，不要求本课已会。无设备者用教师提示卡：在同一正指数下比较两个正底数。只输入必要匿名数学片段，不要求现场付费登录，不伪造模型对话。}
+\end{frame}
+\end{document}
