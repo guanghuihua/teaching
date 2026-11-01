@@ -1,0 +1,461 @@
+% !TeX program = xelatex
+% 来源与修订详见同目录“来源与核验说明.md”；正文为可编辑重排，非原讲义全文。
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\usepackage{booktabs,pgfplots}
+\pgfplotsset{compat=1.18}
+\setbeamertemplate{footline}{\hfill\scriptsize\color{campusgreen}\insertframenumber\,/\,\inserttotalframenumber\hspace{5mm}\vspace{2mm}}
+\newcommand{\key}[1]{\par\medskip{\color{campusgreen}\bfseries #1}\par\smallskip}
+\newcommand{\opts}[4]{\par\medskip A.~#1\hfill B.~#2\hfill C.~#3\hfill D.~#4\par}
+\title{函数的零点与方程根的分布}
+\author{高一上学期期中复习·培优专题}
+\date{2026.11}
+\begin{document}
+\campusmaketitle
+\begin{frame}[t]{复习路径}
+\key{从“求零点”走向“判个数、定参数”}
+\begin{enumerate}
+\item 知识梳理：存在性、唯一性、二分法、复合与含参零点。
+\item 题型一：确定函数的零点。
+\item 题型二：零点存在性定理的应用。
+\item 题型三：根据零点范围求参数范围。
+\item 题型四：函数零点与方程根的数量。
+\end{enumerate}
+\medskip\par\medskip\footnotesize 本课件依据公众号“数学教研”公开展示的讲义第1、3—16页整理；未展示部分未纳入。
+\end{frame}
+
+\begin{frame}[t]{知识梳理：零点的三种表示}
+设函数 $y=f(x)$ 的定义域为 $D$，$x_0\in D$。
+\[f(x_0)=0\quad\Longleftrightarrow\quad x_0\text{ 是方程 }f(x)=0\text{ 的实根}.\]
+\key{数、式、形之间的对应}
+\begin{itemize}
+\item 零点是一个实数 $x_0$，不是点 $(x_0,0)$。
+\item 图像与 $x$ 轴交点的横坐标就是零点。
+\item 方程 $f(x)=g(x)$ 的解，对应两图像交点的横坐标。
+\end{itemize}
+\key{先检查定义域，再求根并验根。}
+\par\medskip\footnotesize 本页根据可见第8—10页补齐概念入口，不代表未展示的第2页原文。
+\end{frame}
+
+\begin{frame}[t]{知识梳理：存在与唯一}
+\begin{block}{零点存在性定理}
+若 $f$ 在 $[a,b]$ 上连续，且 $f(a)f(b)<0$，则 $f$ 在 $(a,b)$ 内至少有一个零点。
+\end{block}
+\key{唯一性要另有依据}
+再加 $f$ 在 $[a,b]$ 上严格单调，才能推出 $(a,b)$ 内恰有一个零点。
+\key{两个不能倒推的结论}
+\begin{itemize}
+\item 端点异号只能保证存在，不能单凭它判断唯一。
+\item 端点同号也可能有零点：$x^2-1$ 在 $[-2,2]$ 上有两个零点。
+\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{知识梳理：零点个数}
+\key{三种常用方法}
+\begin{enumerate}
+\item 解方程法：直接解 $f(x)=0$，检查定义域和重根。
+\item 图像交点法：将方程改写为 $u(x)=v(x)$，数交点。
+\item 单调性与存在性：先判断每段最多几个，再证明至少几个。
+\end{enumerate}
+\key{示例：$f(x)=\ln x+x-2$}
+在 $(0,+\infty)$ 上连续且严格递增；
+\[f(1)=-1<0,\qquad f(2)=\ln2>0.\]
+所以全定义域恰有一个零点，且位于 $(1,2)$。
+\end{frame}
+
+\begin{frame}[t]{知识梳理：二分法}
+\key{前提：$f$ 在 $[a,b]$ 上连续，且 $f(a)f(b)<0$}
+\begin{enumerate}
+\item 取中点 $c=(a+b)/2$。
+\item 若 $f(c)=0$，得到精确零点，停止。
+\item 若 $f(a)f(c)<0$，保留 $[a,c]$；否则保留 $[c,b]$。
+\item 重复，直到满足规定的误差要求。
+\end{enumerate}
+\key{以末次区间中点作近似值}
+若根 $\xi\in[a,b]$，则
+\[\left|\xi-\frac{a+b}{2}\right|\le\frac{b-a}{2}.\]
+故要求绝对误差小于 $\varepsilon$ 时，可使 $b-a<2\varepsilon$。
+\end{frame}
+
+\begin{frame}[t]{二分法示例：修正后的计算}
+求 $x^3+x-1=0$ 在 $(0,1)$ 内的近似解，绝对误差小于 $0.1$。
+\medskip
+\begin{center}\begin{tabular}{cccc}
+\toprule 当前区间 & 中点 $c$ & $f(c)$ & 保留区间\\\midrule
+$[0,1]$ & $0.5$ & $-0.375$ & $[0.5,1]$\\
+$[0.5,1]$ & $0.75$ & $0.171875$ & $[0.5,0.75]$\\
+$[0.5,0.75]$ & $0.625$ & $-0.130859375$ & $[0.625,0.75]$\\\bottomrule
+\end{tabular}\end{center}
+区间长度 $0.125<0.2$，取中点
+\[\boxed{x\approx0.6875},\qquad |x-\xi|\le0.0625<0.1.\]
+\par\medskip\footnotesize 原图第4页把 $f(0.75)$ 误写为负数；此处已按代入计算修正。
+\end{frame}
+
+\begin{frame}[t]{知识梳理：二次函数的零点分布}
+设 $f(x)=ax^2+bx+c$，$a>0$，$\Delta=b^2-4ac$。
+\begin{center}\begin{tabular}{ll}\toprule 条件 & 结论\\\midrule
+$\Delta<0$ & 无实零点\\
+$\Delta=0$ & 一个实零点（方程有重根）\\
+$\Delta>0$ & 两个不同实零点\\
+$f(k)<0$ & 两零点分别位于 $k$ 的两侧\\
+$f(m)f(n)<0\ (m<n)$ & $(m,n)$ 内恰有一个零点\\\bottomrule
+\end{tabular}\end{center}
+\key{两不同零点都在 $(m,n)$ 内}
+需同时满足
+\[\Delta>0,\quad m<-\frac b{2a}<n,\quad f(m)>0,\ f(n)>0.\]
+\end{frame}
+
+\begin{frame}[t]{二次函数示例：条件相互矛盾}
+若 $f(x)=x^2-2ax+1$ 在 $(1,3)$ 内有两个不同零点，求 $a$。
+\key{端点、对称轴与判别式一起检查}
+\[\Delta=4a^2-4>0,\qquad 1<a<3,\qquad f(1)=2-2a>0.\]
+但 $1<a<3$ 要求 $a>1$，而 $f(1)>0$ 要求 $a<1$，矛盾。
+\[\boxed{\text{不存在满足条件的实数 }a}.\]
+\key{另一种检验}
+两根之积为 $1$，若两根均大于 $1$，则乘积必大于 $1$，同样矛盾。
+\end{frame}
+
+\begin{frame}[t]{知识梳理：复合函数的零点}
+\key{分层求解，不把中间变量当作最终答案}
+\[f(g(x))=0\ \Longrightarrow\ f(t)=0\ \Longrightarrow\ g(x)=t_i.\]
+\begin{itemize}
+\item 若 $f(t)=0$ 的全部根为 $1,2$，则 $f(x-1)=0$ 的根为 $2,3$。
+\item 若 $f(x)=x^2-1$，则 $f(f(x))=0$：
+\end{itemize}
+\[f(x)=1\ \text{或}\ f(x)=-1
+\Longrightarrow x^2=2\ \text{或}\ x^2=0.\]
+故全部零点为 $-\sqrt2,0,\sqrt2$，共 $3$ 个。
+\end{frame}
+
+\begin{frame}[t]{知识梳理：图像交点与参数}
+讨论 $|x^2-4|=a+1$ 的实根个数，令 $k=a+1$。
+\begin{columns}[T]
+\begin{column}{.53\textwidth}
+\begin{tikzpicture}\begin{axis}[width=7cm,height=4.6cm,axis lines=middle,xmin=-3.2,xmax=3.2,ymin=-.5,ymax=6,xtick={-2,0,2},ytick={0,4},tick label style={font=\scriptsize}]
+\addplot[campusgreen,thick,domain=-3:3,samples=160]{abs(x*x-4)};
+\addplot[dashed,domain=-3:3]{2};
+\node at (axis cs:2.6,2.5){\scriptsize $y=k$};
+\end{axis}\end{tikzpicture}
+\end{column}
+\begin{column}{.43\textwidth}
+\begin{tabular}{cc}\toprule $a$ & 根的个数\\\midrule
+$a<-1$ & $0$\\$a=-1$ & $2$\\$-1<a<3$ & $4$\\$a=3$ & $3$\\$a>3$ & $2$\\\bottomrule\end{tabular}
+\medskip\par 重点检查水平线经过顶点时，交点是否合并。
+\end{column}\end{columns}
+\end{frame}
+
+\begin{frame}[t]{知识梳理：指数型含参零点}
+讨论 $|2^x-1|=k$ 的解的个数。
+\[|2^x-1|=\begin{cases}1-2^x,&x<0,\\2^x-1,&x\ge0.\end{cases}\]
+\begin{center}\begin{tabular}{cc}\toprule 参数 & 解的个数\\\midrule
+$k<0$ & $0$\\$k=0$ & $1$（$x=0$）\\$0<k<1$ & $2$\\$k=1$ & $1$（$x=1$）\\$k>1$ & $1$\\\bottomrule\end{tabular}\end{center}
+\key{易错处：左侧趋近 $1$，但取不到 $1$。}
+\end{frame}
+
+\begin{frame}[t]{知识梳理：存在与恒成立}
+在指定定义域 $D$ 上：
+\begin{itemize}
+\item $f(x)=0$ 有解，等价于 $0\in f(D)$。
+\item $f(x)=g(x)$ 有解，等价于两图像有交点。
+\item 若最小值存在，$f(x)\ge0$ 恒成立等价于 $\min_D f\ge0$。
+\item 若最大值存在，存在 $x$ 使 $f(x)\ge0$ 等价于 $\max_D f\ge0$。
+\end{itemize}
+\key{注意极值是否能取到}
+例如 $f(x)=-1/x$ 在 $(0,+\infty)$ 上的上确界为 $0$，但不存在 $x$ 使 $f(x)\ge0$。
+\end{frame}
+
+\begin{frame}[t]{存在性示例：分离参数}
+若方程 $\ln x=2x+m$ 有解，求 $m$ 的范围。
+\[m=\ln x-2x,\qquad x>0.\]
+令 $t=2x>0$，利用 $\ln t\le t-1$，有
+\[\ln x-2x=\ln t-t-\ln2\le-1-\ln2,\]
+等号在 $x=\tfrac12$ 时成立。又由连续性及两端趋于 $-\infty$，值域为
+\[(-\infty,-1-\ln2],\qquad \boxed{m\le-1-\ln2}.\]
+\par\medskip\footnotesize 拓展：也可用导数 $g'(x)=1/x-2$ 求最大值。上述对数不等式需另行证明或已有学习基础。
+\end{frame}
+
+\begin{frame}[t]{题型一：确定函数的零点}
+\key{解题步骤}
+\begin{enumerate}
+\item 写定义域，令 $f(x)=0$。
+\item 解方程；分段函数逐段求解。
+\item 将候选解代回相应定义域或分段区间。
+\item 写出零点的数值。
+\end{enumerate}
+\key{检查三个错误}
+零点写成坐标点；忘记定义域；解方程漏根。
+\end{frame}
+
+\begin{frame}[t]{题型一·典例1}
+函数 $f(x)=e^x-2$ 的零点为（\quad）。
+\opts{$1$}{$(1,0)$}{$\ln2$}{$(\ln2,0)$}
+\end{frame}
+
+\begin{frame}[t]{题型一·典例1：解析}
+令 $e^x-2=0$，解得 $x=\ln2$。
+\[\boxed{\text{选 C，零点为 }\ln2}.\]
+\key{零点是数}
+$(\ln2,0)$ 是图像与 $x$ 轴的交点。
+\end{frame}
+
+\begin{frame}[t]{题型一·典例2}
+若 $2$ 是函数 $f(x)=a\cdot2^x-\log_2x$ 的零点，则 $a=$\underline{\hspace{18mm}}。
+\end{frame}
+
+\begin{frame}[t]{题型一·典例2：解析}
+由零点定义，$f(2)=0$，即
+\[4a-1=0\quad\Longrightarrow\quad\boxed{a=\frac14}.\]
+\key{把“已知零点”转化为一个代数等式。}
+\end{frame}
+
+\begin{frame}[t]{题型一·变式1}
+函数 $f(x)=2^x+x-6$ 的零点为（\quad）。
+\opts{$4$}{$3$}{$2$}{$1$}
+\end{frame}
+
+\begin{frame}[t]{题型一·变式1：解析}
+在 $\mathbb R$ 上，$2^x$ 与 $x-6$ 均严格递增，因此 $f$ 严格递增，至多一个零点。
+\[f(2)=2^2+2-6=0.\]
+故唯一零点为 $2$，选 C。
+\key{找到一个根以后，还要解释是否有其他根。}
+\end{frame}
+
+\begin{frame}[t]{题型一·变式2}
+函数 $f(x)=x-\dfrac2x$ 的零点是\underline{\hspace{25mm}}。
+\end{frame}
+
+\begin{frame}[t]{题型一·变式2：解析}
+定义域为 $\mathbb R\setminus\{0\}$。
+\[x-\frac2x=0\ \Longleftrightarrow\ x^2-2=0
+\ \Longrightarrow\ x=\pm\sqrt2.\]
+两根均在定义域内，故零点为 $\boxed{-\sqrt2,\sqrt2}$。
+\end{frame}
+
+\begin{frame}[t]{题型二：零点存在性定理}
+\key{答题顺序}
+验证连续性 $\longrightarrow$ 算端点符号 $\longrightarrow$ 证存在 $\longrightarrow$ 再证唯一。
+\medskip
+\begin{itemize}
+\item 连续性和端点异号必须同时满足。
+\item 同号只能说明本定理无法直接判断，不能说没有零点。
+\item 要得到多个零点，应找互不相交的异号区间。
+\item 单调性本身不能代替连续性：跳跃函数可能越过零值。
+\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{题型二·典例1}
+已知 $f(x)=\dfrac3x-x^2+1$，下列区间中一定包含其零点的是（\quad）。
+\opts{$(\tfrac12,1)$}{$(1,\tfrac32)$}{$(\tfrac32,2)$}{$(2,\tfrac52)$}
+\end{frame}
+
+\begin{frame}[t]{题型二·典例1：解析}
+$f$ 在 $(0,+\infty)$ 上连续且严格递减。
+\[f\!\left(\frac32\right)=\frac34>0,\qquad f(2)=-\frac32<0.\]
+所以 $(\tfrac32,2)$ 内恰有一个零点，选 C。
+\key{为何能排除其他选项？}
+严格递减保证整个正半轴至多有一个零点。
+\end{frame}
+
+\begin{frame}[t]{题型二·典例2}
+函数 $f$ 的图像是连续不断的曲线，对应值如下：
+\begin{center}\begin{tabular}{c|rrrrrr}$x$&1&2&3&4&5&6\\\hline$f(x)$&124.4&35&$-74$&14.5&$-56.7$&$-123.6$\end{tabular}\end{center}
+$f$ 在 $[1,6]$ 上至少有几个零点？
+\opts{$2$}{$3$}{$4$}{$5$}
+\end{frame}
+
+\begin{frame}[t]{题型二·典例2：解析}
+相邻取值的符号依次为
+\[+\quad+\quad-\quad+\quad-\quad-.\]
+故 $(2,3)$、$(3,4)$、$(4,5)$ 各至少有一个零点。
+三个开区间互不相交，零点不同，因此至少有 $3$ 个，选 B。
+\key{这里不能推出“恰有3个”。}
+\end{frame}
+
+\begin{frame}[t]{题型二·变式1}
+函数 $f(x)=2^x+2\ln x-1$ 的零点所在区间为（\quad）。
+\opts{$(0,\tfrac12)$}{$(\tfrac12,1)$}{$(1,\tfrac32)$}{$(\tfrac32,2)$}
+\end{frame}
+
+\begin{frame}[t]{题型二·变式1：解析}
+$f$ 在 $(0,+\infty)$ 上连续且严格递增。
+\[f\!\left(\frac12\right)=\sqrt2-2\ln2-1\approx-0.9721<0,
+\qquad f(1)=1>0.\]
+故唯一零点在 $(\tfrac12,1)$，选 B。
+\par\medskip\footnotesize 也可由 $\sqrt2<2$、$\ln2>1/2$ 严格判断前者为负。连续性源于指数、对数函数的连续性。
+\end{frame}
+
+\begin{frame}[t]{题型二·变式2}
+方程 $\ln x+2x-6=0$ 的实数解所在区间为（\quad）。
+\opts{$(0,1)$}{$(1,2)$}{$(2,e)$}{$(e,3)$}
+\end{frame}
+
+\begin{frame}[t]{题型二·变式2：解析}
+令 $f(x)=\ln x+2x-6$，在 $(0,+\infty)$ 上连续且严格递增。
+\[f(2)=\ln2-2<0,\qquad f(e)=2e-5>0.\]
+因此唯一实根位于 $(2,e)$ 内，选 C。
+\end{frame}
+
+\begin{frame}[t]{题型三：由零点范围求参数}
+\key{什么时候可以把“有根”化成“端点异号”？}
+对连续且严格单调的函数，
+\[\text{$(m,n)$ 内有零点}\quad\Longleftrightarrow\quad f(m)f(n)<0.\]
+对一般连续函数，这个等价关系不成立。
+\key{二次函数另看根的分布}
+设开口向上且 $m<n$，两根分别在 $m$ 左侧与 $n$ 右侧，等价于
+\[f(m)<0\quad\text{且}\quad f(n)<0.\]
+\key{列条件前，先看开闭区间、单调性和二次项系数。}
+\end{frame}
+
+\begin{frame}[t]{题型三·典例1}
+若 $f(x)=x^2-ax-2$ 在区间 $(1,2)$ 上有零点，则 $a$ 的范围为（\quad）。
+\opts{$(-1,1)$}{$(-\infty,-1)\cup(1,+\infty)$}{$(-\infty,-1)$}{$(1,+\infty)$}
+\end{frame}
+
+\begin{frame}[t]{题型三·典例1：解析}
+两根之积为 $-2$，故两根异号，恰有一个正根。
+正根位于 $(1,2)$ 等价于
+\[f(1)=-1-a<0,\qquad f(2)=2-2a>0.\]
+解得 $\boxed{-1<a<1}$，选 A。
+\key{等价成立的依据是“恰有一个正根”。}
+\end{frame}
+
+\begin{frame}[t]{题型三·典例2}
+已知 $f(x)=\ln x-\dfrac e x+a$ 在 $(1,e)$ 上存在零点，则实数 $a$ 的范围为（\quad）。
+\opts{$(0,e)$}{$(1,e)$}{$(\sqrt e,e)$}{$(2,e)$}
+\end{frame}
+
+\begin{frame}[t]{题型三·典例2：解析}
+$\ln x$ 与 $-e/x$ 在正半轴均严格递增，故 $f$ 连续且严格递增。
+\[f(1)=a-e<0,\qquad f(e)=a>0.\]
+解得 $\boxed{0<a<e}$，选 A。
+端点不属于题设区间，因此两处都不能取等号。
+\end{frame}
+
+\begin{frame}[t]{题型三·变式1}
+函数 $f(x)=\sqrt x+x^2+m$ 在 $(2,4)$ 上存在零点，则实数 $m$ 的范围是\underline{\hspace{25mm}}。
+\end{frame}
+
+\begin{frame}[t]{题型三·变式1：解析}
+$f$ 在 $[2,4]$ 上连续且严格递增，因此
+\[f(2)=4+\sqrt2+m<0,\quad f(4)=18+m>0.\]
+故 $\boxed{-18<m<-4-\sqrt2}$。
+\end{frame}
+
+\begin{frame}[t]{题型三·变式2}
+函数 $f(x)=\dfrac23x-5+\log_2x$ 的零点在区间 $(k,k+1)$（$k\in\mathbb N$）内，则 $k=$\underline{\hspace{18mm}}。
+\end{frame}
+
+\begin{frame}[t]{题型三·变式2：解析}
+在正半轴上 $f$ 连续且严格递增。
+\[f(4)=-\frac13<0,\qquad f(5)=\log_25-\frac53>0.\]
+后者由 $\log_25>\log_24=2>5/3$ 得到。
+故唯一零点位于 $(4,5)$，$\boxed{k=4}$。
+\end{frame}
+
+\begin{frame}[t]{题型四：方程根的数量}
+\key{按问题特点选择方法}
+\begin{itemize}
+\item 代数法：求根，或换元后逐层还原。
+\item 图像法：画两函数图像，数交点。
+\item 分离参数：写成 $a=g(x)$，数水平线与曲线交点。
+\item 含参讨论：按相切、顶点、渐近线等临界位置分类。
+\end{itemize}
+\key{数交点前，检查定义域和边界点}
+相切只计一个交点；空心点不计；渐近线不是图像的一部分。
+\end{frame}
+
+\begin{frame}[t]{题型四·典例1}
+方程 $2^x=x^2$ 的实数解的个数是（\quad）。
+\opts{$0$}{$1$}{$2$}{$3$}
+\end{frame}
+
+\begin{frame}[t]{题型四·典例1：解析}
+当 $x<0$ 时，$2^x$ 严格递增，$x^2$ 严格递减，且在 $(-1,0)$ 内有唯一交点。
+\medskip\par 当 $x>0$ 时，方程等价于
+\[\frac{\ln x}{x}=\frac{\ln2}{2}.\]
+$h(x)=\ln x/x$ 在 $(0,e)$ 递增，在 $(e,+\infty)$ 递减
+（$h'(x)=(1-\ln x)/x^2$），故至多两根；$x=2,4$ 均满足。
+\[\boxed{\text{共3个实根，选 D}}.\]
+\par\medskip\footnotesize 导数部分为教师核验与拓展证明；课堂上可结合下一页图像说明。
+\end{frame}
+
+\begin{frame}[t]{题型四·典例1：图像}
+\begin{center}
+\begin{tikzpicture}\begin{axis}[width=10cm,height=5.1cm,axis lines=middle,xmin=-2,xmax=4.65,ymin=-1,ymax=23,xtick={-1,0,2,4},ytick={4,16},tick label style={font=\scriptsize},xlabel={$x$},ylabel={$y$}]
+\addplot[campusgreen,very thick,domain=-2:4.5,samples=140]{2^x};
+\addlegendentry{$y=2^x$}
+\addplot[blue,thick,domain=-2:4.5,samples=140]{x*x};
+\addlegendentry{$y=x^2$}
+\addplot[only marks,mark=*,mark size=1.5pt] coordinates {(-.7666647,.5877752) (2,4) (4,16)};
+\end{axis}\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}[t]{题型四·典例2}
+若 $f(x+2)=f(x)$（$x\in\mathbb R$），且 $x\in[-1,1]$ 时 $f(x)=1-x^2$。
+已知
+\[g(x)=\begin{cases}|\lg x|,&x>0,\\e^x,&x<0,\end{cases}\]
+则 $h(x)=f(x)-g(x)$ 在 $[-6,6]$ 内的零点个数为\underline{\hspace{18mm}}。
+\key{先确定公共定义域}
+$g(0)$ 无定义，所以 $h(0)$ 也无定义。
+\end{frame}
+
+\begin{frame}[t]{题型四·典例2：解析}
+\key{负半轴：6个}
+在 $[-6,-5],[-5,-4],[-4,-3],[-3,-2],[-2,-1],[-1,0)$ 中各有一个交点。
+\key{正半轴：6个}
+$(0,1)$ 内有一个交点，$x=1$ 是交点；
+$(2,3),(3,4),(4,5),(5,6)$ 内各有一个交点；$(1,2)$ 内无交点。
+\[\boxed{6+6=12}.\]
+\par\medskip\footnotesize 每小段唯一性的依据及 $(1,2)$ 的排除，见同目录核验说明；不能仅凭示意图断言。
+\end{frame}
+
+\begin{frame}[t]{题型四·典例2：周期图像}
+\begin{center}\begin{tikzpicture}\begin{axis}[width=12cm,height=4.9cm,axis lines=middle,xmin=-6.3,xmax=6.3,ymin=-.12,ymax=1.6,xtick={-6,-5,-3,-1,1,3,5,6},ytick={1},tick label style={font=\scriptsize},xlabel={$x$}]
+\addplot[campusgreen,thick,domain=-6:-5,samples=50]{1-(x-(-6))^2};
+\addplot[campusgreen,thick,domain=-5:-3,samples=50]{1-(x-(-4))^2};
+\addplot[campusgreen,thick,domain=-3:-1,samples=50]{1-(x-(-2))^2};
+\addplot[campusgreen,thick,domain=-1:1,samples=50]{1-(x-(0))^2};
+\addplot[campusgreen,thick,domain=1:3,samples=50]{1-(x-(2))^2};
+\addplot[campusgreen,thick,domain=3:5,samples=50]{1-(x-(4))^2};
+\addplot[campusgreen,thick,domain=5:6,samples=50]{1-(x-(6))^2};
+\addplot[blue,thick,domain=-6:-.001,samples=120]{exp(x)};
+\addplot[blue,thick,domain=.03:6,samples=200]{abs(ln(x)/ln(10))};
+\addplot[only marks,mark=o,mark size=2pt] coordinates {(0,1)};
+\node[anchor=west] at (axis cs:-5.8,1.3){\scriptsize 绿：$f(x)$\quad 蓝：$g(x)$};
+\end{axis}\end{tikzpicture}\end{center}
+\par\medskip\footnotesize $x=0$ 处蓝色曲线为极限位置，未取到；$h$ 在该点无定义。
+\end{frame}
+
+\begin{frame}[t]{题型四·变式1}
+已知
+\[f(x)=\begin{cases}\dfrac{x^2+1}{x},&x<0,\\[2mm]\dfrac{x^2-1}{x},&x>0,\end{cases}\]
+则方程 $[f(x)]^2-2f(x)-8=0$ 的实根个数为（\quad）。
+\opts{$3$}{$4$}{$5$}{$6$}
+\end{frame}
+
+\begin{frame}[t]{题型四·变式1：解析}
+令 $t=f(x)$，则 $(t-4)(t+2)=0$，即 $f(x)=4$ 或 $f(x)=-2$。
+\begin{itemize}
+\item $x<0$：$f(x)=x+1/x\le-2$；$f(x)=-2$ 只有 $x=-1$，$f(x)=4$ 无解。
+\item $x>0$：$f(x)=x-1/x$ 连续严格递增，值域为 $\mathbb R$；两个方程各有一个正根。
+\end{itemize}
+故共有 $1+1+1=\boxed3$ 个实根，选 A。
+\par\medskip\footnotesize 正根分别为 $2+\sqrt5$、$-1+\sqrt2$。原网页在本题解析中途结束，此处补全。
+\end{frame}
+
+\begin{frame}[t]{课堂小结}
+\key{先确定：定义域与连续性}
+不在定义域内的数，不能成为零点。
+\key{再判断：存在、唯一、数量}
+端点异号用于证存在，严格单调性用于证至多一个；多段要分别判断。
+\key{最后处理：参数与边界}
+先说明条件等价的依据，再列不等式，检查开闭端点、重根和退化情形。
+\medskip\par\par\medskip\footnotesize 来源：公众号“数学教研”《高一上期中培优 专题12 函数的零点与方程根的分布》。\par
+\url{https://mp.weixin.qq.com/s/xGp89llisZQO6Ap_TYeVZw}
+\end{frame}
+
+\campusclosing[谢谢]
+\end{document}
