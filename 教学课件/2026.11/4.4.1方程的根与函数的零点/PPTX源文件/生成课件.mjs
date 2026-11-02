@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {applyCompactLayout} from './紧凑版式.mjs';
+import {applyReferenceStyle} from './参考课件样式.mjs';
 
 // 可编辑PPTX的排版源文件。字体、文字、曲线及揭示步骤分别保留。
 const here=path.dirname(fileURLToPath(import.meta.url));
@@ -9,18 +10,20 @@ const lesson=path.dirname(here);
 const repo=path.resolve(lesson,'../../..');
 const runtime=process.env.CODEX_RUNTIME_MODULES || path.join(process.env.USERPROFILE||'', '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules');
 const {PresentationFile,FileBlob}=await import(pathToFileURL(path.join(runtime,'@oai/artifact-tool/dist/artifact_tool.mjs')).href);
-const build=path.join(lesson,'build/pptx');
+const styleReference=process.env.PPTX_STYLE_REFERENCE;
+const build=path.join(lesson,styleReference?'build/pptx-reference':'build/pptx');
 await fs.mkdir(build,{recursive:true});
-const p=await PresentationFile.importPptx(await FileBlob.load(path.join(repo,'教学课件/高中园模板.pptx')));
-p.slides.keep([0,1]);
+const p=await PresentationFile.importPptx(await FileBlob.load(styleReference||path.join(repo,'教学课件/高中园模板.pptx')));
+p.slides.keep(styleReference?[0,3]:[0,1]);
 const cover=p.slides.items[0],base=p.slides.items[1];
 // 保留原模板背景、母版、校徽、校名、书本自由曲线，只替换文字。
 for(const slide of [cover,base]){
   const found=await p.inspect({kind:'textbox,shape',maxChars:20000});
   const records=found.records||[];
-  const targetNames=slide===cover?['文本框 3']:['文本框 21'];
+  const targetNames=styleReference?(slide===cover?['标题 4','副标题 6']:['文本框 3','矩形 8','矩形 9']):(slide===cover?['文本框 3']:['文本框 21']);
   for(const rec of records){if(targetNames.includes(rec.name)&&rec.id)p.delete(rec.id);}
 }
+if(styleReference)cover.shapes.items.find(s=>s.name==='矩形 5').text='';
 const math=[],reveals={},headings=[];
 let current=0,seq=0;
 const BLACK='#161616',GREEN='#126831',BLUE='#176DAB',RED='#B43D32';
@@ -359,9 +362,10 @@ notes(s,'（1）（2）湘教版本节练习；（3）原PPT第15页；（4）�
 
 if(current!==34)throw new Error(`Slide count ${current}`);
 applyCompactLayout(slides,math);
+if(styleReference)applyReferenceStyle(slides,math,reveals);
 await fs.writeFile(path.join(build,'math.json'),JSON.stringify(math,null,2));
 await fs.writeFile(path.join(build,'reveals.json'),JSON.stringify(reveals,null,2));
-await fs.writeFile(path.join(build,'math-spec.json'),JSON.stringify(Object.fromEntries(math.map(x=>[x.name,{text:x.text,sizePt:x.size*.75,align:x.align,color:x.color.replace('#',''),font:x.textFont,bold:x.bold}])),null,2));
+await fs.writeFile(path.join(build,'math-spec.json'),JSON.stringify(Object.fromEntries(math.map(x=>[x.name,{text:x.text,sizePt:x.size*.75,align:x.align,color:x.color.replace('#',''),font:x.textFont,bold:x.bold,mathBold:x.mathBold,lineSpacing:x.lineSpacing,paragraphAfterPt:x.paragraphAfterPt}])),null,2));
 await fs.writeFile(path.join(build,'reveal-spec.json'),JSON.stringify({slides:reveals},null,2));
 await fs.writeFile(path.join(build,'headings.json'),JSON.stringify(headings,null,2));
 await (await PresentationFile.exportPptx(p)).save(path.join(build,'draft.pptx'));
