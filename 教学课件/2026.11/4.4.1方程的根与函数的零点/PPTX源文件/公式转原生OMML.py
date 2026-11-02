@@ -178,22 +178,29 @@ class LatexParser:
         if cmd in ('displaystyle','textstyle','scriptstyle','limits','nolimits'): return []
         raise ValueError('Unsupported LaTeX command: \\'+cmd+' in '+self.s)
 
-def latex_to_omml(latex, size_pt=24, color='000000', display=False, align='left'):
+def latex_to_omml(latex, size_pt=24, color='000000', display=False, align='left', bold=False):
     math=el('m:oMath',*LatexParser(latex,size_pt,color).seq())
+    if bold:
+        for props in math.findall('.//a:rPr',NS): props.set('b','1')
+        for style in math.findall('.//m:rPr/m:sty',NS):
+            val=style.get('{%s}val'%NS['m'])
+            style.set('{%s}val'%NS['m'],'bi' if val=='i' else 'b')
     if display:
         math=el('m:oMathPara',el('m:oMathParaPr',el('m:jc',m_val=align)),math)
     return el('a14:m',math)
 
-def mixed_paragraph(text, size_pt=24, font='Microsoft YaHei', color='000000', align='left', bold=False):
+def mixed_paragraph(text, size_pt=24, font='Microsoft YaHei', color='000000', align='left', bold=False, math_bold=False, line_spacing=None, paragraph_after_pt=None):
     p=el('a:p')
     ppr=el('a:pPr',algn={'left':'l','center':'ctr','right':'r'}.get(align,align))
+    if line_spacing is not None:ppr.append(el('a:lnSpc',el('a:spcPct',val=round(line_spacing*100000))))
+    if paragraph_after_pt is not None:ppr.append(el('a:spcAft',el('a:spcPts',val=round(paragraph_after_pt*100))))
     default=run_props(size_pt,font,color,bold=bold); default.tag='{%s}defRPr'%NS['a']
     ppr.append(default);p.append(ppr)
     pure_math = bool(re.fullmatch(r'\$[^$]*\$', text.strip()))
     for piece in re.split(r'(\$[^$]*\$)',text):
         if not piece: continue
         if piece.startswith('$') and piece.endswith('$'):
-            p.append(latex_to_omml(piece[1:-1],size_pt,color,display=pure_math,align=align))
+            p.append(latex_to_omml(piece[1:-1],size_pt,color,display=pure_math,align=align,bold=math_bold))
         else:
             t=el('a:t');t.text=piece;t.set('{http://www.w3.org/XML/1998/namespace}space','preserve')
             p.append(el('a:r',run_props(size_pt,font,color,bold=bold),t))
@@ -222,7 +229,7 @@ def patch_pptx(input_path, output_path, specs):
                     for old in list(body):
                         if old.tag=='{%s}p'%NS['a']: body.remove(old)
                     for line in spec['text'].split('\n'):
-                        body.append(mixed_paragraph(line,spec.get('sizePt',24),spec.get('font','Microsoft YaHei'),spec.get('color','000000'),spec.get('align','left'),spec.get('bold',False)))
+                        body.append(mixed_paragraph(line,spec.get('sizePt',24),spec.get('font','Microsoft YaHei'),spec.get('color','000000'),spec.get('align','left'),spec.get('bold',False),spec.get('mathBold',False),spec.get('lineSpacing'),spec.get('paragraphAfterPt')))
                     matched.add(name)
                 data=E.tostring(root,encoding='UTF-8',xml_declaration=True,standalone=True)
             target.writestr(member,data)
