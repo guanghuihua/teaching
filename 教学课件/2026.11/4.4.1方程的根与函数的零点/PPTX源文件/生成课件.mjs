@@ -3,6 +3,7 @@ import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {applyCompactLayout} from './紧凑版式.mjs';
 import {applyReferenceStyle} from './参考课件样式.mjs';
+import {pepTheoremRows,pepTheoremSource} from './人教版定理.mjs';
 
 // 可编辑PPTX的排版源文件。字体、文字、曲线及揭示步骤分别保留。
 const here=path.dirname(fileURLToPath(import.meta.url));
@@ -135,14 +136,14 @@ T(s,'两端异号：$f(a)f(b)<0$。',64,604,1152,60,34,1,{align:'center'});
 notes(s,'用户照片5，湘教版图4.4-1，按函数重绘。');
 
 s=page('新知探究：零点存在定理');
-T(s,'设 $a<b$，函数 $y=f(x)$ 满足：',64,146,1152,64,34);
-T(s,'（1）在闭区间 $[a,b]$ 上的图象连续不断；',100,238,1110,70,34);
-T(s,'（2）$f(a)f(b)<0$。',100,323,1110,65,36);
+T(s,pepTheoremRows[0].text,64,146,1152,64,34);
+T(s,pepTheoremRows[1].text,100,238,1110,70,34);
+T(s,pepTheoremRows[2].text,100,323,1110,65,36);
 line(s,'theorem_rule',64,410,1216,410,GREEN,2);
-T(s,'则在开区间 $(a,b)$ 内至少有一个零点。',64,445,1152,76,36,1);
-T(s,String.raw`即存在 $x_0\in(a,b)$，使 $f(x_0)=0$。`,64,539,1152,74,36,1);
+T(s,pepTheoremRows[3].text,64,445,1152,76,36,1);
+T(s,pepTheoremRows[4].text,64,539,1152,132,36,1);
 T(s,'注意：连续、异号、开区间、至少一个。',64,630,1152,48,29,2,{bold:true});
-notes(s,'湘教版必修第一册4.4.1及2025修订课标。');
+notes(s,pepTheoremSource);
 
 s=page('新知探究：连续性不可少');
 T(s,String.raw`$f(x)=\frac1x$`,64,148,535,74,38);
