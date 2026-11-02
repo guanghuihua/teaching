@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
+import {applyCompactLayout} from './紧凑版式.mjs';
 
 // 可编辑PPTX的排版源文件。字体、文字、曲线及揭示步骤分别保留。
 const here=path.dirname(fileURLToPath(import.meta.url));
@@ -221,7 +222,7 @@ notes(s,'《三维设计》第77页对点练习。');
 s=page('课堂练习：根据数值表判断');
 T(s,String.raw`二次函数 $f(x)=ax^2+bx+c\ (a\ne0)$ 的部分函数值如下。`,64,132,1152,71,31);
 T(s,'不求系数，判断两个零点所在的区间。',64,212,1152,58,32);
-table(s,[['x','−3','−2','−1','0','1','2','3','4'],['f(x)','6','m','−4','−6','−6','−4','n','6']],100,300,1080,126,[120,120,120,120,120,120,120,120,120],30);
+table(s,[['x','−3','−2','−1','0','1','2','3','4'],['f(x)','6','m','−4','−6','−6','−4','n','6']],100,275,1080,114,[120,120,120,120,120,120,120,120,120],30);
 T(s,String.raw`$f(-3)f(-1)<0,\qquad f(2)f(4)<0$`,64,464,1152,65,34,1,{align:'center'});
 T(s,'二次函数连续，故 $(-3,-1)$、$(2,4)$ 内各至少一个零点。',64,546,1152,67,31,1);
 T(s,'二次函数至多两个不同零点，因此两个区间内各恰有一个。',64,625,1152,52,30,2);
@@ -255,7 +256,7 @@ notes(s,'《三维设计》第77页对点练习，照片3。');
 
 s=page('课堂练习：交点个数');
 graph(s,{x:107,y:243,w:550,h:340,xmin:-1.5,xmax:5.5,ymin:-1,ymax:7,xticks:[2,4],yticks:[4],curves:[{a:-1.3,b:5.3,f:x=>Math.abs(x*x-4*x)},{a:-1.3,b:5.3,f:x=>4,color:RED}],points:[[-.828427,4],[2,4],[4.828427,4]],labels:[{x:4.1,y:4.8,text:'y=4',color:RED,w:130}]});
-table(s,[['a 的范围','交点数'],['a<0','0'],['a=0','2'],['0<a<4','4'],['a=4','3'],['a>4','2']],758,148,430,320,[280,150],28);
+table(s,[['a 的范围','交点数'],['a<0','0'],['a=0','2'],['0<a<4','4'],['a=4','3'],['a>4','2']],758,145,430,294,[280,150],28);
 T(s,'因此 $a=4$。',738,501,472,60,35,1,{bold:true});
 T(s,String.raw`此时零点为 $2-2\sqrt2,\ 2,\ 2+2\sqrt2$。`,64,625,1152,58,31,1);
 notes(s,'照片3教辅。','用(x−2)²=8或0验证三个不同零点。');
@@ -357,6 +358,7 @@ T(s,'（4）已知 $x^2-2ax+4$ 的两个不同零点分居 $1$ 两侧，求 $a$ 
 notes(s,'（1）（2）湘教版本节练习；（3）原PPT第15页；（4）教辅典例4改编。','答案：（1）−2,1,2。（2）−1,3，定义域为(−∞,1−√3)∪(1+√3,+∞)。（3）唯一根(0,1)。（4）a>5/2。');
 
 if(current!==34)throw new Error(`Slide count ${current}`);
+applyCompactLayout(slides,math);
 await fs.writeFile(path.join(build,'math.json'),JSON.stringify(math,null,2));
 await fs.writeFile(path.join(build,'reveals.json'),JSON.stringify(reveals,null,2));
 await fs.writeFile(path.join(build,'math-spec.json'),JSON.stringify(Object.fromEntries(math.map(x=>[x.name,{text:x.text,sizePt:x.size*.75,align:x.align,color:x.color.replace('#',''),font:x.textFont,bold:x.bold}])),null,2));
