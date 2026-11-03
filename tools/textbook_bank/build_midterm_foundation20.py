@@ -1,4 +1,4 @@
-"""Build an editable A3 booklet: 20 exercises, knowledge list, then teacher key."""
+"""Build an editable A4 booklet: 20 exercises, knowledge list, then teacher key."""
 from pathlib import Path
 from fractions import Fraction as F
 import csv
@@ -13,17 +13,16 @@ from build_midterm_papers import BANK, ROOT, STYLE, resolve
 from midterm_foundation20_data import ITEMS
 
 OUT = ROOT / '教学课件/必修一/期中考试/期中基础过关20题'
-TMP = ROOT / 'tmp/midterm_foundation20'
-FINAL = OUT / '期中基础过关20题_A3学生练习及教师讲解.pdf'
+TMP = ROOT / 'tmp/midterm_foundation20_a4'
+FINAL = OUT / '期中基础过关20题_A4学生练习及教师讲解.pdf'
 CATALOG = json.loads((BANK / '答案与知识点/知识点目录.json').read_text('utf-8'))
 
 PREAMBLE = r'''% !TeX program = xelatex
-% 学生：PDF1—6页；教师：PDF7—16页。A3横向，100%，双面短边翻转。
+% 学生：PDF1—12页；教师：PDF13—32页。A4纵向，100%，双面长边翻转。
 % 内容由同目录学生题目、知识清单、教师讲解三个文件输入，全部公式可编辑。
-\documentclass[UTF8,fontset=windows,11pt,twocolumn]{ctexart}
-\usepackage[paperwidth=420mm,paperheight=297mm,left=18mm,right=18mm,top=16mm,bottom=17mm,headheight=14pt]{geometry}
-\setlength{\columnsep}{36mm}
-\usepackage{amsmath,amssymb,array,booktabs,needspace,fancyhdr,tikz,eso-pic}
+\documentclass[UTF8,fontset=windows,11pt,a4paper]{ctexart}
+\usepackage[left=18mm,right=18mm,top=16mm,bottom=17mm,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb,array,booktabs,needspace,fancyhdr,tikz}
 \usepackage[unicode,hidelinks]{hyperref}
 \hypersetup{pdftitle={高一数学期中基础过关20题},pdfauthor={数学教学备课资料}}
 \setlength{\parindent}{0pt}\setlength{\parskip}{3pt}
@@ -31,9 +30,6 @@ PREAMBLE = r'''% !TeX program = xelatex
 \pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
 \newcommand{\Edition}{学生练习与知识清单}
 \fancyfoot[C]{\small 期中基础过关20题\quad\Edition\quad 第\thepage 页}
-\AddToShipoutPictureBG{\AtPageLowerLeft{\begin{tikzpicture}[remember picture,overlay]
-\draw[black!25,dashed,line width=.25pt] (210mm,12mm)--(210mm,285mm);
-\end{tikzpicture}}}
 \newcommand{\subq}[2]{\par\Needspace{2\baselineskip}（#1）#2}
 \newcommand{\score}[1]{（#1分）}
 \newcommand{\field}[2]{\par\smallskip\textbf{#1：}#2\par}
@@ -178,10 +174,10 @@ def compile_and_verify():
     assert all(float(h) <= (120 - 24) / 25.4 * 72.27 for _, h in heights)
     shutil.copyfile(TMP / 'main.pdf', FINAL)
     with pdfium.PdfDocument(str(FINAL)) as doc:
-        assert len(doc) == 16, len(doc)
-        assert all(abs(doc[i].get_size()[0] - 420/25.4*72) < .02 and abs(doc[i].get_size()[1] - 297/25.4*72) < .02 for i in range(len(doc)))
-        first = ''.join(doc[i].get_textpage().get_text_range() for i in range(6))
-        last = ''.join(doc[i].get_textpage().get_text_range() for i in range(6, 16))
+        assert len(doc) == 32, len(doc)
+        assert all(abs(doc[i].get_size()[0] - 210/25.4*72) < .02 and abs(doc[i].get_size()[1] - 297/25.4*72) < .02 for i in range(len(doc)))
+        first = ''.join(doc[i].get_textpage().get_text_range() for i in range(12))
+        last = ''.join(doc[i].get_textpage().get_text_range() for i in range(12, 32))
         assert not any(t in first for t in ['XJ-B1-', '分步解答', '教材母题', '教师讲解'])
         assert all(f'{n}.（10分）' in re.sub(r'\s+', '', first) for n in range(1, 21))
         for item in ITEMS:
@@ -203,13 +199,14 @@ def main():
         'practice_points': 200, 'points_per_question': 10,
         'independent_review': '20题55小问独立重算；已补齐第5(3)等号设问，第17题补根式母题；计算、证明、端点、定义域及计分已检查。',
         'supporting_arithmetic_checks': len(checks), 'question_heights_pt': dict(heights),
-        'minimum_writing_space_mm': 24, 'pdf_pages': 16, 'paper_mm': [420, 297],
-        'student_pages': [1, 6], 'teacher_pages': [7, 16],
+        'minimum_writing_space_mm': 24, 'pdf_pages': 32, 'paper_mm': [210, 297],
+        'student_pages': [1, 12], 'teacher_pages': [13, 32],
+        'layout': 'A4纵向单栏；学生题每页2题，知识清单2页，教师每页1题。',
         'sources_hidden_in_student': True, 'sources_in_teacher': True,
         'score_target': '24+20+30+20=94只是正式考试备考目标，不是成绩预测；本册200分不折算成考试分数。',
         'visual_review': '最终PDF需逐页渲染确认；检查完成记录见使用说明。',
     }, ensure_ascii=False, indent=2) + '\n', 'utf-8')
-    print(json.dumps({'pdf': str(FINAL), 'pages': 16, 'questions': len(rows), 'arithmetic_checks': len(checks)}, ensure_ascii=False))
+    print(json.dumps({'pdf': str(FINAL), 'pages': 32, 'questions': len(rows), 'arithmetic_checks': len(checks)}, ensure_ascii=False))
 
 
 if __name__ == '__main__':

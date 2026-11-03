@@ -29,21 +29,23 @@
     "20": "71.12122"
   },
   "minimum_writing_space_mm": 24,
-  "pdf_pages": 16,
+  "pdf_pages": 32,
   "paper_mm": [
-    420,
+    210,
     297
   ],
   "student_pages": [
     1,
-    6
+    12
   ],
   "teacher_pages": [
-    7,
-    16
+    13,
+    32
   ],
+  "layout": "A4纵向单栏；学生题每页2题，知识清单2页，教师每页1题。",
   "sources_hidden_in_student": true,
   "sources_in_teacher": true,
   "score_target": "24+20+30+20=94只是正式考试备考目标，不是成绩预测；本册200分不折算成考试分数。",
-  "visual_review": "最终PDF需逐页渲染确认；检查完成记录见使用说明。"
+  "visual_review": "最终PDF需逐页渲染确认；检查完成记录见使用说明。",
+  "a4_content_comparison": "32个A4页正文分别与原16个A3页的左右栏逐字比对一致；仅页脚页码与纸张版式改变。"
 }
