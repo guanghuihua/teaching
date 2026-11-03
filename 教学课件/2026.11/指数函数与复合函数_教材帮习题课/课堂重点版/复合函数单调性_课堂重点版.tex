@@ -1,0 +1,411 @@
+% !TeX program = xelatex
+% 复制自 教学课件/习题课模板/习题课模板.tex；固定16:9、10pt白底衬线版式。
+% 来源A：教学课件/必修一/提取自教材帮.pdf（书154—161页）。
+% 来源B：教学课件/必修一/提取自教材帮(1).pdf（书100页）。
+% 本版以复合函数单调性为主线，保留原完整版供教师备查。
+\ifdefined\PrintVersion
+  \PassOptionsToClass{handout}{ctexbeamer}
+\fi
+\documentclass[UTF8,10pt,aspectratio=169]{ctexbeamer}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta,positioning,shapes.geometric}
+\usepackage{newtxtext,newtxmath}
+\usetheme{default}
+\usecolortheme{default}
+\usefonttheme{serif}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\newcommand{\LessonTitle}{复合函数单调性的判断}
+\newcommand{\LessonSubtitle}{同增异减的推导与指数函数应用}
+\newcommand{\LessonInfo}{高一数学\qquad 2026年11月5日}
+\newcommand{\PageHeading}[1]{\begin{center}{\Large\bfseries #1}\end{center}\vspace{0.2cm}}
+\newcommand{\Answer}[1]{\par\vspace{0.2cm}\textbf{【答案】}#1}
+\newcommand{\Analysis}[1]{\par\vspace{0.2cm}\textbf{【详解】}#1}
+\newcommand{\Choices}[4]{\par\vspace{0.2cm}\begin{tabular}{@{}p{0.47\textwidth}p{0.47\textwidth}@{}}A. #1 & B. #2 \\[0.15cm] C. #3 & D. #4\end{tabular}}
+\begin{document}
+
+\begin{frame}[label=F01]
+  \begin{center}
+    {\Large\bfseries \LessonTitle}\par\vspace{0.4cm}
+    {\large \LessonSubtitle}\par\vspace{0.4cm}
+    \LessonInfo
+  \end{center}
+  \vspace{0.4cm}
+  \textbf{学习目标：}
+  \begin{enumerate}
+    \item 能根据单调性定义解释“同增异减”。
+    \item 先确定定义域与内层范围，再分区间判断复合函数的单调性。
+    \item 将上述方法用于指数型复合函数。
+  \end{enumerate}
+\end{frame}
+
+% 来源B单调性运算及知识点4的前置回顾；目标：理解比较依据；方法：定义；
+% 易错：只看局部几个点；难度：基础；评价：正确说出任意两点的大小关系。
+\begin{frame}[t,label=F01b]
+  \PageHeading{复习\quad 单调性怎样判断}
+  在区间 $I$ 内，任取 $x_1,x_2$，且 $x_1<x_2$。
+  \begin{center}
+  \renewcommand{\arraystretch}{1.8}
+  \begin{tabular}{c|c}
+    始终成立的关系 & 函数在 $I$ 上的单调性\\\hline
+    $f(x_1)<f(x_2)$ & 递增\\
+    $f(x_1)>f(x_2)$ & 递减
+  \end{tabular}
+  \end{center}
+  \pause
+  \textbf{比较顺序：}先固定 $x_1<x_2$，再看函数值的顺序是否与它相同。
+  \par 下面判断复合函数，也从这两个任意的自变量出发。
+\end{frame}
+
+% 来源B知识点3；目标：运算保持或改变增减方向；方法：比较函数值差；
+% 易错：系数符号、根式范围；难度：基础；评价：说明每项成立条件。
+\begin{frame}[t,label=F02]
+  \PageHeading{复习\quad 单调函数的运算}
+  设 $f(x)$ 在区间 $I$ 上单调，以下“增、减”均指严格单调。
+  \begin{center}
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{c|c}
+    变换 & 与 $f(x)$ 的单调性关系\\\hline
+    $f(x)+C$，$C$ 为常数 & 相同\\
+    $af(x)$，$a>0$ & 相同\\
+    $af(x)$，$a<0$ & 相反\\
+    $\sqrt{f(x)}$，$f(x)\ge0$ & 相同
+  \end{tabular}
+  \end{center}
+  \pause
+  \textbf{依据：}加常数不改变函数值的差；乘负数会改变差的符号；
+  平方根函数在 $[0,+\infty)$ 上递增。
+\end{frame}
+
+% 来源B知识点3(5)；目标：和差判断；方法：减g看作加-g；
+% 易错：把增减不定时强行判定；难度：基础；评价：举出“增减不确定”的不同例子。
+\begin{frame}[t,label=F03]
+  \PageHeading{复习\quad 和与差的单调性}
+  在 $f,g$ 的共同单调区间上：
+  \begin{center}
+  \renewcommand{\arraystretch}{1.55}
+  \begin{tabular}{c|c|c|c}
+    $f(x)$ & $g(x)$ & $f(x)+g(x)$ & $f(x)-g(x)$\\\hline
+    增 & 增 & 增 & 不能确定\\
+    增 & 减 & 不能确定 & 增\\
+    减 & 减 & 减 & 不能确定\\
+    减 & 增 & 不能确定 & 减
+  \end{tabular}
+  \end{center}
+  \pause
+  \textbf{说明：}把 $f-g$ 看成 $f+(-g)$。
+  两个增函数相减，$2x-x=x$ 递增，而 $x-2x=-x$ 递减。
+\end{frame}
+
+% 来源B例5；目标：理解倒数的符号前提；方法：作差；
+% 易错：在变号区间直接取倒数；难度：基础；评价：指出分母乘积为何为正。
+\begin{frame}[t,label=F04]
+  \PageHeading{复习\quad 倒数与单调性}
+  若 $f(x)$ 在区间 $I$ 上单调，且恒为正值或恒为负值，
+  则 $f(x)$ 与 $\dfrac1{f(x)}$ 的单调性相反。
+  \pause
+  \Analysis{任取 $x_1<x_2$，有
+  \[
+    \frac1{f(x_2)}-\frac1{f(x_1)}
+      =-\frac{f(x_2)-f(x_1)}{f(x_1)f(x_2)}.
+  \]
+  因为 $f(x_1)f(x_2)>0$，两个函数值之差的符号相反。}
+  \par\vspace{0.3cm}
+  \textbf{条件：}必须在同一区间内讨论，并保证 $f$ 恒正或恒负。
+\end{frame}
+
+% 来源B知识点4；为理解复合结构增补示例。目标：辨别内外层；
+% 方法：引入u；易错：把(x-1)^2等整体当底数；难度：基础；评价：能独立写出两层。
+\begin{frame}[t,label=F05]
+  \PageHeading{复合函数\quad 先分清内层与外层}
+  对 $y=f(g(x))$，先由 $x$ 得到 $u=g(x)$，再由 $u$ 得到 $y=f(u)$。
+  \[
+    x\ \xrightarrow{\ g\ }\ u=g(x)\ \xrightarrow{\ f\ }\ y=f(u).
+  \]
+  例如 $y=(2x-1)^2$：内层 $u=2x-1$，外层 $y=u^2$。
+  \pause
+  \par\vspace{0.3cm}
+  研究复合函数的单调性，要依次回答：
+  \begin{enumerate}
+    \item 当 $x$ 增大时，内层函数值 $u$ 怎样变化？
+    \item 当 $u$ 这样变化时，外层函数值 $y$ 怎样变化？
+  \end{enumerate}
+\end{frame}
+
+% 来源B知识点4的课堂推导；目标：按定义证明同增；方法：比较链；
+% 易错：不限定外层的对应范围；难度：基础；评价：说明两次不等式各由哪个函数得到。
+\begin{frame}[t,label=F06]
+  \PageHeading{结论怎样得到\quad 内增外增}
+  设 $g$ 在区间 $I$ 上递增，$f$ 在内层值域 $g(I)$ 上递增。
+  任取 $x_1,x_2\in I$，且 $x_1<x_2$。
+  \pause
+  \[
+  \begin{array}{rcll}
+    x_1&<&x_2, &\\[2mm]
+    g(x_1)&<&g(x_2),&\text{内层 }g\text{ 递增},\\[2mm]
+    f(g(x_1))&<&f(g(x_2)),&\text{外层 }f\text{ 递增}.
+  \end{array}
+  \]
+  因此 $y=f(g(x))$ 在 $I$ 上递增。
+  \par\vspace{0.3cm}
+  \textbf{顺序：}先比较内层函数值，再比较外层函数值。
+\end{frame}
+
+% 同F06；目标：解释“同减反而增”；易错：见减就判减；评价：两次反向写全。
+\begin{frame}[t,label=F07]
+  \PageHeading{结论怎样得到\quad 内减外减}
+  设 $g$ 在区间 $I$ 上递减，$f$ 在 $g(I)$ 上递减。
+  任取 $x_1,x_2\in I$，且 $x_1<x_2$。
+  \pause
+  \[
+  \begin{array}{rcll}
+    x_1&<&x_2, &\\[2mm]
+    g(x_1)&>&g(x_2),&\text{内层递减，顺序反向},\\[2mm]
+    f(g(x_1))&<&f(g(x_2)),&\text{外层递减，再反向}.
+  \end{array}
+  \]
+  两次反向后，仍有 $f(g(x_1))<f(g(x_2))$。
+  \par\vspace{0.3cm}
+  因此复合函数在 $I$ 上递增，这就是“同减得增”。
+\end{frame}
+
+% 同F06；目标：两种异向均递减；方法：比较链；评价：能指出反向发生在哪一步。
+\begin{frame}[t,label=F08]
+  \PageHeading{结论怎样得到\quad 内外增减相反}
+  仍任取 $x_1<x_2$，并在相应的区间与内层值域上讨论。
+  \pause
+  \textbf{内增外减：}
+  \[
+    x_1<x_2\ \Longrightarrow\ g(x_1)<g(x_2)
+    \ \Longrightarrow\ f(g(x_1))>f(g(x_2)).
+  \]
+  \textbf{内减外增：}
+  \[
+    x_1<x_2\ \Longrightarrow\ g(x_1)>g(x_2)
+    \ \Longrightarrow\ f(g(x_1))>f(g(x_2)).
+  \]
+  \par\vspace{0.3cm}
+  两种情形均满足 $f(g(x_1))>f(g(x_2))$，所以复合函数递减。
+\end{frame}
+
+% 来源B知识点4；目标：归纳而非预先背诵；评价：能从某一行还原比较链。
+\begin{frame}[t,label=F09]
+  \PageHeading{归纳\quad 同增异减}
+  内层在所讨论区间上单调，外层在对应的内层值域上单调。
+  \begin{center}
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{c|c|c}
+    内层 $g(x)$ & 外层 $f(u)$ & 复合函数 $f(g(x))$\\\hline
+    增 & 增 & 增\\
+    减 & 减 & 增\\
+    增 & 减 & 减\\
+    减 & 增 & 减
+  \end{tabular}
+  \end{center}
+  \pause
+  “同”指内外层的单调方向相同，“异”指方向相反。
+  \par 只有内外层在对应范围内都单调，才能直接使用这个结论。
+\end{frame}
+
+% 来源B复合单调步骤；目标：形成规范流程；评价：每题先写定义域和内层范围。
+\begin{frame}[t,label=F10]
+  \PageHeading{怎样判断复合函数的单调性}
+  \begin{enumerate}
+    \item \textbf{定定义域：}先保证内层函数值落在外层定义域内。
+    \item \textbf{分清内外层：}写出 $u=g(x)$ 和 $y=f(u)$。
+    \item \textbf{分区间：}判断内层的增减，并写出相应的 $u$ 的范围。
+    \item \textbf{逐段合成：}在该范围判断外层，再用“同增异减”。
+  \end{enumerate}
+  \pause
+  \par\vspace{0.3cm}
+  \textbf{注意：}外层函数在不同范围可能有不同的单调性，不能只看内层。
+\end{frame}
+
+% 来源B例6；目标：定义域约束、内二次外递减；方法：内层分段；
+% 易错：直接写整个R或把递减结果反向；难度：基础；评价：先写定义域，再填写增减表。
+\begin{frame}[t,label=F11]
+  \PageHeading{例题\quad 已知外层函数的单调性}
+  已知 $f$ 的定义域为 $[0,+\infty)$，且单调递减。
+  求 $y=f(1-x^2)$ 的定义域和单调递减区间。
+  \pause
+  \Analysis{由 $1-x^2\ge0$，得定义域 $[-1,1]$。令 $u=1-x^2$。
+  \begin{center}
+  \renewcommand{\arraystretch}{1.4}
+  \begin{tabular}{c|c|c|c}
+    $x$ 的区间 & 内层 $u$ & 外层 $f$ & 复合函数\\\hline
+    $[-1,0]$ & 增 & 减 & 减\\
+    $[0,1]$ & 减 & 减 & 增
+  \end{tabular}
+  \end{center}}
+  \Answer{定义域 $[-1,1]$，单调递减区间 $[-1,0]$。}
+\end{frame}
+
+% 来源：由来源B例6改编，外层改为递增，内层改为4-x^2。
+% 目标：迁移内外方向；方法：域与二次分段；易错：照抄上一题的方向；难度：基础；评价：独立写出两段。
+\begin{frame}[t,label=F12]
+  \PageHeading{练习1\quad 外层递增时怎样判断}
+  已知 $f$ 的定义域为 $[0,+\infty)$，且单调递增。
+  求 $y=f(4-x^2)$ 的定义域和单调区间。
+  \pause
+  \Analysis{由 $4-x^2\ge0$，得 $x\in[-2,2]$。
+  \par 内层 $u=4-x^2$ 在 $[-2,0]$ 上递增，在 $[0,2]$ 上递减。
+  \par 外层 $f$ 在对应的 $u\in[0,4]$ 上递增，所以复合函数与内层同向。}
+  \Answer{定义域 $[-2,2]$；递增区间 $[-2,0]$，递减区间 $[0,2]$。}
+\end{frame}
+
+% 来源：围绕来源B例6与定义域约束自编变式；目标：线性内层范围；方法：解双边不等式；
+% 易错：忽略f的定义域；难度：基础；评价：能说明为何只在[0,2]讨论。
+\begin{frame}[t,label=F13]
+  \PageHeading{练习2\quad 先确定能够讨论的区间}
+  已知 $f$ 的定义域为 $[-1,3]$，且单调递减。
+  求 $y=f(2x-1)$ 的定义域，并判断单调性。
+  \pause
+  \Analysis{要使复合函数有意义，必须有
+  \[
+     -1\le2x-1\le3\quad\Longleftrightarrow\quad0\le x\le2.
+  \]
+  内层 $u=2x-1$ 在 $[0,2]$ 上递增，其值域为 $[-1,3]$。
+  \par 外层在这个范围内递减，所以复合函数递减。}
+  \Answer{定义域 $[0,2]$，在 $[0,2]$ 上单调递减。}
+\end{frame}
+
+% 来源：为检验来源B知识点4适用范围自编，非原书例题。
+% 目标：外层跨越单调分界时重新分段；方法：内外层分界联合；易错：全域套口诀；
+% 难度：中等；评价：找全-1,0,1，并解释每段内外函数的方向。
+\begin{frame}[t,label=F14]
+  \PageHeading{练习3\quad 外层也需要分段}
+  求函数 $y=(x^2-1)^2$ 的单调区间。
+  \par\vspace{0.3cm}
+  思考：令 $u=x^2-1$ 后，外层 $y=u^2$ 在整个 $u$ 的范围上都递增吗？
+  \pause
+  \Analysis{定义域为 $\mathbb R$。内层 $u=x^2-1$ 的值域为 $[-1,+\infty)$。
+  \par 外层 $y=u^2$ 在 $[-1,0]$ 上递减，在 $[0,+\infty)$ 上递增。
+  \par 除了内层的分界点 $x=0$，还要找 $u=0$ 对应的 $x=\pm1$。}
+\end{frame}
+
+% 同F14，解析续页；保留公共条件和完整答案。
+\begin{frame}[t,label=F15]
+  \PageHeading{练习3解析\quad 按内外层共同分段}
+  对 $y=(x^2-1)^2$，令 $u=x^2-1$，外层为 $y=u^2$。
+  \pause
+  \begin{center}
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{c|c|c|c|c}
+    $x$ 的区间 & $u$ 的范围 & 内层 & 外层 & 复合函数\\\hline
+    $(-\infty,-1]$ & $[0,+\infty)$ & 减 & 增 & 减\\
+    $[-1,0]$ & $[-1,0]$ & 减 & 减 & 增\\
+    $[0,1]$ & $[-1,0]$ & 增 & 减 & 减\\
+    $[1,+\infty)$ & $[0,+\infty)$ & 增 & 增 & 增
+  \end{tabular}
+  \end{center}
+  \Answer{递增区间为 $[-1,0]$、$[1,+\infty)$；\par
+  递减区间为 $(-\infty,-1]$、$[0,1]$。}
+\end{frame}
+
+% 来源A例15—17的方法总结；目标：把一般复合规则用于指数外层；
+% 易错：底数小于1仍同向；难度：基础；评价：看底数后判断方向。
+\begin{frame}[t,label=F16]
+  \PageHeading{应用到指数函数\quad 先看底数}
+  对 $y=a^{g(x)}$（$a>0$，$a\ne1$），内层是 $u=g(x)$，外层是 $y=a^u$。
+  \begin{center}
+  \renewcommand{\arraystretch}{1.7}
+  \begin{tabular}{c|c|c}
+    底数范围 & 外层 $a^u$ & 复合函数与内层的关系\\\hline
+    $a>1$ & 增 & 同向\\
+    $0<a<1$ & 减 & 反向
+  \end{tabular}
+  \end{center}
+  \pause
+  指数函数的定义域为 $\mathbb R$，因此只需先确定 $g(x)$ 的定义域。
+  \par 每个内层单调区间分别判断，不把整个定义域自动当作单调区间。
+\end{frame}
+
+% 来源A书158页例15，保留原题；目标：指数复合单调性；方法：配方；
+% 易错：遗漏1/2；难度：基础；评价：内外方向都能说明。
+\begin{frame}[t,label=F17]
+  \PageHeading{指数应用1\quad 二次函数作内层}
+  函数 $y=2^{x^2-x}$ 的单调递增区间为\underline{\hspace{2.3cm}}。
+  \pause
+  \Analysis{令 $u=x^2-x=(x-\frac12)^2-\frac14$。
+  \par 内层在 $(-\infty,\frac12]$ 上递减，在 $[\frac12,+\infty)$ 上递增。
+  \par 外层 $y=2^u$ 在 $\mathbb R$ 上递增，复合函数与内层同向。}
+  \Answer{$\displaystyle[\tfrac12,+\infty)$。}
+\end{frame}
+
+% 来源A书158页例16；目标：指数作内层；方法：t=2^x>0；
+% 易错：不把t=1翻回x=0；难度：中等；评价：正确写出两段与最值。
+\begin{frame}[t,label=F18]
+  \PageHeading{指数应用2\quad 指数函数作内层}
+  讨论 $y=2^{2x}-2^{x+1}+3$ 的单调性，并求最值。
+  \pause
+  \Analysis{令 $t=2^x>0$，则 $y=(t-1)^2+2$，内层 $t$ 递增。
+  \begin{center}
+  \renewcommand{\arraystretch}{1.4}
+  \begin{tabular}{c|c|c|c}
+    $x$ 的范围 & $t$ 的范围 & 外层 & 复合函数\\\hline
+    $x\le0$ & $0<t\le1$ & 减 & 减\\
+    $x\ge0$ & $t\ge1$ & 增 & 增
+  \end{tabular}
+  \end{center}}
+  \Answer{递减区间 $(-\infty,0]$，递增区间 $[0,+\infty)$；
+  $x=0$ 时取最小值2，无最大值。}
+\end{frame}
+
+% 来源A书158页例17，原题选项保留；目标：由外层反推内层；
+% 易错：不分a=0；难度：中等；评价：明确应让内层递减。
+\begin{frame}[t,label=F19]
+  \PageHeading{指数应用3\quad 由单调性求参数}
+  已知 $f(x)=\left(\dfrac23\right)^{ax^2-2x+1}$ 在 $[1,3]$ 上单调递增，
+  则 $a$ 的取值范围是（\quad）。
+  \Choices{$[0,\frac13]$}{$(-\infty,\frac13]$}{$(-\infty,0]$}{$[0,1]$}
+  \pause
+  \Answer{B。}
+  \Analysis{外层 $y=(\frac23)^u$ 递减。
+  要使复合函数递增，内层 $u=ax^2-2x+1$ 必须在 $[1,3]$ 上递减。}
+\end{frame}
+
+% 同F19；目标：参数退化及对称轴位置；评价：三个分支齐全且解释端点。
+\begin{frame}[t,label=F20]
+  \PageHeading{指数应用3解析\quad 先处理 $a=0$}
+  要求 $u=ax^2-2x+1$ 在 $[1,3]$ 上递减。
+  \pause
+  \begin{itemize}
+    \item $a=0$：$u=-2x+1$，递减，符合要求。
+    \item $a>0$：开口向上，对称轴 $x=1/a$ 应位于3的右侧或重合，
+      故 $1/a\ge3$，得到 $0<a\le1/3$。
+    \item $a<0$：开口向下，对称轴 $1/a<0$，$[1,3]$ 位于右支，符合递减要求。
+  \end{itemize}
+  \Answer{$a\le\dfrac13$。}
+  \par $a=1/3$ 时对称轴在右端点3，区间内仍严格递减，等号可以取。
+\end{frame}
+
+% 来源A书154—155页例10；目标：指数幂比较；方法：每问只保留一种典型方法；
+% 易错：负指数与底数方向；难度：基础至中等；评价：能说明每个不等号的依据。
+\begin{frame}[t,label=F21]
+  \PageHeading{指数练习\quad 比较大小}
+  比较：
+  \par（1）$\left(\frac57\right)^{-1.8}$ 与 $\left(\frac57\right)^{-2.5}$；
+  \par（2）$\left(\frac23\right)^{-0.5}$ 与 $\left(\frac34\right)^{-0.5}$；
+  \par（3）$0.2^{0.3}$ 与 $0.3^{0.2}$。
+  \pause
+  \Answer{依次为 $<$、$>$、$<$。}
+  \Analysis{（1）同底，$0<\frac57<1$，比较指数时反向。
+  \par（2）$y=t^{-0.5}$ 在 $(0,+\infty)$ 上递减，且 $\frac23<\frac34$。
+  \par（3）引入中间量：$0.2^{0.3}<0.2^{0.2}<0.3^{0.2}$。}
+\end{frame}
+
+\begin{frame}[t,label=F24]
+  \PageHeading{课堂小结}
+  \textbf{同增异减从哪里来？}\par
+  从 $x_1<x_2$ 出发，先比较内层函数值，再按外层的增减比较函数值。
+  \par\vspace{0.3cm}
+  \textbf{判断时先做什么？}\par
+  先确定定义域与内层值域，再找内外层各自需要分段的位置。
+  \pause
+  \par\vspace{0.3cm}
+  \textbf{指数复合函数怎样用？}\par
+  看底数：大于1，外层递增；介于0与1，外层递减。
+  逐段判断，写回关于 $x$ 的单调区间。
+\end{frame}
+\end{document}
