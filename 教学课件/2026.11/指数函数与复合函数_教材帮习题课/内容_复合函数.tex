@@ -1,0 +1,508 @@
+% 源A：提取自教材帮.pdf，第4--6页（书第157--159页）。本分块只包含frame。
+% 题干据原图转写；补充的数学说明在相关注释中记录，不改动原始PDF。
+% 练变式8的B项原图确为\subseteq，允许相等；不能把M误定为唯一的区间。
+% 例19（2）原方法2在奇因子x^3=0处不能直接约去；这里改用非零点求参并核验。
+% 名师点评：m为乘法系数，原文m>0保留；不需补m\ne1。
+% 统领名师点评各式的底数条件为a>0且a\ne1；分母a^x-1对应的定义域须去掉0。
+
+% 目标：指数换元与二次最值；方法：先定底数，再分层换元；易错：漏掉a>1；难度：提高；评价：能逐问写出替换量范围。
+% 来源：源A第4页／书第157页，例14。
+\begin{frame}[t,label=B14q]
+  \PageHeading{例14：先求底数，再研究复合函数}
+  （2026·山东省济南市期末）已知函数
+  \[
+    f(x)=a^x+a^{-x}\quad(a>1)
+  \]
+  的定义域为 $[-1,1]$，且图象经过点 $\left(1,\frac52\right)$。
+  \par（1）求 $a$ 的值；
+  \par（2）求 $f(x)$ 的值域；
+  \par（3）求 $g(x)=[f(x)]^2-2mf(x)+2$ 的最小值 $h(m)$。
+  \pause
+  \Answer{（1）$a=2$。}
+  \Analysis{$a+\dfrac1a=\dfrac52\Longleftrightarrow(2a-1)(a-2)=0$。
+  由 $a>1$，舍去 $a=\dfrac12$。}
+\end{frame}
+
+% 目标：复合函数值域；方法：t=2^x后研究t+1/t；易错：把t范围写成R或漏端点；难度：中等；评价：同时说明最小值与最大值的取得。
+% 来源：源A第4页／书第157页，例14（2）。
+\begin{frame}[t,label=B14a]
+  \PageHeading{例14（2）：每次换元都写范围}
+  已得 $a=2$，所以 $f(x)=2^x+2^{-x}$，$x\in[-1,1]$。
+  \[
+    t=2^x\in\left[\frac12,2\right],\qquad
+    p(t)=t+\frac1t.
+  \]
+  \pause
+  \Analysis{$p(t)$ 在 $[\frac12,1]$ 上递减，在 $[1,2]$ 上递增，且
+  \[
+    p(1)=2,\qquad p\left(\frac12\right)=p(2)=\frac52.
+  \]
+  因此 $x=0$ 时最小，$x=\pm1$ 时最大。}
+  \Answer{（2）$\displaystyle\left[2,\frac52\right]$。}
+  \par\vspace{0.2cm}
+  单调性核查：$0<u<v$ 时，
+  $p(v)-p(u)=(v-u)\left(1-\frac1{uv}\right)$。
+\end{frame}
+
+% 目标：含参二次函数在闭区间上的最小值；方法：比较对称轴与区间；易错：直接令u=m而不检验；难度：提高；评价：完整划分m的三个位置。
+% 来源：源A第4页／书第157页，例14（3）。
+\begin{frame}[t,label=B14a2]
+  \PageHeading{例14（3）：对称轴与限制区间}
+  令 $u=f(x)$，由第（2）问可知 $u\in[2,\frac52]$。
+  \[
+    q(u)=u^2-2mu+2=(u-m)^2+2-m^2.
+  \]
+  要求 $h(m)=\min\limits_{u\in[2,\frac52]}q(u)$。
+  \pause
+  \Analysis{对称轴为 $u=m$，分三种位置讨论：
+  \[
+  \begin{array}{c|c|c}
+    m\text{ 的范围}&q(u)\text{ 取最小值处}&\text{最小值}\\ \hline
+    m\le2&u=2&6-4m\\[1mm]
+    2<m<\frac52&u=m&2-m^2\\[1mm]
+    m\ge\frac52&u=\frac52&\frac{33}{4}-5m
+  \end{array}
+  \]}
+  \Answer{$\displaystyle h(m)=\begin{cases}
+     6-4m,&m\le2,\\
+     2-m^2,&2<m<\frac52,\\
+     \frac{33}{4}-5m,&m\ge\frac52.
+   \end{cases}$}
+\end{frame}
+
+% 目标：指数复合式的定义域；方法：先识别外层限制；易错：把指数取值范围与自变量定义域混同；难度：基础；评价：能写出每种形式的有意义条件。
+% 来源：源A第4页／书第157页，“解题通法”第1部分；按投影阅读分两页保留全部方法。
+\begin{frame}[t,label=BmethodD]
+  \PageHeading{解题通法：指数型复合函数的定义域}
+  设 $a>0$ 且 $a\ne1$，用 $D_f$ 表示函数 $f$ 的定义域。
+  \par\vspace{0.25cm}
+  \textbf{1. $y=a^{f(x)}$ 型}
+  \par 指数函数允许任何实数指数，定义域与 $f(x)$ 的定义域相同。
+  \pause
+  \par\vspace{0.25cm}
+  \textbf{2. $y=f(a^x)$ 型}
+  \par 令 $t=a^x>0$，先求 $t\in D_f$ 的范围，再解出 $x$ 的范围。
+  \pause
+  \par\vspace{0.25cm}
+  \textbf{3. $y=\sqrt{f(a^x)}$ 型}
+  \par 同时要求 $a^x\in D_f$ 且 $f(a^x)\ge0$，常转为指数不等式（组）。
+\end{frame}
+
+% 目标：指数复合式的值域；方法：逐层求像集；易错：换元后加入取不到的0；难度：基础至中等；评价：给定x范围能准确写出t范围。
+% 来源：源A第4页／书第157页，“解题通法”第2部分及说明。
+\begin{frame}[t,label=BmethodV]
+  \PageHeading{解题通法：先求内层范围，再求外层值域}
+  \textbf{1. $y=a^{f(x)}$ 型}
+  \par 先求 $u=f(x)$ 的值域，再利用 $y=a^u$ 的单调性求值域。
+  \pause
+  \par\vspace{0.25cm}
+  \textbf{2. $y=f(a^x)$ 型}
+  \par 先由 $x$ 的范围求出 $t=a^x$ 的范围，再求 $y=f(t)$ 的值域。
+  \par\vspace{0.25cm}
+  \textbf{换元的共同要求}
+  \par $t=a^x>0$；即使 $t$ 能无限接近 $0$，也不能把 $0$ 添入范围。
+  \pause
+  \par\vspace{0.25cm}
+  \textbf{结合单调性：}内、外层同向时复合函数递增，异向时递减。
+  \par 使用前须检查外层在内层实际取值范围上的单调性。
+\end{frame}
+
+% 目标：恒成立参数；方法：指数换元后二次最小值；易错：a的方向或漏掉t的限制；难度：中等；评价：能说明等号在x=-1取得。
+% 来源：源A第4--5页／书第157--158页，练变式7（题干跨页）。
+\begin{frame}[t,label=BV7q]
+  \PageHeading{练变式7：恒成立转化为最小值}
+  （2026·四川省眉山市彭山区第一中学期末）函数
+  $f(x)=4^x-2^x-a\ge0$ 对 $x\in[-2,2]$ 恒成立，
+  则实数 $a$ 的取值范围为（\quad）。
+  \Choices{$(-\infty,-\frac14]$}{$[-\frac14,+\infty)$}
+          {$(-\infty,\frac14]$}{$[\frac14,+\infty)$}
+  \pause
+  \Answer{A。}
+  \Analysis{令 $t=2^x\in[\frac14,4]$，则
+  \[
+    4^x-2^x=t^2-t=\left(t-\frac12\right)^2-\frac14.
+  \]
+  当 $t=\frac12$，即 $x=-1$ 时取最小值 $-\frac14$。
+  故恒成立等价于 $a\le-\frac14$。}
+\end{frame}
+
+% 目标：由值域反推定义域的必要信息；方法：原像与唯一原像；易错：把M强定为区间或把必要信息当作唯一解；难度：提高；评价：逐项论证并给非唯一反例。
+% 来源：源A第5页／书第158页，练变式8。B项原图为包含或相等\subseteq。
+\begin{frame}[t,label=BV8q]
+  \PageHeading{练变式8：值域能确定定义域吗}
+  【多选题】（2026·湖南省岳阳市期中）已知函数
+  \[
+    f(x)=2^{2x}-2^{x+1}+2
+  \]
+  定义域为 $M$，值域为 $[1,2]$，则下列说法中一定正确的是（\quad）。
+  \Choices{$M=[0,2]$}{$M\subseteq(-\infty,1]$}{$0\in M$}{$1\in M$}
+  \pause
+  \Answer{BCD。}
+  \Analysis{不能默认 $M$ 是区间。先用值域限制每个自变量，再看端点函数值必须由谁取得。}
+\end{frame}
+
+% 来源及教学指标同BV8q；本页检验B、C、D的必要性。
+\begin{frame}[t,label=BV8a]
+  \PageHeading{练变式8：逐项找出必需的信息}
+  \[
+    f(x)=(2^x-1)^2+1.
+  \]
+  对所有 $x\in M$，由 $1\le f(x)\le2$ 得
+  \[
+    (2^x-1)^2\le1
+    \ \Longleftrightarrow\ 0<2^x\le2
+    \ \Longleftrightarrow\ x\le1.
+  \]
+  因此 $M\subseteq(-\infty,1]$，B正确。
+  \pause
+  \Analysis{值域含 $1$，必须存在 $x\in M$ 使 $f(x)=1$。
+  该方程只有 $2^x=1$，即 $x=0$，故C正确。
+  \par 值域含 $2$，方程 $f(x)=2$ 给出 $2^x=2$ 或 $0$；
+  其中 $2^x=0$ 不可能，所以 $x=1\in M$，D正确。}
+\end{frame}
+
+% 来源及教学指标同BV8q；补充反例是独立数学核查，原题不唯一指定M。
+\begin{frame}[t,label=BV8a2]
+  \PageHeading{练变式8：定义域并不唯一}
+  若 $M=[0,2]$，则 $2\in M$，但
+  \[
+    f(2)=16-8+2=10\notin[1,2],
+  \]
+  所以A错误。
+  \pause
+  \Analysis{以下两个不同的定义域，都能使值域恰为 $[1,2]$：
+  \[
+    M_1=[0,1],\qquad M_2=(-\infty,1].
+  \]
+  在 $[0,1]$ 上，$2^x\in[1,2]$，故 $(2^x-1)^2+1$ 取遍 $[1,2]$。
+  \par 对新增的 $x<0$，函数值仍在 $(1,2)$ 内，不会扩大值域。}
+  \Answer{一定有 $M\subseteq(-\infty,1]$ 且 $\{0,1\}\subseteq M$，但这些必要信息不能唯一确定 $M$。}
+\end{frame}
+
+% 目标：复合单调性；方法：分别判断内外函数；易错：底数小于1时未反转；难度：基础；评价：能解释“同增异减”的四种组合。
+% 来源：源A第5页／书第158页，类型2及例15--17的解题方法归纳。
+\begin{frame}[t,label=BmethodM]
+  \PageHeading{类型2：函数的单调性及应用}
+  对复合函数 $y=F(g(x))$，先写出内层 $t=g(x)$ 的取值范围。
+  \pause
+  \[
+  \begin{array}{c|c|c}
+    g(x)\text{ 的单调性}&F(t)\text{ 的单调性}&F(g(x))\text{ 的单调性}\\ \hline
+    \text{递增}&\text{递增}&\text{递增}\\
+    \text{递减}&\text{递减}&\text{递增}\\
+    \text{递增}&\text{递减}&\text{递减}\\
+    \text{递减}&\text{递增}&\text{递减}
+  \end{array}
+  \]
+  \par\vspace{0.25cm}
+  特别地，$y=a^{g(x)}$ 中：
+  \par $a>1$ 时与 $g$ 同向；$0<a<1$ 时与 $g$ 反向。
+  \par 先确认底数条件，再研究指数；含参二次式须另查退化为一次式的情况。
+\end{frame}
+
+% 目标：指数复合单调区间；方法：外层底数大于1与二次内层；易错：顶点横坐标写错；难度：基础；评价：能说明外层不改变单调方向。
+% 来源：源A第5页／书第158页，例15。
+\begin{frame}[t,label=B15q]
+  \PageHeading{例15：指数中的二次函数}
+  （2026·广东省梅州市期末）函数 $f(x)=2^{x^2-x}$ 的单调递增区间为
+  \underline{\hspace{2.5cm}}。
+  \pause
+  \Answer{$\displaystyle\left[\frac12,+\infty\right)$。}
+  \Analysis{设 $t=x^2-x=(x-\frac12)^2-\frac14$。
+  \par 内层在 $(-\infty,\frac12]$ 上递减，在 $[\frac12,+\infty)$ 上递增。
+  \par 外层 $y=2^t$ 在 $\mathbb R$ 上递增，所以复合函数与内层同向。}
+\end{frame}
+
+% 目标：指数换元后的单调性与最值；方法：t=2^x>0；易错：遗漏t>0或误认为有最大值；难度：中等；评价：能把t=1正确翻译为x=0。
+% 来源：源A第5页／书第158页，例16。原解只写最小值；补明无最大值，因为x向正方向增大时函数无上界。
+\begin{frame}[t,label=B16q]
+  \PageHeading{例16：先换元，再讨论单调性}
+  讨论函数 $y=2^{2x}-2^{x+1}+3$ 的单调性，并求最值。
+  \pause
+  \Analysis{令 $t=2^x>0$，则
+  \[
+    y=t^2-2t+3=(t-1)^2+2.
+  \]
+  外层在 $(0,1]$ 上递减，在 $[1,+\infty)$ 上递增；
+  内层 $t=2^x$ 严格递增。}
+  \Answer{递减区间为 $(-\infty,0]$，递增区间为 $[0,+\infty)$；
+  最小值为 $2$，在 $x=0$ 时取得；无最大值。}
+\end{frame}
+
+% 来源及教学指标同B16q；分步保留原解析“先确定t范围，再把t与1比较”的过程。
+\begin{frame}[t,label=B16a]
+  \PageHeading{例16：把新变量范围翻译回去}
+  \[
+    0<t=2^x\le1\ \Longleftrightarrow\ x\le0,\qquad
+    t=2^x\ge1\ \Longleftrightarrow\ x\ge0.
+  \]
+  \pause
+  \Analysis{在 $x\le0$ 时，内层递增、外层递减，复合函数递减。
+  \par 在 $x\ge0$ 时，内外层都递增，复合函数递增。
+  \[
+    (2^x-1)^2+2\ge2,
+  \]
+  等号当且仅当 $2^x=1$，即 $x=0$。
+  \par 随 $x$ 增大，$2^x$ 无上界，所以函数也没有最大值。}
+\end{frame}
+
+% 目标：由复合单调性反求参数；方法：外层递减反推内层递减，区分a=0；易错：未讨论一次退化或遗漏a<0；难度：中等；评价：三个参数分支完整。
+% 来源：源A第5页／书第158页，例17。
+\begin{frame}[t,label=B17q]
+  \PageHeading{例17：单调性中的参数范围}
+  （2026·山东省济南外国语学校月考）已知函数
+  \[
+    f(x)=\left(\frac23\right)^{ax^2-2x+1}
+  \]
+  在 $[1,3]$ 上单调递增，则实数 $a$ 的取值范围是（\quad）。
+  \Choices{$[0,\frac13]$}{$(-\infty,\frac13]$}{$(-\infty,0]$}{$[0,1]$}
+  \pause
+  \Answer{B。}
+  \Analysis{外层 $y=(\frac23)^t$ 递减，因此要求内层 $t=ax^2-2x+1$ 在 $[1,3]$ 上递减。}
+\end{frame}
+
+% 来源及教学指标同B17q。
+\begin{frame}[t,label=B17a]
+  \PageHeading{例17：先处理 $a=0$，再看对称轴}
+  要求 $g(x)=ax^2-2x+1$ 在 $[1,3]$ 上递减。
+  \pause
+  \Analysis{当 $a=0$ 时，$g(x)=-2x+1$，符合要求。
+  \par\vspace{0.2cm}
+  当 $a>0$ 时，开口向上，对称轴为 $x=\frac1a$。
+  整个 $[1,3]$ 须在左支，故 $\frac1a\ge3$，即 $0<a\le\frac13$。
+  \par\vspace{0.2cm}
+  当 $a<0$ 时，开口向下，对称轴 $\frac1a<0$，
+  $[1,3]$ 全在右侧，符合递减要求。}
+  \Answer{$a\le\dfrac13$。$a=\dfrac13$ 时，对称轴位于右端点，仍可取。}
+\end{frame}
+
+% 目标：分段函数全域严格单调；方法：各段单调加跨段衔接；易错：只查各段或把接点不等号误写成严格；难度：提高；评价：列全底数、对称轴、接点三条件。
+% 来源：源A第5--6页／书第158--159页，例18（解析跨页）。
+\begin{frame}[t,label=B18q]
+  \PageHeading{例18：各段递增，还要检查接点}
+  （2026·广东省汕头市期中）已知函数
+  \[
+    f(x)=\begin{cases}
+       (a-2)^{x-3},&x\le4,\\
+       x^2-ax+2,&x>4
+    \end{cases}
+  \]
+  在定义域 $\mathbb R$ 上为增函数，则实数 $a$ 的取值范围为（\quad）。
+  \Choices{$(3,8]$}{$[4,8]$}{$(3,4]$}{$[4,6]$}
+  \pause
+  \Answer{C，$a\in(3,4]$。}
+  \Analysis{必须同时保证左段递增、右段递增，以及跨过 $x=4$ 时函数值不向下跳。}
+\end{frame}
+
+% 来源及教学指标同B18q；“右段端点值”在x=4处为右侧界值，并非该段实际取值。
+\begin{frame}[t,label=B18a]
+  \PageHeading{例18：三项条件分别对应什么}
+  \Analysis{左段递增：$a-2>1$，即 $a>3$。
+  \par 右段递增：抛物线对称轴 $x=\frac a2$ 在 $4$ 左侧或重合，故 $a\le8$。
+  \par 接点衔接：$f(4)=a-2$，右段当 $x$ 接近 $4$ 时的界值为 $18-4a$，须有
+  \[
+    a-2\le18-4a\quad\Longleftrightarrow\quad a\le4.
+  \]}
+  \pause
+  \Answer{$a>3,\ a\le8,\ a\le4$ 联立得 $3<a\le4$。}
+  \par\vspace{0.2cm}
+  $a=4$ 时两侧在接点处衔接，右段的 $x>4$ 仍使函数值严格大于 $f(4)$，故等号可以取。
+\end{frame}
+
+% 目标：差商正等价于严格递增；方法：分段斜率、指数底数与接点；易错：接点处误排a=2或误取a=3；难度：提高；评价：解释[2,3)两个边界。
+% 来源：源A第6页／书第159页，练变式9。
+\begin{frame}[t,label=BV9q]
+  \PageHeading{练变式9：把差商条件读成单调性}
+  （2026·福建省莆田市期末）如果函数
+  \[
+    f(x)=\begin{cases}
+      (9-a^2)x+1,&x<1,\\
+      a^x+4,&x\ge1
+    \end{cases}
+  \]
+  满足对任意 $x_1\ne x_2$，都有
+  $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}>0$ 成立，
+  那么 $a$ 的取值范围是\underline{\hspace{2.5cm}}。
+  \pause
+  \Answer{$[2,3)$。}
+  \Analysis{所给差商恒正，等价于函数在整个定义域上严格递增。}
+\end{frame}
+
+% 来源及教学指标同BV9q；原题未明说a>0，但全实数指数及递增要求自然给出a>1。
+\begin{frame}[t,label=BV9a]
+  \PageHeading{练变式9：等号能不能取，要回到定义}
+  \Analysis{左段斜率必须为正：$9-a^2>0$。
+  \par 右段严格递增：$a>1$。两条合起来得到 $1<a<3$。
+  \par 在 $x=1$ 左侧，函数值严格小于 $10-a^2$；
+  右段最小值在 $x=1$ 取得，等于 $a+4$。
+  \[
+     a+4\ge10-a^2
+     \ \Longleftrightarrow\ (a+3)(a-2)\ge0.
+  \]}
+  \pause
+  \Answer{与 $1<a<3$ 联立，得到 $2\le a<3$。}
+  \par $a=2$ 时左段仅接近 $6$，右段从 $6$ 起递增，跨段比较仍严格。
+  \par $a=3$ 时左段为常函数，不满足差商严格大于 $0$。
+\end{frame}
+
+% 目标：小于1的底数与指数二次式；方法：反向单调，对称轴位置；易错：把0.3读成系数或忽略开区间仍可a=1；难度：中等；评价：能说明底数0.3的作用。
+% 来源：源A第6页／书第159页，练变式10。原式为0.3^(x^2-2ax)，不是0.3乘指数式。
+\begin{frame}[t,label=BV10q]
+  \PageHeading{练变式10：先看底数是 $0.3$}
+  （2026·广东省部分学校期末）若函数
+  \[
+    f(x)=0.3^{\,x^2-2ax}
+  \]
+  在区间 $(1,2)$ 上单调递减，则实数 $a$ 的取值范围是（\quad）。
+  \Choices{$(-\infty,1]$}{$(-\infty,1)$}{$[2,+\infty)$}{$(2,+\infty)$}
+  \pause
+  \Answer{A。}
+  \Analysis{因为 $0<0.3<1$，外层递减，内层 $x^2-2ax=(x-a)^2-a^2$ 必须在 $(1,2)$ 上递增。
+  \par 开口向上，对称轴 $x=a$ 应位于 $1$ 左侧或重合，故 $a\le1$。}
+\end{frame}
+
+% 目标：指数式奇偶性；方法：先查对称定义域，再代-x；易错：只用特殊值便宣布充分；难度：基础至中等；评价：特殊值求参之后完成恒等核验。
+% 来源：源A第6页／书第159页，类型3与例19方法归纳。
+\begin{frame}[t,label=BmethodP]
+  \PageHeading{类型3：函数的奇偶性及应用}
+  \textbf{第一步：检查定义域关于原点对称。}
+  \par 例如 $\dfrac1{2^x-1}$ 的定义域为 $\mathbb R\setminus\{0\}$，仍然对称。
+  \pause
+  \par\vspace{0.25cm}
+  \textbf{第二步：代入 $-x$，整理函数关系。}
+  \[
+    f(-x)+f(x)=0\text{ 说明奇性},\qquad
+    f(-x)-f(x)=0\text{ 说明偶性}.
+  \]
+  \pause
+  \par\vspace{0.25cm}
+  \textbf{含参时：特殊值可以求出必要条件，最后还要核验。}
+  \par 只有 $0$ 在定义域中，奇函数才必须满足 $f(0)=0$；不能对无定义的点代值。
+\end{frame}
+
+% 目标：由奇偶性求参；方法：对称代入及特殊值；易错：(1)在x=0代值，(2)约去x^3后忘记x=0；难度：中等；评价：两问均核查定义域并验证充分性。
+% 来源：源A第6页／书第159页，例19，原来源文字不补猜年份。
+\begin{frame}[t,label=B19q]
+  \PageHeading{例19：由奇偶性求参数}
+  （1）若函数 $f(x)=\dfrac a{2^x-1}+\dfrac12$ 是奇函数，
+  则实数 $a$ 的值是\underline{\hspace{2cm}}。
+  \par\vspace{0.3cm}
+  （2）（新高考全国$\mathrm{I}$卷）已知函数
+  $f(x)=x^3\bigl(a\cdot2^x-2^{-x}\bigr)$ 是偶函数，
+  则 $a=$\underline{\hspace{2cm}}。
+  \pause
+  \Answer{（1）$1$；（2）$1$。}
+  \Analysis{第（1）问的 $x=0$ 无定义；第（2）问在 $x=0$ 的函数值恒为 $0$。
+  两问都不能仅靠代 $x=0$ 确定参数。}
+\end{frame}
+
+% 来源及教学指标同B19q；保留原方法1的恒等求参及核验。
+\begin{frame}[t,label=B19a]
+  \PageHeading{例19（1）方法一：直接计算对称和}
+  $f(x)=\dfrac a{2^x-1}+\dfrac12$，定义域为 $\mathbb R\setminus\{0\}$。
+  \pause
+  \Analysis{令 $t=2^x$，则 $t>0$ 且 $t\ne1$。
+  \[
+  \begin{aligned}
+    f(x)+f(-x)
+      &=\frac a{t-1}+\frac a{t^{-1}-1}+1\\
+      &=\frac a{t-1}-\frac{at}{t-1}+1=1-a.
+  \end{aligned}
+  \]
+  奇函数要求这个和恒为 $0$，所以 $a=1$。
+  \par 反过来，$a=1$ 时定义域对称，且上式恒为 $0$，确为奇函数。}
+  \Answer{$a=1$。}
+\end{frame}
+
+% 来源及教学指标同B19q；保留原方法2，强调特殊值仅为必要条件。
+\begin{frame}[t,label=B19a2]
+  \PageHeading{例19（1）方法二：取有定义的对称点}
+  $0$ 不在定义域内，改取 $x=1$ 与 $x=-1$。
+  \pause
+  \Analysis{因为 $f$ 为奇函数，$f(1)+f(-1)=0$，所以
+  \[
+    \left(a+\frac12\right)+\left(-2a+\frac12\right)=0,
+  \]
+  得 $a=1$。
+  \par 此时 $f(x)=\dfrac1{2^x-1}+\dfrac12$，按上一页计算可知
+  $f(-x)+f(x)=0$ 对所有 $x\ne0$ 成立。}
+  \Answer{$a=1$，且已经核验充分性。}
+\end{frame}
+
+% 来源及教学指标同B19q；保留原方法1，不将x^3为0处作除法。
+\begin{frame}[t,label=B19b]
+  \PageHeading{例19（2）方法一：使用偶函数定义}
+  $f(x)=x^3\bigl(a\cdot2^x-2^{-x}\bigr)$，定义域为 $\mathbb R$。
+  \pause
+  \Analysis{由 $f(-x)=f(x)$ 得，对所有 $x\in\mathbb R$，
+  \[
+    x^3(a-1)(2^x+2^{-x})=0.
+  \]
+  取 $x=1$，有 $a=1$。
+  \par 当 $a=1$ 时，
+  \[
+    f(-x)=(-x)^3(2^{-x}-2^x)=x^3(2^x-2^{-x})=f(x).
+  \]
+  因此确为偶函数。}
+  \Answer{$a=1$。}
+\end{frame}
+
+% 来源：同例19（2）原方法2；补正说明：由x^3的奇性逆推另一因子的奇性时须先限x≠0。
+% 此页用x=1、-1确定必要条件，再用奇×奇验证；不借未说明的x=0处约分或连续性。
+\begin{frame}[t,label=B19b2]
+  \PageHeading{例19（2）方法二：奇偶乘积与核验}
+  记 $g(x)=x^3$，$h(x)=a\cdot2^x-2^{-x}$，则 $f(x)=g(x)h(x)$。
+  \pause
+  \Analysis{$f$ 偶、$g$ 奇，且 $x\ne0$ 时 $g(x)\ne0$，于是对 $x\ne0$ 有
+  \[
+    h(-x)=-h(x).
+  \]
+  特别取 $x=1$，得到
+  $\left(\frac a2-2\right)=-\left(2a-\frac12\right)$，仍得 $a=1$。
+  \par 此时 $h(x)=2^x-2^{-x}$ 在整个 $\mathbb R$ 上为奇函数，
+  包括 $h(0)=0$。
+  所以 $g,h$ 均奇，乘积 $f$ 为偶函数。}
+  \Answer{$a=1$。}
+\end{frame}
+
+% 目标：常见指数式奇偶性；方法：代-x及正分母；易错：遗漏底数条件；难度：基础；评价：至少选一式完整证明。
+% 来源：源A第6页／书第159页，“名师点评”前三种奇函数。
+\begin{frame}[t,label=BcommonP1]
+  \PageHeading{名师点评：常见的指数型奇函数}
+  以下均设 $a>0$ 且 $a\ne1$，定义域为 $\mathbb R$。
+  \[
+  \begin{array}{ll}
+    \text{（1）}&a^x-a^{-x},\\[2mm]
+    \text{（2）}&\displaystyle\frac{a^x-1}{a^x+1},\\[3mm]
+    \text{（3）}&\displaystyle\frac{a^x-a^{-x}}{a^x+a^{-x}}.
+  \end{array}
+  \]
+  \pause
+  \Analysis{以第（2）式 $r(x)$ 为例：
+  \[
+    r(-x)=\frac{a^{-x}-1}{a^{-x}+1}
+      =\frac{1-a^x}{1+a^x}=-r(x).
+  \]
+  分母恒正，定义域无须删点；其余两式同样代入 $-x$ 验证。}
+\end{frame}
+
+% 来源：源A第6页／书第159页，“名师点评”第4式、两个特别式及偶函数。
+% 参数核查：m只是乘法系数，奇性实际上对任意实数m成立；原文m>0保留，无需m≠1。
+\begin{frame}[t,label=BcommonP2]
+  \PageHeading{名师点评：平移后的奇性与偶函数}
+  仍设 $a>0$ 且 $a\ne1$。原文第（4）式为
+  \[
+    -\frac{2m}{a^x+1}+m
+      =m\frac{a^x-1}{a^x+1}\qquad(m>0),
+  \]
+  它是奇函数，$m$ 是乘法系数，$m=1$ 也成立。
+  \pause
+  \par 特别地，以下两式也为奇函数，但须区分定义域：
+  \[
+    \frac1{a^x+1}-\frac12\quad(x\in\mathbb R),\qquad
+    \frac1{a^x-1}+\frac12\quad(x\ne0).
+  \]
+  \pause
+  \par 偶函数：$s(x)=a^x+a^{-x}$，定义域为 $\mathbb R$，
+  因为 $s(-x)=a^{-x}+a^x=s(x)$。
+\end{frame}

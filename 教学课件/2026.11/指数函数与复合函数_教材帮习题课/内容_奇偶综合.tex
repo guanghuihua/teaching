@@ -1,0 +1,386 @@
+% 源 A：教材帮扫描 PDF 第 7—8 页，对应书页 160—161。
+% 本文件仅含 frame，由主文件载入。保留来源题号；答案均已独立核验。
+
+% 目标：利用中心对称求最值之和；方法：配成奇函数或成对相加。
+% 易错：把 f 本身判为奇函数，或只算 f(0) 就结束；难度：中。
+% 评价：写出 f(x)+f(-x)=3，并说明最大值与最小值的对应关系。
+% 来源：源 A PDF 第 7 页，教材第 160 页，练变式 11。
+\begin{frame}[label=C11q]
+  \PageHeading{练变式11\quad 最值之和}
+  函数
+  \[
+    f(x)=\frac{3}{2^x+1}+3^x-3^{-x}
+  \]
+  在 $[-2026,2026]$ 上的最大值与最小值之和为
+  \underline{\hspace{2cm}}。
+  \pause
+  \Answer{$3$。}
+  \Analysis{先计算 $f(x)+f(-x)$，寻找关于原点对称的自变量所对应的函数值之间的关系。}
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同练变式 11；续页保留关键函数与区间。
+\begin{frame}[label=C11a]
+  \PageHeading{练变式11\quad 解析}
+  已知 $f(x)=\dfrac{3}{2^x+1}+3^x-3^{-x}$，$x\in[-2026,2026]$。
+  \pause
+  \Analysis{由 $\dfrac{1}{2^{-x}+1}=\dfrac{2^x}{2^x+1}$，得
+  \[
+    f(x)+f(-x)=\frac{3}{2^x+1}+\frac{3\cdot2^x}{2^x+1}=3.
+  \]
+  设最大值为 $M$，在 $x=x_0$ 处取得。对区间内任意 $x$，
+  \[
+    f(-x)=3-f(x)\ge 3-M,\qquad f(-x_0)=3-M.
+  \]
+  因此最小值 $m=3-M$，所以 $M+m=3$。}
+  \par\vspace{0.15cm}
+  也可令 $g(x)=f(x)-\dfrac32$，则 $g$ 为奇函数；对称区间上的最大值与最小值互为相反数。
+\end{frame}
+
+% 目标：奇偶性、单调性与抽象不等式综合；方法：f(0)=0 求参后检验，奇偶转化后去函数符号。
+% 易错：未说明 0 在定义域内；仅凭 f(1)>0 直接断言递增；难度：中。
+% 评价：完整给出 k、底数范围、单调性与不等式解集，并说明每次等价转化。
+% 来源：源 A PDF 第 7 页，教材第 160 页，例 20；题注为 2026 江苏省常州市金坛区第一中学月考。
+\begin{frame}[label=C20q]
+  \PageHeading{例20\quad 奇偶性与单调性的综合应用}
+  （2026\,$\cdot$\,江苏省常州市金坛区第一中学月考）
+  设函数 $f(x)=ka^x-a^{-x}$（$a>0$，且 $a\ne1$）是定义在 $\mathbb R$ 上的奇函数。
+  \par\vspace{0.2cm}
+  （1）求 $k$ 的值；
+  \par
+  （2）若 $f(1)>0$，试判断函数的单调性，并求不等式
+  \[
+    f(x^2+2x)+f(4-x^2)>0
+  \]
+  的解集。
+  \pause
+  \Answer{（1）$k=1$；（2）$f$ 在 $\mathbb R$ 上单调递增，解集为 $(-2,+\infty)$。}
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同例 20；覆盖原书第（1）问的两种方法与必要检验。
+\begin{frame}[label=C20a]
+  \PageHeading{例20（1）\quad 求参数}
+  已知 $f(x)=ka^x-a^{-x}$ 是定义在 $\mathbb R$ 上的奇函数，$a>0$，$a\ne1$。
+  \pause
+  \Analysis{\textbf{方法一：先用特殊值，再检验。}
+  因为 $0$ 在定义域内，故 $f(0)=0$，即 $k-1=0$，所以 $k=1$。
+  \[
+    f(-x)=a^{-x}-a^x=-f(x),
+  \]
+  因此 $k=1$ 符合题意。}
+  \pause
+  \par\vspace{0.2cm}
+  \textbf{方法二：直接用定义。}
+  \[
+    f(x)+f(-x)=(k-1)(a^x+a^{-x})=0.
+  \]
+  因为 $a^x+a^{-x}>0$，所以 $k=1$。
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同例 20；本页完成底数范围与单调性的论证。
+\begin{frame}[label=C20b]
+  \PageHeading{例20（2）\quad 判断单调性}
+  由（1）知 $f(x)=a^x-a^{-x}$。又已知 $f(1)>0$。
+  \pause
+  \Analysis{先确定底数范围：
+  \[
+    f(1)=a-\frac1a>0
+    \ \Longleftrightarrow\ a^2>1.
+  \]
+  因为 $a>0$，所以 $a>1$。}
+  \pause
+  \par\vspace{0.2cm}
+  当 $a>1$ 时，$y=a^x$ 在 $\mathbb R$ 上单调递增，
+  $y=a^{-x}$ 单调递减，故 $y=-a^{-x}$ 单调递增。
+  \[
+    f(x)=a^x+(-a^{-x})
+  \]
+  因此 $f$ 在 $\mathbb R$ 上单调递增。
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同例 20；覆盖原书结构化解题思路。
+\begin{frame}[label=C20c]
+  \PageHeading{例20（2）\quad 解不等式}
+  已知 $f$ 是 $\mathbb R$ 上的奇函数，且在 $\mathbb R$ 上单调递增。
+  \pause
+  \Analysis{利用奇偶性把两项之和化为两个函数值的比较：
+  \begin{align*}
+    &f(x^2+2x)+f(4-x^2)>0\\
+    \Longleftrightarrow\;&f(x^2+2x)>-f(4-x^2)\\
+    \Longleftrightarrow\;&f(x^2+2x)>f(x^2-4)\\
+    \Longleftrightarrow\;&x^2+2x>x^2-4\\
+    \Longleftrightarrow\;&x>-2.
+  \end{align*}}
+  \par
+  \textbf{方法：}先由条件求参数、判单调性，再用奇偶性转化，最后比较自变量。
+\end{frame}
+
+% 目标：识别平移后的奇函数；方法：h(t)=f(t+2)-2，利用奇增函数的和式比较。
+% 易错：直接把 f 当作奇函数，或平移时漏减常数 2；难度：中。
+% 评价：写出两个新自变量 2m-4、m-1，并得 m>5/3。
+% 来源：源 A PDF 第 7 页，教材第 160 页，练变式 12。
+\begin{frame}[label=C12q]
+  \PageHeading{练变式12\quad 平移后的奇函数}
+  已知函数 $f(x)=2^{x-2}-2^{2-x}+x$，则满足
+  \[
+    f(2m-2)+f(m+1)>4
+  \]
+  的 $m$ 的取值范围是（\quad）。
+  \Choices{$(3,+\infty)$}{$\left(\dfrac32,+\infty\right)$}
+          {$\left(\dfrac13,+\infty\right)$}{$\left(\dfrac53,+\infty\right)$}
+  \pause
+  \Answer{D。}
+  \Analysis{令 $h(t)=f(t+2)-2$，把对称中心从 $(2,2)$ 移到原点。}
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同练变式 12；完整核验平移后的解析式与等价不等式。
+\begin{frame}[label=C12a]
+  \PageHeading{练变式12\quad 解析}
+  已知 $f(x)=2^{x-2}-2^{2-x}+x$，求 $f(2m-2)+f(m+1)>4$ 的解。
+  \pause
+  \Analysis{令 $h(t)=f(t+2)-2=2^t-2^{-t}+t$。
+  $h$ 是 $\mathbb R$ 上的奇函数，且三个加项都单调递增，故 $h$ 单调递增。
+  \[
+    f(2m-2)=h(2m-4)+2,\qquad f(m+1)=h(m-1)+2.
+  \]
+  因此原不等式等价于
+  \begin{align*}
+    h(2m-4)+h(m-1)>0
+    &\ \Longleftrightarrow\ h(2m-4)>h(1-m)\\
+    &\ \Longleftrightarrow\ 2m-4>1-m\\
+    &\ \Longleftrightarrow\ m>\frac53.
+  \end{align*}}
+\end{frame}
+
+% 目标：认识常见指数分式结构；方法：换元与恒等变形；易错：底数范围或分母条件遗漏。
+% 难度：基础；评价：能将原式改写为 1-2/(a^x+1)。
+% 来源：源 A PDF 第 7 页，教材第 160 页，题型 5 导语及类型 1 性质研究。
+\begin{frame}[label=C21intro]
+  \PageHeading{对指数分式函数的性质研究}
+  在与指数函数有关的问题中，常会遇到形式不同但结构相近的函数。
+  \[
+    f(x)=\frac{a^x-1}{a^x+1},\qquad a>0,\ a\ne1.
+  \]
+  \pause
+  \Analysis{把分式改写为
+  \[
+    \frac{a^x-1}{a^x+1}=1-\frac{2}{a^x+1}.
+  \]
+  可以把奇偶性、单调性和值域的研究与已学的指数函数及分式性质联系起来。}
+  \par\vspace{0.2cm}
+  先看定义域，再判断奇偶性；研究单调性时注意底数范围；求值域时可令 $t=a^x>0$。
+\end{frame}
+
+% 目标：指数分式的奇偶性、单调性和值域；方法：定义法、作差、换元。
+% 易错：a<1 时单调方向颠倒；值域端点错误取到；难度：中。
+% 评价：给出定义域 R、奇性、分底数的单调性以及开区间值域。
+% 来源：源 A PDF 第 7—8 页，教材第 160—161 页，例 21 及解析、点思路、巧解题。
+\begin{frame}[label=C21q]
+  \PageHeading{例21\quad 指数分式的性质}
+  已知函数
+  \[
+    f(x)=\frac{a^x-1}{a^x+1}\qquad(a>0,\ a\ne1).
+  \]
+  （1）判断函数 $f(x)$ 的奇偶性；
+  \par
+  （2）讨论 $f(x)$ 的单调性；
+  \par
+  （3）求 $f(x)$ 的值域。
+  \pause
+  \Answer{（1）奇函数；（2）$a>1$ 时在 $\mathbb R$ 上单调递增，$0<a<1$ 时在 $\mathbb R$ 上单调递减；（3）$(-1,1)$。}
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同例 21；本页用定义判断奇偶性。
+\begin{frame}[label=C21a]
+  \PageHeading{例21（1）\quad 奇偶性}
+  已知 $f(x)=\dfrac{a^x-1}{a^x+1}$，其中 $a>0$，$a\ne1$。
+  \pause
+  \Analysis{因为 $a^x>0$，所以 $a^x+1>0$，定义域为 $\mathbb R$，关于原点对称。
+  \begin{align*}
+    f(-x)&=\frac{a^{-x}-1}{a^{-x}+1}\\
+         &=\frac{1-a^x}{1+a^x}\\
+         &=-\frac{a^x-1}{a^x+1}=-f(x).
+  \end{align*}
+  所以 $f$ 是奇函数。}
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同例 21；覆盖原书作差法和恒等变形的灵活应用。
+\begin{frame}[label=C21b]
+  \PageHeading{例21（2）\quad 单调性}
+  已知 $f(x)=\dfrac{a^x-1}{a^x+1}=1-\dfrac{2}{a^x+1}$。任取 $x_1<x_2$，有
+  \pause
+  \Analysis{\[
+    f(x_1)-f(x_2)
+    =\frac{2(a^{x_1}-a^{x_2})}{(a^{x_1}+1)(a^{x_2}+1)}.
+  \]
+  分母恒正，故只需判断分子中 $a^{x_1}-a^{x_2}$ 的符号。
+  \par\vspace{0.2cm}
+  当 $a>1$ 时，$a^{x_1}<a^{x_2}$，所以 $f(x_1)<f(x_2)$，$f$ 在 $\mathbb R$ 上单调递增。
+  \par\vspace{0.2cm}
+  当 $0<a<1$ 时，$a^{x_1}>a^{x_2}$，所以 $f(x_1)>f(x_2)$，$f$ 在 $\mathbb R$ 上单调递减。}
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同例 21；本页补足区间内每个值均可取得的说明。
+\begin{frame}[label=C21c]
+  \PageHeading{例21（3）\quad 值域}
+  已知 $f(x)=\dfrac{a^x-1}{a^x+1}$，$a>0$，$a\ne1$。令 $t=a^x$，则 $t\in(0,+\infty)$。
+  \pause
+  \Analysis{由
+  \[
+    y=\frac{t-1}{t+1}=1-\frac{2}{t+1},\qquad 0<\frac{2}{t+1}<2,
+  \]
+  得 $-1<y<1$，两个端点均不能取到。}
+  \pause
+  \par\vspace{0.15cm}
+  反过来，对任意 $y\in(-1,1)$，取
+  \[
+    t=\frac{1+y}{1-y}>0.
+  \]
+  由于 $a^x$ 的值域为 $(0,+\infty)$，上述 $t$ 均有对应的 $x$，
+  因此所有 $y\in(-1,1)$ 都可取到，故 $f$ 的值域为 $(-1,1)$。
+\end{frame}
+
+% 目标：指数分式奇函数的求参及定义域检验；方法：奇性恒等式、图象对称点。
+% 易错：奇函数定义域未必含 0，不能用 f(0)=0；交叉相乘后忘记原分母条件。
+% 难度：中；评价：得 a=1,b=-1 后检验定义域 R\{0}、奇性及经过指定点。
+% 来源：源 A PDF 第 8 页，教材第 161 页，例 22；含两种方法及名师点评。
+\begin{frame}[label=C22q]
+  \PageHeading{例22\quad 奇函数的参数}
+  已知函数
+  \[
+    f(x)=\frac{1+a\cdot2^x}{2^x+b}
+  \]
+  是奇函数，并且函数的图象经过点 $(1,3)$，则
+  $a+2b=\underline{\hspace{2cm}}$。
+  \pause
+  \Answer{$-1$。}
+  \Analysis{利用 $f(-x)=-f(x)$ 和 $f(1)=3$；也可直接利用奇函数图象关于原点对称。}
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同例 22；原书方法一，奇性恒等式求候选参数。
+\begin{frame}[label=C22a]
+  \PageHeading{例22\quad 方法一：奇性恒等式}
+  已知 $f(x)=\dfrac{1+a\cdot2^x}{2^x+b}$ 是奇函数，且 $f(1)=3$。
+  \pause
+  \Analysis{在定义域内有 $f(-x)=-f(x)$。令 $t=2^x>0$，得
+  \[
+    \frac{t+a}{1+bt}=-\frac{1+at}{t+b}.
+  \]
+  在两边分母非零时整理：
+  \[
+    (ab+1)(t^2+1)+2(a+b)t=0.
+  \]
+  此式对定义域中所有 $t$ 成立，故
+  \[
+    ab+1=0,\qquad a+b=0,
+  \]
+  得候选参数 $(a,b)=(1,-1)$ 或 $(-1,1)$。}
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同例 22；筛选与充分性检验，强调定义域不含 0。
+\begin{frame}[label=C22b]
+  \PageHeading{例22\quad 筛选与检验}
+  已得候选参数 $(a,b)=(1,-1)$ 或 $(-1,1)$，还须满足 $f(1)=3$。
+  \pause
+  \Analysis{由 $\dfrac{1+2a}{2+b}=3$，得 $2a-3b=5$，故 $a=1$，$b=-1$。
+  此时
+  \[
+    f(x)=\frac{1+2^x}{2^x-1},\qquad
+    D=\mathbb R\setminus\{0\}.
+  \]
+  $D$ 关于原点对称，且对 $x\in D$，
+  \[
+    f(-x)=\frac{1+2^{-x}}{2^{-x}-1}
+         =\frac{2^x+1}{1-2^x}=-f(x).
+  \]
+  又 $f(1)=3$，所以参数符合题意，$a+2b=-1$。}
+  \par
+  \textbf{注意：}本题中 $0$ 不在定义域内，不能使用 $f(0)=0$。
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同例 22；原书方法二，用关于原点对称的两点求参。
+\begin{frame}[label=C22c]
+  \PageHeading{例22\quad 方法二：图象的对称点}
+  已知 $f(x)=\dfrac{1+a\cdot2^x}{2^x+b}$ 是奇函数，图象经过 $(1,3)$。
+  \pause
+  \Analysis{由奇函数图象关于原点对称，图象也经过 $(-1,-3)$。
+  因此
+  \[
+    \begin{cases}
+      \dfrac{1+2a}{2+b}=3,\\[0.3cm]
+      \dfrac{1+\frac a2}{\frac12+b}=-3,
+    \end{cases}
+    \quad\Longrightarrow\quad
+    \begin{cases}
+      2a-3b=5,\\
+      a+6b=-5.
+    \end{cases}
+  \]
+  解得 $a=1$，$b=-1$，所以 $a+2b=-1$。
+  定义域、奇性及经过点 $(1,3)$ 的检验同前页。}
+\end{frame}
+
+% 目标：联系例 21 结构识别参数候选；方法：观察、猜测、代入及定义检验。
+% 易错：只猜不验，把例 21 的值域或定义域移植到倒数形式；难度：中。
+% 评价：能指出两种候选结构的分母不同，并用 f(1)=3 筛选。
+% 来源：源 A PDF 第 8 页，教材第 161 页，例 22“名师点评”；解释为课堂展开。
+\begin{frame}[label=C22d]
+  \PageHeading{例22\quad 名师点评：观察结构后要检验}
+  联系例21的奇函数 $\dfrac{2^x-1}{2^x+1}$，本题的两组候选参数对应
+  \[
+    (a,b)=(-1,1):\quad \frac{1-2^x}{2^x+1},
+    \qquad
+    (a,b)=(1,-1):\quad \frac{1+2^x}{2^x-1}.
+  \]
+  \pause
+  \Analysis{前者是例21函数的相反数，$f(1)=-\dfrac13$，不符合题意。
+  后者在 $\mathbb R\setminus\{0\}$ 上为奇函数，且 $f(1)=3$，符合题意。}
+  \par\vspace{0.2cm}
+  \textbf{方法提醒：}观察解析式可以帮助猜测；最终须检验定义域、奇偶性和题设点。
+\end{frame}
+
+% 目标：把不同底数的指数分式化为统一结构，并判断不等式有解的参数范围。
+% 方法：分子分母同除以 2^x，联系例 21；易错：两个指数同增不代表分式同增，值域端点不取。
+% 难度：中；评价：指出全 R 上递减和值域 (-1,1)，用上界是否可达判 a<1。
+% 来源：源 A PDF 第 8 页，教材第 161 页，练变式 13。
+\begin{frame}[label=C13q]
+  \PageHeading{练变式13\quad 性质与有解问题}
+  已知函数
+  \[
+    f(x)=\frac{2^x-3^x}{2^x+3^x}.
+  \]
+  （1）讨论 $f(x)$ 的单调性；
+  \par
+  （2）若不等式 $f(x)>a$ 有解，求实数 $a$ 的取值范围。
+  \pause
+  \Answer{（1）在 $\mathbb R$ 上单调递减；（2）$a\in(-\infty,1)$。}
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同练变式 13；本页完成单调性和值域转化。
+\begin{frame}[label=C13a]
+  \PageHeading{练变式13（1）\quad 单调性}
+  已知 $f(x)=\dfrac{2^x-3^x}{2^x+3^x}$，分母恒正，故定义域为 $\mathbb R$。
+  \pause
+  \Analysis{分子、分母同除以 $2^x$，得
+  \[
+    f(x)=\frac{1-\left(\frac32\right)^x}{1+\left(\frac32\right)^x}
+        =-\frac{\left(\frac32\right)^x-1}{\left(\frac32\right)^x+1}.
+  \]
+  由例21，$\dfrac{\left(\frac32\right)^x-1}{\left(\frac32\right)^x+1}$ 在 $\mathbb R$ 上单调递增，
+  因此 $f$ 在 $\mathbb R$ 上单调递减。}
+  \par\vspace{0.15cm}
+  同时，由例21可知 $f$ 的值域仍为 $(-1,1)$。
+\end{frame}
+
+% 目标/方法/易错/难度/评价及来源同练变式 13；参数有解的必要性、充分性及边界检查。
+\begin{frame}[label=C13b]
+  \PageHeading{练变式13（2）\quad 有解的参数范围}
+  已知 $f(x)=\dfrac{2^x-3^x}{2^x+3^x}$ 的值域为 $(-1,1)$，要求 $f(x)>a$ 有解。
+  \pause
+  \Analysis{若 $a\ge1$，则对任意 $x$ 都有 $f(x)<1\le a$，不等式无解。
+  \par\vspace{0.2cm}
+  若 $a<1$，区间 $(\max\{a,-1\},1)$ 非空，可在其中选取一个函数值 $y$。
+  因为 $f$ 的值域为 $(-1,1)$，存在 $x$ 使 $f(x)=y>a$，故不等式有解。}
+  \Answer{$a\in(-\infty,1)$。}
+  \par\vspace{0.2cm}
+  \textbf{边界检查：}当 $a=1$ 时，虽然函数值可无限接近 $1$，却不能大于 $1$，所以不能取等号。
+\end{frame}
