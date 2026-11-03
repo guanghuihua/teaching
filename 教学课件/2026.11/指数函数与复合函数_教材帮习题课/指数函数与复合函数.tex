@@ -1,0 +1,75 @@
+% !TeX program = xelatex
+% 从 教学课件/习题课模板/习题课模板.tex 复制后填入本课内容。
+% 来源A：教学课件/必修一/提取自教材帮.pdf，PDF第1—8页，书页154—161。
+% 来源B：教学课件/必修一/提取自教材帮(1).pdf，PDF第1页，书页100。
+\ifdefined\PrintVersion
+  \PassOptionsToClass{handout}{ctexbeamer}
+\fi
+\documentclass[UTF8,10pt,aspectratio=169]{ctexbeamer}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta,positioning,shapes.geometric}
+\usepackage{newtxtext,newtxmath}
+\usetheme{default}
+\usecolortheme{default}
+\usefonttheme{serif}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\newcommand{\LessonTitle}{指数函数与复合函数}
+\newcommand{\LessonSubtitle}{高一数学\quad 教材帮习题课}
+\newcommand{\LessonInfo}{2026年11月5日}
+\newcommand{\PageHeading}[1]{\begin{center}{\Large\bfseries #1}\end{center}\vspace{0.2cm}}
+\newcommand{\Answer}[1]{\par\vspace{0.2cm}\textbf{【答案】}#1}
+\newcommand{\Analysis}[1]{\par\vspace{0.2cm}\textbf{【详解】}#1}
+\newcommand{\Choices}[4]{\par\vspace{0.2cm}\begin{tabular}{@{}p{0.47\textwidth}p{0.47\textwidth}@{}}A. #1 & B. #2 \\[0.15cm] C. #3 & D. #4\end{tabular}}
+
+\begin{document}
+\begin{frame}[label=cover]
+  \begin{center}
+    {\Large\bfseries \LessonTitle}\par\vspace{0.5cm}
+    {\large \LessonSubtitle}\par\vspace{0.4cm}
+    \LessonInfo
+  \end{center}
+  \vspace{0.4cm}
+  \textbf{学习目标：}
+  \begin{enumerate}
+    \item 结合图象和单调性比较指数幂，解指数方程与不等式。
+    \item 换元时保留范围，判断复合函数的单调性与最值。
+    \item 利用奇偶性、对称性及参数条件完成综合问题。
+  \end{enumerate}
+\end{frame}
+
+\input{内容_指数比较与方程.tex}
+\input{内容_单调性补充.tex}
+\input{内容_复合函数.tex}
+\input{内容_奇偶综合.tex}
+
+\begin{frame}[label=summary]
+  \PageHeading{方法回顾}
+  \textbf{指数比较与方程}\par
+  先看底数与指数结构，再选择同底、同指数、换元或中间量。
+  \pause
+  \par\vspace{0.3cm}
+  \textbf{复合函数与最值}\par
+  先确定定义域，再求内层函数的范围，最后研究外层函数。
+  \pause
+  \par\vspace{0.3cm}
+  \textbf{奇偶性与综合应用}\par
+  先检查定义域关于原点对称；特殊值得到参数后，还要代回检验。
+\end{frame}
+
+\begin{frame}[label=closing]
+  \PageHeading{课堂收束}
+  \textbf{条件检查：}
+  \begin{enumerate}
+    \item 指数函数的底数：$a>0$ 且 $a\ne1$。
+    \item 令 $t=a^x$ 后：$t>0$；限制 $x$ 的范围时还须同步限制 $t$。
+    \item 分段函数整体单调：各段单调且分界处函数值相容。
+    \item 奇偶函数：定义域对称，恒等式在整个定义域上成立。
+  \end{enumerate}
+  \pause
+  \par\vspace{0.2cm}
+  \textbf{订正要求：}写明关键条件和判断依据，复查端点与参数取值。
+\end{frame}
+\end{document}

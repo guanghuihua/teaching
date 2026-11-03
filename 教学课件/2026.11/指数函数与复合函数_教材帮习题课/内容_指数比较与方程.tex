@@ -1,0 +1,543 @@
+% !TeX encoding = UTF-8
+% 来源A：教学课件/必修一/提取自教材帮.pdf，第1--3页，书页154--156。
+% 本文件仅含frame；供固定习题课模板的主文件input。
+
+% 来源：A第1页／书154页，例8（2026·湖南省长沙市雅礼中学期中）。
+% 目标：指数图象过定点；方法：令指数为0或平移(0,1)；易错：漏掉纵向平移；难度：基础；评价：说明x=3为何与底数无关。
+\begin{frame}[t,label=A08q]
+  \PageHeading{例8：过定点问题}
+  函数 $y=a^{x-3}+3\ (a>0,\ a\ne1)$ 的图象过定点
+  \underline{\hspace{2cm}}。
+  \par\vspace{0.2cm}（2026·湖南省长沙市雅礼中学期中）
+  \pause
+  \Answer{$(3,4)$。}
+  \Analysis{方法一：$y=a^x$ 的图象过定点 $(0,1)$。
+  向右平移3个单位、再向上平移3个单位，得到定点 $(3,4)$。}
+  \par\vspace{0.2cm}
+  方法二：令 $x-3=0$，得 $x=3$。由 $a^0=1$，得 $y=1+3=4$。
+\end{frame}
+
+% 来源：A第1页／书154页，解题通法“指数型函数图象过定点问题的思路”。
+% 目标：概括定点结构；方法：指数为0；易错：把-c写成c；难度：基础；评价：写出定点并核对参数条件。
+\begin{frame}[t,label=A08m]
+  \PageHeading{解题通法：指数型函数图象过定点}
+  指数函数 $y=a^x\ (a>0,\ a\ne1)$ 的图象过定点 $(0,1)$。
+  \par\vspace{0.3cm}
+  对于 $y=k\,a^{x+c}+b\ (k\ne0,\ a>0,\ a\ne1)$，怎样找定点？
+  \pause
+  \Analysis{令 $x+c=0$，得 $x=-c$；此时 $y=k+b$。}
+  \[
+    \boxed{\text{定点为 }(-c,k+b).}
+  \]
+  \par\vspace{0.2cm}
+  关键是利用 $a^0=1$，让函数值不再随底数 $a$ 改变。
+\end{frame}
+
+% 来源：A第1页／书154页，例9（多选题）。
+% 目标：绝对值指数图象与条件转化；方法：分段单调性、均值不等式；易错：把a<c直接当函数值同序；难度：提高；评价：逐项给出依据或反例。
+\begin{frame}[t,label=A09q]
+  \PageHeading{例9：图象的应用与数形结合}
+  【多选题】已知 $f(x)=|2^x-1|$，当 $a<b<c$ 时，有
+  $f(a)>f(c)>f(b)$。则下列结论正确的为（\quad）。
+  \Choices{$a+c<0$}{$b+c<0$}{$2^a+2^c>2$}{$2^b+2^c>2$}
+  \pause
+  \Answer{AD。}
+  \Analysis{先由图象及单调性确定 $a<0<c$，再去掉绝对值。
+  条件转化与选项判断见续页。}
+\end{frame}
+
+% 来源：A第1页／书154页，例9解析与图4.2-7。图象按f(x)=|2^x-1|重绘。
+% 目标：判定a,c的符号；方法：反证及分段单调；易错：遗漏c=0；难度：提高；评价：能说明a>=0和c<=0均矛盾。
+\begin{frame}[t,label=A09a]
+  \PageHeading{例9详解：先确定 $a,c$ 的符号}
+  已知 $a<b<c$，$f(a)>f(c)>f(b)$，且 $f(x)=|2^x-1|$。
+  \begin{columns}[T]
+    \begin{column}{0.40\textwidth}
+      \begin{center}
+      \begin{tikzpicture}[x=0.85cm,y=1.05cm]
+        \draw[-{Stealth}] (-3.2,0)--(1.9,0) node[right] {$x$};
+        \draw[-{Stealth}] (0,-0.15)--(0,2.25) node[above] {$y$};
+        \draw[dashed] (-3.1,1)--(1.55,1) node[right] {$y=1$};
+        \draw[thick,domain=-3:0,samples=70] plot (\x,{1-pow(2,\x)});
+        \draw[thick,domain=0:1.6,samples=70] plot (\x,{pow(2,\x)-1});
+        \node[below left] at (0,0) {$O$};
+        \fill (1,1) circle (1.2pt);
+        \node[below] at (1,0) {$1$};
+        \node[right] at (1.55,1.9) {$y=f(x)$};
+      \end{tikzpicture}
+      \end{center}
+      $(-\infty,0]$ 上严格递减；
+      \par $[0,+\infty)$ 上严格递增。
+    \end{column}
+    \begin{column}{0.57\textwidth}
+      \pause
+      \Analysis{若 $a\ge0$，则 $f(a)<f(c)$，矛盾。
+      \par 若 $c<0$，由 $b<c$ 得 $f(b)>f(c)$，矛盾。
+      \par 若 $c=0$，则 $f(c)=0\le f(b)$，仍矛盾。
+      \par 因此 $a<0<c$。}
+      \[
+        1-2^a>2^c-1
+        \quad\Longrightarrow\quad 2^a+2^c<2.
+      \]
+      所以C错误。
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% 来源：A第1页／书154页，例9解析。补写B的具体反例，补齐原解b=0情形。
+% 目标：论证A、D及否定B；方法：均值不等式、分b符号；易错：用“大于均值”误判和的上界；难度：提高；评价：每步不等式方向与条件齐全。
+\begin{frame}[t,label=A09b]
+  \PageHeading{例9详解：判断A、B、D}
+  沿用条件 $a<b<c$、$f(a)>f(c)>f(b)$，已得 $a<0<c$、$2^a+2^c<2$。
+  \pause
+  \Analysis{由
+  $2\sqrt{2^{a+c}}\le2^a+2^c<2$，得 $2^{a+c}<1$，故 $a+c<0$，A正确。}
+  \par\vspace{0.2cm}
+  对D：若 $b\ge0$，则 $c>b\ge0$，所以 $2^b+2^c>2$。
+  \par 若 $b<0$，则 $f(c)>f(b)$ 给出
+  \[
+    2^c-1>1-2^b\quad\Longrightarrow\quad2^b+2^c>2.
+  \]
+  因此D正确。
+  \par\vspace{0.2cm}
+  对B：取 $a=-2,b=0,c=\tfrac12$，有
+  $f(a)=\tfrac34>\sqrt2-1>0=f(b)$，但 $b+c=\tfrac12>0$。
+  所以B错误。
+\end{frame}
+
+% 来源：A第1--2页／书154--155页，例10（教材改编P117例3）。
+% 目标：识别同底、同指数、均不同结构；方法：单调性与中间量；易错：负指数比较底数时方向；难度：基础至中等；评价：三问给方向且说依据。
+\begin{frame}[t,label=A10q]
+  \PageHeading{例10：比较大小}
+  比较下列各题中两个值的大小。
+  \par\vspace{0.2cm}
+  （1）$\left(\dfrac57\right)^{-1.8}$，$\left(\dfrac57\right)^{-2.5}$；
+  \par\vspace{0.2cm}
+  （2）$\left(\dfrac23\right)^{-0.5}$，$\left(\dfrac34\right)^{-0.5}$；
+  \par\vspace{0.2cm}
+  （3）$0.2^{0.3}$，$0.3^{0.2}$。
+  \par\vspace{0.2cm}（教材改编：P117例3）
+  \pause
+  \Answer{（1）$<$；（2）$>$；（3）$<$。}
+\end{frame}
+
+% 来源：A第1页／书154页，例10（1）及“结构化思维解题”。
+% 目标：同底比较；方法：指数函数单调性；易错：0<a<1仍按指数同序；难度：基础；评价：明确底数范围再比较指数。
+\begin{frame}[t,label=A10a1]
+  \PageHeading{例10（1）：底数相同}
+  比较 $\left(\dfrac57\right)^{-1.8}$ 与 $\left(\dfrac57\right)^{-2.5}$。
+  \pause
+  \Analysis{因为 $0<\dfrac57<1$，函数 $y=\left(\dfrac57\right)^x$ 在 $\mathbb R$ 上严格递减。
+  又 $-1.8>-2.5$，所以}
+  \[
+    \boxed{\left(\frac57\right)^{-1.8}<\left(\frac57\right)^{-2.5}.}
+  \]
+  \par\vspace{0.3cm}
+  \textbf{结构识别：}底数相同，直接利用指数函数的单调性。
+\end{frame}
+
+% 来源：A第1--2页／书154--155页，例10（2）方法1及图4.2-8。图按真实指数函数重绘。
+% 目标：同指数比较的图象解释；方法：比较负半轴上两指数图象；易错：“底大图低”不限定x；难度：中等；评价：说明比较点在x=-0.5<0。
+\begin{frame}[t,label=A10a2g]
+  \PageHeading{例10（2）：观察指数函数图象}
+  比较 $\left(\dfrac23\right)^{-0.5}$ 与 $\left(\dfrac34\right)^{-0.5}$。
+  \begin{columns}[T]
+    \begin{column}{0.45\textwidth}
+      \begin{center}
+      \begin{tikzpicture}[x=1.05cm,y=1.45cm]
+        \draw[-{Stealth}] (-1.65,0)--(2.8,0) node[right] {$x$};
+        \draw[-{Stealth}] (0,-0.1)--(0,2.05) node[above] {$y$};
+        \draw[thick,domain=-1.5:2.5,samples=70] plot (\x,{pow(2/3,\x)});
+        \draw[thick,densely dashed,domain=-1.5:2.5,samples=70] plot (\x,{pow(3/4,\x)});
+        \draw[dotted] (-0.5,0)--(-0.5,1.35);
+        \node[below] at (-0.5,0) {$-0.5$};
+        \node[below right] at (0,0) {$O$};
+        \node[right] at (0,1) {$1$};
+      \end{tikzpicture}
+      \end{center}
+      实线：$y=\left(\dfrac23\right)^x$；
+      \par 虚线：$y=\left(\dfrac34\right)^x$。
+    \end{column}
+    \begin{column}{0.52\textwidth}
+      \pause
+      \Analysis{在同一坐标系中画出两函数图象。
+      \par 当 $x=-0.5$ 时，$y=(2/3)^x$ 的图象在 $y=(3/4)^x$ 的图象上方，所以}
+      \[
+        \left(\frac23\right)^{-0.5}>\left(\frac34\right)^{-0.5}.
+      \]
+      本题在负半轴比较，不能脱离 $x$ 的范围套用图象口诀。
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% 来源：A第2页／书155页，例10（2）方法2。
+% 目标：用幂函数严谨比较；方法：先开平方再取倒数；易错：正数取倒数忘记反向；难度：基础；评价：说清两次比较的方向。
+\begin{frame}[t,label=A10a2p]
+  \PageHeading{例10（2）：构造幂函数}
+  比较 $\left(\dfrac23\right)^{-0.5}$ 与 $\left(\dfrac34\right)^{-0.5}$。
+  \pause
+  \Analysis{函数 $y=x^{0.5}$ 在 $(0,+\infty)$ 上严格递增，而 $\dfrac23<\dfrac34$，故}
+  \[
+    \left(\frac23\right)^{0.5}<\left(\frac34\right)^{0.5}.
+  \]
+  两边都是正数，取倒数后不等号反向：
+  \[
+    \left(\frac23\right)^{-0.5}
+    =\frac1{(2/3)^{0.5}}
+    >\frac1{(3/4)^{0.5}}
+    =\left(\frac34\right)^{-0.5}.
+  \]
+\end{frame}
+
+% 来源：A第2页／书155页，例10（3）方法1及中间量批注。
+% 目标：底数指数均不同时引入中间量；方法：0.2^0.2或0.3^0.3；易错：只比较底数或指数；难度：中等；评价：每段比较都指明函数及单调性。
+\begin{frame}[t,label=A10a3i]
+  \PageHeading{例10（3）：引入中间量}
+  比较 $0.2^{0.3}$ 与 $0.3^{0.2}$。
+  \pause
+  \Analysis{幂函数 $y=x^{0.2}$ 在 $[0,+\infty)$ 上严格递增，
+  指数函数 $y=0.2^x$ 在 $\mathbb R$ 上严格递减。因此}
+  \[
+    0.2^{0.3}<\underbrace{0.2^{0.2}}_{\text{中间量}}<0.3^{0.2}.
+  \]
+  \par\vspace{0.3cm}
+  也可引入 $0.3^{0.3}$：先利用 $y=x^{0.3}$ 递增，再利用 $y=0.3^x$ 递减，得
+  \[
+    0.2^{0.3}<\underbrace{0.3^{0.3}}_{\text{中间量}}<0.3^{0.2}.
+  \]
+\end{frame}
+
+% 来源：A第2页／书155页，例10（3）方法2、方法3。
+% 目标：转化同指数或整体乘方；方法：同写成0.1次幂或比较10次幂；易错：忽略正值条件；难度：中等；评价：能说明乘方不改变比较方向。
+\begin{frame}[t,label=A10a3p]
+  \PageHeading{例10（3）：转化为同指数或乘方}
+  需要比较的两个数为正数 $0.2^{0.3}$ 与 $0.3^{0.2}$。
+  \pause
+  \Analysis{方法二：转化为同指数。}
+  \[
+    0.2^{0.3}=(0.2^3)^{0.1}=0.008^{0.1},\qquad
+    0.3^{0.2}=(0.3^2)^{0.1}=0.09^{0.1}.
+  \]
+  由 $0.008<0.09$，以及 $y=x^{0.1}$ 在 $[0,+\infty)$ 上严格递增，
+  得 $0.2^{0.3}<0.3^{0.2}$。
+  \par\vspace{0.2cm}
+  方法三：比较10次幂。
+  \[
+    (0.2^{0.3})^{10}=0.2^3=0.008
+    <0.09=0.3^2=(0.3^{0.2})^{10}.
+  \]
+  因 $y=x^{10}$ 在 $[0,+\infty)$ 上严格递增，仍得 $0.2^{0.3}<0.3^{0.2}$。
+\end{frame}
+
+% 来源：A第1--2页／书154--155页，“学神题”结构图及解题通法三类。
+% 目标：形成比较策略；方法：结构分类；易错：未判断底数范围便比较；难度：基础；评价：面对新式子先说结构再选方法。
+\begin{frame}[t,label=A10m]
+  \PageHeading{解题通法：指数幂大小比较的三种类型}
+  \textbf{1. 底数相同，指数不同。}
+  \par 先看底数大于1还是介于0与1，再用指数函数单调性。
+  \pause
+  \par\vspace{0.35cm}
+  \textbf{2. 底数不同，指数相同。}
+  \par 可构造幂函数；也可比较不同底数指数函数的图象，注意指数所在范围。
+  \par\vspace{0.35cm}
+  \textbf{3. 底数不同，指数也不同。}
+  \par 尝试引入中间量（常用0、1），或转化为同底数、同指数再比较。
+  \par 必要时比较两个正数的同次幂，并说明所用幂函数的单调性。
+\end{frame}
+
+% 来源：A第2页／书155页，练变式4（2026·河南省洛阳市期末）；原图M=2^a，a为正指数。
+% 目标：中间量与同底同指数结合；方法：用1隔开M，再串联比较N,P；易错：误录M=2^{-a}或遗漏N的负号；难度：中等；评价：写出完整比较链。
+\begin{frame}[t,label=AV04q]
+  \PageHeading{练变式4：比较三个指数幂}
+  已知实数 $a,b,c$ 满足 $0<a<b<c<1$，且
+  \[
+    M=2^a,\qquad N=5^{-b},\qquad P=\left(\frac17\right)^c.
+  \]
+  则 $M,N,P$ 的大小关系为（\quad）。
+  \Choices{$M>N>P$}{$M>P>N$}{$N>P>M$}{$N>M>P$}
+  \par\vspace{0.2cm}（2026·河南省洛阳市期末）
+  \pause
+  \Answer{A。}
+  \Analysis{$M>1>N$；又因 $0<b<c$，
+  $N=5^{-b}>7^{-b}>7^{-c}=P$。故 $M>N>P$。}
+\end{frame}
+
+% 来源：A第2页／书155页，例11。
+% 目标：解指数方程；方法：同底和换元；易错：指数法则与换元正值；难度：基础；评价：分别辨认结构并给出解。
+\begin{frame}[t,label=A11q]
+  \PageHeading{例11：解简单的指数方程}
+  解下列方程。
+  \par\vspace{0.25cm}
+  （1）$81\times3^{2x}=\left(\dfrac19\right)^{x+2}$；
+  \par\vspace{0.25cm}
+  （2）$2^{2x+2}+3\times2^x-1=0$。
+  \pause
+  \Answer{（1）$x=-2$；（2）$x=-2$。}
+  \Analysis{（1）化为同底的指数式；（2）令 $t=2^x>0$，先解关于 $t$ 的方程。}
+\end{frame}
+
+% 来源：A第2页／书155页，例11（1）解析。
+% 目标：同底比较指数；方法：81=3^4,1/9=3^{-2}；易错：右边指数乘法漏括号；难度：基础；评价：两边指数变形正确并检验。
+\begin{frame}[t,label=A11a1]
+  \PageHeading{例11（1）详解：化为同底}
+  解方程 $81\times3^{2x}=\left(\dfrac19\right)^{x+2}$。
+  \pause
+  \Analysis{因为 $81=3^4$，$\dfrac19=3^{-2}$，原方程等价于}
+  \[
+    3^{2x+4}=3^{-2(x+2)}.
+  \]
+  函数 $y=3^x$ 在 $\mathbb R$ 上严格递增，同底数幂相等时指数相等：
+  \[
+    2x+4=-2(x+2)\quad\Longrightarrow\quad x=-2.
+  \]
+  代入原方程，两边都为1，故解为 $x=-2$。
+\end{frame}
+
+% 来源：A第2页／书155页，例11（2）解析与易错批注。
+% 目标：换元处理指数二次式；方法：t=2^x>0；易错：保留负t或把2^{2x+2}写成(2^x)^2+4；难度：基础；评价：正确舍负根并回代。
+\begin{frame}[t,label=A11a2]
+  \PageHeading{例11（2）详解：换元后记住范围}
+  解方程 $2^{2x+2}+3\times2^x-1=0$。
+  \pause
+  \Analysis{原方程可写成 $4(2^x)^2+3\cdot2^x-1=0$。
+  令 $t=2^x>0$，则}
+  \[
+    4t^2+3t-1=(4t-1)(t+1)=0.
+  \]
+  得 $t=\dfrac14$ 或 $t=-1$。由于 $t>0$，舍去 $t=-1$。
+  \[
+    2^x=\frac14=2^{-2}\quad\Longrightarrow\quad x=-2.
+  \]
+  换元要保留 $t$ 的范围，解出 $t$ 后还要回到 $x$。
+\end{frame}
+
+% 来源：A第2页／书155页，解题通法：同底型、可换元型。
+% 目标：概括指数方程解法；方法：同底/换元；易错：只得到t就结束；难度：基础；评价：完整叙述两步转化。
+\begin{frame}[t,label=A11m]
+  \PageHeading{解题通法：指数方程}
+  \textbf{1. 同底型。}
+  \par 把方程两边化为 $a^{f(x)}=a^{g(x)}\ (a>0,\ a\ne1)$。
+  \par 利用指数函数的单调性，得到 $f(x)=g(x)$，再解方程。
+  \pause
+  \par\vspace{0.45cm}
+  \textbf{2. 可换元型。}
+  \par 若方程可写成 $F(a^x)=0$，则令 $t=a^x>0$。
+  \par 先解 $F(t)=0$，舍去不满足范围的 $t$，再由 $a^x=t$ 求 $x$。
+  \par\vspace{0.3cm}
+  核查：指数运算是否正确，换元范围是否保留，是否已经回到原未知数。
+\end{frame}
+
+% 来源：A第2页／书155页，练变式5（1）（2026·上海市建平中学月考）。
+% 目标：同底指数方程迁移；方法：4^{3x}=2^{6x}；易错：3x与底数4对应的2漏乘；难度：基础；评价：指数相等式正确。
+\begin{frame}[t,label=AV05q1]
+  \PageHeading{练变式5（1）：化为同底}
+  方程 $2^{-x+2}=4^{3x}$ 的解集是\underline{\hspace{2.3cm}}。
+  \par\vspace{0.2cm}（2026·上海市建平中学月考）
+  \pause
+  \Answer{$\left\{\dfrac27\right\}$。}
+  \Analysis{原方程等价于 $2^{-x+2}=2^{6x}$。
+  由指数函数 $y=2^x$ 的单调性，得}
+  \[
+    -x+2=6x\quad\Longrightarrow\quad x=\frac27.
+  \]
+\end{frame}
+
+% 来源：A第2页／书155页，练变式5（2）。
+% 目标：指数二次方程迁移；方法：t=2^x>0；易错：把t=2,8当成x；难度：基础；评价：解集回代为1,3。
+\begin{frame}[t,label=AV05q2]
+  \PageHeading{练变式5（2）：换元求解}
+  方程 $4^x-10\cdot2^x+16=0$ 的解集是\underline{\hspace{2.3cm}}。
+  \pause
+  \Answer{$\{1,3\}$。}
+  \Analysis{令 $t=2^x>0$，因 $4^x=(2^x)^2$，得到}
+  \[
+    t^2-10t+16=(t-2)(t-8)=0.
+  \]
+  两个根 $t=2,8$ 均满足 $t>0$。
+  \[
+    2^x=2\text{ 或 }2^x=8\quad\Longrightarrow\quad x=1\text{ 或 }x=3.
+  \]
+\end{frame}
+
+% 来源：A第3页／书156页，例12。
+% 目标：指数不等式；方法：同底、按底数范围分类；易错：0<a<1时方向反转；难度：基础至中等；评价：三问写解集并标明分类条件。
+\begin{frame}[t,label=A12q]
+  \PageHeading{例12：解指数不等式}
+  求满足下列条件的 $x$ 的取值范围。
+  \par\vspace{0.2cm}
+  （1）$3^{x-1}>9^x$；
+  \par\vspace{0.2cm}
+  （2）$0.2^x<25$；
+  \par\vspace{0.2cm}
+  （3）$a^{-5x}>a^{x+7}\ (a>0,\ a\ne1)$。
+  \pause
+  \Answer{（1）$(-\infty,-1)$；（2）$(-2,+\infty)$；
+  \par （3）$a>1$ 时为 $(-\infty,-\tfrac76)$；
+  $0<a<1$ 时为 $(-\tfrac76,+\infty)$。}
+\end{frame}
+
+% 来源：A第3页／书156页，例12（1）（2）解析。
+% 目标：不同底数化同底；方法：9^x=3^{2x},25=0.2^{-2}；易错：第二问比较指数时不反向；难度：基础；评价：底数范围与不等号一致。
+\begin{frame}[t,label=A12a1]
+  \PageHeading{例12（1）（2）详解}
+  （1）$3^{x-1}>9^x$；\qquad（2）$0.2^x<25$。
+  \pause
+  \Analysis{（1）$9^x=3^{2x}$，函数 $y=3^x$ 严格递增，所以}
+  \[
+    x-1>2x\quad\Longrightarrow\quad x<-1.
+  \]
+  \par\vspace{0.3cm}
+  （2）$25=0.2^{-2}$，而 $0<0.2<1$，函数 $y=0.2^x$ 严格递减，所以
+  \[
+    0.2^x<0.2^{-2}\quad\Longrightarrow\quad x>-2.
+  \]
+\end{frame}
+
+% 来源：A第3页／书156页，例12（3）解析及“底数范围不确定”批注。
+% 目标：含参底数分类；方法：a>1与0<a<1两类；易错：只解一类或a=1未排除；难度：中等；评价：分类不漏，指数不等式方向正确。
+\begin{frame}[t,label=A12a2]
+  \PageHeading{例12（3）详解：按底数范围分类}
+  解 $a^{-5x}>a^{x+7}\ (a>0,\ a\ne1)$。
+  \pause
+  \Analysis{当 $a>1$ 时，函数 $y=a^x$ 严格递增，因此}
+  \[
+    -5x>x+7\quad\Longrightarrow\quad x<-\frac76.
+  \]
+  当 $0<a<1$ 时，函数 $y=a^x$ 严格递减，因此
+  \[
+    -5x<x+7\quad\Longrightarrow\quad x>-\frac76.
+  \]
+  先分清底数范围，再决定比较指数时是否改变不等号方向。
+\end{frame}
+
+% 来源：A第3页／书156页，解题通法“指数不等式的三种类型及求解方法”。
+% 目标：不等式结构分类；方法：同底、常数化底、同指数比底；易错：除以可能非正量（本处指数式恒正）；难度：基础至中等；评价：方法前提说完整。
+\begin{frame}[t,label=A12m]
+  \PageHeading{解题通法：指数不等式的三种类型}
+  \textbf{1. $a^{u(x)}>a^{v(x)}$。}
+  \par 利用 $y=a^x$ 的单调性；底数范围不确定时，分 $a>1$ 与 $0<a<1$。
+  \pause
+  \par\vspace{0.3cm}
+  \textbf{2. $a^x>b$。}
+  \par 当 $b>0$ 时，先把 $b$ 化成以 $a$ 为底的幂，再比较指数。
+  \par 若 $b\le0$，由 $a^x>0$ 可直接判断，不强行化同底。
+  \par\vspace{0.3cm}
+  \textbf{3. $a^x>b^x$。}
+  \par 可化为同底数幂比较，或观察两指数函数图象。例如
+  \[
+    2^x>3^x\ \Longleftrightarrow\ \left(\frac23\right)^x>1
+    \ \Longleftrightarrow\ x<0.
+  \]
+\end{frame}
+
+% 来源：A第3页／书156页，练变式6。分段原文已核：x<0为(1/2)^x-7，x>=0为sqrt(x)。
+% 目标：分段函数不等式；方法：各段解不等式并交分段范围；易错：漏-7或把sqrt(x)录成x、漏端点0；难度：中等；评价：先交后并且0保留。
+\begin{frame}[t,label=AV06q]
+  \PageHeading{练变式6：分段函数不等式}
+  已知函数
+  \[
+    f(x)=\begin{cases}
+      \left(\dfrac12\right)^x-7,&x<0,\\[1mm]
+      \sqrt{x},&x\ge0.
+    \end{cases}
+  \]
+  若 $f(a)<1$，则实数 $a$ 的取值范围是（\quad）。
+  \Choices{$(-\infty,-3)$}{$(1,+\infty)$}{$(-3,1)$}{$(-\infty,-3)\cup(1,+\infty)$}
+  \pause
+  \Answer{C，即 $(-3,1)$。}
+\end{frame}
+
+% 来源：A第3页／书156页，练变式6；此页为独立补全解析，原页仅题目、答案索引。
+% 目标：完整核验分段解集；方法：两段分别交范围；易错：直接把a>-3与a<1相交而无分段理由；难度：中等；评价：写出(-3,0)与[0,1)再合并。
+\begin{frame}[t,label=AV06a]
+  \PageHeading{练变式6详解：每段求解后再合并}
+  已知 $f(x)=(1/2)^x-7\ (x<0)$，$f(x)=\sqrt{x}\ (x\ge0)$，求 $f(a)<1$。
+  \pause
+  \Analysis{当 $a<0$ 时，}
+  \[
+    \left(\frac12\right)^a-7<1
+    \ \Longleftrightarrow\ 2^{-a}<8=2^3
+    \ \Longleftrightarrow\ a>-3.
+  \]
+  与 $a<0$ 取交集，得 $-3<a<0$。
+  \par\vspace{0.2cm}
+  当 $a\ge0$ 时，$\sqrt a<1$，得 $0\le a<1$。
+  \[
+    (-3,0)\cup[0,1)=\boxed{(-3,1)}.
+  \]
+  $a=-3,1$ 时函数值都等于1，要排除；$a=0$ 时函数值为0，应保留。
+\end{frame}
+
+% 来源：A第3页／书156页，例13，题型4“指数型复合函数的性质”类型1“函数的定义域和值域”。
+% 目标：指数型复合函数定义域值域；方法：条件约束、先内后外；易错：把指数的范围当函数值域，遗漏开端点；难度：基础至中等；评价：三问定义域值域都写全。
+\begin{frame}[t,label=A13q]
+  \PageHeading{例13：函数的定义域和值域}
+  求下列函数的定义域和值域。
+  \par\vspace{0.2cm}
+  （1）$y=\sqrt{1-3^x}$；
+  \par\vspace{0.2cm}
+  （2）$y=\left(\dfrac12\right)^{x^2-2x-3}$；
+  \par\vspace{0.2cm}
+  （3）$y=2^{\frac1{x-4}}$。
+  \pause
+  \Answer{（1）定义域 $(-\infty,0]$，值域 $[0,1)$；
+  \par （2）定义域 $\mathbb R$，值域 $(0,16]$；
+  \par （3）定义域 $(-\infty,4)\cup(4,+\infty)$，值域 $(0,1)\cup(1,+\infty)$。}
+\end{frame}
+
+% 来源：A第3页／书156页，例13（1）解析。
+% 目标：根式与指数联合约束；方法：被开方数非负、指数严格正；易错：认为上界1可以取得；难度：基础；评价：说明0能取而1不能取。
+\begin{frame}[t,label=A13a1]
+  \PageHeading{例13（1）详解：根式与指数的取值范围}
+  求 $y=\sqrt{1-3^x}$ 的定义域和值域。
+  \pause
+  \Analysis{要使函数有意义，需要 $1-3^x\ge0$，即 $3^x\le1=3^0$。
+  因 $y=3^x$ 严格递增，所以 $x\le0$。}
+  \par 定义域为 $(-\infty,0]$。
+  \[
+    x\le0\ \Longrightarrow\ 0<3^x\le1
+    \ \Longrightarrow\ 0\le1-3^x<1
+    \ \Longrightarrow\ 0\le\sqrt{1-3^x}<1.
+  \]
+  由于 $3^x$ 在 $(-\infty,0]$ 上取遍 $(0,1]$，故值域为 $[0,1)$。
+  \par $x=0$ 时 $y=0$；指数函数值不能等于0，因此 $y$ 不能等于1。
+\end{frame}
+
+% 来源：A第3页／书156页，例13（2）解析。
+% 目标：二次内函数与递减外函数；方法：配方确定指数范围；易错：把最小指数对应最小函数值；难度：中等；评价：上界16取得且下界0不取得。
+\begin{frame}[t,label=A13a2]
+  \PageHeading{例13（2）详解：先求指数的范围}
+  求 $y=\left(\dfrac12\right)^{x^2-2x-3}$ 的定义域和值域。
+  \pause
+  \Analysis{指数 $x^2-2x-3$ 对一切实数均有意义，故定义域为 $\mathbb R$。
+  先令 $t=x^2-2x-3$，配方得}
+  \[
+    t=(x-1)^2-4\in[-4,+\infty).
+  \]
+  外函数 $y=(1/2)^t$ 严格递减，且恒为正，所以
+  \[
+    0<\left(\frac12\right)^{x^2-2x-3}
+    \le\left(\frac12\right)^{-4}=16.
+  \]
+  $x=1$ 时取得16，函数值取遍 $(0,16]$，故值域为 $(0,16]$。
+\end{frame}
+
+% 来源：A第3页／书156页，例13（3）解析及易错批注。
+% 目标：指数非零限制引出的值域缺口；方法：t=1/(x-4)取遍非零实数；易错：直接写指数函数值域(0,+inf)；难度：中等；评价：解释y=1被排除并说明其余值可取得。
+\begin{frame}[t,label=A13a3]
+  \PageHeading{例13（3）详解：外函数的值域受指数限制}
+  求 $y=2^{\frac1{x-4}}$ 的定义域和值域。
+  \pause
+  \Analysis{由 $x-4\ne0$，得定义域为 $(-\infty,4)\cup(4,+\infty)$。
+  令 $t=\dfrac1{x-4}$，则}
+  \[
+    t\in(-\infty,0)\cup(0,+\infty).
+  \]
+  反过来，任取 $t\ne0$，取 $x=4+1/t$ 即可取得，故上述指数范围无遗漏。
+  \[
+    t<0\Rightarrow 0<2^t<1,\qquad
+    t>0\Rightarrow 2^t>1.
+  \]
+  因此值域为 $\boxed{(0,1)\cup(1,+\infty)}$。
+  \par 不能直接套用 $y=2^x$ 的完整值域；这里指数永远不为0，函数值就不为1。
+\end{frame}
