@@ -10,27 +10,26 @@
 \newcommand{\subq}[1]{\par\Needspace{2\baselineskip}（#1）}
 \newcommand{\labeltext}[1]{\par\textbf{#1}\quad}
 \setlength{\abovedisplayskip}{6pt}\setlength{\belowdisplayskip}{6pt}
-% 数轴与抛物线位置图。构建脚本会将本文件嵌入各份TeX，成品可独立编译。
-\newcommand{\SetOpen}[2]{\filldraw[fill=white,draw=black,line width=0.7pt] (#1,{#2+0.16}) circle (2pt);}
-\newcommand{\SetClosed}[2]{\fill (#1,{#2+0.16}) circle (2pt);}
-\newcommand{\SetAxis}[2]{%
-  \draw[->,thin] (0,#1)--(12.2,#1) node[right] {$x$};
-  \node[anchor=east] at (-0.35,{#1+0.16}) {#2};
-  \foreach \t in {2,3,7,10}{\draw (\t,{#1-0.05})--(\t,{#1+0.05});\node[below,font=\scriptsize] at (\t,{#1-0.07}) {$\t$};}}
-\newcommand{\SetABRows}{%
-  \SetAxis{0}{$A$}\draw[very thick] (3,0.16)--(7,0.16);\SetClosed{3}{0}\SetOpen{7}{0}
-  \SetAxis{-1.1}{$B$}\draw[very thick] (2,-0.94)--(10,-0.94);\SetOpen{2}{-1.1}\SetOpen{10}{-1.1}}
-\newcommand{\SetResultRows}{%
-  \SetAxis{-2.2}{$A\cup B$}\draw[very thick] (2,-2.04)--(10,-2.04);\SetOpen{2}{-2.2}\SetOpen{10}{-2.2}
-  \SetAxis{-3.3}{$A\cap B$}\draw[very thick] (3,-3.14)--(7,-3.14);\SetClosed{3}{-3.3}\SetOpen{7}{-3.3}
-  \SetAxis{-4.4}{$(\complement_{\mathbb R}A)\cap B$}
-  \draw[very thick] (2,-4.24)--(3,-4.24);\draw[very thick] (7,-4.24)--(10,-4.24);
-  \SetOpen{2}{-4.4}\SetOpen{3}{-4.4}\SetClosed{7}{-4.4}\SetOpen{10}{-4.4}
-  \SetAxis{-5.5}{$A\cup(\complement_{\mathbb R}B)$}
-  \draw[<-,very thick] (0.2,-5.34)--(2,-5.34);\draw[very thick] (3,-5.34)--(7,-5.34);\draw[->,very thick] (10,-5.34)--(11.9,-5.34);
-  \SetClosed{2}{-5.5}\SetClosed{3}{-5.5}\SetOpen{7}{-5.5}\SetClosed{10}{-5.5}}
-\newcommand{\SetBlankAxes}{\begin{center}\begin{tikzpicture}[x=0.68cm,y=0.65cm,font=\small]\SetAxis{0}{$A$}\SetAxis{-1.1}{$B$}\end{tikzpicture}\end{center}}
-\newcommand{\SetNumberLines}{\begin{center}\begin{tikzpicture}[x=0.68cm,y=0.65cm,font=\small]\SetABRows\SetResultRows\end{tikzpicture}\end{center}}
+% 同轴叠画采用教材式不同高度的区间括线；本文件会嵌入各份TeX。
+\definecolor{SetBlue}{RGB}{66,132,177}
+\newcommand{\SetBaseAxis}{%
+  \draw[->,line width=0.55pt] (-0.7,0)--(11.2,0) node[right] {$x$};
+  \foreach \t in {0,2,3,7,10}{\draw[line width=0.45pt] (\t,0)--(\t,0.065);\node[below=3pt,font=\small] at (\t,0) {$\t$};}}
+\newcommand{\SetBlankAxes}{%
+  \begin{center}\begin{tikzpicture}[x=0.92cm,y=1cm,font=\small]
+  \path (-0.7,0) rectangle (11.2,1.25);\SetBaseAxis
+  \end{tikzpicture}\end{center}}
+\newcommand{\SetNumberLines}{%
+  \begin{center}\begin{tikzpicture}[x=0.92cm,y=1cm,font=\small]
+  \fill[SetBlue!13] (2,0) rectangle (10,0.18);
+  \SetBaseAxis
+  \draw[SetBlue,line width=0.8pt] (3,0)--(3,1.08)--(7,1.08)--(7,0);
+  \draw[SetBlue,line width=0.8pt] (2,0)--(2,0.60)--(10,0.60)--(10,0);
+  \node[SetBlue,above=3pt] at (5,1.08) {$A$};
+  \node[SetBlue,above=3pt] at (9,0.60) {$B$};
+  \foreach \t in {2,7,10}{\filldraw[fill=white,draw=black,line width=0.65pt] (\t,0) circle (2.1pt);}
+  \fill (3,0) circle (2.1pt);
+  \end{tikzpicture}\end{center}}
 \newcommand{\QuadraticCases}{%
   \begin{center}\begin{tikzpicture}[x=0.72cm,y=0.64cm,font=\small]
   \begin{scope}\draw[->] (-1.6,0)--(1.65,0) node[right] {$x$};\draw[thick,domain=-1.4:1.4,samples=45] plot (\x,{\x*\x-1});\fill (-1,0) circle (1.4pt);\fill (1,0) circle (1.4pt);\node[below] at(-1,0){$x_1$};\node[below] at(1,0){$x_2$};\node at(0,1.8){$\Delta>0$};\end{scope}
@@ -42,7 +41,7 @@
 \fancyhead[L]{\small 高一数学期中复习}\fancyhead[R]{\small 详解与方法}
 \begin{document}
 {\Large\bfseries 第1题\quad 集合的交并补运算}
-\labeltext{题目}已知全集为 $\mathbb R$，集合 $A=\{x\mid 3\le x<7\}$，$B=\{x\mid 2<x<10\}$。在数轴上分别表示 $A$、$B$，并求：
+\labeltext{题目}已知全集为 $\mathbb R$，集合 $A=\{x\mid 3\le x<7\}$，$B=\{x\mid 2<x<10\}$。在同一条数轴上表示 $A$、$B$，并求：
 \subq{1}$A\cup B$ 与 $A\cap B$；
 \subq{2}$(\complement_{\mathbb R}A)\cap B$ 与 $A\cup(\complement_{\mathbb R}B)$。
 \labeltext{解题步骤}\begin{enumerate}
@@ -52,7 +51,7 @@
 \item 逐个检查原区间的四个端点是否属于结果。
 \end{enumerate}
 \SetNumberLines
-实心点表示取到端点，空心点表示不取端点；粗线表示该行集合。\par
+在同一条数轴上，上层区间线表示 $A$，下层区间线表示 $B$；空心、实心点分别表示各集合的端点不取、取到。\par
 \labeltext{规范解答}
 \textbf{交集与并集}\quad
 由题意，$A=[3,7)$，$B=(2,10)$，且 $A\subset B$。因此\par
@@ -68,17 +67,19 @@
 \labeltext{易错提醒}补集中的端点开闭要反转；不能把补集误认为只在另一个集合内取差集。
 \clearpage
 {\Large\bfseries 第2题\quad 一元二次不等式与分式不等式}
-\labeltext{题目}解下列不等式：
-\subq{1}$2x^2-5x+3<0$；
-\subq{2}$-3x^2+x+4\le0$；
-\subq{3}$\dfrac{1-2x}{x+2}\ge0$；
-\subq{4}$\dfrac{2x-1}{3-4x}\ge1$。
+\labeltext{题目}完成下列各题：
+\subq{1}解不等式 $2x^2-x-3\ge0$。
+\subq{2}解不等式 $4x^2-4x+1>0$。
+\subq{3}解不等式 $-x^2+4x-5>0$。
+\subq{4}解不等式 $\dfrac{-2x+5}{x-2}>0$。
+\subq{5}若对任意实数 $x$，不等式 $x^2+2(1+k)x+3+k>0$ 恒成立，求实数 $k$ 的取值范围。
+\subq{6}已知不等式 $x^2+ax+b<0$ 的解集为 $(-3,-1)$，求实数 $a,b$ 的值。
 \labeltext{解题步骤}\begin{enumerate}
-\item 先移项整理，使一端为 $0$。分式先通分，再写出分母不为 $0$ 的条件。
-\item 二次项系数为负时可两边同乘 $-1$，同时改变不等号方向。
-\item 解对应的一元二次方程；不能直接因式分解时，用判别式判断实根情况。
-\item 画开口及与 $x$ 轴位置的简图，由图确定二次式大于或小于 $0$ 的区间。
-\item 结合不等号决定是否取方程的根；分式还要排除分母零点，最后写出解集。
+\item 解具体不等式时，先移项整理，使一端为 $0$；二次项系数为负可同乘 $-1$，同时改变不等号方向。
+\item 解对应方程或计算判别式，区分两个不同实根、重根和没有实根。
+\item 根据抛物线开口及其与 $x$ 轴的位置确定区间，再按不等号决定是否取根。
+\item 分式先保留分母不为 $0$ 的限制，再转为乘积不等式；不能直接乘符号未知的分母。
+\item 对任意实数恒成立，要看图像的整体位置；已知负值解集反求参数时，先把区间端点确定为对应方程的根。
 \end{enumerate}
 \labeltext{二次式与抛物线的位置}
 记 $q(x)=ax^2+bx+c$，先按 $a>0$ 讨论。解方程 $q(x)=0$ 后，根据图像相对于 $x$ 轴的位置写解集。\par
@@ -92,31 +93,44 @@
 \clearpage
 {\Large\bfseries 第2题\quad 一元二次不等式与分式不等式}
 \labeltext{规范解答}
-\textbf{第（1）问}\quad
-由方程 $2x^2-5x+3=0$，即 $(2x-3)(x-1)=0$，得两个实根\par
-\[x_1=1,\qquad x_2=\frac32.\]\par
-函数 $y=2x^2-5x+3$ 的图像开口向上，与 $x$ 轴交于 $(1,0)$、$(\frac32,0)$。在两根之间，图像位于 $x$ 轴下方。\par
-故原不等式的解集为 $\boxed{\left\{x\mid 1<x<\dfrac32\right\}=\left(1,\dfrac32\right)}$。\par
+\textbf{第（1）问　两个不同实根}\quad
+由方程 $2x^2-x-3=0$，即 $(2x-3)(x+1)=0$，得两个实根\par
+\[x_1=-1,\qquad x_2=\frac32.\]\par
+函数 $y=2x^2-x-3$ 的图像开口向上，与 $x$ 轴交于 $(-1,0)$、$(\frac32,0)$；图像在两根外位于 $x$ 轴上方，在两根处函数值为 $0$。\par
+故原不等式的解集为 $\boxed{\{x\mid x\le-1\ \text{或}\ x\ge\frac32\}=(-\infty,-1]\cup[\frac32,+\infty)}$。\par
 \par\Needspace{3\baselineskip}
-\textbf{第（2）问}\quad
-两边同时乘 $-1$，原不等式化为 $3x^2-x-4\ge0$。\par
-由方程 $(3x-4)(x+1)=0$，得两个实根 $x_1=-1$，$x_2=\dfrac43$。\par
-函数 $y=3x^2-x-4$ 的图像开口向上，在两根外位于 $x$ 轴上方；两根处函数值为 $0$。\par
-故原不等式的解集为 $\boxed{\left\{x\mid x\le-1\ \text{或}\ x\ge\dfrac43\right\}=(-\infty,-1]\cup[\dfrac43,+\infty)}$。\par
+\textbf{第（2）问　重根与严格不等号}\quad
+由方程 $4x^2-4x+1=0$，即 $(2x-1)^2=0$，得两个相等的实根 $x_1=x_2=\dfrac12$。\par
+函数 $y=4x^2-4x+1$ 的图像开口向上，与 $x$ 轴相切于 $(\frac12,0)$，其余部分均位于 $x$ 轴上方。\par
+原题要求严格大于 $0$，故排除切点，解集为 $\boxed{\{x\in\mathbb R\mid x\ne\frac12\}=\mathbb R\setminus\{\frac12\}}$。\par
 \par\Needspace{3\baselineskip}
-\textbf{第（3）问}\quad
-原分式有意义须 $x\ne-2$。按分式转乘积的方法，\par
-\[\frac{1-2x}{x+2}\ge0\quad\Longleftrightarrow\quad\begin{cases}(1-2x)(x+2)\ge0,\\x\ne-2,\end{cases}\]\par
-即 $(2x-1)(x+2)\le0$ 且 $x\ne-2$。对应二次式的两个零点为 $-2$、$\dfrac12$，图像开口向上，故 $-2\le x\le\dfrac12$。\par
-再排除 $x=-2$，得解集 $\boxed{\left\{x\mid-2<x\le\dfrac12\right\}=(-2,\dfrac12]}$。\par
+\textbf{第（3）问　没有实根}\quad
+两边同时乘 $-1$，原不等式等价于 $x^2-4x+5<0$。对方程 $x^2-4x+5=0$，有\par
+\[\Delta=(-4)^2-4\times1\times5=-4<0.\]\par
+对应抛物线开口向上，与 $x$ 轴没有交点，图像始终位于 $x$ 轴上方。因此 $x^2-4x+5<0$ 不可能成立，原不等式的解集为 $\boxed{\varnothing}$。\par
+也可检验：$-x^2+4x-5=-(x-2)^2-1\le-1<0$，确实不能大于 $0$。\par
+\clearpage
+{\Large\bfseries 第2题\quad 一元二次不等式与分式不等式}
 \par\Needspace{3\baselineskip}
-\textbf{第（4）问}\quad
-先移项到零，并写出分母限制：\par
-\[\frac{2x-1}{3-4x}-1=\frac{6x-4}{3-4x}\ge0,\qquad x\ne\frac34.\]\par
-所以原不等式等价于 $(6x-4)(3-4x)\ge0$ 且 $x\ne\dfrac34$，也就是\par
-\[(3x-2)(4x-3)\le0,\qquad x\ne\frac34.\]\par
-对应二次式的两个零点为 $\dfrac23$、$\dfrac34$，图像开口向上，故 $\dfrac23\le x\le\dfrac34$。再排除 $x=\dfrac34$，得解集 $\boxed{[\dfrac23,\dfrac34)}$。\par
-\labeltext{易错提醒}同乘负数要改变不等号方向。$\Delta=0$ 时图像与 $x$ 轴相切，不能照搬“两根之间”。分母零点始终不取，不能直接乘符号未知的分母。
+\textbf{第（4）问　分式转为乘积}\quad
+原分式有意义须 $x\ne2$。因为 $(x-2)^2>0$，有\par
+\[\frac{-2x+5}{x-2}>0\quad\Longleftrightarrow\quad\begin{cases}(-2x+5)(x-2)>0,\\x\ne2.\end{cases}\]\par
+即 $(2x-5)(x-2)<0$ 且 $x\ne2$。对应二次式开口向上，两个零点为 $2$、$\dfrac52$，在两根之间为负，故 $2<x<\dfrac52$。\par
+该区间已排除分母零点 $2$，所以原不等式的解集为 $\boxed{\{x\mid2<x<\frac52\}=(2,\frac52)}$。\par
+\par\Needspace{3\baselineskip}
+\textbf{第（5）问　严格正值恒成立}\quad
+因为二次项系数为 $1>0$，要使不等式对任意实数 $x$ 恒成立，对应抛物线必须完全位于 $x$ 轴上方。因此其判别式须满足 $\Delta<0$。\par
+\[\begin{aligned}\Delta&=[2(1+k)]^2-4(3+k)\\&=4(k^2+k-2)=4(k+2)(k-1)<0.\end{aligned}\]\par
+由 $(k+2)(k-1)<0$，解得 $-2<k<1$。故实数 $k$ 的取值范围为 $\boxed{(-2,1)}$。\par
+端点不能取：$k=-2$ 时原式为 $(x-1)^2$，$k=1$ 时原式为 $(x+2)^2$，两者均能取到 $0$，不满足“对任意实数都严格大于 $0$”。\par
+\par\Needspace{3\baselineskip}
+\textbf{第（6）问　由解集反求系数}\quad
+二次项系数为 $1>0$，且完整的负值解集为 $(-3,-1)$，所以 $-3$、$-1$ 是方程 $x^2+ax+b=0$ 的两个实根。\par
+把两根分别代入，得\par
+\[\begin{cases}9-3a+b=0,\\1-a+b=0.\end{cases}\]\par
+两式相减得 $8-2a=0$，所以 $a=4$。代回 $1-a+b=0$，得 $b=3$。\par
+检验：$x^2+4x+3=(x+3)(x+1)$，其小于 $0$ 的解集确为 $(-3,-1)$。故 $\boxed{a=4,\quad b=3}$。\par
+\labeltext{易错提醒}严格大于与大于等于要分清；重根和无实根不能套“两根之间”。分母零点始终不取。第（5）问是对所有实数恒成立，必须用 $\Delta<0$，不能误用 $\Delta\le0$；第（6）问的区间端点是方程根，而不是严格不等式的解。
 \clearpage
 {\Large\bfseries 第3题\quad 复合函数的定义域与值域}
 \labeltext{复合函数是什么}

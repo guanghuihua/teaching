@@ -34,7 +34,7 @@ def student():
            r"\begin{center}{\LARGE\bfseries 高一数学期中复习}\par\vspace{0.2cm}{\Large 考前重点十题}\end{center}",
            r"班级\underline{\hspace{2.3cm}}\quad 姓名\underline{\hspace{2.3cm}}\par",
            r"请写出必要的文字说明、演算步骤或证明过程。"]
-    spaces = [3.2, 4.0, 4.6, 4.1, 5.7, 5.0, 5.4, 5.2, 5.1, 5.9]
+    spaces = [2.4, 4.0, 4.6, 4.1, 5.7, 5.0, 5.4, 5.2, 5.1, 5.9]
     for i, item in enumerate(ITEMS):
         if i > 0 and i % 2 == 0:
             out += [r"\clearpage"]
@@ -66,11 +66,13 @@ def teacher():
             out += [r"\labeltext{" + section["heading"] + "}"]
             out += [b + r"\par" for b in section["blocks"]]
         if item.get("diagram"):
-            out += [item["diagram"], r"实心点表示取到端点，空心点表示不取端点；粗线表示该行集合。\par"]
+            out += [item["diagram"], r"在同一条数轴上，上层区间线表示 $A$，下层区间线表示 $B$；空心、实心点分别表示各集合的端点不取、取到。\par"]
         if item["id"] in {2, 4}:
             out += [r"\clearpage", heading]
         out += [r"\labeltext{规范解答}"]
         for index, section in enumerate(item["solution"]):
+            if index in item.get("solution_page_breaks", []):
+                out += [r"\clearpage", heading]
             if index:
                 out += [r"\par\Needspace{3\baselineskip}"]
             out += [r"\textbf{" + section["heading"] + r"}\quad"]
@@ -124,13 +126,16 @@ def beamer():
         n = item["id"]
         for section in item.get("intro", []):
             out += [frame(section["heading"], section["blocks"], pause_after=0)]
-        out += [frame(f"第{n}题\\quad {item['title']}", [question(item, True)])]
+        question_pages = item.get("question_slides", [question(item, True)])
+        for index, body in enumerate(question_pages):
+            suffix = "（续）" if index else ""
+            out += [frame(f"第{n}题\\quad {item['title']}{suffix}", [body])]
         steps = r"\begin{enumerate}" + "\n".join(r"\item " + t for t in item["steps"]) + r"\end{enumerate}"
         out += [frame(f"第{n}题\\quad 解题步骤与易错提醒", [steps, r"\vspace{0.18cm}\textbf{易错提醒}\quad " + item["error"]], pause_after=0)]
         for section in item.get("method_extra", []):
             out += [frame(section["heading"], section["blocks"], pause_after=0)]
         if item.get("diagram"):
-            out += [frame("第1题\\quad 用数轴观察集合运算", [item["diagram"], r"实心点表示取端点，空心点表示不取端点；粗线表示该行集合。"])]
+            out += [frame("第1题\\quad 同一数轴上的区间叠画", [item["diagram"], r"上层区间线表示 $A$，下层区间线表示 $B$；空心、实心点标记各集合的端点。", r"由区间覆盖关系可直接看出 $A\subset B$。"])]
         for section in item["solution"]:
             out += [frame(f"第{n}题详解\\quad {section['heading']}", section["blocks"], pause_after=0)]
     out += [frame("答题检查", [r"集合、不等式：端点是否取到？分母是否非零？",

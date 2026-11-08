@@ -10,27 +10,26 @@
 \newcommand{\subq}[1]{\par\Needspace{2\baselineskip}（#1）}
 \newcommand{\labeltext}[1]{\par\textbf{#1}\quad}
 \setlength{\abovedisplayskip}{6pt}\setlength{\belowdisplayskip}{6pt}
-% 数轴与抛物线位置图。构建脚本会将本文件嵌入各份TeX，成品可独立编译。
-\newcommand{\SetOpen}[2]{\filldraw[fill=white,draw=black,line width=0.7pt] (#1,{#2+0.16}) circle (2pt);}
-\newcommand{\SetClosed}[2]{\fill (#1,{#2+0.16}) circle (2pt);}
-\newcommand{\SetAxis}[2]{%
-  \draw[->,thin] (0,#1)--(12.2,#1) node[right] {$x$};
-  \node[anchor=east] at (-0.35,{#1+0.16}) {#2};
-  \foreach \t in {2,3,7,10}{\draw (\t,{#1-0.05})--(\t,{#1+0.05});\node[below,font=\scriptsize] at (\t,{#1-0.07}) {$\t$};}}
-\newcommand{\SetABRows}{%
-  \SetAxis{0}{$A$}\draw[very thick] (3,0.16)--(7,0.16);\SetClosed{3}{0}\SetOpen{7}{0}
-  \SetAxis{-1.1}{$B$}\draw[very thick] (2,-0.94)--(10,-0.94);\SetOpen{2}{-1.1}\SetOpen{10}{-1.1}}
-\newcommand{\SetResultRows}{%
-  \SetAxis{-2.2}{$A\cup B$}\draw[very thick] (2,-2.04)--(10,-2.04);\SetOpen{2}{-2.2}\SetOpen{10}{-2.2}
-  \SetAxis{-3.3}{$A\cap B$}\draw[very thick] (3,-3.14)--(7,-3.14);\SetClosed{3}{-3.3}\SetOpen{7}{-3.3}
-  \SetAxis{-4.4}{$(\complement_{\mathbb R}A)\cap B$}
-  \draw[very thick] (2,-4.24)--(3,-4.24);\draw[very thick] (7,-4.24)--(10,-4.24);
-  \SetOpen{2}{-4.4}\SetOpen{3}{-4.4}\SetClosed{7}{-4.4}\SetOpen{10}{-4.4}
-  \SetAxis{-5.5}{$A\cup(\complement_{\mathbb R}B)$}
-  \draw[<-,very thick] (0.2,-5.34)--(2,-5.34);\draw[very thick] (3,-5.34)--(7,-5.34);\draw[->,very thick] (10,-5.34)--(11.9,-5.34);
-  \SetClosed{2}{-5.5}\SetClosed{3}{-5.5}\SetOpen{7}{-5.5}\SetClosed{10}{-5.5}}
-\newcommand{\SetBlankAxes}{\begin{center}\begin{tikzpicture}[x=0.68cm,y=0.65cm,font=\small]\SetAxis{0}{$A$}\SetAxis{-1.1}{$B$}\end{tikzpicture}\end{center}}
-\newcommand{\SetNumberLines}{\begin{center}\begin{tikzpicture}[x=0.68cm,y=0.65cm,font=\small]\SetABRows\SetResultRows\end{tikzpicture}\end{center}}
+% 同轴叠画采用教材式不同高度的区间括线；本文件会嵌入各份TeX。
+\definecolor{SetBlue}{RGB}{66,132,177}
+\newcommand{\SetBaseAxis}{%
+  \draw[->,line width=0.55pt] (-0.7,0)--(11.2,0) node[right] {$x$};
+  \foreach \t in {0,2,3,7,10}{\draw[line width=0.45pt] (\t,0)--(\t,0.065);\node[below=3pt,font=\small] at (\t,0) {$\t$};}}
+\newcommand{\SetBlankAxes}{%
+  \begin{center}\begin{tikzpicture}[x=0.92cm,y=1cm,font=\small]
+  \path (-0.7,0) rectangle (11.2,1.25);\SetBaseAxis
+  \end{tikzpicture}\end{center}}
+\newcommand{\SetNumberLines}{%
+  \begin{center}\begin{tikzpicture}[x=0.92cm,y=1cm,font=\small]
+  \fill[SetBlue!13] (2,0) rectangle (10,0.18);
+  \SetBaseAxis
+  \draw[SetBlue,line width=0.8pt] (3,0)--(3,1.08)--(7,1.08)--(7,0);
+  \draw[SetBlue,line width=0.8pt] (2,0)--(2,0.60)--(10,0.60)--(10,0);
+  \node[SetBlue,above=3pt] at (5,1.08) {$A$};
+  \node[SetBlue,above=3pt] at (9,0.60) {$B$};
+  \foreach \t in {2,7,10}{\filldraw[fill=white,draw=black,line width=0.65pt] (\t,0) circle (2.1pt);}
+  \fill (3,0) circle (2.1pt);
+  \end{tikzpicture}\end{center}}
 \newcommand{\QuadraticCases}{%
   \begin{center}\begin{tikzpicture}[x=0.72cm,y=0.64cm,font=\small]
   \begin{scope}\draw[->] (-1.6,0)--(1.65,0) node[right] {$x$};\draw[thick,domain=-1.4:1.4,samples=45] plot (\x,{\x*\x-1});\fill (-1,0) circle (1.4pt);\fill (1,0) circle (1.4pt);\node[below] at(-1,0){$x_1$};\node[below] at(1,0){$x_2$};\node at(0,1.8){$\Delta>0$};\end{scope}
@@ -44,17 +43,19 @@
 班级\underline{\hspace{2.3cm}}\quad 姓名\underline{\hspace{2.3cm}}\par
 请写出必要的文字说明、演算步骤或证明过程。
 \Needspace{8\baselineskip}
-\textbf{1.}\quad 已知全集为 $\mathbb R$，集合 $A=\{x\mid 3\le x<7\}$，$B=\{x\mid 2<x<10\}$。在数轴上分别表示 $A$、$B$，并求：
+\textbf{1.}\quad 已知全集为 $\mathbb R$，集合 $A=\{x\mid 3\le x<7\}$，$B=\{x\mid 2<x<10\}$。在同一条数轴上表示 $A$、$B$，并求：
 \subq{1}$A\cup B$ 与 $A\cap B$；
 \subq{2}$(\complement_{\mathbb R}A)\cap B$ 与 $A\cup(\complement_{\mathbb R}B)$。
 \SetBlankAxes
-\par\vspace*{3.2cm}
+\par\vspace*{2.4cm}
 \Needspace{8\baselineskip}
-\textbf{2.}\quad 解下列不等式：
-\subq{1}$2x^2-5x+3<0$；
-\subq{2}$-3x^2+x+4\le0$；
-\subq{3}$\dfrac{1-2x}{x+2}\ge0$；
-\subq{4}$\dfrac{2x-1}{3-4x}\ge1$。
+\textbf{2.}\quad 完成下列各题：
+\subq{1}解不等式 $2x^2-x-3\ge0$。
+\subq{2}解不等式 $4x^2-4x+1>0$。
+\subq{3}解不等式 $-x^2+4x-5>0$。
+\subq{4}解不等式 $\dfrac{-2x+5}{x-2}>0$。
+\subq{5}若对任意实数 $x$，不等式 $x^2+2(1+k)x+3+k>0$ 恒成立，求实数 $k$ 的取值范围。
+\subq{6}已知不等式 $x^2+ax+b<0$ 的解集为 $(-3,-1)$，求实数 $a,b$ 的值。
 \par\vspace*{4.0cm}
 \clearpage
 \Needspace{8\baselineskip}
