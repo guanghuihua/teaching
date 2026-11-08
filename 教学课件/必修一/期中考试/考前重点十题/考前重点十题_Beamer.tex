@@ -8,10 +8,38 @@
 \setbeamersize{text margin left=0.7cm,text margin right=0.7cm}
 \newcommand{\LessonTitle}{高一数学期中复习}
 \newcommand{\LessonSubtitle}{考前重点十题}
-\newcommand{\LessonInfo}{规范书写与题型方法}
+\newcommand{\LessonInfo}{解题步骤\qquad 规范解答\qquad 易错提醒}
 \newcommand{\PageHeading}[1]{\begin{center}{\Large\bfseries #1}\end{center}\vspace{0.12cm}}
 \newcommand{\subq}[1]{\par\vspace{0.15cm}（#1）}
 \setlength{\abovedisplayskip}{5pt}\setlength{\belowdisplayskip}{5pt}
+% 数轴与抛物线位置图。构建脚本会将本文件嵌入各份TeX，成品可独立编译。
+\newcommand{\SetOpen}[2]{\filldraw[fill=white,draw=black,line width=0.7pt] (#1,{#2+0.16}) circle (2pt);}
+\newcommand{\SetClosed}[2]{\fill (#1,{#2+0.16}) circle (2pt);}
+\newcommand{\SetAxis}[2]{%
+  \draw[->,thin] (0,#1)--(12.2,#1) node[right] {$x$};
+  \node[anchor=east] at (-0.35,{#1+0.16}) {#2};
+  \foreach \t in {2,3,7,10}{\draw (\t,{#1-0.05})--(\t,{#1+0.05});\node[below,font=\scriptsize] at (\t,{#1-0.07}) {$\t$};}}
+\newcommand{\SetABRows}{%
+  \SetAxis{0}{$A$}\draw[very thick] (3,0.16)--(7,0.16);\SetClosed{3}{0}\SetOpen{7}{0}
+  \SetAxis{-1.1}{$B$}\draw[very thick] (2,-0.94)--(10,-0.94);\SetOpen{2}{-1.1}\SetOpen{10}{-1.1}}
+\newcommand{\SetResultRows}{%
+  \SetAxis{-2.2}{$A\cup B$}\draw[very thick] (2,-2.04)--(10,-2.04);\SetOpen{2}{-2.2}\SetOpen{10}{-2.2}
+  \SetAxis{-3.3}{$A\cap B$}\draw[very thick] (3,-3.14)--(7,-3.14);\SetClosed{3}{-3.3}\SetOpen{7}{-3.3}
+  \SetAxis{-4.4}{$(\complement_{\mathbb R}A)\cap B$}
+  \draw[very thick] (2,-4.24)--(3,-4.24);\draw[very thick] (7,-4.24)--(10,-4.24);
+  \SetOpen{2}{-4.4}\SetOpen{3}{-4.4}\SetClosed{7}{-4.4}\SetOpen{10}{-4.4}
+  \SetAxis{-5.5}{$A\cup(\complement_{\mathbb R}B)$}
+  \draw[<-,very thick] (0.2,-5.34)--(2,-5.34);\draw[very thick] (3,-5.34)--(7,-5.34);\draw[->,very thick] (10,-5.34)--(11.9,-5.34);
+  \SetClosed{2}{-5.5}\SetClosed{3}{-5.5}\SetOpen{7}{-5.5}\SetClosed{10}{-5.5}}
+\newcommand{\SetBlankAxes}{\begin{center}\begin{tikzpicture}[x=0.68cm,y=0.65cm,font=\small]\SetAxis{0}{$A$}\SetAxis{-1.1}{$B$}\end{tikzpicture}\end{center}}
+\newcommand{\SetNumberLines}{\begin{center}\begin{tikzpicture}[x=0.68cm,y=0.65cm,font=\small]\SetABRows\SetResultRows\end{tikzpicture}\end{center}}
+\newcommand{\QuadraticCases}{%
+  \begin{center}\begin{tikzpicture}[x=0.72cm,y=0.64cm,font=\small]
+  \begin{scope}\draw[->] (-1.6,0)--(1.65,0) node[right] {$x$};\draw[thick,domain=-1.4:1.4,samples=45] plot (\x,{\x*\x-1});\fill (-1,0) circle (1.4pt);\fill (1,0) circle (1.4pt);\node[below] at(-1,0){$x_1$};\node[below] at(1,0){$x_2$};\node at(0,1.8){$\Delta>0$};\end{scope}
+  \begin{scope}[xshift=3cm]\draw[->] (-1.5,0)--(1.55,0) node[right] {$x$};\draw[thick,domain=-1.15:1.15,samples=40] plot (\x,{\x*\x});\fill (0,0) circle (1.4pt);\node[below] at(0,0){$x_0$};\node at(0,1.8){$\Delta=0$};\end{scope}
+  \begin{scope}[xshift=6cm]\draw[->] (-1.5,0)--(1.55,0) node[right] {$x$};\draw[thick,domain=-1.05:1.05,samples=40] plot (\x,{\x*\x+0.45});\node at(0,1.8){$\Delta<0$};\end{scope}
+  \end{tikzpicture}\end{center}}
+
 \begin{document}
 \begin{frame}[t]
 \PageHeading{\LessonTitle}
@@ -22,25 +50,36 @@
 \end{frame}
 \begin{frame}[t]
 \PageHeading{复习范围}
-第1题：集合的交并补运算。\par 第2、3题：二次不等式与分式不等式。\par 第4题：指数幂运算。
+第1题：集合的交并补运算。\par 第2题：二次不等式与分式不等式。\par 第3题：复合函数的定义域与值域。\par 第4题：指数幂运算与根式化简。
 \par
 第5、6题：单调性与奇偶性的定义证明。\par 第7、8题：函数性质的应用与解析式。\par 第9、10题：基本不等式与最值。
 \par
 \vspace{0.25cm}自查重点：范围、等价条件、端点和等号取得。
 \par
 \end{frame}
-% 《期中复习卷（二） 学生用卷》第2页第15题，调整小问编排。
-% 目标：把区间端点、补集的全集和集合运算顺序写准确。 难度：基础
-% 预期方法：把描述法改写成区间，标清实心、空心端点。；交集取公共部分，并集取全部部分。；先相对于题设全集求补集，再完成复合运算。；逐个检查原区间的四个端点是否属于结果。
-% 易错：补集中的端点开闭要反转；不能把补集误认为只在另一个集合内取差集。
-% 评价：能否不漏区间、不混淆端点，并说明补集相对于什么全集。
 \begin{frame}[t]
 \PageHeading{第1题\quad 集合的交并补运算}
-已知全集为 $\mathbb R$，集合 $A=\{x\mid 3\le x<7\}$，$B=\{x\mid 2<x<10\}$。求：
+已知全集为 $\mathbb R$，集合 $A=\{x\mid 3\le x<7\}$，$B=\{x\mid 2<x<10\}$。在数轴上分别表示 $A$、$B$，并求：
 \subq{1}$A\cup B$ 与 $A\cap B$；
 \subq{2}$(\complement_{\mathbb R}A)\cap B$ 与 $A\cup(\complement_{\mathbb R}B)$。
 \par
-\vfill{\footnotesize 来源：据《期中复习卷（二）》第15题整理。}
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第1题\quad 解题步骤与易错提醒}
+\begin{enumerate}\item 把描述法改写成区间，标清实心、空心端点。
+\item 交集取公共部分，并集取全部部分。
+\item 先相对于题设全集求补集，再完成复合运算。
+\item 逐个检查原区间的四个端点是否属于结果。\end{enumerate}
+\par
+\pause
+\vspace{0.18cm}\textbf{易错提醒}\quad 补集中的端点开闭要反转；不能把补集误认为只在另一个集合内取差集。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第1题\quad 用数轴观察集合运算}
+\SetNumberLines
+\par
+实心点表示取端点，空心点表示不取端点；粗线表示该行集合。
 \par
 \end{frame}
 \begin{frame}[t]
@@ -64,129 +103,224 @@
 \par
 \[A\cup(\complement_{\mathbb R}B)=(-\infty,2]\cup[3,7)\cup[10,+\infty).\]
 \par
-端点检查：$3\in A$，故第一式中不取 $3$；$7\notin A$ 且 $7\in B$，故第一式中取 $7$。
+端点检查：$3\in A$，故 $(\complement_{\mathbb R}A)\cap B$ 中不取 $3$；$7\notin A$ 且 $7\in B$，故该集合中取 $7$。
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第1题\quad 同类题解题步骤}
-\begin{enumerate}\item 把描述法改写成区间，标清实心、空心端点。
-\item 交集取公共部分，并集取全部部分。
-\item 先相对于题设全集求补集，再完成复合运算。
-\item 逐个检查原区间的四个端点是否属于结果。\end{enumerate}
-\par
-\pause
-\vspace{0.25cm}\textbf{易错提醒}\quad 补集中的端点开闭要反转；不能把补集误认为只在另一个集合内取差集。
-\par
-\end{frame}
-% 《10.31周末作业》第16题（1）（2），题干公式已对照原Word公式图片。
-% 目标：把首项系数、两根和不等号共同用于确定解集。 难度：基础
-% 预期方法：移项整理，必要时把二次项系数化为正数。；因式分解或求根，按从小到大排列两个根。；首项系数为正时，式子在两根外为正、两根间为负。；结合严格或非严格不等号决定是否包含根，写成解集。
-% 易错：乘负数后忘记改变不等号方向，或只记“两根之间”而忽略首项系数与不等号。
-% 评价：能否用分解式解释为什么取根内或根外，并独立核准端点。
-\begin{frame}[t]
-\PageHeading{第2题\quad 一元二次不等式}
+\PageHeading{第2题\quad 一元二次不等式与分式不等式}
 解下列不等式：
 \subq{1}$2x^2-5x+3<0$；
-\subq{2}$-3x^2+x+4\le0$。
+\subq{2}$-3x^2+x+4\le0$；
+\subq{3}$\dfrac{1-2x}{x+2}\ge0$；
+\subq{4}$\dfrac{2x-1}{3-4x}\ge1$。
 \par
-\vfill{\footnotesize 来源：《10.31周末作业》第16题节选。}
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第2题\quad 解题步骤与易错提醒}
+\begin{enumerate}\item 先移项整理，使一端为 $0$。分式先通分，再写出分母不为 $0$ 的条件。
+\item 二次项系数为负时可两边同乘 $-1$，同时改变不等号方向。
+\item 解对应的一元二次方程；不能直接因式分解时，用判别式判断实根情况。
+\item 画开口及与 $x$ 轴位置的简图，由图确定二次式大于或小于 $0$ 的区间。
+\item 结合不等号决定是否取方程的根；分式还要排除分母零点，最后写出解集。\end{enumerate}
+\par
+\pause
+\vspace{0.18cm}\textbf{易错提醒}\quad 同乘负数要改变不等号方向。$\Delta=0$ 时图像与 $x$ 轴相切，不能照搬“两根之间”。分母零点始终不取，不能直接乘符号未知的分母。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{二次式与抛物线的位置}
+记 $q(x)=ax^2+bx+c$，先按 $a>0$ 讨论。解方程 $q(x)=0$ 后，根据图像相对于 $x$ 轴的位置写解集。
+\par
+\pause
+\QuadraticCases
+\par
+\[\begin{array}{c|c|c}\text{判别式}&q(x)>0&q(x)<0\\\hline\Delta>0&x<x_1\ \text{或}\ x>x_2&x_1<x<x_2\\\Delta=0&x\ne x_0&\varnothing\\\Delta<0&\mathbb R&\varnothing\end{array}\]
+\par
+对于 $\ge0$、$\le0$，还须把使 $q(x)=0$ 的根并入相应解集。若 $a<0$，可先同乘 $-1$ 再判断。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{分式转为乘积的依据}
+当 $Q(x)\ne0$ 时，$Q(x)^2>0$，所以
+\par
+\pause
+\[\frac{P(x)}{Q(x)}=\frac{P(x)Q(x)}{Q(x)^2}\ge0\quad\Longleftrightarrow\quad\begin{cases}P(x)Q(x)\ge0,\\Q(x)\ne0.\end{cases}\]
+\par
+这样可转为二次不等式处理，同时保留原分式的分母限制。
 \par
 \end{frame}
 \begin{frame}[t]
 \PageHeading{第2题详解\quad 第（1）问}
-因式分解，原不等式等价于
+由方程 $2x^2-5x+3=0$，即 $(2x-3)(x-1)=0$，得两个实根
 \par
 \pause
-\[(2x-3)(x-1)<0.\]
+\[x_1=1,\qquad x_2=\frac32.\]
 \par
-两个零点为 $1$、$\dfrac32$。二次项系数为正，乘积在两根之间为负；原式为严格不等式，不取两个零点。因此解集为
+函数 $y=2x^2-5x+3$ 的图像开口向上，与 $x$ 轴交于 $(1,0)$、$(\frac32,0)$。在两根之间，图像位于 $x$ 轴下方。
 \par
-\[\boxed{\left(1,\frac32\right)}.\]
+故原不等式的解集为 $\boxed{\left\{x\mid 1<x<\dfrac32\right\}=\left(1,\dfrac32\right)}$。
 \par
 \end{frame}
 \begin{frame}[t]
 \PageHeading{第2题详解\quad 第（2）问}
-两边同乘 $-1$，不等号方向改变，得
+两边同时乘 $-1$，原不等式化为 $3x^2-x-4\ge0$。
 \par
 \pause
-\[3x^2-x-4\ge0\quad\Longleftrightarrow\quad(3x-4)(x+1)\ge0.\]
+由方程 $(3x-4)(x+1)=0$，得两个实根 $x_1=-1$，$x_2=\dfrac43$。
 \par
-两个零点为 $-1$、$\dfrac43$。乘积在两根外为正，且零点满足非严格不等式。因此解集为
+函数 $y=3x^2-x-4$ 的图像开口向上，在两根外位于 $x$ 轴上方；两根处函数值为 $0$。
 \par
-\[\boxed{(-\infty,-1]\cup\left[\frac43,+\infty\right)}.\]
+故原不等式的解集为 $\boxed{\left\{x\mid x\le-1\ \text{或}\ x\ge\dfrac43\right\}=(-\infty,-1]\cup[\dfrac43,+\infty)}$。
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第2题\quad 同类题解题步骤}
-\begin{enumerate}\item 移项整理，必要时把二次项系数化为正数。
-\item 因式分解或求根，按从小到大排列两个根。
-\item 首项系数为正时，式子在两根外为正、两根间为负。
-\item 结合严格或非严格不等号决定是否包含根，写成解集。\end{enumerate}
+\PageHeading{第2题详解\quad 第（3）问}
+原分式有意义须 $x\ne-2$。按分式转乘积的方法，
 \par
 \pause
-\vspace{0.25cm}\textbf{易错提醒}\quad 乘负数后忘记改变不等号方向，或只记“两根之间”而忽略首项系数与不等号。
+\[\frac{1-2x}{x+2}\ge0\quad\Longleftrightarrow\quad\begin{cases}(1-2x)(x+2)\ge0,\\x\ne-2,\end{cases}\]
 \par
-\end{frame}
-% （1）《期中复习卷（二） 学生用卷》第1页第3题，选择题改为解答题；（2）《10.31周末作业》第16题（3）。
-% 目标：先化为一端为零，再用分子与分母零点划分符号区间。 难度：基础至中等
-% 预期方法：先写分母不为零的限制，再移项通分，使一端为零。；找出分子、分母的全部零点，并按大小排序。；逐区间判断分子、分母符号，选出商满足要求的区间。；分母零点始终排除；分子零点能否取到由不等号决定。
-% 易错：不能直接乘符号未知的分母；约去因式也不能恢复原式不允许的点。
-% 评价：是否把分母零点作为禁取点，是否能解释分式符号而非盲目交叉相乘。
-\begin{frame}[t]
-\PageHeading{第3题\quad 分式不等式}
-解下列不等式：
-\subq{1}$\dfrac{1-2x}{x+2}\ge0$；
-\subq{2}$\dfrac{2x-1}{3-4x}\ge1$。
+即 $(2x-1)(x+2)\le0$ 且 $x\ne-2$。对应二次式的两个零点为 $-2$、$\dfrac12$，图像开口向上，故 $-2\le x\le\dfrac12$。
 \par
-\vfill{\footnotesize 来源：据《期中复习卷（二）》第3题及《10.31周末作业》第16题整理。}
+再排除 $x=-2$，得解集 $\boxed{\left\{x\mid-2<x\le\dfrac12\right\}=(-2,\dfrac12]}$。
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第3题详解\quad 第（1）问}
-定义限制为 $x\ne-2$。分子的零点为 $\dfrac12$。三个区间内分子、分母及其商的符号为
+\PageHeading{第2题详解\quad 第（4）问}
+先移项到零，并写出分母限制：
 \par
 \pause
-\[\begin{array}{c|ccc}x&(-\infty,-2)&(-2,\frac12)&(\frac12,+\infty)\\\hline 1-2x&+&+&-\\x+2&-&+&+\\\dfrac{1-2x}{x+2}&-&+&-\end{array}\]
+\[\frac{2x-1}{3-4x}-1=\frac{6x-4}{3-4x}\ge0,\qquad x\ne\frac34.\]
 \par
-由原式要求商非负，可取中间区间及分子零点 $\dfrac12$，排除分母零点 $-2$。故解集为 $\boxed{\left(-2,\dfrac12\right]}$。
+所以原不等式等价于 $(6x-4)(3-4x)\ge0$ 且 $x\ne\dfrac34$，也就是
+\par
+\[(3x-2)(4x-3)\le0,\qquad x\ne\frac34.\]
+\par
+对应二次式的两个零点为 $\dfrac23$、$\dfrac34$，图像开口向上，故 $\dfrac23\le x\le\dfrac34$。再排除 $x=\dfrac34$，得解集 $\boxed{[\dfrac23,\dfrac34)}$。
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第3题详解\quad 第（2）问}
-先写 $x\ne\dfrac34$，再移项通分：
+\PageHeading{复合函数是什么}
+把一次计算的结果作为下一次计算的输入，就得到复合函数。记作
 \par
 \pause
-\[\frac{2x-1}{3-4x}-1\ge0\quad\Longleftrightarrow\quad\frac{6x-4}{3-4x}\ge0.\]
+\[t=g(x),\qquad y=F(t),\qquad y=F(g(x)).\]
 \par
-临界点为 $\dfrac23$、$\dfrac34$。当 $x<\dfrac23$ 时，分子负、分母正，商负；当 $\dfrac23<x<\dfrac34$ 时，分子、分母均正，商正；当 $x>\dfrac34$ 时，分子正、分母负，商负。
+$g$ 是内层函数，$F$ 是外层函数。例如 $y=(2x-1)^2$：先算一次函数 $t=2x-1$，再算二次函数 $y=t^2$。
 \par
-$x=\dfrac23$ 时分子为零，可取；$x=\dfrac34$ 时分母为零，舍去。因此解集为 $\boxed{\left[\dfrac23,\dfrac34\right)}$。
+复合顺序一般不能交换。例如先乘 $2$ 加 $1$ 再平方，得 $(2x+1)^2$；先平方再乘 $2$ 加 $1$，得 $2x^2+1$。
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第3题\quad 同类题解题步骤}
-\begin{enumerate}\item 先写分母不为零的限制，再移项通分，使一端为零。
-\item 找出分子、分母的全部零点，并按大小排序。
-\item 逐区间判断分子、分母符号，选出商满足要求的区间。
-\item 分母零点始终排除；分子零点能否取到由不等号决定。\end{enumerate}
+\PageHeading{五类函数作为外层时的输入条件}
+\[\begin{array}{c|c|l}\text{类型}&y=F(t)&\text{对输入 }t\text{ 的限制}\\\hline\text{一次函数}&kt+b\ (k\ne0)&t\in\mathbb R\\\text{二次函数}&at^2+bt+c\ (a\ne0)&t\in\mathbb R\\\text{反比例函数}&k/t\ (k\ne0)&t\ne0\\\text{指数函数}&a^t\ (a>0,\ a\ne1)&t\in\mathbb R\\\text{幂函数}&t^\alpha&\text{按指数判断，如 }\sqrt t\text{ 要求 }t\ge0\end{array}\]
 \par
 \pause
-\vspace{0.25cm}\textbf{易错提醒}\quad 不能直接乘符号未知的分母；约去因式也不能恢复原式不允许的点。
+$x^2$、$x^{-1}=1/x$、$x^{1/2}=\sqrt x$ 都是幂函数的具体例子；一般二次函数、一般反比例函数未必是幂函数。
 \par
 \end{frame}
-% （1）（2）《期中复习卷三》第15题；（3）据《10.31周末作业》第15题（2）公式改编，明确补充条件a>0，解答重新推导。
-% 目标：区分负指数、负底数、零指数及根式的指数表示。 难度：基础至中等
-% 预期方法：先核对底数、根式与分母是否有意义，明确运算顺序。；负指数取倒数；正底数的根式改写成分数指数。；同底数相乘指数相加，幂的乘方指数相乘，逐层化简。；最后核对负号、零次幂及偶次根式的非负性。
-% 易错：$(-2)^{-3}=-1/8$，外面的“减4倍”使该项贡献为正；负指数不表示负数。
-% 评价：能否分清符号作用范围，并把每一层根式准确改成指数。
+\begin{frame}[t]
+\PageHeading{常见复合怎样拆层}
+\[\begin{array}{c|l}\text{复合式}&\text{先后计算的步骤}\\\hline(2x-1)^2&t=2x-1,\quad y=t^2\\2^{2x-x^2}&t=2x-x^2,\quad y=2^t\\4^x-2^x+1&t=2^x,\quad y=t^2-t+1\\3^{1/(x+4)}&t=x+4,\quad u=1/t,\quad y=3^u\\\sqrt{1-2^x}&t=2^x,\quad u=1-t,\quad y=\sqrt u\\2/x-3&t=1/x,\quad y=2t-3\\2x^3+1&t=x^3,\quad y=2t+1\end{array}\]
+\par
+\pause
+这些结构依次用到一次、二次、反比例、指数和幂函数。每一步的输入都必须有意义。例如 $3^{1/(x+4)}$ 须有 $x\ne-4$，且指数 $1/(x+4)\ne0$，因此函数值不等于 $1$。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第3题\quad 复合函数的定义域与值域}
+求下列函数的定义域和值域：
+\subq{1}$y=2^{2x-x^2}$；
+\subq{2}$y=4^x-2^x+1$；
+\subq{3}$y=\sqrt{1-2^x}$。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第3题\quad 解题步骤与易错提醒}
+\begin{enumerate}\item 先拆内外层，写出中间量，例如 $t=g(x)$、$y=F(t)$。
+\item 求定义域：内层本身有意义，且它的结果符合外层的输入要求；把全部条件同时转为对 $x$ 的限制。
+\item 求值域：在最终定义域内，先求中间量 $t$ 的实际取值范围，再求外层函数在这个范围上的结果。
+\item 最后检查端点、禁取值和最值能否取得。外层若是二次函数，要看顶点是否落在中间量范围内。\end{enumerate}
+\par
+\pause
+\vspace{0.18cm}\textbf{易错提醒}\quad 不能把基本指数函数的值域 $(0,+\infty)$ 直接当作所有复合函数的值域。换元后必须写范围；二次函数要检查顶点。第（2）问虽 $t=0$ 不取，$y=1$ 仍能由 $t=1$ 取得，不能据此删去 $1$。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第3题详解\quad 第（1）问　二次函数后取指数}
+$2x-x^2$ 对任意实数均有意义，指数函数 $2^t$ 的输入可为任意实数，故定义域为 $\boxed{\mathbb R}$。
+\par
+\pause
+令 $t=2x-x^2=1-(x-1)^2$，则 $t\in(-\infty,1]$。由于 $y=2^t$ 严格递增，
+\par
+\[0<2^t\le2,\qquad\boxed{\text{值域为 }(0,2]}.\]
+\par
+$x=1$ 时取到 $2$；指数函数值始终大于 $0$，下端点 $0$ 不取。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第3题详解\quad 第（2）问　指数函数后代入二次式}
+原式对任意 $x\in\mathbb R$ 均有意义，故定义域为 $\boxed{\mathbb R}$。
+\par
+\pause
+令 $t=2^x$，则 $t>0$，并且 $4^x=(2^x)^2=t^2$。于是
+\par
+\[y=t^2-t+1=\left(t-\frac12\right)^2+\frac34,\qquad t\in(0,+\infty).\]
+\par
+顶点对应的 $t=\dfrac12$ 在上述范围内，可取到；此时 $x=-1$，$y=\dfrac34$。当 $t\ge\dfrac12$ 时，二次函数的值取遍 $[\dfrac34,+\infty)$，故 $\boxed{\text{值域为 }[\dfrac34,+\infty)}$。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第3题详解\quad 第（3）问　指数函数后平移、开平方}
+由根式有意义，得 $1-2^x\ge0$，即 $2^x\le1=2^0$。因 $2^x$ 递增，得 $x\le0$，故定义域为 $\boxed{(-\infty,0]}$。
+\par
+\pause
+在此定义域上，$2^x\in(0,1]$，因此
+\par
+\[1-2^x\in[0,1),\qquad\sqrt{1-2^x}\in[0,1).\]
+\par
+所以 $\boxed{\text{值域为 }[0,1)}$。$x=0$ 时可取到 $0$；若函数值为 $1$，则 $2^x=0$，不可能，故 $1$ 不取。
+\par
+\end{frame}
 \begin{frame}[t]
 \PageHeading{第4题\quad 指数幂运算与根式化简}
 计算或化简下列各式：
 \subq{1}$8^{\frac23}+\left(\dfrac{16}{81}\right)^{\frac34}$；
 \subq{2}$\left(\dfrac12\right)^{-1}-4\times(-2)^{-3}+\left(\dfrac14\right)^0-9^{\frac12}$；
-\subq{3}已知 $a>0$，化简 $\sqrt[3]{a^{\frac32}\sqrt{a^{-3}}}\,\cdot\,\sqrt{(a^{-5})^{-\frac12}\,(a^{-\frac12})^{13}}$。
+\subq{3}已知 $a>0$，化简 $\sqrt[3]{a^{\frac32}\sqrt{a^{-3}}}\,\cdot\,\sqrt{(a^{-5})^{-\frac12}\,(a^{-\frac12})^{13}}$；
+\subq{4}已知 $-3<x<3$，化简 $\sqrt{x^2-2x+1}-\sqrt{x^2+6x+9}$。
 \par
-\vfill{\footnotesize 来源：据《期中复习卷三》第15题及《10.31周末作业》第15题整理。}
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第4题\quad 解题步骤与易错提醒}
+\begin{enumerate}\item 先检查式子有意义的条件。有括号先算括号内，再按先幂、后乘除、再加减的顺序运算。
+\item 负指数化为倒数；底数为负数时，先看括号和整数指数的奇偶性，确定符号。
+\item 小数先化分数，带分数先化假分数，底数尽量写成完全幂，便于运用指数法则。
+\item 正底数的根式与分数指数互化；同底数幂相乘指数相加，幂的乘方指数相乘，逐层化简。
+\item 偶次根的结果非负，遇到 $\sqrt{u^2}$ 要先写成 $|u|$，再依据范围去绝对值。最后化简结果。\end{enumerate}
+\par
+\pause
+\vspace{0.18cm}\textbf{易错提醒}\quad 负指数表示取倒数，不表示结果为负数；$(-2)^{-3}=-\dfrac18$。千万不要把 $\sqrt{u^2}$ 直接写成 $u$，必须先写 $|u|$，再依据范围判断。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{根式与分数指数的互化}
+对 $a>0$，$m,n$ 为正整数，$n>1$，有
+\par
+\pause
+\[a^{m/n}=\sqrt[n]{a^m},\qquad a^{-m/n}=\frac1{a^{m/n}}=\frac1{\sqrt[n]{a^m}}.\]
+\par
+把小数和带分数变成便于看出完全幂的形式，例如 $0.027=\dfrac{27}{1000}=(\dfrac3{10})^3$，$2\dfrac79=\dfrac{25}9=(\dfrac53)^2$。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{根式化简的关键检查}
+被开方数中的可开尽因子应先提出根号。$a,b\ge0$ 时，$\sqrt{ab}=\sqrt a\sqrt b$；含和差时先整理成乘积或完全平方，不能直接把根式拆成和差。
+\par
+\pause
+\[\sqrt{u^2}=|u|,\qquad \sqrt[2m]{u^{2m}}=|u|\quad(m\in\mathbb N^*).\]
+\par
+偶次方根取非负值。需要时把带分数化为假分数，或进行分母有理化；每次变形都须保留原来的定义限制。
 \par
 \end{frame}
 \begin{frame}[t]
@@ -220,26 +354,41 @@ $x=\dfrac23$ 时分子为零，可取；$x=\dfrac34$ 时分母为零，舍去。
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第4题\quad 同类题解题步骤}
-\begin{enumerate}\item 先核对底数、根式与分母是否有意义，明确运算顺序。
-\item 负指数取倒数；正底数的根式改写成分数指数。
-\item 同底数相乘指数相加，幂的乘方指数相乘，逐层化简。
-\item 最后核对负号、零次幂及偶次根式的非负性。\end{enumerate}
+\PageHeading{第4题详解\quad 第（4）问　先化完全平方，再去绝对值}
+由完全平方公式，
 \par
 \pause
-\vspace{0.25cm}\textbf{易错提醒}\quad $(-2)^{-3}=-1/8$，外面的“减4倍”使该项贡献为正；负指数不表示负数。
+\[\begin{aligned}&\sqrt{x^2-2x+1}-\sqrt{x^2+6x+9}\\&=\sqrt{(x-1)^2}-\sqrt{(x+3)^2}\\&=|x-1|-|x+3|.\end{aligned}\]
+\par
+因为 $-3<x<3$，有 $x+3>0$，故原式 $=|x-1|-x-3$。再以 $x=1$ 为界讨论：
+\par
+当 $-3<x<1$ 时，$x-1<0$，原式 $=1-x-x-3=-2x-2$；当 $1\le x<3$ 时，原式 $=x-1-x-3=-4$。
+\par
+\[\boxed{\text{原式}=\begin{cases}-2x-2,&-3<x<1,\\-4,&1\le x<3.\end{cases}}\]
 \par
 \end{frame}
-% 《10.31周末作业》第17题，保留定义法设问。
-% 目标：写全任意取值、作差变形、定号和结论的证明链。 难度：中等
-% 预期方法：在指定区间任取两个自变量，明确它们的大小关系。；作函数值的差，通分并尽量因式分解。；逐个说明各因子的符号，得到函数值差的符号。；把函数值大小关系与单调性定义对应，写明区间。
-% 易错：只写“分子分母都增，所以商增”不能证明商的单调性；仅比较两个特定点也不足以证明。
-% 评价：是否使用任意两点，并分别说明分子和分母的符号。
 \begin{frame}[t]
 \PageHeading{第5题\quad 用定义证明函数单调性}
 已知 $f(x)=\dfrac{3^x-1}{3^x+1}$。用函数单调性的定义，判断并证明 $f(x)$ 在 $\mathbb R$ 上的单调性。
 \par
-\vfill{\footnotesize 来源：《10.31周末作业》第17题。}
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第5题\quad 解题步骤与易错提醒}
+\begin{enumerate}\item 在指定区间\textbf{任取} $x_1,x_2$，设 $x_1<x_2$。这里必须是任意两点，不能换成两个具体数字。
+\item 作函数值的差，通分并尽量因式分解。
+\item 逐个说明各因子的符号，得到函数值差的符号。
+\item 把函数值大小关系与单调性定义对应，写明区间。\end{enumerate}
+\par
+\pause
+\vspace{0.18cm}\textbf{易错提醒}\quad \textbf{千万不要用两个具体数字的比较来代替证明。}必须对区间内任意 $x_1<x_2$ 作差并定号。“分子分母都增，所以商增”也不是可靠的证明。
+\par
+\end{frame}
+\begin{frame}[t]
+\PageHeading{证明单调性必须用任意两点}
+\textbf{千万不要代入两个具体数字，再比较这两个函数值的大小。}这只能说明这两个点的函数值关系，不能证明整个区间的单调性。
+\par
+\pause
+例如 $g(x)=x^2$ 虽有 $g(1)<g(2)$，但它在整个 $\mathbb R$ 上并不递增。规范证明必须从“任取 $x_1,x_2$，且 $x_1<x_2$”开始。
 \par
 \end{frame}
 \begin{frame}[t]
@@ -263,28 +412,21 @@ $x=\dfrac23$ 时分子为零，可取；$x=\dfrac34$ 时分母为零，舍去。
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第5题\quad 同类题解题步骤}
-\begin{enumerate}\item 在指定区间任取两个自变量，明确它们的大小关系。
-\item 作函数值的差，通分并尽量因式分解。
-\item 逐个说明各因子的符号，得到函数值差的符号。
-\item 把函数值大小关系与单调性定义对应，写明区间。\end{enumerate}
-\par
-\pause
-\vspace{0.25cm}\textbf{易错提醒}\quad 只写“分子分母都增，所以商增”不能证明商的单调性；仅比较两个特定点也不足以证明。
-\par
-\end{frame}
-% 据《期中复习卷（二） 普通用卷(2)》第4页答案第19题独立重设，增加定义验证设问；不与其学生卷第19题配对。
-% 目标：把定义域对称、恒等关系和特殊值条件配合使用。 难度：中等
-% 预期方法：先检查定义域是否关于原点对称，确认0是否在定义域内。；奇函数在0处有定义时，用f(0)=0求参数；也可直接用奇偶恒等式。；把其他已知函数值代入，求剩余参数。；把求出的参数代回，重新验证定义域与奇偶恒等关系。
-% 易错：$f(0)=0$ 只是奇函数在0处有定义时的必要条件，不能据此直接判定函数为奇函数。
-% 评价：能否区分“由奇函数推出f(0)=0”与“证明一个函数是奇函数”。
-\begin{frame}[t]
 \PageHeading{第6题\quad 奇偶性条件与定义证明}
 设 $f(x)=\dfrac{ax-b}{1+x^2}$，$x\in[-1,1]$，其中 $a,b\in\mathbb R$。已知 $f(x)$ 是奇函数，且 $f(1)=-1$。
 \subq{1}求 $a,b$ 的值；
 \subq{2}写出 $f(x)$，并依据定义证明所得函数是奇函数。
 \par
-\vfill{\footnotesize 来源：据《期中复习卷（二）》答案第19题改编。}
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第6题\quad 解题步骤与易错提醒}
+\begin{enumerate}\item 先求定义域，检查它是否关于原点对称；不对称时，函数既不是奇函数，也不是偶函数。
+\item 对定义域内任意 $x$，把 $-x$ 整体代入，算出并化简 $f(-x)$。
+\item 比较 $f(-x)$ 与 $f(x)$：若 $f(-x)=f(x)$ 对所有 $x$ 成立，则为偶函数；若 $f(-x)=-f(x)$ 对所有 $x$ 成立，则为奇函数。
+\item 题目若含待求参数，先结合已知函数值求参数，再代回比较 $f(-x)$ 与 $f(x)$，写出结论。\end{enumerate}
+\par
+\pause
+\vspace{0.18cm}\textbf{易错提醒}\quad 判断时既要检查定义域，也要比较 $f(-x)$ 与 $f(x)$。$f(0)=0$ 只是奇函数在原点有定义时的必要条件，不能单凭它认定奇函数；零函数在对称定义域上可既奇又偶。
 \par
 \end{frame}
 \begin{frame}[t]
@@ -310,28 +452,21 @@ $x=\dfrac23$ 时分子为零，可取；$x=\dfrac34$ 时分母为零，舍去。
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第6题\quad 同类题解题步骤}
-\begin{enumerate}\item 先检查定义域是否关于原点对称，确认0是否在定义域内。
-\item 奇函数在0处有定义时，用f(0)=0求参数；也可直接用奇偶恒等式。
-\item 把其他已知函数值代入，求剩余参数。
-\item 把求出的参数代回，重新验证定义域与奇偶恒等关系。\end{enumerate}
-\par
-\pause
-\vspace{0.25cm}\textbf{易错提醒}\quad $f(0)=0$ 只是奇函数在0处有定义时的必要条件，不能据此直接判定函数为奇函数。
-\par
-\end{frame}
-% （1）《期中复习卷（二） 学生用卷》第1页第5题改为解答题；（2）据普通答案卷第4页第19题（3）及奇偶性课件有限定义域题型改编为抽象函数题。
-% 目标：先限制内层自变量，再统一到同一单调区间完成等价转化。 难度：中等至较难
-% 预期方法：把所有内层表达式属于定义域的限制先列出来。；用奇偶性移项或取绝对值，使两个函数值处在同一单调区间。；增函数保留比较方向，减函数改变比较方向，写成等价不等式。；解代数不等式，与定义域限制取交集，再核准端点。
-% 易错：“脱f”要以同一个单调区间为前提；定义域限制不能省略。第二问的左端点0可以取到。
-% 评价：能否把定义域限制与比较大小同时写进等价变形链。
-\begin{frame}[t]
 \PageHeading{第7题\quad 利用奇偶性与单调性解函数不等式}
 分别解下列不等式：
 \subq{1}已知 $f$ 是定义在 $\mathbb R$ 上的偶函数，且在 $[0,+\infty)$ 上严格递增，解 $f(2x-1)<f\!\left(\dfrac13\right)$。
 \subq{2}已知 $h$ 是定义在 $[-1,1]$ 上的奇函数，且在 $[-1,1]$ 上严格递减，解 $h(x-1)+h(2x)>0$。
 \par
-\vfill{\footnotesize 来源：据《期中复习卷（二）》第5题、答案第19题及奇偶性课件整理。}
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第7题\quad 解题步骤与易错提醒}
+\begin{enumerate}\item 把所有内层表达式属于定义域的限制先列出来。
+\item 用奇偶性移项或取绝对值，使两个函数值处在同一单调区间。
+\item 增函数保留比较方向，减函数改变比较方向，写成等价不等式。
+\item 解代数不等式，与定义域限制取交集，再核准端点。\end{enumerate}
+\par
+\pause
+\vspace{0.18cm}\textbf{易错提醒}\quad “脱f”要以同一个单调区间为前提；定义域限制不能省略。第二问的左端点0可以取到。
 \par
 \end{frame}
 \begin{frame}[t]
@@ -367,26 +502,19 @@ $|2x-1|$ 与 $\dfrac13$ 都在 $[0,+\infty)$ 内，利用该区间上的严格�
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第7题\quad 同类题解题步骤}
-\begin{enumerate}\item 把所有内层表达式属于定义域的限制先列出来。
-\item 用奇偶性移项或取绝对值，使两个函数值处在同一单调区间。
-\item 增函数保留比较方向，减函数改变比较方向，写成等价不等式。
-\item 解代数不等式，与定义域限制取交集，再核准端点。\end{enumerate}
-\par
-\pause
-\vspace{0.25cm}\textbf{易错提醒}\quad “脱f”要以同一个单调区间为前提；定义域限制不能省略。第二问的左端点0可以取到。
-\par
-\end{frame}
-% 《3.2.2奇偶性的应用 第2课时 分步放映版》PDF物理第30—31页例1（1）。
-% 目标：正确设置待求区间的变量，先算f(-x)，再利用奇偶关系。 难度：基础至中等
-% 预期方法：求哪个区间的式子，就先设x属于那个区间。；写出-x属于已知区间，把-x整体代入已知表达式。；奇函数用f(x)=-f(-x)，偶函数用f(x)=f(-x)。；单独处理0，并用分段函数给出完整定义域上的表达式。
-% 易错：代入-x时一次项的符号也要改变；由p(-x)转为p(x)时，奇函数需对整个表达式取负。
-% 评价：能否清楚区分p(-x)和p(x)，并把0作为单独一段。
-\begin{frame}[t]
 \PageHeading{第8题\quad 利用奇偶性补全解析式}
 已知 $p(x)$ 是定义在 $\mathbb R$ 上的奇函数，当 $x>0$ 时，$p(x)=x^2-2x+3$。求 $p(x)$ 在 $\mathbb R$ 上的解析式。
 \par
-\vfill{\footnotesize 来源：奇偶性应用课件例1（1）。}
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第8题\quad 解题步骤与易错提醒}
+\begin{enumerate}\item 求哪个区间的式子，就先设x属于那个区间。
+\item 写出-x属于已知区间，把-x整体代入已知表达式。
+\item 奇函数用f(x)=-f(-x)，偶函数用f(x)=f(-x)。
+\item 单独处理0，并用分段函数给出完整定义域上的表达式。\end{enumerate}
+\par
+\pause
+\vspace{0.18cm}\textbf{易错提醒}\quad 代入-x时一次项的符号也要改变；由p(-x)转为p(x)时，奇函数需对整个表达式取负。
 \par
 \end{frame}
 \begin{frame}[t]
@@ -412,28 +540,21 @@ $|2x-1|$ 与 $\dfrac13$ 都在 $[0,+\infty)$ 内，利用该区间上的严格�
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第8题\quad 同类题解题步骤}
-\begin{enumerate}\item 求哪个区间的式子，就先设x属于那个区间。
-\item 写出-x属于已知区间，把-x整体代入已知表达式。
-\item 奇函数用f(x)=-f(-x)，偶函数用f(x)=f(-x)。
-\item 单独处理0，并用分段函数给出完整定义域上的表达式。\end{enumerate}
-\par
-\pause
-\vspace{0.25cm}\textbf{易错提醒}\quad 代入-x时一次项的符号也要改变；由p(-x)转为p(x)时，奇函数需对整个表达式取负。
-\par
-\end{frame}
-% （1）《期中复习卷（二） 学生用卷》第1页第2题改为解答题；（2）同卷第3页第17题（1）。
-% 目标：先构造正变量，使积为定值，再判断需要下界还是上界。 难度：中等
-% 预期方法：由范围确定一个正变量，必要时配凑或换元。；把目标写成“常数加正数和”或“常数减正数和”。；对正数和用基本不等式，明确不等号方向。；解等号条件，回代原变量并检查原范围，写出最值及取值点。
-% 易错：不能对两个负数直接套用这里的基本不等式；常数减去一个有下界的正数和，得到的是上界。
-% 评价：是否同时写明正性、定积、等号条件及最值取得点。
-\begin{frame}[t]
 \PageHeading{第9题\quad 基本不等式中的配凑与负号}
 求下列函数的最值，并写出取到最值时 $x$ 的值：
 \subq{1}$x>1$ 时，$y=x+\dfrac4{x-1}$ 的最小值；
 \subq{2}$x<\dfrac54$ 时，$y=4x-2+\dfrac1{4x-5}$ 的最大值。
 \par
-\vfill{\footnotesize 来源：据《期中复习卷（二）》第2题、第17题整理。}
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第9题\quad 解题步骤与易错提醒}
+\begin{enumerate}\item 由范围确定一个正变量，必要时配凑或换元。
+\item 把目标写成“常数加正数和”或“常数减正数和”。
+\item 对正数和用基本不等式，明确不等号方向。
+\item 解等号条件，回代原变量并检查原范围，写出最值及取值点。\end{enumerate}
+\par
+\pause
+\vspace{0.18cm}\textbf{易错提醒}\quad 不能对两个负数直接套用这里的基本不等式；常数减去一个有下界的正数和，得到的是上界。
 \par
 \end{frame}
 \begin{frame}[t]
@@ -463,26 +584,19 @@ $|2x-1|$ 与 $\dfrac13$ 都在 $[0,+\infty)$ 内，利用该区间上的严格�
 \par
 \end{frame}
 \begin{frame}[t]
-\PageHeading{第9题\quad 同类题解题步骤}
-\begin{enumerate}\item 由范围确定一个正变量，必要时配凑或换元。
-\item 把目标写成“常数加正数和”或“常数减正数和”。
-\item 对正数和用基本不等式，明确不等号方向。
-\item 解等号条件，回代原变量并检查原范围，写出最值及取值点。\end{enumerate}
-\par
-\pause
-\vspace{0.25cm}\textbf{易错提醒}\quad 不能对两个负数直接套用这里的基本不等式；常数减去一个有下界的正数和，得到的是上界。
-\par
-\end{frame}
-% 《10.31周末作业》第4题，选择题改为完整解答题。
-% 目标：用已知的定和关系作常数代换，构造互为倒数的两项。 难度：中等至较难
-% 预期方法：确认变量及分母为正，找出题设给出的定和或定积。；把已知约束写成等于1的式子，与目标相乘后展开。；把变量集中到互为倒数、乘积为定值的两项上，再用基本不等式。；联立取等条件与原约束，检验可行后认定最小值。
-% 易错：分别估计1/a与4/b通常得不到可同时取到的最优界；只写下界而不验证等号，不能认定最小值。
-% 评价：能否说明为何乘(a+b)/2不改变目标，并验证取等点确实满足原约束。
-\begin{frame}[t]
 \PageHeading{第10题\quad 约束条件下的倒数和最小值}
 已知 $a>0$，$b>0$，且 $a+b=2$。求 $\dfrac1a+\dfrac4b$ 的最小值，并写出取到最小值时 $a,b$ 的值。
 \par
-\vfill{\footnotesize 来源：据《10.31周末作业》第4题改编。}
+\end{frame}
+\begin{frame}[t]
+\PageHeading{第10题\quad 解题步骤与易错提醒}
+\begin{enumerate}\item 确认变量及分母为正，找出题设给出的定和或定积。
+\item 把已知约束写成等于1的式子，与目标相乘后展开。
+\item 把变量集中到互为倒数、乘积为定值的两项上，再用基本不等式。
+\item 联立取等条件与原约束，检验可行后认定最小值。\end{enumerate}
+\par
+\pause
+\vspace{0.18cm}\textbf{易错提醒}\quad 分别估计1/a与4/b通常得不到可同时取到的最优界；只写下界而不验证等号，不能认定最小值。
 \par
 \end{frame}
 \begin{frame}[t]
@@ -505,17 +619,6 @@ $|2x-1|$ 与 $\dfrac13$ 都在 $[0,+\infty)$ 内，利用该区间上的严格�
 \[a=\frac23,\qquad b=\frac43.\]
 \par
 二者均为正且和为2，满足原条件。因此 $\boxed{S_{\min}=\dfrac92}$，当且仅当 $\boxed{a=\dfrac23,\ b=\dfrac43}$ 时取得。
-\par
-\end{frame}
-\begin{frame}[t]
-\PageHeading{第10题\quad 同类题解题步骤}
-\begin{enumerate}\item 确认变量及分母为正，找出题设给出的定和或定积。
-\item 把已知约束写成等于1的式子，与目标相乘后展开。
-\item 把变量集中到互为倒数、乘积为定值的两项上，再用基本不等式。
-\item 联立取等条件与原约束，检验可行后认定最小值。\end{enumerate}
-\par
-\pause
-\vspace{0.25cm}\textbf{易错提醒}\quad 分别估计1/a与4/b通常得不到可同时取到的最优界；只写下界而不验证等号，不能认定最小值。
 \par
 \end{frame}
 \begin{frame}[t]

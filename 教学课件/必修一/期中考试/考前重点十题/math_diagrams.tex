@@ -1,0 +1,27 @@
+% 数轴与抛物线位置图。构建脚本会将本文件嵌入各份TeX，成品可独立编译。
+\newcommand{\SetOpen}[2]{\filldraw[fill=white,draw=black,line width=0.7pt] (#1,{#2+0.16}) circle (2pt);}
+\newcommand{\SetClosed}[2]{\fill (#1,{#2+0.16}) circle (2pt);}
+\newcommand{\SetAxis}[2]{%
+  \draw[->,thin] (0,#1)--(12.2,#1) node[right] {$x$};
+  \node[anchor=east] at (-0.35,{#1+0.16}) {#2};
+  \foreach \t in {2,3,7,10}{\draw (\t,{#1-0.05})--(\t,{#1+0.05});\node[below,font=\scriptsize] at (\t,{#1-0.07}) {$\t$};}}
+\newcommand{\SetABRows}{%
+  \SetAxis{0}{$A$}\draw[very thick] (3,0.16)--(7,0.16);\SetClosed{3}{0}\SetOpen{7}{0}
+  \SetAxis{-1.1}{$B$}\draw[very thick] (2,-0.94)--(10,-0.94);\SetOpen{2}{-1.1}\SetOpen{10}{-1.1}}
+\newcommand{\SetResultRows}{%
+  \SetAxis{-2.2}{$A\cup B$}\draw[very thick] (2,-2.04)--(10,-2.04);\SetOpen{2}{-2.2}\SetOpen{10}{-2.2}
+  \SetAxis{-3.3}{$A\cap B$}\draw[very thick] (3,-3.14)--(7,-3.14);\SetClosed{3}{-3.3}\SetOpen{7}{-3.3}
+  \SetAxis{-4.4}{$(\complement_{\mathbb R}A)\cap B$}
+  \draw[very thick] (2,-4.24)--(3,-4.24);\draw[very thick] (7,-4.24)--(10,-4.24);
+  \SetOpen{2}{-4.4}\SetOpen{3}{-4.4}\SetClosed{7}{-4.4}\SetOpen{10}{-4.4}
+  \SetAxis{-5.5}{$A\cup(\complement_{\mathbb R}B)$}
+  \draw[<-,very thick] (0.2,-5.34)--(2,-5.34);\draw[very thick] (3,-5.34)--(7,-5.34);\draw[->,very thick] (10,-5.34)--(11.9,-5.34);
+  \SetClosed{2}{-5.5}\SetClosed{3}{-5.5}\SetOpen{7}{-5.5}\SetClosed{10}{-5.5}}
+\newcommand{\SetBlankAxes}{\begin{center}\begin{tikzpicture}[x=0.68cm,y=0.65cm,font=\small]\SetAxis{0}{$A$}\SetAxis{-1.1}{$B$}\end{tikzpicture}\end{center}}
+\newcommand{\SetNumberLines}{\begin{center}\begin{tikzpicture}[x=0.68cm,y=0.65cm,font=\small]\SetABRows\SetResultRows\end{tikzpicture}\end{center}}
+\newcommand{\QuadraticCases}{%
+  \begin{center}\begin{tikzpicture}[x=0.72cm,y=0.64cm,font=\small]
+  \begin{scope}\draw[->] (-1.6,0)--(1.65,0) node[right] {$x$};\draw[thick,domain=-1.4:1.4,samples=45] plot (\x,{\x*\x-1});\fill (-1,0) circle (1.4pt);\fill (1,0) circle (1.4pt);\node[below] at(-1,0){$x_1$};\node[below] at(1,0){$x_2$};\node at(0,1.8){$\Delta>0$};\end{scope}
+  \begin{scope}[xshift=3cm]\draw[->] (-1.5,0)--(1.55,0) node[right] {$x$};\draw[thick,domain=-1.15:1.15,samples=40] plot (\x,{\x*\x});\fill (0,0) circle (1.4pt);\node[below] at(0,0){$x_0$};\node at(0,1.8){$\Delta=0$};\end{scope}
+  \begin{scope}[xshift=6cm]\draw[->] (-1.5,0)--(1.55,0) node[right] {$x$};\draw[thick,domain=-1.05:1.05,samples=40] plot (\x,{\x*\x+0.45});\node at(0,1.8){$\Delta<0$};\end{scope}
+  \end{tikzpicture}\end{center}}
