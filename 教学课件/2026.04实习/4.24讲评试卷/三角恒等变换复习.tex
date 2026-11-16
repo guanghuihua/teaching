@@ -1,0 +1,390 @@
+\documentclass[UTF8,10pt,aspectratio=169]{ctexbeamer}
+\usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc, arrows.meta, positioning, shapes.geometric}
+\usepackage{newtxtext, newtxmath} % 经典试卷西文与公式字体
+
+% 极简风格设置
+\usetheme{default}
+\usecolortheme{default}
+\usefonttheme{serif}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title{三角恒等变换复习}
+\author{}
+\date{}
+
+\begin{document}
+	
+	% ==================== 封面 ====================
+	\begin{frame}
+		\begin{center}
+			\vspace{1.5cm}
+			{\Large \textbf{三角恒等变换复习}}
+			
+			\vspace{0.8cm}
+			{\large ——期中考试备考}
+			
+			\vspace{2cm}
+			\begin{tabular}{rl}
+				\textbf{学习目标：} & 1. 梳理和差倍半公式的推导脉络 \\
+				& 2. 熟练掌握辅助角公式及其应用 \\
+				& 3. 综合运用三角恒等变换解决问题 \\
+			\end{tabular}
+		\end{center}
+	\end{frame}
+	
+	% ==================== 一、知识结构图 ====================
+	\begin{frame}
+		\begin{center}
+			{\Large \textbf{一、知识结构图}}
+		\end{center}
+		\vspace{0.2cm}
+		
+		\begin{center}
+			\begin{tikzpicture}[
+				node distance=0.8cm and 1.2cm,
+				box/.style={rectangle, rounded corners, draw, fill=blue!10, minimum width=1.2cm, minimum height=0.6cm, align=center, font=\small},
+				startbox/.style={rectangle, rounded corners, draw, fill=blue!25, minimum width=2.2cm, minimum height=1.2cm, align=center, font=\small\bfseries},
+				grpbox/.style={rectangle, rounded corners, draw, fill=blue!10, minimum width=1.4cm, minimum height=0.6cm, align=center, font=\small},
+				arrow/.style={-{Stealth[length=2mm]}, thick}
+				]
+				% 起点
+				\node[startbox] (start) {向量的数量积\\ 及其坐标运算};
+				
+				% 和差公式
+				\node[box, right=1.5cm of start] (Csub) {$C_{(\alpha-\beta)}$};
+				\node[box, right=of Csub] (Cadd) {$C_{(\alpha+\beta)}$};
+				\node[box, below=of Csub] (Ssub) {$S_{(\alpha-\beta)}$};
+				\node[box, below=of Cadd] (Sadd) {$S_{(\alpha+\beta)}$};
+				\node[box, right=of Cadd] (C2a) {$C_{(2\alpha)}$};
+				\node[box, below=of C2a] (Tadd) {$T_{(\alpha+\beta)}$};
+				\node[box, below=of Tadd] (Tsub) {$T_{(\alpha-\beta)}$};
+				\node[box, below=of Sadd] (S2a) {$S_{(2\alpha)}$};
+				\node[box, below=of S2a] (T2a) {$T_{(2\alpha)}$};
+				
+				% 半角与和差化积
+				\node[grpbox, right=of C2a] (Chalf) {$C_{\frac{\alpha}{2}}, S_{\frac{\alpha}{2}}$};
+				\node[grpbox, right=of Chalf] (Thalf) {$T_{\frac{\alpha}{2}}$};
+				\node[grpbox, above=of C2a] (hecha) {和差化积};
+				\node[grpbox, left=of S2a, xshift=-0.2cm] (jihua) {积化和差};
+				
+				% 箭头
+				\draw[arrow] (start) -- (Csub);
+				\draw[arrow] (Csub) -- (Cadd);
+				\draw[arrow] (Csub) -- (Ssub);
+				\draw[arrow] (Ssub) -- (Sadd);
+				\draw[arrow] (Cadd) -- (C2a);
+				\draw[arrow] (Sadd) -- (S2a);
+				\draw[arrow] (Cadd) -- (Tadd);
+				\draw[arrow] (Csub) to[bend right=15] (Tsub);
+				\draw[arrow] (Tadd) -- (T2a);
+				\draw[arrow] (C2a) -- (Chalf);
+				\draw[arrow] (Chalf) -- (Thalf);
+				\draw[arrow] (Cadd) -- (hecha);
+				\draw[arrow] (Sadd) -- (jihua);
+			\end{tikzpicture}
+		\end{center}
+		
+		\vspace{0.2cm}
+		\textbf{核心起点}：向量数量积推出 $C_{(\alpha-\beta)}$，其余公式由此\textbf{环环相扣}地推导。
+	\end{frame}
+	
+	% ==================== 推导1：C(α-β) ====================
+	\begin{frame}
+		\textbf{1. 起点：两角差的余弦公式 $C_{(\alpha-\beta)}$}
+		
+		\vspace{0.3cm}
+		在单位圆上取 $P_1(\cos\alpha, \sin\alpha)$，$P_2(\cos\beta, \sin\beta)$，设 $\overrightarrow{OP_1}$ 与 $\overrightarrow{OP_2}$ 的夹角为 $\theta$。
+		
+		\vspace{0.2cm}
+		由数量积定义：$\overrightarrow{OP_1} \cdot \overrightarrow{OP_2} = |\overrightarrow{OP_1}||\overrightarrow{OP_2}|\cos\theta = \cos\theta$。
+		
+		\vspace{0.1cm}
+		由坐标：$\overrightarrow{OP_1} \cdot \overrightarrow{OP_2} = \cos\alpha\cos\beta + \sin\alpha\sin\beta$。
+		
+		\vspace{0.2cm}
+		注意 $\theta = \alpha - \beta + 2k\pi$，由 $\cos$ 的周期性得：
+		$$\boxed{\cos(\alpha - \beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta}$$
+		
+		\pause
+		\vspace{0.3cm}
+		\textbf{2. 由 $C_{(\alpha-\beta)}$ 推 $C_{(\alpha+\beta)}$：}以 $-\beta$ 代 $\beta$
+		$$\cos(\alpha+\beta) = \cos[\alpha-(-\beta)] = \cos\alpha\cos(-\beta) + \sin\alpha\sin(-\beta)$$
+		$$\boxed{\cos(\alpha + \beta) = \cos\alpha\cos\beta - \sin\alpha\sin\beta}$$
+	\end{frame}
+	
+	% ==================== 推导2：S(α±β) ====================
+	\begin{frame}
+		\textbf{3. 由 $C_{(\alpha-\beta)}$ 推 $S_{(\alpha+\beta)}$：}利用诱导公式 $\sin\theta = \cos(\dfrac{\pi}{2} - \theta)$
+		
+		\vspace{0.2cm}
+		$\sin(\alpha+\beta) = \cos\left[\dfrac{\pi}{2} - (\alpha+\beta)\right] = \cos\left[(\dfrac{\pi}{2} - \alpha) - \beta\right]$
+		
+		\vspace{0.1cm}
+		$= \cos(\dfrac{\pi}{2} - \alpha)\cos\beta + \sin(\dfrac{\pi}{2} - \alpha)\sin\beta$
+		
+		\vspace{0.1cm}
+		$$\boxed{\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta}$$
+		
+		\vspace{0.2cm}
+		同理（以 $-\beta$ 代 $\beta$）：$\boxed{\sin(\alpha - \beta) = \sin\alpha\cos\beta - \cos\alpha\sin\beta}$
+		
+		\pause
+		\vspace{0.3cm}
+		\textbf{4. 由 $S_{(\alpha\pm\beta)}$ 和 $C_{(\alpha\pm\beta)}$ 推 $T_{(\alpha\pm\beta)}$：}相除即可
+		$$\tan(\alpha \pm \beta) = \dfrac{\sin(\alpha \pm \beta)}{\cos(\alpha \pm \beta)} = \boxed{\dfrac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta}}$$
+	\end{frame}
+	
+	% ==================== 推导3：倍角公式 ====================
+	\begin{frame}
+		\textbf{5. 由和角公式（令 $\beta = \alpha$）推二倍角公式}
+		
+		\vspace{0.3cm}
+		\textbf{$S_{(2\alpha)}$：} $\sin 2\alpha = \sin(\alpha+\alpha) = \sin\alpha\cos\alpha + \cos\alpha\sin\alpha$
+		$$\boxed{\sin 2\alpha = 2\sin\alpha\cos\alpha}$$
+		
+		\vspace{0.2cm}
+		\textbf{$C_{(2\alpha)}$：} $\cos 2\alpha = \cos^2\alpha - \sin^2\alpha$
+		
+		\vspace{0.1cm}
+		\textbf{三种形式（重要！）}：
+		$$\boxed{\cos 2\alpha = \cos^2\alpha - \sin^2\alpha = 2\cos^2\alpha - 1 = 1 - 2\sin^2\alpha}$$
+		
+		\vspace{0.2cm}
+		\textbf{$T_{(2\alpha)}$：}
+		$$\boxed{\tan 2\alpha = \dfrac{2\tan\alpha}{1 - \tan^2\alpha}}$$
+		
+		\pause
+		\vspace{0.2cm}
+		\textbf{【降幂公式】}（由 $C_{(2\alpha)}$ 变形，\textbf{极其重要}）：
+		$$\boxed{\cos^2\alpha = \dfrac{1 + \cos 2\alpha}{2}, \quad \sin^2\alpha = \dfrac{1 - \cos 2\alpha}{2}}$$
+	\end{frame}
+	
+	% ==================== 推导4：半角与辅助角 ====================
+	\begin{frame}
+		\textbf{6. 由降幂公式推半角公式}（以 $\dfrac{\alpha}{2}$ 代 $\alpha$，$\alpha$ 代 $2\alpha$）
+		$$\sin\dfrac{\alpha}{2} = \pm\sqrt{\dfrac{1-\cos\alpha}{2}}, \quad \cos\dfrac{\alpha}{2} = \pm\sqrt{\dfrac{1+\cos\alpha}{2}}$$
+		$$\tan\dfrac{\alpha}{2} = \pm\sqrt{\dfrac{1-\cos\alpha}{1+\cos\alpha}} = \dfrac{\sin\alpha}{1+\cos\alpha} = \dfrac{1-\cos\alpha}{\sin\alpha}$$
+		
+		\textbf{符号由 $\dfrac{\alpha}{2}$ 所在象限决定。}
+		
+		\pause
+		\vspace{0.3cm}
+		\textbf{7. 辅助角公式}（合并同频不同相的正余弦）
+		$$a\sin x + b\cos x = \sqrt{a^2+b^2}\sin(x+\varphi)$$
+		其中 $\cos\varphi = \dfrac{a}{\sqrt{a^2+b^2}}$，$\sin\varphi = \dfrac{b}{\sqrt{a^2+b^2}}$，即 $\tan\varphi = \dfrac{b}{a}$。
+		
+		\vspace{0.2cm}
+		\textbf{推导思路}：提取 $\sqrt{a^2+b^2}$，再逆用 $S_{(\alpha+\beta)}$。
+		
+		\vspace{0.2cm}
+		\textbf{常用特例}：$\sin x + \cos x = \sqrt{2}\sin(x + \dfrac{\pi}{4})$，\quad $\sqrt{3}\sin x + \cos x = 2\sin(x + \dfrac{\pi}{6})$。
+	\end{frame}
+	
+	% ==================== 二、例题讲解：第10题 ====================
+	\begin{frame}
+		\begin{center}
+			{\Large \textbf{二、典型例题精讲}}
+		\end{center}
+		\vspace{0.3cm}
+		
+		\textbf{例 1.} 若 $\cos^2\dfrac{\alpha}{2} - \sin\dfrac{\alpha}{2}\cos\dfrac{\alpha}{2} = \dfrac{3}{4}$，求 $\sin 2\alpha$ 的值。
+		
+		\vspace{0.3cm}
+		\textbf{【思路】} 看到 $\cos^2\dfrac{\alpha}{2}$ 想到\textbf{降幂}，看到 $\sin\dfrac{\alpha}{2}\cos\dfrac{\alpha}{2}$ 想到\textbf{倍角}，目标是把左边变成关于 $\alpha$ 的式子。
+		
+		\pause
+		\vspace{0.3cm}
+		\textbf{【详解】} 由降幂公式 $\cos^2\dfrac{\alpha}{2} = \dfrac{1+\cos\alpha}{2}$，由倍角公式 $\sin\dfrac{\alpha}{2}\cos\dfrac{\alpha}{2} = \dfrac{1}{2}\sin\alpha$。
+		
+		\vspace{0.2cm}
+		代入原式：$\dfrac{1+\cos\alpha}{2} - \dfrac{1}{2}\sin\alpha = \dfrac{3}{4}$，即 $\cos\alpha - \sin\alpha = \dfrac{1}{2}$。
+		
+		\vspace{0.2cm}
+		两边平方：$(\cos\alpha - \sin\alpha)^2 = 1 - 2\sin\alpha\cos\alpha = 1 - \sin 2\alpha = \dfrac{1}{4}$。
+		
+		\vspace{0.2cm}
+		故 $\boxed{\sin 2\alpha = \dfrac{3}{4}}$。
+	\end{frame}
+	
+	% ==================== 例题2：第12题 ====================
+	\begin{frame}
+		\textbf{例 2.} 求函数 $y = \sin\left(\dfrac{\pi}{2} + x\right)\cos\left(\dfrac{\pi}{6} - x\right)$ 的最大值。
+		
+		\vspace{0.3cm}
+		\textbf{【思路】} 先用\textbf{诱导公式}化简 $\sin(\dfrac{\pi}{2}+x) = \cos x$，再将 $\cos(\dfrac{\pi}{6}-x)$ 展开，目标化为 $A\sin(x+\varphi) + C$ 的形式。
+		
+		\pause
+		\vspace{0.2cm}
+		\textbf{【详解】} 
+		$$y = \cos x \cdot \cos\left(\dfrac{\pi}{6} - x\right) = \cos x\left(\cos\dfrac{\pi}{6}\cos x + \sin\dfrac{\pi}{6}\sin x\right)$$
+		$$= \dfrac{\sqrt{3}}{2}\cos^2 x + \dfrac{1}{2}\sin x\cos x$$
+		
+		\vspace{0.1cm}
+		利用降幂与倍角：$\cos^2 x = \dfrac{1+\cos 2x}{2}$，$\sin x\cos x = \dfrac{1}{2}\sin 2x$。
+		$$y = \dfrac{\sqrt{3}}{4}(1+\cos 2x) + \dfrac{1}{4}\sin 2x = \dfrac{1}{4}\sin 2x + \dfrac{\sqrt{3}}{4}\cos 2x + \dfrac{\sqrt{3}}{4}$$
+		
+		\vspace{0.1cm}
+		由辅助角公式：$\dfrac{1}{4}\sin 2x + \dfrac{\sqrt{3}}{4}\cos 2x = \dfrac{1}{2}\sin\left(2x + \dfrac{\pi}{3}\right)$。
+		
+		\vspace{0.1cm}
+		故 $y = \dfrac{1}{2}\sin\left(2x+\dfrac{\pi}{3}\right) + \dfrac{\sqrt{3}}{4}$，最大值为 $\boxed{\dfrac{1}{2} + \dfrac{\sqrt{3}}{4} = \dfrac{2+\sqrt{3}}{4}}$。
+	\end{frame}
+	
+	% ==================== 例题3：第17题 ====================
+	\begin{frame}
+		\textbf{例 3.} 在锐角 $\triangle ABC$ 中，$\vec{m} = (2\sin(A+C), \sqrt{3})$，$\vec{n} = \left(\cos 2B, 2\cos^2\dfrac{B}{2} - 1\right)$，且 $\vec{m} \parallel \vec{n}$。
+		
+		(1) 求角 $B$ 的大小；\quad (2) 若 $AC = 1$，求 $\triangle ABC$ 面积的最大值。
+		
+		\pause
+		\vspace{0.2cm}
+		\textbf{【(1) 详解】} 注意到 $A + C = \pi - B$，故 $2\sin(A+C) = 2\sin B$；$2\cos^2\dfrac{B}{2} - 1 = \cos B$。
+		
+		\vspace{0.1cm}
+		故 $\vec{m} = (2\sin B, \sqrt{3})$，$\vec{n} = (\cos 2B, \cos B)$。
+		
+		\vspace{0.1cm}
+		由 $\vec{m} \parallel \vec{n}$：$2\sin B \cdot \cos B = \sqrt{3}\cos 2B$，即 $\sin 2B = \sqrt{3}\cos 2B$，$\tan 2B = \sqrt{3}$。
+		
+		\vspace{0.1cm}
+		因为 $\triangle ABC$ 为锐角三角形，$B \in (0, \dfrac{\pi}{2})$，$2B \in (0, \pi)$，故 $2B = \dfrac{\pi}{3}$，$\boxed{B = \dfrac{\pi}{6}}$。
+		
+		\pause
+		\vspace{0.2cm}
+		\textbf{【(2) 详解】} 由余弦定理：$b^2 = a^2 + c^2 - 2ac\cos B \geq 2ac - \sqrt{3}ac = (2-\sqrt{3})ac$，
+		
+		\vspace{0.1cm}
+		即 $1 \geq (2-\sqrt{3})ac$，故 $ac \leq \dfrac{1}{2-\sqrt{3}} = 2+\sqrt{3}$。
+		
+		\vspace{0.1cm}
+		$S = \dfrac{1}{2}ac\sin B = \dfrac{1}{4}ac \leq \dfrac{2+\sqrt{3}}{4}$，即最大值为 $\boxed{\dfrac{2+\sqrt{3}}{4}}$。
+	\end{frame}
+	
+	% ==================== 例题4：第16题 ====================
+	\begin{frame}
+		\textbf{例 4.} 已知 $\alpha$，$\beta$ 为锐角，$\tan\alpha = \dfrac{4}{3}$，$\cos(\alpha+\beta) = -\dfrac{\sqrt{5}}{5}$。
+		
+		(1) 求 $\cos 2\alpha$ 的值；\quad (2) 求 $\tan(\alpha - \beta)$ 的值。
+		
+		\pause
+		\vspace{0.2cm}
+		\textbf{【(1) 详解】} 利用公式 $\cos 2\alpha = \dfrac{1-\tan^2\alpha}{1+\tan^2\alpha}$（由 $\cos 2\alpha = \dfrac{\cos^2\alpha - \sin^2\alpha}{\cos^2\alpha + \sin^2\alpha}$ 上下同除以 $\cos^2\alpha$ 得）。
+		
+		\vspace{0.1cm}
+		代入 $\tan\alpha = \dfrac{4}{3}$：$\cos 2\alpha = \dfrac{1 - \frac{16}{9}}{1 + \frac{16}{9}} = \dfrac{-\frac{7}{9}}{\frac{25}{9}} = \boxed{-\dfrac{7}{25}}$。
+		
+		\pause
+		\vspace{0.2cm}
+		\textbf{【(2) 详解】} 因 $\alpha$ 为锐角且 $\tan\alpha = \dfrac{4}{3}$，故 $\sin\alpha = \dfrac{4}{5}$，$\cos\alpha = \dfrac{3}{5}$。
+		
+		\vspace{0.1cm}
+		$\sin 2\alpha = 2\sin\alpha\cos\alpha = \dfrac{24}{25}$，$\tan 2\alpha = \dfrac{\sin 2\alpha}{\cos 2\alpha} = -\dfrac{24}{7}$。
+		
+		\vspace{0.1cm}
+		因 $\alpha$，$\beta$ 为锐角，$\alpha + \beta \in (0, \pi)$，$\cos(\alpha+\beta) = -\dfrac{\sqrt{5}}{5} < 0$，故 $\alpha+\beta \in (\dfrac{\pi}{2}, \pi)$，
+		
+		\vspace{0.1cm}
+		$\sin(\alpha+\beta) = \dfrac{2\sqrt{5}}{5}$，$\tan(\alpha+\beta) = -2$。
+		
+		\vspace{0.1cm}
+		注意 $\alpha - \beta = 2\alpha - (\alpha+\beta)$：
+		$$\tan(\alpha-\beta) = \tan[2\alpha - (\alpha+\beta)] = \dfrac{\tan 2\alpha - \tan(\alpha+\beta)}{1+\tan 2\alpha\tan(\alpha+\beta)} = \dfrac{-\frac{24}{7}-(-2)}{1+(-\frac{24}{7})(-2)} = \boxed{-\dfrac{2}{11}}$$
+	\end{frame}
+	
+	% ==================== 三、课堂练习 ====================
+	\begin{frame}
+		\begin{center}
+			{\Large \textbf{三、课堂练习}}
+		\end{center}
+		\vspace{0.3cm}
+		
+		\textbf{练习 1.} 求值：$\sin\dfrac{\pi}{12} - \sqrt{3}\cos\dfrac{\pi}{12} = $（\quad）
+		
+		A. $0$ \qquad B. $-\sqrt{2}$ \qquad C. $2$ \qquad D. $\sqrt{2}$
+		
+		\vspace{0.3cm}
+		\textbf{练习 2.} $\sqrt{1+\cos 100^\circ} - \sqrt{1-\cos 100^\circ}$ 的值为（\quad）
+		
+		A. $-2\cos 5^\circ$ \qquad B. $2\cos 5^\circ$ \qquad C. $-2\sin 5^\circ$ \qquad D. $2\sin 5^\circ$
+		
+		\vspace{0.3cm}
+		\textbf{练习 3.} 已知 $\sin x = \dfrac{1}{4}$，且 $x$ 为第二象限的角，则 $\sin 2x = $（\quad）
+		
+		A. $-\dfrac{3}{16}$ \qquad B. $-\dfrac{\sqrt{15}}{8}$ \qquad C. $\pm\dfrac{\sqrt{15}}{8}$ \qquad D. $\dfrac{\sqrt{15}}{8}$
+		
+		\vspace{0.3cm}
+		\textbf{练习 4.} 求值：$\cos 15^\circ\cos 105^\circ - \sin 15^\circ\sin 105^\circ = $ \underline{\hspace{2.5cm}}。
+		
+		\vspace{0.3cm}
+		\textbf{练习 5.} 已知 $\cos\alpha = \dfrac{3}{5}$，$\alpha$ 是第四象限角，求 $\dfrac{1-\tan\frac{\alpha}{2}}{1+\tan\frac{\alpha}{2}}$ 的值。
+	\end{frame}
+	
+	% ==================== 课堂练习答案 ====================
+	\begin{frame}
+		\begin{center}
+			{\Large \textbf{课堂练习参考答案与提示}}
+		\end{center}
+		\vspace{0.3cm}
+		
+		\textbf{练习 1.} 答案 \textbf{B}。\ 提示：提取 $2$ 得 $2\left(\dfrac{1}{2}\sin\dfrac{\pi}{12} - \dfrac{\sqrt{3}}{2}\cos\dfrac{\pi}{12}\right) = -2\cos\left(\dfrac{\pi}{12}+\dfrac{\pi}{6}\right) = -2\cos\dfrac{\pi}{4} = -\sqrt{2}$。
+		
+		\pause
+		\vspace{0.2cm}
+		\textbf{练习 2.} 答案 \textbf{C}。\ 提示：$1+\cos 100^\circ = 2\cos^2 50^\circ$，$1-\cos 100^\circ = 2\sin^2 50^\circ$。
+		原式 $= \sqrt{2}|\cos 50^\circ| - \sqrt{2}|\sin 50^\circ| = \sqrt{2}(\cos 50^\circ - \sin 50^\circ)$
+		$= \sqrt{2} \cdot \sqrt{2}\cos(50^\circ + 45^\circ) = 2\cos 95^\circ = -2\sin 5^\circ$。
+		
+		\pause
+		\vspace{0.2cm}
+		\textbf{练习 3.} 答案 \textbf{B}。\ 提示：$x$ 为第二象限，$\cos x = -\dfrac{\sqrt{15}}{4}$，$\sin 2x = 2\sin x\cos x = -\dfrac{\sqrt{15}}{8}$。
+		
+		\pause
+		\vspace{0.2cm}
+		\textbf{练习 4.} 答案 $\boxed{-\dfrac{1}{2}}$。\ 提示：逆用 $C_{(\alpha+\beta)}$ 公式：
+		$$\cos 15^\circ\cos 105^\circ - \sin 15^\circ\sin 105^\circ = \cos(15^\circ+105^\circ) = \cos 120^\circ = -\dfrac{1}{2}$$
+		
+		\pause
+		\vspace{0.2cm}
+		\textbf{练习 5.} 答案 $\boxed{3}$。\ 提示：这是经典题型！
+		
+		$\dfrac{1-\tan\frac{\alpha}{2}}{1+\tan\frac{\alpha}{2}} = \dfrac{\cos\frac{\alpha}{2} - \sin\frac{\alpha}{2}}{\cos\frac{\alpha}{2} + \sin\frac{\alpha}{2}} = \dfrac{(\cos\frac{\alpha}{2}-\sin\frac{\alpha}{2})^2}{\cos^2\frac{\alpha}{2}-\sin^2\frac{\alpha}{2}} = \dfrac{1-\sin\alpha}{\cos\alpha}$
+		
+		\vspace{0.1cm}
+		因 $\alpha$ 为第四象限角，$\cos\alpha = \dfrac{3}{5}$，$\sin\alpha = -\dfrac{4}{5}$，故原式 $= \dfrac{1+\frac{4}{5}}{\frac{3}{5}} = 3$。
+	\end{frame}
+	
+	% ==================== 小结 ====================
+	\begin{frame}
+		\begin{center}
+			{\Large \textbf{四、课堂小结}}
+		\end{center}
+		\vspace{0.4cm}
+		
+		\textbf{1. 知识脉络}
+		\begin{itemize}
+			\item 一切起点：$C_{(\alpha-\beta)}$（向量法证明）
+			\item 推导链条：$C_{(\alpha-\beta)} \to C_{(\alpha+\beta)} \to S_{(\alpha\pm\beta)} \to T_{(\alpha\pm\beta)} \to$ 倍角 $\to$ 降幂 $\to$ 半角
+		\end{itemize}
+		
+		\vspace{0.3cm}
+		\textbf{2. 常用技巧}
+		\begin{itemize}
+			\item \textbf{降幂升角}：$\cos^2\alpha = \dfrac{1+\cos 2\alpha}{2}$，$\sin^2\alpha = \dfrac{1-\cos 2\alpha}{2}$
+			\item \textbf{辅助角公式}：$a\sin x + b\cos x = \sqrt{a^2+b^2}\sin(x+\varphi)$
+			\item \textbf{角的拆分}：$\alpha = (\alpha+\beta) - \beta$，$\alpha - \beta = 2\alpha - (\alpha+\beta)$（见例 4）
+			\item \textbf{平方技巧}：已知 $\sin x \pm \cos x$，求 $\sin x\cos x$（见例 1）
+		\end{itemize}
+		
+		\vspace{0.3cm}
+		\textbf{3. 备考建议}：多做综合题，注意\textbf{角的范围分析}与\textbf{公式的正用、逆用、变形用}。
+		
+		\vspace{0.4cm}
+		\begin{center}
+			\textit{熟练掌握公式推导，方能灵活运用！}
+		\end{center}
+	\end{frame}
+	
+\end{document}
