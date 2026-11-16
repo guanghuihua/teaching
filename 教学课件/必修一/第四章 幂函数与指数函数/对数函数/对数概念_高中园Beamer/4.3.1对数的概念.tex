@@ -1,0 +1,406 @@
+% !TeX program = xelatex
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\usepackage{amsmath,amssymb,booktabs}
+\newcommand{\ans}[1]{{\color{red!70!black}#1}}
+\setlength{\parskip}{.6em}
+\title{4.3.1 对数的概念}
+\author{深圳中学高中园}\date{}
+\begin{document}\campusmaketitle
+% 来源：PPT2—3；修正开方引入遗漏正负根的问题
+\begin{frame}[t]{任务一：求未知的指数}
+已知 $a+x=N$，可用减法求 $x$；已知 $ax=N\ (a\ne0)$，可用除法。
+
+已知 $x^n=N$，需按 $n$ 的奇偶性和 $N$ 的符号讨论实数根。
+\[2^x=4\Rightarrow x=2,\qquad2^x=8\Rightarrow x=3.\]
+当 $2^x=10$ 或 $2^x=11$ 时，怎样准确表示 $x$？\end{frame}
+
+% 来源：PPT4；图片842
+\begin{frame}[t]{任务二：对数的定义}
+当 $a>0$ 且 $a\ne1$，$N>0$ 时，
+\[\boxed{a^x=N\quad\Longleftrightarrow\quad x=\log_aN}.\]
+数 $x$ 叫做以 $a$ 为底 $N$ 的对数。$a$ 是底数，$N$ 是真数。
+
+$\log_aN$ 整体表示一个数。例如
+\[2^x=10\Longleftrightarrow x=\log_2 10.\]\end{frame}
+
+% 来源：PPT4、8；图片842
+\begin{frame}[t]{任务二：有意义的条件}
+\[\boxed{a>0,\quad a\ne1,\quad N>0}.\]
+为什么底数不能取 $0$、负数或 $1$？为什么真数必须为正？
+\pause\par\medskip
+\ans{正底数的实数指数幂始终为正；底数为负或零时不能对所有实指数定义。底数为1时，只能得到1，且不能唯一确定指数。
+
+对合法底数，指数函数在实数集上严格单调，值域为正实数集，所以每个正数都有唯一的对数。}
+\end{frame}
+
+% 来源：PPT5—6；图片842
+\begin{frame}[t]{任务三：常用对数与自然对数}
+\renewcommand{\arraystretch}{1.8}\centering
+\begin{tabular}{lll}\toprule 名称&底数&记法\\\midrule
+常用对数&$10$&$\lg N=\log_{10}N$\\
+自然对数&$e=2.71828\ldots$&$\ln N=\log_eN$\\\bottomrule\end{tabular}
+\par $1.1^x=2\Longleftrightarrow x=\log_{1.1}2$。
+
+$\ln10\approx2.303$，所以 $e^{2.303}\approx10$。\end{frame}
+
+% 来源：PPT6
+\begin{frame}[t]{例1：指数式与对数式互化}
+\begin{align*}
+(1)&\ 5^4=625;&(2)&\ 2^{-6}=\tfrac1{64};\\
+(3)&\ (\tfrac13)^m=5.73;&(4)&\ \log_{1/2}16=-4;\\
+(5)&\ \lg0.01=-2;&(6)&\ \ln10\approx2.303.
+\end{align*}
+\pause\par\medskip
+\ans{\begin{align*}
+(1)&\ \log_5 625=4;&(2)&\ \log_2\tfrac1{64}=-6;\\
+(3)&\ \log_{1/3}5.73=m;&(4)&\ (\tfrac12)^{-4}=16;\\
+(5)&\ 10^{-2}=0.01;&(6)&\ e^{2.303}\approx10.
+\end{align*}}
+\end{frame}
+
+% 来源：PPT7
+\begin{frame}[t]{例2：求真数、底数与对数}
+\begin{align*}
+(1)&\ \log_{64}x=-\tfrac23;&(2)&\ \log_x8=6;\\
+(3)&\ \lg100=x;&(4)&\ -\ln(e^2)=x.
+\end{align*}
+\pause\par\medskip
+\ans{\begin{align*}
+(1)&\ x=64^{-2/3}=\tfrac1{16};\\
+(2)&\ x^6=8,\ x>0,\ x\ne1\Rightarrow x=\sqrt2;\\
+(3)&\ x=2;\qquad (4)\ x=-2.
+\end{align*}}
+\end{frame}
+
+% 来源：PPT8—9、11；图片842
+\begin{frame}[t]{任务四：基本性质与恒等式}
+以下均要求 $a>0$ 且 $a\ne1$。
+\[\log_a1=0,\qquad\log_aa=1.\]
+\[\boxed{a^{\log_aN}=N\quad(N>0)},\qquad
+\boxed{\log_a(a^x)=x\quad(x\in\mathbb R)}.\]
+
+负数和零没有实对数；对数的值可以为负数或零。
+\[\log_2\tfrac12=-1,\qquad \log_{0.6}1=0.\]\end{frame}
+
+% 来源：PPT10—11
+\begin{frame}[t]{例3：恒等式的使用}
+\[(1)\ \log_3\frac{2x-1}{5}=0;\qquad
+(2)\ 6^{\log_6(5x+1)}=36.\]
+\[(3)\ 2^{\log_2(3+2)}.\]
+\pause\par\medskip
+\ans{(1) $\frac{2x-1}{5}=1$，得 $x=3$。
+
+(2) 先要求 $5x+1>0$，再得 $5x+1=36$，所以 $x=7$。
+
+(3) $2^{\log_25}=5$。}
+\end{frame}
+
+% 来源：PPT12
+\begin{frame}[t]{例4：底数、真数同时检查}
+求下列式子有意义时 $x$ 的范围：
+\[(1)\ \log_2(x-10);\qquad(2)\ \log_{x-1}(x+2).\]
+\pause\par\medskip
+\ans{(1) $x-10>0$，所以 $x>10$。
+
+(2) $x-1>0$、$x-1\ne1$、$x+2>0$，故
+\[x\in(1,2)\cup(2,+\infty).\]}
+\end{frame}
+
+% 来源：PPT13；图片843
+\begin{frame}[t]{例5：未知量的位置}
+\[(1)\ \log_2x=-\tfrac12;\qquad (2)\ \log_x25=2;\qquad
+(3)\ \log_5(x^2)=2.\]
+\pause\par\medskip
+\ans{(1) $x=2^{-1/2}=\frac{\sqrt2}{2}$。
+
+(2) $x^2=25$，结合底数条件 $x>0,x\ne1$，得 $x=5$。
+
+(3) $x^2=25$，两根 $x=\pm5$ 均使真数为正，故都保留。}
+\end{frame}
+
+% 来源：图片841：练习1
+\begin{frame}[t]{教材练习：互化八题}
+\small
+\begin{align*}
+(1)&\ 5^4=625;&(2)&\ 2^{-6}=\tfrac1{64};\\
+(3)&\ 4^x=10;&(4)&\ 3^{-m/4}=9;\\
+(5)&\ \log_216=4;&(6)&\ \log_3\tfrac19=-2;\\
+(7)&\ \log_3(5+x)=2;&(8)&\ \log_{a-1}(b+2)=3.
+\end{align*}
+\pause\par\medskip
+\ans{\small
+(1) $\log_5625=4$；(2) $\log_2\frac1{64}=-6$；(3) $\log_410=x$；
+
+(4) $\log_39=-m/4$；(5) $2^4=16$；(6) $3^{-2}=1/9$；
+
+(7) $3^2=5+x$；(8) $(a-1)^3=b+2$，且 $a>1,a\ne2,b>-2$。}
+\end{frame}
+
+% 来源：图片841：练习2
+\begin{frame}[t]{教材练习：计算六题}
+\begin{align*}
+(1)&\ \log_2\tfrac1{16};&(2)&\ \log_{1/2}32;\\
+(3)&\ \log_{0.4}1;&(4)&\ \log_{2.5}6.25;\\
+(5)&\ 4^{\log_43};&(6)&\ 3^{\log_37+1}.
+\end{align*}
+\pause\par\medskip
+\ans{依次为 $-4,\ -5,\ 0,\ 2,\ 3,\ 21$。
+
+例如 $3^{\log_37+1}=3^{\log_37}\cdot3=7\cdot3=21$。}
+\end{frame}
+
+% 来源：图片841：练习3
+\begin{frame}[t]{教材练习：求未知量}
+\[(1)\ \log_5x=3;\qquad(2)\ \log_2(2x+1)=3;\]
+\[(3)\ \log_x\tfrac18=3;\qquad(4)\ \log_2(8^x)=-3.\]
+\pause\par\medskip
+\ans{(1) $x=125$；(2) $2x+1=8$，$x=7/2$；
+
+(3) $x^3=1/8$，$x=1/2$，符合底数条件；
+
+(4) $8^x=2^{-3}$，$2^{3x}=2^{-3}$，$x=-1$。}
+\end{frame}
+
+% 来源：图片842：典例1、对点练习；原多选项改成直接求范围
+\begin{frame}[t]{配套练习：有意义的条件}
+(1) $b=\log_{a-2}(5-a)$ 中，求 $a$ 的范围。
+
+(2) $\log_a(1-2a)$ 有意义时，求 $a$ 的范围。
+\pause\par\medskip
+\ans{(1) $a-2>0$、$a-2\ne1$、$5-a>0$，故
+\[a\in(2,3)\cup(3,5).\]
+(2) $a>0$、$a\ne1$、$1-2a>0$，故 $0<a<1/2$。}
+\end{frame}
+
+% 来源：图片842—843
+\begin{frame}[t]{配套练习：互化与辨析}
+互化：$5^3=125$；$\log_216=4$；$10^{-2}=0.01$；$\log_{\sqrt5}125=6$。
+
+以下哪些是正确的直接互化？
+
+A. $10^0=1$ 与 $\lg1=0$； B. $27^{-1/3}=1/3$ 与 $\log_{27}(1/3)=-1/3$；
+
+C. $\log_39=2$ 与 $9^{1/2}=3$； D. $\log_55=1$ 与 $5^1=5$。
+\pause\par\medskip
+\ans{互化依次为 $\log_5125=3$；$2^4=16$；$\lg0.01=-2$；$(\sqrt5)^6=125$。
+
+选 A、B、D。C 中两式虽都成立，但不是保持底数不变的直接互化。}
+\end{frame}
+
+% 来源：图片843；与前文重复的两问不重复展示
+\begin{frame}[t]{配套练习：求值与求未知量}
+\[(1)\ \lg0.01=x;\quad(2)\ \log_7(x+2)=2;\]
+\[(3)\ \log_{2/3}\tfrac94=x;\quad(4)\ x=\log_{1/2}32;\]
+\[(5)\ \log_5(x^2)=2;\quad(6)\ 2\log_3x=4.\]
+\pause\par\medskip
+\ans{依次为 $x=-2,\ 47,\ -2,\ -5,\ \pm5,\ 9$。
+
+第(5)题的真数是 $x^2$；第(6)题的真数是 $x$，必须取正值。}
+\end{frame}
+
+% 来源：图片843：典例3
+\begin{frame}[t]{配套练习：恒等式与嵌套对数}
+\[(1)\ 2^{-\log_23};\quad(2)\ e^{3\ln7};\quad(3)\ \lg(0.001^2);\]
+\[(4)\ \log_3(\lg x)=1;\qquad(5)\ \log_3[\log_4(\log_5x)]=0.\]
+\pause\par\medskip
+\ans{(1) $1/3$；(2) $343$；(3) $-6$。
+
+(4) $\lg x=3$，得 $x=1000$。
+
+(5) $\log_4(\log_5x)=1$，$\log_5x=4$，得 $x=625$。
+
+求嵌套式的值从内到外；已知值求未知量从外到内。}
+\end{frame}
+
+% 来源：图片843：三道变式
+\begin{frame}[t]{配套拓展：嵌套式变式}
+记 $L(x)=\log_3[\log_4(\log_5x)]$。
+
+(1) 若 $L(x)=1$，求 $x$。
+
+(2) 若 $L(x)=0$，求 $625^{\log_x3}$。
+
+(3) 若 $3^{L(x)}=1$，求 $x$。
+\pause\par\medskip
+\ans{(1) 逐层得 $\log_4(\log_5x)=3$、$\log_5x=64$，故 $x=5^{64}$。
+
+(2) $x=625$，所以结果为 $3$。
+
+(3) $L(x)=0$，所以 $x=625$。各解均满足逐层真数为正。}
+\end{frame}
+
+% 来源：截图438、339；答案独立推导
+\begin{frame}[t]{截图练习1}
+$\log_x16=2$，则 $x$ 等于（\quad）。\par A. $\pm4$\quad B. $4$\quad C. $256$\quad D. $2$
+\pause\par\medskip
+\ans{$x^2=16$，底数 $x>0,x\ne1$，故 $x=4$，选B。}
+\end{frame}
+
+% 来源：截图438、339；答案独立推导
+\begin{frame}[t]{截图练习2}
+若 $f(2^x)=x$（$x\in\mathbb R$），则 $f(5)$ 为（\quad）。\par A. $2^5$\quad B. $5^2$\quad C. $\log_52$\quad D. $\log_25$
+\pause\par\medskip
+\ans{令 $2^x=5$，则 $x=\log_25$，故 $f(5)=\log_25$，选D。}
+\end{frame}
+
+% 来源：截图438、339；答案独立推导
+\begin{frame}[t]{截图练习3—4}
+(3) $\log_3(a+1)=1$，求 $\log_a2+\log_2(a-1)$。\par (4) $a=\log_34$，求 $3^{2a}$。
+\pause\par\medskip
+\ans{(3) $a=2$，结果为 $1+0=1$。\par (4) $3^a=4$，故 $3^{2a}=16$。}
+\end{frame}
+
+% 来源：截图438、339；答案独立推导
+\begin{frame}[t]{截图练习5}
+将下列指数式与对数式互化：
+\begin{align*}(1)&\ \log_216=4;&(2)&\ \log_{1/3}27=-3;\\
+(3)&\ \log_{\sqrt3}x=3;&(4)&\ 5^3=125;\\
+(5)&\ 2^{-1}=1/2;&(6)&\ (1/3)^{-2}=9.\end{align*}
+\pause\par\medskip
+\ans{依次为 $2^4=16$；$(1/3)^{-3}=27$；$(\sqrt3)^3=x$；$\log_5125=3$；$\log_2(1/2)=-1$；$\log_{1/3}9=-2$。}
+\end{frame}
+
+% 来源：截图438、339；答案独立推导
+\begin{frame}[t]{截图练习6：前三问}
+求 $x$：\[(1)\ \log_x27=3/2;\quad(2)\ \log_2x=-2/3;\]\[(3)\ \log_x(3+2\sqrt2)=-2.\]
+\pause\par\medskip
+\ans{(1) $x=9$；(2) $x=2^{-2/3}$；\par (3) $x^{-2}=3+2\sqrt2=(\sqrt2+1)^2$，底数为正，所以 $x=\sqrt2-1$。}
+\end{frame}
+
+% 来源：截图438、339；答案独立推导
+\begin{frame}[t]{截图练习6：嵌套两问}
+求 $x$：\[(4)\ \log_5(\log_2x)=0;\quad (5)\ \log_2[\log_3(\log_2x)]=1.\]
+\pause\par\medskip
+\ans{(4) $\log_2x=1$，所以 $x=2$。\par (5) $\log_3(\log_2x)=2$，$\log_2x=9$，所以 $x=512$。}
+\end{frame}
+
+% 来源：截图438、339；答案独立推导
+\begin{frame}[t]{截图练习7—8}
+(7) $a=\log_310,b=\log_37$，求 $3^{a-b}$。\par
+A. $10/7$\quad B. $7/10$\quad C. $10/49$\quad D. $49/10$
+
+(8) $\log_{\sqrt2+1}(3-2\sqrt2)=t$，则 $t$ 为？\par A. $-2$\quad B. $-4$\quad C. $2$\quad D. $4$
+\pause\par\medskip
+\ans{(7) $3^{a-b}=3^a/3^b=10/7$，选A。\par (8) $3-2\sqrt2=(\sqrt2-1)^2=(\sqrt2+1)^{-2}$，选A。}
+\end{frame}
+
+% 来源：截图438、339；答案独立推导
+\begin{frame}[t]{截图练习9—10}
+(9) $\log_3(\log_5a)=\log_4(\log_5b)=0$，求 $a/b$。\par A. $1$\quad B. $-1$\quad C. $5$\quad D. $1/5$
+
+(10) 解方程 $3^{\log_2x}=1/27$。
+\pause\par\medskip
+\ans{(9) $\log_5a=\log_5b=1$，故 $a=b=5$，选A。\par (10) $\log_2x=-3$，所以 $x=1/8$。}
+\end{frame}
+
+% 来源：截图438、339；答案独立推导
+\begin{frame}[t]{截图练习11}
+若 $\log_{1-x}((1+x)^2)=1$，求 $x$。
+\pause\par\medskip
+\ans{条件为 $x<1$、$x\ne0$、$x\ne-1$。
+\[(1+x)^2=1-x\Rightarrow x(x+3)=0.\]
+剔除 $x=0$，保留 $x=-3$。代回底数4、真数4，成立。}
+\end{frame}
+
+% 来源：截图438、339；答案独立推导
+\begin{frame}[t]{截图练习12—13}
+(12) 求 $2^{2+\log_23}+3^{2-\log_39}$。
+
+(13) 若 $x=\log_43$，求 $(2^x-2^{-x})^2$。
+\pause\par\medskip
+\ans{(12) $4\cdot3+9/9=13$。
+
+(13) $4^x=3$，故 $2^x=\sqrt3$，$2^{-x}=1/\sqrt3$，结果为 $4/3$。}
+\end{frame}
+
+% 来源：教学归纳
+\begin{frame}[t]{课堂小结}
+\begin{itemize}
+\item 对数就是已知底数和幂，求指数。核心是指数式与对数式等价互化。
+\item 三个条件：底数正且不为1，真数为正。
+\item 两个恒等式：$a^{\log_aN}=N$，$\log_a(a^x)=x$。
+\item 求解后回到原式检查，防止底数不合法或嵌套真数不为正。
+\end{itemize}\end{frame}
+
+% 来源：图片838—840教材数学文化；按材料概述，不将现代log定义等同早期对数
+\begin{frame}[t]{附录：对数为何被发明}
+对数曾是简化繁重计算的重要工具。所附教材介绍：
+\begin{itemize}
+\item 纳皮尔于1614年发表对数著作。
+\item 别尔基也独立研究了对数，相关著作于1620年出版。
+\item 布里格斯推动常用对数表的编制。
+\end{itemize}
+\[2^6\cdot2^8=2^{6+8}=2^{14},\qquad64\times256=16384.\]
+将幂对应到指数，就能把乘法转化为加法。\end{frame}
+
+% 来源：图片838—839
+\begin{frame}[t]{附录：从稀疏表到精细表}
+\small
+\centering\begin{tabular}{c|rrrrrrrr}
+$n$&0&1&2&3&4&5&6&7\\\hline
+$2^n$&1&2&4&8&16&32&64&128\\\hline
+$n$&8&9&10&11&12&13&14&\\\hline
+$2^n$&256&512&1024&2048&4096&8192&16384&
+\end{tabular}\par\normalsize
+表中缺少3、5、7等数，怎样把间隔缩小？
+
+取接近1的 $q=1.0001$：每次把 $x$ 增加其万分之一，
+\[x_0=1,\quad x_{n+1}=x_n+\frac{x_n}{10000}=1.0001x_n,\quad x_n=1.0001^n.\]\end{frame}
+
+% 来源：图片839
+\begin{frame}[t]{附录：历史表的近似数}
+\[x=1.0001^y,\qquad y=\log_{1.0001}x.\]
+\[1.0001^{100}\approx1.010049662,\quad
+1.0001^{101}\approx1.010150667.\]
+\[1.0001^{46054}\approx99.999955936.\]
+
+教材用接近1的底数解释早期制表思想。数值表经舍入，只能得到近似计算结果；这些现代符号是对思想的解释。\end{frame}
+
+% 来源：图片839—840
+\begin{frame}[t]{附录：查表把除法变成减法}
+\small\centering\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{c|rrrrr}
+$y$&20333&20334&20335&20336&20337\\
+$x\approx$&7.6385&7.6392&7.6400&7.6408&7.6415\\\hline
+$y$&10237&10238&10239&10240&10241\\
+$x\approx$&2.7833&2.7836&2.7839&2.7842&2.7844
+\end{tabular}\par\normalsize
+求 $7640\div2784=7.640\div2.784$。
+
+按表取对应指数 $20335$ 和 $10239$，相减为 $10096$。\end{frame}
+
+% 来源：图片840；修正原近似分母使用精确等号的问题
+\begin{frame}[t]{附录：近似计算与换底}
+\small\centering\begin{tabular}{c|rrrrr}
+$y$&10094&10095&10096&10097&10098\\\hline
+$x\approx$&2.7438&2.7441&2.7444&2.7446&2.7449
+\end{tabular}\par\normalsize
+查表得到商约为 $2.7444$；实际商为 $2.74425287\ldots$。
+两者保留4位有效数字均为 $2.744$。
+
+\[\lg x=\frac{\log_{1.0001}x}{\log_{1.0001}10}
+\approx\frac{\log_{1.0001}x}{23027}.\]
+本页换底公式作为后续学习的预告，分母 $23027$ 是近似值。\end{frame}
+
+% 来源：图片841顶部
+\begin{frame}[t]{补充：教材思考题}
+由 $0.568^x=0.01$，可准确记为
+\[x=\log_{0.568}0.01.\]
+借助计算器得 $x\approx8.142$。
+
+对数符号能够准确表示指数，近似小数方便实际计算，两者作用不同。\end{frame}
+% 来源：图片841顶部；图片839的制表背景。
+\begin{frame}[t]{补充：指数结构与制表背景}
+\[2^{\log_23-2}=\frac{2^{\log_23}}{2^2}=\frac34.\]
+\[2^{\log_2(3+2)}=5.\]
+括号内的加法与指数上的减法，处理方式不同。
+
+所附数学文化材料还介绍：纳皮尔采用接近1的小于1的数
+$b=0.9999999$，别尔基采用 $a=1.0001$，以缩小表中相邻数的间隔。
+
+现代指数记号和对数与指数的统一认识经历了长期发展，早期对数表不能直接等同于今天的常用对数表。
+\end{frame}
+\campusclosing[谢谢]\end{document}
