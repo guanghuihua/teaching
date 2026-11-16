@@ -1,38 +1,64 @@
 % !TeX program = xelatex
-% 从本文件所在目录编译；复制模板时一并复制 sty、book-path.tex 和 assets。
+% 40分钟新课默认模板。整目录复制；时长写在注释及教师教案中。
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
-% 优先匹配原模板字体，其他系统自动使用 TeX Live 自带的 Fandol。
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
 \usetheme{GaoZhongYuan}
-
-\title{标题}
-\author{姓名}
-\date{2026.08.12}
-
-\begin{document}
-\campusmaketitle
-
-\begin{frame}[t]{\underline{任务一：}}
-  % 在这里填写正文，支持公式、列表、图片和 Beamer 分步显示。
-  % 例如：\[ (a+b)^2=a^2+2ab+b^2. \]
+\title{课题}\author{授课教师}\date{}
+\begin{document}\campusmaketitle
+% 0—3分钟：情境引入。全课探究讲解共27分钟，包含学生思考和即时练习。
+\begin{frame}[t]{问题引入}
+  写一个能暴露本课认知需要的问题，给学生思考时间。
 \end{frame}
-
-% 练习题一题一页；每个小问单独复制一个环境。
-\begin{campuspractice}{课堂练习}
-  已知 $\log_2x=3$，求 $x$。
+% 3—10分钟：概念探究与条件。
+\begin{frame}[t]{概念与条件}
+  呈现定义、适用条件，引导学生解释关键条件。
+\end{frame}
+% 10—16分钟：示范与即时检查。每题、每个小问独占一页。
+\begin{campuspractice}{例题}
+  在这里写一道用于解释概念的题目。
 \end{campuspractice}
-% 解答另起一页，不占用演算区。
-\begin{frame}[t]{课堂练习：参考解答}
-  $\log_2x=3\Longleftrightarrow x=2^3=8$。
+\begin{campuspractice}{即时检查}
+  在这里写一道同结构但能检验理解的题目。
+\end{campuspractice}
+% 16—21分钟：性质与依据。
+\begin{frame}[t]{性质与依据}
+  由定义或已知事实推导性质，写清推理依据。
 \end{frame}
+% 21—27分钟：应用与再次检查。
+\begin{campuspractice}{应用例题}
+  在这里写一道关键方法例题。
+\end{campuspractice}
+\begin{campuspractice}{即时检查}
+  在这里写一道可暴露易错点的检查题。
+\end{campuspractice}
+% 27—33分钟：集中独立练习。4个短小问是本课示例，可按难度调整。
+\begin{campuspractice}{当堂练习1}
+  检查概念或基本表示。
+\end{campuspractice}
+\begin{campuspractice}{当堂练习2}
+  检查基本方法。
+\end{campuspractice}
+\begin{campuspractice}{当堂练习3}
+  检查适用条件。
+\end{campuspractice}
+\begin{campuspractice}{当堂练习4}
+  检查容易遗漏的情形。
+\end{campuspractice}
+% 33—37分钟：依据巡视、板演反馈。参考答案仅教师版可见，勿覆盖演算区。
+\ifdefined\TeacherEdition
+\begin{frame}[t]{当堂练习：反馈}
+  在这里写参考答案、错因与纠正依据。
+\end{frame}
+\fi
+% 37—40分钟：学生先回顾，教师再补齐条件与方法。
 \begin{campussummary}
-  \begin{itemize}
-    \item 本课核心概念与适用条件。
-    \item 典型方法及其推理依据。
-    \item 易错点与检查方法。
-  \end{itemize}
+\begin{itemize}
+\item 本课核心概念是什么？
+\item 使用它需要哪些条件？
+\item 关键方法的依据是什么？
+\item 怎样检查本课最容易出现的错误？
+\end{itemize}
 \end{campussummary}
-% 复制上面的环境添加题目；结束前保留课堂小结。
-\campusclosing
-\end{document}
+% 全量题库、拓展材料另存；不顺序接在主课后默认全讲。
+\campusclosing[谢谢]\end{document}

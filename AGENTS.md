@@ -45,6 +45,9 @@
 
 ## File and Artifact Rules
 
+- For 40-minute new-concept mathematics lessons, default to `教学课件/高中园Beamer模板/高中园模板.tex` and read `教学课件/高中园Beamer模板/40分钟新课规范.md`. Use 27 minutes for introduction, inquiry, explanation and short checks; 10 minutes for independent practice and feedback; and 3 minutes for a student-led summary. Adjust to explicit user requirements and learning needs.
+- Keep the full problem bank separate from the selected classroom deck. Prefer the teacher-designated source, retain stable question IDs and provenance, and record selection reasons in the teacher plan. Use STIX Two Math; give every exercise/subquestion its own slide with at least 35mm of clear writing space. Put answers on separate teacher-reference slides.
+
 - For exercise lessons and exam-review slides, default to `教学课件/习题课模板/习题课模板.tex` and read `教学课件/习题课模板/使用说明.md`. Copy it into the lesson directory before filling content; follow a different style when the user requests one.
 
 - Use UTF-8 for text files and preserve existing Chinese filenames unless a rename is explicitly required.

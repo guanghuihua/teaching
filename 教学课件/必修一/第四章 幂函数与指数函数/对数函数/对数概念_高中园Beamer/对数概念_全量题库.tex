@@ -1,0 +1,946 @@
+% !TeX program = xelatex
+% 由生成课件.py生成；改题目请改共享题库，改选题请改课堂选题.json。
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\usepackage{booktabs}
+\setlength{\parskip}{.6em}
+\newcommand{\ans}[1]{{\color{red!70!black}#1}}
+\author{深圳中学高中园}\date{}
+
+\title{对数的概念：全量备课题库}
+\begin{document}\campusmaketitle
+% 题库编号：LOG-001
+\begin{campuspractice}{题库 LOG-001}
+将下式在指数式与对数式之间互化：\par
+$5^4=625$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-001：参考解答}
+$\log_5625=4$
+\end{frame}
+\fi
+
+% 题库编号：LOG-002
+\begin{campuspractice}{题库 LOG-002}
+将下式在指数式与对数式之间互化：\par
+$2^{-6}=\frac{1}{64}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-002：参考解答}
+$\log_2\frac1{64}=-6$
+\end{frame}
+\fi
+
+% 题库编号：LOG-003
+\begin{campuspractice}{题库 LOG-003}
+将下式在指数式与对数式之间互化：\par
+$(\frac{1}{3})^m=5.73$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-003：参考解答}
+$\log_{1/3}5.73=m$
+\end{frame}
+\fi
+
+% 题库编号：LOG-004
+\begin{campuspractice}{题库 LOG-004}
+将下式在指数式与对数式之间互化：\par
+$\log_{\frac{1}{2}}16=-4$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-004：参考解答}
+$(\frac12)^{-4}=16$
+\end{frame}
+\fi
+
+% 题库编号：LOG-005
+\begin{campuspractice}{题库 LOG-005}
+将下式在指数式与对数式之间互化：\par
+$\lg0.01=-2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-005：参考解答}
+$10^{-2}=0.01$
+\end{frame}
+\fi
+
+% 题库编号：LOG-006
+\begin{campuspractice}{题库 LOG-006}
+将下式在指数式与对数式之间互化：\par
+$\ln10\approx2.303$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-006：参考解答}
+$e^{2.303}\approx10$
+\end{frame}
+\fi
+
+% 题库编号：LOG-007
+\begin{campuspractice}{题库 LOG-007}
+求下式中的 $x$：\par
+$\log_{64}x=\frac{-2}{3}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-007：参考解答}
+$x=\frac1{16}$
+\end{frame}
+\fi
+
+% 题库编号：LOG-008
+\begin{campuspractice}{题库 LOG-008}
+求下式中的 $x$：\par
+$\log_x8=6$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-008：参考解答}
+$x=\sqrt2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-009
+\begin{campuspractice}{题库 LOG-009}
+求下式中的 $x$：\par
+$\lg100=x$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-009：参考解答}
+$x=2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-010
+\begin{campuspractice}{题库 LOG-010}
+求下式中的 $x$：\par
+$-\ln(e^2)=x$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-010：参考解答}
+$x=-2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-011
+\begin{campuspractice}{题库 LOG-011}
+$\log_3\frac{2x-1}{5}=0$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-011：参考解答}
+$x=3$
+\end{frame}
+\fi
+
+% 题库编号：LOG-012
+\begin{campuspractice}{题库 LOG-012}
+$6^{\log_6(5x+1)}=36$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-012：参考解答}
+$x=7$
+\end{frame}
+\fi
+
+% 题库编号：LOG-013
+\begin{campuspractice}{题库 LOG-013}
+计算 $2^{\log_2(3+2)}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-013：参考解答}
+$5$
+\end{frame}
+\fi
+
+% 题库编号：LOG-014
+\begin{campuspractice}{题库 LOG-014}
+求下式有意义时 $x$ 的范围：\par
+$\log_2(x-10)$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-014：参考解答}
+$x>10$
+\end{frame}
+\fi
+
+% 题库编号：LOG-015
+\begin{campuspractice}{题库 LOG-015}
+求下式有意义时 $x$ 的范围：\par
+$\log_{x-1}(x+2)$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-015：参考解答}
+$x\in(1,2)\cup(2,+\infty)$
+\end{frame}
+\fi
+
+% 题库编号：LOG-016
+\begin{campuspractice}{题库 LOG-016}
+求下式中的 $x$：\par
+$\log_2x=\frac{-1}{2}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-016：参考解答}
+$x=\frac{\sqrt2}2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-017
+\begin{campuspractice}{题库 LOG-017}
+求下式中的 $x$：\par
+$\log_x25=2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-017：参考解答}
+$x=5$
+\end{frame}
+\fi
+
+% 题库编号：LOG-018
+\begin{campuspractice}{题库 LOG-018}
+求下式中的 $x$：\par
+$\log_5(x^2)=2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-018：参考解答}
+$x=\pm5$
+\end{frame}
+\fi
+
+% 题库编号：LOG-019
+\begin{campuspractice}{题库 LOG-019}
+将下式在指数式与对数式之间互化：\par
+$5^4=625$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-019：参考解答}
+$\log_5625=4$
+\end{frame}
+\fi
+
+% 题库编号：LOG-020
+\begin{campuspractice}{题库 LOG-020}
+将下式在指数式与对数式之间互化：\par
+$2^{-6}=\frac{1}{64}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-020：参考解答}
+$\log_2\frac1{64}=-6$
+\end{frame}
+\fi
+
+% 题库编号：LOG-021
+\begin{campuspractice}{题库 LOG-021}
+将下式在指数式与对数式之间互化：\par
+$4^x=10$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-021：参考解答}
+$\log_410=x$
+\end{frame}
+\fi
+
+% 题库编号：LOG-022
+\begin{campuspractice}{题库 LOG-022}
+将下式在指数式与对数式之间互化：\par
+$3^{-m/4}=9$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-022：参考解答}
+$\log_39=-m/4$
+\end{frame}
+\fi
+
+% 题库编号：LOG-023
+\begin{campuspractice}{题库 LOG-023}
+将下式在指数式与对数式之间互化：\par
+$\log_216=4$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-023：参考解答}
+$2^4=16$
+\end{frame}
+\fi
+
+% 题库编号：LOG-024
+\begin{campuspractice}{题库 LOG-024}
+将下式在指数式与对数式之间互化：\par
+$\log_3(\frac{1}{9})=-2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-024：参考解答}
+$3^{-2}=1/9$
+\end{frame}
+\fi
+
+% 题库编号：LOG-025
+\begin{campuspractice}{题库 LOG-025}
+将下式在指数式与对数式之间互化：\par
+$\log_3(5+x)=2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-025：参考解答}
+$3^2=5+x$
+\end{frame}
+\fi
+
+% 题库编号：LOG-026
+\begin{campuspractice}{题库 LOG-026}
+将下式在指数式与对数式之间互化：\par
+$\log_{a-1}(b+2)=3$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-026：参考解答}
+$(a-1)^3=b+2$，$a>1,a\ne2,b>-2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-027
+\begin{campuspractice}{题库 LOG-027}
+计算：\par
+$\log_2(\frac{1}{16})$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-027：参考解答}
+$-4$
+\end{frame}
+\fi
+
+% 题库编号：LOG-028
+\begin{campuspractice}{题库 LOG-028}
+计算：\par
+$\log_{\frac{1}{2}}32$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-028：参考解答}
+$-5$
+\end{frame}
+\fi
+
+% 题库编号：LOG-029
+\begin{campuspractice}{题库 LOG-029}
+计算：\par
+$\log_{0.4}1$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-029：参考解答}
+$0$
+\end{frame}
+\fi
+
+% 题库编号：LOG-030
+\begin{campuspractice}{题库 LOG-030}
+计算：\par
+$\log_{2.5}6.25$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-030：参考解答}
+$2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-031
+\begin{campuspractice}{题库 LOG-031}
+计算：\par
+$4^{\log_43}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-031：参考解答}
+$3$
+\end{frame}
+\fi
+
+% 题库编号：LOG-032
+\begin{campuspractice}{题库 LOG-032}
+计算：\par
+$3^{\log_37+1}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-032：参考解答}
+$21$
+\end{frame}
+\fi
+
+% 题库编号：LOG-033
+\begin{campuspractice}{题库 LOG-033}
+求下式中的 $x$：\par
+$\log_5x=3$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-033：参考解答}
+$x=125$
+\end{frame}
+\fi
+
+% 题库编号：LOG-034
+\begin{campuspractice}{题库 LOG-034}
+求下式中的 $x$：\par
+$\log_2(2x+1)=3$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-034：参考解答}
+$x=7/2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-035
+\begin{campuspractice}{题库 LOG-035}
+求下式中的 $x$：\par
+$\log_x(\frac{1}{8})=3$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-035：参考解答}
+$x=1/2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-036
+\begin{campuspractice}{题库 LOG-036}
+求下式中的 $x$：\par
+$\log_2(8^x)=-3$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-036：参考解答}
+$x=-1$
+\end{frame}
+\fi
+
+% 题库编号：LOG-037
+\begin{campuspractice}{题库 LOG-037}
+$b=\log_{a-2}(5-a)$ 中，求 $a$ 的范围。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-037：参考解答}
+$a\in(2,3)\cup(3,5)$
+\end{frame}
+\fi
+
+% 题库编号：LOG-038
+\begin{campuspractice}{题库 LOG-038}
+$\log_a(1-2a)$ 有意义时，求 $a$ 的范围。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-038：参考解答}
+$0<a<1/2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-039
+\begin{campuspractice}{题库 LOG-039}
+将下式互化：\par
+$5^3=125$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-039：参考解答}
+$\log_5125=3$
+\end{frame}
+\fi
+
+% 题库编号：LOG-040
+\begin{campuspractice}{题库 LOG-040}
+将下式互化：\par
+$\log_216=4$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-040：参考解答}
+$2^4=16$
+\end{frame}
+\fi
+
+% 题库编号：LOG-041
+\begin{campuspractice}{题库 LOG-041}
+将下式互化：\par
+$10^{-2}=0.01$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-041：参考解答}
+$\lg0.01=-2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-042
+\begin{campuspractice}{题库 LOG-042}
+将下式互化：\par
+$\log_{\sqrt5}125=6$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-042：参考解答}
+$(\sqrt5)^6=125$
+\end{frame}
+\fi
+
+% 题库编号：LOG-043
+\begin{campuspractice}{题库 LOG-043}
+以下哪些是正确的直接互化？
+
+A. $10^0=1$ 与 $\lg1=0$； B. $27^{\frac{-1}{3}}=\frac{1}{3}$ 与 $\log_{27}(\frac{1}{3})=\frac{-1}{3}$；
+
+C. $\log_39=2$ 与 $9^{\frac{1}{2}}=3$； D. $\log_55=1$ 与 $5^1=5$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-043：参考解答}
+A、B、D。C两式虽各自成立，但不是底数不变的直接互化。
+\end{frame}
+\fi
+
+% 题库编号：LOG-044
+\begin{campuspractice}{题库 LOG-044}
+求下式中的 $x$：\par
+$\lg0.01=x$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-044：参考解答}
+$x=-2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-045
+\begin{campuspractice}{题库 LOG-045}
+求下式中的 $x$：\par
+$\log_7(x+2)=2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-045：参考解答}
+$x=47$
+\end{frame}
+\fi
+
+% 题库编号：LOG-046
+\begin{campuspractice}{题库 LOG-046}
+求下式中的 $x$：\par
+$\log_{\frac{2}{3}}(\frac{9}{4})=x$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-046：参考解答}
+$x=-2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-047
+\begin{campuspractice}{题库 LOG-047}
+求下式中的 $x$：\par
+$x=\log_{\frac{1}{2}}32$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-047：参考解答}
+$x=-5$
+\end{frame}
+\fi
+
+% 题库编号：LOG-048
+\begin{campuspractice}{题库 LOG-048}
+求下式中的 $x$：\par
+$\log_5(x^2)=2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-048：参考解答}
+$x=\pm5$
+\end{frame}
+\fi
+
+% 题库编号：LOG-049
+\begin{campuspractice}{题库 LOG-049}
+求下式中的 $x$：\par
+$2\log_3x=4$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-049：参考解答}
+$x=9$
+\end{frame}
+\fi
+
+% 题库编号：LOG-050
+\begin{campuspractice}{题库 LOG-050}
+计算 $2^{-\log_23}$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-050：参考解答}
+$1/3$
+\end{frame}
+\fi
+
+% 题库编号：LOG-051
+\begin{campuspractice}{题库 LOG-051}
+计算 $e^{3\ln7}$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-051：参考解答}
+$343$
+\end{frame}
+\fi
+
+% 题库编号：LOG-052
+\begin{campuspractice}{题库 LOG-052}
+计算 $\lg(0.001^2)$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-052：参考解答}
+$-6$
+\end{frame}
+\fi
+
+% 题库编号：LOG-053
+\begin{campuspractice}{题库 LOG-053}
+求 $x$：$\log_3(\lg x)=1$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-053：参考解答}
+$x=1000$
+\end{frame}
+\fi
+
+% 题库编号：LOG-054
+\begin{campuspractice}{题库 LOG-054}
+求 $x$：$\log_3[\log_4(\log_5x)]=0$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-054：参考解答}
+$x=625$
+\end{frame}
+\fi
+
+% 题库编号：LOG-055
+\begin{campuspractice}{题库 LOG-055}
+记 $L(x)=\log_3[\log_4(\log_5x)]$。若 $L(x)=1$，求 $x$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-055：参考解答}
+$x=5^{64}$
+\end{frame}
+\fi
+
+% 题库编号：LOG-056
+\begin{campuspractice}{题库 LOG-056}
+记 $L(x)=\log_3[\log_4(\log_5x)]$。若 $L(x)=0$，求 $625^{\log_x3}$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-056：参考解答}
+$3$
+\end{frame}
+\fi
+
+% 题库编号：LOG-057
+\begin{campuspractice}{题库 LOG-057}
+若 $3^{\log_3[\log_4(\log_5x)]}=1$，求 $x$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-057：参考解答}
+$x=625$
+\end{frame}
+\fi
+
+% 题库编号：LOG-058
+\begin{campuspractice}{题库 LOG-058}
+$\log_x16=2$，则 $x$ 等于（\quad）。\par A. $\pm4$\quad B. $4$\quad C. $256$\quad D. $2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-058：参考解答}
+B，$x=4$
+\end{frame}
+\fi
+
+% 题库编号：LOG-059
+\begin{campuspractice}{题库 LOG-059}
+若 $f(2^x)=x$（$x\in\mathbb R$），则 $f(5)$ 为（\quad）。\par A. $2^5$\quad B. $5^2$\quad C. $\log_52$\quad D. $\log_25$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-059：参考解答}
+D，$f(5)=\log_25$
+\end{frame}
+\fi
+
+% 题库编号：LOG-060
+\begin{campuspractice}{题库 LOG-060}
+$\log_3(a+1)=1$，求 $\log_a2+\log_2(a-1)$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-060：参考解答}
+$1$
+\end{frame}
+\fi
+
+% 题库编号：LOG-061
+\begin{campuspractice}{题库 LOG-061}
+$a=\log_34$，求 $3^{2a}$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-061：参考解答}
+$16$
+\end{frame}
+\fi
+
+% 题库编号：LOG-062
+\begin{campuspractice}{题库 LOG-062}
+将下式在指数式与对数式之间互化：\par
+$\log_216=4$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-062：参考解答}
+$2^4=16$
+\end{frame}
+\fi
+
+% 题库编号：LOG-063
+\begin{campuspractice}{题库 LOG-063}
+将下式在指数式与对数式之间互化：\par
+$\log_{\frac{1}{3}}27=-3$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-063：参考解答}
+$(1/3)^{-3}=27$
+\end{frame}
+\fi
+
+% 题库编号：LOG-064
+\begin{campuspractice}{题库 LOG-064}
+将下式在指数式与对数式之间互化：\par
+$\log_{\sqrt3}x=3$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-064：参考解答}
+$(\sqrt3)^3=x$
+\end{frame}
+\fi
+
+% 题库编号：LOG-065
+\begin{campuspractice}{题库 LOG-065}
+将下式在指数式与对数式之间互化：\par
+$5^3=125$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-065：参考解答}
+$\log_5125=3$
+\end{frame}
+\fi
+
+% 题库编号：LOG-066
+\begin{campuspractice}{题库 LOG-066}
+将下式在指数式与对数式之间互化：\par
+$2^{-1}=\frac{1}{2}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-066：参考解答}
+$\log_2(1/2)=-1$
+\end{frame}
+\fi
+
+% 题库编号：LOG-067
+\begin{campuspractice}{题库 LOG-067}
+将下式在指数式与对数式之间互化：\par
+$(\frac{1}{3})^{-2}=9$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-067：参考解答}
+$\log_{1/3}9=-2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-068
+\begin{campuspractice}{题库 LOG-068}
+求下式中的 $x$：\par
+$\log_x27=\frac{3}{2}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-068：参考解答}
+$x=9$
+\end{frame}
+\fi
+
+% 题库编号：LOG-069
+\begin{campuspractice}{题库 LOG-069}
+求下式中的 $x$：\par
+$\log_2x=\frac{-2}{3}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-069：参考解答}
+$x=2^{-2/3}$
+\end{frame}
+\fi
+
+% 题库编号：LOG-070
+\begin{campuspractice}{题库 LOG-070}
+求下式中的 $x$：\par
+$\log_x(3+2\sqrt2)=-2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-070：参考解答}
+$x=\sqrt2-1$
+\end{frame}
+\fi
+
+% 题库编号：LOG-071
+\begin{campuspractice}{题库 LOG-071}
+求下式中的 $x$：\par
+$\log_5(\log_2x)=0$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-071：参考解答}
+$x=2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-072
+\begin{campuspractice}{题库 LOG-072}
+求下式中的 $x$：\par
+$\log_2[\log_3(\log_2x)]=1$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-072：参考解答}
+$x=512$
+\end{frame}
+\fi
+
+% 题库编号：LOG-073
+\begin{campuspractice}{题库 LOG-073}
+$a=\log_310,b=\log_37$，求 $3^{a-b}$。\par A. $\frac{10}{7}$\quad B. $\frac{7}{10}$\quad C. $\frac{10}{49}$\quad D. $\frac{49}{10}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-073：参考解答}
+A，$10/7$
+\end{frame}
+\fi
+
+% 题库编号：LOG-074
+\begin{campuspractice}{题库 LOG-074}
+$\log_{\sqrt2+1}(3-2\sqrt2)=t$，求 $t$。\par A. $-2$\quad B. $-4$\quad C. $2$\quad D. $4$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-074：参考解答}
+A，$-2$
+\end{frame}
+\fi
+
+% 题库编号：LOG-075
+\begin{campuspractice}{题库 LOG-075}
+$\log_3(\log_5a)=\log_4(\log_5b)=0$，求 $a/b$。\par A. $1$\quad B. $-1$\quad C. $5$\quad D. $\frac{1}{5}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-075：参考解答}
+A，$a=b=5$，$a/b=1$
+\end{frame}
+\fi
+
+% 题库编号：LOG-076
+\begin{campuspractice}{题库 LOG-076}
+解方程 $3^{\log_2x}=\frac{1}{27}$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-076：参考解答}
+$x=1/8$
+\end{frame}
+\fi
+
+% 题库编号：LOG-077
+\begin{campuspractice}{题库 LOG-077}
+若 $\log_{1-x}((1+x)^2)=1$，求 $x$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-077：参考解答}
+$x=-3$（剔除底数为1的$x=0$）
+\end{frame}
+\fi
+
+% 题库编号：LOG-078
+\begin{campuspractice}{题库 LOG-078}
+计算 $2^{2+\log_23}+3^{2-\log_39}$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-078：参考解答}
+$13$
+\end{frame}
+\fi
+
+% 题库编号：LOG-079
+\begin{campuspractice}{题库 LOG-079}
+若 $x=\log_43$，求 $(2^x-2^{-x})^2$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{LOG-079：参考解答}
+$4/3$
+\end{frame}
+\fi
+
+\begin{frame}[t]{数学文化与拓展材料}
+以下材料供备课选用，不计入40分钟主课。
+\end{frame}
+
+\input{数学文化附录.tex}
+\campusclosing[谢谢]\end{document}

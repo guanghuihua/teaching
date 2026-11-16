@@ -1,760 +1,155 @@
 % !TeX program = xelatex
+% 由生成课件.py生成；改题目请改共享题库，改选题请改课堂选题.json。
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
 \usetheme{GaoZhongYuan}
-\usepackage{amsmath,amssymb,booktabs}
-\newcommand{\ans}[1]{{\color{red!70!black}#1}}
+\usepackage{booktabs}
 \setlength{\parskip}{.6em}
-\title{4.3.1 对数的概念}
+\newcommand{\ans}[1]{{\color{red!70!black}#1}}
 \author{深圳中学高中园}\date{}
+
+\title{4.3.1 对数的概念}
 \begin{document}\campusmaketitle
-% 来源：PPT2—3；修正开方引入遗漏正负根的问题
-\begin{frame}[t]{任务一：求未知的指数}
-已知 $a+x=N$，可用减法求 $x$；已知 $ax=N\ (a\ne0)$，可用除法。
-
-已知 $x^n=N$，需按 $n$ 的奇偶性和 $N$ 的符号讨论实数根。
+% 0—3分钟
+\begin{frame}[t]{情境：未知的指数}
 \[2^x=4\Rightarrow x=2,\qquad2^x=8\Rightarrow x=3.\]
-当 $2^x=10$ 或 $2^x=11$ 时，怎样准确表示 $x$？\end{frame}
+\[2^x=10\quad\Rightarrow\quad x=\ ?\]
+这里已知底数和幂，需要求指数。能否用一个符号准确表示它？
+\end{frame}
 
-% 来源：PPT4；图片842
-\begin{frame}[t]{任务二：对数的定义}
+% 3—10分钟
+\begin{frame}[t]{对数的定义}
 当 $a>0$ 且 $a\ne1$，$N>0$ 时，
 \[\boxed{a^x=N\quad\Longleftrightarrow\quad x=\log_aN}.\]
-数 $x$ 叫做以 $a$ 为底 $N$ 的对数。$a$ 是底数，$N$ 是真数。
+$a$ 是底数，$N$ 是真数，$\log_aN$ 表示指数，是一个数。
+\[2^x=10\Longleftrightarrow x=\log_210.\]
+指数式和对数式表达的是同一个数量关系。
+\end{frame}
 
-$\log_aN$ 整体表示一个数。例如
-\[2^x=10\Longleftrightarrow x=\log_2 10.\]\end{frame}
-
-% 来源：PPT4、8；图片842
-\begin{frame}[t]{任务二：有意义的条件}
+\begin{frame}[t]{定义的条件}
 \[\boxed{a>0,\quad a\ne1,\quad N>0}.\]
-为什么底数不能取 $0$、负数或 $1$？为什么真数必须为正？
-\pause\par\medskip
-\ans{正底数的实数指数幂始终为正；底数为负或零时不能对所有实指数定义。底数为1时，只能得到1，且不能唯一确定指数。
-
-对合法底数，指数函数在实数集上严格单调，值域为正实数集，所以每个正数都有唯一的对数。}
-\end{frame}
-
-% 来源：PPT5—6；图片842
-\begin{frame}[t]{任务三：常用对数与自然对数}
-\renewcommand{\arraystretch}{1.8}\centering
-\begin{tabular}{lll}\toprule 名称&底数&记法\\\midrule
-常用对数&$10$&$\lg N=\log_{10}N$\\
-自然对数&$e=2.71828\ldots$&$\ln N=\log_eN$\\\bottomrule\end{tabular}
-\par $1.1^x=2\Longleftrightarrow x=\log_{1.1}2$。
-
-$\ln10\approx2.303$，所以 $e^{2.303}\approx10$。\end{frame}
-
-\begin{campussummary}
 \begin{itemize}
-\item 对数表示指数：$a^x=N\Longleftrightarrow x=\log_aN$。
-\item 底数 $a>0$ 且 $a\ne1$，真数 $N>0$。
-\item 代回原式核对条件，区分真数、底数和对数值。
+\item 若 $a=1$，$1^x=1$ 不能唯一确定指数。
+\item 负底数或零底数不能对所有实指数定义幂。
+\item 正底数的幂始终为正，真数必须大于0。
 \end{itemize}
-\end{campussummary}
+$\log_2\frac12=-1$，说明对数的值可以为负。
 
-% 来源：PPT6
-\begin{campuspractice}{例1：指数式与对数式互化（1）}
-将下式在指数式与对数式之间互化：\par
-$5^4=625$
-\end{campuspractice}
-
-\begin{campuspractice}{例1：指数式与对数式互化（2）}
-将下式在指数式与对数式之间互化：\par
-$2^{-6}=1/64$
-\end{campuspractice}
-
-\begin{campuspractice}{例1：指数式与对数式互化（3）}
-将下式在指数式与对数式之间互化：\par
-$(1/3)^m=5.73$
-\end{campuspractice}
-
-\begin{campuspractice}{例1：指数式与对数式互化（4）}
-将下式在指数式与对数式之间互化：\par
-$\log_{1/2}16=-4$
-\end{campuspractice}
-
-\begin{campuspractice}{例1：指数式与对数式互化（5）}
-将下式在指数式与对数式之间互化：\par
-$\lg0.01=-2$
-\end{campuspractice}
-
-\begin{campuspractice}{例1：指数式与对数式互化（6）}
-将下式在指数式与对数式之间互化：\par
-$\ln10\approx2.303$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{例1：指数式与对数式互化：解答}
-\begin{align*}
-(1)&\ \log_5 625=4;&(2)&\ \log_2\tfrac1{64}=-6;\\
-(3)&\ \log_{1/3}5.73=m;&(4)&\ (\tfrac12)^{-4}=16;\\
-(5)&\ 10^{-2}=0.01;&(6)&\ e^{2.303}\approx10.
-\end{align*}
+说一说：真数为正，是否意味着对数的值也必须为正？
 \end{frame}
-\fi
 
-
-% 来源：PPT7
-\begin{campuspractice}{例2：求真数、底数与对数（1）}
-求下式中的 $x$：\par
-$\log_{64}x=-2/3$
-\end{campuspractice}
-
-\begin{campuspractice}{例2：求真数、底数与对数（2）}
-求下式中的 $x$：\par
-$\log_x8=6$
-\end{campuspractice}
-
-\begin{campuspractice}{例2：求真数、底数与对数（3）}
-求下式中的 $x$：\par
-$\lg100=x$
-\end{campuspractice}
-
-\begin{campuspractice}{例2：求真数、底数与对数（4）}
-求下式中的 $x$：\par
-$-\ln(e^2)=x$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{例2：求真数、底数与对数：解答}
-\begin{align*}
-(1)&\ x=64^{-2/3}=\tfrac1{16};\\
-(2)&\ x^6=8,\ x>0,\ x\ne1\Rightarrow x=\sqrt2;\\
-(3)&\ x=2;\qquad (4)\ x=-2.
-\end{align*}
-\end{frame}
-\fi
-
-
-% 来源：PPT8—9、11；图片842
-\begin{frame}[t]{任务四：基本性质与恒等式}
-以下均要求 $a>0$ 且 $a\ne1$。
-\[\log_a1=0,\qquad\log_aa=1.\]
-\[\boxed{a^{\log_aN}=N\quad(N>0)},\qquad
-\boxed{\log_a(a^x)=x\quad(x\in\mathbb R)}.\]
-
-负数和零没有实对数；对数的值可以为负数或零。
-\[\log_2\tfrac12=-1,\qquad \log_{0.6}1=0.\]\end{frame}
-
-% 来源：PPT10—11
-\begin{campuspractice}{例3：恒等式的使用（1）}
-$\log_3\frac{2x-1}{5}=0$
-\end{campuspractice}
-
-\begin{campuspractice}{例3：恒等式的使用（2）}
-$6^{\log_6(5x+1)}=36$
-\end{campuspractice}
-
-\begin{campuspractice}{例3：恒等式的使用（3）}
-计算 $2^{\log_2(3+2)}$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{例3：恒等式的使用：解答}
-(1) $\frac{2x-1}{5}=1$，得 $x=3$。
-
-(2) 先要求 $5x+1>0$，再得 $5x+1=36$，所以 $x=7$。
-
-(3) $2^{\log_25}=5$。
-\end{frame}
-\fi
-
-
-% 来源：PPT12
-\begin{campuspractice}{例4：底数、真数同时检查（1）}
-求下式有意义时 $x$ 的范围：\par
-$\log_2(x-10)$
-\end{campuspractice}
-
-\begin{campuspractice}{例4：底数、真数同时检查（2）}
-求下式有意义时 $x$ 的范围：\par
-$\log_{x-1}(x+2)$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{例4：底数、真数同时检查：解答}
-(1) $x-10>0$，所以 $x>10$。
-
-(2) $x-1>0$、$x-1\ne1$、$x+2>0$，故
-\[x\in(1,2)\cup(2,+\infty).\]
-\end{frame}
-\fi
-
-
-% 来源：PPT13；图片843
-\begin{campuspractice}{例5：未知量的位置（1）}
-求下式中的 $x$：\par
-$\log_2x=-1/2$
-\end{campuspractice}
-
-\begin{campuspractice}{例5：未知量的位置（2）}
-求下式中的 $x$：\par
-$\log_x25=2$
-\end{campuspractice}
-
-\begin{campuspractice}{例5：未知量的位置（3）}
-求下式中的 $x$：\par
-$\log_5(x^2)=2$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{例5：未知量的位置：解答}
-(1) $x=2^{-1/2}=\frac{\sqrt2}{2}$。
-
-(2) $x^2=25$，结合底数条件 $x>0,x\ne1$，得 $x=5$。
-
-(3) $x^2=25$，两根 $x=\pm5$ 均使真数为正，故都保留。
-\end{frame}
-\fi
-
-
-% 来源：图片841：练习1
-\begin{campuspractice}{教材练习：互化八题（1）}
-将下式在指数式与对数式之间互化：\par
-$5^4=625$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：互化八题（2）}
-将下式在指数式与对数式之间互化：\par
-$2^{-6}=1/64$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：互化八题（3）}
-将下式在指数式与对数式之间互化：\par
-$4^x=10$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：互化八题（4）}
-将下式在指数式与对数式之间互化：\par
-$3^{-m/4}=9$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：互化八题（5）}
-将下式在指数式与对数式之间互化：\par
-$\log_216=4$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：互化八题（6）}
-将下式在指数式与对数式之间互化：\par
-$\log_3(1/9)=-2$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：互化八题（7）}
-将下式在指数式与对数式之间互化：\par
-$\log_3(5+x)=2$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：互化八题（8）}
-将下式在指数式与对数式之间互化：\par
-$\log_{a-1}(b+2)=3$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{教材练习：互化八题：解答}
-\small
-(1) $\log_5625=4$；(2) $\log_2\frac1{64}=-6$；(3) $\log_410=x$；
-
-(4) $\log_39=-m/4$；(5) $2^4=16$；(6) $3^{-2}=1/9$；
-
-(7) $3^2=5+x$；(8) $(a-1)^3=b+2$，且 $a>1,a\ne2,b>-2$。
-\end{frame}
-\fi
-
-
-% 来源：图片841：练习2
-\begin{campuspractice}{教材练习：计算六题（1）}
-计算：\par
-$\log_2(1/16)$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：计算六题（2）}
-计算：\par
-$\log_{1/2}32$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：计算六题（3）}
-计算：\par
-$\log_{0.4}1$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：计算六题（4）}
-计算：\par
-$\log_{2.5}6.25$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：计算六题（5）}
-计算：\par
-$4^{\log_43}$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：计算六题（6）}
-计算：\par
-$3^{\log_37+1}$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{教材练习：计算六题：解答}
-依次为 $-4,\ -5,\ 0,\ 2,\ 3,\ 21$。
-
-例如 $3^{\log_37+1}=3^{\log_37}\cdot3=7\cdot3=21$。
-\end{frame}
-\fi
-
-
-% 来源：图片841：练习3
-\begin{campuspractice}{教材练习：求未知量（1）}
-求下式中的 $x$：\par
-$\log_5x=3$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：求未知量（2）}
-求下式中的 $x$：\par
-$\log_2(2x+1)=3$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：求未知量（3）}
-求下式中的 $x$：\par
-$\log_x(1/8)=3$
-\end{campuspractice}
-
-\begin{campuspractice}{教材练习：求未知量（4）}
-求下式中的 $x$：\par
-$\log_2(8^x)=-3$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{教材练习：求未知量：解答}
-(1) $x=125$；(2) $2x+1=8$，$x=7/2$；
-
-(3) $x^3=1/8$，$x=1/2$，符合底数条件；
-
-(4) $8^x=2^{-3}$，$2^{3x}=2^{-3}$，$x=-1$。
-\end{frame}
-\fi
-
-
-% 来源：图片842：典例1、对点练习；原多选项改成直接求范围
-\begin{campuspractice}{配套练习：有意义的条件（1）}
-$b=\log_{a-2}(5-a)$ 中，求 $a$ 的范围。
-\end{campuspractice}
-
-\begin{campuspractice}{配套练习：有意义的条件（2）}
-$\log_a(1-2a)$ 有意义时，求 $a$ 的范围。
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{配套练习：有意义的条件：解答}
-(1) $a-2>0$、$a-2\ne1$、$5-a>0$，故
-\[a\in(2,3)\cup(3,5).\]
-(2) $a>0$、$a\ne1$、$1-2a>0$，故 $0<a<1/2$。
-\end{frame}
-\fi
-
-
-% 来源：图片842—843
-\begin{campuspractice}{配套练习：互化（1）}
+% 10—16分钟
+% 题库编号：LOG-039
+\begin{campuspractice}{例题：指数式化为对数式}
 将下式互化：\par
 $5^3=125$
 \end{campuspractice}
-\begin{campuspractice}{配套练习：互化（2）}
-将下式互化：\par
-$\log_216=4$
-\end{campuspractice}
-\begin{campuspractice}{配套练习：互化（3）}
-将下式互化：\par
-$10^{-2}=0.01$
-\end{campuspractice}
-\begin{campuspractice}{配套练习：互化（4）}
-将下式互化：\par
-$\log_{\sqrt5}125=6$
-\end{campuspractice}
-
-\begin{campuspractice}{配套练习：互化与辨析（2）}
-以下哪些是正确的直接互化？
-
-A. $10^0=1$ 与 $\lg1=0$； B. $27^{-1/3}=1/3$ 与 $\log_{27}(1/3)=-1/3$；
-
-C. $\log_39=2$ 与 $9^{1/2}=3$； D. $\log_55=1$ 与 $5^1=5$。
-
-\end{campuspractice}
 
 \ifdefined\TeacherEdition
-\begin{frame}[t]{配套练习：互化与辨析：解答}
-互化依次为 $\log_5125=3$；$2^4=16$；$\lg0.01=-2$；$(\sqrt5)^6=125$。
-
-选 A、B、D。C 中两式虽都成立，但不是保持底数不变的直接互化。
+\begin{frame}[t]{例题：指数式化为对数式：参考}
+$\log_5125=3$
 \end{frame}
 \fi
 
-
-% 来源：图片843；与前文重复的两问不重复展示
-\begin{campuspractice}{配套练习：求值与求未知量（1）}
-求下式中的 $x$：\par
-$\lg0.01=x$
+% 题库编号：LOG-040
+\begin{campuspractice}{即时检查：指数式化为对数式}
+将下式互化：\par
+$\log_216=4$
 \end{campuspractice}
 
-\begin{campuspractice}{配套练习：求值与求未知量（2）}
-求下式中的 $x$：\par
-$\log_7(x+2)=2$
+\ifdefined\TeacherEdition
+\begin{frame}[t]{即时检查：指数式化为对数式：参考}
+$2^4=16$
+\end{frame}
+\fi
+
+% 16—21分钟
+\begin{frame}[t]{两种常见记号}
+\[\lg N=\log_{10}N,\qquad\ln N=\log_eN.\]
+$e=2.71828\ldots$，是一个无理数。
+\[\lg100=2,\qquad\ln e=1.\]
+记号虽不同，求指数的含义与底数、真数条件相同。
+\end{frame}
+
+\begin{frame}[t]{由定义得到的性质}
+当 $a>0$ 且 $a\ne1$ 时，
+\[\log_a1=0,\qquad\log_aa=1.\]
+\[\boxed{a^{\log_aN}=N\ (N>0)},\qquad\boxed{\log_a(a^x)=x}.\]
+前式把对数作为指数，后式对幂取对数。
+
+请用指数式解释：为什么 $\log_a1=0$？
+\end{frame}
+
+% 21—27分钟
+% 题库编号：LOG-050
+\begin{campuspractice}{例题：恒等式与负指数}
+计算 $2^{-\log_23}$。
 \end{campuspractice}
 
-\begin{campuspractice}{配套练习：求值与求未知量（3）}
-求下式中的 $x$：\par
-$\log_{2/3}(9/4)=x$
-\end{campuspractice}
+\ifdefined\TeacherEdition
+\begin{frame}[t]{例题：恒等式与负指数：参考}
+$1/3$
+\end{frame}
+\fi
 
-\begin{campuspractice}{配套练习：求值与求未知量（4）}
-求下式中的 $x$：\par
-$x=\log_{1/2}32$
-\end{campuspractice}
-
-\begin{campuspractice}{配套练习：求值与求未知量（5）}
-求下式中的 $x$：\par
-$\log_5(x^2)=2$
-\end{campuspractice}
-
-\begin{campuspractice}{配套练习：求值与求未知量（6）}
+% 题库编号：LOG-049
+\begin{campuspractice}{即时检查：由对数求未知量}
 求下式中的 $x$：\par
 $2\log_3x=4$
 \end{campuspractice}
 
 \ifdefined\TeacherEdition
-\begin{frame}[t]{配套练习：求值与求未知量：解答}
-依次为 $x=-2,\ 47,\ -2,\ -5,\ \pm5,\ 9$。
-
-第(5)题的真数是 $x^2$；第(6)题的真数是 $x$，必须取正值。
+\begin{frame}[t]{即时检查：由对数求未知量：参考}
+$x=9$
 \end{frame}
 \fi
 
-
-% 来源：图片843：典例3
-\begin{campuspractice}{配套练习：恒等式与嵌套对数（1）}
-计算 $2^{-\log_23}$。
-\end{campuspractice}
-
-\begin{campuspractice}{配套练习：恒等式与嵌套对数（2）}
-计算 $e^{3\ln7}$。
-\end{campuspractice}
-
-\begin{campuspractice}{配套练习：恒等式与嵌套对数（3）}
-计算 $\lg(0.001^2)$。
-\end{campuspractice}
-
-\begin{campuspractice}{配套练习：恒等式与嵌套对数（4）}
-求 $x$：$\log_3(\lg x)=1$。
-\end{campuspractice}
-
-\begin{campuspractice}{配套练习：恒等式与嵌套对数（5）}
-求 $x$：$\log_3[\log_4(\log_5x)]=0$。
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{配套练习：恒等式与嵌套对数：解答}
-(1) $1/3$；(2) $343$；(3) $-6$。
-
-(4) $\lg x=3$，得 $x=1000$。
-
-(5) $\log_4(\log_5x)=1$，$\log_5x=4$，得 $x=625$。
-
-求嵌套式的值从内到外；已知值求未知量从外到内。
-\end{frame}
-\fi
-
-
-% 来源：图片843：三道变式
-\begin{campuspractice}{配套拓展：嵌套式变式（1）}
-记 $L(x)=\log_3[\log_4(\log_5x)]$。若 $L(x)=1$，求 $x$。
-\end{campuspractice}
-
-\begin{campuspractice}{配套拓展：嵌套式变式（2）}
-记 $L(x)=\log_3[\log_4(\log_5x)]$。若 $L(x)=0$，求 $625^{\log_x3}$。
-\end{campuspractice}
-
-\begin{campuspractice}{配套拓展：嵌套式变式（3）}
-若 $3^{\log_3[\log_4(\log_5x)]}=1$，求 $x$。
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{配套拓展：嵌套式变式：解答}
-(1) 逐层得 $\log_4(\log_5x)=3$、$\log_5x=64$，故 $x=5^{64}$。
-
-(2) $x=625$，所以结果为 $3$。
-
-(3) $L(x)=0$，所以 $x=625$。各解均满足逐层真数为正。
-\end{frame}
-\fi
-
-
-% 来源：截图438、339；答案独立推导
-\begin{campuspractice}{截图练习1}
-$\log_x16=2$，则 $x$ 等于（\quad）。\par A. $\pm4$\quad B. $4$\quad C. $256$\quad D. $2$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{截图练习1：解答}
-$x^2=16$，底数 $x>0,x\ne1$，故 $x=4$，选B。
-\end{frame}
-\fi
-
-
-% 来源：截图438、339；答案独立推导
-\begin{campuspractice}{截图练习2}
-若 $f(2^x)=x$（$x\in\mathbb R$），则 $f(5)$ 为（\quad）。\par A. $2^5$\quad B. $5^2$\quad C. $\log_52$\quad D. $\log_25$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{截图练习2：解答}
-令 $2^x=5$，则 $x=\log_25$，故 $f(5)=\log_25$，选D。
-\end{frame}
-\fi
-
-
-% 来源：截图438、339；答案独立推导
-\begin{campuspractice}{截图练习3—4（1）}
-$\log_3(a+1)=1$，求 $\log_a2+\log_2(a-1)$。
-\end{campuspractice}
-
-\begin{campuspractice}{截图练习3—4（2）}
-$a=\log_34$，求 $3^{2a}$。
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{截图练习3—4：解答}
-(3) $a=2$，结果为 $1+0=1$。\par (4) $3^a=4$，故 $3^{2a}=16$。
-\end{frame}
-\fi
-
-
-% 来源：截图438、339；答案独立推导
-\begin{campuspractice}{截图练习5（1）}
-将下式在指数式与对数式之间互化：\par
-$\log_216=4$
-\end{campuspractice}
-
-\begin{campuspractice}{截图练习5（2）}
-将下式在指数式与对数式之间互化：\par
-$\log_{1/3}27=-3$
-\end{campuspractice}
-
-\begin{campuspractice}{截图练习5（3）}
-将下式在指数式与对数式之间互化：\par
-$\log_{\sqrt3}x=3$
-\end{campuspractice}
-
-\begin{campuspractice}{截图练习5（4）}
-将下式在指数式与对数式之间互化：\par
-$5^3=125$
-\end{campuspractice}
-
-\begin{campuspractice}{截图练习5（5）}
-将下式在指数式与对数式之间互化：\par
-$2^{-1}=1/2$
-\end{campuspractice}
-
-\begin{campuspractice}{截图练习5（6）}
-将下式在指数式与对数式之间互化：\par
-$(1/3)^{-2}=9$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{截图练习5：解答}
-依次为 $2^4=16$；$(1/3)^{-3}=27$；$(\sqrt3)^3=x$；$\log_5125=3$；$\log_2(1/2)=-1$；$\log_{1/3}9=-2$。
-\end{frame}
-\fi
-
-
-% 来源：截图438、339；答案独立推导
-\begin{campuspractice}{截图练习6：前三问（1）}
+% 27—33分钟：连续独立完成4题，不在中间显示解答。
+% 题库编号：LOG-044
+\begin{campuspractice}{当堂练习1}
 求下式中的 $x$：\par
-$\log_x27=3/2$
+$\lg0.01=x$
 \end{campuspractice}
 
-\begin{campuspractice}{截图练习6：前三问（2）}
+% 题库编号：LOG-045
+\begin{campuspractice}{当堂练习2}
 求下式中的 $x$：\par
-$\log_2x=-2/3$
+$\log_7(x+2)=2$
 \end{campuspractice}
 
-\begin{campuspractice}{截图练习6：前三问（3）}
+% 题库编号：LOG-038
+\begin{campuspractice}{当堂练习3}
+$\log_a(1-2a)$ 有意义时，求 $a$ 的范围。
+\end{campuspractice}
+
+% 题库编号：LOG-048
+\begin{campuspractice}{当堂练习4}
 求下式中的 $x$：\par
-$\log_x(3+2\sqrt2)=-2$
+$\log_5(x^2)=2$
 \end{campuspractice}
 
+% 33—37分钟：教师依据板演和巡视组织反馈。
 \ifdefined\TeacherEdition
-\begin{frame}[t]{截图练习6：前三问：解答}
-(1) $x=9$；(2) $x=2^{-2/3}$；\par (3) $x^{-2}=3+2\sqrt2=(\sqrt2+1)^2$，底数为正，所以 $x=\sqrt2-1$。
+\begin{frame}[t]{当堂练习：反馈与纠错}
+\begin{enumerate}
+\item $\lg0.01=x$：$x=-2$。
+\item $\log_7(x+2)=2$：$x=47$。
+\item $\log_a(1-2a)$：$0<a<\frac12$。
+\item $\log_5(x^2)=2$：$x=\pm5$。
+\end{enumerate}
+请说明第3题的三个条件，以及第4题负根为何保留。
 \end{frame}
+
 \fi
-
-
-% 来源：截图438、339；答案独立推导
-\begin{campuspractice}{截图练习6：嵌套两问（1）}
-求下式中的 $x$：\par
-$\log_5(\log_2x)=0$
-\end{campuspractice}
-
-\begin{campuspractice}{截图练习6：嵌套两问（2）}
-求下式中的 $x$：\par
-$\log_2[\log_3(\log_2x)]=1$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{截图练习6：嵌套两问：解答}
-(4) $\log_2x=1$，所以 $x=2$。\par (5) $\log_3(\log_2x)=2$，$\log_2x=9$，所以 $x=512$。
-\end{frame}
-\fi
-
-
-% 来源：截图438、339；答案独立推导
-\begin{campuspractice}{截图练习7—8（1）}
-$a=\log_310,b=\log_37$，求 $3^{a-b}$。\par A. $10/7$\quad B. $7/10$\quad C. $10/49$\quad D. $49/10$
-\end{campuspractice}
-
-\begin{campuspractice}{截图练习7—8（2）}
-$\log_{\sqrt2+1}(3-2\sqrt2)=t$，求 $t$。\par A. $-2$\quad B. $-4$\quad C. $2$\quad D. $4$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{截图练习7—8：解答}
-(7) $3^{a-b}=3^a/3^b=10/7$，选A。\par (8) $3-2\sqrt2=(\sqrt2-1)^2=(\sqrt2+1)^{-2}$，选A。
-\end{frame}
-\fi
-
-
-% 来源：截图438、339；答案独立推导
-\begin{campuspractice}{截图练习9—10（1）}
-$\log_3(\log_5a)=\log_4(\log_5b)=0$，求 $a/b$。\par A. $1$\quad B. $-1$\quad C. $5$\quad D. $1/5$
-\end{campuspractice}
-
-\begin{campuspractice}{截图练习9—10（2）}
-解方程 $3^{\log_2x}=1/27$。
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{截图练习9—10：解答}
-(9) $\log_5a=\log_5b=1$，故 $a=b=5$，选A。\par (10) $\log_2x=-3$，所以 $x=1/8$。
-\end{frame}
-\fi
-
-
-% 来源：截图438、339；答案独立推导
-\begin{campuspractice}{截图练习11}
-若 $\log_{1-x}((1+x)^2)=1$，求 $x$。
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{截图练习11：解答}
-条件为 $x<1$、$x\ne0$、$x\ne-1$。
-\[(1+x)^2=1-x\Rightarrow x(x+3)=0.\]
-剔除 $x=0$，保留 $x=-3$。代回底数4、真数4，成立。
-\end{frame}
-\fi
-
-
-% 来源：截图438、339；答案独立推导
-\begin{campuspractice}{截图练习12—13（1）}
-计算 $2^{2+\log_23}+3^{2-\log_39}$。
-\end{campuspractice}
-
-\begin{campuspractice}{截图练习12—13（2）}
-若 $x=\log_43$，求 $(2^x-2^{-x})^2$。
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{截图练习12—13：解答}
-(12) $4\cdot3+9/9=13$。
-
-(13) $4^x=3$，故 $2^x=\sqrt3$，$2^{-x}=1/\sqrt3$，结果为 $4/3$。
-\end{frame}
-\fi
-
-
-% 来源：教学归纳
+% 37—40分钟
 \begin{campussummary}
 \begin{itemize}
-\item 对数就是已知底数和幂，求指数。核心是指数式与对数式等价互化。
-\item 三个条件：底数正且不为1，真数为正。
-\item 两个恒等式：$a^{\log_aN}=N$，$\log_a(a^x)=x$。
-\item 求解后回到原式检查，防止底数不合法或嵌套真数不为正。
-\end{itemize}\end{campussummary}
-
-% 来源：图片838—840教材数学文化；按材料概述，不将现代log定义等同早期对数
-\begin{frame}[t]{附录：对数为何被发明}
-对数曾是简化繁重计算的重要工具。所附教材介绍：
-\begin{itemize}
-\item 纳皮尔于1614年发表对数著作。
-\item 别尔基也独立研究了对数，相关著作于1620年出版。
-\item 布里格斯推动常用对数表的编制。
+\item 对数求的是什么？$a^x=N\Longleftrightarrow x=\log_aN$。
+\item 哪三个条件？$a>0$、$a\ne1$、$N>0$。
+\item 两个恒等式各在什么条件下使用？
+\item 求出结果后，把解代回原式检查。
 \end{itemize}
-\[2^6\cdot2^8=2^{6+8}=2^{14},\qquad64\times256=16384.\]
-将幂对应到指数，就能把乘法转化为加法。\end{frame}
-
-% 来源：图片838—839
-\begin{frame}[t]{附录：从稀疏表到精细表}
-\small
-\centering\begin{tabular}{c|rrrrrrrr}
-$n$&0&1&2&3&4&5&6&7\\\hline
-$2^n$&1&2&4&8&16&32&64&128\\\hline
-$n$&8&9&10&11&12&13&14&\\\hline
-$2^n$&256&512&1024&2048&4096&8192&16384&
-\end{tabular}\par\normalsize
-表中缺少3、5、7等数，怎样把间隔缩小？
-
-取接近1的 $q=1.0001$：每次把 $x$ 增加其万分之一，
-\[x_0=1,\quad x_{n+1}=x_n+\frac{x_n}{10000}=1.0001x_n,\quad x_n=1.0001^n.\]\end{frame}
-
-% 来源：图片839
-\begin{frame}[t]{附录：历史表的近似数}
-\[x=1.0001^y,\qquad y=\log_{1.0001}x.\]
-\[1.0001^{100}\approx1.010049662,\quad
-1.0001^{101}\approx1.010150667.\]
-\[1.0001^{46054}\approx99.999955936.\]
-
-教材用接近1的底数解释早期制表思想。数值表经舍入，只能得到近似计算结果；这些现代符号是对思想的解释。\end{frame}
-
-% 来源：图片839—840
-\begin{frame}[t]{附录：查表把除法变成减法}
-\small\centering\renewcommand{\arraystretch}{1.35}
-\begin{tabular}{c|rrrrr}
-$y$&20333&20334&20335&20336&20337\\
-$x\approx$&7.6385&7.6392&7.6400&7.6408&7.6415\\\hline
-$y$&10237&10238&10239&10240&10241\\
-$x\approx$&2.7833&2.7836&2.7839&2.7842&2.7844
-\end{tabular}\par\normalsize
-求 $7640\div2784=7.640\div2.784$。
-
-按表取对应指数 $20335$ 和 $10239$，相减为 $10096$。\end{frame}
-
-% 来源：图片840；修正原近似分母使用精确等号的问题
-\begin{frame}[t]{附录：近似计算与换底}
-\small\centering\begin{tabular}{c|rrrrr}
-$y$&10094&10095&10096&10097&10098\\\hline
-$x\approx$&2.7438&2.7441&2.7444&2.7446&2.7449
-\end{tabular}\par\normalsize
-查表得到商约为 $2.7444$；实际商为 $2.74425287\ldots$。
-两者保留4位有效数字均为 $2.744$。
-
-\[\lg x=\frac{\log_{1.0001}x}{\log_{1.0001}10}
-\approx\frac{\log_{1.0001}x}{23027}.\]
-本页换底公式作为后续学习的预告，分母 $23027$ 是近似值。\end{frame}
-
-% 来源：图片841顶部
-\begin{frame}[t]{补充：教材思考题}
-由 $0.568^x=0.01$，可准确记为
-\[x=\log_{0.568}0.01.\]
-借助计算器得 $x\approx8.142$。
-
-对数符号能够准确表示指数，近似小数方便实际计算，两者作用不同。\end{frame}
-% 来源：图片841顶部；图片839的制表背景。
-\begin{frame}[t]{补充：指数结构与制表背景}
-\[2^{\log_23-2}=\frac{2^{\log_23}}{2^2}=\frac34.\]
-\[2^{\log_2(3+2)}=5.\]
-括号内的加法与指数上的减法，处理方式不同。
-
-所附数学文化材料还介绍：纳皮尔采用接近1的小于1的数
-$b=0.9999999$，别尔基采用 $a=1.0001$，以缩小表中相邻数的间隔。
-
-现代指数记号和对数与指数的统一认识经历了长期发展，早期对数表不能直接等同于今天的常用对数表。
-\end{frame}
+请用自己的话解释：$\log_5(x^2)=2$ 中为何可取负数 $x$？
+\end{campussummary}
 \campusclosing[谢谢]\end{document}

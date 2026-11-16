@@ -1,0 +1,26 @@
+{
+  "duration_minutes": 40,
+  "exploration_minutes": 27,
+  "independent_minutes": 6,
+  "feedback_minutes": 4,
+  "summary_minutes": 3,
+  "guided": [
+    "LOG-039",
+    "LOG-040",
+    "LOG-050",
+    "LOG-049"
+  ],
+  "final_practice": [
+    "LOG-044",
+    "LOG-045",
+    "LOG-038",
+    "LOG-048"
+  ],
+  "backup": [
+    "LOG-037",
+    "LOG-043",
+    "LOG-054",
+    "LOG-055"
+  ],
+  "rule": "超时先删备选与拓展题，保留最后10分钟练习反馈和3分钟总结。"
+}
