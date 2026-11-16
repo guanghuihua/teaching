@@ -46,34 +46,87 @@ $\log_aN$ 整体表示一个数。例如
 
 $\ln10\approx2.303$，所以 $e^{2.303}\approx10$。\end{frame}
 
+\begin{campussummary}
+\begin{itemize}
+\item 对数表示指数：$a^x=N\Longleftrightarrow x=\log_aN$。
+\item 底数 $a>0$ 且 $a\ne1$，真数 $N>0$。
+\item 代回原式核对条件，区分真数、底数和对数值。
+\end{itemize}
+\end{campussummary}
+
 % 来源：PPT6
-\begin{frame}[t]{例1：指数式与对数式互化}
+\begin{campuspractice}{例1：指数式与对数式互化（1）}
+将下式在指数式与对数式之间互化：\par
+$5^4=625$
+\end{campuspractice}
+
+\begin{campuspractice}{例1：指数式与对数式互化（2）}
+将下式在指数式与对数式之间互化：\par
+$2^{-6}=1/64$
+\end{campuspractice}
+
+\begin{campuspractice}{例1：指数式与对数式互化（3）}
+将下式在指数式与对数式之间互化：\par
+$(1/3)^m=5.73$
+\end{campuspractice}
+
+\begin{campuspractice}{例1：指数式与对数式互化（4）}
+将下式在指数式与对数式之间互化：\par
+$\log_{1/2}16=-4$
+\end{campuspractice}
+
+\begin{campuspractice}{例1：指数式与对数式互化（5）}
+将下式在指数式与对数式之间互化：\par
+$\lg0.01=-2$
+\end{campuspractice}
+
+\begin{campuspractice}{例1：指数式与对数式互化（6）}
+将下式在指数式与对数式之间互化：\par
+$\ln10\approx2.303$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{例1：指数式与对数式互化：解答}
 \begin{align*}
-(1)&\ 5^4=625;&(2)&\ 2^{-6}=\tfrac1{64};\\
-(3)&\ (\tfrac13)^m=5.73;&(4)&\ \log_{1/2}16=-4;\\
-(5)&\ \lg0.01=-2;&(6)&\ \ln10\approx2.303.
-\end{align*}
-\pause\par\medskip
-\ans{\begin{align*}
 (1)&\ \log_5 625=4;&(2)&\ \log_2\tfrac1{64}=-6;\\
 (3)&\ \log_{1/3}5.73=m;&(4)&\ (\tfrac12)^{-4}=16;\\
 (5)&\ 10^{-2}=0.01;&(6)&\ e^{2.303}\approx10.
-\end{align*}}
+\end{align*}
 \end{frame}
+\fi
+
 
 % 来源：PPT7
-\begin{frame}[t]{例2：求真数、底数与对数}
+\begin{campuspractice}{例2：求真数、底数与对数（1）}
+求下式中的 $x$：\par
+$\log_{64}x=-2/3$
+\end{campuspractice}
+
+\begin{campuspractice}{例2：求真数、底数与对数（2）}
+求下式中的 $x$：\par
+$\log_x8=6$
+\end{campuspractice}
+
+\begin{campuspractice}{例2：求真数、底数与对数（3）}
+求下式中的 $x$：\par
+$\lg100=x$
+\end{campuspractice}
+
+\begin{campuspractice}{例2：求真数、底数与对数（4）}
+求下式中的 $x$：\par
+$-\ln(e^2)=x$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{例2：求真数、底数与对数：解答}
 \begin{align*}
-(1)&\ \log_{64}x=-\tfrac23;&(2)&\ \log_x8=6;\\
-(3)&\ \lg100=x;&(4)&\ -\ln(e^2)=x.
-\end{align*}
-\pause\par\medskip
-\ans{\begin{align*}
 (1)&\ x=64^{-2/3}=\tfrac1{16};\\
 (2)&\ x^6=8,\ x>0,\ x\ne1\Rightarrow x=\sqrt2;\\
 (3)&\ x=2;\qquad (4)\ x=-2.
-\end{align*}}
+\end{align*}
 \end{frame}
+\fi
+
 
 % 来源：PPT8—9、11；图片842
 \begin{frame}[t]{任务四：基本性质与恒等式}
@@ -86,244 +139,545 @@ $\ln10\approx2.303$，所以 $e^{2.303}\approx10$。\end{frame}
 \[\log_2\tfrac12=-1,\qquad \log_{0.6}1=0.\]\end{frame}
 
 % 来源：PPT10—11
-\begin{frame}[t]{例3：恒等式的使用}
-\[(1)\ \log_3\frac{2x-1}{5}=0;\qquad
-(2)\ 6^{\log_6(5x+1)}=36.\]
-\[(3)\ 2^{\log_2(3+2)}.\]
-\pause\par\medskip
-\ans{(1) $\frac{2x-1}{5}=1$，得 $x=3$。
+\begin{campuspractice}{例3：恒等式的使用（1）}
+$\log_3\frac{2x-1}{5}=0$
+\end{campuspractice}
+
+\begin{campuspractice}{例3：恒等式的使用（2）}
+$6^{\log_6(5x+1)}=36$
+\end{campuspractice}
+
+\begin{campuspractice}{例3：恒等式的使用（3）}
+计算 $2^{\log_2(3+2)}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{例3：恒等式的使用：解答}
+(1) $\frac{2x-1}{5}=1$，得 $x=3$。
 
 (2) 先要求 $5x+1>0$，再得 $5x+1=36$，所以 $x=7$。
 
-(3) $2^{\log_25}=5$。}
+(3) $2^{\log_25}=5$。
 \end{frame}
+\fi
+
 
 % 来源：PPT12
-\begin{frame}[t]{例4：底数、真数同时检查}
-求下列式子有意义时 $x$ 的范围：
-\[(1)\ \log_2(x-10);\qquad(2)\ \log_{x-1}(x+2).\]
-\pause\par\medskip
-\ans{(1) $x-10>0$，所以 $x>10$。
+\begin{campuspractice}{例4：底数、真数同时检查（1）}
+求下式有意义时 $x$ 的范围：\par
+$\log_2(x-10)$
+\end{campuspractice}
+
+\begin{campuspractice}{例4：底数、真数同时检查（2）}
+求下式有意义时 $x$ 的范围：\par
+$\log_{x-1}(x+2)$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{例4：底数、真数同时检查：解答}
+(1) $x-10>0$，所以 $x>10$。
 
 (2) $x-1>0$、$x-1\ne1$、$x+2>0$，故
-\[x\in(1,2)\cup(2,+\infty).\]}
+\[x\in(1,2)\cup(2,+\infty).\]
 \end{frame}
+\fi
+
 
 % 来源：PPT13；图片843
-\begin{frame}[t]{例5：未知量的位置}
-\[(1)\ \log_2x=-\tfrac12;\qquad (2)\ \log_x25=2;\qquad
-(3)\ \log_5(x^2)=2.\]
-\pause\par\medskip
-\ans{(1) $x=2^{-1/2}=\frac{\sqrt2}{2}$。
+\begin{campuspractice}{例5：未知量的位置（1）}
+求下式中的 $x$：\par
+$\log_2x=-1/2$
+\end{campuspractice}
+
+\begin{campuspractice}{例5：未知量的位置（2）}
+求下式中的 $x$：\par
+$\log_x25=2$
+\end{campuspractice}
+
+\begin{campuspractice}{例5：未知量的位置（3）}
+求下式中的 $x$：\par
+$\log_5(x^2)=2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{例5：未知量的位置：解答}
+(1) $x=2^{-1/2}=\frac{\sqrt2}{2}$。
 
 (2) $x^2=25$，结合底数条件 $x>0,x\ne1$，得 $x=5$。
 
-(3) $x^2=25$，两根 $x=\pm5$ 均使真数为正，故都保留。}
+(3) $x^2=25$，两根 $x=\pm5$ 均使真数为正，故都保留。
 \end{frame}
+\fi
+
 
 % 来源：图片841：练习1
-\begin{frame}[t]{教材练习：互化八题}
+\begin{campuspractice}{教材练习：互化八题（1）}
+将下式在指数式与对数式之间互化：\par
+$5^4=625$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：互化八题（2）}
+将下式在指数式与对数式之间互化：\par
+$2^{-6}=1/64$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：互化八题（3）}
+将下式在指数式与对数式之间互化：\par
+$4^x=10$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：互化八题（4）}
+将下式在指数式与对数式之间互化：\par
+$3^{-m/4}=9$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：互化八题（5）}
+将下式在指数式与对数式之间互化：\par
+$\log_216=4$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：互化八题（6）}
+将下式在指数式与对数式之间互化：\par
+$\log_3(1/9)=-2$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：互化八题（7）}
+将下式在指数式与对数式之间互化：\par
+$\log_3(5+x)=2$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：互化八题（8）}
+将下式在指数式与对数式之间互化：\par
+$\log_{a-1}(b+2)=3$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{教材练习：互化八题：解答}
 \small
-\begin{align*}
-(1)&\ 5^4=625;&(2)&\ 2^{-6}=\tfrac1{64};\\
-(3)&\ 4^x=10;&(4)&\ 3^{-m/4}=9;\\
-(5)&\ \log_216=4;&(6)&\ \log_3\tfrac19=-2;\\
-(7)&\ \log_3(5+x)=2;&(8)&\ \log_{a-1}(b+2)=3.
-\end{align*}
-\pause\par\medskip
-\ans{\small
 (1) $\log_5625=4$；(2) $\log_2\frac1{64}=-6$；(3) $\log_410=x$；
 
 (4) $\log_39=-m/4$；(5) $2^4=16$；(6) $3^{-2}=1/9$；
 
-(7) $3^2=5+x$；(8) $(a-1)^3=b+2$，且 $a>1,a\ne2,b>-2$。}
+(7) $3^2=5+x$；(8) $(a-1)^3=b+2$，且 $a>1,a\ne2,b>-2$。
 \end{frame}
+\fi
+
 
 % 来源：图片841：练习2
-\begin{frame}[t]{教材练习：计算六题}
-\begin{align*}
-(1)&\ \log_2\tfrac1{16};&(2)&\ \log_{1/2}32;\\
-(3)&\ \log_{0.4}1;&(4)&\ \log_{2.5}6.25;\\
-(5)&\ 4^{\log_43};&(6)&\ 3^{\log_37+1}.
-\end{align*}
-\pause\par\medskip
-\ans{依次为 $-4,\ -5,\ 0,\ 2,\ 3,\ 21$。
+\begin{campuspractice}{教材练习：计算六题（1）}
+计算：\par
+$\log_2(1/16)$
+\end{campuspractice}
 
-例如 $3^{\log_37+1}=3^{\log_37}\cdot3=7\cdot3=21$。}
+\begin{campuspractice}{教材练习：计算六题（2）}
+计算：\par
+$\log_{1/2}32$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：计算六题（3）}
+计算：\par
+$\log_{0.4}1$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：计算六题（4）}
+计算：\par
+$\log_{2.5}6.25$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：计算六题（5）}
+计算：\par
+$4^{\log_43}$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：计算六题（6）}
+计算：\par
+$3^{\log_37+1}$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{教材练习：计算六题：解答}
+依次为 $-4,\ -5,\ 0,\ 2,\ 3,\ 21$。
+
+例如 $3^{\log_37+1}=3^{\log_37}\cdot3=7\cdot3=21$。
 \end{frame}
+\fi
+
 
 % 来源：图片841：练习3
-\begin{frame}[t]{教材练习：求未知量}
-\[(1)\ \log_5x=3;\qquad(2)\ \log_2(2x+1)=3;\]
-\[(3)\ \log_x\tfrac18=3;\qquad(4)\ \log_2(8^x)=-3.\]
-\pause\par\medskip
-\ans{(1) $x=125$；(2) $2x+1=8$，$x=7/2$；
+\begin{campuspractice}{教材练习：求未知量（1）}
+求下式中的 $x$：\par
+$\log_5x=3$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：求未知量（2）}
+求下式中的 $x$：\par
+$\log_2(2x+1)=3$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：求未知量（3）}
+求下式中的 $x$：\par
+$\log_x(1/8)=3$
+\end{campuspractice}
+
+\begin{campuspractice}{教材练习：求未知量（4）}
+求下式中的 $x$：\par
+$\log_2(8^x)=-3$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{教材练习：求未知量：解答}
+(1) $x=125$；(2) $2x+1=8$，$x=7/2$；
 
 (3) $x^3=1/8$，$x=1/2$，符合底数条件；
 
-(4) $8^x=2^{-3}$，$2^{3x}=2^{-3}$，$x=-1$。}
+(4) $8^x=2^{-3}$，$2^{3x}=2^{-3}$，$x=-1$。
 \end{frame}
+\fi
+
 
 % 来源：图片842：典例1、对点练习；原多选项改成直接求范围
-\begin{frame}[t]{配套练习：有意义的条件}
-(1) $b=\log_{a-2}(5-a)$ 中，求 $a$ 的范围。
+\begin{campuspractice}{配套练习：有意义的条件（1）}
+$b=\log_{a-2}(5-a)$ 中，求 $a$ 的范围。
+\end{campuspractice}
 
-(2) $\log_a(1-2a)$ 有意义时，求 $a$ 的范围。
-\pause\par\medskip
-\ans{(1) $a-2>0$、$a-2\ne1$、$5-a>0$，故
+\begin{campuspractice}{配套练习：有意义的条件（2）}
+$\log_a(1-2a)$ 有意义时，求 $a$ 的范围。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{配套练习：有意义的条件：解答}
+(1) $a-2>0$、$a-2\ne1$、$5-a>0$，故
 \[a\in(2,3)\cup(3,5).\]
-(2) $a>0$、$a\ne1$、$1-2a>0$，故 $0<a<1/2$。}
+(2) $a>0$、$a\ne1$、$1-2a>0$，故 $0<a<1/2$。
 \end{frame}
+\fi
+
 
 % 来源：图片842—843
-\begin{frame}[t]{配套练习：互化与辨析}
-互化：$5^3=125$；$\log_216=4$；$10^{-2}=0.01$；$\log_{\sqrt5}125=6$。
+\begin{campuspractice}{配套练习：互化（1）}
+将下式互化：\par
+$5^3=125$
+\end{campuspractice}
+\begin{campuspractice}{配套练习：互化（2）}
+将下式互化：\par
+$\log_216=4$
+\end{campuspractice}
+\begin{campuspractice}{配套练习：互化（3）}
+将下式互化：\par
+$10^{-2}=0.01$
+\end{campuspractice}
+\begin{campuspractice}{配套练习：互化（4）}
+将下式互化：\par
+$\log_{\sqrt5}125=6$
+\end{campuspractice}
 
+\begin{campuspractice}{配套练习：互化与辨析（2）}
 以下哪些是正确的直接互化？
 
 A. $10^0=1$ 与 $\lg1=0$； B. $27^{-1/3}=1/3$ 与 $\log_{27}(1/3)=-1/3$；
 
 C. $\log_39=2$ 与 $9^{1/2}=3$； D. $\log_55=1$ 与 $5^1=5$。
-\pause\par\medskip
-\ans{互化依次为 $\log_5125=3$；$2^4=16$；$\lg0.01=-2$；$(\sqrt5)^6=125$。
 
-选 A、B、D。C 中两式虽都成立，但不是保持底数不变的直接互化。}
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{配套练习：互化与辨析：解答}
+互化依次为 $\log_5125=3$；$2^4=16$；$\lg0.01=-2$；$(\sqrt5)^6=125$。
+
+选 A、B、D。C 中两式虽都成立，但不是保持底数不变的直接互化。
 \end{frame}
+\fi
+
 
 % 来源：图片843；与前文重复的两问不重复展示
-\begin{frame}[t]{配套练习：求值与求未知量}
-\[(1)\ \lg0.01=x;\quad(2)\ \log_7(x+2)=2;\]
-\[(3)\ \log_{2/3}\tfrac94=x;\quad(4)\ x=\log_{1/2}32;\]
-\[(5)\ \log_5(x^2)=2;\quad(6)\ 2\log_3x=4.\]
-\pause\par\medskip
-\ans{依次为 $x=-2,\ 47,\ -2,\ -5,\ \pm5,\ 9$。
+\begin{campuspractice}{配套练习：求值与求未知量（1）}
+求下式中的 $x$：\par
+$\lg0.01=x$
+\end{campuspractice}
 
-第(5)题的真数是 $x^2$；第(6)题的真数是 $x$，必须取正值。}
+\begin{campuspractice}{配套练习：求值与求未知量（2）}
+求下式中的 $x$：\par
+$\log_7(x+2)=2$
+\end{campuspractice}
+
+\begin{campuspractice}{配套练习：求值与求未知量（3）}
+求下式中的 $x$：\par
+$\log_{2/3}(9/4)=x$
+\end{campuspractice}
+
+\begin{campuspractice}{配套练习：求值与求未知量（4）}
+求下式中的 $x$：\par
+$x=\log_{1/2}32$
+\end{campuspractice}
+
+\begin{campuspractice}{配套练习：求值与求未知量（5）}
+求下式中的 $x$：\par
+$\log_5(x^2)=2$
+\end{campuspractice}
+
+\begin{campuspractice}{配套练习：求值与求未知量（6）}
+求下式中的 $x$：\par
+$2\log_3x=4$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{配套练习：求值与求未知量：解答}
+依次为 $x=-2,\ 47,\ -2,\ -5,\ \pm5,\ 9$。
+
+第(5)题的真数是 $x^2$；第(6)题的真数是 $x$，必须取正值。
 \end{frame}
+\fi
+
 
 % 来源：图片843：典例3
-\begin{frame}[t]{配套练习：恒等式与嵌套对数}
-\[(1)\ 2^{-\log_23};\quad(2)\ e^{3\ln7};\quad(3)\ \lg(0.001^2);\]
-\[(4)\ \log_3(\lg x)=1;\qquad(5)\ \log_3[\log_4(\log_5x)]=0.\]
-\pause\par\medskip
-\ans{(1) $1/3$；(2) $343$；(3) $-6$。
+\begin{campuspractice}{配套练习：恒等式与嵌套对数（1）}
+计算 $2^{-\log_23}$。
+\end{campuspractice}
+
+\begin{campuspractice}{配套练习：恒等式与嵌套对数（2）}
+计算 $e^{3\ln7}$。
+\end{campuspractice}
+
+\begin{campuspractice}{配套练习：恒等式与嵌套对数（3）}
+计算 $\lg(0.001^2)$。
+\end{campuspractice}
+
+\begin{campuspractice}{配套练习：恒等式与嵌套对数（4）}
+求 $x$：$\log_3(\lg x)=1$。
+\end{campuspractice}
+
+\begin{campuspractice}{配套练习：恒等式与嵌套对数（5）}
+求 $x$：$\log_3[\log_4(\log_5x)]=0$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{配套练习：恒等式与嵌套对数：解答}
+(1) $1/3$；(2) $343$；(3) $-6$。
 
 (4) $\lg x=3$，得 $x=1000$。
 
 (5) $\log_4(\log_5x)=1$，$\log_5x=4$，得 $x=625$。
 
-求嵌套式的值从内到外；已知值求未知量从外到内。}
+求嵌套式的值从内到外；已知值求未知量从外到内。
 \end{frame}
+\fi
+
 
 % 来源：图片843：三道变式
-\begin{frame}[t]{配套拓展：嵌套式变式}
-记 $L(x)=\log_3[\log_4(\log_5x)]$。
+\begin{campuspractice}{配套拓展：嵌套式变式（1）}
+记 $L(x)=\log_3[\log_4(\log_5x)]$。若 $L(x)=1$，求 $x$。
+\end{campuspractice}
 
-(1) 若 $L(x)=1$，求 $x$。
+\begin{campuspractice}{配套拓展：嵌套式变式（2）}
+记 $L(x)=\log_3[\log_4(\log_5x)]$。若 $L(x)=0$，求 $625^{\log_x3}$。
+\end{campuspractice}
 
-(2) 若 $L(x)=0$，求 $625^{\log_x3}$。
+\begin{campuspractice}{配套拓展：嵌套式变式（3）}
+若 $3^{\log_3[\log_4(\log_5x)]}=1$，求 $x$。
+\end{campuspractice}
 
-(3) 若 $3^{L(x)}=1$，求 $x$。
-\pause\par\medskip
-\ans{(1) 逐层得 $\log_4(\log_5x)=3$、$\log_5x=64$，故 $x=5^{64}$。
+\ifdefined\TeacherEdition
+\begin{frame}[t]{配套拓展：嵌套式变式：解答}
+(1) 逐层得 $\log_4(\log_5x)=3$、$\log_5x=64$，故 $x=5^{64}$。
 
 (2) $x=625$，所以结果为 $3$。
 
-(3) $L(x)=0$，所以 $x=625$。各解均满足逐层真数为正。}
+(3) $L(x)=0$，所以 $x=625$。各解均满足逐层真数为正。
 \end{frame}
+\fi
+
 
 % 来源：截图438、339；答案独立推导
-\begin{frame}[t]{截图练习1}
+\begin{campuspractice}{截图练习1}
 $\log_x16=2$，则 $x$ 等于（\quad）。\par A. $\pm4$\quad B. $4$\quad C. $256$\quad D. $2$
-\pause\par\medskip
-\ans{$x^2=16$，底数 $x>0,x\ne1$，故 $x=4$，选B。}
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{截图练习1：解答}
+$x^2=16$，底数 $x>0,x\ne1$，故 $x=4$，选B。
 \end{frame}
+\fi
+
 
 % 来源：截图438、339；答案独立推导
-\begin{frame}[t]{截图练习2}
+\begin{campuspractice}{截图练习2}
 若 $f(2^x)=x$（$x\in\mathbb R$），则 $f(5)$ 为（\quad）。\par A. $2^5$\quad B. $5^2$\quad C. $\log_52$\quad D. $\log_25$
-\pause\par\medskip
-\ans{令 $2^x=5$，则 $x=\log_25$，故 $f(5)=\log_25$，选D。}
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{截图练习2：解答}
+令 $2^x=5$，则 $x=\log_25$，故 $f(5)=\log_25$，选D。
 \end{frame}
+\fi
+
 
 % 来源：截图438、339；答案独立推导
-\begin{frame}[t]{截图练习3—4}
-(3) $\log_3(a+1)=1$，求 $\log_a2+\log_2(a-1)$。\par (4) $a=\log_34$，求 $3^{2a}$。
-\pause\par\medskip
-\ans{(3) $a=2$，结果为 $1+0=1$。\par (4) $3^a=4$，故 $3^{2a}=16$。}
+\begin{campuspractice}{截图练习3—4（1）}
+$\log_3(a+1)=1$，求 $\log_a2+\log_2(a-1)$。
+\end{campuspractice}
+
+\begin{campuspractice}{截图练习3—4（2）}
+$a=\log_34$，求 $3^{2a}$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{截图练习3—4：解答}
+(3) $a=2$，结果为 $1+0=1$。\par (4) $3^a=4$，故 $3^{2a}=16$。
 \end{frame}
+\fi
+
 
 % 来源：截图438、339；答案独立推导
-\begin{frame}[t]{截图练习5}
-将下列指数式与对数式互化：
-\begin{align*}(1)&\ \log_216=4;&(2)&\ \log_{1/3}27=-3;\\
-(3)&\ \log_{\sqrt3}x=3;&(4)&\ 5^3=125;\\
-(5)&\ 2^{-1}=1/2;&(6)&\ (1/3)^{-2}=9.\end{align*}
-\pause\par\medskip
-\ans{依次为 $2^4=16$；$(1/3)^{-3}=27$；$(\sqrt3)^3=x$；$\log_5125=3$；$\log_2(1/2)=-1$；$\log_{1/3}9=-2$。}
+\begin{campuspractice}{截图练习5（1）}
+将下式在指数式与对数式之间互化：\par
+$\log_216=4$
+\end{campuspractice}
+
+\begin{campuspractice}{截图练习5（2）}
+将下式在指数式与对数式之间互化：\par
+$\log_{1/3}27=-3$
+\end{campuspractice}
+
+\begin{campuspractice}{截图练习5（3）}
+将下式在指数式与对数式之间互化：\par
+$\log_{\sqrt3}x=3$
+\end{campuspractice}
+
+\begin{campuspractice}{截图练习5（4）}
+将下式在指数式与对数式之间互化：\par
+$5^3=125$
+\end{campuspractice}
+
+\begin{campuspractice}{截图练习5（5）}
+将下式在指数式与对数式之间互化：\par
+$2^{-1}=1/2$
+\end{campuspractice}
+
+\begin{campuspractice}{截图练习5（6）}
+将下式在指数式与对数式之间互化：\par
+$(1/3)^{-2}=9$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{截图练习5：解答}
+依次为 $2^4=16$；$(1/3)^{-3}=27$；$(\sqrt3)^3=x$；$\log_5125=3$；$\log_2(1/2)=-1$；$\log_{1/3}9=-2$。
 \end{frame}
+\fi
+
 
 % 来源：截图438、339；答案独立推导
-\begin{frame}[t]{截图练习6：前三问}
-求 $x$：\[(1)\ \log_x27=3/2;\quad(2)\ \log_2x=-2/3;\]\[(3)\ \log_x(3+2\sqrt2)=-2.\]
-\pause\par\medskip
-\ans{(1) $x=9$；(2) $x=2^{-2/3}$；\par (3) $x^{-2}=3+2\sqrt2=(\sqrt2+1)^2$，底数为正，所以 $x=\sqrt2-1$。}
+\begin{campuspractice}{截图练习6：前三问（1）}
+求下式中的 $x$：\par
+$\log_x27=3/2$
+\end{campuspractice}
+
+\begin{campuspractice}{截图练习6：前三问（2）}
+求下式中的 $x$：\par
+$\log_2x=-2/3$
+\end{campuspractice}
+
+\begin{campuspractice}{截图练习6：前三问（3）}
+求下式中的 $x$：\par
+$\log_x(3+2\sqrt2)=-2$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{截图练习6：前三问：解答}
+(1) $x=9$；(2) $x=2^{-2/3}$；\par (3) $x^{-2}=3+2\sqrt2=(\sqrt2+1)^2$，底数为正，所以 $x=\sqrt2-1$。
 \end{frame}
+\fi
+
 
 % 来源：截图438、339；答案独立推导
-\begin{frame}[t]{截图练习6：嵌套两问}
-求 $x$：\[(4)\ \log_5(\log_2x)=0;\quad (5)\ \log_2[\log_3(\log_2x)]=1.\]
-\pause\par\medskip
-\ans{(4) $\log_2x=1$，所以 $x=2$。\par (5) $\log_3(\log_2x)=2$，$\log_2x=9$，所以 $x=512$。}
+\begin{campuspractice}{截图练习6：嵌套两问（1）}
+求下式中的 $x$：\par
+$\log_5(\log_2x)=0$
+\end{campuspractice}
+
+\begin{campuspractice}{截图练习6：嵌套两问（2）}
+求下式中的 $x$：\par
+$\log_2[\log_3(\log_2x)]=1$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{截图练习6：嵌套两问：解答}
+(4) $\log_2x=1$，所以 $x=2$。\par (5) $\log_3(\log_2x)=2$，$\log_2x=9$，所以 $x=512$。
 \end{frame}
+\fi
+
 
 % 来源：截图438、339；答案独立推导
-\begin{frame}[t]{截图练习7—8}
-(7) $a=\log_310,b=\log_37$，求 $3^{a-b}$。\par
-A. $10/7$\quad B. $7/10$\quad C. $10/49$\quad D. $49/10$
+\begin{campuspractice}{截图练习7—8（1）}
+$a=\log_310,b=\log_37$，求 $3^{a-b}$。\par A. $10/7$\quad B. $7/10$\quad C. $10/49$\quad D. $49/10$
+\end{campuspractice}
 
-(8) $\log_{\sqrt2+1}(3-2\sqrt2)=t$，则 $t$ 为？\par A. $-2$\quad B. $-4$\quad C. $2$\quad D. $4$
-\pause\par\medskip
-\ans{(7) $3^{a-b}=3^a/3^b=10/7$，选A。\par (8) $3-2\sqrt2=(\sqrt2-1)^2=(\sqrt2+1)^{-2}$，选A。}
+\begin{campuspractice}{截图练习7—8（2）}
+$\log_{\sqrt2+1}(3-2\sqrt2)=t$，求 $t$。\par A. $-2$\quad B. $-4$\quad C. $2$\quad D. $4$
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{截图练习7—8：解答}
+(7) $3^{a-b}=3^a/3^b=10/7$，选A。\par (8) $3-2\sqrt2=(\sqrt2-1)^2=(\sqrt2+1)^{-2}$，选A。
 \end{frame}
+\fi
+
 
 % 来源：截图438、339；答案独立推导
-\begin{frame}[t]{截图练习9—10}
-(9) $\log_3(\log_5a)=\log_4(\log_5b)=0$，求 $a/b$。\par A. $1$\quad B. $-1$\quad C. $5$\quad D. $1/5$
+\begin{campuspractice}{截图练习9—10（1）}
+$\log_3(\log_5a)=\log_4(\log_5b)=0$，求 $a/b$。\par A. $1$\quad B. $-1$\quad C. $5$\quad D. $1/5$
+\end{campuspractice}
 
-(10) 解方程 $3^{\log_2x}=1/27$。
-\pause\par\medskip
-\ans{(9) $\log_5a=\log_5b=1$，故 $a=b=5$，选A。\par (10) $\log_2x=-3$，所以 $x=1/8$。}
+\begin{campuspractice}{截图练习9—10（2）}
+解方程 $3^{\log_2x}=1/27$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{截图练习9—10：解答}
+(9) $\log_5a=\log_5b=1$，故 $a=b=5$，选A。\par (10) $\log_2x=-3$，所以 $x=1/8$。
 \end{frame}
+\fi
+
 
 % 来源：截图438、339；答案独立推导
-\begin{frame}[t]{截图练习11}
+\begin{campuspractice}{截图练习11}
 若 $\log_{1-x}((1+x)^2)=1$，求 $x$。
-\pause\par\medskip
-\ans{条件为 $x<1$、$x\ne0$、$x\ne-1$。
+\end{campuspractice}
+
+\ifdefined\TeacherEdition
+\begin{frame}[t]{截图练习11：解答}
+条件为 $x<1$、$x\ne0$、$x\ne-1$。
 \[(1+x)^2=1-x\Rightarrow x(x+3)=0.\]
-剔除 $x=0$，保留 $x=-3$。代回底数4、真数4，成立。}
+剔除 $x=0$，保留 $x=-3$。代回底数4、真数4，成立。
 \end{frame}
+\fi
+
 
 % 来源：截图438、339；答案独立推导
-\begin{frame}[t]{截图练习12—13}
-(12) 求 $2^{2+\log_23}+3^{2-\log_39}$。
+\begin{campuspractice}{截图练习12—13（1）}
+计算 $2^{2+\log_23}+3^{2-\log_39}$。
+\end{campuspractice}
 
-(13) 若 $x=\log_43$，求 $(2^x-2^{-x})^2$。
-\pause\par\medskip
-\ans{(12) $4\cdot3+9/9=13$。
+\begin{campuspractice}{截图练习12—13（2）}
+若 $x=\log_43$，求 $(2^x-2^{-x})^2$。
+\end{campuspractice}
 
-(13) $4^x=3$，故 $2^x=\sqrt3$，$2^{-x}=1/\sqrt3$，结果为 $4/3$。}
+\ifdefined\TeacherEdition
+\begin{frame}[t]{截图练习12—13：解答}
+(12) $4\cdot3+9/9=13$。
+
+(13) $4^x=3$，故 $2^x=\sqrt3$，$2^{-x}=1/\sqrt3$，结果为 $4/3$。
 \end{frame}
+\fi
+
 
 % 来源：教学归纳
-\begin{frame}[t]{课堂小结}
+\begin{campussummary}
 \begin{itemize}
 \item 对数就是已知底数和幂，求指数。核心是指数式与对数式等价互化。
 \item 三个条件：底数正且不为1，真数为正。
 \item 两个恒等式：$a^{\log_aN}=N$，$\log_a(a^x)=x$。
 \item 求解后回到原式检查，防止底数不合法或嵌套真数不为正。
-\end{itemize}\end{frame}
+\end{itemize}\end{campussummary}
 
 % 来源：图片838—840教材数学文化；按材料概述，不将现代log定义等同早期对数
 \begin{frame}[t]{附录：对数为何被发明}
