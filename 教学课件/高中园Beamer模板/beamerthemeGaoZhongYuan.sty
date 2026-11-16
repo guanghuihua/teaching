@@ -2,6 +2,19 @@
 \ProvidesPackage{beamerthemeGaoZhongYuan}[2026/09/06 Campus PPTX adaptation]
 \RequirePackage{tikz}
 \RequirePackage{graphicx}
+% 正规数学衬线字体：阻止Beamer将数学字母替换为无衬线。
+\usefonttheme{professionalfonts}
+\RequirePackage{amsmath,amssymb,unicode-math}
+\setmathfont{STIX Two Math}
+% 一题一页，题干后至少35mm纯白板书空间；长题应继续拆页。
+\NewDocumentEnvironment{campuspractice}{m +b}{%
+  \begin{frame}[t]{#1}
+  #2\par\vspace*{35mm}
+  \end{frame}
+}{}
+\NewDocumentEnvironment{campussummary}{+b}{%
+  \begin{frame}[t]{课堂小结}#1\end{frame}
+}{}
 \definecolor{campusgreen}{HTML}{126831}
 \definecolor{campusmotto}{HTML}{13742F}
 \setbeamercolor{normal text}{fg=black,bg=white}
