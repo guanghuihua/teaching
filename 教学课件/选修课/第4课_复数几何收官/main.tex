@@ -1,0 +1,334 @@
+% !TeX program = xelatex
+% 接第3课的复数主题收官课；45分钟，点击后才揭示答案。
+% 在本目录用XeLaTeX编译两次；保留主题、book-path.tex和assets/。
+% 备课全显模式（勿用于上课）：\def\HandoutVersion{1}
+% 教师备注模式：\def\TeacherNotes{1}
+\ifdefined\HandoutVersion\PassOptionsToClass{handout}{beamer}\fi
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usepackage{amsmath,amssymb,tikz}
+\usetheme{GaoZhongYuan}
+\usefonttheme{professionalfonts}
+\usepackage{unicode-math}
+\setmathfont{TeX Gyre Termes Math}
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+\definecolor{ink}{HTML}{183025}
+\definecolor{muted}{HTML}{63756B}
+\definecolor{warm}{HTML}{A65A1F}
+\setbeamercolor{normal text}{fg=ink,bg=white}
+\setbeamerfont{normal text}{size=\fontsize{12}{18}\selectfont}
+\setbeamertemplate{footline}{\hfill{\color{muted}\fontsize{7}{9}\selectfont\insertframenumber/\inserttotalframenumber}\hspace*{8mm}\vspace*{3mm}}
+\setbeamercovered{invisible}
+\ifdefined\TeacherNotes\setbeameroption{show notes}\else\setbeameroption{hide notes}\fi
+\newcommand{\LessonTime}{}
+\newcommand{\settime}[1]{\gdef\LessonTime{#1}}
+\newcommand{\teachnote}[1]{\note{建议时间：\LessonTime。#1}}
+\newcommand{\key}[1]{{\color{campusgreen}\bfseries #1}}
+\newcommand{\gap}{\par\vspace{3mm}}
+\newcommand{\bigmath}[1]{\begingroup\color{campusgreen}\fontsize{18}{24}\selectfont\[#1\]\endgroup}
+\newcommand{\bookref}{Zaslavsky与Skopenkov，Mathematics via Problems, Part 2: Geometry，2021，\S1.9，第25页及第5章第100页。}
+\title{从直角旋转到等边三角形}
+\author[华光辉]{华光辉\texorpdfstring{\quad}{ }AI伴学·复数主题收官}
+\date{}
+
+% ABC逆时针。坐标绘图使用A=(0,0),B=(4,0),C=(1,2)。
+% 参数：1=中心连线的出现层，0不出现；2=等长和60度记号层，0不出现；
+%       3=是否显示规范化复数坐标A(0)、B(1)、C(z)。
+\newcommand{\napoleonfigure}[3]{%
+\begin{tikzpicture}[x=.60cm,y=.60cm,font=\scriptsize]
+  \path[use as bounding box](-2.25,-4.2)rectangle(5.4,4.3);
+  \begin{scope}[overlay]
+  \coordinate(A)at(0,0);\coordinate(B)at(4,0);\coordinate(C)at(1,2);
+  \coordinate(X)at(2,{-2*sqrt(3)});
+  \coordinate(Y)at({2.5+sqrt(3)},{1+1.5*sqrt(3)});
+  \coordinate(Z)at({.5-sqrt(3)},{1+.5*sqrt(3)});
+  \coordinate(U)at(2,{-2*sqrt(3)/3});
+  \coordinate(V)at({2.5+sqrt(3)/3},{1+sqrt(3)/2});
+  \coordinate(W)at({.5-sqrt(3)/3},{1+sqrt(3)/6});
+  \filldraw[draw=campusgreen!65,fill=campusgreen!5](A)--(B)--(X)--cycle;
+  \filldraw[draw=campusgreen!65,fill=campusgreen!5](B)--(C)--(Y)--cycle;
+  \filldraw[draw=campusgreen!65,fill=campusgreen!5](C)--(A)--(Z)--cycle;
+  \draw[thick,ink](A)--(B)--(C)--cycle;
+  \ifnum#1>0\only<#1->{\draw[very thick,warm](U)--(V)--(W)--cycle;}\fi
+  \ifnum#2>0\only<#2->{\pic[draw=ink,angle radius=4mm]{angle=V--U--W};
+    \node at($(U)+(-.15,.9)$){$60^\circ$};
+    \foreach\p/\q in {U/V,V/W,W/U}{\coordinate(mid)at($(\p)!.5!(\q)$);
+      \draw[ink]($(mid)!2pt!90:(\q)$)--($(mid)!2pt!-90:(\q)$);}}\fi
+  \foreach\p/\pos in {U/below,V/right,W/left}{\fill[ink](\p)circle(1.4pt)node[\pos]{$\p$};}
+  \ifnum#3=1
+    \fill(A)circle(1.4pt)node[above left]{$A(0)$};\fill(B)circle(1.4pt)node[above right]{$B(1)$};\fill(C)circle(1.4pt)node[above]{$C(z)$};
+  \else
+    \fill(A)circle(1.4pt)node[above left]{$A$};\fill(B)circle(1.4pt)node[above right]{$B$};\fill(C)circle(1.4pt)node[above]{$C$};
+  \fi
+  \end{scope}
+\end{tikzpicture}}
+
+\newcommand{\rhofigure}{%
+\begin{tikzpicture}[x=2.3cm,y=2.3cm,font=\small,>=Stealth]
+  \path[use as bounding box](-.35,-.3)rectangle(1.45,1.3);
+  \begin{scope}[overlay]
+  \draw[->](-.1,0)--(1.25,0);\draw[->](0,-.1)--(0,1.1);
+  \fill(0,0)circle(1.4pt)node[below left]{$O$};
+  \fill(1,0)circle(1.4pt)node[below]{$1$};\draw[thick,campusgreen](0,0)--(1,0);
+  \only<2->{\coordinate(P)at(.5,{sqrt(3)/2});
+    \draw[thick,warm](0,0)--(P)--(1,0);\draw[dashed](P)--(.5,0);
+    \draw[->](.35,0)arc(0:60:.35);\node at(.43,.18){\scriptsize$60^\circ$};
+    \fill(P)circle(1.4pt)node[above]{$\rho$};\node[below]at(.5,0){$\frac12$};}
+  \end{scope}
+\end{tikzpicture}}
+
+\newcommand{\centerfigure}{%
+\begin{tikzpicture}[x=2.6cm,y=2.6cm,font=\small]
+  \path[use as bounding box](-.3,-1.1)rectangle(1.4,.35);
+  \begin{scope}[overlay]
+  \coordinate(A)at(0,0);\coordinate(B)at(1,0);\coordinate(X)at(.5,{-sqrt(3)/2});
+  \filldraw[draw=campusgreen!70,fill=campusgreen!5](A)--(B)--(X)--cycle;
+  \fill(A)circle(1.3pt)node[above left]{$0$};\fill(B)circle(1.3pt)node[above right]{$1$};
+  \fill(X)circle(1.3pt)node[below]{$X$};\draw[dashed](.5,0)--(X);
+  \node[above]at(.5,0){$M$};
+  \only<3->{\fill[warm](.5,{-sqrt(3)/6})circle(1.6pt)node[right]{$U$};}
+  \end{scope}
+\end{tikzpicture}}
+
+\newcommand{\innerfigure}{%
+\begin{tikzpicture}[x=.75cm,y=.75cm,font=\scriptsize]
+  \path[use as bounding box](-.9,-2.3)rectangle(4.9,4.15);
+  \begin{scope}[overlay]
+  \coordinate(A)at(0,0);\coordinate(B)at(4,0);\coordinate(C)at(1,2);
+  \coordinate(U)at(2,{2*sqrt(3)/3});
+  \coordinate(V)at({2.5-sqrt(3)/3},{1-sqrt(3)/2});
+  \coordinate(W)at({.5+sqrt(3)/3},{1-sqrt(3)/6});
+  \filldraw[draw=campusgreen!55,fill=campusgreen!4](A)--(B)--(2,{2*sqrt(3)})--cycle;
+  \filldraw[draw=campusgreen!55,fill=campusgreen!4](B)--(C)--({2.5-sqrt(3)},{1-1.5*sqrt(3)})--cycle;
+  \filldraw[draw=campusgreen!55,fill=campusgreen!4](C)--(A)--({.5+sqrt(3)},{1-.5*sqrt(3)})--cycle;
+  \draw[thick](A)--(B)--(C)--cycle;
+  \foreach\p/\pos in {A/below left,B/below right,C/above}{\fill(\p)circle(1.3pt)node[\pos]{$\p$};}
+  \fill(U)circle(1.3pt)node[above right]{$U'$};\fill(V)circle(1.3pt)node[below right]{$V'$};\fill(W)circle(1.3pt)node[left]{$W'$};
+  \only<2->{\draw[very thick,warm](U)--(V)--(W)--cycle;}
+  \end{scope}
+\end{tikzpicture}}
+
+\begin{document}
+\usebeamerfont{normal text}
+
+\settime{00:00--00:30}
+\begin{frame}[plain]\label{fr:cover}
+\titlepage
+\teachnote{接第3课，完成复数几何主题。学生先算、先猜、先说明理由，之后再揭示。本课40分钟数学、最后5分钟AI变式探索，不做整门选修课的期末总结。}
+\end{frame}
+
+\settime{00:30--03:00}
+\begin{frame}[t]{复习：等式中的旋转中心}\label{fr:review}
+上次得到：\bigmath{s-m=i(p-m)}
+请说出旋转中心、方向、角度，以及长度关系。
+\uncover<2->{\gap 以$M$为中心，$P$逆时针转$90^\circ$到$S$；$MP=MS$。}
+\uncover<3->{\gap\key{位置先作差；乘$i$描述位移的直角旋转。}\gap 中点用两个位置的平均数表示。}
+\teachnote{复习第3课三角形两外接正方形的中心与中点结论。先留口述时间再点击，重点是乘i的对象为位移。基础反馈看中心和两段位移是否说清，不把学生是否背出长公式作入门标准。}
+\end{frame}
+
+\settime{03:00--05:00}
+\begin{frame}[t]{上次留下的三个中心}\label{fr:question}
+\begin{columns}[c,onlytextwidth]
+\column{.37\textwidth}\centering\napoleonfigure{2}{0}{0}
+\column{.60\textwidth}
+在非退化三角形$ABC$的\key{三边外侧}分别作等边三角形，中心为$U,V,W$。
+\uncover<2->{\gap 连接三个中心。\par 你有什么猜想？}
+\uncover<3->{\gap 今天要解释：原三角形改变，\par 三个中心的关系为什么仍有规律？}
+\end{columns}
+\teachnote{先收集第3课作业中的图和猜想，没有作业也能从首屏参与。不在此页给定理名、等边记号或答案。来源：\bookref 图形为独立TikZ绘制。外侧是与原三角形内部相反的半平面。}
+\end{frame}
+
+\settime{05:00--06:00}
+\begin{frame}[t]{这次还缺哪两个工具}\label{fr:tools}
+正方形中的$90^\circ$，换成等边三角形中的$60^\circ$。
+\gap 还需要补什么，才能写出中心的位置？
+\uncover<2->{\gap\key{工具一：怎样用一个复数表示$60^\circ$旋转？}\gap\key{工具二：等边三角形的中心离底边多远？}}
+\teachnote{只补本题所需的两项，不引入欧拉公式、复指数或整套三角函数知识。三角形中心在此均指等边三角形的共同中心，外心、内心、重心重合。}
+\end{frame}
+
+\settime{06:00--08:00}
+\begin{frame}[t]{把单位线段转过$60^\circ$}\label{fr:rho}
+\begin{columns}[c,onlytextwidth]
+\column{.36\textwidth}\centering\rhofigure
+\column{.61\textwidth}
+把点$1$绕原点逆时针转$60^\circ$，终点在哪里？
+\uncover<2->{\gap 横坐标$\dfrac12$，\quad 纵坐标$\dfrac{\sqrt3}{2}$。}
+\uncover<3->{\bigmath{\rho=\frac12+\frac{\sqrt3}{2}i}\key{长度为1，方向转过$60^\circ$。}}
+\end{columns}
+\teachnote{先用等边三角形一半与勾股求高，再揭示点和坐标。图的终点、垂足和旋转弧仅在第2覆盖出现。rho是本课60度旋转数的记号，不要求知道希腊字母名称。}
+\end{frame}
+
+\settime{08:00--10:00}
+\begin{frame}[t]{乘$\rho$，能转动任意位移吗}\label{fr:rho-action}
+将任意位移写为$x+yi$，仍用分配律计算。
+\uncover<2->{\[\rho(x+yi)=\frac{x-\sqrt3y}{2}+\frac{\sqrt3x+y}{2}i.\]}
+\uncover<3->{\gap 向右一步与向上一步，都同时逆时针转$60^\circ$。\gap\key{乘$\rho$：长度不变，逆时针旋转$60^\circ$。}}
+\teachnote{解释rho(x+yi)=xrho+y(irho)：坐标分量沿两条一起转60度的单位轴重新组合，不能只由1的像就跳到所有点。教师严谨核验：新旧长度平方相同；点积为原长度平方的一半，有向面积为原长度平方的sqrt3/2倍，因此非零位移夹角为正60度。零位移仍为零。展开不需一般复数乘法公式，只用分配律与i平方=-1。}
+\end{frame}
+
+\settime{10:00--12:00}
+\begin{frame}[t]{你来算：连续转两次}\label{fr:rho-square}
+请先展开$\rho^2$，别忘了$i^2=-1$。
+\uncover<2->{\[\rho^2=\left(\frac12+\frac{\sqrt3}{2}i\right)^2=-\frac12+\frac{\sqrt3}{2}i.\]}
+\uncover<3->{\bigmath{\rho^2=\rho-1\qquad\Longrightarrow\qquad\rho^2-\rho=-1}\key{这条关系，稍后会让一组项消掉。}}
+\teachnote{至少留40秒先算。目标：分配律与i平方；基础到中等。易错为把末项3i平方/4写成正3/4，或漏掉中间两项。检查实部-1/2、虚部sqrt3/2，再确认最后恒等式。}
+\end{frame}
+
+\settime{12:00--14:00}
+\begin{frame}[t]{等边三角形的中心在哪里}\label{fr:height}
+\begin{columns}[c,onlytextwidth]
+\column{.35\textwidth}\centering\centerfigure
+\column{.62\textwidth}
+在有向边$0\to1$右侧作等边三角形。\par 中心$U$离底边多远？
+\uncover<2->{\gap 高$h=\dfrac{\sqrt3}{2}$。}
+\uncover<3->{\gap 中心到边的距离为$h/3=\dfrac{\sqrt3}{6}$。}
+\uncover<4->{\[u=\frac12-\frac{\sqrt3}{6}i=\frac12-\frac{i}{2\sqrt3}.\]}
+\end{columns}
+\teachnote{先问高，再问中心。等边三角形的中心等于三顶点的平均位置，纵坐标是(0+0-h)/3=-h/3，故离边h/3，不是h/2。图中U到第3覆盖才出现。若学生没学重心比，用横坐标1/2和到三个顶点等距也可独立验证该点。}
+\end{frame}
+
+\settime{14:00--15:00}
+\begin{frame}[t]{选原点、方向和长度单位}\label{fr:normalize}
+\begin{columns}[c,onlytextwidth]
+\column{.37\textwidth}\centering\napoleonfigure{1}{0}{1}
+\column{.60\textwidth}
+把$A$取为原点，$AB$取为正向实轴，\par 以$AB$长为一个单位。
+\uncover<2->{\gap $A:0$，$B:1$，$C:z=x+yi$，$y>0$。\gap\key{平移、旋转和统一缩放，不改变等边性。}}
+\end{columns}
+\teachnote{按逆时针标记ABC，故C在AB上方。可以更换原点、转动坐标轴并取AB为长度单位；非退化保证AB不为零。这一步把一般b归一为1，使后续证明只剩一个变量z。图形物理绘图坐标4对应新的一个单位，不是误把B位置取成4。}
+\end{frame}
+
+\settime{15:00--17:00}
+\begin{frame}[t]{第一个中心与共同的系数}\label{fr:center-u}
+请先写$AB$外侧中心$u$。
+\uncover<2->{\bigmath{u=\kappa,\qquad\kappa=\frac12-\frac{i}{2\sqrt3}}}
+\uncover<3->{\gap 沿任意有向边$a\to b$，右侧中心为\[\frac{a+b}{2}-\frac{i(b-a)}{2\sqrt3}.\]\key{底边中点，再加向右侧的垂直位移。}}
+\teachnote{kappa只是共同系数的简写，不用背这个新常数。右侧相对有向边，不能按屏幕上下判断。中心到边距离是边长/(2sqrt3)，所以用-i(b-a)/(2sqrt3)。这一一般公式由上页的单位情形作相同旋转伸缩得到。}
+\end{frame}
+
+\settime{17:00--20:00}
+\begin{frame}[t]{另外两个中心，你来写}\label{fr:centers-vw}
+沿$0\to1\to z\to0$，三个等边三角形都作在右侧。
+\gap 请先写$v,w$，注意最后一条边的方向。
+\uncover<2->{\[v=\frac{1+z}{2}-\frac{i(z-1)}{2\sqrt3}=(1-\kappa)+\kappa z.\]}
+\uncover<3->{\[w=\frac z2-\frac{i(0-z)}{2\sqrt3}=(1-\kappa)z.\]}
+\teachnote{给约1分钟学生写原始表达式，再分别核对v和w。目标：迁移有向边与中心式；中等。易错：CA位移为-z，右侧乘-i后转成加iz/(2sqrt3)。保留上一页的图或板书，不以全班都能立即完成代数合并为假设。基本要求是写对中点和方向，提高要求为合并共同系数。}
+\end{frame}
+
+\settime{20:00--22:00}
+\begin{frame}[t]{同一个系数，能少写多少项}\label{fr:kappa}
+请检查$\rho\kappa$。仍只用分配律和$i^2=-1$。
+\uncover<2->{\[\rho\kappa=\left(\frac12+\frac{\sqrt3}{2}i\right)\left(\frac12-\frac{i}{2\sqrt3}\right)=\frac12+\frac{i}{2\sqrt3}=1-\kappa.\]}
+\uncover<3->{\gap 因而三个位置可以写成\[u=\kappa,\qquad v=\kappa(\rho+z),\qquad w=\kappa\rho z.\]\key{同提一个系数，接下来比较位移。}}
+\teachnote{先让学生尝试相乘，可在黑板上分组算实部与虚部。实部1/4+1/4=1/2，虚部sqrt3/4-1/(4sqrt3)=1/(2sqrt3)。不引入复数除法或共轭；kappa并不需要额外的几何名称。此页用于减少式子长度，不是增加记忆公式。}
+\end{frame}
+
+\settime{22:00--23:00}
+\begin{frame}[t]{等边关系，怎样写成等式}\label{fr:target}
+如果从$U$出发，两段位移等长且夹角为$60^\circ$，\par 你希望得到怎样的关系？
+\uncover<2->{\bigmath{w-u=\rho(v-u)}}
+\uncover<3->{\gap\key{把$UV$逆时针转$60^\circ$，恰好得到$UW$。}\gap 接下来检验这个等式对任意$z$是否成立。}
+\teachnote{先由学生指出需要比较v-u与w-u，再出现目标。现在只是待证明的关系，不以图形外观当成结论。rho长度1意味着两边等长；若位移非零，夹角为60度。非退化在第17页补查。}
+\end{frame}
+
+\settime{23:00--25:00}
+\begin{frame}[t]{先算从$U$出发的两段位移}\label{fr:displacements}
+已知$u=\kappa$，$v=\kappa(\rho+z)$，$w=\kappa\rho z$。
+\gap 请先作差，再提取共同系数。
+\uncover<2->{\bigmath{v-u=\kappa(z+\rho-1)}}
+\uncover<3->{\bigmath{w-u=\kappa(\rho z-1)}}
+\teachnote{每次点击只核对一式。难度中等；目标仍是终点减起点。若漏减u，返回两段箭头的共同起点；若把kappa从加法中提取错误，逐项展开检查。}
+\end{frame}
+
+\settime{25:00--28:00}
+\begin{frame}[t]{让$60^\circ$旋转进入计算}\label{fr:proof}
+把$v-u$乘以$\rho$，能得到$w-u$吗？
+\uncover<2->{\[\rho(v-u)=\kappa\rho(z+\rho-1)=\kappa(\rho z+\rho^2-\rho).\]}
+\uncover<3->{\par 用$\rho^2-\rho=-1$：\[\rho(v-u)=\kappa(\rho z-1).\]}
+\uncover<4->{\bigmath{\rho(v-u)=w-u}}
+\teachnote{首屏先让学生写一行；点击1只展开，点击2代入先前自己算出的恒等式，点击3才核对目标成立。解释z未指定，因此这不是一次数值验证。基本达标：知道哪一条恒等式消项并能读回几何；完整独立复述为提高目标。}
+\end{frame}
+
+\settime{28:00--29:00}
+\begin{frame}[t]{回到图上，解释计算的结果}\label{fr:conclusion}
+\begin{columns}[c,onlytextwidth]
+\column{.37\textwidth}\centering\napoleonfigure{1}{2}{0}
+\column{.60\textwidth}
+\[w-u=\rho(v-u).\]
+这表示怎样的长度和角度关系？
+\uncover<2->{\gap $UV=UW$，$\angle VUW=60^\circ$。}
+\uncover<3->{\gap\key{$UVW$是等边三角形。}\gap 这就是外拿破仑定理。}
+\end{columns}
+\teachnote{先口答，再同步出现60度与等长标记，最后才显示等边结论和定理名。由两边相等且夹角60度可得三角等60度、三边相等。来源\bookref 本课证明按单位归一和共同系数重写，不冒充原书证明原文。}
+\end{frame}
+
+\settime{29:00--30:00}
+\begin{frame}[t]{三个中心，会不会重合}\label{fr:nondegenerate}
+刚才的两段位移，有没有可能都是零？
+\uncover<2->{\gap 因为$z=x+yi$，$y>0$，\par $z+\rho-1$的虚部是$y+\dfrac{\sqrt3}{2}>0$。\gap 又$\kappa\ne0$，所以$v-u\ne0$。\gap\key{外侧构造得到的是一个真正的等边三角形。}}
+\teachnote{用一分钟补全严格性：v-u=kappa(z+rho-1)，后一因子的虚部为正，因此非零。这一步不依赖图形画得好看。末尾内侧构造问题不能照搬这个正性判断，学生此处不提前获知变式答案。}
+\end{frame}
+
+\settime{30:00--33:00}
+\begin{frame}[t]{独立应用：换一个旋转中心}\label{fr:practice}
+已知$U,V$对应$u=1+i$、$v=3+i$。
+\gap 将$V$绕$U$逆时针旋转$60^\circ$得到$W$。
+\gap （1）求$w$。\par （2）说明$UVW$的形状，并写出理由。
+\uncover<2->{\gap 提示：先写$w-u=\rho(v-u)$。}
+\teachnote{给约2分钟独立纸笔，提示按需给。基础到中等；目标为用新的60度乘子迁移任意中心旋转。易错为w=rho v，或忘记加回u。答案在下一逻辑页，不向学生提前翻。反馈看位移、乘子、加回与形状说明，不把图形猜测代替理由。}
+\end{frame}
+
+\settime{33:00--35:00}
+\begin{frame}[t]{核对：位移旋转后要加回中心}\label{fr:practice-answer}
+先说出你算出的$v-u$，再核对下一步。
+\uncover<2->{\[v-u=2,\qquad w=(1+i)+2\rho.\]}
+\uncover<3->{\bigmath{w=2+(1+\sqrt3)i}\gap $UV=UW=2$，夹角为$60^\circ$，所以$UVW$等边。}
+\teachnote{首屏不含结果，点击1核对两段式，点击2才给最终复数。W=(2,1+sqrt3)，VW位移为-1+sqrt3 i，长度也是2，作为独立核验。形成性检查四项：先作差、乘rho、加回、几何理由；不更改课程学分口径。}
+\end{frame}
+
+\settime{35:00--37:00}
+\begin{frame}[t]{还有一个中心关系藏在式子里}\label{fr:centroid}
+$u=\kappa$，$v=(1-\kappa)+\kappa z$，$w=(1-\kappa)z$。
+\gap 请把三个位置加起来，会剩下什么？
+\uncover<2->{\bigmath{u+v+w=1+z}}
+\uncover<3->{\[\frac{u+v+w}{3}=\frac{0+1+z}{3}.\]\key{中心三角形与原三角形，有同一个重心。}}
+\teachnote{这是一项由本课公式直接推出的补充结论，不强称它是原书此页的另一命题。先让学生消去系数再揭示。两三角形重心均为三个顶点平均位置；若进度稍慢可由教师带看，不占独立练习时间。}
+\end{frame}
+
+\settime{37:00--39:00}
+\begin{frame}[t]{复数几何，我们带走什么}\label{fr:summary}
+这几课处理几何问题，用到了哪些可复用的表达？
+\uncover<2->{\gap 位移：终点减起点。\par 旋转：$90^\circ$乘$i$，$60^\circ$乘$\rho$。\par 中点与重心：对位置取平均。}
+\uncover<3->{\gap\key{先辨构造与方向，再表达位置；\par 比较位移，最后解释几何意义。}}
+\teachnote{学生先补出工具和一个适用场景，最后教师收束。不要要求死记所有中心系数。区分定理可有初等几何证明与复数表达的简洁性，不声称初中几何方法绝不可能解决此题。}
+\end{frame}
+
+\settime{39:00--40:00}
+\begin{frame}[t]{离堂前，解释这个差别}\label{fr:exit}
+为什么$w-u=\rho(v-u)$不能随意写成$w=\rho v$？
+\gap 先用一句话独立作答。
+\uncover<2->{\gap 前者绕$U$旋转，后者绕原点旋转。\gap\key{除非$u=0$，一般不能省掉中心的位置。}}
+\teachnote{对60度rho不等于1，两个公式对相同v给出同一w仅当(1-rho)u=0，即u=0。给20秒独立解释再揭示。到此数学主课40分钟，后两页才进入AI课后探索。}
+\end{frame}
+
+\settime{40:00--42:00}
+\begin{frame}[t]{最后的探索：全部换到内侧}\label{fr:ai-inner}
+\begin{columns}[c,onlytextwidth]
+\column{.37\textwidth}\centering\innerfigure
+\column{.60\textwidth}
+三边等边三角形全部作在\key{与第三顶点同侧}，中心为$U',V',W'$。
+\uncover<2->{\gap 连接三个中心，形状还一样吗？}
+\uncover<3->{\gap 请AI协助检查：\par\key{有没有特殊原三角形，\par 让通常的结论需要补充条件？}}
+\end{columns}
+\teachnote{学生页不公布内拿破仑结论，不展示三中心重合图或退化答案。内侧只指每条边的同侧半平面，不保证新三角形完全包含在ABC内部。教师答案与精确核验见授课说明，属于本课由外侧证明改写的变式，不冒充原书原题。}
+\end{frame}
+
+\settime{42:00--45:00}
+\begin{frame}[t]{作业：带着条件检查一个猜想}\label{fr:ai-homework}
+至少画两种原三角形，\key{其中一种取等边三角形}。
+\uncover<2->{\gap 提交自己的图、一个明确猜想、\par\key{一组独立核算的数据}，以及保留或修改条件的理由。}
+\uncover<3->{\gap 给AI的请求：\par “请检查我的内外侧符号和特殊情形，\par 一次只给一个提示，不直接报结论。”\gap 选做：写出内侧构造的复数关系。}
+\teachnote{基础作业约15分钟：图、具体猜想、独立数据、对一条AI建议的判断；完整一般证明为选做。无设备者用教师提示卡，同样核查方向与特殊情形，不虚构AI对话。不上传身份资料。内侧三中心为等边或重合；恰在原ABC等边时重合。答案只在教师说明和备注，不能在作业首屏泄露。}
+\end{frame}
+\end{document}

@@ -1,0 +1,12 @@
+build/
+课件/*.pdf
+课件/*.zip
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.xdv
+main.pdf
