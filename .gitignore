@@ -35,3 +35,16 @@ DeepSeekAPI
 .env
 .env.*
 .aider*
+
+# New exports, source-book caches, archives and downloaded installers stay local.
+# Existing tracked teaching PDFs remain tracked. Deliberate new PDFs need review.
+*.pdf
+*.zip
+*.exe
+/教学课件/选修课/work/
+
+# Private class records and personal schedules must not be uploaded.
+**/*成绩单*.xls*
+**/家长会/
+**/*座位*.pdf
+/教学课件/我的课表-周课表-导出_20260901213127.xlsx
