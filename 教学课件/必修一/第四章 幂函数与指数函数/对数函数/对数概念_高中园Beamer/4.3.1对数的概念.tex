@@ -1,155 +1,192 @@
 % !TeX program = xelatex
-% 由生成课件.py生成；改题目请改共享题库，改选题请改课堂选题.json。
-\documentclass[aspectratio=169,10pt]{beamer}
+% 教辅《三维设计》4.3.1，第62—63页“师生共研”。按纸本题号编排。
+% 40分钟：唤起定义3分钟，典例1及对点练习10分钟，典例2及辨析10分钟，
+% 典例3共13分钟，出口题与回看4分钟。出口题之后为选讲。
+% 每帧首次只投任务。巡视或听完口答后用右箭头揭示；左箭头回到上一步。
+\documentclass[aspectratio=169,11pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
 \usetheme{GaoZhongYuan}
-\usepackage{booktabs}
-\setlength{\parskip}{.6em}
-\newcommand{\ans}[1]{{\color{red!70!black}#1}}
-\author{深圳中学高中园}\date{}
-
+\hypersetup{pdfpagemode=FullScreen}
+\setbeamercovered{invisible}
+\setlength{\parskip}{.55em}
+\newcommand{\wherein}[1]{{\small\color{campusgreen}\bfseries #1}\par\medskip}
+\newcommand{\ask}[1]{\par\medskip{\bfseries #1}\par}
+\newcommand{\work}[1]{\par\smallskip{\color{campusgreen}#1}\par}
 \title{4.3.1 对数的概念}
-\begin{document}\campusmaketitle
-% 0—3分钟
-\begin{frame}[t]{情境：未知的指数}
-\[2^x=4\Rightarrow x=2,\qquad2^x=8\Rightarrow x=3.\]
-\[2^x=10\quad\Rightarrow\quad x=\ ?\]
-这里已知底数和幂，需要求指数。能否用一个符号准确表示它？
+\author{深圳中学高中园}
+\date{教辅第62—63页}
+\begin{document}
+\campusmaketitle
+
+\begin{frame}[t]{对数记下的是哪个数？}
+\wherein{第62页 · 翻到“师生共研”}
+\[ 2^3=8 \qquad\qquad 2^x=10 \]
+\ask{左式中的指数是几？右式的指数介于哪两个整数之间？}
+\par\pause\par
+$2^3<10<2^4$，所以 $3<x<4$。把这个指数记作 $\log_2 10$。
+\par\pause\par
+\work{当 $a>0$、$a\ne1$、$N>0$ 时，\quad
+$a^x=N\ \Longleftrightarrow\ x=\log_a N$。}
+指出两种写法中的底数；幂 $N$ 在对数式中叫什么？
 \end{frame}
 
-% 3—10分钟
-\begin{frame}[t]{对数的定义}
-当 $a>0$ 且 $a\ne1$，$N>0$ 时，
-\[\boxed{a^x=N\quad\Longleftrightarrow\quad x=\log_aN}.\]
-$a$ 是底数，$N$ 是真数，$\log_aN$ 表示指数，是一个数。
-\[2^x=10\Longleftrightarrow x=\log_210.\]
-指数式和对数式表达的是同一个数量关系。
+\begin{frame}[t]{哪些取值能使对数有意义？}
+\wherein{第62页 · 典例1（1）}
+在 $b=\log_{a-2}(5-a)$ 中，实数 $a$ 的取值范围是（\quad）。
+\[
+\begin{array}{ll}
+\mathrm A.\;(-\infty,2)\cup(5,+\infty) & \mathrm B.\;(2,5)\\[2pt]
+\mathrm C.\;(2,3)\cup(3,5) & \mathrm D.\;(3,4)
+\end{array}
+\]
+\ask{圈出底数和真数，在书上写全限制条件，再举手报出选项。}
+\par\pause\par
+底数给出 $a-2>0,\ a-2\ne1$；真数给出 $5-a>0$。
+\par\pause\par
+\work{取交集得 $(2,3)\cup(3,5)$，选 C。若选 B，代入 $a=3$ 检查底数。}
 \end{frame}
 
-\begin{frame}[t]{定义的条件}
-\[\boxed{a>0,\quad a\ne1,\quad N>0}.\]
-\begin{itemize}
-\item 若 $a=1$，$1^x=1$ 不能唯一确定指数。
-\item 负底数或零底数不能对所有实指数定义幂。
-\item 正底数的幂始终为正，真数必须大于0。
-\end{itemize}
-$\log_2\frac12=-1$，说明对数的值可以为负。
-
-说一说：真数为正，是否意味着对数的值也必须为正？
+\begin{frame}[t]{底数、指数和幂各去了哪里？}
+\wherein{第62页 · 典例1（2）}
+\[
+\begin{array}{ll}
+(1)\;5^3=125 & (2)\;\log_2 16=4\\[5pt]
+(3)\;10^{-2}=0.01 & (4)\;\log_{\sqrt5}125=6
+\end{array}
+\]
+\ask{在书上完成四个互化式。同桌互读，检查每一式的底数。}
+\par\pause\par
+(1) $\log_5 125=3$ \hfill (2) $2^4=16$\hspace{3cm}\par
+\par\pause\par
+(3) $\lg 0.01=-2$ \hfill (4) $(\sqrt5)^6=125$\hspace{2cm}\par
+\work{$\lg$ 的底数是 $10$。第(3)题中，负数表示哪个量？}
 \end{frame}
 
-% 10—16分钟
-% 题库编号：LOG-039
-\begin{campuspractice}{例题：指数式化为对数式}
-将下式互化：\par
-$5^3=125$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{例题：指数式化为对数式：参考}
-$\log_5125=3$
-\end{frame}
-\fi
-
-% 题库编号：LOG-040
-\begin{campuspractice}{即时检查：指数式化为对数式}
-将下式互化：\par
-$\log_216=4$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{即时检查：指数式化为对数式：参考}
-$2^4=16$
-\end{frame}
-\fi
-
-% 16—21分钟
-\begin{frame}[t]{两种常见记号}
-\[\lg N=\log_{10}N,\qquad\ln N=\log_eN.\]
-$e=2.71828\ldots$，是一个无理数。
-\[\lg100=2,\qquad\ln e=1.\]
-记号虽不同，求指数的含义与底数、真数条件相同。
+\begin{frame}[t]{两个等式都成立，就算互化正确吗？}
+\wherein{第63页 · 题型一 · 对点练清 2（多选）}
+选出互化正确的各组，并把其余组改正确。
+\[
+\begin{array}{lll}
+\mathrm A.&10^0=1 & \lg 1=0\\
+\mathrm B.&27^{-1/3}=1/3 & \log_{27}(1/3)=-1/3\\
+\mathrm C.&\log_3 9=2 & 9^{1/2}=3\\
+\mathrm D.&\log_5 5=1 & 5^1=5
+\end{array}
+\]
+\par\pause\par
+\work{选 A、B、D。C 的两个等式各自成立；$\log_3 9=2$ 直接化成 $3^2=9$。}
 \end{frame}
 
-\begin{frame}[t]{由定义得到的性质}
-当 $a>0$ 且 $a\ne1$ 时，
-\[\log_a1=0,\qquad\log_aa=1.\]
-\[\boxed{a^{\log_aN}=N\ (N>0)},\qquad\boxed{\log_a(a^x)=x}.\]
-前式把对数作为指数，后式对幂取对数。
-
-请用指数式解释：为什么 $\log_a1=0$？
+\begin{frame}[t]{先看未知数在什么位置}
+\wherein{第63页 · 典例2（1）（2）}
+\[ (1)\ \lg 0.01=x \qquad\qquad (2)\ \log_7(x+2)=2 \]
+\ask{各写一个指数式。请两位同学板演第一行，并说明自己要求哪个量。}
+\par\pause\par
+$(1)\quad 10^x=0.01=10^{-2}$，所以 $x=-2$。
+\par\pause\par
+$(2)\quad 7^2=x+2$，所以 $x=47$。\par
+\work{把 $47$ 代回第（2）题，真数是 $49$，恰好为 $7^2$。}
 \end{frame}
 
-% 21—27分钟
-% 题库编号：LOG-050
-\begin{campuspractice}{例题：恒等式与负指数}
-计算 $2^{-\log_23}$。
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{例题：恒等式与负指数：参考}
-$1/3$
-\end{frame}
-\fi
-
-% 题库编号：LOG-049
-\begin{campuspractice}{即时检查：由对数求未知量}
-求下式中的 $x$：\par
-$2\log_3x=4$
-\end{campuspractice}
-
-\ifdefined\TeacherEdition
-\begin{frame}[t]{即时检查：由对数求未知量：参考}
-$x=9$
-\end{frame}
-\fi
-
-% 27—33分钟：连续独立完成4题，不在中间显示解答。
-% 题库编号：LOG-044
-\begin{campuspractice}{当堂练习1}
-求下式中的 $x$：\par
-$\lg0.01=x$
-\end{campuspractice}
-
-% 题库编号：LOG-045
-\begin{campuspractice}{当堂练习2}
-求下式中的 $x$：\par
-$\log_7(x+2)=2$
-\end{campuspractice}
-
-% 题库编号：LOG-038
-\begin{campuspractice}{当堂练习3}
-$\log_a(1-2a)$ 有意义时，求 $a$ 的范围。
-\end{campuspractice}
-
-% 题库编号：LOG-048
-\begin{campuspractice}{当堂练习4}
-求下式中的 $x$：\par
-$\log_5(x^2)=2$
-\end{campuspractice}
-
-% 33—37分钟：教师依据板演和巡视组织反馈。
-\ifdefined\TeacherEdition
-\begin{frame}[t]{当堂练习：反馈与纠错}
-\begin{enumerate}
-\item $\lg0.01=x$：$x=-2$。
-\item $\log_7(x+2)=2$：$x=47$。
-\item $\log_a(1-2a)$：$0<a<\frac12$。
-\item $\log_5(x^2)=2$：$x=\pm5$。
-\end{enumerate}
-请说明第3题的三个条件，以及第4题负根为何保留。
+\begin{frame}[t]{底数小于 1，怎样判断指数的符号？}
+\wherein{第63页 · 典例2（3）（4）}
+\[ (3)\ \log_{2/3}\frac94=x \qquad\qquad (4)\ x=\log_{1/2}32 \]
+\ask{先预测两个答案的符号，再把真数写成相应底数的幂。}
+\par\pause\par
+$(3)\quad \dfrac94=\left(\dfrac32\right)^2
+=\left(\dfrac23\right)^{-2}$，故 $x=-2$。
+\par\pause\par
+$(4)\quad 32=2^5=\left(\dfrac12\right)^{-5}$，故 $x=-5$。\par
+\work{两题的底数均在 $(0,1)$ 内，真数都大于 $1$，所以指数为负。}
 \end{frame}
 
-\fi
-% 37—40分钟
-\begin{campussummary}
-\begin{itemize}
-\item 对数求的是什么？$a^x=N\Longleftrightarrow x=\log_aN$。
-\item 哪三个条件？$a>0$、$a\ne1$、$N>0$。
-\item 两个恒等式各在什么条件下使用？
-\item 求出结果后，把解代回原式检查。
-\end{itemize}
-请用自己的话解释：$\log_5(x^2)=2$ 中为何可取负数 $x$？
-\end{campussummary}
-\campusclosing[谢谢]\end{document}
+\begin{frame}[t]{同样得到平方方程，负根都能保留吗？}
+\wherein{第63页 · 题型二 · 对点练清（2）（3）}
+\[ (2)\ \log_x 25=2 \qquad\qquad (3)\ \log_5(x^2)=2 \]
+\ask{先独立求解，再与同桌解释每个负根的取舍。}
+\par\pause\par
+两题都推出 $x^2=25$。代入 $x=-5$，各自的底数和真数是多少？
+\par\pause\par
+\work{（2）底数 $x>0$ 且 $x\ne1$，只取 $5$。\\
+（3）真数是 $x^2$，取 $5$ 或 $-5$ 都有 $x^2=25>0$。}
+\end{frame}
+
+\begin{frame}[t]{三道计算，先做哪一步？}
+\wherein{第63页 · 典例3（1）}
+\[ (1)\ 2^{-\log_2 3}\qquad (2)\ e^{3\ln 7}\qquad (3)\ \lg(0.001^2) \]
+\ask{分别标出负号、系数 3 和平方的位置。同桌各选一道讲第一步。}
+\par\pause\par
+由定义，$a^{\log_a N}=N$（$a>0$，$a\ne1$，$N>0$）。\par (1) $2^{-\log_2 3}=\dfrac{1}{2^{\log_2 3}}=\dfrac13$。
+\par\pause\par
+(2) $e^{3\ln 7}=(e^{\ln 7})^3=7^3=343$，其中 $\ln 7=\log_e 7$。
+\par\pause\par
+(3) $\lg(0.001^2)=\lg((10^{-3})^2)=\lg(10^{-6})=-6$。
+\end{frame}
+
+\begin{frame}[t]{把哪一整块当作真数？}
+\wherein{第63页 · 典例3（2）(1)}
+\[ \log_3(\lg x)=1 \]
+\ask{圈出最外层的真数。只写第一步，然后停笔。}
+\par\pause\par
+$\lg x=3^1=3$。\qquad 下一步要把哪个数作底？
+\par\pause\par
+\work{$x=10^3=1000$。验算时从里往外算，$\lg 1000=3$，$\log_3 3=1$。}
+\end{frame}
+
+\begin{frame}[t]{三层对数，一次解开一层}
+\wherein{第63页 · 典例3（2）(2)}
+\[ \log_3\!\bigl[\log_4(\log_5 x)\bigr]=0 \]
+\ask{请一位同学板演，其他同学在书上写。每一步给下一位同学留一个等式。}
+\par\pause\par
+$\log_4(\log_5 x)=3^0=1$
+\par\pause\par
+\par $\log_5 x=4^1=4$
+\par\pause\par
+\par $x=5^4=625$。\qquad 从里向外验算，依次得到 $4,\ 1,\ 0$。
+\end{frame}
+
+\begin{frame}[t]{下课前，独立写下两行}
+\wherein{第62页 · 题型一 · 对点练清 1}
+使 $\log_a(1-2a)$ 有意义的 $a$ 的取值范围是什么？
+\ask{第一行列全条件，第二行写交集。和典例1相比，这次还要挖去一个点吗？}
+\par\pause\par
+$a>0,\quad a\ne1,\quad 1-2a>0$。
+\par\pause\par
+\work{$0<a<\tfrac12$，选 B。这个区间已经排除了 $1$。}
+\medskip
+合上书口述：$a^x=N$ 中的指数怎样用对数表示？
+\end{frame}
+
+\begin{frame}[t]{选讲：把右端的 0 改成 1}
+\wherein{第63页 · 题型三 · 对点练清 1}
+\[ \log_3\!\bigl[\log_4(\log_5 x)\bigr]=1 \]
+\ask{仿照典例3写出三步。最后一行用幂表示即可。}
+\par\pause\par
+$\log_4(\log_5 x)=3^1=3$，进而 $\log_5 x=4^3=64$。
+\par\pause\par
+\work{$x=5^{64}$。从里往外算，三个对数的值依次为 $64,\ 3,\ 1$。}
+\end{frame}
+
+\begin{frame}[t]{选练：指数与真数}
+\wherein{第63页 · 题型二 · 对点练清（1）（4）}
+\[ (1)\ \log_2 x=-\tfrac12 \qquad (4)\ 2\log_3 x=4 \]
+\ask{各写一个能直接读出真数的指数式。}
+\par\pause\par
+$(1)\quad x=2^{-1/2}=\dfrac{\sqrt2}{2}$。
+\par\pause\par
+$(4)\quad \log_3 x=2$，故 $x=3^2=9$。
+\end{frame}
+
+\begin{frame}[t]{选练：底数换了，恒等式还怎么用？}
+\wherein{第63页 · 题型三 · 对点练清 2、3}
+（2）沿用典例3（2）的 $x=625$，求 $625^{\log_x 3}$。\\[5pt]
+（3）若 $3^{\log_3[\log_4(\log_5 x)]}=1$，求 $x$。
+\ask{先圈出能配对的底数，再分别化简。}
+\par\pause\par
+（2）$625^{\log_{625}3}=3$。
+\par\pause\par
+（3）$\log_4(\log_5 x)=1$，故 $\log_5 x=4$，$x=625$。\\
+代回时外层对数的真数为 $1$，满足定义条件。
+\end{frame}
+\end{document}

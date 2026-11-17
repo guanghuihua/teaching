@@ -75,7 +75,7 @@ parts += ['% 33—37分钟：教师依据板演和巡视组织反馈。',r'\ifde
 \end{itemize}
 请用自己的话解释：$\log_5(x^2)=2$ 中为何可取负数 $x$？
 \end{campussummary}''',r'\campusclosing[谢谢]\end{document}']
-(HERE/'4.3.1对数的概念.tex').write_text('\n'.join(parts)+'\n',encoding='utf8')
+(HERE/'对数概念_原白板版.tex').write_text('\n'.join(parts)+'\n',encoding='utf8')
 full=[HEADER,r'\title{对数的概念：全量备课题库}',r'\begin{document}\campusmaketitle']
 for item in rows:
  full += [practice('题库 '+item['id'],item),solution(item['id']+'：参考解答',item)]
