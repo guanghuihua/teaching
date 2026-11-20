@@ -1,64 +1,224 @@
 % !TeX program = xelatex
-% 40分钟新课默认模板。整目录复制；时长写在注释及教师教案中。
+% 课堂投影入口；教师版通过独立入口开启参考页。
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[UTF8,fontset=fandol]{ctex}
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
 \usetheme{GaoZhongYuan}
-\title{课题}\author{授课教师}\date{}
-\begin{document}\campusmaketitle
-% 0—3分钟：情境引入。全课探究讲解共27分钟，包含学生思考和即时练习。
-\begin{frame}[t]{问题引入}
-  写一个能暴露本课认知需要的问题，给学生思考时间。
+\usetikzlibrary{arrows.meta,angles,quotes,calc}
+\definecolor{ink}{HTML}{20363E}
+\definecolor{teal}{HTML}{146D67}
+\definecolor{copper}{HTML}{A34720}
+\definecolor{axisgray}{HTML}{627478}
+\definecolor{gridgray}{HTML}{DAE4E1}
+\setbeamercolor{normal text}{fg=ink,bg=white}
+\newcommand{\accenttext}[1]{{\color{teal}\bfseries #1}}
+\newcommand{\idea}[1]{{\color{copper}\bfseries #1}}
+\newcommand{\breath}{\par\vspace{3.5mm}}
+\tikzset{axis/.style={-{Stealth[length=1.6mm]},axisgray,thin},
+  oldray/.style={-{Stealth[length=2.2mm]},teal,line width=1.2pt},
+  moved/.style={-{Stealth[length=2.2mm]},copper,line width=1.2pt},
+  result/.style={-{Stealth[length=2.2mm]},campusgreen,line width=1.35pt},
+  tag/.style={fill=white,inner sep=1.1pt,font=\small},
+  walk/.style={-{Stealth[length=1.65mm]},teal,line width=.85pt}}
+\title{连续乘 $1+i$，八步以后在哪里？}
+\author{华光辉\quad 数学选修课}
+\date{}
+\begin{document}
+\fontsize{12}{17}\selectfont
+\campusmaketitle
+
+% 0—5 分钟：用学生熟悉的乘 i 引出猜想。
+\begin{frame}{先让熟悉的点走四步}
+\begin{columns}[c,onlytextwidth]
+\column{.46\textwidth}
+\centering
+\begin{tikzpicture}[x=1.5cm,y=1.5cm]
+\path[use as bounding box] (-1.65,-1.65) rectangle (1.65,1.65);
+\draw[axis] (-1.45,0)--(1.5,0);
+\draw[axis] (0,-1.43)--(0,1.5);
+\draw[gridgray] (0,0) circle (1);
+\node[below left] at (0,0) {$O$};
+\draw[oldray] (0,0)--(1,0);
+\foreach \x/\y/\n/\side in {1/0/1/below right,0/1/i/above left,-1/0/-1/below left,0/-1/-i/below right}{
+  \fill[teal] (\x,\y) circle (1.8pt) node[\side,tag] {$\n$};}
+\uncover<2->{\foreach \a in {0,90,180,270}{
+  \draw[moved] (\a+5:1) arc[start angle=\a+5,end angle=\a+85,radius=1];}}
+\end{tikzpicture}
+\column{.50\textwidth}
+从 $1$ 出发，每一步都乘 $i$。\breath
+用手指带这支箭头走四步。
+\uncover<2->{\breath\accenttext{转过四个直角，回到 $1$。}\par 到原点的距离始终是 $1$。}
+\end{columns}
 \end{frame}
-% 3—10分钟：概念探究与条件。
-\begin{frame}[t]{概念与条件}
-  呈现定义、适用条件，引导学生解释关键条件。
+
+\begin{campuspractice}{换一个乘数，先猜第八步}
+从 $1$ 出发，每一步都乘 $\boldsymbol{1+i}$。走完八步，点会回到 $1$ 吗？\breath
+写下你的猜想，也可以画出你想象的终点。起点记作第 $0$ 步。
+\end{campuspractice}
+
+% 5—15 分钟：先作图，再逐次显现三个径向箭头。
+\begin{campuspractice}{在方格纸上画出前三步}
+从 $1$ 出发，每次乘 $1+i$。依次算出前三个新点，描在同一张方格纸上。\breath
+从原点向每个点画箭头，和同桌说说你发现的规律。
+\end{campuspractice}
+
+\begin{frame}{把三支新箭头放在一起看}
+\begin{columns}[c,onlytextwidth]
+\column{.51\textwidth}
+\centering
+\begin{tikzpicture}[x=1.08cm,y=1.08cm]
+\path[use as bounding box] (-3,-1.05) rectangle (2.45,3.15);
+\draw[gridgray,step=1] (-2.75,-.75) grid (2.1,2.75);
+\draw[axis] (-2.8,0)--(2.14,0) node[right] {$x$};
+\draw[axis] (0,-.72)--(0,2.85) node[above] {$y$};
+\node[below left] at (0,0) {$O$};
+\draw[oldray] (0,0)--(1,0) node[below,tag]{起点 $1$};
+\draw[oldray] (0,0)--(1,1) node[right,tag]{第 $1$ 步};
+\uncover<2->{\draw[oldray] (0,0)--(0,2) node[above right,tag]{第 $2$ 步};}
+\uncover<3->{\draw[oldray] (0,0)--(-2,2) node[above,tag]{第 $3$ 步};}
+\end{tikzpicture}
+\column{.46\textwidth}
+{\small 方格的边长是 $1$。}\breath
+\accenttext{方向}\par 相邻两支箭头转过的角一样吗？
+\uncover<2->{\breath\accenttext{长度}\par 后一支箭头是前一支的几倍？}
+\uncover<3->{\breath 换一个起点，这个规律还成立吗？}
+\end{columns}
 \end{frame}
-% 10—16分钟：示范与即时检查。每题、每个小问独占一页。
-\begin{campuspractice}{例题}
-  在这里写一道用于解释概念的题目。
+
+% 15—23 分钟：用斜放的具体例子过渡到任意非零 z。
+\begin{campuspractice}{从斜着的箭头再走一步}
+取 $z=2+i$，在方格纸上用两支首尾相接的箭头画出 $\boldsymbol{z+iz}$ 的终点。\breath
+第一支从 $O$ 走到 $P(2,1)$。第二支该从哪里出发？
 \end{campuspractice}
-\begin{campuspractice}{即时检查}
-  在这里写一道同结构但能检验理解的题目。
-\end{campuspractice}
-% 16—21分钟：性质与依据。
-\begin{frame}[t]{性质与依据}
-  由定义或已知事实推导性质，写清推理依据。
+
+\begin{frame}{为什么每一步都这样转？}
+\begin{columns}[c,onlytextwidth]
+\column{.49\textwidth}
+\centering
+\begin{tikzpicture}[x=1.08cm,y=1.08cm]
+\path[use as bounding box] (-1.35,-.7) rectangle (3.05,3.6);
+\coordinate (O) at (0,0); \coordinate (P) at (2,1);
+\coordinate (U) at (-1,2); \coordinate (Q) at (1,3);
+\uncover<3->{\fill[teal!7] (O)--(P)--(Q)--cycle;}
+\draw[oldray] (O)--(P) node[midway,below right] {$z$};
+\node[below left] at (O) {$O$}; \node[right] at (P) {$P$};
+\uncover<2->{\draw[axisgray,dashed,-{Stealth[length=1.8mm]}] (O)--(U)
+  node[left] {$iz$};
+  \draw[moved] (P)--(Q) node[midway,right] {$iz$};
+  \node[above] at (Q) {$Q$};
+  \pic[draw=copper,angle radius=2.5mm]{right angle=Q--P--O};}
+\uncover<3->{\draw[result] (O)--(Q);
+  \draw[copper,-{Stealth[length=1.2mm]}] (26.565:.71) arc[start angle=26.565,end angle=71.565,radius=.71];
+  \node[font=\scriptsize,inner sep=0pt] at (49:1.03) {$45^\circ$};}
+\end{tikzpicture}
+\column{.48\textwidth}
+对任意 $z\ne0$，都有
+\[
+   (1+i)z=z+iz.
+\]
+\uncover<2->{把 $iz$ 平移到 $P$ 出发。\par $OP=PQ$，直角在 $P$。}
+\uncover<3->{\breath 连 $OQ$，得到等腰直角三角形。\par $OQ^2=OP^2+PQ^2=2OP^2$。\breath
+\accenttext{从 $OP$ 到 $OQ$ 逆时针转 $45^\circ$，}\par \accenttext{长度变为原来的 $\sqrt2$ 倍。}}
+\end{columns}
 \end{frame}
-% 21—27分钟：应用与再次检查。
-\begin{campuspractice}{应用例题}
-  在这里写一道关键方法例题。
+
+% 23—27 分钟：回收猜想，然后用平方验算。
+\begin{frame}{第八步，真的回到起点了吗？}
+\begin{columns}[c,onlytextwidth]
+\column{.55\textwidth}
+\centering
+\begin{tikzpicture}[x=.295cm,y=.295cm]
+\path[use as bounding box] (-6.7,-10.6) rectangle (19.8,5.1);
+\draw[axis] (-6.25,0)--(18.5,0) node[below right] {$x$};
+\draw[axis] (0,-9.9)--(0,4.65) node[right] {$y$};
+\coordinate (A0) at (1,0); \coordinate (A1) at (1,1); \coordinate (A2) at (0,2);
+\coordinate (A3) at (-2,2); \coordinate (A4) at (-4,0); \coordinate (A5) at (-4,-4);
+\coordinate (A6) at (0,-8); \coordinate (A7) at (8,-8); \coordinate (A8) at (16,0);
+\draw[teal,thick] (A0)--(A1)--(A2)--(A3);
+\draw[walk] (A3)--(A4);
+\foreach \k in {0,...,4}{\fill[teal] (A\k) circle (1.45pt);}
+\node[below right,tag] at (A0) {$1$};
+\node[above left,tag] at (A4) {$-4$};
+\uncover<2->{\draw[walk] (A4)--(A5);
+\draw[walk] (A5)--(A6);\draw[walk] (A6)--(A7);\draw[walk] (A7)--(A8);
+\foreach \k in {5,...,7}{\fill[teal] (A\k) circle (1.85pt);}
+\node[below left,tag] at (A6) {$-8i$};
+\fill[copper] (A8) circle (2.6pt) node[above,tag,text=copper] {$16$};}
+\fill[ink] (0,0) circle (1.3pt) node[below left,tag] {$O$};
+\end{tikzpicture}
+\column{.43\textwidth}
+\accenttext{先说方向}\par $8\times45^\circ=360^\circ$。\par 第八步回到哪条射线？
+\uncover<2->{\breath\accenttext{再算距离}\par $(\sqrt2)^8=16$。\breath
+\idea{终点是正实轴上的 $16$。}}
+\end{columns}
+\end{frame}
+
+\begin{frame}{用三次平方核对落点}
+\begin{columns}[c,onlytextwidth]
+\column{.64\textwidth}
+\renewcommand{\arraystretch}{1.65}
+\begin{tabular}{@{}l@{\hspace{4mm}}l@{}}
+第 $2$ 步 & $(1+i)^2=1+2i+i^2=2i$\\
+第 $4$ 步 & $(1+i)^4=(2i)^2=-4$\\
+第 $8$ 步 & $(1+i)^8=(-4)^2=16$
+\end{tabular}
+\column{.32\textwidth}
+\accenttext{八步合在一起}\breath
+每走八步，所在的射线重复一次，到原点的距离变为原来的 $16$ 倍。
+\end{columns}
+\end{frame}
+
+% 27—33 分钟：M03、M04 连续独立完成，题页不叠加答案。
+\begin{campuspractice}{独立练习 · 第十步}
+从 $1$ 出发，每一步都乘 $1+i$。确定第 $10$ 步对应的复数。\breath
+在纸上留下你判断方向和距离的依据。
 \end{campuspractice}
-\begin{campuspractice}{即时检查}
-  在这里写一道可暴露易错点的检查题。
+\begin{campuspractice}{独立挑战 · 第 2026 步}
+从 $1$ 出发，每一步都乘 $1+i$。\breath
+不用逐步相乘，确定第 $\boldsymbol{2026}$ 步对应的复数，并写出理由。
 \end{campuspractice}
-% 27—33分钟：集中独立练习。4个短小问是本课示例，可按难度调整。
-\begin{campuspractice}{当堂练习1}
-  检查概念或基本表示。
-\end{campuspractice}
-\begin{campuspractice}{当堂练习2}
-  检查基本方法。
-\end{campuspractice}
-\begin{campuspractice}{当堂练习3}
-  检查适用条件。
-\end{campuspractice}
-\begin{campuspractice}{当堂练习4}
-  检查容易遗漏的情形。
-\end{campuspractice}
-% 33—37分钟：依据巡视、板演反馈。参考答案仅教师版可见，勿覆盖演算区。
+
+% 33—37 分钟：投影版请学生板演，教师版随后附两张讲评参考。
+\begin{frame}{用同学的解法核对}
+\accenttext{一位同学在复平面上标方向。}\breath
+请指出第 $2026$ 步落在哪条射线上，解释判断依据。
+\vspace{7mm}
+\par\accenttext{另一位同学在这条射线上定位置。}\breath
+请说明这个点离原点有多远，再合起来写出复数。
+\end{frame}
 \ifdefined\TeacherEdition
-\begin{frame}[t]{当堂练习：反馈}
-  在这里写参考答案、错因与纠正依据。
+\begin{frame}{教师参考 · 第十步}
+$10=8+2$。从第八步的 $16$ 再走两步，相当于再乘 $(1+i)^2=2i$。
+\[
+  (1+i)^{10}=16\cdot 2i=\boxed{32i}.
+\]
+若学生写 $2i$，请他比较第 $2$ 步和第 $10$ 步的箭头。\par
+它们都指向正虚半轴，长度分别是 $2$ 和 $32$。
+\end{frame}
+\begin{frame}{教师参考 · 第 2026 步}
+\accenttext{方向}\quad $2026=8\times253+2$。转过 $253$ 个整圈后，\par
+再逆时针转 $90^\circ$，落在正虚半轴。\breath
+\accenttext{距离}\quad $(\sqrt2)^{2026}=2^{1013}$，因此终点为 $\boxed{2^{1013}i}$。\breath
+也可直接核对\quad $(1+i)^{2026}=16^{253}\cdot 2i$。
 \end{frame}
 \fi
-% 37—40分钟：学生先回顾，教师再补齐条件与方法。
+
+% 37—40 分钟：学生先指图解释，最后补写开场猜想的理由。
 \begin{campussummary}
-\begin{itemize}
-\item 本课核心概念是什么？
-\item 使用它需要哪些条件？
-\item 关键方法的依据是什么？
-\item 怎样检查本课最容易出现的错误？
-\end{itemize}
+\begin{columns}[c,onlytextwidth]
+\column{.34\textwidth}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+\coordinate (O) at (0,0); \coordinate (P) at (2,1); \coordinate (Q) at (1,3);
+\draw[oldray] (O)--(P); \draw[moved] (P)--(Q); \draw[result] (O)--(Q);
+\pic[draw=copper,angle radius=2.4mm]{right angle=Q--P--O};
+\node[below left] at (O) {$O$};\node[right] at (P) {$P$};\node[above] at (Q) {$Q$};
+\end{tikzpicture}
+\column{.62\textwidth}
+\accenttext{指着图，说清一步。}\par
+哪两条边一样长？这怎样决定转过的角和新的长度？
+\breath\accenttext{回到开场的猜想。}\par
+第八步回到了哪里？第 $2$ 步与第 $2026$ 步又有什么相同、什么不同？
+\end{columns}
 \end{campussummary}
-% 全量题库、拓展材料另存；不顺序接在主课后默认全讲。
-\campusclosing[谢谢]\end{document}
+\end{document}
