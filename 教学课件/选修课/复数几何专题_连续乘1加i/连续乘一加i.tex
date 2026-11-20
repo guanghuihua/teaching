@@ -20,8 +20,8 @@
   result/.style={-{Stealth[length=2.2mm]},campusgreen,line width=1.35pt},
   tag/.style={fill=white,inner sep=1.1pt,font=\small},
   walk/.style={-{Stealth[length=1.65mm]},teal,line width=.85pt}}
-\title{连续乘 $1+i$，八步以后在哪里？}
-\author{华光辉\quad 数学选修课}
+\title{连续乘 \texorpdfstring{$1+i$}{1+i}，八步以后在哪里？}
+\author{\texorpdfstring{华光辉\quad 数学选修课}{华光辉 数学选修课}}
 \date{}
 \begin{document}
 \fontsize{12}{17}\selectfont
@@ -52,7 +52,7 @@
 \end{frame}
 
 \begin{campuspractice}{换一个乘数，先猜第八步}
-从 $1$ 出发，每一步都乘 $\boldsymbol{1+i}$。走完八步，点会回到 $1$ 吗？\breath
+从 $1$ 出发，每一步都乘 $1+i$。走完八步，点会回到 $1$ 吗？\breath
 写下你的猜想，也可以画出你想象的终点。起点记作第 $0$ 步。
 \end{campuspractice}
 
@@ -87,7 +87,7 @@
 
 % 15—23 分钟：用斜放的具体例子过渡到任意非零 z。
 \begin{campuspractice}{从斜着的箭头再走一步}
-取 $z=2+i$，在方格纸上用两支首尾相接的箭头画出 $\boldsymbol{z+iz}$ 的终点。\breath
+取 $z=2+i$。因为 $(1+i)z=z+iz$，试用两支首尾相接的箭头画出这个乘积。\breath
 第一支从 $O$ 走到 $P(2,1)$。第二支该从哪里出发？
 \end{campuspractice}
 
@@ -175,7 +175,7 @@
 \end{campuspractice}
 \begin{campuspractice}{独立挑战 · 第 2026 步}
 从 $1$ 出发，每一步都乘 $1+i$。\breath
-不用逐步相乘，确定第 $\boldsymbol{2026}$ 步对应的复数，并写出理由。
+不用逐步相乘，确定第 $2026$ 步对应的复数，并写出理由。
 \end{campuspractice}
 
 % 33—37 分钟：投影版请学生板演，教师版随后附两张讲评参考。
@@ -221,4 +221,28 @@ $10=8+2$。从第八步的 $16$ 再走两步，相当于再乘 $(1+i)^2=2i$。
 第八步回到了哪里？第 $2$ 步与第 $2026$ 步又有什么相同、什么不同？
 \end{columns}
 \end{campussummary}
+\ifdefined\TeacherEdition
+% 课后备查。上课可以直接结束在前一页的学生小结。
+\begin{frame}{探究备查 · 前三个新点}
+从 $(1,0)$ 开始，每一步把点 $(x,y)$ 变为 $(x-y,x+y)$。
+\[
+   (x+yi)(1+i)=(x-y)+(x+y)i .
+\]
+\centering
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{c@{\qquad}c@{\qquad}c@{\qquad}c}
+步数 & 复数 & 坐标 & 到原点的距离\\
+$1$ & $1+i$ & $(1,1)$ & $\sqrt2$\\
+$2$ & $2i$ & $(0,2)$ & $2$\\
+$3$ & $-2+2i$ & $(-2,2)$ & $2\sqrt2$
+\end{tabular}
+\end{frame}
+\begin{frame}{探究备查 · 第二支箭头从哪里出发？}
+$z=2+i$ 对应 $P(2,1)$，而 $iz=i(2+i)=-1+2i$。\breath
+从 $P$ 向左走一格、向上走两格，终点是 $Q(1,3)$。\par
+因此 $z+iz=1+3i$。\breath
+若学生标出 $(-1,2)$，请他指出这支箭头从哪里画起，再把它\par
+平移到 $P$ 出发。原点到 $Q$ 的箭头表示两支箭头的和。
+\end{frame}
+\fi
 \end{document}
