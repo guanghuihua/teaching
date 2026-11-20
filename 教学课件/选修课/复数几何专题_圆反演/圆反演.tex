@@ -11,6 +11,7 @@
 \newcommand{\idea}[1]{\textcolor{campusgreen}{\bfseries #1}}
 \newcommand{\orig}[1]{\textcolor{campusgreen}{#1}}
 \newcommand{\impt}[1]{\textcolor{imagepoint}{#1}}
+\newcommand{\diagramtext}{\fontsize{11.5}{16}\selectfont}
 \tikzset{axis/.style={->,gray!70,thin},src/.style={campusgreen,very thick},
  img/.style={imagepoint,very thick},ray/.style={gray!75,densely dashed},
  refc/.style={gray!72,densely dashed}}
@@ -170,7 +171,7 @@ $\displaystyle z'=\frac{R^2}{\bar z}$。
 \begin{frame}[t]{作一条垂线，找出像点}
 \begin{columns}[c,onlytextwidth]
 \column{.42\textwidth}\centering\proofplot
-\column{.56\textwidth}\small
+\column{.56\textwidth}\diagramtext
 设直线 $\ell$ 不过 $O$。$H$ 是 $O$ 到 $\ell$ 的垂足，$H'$ 是 $H$ 的像。取 $\ell$ 上一点 $P\ne H$。
 \par\medskip
 从 $H'$ 向射线 $OP$ 作垂线，垂足为 $Q$。两个直角三角形在 $O$ 处的锐角相等，故
@@ -185,7 +186,7 @@ $\displaystyle z'=\frac{R^2}{\bar z}$。
 \begin{frame}[t]{像能走遍这个圆吗？}
 \begin{columns}[c,onlytextwidth]
 \column{.42\textwidth}\centering\proofplot
-\column{.56\textwidth}\small
+\column{.56\textwidth}\diagramtext
 反过来，在圆上任取 $Q\ne O,H'$。由直径所对圆周角为直角，$H'Q\perp OQ$。
 \par\medskip
 此时 $\angle QOH'$ 为锐角，射线 $OQ$ 与 $\ell$ 交于 $P$。同样的相似关系给出 $OP\cdot OQ=R^2$。
@@ -204,15 +205,19 @@ $H'$ 由 $H$ 变来；$O$ 没有原像。
 \column{.49\textwidth}
 $O=(0,0)$，$A=(4,0)$，$B=(0,2)$。分别以 $OA,OB$ 为直径画圆。
 \par\medskip
-两个圆已经在 $O$ 相交。怎样只解\idea{直线的交点}，求出另一个交点 $X$？
+两个圆都经过 $O$。以 $O$ 为反演中心，两个圆去掉 $O$ 后，各自会变成一条直线。
 \par\medskip
-取 $R=2$，先在图上标出 $A'$ 和 $B'$。
+取 $R=2$。在图上指出哪一条直线应当水平，哪一条应当竖直。
 \end{columns}
 \end{frame}
+\begin{campuspractice}{利用反演找回交点}
+两圆的直径分别是 $OA$ 和 $OB$，其中 $O=(0,0)$、$A=(4,0)$、$B=(0,2)$。取反演半径 $2$，利用两条像直线求两圆除 $O$ 外的另一个交点 $X$。
+\end{campuspractice}
+\ifdefined\TeacherEdition
 \begin{frame}[t]{先交两条直线，再回到两圆}
 \begin{columns}[c,onlytextwidth]
 \column{.49\textwidth}\centering\twocircles{1}
-\column{.49\textwidth}\small
+\column{.49\textwidth}\diagramtext
 $A'=(1,0)$，$B'=(0,2)$。两条像直线分别垂直于 $OA,OB$，故为
 \[
  x=1,\qquad y=2 .
@@ -223,7 +228,7 @@ $A'=(1,0)$，$B'=(0,2)$。两条像直线分别垂直于 $OA,OB$，故为
 \]
 $T$ 同时属于两条线，故 $X$ 同时属于原来的两圆。
 \end{columns}
-\end{frame}
+\end{frame}\fi
 
 % INV-03、INV-04；学生连续独立作答，教师版反馈置于两题之后。
 \begin{campuspractice}{独立练习一｜哪一个是像点？}
