@@ -1,0 +1,260 @@
+% !TeX program = xelatex
+% 高中园40分钟新课；题目编号及取舍见同目录《授课说明》和《题库》。
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
+\usetheme{GaoZhongYuan}
+\usetikzlibrary{angles,quotes,calc}
+\definecolor{ink}{HTML}{2C4248}
+\definecolor{imagepoint}{HTML}{A34A1D}
+\setbeamerfont{normal text}{size=\fontsize{13}{19}\selectfont}
+\newcommand{\idea}[1]{\textcolor{campusgreen}{\bfseries #1}}
+\newcommand{\orig}[1]{\textcolor{campusgreen}{#1}}
+\newcommand{\impt}[1]{\textcolor{imagepoint}{#1}}
+\tikzset{axis/.style={->,gray!70,thin},src/.style={campusgreen,very thick},
+ img/.style={imagepoint,very thick},ray/.style={gray!75,densely dashed},
+ refc/.style={gray!72,densely dashed}}
+\newcommand{\markpt}[4]{\fill[#1] (#2) circle (1.8pt) node[#3,text=ink,inner sep=2pt] {$#4$};}
+\newcommand{\introplot}[1]{%
+\begin{tikzpicture}[x=.92cm,y=.92cm,font=\small]
+  \path[use as bounding box] (-.55,-2.48) rectangle (4.55,2.48);
+  \draw[axis] (-.38,0)--(4.47,0); \draw[axis] (0,-2.34)--(0,2.34);
+  \draw[src] (1,-2.25)--(1,2.25) node[above right]{$x=1$};
+  \ifnum#1=1 \draw[img] (2,0) circle (2); \fi
+  \foreach \k in {-1,1}{\draw[ray] (0,0)--(2.28,2.28*\k);
+    \fill[campusgreen] (1,\k) circle(2pt);
+    \fill[imagepoint] (2,2*\k) circle(2.6pt);}
+  \markpt{ink}{0,0}{below left}{O}
+  \fill[campusgreen] (1,0) circle(2pt); \fill[imagepoint] (4,0) circle(2.6pt);
+\end{tikzpicture}}
+\newcommand{\proofplot}{%
+\begin{tikzpicture}[x=1.15cm,y=1.15cm,font=\small]
+  \draw[img] (2,0) circle (2);
+  \draw[src] (1,-1.88)--(1,2.18) node[above]{$\ell$};
+  \coordinate(O)at(0,0); \coordinate(H)at(1,0); \coordinate(K)at(4,0);
+  \coordinate(P)at(1,.8); \coordinate(Q)at({4/1.64},{3.2/1.64});
+  \draw[ink](O)--(K)--(Q)--(O);
+  \draw (1.12,0)--(1.12,.12)--(1,.12);
+  \pic[draw,angle radius=3mm]{right angle=O--Q--K};
+  \markpt{ink}{O}{below left}{O}
+  \markpt{campusgreen}{H}{below left}{H}
+  \markpt{imagepoint}{K}{right}{H'}
+  \markpt{campusgreen}{P}{above left}{P}
+  \markpt{imagepoint}{Q}{above right}{Q}
+\end{tikzpicture}}
+\newcommand{\twocircles}[1]{%
+\begin{tikzpicture}[x=1.04cm,y=1.04cm,font=\small]
+  \path[use as bounding box] (-1.4,-2.14) rectangle (4.65,2.95);
+  \draw[axis] (-1.27,0)--(4.48,0) node[above]{$x$};
+  \draw[axis] (0,-1.98)--(0,2.8) node[right]{$y$};
+  \draw[src](2,0)circle(2); \draw[img](0,1)circle(1);
+  \markpt{ink}{0,0}{below left}{O}
+  \markpt{campusgreen}{4,0}{below right}{A}
+  \markpt{imagepoint}{0,2}{above left}{B}
+  \ifnum#1=1
+    \draw[campusgreen,thick,dashed] (1,-1.93)--(1,2.53);
+    \draw[imagepoint,thick,dashed] (-1.15,2)--(4.15,2);
+    \draw[ray] (0,0)--(1.23,2.46);
+    \markpt{ink}{1,2}{above right}{T}
+    \markpt{ink}{.8,1.6}{below left}{X}
+  \else \markpt{ink}{.8,1.6}{above right}{X} \fi
+\end{tikzpicture}}
+\title{圆反演：一条直线怎样变成圆}
+\author{华光辉　AI伴学·复数几何专题}
+\date{}
+\begin{document}\usebeamerfont{normal text}\campusmaketitle
+
+\begin{frame}[t]{三个点的像落在哪里？}
+\begin{columns}[c,onlytextwidth]
+\column{.43\textwidth}\centering\introplot{0}
+\column{.54\textwidth}
+直线上的\orig{三个点}经过同一种变换，分别移到右边的\impt{三个点}。
+\[
+\begin{array}{rcl}
+ (1,1)&\mapsto&(2,2)\\
+ (1,0)&\mapsto&(4,0)\\
+ (1,-1)&\mapsto&(2,-2)
+\end{array}
+\]
+用手比画：原点 $O$ 到每一对点的方向、距离各有什么关系？
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{沿同一条射线，怎样配对？}
+\begin{columns}[c,onlytextwidth]
+\column{.49\textwidth}\centering
+\begin{tikzpicture}[x=.86cm,y=.86cm,font=\small]
+\draw[refc] (0,0) circle(2);
+\draw[axis](-.45,0)--(4.6,0);
+\markpt{ink}{0,0}{below left}{O}
+\markpt{imagepoint}{1,0}{above}{P'}
+\draw[gray] (2,0)++(0,-.08)--++(0,.16);
+\markpt{campusgreen}{4,0}{above}{P}
+\draw[<->,gray] (0,-.62)--(1,-.62) node[midway,below]{$1$};
+\node[below]at(3.65,-.18){$OP=4$};
+\end{tikzpicture}
+\column{.48\textwidth}
+给定圆心 $O$、半径 $R>0$。每个 $P\ne O$ 的反演点 $P'$ 由两条条件确定：
+\par\medskip
+（1）$P'$ 在射线 $OP$ 上。\\[2mm]
+（2）$\displaystyle OP\cdot OP'=R^2$。
+\par\medskip
+图中 $R=2$，所以 $4\times1=2^2$。
+\end{columns}
+\end{frame}
+
+% INV-01
+\begin{campuspractice}{在射线上标出像点}
+反演圆的半径是 $2$。点 $P$ 到圆心 $O$ 的距离为 $8$。画出射线 $OP$ 并标出 $P'$ 的位置，写明 $OP'$ 的值。
+\end{campuspractice}
+\ifdefined\TeacherEdition
+\begin{frame}[t]{教师参考｜射线上的点序}
+沿射线依次是圆心 $O$、像点 $P'$、半径为 $2$ 的圆与射线的交点、原像 $P$。
+\[ OP'=\frac{2^2}{8}=\frac12 . \]
+若像点被画在另一侧，请学生指出定义中的“射线”。
+\end{frame}\fi
+
+\begin{frame}[t]{第二次反演会把点送到哪里？}
+设 $OP=t>0$。在同一条射线上，连续两次反演给出
+\[
+ t\ \longmapsto\ \frac{R^2}{t}\ \longmapsto\ 
+ \frac{R^2}{R^2/t}=t .
+\]
+\begin{center}
+\begin{tabular}{c@{\qquad}c@{\qquad}c}
+圆内的非圆心点 & 圆周上的点 & 圆外的点\\[1mm]
+$t<R$ & $t=R$ & $t>R$\\
+$OP'>R$ & $P'=P$ & $OP'<R$
+\end{tabular}
+\end{center}
+圆心处 $t=0$，没有有限的像点。
+\end{frame}
+
+\begin{frame}[t]{用复数记录同射线上的伸缩}
+取 $O$ 为原点，$z=x+yi\ne0$ 表示点 $P$，距离平方为 $|z|^2=x^2+y^2$。
+\par\medskip
+从 $OP$ 变为 $OP'$，所乘的\idea{正实数}是
+\[
+ \frac{OP'}{OP}=\frac{R^2}{|z|^2},
+ \qquad z'=\frac{R^2}{|z|^2}\,z .
+\]
+把 $x-yi$ 记作 $\bar z$。由 $z\bar z=x^2+y^2$，也可写成
+$\displaystyle z'=\frac{R^2}{\bar z}$。
+\end{frame}
+
+% INV-02
+\begin{campuspractice}{用一个圆周点检验公式}
+以单位圆为反演圆。小林写下 $I(z)=1/z$。用 $z=i$ 检验他的式子，并写出你的判断依据。
+\end{campuspractice}
+\ifdefined\TeacherEdition
+\begin{frame}[t]{教师参考｜检查方向}
+点 $i$ 在单位圆上，所以 $I(i)=i$。但 $1/i=-i$，在反向射线上。
+\[
+ \frac{1}{\bar i}=\frac{1}{-i}=i .
+\]
+请学生在虚轴上分别指出 $i$ 和 $-i$。
+\end{frame}\fi
+
+\begin{frame}[t]{直线上的所有点都如此吗？}
+\begin{columns}[c,onlytextwidth]
+\column{.43\textwidth}\centering\introplot{1}
+\column{.54\textwidth}
+仍取 $R=2$。直线 $x=1$ 上那三个点的像，恰好落在这条橙色圆周上。
+\par\bigskip
+猜想：原点 $O$ 和 $(4,0)$ 是像圆一条直径的两个端点。
+\par\bigskip
+能否找到一个\idea{始终是直角}的角？
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{作一条垂线，找出像点}
+\begin{columns}[c,onlytextwidth]
+\column{.42\textwidth}\centering\proofplot
+\column{.56\textwidth}\small
+设直线 $\ell$ 不过 $O$。$H$ 是 $O$ 到 $\ell$ 的垂足，$H'$ 是 $H$ 的像。取 $\ell$ 上一点 $P\ne H$。
+\par\medskip
+从 $H'$ 向射线 $OP$ 作垂线，垂足为 $Q$。两个直角三角形在 $O$ 处的锐角相等，故
+\[
+ \frac{OH}{OP}=\frac{OQ}{OH'}
+ \ \Rightarrow\ OP\cdot OQ=OH\cdot OH'=R^2 .
+\]
+所以 $Q=P'$。由 $\angle OQH'=90^\circ$，$Q$ 在以 $OH'$ 为直径的圆上。
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{像能走遍这个圆吗？}
+\begin{columns}[c,onlytextwidth]
+\column{.42\textwidth}\centering\proofplot
+\column{.56\textwidth}\small
+反过来，在圆上任取 $Q\ne O,H'$。由直径所对圆周角为直角，$H'Q\perp OQ$。
+\par\medskip
+此时 $\angle QOH'$ 为锐角，射线 $OQ$ 与 $\ell$ 交于 $P$。同样的相似关系给出 $OP\cdot OQ=R^2$。
+\par\medskip
+$H'$ 由 $H$ 变来；$O$ 没有原像。
+\[
+ \ell\ \longleftrightarrow\
+ \text{以 }OH'\text{ 为直径的圆周去掉 }O .
+\]
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{两个圆还在哪里相交？}
+\begin{columns}[c,onlytextwidth]
+\column{.49\textwidth}\centering\twocircles{0}
+\column{.49\textwidth}
+$O=(0,0)$，$A=(4,0)$，$B=(0,2)$。分别以 $OA,OB$ 为直径画圆。
+\par\medskip
+两个圆已经在 $O$ 相交。怎样只解\idea{直线的交点}，求出另一个交点 $X$？
+\par\medskip
+取 $R=2$，先在图上标出 $A'$ 和 $B'$。
+\end{columns}
+\end{frame}
+\begin{frame}[t]{先交两条直线，再回到两圆}
+\begin{columns}[c,onlytextwidth]
+\column{.49\textwidth}\centering\twocircles{1}
+\column{.49\textwidth}\small
+$A'=(1,0)$，$B'=(0,2)$。两条像直线分别垂直于 $OA,OB$，故为
+\[
+ x=1,\qquad y=2 .
+\]
+它们交于 $T=(1,2)$，于是 $OT^2=5$。再反演一次，
+\[
+ X=\tfrac45(1,2)=\boxed{(\tfrac45,\tfrac85)} .
+\]
+$T$ 同时属于两条线，故 $X$ 同时属于原来的两圆。
+\end{columns}
+\end{frame}
+
+% INV-03、INV-04；学生连续独立作答，教师版反馈置于两题之后。
+\begin{campuspractice}{独立练习一｜哪一个是像点？}
+以原点 $O$ 为中心、半径 $2$ 作反演。$P=(-2,2)$ 的像是 $(-1,1)$ 还是 $(-1,-1)$？请用定义说明理由。
+\end{campuspractice}
+\begin{campuspractice}{独立练习二｜求完整的像}
+以原点 $O$ 为中心、半径 $2$ 作反演。$B=(0,-8)$。点 $P$ 遍历以 $OB$ 为直径的圆周，且 $P\ne O$。求 $P'$ 的完整轨迹。
+\end{campuspractice}
+\ifdefined\TeacherEdition
+\begin{frame}[t]{教师参考｜两个候选点一样远}
+两点到 $O$ 的距离都是 $\sqrt2$。$OP=2\sqrt2$，所以两点都满足距离乘积为 $4$。
+\[
+ (-1,1)=\tfrac12(-2,2).
+\]
+只有 $(-1,1)$ 在射线 $OP$ 上。$( -1,-1)$ 位于另一条射线上。
+\end{frame}
+\begin{frame}[t]{教师参考｜直线究竟在哪一侧}
+沿负半轴，$OB'=4/8=1/2$，所以 $B'=(0,-1/2)$。
+\par\medskip
+以 $OB$ 为直径的圆周去掉 $O$ 的像，是经过 $B'$ 且垂直于 $OB$ 的整条直线
+\[
+ \boxed{y=-\tfrac12}.
+\]
+线上每个点再反演，都能回到题设的圆周；直线没有需要剔除的点。
+\end{frame}\fi
+
+\begin{campussummary}
+请一位同学用“方向”和“乘积”说清楚怎样确定 $P'$。
+\par\bigskip
+请同桌画出直线 $\ell$、垂足 $H$ 和点 $H'$，说出像圆的直径，并说明为什么要去掉 $O$。
+\par\bigskip
+请另一位同学用刚才的两圆交点题解释：为什么找到两条直线的交点以后，要再反演一次？
+\end{campussummary}
+\end{document}
